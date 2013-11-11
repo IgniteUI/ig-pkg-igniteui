@@ -1,0 +1,47 @@
+{
+  "overview": null,
+  "name": "ui.igGridRowSelectors",
+  "title": "Row Selectors",
+  "category": null,
+  "visual": true,
+  "events": {
+    "checkBoxStateChanged": {
+      "cancellable": false,
+      "args": []
+    },
+    "checkBoxStateChanging": {
+      "cancellable": true,
+      "args": []
+    },
+    "rowSelectorClicked": {
+      "cancellable": false,
+      "args": []
+    }
+  },
+  "properties": {
+    "enableCheckBoxes": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "enableRowNumbering": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "requireSelection": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "rowNumberingSeed": {
+      "type": "number",
+      "defaultValue": 0.0
+    },
+    "rowSelectorColumnWidth": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "showCheckBoxesOnFocus": {
+      "type": "bool",
+      "defaultValue": false
+    }
+  }
+}

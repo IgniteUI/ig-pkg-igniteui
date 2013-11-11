@@ -1,0 +1,278 @@
+{
+  "overview": null,
+  "name": "ui.igDateEditor",
+  "category": null,
+  "visual": true,
+  "events": {
+    "blur": {
+      "cancellable": false,
+      "args": []
+    },
+    "buttonClick": {
+      "cancellable": false,
+      "args": []
+    },
+    "focus": {
+      "cancellable": false,
+      "args": []
+    },
+    "hideDropDown": {
+      "cancellable": true,
+      "args": []
+    },
+    "invalidValue": {
+      "cancellable": false,
+      "args": []
+    },
+    "keydown": {
+      "cancellable": true,
+      "args": []
+    },
+    "keypress": {
+      "cancellable": true,
+      "args": []
+    },
+    "keyup": {
+      "cancellable": false,
+      "args": []
+    },
+    "listSelected": {
+      "cancellable": false,
+      "args": []
+    },
+    "listSelecting": {
+      "cancellable": true,
+      "args": []
+    },
+    "mousedown": {
+      "cancellable": false,
+      "args": []
+    },
+    "mouseleave": {
+      "cancellable": false,
+      "args": []
+    },
+    "mousemove": {
+      "cancellable": false,
+      "args": []
+    },
+    "mouseover": {
+      "cancellable": false,
+      "args": []
+    },
+    "mouseup": {
+      "cancellable": false,
+      "args": []
+    },
+    "showDropDown": {
+      "cancellable": true,
+      "args": []
+    },
+    "spin": {
+      "cancellable": true,
+      "args": []
+    },
+    "textChanged": {
+      "cancellable": false,
+      "args": []
+    },
+    "valueChanged": {
+      "cancellable": false,
+      "args": []
+    },
+    "valueChanging": {
+      "cancellable": true,
+      "args": []
+    }
+  },
+  "properties": {
+    "animationHideDuration": {
+      "type": "number",
+      "defaultValue": 200.0
+    },
+    "animationShowDuration": {
+      "type": "number",
+      "defaultValue": 200.0
+    },
+    "button": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "centuryThreshold": {
+      "type": "number",
+      "defaultValue": 29.0
+    },
+    "dataMode": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "dateDisplayFormat": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "dateInputFormat": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "display": {
+      "type": "string",
+      "defaultValue": "inline-block"
+    },
+    "dropDownOnReadOnly": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "dropDownTriggers": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "enableUTCDates": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "focusOnSpin": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "height": {
+      "type": "number",
+      "defaultValue": null
+    },
+    "hideEnterKey": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "hideMaskOnFocus": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "inputName": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "listColumns": {
+      "type": "number",
+      "defaultValue": 1.0
+    },
+    "listDropDownAsChild": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "listItems": {
+      "type": "array",
+      "defaultValue": null
+    },
+    "listMaxHeight": {
+      "type": "number",
+      "defaultValue": 300.0
+    },
+    "listWidth": {
+      "type": "number",
+      "defaultValue": 0.0
+    },
+    "locale": {
+      "type": "object",
+      "defaultValue": null
+    },
+    "maxValue": {
+      "type": "date",
+      "defaultValue": null
+    },
+    "minNumberOfDateFields": {
+      "type": "number",
+      "defaultValue": 3.0
+    },
+    "minValue": {
+      "type": "date",
+      "defaultValue": null
+    },
+    "nullable": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "nullText": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "promptChar": {
+      "type": "string",
+      "defaultValue": "_"
+    },
+    "readOnly": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "reduceDayOfInvalidDate": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "regional": {
+      "type": "object",
+      "defaultValue": null
+    },
+    "renderInContainer": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "required": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "selectionOnFocus": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "spin1Field": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "spinDelta": {
+      "type": "number",
+      "defaultValue": 1.0
+    },
+    "spinOnReadOnly": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "spinWrapAround": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "tabIndex": {
+      "type": "number",
+      "defaultValue": null
+    },
+    "textAlign": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "theme": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "type": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "useLastGoodDate": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "validatorOptions": {
+      "type": "object",
+      "defaultValue": null
+    },
+    "value": {
+      "type": "object",
+      "defaultValue": null
+    },
+    "width": {
+      "type": "number",
+      "defaultValue": null
+    },
+    "yearShift": {
+      "type": "number",
+      "defaultValue": 0.0
+    }
+  }
+}

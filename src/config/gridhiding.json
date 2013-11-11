@@ -1,0 +1,135 @@
+{
+  "overview": null,
+  "name": "ui.igGridHiding",
+  "title": "Column Hiding",
+  "category": null,
+  "visual": true,
+  "events": {
+    "columnChooserButtonApplyClick": {
+      "cancellable": false,
+      "args": []
+    },
+    "columnChooserButtonResetClick": {
+      "cancellable": false,
+      "args": []
+    },
+    "columnChooserClosed": {
+      "cancellable": false,
+      "args": []
+    },
+    "columnChooserClosing": {
+      "cancellable": true,
+      "args": []
+    },
+    "columnChooserContentsRendered": {
+      "cancellable": false,
+      "args": []
+    },
+    "columnChooserContentsRendering": {
+      "cancellable": true,
+      "args": []
+    },
+    "columnChooserMoving": {
+      "cancellable": true,
+      "args": []
+    },
+    "columnChooserOpened": {
+      "cancellable": false,
+      "args": []
+    },
+    "columnChooserOpening": {
+      "cancellable": true,
+      "args": []
+    },
+    "columnHidden": {
+      "cancellable": false,
+      "args": []
+    },
+    "columnHiding": {
+      "cancellable": true,
+      "args": []
+    },
+    "columnShowing": {
+      "cancellable": true,
+      "args": []
+    },
+    "columnShown": {
+      "cancellable": false,
+      "args": []
+    },
+    "multiColumnHiding": {
+      "cancellable": true,
+      "args": []
+    }
+  },
+  "properties": {
+    "columnChooserAnimationDuration": {
+      "type": "number",
+      "defaultValue": 200.0
+    },
+    "columnChooserButtonApplyText": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "columnChooserButtonCancelText": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "columnChooserCaptionText": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "columnChooserContainment": {
+      "type": "string",
+      "defaultValue": "owner"
+    },
+    "columnChooserDisplayText": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "columnChooserHeight": {
+      "type": "number",
+      "defaultValue": ""
+    },
+    "columnChooserHideOnClick": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "columnChooserHideText": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "columnChooserResetButtonLabel": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "columnChooserShowText": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "columnChooserWidth": {
+      "type": "number",
+      "defaultValue": 350.0
+    },
+    "columnHideText": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "columnSettings": {
+      "type": "array",
+      "defaultValue": null
+    },
+    "dropDownAnimationDuration": {
+      "type": "number",
+      "defaultValue": 500.0
+    },
+    "hiddenColumnIndicatorHeaderWidth": {
+      "type": "number",
+      "defaultValue": 7.0
+    },
+    "hiddenColumnIndicatorTooltipText": {
+      "type": "string",
+      "defaultValue": ""
+    }
+  }
+}

@@ -1,0 +1,282 @@
+{
+  "overview": null,
+  "name": "ui.igCurrencyEditor",
+  "category": null,
+  "visual": true,
+  "events": {
+    "blur": {
+      "cancellable": false,
+      "args": []
+    },
+    "buttonClick": {
+      "cancellable": false,
+      "args": []
+    },
+    "focus": {
+      "cancellable": false,
+      "args": []
+    },
+    "hideDropDown": {
+      "cancellable": true,
+      "args": []
+    },
+    "invalidValue": {
+      "cancellable": false,
+      "args": []
+    },
+    "keydown": {
+      "cancellable": true,
+      "args": []
+    },
+    "keypress": {
+      "cancellable": true,
+      "args": []
+    },
+    "keyup": {
+      "cancellable": false,
+      "args": []
+    },
+    "listSelected": {
+      "cancellable": false,
+      "args": []
+    },
+    "listSelecting": {
+      "cancellable": true,
+      "args": []
+    },
+    "mousedown": {
+      "cancellable": false,
+      "args": []
+    },
+    "mouseleave": {
+      "cancellable": false,
+      "args": []
+    },
+    "mousemove": {
+      "cancellable": false,
+      "args": []
+    },
+    "mouseover": {
+      "cancellable": false,
+      "args": []
+    },
+    "mouseup": {
+      "cancellable": false,
+      "args": []
+    },
+    "showDropDown": {
+      "cancellable": true,
+      "args": []
+    },
+    "spin": {
+      "cancellable": true,
+      "args": []
+    },
+    "textChanged": {
+      "cancellable": false,
+      "args": []
+    },
+    "valueChanged": {
+      "cancellable": false,
+      "args": []
+    },
+    "valueChanging": {
+      "cancellable": true,
+      "args": []
+    }
+  },
+  "properties": {
+    "animationHideDuration": {
+      "type": "number",
+      "defaultValue": 200.0
+    },
+    "animationShowDuration": {
+      "type": "number",
+      "defaultValue": 200.0
+    },
+    "button": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "dataMode": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "decimalSeparator": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "display": {
+      "type": "string",
+      "defaultValue": "inline-block"
+    },
+    "dropDownOnReadOnly": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "dropDownTriggers": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "focusOnSpin": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "groups": {
+      "type": "object",
+      "defaultValue": null
+    },
+    "groupSeparator": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "height": {
+      "type": "number",
+      "defaultValue": null
+    },
+    "hideEnterKey": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "inputName": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "listColumns": {
+      "type": "number",
+      "defaultValue": 1.0
+    },
+    "listDropDownAsChild": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "listItems": {
+      "type": "array",
+      "defaultValue": null
+    },
+    "listMaxHeight": {
+      "type": "number",
+      "defaultValue": 300.0
+    },
+    "listWidth": {
+      "type": "number",
+      "defaultValue": 0.0
+    },
+    "locale": {
+      "type": "object",
+      "defaultValue": null
+    },
+    "maxDecimals": {
+      "type": "number",
+      "defaultValue": null
+    },
+    "maxLength": {
+      "type": "number",
+      "defaultValue": 0.0
+    },
+    "maxValue": {
+      "type": "number",
+      "defaultValue": null
+    },
+    "minDecimals": {
+      "type": "number",
+      "defaultValue": null
+    },
+    "minValue": {
+      "type": "number",
+      "defaultValue": null
+    },
+    "negativePattern": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "negativeSign": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "nullable": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "nullText": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "nullValue": {
+      "type": "number",
+      "defaultValue": null
+    },
+    "positivePattern": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "readOnly": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "regional": {
+      "type": "object",
+      "defaultValue": null
+    },
+    "renderInContainer": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "required": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "scientificFormat": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "selectionOnFocus": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "spinDelta": {
+      "type": "number",
+      "defaultValue": 1.0
+    },
+    "spinOnReadOnly": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "spinWrapAround": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "symbol": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "tabIndex": {
+      "type": "number",
+      "defaultValue": null
+    },
+    "textAlign": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "theme": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "type": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "validatorOptions": {
+      "type": "object",
+      "defaultValue": null
+    },
+    "value": {
+      "type": "object",
+      "defaultValue": null
+    },
+    "width": {
+      "type": "number",
+      "defaultValue": null
+    }
+  }
+}

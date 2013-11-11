@@ -1,0 +1,23 @@
+{
+  "overview": null,
+  "name": "ui.igGridMergedCells",
+  "title": "Cell Merging",
+  "category": null,
+  "visual": true,
+  "events": {
+    "cellsMerged": {
+      "cancellable": false,
+      "args": []
+    },
+    "cellsMerging": {
+      "cancellable": true,
+      "args": []
+    }
+  },
+  "properties": {
+    "initialState": {
+      "type": "string",
+      "defaultValue": null
+    }
+  }
+}

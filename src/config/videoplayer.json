@@ -1,0 +1,154 @@
+{
+  "overview": null,
+  "name": "ui.igVideoPlayer",
+  "category": null,
+  "visual": true,
+  "events": {
+    "bannerClick": {
+      "cancellable": false,
+      "args": []
+    },
+    "bannerHidden": {
+      "cancellable": false,
+      "args": []
+    },
+    "bannerVisible": {
+      "cancellable": false,
+      "args": []
+    },
+    "bookmarkClick": {
+      "cancellable": false,
+      "args": []
+    },
+    "bookmarkHit": {
+      "cancellable": false,
+      "args": []
+    },
+    "browserNotSupported": {
+      "cancellable": false,
+      "args": []
+    },
+    "buffering": {
+      "cancellable": false,
+      "args": []
+    },
+    "ended": {
+      "cancellable": false,
+      "args": []
+    },
+    "enterFullScreen": {
+      "cancellable": true,
+      "args": []
+    },
+    "exitFullScreen": {
+      "cancellable": true,
+      "args": []
+    },
+    "paused": {
+      "cancellable": false,
+      "args": []
+    },
+    "playing": {
+      "cancellable": false,
+      "args": []
+    },
+    "progress": {
+      "cancellable": false,
+      "args": []
+    },
+    "relatedVideoClick": {
+      "cancellable": true,
+      "args": []
+    },
+    "waiting": {
+      "cancellable": false,
+      "args": []
+    }
+  },
+  "properties": {
+    "autohide": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "autoplay": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "banners": {
+      "type": "unknown",
+      "defaultValue": null
+    },
+    "bookmarks": {
+      "type": "unknown",
+      "defaultValue": null
+    },
+    "browserControls": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "centerButtonHideDelay": {
+      "type": "number",
+      "defaultValue": 1200.0
+    },
+    "commercials": {
+      "type": "unknown",
+      "defaultValue": null
+    },
+    "fullscreen": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "height": {
+      "type": "number",
+      "defaultValue": null
+    },
+    "loop": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "muted": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "posterUrl": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "preload": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "progressLabelFormat": {
+      "type": "string",
+      "defaultValue": "${currentTime} / ${duration}"
+    },
+    "relatedVideos": {
+      "type": "unknown",
+      "defaultValue": null
+    },
+    "showSeekTime": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "sources": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "title": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "volume": {
+      "type": "number",
+      "defaultValue": 0.5
+    },
+    "volumeAutohideDelay": {
+      "type": "number",
+      "defaultValue": 1000.0
+    },
+    "width": {
+      "type": "number",
+      "defaultValue": null
+    }
+  }
+}

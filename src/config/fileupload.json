@@ -1,0 +1,186 @@
+{
+  "overview": null,
+  "name": "ui.igUpload",
+  "category": null,
+  "visual": true,
+  "events": {
+    "cancelAllClicked": {
+      "cancellable": false,
+      "args": []
+    },
+    "fileSelected": {
+      "cancellable": false,
+      "args": []
+    },
+    "fileSelecting": {
+      "cancellable": true,
+      "args": []
+    },
+    "fileUploadAborted": {
+      "cancellable": false,
+      "args": []
+    },
+    "fileUploaded": {
+      "cancellable": false,
+      "args": []
+    },
+    "fileUploading": {
+      "cancellable": true,
+      "args": []
+    },
+    "onError": {
+      "cancellable": false,
+      "args": []
+    }
+  },
+  "properties": {
+    "allowedExtensions": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "autostartupload": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "controlId": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "css": {
+      "type": "unknown",
+      "defaultValue": null
+    },
+    "errorMessageAJAXRequestFileSize": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "errorMessageCancelUpload": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "errorMessageGetFileStatus": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "errorMessageMaxFileSizeExceeded": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "errorMessageMaxSimultaneousFiles": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "errorMessageMaxUploadedFiles": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "errorMessageNoSuchFile": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "errorMessageOther": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "errorMessageTryToRemoveNonExistingFile": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "errorMessageTryToStartNonExistingFile": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "errorMessageValidatingFileExtension": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "fileExtensionIcons": {
+      "type": "unknown",
+      "defaultValue": null
+    },
+    "fileSizeDecimalDisplay": {
+      "type": "number",
+      "defaultValue": 2.0
+    },
+    "fileSizeMetric": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "height": {
+      "type": "number",
+      "defaultValue": ""
+    },
+    "labelAddButton": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "labelClearAllButton": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "labelHideDetails": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "labelProgressBarFileNameContinue": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "labelShowDetails": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "labelSummaryProgressBarTemplate": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "labelSummaryProgressButtonCancel": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "labelSummaryProgressButtonContinue": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "labelSummaryProgressButtonDone": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "labelSummaryTemplate": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "labelUploadButton": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "maxSimultaneousFilesUploads": {
+      "type": "number",
+      "defaultValue": 1.0
+    },
+    "maxUploadedFiles": {
+      "type": "number",
+      "defaultValue": -1.0
+    },
+    "mode": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "progressUrl": {
+      "type": "string",
+      "defaultValue": "IGUploadStatusHandler.ashx"
+    },
+    "showFileExtensionIcon": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "uploadUrl": {
+      "type": "string",
+      "defaultValue": "ig_fua34sf345sdf13sdf3454erdsf2345asd3425df5235d54df345.aspx"
+    },
+    "width": {
+      "type": "number",
+      "defaultValue": ""
+    }
+  }
+}

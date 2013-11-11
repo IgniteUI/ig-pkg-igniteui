@@ -1,0 +1,78 @@
+{
+  "overview": null,
+  "name": "ui.igRating",
+  "category": null,
+  "visual": true,
+  "events": {
+    "hoverChange": {
+      "cancellable": true,
+      "args": []
+    },
+    "valueChange": {
+      "cancellable": true,
+      "args": []
+    }
+  },
+  "properties": {
+    "cssVotes": {
+      "type": "object",
+      "defaultValue": null
+    },
+    "focusable": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "precision": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "precisionZeroVote": {
+      "type": "number",
+      "defaultValue": 0.25
+    },
+    "roundedDecimalPlaces": {
+      "type": "number",
+      "defaultValue": 3.0
+    },
+    "swapDirection": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "theme": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "validatorOptions": {
+      "type": "object",
+      "defaultValue": null
+    },
+    "value": {
+      "type": "number",
+      "defaultValue": null
+    },
+    "valueAsPercent": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "valueHover": {
+      "type": "number",
+      "defaultValue": null
+    },
+    "vertical": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "voteCount": {
+      "type": "number",
+      "defaultValue": 5.0
+    },
+    "voteHeight": {
+      "type": "number",
+      "defaultValue": 0.0
+    },
+    "voteWidth": {
+      "type": "number",
+      "defaultValue": 0.0
+    }
+  }
+}

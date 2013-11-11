@@ -1,0 +1,13 @@
+{
+  "overview": null,
+  "name": "ig.DataSource",
+  "category": null,
+  "visual": true,
+  "events": {},
+  "properties": {
+    "settings": {
+      "type": "unknown",
+      "defaultValue": null
+    }
+  }
+}

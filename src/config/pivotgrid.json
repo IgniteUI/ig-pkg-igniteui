@@ -1,0 +1,58 @@
+{
+  "overview": null,
+  "name": "ui.igPivotGrid",
+  "category": null,
+  "visual": true,
+  "events": {
+    "tupleMemberExpanded": {
+      "cancellable": false,
+      "args": []
+    },
+    "tupleMemberExpanding": {
+      "cancellable": true,
+      "args": []
+    },
+    "viewUpdated": {
+      "cancellable": false,
+      "args": []
+    },
+    "viewUpdating": {
+      "cancellable": true,
+      "args": []
+    }
+  },
+  "properties": {
+    "compactColumnHeaders": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "compactHeaderIndentation": {
+      "type": "number",
+      "defaultValue": 20.0
+    },
+    "compactRowHeaders": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "dataSource": {
+      "type": "unknown",
+      "defaultValue": null
+    },
+    "dataSourceOptions": {
+      "type": "object",
+      "defaultValue": null
+    },
+    "gridOptions": {
+      "type": "object",
+      "defaultValue": null
+    },
+    "isParentInFrontForColumns": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "isParentInFrontForRows": {
+      "type": "bool",
+      "defaultValue": true
+    }
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "overview": null,
+  "name": "ui.igTree",
+  "category": null,
+  "visual": true,
+  "events": {
+    "dataBinding": {
+      "cancellable": false,
+      "args": []
+    },
+    "dataBound": {
+      "cancellable": false,
+      "args": []
+    },
+    "drag": {
+      "cancellable": true,
+      "args": []
+    },
+    "dragStart": {
+      "cancellable": true,
+      "args": []
+    },
+    "dragStop": {
+      "cancellable": false,
+      "args": []
+    },
+    "nodeCheckstateChanged": {
+      "cancellable": false,
+      "args": []
+    },
+    "nodeCheckstateChanging": {
+      "cancellable": true,
+      "args": []
+    },
+    "nodeClick": {
+      "cancellable": false,
+      "args": []
+    },
+    "nodeCollapsed": {
+      "cancellable": false,
+      "args": []
+    },
+    "nodeCollapsing": {
+      "cancellable": true,
+      "args": []
+    },
+    "nodeDoubleClick": {
+      "cancellable": false,
+      "args": []
+    },
+    "nodeDropped": {
+      "cancellable": false,
+      "args": []
+    },
+    "nodeDropping": {
+      "cancellable": true,
+      "args": []
+    },
+    "nodeExpanded": {
+      "cancellable": false,
+      "args": []
+    },
+    "nodeExpanding": {
+      "cancellable": true,
+      "args": []
+    },
+    "nodePopulated": {
+      "cancellable": false,
+      "args": []
+    },
+    "nodePopulating": {
+      "cancellable": true,
+      "args": []
+    },
+    "rendered": {
+      "cancellable": false,
+      "args": []
+    },
+    "rendering": {
+      "cancellable": false,
+      "args": []
+    },
+    "selectionChanged": {
+      "cancellable": false,
+      "args": []
+    },
+    "selectionChanging": {
+      "cancellable": true,
+      "args": []
+    }
+  },
+  "properties": {
+    "animationDuration": {
+      "type": "number",
+      "defaultValue": 200.0
+    },
+    "bindings": {
+      "type": "object",
+      "defaultValue": null
+    },
+    "checkboxMode": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "dataSource": {
+      "type": "object",
+      "defaultValue": null
+    },
+    "dataSourceType": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "dataSourceUrl": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "defaultNodeTarget": {
+      "type": "string",
+      "defaultValue": "_self"
+    },
+    "dragAndDrop": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "dragAndDropSettings": {
+      "type": "object",
+      "defaultValue": null
+    },
+    "height": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "hotTracking": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "initialExpandDepth": {
+      "type": "number",
+      "defaultValue": -1.0
+    },
+    "leafNodeImageClass": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "leafNodeImageTooltip": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "leafNodeImageUrl": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "loadOnDemand": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "parentNodeImageClass": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "parentNodeImageTooltip": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "parentNodeImageUrl": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "pathSeparator": {
+      "type": "string",
+      "defaultValue": "_"
+    },
+    "requestType": {
+      "type": "string",
+      "defaultValue": "GET"
+    },
+    "responseContentType": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "responseDataKey": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "responseDataType": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "singleBranchExpand": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "updateUrl": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "width": {
+      "type": "string",
+      "defaultValue": null
+    }
+  }
+}

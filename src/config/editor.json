@@ -1,0 +1,210 @@
+{
+  "overview": null,
+  "name": "ui.igEditor",
+  "category": null,
+  "visual": true,
+  "events": {
+    "blur": {
+      "cancellable": false,
+      "args": []
+    },
+    "buttonClick": {
+      "cancellable": false,
+      "args": []
+    },
+    "focus": {
+      "cancellable": false,
+      "args": []
+    },
+    "hideDropDown": {
+      "cancellable": true,
+      "args": []
+    },
+    "invalidValue": {
+      "cancellable": false,
+      "args": []
+    },
+    "keydown": {
+      "cancellable": true,
+      "args": []
+    },
+    "keypress": {
+      "cancellable": true,
+      "args": []
+    },
+    "keyup": {
+      "cancellable": false,
+      "args": []
+    },
+    "listSelected": {
+      "cancellable": false,
+      "args": []
+    },
+    "listSelecting": {
+      "cancellable": true,
+      "args": []
+    },
+    "mousedown": {
+      "cancellable": false,
+      "args": []
+    },
+    "mouseleave": {
+      "cancellable": false,
+      "args": []
+    },
+    "mousemove": {
+      "cancellable": false,
+      "args": []
+    },
+    "mouseover": {
+      "cancellable": false,
+      "args": []
+    },
+    "mouseup": {
+      "cancellable": false,
+      "args": []
+    },
+    "showDropDown": {
+      "cancellable": true,
+      "args": []
+    },
+    "spin": {
+      "cancellable": true,
+      "args": []
+    },
+    "textChanged": {
+      "cancellable": false,
+      "args": []
+    },
+    "valueChanged": {
+      "cancellable": false,
+      "args": []
+    },
+    "valueChanging": {
+      "cancellable": true,
+      "args": []
+    }
+  },
+  "properties": {
+    "animationHideDuration": {
+      "type": "number",
+      "defaultValue": 200.0
+    },
+    "animationShowDuration": {
+      "type": "number",
+      "defaultValue": 200.0
+    },
+    "button": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "display": {
+      "type": "string",
+      "defaultValue": "inline-block"
+    },
+    "dropDownOnReadOnly": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "dropDownTriggers": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "focusOnSpin": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "height": {
+      "type": "number",
+      "defaultValue": null
+    },
+    "hideEnterKey": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "inputName": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "listColumns": {
+      "type": "number",
+      "defaultValue": 1.0
+    },
+    "listDropDownAsChild": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "listItems": {
+      "type": "array",
+      "defaultValue": null
+    },
+    "listMaxHeight": {
+      "type": "number",
+      "defaultValue": 300.0
+    },
+    "listWidth": {
+      "type": "number",
+      "defaultValue": 0.0
+    },
+    "locale": {
+      "type": "object",
+      "defaultValue": null
+    },
+    "nullText": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "readOnly": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "renderInContainer": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "required": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "selectionOnFocus": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "spinOnReadOnly": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "spinWrapAround": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "tabIndex": {
+      "type": "number",
+      "defaultValue": null
+    },
+    "textAlign": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "theme": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "type": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "validatorOptions": {
+      "type": "object",
+      "defaultValue": null
+    },
+    "value": {
+      "type": "object",
+      "defaultValue": null
+    },
+    "width": {
+      "type": "number",
+      "defaultValue": null
+    }
+  }
+}

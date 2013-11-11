@@ -1,0 +1,59 @@
+{
+  "overview": null,
+  "name": "ui.igGridTooltips",
+  "title": "Tooltips",
+  "category": null,
+  "visual": true,
+  "events": {
+    "tooltipHidden": {
+      "cancellable": false,
+      "args": []
+    },
+    "tooltipHiding": {
+      "cancellable": true,
+      "args": []
+    },
+    "tooltipShowing": {
+      "cancellable": true,
+      "args": []
+    },
+    "tooltipShown": {
+      "cancellable": false,
+      "args": []
+    }
+  },
+  "properties": {
+    "columnSettings": {
+      "type": "unknown",
+      "defaultValue": null
+    },
+    "cursorLeftOffset": {
+      "type": "number",
+      "defaultValue": 10.0
+    },
+    "cursorTopOffset": {
+      "type": "number",
+      "defaultValue": 15.0
+    },
+    "fadeTimespan": {
+      "type": "number",
+      "defaultValue": 150.0
+    },
+    "hideDelay": {
+      "type": "number",
+      "defaultValue": 300.0
+    },
+    "showDelay": {
+      "type": "number",
+      "defaultValue": 500.0
+    },
+    "style": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "visibility": {
+      "type": "string",
+      "defaultValue": null
+    }
+  }
+}

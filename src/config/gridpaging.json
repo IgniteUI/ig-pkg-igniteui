@@ -1,0 +1,167 @@
+{
+  "overview": null,
+  "name": "ui.igGridPaging",
+  "title": "Paging",
+  "category": null,
+  "visual": true,
+  "events": {
+    "pageIndexChanged": {
+      "cancellable": false,
+      "args": []
+    },
+    "pageIndexChanging": {
+      "cancellable": true,
+      "args": []
+    },
+    "pagerRendered": {
+      "cancellable": false,
+      "args": []
+    },
+    "pagerRendering": {
+      "cancellable": true,
+      "args": []
+    },
+    "pageSizeChanged": {
+      "cancellable": false,
+      "args": []
+    },
+    "pageSizeChanging": {
+      "cancellable": true,
+      "args": []
+    }
+  },
+  "properties": {
+    "currentPageDropDownLeadingLabel": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "currentPageDropDownTooltip": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "currentPageDropDownTrailingLabel": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "currentPageIndex": {
+      "type": "number",
+      "defaultValue": 0.0
+    },
+    "defaultDropDownWidth": {
+      "type": "number",
+      "defaultValue": 70.0
+    },
+    "delayOnPageChanged": {
+      "type": "number",
+      "defaultValue": 350.0
+    },
+    "firstPageLabelText": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "firstPageTooltip": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "lastPageLabelText": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "lastPageTooltip": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "nextPageLabelText": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "nextPageTooltip": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "pageCountLimit": {
+      "type": "number",
+      "defaultValue": 10.0
+    },
+    "pageIndexUrlKey": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "pagerRecordsLabelTemplate": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "pagerRecordsLabelTooltip": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "pageSize": {
+      "type": "number",
+      "defaultValue": 25.0
+    },
+    "pageSizeDropDownLabel": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "pageSizeDropDownLocation": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "pageSizeDropDownTooltip": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "pageSizeDropDownTrailingLabel": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "pageSizeList": {
+      "type": "array",
+      "defaultValue": null
+    },
+    "pageSizeUrlKey": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "pageTooltipFormat": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "prevPageLabelText": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "prevPageTooltip": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "recordCountKey": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "showFirstLastPages": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "showPagerRecordsLabel": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "showPageSizeDropDown": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "showPrevNextPages": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "type": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "visiblePageCount": {
+      "type": "number",
+      "defaultValue": 5.0
+    }
+  }
+}

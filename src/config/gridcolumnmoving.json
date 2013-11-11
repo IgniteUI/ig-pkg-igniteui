@@ -1,0 +1,163 @@
+{
+  "overview": null,
+  "name": "ui.igGridColumnMoving",
+  "title": "Column Moving",
+  "category": null,
+  "visual": true,
+  "events": {
+    "columnDragCanceled": {
+      "cancellable": false,
+      "args": []
+    },
+    "columnDragEnd": {
+      "cancellable": false,
+      "args": []
+    },
+    "columnDragStart": {
+      "cancellable": true,
+      "args": []
+    },
+    "columnMoved": {
+      "cancellable": false,
+      "args": []
+    },
+    "columnMoving": {
+      "cancellable": true,
+      "args": []
+    },
+    "movingDialogClosed": {
+      "cancellable": false,
+      "args": []
+    },
+    "movingDialogClosing": {
+      "cancellable": true,
+      "args": []
+    },
+    "movingDialogContentsRendered": {
+      "cancellable": false,
+      "args": []
+    },
+    "movingDialogContentsRendering": {
+      "cancellable": true,
+      "args": []
+    },
+    "movingDialogDragColumnMoved": {
+      "cancellable": false,
+      "args": []
+    },
+    "movingDialogDragColumnMoving": {
+      "cancellable": true,
+      "args": []
+    },
+    "movingDialogDragged": {
+      "cancellable": false,
+      "args": []
+    },
+    "movingDialogMoveDownButtonPressed": {
+      "cancellable": false,
+      "args": []
+    },
+    "movingDialogMoveUpButtonPressed": {
+      "cancellable": false,
+      "args": []
+    },
+    "movingDialogOpened": {
+      "cancellable": false,
+      "args": []
+    },
+    "movingDialogOpening": {
+      "cancellable": true,
+      "args": []
+    }
+  },
+  "properties": {
+    "addMovingDropdown": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "columnSettings": {
+      "type": "array",
+      "defaultValue": null
+    },
+    "dragHelperOpacity": {
+      "type": "number",
+      "defaultValue": 1.0
+    },
+    "dropDownMoveFirstText": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "dropDownMoveLastText": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "dropDownMoveLeftText": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "dropDownMoveRightText": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "hideHeaderContentsDuringDrag": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "mode": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "moveType": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "movingAcceptanceTolerance": {
+      "type": "number",
+      "defaultValue": 20.0
+    },
+    "movingDialogAnimationDuration": {
+      "type": "number",
+      "defaultValue": 200.0
+    },
+    "movingDialogCaptionButtonAsc": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "movingDialogCaptionButtonDesc": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "movingDialogCaptionText": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "movingDialogDisplayText": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "movingDialogHeight": {
+      "type": "number",
+      "defaultValue": ""
+    },
+    "movingDialogWidth": {
+      "type": "number",
+      "defaultValue": 400.0
+    },
+    "movingScrollTolerance": {
+      "type": "number",
+      "defaultValue": 20.0
+    },
+    "movingToolTipMove": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "scrollDelta": {
+      "type": "number",
+      "defaultValue": 2.0
+    },
+    "scrollSpeedMultiplier": {
+      "type": "number",
+      "defaultValue": 2.0
+    }
+  }
+}

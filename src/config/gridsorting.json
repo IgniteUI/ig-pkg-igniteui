@@ -1,0 +1,167 @@
+{
+  "overview": null,
+  "name": "ui.igGridSorting",
+  "title": "Sorting",
+  "category": null,
+  "visual": true,
+  "events": {
+    "columnSorted": {
+      "cancellable": false,
+      "args": []
+    },
+    "columnSorting": {
+      "cancellable": true,
+      "args": []
+    },
+    "modalDialogButtonApplyClick": {
+      "cancellable": true,
+      "args": []
+    },
+    "modalDialogButtonResetClick": {
+      "cancellable": true,
+      "args": []
+    },
+    "modalDialogButtonUnsortClick": {
+      "cancellable": true,
+      "args": []
+    },
+    "modalDialogClosed": {
+      "cancellable": false,
+      "args": []
+    },
+    "modalDialogClosing": {
+      "cancellable": true,
+      "args": []
+    },
+    "modalDialogContentsRendered": {
+      "cancellable": false,
+      "args": []
+    },
+    "modalDialogContentsRendering": {
+      "cancellable": true,
+      "args": []
+    },
+    "modalDialogMoving": {
+      "cancellable": true,
+      "args": []
+    },
+    "modalDialogOpened": {
+      "cancellable": false,
+      "args": []
+    },
+    "modalDialogOpening": {
+      "cancellable": true,
+      "args": []
+    },
+    "modalDialogSortClick": {
+      "cancellable": true,
+      "args": []
+    },
+    "modalDialogSortingChanged": {
+      "cancellable": true,
+      "args": []
+    }
+  },
+  "properties": {
+    "applySortedColumnCss": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "caseSensitive": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "columnSettings": {
+      "type": "array",
+      "defaultValue": null
+    },
+    "customSortFunction": {
+      "type": "function",
+      "defaultValue": null
+    },
+    "featureChooserText": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "firstSortDirection": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "modalDialogAnimationDuration": {
+      "type": "number",
+      "defaultValue": 200.0
+    },
+    "modalDialogButtonApplyText": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "modalDialogButtonCancelText": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "modalDialogCaptionButtonAsc": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "modalDialogCaptionButtonDesc": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "modalDialogCaptionButtonUnsort": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "modalDialogCaptionText": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "modalDialogHeight": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "modalDialogResetButtonLabel": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "modalDialogSortByButtonText": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "modalDialogSortOnClick": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "modalDialogWidth": {
+      "type": "number",
+      "defaultValue": 350.0
+    },
+    "mode": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "sortedColumnTooltip": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "sortUrlKey": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "sortUrlKeyAscValue": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "sortUrlKeyDescValue": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "type": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "unsortedColumnTooltip": {
+      "type": "string",
+      "defaultValue": ""
+    }
+  }
+}

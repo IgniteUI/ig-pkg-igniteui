@@ -1,0 +1,102 @@
+{
+  "overview": null,
+  "name": "ui.igHtmlEditor",
+  "category": null,
+  "visual": true,
+  "events": {
+    "actionExecuted": {
+      "cancellable": false,
+      "args": []
+    },
+    "actionExecuting": {
+      "cancellable": true,
+      "args": []
+    },
+    "copy": {
+      "cancellable": false,
+      "args": []
+    },
+    "cut": {
+      "cancellable": false,
+      "args": []
+    },
+    "paste": {
+      "cancellable": false,
+      "args": []
+    },
+    "redo": {
+      "cancellable": false,
+      "args": []
+    },
+    "rendered": {
+      "cancellable": false,
+      "args": []
+    },
+    "rendering": {
+      "cancellable": false,
+      "args": []
+    },
+    "toolbarCollapsed": {
+      "cancellable": false,
+      "args": []
+    },
+    "toolbarCollapsing": {
+      "cancellable": true,
+      "args": []
+    },
+    "toolbarExpanded": {
+      "cancellable": false,
+      "args": []
+    },
+    "toolbarExpanding": {
+      "cancellable": true,
+      "args": []
+    },
+    "undo": {
+      "cancellable": false,
+      "args": []
+    }
+  },
+  "properties": {
+    "customToolbars": {
+      "type": "array",
+      "defaultValue": null
+    },
+    "height": {
+      "type": "number",
+      "defaultValue": 350.0
+    },
+    "inputName": {
+      "type": "string",
+      "defaultValue": "source"
+    },
+    "showCopyPasteToolbar": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "showFormattingToolbar": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "showInsertObjectToolbar": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "showTextToolbar": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "toolbarSettings": {
+      "type": "array",
+      "defaultValue": null
+    },
+    "value": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "width": {
+      "type": "number",
+      "defaultValue": 725.0
+    }
+  }
+}

@@ -1,0 +1,235 @@
+{
+  "overview": null,
+  "name": "ui.igGridFiltering",
+  "title": "Filtering",
+  "category": null,
+  "visual": true,
+  "events": {
+    "dataFiltered": {
+      "cancellable": false,
+      "args": []
+    },
+    "dataFiltering": {
+      "cancellable": true,
+      "args": []
+    },
+    "dropDownClosed": {
+      "cancellable": false,
+      "args": []
+    },
+    "dropDownClosing": {
+      "cancellable": true,
+      "args": []
+    },
+    "dropDownOpened": {
+      "cancellable": false,
+      "args": []
+    },
+    "dropDownOpening": {
+      "cancellable": true,
+      "args": []
+    },
+    "filterDialogClosed": {
+      "cancellable": false,
+      "args": []
+    },
+    "filterDialogClosing": {
+      "cancellable": true,
+      "args": []
+    },
+    "filterDialogContentsRendered": {
+      "cancellable": false,
+      "args": []
+    },
+    "filterDialogContentsRendering": {
+      "cancellable": true,
+      "args": []
+    },
+    "filterDialogFilterAdded": {
+      "cancellable": false,
+      "args": []
+    },
+    "filterDialogFilterAdding": {
+      "cancellable": true,
+      "args": []
+    },
+    "filterDialogFiltering": {
+      "cancellable": true,
+      "args": []
+    },
+    "filterDialogMoving": {
+      "cancellable": true,
+      "args": []
+    },
+    "filterDialogOpened": {
+      "cancellable": false,
+      "args": []
+    },
+    "filterDialogOpening": {
+      "cancellable": true,
+      "args": []
+    }
+  },
+  "properties": {
+    "advancedModeEditorsVisible": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "advancedModeHeaderButtonLocation": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "caseSensitive": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "columnSettings": {
+      "type": "array",
+      "defaultValue": null
+    },
+    "featureChooserText": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "featureChooserTextAdvancedFilter": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "featureChooserTextHide": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "filterButtonLocation": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "filterDelay": {
+      "type": "number",
+      "defaultValue": 500.0
+    },
+    "filterDialogAddButtonWidth": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "filterDialogAddConditionDropDownTemplate": {
+      "type": "string",
+      "defaultValue": "<option value=${value}>${text}</option>"
+    },
+    "filterDialogAddConditionTemplate": {
+      "type": "string",
+      "defaultValue": "<div><span>${label1}</span><div><select></select></div><span>${label2}</span></div>"
+    },
+    "filterDialogColumnDropDownDefaultWidth": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "filterDialogContainment": {
+      "type": "string",
+      "defaultValue": "owner"
+    },
+    "filterDialogExprInputDefaultWidth": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "filterDialogFilterConditionTemplate": {
+      "type": "string",
+      "defaultValue": "<option value=${conditionName}>${conditionLabel}</option>"
+    },
+    "filterDialogFilterDropDownDefaultWidth": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "filterDialogFilterTemplate": {
+      "type": "string",
+      "defaultValue": "<tr><td><input/></td><td><select></select></td><td><input /> </td><td><span></span></td></tr>"
+    },
+    "filterDialogHeight": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "filterDialogMaxFilterCount": {
+      "type": "number",
+      "defaultValue": 5.0
+    },
+    "filterDialogMaxHeight": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "filterDialogOkCancelButtonWidth": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "filterDialogWidth": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "filterDropDownAnimationDuration": {
+      "type": "number",
+      "defaultValue": 500.0
+    },
+    "filterDropDownAnimations": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "filterDropDownHeight": {
+      "type": "object",
+      "defaultValue": 0.0
+    },
+    "filterDropDownItemIcons": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "filterDropDownWidth": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "filterExprUrlKey": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "filterSummaryAlwaysVisible": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "filterSummaryTemplate": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "labels": {
+      "type": "unknown",
+      "defaultValue": null
+    },
+    "mode": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "nullTexts": {
+      "type": "unknown",
+      "defaultValue": null
+    },
+    "renderFC": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "renderFilterButton": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "showEmptyConditions": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "showNullConditions": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "tooltipTemplate": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "type": {
+      "type": "string",
+      "defaultValue": null
+    }
+  }
+}

@@ -1,0 +1,239 @@
+{
+  "overview": null,
+  "name": "ui.igGridGroupBy",
+  "title": "Group By",
+  "category": null,
+  "visual": true,
+  "events": {
+    "groupedColumnsChanged": {
+      "cancellable": false,
+      "args": []
+    },
+    "groupedColumnsChanging": {
+      "cancellable": true,
+      "args": []
+    },
+    "modalDialogButtonApplyClick": {
+      "cancellable": true,
+      "args": []
+    },
+    "modalDialogButtonResetClick": {
+      "cancellable": true,
+      "args": []
+    },
+    "modalDialogClosed": {
+      "cancellable": false,
+      "args": []
+    },
+    "modalDialogClosing": {
+      "cancellable": true,
+      "args": []
+    },
+    "modalDialogContentsRendered": {
+      "cancellable": false,
+      "args": []
+    },
+    "modalDialogContentsRendering": {
+      "cancellable": true,
+      "args": []
+    },
+    "modalDialogGroupColumn": {
+      "cancellable": false,
+      "args": []
+    },
+    "modalDialogGroupingColumn": {
+      "cancellable": true,
+      "args": []
+    },
+    "modalDialogMoving": {
+      "cancellable": false,
+      "args": []
+    },
+    "modalDialogOpened": {
+      "cancellable": false,
+      "args": []
+    },
+    "modalDialogOpening": {
+      "cancellable": true,
+      "args": []
+    },
+    "modalDialogSortGroupedColumn": {
+      "cancellable": true,
+      "args": []
+    },
+    "modalDialogUngroupColumn": {
+      "cancellable": false,
+      "args": []
+    },
+    "modalDialogUngroupingColumn": {
+      "cancellable": true,
+      "args": []
+    }
+  },
+  "properties": {
+    "collapseTooltip": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "columnSettings": {
+      "type": "object",
+      "defaultValue": null
+    },
+    "emptyGroupByAreaContent": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "emptyGroupByAreaContentSelectColumns": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "emptyGroupByAreaContentSelectColumnsCaption": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "expandTooltip": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "expansionIndicatorVisibility": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "featureChooserText": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "featureChooserTextHide": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "groupByAreaVisibility": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "groupByLabelWidth": {
+      "type": "number",
+      "defaultValue": null
+    },
+    "groupByUrlKey": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "groupByUrlKeyAscValue": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "groupByUrlKeyDescValue": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "groupedColumns": {
+      "type": "object",
+      "defaultValue": null
+    },
+    "groupedRowTextTemplate": {
+      "type": "string",
+      "defaultValue": "${key}: ${val} (${count})"
+    },
+    "indentation": {
+      "type": "number",
+      "defaultValue": 30.0
+    },
+    "initialExpand": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "labelDragHelperOpacity": {
+      "type": "number",
+      "defaultValue": 0.5
+    },
+    "modalDialogAnimationDuration": {
+      "type": "number",
+      "defaultValue": 200.0
+    },
+    "modalDialogButtonApplyText": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "modalDialogButtonCancelText": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "modalDialogCaptionButtonAsc": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "modalDialogCaptionButtonDesc": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "modalDialogCaptionButtonUngroup": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "modalDialogCaptionText": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "modalDialogClearAllButtonLabel": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "modalDialogDropDownAreaWidth": {
+      "type": "number",
+      "defaultValue": null
+    },
+    "modalDialogDropDownButtonCaption": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "modalDialogDropDownLabel": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "modalDialogDropDownWidth": {
+      "type": "number",
+      "defaultValue": 200.0
+    },
+    "modalDialogGroupByButtonText": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "modalDialogGroupByOnClick": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "modalDialogHeight": {
+      "type": "number",
+      "defaultValue": ""
+    },
+    "modalDialogRootLevelHierarchicalGrid": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "modalDialogWidth": {
+      "type": "number",
+      "defaultValue": 400.0
+    },
+    "removeButtonTooltip": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "resultResponseKey": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "summarySettings": {
+      "type": "object",
+      "defaultValue": null
+    },
+    "type": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "useGridColumnFormatter": {
+      "type": "bool",
+      "defaultValue": true
+    }
+  }
+}

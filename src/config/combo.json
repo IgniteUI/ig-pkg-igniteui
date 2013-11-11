@@ -1,0 +1,290 @@
+{
+  "overview": null,
+  "name": "ui.igCombo",
+  "category": null,
+  "visual": true,
+  "events": {
+    "activeItemChanged": {
+      "cancellable": false,
+      "args": []
+    },
+    "activeItemChanging": {
+      "cancellable": true,
+      "args": []
+    },
+    "dataBinding": {
+      "cancellable": true,
+      "args": []
+    },
+    "dataBound": {
+      "cancellable": false,
+      "args": []
+    },
+    "dropDownClosed": {
+      "cancellable": false,
+      "args": []
+    },
+    "dropDownClosing": {
+      "cancellable": true,
+      "args": []
+    },
+    "dropDownOpened": {
+      "cancellable": false,
+      "args": []
+    },
+    "dropDownOpening": {
+      "cancellable": true,
+      "args": []
+    },
+    "filtered": {
+      "cancellable": false,
+      "args": []
+    },
+    "filtering": {
+      "cancellable": true,
+      "args": []
+    },
+    "noMatchFound": {
+      "cancellable": false,
+      "args": []
+    },
+    "selectionChanged": {
+      "cancellable": false,
+      "args": []
+    },
+    "selectionChanging": {
+      "cancellable": true,
+      "args": []
+    },
+    "textChanged": {
+      "cancellable": false,
+      "args": []
+    }
+  },
+  "properties": {
+    "allowCustomValue": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "animationHideDuration": {
+      "type": "number",
+      "defaultValue": 50.0
+    },
+    "animationShowDuration": {
+      "type": "number",
+      "defaultValue": 100.0
+    },
+    "autoComplete": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "cascadingDataSources": {
+      "type": "object",
+      "defaultValue": null
+    },
+    "caseSensitive": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "clearButtonTitle": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "closeDropDownOnBlur": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "closeDropDownOnSelect": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "dataBindOnOpen": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "dataSource": {
+      "type": "object",
+      "defaultValue": null
+    },
+    "dataSourceType": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "dataSourceUrl": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "dropDownAsChild": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "dropDownButtonTitle": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "dropDownMaxHeight": {
+      "type": "number",
+      "defaultValue": 300.0
+    },
+    "dropDownMinHeight": {
+      "type": "number",
+      "defaultValue": 0.0
+    },
+    "dropDownOnFocus": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "dropDownWidth": {
+      "type": "number",
+      "defaultValue": 0.0
+    },
+    "enableActiveItem": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "enableClearButton": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "enableDisplayBlock": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "filterExprUrlKey": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "filteringCondition": {
+      "type": "string",
+      "defaultValue": "contains"
+    },
+    "filteringType": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "footerTemplate": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "format": {
+      "type": "string",
+      "defaultValue": true
+    },
+    "headerTemplate": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "height": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "inputName": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "itemSeparator": {
+      "type": "string",
+      "defaultValue": ", "
+    },
+    "itemTemplate": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "loadOnDemandSettings": {
+      "type": "object",
+      "defaultValue": null
+    },
+    "mode": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "multiSelection": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "noMatchFoundText": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "nullText": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "parentCombo": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "parentComboKey": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "renderMatchItems": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "requestType": {
+      "type": "string",
+      "defaultValue": "GET"
+    },
+    "responseContentType": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "responseDataKey": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "responseTotalRecCountKey": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "selectedItems": {
+      "type": "array",
+      "defaultValue": null
+    },
+    "selectItemBySpaceKey": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "showDropDownButton": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "tabIndex": {
+      "type": "number",
+      "defaultValue": null
+    },
+    "text": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "textKey": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "textKeyType": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "validatorOptions": {
+      "type": "object",
+      "defaultValue": null
+    },
+    "valueKey": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "valueKeyType": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "virtualization": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "width": {
+      "type": "string",
+      "defaultValue": null
+    }
+  }
+}

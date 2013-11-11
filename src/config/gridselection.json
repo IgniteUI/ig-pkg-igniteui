@@ -1,0 +1,75 @@
+{
+  "overview": null,
+  "name": "ui.igGridSelection",
+  "title": "Selection",
+  "category": null,
+  "visual": true,
+  "events": {
+    "activeCellChanged": {
+      "cancellable": false,
+      "args": []
+    },
+    "activeCellChanging": {
+      "cancellable": true,
+      "args": []
+    },
+    "activeRowChanged": {
+      "cancellable": false,
+      "args": []
+    },
+    "activeRowChanging": {
+      "cancellable": true,
+      "args": []
+    },
+    "cellSelectionChanged": {
+      "cancellable": true,
+      "args": []
+    },
+    "cellSelectionChanging": {
+      "cancellable": true,
+      "args": []
+    },
+    "rowSelectionChanged": {
+      "cancellable": false,
+      "args": []
+    },
+    "rowSelectionChanging": {
+      "cancellable": true,
+      "args": []
+    }
+  },
+  "properties": {
+    "activation": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "mode": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "mouseDragSelect": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "multipleCellSelectOnClick": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "multipleSelection": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "skipChildren": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "touchDragSelect": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "wrapAround": {
+      "type": "bool",
+      "defaultValue": true
+    }
+  }
+}

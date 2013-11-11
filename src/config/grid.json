@@ -1,0 +1,271 @@
+{
+  "overview": null,
+  "name": "ui.igGrid",
+  "category": null,
+  "visual": true,
+  "events": {
+    "cellClick": {
+      "cancellable": false,
+      "args": []
+    },
+    "columnsCollectionModified": {
+      "cancellable": false,
+      "args": []
+    },
+    "created": {
+      "cancellable": false,
+      "args": []
+    },
+    "dataBinding": {
+      "cancellable": true,
+      "args": []
+    },
+    "dataBound": {
+      "cancellable": false,
+      "args": []
+    },
+    "dataRendered": {
+      "cancellable": false,
+      "args": []
+    },
+    "dataRendering": {
+      "cancellable": true,
+      "args": []
+    },
+    "destroyed": {
+      "cancellable": false,
+      "args": []
+    },
+    "footerRendered": {
+      "cancellable": false,
+      "args": []
+    },
+    "footerRendering": {
+      "cancellable": true,
+      "args": []
+    },
+    "headerCellRendered": {
+      "cancellable": false,
+      "args": []
+    },
+    "headerRendered": {
+      "cancellable": false,
+      "args": []
+    },
+    "headerRendering": {
+      "cancellable": true,
+      "args": []
+    },
+    "rendered": {
+      "cancellable": false,
+      "args": []
+    },
+    "rendering": {
+      "cancellable": true,
+      "args": []
+    },
+    "requestError": {
+      "cancellable": false,
+      "args": []
+    },
+    "rowsRendered": {
+      "cancellable": false,
+      "args": []
+    },
+    "rowsRendering": {
+      "cancellable": true,
+      "args": []
+    },
+    "schemaGenerated": {
+      "cancellable": false,
+      "args": []
+    }
+  },
+  "properties": {
+    "accessibilityRendering": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "adjustVirtualHeights": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "aggregateTransactions": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "alternateRowStyles": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "autoAdjustHeight": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "autoCommit": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "autofitLastColumn": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "autoFormat": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "autoGenerateColumns": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "avgColumnWidth": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "avgRowHeight": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "caption": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "columns": {
+      "type": "array",
+      "defaultValue": null
+    },
+    "columnVirtualization": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "dataSource": {
+      "type": "object",
+      "defaultValue": null
+    },
+    "dataSourceType": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "dataSourceUrl": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "defaultColumnWidth": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "enableHoverStyles": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "enableUTCDates": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "features": {
+      "type": "array",
+      "defaultValue": null,
+	  "components": ["gridfiltering", "gridupdating", "gridtooltips", "gridsummaries", "gridsorting", "gridselection", "gridrowselectors", "gridresizing", "gridpaging", "gridmulticolumnheaders", "gridmergedcells", "gridhiding", "gridgroupby", "gridcolumnmoving"]
+    },
+    "fixedFooters": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "fixedHeaders": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "height": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "jQueryTemplating": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "localSchemaTransform": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "mergeUnboundColumns": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "primaryKey": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "renderCheckboxes": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "requestType": {
+      "type": "string",
+      "defaultValue": "GET"
+    },
+    "requiresDataBinding": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "responseContentType": {
+      "type": "string",
+      "defaultValue": "application/json; charset=utf-8"
+    },
+    "responseDataKey": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "responseTotalRecCountKey": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "restSettings": {
+      "type": "unknown",
+      "defaultValue": null
+    },
+    "rowTemplate": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "rowVirtualization": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "serializeTransactionLog": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "showFooter": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "showHeader": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "tabIndex": {
+      "type": "number",
+      "defaultValue": 0.0
+    },
+    "updateUrl": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "virtualization": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "virtualizationMode": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "virtualizationMouseWheelStep": {
+      "type": "number",
+      "defaultValue": null
+    },
+    "width": {
+      "type": "string",
+      "defaultValue": null
+    }
+  }
+}

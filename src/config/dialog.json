@@ -1,0 +1,190 @@
+{
+  "overview": null,
+  "name": "ui.igDialog",
+  "category": null,
+  "visual": true,
+  "events": {
+    "animationEnded": {
+      "cancellable": false,
+      "args": []
+    },
+    "blur": {
+      "cancellable": false,
+      "args": []
+    },
+    "focus": {
+      "cancellable": false,
+      "args": []
+    },
+    "stateChanged": {
+      "cancellable": false,
+      "args": []
+    },
+    "stateChanging": {
+      "cancellable": true,
+      "args": []
+    }
+  },
+  "properties": {
+    "closeAnimation": {
+      "type": "object",
+      "defaultValue": null
+    },
+    "closeButtonTitle": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "closeOnEscape": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "container": {
+      "type": "object",
+      "defaultValue": null
+    },
+    "dialogClass": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "draggable": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "enableDblclick": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "enableHeaderFocus": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "footerText": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "headerText": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "height": {
+      "type": "number",
+      "defaultValue": null
+    },
+    "imageClass": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "mainElement": {
+      "type": "domelement",
+      "defaultValue": null
+    },
+    "maxHeight": {
+      "type": "number",
+      "defaultValue": null
+    },
+    "maximizeButtonTitle": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "maxWidth": {
+      "type": "number",
+      "defaultValue": null
+    },
+    "minHeight": {
+      "type": "number",
+      "defaultValue": 100.0
+    },
+    "minimizeButtonTitle": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "minWidth": {
+      "type": "number",
+      "defaultValue": 150.0
+    },
+    "modal": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "openAnimation": {
+      "type": "object",
+      "defaultValue": null
+    },
+    "pinButtonTitle": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "pinned": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "pinOnMinimized": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "position": {
+      "type": "object",
+      "defaultValue": null
+    },
+    "resizable": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "restoreButtonTitle": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "showCloseButton": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "showFooter": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "showHeader": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "showMaximizeButton": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "showMinimizeButton": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "showPinButton": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "state": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "tabIndex": {
+      "type": "number",
+      "defaultValue": 0.0
+    },
+    "temporaryUrl": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "trackFocus": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "unpinButtonTitle": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "width": {
+      "type": "number",
+      "defaultValue": 300.0
+    },
+    "zIndex": {
+      "type": "number",
+      "defaultValue": null
+    }
+  }
+}

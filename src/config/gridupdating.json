@@ -1,0 +1,203 @@
+{
+  "overview": null,
+  "name": "ui.igGridUpdating",
+  "title": "Updating",
+  "category": null,
+  "visual": true,
+  "events": {
+    "dataDirty": {
+      "cancellable": true,
+      "args": []
+    },
+    "editCellEnded": {
+      "cancellable": false,
+      "args": []
+    },
+    "editCellEnding": {
+      "cancellable": true,
+      "args": []
+    },
+    "editCellStarted": {
+      "cancellable": false,
+      "args": []
+    },
+    "editCellStarting": {
+      "cancellable": true,
+      "args": []
+    },
+    "editRowEnded": {
+      "cancellable": false,
+      "args": []
+    },
+    "editRowEnding": {
+      "cancellable": true,
+      "args": []
+    },
+    "editRowStarted": {
+      "cancellable": false,
+      "args": []
+    },
+    "editRowStarting": {
+      "cancellable": true,
+      "args": []
+    },
+    "generatePrimaryKeyValue": {
+      "cancellable": false,
+      "args": []
+    },
+    "rowAdded": {
+      "cancellable": false,
+      "args": []
+    },
+    "rowAdding": {
+      "cancellable": true,
+      "args": []
+    },
+    "rowDeleted": {
+      "cancellable": false,
+      "args": []
+    },
+    "rowDeleting": {
+      "cancellable": true,
+      "args": []
+    },
+    "rowEditDialogClosed": {
+      "cancellable": false,
+      "args": []
+    },
+    "rowEditDialogClosing": {
+      "cancellable": false,
+      "args": []
+    },
+    "rowEditDialogContentsRendered": {
+      "cancellable": false,
+      "args": []
+    },
+    "rowEditDialogContentsRendering": {
+      "cancellable": false,
+      "args": []
+    },
+    "rowEditDialogOpened": {
+      "cancellable": false,
+      "args": []
+    },
+    "rowEditDialogOpening": {
+      "cancellable": false,
+      "args": []
+    }
+  },
+  "properties": {
+    "addRowLabel": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "addRowTooltip": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "cancelLabel": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "cancelTooltip": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "columnSettings": {
+      "type": "array",
+      "defaultValue": null
+    },
+    "deleteRowLabel": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "deleteRowTooltip": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "doneLabel": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "doneTooltip": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "editMode": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "enableAddRow": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "enableDataDirtyException": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "enableDeleteRow": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "excelNavigationMode": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "horizontalMoveOnEnter": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "labels": {
+      "type": "unknown",
+      "defaultValue": null
+    },
+    "rowEditDialogContainment": {
+      "type": "string",
+      "defaultValue": "owner"
+    },
+    "rowEditDialogContentHeight": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "rowEditDialogFieldWidth": {
+      "type": "number",
+      "defaultValue": 140.0
+    },
+    "rowEditDialogHeight": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "rowEditDialogOkCancelButtonWidth": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "rowEditDialogRowTemplate": {
+      "type": "string",
+      "defaultValue": "<tr><td>${headerText}</td><td data-key=${dataKey}><input /></td></tr>"
+    },
+    "rowEditDialogRowTemplateID": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "rowEditDialogWidth": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "showDoneCancelButtons": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "showReadonlyEditors": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "startEditTriggers": {
+      "type": "string",
+      "defaultValue": "click,F2,enter"
+    },
+    "validation": {
+      "type": "bool",
+      "defaultValue": false
+    }
+  }
+}

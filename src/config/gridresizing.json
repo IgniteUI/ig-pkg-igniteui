@@ -1,0 +1,35 @@
+{
+  "overview": null,
+  "name": "ui.igGridResizing",
+  "title": "Resizing",
+  "category": null,
+  "visual": true,
+  "events": {
+    "columnResized": {
+      "cancellable": false,
+      "args": []
+    },
+    "columnResizing": {
+      "cancellable": true,
+      "args": []
+    }
+  },
+  "properties": {
+    "allowDoubleClickToResize": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "columnSettings": {
+      "type": "array",
+      "defaultValue": null
+    },
+    "deferredResizing": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "handleTreshold": {
+      "type": "number",
+      "defaultValue": 5.0
+    }
+  }
+}

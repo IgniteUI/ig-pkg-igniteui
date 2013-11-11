@@ -1,0 +1,102 @@
+{
+  "overview": null,
+  "name": "ui.igHierarchicalGrid",
+  "category": null,
+  "visual": true,
+  "events": {
+    "childGridCreated": {
+      "cancellable": false,
+      "args": []
+    },
+    "childGridCreating": {
+      "cancellable": true,
+      "args": []
+    },
+    "childrenPopulated": {
+      "cancellable": false,
+      "args": []
+    },
+    "childrenPopulating": {
+      "cancellable": true,
+      "args": []
+    },
+    "rowCollapsed": {
+      "cancellable": false,
+      "args": []
+    },
+    "rowCollapsing": {
+      "cancellable": true,
+      "args": []
+    },
+    "rowExpanded": {
+      "cancellable": false,
+      "args": []
+    },
+    "rowExpanding": {
+      "cancellable": true,
+      "args": []
+    }
+  },
+  "properties": {
+    "animationDuration": {
+      "type": "number",
+      "defaultValue": 500.0
+    },
+    "autoGenerateLayouts": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "collapseTooltip": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "columnLayouts": {
+      "type": "object",
+      "defaultValue": null
+    },
+    "columns": {
+      "type": "array",
+      "defaultValue": null
+    },
+    "defaultChildrenDataProperty": {
+      "type": "string",
+      "defaultValue": "children"
+    },
+    "expandCollapseAnimations": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "expandColWidth": {
+      "type": "number",
+      "defaultValue": 30.0
+    },
+    "expandTooltip": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "initialDataBindDepth": {
+      "type": "number",
+      "defaultValue": -1.0
+    },
+    "initialExpandDepth": {
+      "type": "number",
+      "defaultValue": -1.0
+    },
+    "maxDataBindDepth": {
+      "type": "number",
+      "defaultValue": -1.0
+    },
+    "odata": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "pathSeparator": {
+      "type": "string",
+      "defaultValue": "/"
+    },
+    "rest": {
+      "type": "bool",
+      "defaultValue": false
+    }
+  }
+}

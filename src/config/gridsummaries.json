@@ -1,0 +1,143 @@
+{
+  "overview": null,
+  "name": "ui.igGridSummaries",
+  "title": "Summaries",
+  "category": null,
+  "visual": true,
+  "events": {
+    "dropDownCancelClicked": {
+      "cancellable": false,
+      "args": []
+    },
+    "dropDownClosed": {
+      "cancellable": false,
+      "args": []
+    },
+    "dropDownClosing": {
+      "cancellable": true,
+      "args": []
+    },
+    "dropDownOKClicked": {
+      "cancellable": false,
+      "args": []
+    },
+    "dropDownOpened": {
+      "cancellable": false,
+      "args": []
+    },
+    "dropDownOpening": {
+      "cancellable": true,
+      "args": []
+    },
+    "summariesCalculated": {
+      "cancellable": false,
+      "args": []
+    },
+    "summariesCalculating": {
+      "cancellable": true,
+      "args": []
+    },
+    "summariesMethodSelectionChanged": {
+      "cancellable": false,
+      "args": []
+    },
+    "summariesToggled": {
+      "cancellable": false,
+      "args": []
+    },
+    "summariesToggling": {
+      "cancellable": true,
+      "args": []
+    }
+  },
+  "properties": {
+    "calculateRenderMode": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "callee": {
+      "type": "function",
+      "defaultValue": null
+    },
+    "columnSettings": {
+      "type": "array",
+      "defaultValue": null
+    },
+    "compactRenderingMode": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "defaultDecimalDisplay": {
+      "type": "number",
+      "defaultValue": 2.0
+    },
+    "dialogButtonCancelText": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "dialogButtonOKText": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "dropDownDialogAnimationDuration": {
+      "type": "number",
+      "defaultValue": 400.0
+    },
+    "dropDownHeight": {
+      "type": "number",
+      "defaultValue": ""
+    },
+    "dropDownWidth": {
+      "type": "number",
+      "defaultValue": ""
+    },
+    "emptyCellText": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "featureChooserText": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "featureChooserTextHide": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "isGridFormatter": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "resultTemplate": {
+      "type": "string",
+      "defaultValue": "{0} = {1}"
+    },
+    "showDropDownButton": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "showSummariesButton": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "summariesHeaderButtonTooltip": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "summariesResponseKey": {
+      "type": "string",
+      "defaultValue": "summaries"
+    },
+    "summaryExecution": {
+      "type": "string",
+      "defaultValue": null
+    },
+    "summaryExprUrlKey": {
+      "type": "string",
+      "defaultValue": "summaries"
+    },
+    "type": {
+      "type": "string",
+      "defaultValue": null
+    }
+  }
+}

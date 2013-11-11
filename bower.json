@@ -1,0 +1,25 @@
+{
+  "name": "ig-pkg-igniteui",
+  "description": "Ignite UI components package for the Ignite UI Web Designer.",
+  "homepage": "https://github.com/IgniteUI/ig-pkg-igniteui",
+  "keywords": [
+    "Ignite UI",
+    "web designer"
+  ],
+  "author": {
+    "name": "Infragistics",
+    "email": "igniteui@infragistics.com"
+  },
+  "version": "0.0.1",
+  "ignore": [
+    "**/.*",
+    "*.md",
+    "AUTHORS.txt",
+    "Gruntfile.js",
+    "package.json",
+    "bower.json"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+  }
+}
