@@ -26,6 +26,7 @@ define (function (require, exports, module) {
 		// retrieves the initial markup for the current component
 		getMarkup: function (descriptor) {
 			return "<div id=\"" + descriptor.id + "\"></div>";
+			//return this.evalTemplate("default.html", descriptor, true);
 		},
 		getCodeEditorScriptSnippet: function (descriptor) {
 			var code = "";
@@ -50,8 +51,10 @@ define (function (require, exports, module) {
 			}
 			code += "\n\t\t\t\t});\n";
 			return {codeString: code, lineCount: lineCount};
+			//return this.evalTemplate("default.code.js", descriptor);
 		},
 		getCodeEditorMarkupSnippet: function (descriptor) {
+			// as a developer, i would like to be able to provide the direct manual formatting, as well as specify a template, and evaluate it
 			var extraIndentStr = "", i = 0;
 			if (descriptor.extraIndent) {
 				for (i = 0; i < descriptor.extraIndent; i++) {
@@ -59,6 +62,7 @@ define (function (require, exports, module) {
 				}
 			}
 			return {codeString: "\t\t" + extraIndentStr + "<div id=\"" + descriptor.id + "\"></div>\n", lineCount: 1};
+			//return this.evalTemplate("default.code.html", descriptor);
 		},
 		requiresInitialization: function () {
 			return true;

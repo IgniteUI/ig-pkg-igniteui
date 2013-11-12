@@ -16,6 +16,7 @@
     "configPath": "config",
     "pluginsPath": "plugins",
     "defaultComponentPlugin": "_default-component-plugin",
+    "codeTemplatesPath": "templates",
     "requiresInitialization": true,
     "components": {
     	"grid": {

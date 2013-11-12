@@ -30,6 +30,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			}
 			code += "\n\t\t\t\t});\n";
 			return {codeString: code, lineCount: lineCount};
+			//return this.evalTemplate("grid.code.js", descriptor);
 		},
 		addExtraMarkers: function (descriptor) {
 			// we don't want to hardcode this value but find it in the current range
