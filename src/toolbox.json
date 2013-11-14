@@ -15,6 +15,7 @@
     "iconsPath": "icons",
     "configPath": "config",
     "pluginsPath": "plugins",
+    "autocompletePath": "autocomplete",
     "defaultComponentPlugin": "_default-component-plugin",
     "codeTemplatesPath": "templates",
     "requiresInitialization": true,
