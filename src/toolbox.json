@@ -27,7 +27,7 @@
     		"icon": "grid.png",
     		"dragDropIcon": "grid-dragdrop.png",
     		"category": "lists",
-    		"visual": true,
+    		"visual": true, 
     		"framework": false,
     		"height": 300,
     		"width": 300,
