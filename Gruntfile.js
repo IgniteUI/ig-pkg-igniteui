@@ -86,7 +86,8 @@ module.exports = function (grunt) {
                         'icons/**',
                         'plugins/**',
                         'css/**',
-                        'js/**'
+                        'js/**',
+                        'autocomplete/**'
                     ]
                 },
                 ]
