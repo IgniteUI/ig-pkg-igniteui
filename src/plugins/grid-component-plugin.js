@@ -9,6 +9,9 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 		_getWidgetName: function () {
 			return "igGrid";
 		},
+		getMarkup: function (descriptor) {
+			return "<div style=\"display:inline-block;\" id=\"" + descriptor.id + "\"></div>";
+		},
 		getCodeEditorScriptSnippet: function (descriptor) {
 			var code = "";
 			var opts = descriptor.options;
