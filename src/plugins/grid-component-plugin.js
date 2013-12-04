@@ -44,9 +44,11 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			featuresRange.end = this.settings.editor.getSession().doc.createAnchor(featuresRange.end);
 			descriptor.marker.extraMarkers["features"] = {range: featuresRange};
 		},
+		/*
 		render: function(descriptor) {
 			// THIS IS WHERE WE PUT FULLY CUSTOM EDITORS FOR COMPONENTS
 		},
+		*/
 		openPropertyEditor: function(descriptor) {
 			// columns, features, dataSource, etc. - also reuse those UIs
 			// when something gets changed in this editor, we want to also update the code editor as well as the component itself
