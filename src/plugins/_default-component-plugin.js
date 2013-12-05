@@ -61,7 +61,7 @@ define (function (require, exports, module) {
 					extraIndentStr += "\t";
 				}
 			}
-			return {codeString: "\t\t" + extraIndentStr + "<div id=\"" + descriptor.id + "\"></div>\n", lineCount: 1};
+			return {codeString: "\t" + extraIndentStr + "<div id=\"" + descriptor.id + "\"></div>\n", lineCount: 1};
 			//return this.evalTemplate("default.code.html", descriptor);
 		},
 		requiresInitialization: function () {
