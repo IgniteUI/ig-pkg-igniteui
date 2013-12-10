@@ -358,12 +358,12 @@
       "description": " Sets gets ability to automatically format text in cells for numeric and date columns. The format patterns and rules for numbers and dates are defined in $.ig.regional.defaults object.",
       "valueOptions": [
         {
-          "name": "date",
+          "name": null,
           "type": "date",
           "description": " formats only Date columns"
         },
         {
-          "name": "number",
+          "name": null,
           "type": "number",
           "description": " formats only number columns"
         },
@@ -396,12 +396,12 @@
       "description": " used for virtualization, this is the average value in pixels for a column width ",
       "valueOptions": [
         {
-          "name": "string",
+          "name": null,
           "type": "string",
           "description": " The avarage column width can be set in pixels (25px)."
         },
         {
-          "name": "number",
+          "name": null,
           "type": "number",
           "description": " The avarage column width can be set as a number (25)."
         }
@@ -413,12 +413,12 @@
       "description": " used for virtualization, this is the average value in pixels (default) that will be used to calculate how many rows and which ones to render as the end user scrolls. Also all rows' height will be automatically equal to this value ",
       "valueOptions": [
         {
-          "name": "string",
+          "name": null,
           "type": "string",
           "description": " The avarage row height can be set in pixels (25px)."
         },
         {
-          "name": "number",
+          "name": null,
           "type": "number",
           "description": " The avarage row height can be set as a number (25)."
         }
@@ -466,12 +466,12 @@
       "description": " Default column width that will be set for all columns.",
       "valueOptions": [
         {
-          "name": "string",
+          "name": null,
           "type": "string",
           "description": " The default column width can be set in pixels (px)."
         },
         {
-          "name": "number",
+          "name": null,
           "type": "number",
           "description": " The default column width can be set as a number."
         }
@@ -513,12 +513,12 @@
       "description": " This is the total height of the grid, including all UI elements - scroll container with data rows, header, footer, filter row -  (if any), etc.  ",
       "valueOptions": [
         {
-          "name": "string",
+          "name": null,
           "type": "string",
           "description": " The widget height can be set in pixels (px) and percentage (%)."
         },
         {
-          "name": "number",
+          "name": null,
           "type": "number",
           "description": " The widget height can be set as a number"
         },
@@ -695,12 +695,12 @@
       "description": "",
       "valueOptions": [
         {
-          "name": "string",
+          "name": null,
           "type": "string",
           "description": " The widget width can be set in pixels (px) and percentage (%)."
         },
         {
-          "name": "number",
+          "name": null,
           "type": "number",
           "description": " The widget width can be set as a number"
         },
