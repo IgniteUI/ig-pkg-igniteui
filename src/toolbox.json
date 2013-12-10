@@ -33,8 +33,8 @@
     		"width": 300,
     		"dataSource": "sampleData1"
     	},
-    	"hierarchicalgrid": {
-    		"id": "hierarchicalgrid",
+    	"hierarchicalGrid": {
+    		"id": "hierarchicalGrid",
     		"toolboxTitle": "Hierarchical Grid",
     		"icon": "hierarchicalgrid.png",
     		"dragDropIcon": "hierarchicalgrid-dragdrop.png",
@@ -46,8 +46,8 @@
     		"dataSource": "sampleHierarchicalData1",
     		"defaultOptions": {"autoGeneratelayout": true}
     	},
-    	"chart": {
-    		"id": "chart",
+    	"dataChart": {
+    		"id": "dataChart",
     		"toolboxTitle": "Chart",
     		"icon": "chart.png",
     		"dragDropIcon": "chart-dragdrop.png",
@@ -71,8 +71,8 @@
     		"defaultOptions": {"dropDownAsChild": true},
     		"dataSource": "sampleListData1"
     	},
-    	"datasource": {
-    		"id": "datasource",
+    	"dataSource": {
+    		"id": "dataSource",
     		"toolboxTitle": "Data Source",
     		"icon": "datasource.png",
     		"classId": "$.ig.IgDataSource",
@@ -102,8 +102,8 @@
     		"width": 150,
     		"height": 30
     	},
-    	"fileupload": {
-    		"id": "fileupload",
+    	"fileUpload": {
+    		"id": "fileUpload",
     		"toolboxTitle": "File Upload",
     		"icon": "fileupload.png",
     		"dragDropIcon": "fileupload-dragdrop.png",
@@ -157,8 +157,8 @@
                 "scaleSweepDirection": "clockwise"
     		}
     	},
-    	"htmleditor": {
-    		"id": "htmleditor",
+    	"htmlEditor": {
+    		"id": "htmlEditor",
     		"toolboxTitle": "HTML Editor",
     		"icon": "htmleditor.png",
     		"dragDropIcon": "htmleditor-dragdrop.png",
@@ -168,8 +168,8 @@
     		"width": 500,
     		"height": 300
     	},
-    	"layoutmanager": {
-    		"id": "layoutmanager",
+    	"layoutManager": {
+    		"id": "layoutManager",
     		"toolboxTitle": "Layout Manager",
     		"icon": "layoutmanager.png",
     		"dragDropIcon": "layoutmanager-dragdrop.png",
@@ -190,8 +190,8 @@
     		"width": 300,
     		"height": 300
     	},
-    	"pivotgrid": {
-    		"id": "pivotgrid",
+    	"pivotGrid": {
+    		"id": "pivotGrid",
     		"toolboxTitle": "Pivot Grid",
     		"icon": "pivotgrid.png",
     		"dragDropIcon": "pivotgrid-dragdrop.png",
@@ -222,8 +222,8 @@
     		"visual": true,
     		"framework": false
     	},
-    	"tilemanager": {
-    		"id": "tilemanager",
+    	"tileManager": {
+    		"id": "tileManager",
     		"toolboxTitle": "Tile Manager",
     		"icon": "tilemanager.png",
     		"dragDropIcon": "tilemanager-dragdrop.png",

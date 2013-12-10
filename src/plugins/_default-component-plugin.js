@@ -8,14 +8,15 @@ define (function (require, exports, module) {
 			return null;
 		},
 		_getWidgetName: function (type) {
+			/*
 			var comp;
 			if (this.settings && this.settings.packageInfo) { 
 				comp = this.settings.packageInfo.components[type];
 				if (comp && typeof comp.name === "string") {
 					return comp.name.replace("ui.", "");
 				}
-			}
-			return null;
+			}*/
+			return "ig" + type.charAt(0).toUpperCase() + type.slice(1);
 		},
 		getHeadMarkup: function () {
 			return null;
