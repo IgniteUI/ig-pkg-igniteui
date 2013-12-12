@@ -88,6 +88,7 @@ define (function (require, exports, module) {
 			descriptor.codeEditor.find("$(\"#" + descriptor.id + "\")." + name + "({");
 			descriptor.codeEditor.find(descriptor.propName + ": " + descriptor.oldPropValue);
 			descriptor.codeEditor.replace(descriptor.propName + ": " + descriptor.propValue);
+			//TODO: add the prop/or any object, if it doesn't exist
 		},
 		addExtraMarkers: function (marker, descriptor) {
 

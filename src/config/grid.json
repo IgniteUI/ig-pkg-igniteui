@@ -492,6 +492,7 @@
     "features": {
       "type": "object",
       "defaultValue": null,
+       "components": ["gridfiltering", "gridupdating", "gridtooltips", "gridsummaries", "gridsorting", "gridselection", "gridrowselectors", "gridresizing", "gridpaging", "gridmulticolumnheaders", "gridmergedcells", "gridhiding", "gridgroupby", "gridcolumnmoving"],
       "description": "a list of grid features definitions: sorting, paging, etc. Each feature goes with its separate options that are documented for the feature accordingly",
       "valueOptions": null
     },
