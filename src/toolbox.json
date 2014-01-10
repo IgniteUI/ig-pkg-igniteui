@@ -213,6 +213,17 @@
     		"width": 200,
     		"height":40
     	},
+		"datePicker": {
+    		"id": "datePicker",
+    		"toolboxTitle": "Date Picker",
+    		"icon": "datepicker.png",
+    		"dragDropIcon": "datepicker-dragdrop.png",
+    		"category": "lists",
+    		"visual": true,
+    		"framework": false,
+    		"width": 200,
+    		"height":30
+    	},
     	"splitter": {
     		"id": "splitter",
     		"toolboxTitle": "Splitter",
