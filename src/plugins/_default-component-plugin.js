@@ -103,14 +103,16 @@ define (function (require, exports, module) {
 					if (!component.eventMarkers) {
 						component.eventMarkers = {};
 					}
-					var codeRange = ide.editor.find("<script type=\"text\/javascript\" id=\"code\">\n");
-					var offset = codeRange.end.row + 1;
+					//var codeRange = ide.editor.find("<script type=\"text\/javascript\" id=\"code\">\n");
+					// place all handlers below the grid definition
+					var codeRange = component.codeMarker.range;
+					var offset = codeRange.end.row;
 					var handlerMarker, funcMarker, funcBodyStart;
 					var evtName = name + descriptor.propName;
 					evtName = evtName.toLowerCase();
 					if (!component.eventMarkers[descriptor.propName]) {
 						// build code
-						var eventString = "\t\t\t\t$(\"#" + descriptor.id + "\").on(\"" + evtName + "\", function (event, args) {\n\n\t\t\t\t});\n";
+						var eventString = "\t\t\t\t$(\"#" + descriptor.id + "\").on(\"" + evtName + "\", function (event, args) {\n\t\t\t\t\t\n\t\t\t\t});\n";
 						// new marker => add an empty event handler and marker;
 						ide.session.insert({row: offset, column: 0}, eventString);
 						handlerMarker = new ide.RangeClass(offset + 1, 4, offset + 4, 4); // "4" tabs
@@ -137,7 +139,7 @@ define (function (require, exports, module) {
 					// assuming TAB indentation for all event handlers will be 4
 					//TODO: the second and third param here don't work for some reason => Check with the ACE project 
 					// it always starts from zero col and there is no animation
-					ide.editor.gotoLine(funcBodyStart, 4, true);
+					ide.editor.gotoLine(funcBodyStart, 5, true);
 				}
 			} else {
 				descriptor.placeholder[name]("option", descriptor.propName, descriptor.propValue);
