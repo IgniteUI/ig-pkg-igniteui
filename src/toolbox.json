@@ -119,7 +119,29 @@
                         "endValue": 25
                     }]
 			}
-		},			
+		},
+		"doughnutChart": {
+    		"id": "doughnutChart",
+    		"toolboxTitle": "Doughnut Chart",
+    		"icon": "doughnut-chart.png",
+    		"dragDropIcon": "doughnut-chart-dragdrop.png",
+    		"category": "dataviz",
+    		"visual": true,
+    		"framework": false,
+    		"height": 500,
+    		"width": 500,
+			
+			"defaultOptions": {
+				"series":
+					[{
+						"name": "Pop1990",
+						"labelMemberPath": "CountryName",
+						"valueMemberPath": "Pop1990",
+						"dataSource": "sampleDoughnutChartData",
+						"labelsPosition": "bestFit"
+					}]
+			} 
+		},		
     	"combo": {
     		"id": "combo",
     		"toolboxTitle": "Combo",

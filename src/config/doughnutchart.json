@@ -1,0 +1,158 @@
+{
+  "overview": null,
+  "name": "ui.igDoughnutChart",
+  "category": null,
+  "visual": true,
+  "events": {
+    "browserNotSupported": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "event fired when the control is displayed on a non HTML5 compliant browser"
+    },
+    "holeDimensionsChanged": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Raised when the dimensions (center point or radius) of the doughnut hole change."
+    },
+    "sliceClick": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Raised when the slice is clicked."
+    },
+    "tooltipHidden": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "event fired after a tooltip is hidden <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush."
+    },
+    "tooltipHiding": {
+      "cancellable": true,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "event fired when the mouse has left a series and the tooltip is about to hide<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush."
+    },
+    "tooltipShowing": {
+      "cancellable": true,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "event fired when the mouse has hovered on a series and the tooltip is about to show <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush."
+    },
+    "tooltipShown": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "event fired after a tooltip is shown<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush."
+    }
+  },
+  "properties": {
+    "allowSliceExplosion": {
+      "type": "bool",
+      "defaultValue": null,
+      "description": "Gets or sets whether the slices can be exploded.",
+      "valueOptions": null
+    },
+    "allowSliceSelection": {
+      "type": "bool",
+      "defaultValue": null,
+      "description": "Gets or sets whether the slices can be selected.",
+      "valueOptions": null
+    },
+    "innerExtent": {
+      "type": "number",
+      "defaultValue": 40.0,
+      "description": "Gets or sets the inner extent of the doughnut chart. It is percent from the outer ring's radius.",
+      "valueOptions": null
+    },
+    "isSurfaceInteractionDisabled": {
+      "type": "bool",
+      "defaultValue": false,
+      "description": "Gets or sets whether all surface interactions with the plot area should be disabled.",
+      "valueOptions": null
+    },
+    "selectedStyle": {
+      "type": "object",
+      "defaultValue": null,
+      "description": "Gets or sets the style used when a slice is selected.",
+      "valueOptions": null
+    },
+    "series": {
+      "type": "array",
+      "defaultValue": null,
+      "description": "An array of series objects.",
+      "valueOptions": null
+    }
+  }
+}
