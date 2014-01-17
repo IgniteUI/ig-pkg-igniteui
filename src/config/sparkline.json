@@ -1,0 +1,490 @@
+{
+  "overview": null,
+  "name": "ui.igSparkline",
+  "category": null,
+  "visual": true,
+  "events": {
+    "dataBinding": {
+      "cancellable": true,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event which is raised before data binding.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes first argument null and second argument ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igSparkline.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.dataSource to obtain reference to instance of $.ig.DataSource."
+    },
+    "dataBound": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event which is raised after data binding.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes first argument null and second argument ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igSparkline.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.data to obtain reference to array actual data which is displayed by chart.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.dataSource to obtain reference to instance of $.ig.DataSource."
+    }
+  },
+  "properties": {
+    "brush": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "Gets or sets the sparkline brush.",
+      "valueOptions": null
+    },
+    "displayNormalRangeInFront": {
+      "type": "bool",
+      "defaultValue": "collapsed",
+      "description": "Gets or sets the position of the normal range on the sparkline.",
+      "valueOptions": null
+    },
+    "displayType": {
+      "type": "string",
+      "defaultValue": null,
+      "description": " Gets or sets the display type of the sparkline.",
+      "valueOptions": [
+        {
+          "name": "line",
+          "type": "string",
+          "description": " Display the sparkline as a line."
+        },
+        {
+          "name": "area",
+          "type": "string",
+          "description": " Display the sparkline as a filled polygon."
+        },
+        {
+          "name": "column",
+          "type": "string",
+          "description": " Display the sparkline as a set of columns."
+        },
+        {
+          "name": "winLoss",
+          "type": "string",
+          "description": " Display the sparkline as a set of columns on a boolean scale."
+        }
+      ]
+    },
+    "firstMarkerBrush": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "Gets or sets the first marker brush of the sparkline.",
+      "valueOptions": null
+    },
+    "firstMarkerSize": {
+      "type": "number",
+      "defaultValue": -1.0,
+      "description": "Gets or sets the first marker size of the sparkline.",
+      "valueOptions": null
+    },
+    "firstMarkerVisibility": {
+      "type": "string",
+      "defaultValue": null,
+      "description": " Gets or sets the first marker visibility of the sparkline.",
+      "valueOptions": [
+        {
+          "name": "visible",
+          "type": "string",
+          "description": " "
+        },
+        {
+          "name": "collapsed",
+          "type": "string",
+          "description": ""
+        }
+      ]
+    },
+    "formatLabel": {
+      "type": "object",
+      "defaultValue": null,
+      "description": "Sets or gets a function which takes an object that produces a formatted label for displaying in the chart.",
+      "valueOptions": null
+    },
+    "highMarkerBrush": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "Gets or sets the high marker brush of the sparkline.",
+      "valueOptions": null
+    },
+    "highMarkerSize": {
+      "type": "number",
+      "defaultValue": -1.0,
+      "description": "Gets or sets the high marker size of the sparkline.",
+      "valueOptions": null
+    },
+    "highMarkerVisibility": {
+      "type": "string",
+      "defaultValue": null,
+      "description": " Gets or sets the high marker visibility of the sparkline.",
+      "valueOptions": [
+        {
+          "name": "visible",
+          "type": "string",
+          "description": " "
+        },
+        {
+          "name": "collapsed",
+          "type": "string",
+          "description": ""
+        }
+      ]
+    },
+    "horizontalAxisBrush": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "Gets or sets the horizontal axis line brush of the sparkline.",
+      "valueOptions": null
+    },
+    "horizontalAxisLabel": {
+      "type": "object",
+      "defaultValue": null,
+      "description": "The value or content to display on the horizontal axis.<br>&nbsp;This can be set to a formatted string, such as \"{0}\", or it can be set to a DataTemplate.",
+      "valueOptions": null
+    },
+    "horizontalAxisVisibility": {
+      "type": "string",
+      "defaultValue": null,
+      "description": " Gets or sets the display state of the horizontal axis.",
+      "valueOptions": [
+        {
+          "name": "visible",
+          "type": "string",
+          "description": " "
+        },
+        {
+          "name": "collapsed",
+          "type": "string",
+          "description": ""
+        }
+      ]
+    },
+    "labelMemberPath": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "String identifier of a column or property name to get labels from on each item in the data source.  These labels will be retrieved from the first and last item, and displayed by the horizontal axis.",
+      "valueOptions": null
+    },
+    "lastMarkerBrush": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "Gets or sets the last marker brush of the sparkline.",
+      "valueOptions": null
+    },
+    "lastMarkerSize": {
+      "type": "number",
+      "defaultValue": -1.0,
+      "description": "Gets or sets the last marker size of the sparkline.",
+      "valueOptions": null
+    },
+    "lastMarkerVisibility": {
+      "type": "string",
+      "defaultValue": null,
+      "description": " Gets or sets the last marker visibility of the sparkline.",
+      "valueOptions": [
+        {
+          "name": "visible",
+          "type": "string",
+          "description": " "
+        },
+        {
+          "name": "collapsed",
+          "type": "string",
+          "description": ""
+        }
+      ]
+    },
+    "lineThickness": {
+      "type": "number",
+      "defaultValue": -1.0,
+      "description": "Gets or sets the line thickness of the sparkline.",
+      "valueOptions": null
+    },
+    "lowMarkerBrush": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "Gets or sets the low marker brush of the sparkline.",
+      "valueOptions": null
+    },
+    "lowMarkerSize": {
+      "type": "number",
+      "defaultValue": -1.0,
+      "description": "Gets or sets the low marker size of the sparkline.",
+      "valueOptions": null
+    },
+    "lowMarkerVisibility": {
+      "type": "string",
+      "defaultValue": null,
+      "description": " Gets or sets the low marker visibility of the sparkline.",
+      "valueOptions": [
+        {
+          "name": "visible",
+          "type": "string",
+          "description": " "
+        },
+        {
+          "name": "collapsed",
+          "type": "string",
+          "description": ""
+        }
+      ]
+    },
+    "markerBrush": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "Gets or sets the marker brush of the sparkline.",
+      "valueOptions": null
+    },
+    "markerSize": {
+      "type": "number",
+      "defaultValue": -1.0,
+      "description": "Gets or sets the marker size of the sparkline.",
+      "valueOptions": null
+    },
+    "markerVisibility": {
+      "type": "string",
+      "defaultValue": null,
+      "description": " Gets or sets the marker visibility of the sparkline.",
+      "valueOptions": [
+        {
+          "name": "visible",
+          "type": "string",
+          "description": " "
+        },
+        {
+          "name": "collapsed",
+          "type": "string",
+          "description": ""
+        }
+      ]
+    },
+    "negativeBrush": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "Gets or sets the negative brush of the sparkline.",
+      "valueOptions": null
+    },
+    "negativeMarkerBrush": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "Gets or sets the negative marker brush of the sparkline.",
+      "valueOptions": null
+    },
+    "negativeMarkerSize": {
+      "type": "number",
+      "defaultValue": -1.0,
+      "description": "Gets or sets the negative marker size of the sparkline.",
+      "valueOptions": null
+    },
+    "negativeMarkerVisibility": {
+      "type": "string",
+      "defaultValue": null,
+      "description": " Gets or sets the negative marker visibility of the sparkline.",
+      "valueOptions": [
+        {
+          "name": "visible",
+          "type": "string",
+          "description": " "
+        },
+        {
+          "name": "collapsed",
+          "type": "string",
+          "description": ""
+        }
+      ]
+    },
+    "normalRangeFill": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "Gets or sets the normal range brush of the sparkline.",
+      "valueOptions": null
+    },
+    "normalRangeMaximum": {
+      "type": "number",
+      "defaultValue": 0.0,
+      "description": "Gets or sets the maximum value of the normal range.",
+      "valueOptions": null
+    },
+    "normalRangeMinimum": {
+      "type": "number",
+      "defaultValue": 0.0,
+      "description": "Gets or sets the minimum value of the normal range.",
+      "valueOptions": null
+    },
+    "normalRangeVisibility": {
+      "type": "string",
+      "defaultValue": null,
+      "description": " Gets or sets the normal range visibility of the sparkline.",
+      "valueOptions": [
+        {
+          "name": "visible",
+          "type": "string",
+          "description": " "
+        },
+        {
+          "name": "collapsed",
+          "type": "string",
+          "description": ""
+        }
+      ]
+    },
+    "trendLineBrush": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "Gets or sets the trendline brush of the sparkline.",
+      "valueOptions": null
+    },
+    "trendLinePeriod": {
+      "type": "number",
+      "defaultValue": 7.0,
+      "description": "Gets or sets the trendline period used by the sparkline.",
+      "valueOptions": null
+    },
+    "trendLineThickness": {
+      "type": "number",
+      "defaultValue": -1.0,
+      "description": "Gets or sets the thickness of the sparkline's trendline.",
+      "valueOptions": null
+    },
+    "trendLineType": {
+      "type": "string",
+      "defaultValue": null,
+      "description": " Gets or sets the type of trendline used by the sparkline.",
+      "valueOptions": [
+        {
+          "name": "none",
+          "type": "string",
+          "description": " "
+        },
+        {
+          "name": "linearFit",
+          "type": "string",
+          "description": " "
+        },
+        {
+          "name": "quadraticFit",
+          "type": "string",
+          "description": " "
+        },
+        {
+          "name": "cubicFit",
+          "type": "string",
+          "description": " "
+        },
+        {
+          "name": "quarticFit",
+          "type": "string",
+          "description": " "
+        },
+        {
+          "name": "quinticFit",
+          "type": "string",
+          "description": " "
+        },
+        {
+          "name": "logarithmicFit",
+          "type": "string",
+          "description": " "
+        },
+        {
+          "name": "exponentialFit",
+          "type": "string",
+          "description": " "
+        },
+        {
+          "name": "powerLawFit",
+          "type": "string",
+          "description": " "
+        },
+        {
+          "name": "simpleAverage",
+          "type": "string",
+          "description": " "
+        },
+        {
+          "name": "exponentialAverage",
+          "type": "string",
+          "description": " "
+        },
+        {
+          "name": "modifiedAverage",
+          "type": "string",
+          "description": " "
+        },
+        {
+          "name": "cumulativeAverage",
+          "type": "string",
+          "description": " "
+        },
+        {
+          "name": "weightedAverage",
+          "type": "string",
+          "description": ""
+        }
+      ]
+    },
+    "unknownValuePlotting": {
+      "type": "string",
+      "defaultValue": null,
+      "description": " Gets or sets the way null values are interpreted.",
+      "valueOptions": [
+        {
+          "name": "linearInterpolate",
+          "type": "string",
+          "description": " "
+        },
+        {
+          "name": "dontPlot",
+          "type": "string",
+          "description": ""
+        }
+      ]
+    },
+    "valueMemberPath": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "Gets or sets the string path to the value column.",
+      "valueOptions": null
+    },
+    "verticalAxisBrush": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "Gets or sets the vertical axis line brush of the sparkline.",
+      "valueOptions": null
+    },
+    "verticalAxisLabel": {
+      "type": "object",
+      "defaultValue": null,
+      "description": "The value or content to display on the vertical axis.<br>&nbsp;This can be set to a formatted string, such as \"{0:n}\", or it can be set to a DataTemplate.",
+      "valueOptions": null
+    },
+    "verticalAxisVisibility": {
+      "type": "string",
+      "defaultValue": null,
+      "description": " Gets or sets the display state of the vertical axis.",
+      "valueOptions": [
+        {
+          "name": "visible",
+          "type": "string",
+          "description": " "
+        },
+        {
+          "name": "collapsed",
+          "type": "string",
+          "description": ""
+        }
+      ]
+    }
+  }
+}

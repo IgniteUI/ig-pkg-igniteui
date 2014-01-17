@@ -72,6 +72,19 @@
     		"width": 300,
 			"dataSource": "samplePieChartData",
 			"defaultOptions": {"valueMemberPath": "Pop2008", "labelMemberPath": "CountryName", "labelsPosition": "bestFit" } 
+		},	
+		"sparkline": {
+    		"id": "sparkline",
+    		"toolboxTitle": "Sparkline",
+    		"icon": "sparkline.png",
+    		"dragDropIcon": "sparkline-dragdrop.png",
+    		"category": "dataviz",
+    		"visual": true,
+    		"framework": false,
+    		"height": 100,
+    		"width": 300,
+			"dataSource": "sampleSparklineData",
+			"defaultOptions": {"valueMemberPath": "ExtendedPrice" } 
 		},		
     	"combo": {
     		"id": "combo",
