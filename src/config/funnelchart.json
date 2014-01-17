@@ -1,0 +1,208 @@
+{
+  "overview": null,
+  "name": "ui.igFunnelChart",
+  "category": null,
+  "visual": true,
+  "events": {
+    "sliceClicked": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event which is raised when a slice is clicked.<br>&nbsp;Function takes first argument null and second argument ui.<br>&nbsp;Use ui.owner to obtain reference to igFunnelChart.<br>&nbsp;Use ui.index to obtain index of clicked slice.<br>&nbsp;Use ui.item to obtain reference to clicked slice item.<br>&nbsp;Use ui.selected to check if slice became selected."
+    }
+  },
+  "properties": {
+    "allowSliceSelection": {
+      "type": "bool",
+      "defaultValue": null,
+      "description": "Gets or sets whether to allow slices to be selected.",
+      "valueOptions": null
+    },
+    "bezierPoints": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "Gets or sets values for upper and lower bezier points. That option has effect only when useBezierCurve is enabled.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value should provide 4 numeric values in range from 0 to 1 separated by space character.<br>&nbsp;&nbsp;&nbsp;&nbsp;The first number defines upper-x position, second: upper-y, third: lower-x, fourth: lower-y.<br>&nbsp;&nbsp;&nbsp;&nbsp;The null or invalid value will reset internal default, which is \"0.5 0 0.5 1\".<br>&nbsp;&nbsp;&nbsp;&nbsp;Example:<br>&nbsp;&nbsp;&nbsp;&nbsp;bezierPoints: \"0.4 0.1 0.6 1\"",
+      "valueOptions": null
+    },
+    "bottomEdgeWidth": {
+      "type": "number",
+      "defaultValue": 0.35,
+      "description": "Gets or sets the percentage (from near 0 to 1) of space the bottom edge of the funnel should take.",
+      "valueOptions": null
+    },
+    "brushes": {
+      "type": "object",
+      "defaultValue": null,
+      "description": "Gets or sets the Brushes property.<br>&nbsp;The brushes property defines the palette from which automatically assigned brushes are selected.<br>&nbsp;The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
+      "valueOptions": null
+    },
+    "formatInnerLabel": {
+      "type": "object",
+      "defaultValue": null,
+      "description": "Gets or sets the formatter function for inner labels. Function should return string and it takes 3 parameters: 1st-value of item to format, 2nd-index of item within data, 3rd-reference to igFunnelChart.",
+      "valueOptions": null
+    },
+    "formatOuterLabel": {
+      "type": "object",
+      "defaultValue": null,
+      "description": "Gets or sets the formatter function for outer labels. Function should return string and it takes 3 parameters: 1st-value of item to format, 2nd-index of item within data, 3rd-reference to igFunnelChart.",
+      "valueOptions": null
+    },
+    "funnelSliceDisplay": {
+      "type": "string",
+      "defaultValue": null,
+      "description": " Gets or sets the how the heights of the funnel slices should be configured.",
+      "valueOptions": [
+        {
+          "name": "uniform",
+          "type": "string",
+          "description": " The slice heights should be uniform."
+        },
+        {
+          "name": "weighted",
+          "type": "string",
+          "description": " The slice heights should be weighted by value."
+        }
+      ]
+    },
+    "innerLabelMemberPath": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "Gets or sets the InnerLabel mapping property for the current series object.",
+      "valueOptions": null
+    },
+    "innerLabelVisibility": {
+      "type": "string",
+      "defaultValue": null,
+      "description": " Gets or sets whether the inner labels are visible.",
+      "valueOptions": [
+        {
+          "name": "visible",
+          "type": "string",
+          "description": " "
+        },
+        {
+          "name": "collapsed",
+          "type": "string",
+          "description": ""
+        }
+      ]
+    },
+    "isInverted": {
+      "type": "bool",
+      "defaultValue": null,
+      "description": "Gets or sets if the funnel should be rendered inverted.",
+      "valueOptions": null
+    },
+    "legend": {
+      "type": "object",
+      "defaultValue": null,
+      "description": "Gets or sets the Legend for the chart.<br>&nbsp;&nbsp;&nbsp;&nbsp;The value of that option can be a string with the id of existing html element. That element should be empty and it will be used to create igChartLegend widget.<br>&nbsp;&nbsp;&nbsp;&nbsp;If element was not found, then new DIV element is created and inserted into parent after chart element.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value of that option can be an object with member \"element\", which contains the id of legend-element.<br>&nbsp;&nbsp;&nbsp;&nbsp;In this case, that object also may contain options supported by the igChartLegend widget, such as \"width\", \"height\" and events, such as \"legendItemMouseLeftButtonDown\", \"legendItemMouseEnter\", etc.<br>&nbsp;&nbsp;&nbsp;&nbsp;Examples:<br>&nbsp;&nbsp;&nbsp;&nbsp;legend: {}<br>&nbsp;&nbsp;&nbsp;&nbsp;legend: \"idOfDiv\"<br>&nbsp;&nbsp;&nbsp;&nbsp;legend: { element: \"idOfDiv\", width: 300 }<br>&nbsp;&nbsp;&nbsp;&nbsp;legend: { legendItemMouseLeftButtonDown: function (evt, ui) { ui.chart.toggleSelection(ui.item); } }",
+      "valueOptions": null
+    },
+    "outerLabelAlignment": {
+      "type": "string",
+      "defaultValue": null,
+      "description": " Gets or sets which side of the chart the outer labels should appear.",
+      "valueOptions": [
+        {
+          "name": "left",
+          "type": "string",
+          "description": " The labels will be displayed to the left of the chart."
+        },
+        {
+          "name": "right",
+          "type": "string",
+          "description": " The labels will be displayed to the right of the chart."
+        }
+      ]
+    },
+    "outerLabelMemberPath": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "Gets or sets the OuterLabel mapping property for the current series object.",
+      "valueOptions": null
+    },
+    "outerLabelVisibility": {
+      "type": "string",
+      "defaultValue": null,
+      "description": " Gets or sets whether the outer labels are visible.",
+      "valueOptions": [
+        {
+          "name": "visible",
+          "type": "string",
+          "description": " "
+        },
+        {
+          "name": "collapsed",
+          "type": "string",
+          "description": ""
+        }
+      ]
+    },
+    "outlines": {
+      "type": "object",
+      "defaultValue": null,
+      "description": "Gets or sets the Outlines property.<br>&nbsp;The Outlines property defines the palette from which automatically assigned Outlines are selected.<br>&nbsp;The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
+      "valueOptions": null
+    },
+    "outlineThickness": {
+      "type": "number",
+      "defaultValue": -1.0,
+      "description": "Gets or sets the thickness of outline around slices.",
+      "valueOptions": null
+    },
+    "selectedSliceStyle": {
+      "type": "object",
+      "defaultValue": null,
+      "description": "Gets or sets the style to use for selected slices.<br>&nbsp;That can be used to set stroke (outline color), fill (background color) and opacity.",
+      "valueOptions": null
+    },
+    "transitionDuration": {
+      "type": "number",
+      "defaultValue": 0.0,
+      "description": "Gets or sets how long the animations should take to run.",
+      "valueOptions": null
+    },
+    "unselectedSliceStyle": {
+      "type": "object",
+      "defaultValue": null,
+      "description": "Gets or sets the style to use for unselected slices.<br>&nbsp;That can be used to set stroke (outline color), fill (background color) and opacity.",
+      "valueOptions": null
+    },
+    "useBezierCurve": {
+      "type": "bool",
+      "defaultValue": null,
+      "description": "Gets or sets whether to use a bezier curve to define the funnel.",
+      "valueOptions": null
+    },
+    "useOuterLabelsForLegend": {
+      "type": "bool",
+      "defaultValue": null,
+      "description": "Gets or sets whether to use the outer labels to identify the legend items.",
+      "valueOptions": null
+    },
+    "useUnselectedStyle": {
+      "type": "bool",
+      "defaultValue": false,
+      "description": "Gets or sets whether to use the unselected style on unselected slices.",
+      "valueOptions": null
+    },
+    "valueMemberPath": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "Gets or sets the value member path for the funnel chart.",
+      "valueOptions": null
+    }
+  }
+}

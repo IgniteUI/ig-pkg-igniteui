@@ -141,7 +141,21 @@
 						"labelsPosition": "bestFit"
 					}]
 			} 
-		},		
+		},
+		"funnelChart": {
+    		"id": "funnelChart",
+    		"toolboxTitle": "Funnel Chart",
+    		"icon": "funnel-chart.png",
+    		"dragDropIcon": "funnel-chart-dragdrop.png",			
+    		"category": "dataviz",
+    		"visual": true,
+    		"framework": false,
+    		"height": 450,
+    		"width": 325,
+			"dataSource": "sampleFunnelChartData",
+			"defaultOptions": {"valueMemberPath": "Budget", "innerLabelMemberPath": "Budget", "innerLabelVisibility": "visible", "outerLabelMemberPath": "Department",
+                "outerLabelVisibility": "visible" } 
+		},			
     	"combo": {
     		"id": "combo",
     		"toolboxTitle": "Combo",
