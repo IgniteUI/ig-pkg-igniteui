@@ -213,7 +213,7 @@
     	},
     	"radialGauge": {
     		"id": "radialGauge",
-    		"toolboxTitle": "Gauge",
+    		"toolboxTitle": "Radial Gauge",
     		"icon": "gauge.png",
     		"dragDropIcon": "gauge-dragdrop.png",
     		"category": "dataviz",
@@ -222,6 +222,29 @@
     		"width": 300,
     		"defaultOptions": {
                 "value": 20
+    		}
+    	},
+		"linearGauge": {
+    		"id": "linearGauge",
+    		"toolboxTitle": "Linear Gauge",
+    		"icon": "linear-gauge.png",
+    		"dragDropIcon": "linear-gauge-dragdrop.png",
+    		"category": "dataviz",
+    		"visual": true,
+    		"framework": false,
+    		"width": 500,
+			"height": 80,
+    		"defaultOptions": {
+                "value": -273,
+                "minimumValue": -275,
+                "maximumValue": 0,
+                "ranges": [
+                    { "startValue": -275, "endValue": -225, "name": "range1" },
+                    { "startValue": -225, "endValue": -175, "name": "range2" },
+                    { "startValue": -175, "endValue": -125, "name": "range3" },
+                    { "startValue": -125, "endValue": -75, "name": "range4" },
+                    { "startValue": -75, "endValue": 0, "name": "range5" }
+                ]
     		}
     	},
     	"htmlEditor": {
