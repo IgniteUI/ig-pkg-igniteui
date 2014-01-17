@@ -85,7 +85,77 @@
     		"width": 300,
 			"dataSource": "sampleSparklineData",
 			"defaultOptions": {"valueMemberPath": "ExtendedPrice" } 
-		},		
+		},	
+		"bulletgraph": {
+    		"id": "bulletgraph",
+    		"toolboxTitle": "Bulletgraph",
+    		"icon": "bullet-graph.png",
+    		"dragDropIcon": "bullet-graph-dragdrop.png",
+    		"category": "dataviz",
+    		"visual": true,
+    		"framework": false,
+    		"height": 100,
+    		"width": 300,
+			"defaultOptions": { 
+				"minimumValue": 0, 
+                "maximumValue": 25,
+                "interval": 5,
+                "value": 17,
+                "targetValue": 21,
+                "ranges": [
+                    {
+                        "name": "'bad'",
+                        "startValue": 0,
+                        "endValue": 15
+                    },
+                    {
+                        "name": "'acceptable'",
+                        "startValue": 15,
+                        "endValue": 20
+                    },
+                    {
+                        "name": "'good'",
+                        "startValue": 20,
+                        "endValue": 25
+                    }]
+			}
+		},
+		"doughnutChart": {
+    		"id": "doughnutChart",
+    		"toolboxTitle": "Doughnut Chart",
+    		"icon": "doughnut-chart.png",
+    		"dragDropIcon": "doughnut-chart-dragdrop.png",
+    		"category": "dataviz",
+    		"visual": true,
+    		"framework": false,
+    		"height": 500,
+    		"width": 500,
+			
+			"defaultOptions": {
+				"series":
+					[{
+						"name": "Pop1990",
+						"labelMemberPath": "CountryName",
+						"valueMemberPath": "Pop1990",
+						"dataSource": "sampleDoughnutChartData",
+						"labelsPosition": "bestFit"
+					}]
+			} 
+		},
+		"funnelChart": {
+    		"id": "funnelChart",
+    		"toolboxTitle": "Funnel Chart",
+    		"icon": "funnel-chart.png",
+    		"dragDropIcon": "funnel-chart-dragdrop.png",			
+    		"category": "dataviz",
+    		"visual": true,
+    		"framework": false,
+    		"height": 450,
+    		"width": 325,
+			"dataSource": "sampleFunnelChartData",
+			"defaultOptions": {"valueMemberPath": "Budget", "innerLabelMemberPath": "Budget", "innerLabelVisibility": "visible", "outerLabelMemberPath": "Department",
+                "outerLabelVisibility": "visible" } 
+		},			
     	"combo": {
     		"id": "combo",
     		"toolboxTitle": "Combo",
