@@ -37,6 +37,7 @@
     		"id": "hierarchicalGrid",
     		"toolboxTitle": "Hierarchical Grid",
     		"icon": "hierarchicalgrid.png",
+			"componentPlugin": "hierarchical-grid-component-plugin",
     		"dragDropIcon": "hierarchicalgrid-dragdrop.png",
     		"category": "lists",
     		"visual": true,
