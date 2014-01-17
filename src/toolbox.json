@@ -45,7 +45,7 @@
     		"width": 300,
     		"height": 300,
     		"dataSource": "sampleHierarchicalData1",
-    		"defaultOptions": {"autoGeneratelayout": true}
+    		"defaultOptions": {"autoGenerateLayouts": true}
     	},
     	"dataChart": {
     		"id": "dataChart",
