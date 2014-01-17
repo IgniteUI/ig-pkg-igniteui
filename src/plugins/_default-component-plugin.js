@@ -72,7 +72,7 @@ define (function (require, exports, module) {
 			var name = this._getWidgetName(descriptor.type);
 			var data = typeof descriptor.placeholder.data === "function" && descriptor.placeholder.data(name);
 			if (data) {
-				return data.options && data.options[descriptor.propName] ? data.options[descriptor.propName] : descriptor.defaultValue;
+				return data.options && typeof(data.options[descriptor.propName]) !== "undefined" ? data.options[descriptor.propName] : descriptor.defaultValue;
 			} 
 			return descriptor.defaultValue;
 		},
@@ -82,13 +82,84 @@ define (function (require, exports, module) {
 				descriptor.placeholder[name](descriptor.options);
 			}
 		},
+		navigate: function (descriptor) {
+
+		},
 		update: function (descriptor) {
+			//console.log("Updating property or event: " + descriptor.propName);
+			var ide = this.settings.ide;
 			var name = this._getWidgetName(descriptor.type);
-			descriptor.placeholder[name]("option", descriptor.propName, descriptor.propValue);
-			descriptor.codeEditor.find("$(\"#" + descriptor.id + "\")." + name + "({");
-			descriptor.codeEditor.find(descriptor.propName + ": " + descriptor.oldPropValue);
-			descriptor.codeEditor.replace(descriptor.propName + ": " + descriptor.propValue);
-			//TODO: add the prop/or any object, if it doesn't exist
+			if (descriptor.args) {
+				// handle events
+				// try to find an existing marker, for the event, if one doesn't exist, create it
+				var component = null;
+				for (var i = 0; i < ide.componentIds.length; i++) {
+					if (ide.componentIds[i].id === descriptor.id) {
+						component = ide.componentIds[i];
+						break;
+					}
+				}
+				if (component) {
+					if (!component.eventMarkers) {
+						component.eventMarkers = {};
+					}
+					//var codeRange = ide.editor.find("<script type=\"text\/javascript\" id=\"code\">\n");
+					// place all handlers below the grid definition
+					var codeRange = component.codeMarker.range;
+					var offset = codeRange.end.row;
+					var handlerMarker, funcMarker, funcBodyStart;
+					var evtName = name + descriptor.propName;
+					evtName = evtName.toLowerCase();
+					if (!component.eventMarkers[descriptor.propName]) {
+						// build code
+						var eventString = "\t\t\t\t$(\"#" + descriptor.id + "\").on(\"" + evtName + "\", function (event, args) {\n\t\t\t\t\t\n\t\t\t\t});\n";
+						// new marker => add an empty event handler and marker;
+						ide.session.insert({row: offset, column: 0}, eventString);
+						handlerMarker = new ide.RangeClass(offset + 1, 4, offset + 4, 4); // "4" tabs
+						funcMarker = new ide.RangeClass(offset + 2, 4, offset + 3, 4);
+						ide.addMarker(handlerMarker);
+						ide.addMarker(funcMarker);
+						component.eventMarkers[descriptor.propName] = {
+							"handlerMarker": handlerMarker,
+							"functionBodyMarker": funcMarker
+						};
+						//console.log("Adding new event handler");
+					} 
+					funcBodyStart = component.eventMarkers[descriptor.propName].functionBodyMarker.start.row;
+					// now navigate to the code view to show the existing or the newly added marker
+					//console.log("Navigating to code...");
+					//1. switch to the code view & scroll to line
+					// hide adorners panel & deselect component
+					// alternatively we can hide just the adorner, and keep the component selected
+					ide._deselectComponent();
+					ide.element.find(".code-button").click();
+					if (!funcBodyStart) {
+						funcBodyStart = codeRange.start.row;
+					}
+					// assuming TAB indentation for all event handlers will be 4
+					//TODO: the second and third param here don't work for some reason => Check with the ACE project 
+					// it always starts from zero col and there is no animation
+					ide.editor.gotoLine(funcBodyStart, 5, true);
+				}
+			} else {
+				// also check type here
+				descriptor.placeholder[name]("option", descriptor.propName, descriptor.propValue);
+				var codeRange = descriptor.codeEditor.find("$(\"#" + descriptor.id + "\")." + name + "({");
+				var optionRange = descriptor.codeEditor.find(descriptor.propName + ": " + descriptor.oldPropValue);
+				var val = descriptor.propValue;
+				if (descriptor.propType === "string") {
+					val = "\"" + val + "\"";
+				}
+				var optCode = descriptor.propName + ": " + val;
+				if (optionRange) {
+					descriptor.codeEditor.replace(optCode);
+				} else {
+					// we are adding a new option
+					//TODO: indents
+					optCode = "\t\t\t\t\t" + optCode + ",\n";
+					ide.session.insert({row: codeRange.start.row + 1, column: 0}, optCode);
+				}
+			}
 		},
 		addExtraMarkers: function (marker, descriptor) {
 
