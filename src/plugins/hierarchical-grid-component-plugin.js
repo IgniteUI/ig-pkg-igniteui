@@ -34,16 +34,18 @@ define (["./grid-component-plugin"], function (DefaultPlugin) {
 		},
 		_content: null,
 		_customSheet: null,
+		_wrapper: null,
 		render: function (container, descriptor) {
 			var content = container.closest('.adorner-content'),
-				customSheet = content.parent().children('.adorner-custom-list');
+				adorner = content.parent(),
+				customSheet = adorner.children('.adorner-custom-list');
 			this._content = content;
 			if (customSheet.length <= 0) {
 				customSheet = this._renderCustomSheet();
-				content.hide();
+				content.css('left', 250);
 				this._attachEvents(content.parent(), descriptor);
-				content.parent().append(customSheet);
-				this._customSheet = content.parent().children('.adorner-custom-list');
+				this._customSheet = customSheet;
+				this._wrapper = $('<div class="adorner-wrapper"></div>').append(customSheet).append(content).appendTo(adorner);
 			}
 		},
 		_renderCustomSheet: function () {
@@ -52,8 +54,8 @@ define (["./grid-component-plugin"], function (DefaultPlugin) {
 			markup += this._renderInteractions();
 			markup += this._renderActions();
 			markup += this._renderProperties();
-			markup += '</div>';
 			markup += this._renderCustomFooter();
+			markup += '</div>';
 			return $(markup);
 		},
 		_renderInteractions: function () {
@@ -98,8 +100,8 @@ define (["./grid-component-plugin"], function (DefaultPlugin) {
 			alert('Add Row Action triggered.');
 		},
 		fullViewTransition: function (descriptor) {
-			this._customSheet.toggle();
-			this._content.toggle()
+			this._wrapper.animate({left: -250}, 250);
+			//this._content.animate({left: 0}, 250);
 		}
 	});
 	return IgniteUIHierarchicalGridPlugin;
