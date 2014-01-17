@@ -1,0 +1,549 @@
+{
+  "overview": null,
+  "name": "ui.igRadialGauge",
+  "category": null,
+  "visual": true,
+  "events": {
+    "alignLabel": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event which is raised when a label of the gauge is aligned along the scale.<br>&nbsp;Function takes first argument null and second argument ui.<br>&nbsp;Use ui.owner to obtain reference to gauge widget.<br>&nbsp;Use ui.actualMinimumValue to obtain the mimimum value of gauge scale.<br>&nbsp;Use ui.actualMaximumValue to obtain the maximum value of gauge scale.<br>&nbsp;Use ui.startAngle to obtain the starting angle of gauge scale.<br>&nbsp;Use ui.endAngle to obtain the ending angle of gauge scale.<br>&nbsp;Use ui.angle to obtain the angle on the gauge scale at which the label will be located.<br>&nbsp;Use ui.value to obtain the value on the gauge scale associated with the label.<br>&nbsp;Use ui.label to obtain the string value of the label.<br>&nbsp;Use ui.width to obtain the width of the label.<br>&nbsp;Use ui.height to obtain the height of the label.<br>&nbsp;Use ui.offsetX to obtain the X offset of the label on the gauge scale.<br>&nbsp;Use ui.offsetY to obtain the Y offset of the label on the gauge scale."
+    },
+    "formatLabel": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event which is raised when a label of the gauge is formatted.<br>&nbsp;Function takes first argument null and second argument ui.<br>&nbsp;Use ui.owner to obtain reference to gauge widget.<br>&nbsp;Use ui.actualMinimumValue to obtain the mimimum value of gauge scale.<br>&nbsp;Use ui.actualMaximumValue to obtain the maximum value of gauge scale.<br>&nbsp;Use ui.startAngle to obtain the starting angle of gauge scale.<br>&nbsp;Use ui.endAngle to obtain the ending angle of gauge scale.<br>&nbsp;Use ui.angle to obtain the angle on the gauge scale at which the label will be located.<br>&nbsp;Use ui.value to obtain the value on the gauge scale associated with the label.<br>&nbsp;Use ui.label to obtain the string value of the label."
+    }
+  },
+  "properties": {
+    "backingBrush": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "Gets or sets the brush to use to fill the backing of the gauge.",
+      "valueOptions": null
+    },
+    "backingCornerRadius": {
+      "type": "number",
+      "defaultValue": 0.0,
+      "description": "Gets or sets the corner rounding radius to use for the fitted scale backings.",
+      "valueOptions": null
+    },
+    "backingInnerExtent": {
+      "type": "number",
+      "defaultValue": 0.0,
+      "description": "Gets or sets the inner extent of the gauge backing.",
+      "valueOptions": null
+    },
+    "backingOuterExtent": {
+      "type": "number",
+      "defaultValue": 0.0,
+      "description": "Gets or sets the outer extent of the gauge backing.",
+      "valueOptions": null
+    },
+    "backingOutline": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "Gets or sets the brush to use for the outline of the backing.",
+      "valueOptions": null
+    },
+    "backingOversweep": {
+      "type": "number",
+      "defaultValue": 0.0,
+      "description": "Gets or sets the oversweep degrees to apply to the backing if it is displaying fitted (in degrees). Must be greater or equal to 0.",
+      "valueOptions": null
+    },
+    "backingShape": {
+      "type": "string",
+      "defaultValue": null,
+      "description": " Gets or sets the type of shape to use for the backing of the gauge.",
+      "valueOptions": [
+        {
+          "name": "circular",
+          "type": "string",
+          "description": " "
+        },
+        {
+          "name": "fitted",
+          "type": "string",
+          "description": ""
+        }
+      ]
+    },
+    "backingStrokeThickness": {
+      "type": "number",
+      "defaultValue": 0.0,
+      "description": "Gets or sets the stroke thickness of the backing outline.",
+      "valueOptions": null
+    },
+    "centerX": {
+      "type": "number",
+      "defaultValue": 0.0,
+      "description": "Gets or sets the x position of the center of the gauge with the value ranging from 0 to 1.",
+      "valueOptions": null
+    },
+    "centerY": {
+      "type": "number",
+      "defaultValue": 0.0,
+      "description": "Gets or sets the y position of the center of the gauge with the value ranging from 0 to 1.",
+      "valueOptions": null
+    },
+    "duplicateLabelOmissionStrategy": {
+      "type": "string",
+      "defaultValue": null,
+      "description": " Gets or sets the strategy to use for ommitting labels if the first and last label have the same value.",
+      "valueOptions": [
+        {
+          "name": "omitLast",
+          "type": "string",
+          "description": " "
+        },
+        {
+          "name": "omitFirst",
+          "type": "string",
+          "description": " "
+        },
+        {
+          "name": "omitNeither",
+          "type": "string",
+          "description": " "
+        },
+        {
+          "name": "omitBoth",
+          "type": "string",
+          "description": ""
+        }
+      ]
+    },
+    "font": {
+      "type": "unknown",
+      "defaultValue": null,
+      "description": "",
+      "valueOptions": null
+    },
+    "fontBrush": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "Gets or sets the brush to use for the label font.",
+      "valueOptions": null
+    },
+    "interval": {
+      "type": "number",
+      "defaultValue": 0.0,
+      "description": "Gets or sets the interval to use for the scale.",
+      "valueOptions": null
+    },
+    "labelExtent": {
+      "type": "number",
+      "defaultValue": 0.0,
+      "description": "Gets or sets the position at which to put the labels as a value from 0 to 1, measured form the center of the gauge.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
+      "valueOptions": null
+    },
+    "labelInterval": {
+      "type": "number",
+      "defaultValue": 0.0,
+      "description": "Gets or sets the interval to use for rendering labels. This defaults to be the same interval as the tickmarks on the scale.",
+      "valueOptions": null
+    },
+    "maximumValue": {
+      "type": "number",
+      "defaultValue": 0.0,
+      "description": "Gets or sets the maximum value of the scale.",
+      "valueOptions": null
+    },
+    "minimumValue": {
+      "type": "number",
+      "defaultValue": 0.0,
+      "description": "Gets or sets the minimum value of the scale.",
+      "valueOptions": null
+    },
+    "minorTickBrush": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "Gets or sets the brush to use for the minor tickmarks.",
+      "valueOptions": null
+    },
+    "minorTickCount": {
+      "type": "number",
+      "defaultValue": 0.0,
+      "description": "Gets or sets the number of minor tickmarks to place between major tickmarks.",
+      "valueOptions": null
+    },
+    "minorTickEndExtent": {
+      "type": "number",
+      "defaultValue": 0.0,
+      "description": "Gets or sets the position at which to stop rendering the minor tickmarks as a value from 0 to 1, measured from the center of the gauge.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
+      "valueOptions": null
+    },
+    "minorTickStartExtent": {
+      "type": "number",
+      "defaultValue": 0.0,
+      "description": "Gets or sets the position at which to start rendering the minor tickmarks as a value from 0 to 1, measured from the center of the gauge.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
+      "valueOptions": null
+    },
+    "minorTickStrokeThickness": {
+      "type": "number",
+      "defaultValue": 0.0,
+      "description": "Gets or sets the stroke thickness to use when rendering minor ticks.",
+      "valueOptions": null
+    },
+    "needleBaseFeatureExtent": {
+      "type": "number",
+      "defaultValue": 0.0,
+      "description": "Gets or sets the extent of the feature which is closest to the base (e.g. a bulb) with a value from -1 to 1. Note: Only some needle shapes respect this property.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
+      "valueOptions": null
+    },
+    "needleBaseFeatureWidthRatio": {
+      "type": "number",
+      "defaultValue": 0.0,
+      "description": "Gets or sets the width of the needle at its feature which is closest to the base (e.g. a bulb) with a value from 0 to 1. Note: Only some needle shapes respect this property.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
+      "valueOptions": null
+    },
+    "needleBrush": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "Gets or sets the brush to use when rendering the fill of the needle.",
+      "valueOptions": null
+    },
+    "needleEndExtent": {
+      "type": "number",
+      "defaultValue": 0.0,
+      "description": "Gets or sets the extent (from -1 to 1) at which to end rendering the needle, measured from the center of the gauge.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
+      "valueOptions": null
+    },
+    "needleEndWidthRatio": {
+      "type": "number",
+      "defaultValue": 0.0,
+      "description": "Gets or sets the width of the needle at its point using a value from (0 to 1). Note: Only some needle shapes respect this property.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
+      "valueOptions": null
+    },
+    "needleOutline": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "Gets or sets the brush to use when rendering the outline of the needle.",
+      "valueOptions": null
+    },
+    "needlePivotBrush": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "Gets or sets the brush to use for filling the needle cap. Note: this only applies to certain cap shapes.",
+      "valueOptions": null
+    },
+    "needlePivotInnerWidthRatio": {
+      "type": "number",
+      "defaultValue": 0.0,
+      "description": "Gets or sets the width of the inner cutout section of the needle cap with a value from 0 to 1. Note: Will only take effect if you have a cap set on the needle that has a cutout section.",
+      "valueOptions": null
+    },
+    "needlePivotOutline": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "Gets or sets the brush to use for the outlines of the needle cap.",
+      "valueOptions": null
+    },
+    "needlePivotShape": {
+      "type": "string",
+      "defaultValue": null,
+      "description": " Gets or sets the shape to use for the needle cap.",
+      "valueOptions": [
+        {
+          "name": "none",
+          "type": "string",
+          "description": " "
+        },
+        {
+          "name": "circle",
+          "type": "string",
+          "description": " "
+        },
+        {
+          "name": "circleWithHole",
+          "type": "string",
+          "description": " "
+        },
+        {
+          "name": "circleOverlay",
+          "type": "string",
+          "description": " "
+        },
+        {
+          "name": "circleOverlayWithHole",
+          "type": "string",
+          "description": " "
+        },
+        {
+          "name": "circleUnderlay",
+          "type": "string",
+          "description": " "
+        },
+        {
+          "name": "circleUnderlayWithHole",
+          "type": "string",
+          "description": ""
+        }
+      ]
+    },
+    "needlePivotStrokeThickness": {
+      "type": "number",
+      "defaultValue": 0.0,
+      "description": "GEts or sets the stroke thickness to use for the outline of the needle cap.",
+      "valueOptions": null
+    },
+    "needlePivotWidthRatio": {
+      "type": "number",
+      "defaultValue": 0.0,
+      "description": "Gets or sets hte width of the cap of the needle with a value from 0 to 1. Note: Will only take effect if you have a cap set on the needle.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
+      "valueOptions": null
+    },
+    "needlePointFeatureExtent": {
+      "type": "number",
+      "defaultValue": 0.0,
+      "description": "Gets or sets the extent of the feature which is closest to the point (e.g. the tapering point of a needle) with a value from -1 to 1. Note: Only some needle shapes respect this property.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
+      "valueOptions": null
+    },
+    "needlePointFeatureWidthRatio": {
+      "type": "number",
+      "defaultValue": 0.0,
+      "description": "Gets or sets the width of the needle at its feature which is closest to the point (e.g. the tapering point of a needle) with a value from 0 to 1. Note: Only some needle shapes respect this property.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
+      "valueOptions": null
+    },
+    "needleShape": {
+      "type": "string",
+      "defaultValue": null,
+      "description": " Gets or sets the shape to use when rendering the needle from a number of options.",
+      "valueOptions": [
+        {
+          "name": "none",
+          "type": "string",
+          "description": " "
+        },
+        {
+          "name": "rectangle",
+          "type": "string",
+          "description": " "
+        },
+        {
+          "name": "triangle",
+          "type": "string",
+          "description": " "
+        },
+        {
+          "name": "needle",
+          "type": "string",
+          "description": " "
+        },
+        {
+          "name": "trapezoid",
+          "type": "string",
+          "description": " "
+        },
+        {
+          "name": "rectangleWithBulb",
+          "type": "string",
+          "description": " "
+        },
+        {
+          "name": "triangleWithBulb",
+          "type": "string",
+          "description": " "
+        },
+        {
+          "name": "needleWithBulb",
+          "type": "string",
+          "description": " "
+        },
+        {
+          "name": "trapezoidWithBulb",
+          "type": "string",
+          "description": ""
+        }
+      ]
+    },
+    "needleStartExtent": {
+      "type": "number",
+      "defaultValue": 0.0,
+      "description": "Gets or sets the extent (from -1 to 1) at which to start rendering the needle, measured from the center of the gauge. <br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
+      "valueOptions": null
+    },
+    "needleStartWidthRatio": {
+      "type": "number",
+      "defaultValue": 0.0,
+      "description": "Gets or sets the width of the needle at its point using a value from (0 to 1). Note: Only some needle shapes respect this property.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
+      "valueOptions": null
+    },
+    "needleStrokeThickness": {
+      "type": "number",
+      "defaultValue": 0.0,
+      "description": "Gets or sets the stroke thickness of the needle outline.",
+      "valueOptions": null
+    },
+    "radiusMultiplier": {
+      "type": "number",
+      "defaultValue": 0.0,
+      "description": "Gets or sets the multiplying factor to apply to the normal radius of the gauge. <br>&nbsp;The radius of the gauge is defined by the minimum of the width and height of the control divided by 2.0. <br>&nbsp;This introduces a multiplicative factor to that value.",
+      "valueOptions": null
+    },
+    "rangeBrushes": {
+      "type": "object",
+      "defaultValue": null,
+      "description": "Gets or sets a collection of brushes to be used as the palette for gauge ranges.<br>&nbsp;The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
+      "valueOptions": null
+    },
+    "rangeOutlines": {
+      "type": "object",
+      "defaultValue": null,
+      "description": "Gets or sets a collection of brushes to be used as the palette for gauge outlines.<br>&nbsp;The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
+      "valueOptions": null
+    },
+    "ranges": {
+      "type": "array",
+      "defaultValue": null,
+      "description": "Gets or sets the scale ranges to render on the linear gauge.",
+      "valueOptions": null
+    },
+    "scaleBrush": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "Gets or sets the brush to use to fill the brackground of the scale.",
+      "valueOptions": null
+    },
+    "scaleEndAngle": {
+      "type": "number",
+      "defaultValue": 0.0,
+      "description": "Gets or sets the end angle for the scale in degrees.",
+      "valueOptions": null
+    },
+    "scaleEndExtent": {
+      "type": "number",
+      "defaultValue": 0.0,
+      "description": "Gets or sets the position at which to stop rendering the scale as a value from 0 to 1 measured from the center of the gauge.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
+      "valueOptions": null
+    },
+    "scaleOversweep": {
+      "type": "number",
+      "defaultValue": 0.0,
+      "description": "Gets or sets the extra degrees of sweep to apply to the scale background. Must be greater or equal to 0.",
+      "valueOptions": null
+    },
+    "scaleOversweepShape": {
+      "type": "string",
+      "defaultValue": null,
+      "description": " Gets or sets the over or shape to use for the excess fill area for the scale.",
+      "valueOptions": [
+        {
+          "name": "auto",
+          "type": "string",
+          "description": " "
+        },
+        {
+          "name": "circular",
+          "type": "string",
+          "description": " "
+        },
+        {
+          "name": "fitted",
+          "type": "string",
+          "description": ""
+        }
+      ]
+    },
+    "scaleStartAngle": {
+      "type": "number",
+      "defaultValue": 0.0,
+      "description": "Gets or sets the start angle for the scale in degrees.",
+      "valueOptions": null
+    },
+    "scaleStartExtent": {
+      "type": "number",
+      "defaultValue": 0.0,
+      "description": "Gets or sets the position at which to start rendering the scale, measured from the center of the gauge as a value from 0 to 1.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
+      "valueOptions": null
+    },
+    "scaleSweepDirection": {
+      "type": "string",
+      "defaultValue": null,
+      "description": " Gets or sets the direction in which the scale sweeps around the center from the start angle to end angle.",
+      "valueOptions": [
+        {
+          "name": "counterclockwise",
+          "type": "string",
+          "description": " "
+        },
+        {
+          "name": "clockwise",
+          "type": "string",
+          "description": ""
+        }
+      ]
+    },
+    "tickBrush": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "Gets or sets the brush to use for the major tickmarks.",
+      "valueOptions": null
+    },
+    "tickEndExtent": {
+      "type": "number",
+      "defaultValue": 0.0,
+      "description": "Gets or sets the position at which to stop rendering the major tickmarks as a value from 0 to 1, measured from the center of the gauge.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
+      "valueOptions": null
+    },
+    "tickStartExtent": {
+      "type": "number",
+      "defaultValue": 0.0,
+      "description": "Gets or sets the position at which to start rendering the major tickmarks as a value from 0 to 1, measured from the center of the gauge.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
+      "valueOptions": null
+    },
+    "tickStrokeThickness": {
+      "type": "number",
+      "defaultValue": 0.0,
+      "description": "Gets or sets the stroke thickness to use when rendering ticks.",
+      "valueOptions": null
+    },
+    "transitionDuration": {
+      "type": "number",
+      "defaultValue": 0.0,
+      "description": "Gets or sets the number of milliseconds over which changes to the gauge should be animated.",
+      "valueOptions": null
+    },
+    "transitionEasingFunction": {
+      "type": "object",
+      "defaultValue": null,
+      "description": "Gets or sets the easing function used to morph the current series.",
+      "valueOptions": null
+    },
+    "transitionProgress": {
+      "type": "number",
+      "defaultValue": 0.0,
+      "description": "",
+      "valueOptions": null
+    },
+    "value": {
+      "type": "number",
+      "defaultValue": 0.0,
+      "description": "Gets or sets the value at which to point the needle of the gauge.",
+      "valueOptions": null
+    }
+  }
+}

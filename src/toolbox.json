@@ -211,8 +211,8 @@
     		"height":40,
     		"framework": false
     	},
-    	"gauge": {
-    		"id": "gauge",
+    	"radialGauge": {
+    		"id": "radialGauge",
     		"toolboxTitle": "Gauge",
     		"icon": "gauge.png",
     		"dragDropIcon": "gauge-dragdrop.png",
@@ -220,39 +220,8 @@
     		"visual": true,
     		"framework": false,
     		"width": 300,
-    		"height": 300,
     		"defaultOptions": {
-    			"interval": 2,
-                "labelInterval": 1,
-                "value": 0,
-                "centerX": 0.5,
-                "centerY": 0.5,
-                "minimumValue": 0,
-                "maximumValue": 10,
-                "backingOutline": "black",
-                "backingStrokeThickness": 1,
-                "scaleBrush": "lightblue",
-                "scaleStartAngle": 120,
-                "scaleEndAngle": 50,
-                "scaleStartExtent": 0.5,
-                "scaleEndExtent": 0.81,
-                "scaleOversweep": 0,
-                "tickStartExtent": 0.62,
-                "tickEndExtent": 0.69,
-                "tickBrush": "black",
-                "minorTickBrush": "grey",
-                "minorTickStartExtent": 0.65,
-                "minorTickEndExtent": 0.69,
-                "labelExtent": 0.75,
-                "fontBrush": "black",
-                "needleShape": "triangle",
-                "needleBrush": "red",
-                "needleOutline": "maroon",
-                "needleStartExtent": -0.2,
-                "needleEndExtent": 0.7,
-                "needlePivotShape": "none",
-                "transitionDuration": 1000,
-                "scaleSweepDirection": "clockwise"
+                "value": 20
     		}
     	},
     	"htmlEditor": {
