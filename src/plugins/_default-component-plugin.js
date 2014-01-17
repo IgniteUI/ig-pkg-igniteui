@@ -72,7 +72,7 @@ define (function (require, exports, module) {
 			var name = this._getWidgetName(descriptor.type);
 			var data = typeof descriptor.placeholder.data === "function" && descriptor.placeholder.data(name);
 			if (data) {
-				return data.options && data.options[descriptor.propName] ? data.options[descriptor.propName] : descriptor.defaultValue;
+				return data.options && typeof(data.options[descriptor.propName]) !== "undefined" ? data.options[descriptor.propName] : descriptor.defaultValue;
 			} 
 			return descriptor.defaultValue;
 		},
@@ -142,11 +142,23 @@ define (function (require, exports, module) {
 					ide.editor.gotoLine(funcBodyStart, 5, true);
 				}
 			} else {
+				// also check type here
 				descriptor.placeholder[name]("option", descriptor.propName, descriptor.propValue);
-				descriptor.codeEditor.find("$(\"#" + descriptor.id + "\")." + name + "({");
-				descriptor.codeEditor.find(descriptor.propName + ": " + descriptor.oldPropValue);
-				descriptor.codeEditor.replace(descriptor.propName + ": " + descriptor.propValue);
-				//TODO: add the prop/or any object, if it doesn't exist
+				var codeRange = descriptor.codeEditor.find("$(\"#" + descriptor.id + "\")." + name + "({");
+				var optionRange = descriptor.codeEditor.find(descriptor.propName + ": " + descriptor.oldPropValue);
+				var val = descriptor.propValue;
+				if (descriptor.propType === "string") {
+					val = "\"" + val + "\"";
+				}
+				var optCode = descriptor.propName + ": " + val;
+				if (optionRange) {
+					descriptor.codeEditor.replace(optCode);
+				} else {
+					// we are adding a new option
+					//TODO: indents
+					optCode = "\t\t\t\t\t" + optCode + ",\n";
+					ide.session.insert({row: codeRange.start.row + 1, column: 0}, optCode);
+				}
 			}
 		},
 		addExtraMarkers: function (marker, descriptor) {

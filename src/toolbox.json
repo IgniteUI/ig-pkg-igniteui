@@ -44,7 +44,7 @@
     		"width": 300,
     		"height": 300,
     		"dataSource": "sampleHierarchicalData1",
-    		"defaultOptions": {"autoGenerateLayouts": true, "autoGenerateColumns": true}
+    		"defaultOptions": {"autoGeneratelayout": true}
     	},
     	"dataChart": {
     		"id": "dataChart",
@@ -58,6 +58,20 @@
     		"width": 300,
     		"dataSource": "sampleChartData1"
     	},
+		"pieChart": {
+    		"id": "pieChart",
+    		"toolboxTitle": "Pie Chart",
+    		"icon": "pie-chart.png",
+    		"dragDropIcon": "pie-chart-dragdrop.png",
+			"componentPlugin": "piechart-component-plugin", 
+    		"category": "dataviz",
+    		"visual": true,
+    		"framework": false,
+    		"height": 300,
+    		"width": 300,
+			"dataSource": "samplePieChartData",
+			"defaultOptions": {"valueMemberPath": "Pop2008", "labelMemberPath": "CountryName", "labelsPosition": "bestFit" } 
+		},		
     	"combo": {
     		"id": "combo",
     		"toolboxTitle": "Combo",
