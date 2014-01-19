@@ -22,12 +22,17 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			code = "\t\t\t\t$(\"#" + descriptor.id + "\").igGrid({\n" +
 				"\t\t\t\t\theight: " + opts.height + ",\n" + 
 				"\t\t\t\t\twidth: " + opts.width + xtraMarkup;
-				if (descriptor.data && window[descriptor.data]) {
-					code += ",\n\t\t\t\t\tdataSource: " + descriptor.data;
-				}
+			if (descriptor.data && window[descriptor.data]) {
+				code += ",\n\t\t\t\t\tdataSource: " + descriptor.data;
+			}
+			var props = this.settings.packageInfo.components[descriptor.type].properties;
 			for (var key in opts) {
 				if (opts.hasOwnProperty(key) && key !== "dataSource" && key !== "height" && key !== "width") {
-					code += ",\n\t\t\t\t\t" + key + ": " + opts[key];
+					if (props[key].type === "string") {
+						code += ",\n\t\t\t\t\t" + key + ": \"" + opts[key] + "\"";
+					} else {
+						code += ",\n\t\t\t\t\t" + key + ": " + opts[key];
+					}
 					lineCount++;
 				}
 			}

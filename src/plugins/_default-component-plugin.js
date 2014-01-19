@@ -41,12 +41,17 @@ define (function (require, exports, module) {
 			code = "\t\t\t\t$(\"#" + descriptor.id + "\")." + name + "({\n" +
 				"\t\t\t\t\theight: " + opts.height + ",\n" + 
 				"\t\t\t\t\twidth: " + opts.width;
-				if (descriptor.data && window[descriptor.data]) {
-					code += ",\n\t\t\t\t\tdataSource: " + descriptor.data;
-				}
+			if (descriptor.data && window[descriptor.data]) {
+				code += ",\n\t\t\t\t\tdataSource: " + descriptor.data;
+			}
+			var props = this.settings.packageInfo.components[descriptor.type].properties;
 			for (var key in opts) {
 				if (opts.hasOwnProperty(key) && key !== "dataSource" && key !== "height" && key !== "width") {
-					code += ",\n\t\t\t\t\t" + key + ": " + opts[key];
+					if (props[key].type === "string") {
+						code += ",\n\t\t\t\t\t" + key + ": \"" + opts[key] + "\"";
+					} else {
+						code += ",\n\t\t\t\t\t" + key + ": " + opts[key];
+					}
 					lineCount++;
 				}
 			}
@@ -70,7 +75,7 @@ define (function (require, exports, module) {
 		},
 		getPropValue: function (descriptor) {
 			var name = this._getWidgetName(descriptor.type);
-			var data = typeof descriptor.placeholder.data === "function" && descriptor.placeholder.data(name);
+			var data = typeof window.frames[0].$(descriptor.placeholder).data === "function" && window.frames[0].$(descriptor.placeholder).data(name);
 			if (data) {
 				return data.options && typeof(data.options[descriptor.propName]) !== "undefined" ? data.options[descriptor.propName] : descriptor.defaultValue;
 			} 
@@ -78,8 +83,8 @@ define (function (require, exports, module) {
 		},
 		initComponent: function (descriptor) {
 			var name = this._getWidgetName(descriptor.type);
-			if (descriptor.placeholder[name]) { 
-				descriptor.placeholder[name](descriptor.options);
+			if (window.frames[0].$(descriptor.placeholder)[name]) { 
+				window.frames[0].$(descriptor.placeholder)[name](descriptor.options);
 			}
 		},
 		navigate: function (descriptor) {
@@ -143,7 +148,8 @@ define (function (require, exports, module) {
 				}
 			} else {
 				// also check type here
-				descriptor.placeholder[name]("option", descriptor.propName, descriptor.propValue);
+				// use the jQuery loaded by the package, not the one loaded by the IDE !
+				window.frames[0].$(descriptor.placeholder)[name]("option", descriptor.propName, descriptor.propValue);
 				var codeRange = descriptor.codeEditor.find("$(\"#" + descriptor.id + "\")." + name + "({");
 				var optionRange = descriptor.codeEditor.find(descriptor.propName + ": " + descriptor.oldPropValue);
 				var val = descriptor.propValue;
