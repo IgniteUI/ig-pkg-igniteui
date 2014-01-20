@@ -86,6 +86,23 @@
 			"dataSource": "sampleSparklineData",
 			"defaultOptions": {"valueMemberPath": "ExtendedPrice" } 
 		},	
+		"videoPlayer": {
+    		"id": "videoPlayer",
+    		"toolboxTitle": "Video Player",
+    		"icon": "videoplayer.png",
+    		"dragDropIcon": "videoplayer-dragdrop.png",
+    		"category": "layout",
+    		"visual": true,
+    		"framework": false,
+    		"height": 300,
+    		"width": 300,
+			"defaultOptions": { "sources": [
+                    "http://dl.infragistics.com/pg/2011-1/web/shared/videoplayer/videos/Infragistics_Presentation_lowRes_1.h264.mp4",
+                    "http://dl.infragistics.com/pg/2011-1/web/shared/videoplayer/videos/Infragistics_Presentation_lowRes_1.webmvp8.webm",
+                    "http://dl.infragistics.com/pg/2011-1/web/shared/videoplayer/videos/Infragistics_Presentation_lowRes_1.theora.ogv"
+                ] 
+			}
+		},	
 		"bulletgraph": {
     		"id": "bulletgraph",
     		"toolboxTitle": "Bulletgraph",
@@ -101,23 +118,7 @@
                 "maximumValue": 25,
                 "interval": 5,
                 "value": 17,
-                "targetValue": 21,
-                "ranges": [
-                    {
-                        "name": "bad",
-                        "startValue": 0,
-                        "endValue": 15
-                    },
-                    {
-                        "name": "acceptable",
-                        "startValue": 15,
-                        "endValue": 20
-                    },
-                    {
-                        "name": "good",
-                        "startValue": 20,
-                        "endValue": 25
-                    }]
+                "targetValue": 21
 			}
 		},
 		"doughnutChart": {
