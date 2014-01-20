@@ -354,17 +354,17 @@
     },
     "autoFormat": {
       "type": "string",
-      "defaultValue": null,
+      "defaultValue": "date",
       "description": " Sets gets ability to automatically format text in cells for numeric and date columns. The format patterns and rules for numbers and dates are defined in $.ig.regional.defaults object.",
       "valueOptions": [
         {
-          "name": null,
-          "type": "date",
+          "name": "date",
+          "type": "string",
           "description": " formats only Date columns"
         },
         {
-          "name": null,
-          "type": "number",
+          "name": "number",
+          "type": "string",
           "description": " formats only number columns"
         },
         {
@@ -394,35 +394,13 @@
       "type": "string",
       "defaultValue": null,
       "description": " used for virtualization, this is the average value in pixels for a column width ",
-      "valueOptions": [
-        {
-          "name": null,
-          "type": "string",
-          "description": " The avarage column width can be set in pixels (25px)."
-        },
-        {
-          "name": null,
-          "type": "number",
-          "description": " The avarage column width can be set as a number (25)."
-        }
-      ]
+      "valueOptions": null
     },
     "avgRowHeight": {
       "type": "string",
       "defaultValue": null,
       "description": " used for virtualization, this is the average value in pixels (default) that will be used to calculate how many rows and which ones to render as the end user scrolls. Also all rows' height will be automatically equal to this value ",
-      "valueOptions": [
-        {
-          "name": null,
-          "type": "string",
-          "description": " The avarage row height can be set in pixels (25px)."
-        },
-        {
-          "name": null,
-          "type": "number",
-          "description": " The avarage row height can be set as a number (25)."
-        }
-      ]
+      "valueOptions": null
     },
     "caption": {
       "type": "string",
@@ -464,18 +442,7 @@
       "type": "string",
       "defaultValue": null,
       "description": " Default column width that will be set for all columns.",
-      "valueOptions": [
-        {
-          "name": null,
-          "type": "string",
-          "description": " The default column width can be set in pixels (px)."
-        },
-        {
-          "name": null,
-          "type": "number",
-          "description": " The default column width can be set as a number."
-        }
-      ]
+      "valueOptions": null
     },
     "enableHoverStyles": {
       "type": "bool",
@@ -512,23 +479,7 @@
       "type": "string",
       "defaultValue": null,
       "description": " This is the total height of the grid, including all UI elements - scroll container with data rows, header, footer, filter row -  (if any), etc.  ",
-      "valueOptions": [
-        {
-          "name": null,
-          "type": "string",
-          "description": " The widget height can be set in pixels (px) and percentage (%)."
-        },
-        {
-          "name": null,
-          "type": "number",
-          "description": " The widget height can be set as a number"
-        },
-        {
-          "name": "null",
-          "type": "object",
-          "description": " will stretch vertically to fit data, if no other heights are defined"
-        }
-      ]
+      "valueOptions": null
     },
     "jQueryTemplating": {
       "type": "bool",
@@ -570,13 +521,18 @@
       "type": "string",
       "defaultValue": "GET",
       "description": "specifies the HTTP verb to be used to issue the request",
-      "valueOptions": null
-    },
-    "requiresDataBinding": {
-      "type": "bool",
-      "defaultValue": true,
-      "description": "this is an internal option and should not be used.",
-      "valueOptions": null
+      "valueOptions": [
+        {
+          "name": "GET",
+          "type": "string",
+          "description": "initiates GET requests"
+        },
+        {
+          "name": "POST",
+          "type": "string",
+          "description": "initiates POST requests"
+        }
+      ]
     },
     "responseContentType": {
       "type": "string",
@@ -597,7 +553,7 @@
       "valueOptions": null
     },
     "restSettings": {
-      "type": "unknown",
+      "type": "object",
       "defaultValue": null,
       "description": "Settings related to REST compliant update routine",
       "valueOptions": null
@@ -634,13 +590,13 @@
     },
     "tabIndex": {
       "type": "number",
-      "defaultValue": 0.0,
+      "defaultValue": 0,
       "description": "initial tabIndex attribute that will be set on the container element",
       "valueOptions": null
     },
     "templatingEngine": {
       "type": "string",
-      "defaultValue": null,
+      "defaultValue": "infragistics",
       "description": " the templating engine that will be used to render the grid ",
       "valueOptions": [
         {
@@ -669,7 +625,7 @@
     },
     "virtualizationMode": {
       "type": "string",
-      "defaultValue": null,
+      "defaultValue": "fixed",
       "description": " Determines virtualization mode",
       "valueOptions": [
         {
@@ -694,23 +650,7 @@
       "type": "string",
       "defaultValue": null,
       "description": "",
-      "valueOptions": [
-        {
-          "name": null,
-          "type": "string",
-          "description": " The widget width can be set in pixels (px) and percentage (%)."
-        },
-        {
-          "name": null,
-          "type": "number",
-          "description": " The widget width can be set as a number"
-        },
-        {
-          "name": "null",
-          "type": "object",
-          "description": " will stretch to fit data, if no other widths are defined"
-        }
-      ]
+      "valueOptions": null
     }
   }
 }

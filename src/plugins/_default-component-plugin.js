@@ -167,11 +167,13 @@ define (function (require, exports, module) {
 				// use the jQuery loaded by the package, not the one loaded by the IDE !
 				window.frames[0].$(descriptor.placeholder)[name]("option", descriptor.propName, descriptor.propValue);
 				var codeRange = descriptor.codeEditor.find("$(\"#" + descriptor.id + "\")." + name + "({");
-				var optionRange = descriptor.codeEditor.find(descriptor.propName + ": " + descriptor.oldPropValue);
 				var val = descriptor.propValue;
+				var oldVal = descriptor.oldPropValue;
 				if (descriptor.propType === "string") {
 					val = "\"" + val + "\"";
+					oldVal = "\"" + oldVal + "\"";
 				}
+				var optionRange = descriptor.codeEditor.find(descriptor.propName + ": " + oldVal);
 				var optCode = descriptor.propName + ": " + val;
 				if (optionRange) {
 					descriptor.codeEditor.replace(optCode);
