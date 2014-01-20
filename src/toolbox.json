@@ -247,6 +247,20 @@
                 ]
     		}
     	},
+		"QRCodeBarcode": {
+    		"id": "QRCodeBarcode",
+    		"toolboxTitle": "Barcode",
+    		"icon": "barcode.png",
+    		"dragDropIcon": "barcode-dragdrop.png",
+    		"category": "dataviz",
+    		"visual": true,
+    		"framework": false,
+    		"width": 150,
+			"height": 150,
+    		"defaultOptions": {
+                 "data": "http://www.infragistics.com/products/jquery/samples"
+    		}
+    	},
     	"htmlEditor": {
     		"id": "htmlEditor",
     		"toolboxTitle": "HTML Editor",

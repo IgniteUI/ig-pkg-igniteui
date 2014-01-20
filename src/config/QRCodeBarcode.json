@@ -1,0 +1,468 @@
+{
+  "overview": null,
+  "name": "ui.igQRCodeBarcode",
+  "category": null,
+  "visual": true,
+  "events": {
+    "dataChanged": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Occurs when the data has changed.<br>&nbsp;Function takes first argument evt and second argument ui.<br>&nbsp;Use ui.owner to obtain reference to the barcode widget.<br>&nbsp;Use ui.newData to obtain the new data."
+    },
+    "errorMessageDisplaying": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Occurs when an error has happened.<br>&nbsp;Function takes first argument evt and second argument ui.<br>&nbsp;Use ui.owner to obtain reference to the barcode widget.<br>&nbsp;Use ui.errorMessage to get or set the error message that is to be shown."
+    }
+  },
+  "properties": {
+    "applicationIndicator": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "Gets or sets the Application Indicator assigned to identify the specification concerned by AIM International.<br>&nbsp;The value is respected only when the Fnc1Mode is set to Industry. Its value may take the form of any single Latin alphabetic character from the set {a - z, A - Z} or a two-digit number.",
+      "valueOptions": null
+    },
+    "backingBrush": {
+      "type": "string",
+      "defaultValue": "white",
+      "description": "Gets or sets the brush to use to fill the backing of the barcode.",
+      "valueOptions": null
+    },
+    "backingOutline": {
+      "type": "string",
+      "defaultValue": "transparent",
+      "description": "Gets or sets the brush to use for the outline of the backing.",
+      "valueOptions": null
+    },
+    "backingStrokeThickness": {
+      "type": "number",
+      "defaultValue": 0.0,
+      "description": "Gets or sets the stroke thickness of the backing outline.",
+      "valueOptions": null
+    },
+    "barBrush": {
+      "type": "string",
+      "defaultValue": "black",
+      "description": "Gets or sets the brush to use to fill the background of the bars.",
+      "valueOptions": null
+    },
+    "barsFillMode": {
+      "type": "string",
+      "defaultValue": null,
+      "description": " Gets or sets a value which specifies how the grid fills within the barcode control dimensions.",
+      "valueOptions": [
+        {
+          "name": "fillSpace",
+          "type": "string",
+          "description": " FillSpace mode ensures that the barcode grid fills the control dimensions."
+        },
+        {
+          "name": "ensureEqualSize",
+          "type": "string",
+          "description": " EnsureEqualSize mode ensures that every grid column/row has the same pixels number width/height. The sum of all columns/rows pixels may be less than the width/height of the control."
+        }
+      ]
+    },
+    "data": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "Gets or sets the data value.",
+      "valueOptions": null
+    },
+    "eciHeaderDisplayMode": {
+      "type": "string",
+      "defaultValue": null,
+      "description": " Gets or sets a value indicating whether to show the ECI header.",
+      "valueOptions": [
+        {
+          "name": "hide",
+          "type": "string",
+          "description": " Hide the header."
+        },
+        {
+          "name": "show",
+          "type": "string",
+          "description": " Show the header."
+        }
+      ]
+    },
+    "eciNumber": {
+      "type": "number",
+      "defaultValue": 26.0,
+      "description": "Each Extended Channel Interpretation (ECI) is designated by a six-digit assignment number: 000000 - 999999. <br>&nbsp;The default value depends on the loaded encodings. The default is ECI 000003 (representing ISO/IEC 8859-1) if the ISO/IEC 8859-1 character set is loaded. Otherwise the default value is 000026 (representing UTF-8).",
+      "valueOptions": null
+    },
+    "encodingMode": {
+      "type": "string",
+      "defaultValue": null,
+      "description": " Gets or sets the encoding mode for compaction of the QR Code symbol data. The default value is undefined if the Shift_JIS encoding is loaded. Otherwise the default value is byte.",
+      "valueOptions": [
+        {
+          "name": "undefined",
+          "type": "string",
+          "description": " When Undefined encoding mode is set, the QR code barcode internally switches between modes as necessary in order to achieve the most efficient conversion of data into a binary string."
+        },
+        {
+          "name": "numeric",
+          "type": "string",
+          "description": " Numeric mode encodes data from decimal digit set (0-9). Normally 3 data characters are represented by 10 bits."
+        },
+        {
+          "name": "alphanumeric",
+          "type": "string",
+          "description": " Alphanumerc mode encodes data from a set of 45 characters (digits 0-9, upper case letters A-Z, nine other characters: space, $ % * + _ . / : ). Normally two input characters are represented by 11 bits."
+        },
+        {
+          "name": "byte",
+          "type": "string",
+          "description": " In Byte mode the data is encoded at 8 bits per character. The character set of the Byte encoding mode is byte data (by default it is ISO/IEC 8859-1 character set)."
+        },
+        {
+          "name": "kanji",
+          "type": "string",
+          "description": " The Kanji mode efficiently encodes Kanji characters in accordance with the Shift JIS system based on JIS X 0208. Each two-byte character value is compactedd to a 13-bit binary codeword."
+        }
+      ]
+    },
+    "errorCorrectionLevel": {
+      "type": "string",
+      "defaultValue": null,
+      "description": " Gets or sets the error correction level of the QR Code symbol.",
+      "valueOptions": [
+        {
+          "name": "low",
+          "type": "string",
+          "description": " Low error correction level allows recovery of 7% of the symbol codewords."
+        },
+        {
+          "name": "medium",
+          "type": "string",
+          "description": " Medium error correction level allows recovery of 15% of the symbol codewords."
+        },
+        {
+          "name": "quartil",
+          "type": "string",
+          "description": " Quartil error correction level allows recovery of 25% of the symbol codewords."
+        },
+        {
+          "name": "high",
+          "type": "string",
+          "description": " High error correction level allows recovery of 30% of the symbol codewords."
+        }
+      ]
+    },
+    "errorMessageText": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "Gets or sets the message text displayed when some error occurs.",
+      "valueOptions": null
+    },
+    "fnc1Mode": {
+      "type": "string",
+      "defaultValue": null,
+      "description": " Gets or sets the FNC1 mode indicator which identifies symbols encoding messages formatted according to specific predefined industry or application specificatoins.",
+      "valueOptions": [
+        {
+          "name": "none",
+          "type": "string",
+          "description": " Do not use any Fnc1 symbols, i.e. the data is not identified according to specific predefined industry or application specifications."
+        },
+        {
+          "name": "gs1",
+          "type": "string",
+          "description": " Uses Fnc1 symbol in the first position of the character in Code 128 symbols and designates data formatted in accordance with the GS1 General Specification."
+        },
+        {
+          "name": "industry",
+          "type": "string",
+          "description": " Uses Fnc1 symbol in the second position of the character in Code 128 symbols and designates data formatted in accordance with a specific indystry application previously agreed with AIM Inc."
+        }
+      ]
+    },
+    "font": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "Gets or sets the font of the text displayed by the control.",
+      "valueOptions": null
+    },
+    "fontBrush": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "Gets or sets the brush to use for the label font.",
+      "valueOptions": null
+    },
+    "sizeVersion": {
+      "type": "string",
+      "defaultValue": null,
+      "description": " Gets or sets the size version of the QR Code symbol.",
+      "valueOptions": [
+        {
+          "name": "undefined",
+          "type": "string",
+          "description": " If set, the QR code barcode sets internally the smallest version that will accommodate the data."
+        },
+        {
+          "name": "version1",
+          "type": "string",
+          "description": " Version1 defines size of 21x21 modules for the symbol."
+        },
+        {
+          "name": "version2",
+          "type": "string",
+          "description": " Version2 defines size of 25x25 modules for the symbol."
+        },
+        {
+          "name": "version3",
+          "type": "string",
+          "description": " Version3 defines size of 29x29 modules for the symbol."
+        },
+        {
+          "name": "version4",
+          "type": "string",
+          "description": " Version4 defines size of 33x33 modules for the symbol."
+        },
+        {
+          "name": "version5",
+          "type": "string",
+          "description": " Version5 defines size of 37x37 modules for the symbol."
+        },
+        {
+          "name": "version6",
+          "type": "string",
+          "description": " Version6 defines size of 41x41 modules for the symbol."
+        },
+        {
+          "name": "version7",
+          "type": "string",
+          "description": " Version7 defines size of 45x45 modules for the symbol."
+        },
+        {
+          "name": "version8",
+          "type": "string",
+          "description": " Version8 defines size of 49x49 modules for the symbol."
+        },
+        {
+          "name": "version9",
+          "type": "string",
+          "description": " Version9 defines size of 53x53 modules for the symbol."
+        },
+        {
+          "name": "version10",
+          "type": "string",
+          "description": " Version10 defines size of 57x57 modules for the symbol."
+        },
+        {
+          "name": "version11",
+          "type": "string",
+          "description": " Version11 defines size of 61x61 modules for the symbol."
+        },
+        {
+          "name": "version12",
+          "type": "string",
+          "description": " Version12 defines size of 65x65 modules for the symbol."
+        },
+        {
+          "name": "version13",
+          "type": "string",
+          "description": " Version13 defines size of 69x69 modules for the symbol."
+        },
+        {
+          "name": "version14",
+          "type": "string",
+          "description": " Version14 defines size of 73x73 modules for the symbol."
+        },
+        {
+          "name": "version15",
+          "type": "string",
+          "description": " Version15 defines size of 77x77 modules for the symbol."
+        },
+        {
+          "name": "version16",
+          "type": "string",
+          "description": " Version16 defines size of 81x81 modules for the symbol."
+        },
+        {
+          "name": "version17",
+          "type": "string",
+          "description": " Version17 defines size of 85x85 modules for the symbol."
+        },
+        {
+          "name": "version18",
+          "type": "string",
+          "description": " Version18 defines size of 89x89 modules for the symbol."
+        },
+        {
+          "name": "version19",
+          "type": "string",
+          "description": " Version19 defines size of 93x93 modules for the symbol."
+        },
+        {
+          "name": "version20",
+          "type": "string",
+          "description": " Version20 defines size of 97x97 modules for the symbol."
+        },
+        {
+          "name": "version21",
+          "type": "string",
+          "description": " Version21 defines size of 101x101 modules for the symbol."
+        },
+        {
+          "name": "version22",
+          "type": "string",
+          "description": " Version22 defines size of 105x105 modules for the symbol."
+        },
+        {
+          "name": "version23",
+          "type": "string",
+          "description": " Version23 defines size of 109x109 modules for the symbol."
+        },
+        {
+          "name": "version24",
+          "type": "string",
+          "description": " Version24 defines size of 113x113 modules for the symbol."
+        },
+        {
+          "name": "version25",
+          "type": "string",
+          "description": " Version25 defines size of 117x117 modules for the symbol."
+        },
+        {
+          "name": "version26",
+          "type": "string",
+          "description": " Version26 defines size of 121x121 modules for the symbol."
+        },
+        {
+          "name": "version27",
+          "type": "string",
+          "description": " Version27 defines size of 125x125 modules for the symbol."
+        },
+        {
+          "name": "version28",
+          "type": "string",
+          "description": " Version28 defines size of 129x129 modules for the symbol."
+        },
+        {
+          "name": "version29",
+          "type": "string",
+          "description": " Version29 defines size of 133x133 modules for the symbol."
+        },
+        {
+          "name": "version30",
+          "type": "string",
+          "description": " Version30 defines size of 137x137 modules for the symbol."
+        },
+        {
+          "name": "version31",
+          "type": "string",
+          "description": " Version31 defines size of 141x141 modules for the symbol."
+        },
+        {
+          "name": "version32",
+          "type": "string",
+          "description": " Version32 defines size of 145x145 modules for the symbol."
+        },
+        {
+          "name": "version33",
+          "type": "string",
+          "description": " Version33 defines size of 149x149 modules for the symbol."
+        },
+        {
+          "name": "version34",
+          "type": "string",
+          "description": " Version34 defines size of 153x153 modules for the symbol."
+        },
+        {
+          "name": "version35",
+          "type": "string",
+          "description": " Version35 defines size of 157x157 modules for the symbol."
+        },
+        {
+          "name": "version36",
+          "type": "string",
+          "description": " Version36 defines size of 161x161 modules for the symbol."
+        },
+        {
+          "name": "version37",
+          "type": "string",
+          "description": " Version37 defines size of 165x165 modules for the symbol."
+        },
+        {
+          "name": "version38",
+          "type": "string",
+          "description": " Version38 defines size of 169x169 modules for the symbol."
+        },
+        {
+          "name": "version39",
+          "type": "string",
+          "description": " Version39 defines size of 173x173 modules for the symbol."
+        },
+        {
+          "name": "version40",
+          "type": "string",
+          "description": " Version40 defines size of 177x177 modules for the symbol."
+        }
+      ]
+    },
+    "stretch": {
+      "type": "string",
+      "defaultValue": null,
+      "description": " Gets or sets the stretch.",
+      "valueOptions": [
+        {
+          "name": "none",
+          "type": "string",
+          "description": " "
+        },
+        {
+          "name": "fill",
+          "type": "string",
+          "description": " "
+        },
+        {
+          "name": "uniform",
+          "type": "string",
+          "description": " "
+        },
+        {
+          "name": "uniformToFill",
+          "type": "string",
+          "description": ""
+        }
+      ]
+    },
+    "widthToHeightRatio": {
+      "type": "number",
+      "defaultValue": 3.0,
+      "description": "Gets or sets the width (XDimension) to height (YDimension) ratio. It accepts only positive values. This property does not apply for the QR barcode.",
+      "valueOptions": null
+    },
+    "xDimension": {
+      "type": "number",
+      "defaultValue": 0.25,
+      "description": "Gets or sets the X-dimension (narrow element width) for a symbol in mm. It accepts values from 0.01 to 100.",
+      "valueOptions": null
+    }
+  }
+}
