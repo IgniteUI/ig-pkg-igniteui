@@ -1,0 +1,195 @@
+{
+  "overview": null,
+  "name": "ui.igSplitter",
+  "category": null,
+  "visual": true,
+  "events": {
+    "collapsed": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "fired after collapsing is performed <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the splitter instance.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.index to get an index of collased panel."
+    },
+    "expanded": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "fired after expanding is performed <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the splitter instance.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.index to get an index of expanded panel."
+    },
+    "layoutRefreshed": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "fired after the panels are refreshed because of browser's resizing.<br>&nbsp;&nbsp;&nbsp;   Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;   Use ui.owner to get a reference to the splitter instance."
+    },
+    "layoutRefreshing": {
+      "cancellable": true,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Fired before the panels are going to go refreshed because of browser's resizing.<br>&nbsp;&nbsp;&nbsp;   Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;   Use ui.owner to get a reference to the splitter instance."
+    },
+    "resizeEnded": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "fired after split bar move is performed <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the splitter instance."
+    },
+    "resizeStarted": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "fired before split bar move is performed <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the splitter instance."
+    },
+    "resizing": {
+      "cancellable": true,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "fired while split bar move is performed <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the splitter instance."
+    }
+  },
+  "properties": {
+    "dragDelta": {
+      "type": "number",
+      "defaultValue": 3.0,
+      "description": "Specifies drag delta of the split bar. In order to start dragging move, the mouse has to be moved specific distance from original position.",
+      "valueOptions": null
+    },
+    "height": {
+      "type": "string",
+      "defaultValue": null,
+      "description": " Gets sets how the height of the control can be set.",
+      "valueOptions": [
+        {
+          "name": null,
+          "type": "string",
+          "description": " The height width can be set in pixels (px) and percentage (%)."
+        },
+        {
+          "name": null,
+          "type": "number",
+          "description": " The height width can be set as a number in pixels."
+        },
+        {
+          "name": "null",
+          "type": "object",
+          "description": " will fit the tree inside its parent container, if no other widths are defined."
+        }
+      ]
+    },
+    "orientation": {
+      "type": "string",
+      "defaultValue": null,
+      "description": " Specifies the orientation of the splitter.",
+      "valueOptions": [
+        {
+          "name": "vertical",
+          "type": "string",
+          "description": "                "
+        },
+        {
+          "name": "horizontal",
+          "type": "string",
+          "description": ""
+        }
+      ]
+    },
+    "panels": {
+      "type": "unknown",
+      "defaultValue": null,
+      "description": "Specifies the panel settings. The panels are no more than two. Settings are specified via enumeration.<br>&nbsp;&nbsp;&nbsp;size=\"string|int\"<br>&nbsp;&nbsp;&nbsp;min type=\"string|int\"<br>&nbsp;&nbsp;&nbsp;max type=\"string|int\"<br>&nbsp;&nbsp;&nbsp;resizable <br>&nbsp;&nbsp;&nbsp;collapsed <br>&nbsp;&nbsp;&nbsp;collapsible",
+      "valueOptions": null
+    },
+    "width": {
+      "type": "string",
+      "defaultValue": null,
+      "description": " Gets sets how the width of the control can be set.",
+      "valueOptions": [
+        {
+          "name": null,
+          "type": "string",
+          "description": " The widget width can be set in pixels (px) and percentage (%)."
+        },
+        {
+          "name": null,
+          "type": "number",
+          "description": " The widget width can be set as a number in pixels."
+        },
+        {
+          "name": "null",
+          "type": "object",
+          "description": " will stretch to fit data, if no other widths are defined."
+        }
+      ]
+    }
+  }
+}

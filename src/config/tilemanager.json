@@ -1,0 +1,496 @@
+{
+  "overview": null,
+  "name": "ui.igTileManager",
+  "category": null,
+  "visual": true,
+  "events": {
+    "dataBinding": {
+      "cancellable": true,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "fired before databinding is performed <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tile manager performing databinding.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.dataSource to get a reference to the $.ig.DataSource the tile manager is to be databound to."
+    },
+    "dataBound": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "fired after databinding is complete <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tile manager performing databinding.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.dataView to get a reference to the data the tile manager is databound to.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.success to get see if the databinding was performed correctly.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.errorMessage to get the error message if the databinding failed."
+    },
+    "rendered": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "fired after rendering of the tile manager completes. <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tile manager performing rendering."
+    },
+    "rendering": {
+      "cancellable": true,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "fired before rendering of the tile manager begins.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tile manager performing rendering.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.tiles to get a reference to the tiles the tile manager is going to render. If using data source this referes to the data provided.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.items to get a reference to the item configurations the tile manager has."
+    },
+    "tileMaximized": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "fired after a tile in the tile manager is maximized. <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tile manager the maximized tile belongs to.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.tile to get the jQuery element of the maximized tile"
+    },
+    "tileMaximizing": {
+      "cancellable": true,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "fired before a tile in the tile manager is maximized.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tile manager performing the maximizing the tile belongs to.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.tile to get the jQuery element of the tile being maximized<br>                Use ui.minimizingTile to get reference to the tile that is minimizing simultaneously or null if no tile is minimizing."
+    },
+    "tileMinimized": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "fired after a tile in the tile manager is minimized.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tile manager the minimized tile belongs to.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.tile to get the jQuery element of the minimized tile"
+    },
+    "tileMinimizing": {
+      "cancellable": true,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "fired before a tile in the tile manager is minimized.<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get a reference to the tile manager performing the minimizing the tile belongs to.<br>                Use ui.tile to get the jQuery element of the tile being minimized<br>                Use ui.maximizingTile to get reference to the tile that is maximizing simultaneously or null if no tile is maximizing."
+    },
+    "tileRendered": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event fired after a tile has been rendered in the container<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tile manager performing rendering.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.tile to get a reference to the rendered tile"
+    },
+    "tileRendering": {
+      "cancellable": true,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event fired before a tile is rendered in the container<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get a reference to the tile manager performing rendering.<br>                Use ui.tile to get a reference to the tile being rendered"
+    }
+  },
+  "properties": {
+    "animationDuration": {
+      "type": "number",
+      "defaultValue": 500.0,
+      "description": "Gets sets the duration of the animations in the tile manager.",
+      "valueOptions": null
+    },
+    "cols": {
+      "type": "string",
+      "defaultValue": null,
+      "description": " Gets sets the columns count in the container.",
+      "valueOptions": [
+        {
+          "name": null,
+          "type": "number",
+          "description": " The column count can be set as a number."
+        },
+        {
+          "name": "null",
+          "type": "",
+          "description": ""
+        }
+      ]
+    },
+    "columnHeight": {
+      "type": "string",
+      "defaultValue": null,
+      "description": " The height of each column in the container.",
+      "valueOptions": [
+        {
+          "name": null,
+          "type": "string",
+          "description": " The column height can be set in pixels (px) or percentage (%)."
+        },
+        {
+          "name": null,
+          "type": "number",
+          "description": " The column height can be set as a number representing value in pixels."
+        },
+        {
+          "name": "null",
+          "type": "",
+          "description": ""
+        }
+      ]
+    },
+    "columnWidth": {
+      "type": "string",
+      "defaultValue": null,
+      "description": " Gets sets the width of each column in the container.",
+      "valueOptions": [
+        {
+          "name": null,
+          "type": "string",
+          "description": " The column width can be set in pixels (px) or percentage (%)."
+        },
+        {
+          "name": null,
+          "type": "number",
+          "description": " The column width can be set as a number representing value in pixels."
+        },
+        {
+          "name": "null",
+          "type": "",
+          "description": ""
+        }
+      ]
+    },
+    "dataSource": {
+      "type": "object",
+      "defaultValue": null,
+      "description": "Specifies any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself.",
+      "valueOptions": null
+    },
+    "dataSourceType": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "Explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property.",
+      "valueOptions": null
+    },
+    "dataSourceUrl": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "Specifies a remote URL accepted by $.ig.DataSource in order to request data from it.",
+      "valueOptions": null
+    },
+    "height": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "",
+      "valueOptions": [
+        {
+          "name": null,
+          "type": "string",
+          "description": " The height width can be set in pixels (px) and percentage (%)."
+        },
+        {
+          "name": null,
+          "type": "number",
+          "description": " The height width can be set as a number in pixels."
+        }
+      ]
+    },
+    "items": {
+      "type": "string",
+      "defaultValue": null,
+      "description": " Gets sets the tiles configurations. Every tile is described by rowSpan, colSpan, rowIndex and colIndex.",
+      "valueOptions": [
+        {
+          "name": null,
+          "type": "array",
+          "description": " An array with colSpan, rowSpan, colIndex, rowIndex configurations for each tile."
+        },
+        {
+          "name": "null",
+          "type": "",
+          "description": ""
+        }
+      ]
+    },
+    "marginLeft": {
+      "type": "number",
+      "defaultValue": 0.0,
+      "description": "Gets sets the horizontal spacing between tiles.<br>                number The horizontal spacing between tiles can be set as a number.",
+      "valueOptions": null
+    },
+    "marginTop": {
+      "type": "number",
+      "defaultValue": 0.0,
+      "description": "Gets sets the vertical spacing between tiles.<br>                number The vertical spacing between tiles can be set as a number.",
+      "valueOptions": null
+    },
+    "maximizedState": {
+      "type": "string",
+      "defaultValue": null,
+      "description": " Gets sets the content of the tiles in maximized state.",
+      "valueOptions": [
+        {
+          "name": null,
+          "type": "string",
+          "description": " When initializing on html markup provide jQuery selector specifying which elements of the tile to be shown in maximized state. When initializing on data source provide igTemplate that will be rendered for the maximized state."
+        },
+        {
+          "name": "null",
+          "type": "",
+          "description": ""
+        }
+      ]
+    },
+    "maximizedTileIndex": {
+      "type": "string",
+      "defaultValue": null,
+      "description": " Gets sets the index of which items configuration will be used for positioning and sizing of the maximized tile.",
+      "valueOptions": [
+        {
+          "name": null,
+          "type": "number",
+          "description": " The maximizedTileindex can be set as a number."
+        },
+        {
+          "name": "null",
+          "type": "",
+          "description": ""
+        }
+      ]
+    },
+    "minimizedState": {
+      "type": "string",
+      "defaultValue": null,
+      "description": " Gets sets the content of the tiles in minimized state.",
+      "valueOptions": [
+        {
+          "name": null,
+          "type": "string",
+          "description": " When initializing on html markup provide jQuery selector specifying what content of the tile to be shown in minimized state. When initializing on data source provide igTemplate that will be rendered for the minimized state."
+        },
+        {
+          "name": "null",
+          "type": "",
+          "description": ""
+        }
+      ]
+    },
+    "preventMaximizingSelector": {
+      "type": "string",
+      "defaultValue": "a, input",
+      "description": "Gets sets JQuery selector that specifies which elements will not trigger maximizing when clicked on.",
+      "valueOptions": null
+    },
+    "rearrangeItems": {
+      "type": "bool",
+      "defaultValue": true,
+      "description": "Gets sets whether the items will rearrange when the container is resized.",
+      "valueOptions": null
+    },
+    "requestType": {
+      "type": "string",
+      "defaultValue": "GET",
+      "description": "specifies the HTTP verb to be used to issue the request.",
+      "valueOptions": null
+    },
+    "responseContentType": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "content type of the response. See http://api.jquery.com/jQuery.ajax/ => contentType.",
+      "valueOptions": null
+    },
+    "responseDataKey": {
+      "type": "string",
+      "defaultValue": null,
+      "description": " see $.ig.DataSource.",
+      "valueOptions": [
+        {
+          "name": null,
+          "type": "string",
+          "description": " Specifies the name of the property in which data records are held if the response is wrapped. "
+        },
+        {
+          "name": "null",
+          "type": "",
+          "description": ""
+        }
+      ]
+    },
+    "responseDataType": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "string Explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property.<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored.",
+      "valueOptions": null
+    },
+    "rightPanelCols": {
+      "type": "string",
+      "defaultValue": null,
+      "description": " Gets sets how many columns to be displayed in the right panel when the tiles are minimized.",
+      "valueOptions": [
+        {
+          "name": null,
+          "type": "number",
+          "description": " Set the number of right panel columns as a number. The minimum value is 1."
+        },
+        {
+          "name": "null",
+          "type": "",
+          "description": ""
+        }
+      ]
+    },
+    "rightPanelTilesHeight": {
+      "type": "string",
+      "defaultValue": null,
+      "description": " Gets sets the height of the minimized tiles in the right panel.",
+      "valueOptions": [
+        {
+          "name": null,
+          "type": "number",
+          "description": " Set the height of the minimized tiles as a number."
+        },
+        {
+          "name": "null",
+          "type": "",
+          "description": ""
+        }
+      ]
+    },
+    "rightPanelTilesWidth": {
+      "type": "string",
+      "defaultValue": null,
+      "description": " Gets sets the width of the minimized tiles in the right panel.",
+      "valueOptions": [
+        {
+          "name": null,
+          "type": "number",
+          "description": " Set the width of the minimized tiles as a number."
+        },
+        {
+          "name": "null",
+          "type": "",
+          "description": ""
+        }
+      ]
+    },
+    "rows": {
+      "type": "string",
+      "defaultValue": null,
+      "description": " Gets sets the rows count in the container.",
+      "valueOptions": [
+        {
+          "name": null,
+          "type": "number",
+          "description": " The row count can be set as a number."
+        },
+        {
+          "name": "null",
+          "type": "",
+          "description": ""
+        }
+      ]
+    },
+    "showRightPanelScroll": {
+      "type": "bool",
+      "defaultValue": true,
+      "description": "Gets sets whether the right panel should show scrollbar when tiles are overflowing.",
+      "valueOptions": null
+    },
+    "showSplitter": {
+      "type": "bool",
+      "defaultValue": true,
+      "description": "Gets sets whether the splitter should be shown.",
+      "valueOptions": null
+    },
+    "width": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "",
+      "valueOptions": [
+        {
+          "name": null,
+          "type": "string",
+          "description": " The container width can be set in pixels (px) and percentage (%)."
+        },
+        {
+          "name": null,
+          "type": "number",
+          "description": " The container width can be set as a number in pixels."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "overview": null,
+  "name": "ui.igLayoutManager",
+  "category": null,
+  "visual": true,
+  "events": {
+    "internalResized": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event fired after items are resized.<br>                Use ui.owner to get a reference to the layout manager performing resizing."
+    },
+    "internalResizing": {
+      "cancellable": true,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event fired before items are resized.<br>                Use ui.owner to get a reference to the layout manager performing resizing."
+    },
+    "itemRendered": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event fired after an item has been rendered in the container<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to the igLayoutManager.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.itemData to get a reference of item's settings, such as colspan ,rowspan, etc. <br>&nbsp;&nbsp;&nbsp;&nbsp;use ui.index to get a reference of the item's index, if the layout is flow or vertical"
+    },
+    "itemRendering": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event fired before an item is rendered in the container<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to the igLayoutManager.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.itemData to get a reference of item's settings, such as colspan ,rowspan, etc. <br>&nbsp;&nbsp;&nbsp;&nbsp;use ui.index to get a reference of the item's index, if the layout is flow or vertical"
+    },
+    "rendered": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event fired after all items are rendered.<br>                Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to the igLayoutManager."
+    }
+  },
+  "properties": {
+    "borderLayout": {
+      "type": "object",
+      "defaultValue": null,
+      "description": "options specific to a border layout",
+      "valueOptions": null
+    },
+    "gridLayout": {
+      "type": "object",
+      "defaultValue": null,
+      "description": "options specific to grid layout mode",
+      "valueOptions": null
+    },
+    "height": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "height of the layout container",
+      "valueOptions": null
+    },
+    "itemCount": {
+      "type": "number",
+      "defaultValue": null,
+      "description": "number of items to render, this is only applicable to layouts: vertical and flow",
+      "valueOptions": null
+    },
+    "items": {
+      "type": "array",
+      "defaultValue": null,
+      "description": "an array of item descriptions <br>&nbsp;&nbsp;&nbsp;&nbsp;this assumes the container is empty, and every item<br>&nbsp;&nbsp;&nbsp;&nbsp;is described by rowspan,colspan, etc. - otherwise values of<br>&nbsp;&nbsp;&nbsp;&nbsp;1 are assumed<br>&nbsp;&nbsp;&nbsp;&nbsp;items can have various properties some of which may not be applicable<br>&nbsp;&nbsp;&nbsp;&nbsp;depending on the layoutMode.<br>&nbsp;&nbsp;&nbsp;&nbsp;for example rowSpan/colSpan/colIndex/rowIndex are only applicable to gridlayout",
+      "valueOptions": null
+    },
+    "layoutMode": {
+      "type": "string",
+      "defaultValue": null,
+      "description": " defines the layout type",
+      "valueOptions": [
+        {
+          "name": "grid",
+          "type": "",
+          "description": ""
+        },
+        {
+          "name": "border",
+          "type": "",
+          "description": ""
+        },
+        {
+          "name": "flow",
+          "type": "",
+          "description": ""
+        }
+      ]
+    },
+    "width": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "width of the layout container",
+      "valueOptions": null
+    }
+  }
+}
