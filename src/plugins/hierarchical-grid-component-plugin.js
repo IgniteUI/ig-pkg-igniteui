@@ -1,5 +1,5 @@
-define (["./grid-component-plugin"], function (DefaultPlugin) {
-	var IgniteUIHierarchicalGridPlugin = IgniteUIHierarchicalGridPlugin || DefaultPlugin.extend({
+define (["./grid-component-plugin"], function (IgniteUIGridPlugin) {
+	var IgniteUIHierarchicalGridPlugin = IgniteUIHierarchicalGridPlugin || IgniteUIGridPlugin.extend({
 		init: function (options) {
 			this._super(options);
 		},
@@ -15,7 +15,7 @@ define (["./grid-component-plugin"], function (DefaultPlugin) {
 		getCodeEditorScriptSnippet: function (descriptor) {
 			var code = "";
 			var opts = descriptor.options;
-			var lineCount = 7;
+			var lineCount = 9;
 			var xtraMarkup = ",\n\t\t\t\t\tfeatures: [\n" + "\t\t\t\t\t],\n\t\t\t\t\tcolumnLayouts: [\n" + "\t\t\t\t\t]";
 			code = "\t\t\t\t$(\"#" + descriptor.id + "\").igHierarchicalGrid({\n" +
 				"\t\t\t\t\theight: " + opts.height + ",\n" + 
@@ -31,77 +31,6 @@ define (["./grid-component-plugin"], function (DefaultPlugin) {
 			}
 			code += "\n\t\t\t\t});\n";
 			return {codeString: code, lineCount: lineCount};
-		},
-		_content: null,
-		_customSheet: null,
-		_wrapper: null,
-		render: function (container, descriptor) {
-			var content = container.closest('.adorner-content'),
-				adorner = content.parent(),
-				customSheet = adorner.children('.adorner-custom-list');
-			this._content = content;
-			if (customSheet.length <= 0) {
-				customSheet = this._renderCustomSheet();
-				content.css('left', 250);
-				this._attachEvents(content.parent(), descriptor);
-				this._customSheet = customSheet;
-				this._wrapper = $('<div class="adorner-wrapper"></div>').append(customSheet).append(content).appendTo(adorner);
-			}
-		},
-		_renderCustomSheet: function () {
-			var markup = '<div class="adorner-custom-list">',
-				$markup;
-			markup += this._renderInteractions();
-			markup += this._renderActions();
-			markup += this._renderProperties();
-			markup += this._renderCustomFooter();
-			markup += '</div>';
-			return $(markup);
-		},
-		_renderInteractions: function () {
-			return '<div class="adorner-label adorner-custom-label">INTERACTIONS</div>';
-		},
-		_renderActions: function () {
-			return '<div class="adorner-label adorner-custom-label">ACTIONS</div><a href="#" class="adorner-custom-action" data-action="add-column">Add Column</a><a href="#" class="adorner-custom-action" data-action="add-row">Add Row</a>';
-		},
-		_renderProperties: function () {
-			return '<div class="adorner-label adorner-custom-label">PROPERTIES</div>';
-		},
-		_renderCustomFooter: function () {
-			return '<div class="adorner-custom-footer"><a href="#" class="adorner-custom-action" data-action="full-view">All Events & Properties</a></div>';
-		},
-		_attachEvents: function (sheet, descriptor) {
-			var self = this;
-			sheet.on('click', '.adorner-custom-action', function (event) {
-				var action = $(this).attr('data-action');
-				self._dispatchAction(action, descriptor);
-				event.stopPropagation();
-				return false;
-			});
-		},
-		_dispatchAction: function (action, descriptor) {
-			switch (action) {
-			case 'add-column':
-				this.addColumnAction(descriptor);
-				break;
-			case 'add-row':
-				this.addRowAction(descriptor);
-				break;
-			case 'full-view':
-				this.fullViewTransition(descriptor);
-			default:
-				break;
-			}
-		},
-		addColumnAction: function (descriptor) {
-			alert('Add Column Action triggered.');
-		},
-		addRowAction: function (descriptor) {
-			alert('Add Row Action triggered.');
-		},
-		fullViewTransition: function (descriptor) {
-			this._wrapper.animate({left: -250}, 250);
-			//this._content.animate({left: 0}, 250);
 		}
 	});
 	return IgniteUIHierarchicalGridPlugin;
