@@ -169,9 +169,23 @@ define (function (require, exports, module) {
 				var codeRange = descriptor.codeEditor.find("$(\"#" + descriptor.id + "\")." + name + "({");
 				var val = descriptor.propValue;
 				var oldVal = descriptor.oldPropValue;
+				var valueEnumType = "string";
+				if (descriptor.valueOptions) {
+					for (var i = 0; i < descriptor.valueOptions.length; i++) {
+						if (descriptor.valueOptions[i].name === val) {
+							valueEnumType = descriptor.valueOptions[i].type;
+						} else if (descriptor.valueOptions[i].name === oldVal) {
+							oldValueEnumType = descriptor.valueOptions[i].type;
+						}
+					}
+				}
 				if (descriptor.propType === "string") {
-					val = "\"" + val + "\"";
-					oldVal = "\"" + oldVal + "\"";
+					if (valueEnumType === "string") {
+						val = "\"" + val + "\"";
+					} 
+					if (oldValueEnumType === "string") {
+						oldVal = "\"" + oldVal + "\"";
+					}
 				}
 				var optionRange = descriptor.codeEditor.find(descriptor.propName + ": " + oldVal);
 				var optCode = descriptor.propName + ": " + val;
