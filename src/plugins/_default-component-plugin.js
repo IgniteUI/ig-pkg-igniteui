@@ -1,5 +1,6 @@
 define (function (require, exports, module) {
 	var ComponentPlugin = require("ide-component-plugin");
+	var beautify = require("js-beautify");
 	var IgniteUIComponentPlugin = IgniteUIComponentPlugin || ComponentPlugin.extend({
 		init: function (options) {
 			this._super(options);
@@ -49,6 +50,21 @@ define (function (require, exports, module) {
 				if (opts.hasOwnProperty(key) && key !== "dataSource" && key !== "height" && key !== "width") {
 					if (props[key].type === "string") {
 						code += ",\n\t\t\t\t\t" + key + ": \"" + opts[key] + "\"";
+					} else if (props[key].type === "array") {
+						var formattedStr = beautify(JSON.stringify(opts[key]));
+						//code += ",\n\t\t\t\t\t" + key + ": " + formattedStr;
+						code += ",\n";
+						formattedStr = key + ": " + formattedStr;
+						var formattedStrTabbed = "";
+						var tabbedArr = formattedStr.split("\n");
+						for (var i = 0; i < tabbedArr.length; i++) {
+							formattedStrTabbed += "\t\t\t\t\t" + tabbedArr[i];
+							if (i < tabbedArr.length - 1) {
+								formattedStrTabbed += "\n";
+							}
+						}
+						code += formattedStrTabbed;
+						lineCount += code.split("\n").length;
 					} else {
 						code += ",\n\t\t\t\t\t" + key + ": " + opts[key];
 					}
