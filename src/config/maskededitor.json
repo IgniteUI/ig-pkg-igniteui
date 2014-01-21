@@ -6,261 +6,820 @@
   "events": {
     "blur": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event which is raised when input field of editor loses focus.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes argument evt.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt.originalEvent to obtain reference to event of browser."
     },
     "buttonClick": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event which is raised when button was clicked by mouse.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes argument evt.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt.originalEvent to obtain reference to event of browser."
     },
     "focus": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event which is raised when input field of editor gets focus.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes argument evt.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt.originalEvent to obtain reference to event of browser."
     },
     "hideDropDown": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event which is raised before drop-down list or calendar is opened.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes argument evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt.originalEvent to obtain reference to event of browser.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.value to obtain reference to the selected item in list or Date in calendar.<br>&nbsp;&nbsp;&nbsp;&nbsp;If ui.value is not null and not undefined, that it means that drop-down was closed due to selection from drop-down list or from calendar.<br>&nbsp;&nbsp;&nbsp;&nbsp;Otherwise, drop-down was closed due to lost focus or Esc key press.<br>&nbsp;&nbsp;&nbsp;&nbsp;Return false in order to cancel hide action and keep drop-down visible.<br>&nbsp;&nbsp;&nbsp;&nbsp;It is not recommended to cancel that action on blur event.<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: In case of calendar of datepicker, the evt or evt.originalEvent can be null. That happens if calendar was closed on blur or by Esc key.<br>&nbsp;&nbsp;&nbsp;&nbsp;Returning the false in this situation will not prevent closing drop-down calendar."
     },
     "invalidValue": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event which is raised on lost focus when editor contains invalid value. That event is available for all editors besides default \"text\" type editor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.value to obtain suggested value.<br>&nbsp;&nbsp;&nbsp;&nbsp;Set ui.value to change suggested value.<br>&nbsp;&nbsp;&nbsp;&nbsp;If type of editor is numeric, currency, percent, date or datepicker, then ui.text contains actual text entered by user.<br>&nbsp;&nbsp;&nbsp;&nbsp;If type of editor is numeric, currency or percent, then the ui.reason may have following flags: \"null\", \"format\" or \"limit\".<br>&nbsp;&nbsp;&nbsp;&nbsp;If type of editor is date or datepicker, then ui contains following additional members:<br>&nbsp;&nbsp;&nbsp;&nbsp;ui.reason may have following flags: \"null\", \"dayOfMonth\", \"numberOfFields\", \"limit\" or \"invalid\";<br>&nbsp;&nbsp;&nbsp;&nbsp;ui.year - year of entered date;<br>&nbsp;&nbsp;&nbsp;&nbsp;ui.month - month of entered date;<br>&nbsp;&nbsp;&nbsp;&nbsp;ui.day - day of entered date;<br>&nbsp;&nbsp;&nbsp;&nbsp;ui.hours - hours of entered date;<br>&nbsp;&nbsp;&nbsp;&nbsp;ui.minutes - minutes of entered date;<br>&nbsp;&nbsp;&nbsp;&nbsp;ui.seconds - seconds of entered date;<br>&nbsp;&nbsp;&nbsp;&nbsp;ui.milliseconds - milliseconds of entered date."
     },
     "keydown": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event which is raised on keydown event.<br>&nbsp;&nbsp;&nbsp;&nbsp;Return false in order to cancel key action.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt.originalEvent to obtain reference to event of browser.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.key to obtain value of keyCode."
     },
     "keypress": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event which is raised on keypress event.<br>&nbsp;&nbsp;&nbsp;&nbsp;Return false in order to cancel key action.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt.originalEvent to obtain reference to event of browser.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.key to obtain value of keyCode.<br>&nbsp;&nbsp;&nbsp;&nbsp;Set ui.key to another character which will replace original entry."
     },
     "keyup": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event which is raised on keyup event.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt.originalEvent to obtain reference to event of browser.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.key to obtain value of keyCode."
     },
     "listSelected": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event which is raised after list item was selected.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt.originalEvent to obtain reference to event of browser.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.index to get new selected index.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.oldIndex to get old selected index.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.item to get reference to new selected item."
     },
     "listSelecting": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event which is raised before list item is selected.<br>&nbsp;&nbsp;&nbsp;&nbsp;Return false in order to cancel select action.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt.originalEvent to obtain reference to event of browser.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.index to get new selected index.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.oldIndex to get old selected index.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.item to get reference to new selected item."
     },
     "mousedown": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event which is raised on mousedown at any part of editor including drop-down list.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt.originalEvent to obtain reference to event of browser.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.elementType to obtain type of html element under mouse, such as field, button, spinUpper, spinLower or item#.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.id and ui.elementType to obtain flag which represents html element under mouse."
     },
     "mouseleave": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event which is raised on mouseleave at any part of editor including drop-down list.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt.originalEvent to obtain reference to event of browser.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.elementType to obtain type of html element under mouse, such as field, button, spinUpper, spinLower or item#.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.id and ui.elementType to obtain flag which represents html element under mouse."
     },
     "mousemove": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event which is raised on mousemove at any part of editor including drop-down list.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt.originalEvent to obtain reference to event of browser.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.elementType to obtain type of html element under mouse, such as field, button, spinUpper, spinLower or item#.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.id and ui.elementType to obtain flag which represents html element under mouse."
     },
     "mouseover": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event which is raised on mouseover at any part of editor including drop-down list.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt.originalEvent to obtain reference to event of browser.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.elementType to obtain type of html element under mouse, such as field, button, spinUpper, spinLower or item#.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.id and ui.elementType to obtain flag which represents html element under mouse."
     },
     "mouseup": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event which is raised on mouseup at any part of editor including drop-down list.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt.originalEvent to obtain reference to event of browser.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.elementType to obtain type of html element under mouse, such as field, button, spinUpper, spinLower or item#.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.id and ui.elementType to obtain flag which represents html element under mouse."
     },
     "showDropDown": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event which is raised before drop-down list or calendar is opened.<br>&nbsp;&nbsp;&nbsp;&nbsp;Return false in order to cancel drop-down action.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes argument evt.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt.originalEvent to obtain reference to event of browser."
     },
     "spin": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event which is raised on spin event.<br>&nbsp;&nbsp;&nbsp;&nbsp;Return false in order to cancel spin.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.delta to obtain delta for increment or decrement.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.value to obtain the \"value\" of editor before spin action."
     },
     "textChanged": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event which is raised after text in editor was changed.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.value to obtain new value and ui.oldValue to obtain old value."
     },
     "valueChanged": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event which is raised after value in editor was changed. It can be raised on lost focus or on spin events.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.value to obtain new value and ui.oldValue to obtain old value."
     },
     "valueChanging": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event which is raised before value in editor was changed.<br>&nbsp;&nbsp;&nbsp;&nbsp;Return false in order to cancel change.<br>&nbsp;&nbsp;&nbsp;&nbsp;It can be raised on lost focus or on spin events.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.value to obtain new value and ui.oldValue to obtain old value."
     }
   },
   "properties": {
     "animationHideDuration": {
       "type": "number",
-      "defaultValue": 200.0
+      "defaultValue": 200.0,
+      "description": "Sets gets duration of animation in milliseconds when drop-down list is hidden. That option is not supported when \"type\" is set to \"datepicker\", because the jquery.ui.datepicker does not have similar feature. Default is 200. If value is less than 5, then animation is disabled.",
+      "valueOptions": null
     },
     "animationShowDuration": {
       "type": "number",
-      "defaultValue": 200.0
+      "defaultValue": 200.0,
+      "description": "Sets gets duration of animation in milliseconds when drop-down list or calendar is displayed. Default is 200. If value is less than 5, then animation is disabled.",
+      "valueOptions": null
     },
     "button": {
       "type": "string",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": " Sets gets visibility of spin and drop-down button. That option can be set only on initialization. Combinations like 'dropdown,spin' or 'spinclear' are supported too.",
+      "valueOptions": [
+        {
+          "name": "dropdown",
+          "type": "string",
+          "description": " button to open list is located on the right side of input-field (or left side if base html element has direction:rtl);"
+        },
+        {
+          "name": "clear",
+          "type": "string",
+          "description": " button to clear value is located on the right side of input-field (or left side if base html element has direction:rtl);"
+        },
+        {
+          "name": "spin",
+          "type": "string",
+          "description": " spin buttons are located on the right side of input-field (or left side if base html element has direction:rtl)."
+        }
+      ]
     },
     "dataMode": {
       "type": "string",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": " Sets gets type of value returned by the get of value() method. That also affects functionality of the set value(val) method and the copy/paste operations of browser.",
+      "valueOptions": [
+        {
+          "name": "rawText",
+          "type": "string",
+          "description": " only entered text. All unfilled prompts (positions) and literals are ignored (removed). Note: that is used as default."
+        },
+        {
+          "name": "0",
+          "type": "number",
+          "description": " only entered text. All unfilled prompts (positions) and literals are ignored (removed). Note: that is used as default."
+        },
+        {
+          "name": "rawTextWithRequiredPrompts",
+          "type": "string",
+          "description": " only entered text and required prompts (positions). All optional unfilled prompts and literals are ignored (removed)"
+        },
+        {
+          "name": "1",
+          "type": "number",
+          "description": " only entered text and required prompts (positions). All optional unfilled prompts and literals are ignored (removed)."
+        },
+        {
+          "name": "rawTextWithAllPrompts",
+          "type": "string",
+          "description": " only entered text and prompts (positions). All literals are ignored (removed)."
+        },
+        {
+          "name": "2",
+          "type": "number",
+          "description": " only entered text and prompts (positions). All literals are ignored (removed)."
+        },
+        {
+          "name": "rawTextWithLiterals",
+          "type": "string",
+          "description": " only entered text and literals. All unfilled prompts are ignored (removed)."
+        },
+        {
+          "name": "3",
+          "type": "number",
+          "description": " only entered text and literals. All unfilled prompts are ignored (removed)."
+        },
+        {
+          "name": "rawTextWithRequiredPromptsAndLiterals",
+          "type": "string",
+          "description": " only entered text, required prompts (positions) and literals. All optional unfilled prompts are ignored (removed)."
+        },
+        {
+          "name": "4",
+          "type": "number",
+          "description": " only entered text, required prompts (positions) and literals. All optional unfilled prompts are ignored (removed)."
+        },
+        {
+          "name": "allText",
+          "type": "string",
+          "description": " entered text, all prompts (positions) and literals."
+        },
+        {
+          "name": "5",
+          "type": "number",
+          "description": " entered text, all prompts (positions) and literals."
+        }
+      ]
     },
     "display": {
       "type": "string",
-      "defaultValue": "inline-block"
+      "defaultValue": "inline-block",
+      "description": "Sets gets style.display for outer html element.<br>&nbsp;&nbsp;&nbsp;&nbsp;The value of \"\" will disable changing style.display.<br>&nbsp;&nbsp;&nbsp;&nbsp;If the base html element is not INPUT, TEXTAREA, SPAN or DIV, then it is recommended to set this option to an empty string,<br>&nbsp;&nbsp;&nbsp;&nbsp;because, some browsers may fail to handle display other than default value of browser.<br>&nbsp;&nbsp;&nbsp;&nbsp;For example, if base element for editor is TD, then behavior in Chrome can be problematic.",
+      "valueOptions": null
     },
     "dropDownOnReadOnly": {
       "type": "bool",
-      "defaultValue": false
+      "defaultValue": false,
+      "description": "Sets gets ability to override the \"readOnly\" option and allow showing the drop-down list and changing the value in the editor from a list. Value false does not allow drop-down when \"readOnly\" is true.",
+      "valueOptions": null
     },
     "dropDownTriggers": {
       "type": "string",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": " Sets gets list of actions which trigger display of drop-down list or calendar.",
+      "valueOptions": [
+        {
+          "name": "arrow",
+          "type": "string",
+          "description": " Down-arrow shows drop-down and up-arrow hides drop-down;"
+        },
+        {
+          "name": "button",
+          "type": "string",
+          "description": " Shows and hides drop-down;"
+        },
+        {
+          "name": "focus",
+          "type": "string",
+          "description": " Shows drop-down on focus."
+        },
+        {
+          "name": "A-Z",
+          "type": "string",
+          "description": " Any upper case characters show drop-down."
+        }
+      ]
     },
     "emptyChar": {
       "type": "string",
-      "defaultValue": " "
+      "defaultValue": " ",
+      "description": "Sets gets character which is used as replacement of not-filled required position in mask when application calls get for the \"value\" or for the \"text\" methods.",
+      "valueOptions": null
     },
     "excludeKeys": {
       "type": "string",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": "Sets gets ability to prevent entering specific characters from keyboard or on paste.<br>&nbsp;&nbsp;&nbsp;&nbsp;Notes:<br>&nbsp;&nbsp;&nbsp;&nbsp;If a character is specified in \"includeKeys\" option also, then \"excludeKeys\" has priority.<br>&nbsp;&nbsp;&nbsp;&nbsp;Letters should be set in upper case.<br>&nbsp;&nbsp;&nbsp;&nbsp;Making difference between upper and lower case is not supported.",
+      "valueOptions": null
     },
     "focusOnSpin": {
       "type": "bool",
-      "defaultValue": false
+      "defaultValue": false,
+      "description": "If that option is disabled and the editor is not focused, then a mouse click on the spin button will keep the text in the editor in display (not focus) format and perform spin actions.",
+      "valueOptions": null
     },
     "height": {
       "type": "number",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": "Sets gets height of editor in pixels.<br>&nbsp;&nbsp;&nbsp;&nbsp;Only positive values have effect.<br>&nbsp;&nbsp;&nbsp;&nbsp;If that option is not set, then value of style.height of base html element will be used automatically. However, that value should be in the px units.",
+      "valueOptions": null
     },
     "hideEnterKey": {
       "type": "bool",
-      "defaultValue": true
+      "defaultValue": true,
+      "description": "Sets gets ability to hide the Enter key from browser.",
+      "valueOptions": null
     },
     "hideMaskOnFocus": {
       "type": "bool",
-      "defaultValue": false
+      "defaultValue": false,
+      "description": "Set gets ability to hide mask in focus state.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value of false allows to show all input mask with prompt characters regardless if available mask positions are filled or not.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value of true will show only part of mask located on the left side from caret when available mask positions on the right side from caret are empty.",
+      "valueOptions": null
     },
     "includeKeys": {
       "type": "string",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": "Sets gets ability to enter only specific characters in input-field from keyboard and on paste.<br>&nbsp;&nbsp;&nbsp;&nbsp;Notes:<br>&nbsp;&nbsp;&nbsp;&nbsp;If \"excludeKeys\" option contains same characters as this option, then \"excludeKeys\" has priority.<br>&nbsp;&nbsp;&nbsp;&nbsp;Letters should be set in upper case.<br>&nbsp;&nbsp;&nbsp;&nbsp;Making difference between upper and lower case is not supported.",
+      "valueOptions": null
     },
     "inputMask": {
       "type": "string",
-      "defaultValue": "CCCCCCCCCC"
+      "defaultValue": "CCCCCCCCCC",
+      "description": "Sets gets input mask. Mask may include filter-flags and literal characters.<br>&nbsp;&nbsp;&nbsp;&nbsp;Literal characters are part of mask which cannot be modified by end user. In order to use a filter-flag as a literal character, the escape \"\\\\\" character should be used.<br>&nbsp;&nbsp;&nbsp;&nbsp;Default is \"CCCCCCCCCC\"<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: optional flags/entries affect the value returned by get of the \"value\" and \"text\" methods.<br>&nbsp;&nbsp;&nbsp;&nbsp;List of filter-flags:<br>&nbsp;&nbsp;&nbsp;&nbsp;C: any keyboard character. Entry is optional.<br>&nbsp;&nbsp;&nbsp;&nbsp;&: any keyboard character. Entry is required.<br>&nbsp;&nbsp;&nbsp;&nbsp;a: letter or digit character. Entry is optional.<br>&nbsp;&nbsp;&nbsp;&nbsp;A: letter or digit character. Entry is required.<br>&nbsp;&nbsp;&nbsp;&nbsp;?: letter character. Entry is optional.<br>&nbsp;&nbsp;&nbsp;&nbsp;L: letter character. Entry is required.<br>&nbsp;&nbsp;&nbsp;&nbsp;9: digit character. Entry is optional.<br>&nbsp;&nbsp;&nbsp;&nbsp;0: digit character. Entry is required.<br>&nbsp;&nbsp;&nbsp;&nbsp;#: digit character or \"+\" or \"_\". Entry is optional with replacement by \"emptyPositionChar\" or by \"padChar\".<br>&nbsp;&nbsp;&nbsp;&nbsp;>: all letters to the right are converted to the upper case. In order to disable conversion, the \">\" flag should be used again.<br>&nbsp;&nbsp;&nbsp;&nbsp;<: all letters to the right are converted to the lower case. In order to disable conversion, the \"<\" flag should be used again.",
+      "valueOptions": null
     },
     "inputName": {
       "type": "string",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": "Gets sets name of (hidden) INPUT element, which value will be set to current value of editor on any change.",
+      "valueOptions": null
     },
     "listAutoComplete": {
       "type": "bool",
-      "defaultValue": false
+      "defaultValue": false,
+      "description": "Sets gets autocomplete.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value true enables and false disables auto-complete functionality to fill value of editor by a partially matching item from the listOfItems.<br>&nbsp;&nbsp;&nbsp;&nbsp;If that option is enabled and entered text does not match with a part of any item in list, then original value is preserved.<br>&nbsp;&nbsp;&nbsp;&nbsp;Notes:<br>&nbsp;&nbsp;&nbsp;&nbsp;That option is supported only when the \"type\" of editor is \"text\" and it has effect only when listOfItems is set.<br>&nbsp;&nbsp;&nbsp;&nbsp;Partial match can be validated from the beginning of an item or anywhere within an item. That is defined by the \"listMatchContains\" option.<br>&nbsp;&nbsp;&nbsp;&nbsp;Validation can be case sensitive or not and that is defined by the \"listMatchIgnoreCase\" option.",
+      "valueOptions": null
     },
     "listColumns": {
       "type": "number",
-      "defaultValue": 1.0
+      "defaultValue": 1.0,
+      "description": "Sets gets number of columns in drop-down list.",
+      "valueOptions": null
     },
     "listDropDownAsChild": {
       "type": "bool",
-      "defaultValue": false
+      "defaultValue": false,
+      "description": "Sets gets location of drop-down list.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value true will create html element for list as a child of main html element.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value false creates list as a child of body.<br>&nbsp;&nbsp;&nbsp;&nbsp;Notes:<br>&nbsp;&nbsp;&nbsp;&nbsp;That option has effect only for drop-down defined by listOfItems.<br>&nbsp;&nbsp;&nbsp;&nbsp;The value of true is supported only when main (outer) html element of editor is container such as SPAN or DIV, or buttons are enabled, or renderInContainer is enabled, the theme is set.<br>&nbsp;&nbsp;&nbsp;&nbsp;The value of true allows a better positioning and can be useful when editor is located in complex layout and containers with \"position:fixed\".",
+      "valueOptions": null
     },
     "listItems": {
       "type": "array",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": "Sets gets list of items which are used for drop-down list, spin, validation and auto-complete functionality.<br>&nbsp;&nbsp;&nbsp;&nbsp;Items in list can be strings, numbers, dates or objects in any combination.<br>&nbsp;&nbsp;&nbsp;&nbsp;If type of editor is date or datepicker and item is string, then igEditor will try to convert it to Date object and show item in display format.<br>&nbsp;&nbsp;&nbsp;&nbsp;If type of editor is numeric, currency or percent and item is string, then igEditor will try to convert it to number and show item in display format.<br>&nbsp;&nbsp;&nbsp;&nbsp;If item is object and it has member \"text\", then that member is used.<br>&nbsp;&nbsp;&nbsp;&nbsp;If item is object and besides \"text\" has function getHtml(), then that function is used to render item in list.<br>&nbsp;&nbsp;&nbsp;&nbsp;The item or item.text is used to set \"value\" of particular editor when list-item is selected.",
+      "valueOptions": null
     },
     "listMatchContains": {
       "type": "bool",
-      "defaultValue": false
+      "defaultValue": false,
+      "description": "Sets gets list match contains.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value true enables and false disables validation for partial match of entered text anywhere within an item in the listOfItems or only from the beginning of an item.<br>&nbsp;&nbsp;&nbsp;&nbsp;That option has effect only when \"listMatchOnly\" or \"listAutoComplete\" options are enabled.",
+      "valueOptions": null
     },
     "listMatchIgnoreCase": {
       "type": "bool",
-      "defaultValue": true
+      "defaultValue": true,
+      "description": "Sets gets case validation. Value of false enables and true disables validation for case of entries to match with items in listOfItems.<br>&nbsp;&nbsp;&nbsp;&nbsp;That option has effect only when \"listMatchOnly\" or \"listAutoComplete\" options are enabled.",
+      "valueOptions": null
     },
     "listMatchOnly": {
       "type": "bool",
-      "defaultValue": false
+      "defaultValue": false,
+      "description": "Set gets list match.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value true enables and false disables validation of keyboard entries to match with items in listOfItems.<br>&nbsp;&nbsp;&nbsp;&nbsp;If that option is enabled and entered text does not match with a part of any item in list, then entry is canceled.<br>&nbsp;&nbsp;&nbsp;&nbsp;Notes:<br>&nbsp;&nbsp;&nbsp;&nbsp;That option is supported only when the \"type\" of editor is \"text\" and it has effect only when listOfItems is set.<br>&nbsp;&nbsp;&nbsp;&nbsp;Partial match can be validated from the beginning of an item or anywhere within an item. That is defined by the \"listMatchContains\" option.<br>&nbsp;&nbsp;&nbsp;&nbsp;Validation can be case sensitive or not and that is defined by the \"listMatchIgnoreCase\" option.",
+      "valueOptions": null
     },
     "listMaxHeight": {
       "type": "number",
-      "defaultValue": 300.0
+      "defaultValue": 300.0,
+      "description": "Sets gets maximum height of drop-down list in pixels. If value is equal to 0 or negative, then the height of list is defined by number of items in list.",
+      "valueOptions": null
     },
     "listWidth": {
       "type": "number",
-      "defaultValue": 0.0
+      "defaultValue": 0.0,
+      "description": "Sets gets custom width of drop-down list in pixels. If value is equal to 0 or negative, then the width of editor is used.",
+      "valueOptions": null
     },
     "locale": {
       "type": "object",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": "Sets gets strings used for title of buttons. Value of object should contain pairs or key:value members. Note: any sub-option of locale can appear within the main option of igEditor. In this case those values within main options will have highest priority and override corresponding value in locale.",
+      "valueOptions": null
     },
     "nullText": {
       "type": "string",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": "Sets gets text which appears in editor when editor has no focus and \"value\" in editor is null or empty string.",
+      "valueOptions": null
     },
     "padChar": {
       "type": "string",
-      "defaultValue": " "
+      "defaultValue": " ",
+      "description": "Sets gets character which is used as replacement of not-filled required position in mask when editor is in display mode (not focused).",
+      "valueOptions": null
     },
     "promptChar": {
       "type": "string",
-      "defaultValue": "_"
+      "defaultValue": "_",
+      "description": "Sets gets character which is used as prompt in edit mode for available entry position.",
+      "valueOptions": null
     },
     "readOnly": {
       "type": "bool",
-      "defaultValue": false
+      "defaultValue": false,
+      "description": "Set gets ability to modify editor from keyboard (false) or disables keyboard (true).<br>&nbsp;&nbsp;&nbsp;&nbsp;Notes:<br>&nbsp;&nbsp;&nbsp;&nbsp;If the \"spinOnReadOnly\" is enabled, then value will be modified on spin regardless of the \"readOnly\".<br>&nbsp;&nbsp;&nbsp;&nbsp;If the \"listItems\" has items and \"dropDownTriggers\" is defined, then value will be modified from drop-down list regardless of the \"readOnly\".",
+      "valueOptions": null
     },
     "renderInContainer": {
       "type": "bool",
-      "defaultValue": false
+      "defaultValue": false,
+      "description": "Sets gets option to wrap input field into SPAN..<br>&nbsp;&nbsp;&nbsp;&nbsp;That option can be set only on initialization and it is available only when base element is INPUT or TEXTAREA.<br>&nbsp;&nbsp;&nbsp;&nbsp;If drop-down button or spin-buttons are enabled or the theme is set, then that option has no effect.<br>&nbsp;&nbsp;&nbsp;&nbsp;The reason for that property is to allow vertical alignment of several igEditor controls when they are located in html inline and some of them have enabled buttons.<br>&nbsp;&nbsp;&nbsp;&nbsp;If all editors are created within SPAN wrapper, then they will appear on the same line. Otherwise, editors in SPANs will be shifted 3-6 pixels above INPUT editors.",
+      "valueOptions": null
     },
     "required": {
       "type": "bool",
-      "defaultValue": false
+      "defaultValue": false,
+      "description": "Set gets validation for empty value in editor.",
+      "valueOptions": null
     },
     "selectionOnFocus": {
       "type": "string",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": " Sets gets behavior of selection/caret in input-field when editor gets focus.",
+      "valueOptions": [
+        {
+          "name": "select",
+          "type": "string",
+          "description": " Select all text"
+        },
+        {
+          "name": "-1",
+          "type": "number",
+          "description": " Select all text"
+        },
+        {
+          "name": "start",
+          "type": "string",
+          "description": " Set caret at the beginning of text"
+        },
+        {
+          "name": "0",
+          "type": "number",
+          "description": " Set caret at the beginning of text"
+        },
+        {
+          "name": "end",
+          "type": "string",
+          "description": " Set caret at the end of text"
+        },
+        {
+          "name": "1",
+          "type": "number",
+          "description": " Set caret at the end of text"
+        },
+        {
+          "name": "default",
+          "type": "string",
+          "description": " Use default behavior of browser (in case of mask, numeric and date editors it may be unreliable)"
+        },
+        {
+          "name": "2",
+          "type": "number",
+          "description": " Use default behavior of browser (in case of mask, numeric and date editors it may be unreliable)."
+        }
+      ]
     },
     "spinOnReadOnly": {
       "type": "bool",
-      "defaultValue": false
+      "defaultValue": false,
+      "description": "Sets gets ability to override the \"readOnly\" option and allow changes \"value\" of editor on spin events. Value false does not allow spin when \"readOnly\" is true.",
+      "valueOptions": null
     },
     "spinWrapAround": {
       "type": "bool",
-      "defaultValue": false
+      "defaultValue": false,
+      "description": "Sets gets ability to automatically set value in editor to opposite limit, when spin action reached minimum or maximum limit.<br>&nbsp;&nbsp;&nbsp;&nbsp;In case of listOfItems, the first and the last items in list are used as minimum and maximum values.",
+      "valueOptions": null
     },
     "tabIndex": {
       "type": "number",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": "Gets sets value in tabIndex for editor.",
+      "valueOptions": null
     },
     "textAlign": {
       "type": "string",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": " Sets gets horizontal alignment of text in editor. If that option is not set, then 'right' is used for 'numeric', 'currency' and 'percent' editors and the 'left' is used for all other types of editor.",
+      "valueOptions": [
+        {
+          "name": "null",
+          "type": "object",
+          "description": ""
+        },
+        {
+          "name": "left",
+          "type": "string",
+          "description": ""
+        },
+        {
+          "name": "right",
+          "type": "string",
+          "description": ""
+        },
+        {
+          "name": "center",
+          "type": "string",
+          "description": ""
+        }
+      ]
     },
     "theme": {
       "type": "string",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": "Sets gets selector for css classes used by editor.<br>&nbsp;&nbsp;&nbsp;&nbsp;That option allows replacing all default css styles of editor by custom values.<br>&nbsp;&nbsp;&nbsp;&nbsp;Application should provide css classes for all members defined in the css options with \"theme\" selector.<br>&nbsp;&nbsp;&nbsp;&nbsp;For example, if that property is set to \"mytheme\", then application should provide following css classes:<br>&nbsp;&nbsp;&nbsp;&nbsp;.mytheme .ui-igedit-field{...};<br>&nbsp;&nbsp;&nbsp;&nbsp;.mytheme .ui-igedit-focus{...};<br>&nbsp;&nbsp;&nbsp;&nbsp;etc.<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: changing theme is not supported when base element is INPUT or TEXTAREA and renderInContainer or button are not enabled.",
+      "valueOptions": null
     },
     "toLower": {
       "type": "bool",
-      "defaultValue": false
+      "defaultValue": false,
+      "description": "Sets gets ability to convert input characters to lower case (true) or keeps characters as they are (false). That option has effect only while keyboard entries and paste.",
+      "valueOptions": null
     },
     "toUpper": {
       "type": "bool",
-      "defaultValue": false
+      "defaultValue": false,
+      "description": "Sets gets ability to convert input characters to upper case (true) or keeps characters as they are (false). That option has effect only while keyboard entries and paste.",
+      "valueOptions": null
     },
     "type": {
       "type": "string",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": " Sets type of editor. If that option is not set, but the 'value' option is defined, then if type of 'value' is Number, then the 'numeric' type is used, if type of 'value' is Date, then the 'date' type is used. For all other types of 'value' the 'text' type is used. Note: if that option is set to 'datepicker', then application should ensure that css and js files used by jquery.ui.datepicker are available.",
+      "valueOptions": [
+        {
+          "name": "text",
+          "type": "string",
+          "description": " Text editor is created"
+        },
+        {
+          "name": "0",
+          "type": "number",
+          "description": " Text editor is created (same as 'text')"
+        },
+        {
+          "name": "mask",
+          "type": "string",
+          "description": " Mask editor is created"
+        },
+        {
+          "name": "1",
+          "type": "number",
+          "description": " Mask editor is created (same as 'mask')"
+        },
+        {
+          "name": "date",
+          "type": "string",
+          "description": " Date-time editor is created"
+        },
+        {
+          "name": "2",
+          "type": "number",
+          "description": " Date-time editor is created (same as 'date')"
+        },
+        {
+          "name": "datepicker",
+          "type": "string",
+          "description": " Date-picker is created"
+        },
+        {
+          "name": "3",
+          "type": "number",
+          "description": " Date-picker is created (same as 'datepicker')"
+        },
+        {
+          "name": "numeric",
+          "type": "string",
+          "description": " Numeric editor is created"
+        },
+        {
+          "name": "4",
+          "type": "number",
+          "description": " Numeric editor is created (same as 'numeric')"
+        },
+        {
+          "name": "currency",
+          "type": "string",
+          "description": " Currency editor is created"
+        },
+        {
+          "name": "5",
+          "type": "number",
+          "description": " Currency editor is created (same as 'currency')"
+        },
+        {
+          "name": "percent",
+          "type": "string",
+          "description": " Percent editor is created"
+        },
+        {
+          "name": "6",
+          "type": "number",
+          "description": " Percent editor is created (same as 'percent')"
+        }
+      ]
     },
     "validatorOptions": {
       "type": "object",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": "Sets gets options supported by igValidator.<br>&nbsp;&nbsp;&nbsp;&nbsp;In order to enable validation and use defaults, an empty object can be used.<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: validation rules of igValidator, such as min, max, minLength, required are not supported, but similar properties of igEditor should be used.",
+      "valueOptions": null
     },
     "value": {
       "type": "object",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": "Gets sets value in editor. The effect of setting/getting that option depends on type of editor and on dataMode options. That can be string, number or Date depending on type of editor. If it is used on initialization and the type option is missing, then if 'value' is Number, then 'numeric' editor is created automatically and if 'value' is Date, then the 'date' editor is created.",
+      "valueOptions": null
     },
     "width": {
       "type": "number",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": "Sets gets width of editor in pixels.<br>&nbsp;&nbsp;&nbsp;&nbsp;Only positive values have effect. If that option is not set, then value of style.width of base html element will be used automatically. However, that value should be in the px units.",
+      "valueOptions": null
     }
   }
 }
