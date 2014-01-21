@@ -224,13 +224,13 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			return '<div class="adorner-label adorner-custom-label">INTERACTIONS</div>';
 		},
 		_renderActions: function () {
-			return '<div class="adorner-label adorner-custom-label">ACTIONS</div><a href="#" class="adorner-custom-action" data-action="add-column">Add Column</a><a href="#" class="adorner-custom-action" data-action="add-row">Add Row</a>';
+			return '<div class="adorner-label adorner-custom-label">ACTIONS</div><a href="#" class="adorner-custom-action" data-action="addColumn">Add Column</a><a href="#" class="adorner-custom-action" data-action="addRow">Add Row</a>';
 		},
 		_renderProperties: function () {
 			return '<div class="adorner-label adorner-custom-label">PROPERTIES</div>';
 		},
 		_renderCustomFooter: function () {
-			return '<div class="adorner-custom-footer"><a href="#" class="adorner-custom-action" data-action="full-view">All Events & Properties</a></div>';
+			return '<div class="adorner-custom-footer"><a href="#" class="adorner-custom-action" data-action="summaryView">All Events & Properties</a></div>';
 		},
 		_customizeHeader: function (descriptor) {
 			var header = this._content.children('.adorner-header'),
@@ -239,7 +239,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			left.html(this._renderCustomHeader(descriptor));
 		},
 		_renderCustomHeader: function (descriptor) {
-			return '<a href="#" class="adorner-custom-action adorner-back" data-action="custom-view"><span class="adorner-back-button">&nbsp;</span></a><span class="adorner-hlabel">Back</span>';
+			return '<a href="#" class="adorner-custom-action adorner-back" data-action="customView"><span class="adorner-back-button">&nbsp;</span></a><span class="adorner-hlabel">Back</span>';
 		},
 		_restoreHeader: function (descriptor) {
 			var header = this._content.children('.adorner-header'),
@@ -248,43 +248,27 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 		},
 		_attachEvents: function (adorner, descriptor) {
 			var self = this;
+			adorner.off();
 			adorner.on('click', '.adorner-custom-action', function (event) {
 				var action = $(this).attr('data-action');
-				self._dispatchAction(action, descriptor);
+				if (self[action]) {
+					self[action](descriptor);
+				}
 				event.stopPropagation();
 				return false;
 			});
 		},
-		_dispatchAction: function (action, descriptor) {
-			switch (action) {
-			case 'add-column':
-				this.addColumnAction(descriptor);
-				break;
-			case 'add-row':
-				this.addRowAction(descriptor);
-				break;
-			case 'full-view':
-				this.fullViewTransition(descriptor);
-				break;
-			case 'custom-view':
-				this.customViewTransition(descriptor);
-				break;
-			default:
-				break;
-			}
-		},
-		addColumnAction: function (descriptor) {
+		addColumn: function (descriptor) {
 			alert('Add Column Action triggered.');
 		},
-		addRowAction: function (descriptor) {
+		addRow: function (descriptor) {
 			alert('Add Row Action triggered.');
 		},
-		fullViewTransition: function (descriptor) {
+		summaryView: function (descriptor) {
 			this._wrapper.animate({left: -250}, 250);
 			this._customizeHeader(descriptor);
-			//this._content.animate({left: 0}, 250);
 		},
-		customViewTransition: function (descriptor) {
+		customView: function (descriptor) {
 			this._wrapper.animate({left: 0}, 250);
 			this._restoreHeader();
 		}

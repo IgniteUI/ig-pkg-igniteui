@@ -6,97 +6,273 @@
   "events": {
     "actionExecuted": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event fired after a toolbar item is clicked."
     },
     "actionExecuting": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event fired before a toolbar item is clicked."
     },
     "copy": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event is fired on keyboard copy action."
     },
     "cut": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event is fired on keyboard cut action."
     },
     "paste": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event is fired on keyboard paste action."
     },
     "redo": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event is fired on keyboard redo action."
     },
     "rendered": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event fired after the whole html editor widget has been rendered."
     },
     "rendering": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event fired before the html editor widget has been rendered."
     },
     "toolbarCollapsed": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event fired after a toolbar is collapsed."
     },
     "toolbarCollapsing": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event fired before a toolbar is collapsed."
     },
     "toolbarExpanded": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event fired after a toolbar is expanded."
     },
     "toolbarExpanding": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event fired before a toolbar is expanded."
     },
     "undo": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event is fired on keyboard undo action."
     }
   },
   "properties": {
     "customToolbars": {
       "type": "array",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": "The html editor custom toolbars list.",
+      "valueOptions": null
     },
     "height": {
       "type": "number",
-      "defaultValue": 350.0
+      "defaultValue": 350.0,
+      "description": "Set or get the widget height.",
+      "valueOptions": null
     },
     "inputName": {
       "type": "string",
-      "defaultValue": "source"
+      "defaultValue": "source",
+      "description": "The name attribute of the html editor source view.",
+      "valueOptions": null
     },
     "showCopyPasteToolbar": {
       "type": "bool",
-      "defaultValue": true
+      "defaultValue": true,
+      "description": "Shows/hides the \"Copy Paste\" toolbar.",
+      "valueOptions": null
     },
     "showFormattingToolbar": {
       "type": "bool",
-      "defaultValue": true
+      "defaultValue": true,
+      "description": "Shows/hides the \"Formating\" toolbar.",
+      "valueOptions": null
     },
     "showInsertObjectToolbar": {
       "type": "bool",
-      "defaultValue": true
+      "defaultValue": true,
+      "description": "Shows/hides the \"Insert Object\" toolbar.",
+      "valueOptions": null
     },
     "showTextToolbar": {
       "type": "bool",
-      "defaultValue": true
+      "defaultValue": true,
+      "description": "Shows/hides the \"Text\" toolbar.",
+      "valueOptions": null
     },
     "toolbarSettings": {
       "type": "array",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": "The html editor toolbars list.",
+      "valueOptions": null
     },
     "value": {
       "type": "string",
-      "defaultValue": ""
+      "defaultValue": "",
+      "description": "Used to render inside the html editor as initial content",
+      "valueOptions": null
     },
     "width": {
       "type": "number",
-      "defaultValue": 725.0
+      "defaultValue": 725.0,
+      "description": "Set or get the widget width.",
+      "valueOptions": null
     }
   }
 }
