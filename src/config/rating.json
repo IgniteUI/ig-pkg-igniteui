@@ -52,7 +52,7 @@
     },
     "precision": {
       "type": "string",
-      "defaultValue": null,
+      "defaultValue": "whole",
       "description": " Gets or sets precision. Precision of value and valueHover.",
       "valueOptions": [
         {
