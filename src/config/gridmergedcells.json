@@ -1,23 +1,59 @@
 {
   "overview": null,
-  "name": "ui.igGridMergedCells",
-  "title": "Cell Merging",
+  "name": "ui.igGridCellMerging",
   "category": null,
   "visual": true,
   "events": {
     "cellsMerged": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Use ui.row to get reference to the row the merged group starts in.<br>&nbsp;&nbsp;&nbsp;Use ui.rowIndex to get the index of the row the merged group starts in.<br>&nbsp;&nbsp;&nbsp;Use ui.rowKey to get the key of the row the merged group starts in.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridCellMerging.<br>&nbsp;&nbsp;&nbsp;Use ui.grid to get reference to the igGrid the igGridCellMerging are initialized for.<br>&nbsp;&nbsp;&nbsp;Use ui.value to get the cells value which is repeated and caused the merged group to be created.<br>&nbsp;&nbsp;&nbsp;Use ui.count to get the total count of cells that were merged."
     },
     "cellsMerging": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event fired before a new merged cells group is created.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.row to get reference to the row the merged group starts in.<br>&nbsp;&nbsp;&nbsp;Use ui.rowIndex to get the index of the row the merged group starts in.<br>&nbsp;&nbsp;&nbsp;Use ui.rowKey to get the key of the row the merged group starts in.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridCellMerging.<br>&nbsp;&nbsp;&nbsp;Use ui.grid to get reference to the igGrid the igGridCellMerging are initialized for.<br>&nbsp;&nbsp;&nbsp;Use ui.value to get the cells value which is repeated and caused the merged group to be created."
     }
   },
   "properties": {
     "initialState": {
       "type": "string",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": " controls the initial state ",
+      "valueOptions": [
+        {
+          "name": "regular",
+          "type": "string",
+          "description": " the grid won't be initialized with cells merged"
+        },
+        {
+          "name": "merged",
+          "type": "string",
+          "description": " the grid will be initialized with cells merged"
+        }
+      ]
     }
   }
 }

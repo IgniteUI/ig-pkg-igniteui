@@ -4,55 +4,619 @@
   "category": null,
   "visual": true,
   "events": {
+    "dataSourceInitialized": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Fired after the data source has initialized.<br>            Function takes arguments evt and ui.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.dataSource to get a reference to the data source.<br>            Use ui.error to see if an error has occured during initialization.<br>            Use ui.metadataTreeRoot to get a reference to the root of the data source metatadata root item."
+    },
+    "dataSourceUpdated": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Fired after the data source has updated.<br>            Function takes arguments evt and ui.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.dataSource to get a reference to the data source.<br>            Use ui.error to see if an error has occured during update.<br>            Use ui.result to get the result of the update operation."
+    },
+    "drag": {
+      "cancellable": true,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Fired on drag. Return false to cancel the drag.<br>            Use ui.metadata&nbsp;to get a reference to the data.<br>            Use ui.helper to get a reference to the helper.<br>            Use ui.offset to get a reference to the offset.<br>            Use ui.originalPosition to get a reference to the original position of the draggable element.<br>            Use ui.position to get a reference to the current position of the draggable element."
+    },
+    "dragStart": {
+      "cancellable": true,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Fired on drag start. Return false to cancel the dragging.<br>            Use ui.metadata&nbsp;to get a reference to the data.<br>            Use ui.helper to get a reference to the helper.<br>            Use ui.offset to get a reference to the offset.<br>            Use ui.originalPosition to get a reference to the original position of the draggable element.<br>            Use ui.position to get a reference to the current position of the draggable element."
+    },
+    "dragStop": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Fired on drag stop.<br>            Use ui.helper to get a reference to the helper.<br>            Use ui.offset to get a reference to the offset.<br>            Use ui.originalPosition to get a reference to the original position of the draggable element.<br>            Use ui.position to get a reference to the current position of the draggable element."
+    },
+    "filterDropDownClosed": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Fired after the filter members drop down closes.<br>            Use ui.hierarchy for a reference to the hierarchy."
+    },
+    "filterDropDownClosing": {
+      "cancellable": true,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Fired before the filter members drop down closes. Return false to cancel the closing.<br>            Use ui.hierarchy for a reference to the hierarchy.<br>            Use ui.dropDownElement for a reference to the drop down."
+    },
+    "filterDropDownOk": {
+      "cancellable": true,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Fired after the OK button in the filter members drop down is clicked. Return false to cancel the applying of the filters.<br>            Use ui.hierarchy for a reference to the hierarchy.<br>            Use ui.filterMembers for a collection with the selected filter members. If all filter members are selected the collection will be empty.<br>            Use ui.dropDownElement for a reference to the drop down."
+    },
+    "filterDropDownOpened": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Fired after the filter members drop down opens.<br>            Use ui.hierarchy for a reference to the hierarchy.<br>            Use ui.dropDownElement for a reference to the drop down."
+    },
+    "filterDropDownOpening": {
+      "cancellable": true,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Fired before the filter members drop down opens. Return false to cancel the opening.<br>            Use ui.hierarchy for a reference to the hierarchy."
+    },
+    "filterMembersLoaded": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Fired after the filter members are loaded.<br>            Use ui.parent to get the parent node or the igTree instance in the initial load.<br>            Use ui.rootFilterMembers for a collection with the root filter members (deprecated).<br>            Use ui.filterMembers for a collection with the newly loaded filter members."
+    },
+    "headersSorted": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Fired after the sorting of the headers.<br>            Function takes arguments evt and ui.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.levelSortDirections to get an array of the level names and sort directions that were used.<br>            Use ui.appliedLevelSortDirections to get an array of the level names and sort directions that were actually applied to the table view."
+    },
+    "headersSorting": {
+      "cancellable": true,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Fired before the sorting of the headers.<br>            Function takes arguments evt and ui. Return false to cancel the sorting.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.levelSortDirections to get an array of the level names and sort directions that will be used."
+    },
+    "metadataDropped": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Fired after a metadata item drop.<br>            Use ui.targetElement for a reference to the drop target.<br>            Use ui.draggedElement for a reference to the dragged element.<br>            Use ui.metadata&nbsp;to get a reference to the data.<br>            Use ui.metadataIndex to get the index at which the metadata is inserted.<br>            Use ui.helper to get a reference to the helper.<br>            Use ui.offset to get a reference to the offset.<br>            Use ui.position to get a reference to the current position of the draggable element."
+    },
+    "metadataDropping": {
+      "cancellable": true,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Fired before a metadata item drop. Return false to cancel the drop.<br>            Use ui.targetElement for a reference to the drop target.<br>            Use ui.draggedElement for a reference to the metadata item element.<br>            Use ui.metadata&nbsp;to get a reference to the data.<br>            Use ui.metadataIndex to get the index at which the metadata will be inserted.<br>            Use ui.helper to get a reference to the helper.<br>            Use ui.offset to get a reference to the offset.<br>            Use ui.position to get a reference to the current position of the draggable element."
+    },
+    "metadataRemoved": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Fired after a metadata item is removed when the user clicks the close icon.<br>            Use ui.metadata&nbsp;to get a reference to the data."
+    },
+    "metadataRemoving": {
+      "cancellable": true,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Fired before a metadata item is removed when the user clicks the close icon. Return false to cancel the removing.<br>            Use ui.targetElement for a reference to the dragged element.<br>            Use ui.metadata&nbsp;to get a reference to the data."
+    },
+    "pivotGridHeadersRendered": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event fired after the headers have been rendered.<br>            Function takes arguments evt and ui.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.grid to get a reference to the igGrid widget, which holds the headers.<br>            Use ui.table to get a reference to the headers table DOM element."
+    },
+    "pivotGridRendered": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event fired after the whole grid widget has been rendered (including headers, footers, etc.).<br>            Function takes arguments evt and ui.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.grid to get reference to the igGrid widget, which represents the data."
+    },
+    "sorted": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Fired after the sorting of the columns.<br>            Function takes arguments evt and ui.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.sortDirections to get an array of the tuple indices and sort directions that were passed to the table view.<br>            Use ui.appliedSortDirections to get an array of the tuple indices and sort directions that were actually applied to the table view."
+    },
+    "sorting": {
+      "cancellable": true,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Fired before the sorting of the columns.<br>            Function takes arguments evt and ui. Return false to cancel the sorting.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.sortDirections to get an array of the tuple indices and sort directions that will be used."
+    },
+    "tupleMemberCollapsed": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Fired after the collapse of the tuple member.<br>            Function takes arguments evt and ui.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.dataSource to get a reference to the data source.<br>            Use ui.axisName to get the name of axis, which holds the member and the tuple.<br>            Use ui.tupleIndex to get the index of the tuple in the axis.<br>            Use ui.memberIndex to get the index of the member in the tuple."
+    },
+    "tupleMemberCollapsing": {
+      "cancellable": true,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Fired before the collapse of the tuple member.<br>            Function takes arguments evt and ui. Return false to cancel the collapsing.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.dataSource to get a reference to the data source.<br>            Use ui.axisName to get the name of axis, which holds the member and the tuple.<br>            Use ui.tupleIndex to get the index of the tuple in the axis.<br>            Use ui.memberIndex to get the index of the member in the tuple."
+    },
     "tupleMemberExpanded": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Fired after the expand of the tuple member.<br>            Function takes arguments evt and ui.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.dataSource to get a reference to the data source.<br>            Use ui.axisName to get the name of axis, which holds the member and the tuple.<br>            Use ui.tupleIndex to get the index of the tuple in the axis.<br>            Use ui.memberIndex to get the index of the member in the tuple."
     },
     "tupleMemberExpanding": {
       "cancellable": true,
-      "args": []
-    },
-    "viewUpdated": {
-      "cancellable": false,
-      "args": []
-    },
-    "viewUpdating": {
-      "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Fired before the expand of the tuple member.<br>            Function takes arguments evt and ui. Return false to cancel the expanding.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.dataSource to get a reference to the data source.<br>            Use ui.axisName to get the name of axis, which holds the member and the tuple.<br>            Use ui.tupleIndex to get the index of the tuple in the axis.<br>            Use ui.memberIndex to get the index of the member in the tuple."
     }
   },
   "properties": {
+    "allowHeaderColumnsSorting": {
+      "type": "bool",
+      "defaultValue": false,
+      "description": "Enables sorting of the header cells in columns.",
+      "valueOptions": null
+    },
+    "allowHeaderRowsSorting": {
+      "type": "bool",
+      "defaultValue": false,
+      "description": "Enables sorting of the header cells in rows.",
+      "valueOptions": null
+    },
+    "allowSorting": {
+      "type": "bool",
+      "defaultValue": false,
+      "description": "Enables sorting of the value cells in columns.",
+      "valueOptions": null
+    },
+    "compactColumnHeaderIndentation": {
+      "type": "number",
+      "defaultValue": 30.0,
+      "description": "The indentation for every level column when the compactColumnHeaders is set to true.",
+      "valueOptions": null
+    },
     "compactColumnHeaders": {
       "type": "bool",
-      "defaultValue": false
+      "defaultValue": false,
+      "description": "A boolean value indicating wheter the column headers should be arranged for compact header layout – each hieararchy is in a single row.",
+      "valueOptions": null
     },
-    "compactHeaderIndentation": {
+    "compactRowHeaderIndentation": {
       "type": "number",
-      "defaultValue": 20.0
+      "defaultValue": 20.0,
+      "description": "The indentation for every level row when the compactRowHeaders is set to true.",
+      "valueOptions": null
     },
     "compactRowHeaders": {
       "type": "bool",
-      "defaultValue": true
+      "defaultValue": true,
+      "description": "A boolean value indicating wheter the row headers should be arranged for compact header layout – each hieararchy is in a single column.",
+      "valueOptions": null
+    },
+    "customMoveValidation": {
+      "type": "function",
+      "defaultValue": null,
+      "description": "A function that will be called to determine if an item can be moved in or dropped on an area of the pivot grid.<br>            paramType=\"string\" The location where the item will be moved - igPivotGrid, igPivotDataSelector, filters, rows, columns or measures.<br>            paramType=\"string\" The type of the item - Hierarchy, Measure or MeasureList.<br>            paramType=\"string\" The unique name of the item.<br>            returnType=\"bool\"  The function must return true if the item should be accepted.",
+      "valueOptions": null
     },
     "dataSource": {
-      "type": "unknown",
-      "defaultValue": null
+      "type": "object",
+      "defaultValue": null,
+      "description": "An instance of $.ig.OlapXmlaDataSource or $.ig.OlapFlatDataSource.",
+      "valueOptions": null
     },
     "dataSourceOptions": {
       "type": "object",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": "An object that will be used to create an instance of $.ig.OlapXmlaDataSource or $.ig.OlapFlatDataSource.<br>            The provided value must contain an object with settings for one of the data source types - xmlaOptions or flatDataOptions.",
+      "valueOptions": null
+    },
+    "defaultRowHeaderWidth": {
+      "type": "number",
+      "defaultValue": 200.0,
+      "description": "Specifies the width of the row headers.",
+      "valueOptions": null
+    },
+    "deferUpdate": {
+      "type": "bool",
+      "defaultValue": false,
+      "description": "Setting deferUpdate to true will not apply changes to the data source until the updateGrid method is called.",
+      "valueOptions": null
+    },
+    "disableColumnsDropArea": {
+      "type": "bool",
+      "defaultValue": false,
+      "description": "Disable the drag and drop for the columns drop area and the ability to use filtering and remove items from it.",
+      "valueOptions": null
+    },
+    "disableFiltersDropArea": {
+      "type": "bool",
+      "defaultValue": false,
+      "description": "Disable the drag and drop for the filters drop area and the ability to use filtering and remove items from it.",
+      "valueOptions": null
+    },
+    "disableMeasuresDropArea": {
+      "type": "bool",
+      "defaultValue": false,
+      "description": "Disable the drag and drop for the measures drop area and the ability to use filtering and remove items from it.",
+      "valueOptions": null
+    },
+    "disableRowsDropArea": {
+      "type": "bool",
+      "defaultValue": false,
+      "description": "Disable the drag and drop for the rows drop area and the ability to use filtering and remove items from it.",
+      "valueOptions": null
+    },
+    "dragAndDropSettings": {
+      "type": "object",
+      "defaultValue": null,
+      "description": "Settings for the drag and drop functionality of the igPivotGrid.",
+      "valueOptions": null
+    },
+    "dropDownParent": {
+      "type": "string",
+      "defaultValue": null,
+      "description": " Specifies the parent for the drop downs.",
+      "valueOptions": []
+    },
+    "firstLevelSortDirection": {
+      "type": "string",
+      "defaultValue": null,
+      "description": " Spefies the default sort direction for the levels if no sort direction is specified in an item from the levelSortDirections option.",
+      "valueOptions": []
+    },
+    "firstSortDirection": {
+      "type": "string",
+      "defaultValue": null,
+      "description": " Spefies the default sort direction for the rows.",
+      "valueOptions": []
     },
     "gridOptions": {
       "type": "object",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": "Options specific to the igGrid that will render the pivot grid view.",
+      "valueOptions": null
+    },
+    "height": {
+      "type": "string",
+      "defaultValue": null,
+      "description": " This is the total height of the grid.",
+      "valueOptions": [
+        {
+          "name": null,
+          "type": "string",
+          "description": " The widget height can be set in pixels (px) and percentage (%)."
+        },
+        {
+          "name": null,
+          "type": "number",
+          "description": " The widget height can be set as a number"
+        },
+        {
+          "name": "null",
+          "type": "object",
+          "description": " Will stretch vertically to fit data, if no other heights are defined"
+        }
+      ]
+    },
+    "hideColumnsDropArea": {
+      "type": "bool",
+      "defaultValue": false,
+      "description": "Hide the columns drop area.",
+      "valueOptions": null
+    },
+    "hideFiltersDropArea": {
+      "type": "bool",
+      "defaultValue": false,
+      "description": "Hide the filters drop area.",
+      "valueOptions": null
+    },
+    "hideMeasuresDropArea": {
+      "type": "bool",
+      "defaultValue": false,
+      "description": "Hide the measures drop area.",
+      "valueOptions": null
+    },
+    "hideRowsDropArea": {
+      "type": "bool",
+      "defaultValue": false,
+      "description": "Hide the rows drop area.",
+      "valueOptions": null
     },
     "isParentInFrontForColumns": {
       "type": "bool",
-      "defaultValue": false
+      "defaultValue": false,
+      "description": "A boolean value indicating whether a parent in the columns is in front of its children.<br>            If set to true, the query set sorts members in a level in their natural order - child members immediately follow their parent members.<br>            If set to false the query set sorts the members in a level using a post-natural order. In other words, child members precede their parents.",
+      "valueOptions": null
     },
     "isParentInFrontForRows": {
       "type": "bool",
-      "defaultValue": true
+      "defaultValue": true,
+      "description": "A boolean value indicating whether a parent in the rows is in front of its children.<br>            If set to true, the query set sorts members in a level in their natural order - child members immediately follow their parent members.<br>            If set to false the query set sorts the members in a level using a post-natural order. In other words, child members precede their parents.",
+      "valueOptions": null
+    },
+    "levelSortDirections": {
+      "type": "array",
+      "defaultValue": null,
+      "description": "An array of level sort direction items, which predefine the sorted header cells.",
+      "valueOptions": null
+    },
+    "width": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "",
+      "valueOptions": [
+        {
+          "name": null,
+          "type": "string",
+          "description": " The widget width can be set in pixels (px) and percentage (%)."
+        },
+        {
+          "name": null,
+          "type": "number",
+          "description": " The widget width can be set as a number"
+        },
+        {
+          "name": "null",
+          "type": "object",
+          "description": " Will stretch to fit the data, if no other widths are defined."
+        }
+      ]
     }
   }
 }

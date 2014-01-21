@@ -1,135 +1,336 @@
 {
   "overview": null,
   "name": "ui.igGridHiding",
-  "title": "Column Hiding",
   "category": null,
   "visual": true,
   "events": {
     "columnChooserButtonApplyClick": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "event fired when button Apply in column chooser is clicked<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridHiding widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object.<br>&nbsp;&nbsp;&nbsp;Use ui.columnsToShow to get array of columns identifiers which should be shown<br>&nbsp;&nbsp;&nbsp;Use ui.columnsToHide to get array of columns identifiers which should be hidden"
     },
     "columnChooserButtonResetClick": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "event fired when button Reset in column chooser is clicked<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridHiding widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object."
     },
     "columnChooserClosed": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "event fired after the column chooser has been closed.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridHiding widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object."
     },
     "columnChooserClosing": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "event fired before the column chooser is closed.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridHiding widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object."
     },
     "columnChooserContentsRendered": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "event fired after the contents of the column chooser are rendered.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridHiding widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object."
     },
     "columnChooserContentsRendering": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "event fired before the contents of the column chooser are rendered.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridHiding widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object."
     },
     "columnChooserMoving": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "event fired every time the column chooser changes its position.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridHiding widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object.<br>&nbsp;&nbsp;&nbsp;Use ui.originalPosition to get the original position of the column chooser div as { top, left } object, relative to the page.<br>&nbsp;&nbsp;&nbsp;Use ui.position to get the current position of the column chooser div as { top, left } object, relative to the page."
     },
     "columnChooserOpened": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "event fired after the column chooser is already opened.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridHiding widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object."
     },
     "columnChooserOpening": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "event fired before the column chooser is opened.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridHiding widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object."
     },
     "columnHidden": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "event fired after the hiding has been executed and results are rendered.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridHiding widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.columnIndex to get the hidden column index. Has a value only if the column's key is a number.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get the hidden column key. Has a value only if the column's key is a string."
     },
     "columnHiding": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "event fired before a hiding operation is executed.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridHiding widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.columnIndex to get the hidden column index. Has a value only if the column's key is a number.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get the hidden column key. Has a value only if the column's key is a string."
     },
     "columnShowing": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "event fired before a showing operation is executed.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridHiding widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.columnIndex to get the shown column index.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get the shown column key."
     },
     "columnShown": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "event fired after the showing has been executed and results are rendered.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridHiding widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.columnIndex to get the shown column index.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get the shown column key."
     },
     "multiColumnHiding": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "event fired before a hiding operation is executed.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridHiding widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKeys to get array of the hidden column keys."
     }
   },
   "properties": {
     "columnChooserAnimationDuration": {
       "type": "number",
-      "defaultValue": 200.0
+      "defaultValue": 200.0,
+      "description": "Specifies time of milliseconds for animation duration to show/hide modal dialog",
+      "valueOptions": null
     },
     "columnChooserButtonApplyText": {
       "type": "string",
-      "defaultValue": ""
+      "defaultValue": "",
+      "description": "Specifies text of button which apply changes in modal dialog",
+      "valueOptions": null
     },
     "columnChooserButtonCancelText": {
       "type": "string",
-      "defaultValue": ""
+      "defaultValue": "",
+      "description": "Specifies text of button which cancel changes in modal dialog",
+      "valueOptions": null
     },
     "columnChooserCaptionText": {
       "type": "string",
-      "defaultValue": ""
+      "defaultValue": "",
+      "description": "The caption of the column chooser dialog.",
+      "valueOptions": null
     },
     "columnChooserContainment": {
       "type": "string",
-      "defaultValue": "owner"
+      "defaultValue": "owner",
+      "description": "Controls containment behavior. <br>                owner  The column chooser dialog will be draggable only in the grid area<br>                window  The column chooser dialog will be draggable in the whole window area",
+      "valueOptions": null
     },
     "columnChooserDisplayText": {
       "type": "string",
-      "defaultValue": ""
+      "defaultValue": "",
+      "description": "The text used in the drop down tools menu(Feature Chooser) to launch the column chooser dialog.",
+      "valueOptions": null
     },
     "columnChooserHeight": {
       "type": "number",
-      "defaultValue": ""
+      "defaultValue": "",
+      "description": "The default column chooser height in pixels.",
+      "valueOptions": null
     },
     "columnChooserHideOnClick": {
       "type": "bool",
-      "defaultValue": false
+      "defaultValue": false,
+      "description": "Specifies on click show/hide directly to be shown/hidden columns. If columnChooserHideOnClick is false then Apply and Cancel Buttons are shown on the bottom of modal dialog. Columns are Shown/Hidden after the Apply button is clicked",
+      "valueOptions": null
     },
     "columnChooserHideText": {
       "type": "string",
-      "defaultValue": ""
+      "defaultValue": "",
+      "description": "The text used in the column chooser to hide column",
+      "valueOptions": null
     },
     "columnChooserResetButtonLabel": {
       "type": "string",
-      "defaultValue": ""
+      "defaultValue": "",
+      "description": "Text label for reset button.",
+      "valueOptions": null
     },
     "columnChooserShowText": {
       "type": "string",
-      "defaultValue": ""
+      "defaultValue": "",
+      "description": "The text used in the column chooser to show column",
+      "valueOptions": null
     },
     "columnChooserWidth": {
       "type": "number",
-      "defaultValue": 350.0
+      "defaultValue": 350.0,
+      "description": "The default column chooser width in pixels.",
+      "valueOptions": null
     },
     "columnHideText": {
       "type": "string",
-      "defaultValue": ""
+      "defaultValue": "",
+      "description": "The text used in the drop down tools menu(Feature Chooser) to hide a column.",
+      "valueOptions": null
     },
     "columnSettings": {
       "type": "array",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": "A list of column settings that specifies hiding options on a per column basis.",
+      "valueOptions": null
     },
     "dropDownAnimationDuration": {
       "type": "number",
-      "defaultValue": 500.0
+      "defaultValue": 500.0,
+      "description": "The duration of the dropdown animation in milliseconds.",
+      "valueOptions": null
     },
     "hiddenColumnIndicatorHeaderWidth": {
       "type": "number",
-      "defaultValue": 7.0
+      "defaultValue": 7.0,
+      "description": "The width in pixels of the hidden column indicator in the header.",
+      "valueOptions": null
     },
     "hiddenColumnIndicatorTooltipText": {
       "type": "string",
-      "defaultValue": ""
+      "defaultValue": "",
+      "description": "The text displayed in the tooltip of the hidden column indicator.",
+      "valueOptions": null
     }
   }
 }
