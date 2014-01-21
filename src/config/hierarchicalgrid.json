@@ -6,97 +6,223 @@
   "events": {
     "childGridCreated": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "event fired after a child grid is created"
     },
     "childGridCreating": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "event fired before a child grid is going to be created, allows the developer to override the child grid creation"
     },
     "childrenPopulated": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event which is fired when children have been populated (Load on demand) <br>&nbsp;&nbsp;&nbsp;&nbsp;use args.owner to access the hierarchical grid object<br>&nbsp;&nbsp;&nbsp;&nbsp;use args.parentrow to access the row element for the row that was populated<br>&nbsp;&nbsp;&nbsp;&nbsp;use args.id to get the data ID of the row"
     },
     "childrenPopulating": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event which is fired when children are about to be populated (Load on demand)<br>&nbsp;&nbsp;&nbsp;&nbsp;use args.owner to access the hierarchical grid object<br>&nbsp;&nbsp;&nbsp;&nbsp;use args.parentrow to access the row element for the row that's about to be populated<br>&nbsp;&nbsp;&nbsp;&nbsp;use args.id to get the data ID of the row"
     },
     "rowCollapsed": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event which is fired when a hierarchical row has been collapsed <br>&nbsp;&nbsp;&nbsp;&nbsp;use args.owner to access the hierarchical grid object<br>&nbsp;&nbsp;&nbsp;&nbsp;use args.parentrow to access the row element for the row that was collapsd"
     },
     "rowCollapsing": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event which is fired when a hierarchical row is about to be collapsed <br>&nbsp;&nbsp;&nbsp;&nbsp;use args.owner to access the hierarchical grid object<br>&nbsp;&nbsp;&nbsp;&nbsp;use args.parentrow to access the row element for the row that's about to be collapsed"
     },
     "rowExpanded": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event which is fired after a hierarchical row has been expanded <br>&nbsp;&nbsp;&nbsp;&nbsp;use args.owner to access the hierarchical grid object<br>&nbsp;&nbsp;&nbsp;&nbsp;use args.parentrow to access the row element for the row that was expanded"
     },
     "rowExpanding": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event which is fired when a hierarchical row is about to be expanded<br>&nbsp;&nbsp;&nbsp;&nbsp;use args.owner to access the hierarchical grid object<br>&nbsp;&nbsp;&nbsp;&nbsp;use args.parentrow to access the row element for the row that's about to be expanded"
     }
   },
   "properties": {
     "animationDuration": {
       "type": "number",
-      "defaultValue": 500.0
+      "defaultValue": 500.0,
+      "description": "The row expanding/collapsing animation duration in ms.",
+      "valueOptions": null
     },
     "autoGenerateLayouts": {
       "type": "bool",
-      "defaultValue": false
+      "defaultValue": false,
+      "description": "if true, will autogenerate all layouts assuming default values for \"childrenDataProperty\" <br>&nbsp;&nbsp;&nbsp;&nbsp;When autoGenerateLayouts is enabled, it will automatically generate all columns recursively. (all columns on all levels)",
+      "valueOptions": null
     },
     "collapseTooltip": {
       "type": "string",
-      "defaultValue": ""
+      "defaultValue": "",
+      "description": "Specifies the default tooltip applied to an expand column cell, that is currently expanded",
+      "valueOptions": null
     },
     "columnLayouts": {
       "type": "object",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": "List of columnLayout objects that specify the structure of the child grids. All options that are applicable to a flat grid are also applicable here",
+      "valueOptions": null
     },
     "columns": {
       "type": "array",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": "An array of column objects",
+      "valueOptions": null
     },
     "defaultChildrenDataProperty": {
       "type": "string",
-      "defaultValue": "children"
+      "defaultValue": "children",
+      "description": "Specifies the default property in the response where children will be located",
+      "valueOptions": null
     },
     "expandCollapseAnimations": {
       "type": "bool",
-      "defaultValue": true
+      "defaultValue": true,
+      "description": "applies a linear animation - either expanding or collapsing depending on the parent row state",
+      "valueOptions": null
     },
     "expandColWidth": {
       "type": "number",
-      "defaultValue": 30.0
+      "defaultValue": 30.0,
+      "description": "Specifies the expand column width",
+      "valueOptions": null
     },
     "expandTooltip": {
       "type": "string",
-      "defaultValue": ""
+      "defaultValue": "",
+      "description": "Specifies the default tooltip applied to an expand column cell, that is currently collapsed",
+      "valueOptions": null
     },
     "initialDataBindDepth": {
       "type": "number",
-      "defaultValue": -1.0
+      "defaultValue": -1.0,
+      "description": "Only the first level will be data-bound initially. Also serves as \"render\" depth, meaning that depending on this prop, the grid will",
+      "valueOptions": null
     },
     "initialExpandDepth": {
       "type": "number",
-      "defaultValue": -1.0
+      "defaultValue": -1.0,
+      "description": "No levels will be automatically expanded when the widget is instantiated for the first time",
+      "valueOptions": null
     },
     "maxDataBindDepth": {
       "type": "number",
-      "defaultValue": -1.0
+      "defaultValue": -1.0,
+      "description": "Specifies the limit on the number of levels to bind to",
+      "valueOptions": null
     },
     "odata": {
       "type": "bool",
-      "defaultValue": false
+      "defaultValue": false,
+      "description": "If true, encodes all requests using OData conventions and the $expand syntax",
+      "valueOptions": null
     },
     "pathSeparator": {
       "type": "string",
-      "defaultValue": "/"
+      "defaultValue": "/",
+      "description": "Specifies the delimiter for constructing paths , for hierarchical lookup of data",
+      "valueOptions": null
     },
     "rest": {
       "type": "bool",
-      "defaultValue": false
+      "defaultValue": false,
+      "description": "If true, load on demand will be achieved using REST compliant resource access with appropriate url-s for<br>&nbsp;&nbsp;&nbsp;&nbsp;the ajax GET calls.",
+      "valueOptions": null
     }
   }
 }

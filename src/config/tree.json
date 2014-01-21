@@ -6,197 +6,541 @@
   "events": {
     "dataBinding": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "fired before databinding is performed <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree performing databinding."
     },
     "dataBound": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "fired after databinding is finished <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree performing databinding.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.dataView to get a reference to the data the tree has been databound to."
     },
     "drag": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "fired on node drag<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.binding to gets a reference to the binding.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.data&nbsp;to get a reference to the data.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.element to get a reference to the element.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.helper to get a reference to the helper.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.offset to get a reference to the offset.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.orginalPosition to get a reference to the original position of the draggable element (the node).<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.path&nbsp;to get a reference to the node path.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.position to get a reference to the current position of the draggable element."
     },
     "dragStart": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "fired on node drag start<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.binding to gets a reference to the binding.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.data&nbsp;to get a reference to the data.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.element to get a reference to the element.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.helper to get a reference to the helper.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.offset to get a reference to the offset.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.orginalPosition to get a reference to the original position of the draggable element (the node).<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.path&nbsp;to get a reference to the node path.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.position to get a reference to the current position of the draggable element."
     },
     "dragStop": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "fired after a drag operation has completed<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.helper to get a reference to the helper.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.offset to get a reference to the offset.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.orginalPosition to get a reference to the original position of the draggable element (the node).<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.position to get a reference to the current position of the draggable element."
     },
     "nodeCheckstateChanged": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "fired after the checkstate of a node is changed <br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.node to get a reference to the node object the checkbox of which is being interacted with.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.newState to get the new current state of the checkbox.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.newCheckedNodes to get the collection of all checked nodes.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.newPartiallyCheckedNodes to get the collection of all partially checked nodes."
     },
     "nodeCheckstateChanging": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "fired before the checkstate of a node is changed <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.node to get a reference to the node object the checkbox of which is being interacted with.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.currentState to get the current state of the checkbox.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.newState to get the new future state of the checkbox.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.currentCheckedNodes to get the collection of all checked nodes before the new state is applied."
     },
     "nodeClick": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "fired on node click <br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.node to get a reference to the node object being clicked."
     },
     "nodeCollapsed": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "fired after a node is collapsed <br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.node to get a reference to the collapsed node object."
     },
     "nodeCollapsing": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "fired before a node is collapsed <br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.node to get a reference to the node object about to collapse."
     },
     "nodeDoubleClick": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "fired on node double click<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.path to get a reference to the path of the double clicked node.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.element to get a reference to the jQuery element of the double clicked node.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.data to get the node data.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.binding to get a reference to the bindings object for the level at which the double clicked node is located."
     },
     "nodeDropped": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "fired after a node drop<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.binding to gets a reference to the binding.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.data&nbsp;to get a reference to the data.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.draggable to get a reference to the draggable element (the node).<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.element to get a reference to the element.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.helper to get a reference to the helper.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.offset to get a reference to the offset.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.path&nbsp;to get a reference to the node path.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.position to get a reference to the current position of the draggable element."
     },
     "nodeDropping": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "fired before a node drop<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.binding to gets a reference to the binding.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.data&nbsp;to get a reference to the data.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.draggable to get a reference to the draggable element (the node).<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.element to get a reference to the element.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.helper to get a reference to the helper.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.offset to get a reference to the offset.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.path&nbsp;to get a reference to the node path.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.position to get a reference to the current position of the draggable element."
     },
     "nodeExpanded": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "fired after a node is expanded <br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.node to get a reference to the expanded node object."
     },
     "nodeExpanding": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "fired before a node is expanded <br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.node to get a reference to the node object about to expand."
     },
     "nodePopulated": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "fired after the children of a node are populated in the case of load on demand <br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.path to get a reference to the path of the populated node.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.element to get a reference to the jQuery element of the populated node.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.data to get the node data.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.binding to get a reference to the bindings object for the level at which the populated node is located."
     },
     "nodePopulating": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "fired before the children of a node are populated in the case of load on demand <br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.path to get a reference to the path of the node being populated.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.element to get a reference to the jQuery element of the node being populated.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.data to get the node data.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.binding to get a reference to the bindings object for the level at which the populating node is located."
     },
     "rendered": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "fired after rendering of the tree has finished <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree."
     },
     "rendering": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "fired before rendering of the tree begins <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree performing rendering.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.dataView to get a reference to the data the tree is going to render."
     },
     "selectionChanged": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "fired after a new node is selected <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.selectedNodes to get a reference to the selected nodes.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.newNodes to get a reference to the newly added nodes to the selection."
     },
     "selectionChanging": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "fired before a new node is selected <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.selectedNodes to get a reference to currently selected nodes.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.newNodes to get a reference to the new nodes getting selected."
     }
   },
   "properties": {
     "animationDuration": {
       "type": "number",
-      "defaultValue": 200.0
+      "defaultValue": 200.0,
+      "description": "Specifies the duration of each animation such as the expand/collapse.",
+      "valueOptions": null
     },
     "bindings": {
       "type": "object",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": "Specifies the data binding properties and keys.",
+      "valueOptions": null
     },
     "checkboxMode": {
       "type": "string",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": " Gets the type of checkboxes rendered before the tree nodes. Can be set only at initialization.",
+      "valueOptions": [
+        {
+          "name": "off",
+          "type": "string",
+          "description": " Checkboxes are turned off and not rendered for the tree."
+        },
+        {
+          "name": "biState",
+          "type": "string",
+          "description": " Checkboxes are rendered and support two states (checked and unchecked). Checkboxes do not cascade down or up in this mode."
+        },
+        {
+          "name": "triState",
+          "type": "string",
+          "description": " Checkboxes are rendered and support three states (checked, partial and unchecked). Checkboxes cascade up and down in this mode."
+        }
+      ]
     },
     "dataSource": {
       "type": "object",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": "Specifies any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself.",
+      "valueOptions": null
     },
     "dataSourceType": {
       "type": "string",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": "Explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property.",
+      "valueOptions": null
     },
     "dataSourceUrl": {
       "type": "string",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": "Specifies a remote URL accepted by $.ig.DataSource in order to request data from it",
+      "valueOptions": null
     },
     "defaultNodeTarget": {
       "type": "string",
-      "defaultValue": "_self"
+      "defaultValue": "_self",
+      "description": "Specifies the default target of the node anchor.",
+      "valueOptions": null
     },
     "dragAndDrop": {
       "type": "bool",
-      "defaultValue": false
+      "defaultValue": false,
+      "description": "If set to true it would enable drag and drop functionality.",
+      "valueOptions": null
     },
     "dragAndDropSettings": {
       "type": "object",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": "Specific settings for the drag and drop functionality.",
+      "valueOptions": null
     },
     "height": {
       "type": "string",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": "",
+      "valueOptions": [
+        {
+          "name": null,
+          "type": "string",
+          "description": " The height width can be set in pixels (px) and percentage (%)."
+        },
+        {
+          "name": null,
+          "type": "number",
+          "description": " The height width can be set as a number in pixels."
+        }
+      ]
     },
     "hotTracking": {
       "type": "bool",
-      "defaultValue": true
+      "defaultValue": true,
+      "description": "Setting this option to false would make the tree to not apply hover styles on the nodes when they are hovered",
+      "valueOptions": null
     },
     "initialExpandDepth": {
       "type": "number",
-      "defaultValue": -1.0
+      "defaultValue": -1.0,
+      "description": "Specifies the depth down to which the tree would be expanded upon initial render.",
+      "valueOptions": null
     },
     "leafNodeImageClass": {
       "type": "string",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": "string Specified class with a CSS sprite would be rendered for each node that has no children (If you define both image URL and class the URL would be rendered).<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored",
+      "valueOptions": null
     },
     "leafNodeImageTooltip": {
       "type": "string",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": "string Specified a tooltip that would be rendered for each node that has no children.<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored",
+      "valueOptions": null
     },
     "leafNodeImageUrl": {
       "type": "string",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": "string Image with the specified URL will be rendered for each node that has no children (If you define both image URL and class the URL would be rendered).<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored",
+      "valueOptions": null
     },
     "loadOnDemand": {
       "type": "bool",
-      "defaultValue": false
+      "defaultValue": false,
+      "description": "Specifies all the data would be bound initially or each child collection would be bound upon demand.",
+      "valueOptions": null
     },
     "parentNodeImageClass": {
       "type": "string",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": "string Specified class with a CSS sprite would be rendered for each node that has children (If you define both image URL and class the URL would be rendered).<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored",
+      "valueOptions": null
     },
     "parentNodeImageTooltip": {
       "type": "string",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": "string Specified a tooltip that would be rendered for each node that has children.<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored",
+      "valueOptions": null
     },
     "parentNodeImageUrl": {
       "type": "string",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": "string Image with the specified URL will be rendered for each node that has children (If you define both image URL and class the URL would be rendered).<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored",
+      "valueOptions": null
     },
     "pathSeparator": {
       "type": "string",
-      "defaultValue": "_"
+      "defaultValue": "_",
+      "description": "Specifies the node data-path separator character.",
+      "valueOptions": null
     },
     "requestType": {
       "type": "string",
-      "defaultValue": "GET"
+      "defaultValue": "GET",
+      "description": "specifies the HTTP verb to be used to issue the request",
+      "valueOptions": null
     },
     "responseContentType": {
       "type": "string",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": "content type of the response. See http://api.jquery.com/jQuery.ajax/ => contentType",
+      "valueOptions": null
     },
     "responseDataKey": {
       "type": "string",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": "see $.ig.DataSource. <br>&nbsp;&nbsp;&nbsp;&nbsp;string Specifies the name of the property in which data records are held if the response is wrapped. <br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored.",
+      "valueOptions": null
     },
     "responseDataType": {
       "type": "string",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": "string Explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property.<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored.",
+      "valueOptions": null
     },
     "singleBranchExpand": {
       "type": "bool",
-      "defaultValue": false
+      "defaultValue": false,
+      "description": "If set to true then only one branch at each level of the tree can be expanded at a time. Otherwise multiple branches can be expanded at a time.",
+      "valueOptions": null
     },
     "updateUrl": {
       "type": "string",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": "URL to which updating requests will be made.",
+      "valueOptions": null
     },
     "width": {
       "type": "string",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": "",
+      "valueOptions": [
+        {
+          "name": null,
+          "type": "string",
+          "description": " The widget width can be set in pixels (px) and percentage (%)."
+        },
+        {
+          "name": null,
+          "type": "number",
+          "description": " The widget width can be set as a number in pixels."
+        }
+      ]
     }
   }
 }
