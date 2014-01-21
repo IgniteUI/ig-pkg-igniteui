@@ -194,14 +194,15 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 					$("<div></div>").addClass("btn").addClass("cancel-button-features").text("Cancel").appendTo(buttonGroup);
 				*/
 			} else if (p === "columns") {
-			
+				this.addColumn(descriptor);
 			} else if (p === "dataSource") {
-			
+				this.addRow(descriptor);
 			}			
 		},
 		_content: null,
 		_wrapper: null,
 		_headerLeft: null,
+		_currentSheet: null,
 		renderSummary: function (container, descriptor) {
 			var markup = ''
 			markup += this._renderInteractions();
@@ -214,6 +215,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			var content = container.closest('.adorner-content'),
 				adorner = content.closest('.adorners');
 			container.remove();
+			this._currentSheet = $('.adorner-summary-sheet');
 			if (!this._content) {
 				this._content = adorner;
 				this._wrapper = $('.adorner-wrapper');
@@ -221,16 +223,36 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			}
 		},
 		_renderInteractions: function () {
-			return '<div class="adorner-label adorner-custom-label">INTERACTIONS</div>';
+			return '<div class="adorner-interactions-list"><div class="adorner-label adorner-custom-label">INTERACTIONS</div></div>';
 		},
 		_renderActions: function () {
-			return '<div class="adorner-label adorner-custom-label">ACTIONS</div><a href="#" class="adorner-custom-action" data-action="addColumn">Add Column</a><a href="#" class="adorner-custom-action" data-action="addRow">Add Row</a>';
+			return '<div class="adorner-actions-list"><div class="adorner-label adorner-custom-label">ACTIONS</div><a href="#" class="adorner-custom-action" data-action="addColumn">Add Column</a><a href="#" class="adorner-custom-action" data-action="addRow">Add Row</a></div>';
 		},
 		_renderProperties: function () {
-			return '<div class="adorner-label adorner-custom-label">PROPERTIES</div>';
+			return '<div class="adorner-props-list"><div class="adorner-label adorner-custom-label">PROPERTIES</div><div>';
 		},
 		_renderCustomFooter: function () {
-			return '<div class="adorner-custom-footer"><a href="#" class="adorner-custom-action" data-action="summaryView">All Events & Properties</a></div>';
+			return '<div class="adorner-custom-footer"><a href="#" class="adorner-custom-action" data-action="propertyExplorer">All Events & Properties</a></div>';
+		},
+		_renderColumnContainer: function (descriptor) {
+			var container = $('.adorner-column-container'),
+				columns,
+				content = '<ul>',
+				index;
+			if (descriptor.iframe.jQuery && descriptor.iframe.jQuery(descriptor.element.data("igGrid"))) {
+				columns = descriptor.iframe.jQuery($("#designer-frame").contents().find("#" + descriptor.element.attr("id"))).data("igGrid").options.columns;
+			} else {
+				columns = descriptor.element.data("igGrid").options.columns;
+			}
+			if (container.length <= 0) {
+				container = $('<div class="adorner-column-container"></div>').appendTo($('.adorner-wrapper'));
+			}
+			for (index = 0; index < columns.length; index++) {
+				content += '<li><a href="#">' + columns[index].headerText + '</a></li>';
+			}
+			content += '<li><a href="#">Add...</a></li></ul>';
+			container.html(content);
+			return container;
 		},
 		_customizeHeader: function (descriptor) {
 			var header = this._content.children('.adorner-header'),
@@ -259,17 +281,23 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			});
 		},
 		addColumn: function (descriptor) {
-			alert('Add Column Action triggered.');
+			var container = this._renderColumnContainer(descriptor);
+			container.insertAfter(this._currentSheet);
+			this._wrapper.animate({left: '-=250'}, 250);
+			this._customizeHeader(descriptor);
 		},
 		addRow: function (descriptor) {
 			alert('Add Row Action triggered.');
 		},
-		summaryView: function (descriptor) {
-			this._wrapper.animate({left: -250}, 250);
+		propertyExplorer: function (descriptor) {
+			var content = $('.adorner-content').insertAfter(this._currentSheet);
+			this._wrapper.animate({left: '-=250'}, 250);
+			this._currentSheet = content;
 			this._customizeHeader(descriptor);
 		},
 		customView: function (descriptor) {
 			this._wrapper.animate({left: 0}, 250);
+			this._currentSheet = $('.adorner-summary-sheet');
 			this._restoreHeader();
 		}
 	});
