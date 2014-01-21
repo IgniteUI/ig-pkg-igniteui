@@ -1,167 +1,326 @@
 {
   "overview": null,
   "name": "ui.igGridPaging",
-  "title": "Paging",
   "category": null,
   "visual": true,
   "events": {
     "pageIndexChanged": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event fired after the page index is changed , but before grid data rebinds <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridPaging.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.pageIndex to get current page index."
     },
     "pageIndexChanging": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event fired before the page index is changed.<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel page index changing.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridPaging.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.currentPageIndex to get current page index.<br>&nbsp;&nbsp;&nbsp;Use ui.newPageIndex to get new page index."
     },
     "pagerRendered": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event fired after the pager footer is rendered <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridPaging.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dataSource to get reference to grid's data source."
     },
     "pagerRendering": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event fired before the pager footer is rendered (the whole area below the grid records). <br>&nbsp;&nbsp;&nbsp;Return false in order to cancel pager footer rendering.&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridPaging.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dataSource to get reference to grid's data source."
     },
     "pageSizeChanged": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event fired after the page size is changed from the page size dropdown. <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridPaging.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.pageSize to get current page size."
     },
     "pageSizeChanging": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event fired when the page size is about to be changed from the page size dropdown.<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel page size changing.&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridPaging.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.currentPageSize to get current page size.<br>&nbsp;&nbsp;&nbsp;Use ui.newPageSize to get new page size."
     }
   },
   "properties": {
     "currentPageDropDownLeadingLabel": {
       "type": "string",
-      "defaultValue": ""
+      "defaultValue": "",
+      "description": "leading label for the dropdown from where the page index can be switched",
+      "valueOptions": null
     },
     "currentPageDropDownTooltip": {
       "type": "string",
-      "defaultValue": ""
+      "defaultValue": "",
+      "description": "custom localized tooltip for the page index dropdown",
+      "valueOptions": null
     },
     "currentPageDropDownTrailingLabel": {
       "type": "string",
-      "defaultValue": ""
+      "defaultValue": "",
+      "description": "localized trailing label for the dropdown from where the page index can be switched",
+      "valueOptions": null
     },
     "currentPageIndex": {
       "type": "number",
-      "defaultValue": 0.0
+      "defaultValue": 0.0,
+      "description": "current page index that's bound and rendered in the UI",
+      "valueOptions": null
     },
     "defaultDropDownWidth": {
       "type": "number",
-      "defaultValue": 70.0
+      "defaultValue": 70.0,
+      "description": "dropdown width for page size and page index dropdowns",
+      "valueOptions": null
     },
     "delayOnPageChanged": {
       "type": "number",
-      "defaultValue": 350.0
+      "defaultValue": 350.0,
+      "description": "Time in milliseconds for which page dropdown will wait for keystrokes before changing the page.",
+      "valueOptions": null
     },
     "firstPageLabelText": {
       "type": "string",
-      "defaultValue": ""
+      "defaultValue": "",
+      "description": "localized text for the first page label",
+      "valueOptions": null
     },
     "firstPageTooltip": {
       "type": "string",
-      "defaultValue": ""
+      "defaultValue": "",
+      "description": "custom localized tooltip for the first. page button",
+      "valueOptions": null
     },
     "lastPageLabelText": {
       "type": "string",
-      "defaultValue": ""
+      "defaultValue": "",
+      "description": "localized text for the last page label",
+      "valueOptions": null
     },
     "lastPageTooltip": {
       "type": "string",
-      "defaultValue": ""
+      "defaultValue": "",
+      "description": "custom localized tooltip for the last. page button",
+      "valueOptions": null
     },
     "nextPageLabelText": {
       "type": "string",
-      "defaultValue": ""
+      "defaultValue": "",
+      "description": "localized text for the next page label",
+      "valueOptions": null
     },
     "nextPageTooltip": {
       "type": "string",
-      "defaultValue": ""
+      "defaultValue": "",
+      "description": "custom localized tooltip for the next. page button",
+      "valueOptions": null
     },
     "pageCountLimit": {
       "type": "number",
-      "defaultValue": 10.0
+      "defaultValue": 10.0,
+      "description": "sets gets the number of pages which if exceeded a drop down list of page indices is displayed. If the number of pages is less than or equal to this option then page buttons are displayed.",
+      "valueOptions": null
     },
     "pageIndexUrlKey": {
       "type": "string",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": "denotes the name of the encoded URL parameter that will state what is the currently requested page index",
+      "valueOptions": null
     },
     "pagerRecordsLabelTemplate": {
       "type": "string",
-      "defaultValue": ""
+      "defaultValue": "",
+      "description": "custom pager records label template - in jQuery templating style and syntax",
+      "valueOptions": null
     },
     "pagerRecordsLabelTooltip": {
       "type": "string",
-      "defaultValue": ""
+      "defaultValue": "",
+      "description": "custom localized tooltip for the pager records label",
+      "valueOptions": null
     },
     "pageSize": {
       "type": "number",
-      "defaultValue": 25.0
+      "defaultValue": 25.0,
+      "description": "default number of records per page",
+      "valueOptions": null
     },
     "pageSizeDropDownLabel": {
       "type": "string",
-      "defaultValue": ""
+      "defaultValue": "",
+      "description": "label rendered in front of the page size dropdown",
+      "valueOptions": null
     },
     "pageSizeDropDownLocation": {
       "type": "string",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": "",
+      "valueOptions": [
+        {
+          "name": "above",
+          "type": "string",
+          "description": " it will be rendered above the grid header"
+        },
+        {
+          "name": "inpager",
+          "type": "string",
+          "description": " it will be rendered next to page links"
+        }
+      ]
     },
     "pageSizeDropDownTooltip": {
       "type": "string",
-      "defaultValue": ""
+      "defaultValue": "",
+      "description": "custom localized tooltip for the page size dropdown",
+      "valueOptions": null
     },
     "pageSizeDropDownTrailingLabel": {
       "type": "string",
-      "defaultValue": ""
+      "defaultValue": "",
+      "description": "Trailing label for the page size dropdown",
+      "valueOptions": null
     },
     "pageSizeList": {
       "type": "array",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": "Default: [5, 10, 20, 25, 50, 75, 100]. contents of the page size dropdown indicating what preconfigured page sizes are available to the end user",
+      "valueOptions": null
     },
     "pageSizeUrlKey": {
       "type": "string",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": "denotes the name of the encoded URL parameter that will state what is the currently requested page size",
+      "valueOptions": null
     },
     "pageTooltipFormat": {
       "type": "string",
-      "defaultValue": ""
+      "defaultValue": "",
+      "description": "custom localized format string for tooltips of buttons that directly jump to a particular page. The format string follows the jQuery templating style and syntax. See also the pageCountLimit option.",
+      "valueOptions": null
     },
     "prevPageLabelText": {
       "type": "string",
-      "defaultValue": ""
+      "defaultValue": "",
+      "description": "localized text for the prev page label",
+      "valueOptions": null
     },
     "prevPageTooltip": {
       "type": "string",
-      "defaultValue": ""
+      "defaultValue": "",
+      "description": "custom localized tooltip for the prev. page button",
+      "valueOptions": null
     },
     "recordCountKey": {
       "type": "string",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": "the property in the response that will hold the total number of records in the data source",
+      "valueOptions": null
     },
     "showFirstLastPages": {
       "type": "bool",
-      "defaultValue": true
+      "defaultValue": true,
+      "description": "option specifying whether to render the first and last page buttons",
+      "valueOptions": null
     },
     "showPagerRecordsLabel": {
       "type": "bool",
-      "defaultValue": true
+      "defaultValue": true,
+      "description": "option specifying whether to show summary label for the currently rendered records or not",
+      "valueOptions": null
     },
     "showPageSizeDropDown": {
       "type": "bool",
-      "defaultValue": true
+      "defaultValue": true,
+      "description": "if false, a dropdown allowing to change the page size will not be rendered in the UI",
+      "valueOptions": null
     },
     "showPrevNextPages": {
       "type": "bool",
-      "defaultValue": true
+      "defaultValue": true,
+      "description": "option specifying whether to render the previous and next page buttons",
+      "valueOptions": null
     },
     "type": {
       "type": "string",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": "",
+      "valueOptions": [
+        {
+          "name": "remote",
+          "type": "string",
+          "description": " request"
+        },
+        {
+          "name": "local",
+          "type": "string",
+          "description": " paging on the client-side"
+        }
+      ]
     },
     "visiblePageCount": {
       "type": "number",
-      "defaultValue": 5.0
+      "defaultValue": 5.0,
+      "description": "number of pages that are constantly visible. For the invisible pages, prev and next buttons are used",
+      "valueOptions": null
     }
   }
 }

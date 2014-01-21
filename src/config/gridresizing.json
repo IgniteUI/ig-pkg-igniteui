@@ -1,35 +1,82 @@
 {
   "overview": null,
   "name": "ui.igGridResizing",
-  "title": "Resizing",
   "category": null,
   "visual": true,
   "events": {
     "columnResized": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "event fired after the resizing has been executed and results are rendered <br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridResizing widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.columnIndex to get the resized column index.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get the resized column key.<br>&nbsp;&nbsp;&nbsp;Use ui.originalWidth to get the original column width.<br>&nbsp;&nbsp;&nbsp;Use ui.newWidth to get the final column width after resizing."
     },
     "columnResizing": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "event fired before a resizing operation is executed.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridResizing widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.columnIndex to get the resized column index.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get the resized column key.<br>&nbsp;&nbsp;&nbsp;Use ui.desiredWidth to get the desired width(before min/max coercion) for the resized column."
+    },
+    "columnResizingRefused": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "event fired(only when columnFixing is enabled) when trying to resize column in fixed area so total width of unfixed area to be less than minimalVisibleAreaWidth(option defined in columnFixing)<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridResizing widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.columnIndex to get the resized column index.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get the resized column key.<br>&nbsp;&nbsp;&nbsp;Use ui.desiredWidth to get the desired width(before min/max coercion) for the resized column."
     }
   },
   "properties": {
     "allowDoubleClickToResize": {
       "type": "bool",
-      "defaultValue": true
+      "defaultValue": true,
+      "description": "Resize the column to the size of the longest currently visible cell value.",
+      "valueOptions": null
     },
     "columnSettings": {
       "type": "array",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": "A list of column settings that specifies resizing options on a per column basis.",
+      "valueOptions": null
     },
     "deferredResizing": {
       "type": "bool",
-      "defaultValue": false
+      "defaultValue": false,
+      "description": "Specifies whether the resizing should be deferred until the user finishes resizing or applied immediately.",
+      "valueOptions": null
     },
     "handleTreshold": {
       "type": "number",
-      "defaultValue": 5.0
+      "defaultValue": 5.0,
+      "description": "The width in pixels of the resizing handle which is position at the right side of each resizeable column header.",
+      "valueOptions": null
     }
   }
 }

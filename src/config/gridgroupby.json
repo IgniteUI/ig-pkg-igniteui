@@ -1,239 +1,539 @@
 {
   "overview": null,
   "name": "ui.igGridGroupBy",
-  "title": "Group By",
   "category": null,
   "visual": true,
   "events": {
     "groupedColumnsChanged": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "event which is fired when the groupedColumns collection has changed. This event is fired also when group/ungroup from groupby modal dialog but key, layout and grid are not set<br>            use args.owner in order to access the groupby widget object<br>            use args.owner.grid to access the grid widget option<br>            use args.groupedColumns to get a reference to the current groupedColumns<br>            use args.key to get a reference to the current column's key that's being grouped<br>            use args.layout to get a reference to the current layout object, if any<br>            use args.grid to get a reference to the current child grid element, in case it's an hierarchical grid"
     },
     "groupedColumnsChanging": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event which is fired when the grouped columns collection is about to change. This event is not fired when group/ungroup from groupby modal dialog<br>            use args.owner in order to access the groupby widget object<br>            use args.owner.grid to access the grid widget option<br>            use args.groupedColumns to get a reference to the current groupedColumns<br>            use args.key to get a reference to the current column's key that's being grouped<br>            use args.layout to get a reference to the current layout object, if any<br>            use args.grid to get a reference to the current child grid element, in case it's an hierarchical grid"
     },
     "modalDialogButtonApplyClick": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "event fired when the button is Apply is clicked.<br>            The handler function takes arguments evt and ui.<br>            Use ui.owner to get the reference to the igGridGroupby widget.<br>            Use ui.owner.grid to get the reference to the igGrid widget.<br>            Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.<br>            Use ui.groupedColumns to get the array of grouped columns<br>            Use ui.groupedColumnLayouts to get array of column layouts<br>            Use ui.sortingExpr to get array of sorted columns"
     },
     "modalDialogButtonResetClick": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "event fired when reset button is clicked.<br>            The handler function takes arguments evt and ui.<br>            Use ui.owner to get the reference to the igGridGroupby widget.<br>            Use ui.owner.grid to get the reference to the igGrid widget.<br>            Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object."
     },
     "modalDialogClosed": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "event fired after the modal dialog has been closed.<br>            The handler function takes arguments evt and ui.<br>            Use ui.owner to get the reference to the igGridGroupBy widget.<br>            Use ui.owner.grid to get the reference to the igGrid widget.<br>            Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object."
     },
     "modalDialogClosing": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "event fired before the modal dialog is closed.<br>            The handler function takes arguments evt and ui.<br>            Use ui.owner to get the reference to the igGridGroupBy widget.<br>            Use ui.owner.grid to get the reference to the igGrid widget.<br>            Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object."
     },
     "modalDialogContentsRendered": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "event fired after the contents of the modal dialog are rendered.<br>            The handler function takes arguments evt and ui.<br>            Use ui.owner to get the reference to the igGridGroupBy widget.<br>            Use ui.owner.grid to get the reference to the igGrid widget.<br>            Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object."
     },
     "modalDialogContentsRendering": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "event fired before the contents of the modal dialog are rendered.<br>            The handler function takes arguments evt and ui.<br>            Use ui.owner to get the reference to the igGridGroupby widget.<br>            Use ui.owner.grid to get the reference to the igGrid widget.<br>            Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object."
     },
     "modalDialogGroupColumn": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "event fired when column in modal dialog is clicked to be grouped.<br>            The handler function takes arguments evt and ui.<br>            Use ui.owner to get the reference to the igGridGroupby widget.<br>            Use ui.owner.grid to get the reference to the igGrid widget.<br>            Use ui.key to get the key of the column to be grouped.<br>            Use args.groupedColumns to get a reference to the current groupedColumns<br>            Use ui.layout to get the layout of the columns"
     },
     "modalDialogGroupingColumn": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "event fired when column in modal dialog is clicked to be grouped.<br>            The handler function takes arguments evt and ui.<br>            Use ui.owner to get the reference to the igGridGroupby widget.<br>            Use ui.owner.grid to get the reference to the igGrid widget.<br>            Use ui.key to get the key of the column to be grouped.<br>            Use ui.layout to get the layout of the columns"
     },
     "modalDialogMoving": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event fired every time the groupby dialog changes its position.<br>            The handler function takes arguments evt and ui.<br>            Use ui.owner to get the reference to the igGridGroupBy widget.<br>            Use ui.owner.grid to get the reference to the igGrid widget.<br>            Use ui.modalDialogElement to get a reference to the Column Chooser element. This is a jQuery object.<br>            Use ui.originalPosition to get the original position of the groupby dialog div as { top, left } object, relative to the page.<br>            Use ui.position to get the current position of the groupby dialog div as { top, left } object, relative to the page."
     },
     "modalDialogOpened": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "event fired after the modal dialog is already opened.<br>            The handler function takes arguments evt and ui.<br>            Use ui.owner to get the reference to the igGridGroupBy widget.<br>            Use ui.owner.grid to get the reference to the igGrid widget.<br>            Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object."
     },
     "modalDialogOpening": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "event fired before the modal dialog is opened.<br>            The handler function takes arguments evt and ui.<br>            Use ui.owner to get the reference to the igGridGroupBy widget.<br>            Use ui.owner.grid to get the reference to the igGrid widget.<br>            Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object."
     },
     "modalDialogSortGroupedColumn": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "event fired when column in modal dialog is clicked to be ungrouped.<br>            The handler function takes arguments evt and ui.<br>            Use ui.owner to get the reference to the igGridGroupby widget.<br>            Use ui.owner.grid to get the reference to the igGrid widget.<br>            Use ui.key to get the key of the column to be grouped.<br>            Use ui.layout to get the layout of the columns<br>            Use ui.isAsc to get whether column should be sorted ascending or descending"
     },
     "modalDialogUngroupColumn": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "event fired when column in modal dialog is clicked to be ungrouped.<br>            The handler function takes arguments evt and ui.<br>            Use ui.owner to get the reference to the igGridGroupby widget.<br>            Use ui.owner.grid to get the reference to the igGrid widget.<br>            Use args.groupedColumns to get a reference to the current groupedColumns<br>            Use ui.key to get the key of the column to be grouped.<br>            Use ui.layout to get the layout of the columns"
     },
     "modalDialogUngroupingColumn": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "event fired when column in modal dialog is clicked to be ungrouped.<br>            The handler function takes arguments evt and ui.<br>            Use ui.owner to get the reference to the igGridGroupby widget.<br>            Use ui.owner.grid to get the reference to the igGrid widget.<br>            Use ui.key to get the key of the column to be grouped.<br>            Use ui.layout to get the layout of the columns"
     }
   },
   "properties": {
     "collapseTooltip": {
       "type": "string",
-      "defaultValue": ""
+      "defaultValue": "",
+      "description": "specifies the collapse indicator tooltip for grouped rows",
+      "valueOptions": null
     },
     "columnSettings": {
       "type": "object",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": "Get sets settings for individual columns such as whether the grid is grouped by that column or grouping is allowed for that column.",
+      "valueOptions": null
     },
     "emptyGroupByAreaContent": {
       "type": "string",
-      "defaultValue": ""
+      "defaultValue": "",
+      "description": "Text that will be shown in the GroupBy area when there are no grouped columns",
+      "valueOptions": null
     },
     "emptyGroupByAreaContentSelectColumns": {
       "type": "string",
-      "defaultValue": ""
+      "defaultValue": "",
+      "description": "Text of link(on click shows modal dialog with columns which could be group/ungroup by) that will be shown in the GroupBy area when there are no grouped columns",
+      "valueOptions": null
     },
     "emptyGroupByAreaContentSelectColumnsCaption": {
       "type": "string",
-      "defaultValue": ""
+      "defaultValue": "",
+      "description": "Specifies caption for button which opens groupby dialog",
+      "valueOptions": null
     },
     "expandTooltip": {
       "type": "string",
-      "defaultValue": ""
+      "defaultValue": "",
+      "description": "specifies the expand indicator tooltip for grouped rows",
+      "valueOptions": null
     },
     "expansionIndicatorVisibility": {
       "type": "bool",
-      "defaultValue": true
+      "defaultValue": true,
+      "description": "Specifies if grouped rows will have an expander image that will allow end users to expand and collapse them. This option can be set only at initialization.",
+      "valueOptions": null
     },
     "featureChooserText": {
       "type": "string",
-      "defaultValue": ""
+      "defaultValue": "",
+      "description": "specifies the text in feature chooser",
+      "valueOptions": null
     },
     "featureChooserTextHide": {
       "type": "string",
-      "defaultValue": ""
+      "defaultValue": "",
+      "description": "specifies hide text in feature chooser",
+      "valueOptions": null
     },
     "groupByAreaVisibility": {
       "type": "string",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": " Sets the place in the grid where the groupBy area will be ",
+      "valueOptions": [
+        {
+          "name": "top",
+          "type": "string",
+          "description": " the GroupBy area will be rendered above the grid headers "
+        },
+        {
+          "name": "hidden",
+          "type": "string",
+          "description": " the GroupBy area will not be rendered"
+        },
+        {
+          "name": "bottom",
+          "type": "string",
+          "description": " the GroupBy area will be rendered below the grid footer (and above the pager, if any)"
+        }
+      ]
     },
     "groupByLabelWidth": {
       "type": "number",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": "By default, the column width for the header is taken. If this is specified it's used for all headers.",
+      "valueOptions": null
     },
     "groupByUrlKey": {
       "type": "string",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": "URL param name which specifies how groupBy expressions will be encoded in the URL. The OData conventions for sorting params are used if the grid is bound to an OData service. ex: ?groupby(col1)=asc",
+      "valueOptions": null
     },
     "groupByUrlKeyAscValue": {
       "type": "string",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": "URL param value for ascending type of grouping. The OData conventions for sorting params are used if the grid is bound to an OData service. Example: ?groupBy(col1)=asc",
+      "valueOptions": null
     },
     "groupByUrlKeyDescValue": {
       "type": "string",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": "URL param value for descending type of grouping. The OData conventions for sorting params are used if the grid is bound to an OData service. Example: ?groupBy(col1)=desc",
+      "valueOptions": null
     },
     "groupedColumns": {
       "type": "object",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": "Returns the list of currently grouped columns. The option is read-only and cannot be set at initialization or at runtime.",
+      "valueOptions": null
     },
     "groupedRowTextTemplate": {
       "type": "string",
-      "defaultValue": "${key}: ${val} (${count})"
+      "defaultValue": "${key}: ${val} (${count})",
+      "description": "Template for the grouped row's text, follows jQuery's templating guidelines. Variables available for the template are ${key}, ${val} and ${count}.",
+      "valueOptions": null
     },
     "indentation": {
       "type": "number",
-      "defaultValue": 30.0
+      "defaultValue": 30.0,
+      "description": "specifies the indentation for a grouped row. If several columns are grouped, the total indentation will grow",
+      "valueOptions": null
     },
     "initialExpand": {
       "type": "bool",
-      "defaultValue": true
+      "defaultValue": true,
+      "description": "Specifies if after grouping, the grouped rows will be initially expanded or collapsed. This option can be set only at initialization.",
+      "valueOptions": null
     },
     "labelDragHelperOpacity": {
       "type": "number",
-      "defaultValue": 0.5
+      "defaultValue": 0.5,
+      "description": "Specifies the opacity of the drag markup, while a column header is being dragged. The value must be between 0 and 1.",
+      "valueOptions": null
     },
     "modalDialogAnimationDuration": {
       "type": "number",
-      "defaultValue": 200.0
+      "defaultValue": 200.0,
+      "description": "Specifies time in milliseconds for animation duration to show/hide modal dialog",
+      "valueOptions": null
     },
     "modalDialogButtonApplyText": {
       "type": "string",
-      "defaultValue": ""
+      "defaultValue": "",
+      "description": "Specifies text of button which apply changes in modal dialog",
+      "valueOptions": null
     },
     "modalDialogButtonCancelText": {
       "type": "string",
-      "defaultValue": ""
+      "defaultValue": "",
+      "description": "Specifies text of button which cancel changes in modal dialog",
+      "valueOptions": null
     },
     "modalDialogCaptionButtonAsc": {
       "type": "string",
-      "defaultValue": ""
+      "defaultValue": "",
+      "description": "Specifies caption for each ascending sorted column in groupby dialog",
+      "valueOptions": null
     },
     "modalDialogCaptionButtonDesc": {
       "type": "string",
-      "defaultValue": ""
+      "defaultValue": "",
+      "description": "Specifies caption for each descending sorted column in groupby dialog",
+      "valueOptions": null
     },
     "modalDialogCaptionButtonUngroup": {
       "type": "string",
-      "defaultValue": ""
+      "defaultValue": "",
+      "description": "Specifies caption button ungroup in groupby dialog",
+      "valueOptions": null
     },
     "modalDialogCaptionText": {
       "type": "string",
-      "defaultValue": ""
+      "defaultValue": "",
+      "description": "Specifies caption text for groupby dialog",
+      "valueOptions": null
     },
     "modalDialogClearAllButtonLabel": {
       "type": "string",
-      "defaultValue": ""
+      "defaultValue": "",
+      "description": "Specifies label for clear all button in groupby dialog",
+      "valueOptions": null
     },
     "modalDialogDropDownAreaWidth": {
       "type": "number",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": "Specifies height of layouts dropdown in groupby dialog",
+      "valueOptions": null
     },
     "modalDialogDropDownButtonCaption": {
       "type": "string",
-      "defaultValue": ""
+      "defaultValue": "",
+      "description": "Specifies caption of layouts dropdown button in groupby dialog",
+      "valueOptions": null
     },
     "modalDialogDropDownLabel": {
       "type": "string",
-      "defaultValue": ""
+      "defaultValue": "",
+      "description": "Specifies label for layouts dropdown in groupby dialog",
+      "valueOptions": null
     },
     "modalDialogDropDownWidth": {
       "type": "number",
-      "defaultValue": 200.0
+      "defaultValue": 200.0,
+      "description": "Specifies width of layouts dropdown in groupby dialog",
+      "valueOptions": null
     },
     "modalDialogGroupByButtonText": {
       "type": "string",
-      "defaultValue": ""
+      "defaultValue": "",
+      "description": "specifies the text of GroupBy button in the groupby dialog",
+      "valueOptions": null
     },
     "modalDialogGroupByOnClick": {
       "type": "bool",
-      "defaultValue": false
+      "defaultValue": false,
+      "description": "specifies whether on click in groupby dialog to be immediately grouped/ungrouped columns. When it is false then it is shown Apply button in the groupby dialog",
+      "valueOptions": null
     },
     "modalDialogHeight": {
       "type": "number",
-      "defaultValue": ""
+      "defaultValue": "",
+      "description": "Specifies height of groupby dialog",
+      "valueOptions": null
     },
     "modalDialogRootLevelHierarchicalGrid": {
       "type": "string",
-      "defaultValue": ""
+      "defaultValue": "",
+      "description": "Specifies name of the root layout which is shown layouts tree dialog",
+      "valueOptions": null
     },
     "modalDialogWidth": {
       "type": "number",
-      "defaultValue": 400.0
+      "defaultValue": 400.0,
+      "description": "Specifies width of groupby dialog",
+      "valueOptions": null
     },
     "removeButtonTooltip": {
       "type": "string",
-      "defaultValue": ""
+      "defaultValue": "",
+      "description": "specifies the tooltip for the remove button",
+      "valueOptions": null
     },
     "resultResponseKey": {
       "type": "string",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": "Specifies a key to get group by data from the response. This option can be set only at initialization.",
+      "valueOptions": null
     },
     "summarySettings": {
       "type": "object",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": "specifies the settings for GroupBy summaries",
+      "valueOptions": null
     },
     "type": {
       "type": "string",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": " Specifies whether the groupBy operation takes place locally on client-side or remotely on server-side.",
+      "valueOptions": [
+        {
+          "name": "local",
+          "type": "string",
+          "description": " Execute the groupBy operation locally on client-side."
+        },
+        {
+          "name": "remote",
+          "type": "string",
+          "description": " Execute the groupBy operation by a request to the server."
+        }
+      ]
     },
     "useGridColumnFormatter": {
       "type": "bool",
-      "defaultValue": true
+      "defaultValue": true,
+      "description": "Format grouped column using the formatter set in igGrid.columns[i].formatter or igGrid format.",
+      "valueOptions": null
     }
   }
 }

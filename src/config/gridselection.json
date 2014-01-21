@@ -1,75 +1,197 @@
 {
   "overview": null,
   "name": "ui.igGridSelection",
-  "title": "Selection",
   "category": null,
   "visual": true,
   "events": {
     "activeCellChanged": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event fired after a cell becomes active (focus style applied).<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridSelection.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.element to get reference to cell DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.columnKey to get column key.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.index to get column index.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.row to get reference to row DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.rowIndex to get row index."
     },
     "activeCellChanging": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event fired before a cell becomes active (focus style applied) (cancellable).<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel active cell changing.&nbsp;<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridSelection.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.element to get reference to cell DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.columnKey to get column key.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.index to get column index.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.row to get reference to row DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.rowIndex to get row index."
     },
     "activeRowChanged": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event fired after a row becomes active (focus style applied). <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridSelection.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.row.element to get reference to active row DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.row.index to get row index."
     },
     "activeRowChanging": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event fired before a row becomes active (focus style applied) (cancellable).<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel active row changing.&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridSelection.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.row.element to get reference to active row DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.row.index to get active row index."
     },
     "cellSelectionChanged": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event fired after cell(s) are selected.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridSelection.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.element to get reference to cell DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.columnKey to get reference to column key.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.index to get column index.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.row to get reference to row DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.rowIndex to get row index.<br>&nbsp;&nbsp;&nbsp;Use ui.selectedCells to get reference to selected cells object array.<br>&nbsp;&nbsp;&nbsp;ui.manual - returns true if internal trigger."
     },
     "cellSelectionChanging": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event fired before cell(s) are about to be selected (cancellable).<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel cell selection changing.&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridSelection.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.element to get reference to cell DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.columnKey to get reference to column key.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.index to get column index.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.row to get reference to row DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.rowIndex to get row index.<br>&nbsp;&nbsp;&nbsp;Use ui.selectedCells to get reference to selected cells object array.<br>&nbsp;&nbsp;&nbsp;ui.manual - returns true if internal trigger."
     },
     "rowSelectionChanged": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event fired after row(s) are selected.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridSelection.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.row.element to get reference to row DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.row.index to get row index.<br>&nbsp;&nbsp;&nbsp;Use ui.selectedRows to get reference to rows object array.<br>            Use ui.selectedFixedRows to get reference to fixed rows object array if any.<br>&nbsp;&nbsp;&nbsp;ui.manual - returns true if internal trigger."
     },
     "rowSelectionChanging": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event fired before row(s) are about to be selected (cancellable).<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel selection changing.&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridSelection.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.row.element to get reference to row DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.row.index to get row index.<br>&nbsp;&nbsp;&nbsp;Use ui.selectedRows to get reference to rows object array.<br>            Use ui.selectedFixedRows to get reference to fixed rows object array if any.<br>&nbsp;&nbsp;&nbsp;ui.manual - returns true if internal trigger."
     }
   },
   "properties": {
     "activation": {
       "type": "bool",
-      "defaultValue": true
+      "defaultValue": true,
+      "description": "Enables / disables activation of rows and cells. Activation implies ability to perform navigating through cells and rows via the keyboard, and selecting rows and cells using CTRL / SHIFT - in the way cells/rows are selected in Ms Excel",
+      "valueOptions": null
     },
     "mode": {
       "type": "string",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": " Defines type of the selection.",
+      "valueOptions": [
+        {
+          "name": "row",
+          "type": "string",
+          "description": " Defines row selection mode."
+        },
+        {
+          "name": "cell",
+          "type": "string",
+          "description": " Defines cell selection mode."
+        }
+      ]
     },
     "mouseDragSelect": {
       "type": "bool",
-      "defaultValue": true
+      "defaultValue": true,
+      "description": "Enables / disables selection via dragging with the mouse - only applicable for cell selection",
+      "valueOptions": null
     },
     "multipleCellSelectOnClick": {
       "type": "bool",
-      "defaultValue": false
+      "defaultValue": false,
+      "description": "if true multiple selection of cells is done as if CTRL is being held. the option is disregarded if mode is set<br>&nbsp;&nbsp;&nbsp;to row. this option is useful for enabling multiple discountinued selection on touch environments.",
+      "valueOptions": null
     },
     "multipleSelection": {
       "type": "bool",
-      "defaultValue": false
+      "defaultValue": false,
+      "description": "Enables / Disables multiple selection of cells and rows - depending on the mode",
+      "valueOptions": null
     },
     "skipChildren": {
       "type": "bool",
-      "defaultValue": true
+      "defaultValue": true,
+      "description": "if true will basically skip going into child grids with down / up / right / left arrow keys, when in the context of hierarchical grid",
+      "valueOptions": null
     },
     "touchDragSelect": {
       "type": "bool",
-      "defaultValue": true
+      "defaultValue": true,
+      "description": "Enables / disables selection via continuous touch event - only applicable for cell selection and<br>&nbsp;&nbsp;&nbsp;touch-supported environments",
+      "valueOptions": null
     },
     "wrapAround": {
       "type": "bool",
-      "defaultValue": true
+      "defaultValue": true,
+      "description": "if wrapAround is enabled and selection is on the first or last row or cell, then when the end user tries to go beyond that, the first/last row or cell will be selected",
+      "valueOptions": null
     }
   }
 }

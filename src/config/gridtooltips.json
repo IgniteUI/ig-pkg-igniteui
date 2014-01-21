@@ -1,59 +1,149 @@
 {
   "overview": null,
   "name": "ui.igGridTooltips",
-  "title": "Tooltips",
   "category": null,
   "visual": true,
   "events": {
     "tooltipHidden": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "event fired after a tooltip is hidden<br>&nbsp;&nbsp;&nbsp;use args.owner to get a reference to the widget<br>&nbsp;&nbsp;&nbsp;use args.tooltip to get the string displayed in the tooltip<br>&nbsp;&nbsp;&nbsp;use args.value to get the value of the cell the tooltip was displayed for<br>&nbsp;&nbsp;&nbsp;use args.element to get a reference to the cell the tooltip was displayed for<br>&nbsp;&nbsp;&nbsp;use args.index to get the row index of the cell the tooltip was displayed for<br>&nbsp;&nbsp;&nbsp;use args.columnKey to get the column key of the cell the tooltip was displayed for<br>&nbsp;&nbsp;&nbsp;use args.columnIndex to get the column index of the cell the tooltip was displayed for"
     },
     "tooltipHiding": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "event fired when the mouse has left an element and the tooltip is about to hide<br>&nbsp;&nbsp;&nbsp;use args.owner to get a reference to the widget<br>&nbsp;&nbsp;&nbsp;use args.tooltip to get the string displayed in the tooltip<br>&nbsp;&nbsp;&nbsp;use args.value to get the value of the cell the tooltip is displayed for<br>&nbsp;&nbsp;&nbsp;use args.element to get a reference to the cell the tooltip is displayed for<br>&nbsp;&nbsp;&nbsp;use args.index to get the row index of the cell the tooltip is displayed for<br>&nbsp;&nbsp;&nbsp;use args.columnKey to get the column key of the cell the tooltip is displayed for<br>&nbsp;&nbsp;&nbsp;use args.columnIndex to get the column index of the cell the tooltip is displayed for"
     },
     "tooltipShowing": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "event fired when the mouse has hovered on an element long enough to display a tooltip<br>&nbsp;&nbsp;&nbsp;use args.owner to get a reference to the widget<br>&nbsp;&nbsp;&nbsp;use args.tooltip to get or set the string to be displayed<br>&nbsp;&nbsp;&nbsp;use args.value to get the value of the cell the tooltip is displayed for<br>&nbsp;&nbsp;&nbsp;use args.element to get a reference to the cell the tooltip is displayed for<br>&nbsp;&nbsp;&nbsp;use args.index to get the row index of the cell the tooltip is displayed for<br>&nbsp;&nbsp;&nbsp;use args.columnKey to get the column key of the cell the tooltip is displayed for<br>&nbsp;&nbsp;&nbsp;use args.columnIndex to get the column index of the cell the tooltip is displayed for"
     },
     "tooltipShown": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "event fired after a tooltip is shown<br>&nbsp;&nbsp;&nbsp;use args.owner to get a reference to the widget<br>&nbsp;&nbsp;&nbsp;use args.tooltip to get the string displayed in the tooltip<br>&nbsp;&nbsp;&nbsp;use args.value to get the value of the cell the tooltip is displayed for<br>&nbsp;&nbsp;&nbsp;use args.element to get a reference to the cell the tooltip is displayed for<br>&nbsp;&nbsp;&nbsp;use args.index to get the row index of the cell the tooltip is displayed for<br>&nbsp;&nbsp;&nbsp;use args.columnKey to get the column key of the cell the tooltip is displayed for<br>&nbsp;&nbsp;&nbsp;use args.columnIndex to get the column index of the cell the tooltip is displayed for"
     }
   },
   "properties": {
     "columnSettings": {
       "type": "unknown",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": "a list of custom column settings that specify custom tooltip settings for a specific column (whether tooltips are enabled / disabled)",
+      "valueOptions": null
     },
     "cursorLeftOffset": {
       "type": "number",
-      "defaultValue": 10.0
+      "defaultValue": 10.0,
+      "description": "sets the left position of the tooltip relative to the mouse cursor",
+      "valueOptions": null
     },
     "cursorTopOffset": {
       "type": "number",
-      "defaultValue": 15.0
+      "defaultValue": 15.0,
+      "description": "sets the top position of the tooltip relative to the mouse cursor",
+      "valueOptions": null
     },
     "fadeTimespan": {
       "type": "number",
-      "defaultValue": 150.0
+      "defaultValue": 150.0,
+      "description": "sets the time tooltip fades in and out when showing/hiding",
+      "valueOptions": null
     },
     "hideDelay": {
       "type": "number",
-      "defaultValue": 300.0
+      "defaultValue": 300.0,
+      "description": "Type=\"integer\" The time in milliseconds after which tooltip hides when mouse <br>&nbsp;&nbsp;&nbsp;cursor gets outside of the cell.",
+      "valueOptions": null
     },
     "showDelay": {
       "type": "number",
-      "defaultValue": 500.0
+      "defaultValue": 500.0,
+      "description": "The time in milliseconds after which tooltip will show when <br>&nbsp;&nbsp;&nbsp;mouse cursor is hovered over a cell.",
+      "valueOptions": null
     },
     "style": {
       "type": "string",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": " controls the tooltip's style ",
+      "valueOptions": [
+        {
+          "name": "tooltip",
+          "type": "string",
+          "description": " the tooltip will be positioned according to the mouse cursor"
+        },
+        {
+          "name": "popover",
+          "type": "string",
+          "description": " the tooltip will be positioned according to the target element"
+        }
+      ]
     },
     "visibility": {
       "type": "string",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": " determines the tooltip visibility option ",
+      "valueOptions": [
+        {
+          "name": "always",
+          "type": "string",
+          "description": " tooltips always show for hovered elements"
+        },
+        {
+          "name": "never",
+          "type": "string",
+          "description": " tooltips do not show automatically"
+        },
+        {
+          "name": "overflow",
+          "type": "string",
+          "description": " tooltips show only when the underlying data overflows its container"
+        }
+      ]
     }
   }
 }

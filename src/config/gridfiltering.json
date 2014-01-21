@@ -1,235 +1,671 @@
 {
   "overview": null,
   "name": "ui.igGridFiltering",
-  "title": "Filtering",
   "category": null,
   "visual": true,
   "events": {
     "dataFiltered": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event fired after the filtering has been executed and results are rendered.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.columnIndex to get column index.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key."
     },
     "dataFiltering": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event fired before a filtering operation is executed (remote request or local). <br>&nbsp;&nbsp;&nbsp;Return false in order to cancel filtering operation.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.columnIndex to get column index.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key."
     },
     "dropDownClosed": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event fired after a filter column dropdown is completely closed. <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dropDown to get reference to dropdown DOM element."
     },
     "dropDownClosing": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event fired before the filter dropdown starts closing. <br>            Return false in order to cancel dropdown closing.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dropDown to get reference to dropdown DOM element."
     },
     "dropDownOpened": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event fired after the filter dropdown is opened for a specific column. <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dropDown to get reference to dropdown DOM element."
     },
     "dropDownOpening": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event fired before the filter dropdown is opened for a specific column. <br>&nbsp;&nbsp;&nbsp;Return false in order to cancel dropdown opening.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dropDown to get reference to dropdown DOM element."
     },
     "filterDialogClosed": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event fired after the advanced filter dialog has been closed.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid."
     },
     "filterDialogClosing": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event fired before the advanced filter dialog is closed. <br>&nbsp;&nbsp;&nbsp;Return false in order to cancel filtering dialog closing.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid."
     },
     "filterDialogContentsRendered": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event fired after the contents of the advanced filter dialog are rendered.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dialogElement to get reference to filtering dialog DOM element."
     },
     "filterDialogContentsRendering": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event fired before the contents of the advanced filter dialog are rendered. <br>&nbsp;&nbsp;&nbsp;Return false in order to cancel filtering dialog rendering.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dialogElement to get reference to filtering dialog DOM element."
     },
     "filterDialogFilterAdded": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event fired after a filter row is added to the advanced filter dialog.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.filter to get reference to filters table row DOM element."
     },
     "filterDialogFilterAdding": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event fired before a filter row is added to the advanced filter dialog.<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel filter adding to the advanced filtering dialog.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.filtersTableBody to get reference to filters table body DOM element."
     },
     "filterDialogFiltering": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event fired when the OK button in the advanced filter dialog is pressed. <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dialog to get reference to filtering dialog DOM element."
     },
     "filterDialogMoving": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event fired every time the advanced filter dialog changes its position.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dialog to get reference to filtering dialog DOM element."
     },
     "filterDialogOpened": {
       "cancellable": false,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event fired after the advanced filter dialog is already opened.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dialog to get reference to filtering dialog DOM element."
     },
     "filterDialogOpening": {
       "cancellable": true,
-      "args": []
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event fired before the advanced filtering dialog is opened.<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel filter dialog opening.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dialog to get reference to filtering dialog DOM element."
     }
   },
   "properties": {
     "advancedModeEditorsVisible": {
       "type": "bool",
-      "defaultValue": false
+      "defaultValue": false,
+      "description": "defines whether to show/hide editors in advanced mode. If false, no editors will be rendered in the advanced mode",
+      "valueOptions": null
     },
     "advancedModeHeaderButtonLocation": {
       "type": "string",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": " location of the advanced filtering button when advancedModeEditorsVisible is false (i.e. when the button is rendered in the header) ",
+      "valueOptions": [
+        {
+          "name": "left",
+          "type": "string",
+          "description": ""
+        },
+        {
+          "name": "right",
+          "type": "string",
+          "description": ""
+        }
+      ]
     },
     "caseSensitive": {
       "type": "bool",
-      "defaultValue": false
+      "defaultValue": false,
+      "description": "Enables or disables the filtering case sensitivity. Works only for local filtering.If true, it enables filtering case sensitivity. If false, it disables filtering case sensitivity.",
+      "valueOptions": null
     },
     "columnSettings": {
       "type": "array",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": "a list of column settings that specifies custom filtering options on a per column basis",
+      "valueOptions": null
     },
     "featureChooserText": {
       "type": "string",
-      "defaultValue": ""
+      "defaultValue": "",
+      "description": "Feature chooser text when filter is shown and filter mode is simple",
+      "valueOptions": null
     },
     "featureChooserTextAdvancedFilter": {
       "type": "string",
-      "defaultValue": ""
+      "defaultValue": "",
+      "description": "Feature chooser text when filter mode is advanced",
+      "valueOptions": null
     },
     "featureChooserTextHide": {
       "type": "string",
-      "defaultValue": ""
+      "defaultValue": "",
+      "description": "Feature chooser text when filter is hidden and filter mode is simple",
+      "valueOptions": null
     },
     "filterButtonLocation": {
       "type": "string",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": " the filtering button for filter dropdowns can be rendered either on the left of the filter editor or on the right ",
+      "valueOptions": [
+        {
+          "name": "left",
+          "type": "string",
+          "description": ""
+        },
+        {
+          "name": "right",
+          "type": "string",
+          "description": ""
+        }
+      ]
     },
     "filterDelay": {
       "type": "number",
-      "defaultValue": 500.0
+      "defaultValue": 500.0,
+      "description": "Time in milliseconds for which widget will wait for keystrokes before sending filtering request.",
+      "valueOptions": null
     },
     "filterDialogAddButtonWidth": {
       "type": "string",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": " add button width - in the advanced filter dialog ",
+      "valueOptions": [
+        {
+          "name": null,
+          "type": "string",
+          "description": " The dialog Add button width in pixels (100px)."
+        },
+        {
+          "name": null,
+          "type": "number",
+          "description": " The dialog Add button width as a number (100)."
+        }
+      ]
     },
     "filterDialogAddConditionDropDownTemplate": {
       "type": "string",
-      "defaultValue": "<option value=${value}>${text}</option>"
+      "defaultValue": "<option value=${value}>${text}</option>",
+      "description": "Custom template for options in dropdown in add condition area in the filter dialog.",
+      "valueOptions": null
     },
     "filterDialogAddConditionTemplate": {
       "type": "string",
-      "defaultValue": "<div><span>${label1}</span><div><select></select></div><span>${label2}</span></div>"
+      "defaultValue": "<div><span>${label1}</span><div><select></select></div><span>${label2}</span></div>",
+      "description": "Custom template for add condition area in the filter dialog.",
+      "valueOptions": null
     },
     "filterDialogColumnDropDownDefaultWidth": {
       "type": "string",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": " Width of the column chooser dropdowns in the advanced filter dialog ",
+      "valueOptions": [
+        {
+          "name": null,
+          "type": "string",
+          "description": " The column chooser dropdowns width in pixels (80px)."
+        },
+        {
+          "name": null,
+          "type": "number",
+          "description": " The column chooser dropdowns width as a number (80)."
+        }
+      ]
     },
     "filterDialogContainment": {
       "type": "string",
-      "defaultValue": "owner"
+      "defaultValue": "owner",
+      "description": "Controls containment behavior. <br>                owner  The filter dialog will be draggable only in the grid area<br>                window  The filter dialog will be draggable in the whole window area",
+      "valueOptions": null
     },
     "filterDialogExprInputDefaultWidth": {
       "type": "string",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": " width of the filtering expression input boxes in the advanced filter dialog ",
+      "valueOptions": [
+        {
+          "name": null,
+          "type": "string",
+          "description": " The filtering expression input boxes width in pixels (80px)."
+        },
+        {
+          "name": null,
+          "type": "number",
+          "description": " The filtering expression input boxes width as a number (80)."
+        }
+      ]
     },
     "filterDialogFilterConditionTemplate": {
       "type": "string",
-      "defaultValue": "<option value=${conditionName}>${conditionLabel}</option>"
+      "defaultValue": "<option value=${conditionName}>${conditionLabel}</option>",
+      "description": "Custom template for options in condition list in filter dialog",
+      "valueOptions": null
     },
     "filterDialogFilterDropDownDefaultWidth": {
       "type": "string",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": " Width of the filtering condition dropdowns in the advanced filter dialog ",
+      "valueOptions": [
+        {
+          "name": null,
+          "type": "string",
+          "description": " The filtering condition dropdowns width in pixels (80px)."
+        },
+        {
+          "name": null,
+          "type": "number",
+          "description": " The filtering condition dropdowns width as a number (80)."
+        }
+      ]
     },
     "filterDialogFilterTemplate": {
       "type": "string",
-      "defaultValue": "<tr><td><input/></td><td><select></select></td><td><input /> </td><td><span></span></td></tr>"
+      "defaultValue": "<tr><td><input/></td><td><select></select></td><td><input /> </td><td><span></span></td></tr>",
+      "description": "Custom template for filter dialog",
+      "valueOptions": null
     },
     "filterDialogHeight": {
       "type": "string",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": " default filter dialog height (used for Advanced filtering)  ",
+      "valueOptions": [
+        {
+          "name": null,
+          "type": "string",
+          "description": " The dialog window height in pixels (350px)."
+        },
+        {
+          "name": null,
+          "type": "number",
+          "description": " The dialog window height as a number (350)."
+        }
+      ]
     },
     "filterDialogMaxFilterCount": {
       "type": "number",
-      "defaultValue": 5.0
+      "defaultValue": 5.0,
+      "description": "Maximum number of filter rows in the advanced filtering dialog. if this number is exceeded, an error message will be rendered",
+      "valueOptions": null
     },
     "filterDialogMaxHeight": {
       "type": "string",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": " maximum filter dialog height (used for Advanced filtering)  ",
+      "valueOptions": [
+        {
+          "name": null,
+          "type": "string",
+          "description": " The dialog window height in pixels (350px)."
+        },
+        {
+          "name": null,
+          "type": "number",
+          "description": " The dialog window height as a number (350)."
+        }
+      ]
     },
     "filterDialogOkCancelButtonWidth": {
       "type": "string",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": " Width of the Ok and Cancel buttons in the advanced filtering dialogs ",
+      "valueOptions": [
+        {
+          "name": null,
+          "type": "string",
+          "description": " The advanced filter dialog Ok and Cancel buttons width in pixels (120px)."
+        },
+        {
+          "name": null,
+          "type": "number",
+          "description": " The advanced filter dialog Ok and Cancel buttons width as a number (120)."
+        }
+      ]
     },
     "filterDialogWidth": {
       "type": "string",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": " default filter dialog width (used for Advanced filtering) ",
+      "valueOptions": [
+        {
+          "name": null,
+          "type": "string",
+          "description": " The dialog window width in pixels (370px)."
+        },
+        {
+          "name": null,
+          "type": "number",
+          "description": " The dialog window width as a number (370)."
+        }
+      ]
     },
     "filterDropDownAnimationDuration": {
       "type": "number",
-      "defaultValue": 500.0
+      "defaultValue": 500.0,
+      "description": "animation duration in milliseconds for the filter dropdown animations",
+      "valueOptions": null
     },
     "filterDropDownAnimations": {
       "type": "string",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": " type of animations for the column filter dropdowns",
+      "valueOptions": [
+        {
+          "name": "linear",
+          "type": "string",
+          "description": ""
+        },
+        {
+          "name": "none",
+          "type": "string",
+          "description": ""
+        }
+      ]
     },
     "filterDropDownHeight": {
       "type": "object",
-      "defaultValue": 0.0
+      "defaultValue": 0.0,
+      "description": "Height of the column filter dropdowns<br>                string The height of the column filter dropdowns in pixels (0px).<br>                number The height of the column filter dropdowns as a number (0).",
+      "valueOptions": null
     },
     "filterDropDownItemIcons": {
       "type": "string",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": " Enable/disable filter icons visibility.",
+      "valueOptions": [
+        {
+          "name": "true",
+          "type": "bool",
+          "description": " all predefined filters in the filter dropdowns will have icons rendered in front of the text"
+        },
+        {
+          "name": "false",
+          "type": "bool",
+          "description": ""
+        }
+      ]
     },
     "filterDropDownWidth": {
       "type": "string",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": " width of the column filter dropdowns",
+      "valueOptions": [
+        {
+          "name": null,
+          "type": "string",
+          "description": " The width in pixels (0px)"
+        },
+        {
+          "name": null,
+          "type": "number",
+          "description": " The width as a number (0)"
+        }
+      ]
     },
     "filterExprUrlKey": {
       "type": "string",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": "URL key name that specifies how the filtering expressions will be encoded for remote requests, e.g. &filter('col') = startsWith. Default is OData",
+      "valueOptions": null
     },
     "filterSummaryAlwaysVisible": {
       "type": "bool",
-      "defaultValue": true
+      "defaultValue": true,
+      "description": "Enable/disable footer visibility with summary info about the filter.If false, the filter summary row (in the footer) will only be visible when paging is enabled (or some other feature that renders a footer)",
+      "valueOptions": null
     },
     "filterSummaryTemplate": {
       "type": "string",
-      "defaultValue": ""
+      "defaultValue": "",
+      "description": "Summary template that will appear in the bottom left corner of the footer. Has the format '${matches} matching records'",
+      "valueOptions": null
     },
     "labels": {
       "type": "unknown",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": "A list of configurable and localized labels that will be used for teh predefnied filtering conditions in the filter dropdowns.",
+      "valueOptions": null
     },
     "mode": {
       "type": "string",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": " Default is 'simple' for non-virtualized grids, and 'advanced' when virtualization is enabled ",
+      "valueOptions": [
+        {
+          "name": "simple",
+          "type": "string",
+          "description": " renders just a filter row"
+        },
+        {
+          "name": "advanced",
+          "type": "string",
+          "description": " allows to configure multiple filters from a dialog - Excel style"
+        }
+      ]
     },
     "nullTexts": {
       "type": "unknown",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": "list of configurable and localized null texts that will be used for the filter editors",
+      "valueOptions": null
     },
     "renderFC": {
       "type": "bool",
-      "defaultValue": true
+      "defaultValue": true,
+      "description": "Render in feature chooser. Feature chooser is dialog which lists all the enabled features (like Sorting, Filtering, Hiding etc.) of igGrid.",
+      "valueOptions": null
     },
     "renderFilterButton": {
       "type": "bool",
-      "defaultValue": true
+      "defaultValue": true,
+      "description": "Enable/disable filter button visibility. If false,no filter dropdown buttons will be rendered and predefined list of filters will not be rendered for the columns",
+      "valueOptions": null
     },
     "showEmptyConditions": {
       "type": "bool",
-      "defaultValue": false
+      "defaultValue": false,
+      "description": "Enable/disable empty condition visibility in the filter. If true, shows empty and not empty filtering conditions in the dropdowns",
+      "valueOptions": null
     },
     "showNullConditions": {
       "type": "bool",
-      "defaultValue": false
+      "defaultValue": false,
+      "description": "Enable/disable visibility of null and not null filtering conditions in the dropdowns. If true, shows null and not null filtering conditions in the dropdowns",
+      "valueOptions": null
     },
     "tooltipTemplate": {
       "type": "string",
-      "defaultValue": ""
+      "defaultValue": "",
+      "description": "custom tooltip template for the filter button, when a filter is applied",
+      "valueOptions": null
     },
     "type": {
       "type": "string",
-      "defaultValue": null
+      "defaultValue": null,
+      "description": " Type of filtering. Delegates all filtering functionality to the $.ig.DataSource.",
+      "valueOptions": [
+        {
+          "name": "remote",
+          "type": "string",
+          "description": ""
+        },
+        {
+          "name": "local",
+          "type": "string",
+          "description": ""
+        }
+      ]
     }
   }
 }
