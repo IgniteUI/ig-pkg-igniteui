@@ -222,9 +222,35 @@
     },
     "fileSizeMetric": {
       "type": "string",
-      "defaultValue": null,
+      "defaultValue": "auto",
       "description": " Get or set file size metrics how to be shown files size.",
-      "valueOptions": []
+      "valueOptions": [
+        {
+          "name": "auto",
+          "type": "string",
+          "description": "Displays size according to the size of the uploaded file."
+        },
+        {
+          "name": "bytes",
+          "type": "string",
+          "description": "Displays file size in bytes."
+        },
+        {
+          "name": "kbytes",
+          "type": "string",
+          "description": "Displays file size in kbytes."
+        },
+        {
+          "name": "mbytes",
+          "type": "string",
+          "description": "Displays file size in mbytes."
+        },
+        {
+          "name": "gbytes",
+          "type": "string",
+          "description": "Displays file size in gbytes."
+        }
+      ]
     },
     "height": {
       "type": "number",
@@ -312,9 +338,20 @@
     },
     "mode": {
       "type": "string",
-      "defaultValue": null,
-      "description": " Get or set multiple or single file upload. In single upload it is possible to upload only one file at the same time.",
-      "valueOptions": []
+      "defaultValue": "single",
+      "description": " Get or set multiple or single file upload.",
+      "valueOptions": [
+        {
+          "name": "single",
+          "type": "string",
+          "description": "In single upload it is possible to upload only one file at the same time."
+        },
+        {
+          "name": "multiple",
+          "type": "string",
+          "description": "In multiple upload it is possible to upload more than one file at the same time."
+        }
+      ]
     },
     "multipleFiles": {
       "type": "bool",
