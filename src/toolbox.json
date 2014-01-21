@@ -55,9 +55,28 @@
     		"category": "dataviz",
     		"visual": true,
     		"framework": false,
-    		"height": 300,
-    		"width": 300,
-    		"dataSource": "sampleChartData1"
+    		"height": 200,
+    		"width": 400,
+    		"dataSource": "samplePieChartData",
+			"defaultOptions" : {
+				"axes": [
+                    {
+                        "name": "NameAxis",
+                        "type": "categoryX",
+                        "title": "Population",
+                        "label": "CountryName"
+                    }
+                ],
+				"series": [
+                    {
+                        "name": "Pop2008",
+                        "type": "column",
+                        "xAxis": "NameAxis",
+                        "yAxis": "PopulationAxis",
+                        "valueMemberPath": "Pop2008"
+                    }
+                ]
+			}
     	},
 		"pieChart": {
     		"id": "pieChart",
@@ -68,8 +87,8 @@
     		"category": "dataviz",
     		"visual": true,
     		"framework": false,
-    		"height": 300,
-    		"width": 300,
+    		"height": 200,
+    		"width": 200,
 			"dataSource": "samplePieChartData",
 			"defaultOptions": {"valueMemberPath": "Pop2008", "labelMemberPath": "CountryName", "labelsPosition": "bestFit" } 
 		},	
@@ -103,8 +122,8 @@
                 ] 
 			}
 		},	
-		"bulletgraph": {
-    		"id": "bulletgraph",
+		"bulletGraph": {
+    		"id": "bulletGraph",
     		"toolboxTitle": "Bulletgraph",
     		"icon": "bullet-graph.png",
     		"dragDropIcon": "bullet-graph-dragdrop.png",
@@ -129,8 +148,8 @@
     		"category": "dataviz",
     		"visual": true,
     		"framework": false,
-    		"height": 500,
-    		"width": 500,
+    		"height": 300,
+    		"width": 300,
 			
 			"defaultOptions": {
 				"series":
@@ -220,9 +239,10 @@
     		"category": "dataviz",
     		"visual": true,
     		"framework": false,
-    		"width": 300,
+    		"width": 150,
+			"height": 150,
     		"defaultOptions": {
-                "value": 20
+                "value": "20"
     		}
     	},
 		"linearGauge": {
