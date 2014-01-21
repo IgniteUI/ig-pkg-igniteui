@@ -393,11 +393,6 @@
           "name": "none",
           "type": "string",
           "description": " filtering is disabled"
-        },
-        {
-          "name": "null",
-          "type": "object",
-          "description": " filtering is disabled"
         }
       ]
     },
@@ -451,7 +446,7 @@
     },
     "mode": {
       "type": "string",
-      "defaultValue": null,
+      "defaultValue": "editable",
       "description": " Sets gets functionality mode.",
       "valueOptions": [
         {
@@ -473,73 +468,23 @@
           "name": "readonly",
           "type": "string",
           "description": " Does not allow to open list or change value in field. If selection is not set, then first item in dataSource is automatically selected."
-        },
-        {
-          "name": "0",
-          "type": "number",
-          "description": " Same as editable."
-        },
-        {
-          "name": "1",
-          "type": "number",
-          "description": " Same as dropdown."
-        },
-        {
-          "name": "2",
-          "type": "number",
-          "description": " Same as readonlylist."
-        },
-        {
-          "name": "3",
-          "type": "number",
-          "description": " Same as readonly."
         }
       ]
     },
     "multiSelection": {
       "type": "string",
-      "defaultValue": null,
+      "defaultValue": "false",
       "description": " Gets sets ability to select multiple items in list and enter multiple items in field which are separated by the 'itemSeparator'.",
       "valueOptions": [
-        {
-          "name": "null",
-          "type": "object",
-          "description": " multiselection is disabled"
-        },
         {
           "name": "false",
           "type": "bool",
           "description": " multiselection is disabled"
         },
         {
-          "name": "0",
-          "type": "number",
-          "description": " multiselection is disabled"
-        },
-        {
-          "name": "off",
-          "type": "string",
-          "description": " multiselection is disabled"
-        },
-        {
           "name": "true",
           "type": "bool",
           "description": " multiselection is enabled"
-        },
-        {
-          "name": "1",
-          "type": "number",
-          "description": " multiselection is enabled"
-        },
-        {
-          "name": "on",
-          "type": "string",
-          "description": " multiselection is enabled"
-        },
-        {
-          "name": "2",
-          "type": "number",
-          "description": " multiselection is enabled and checkboxes are used for list items. Those checkboxes allow to add/remove selection without pressing Ctrl key on mouse click."
         },
         {
           "name": "onWithCheckboxes",
@@ -574,7 +519,7 @@
     },
     "renderMatchItems": {
       "type": "string",
-      "defaultValue": null,
+      "defaultValue": "multi",
       "description": " Gets sets condition used for rendering of matching parts in items of drop-down list.",
       "valueOptions": [
         {
@@ -608,7 +553,18 @@
       "type": "string",
       "defaultValue": "GET",
       "description": "specifies the HTTP verb to be used to issue the request",
-      "valueOptions": null
+        "valueOptions": [
+            {
+              "name": "GET",
+              "type": "string",
+              "description": "initiates GET requests"
+            },
+            {
+              "name": "POST",
+              "type": "string",
+              "description": "initiates POST requests"
+            }
+        ]
     },
     "responseContentType": {
       "type": "string",
