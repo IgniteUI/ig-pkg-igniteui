@@ -118,23 +118,33 @@
     },
     "layoutMode": {
       "type": "string",
-      "defaultValue": null,
+      "defaultValue": "column",
       "description": " defines the layout type",
       "valueOptions": [
         {
           "name": "grid",
-          "type": "",
-          "description": ""
+          "type": "string",
+          "description": "Defines grid layout"
         },
         {
           "name": "border",
-          "type": "",
-          "description": ""
+          "type": "string",
+          "description": "Defines border layout"
         },
         {
           "name": "flow",
-          "type": "",
-          "description": ""
+          "type": "string",
+          "description": "Defines flow layout"
+        },
+        {
+          "name": "column",
+          "type": "string",
+          "description": "Defines column layout. CSS only is used instead of initializing the igLayoutManager widget."
+        },
+        {
+          "name": "vertical",
+          "type": "string",
+          "description": "Defines vertical layout. CSS only is used instead of initializing the igLayoutManager widget"
         }
       ]
     },
