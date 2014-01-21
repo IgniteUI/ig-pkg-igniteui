@@ -229,7 +229,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			return '<div class="adorner-actions-list"><div class="adorner-label adorner-custom-label">ACTIONS</div><a href="#" class="adorner-custom-action" data-action="addColumn">Add Column</a><a href="#" class="adorner-custom-action" data-action="addRow">Add Row</a></div>';
 		},
 		_renderProperties: function () {
-			return '<div class="adorner-properties-list"><div class="adorner-label adorner-custom-label">PROPERTIES</div><div>';
+			return '<div class="adorner-properties-list"><div class="adorner-label adorner-custom-label">PROPERTIES</div></div>';
 		},
 		_renderCustomFooter: function () {
 			return '<div class="adorner-custom-footer"><a href="#" class="adorner-custom-action" data-action="propertyExplorer">All Events & Properties</a></div>';
