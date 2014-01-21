@@ -124,9 +124,25 @@
     },
     "enableDblclick": {
       "type": "string",
-      "defaultValue": null,
+      "defaultValue": "auto",
       "description": " Sets gets processing dblclick on dialog-header.",
-      "valueOptions": []
+      "valueOptions": [
+        {
+          "name": "auto",
+          "type": "string",
+          "description": "If the dialog was minimized, then on double click its state will be set to normal. If option is set to "auto" and showMaximizeButton is enabled then dialog will be maximized when it was in normal state, and dialog-state will be set to normal if it was maximized."
+        },
+        {
+          "name": "true",
+          "type": "bool",
+          "description": "If dialog was minimized, then its state will be set to normal. The dialog will be maximized when it was in normal state, and dialog-state will be set to normal if it was maximized."
+        },
+        {
+          "name": "false",
+          "type": "bool",
+          "description": "Dialog will not respond on double click"
+        }
+      ]
     },
     "enableHeaderFocus": {
       "type": "bool",
@@ -286,7 +302,7 @@
     },
     "state": {
       "type": "string",
-      "defaultValue": null,
+      "defaultValue": "opened",
       "description": " Sets gets state of dialog.",
       "valueOptions": [
         {
