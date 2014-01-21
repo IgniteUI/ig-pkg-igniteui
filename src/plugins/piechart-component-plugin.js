@@ -1,9 +1,8 @@
-define (function (require, exports, module) {
-	var ComponentPlugin = require("ide-component-plugin");
-	var IgniteUIComponentPlugin = IgniteUIComponentPlugin || ComponentPlugin.extend({
+define (["./_default-component-plugin"], function (DefaultPlugin) {
+	var IgniteUIPieChartPlugin = IgniteUIPieChartPlugin || DefaultPlugin.extend({
 		init: function (options) {
 			this._super(options);
-		}		
+		}
 	});
-	return IgniteUIComponentPlugin;
+	return IgniteUIPieChartPlugin;
 });
