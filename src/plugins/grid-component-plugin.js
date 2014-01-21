@@ -248,7 +248,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 				container = $('<div class="adorner-column-container"></div>').appendTo($('.adorner-wrapper'));
 			}
 			for (index = 0; index < columns.length; index++) {
-				content += '<li><a href="#">' + columns[index].headerText + '</a></li>';
+				content += '<li><span class="delete-column ui-icon ui-icon-trash"></span><a href="#">' + columns[index].headerText + '</a></li>';
 			}
 			content += '<li><a href="#">Add...</a></li></ul>';
 			container.html(content);
