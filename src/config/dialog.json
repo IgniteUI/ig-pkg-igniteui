@@ -130,7 +130,7 @@
         {
           "name": "auto",
           "type": "string",
-          "description": "If the dialog was minimized, then on double click its state will be set to normal. If option is set to "auto" and showMaximizeButton is enabled then dialog will be maximized when it was in normal state, and dialog-state will be set to normal if it was maximized."
+          "description": "If the dialog was minimized, then on double click its state will be set to normal. If option is set to 'auto' and showMaximizeButton is enabled then dialog will be maximized when it was in normal state, and dialog-state will be set to normal if it was maximized."
         },
         {
           "name": "true",
