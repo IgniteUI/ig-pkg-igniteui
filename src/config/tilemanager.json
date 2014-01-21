@@ -173,65 +173,22 @@
       "valueOptions": null
     },
     "cols": {
-      "type": "string",
+      "type": "number",
       "defaultValue": null,
       "description": " Gets sets the columns count in the container.",
-      "valueOptions": [
-        {
-          "name": null,
-          "type": "number",
-          "description": " The column count can be set as a number."
-        },
-        {
-          "name": "null",
-          "type": "",
-          "description": ""
-        }
-      ]
+      "valueOptions": null
     },
     "columnHeight": {
       "type": "string",
       "defaultValue": null,
-      "description": " The height of each column in the container.",
-      "valueOptions": [
-        {
-          "name": null,
-          "type": "string",
-          "description": " The column height can be set in pixels (px) or percentage (%)."
-        },
-        {
-          "name": null,
-          "type": "number",
-          "description": " The column height can be set as a number representing value in pixels."
-        },
-        {
-          "name": "null",
-          "type": "",
-          "description": ""
-        }
-      ]
+      "description": " The height of each column in the container. The container height can be set as a number in pixels or as a string in pixels (px) or percentage (%).",
+      "valueOptions": null
     },
     "columnWidth": {
       "type": "string",
       "defaultValue": null,
-      "description": " Gets sets the width of each column in the container.",
-      "valueOptions": [
-        {
-          "name": null,
-          "type": "string",
-          "description": " The column width can be set in pixels (px) or percentage (%)."
-        },
-        {
-          "name": null,
-          "type": "number",
-          "description": " The column width can be set as a number representing value in pixels."
-        },
-        {
-          "name": "null",
-          "type": "",
-          "description": ""
-        }
-      ]
+      "description": " Gets sets the width of each column in the container. The container width can be set as a number in pixels or as a string in pixels (px) or percentage (%).",
+      "valueOptions": null
     },
     "dataSource": {
       "type": "object",
@@ -254,36 +211,14 @@
     "height": {
       "type": "string",
       "defaultValue": null,
-      "description": "",
-      "valueOptions": [
-        {
-          "name": null,
-          "type": "string",
-          "description": " The height width can be set in pixels (px) and percentage (%)."
-        },
-        {
-          "name": null,
-          "type": "number",
-          "description": " The height width can be set as a number in pixels."
-        }
-      ]
+      "description": "Gets sets the height of igTileManager. The height can be set as a number in pixels or as a string in pixels (px) or percentage (%).",
+      "valueOptions": null
     },
     "items": {
-      "type": "string",
+      "type": "array",
       "defaultValue": null,
       "description": " Gets sets the tiles configurations. Every tile is described by rowSpan, colSpan, rowIndex and colIndex.",
-      "valueOptions": [
-        {
-          "name": null,
-          "type": "array",
-          "description": " An array with colSpan, rowSpan, colIndex, rowIndex configurations for each tile."
-        },
-        {
-          "name": "null",
-          "type": "",
-          "description": ""
-        }
-      ]
+      "valueOptions": null
     },
     "marginLeft": {
       "type": "number",
@@ -300,53 +235,20 @@
     "maximizedState": {
       "type": "string",
       "defaultValue": null,
-      "description": " Gets sets the content of the tiles in maximized state.",
-      "valueOptions": [
-        {
-          "name": null,
-          "type": "string",
-          "description": " When initializing on html markup provide jQuery selector specifying which elements of the tile to be shown in maximized state. When initializing on data source provide igTemplate that will be rendered for the maximized state."
-        },
-        {
-          "name": "null",
-          "type": "",
-          "description": ""
-        }
-      ]
+      "description": " Gets sets the content of the tiles in maximized state. When initializing on html markup provide jQuery selector specifying which elements of the tile to be shown in maximized state. When initializing on data source provide igTemplate that will be rendered for the maximized state.",
+      "valueOptions": null
     },
     "maximizedTileIndex": {
-      "type": "string",
+      "type": "number",
       "defaultValue": null,
       "description": " Gets sets the index of which items configuration will be used for positioning and sizing of the maximized tile.",
-      "valueOptions": [
-        {
-          "name": null,
-          "type": "number",
-          "description": " The maximizedTileindex can be set as a number."
-        },
-        {
-          "name": "null",
-          "type": "",
-          "description": ""
-        }
-      ]
+      "valueOptions": null
     },
     "minimizedState": {
       "type": "string",
       "defaultValue": null,
-      "description": " Gets sets the content of the tiles in minimized state.",
-      "valueOptions": [
-        {
-          "name": null,
-          "type": "string",
-          "description": " When initializing on html markup provide jQuery selector specifying what content of the tile to be shown in minimized state. When initializing on data source provide igTemplate that will be rendered for the minimized state."
-        },
-        {
-          "name": "null",
-          "type": "",
-          "description": ""
-        }
-      ]
+      "description": "Gets sets the content of the tiles in minimized state. When initializing on html markup provide jQuery selector specifying what content of the tile to be shown in minimized state. When initializing on data source provide igTemplate that will be rendered for the minimized state.",
+      "valueOptions": null
     },
     "preventMaximizingSelector": {
       "type": "string",
@@ -375,19 +277,8 @@
     "responseDataKey": {
       "type": "string",
       "defaultValue": null,
-      "description": " see $.ig.DataSource.",
-      "valueOptions": [
-        {
-          "name": null,
-          "type": "string",
-          "description": " Specifies the name of the property in which data records are held if the response is wrapped. "
-        },
-        {
-          "name": "null",
-          "type": "",
-          "description": ""
-        }
-      ]
+      "description": "Specifies the name of the property in which data records are held if the response is wrapped.",
+      "valueOptions": null
     },
     "responseDataType": {
       "type": "string",
@@ -396,72 +287,28 @@
       "valueOptions": null
     },
     "rightPanelCols": {
-      "type": "string",
+      "type": "number",
       "defaultValue": null,
-      "description": " Gets sets how many columns to be displayed in the right panel when the tiles are minimized.",
-      "valueOptions": [
-        {
-          "name": null,
-          "type": "number",
-          "description": " Set the number of right panel columns as a number. The minimum value is 1."
-        },
-        {
-          "name": "null",
-          "type": "",
-          "description": ""
-        }
-      ]
+      "description": " Gets sets how many columns to be displayed in the right panel when the tiles are minimized. he minimum value is 1.",
+      "valueOptions": null
     },
     "rightPanelTilesHeight": {
-      "type": "string",
+      "type": "number",
       "defaultValue": null,
       "description": " Gets sets the height of the minimized tiles in the right panel.",
-      "valueOptions": [
-        {
-          "name": null,
-          "type": "number",
-          "description": " Set the height of the minimized tiles as a number."
-        },
-        {
-          "name": "null",
-          "type": "",
-          "description": ""
-        }
-      ]
+      "valueOptions": null
     },
     "rightPanelTilesWidth": {
-      "type": "string",
+      "type": "number",
       "defaultValue": null,
       "description": " Gets sets the width of the minimized tiles in the right panel.",
-      "valueOptions": [
-        {
-          "name": null,
-          "type": "number",
-          "description": " Set the width of the minimized tiles as a number."
-        },
-        {
-          "name": "null",
-          "type": "",
-          "description": ""
-        }
-      ]
+      "valueOptions": null
     },
     "rows": {
-      "type": "string",
+      "type": "number",
       "defaultValue": null,
       "description": " Gets sets the rows count in the container.",
-      "valueOptions": [
-        {
-          "name": null,
-          "type": "number",
-          "description": " The row count can be set as a number."
-        },
-        {
-          "name": "null",
-          "type": "",
-          "description": ""
-        }
-      ]
+      "valueOptions": null
     },
     "showRightPanelScroll": {
       "type": "bool",
@@ -478,19 +325,8 @@
     "width": {
       "type": "string",
       "defaultValue": null,
-      "description": "",
-      "valueOptions": [
-        {
-          "name": null,
-          "type": "string",
-          "description": " The container width can be set in pixels (px) and percentage (%)."
-        },
-        {
-          "name": null,
-          "type": "number",
-          "description": " The container width can be set as a number in pixels."
-        }
-      ]
+      "description": "Gets sets the width of igTileManager. The width can be set as a number in pixels or as a string in pixels (px) or percentage (%).",
+      "valueOptions": null
     }
   }
 }
