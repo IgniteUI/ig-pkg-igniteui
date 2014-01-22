@@ -257,17 +257,22 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 		},
 		_customizeHeader: function (descriptor) {
 			var header = this._content.children('.adorner-header'),
-				left = header.children('.adorner-hleft');
-			this._headerLeft = left.html();
-			left.html(this._renderCustomHeader(descriptor));
+				left = header.children('.adorner-hleft'),
+				custom = header.children('.adorner-hleft-custom');
+			left.hide();
+			if (custom.length <= 0) {
+				header.append(this._renderCustomHeader(descriptor));
+			} else {
+				custom.show();
+			}
 		},
 		_renderCustomHeader: function (descriptor) {
-			return '<a href="#" class="adorner-custom-action adorner-back" data-action="customView"><span class="adorner-back-button">&nbsp;</span></a><span class="adorner-hlabel">Back</span>';
+			return '<div class="adorner-hleft-custom"><a href="#" class="adorner-custom-action adorner-back" data-action="customView"><span class="adorner-back-button">&nbsp;</span></a><span class="adorner-hlabel">Back</span></div>';
 		},
 		_restoreHeader: function (descriptor) {
-			var header = this._content.children('.adorner-header'),
-				left = header.children('.adorner-hleft');
-			left.html(this._headerLeft);
+			var header = $('.adorners').children('.adorner-header');
+			header.children('.adorner-hleft').show();
+			header.children('.adorner-hleft-custom').hide();
 		},
 		_attachEvents: function (adorner, descriptor) {
 			var self = this;
@@ -282,18 +287,14 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			});
 		},
 		addColumn: function (descriptor) {
-			if (!descriptor.propName) {
-				descriptor.propName = "columns";
-			}
+			descriptor.propName = "columns";
 			var container = this.getCollectionEditor(descriptor);
 			container.insertAfter(this._currentSheet);
 			this._wrapper.animate({left: '-=250'}, 250);
 			this._customizeHeader(descriptor);
 		},
 		addRow: function (descriptor) {
-			if (!descriptor.propName) {
-				descriptor.propName = "dataSource";
-			}
+			descriptor.propName = "dataSource";
 			var container = this.getCollectionEditor(descriptor, "dataSource");
 			container.insertAfter(this._currentSheet);
 			this._wrapper.animate({left: '-=250'}, 250);
@@ -306,9 +307,12 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			this._customizeHeader(descriptor);
 		},
 		customView: function (descriptor) {
-			this._wrapper.animate({left: 0}, 250);
+			var left = parseInt(this._wrapper.css('left'), 10);
+			this._wrapper.animate({left: "+=250"}, 250);
 			this._currentSheet = $('.adorner-summary-sheet');
-			this._restoreHeader();
+			if (left >= -250) {
+				this._restoreHeader();
+			}
 		}
 	});
 	return IgniteUIGridPlugin;
