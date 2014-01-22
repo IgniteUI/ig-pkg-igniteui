@@ -412,7 +412,104 @@
       "type": "array",
       "defaultValue": null,
       "description": "an array of column objects",
-      "valueOptions": null
+      "valueOptions": null,
+      "designerDisplayProperty": "key",
+      "schema": {
+        "key": {
+          "required": true,
+          "type": "string",
+          "defaultValue": null,
+          "description": "Column key (property in the data source to which the column is bound to)"
+        },
+        "headerText": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Column header text"
+        },
+        "width": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Width of the column in pixels or percentage. Can have optional 'px' at the end. If width is not defined and defaultColumnWidth is set, it is assumed for all columns"
+        },
+        "dataType": {
+          "type": "string",
+          "defaultValue": "string",
+          "description": "data type of the column cell values",
+          "valueOptions": [
+            {
+              "name": "string",
+              "type": "string",
+              "description": "The column values will be stored and formatted as strings"
+            },
+            {
+              "name": "number",
+              "type": "string",
+              "description": "The column values will be stored and formatted as numbers"
+            },
+            {
+              "name": "date",
+              "type": "string",
+              "description": "The column values will be stored and formatted as Date objects"
+            },
+            {
+              "name": "bool",
+              "type": "string",
+              "description": "The column values will be stored and formatted as boolean values"
+            },
+            {
+              "name": "object",
+              "type": "string",
+              "description": "The column values will be stored and formatted in the way they appear in the data source"
+            }
+          ]
+        },
+        "hidden": {
+          "type": "bool",
+          "defaultValue": false,
+          "description": "Initial visibility of the column. A column can be hidden without the Hiding feature being enabled but there will be no UI for unhiding it. Columns can be defined as hidden in the options of the Hiding feature as well and those definitions take precedence."
+        },
+        "format": {
+          "type": "string",
+          "defaultValue": "null",
+          "description": "Sets gets format for cells in column. Default value is null. If dataType is \"date\", then supported formats are following: \"date\", \"dateLong\", \"dateTime\", \"time\", \"timeLong\", \"MM/dd/yyyy\", \"MMM-d, yy, h:mm:ss tt\", \"dddd d MMM\", etc. If dataType is \"number\", then supported numeric formats are following: \"number\", \"currency\", \"percent\", \"int\", \"double\", \"0.00\", \"#.0####\", \"0\", \"#.#######\", etc. The value of \"double\" will be similar to \"number\", but with unlimited maximum number of decimal places. The format patterns and rules for numbers and dates are defined in $.ig.regional.defaults object. If dataType is \"string\" or not set, then format is rendered as it is with replacement of possible \"{0}\" flag by value in cell. Example, if format is set to \"Name: {0}\" and value in cell is \"Bob\", then value will appear as \"Name: Bob\". If value is set to \"checkbox\", then checkboxes are used regardless of renderCheckboxes option of igGrid. That has effect only when dataType option of column is set to \"bool\"."
+        },
+        "formatter": {
+          "type": "function",
+          "defaultValue": null,
+          "description": "Reference to a function (string or function) which will be used for formatting the cell values. The function should accept a value and return the new formatted value."
+        },
+        "formula": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "a reference or name of a javascript function which will calculate the value based on other cell values in the same row when column is unbound."
+        },
+        "group": {
+          "type": "array",
+          "schemaRef": "grid.columns",
+          "description": "Array of other column definitions. If the column has the property group than the grid has multi column headers",
+          "defaultValue": null
+        },
+        "rowspan": {
+          "type": "number",
+          "defaultValue": 1,
+          "description": "Used to adjust span of multi column header cell."
+        },
+        "template": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Sets a template for an individual column. the contents of the template should be the HTML markup that goes inside the table cell, without any and tags included in front and at the end. The syntax of the template, when referencing data keys and using conditional expressions is the same as the one for rowTemplate."
+        },
+        "unbound": {
+          "type": "bool",
+          "defaultValue": false,
+          "description": "Sets whether column is bound to the datasource."
+        },
+        "unboundValues": {
+          "type": "array",
+          "defaultValue": null,
+          "arrayMemberType": "object"
+        }
+      }
     },
     "columnVirtualization": {
       "type": "bool",
@@ -556,7 +653,59 @@
       "type": "object",
       "defaultValue": null,
       "description": "Settings related to REST compliant update routine",
-      "valueOptions": null
+      "valueOptions": null,
+      "schema": {
+        "create": {
+          "type": "object",
+          "defaultValue": null,
+          "description": "Settings for create requests",
+          "schema": {
+            "batch": {
+              "type": "bool",
+              "defaultValue": false,
+              "description": "Specifies whether create requests will be sent in batches"
+            },
+            "template": {
+              "type": "string",
+              "defaultValue": null,
+              "description": "Specifies a remote URL template. Use ${id} in place of the resource id"
+            },
+            "uri": {
+              "type": "string",
+              "defaultValue": null,
+              "description": "Specifies a remote URL to which create requests will be sent. This will be used for both batch and non-batch, however if template is also set, this URL will only be used for batch requests."
+            }
+          }
+        },
+        "update": {
+          "schemaRef": "grid.restSettings.create"
+        },
+        "remove": {
+          "schemaRef": "grid.restSettings.create"
+        },
+        "contentSerializer": {
+          "type": "function",
+          "defaultValue": null,
+          "description": "Specifies a custom function to serialize content sent to the server. It should accept a single object or an array of objects and return a string. If not specified, JSON.stringify() will be used.",
+          "args": [
+            {
+              "name": "content",
+              "type": "object",
+              "optional": false
+            }
+          ]
+        },
+        "contentType": {
+          "type": "string",
+          "defaultValue": "application/json; charset=utf-8",
+          "description": "Specifies the content type of the request."
+        },
+        "encodeRemoveInRequestUri": {
+          "type": "bool",
+          "defaultValue": true,
+          "description": "Specifies whether the ids of the removed resources are send through the request URI"
+        }
+      }
     },
     "rowTemplate": {
       "type": "string",

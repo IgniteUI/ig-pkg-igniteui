@@ -151,7 +151,34 @@
       "type": "array",
       "defaultValue": null,
       "description": "Specifies the panel settings. The panels are no more than two. Settings are specified via enumeration.<br>&nbsp;&nbsp;&nbsp;size=\"string|int\"<br>&nbsp;&nbsp;&nbsp;min type=\"string|int\"<br>&nbsp;&nbsp;&nbsp;max type=\"string|int\"<br>&nbsp;&nbsp;&nbsp;resizable <br>&nbsp;&nbsp;&nbsp;collapsed <br>&nbsp;&nbsp;&nbsp;collapsible",
-      "valueOptions": null
+      "valueOptions": null,
+      "schema": {
+          "size": {
+              "type": "string",
+              "defaultValue": "0",
+              "description": "panel size"
+          },
+          "min": {
+              "type": "string",
+              "defaultValue": "0",
+              "description": "min size"
+          },
+          "max": {
+              "type": "string",
+              "defaultValue": "0",
+              "description": "max size"
+          },
+          "resizable": {
+              "type": "bool",
+              "defaultValue": true,
+              "description": "whether to render resizing UI"
+          },
+          "collapsed": {
+              "type": "bool",
+              "defaultValue": false,
+              "description": ""
+          }
+      }
     },
     "width": {
       "type": "string",

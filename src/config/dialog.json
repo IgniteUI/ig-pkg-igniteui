@@ -87,10 +87,13 @@
   },
   "properties": {
     "closeAnimation": {
-      "type": "object",
+      "type": "function",
       "defaultValue": null,
       "description": "Sets gets animation applied to dialog when it is closed. That can be any object supported by jquery hide(param) method.",
-      "valueOptions": null
+      "valueOptions": null,
+      "args": [
+
+      ]
     },
     "closeButtonTitle": {
       "type": "string",
@@ -105,7 +108,7 @@
       "valueOptions": null
     },
     "container": {
-      "type": "object",
+      "type": "string",
       "defaultValue": null,
       "description": "Sets gets container html element for dialog.<br>&nbsp;&nbsp;&nbsp;&nbsp;That can be reference to html element, jquery selector or jquery object.<br>&nbsp;&nbsp;&nbsp;&nbsp;By default the parent form of original target element is used. If form is not found, then body is used.<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: If the \"position\" of container is not set or it is \"static\", then position is set to \"relative\".",
       "valueOptions": null
@@ -223,10 +226,12 @@
       "valueOptions": null
     },
     "openAnimation": {
-      "type": "object",
+      "type": "function",
       "defaultValue": null,
       "description": "Sets gets animation applied to dialog when it is opened. That can be any object supported by jquery show(param) method.",
-      "valueOptions": null
+      "valueOptions": null,
+      "args": [
+      ]
     },
     "pinButtonTitle": {
       "type": "string",
@@ -250,7 +255,22 @@
       "type": "object",
       "defaultValue": null,
       "description": "Sets gets initial position of dialog. That can be array of 2 numeric values, which represent left/top coordinates.<br>&nbsp;&nbsp;&nbsp;&nbsp;Or it can be object supported by jquery.position(param) method, such as { my: \"left top\", at: \"left top\", offset: \"100 200\" }",
-      "valueOptions": null
+      "valueOptions": null,
+      "schema": {
+
+            "x": {
+                "type": "number",
+                "defaultValue": 0,
+                "description": "X value",
+                "required": true
+            },
+            "y": {
+                "type": "number",
+                "defaultValue": 0,
+                "description": "Y value",
+                "required": true
+            }
+      }
     },
     "resizable": {
       "type": "bool",
