@@ -61,7 +61,7 @@
     "funnelSliceDisplay": {
       "type": "string",
       "defaultValue": null,
-      "description": " Gets or sets the how the heights of the funnel slices should be configured.",
+      "description": "Gets or sets the how the heights of the funnel slices should be configured.",
       "valueOptions": [
         {
           "name": "uniform",

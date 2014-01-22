@@ -77,17 +77,17 @@
     "backingShape": {
       "type": "string",
       "defaultValue": null,
-      "description": " Gets or sets the type of shape to use for the backing of the gauge.",
+      "description": "Gets or sets the type of shape to use for the backing of the gauge.",
       "valueOptions": [
         {
           "name": "circular",
           "type": "string",
-          "description": " "
+          "description": "Circular shape is used for the backing of the gauge"
         },
         {
           "name": "fitted",
           "type": "string",
-          "description": ""
+          "description": "Fitted shape is used for the backing of the gauge"
         }
       ]
     },
@@ -112,27 +112,27 @@
     "duplicateLabelOmissionStrategy": {
       "type": "string",
       "defaultValue": null,
-      "description": " Gets or sets the strategy to use for ommitting labels if the first and last label have the same value.",
+      "description": "Gets or sets the strategy to use for ommitting labels if the first and last label have the same value.",
       "valueOptions": [
         {
           "name": "omitLast",
           "type": "string",
-          "description": " "
+          "description": "If the first and last labels have the same value, the last is omitted"
         },
         {
           "name": "omitFirst",
           "type": "string",
-          "description": " "
+          "description": "If the first and last labels have the same value, the first is omitted"
         },
         {
           "name": "omitNeither",
           "type": "string",
-          "description": " "
+          "description": "If the first and last labels have the same value, the both are kept"
         },
         {
           "name": "omitBoth",
           "type": "string",
-          "description": ""
+          "description": "If the first and last labels have the same value, the both are ommitted"
         }
       ]
     },
@@ -265,42 +265,42 @@
     "needlePivotShape": {
       "type": "string",
       "defaultValue": null,
-      "description": " Gets or sets the shape to use for the needle cap.",
+      "description": "Gets or sets the shape to use for the needle cap.",
       "valueOptions": [
         {
           "name": "none",
           "type": "string",
-          "description": " "
+          "description": "No shape is used for the needle cap"
         },
         {
           "name": "circle",
           "type": "string",
-          "description": " "
+          "description": "Circle shape is used for the needle cap"
         },
         {
           "name": "circleWithHole",
           "type": "string",
-          "description": " "
+          "description": "Circle with a hole is used for the needle cap"
         },
         {
           "name": "circleOverlay",
           "type": "string",
-          "description": " "
+          "description": "Circle overlay is used for the needle cap"
         },
         {
           "name": "circleOverlayWithHole",
           "type": "string",
-          "description": " "
+          "description": "Circle overlay with a hole is used for the needle cap"
         },
         {
           "name": "circleUnderlay",
           "type": "string",
-          "description": " "
+          "description": "Circle underlay shape is used for the needle cap"
         },
         {
           "name": "circleUnderlayWithHole",
           "type": "string",
-          "description": ""
+          "description": "Circle underlay with a hole is used for the needle cap"
         }
       ]
     },
@@ -331,52 +331,52 @@
     "needleShape": {
       "type": "string",
       "defaultValue": null,
-      "description": " Gets or sets the shape to use when rendering the needle from a number of options.",
+      "description": "Gets or sets the shape to use when rendering the needle from a number of options.",
       "valueOptions": [
         {
           "name": "none",
           "type": "string",
-          "description": " "
+          "description": "No shape is used when rendering the needle from a number of options."
         },
         {
           "name": "rectangle",
           "type": "string",
-          "description": " "
+          "description": "Rectangle shape is used when rendering the needle from a number of options."
         },
         {
           "name": "triangle",
           "type": "string",
-          "description": " "
+          "description": "Triangle shape is used when rendering the needle from a number of options."
         },
         {
           "name": "needle",
           "type": "string",
-          "description": " "
+          "description": "Needle shape is used when rendering the needle from a number of options."
         },
         {
           "name": "trapezoid",
           "type": "string",
-          "description": " "
+          "description": "Trapezoid shape is used when rendering the needle from a number of options."
         },
         {
           "name": "rectangleWithBulb",
           "type": "string",
-          "description": " "
+          "description": "Rectangle with bulb shape is used when rendering the needle from a number of options."
         },
         {
           "name": "triangleWithBulb",
           "type": "string",
-          "description": " "
+          "description": "Triangle with bulb shape is used when rendering the needle from a number of options."
         },
         {
           "name": "needleWithBulb",
           "type": "string",
-          "description": " "
+          "description": "Needle with bulb shape is used when rendering the needle from a number of options."
         },
         {
           "name": "trapezoidWithBulb",
           "type": "string",
-          "description": ""
+          "description": "Trapezoid with buld shape is used when rendering the needle from a number of options."
         }
       ]
     },
@@ -449,22 +449,22 @@
     "scaleOversweepShape": {
       "type": "string",
       "defaultValue": null,
-      "description": " Gets or sets the over or shape to use for the excess fill area for the scale.",
+      "description": "Gets or sets the over or shape to use for the excess fill area for the scale.",
       "valueOptions": [
         {
           "name": "auto",
           "type": "string",
-          "description": " "
+          "description": "The excess fill area shape is set dynamically"
         },
         {
           "name": "circular",
           "type": "string",
-          "description": " "
+          "description": "Circular shape is used for the excess fill area"
         },
         {
           "name": "fitted",
           "type": "string",
-          "description": ""
+          "description": "Fitted shape is used for the excess fill area"
         }
       ]
     },
@@ -483,17 +483,17 @@
     "scaleSweepDirection": {
       "type": "string",
       "defaultValue": null,
-      "description": " Gets or sets the direction in which the scale sweeps around the center from the start angle to end angle.",
+      "description": "Gets or sets the direction in which the scale sweeps around the center from the start angle to end angle.",
       "valueOptions": [
         {
           "name": "counterclockwise",
           "type": "string",
-          "description": " "
+          "description": "Gets or sets anticlockwise direction"
         },
         {
           "name": "clockwise",
           "type": "string",
-          "description": ""
+          "description": "Gets or sets clockwise direction"
         }
       ]
     },
