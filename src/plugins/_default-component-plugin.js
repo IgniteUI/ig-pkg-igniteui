@@ -39,9 +39,13 @@ define (function (require, exports, module) {
 				return null;
 			}
 			var lineCount = 5;
-			code = "\t\t\t\t$(\"#" + descriptor.id + "\")." + name + "({\n" +
-				"\t\t\t\t\theight: " + opts.height + ",\n" + 
-				"\t\t\t\t\twidth: " + opts.width;
+			code = "\t\t\t\t$(\"#" + descriptor.id + "\")." + name + "({\n";
+				if (opts.height) {
+				code += "\t\t\t\t\theight: " + opts.height + ",\n";
+				}
+				if (opts.width) {
+				code += "\t\t\t\t\twidth: " + opts.width;
+				}
 			if (descriptor.data && window[descriptor.data]) {
 				code += ",\n\t\t\t\t\tdataSource: " + descriptor.data;
 			}

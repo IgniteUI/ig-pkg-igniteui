@@ -338,6 +338,60 @@
     		"width": 200,
     		"height":40
     	},
+		"numericEditor": {
+    		"id": "numericEditor",
+    		"toolboxTitle": "Numeric Editor",
+    		"icon": "numeric-editor.png",
+    		"dragDropIcon": "numeric-editor-dragdrop.png",
+    		"category": "editors",
+    		"visual": true,
+    		"framework": false
+    	},	
+		"currencyEditor": {
+    		"id": "currencyEditor",
+    		"toolboxTitle": "Currency Editor",
+    		"icon": "currency-editor.png",
+    		"dragDropIcon": "currency-editor-dragdrop.png",
+    		"category": "editors",
+    		"visual": true,
+    		"framework": false
+    	},
+		"dateEditor": {
+    		"id": "dateEditor",
+    		"toolboxTitle": "Date Editor",
+    		"icon": "currency-editor.png",
+    		"dragDropIcon": "currency-editor-dragdrop.png",
+    		"category": "editors",
+    		"visual": true,
+    		"framework": false
+    	},	
+		"maskEditor": {
+    		"id": "maskEditor",
+    		"toolboxTitle": "Mask Editor",
+    		"icon": "mask-editor.png",
+    		"dragDropIcon": "mask-editor-dragdrop.png",
+    		"category": "editors",
+    		"visual": true,
+    		"framework": false
+    	},
+		"percentEditor": {
+    		"id": "percentEditor",
+    		"toolboxTitle": "Percent Editor",
+    		"icon": "percent-editor.png",
+    		"dragDropIcon": "percent-editor-dragdrop.png",
+    		"category": "editors",
+    		"visual": true,
+    		"framework": false
+    	},	
+		"textEditor": {
+    		"id": "textEditor",
+    		"toolboxTitle": "Text Editor",
+    		"icon": "editor.png",
+    		"dragDropIcon": "editor-dragdrop.png",
+    		"category": "editors",
+    		"visual": true,
+    		"framework": false
+    	},			
 		"datePicker": {
     		"id": "datePicker",
     		"toolboxTitle": "Date Picker",
@@ -345,9 +399,7 @@
     		"dragDropIcon": "datepicker-dragdrop.png",
     		"category": "lists",
     		"visual": true,
-    		"framework": false,
-    		"width": 200,
-    		"height":30
+    		"framework": false
     	},
     	"splitter": {
     		"id": "splitter",
@@ -356,7 +408,9 @@
     		"dragDropIcon": "splitter-dragdrop.png",
     		"category": "layout",
     		"visual": true,
-    		"framework": false
+    		"framework": false,
+			"width": 200, 
+			"height": 200
     	},
     	"tileManager": {
     		"id": "tileManager",
