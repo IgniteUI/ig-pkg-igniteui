@@ -66,12 +66,12 @@
         {
           "name": "uniform",
           "type": "string",
-          "description": " The slice heights should be uniform."
+          "description": "The slice heights should be uniform."
         },
         {
           "name": "weighted",
           "type": "string",
-          "description": " The slice heights should be weighted by value."
+          "description": "The slice heights should be weighted by value."
         }
       ]
     },
@@ -84,7 +84,7 @@
     "innerLabelVisibility": {
       "type": "string",
       "defaultValue": null,
-      "description": " Gets or sets whether the inner labels are visible.",
+      "description": "Gets or sets whether the inner labels are visible.",
       "valueOptions": [
         {
           "name": "visible",
@@ -113,17 +113,17 @@
     "outerLabelAlignment": {
       "type": "string",
       "defaultValue": null,
-      "description": " Gets or sets which side of the chart the outer labels should appear.",
+      "description": "Gets or sets which side of the chart the outer labels should appear.",
       "valueOptions": [
         {
           "name": "left",
           "type": "string",
-          "description": " The labels will be displayed to the left of the chart."
+          "description": "The labels will be displayed to the left of the chart."
         },
         {
           "name": "right",
           "type": "string",
-          "description": " The labels will be displayed to the right of the chart."
+          "description": "The labels will be displayed to the right of the chart."
         }
       ]
     },
@@ -136,7 +136,7 @@
     "outerLabelVisibility": {
       "type": "string",
       "defaultValue": null,
-      "description": " Gets or sets whether the outer labels are visible.",
+      "description": "Gets or sets whether the outer labels are visible.",
       "valueOptions": [
         {
           "name": "visible",
