@@ -160,18 +160,18 @@
     },
     "orientation": {
       "type": "string",
-      "defaultValue": null,
-      "description": " Gets or sets the orientation of the scale.",
+      "defaultValue": "horizontal",
+      "description": "Gets or sets the orientation of the scale.",
       "valueOptions": [
         {
           "name": "horizontal",
           "type": "string",
-          "description": " "
+          "description": "Gets or sets the orientation of the scale to horizontal"
         },
         {
           "name": "vertical",
           "type": "string",
-          "description": ""
+          "description": "Get or sets the orientation of the scale to vertical"
         }
       ]
     },
