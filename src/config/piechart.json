@@ -176,33 +176,33 @@
     },
     "labelsPosition": {
       "type": "string",
-      "defaultValue": null,
-      "description": "",
+      "defaultValue": "center",
+      "description": "Specifies the chart label position",
       "valueOptions": [
         {
           "name": "none",
           "type": "string",
-          "description": " No labels will be displayed.             "
+          "description": "No labels will be displayed."
         },
         {
           "name": "center",
           "type": "string",
-          "description": " Labels will be displayed in the center.             "
+          "description": "Labels will be displayed in the center."
         },
         {
           "name": "insideEnd",
           "type": "string",
-          "description": " Labels will be displayed inside and by the edge of the container.             "
+          "description": "Labels will be displayed inside and by the edge of the container."
         },
         {
           "name": "outsideEnd",
           "type": "string",
-          "description": " Labels will be displayed outside the container.             "
+          "description": "Labels will be displayed outside the container."
         },
         {
           "name": "bestFit",
           "type": "string",
-          "description": " Labels will automatically decide their location."
+          "description": "Labels will automatically decide their location."
         }
       ]
     },
@@ -214,40 +214,40 @@
     },
     "leaderLineType": {
       "type": "string",
-      "defaultValue": null,
-      "description": "",
+      "defaultValue": "straightLine",
+      "description": "Specifies the type of the igPieChart leader line",
       "valueOptions": [
         {
           "name": "straightLine",
           "type": "string",
-          "description": " "
+          "description": "Defines a stright leader line of the igPieChart"
         },
         {
           "name": "simpleCurve",
           "type": "string",
-          "description": " "
+          "description": "Defines a simple curve to be the igPieChart leader line"
         },
         {
           "name": "radialCurve",
           "type": "string",
-          "description": ""
+          "description": "Defines a radial curve to be the igPieChart leader line"
         }
       ]
     },
     "leaderLineVisibility": {
       "type": "string",
-      "defaultValue": null,
-      "description": "",
+      "defaultValue": "visible",
+      "description": "Specifies the visibility of the igPieChart leader line",
       "valueOptions": [
         {
           "name": "visible",
           "type": "string",
-          "description": " "
+          "description": "The igPieChart leader line is visible"
         },
         {
           "name": "collapsed",
           "type": "string",
-          "description": ""
+          "description": "The igPieChart leader line is collapsed"
         }
       ]
     },
@@ -289,18 +289,18 @@
     },
     "othersCategoryType": {
       "type": "string",
-      "defaultValue": null,
-      "description": " Gets or sets whether to use numeric or percent-based threshold value.",
+      "defaultValue": "percent",
+      "description": "Gets or sets whether to use numeric or percent-based threshold value.",
       "valueOptions": [
         {
           "name": "number",
           "type": "string",
-          "description": " Data value is compared directly to the value of OthersCategoryThreshold.             "
+          "description": "Data value is compared directly to the value of OthersCategoryThreshold."
         },
         {
           "name": "percent",
           "type": "string",
-          "description": " Data value is compared to OthersCategoryThreshold as a percentage of the total."
+          "description": "Data value is compared to OthersCategoryThreshold as a percentage of the total."
         }
       ]
     },
@@ -342,18 +342,18 @@
     },
     "sweepDirection": {
       "type": "string",
-      "defaultValue": null,
-      "description": "",
+      "defaultValue": "clockwise",
+      "description": "Specifies the igPieChart sweep direction",
       "valueOptions": [
         {
           "name": "counterclockwise",
           "type": "string",
-          "description": " "
+          "description": "Defines the igPieChart sweep direction to be anticlockwise"
         },
         {
           "name": "clockwise",
           "type": "string",
-          "description": ""
+          "description": "Defines the igPieChart sweep direction to follow the clock arrow"
         }
       ]
     },

@@ -234,21 +234,22 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 		_renderCustomFooter: function () {
 			return '<div class="adorner-custom-footer"><a href="#" class="adorner-custom-action" data-action="propertyExplorer">All Events & Properties</a></div>';
 		},
-		_renderColumnContainer: function (descriptor) {
+		_renderCollectionContainer: function (descriptor) {
 			var container = $('.adorner-column-container'),
-				columns,
+				type = 'ig' + descriptor.type.charAt(0).toUpperCase() + descriptor.type.slice(1),
+				prop,
 				content = '<ul>',
 				index;
-			if (descriptor.iframe.jQuery && descriptor.iframe.jQuery(descriptor.element.data("igGrid"))) {
-				columns = descriptor.iframe.jQuery($("#designer-frame").contents().find("#" + descriptor.element.attr("id"))).data("igGrid").options.columns;
+			if (descriptor.iframe && descriptor.iframe.jQuery) {
+				prop = descriptor.iframe.jQuery($("#designer-frame").contents().find("#" + descriptor.element.attr("id"))).data(type).options[descriptor.propName];
 			} else {
-				columns = descriptor.element.data("igGrid").options.columns;
+				prop = descriptor.element.data(type).options[descriptor.propName];
 			}
 			if (container.length <= 0) {
 				container = $('<div class="adorner-column-container"></div>').appendTo($('.adorner-wrapper'));
 			}
-			for (index = 0; index < columns.length; index++) {
-				content += '<li><span class="delete-column ui-icon ui-icon-trash"></span><a href="#">' + columns[index].headerText + '</a></li>';
+			for (index = 0; index < prop.length; index++) {
+				content += '<li><span class="delete-column ui-icon ui-icon-trash"></span><a href="#">' + prop[index].headerText + '</a></li>';
 			}
 			content += '<li><a href="#">Add...</a></li></ul>';
 			container.html(content);
@@ -256,17 +257,22 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 		},
 		_customizeHeader: function (descriptor) {
 			var header = this._content.children('.adorner-header'),
-				left = header.children('.adorner-hleft');
-			this._headerLeft = left.html();
-			left.html(this._renderCustomHeader(descriptor));
+				left = header.children('.adorner-hleft'),
+				custom = header.children('.adorner-hleft-custom');
+			left.hide();
+			if (custom.length <= 0) {
+				header.append(this._renderCustomHeader(descriptor));
+			} else {
+				custom.show();
+			}
 		},
 		_renderCustomHeader: function (descriptor) {
-			return '<a href="#" class="adorner-custom-action adorner-back" data-action="customView"><span class="adorner-back-button">&nbsp;</span></a><span class="adorner-hlabel">Back</span>';
+			return '<div class="adorner-hleft-custom"><a href="#" class="adorner-custom-action adorner-back" data-action="customView"><span class="adorner-back-button">&nbsp;</span></a><span class="adorner-hlabel">Back</span></div>';
 		},
 		_restoreHeader: function (descriptor) {
-			var header = this._content.children('.adorner-header'),
-				left = header.children('.adorner-hleft');
-			left.html(this._headerLeft);
+			var header = $('.adorners').children('.adorner-header');
+			header.children('.adorner-hleft').show();
+			header.children('.adorner-hleft-custom').hide();
 		},
 		_attachEvents: function (adorner, descriptor) {
 			var self = this;
@@ -281,13 +287,18 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			});
 		},
 		addColumn: function (descriptor) {
-			var container = this._renderColumnContainer(descriptor);
+			descriptor.propName = "columns";
+			var container = this.getCollectionEditor(descriptor);
 			container.insertAfter(this._currentSheet);
 			this._wrapper.animate({left: '-=250'}, 250);
 			this._customizeHeader(descriptor);
 		},
 		addRow: function (descriptor) {
-			alert('Add Row Action triggered.');
+			descriptor.propName = "dataSource";
+			var container = this.getCollectionEditor(descriptor, "dataSource");
+			container.insertAfter(this._currentSheet);
+			this._wrapper.animate({left: '-=250'}, 250);
+			this._customizeHeader(descriptor);
 		},
 		propertyExplorer: function (descriptor) {
 			var content = $('.adorner-content').insertAfter(this._currentSheet);
@@ -296,9 +307,12 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			this._customizeHeader(descriptor);
 		},
 		customView: function (descriptor) {
-			this._wrapper.animate({left: 0}, 250);
+			var left = parseInt(this._wrapper.css('left'), 10);
+			this._wrapper.animate({left: "+=250"}, 250);
 			this._currentSheet = $('.adorner-summary-sheet');
-			this._restoreHeader();
+			if (left >= -250) {
+				this._restoreHeader();
+			}
 		}
 	});
 	return IgniteUIGridPlugin;

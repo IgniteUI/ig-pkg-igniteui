@@ -52,28 +52,28 @@
     },
     "displayType": {
       "type": "string",
-      "defaultValue": null,
-      "description": " Gets or sets the display type of the sparkline.",
+      "defaultValue": "line",
+      "description": "Gets or sets the display type of the sparkline.",
       "valueOptions": [
         {
           "name": "line",
           "type": "string",
-          "description": " Display the sparkline as a line."
+          "description": "Display the sparkline as a line."
         },
         {
           "name": "area",
           "type": "string",
-          "description": " Display the sparkline as a filled polygon."
+          "description": "Display the sparkline as a filled polygon."
         },
         {
           "name": "column",
           "type": "string",
-          "description": " Display the sparkline as a set of columns."
+          "description": "Display the sparkline as a set of columns."
         },
         {
           "name": "winLoss",
           "type": "string",
-          "description": " Display the sparkline as a set of columns on a boolean scale."
+          "description": "Display the sparkline as a set of columns on a boolean scale."
         }
       ]
     },
@@ -91,18 +91,18 @@
     },
     "firstMarkerVisibility": {
       "type": "string",
-      "defaultValue": null,
-      "description": " Gets or sets the first marker visibility of the sparkline.",
+      "defaultValue": "collapsed",
+      "description": "Gets or sets the first marker visibility of the sparkline.",
       "valueOptions": [
         {
           "name": "visible",
           "type": "string",
-          "description": " "
+          "description": "Visualize the first igSparkline marker"
         },
         {
           "name": "collapsed",
           "type": "string",
-          "description": ""
+          "description": "Collapse the first igSparkline marker"
         }
       ]
     },
@@ -126,18 +126,18 @@
     },
     "highMarkerVisibility": {
       "type": "string",
-      "defaultValue": null,
+      "defaultValue": "collapsed",
       "description": " Gets or sets the high marker visibility of the sparkline.",
       "valueOptions": [
         {
           "name": "visible",
           "type": "string",
-          "description": " "
+          "description": "Visualize the high igSparkline marker"
         },
         {
           "name": "collapsed",
           "type": "string",
-          "description": ""
+          "description": "Collapse the high igSparkline marker"
         }
       ]
     },
@@ -155,18 +155,18 @@
     },
     "horizontalAxisVisibility": {
       "type": "string",
-      "defaultValue": null,
-      "description": " Gets or sets the display state of the horizontal axis.",
+      "defaultValue": "collapsed",
+      "description": "Gets or sets the display state of the horizontal axis.",
       "valueOptions": [
         {
           "name": "visible",
           "type": "string",
-          "description": " "
+          "description": "Visualize the igSparkline horizontal axis"
         },
         {
           "name": "collapsed",
           "type": "string",
-          "description": ""
+          "description": "Collapse the igSparkline horizontal axis"
         }
       ]
     },
@@ -190,18 +190,18 @@
     },
     "lastMarkerVisibility": {
       "type": "string",
-      "defaultValue": null,
-      "description": " Gets or sets the last marker visibility of the sparkline.",
+      "defaultValue": "collapsed",
+      "description": "Gets or sets the last marker visibility of the sparkline.",
       "valueOptions": [
         {
           "name": "visible",
           "type": "string",
-          "description": " "
+          "description": "Visualize the last igSparkline marker"
         },
         {
           "name": "collapsed",
           "type": "string",
-          "description": ""
+          "description": "Collapse the last igSparkline marker"
         }
       ]
     },
@@ -225,18 +225,18 @@
     },
     "lowMarkerVisibility": {
       "type": "string",
-      "defaultValue": null,
+      "defaultValue": "collapsed",
       "description": " Gets or sets the low marker visibility of the sparkline.",
       "valueOptions": [
         {
           "name": "visible",
           "type": "string",
-          "description": " "
+          "description": "Visualize the low igSparkline marker"
         },
         {
           "name": "collapsed",
           "type": "string",
-          "description": ""
+          "description": "Collapse the low igSparkline marker"
         }
       ]
     },
@@ -254,18 +254,18 @@
     },
     "markerVisibility": {
       "type": "string",
-      "defaultValue": null,
-      "description": " Gets or sets the marker visibility of the sparkline.",
+      "defaultValue": "collapsed",
+      "description": "Gets or sets the marker visibility of the sparkline.",
       "valueOptions": [
         {
           "name": "visible",
           "type": "string",
-          "description": " "
+          "description": "Visualize the igSparkline marker"
         },
         {
           "name": "collapsed",
           "type": "string",
-          "description": ""
+          "description": "Collapse the low igSparkline marker"
         }
       ]
     },
@@ -289,18 +289,18 @@
     },
     "negativeMarkerVisibility": {
       "type": "string",
-      "defaultValue": null,
+      "defaultValue": "collapsed",
       "description": " Gets or sets the negative marker visibility of the sparkline.",
       "valueOptions": [
         {
           "name": "visible",
           "type": "string",
-          "description": " "
+          "description": "Visualize the negative igSparkline marker"
         },
         {
           "name": "collapsed",
           "type": "string",
-          "description": ""
+          "description": "Collapse the negative igSparkline marker"
         }
       ]
     },
@@ -324,18 +324,18 @@
     },
     "normalRangeVisibility": {
       "type": "string",
-      "defaultValue": null,
-      "description": " Gets or sets the normal range visibility of the sparkline.",
+      "defaultValue": "collapsed",
+      "description": "Gets or sets the normal range visibility of the sparkline.",
       "valueOptions": [
         {
           "name": "visible",
           "type": "string",
-          "description": " "
+          "description": "Enable the normal range visibility of the sparkline"
         },
         {
           "name": "collapsed",
           "type": "string",
-          "description": ""
+          "description": "Disable the normal range visibility of the sparkline"
         }
       ]
     },
@@ -359,63 +359,63 @@
     },
     "trendLineType": {
       "type": "string",
-      "defaultValue": null,
-      "description": " Gets or sets the type of trendline used by the sparkline.",
+      "defaultValue": "none",
+      "description": "Gets or sets the type of trendline used by the sparkline.",
       "valueOptions": [
         {
           "name": "none",
           "type": "string",
-          "description": " "
+          "description": "Trendline is not going to be used by the sparkline"
         },
         {
           "name": "linearFit",
           "type": "string",
-          "description": " "
+          "description": "Linear trendline is used in the sparkline"
         },
         {
           "name": "quadraticFit",
           "type": "string",
-          "description": " "
+          "description": "Quadratic trendline is used in the sparkline"
         },
         {
           "name": "cubicFit",
           "type": "string",
-          "description": " "
+          "description": "Cubic trendline is used in the sparkline"
         },
         {
           "name": "quarticFit",
           "type": "string",
-          "description": " "
+          "description": "Quartic trendline is used in the sparkline"
         },
         {
           "name": "quinticFit",
           "type": "string",
-          "description": " "
+          "description": "Quintic trendline is used in the sparkline"
         },
         {
           "name": "logarithmicFit",
           "type": "string",
-          "description": " "
+          "description": "Logarithmic trendline is used in the sparkline"
         },
         {
           "name": "exponentialFit",
           "type": "string",
-          "description": " "
+          "description": "Exponential trendline is used in the sparkline"
         },
         {
           "name": "powerLawFit",
           "type": "string",
-          "description": " "
+          "description": "Power law trendline is used in the sparkline"
         },
         {
           "name": "simpleAverage",
           "type": "string",
-          "description": " "
+          "description": "Simple average trendline is used in the sparkline"
         },
         {
           "name": "exponentialAverage",
           "type": "string",
-          "description": " "
+          "description": "Exponential average trendline is used in the sparkline"
         },
         {
           "name": "modifiedAverage",
@@ -425,29 +425,29 @@
         {
           "name": "cumulativeAverage",
           "type": "string",
-          "description": " "
+          "description": "Modified average average trendline is used in the sparkline"
         },
         {
           "name": "weightedAverage",
           "type": "string",
-          "description": ""
+          "description": "Weighted average average trendline is used in the sparkline"
         }
       ]
     },
     "unknownValuePlotting": {
       "type": "string",
       "defaultValue": null,
-      "description": " Gets or sets the way null values are interpreted.",
+      "description": "Gets or sets the way null values are interpreted.",
       "valueOptions": [
         {
           "name": "linearInterpolate",
           "type": "string",
-          "description": " "
+          "description": "The null values are interpreted linearly"
         },
         {
           "name": "dontPlot",
           "type": "string",
-          "description": ""
+          "description": "The null values are not plotted"
         }
       ]
     },
@@ -471,18 +471,18 @@
     },
     "verticalAxisVisibility": {
       "type": "string",
-      "defaultValue": null,
+      "defaultValue": "collapsed",
       "description": " Gets or sets the display state of the vertical axis.",
       "valueOptions": [
         {
           "name": "visible",
           "type": "string",
-          "description": " "
+          "description": "Visualize the igSparkline vertical axis"
         },
         {
           "name": "collapsed",
           "type": "string",
-          "description": ""
+          "description": "Collapse the igSparkline vertical axis"
         }
       ]
     }

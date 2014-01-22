@@ -232,7 +232,28 @@ define (function (require, exports, module) {
 		},
 		getDroppableChildren: function () {
 			return [];
-		}	
+		},
+		getCollectionEditor: function (descriptor) {
+			var container = $('.adorner-column-container'),
+				type = 'ig' + descriptor.type.charAt(0).toUpperCase() + descriptor.type.slice(1),
+				prop,
+				content = '<ul>',
+				index;
+			if (descriptor.iframe && descriptor.iframe.jQuery) {
+				prop = descriptor.iframe.jQuery($("#designer-frame").contents().find("#" + descriptor.element.attr("id"))).data(type).options[descriptor.propName];
+			} else {
+				prop = descriptor.element.data(type).options[descriptor.propName];
+			}
+			if (container.length <= 0) {
+				container = $('<div class="adorner-column-container"></div>').appendTo($('.adorner-wrapper'));
+			}
+			for (index = 0; index < prop.length; index++) {
+				content += '<li><span class="delete-column ui-icon ui-icon-trash"></span><a href="#">' + prop[index].headerText + '</a></li>';
+			}
+			content += '<li><a href="#">Add...</a></li></ul>';
+			container.html(content);
+			return container;
+		}
 	});
 	return IgniteUIComponentPlugin;
 });
