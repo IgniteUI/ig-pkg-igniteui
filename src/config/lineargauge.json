@@ -233,32 +233,32 @@
     "needleShape": {
       "type": "string",
       "defaultValue": null,
-      "description": " Gets or sets the shape to use when rendering the needle from a number of options.",
+      "description": "Gets or sets the shape to use when rendering the needle from a number of options.",
       "valueOptions": [
         {
           "name": "custom",
           "type": "string",
-          "description": " "
+          "description": "Custom shape is used when rendering the needle"
         },
         {
           "name": "rectangle",
           "type": "string",
-          "description": " "
+          "description": "Rectangle shape is used when rendering the needle"
         },
         {
           "name": "triangle",
           "type": "string",
-          "description": " "
+          "description": "Trianle shape is used when rendering the needle"
         },
         {
           "name": "needle",
           "type": "string",
-          "description": " "
+          "description": "Needle shape is used when rendering the needle"
         },
         {
           "name": "trapezoid",
           "type": "string",
-          "description": ""
+          "description": "Trapezoid shape is used when rendering the needle"
         }
       ]
     },
@@ -276,18 +276,18 @@
     },
     "orientation": {
       "type": "string",
-      "defaultValue": null,
-      "description": " Gets or sets the orientation of the scale.",
+      "defaultValue": "horizontal",
+      "description": "Gets or sets the orientation of the scale.",
       "valueOptions": [
         {
           "name": "horizontal",
           "type": "string",
-          "description": " "
+          "description": "The orientation of the scale is horizontal"
         },
         {
           "name": "vertical",
           "type": "string",
-          "description": ""
+          "description": "The orientation of the scale is vertical"
         }
       ]
     },
