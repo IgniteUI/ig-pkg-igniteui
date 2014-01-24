@@ -14,6 +14,8 @@
         "css/structure/infragistics.css"
     ],
     "iconsPath": "icons",
+    "iconSpriteCssFile": "ignite-icons.css",
+    "iconSpriteCssPrefix": "ignite-icons", 
     "configPath": "config",
     "pluginsPath": "plugins",
     "autocompletePath": "autocomplete", 
@@ -37,7 +39,7 @@
     	"hierarchicalGrid": {
     		"id": "hierarchicalGrid",
     		"toolboxTitle": "Hierarchical Grid",
-    		"icon": "hierarchicalgrid.png",
+    		"icon": "hierarchicalGrid.png",
 			"componentPlugin": "hierarchical-grid-component-plugin",
     		"dragDropIcon": "hierarchicalgrid-dragdrop.png",
     		"category": "lists",
