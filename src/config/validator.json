@@ -1,0 +1,136 @@
+{
+  "schema": {
+    "showIcon": {
+      "type": "bool",
+      "defaultValue": null,
+      "description": "Gets or sets visibility of icon on error message."
+    },
+    "animationShow": {
+      "type": "number",
+      "defaultValue": null,
+      "description": "Gets or sets duration of show animation in milliseconds."
+    },
+    "animationHide": {
+      "type": "number",
+      "defaultValue": null,
+      "description": "Gets or sets duration of hide animation in milliseconds."
+    },
+    "enableTargetErrorCss": {
+      "type": "bool",
+      "defaultValue": null,
+      "description": "Gets or sets ability to apply error css to target element."
+    },
+    "alignment": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "Gets or sets location of error label relative to target element."
+    },
+    "keepFocus": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "Gets or sets option to set focus back to editor when validation failed. Default value comes from corresponding member in $.ui.igValidator.defaults object, which is undefined.",
+      "valueOptions": [
+          {
+            "name": "never",
+            "type": "string",
+            "description": "Don't keep focus"
+          },
+          {
+            "name": "once",
+            "type": "string",
+            "description": "Keep the focus only once"
+          },
+          {
+            "name": "always",
+            "type": "string",
+            "description": " Always keep the focus"
+          }
+        ]
+    },
+    "onchange": {
+      "type": "bool",
+      "defaultValue": null,
+      "description": "Gets or sets triggering validation when value in editor was changed."
+    },
+    "onblur": {
+      "type": "bool",
+      "defaultValue": null,
+      "description": "Gets or sets triggering validation when editor lost focus."
+    },
+    "formSubmit": {
+      "type": "bool",
+      "defaultValue": null,
+      "description": "Gets or sets triggering validation when application called form.submit()."
+    },
+    "onsubmit": {
+      "type": "bool",
+      "defaultValue": null,
+      "description": "Gets or sets triggering validation when form gets onsubmit event."
+    },
+    "bodyAsParent": {
+      "type": "bool",
+      "defaultValue": true,
+      "description": "Gets or sets parent/location of error message."
+    },
+    "required": {
+      "type": "bool",
+      "defaultValue": false,
+      "description": "Gets or sets option to validate if value was entered (not empty text, selected item, etc.)"
+    },
+    "minLength": {
+      "type": "number",
+      "defaultValue": -1,
+      "description": "Gets or sets minimum length of text or minimum number of selected items."
+    },
+    "maxLength": {
+      "type": "number",
+      "defaultValue": -1,
+      "description": "Gets or sets maximum length of text or maximum number of selected items."
+    },
+    "min": {
+      "type": "number",
+      "defaultValue": null,
+      "description": "Gets or sets validation for minimum number."
+    },
+    "max": {
+      "type": "number",
+      "defaultValue": null,
+      "description": "Gets or sets validation for maximum number."
+    },
+    "regExp": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "Gets or sets regular expression which is used to validate value in text editor."
+    },
+    "checkboxesName": {
+      "type": "bool",
+      "defaultValue": false,
+      "description": "Gets or sets option to use the name attribute of checkboxes in order to validate ranges."
+    },
+    "locale": {
+      "type": "object",
+      "defaultValue": null,
+      "description": "Gets or sets object that contains custom settings."
+    },
+    "errorLabel": {
+      "type": "object",
+      "defaultValue": null,
+      "description": "Gets or sets custom jquery element, which innerHTML will be used to show error message. That can be SPAN, LABEL or DIV."
+    },
+    "element": {
+      "type": "object",
+      "defaultValue": null,
+      "description": "Gets or sets reference to html element, which is used to process mousedown and mouseup events in order to trigger validation."
+    },
+    "theme": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "Gets or sets selector for css classes."
+    },
+    "errorMessage": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "Gets or sets text for error-message which overrides all possible specific error-messages."
+    }
+  }
+}
