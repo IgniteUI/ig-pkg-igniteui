@@ -153,16 +153,11 @@
       "valueOptions": null
     },
     "columnLayouts": {
-      "type": "object",
-      "defaultValue": null,
-      "description": "List of columnLayout objects that specify the structure of the child grids. All options that are applicable to a flat grid are also applicable here",
-      "valueOptions": null
-    },
-    "columns": {
       "type": "array",
       "defaultValue": null,
-      "description": "An array of column objects",
-      "valueOptions": null
+      "description": "List of columnLayout objects that specify the structure of the child grids. All options that are applicable to a flat grid are also applicable here",
+      "valueOptions": null,
+      "schema": "grid.properties"
     },
     "defaultChildrenDataProperty": {
       "type": "string",
