@@ -360,18 +360,18 @@
     },
     "crosshairVisibility": {
       "type": "string",
-      "defaultValue": null,
+      "defaultValue": "collapsed",
       "description": " Gets or sets the current Chart's crosshair visibility override.",
       "valueOptions": [
         {
           "name": "visible",
           "type": "string",
-          "description": " Crosshair should be visible."
+          "description": "Crosshair should be visible."
         },
         {
           "name": "collapsed",
           "type": "string",
-          "description": " Crosshair should not be visible."
+          "description": "Crosshair should not be visible."
         }
       ]
     },
@@ -395,23 +395,23 @@
     },
     "defaultInteraction": {
       "type": "string",
-      "defaultValue": null,
-      "description": " Gets or sets the DefaultInteraction property. The default interaction state defines the chart's response to mouse events.",
+      "defaultValue": "dragZoom",
+      "description": "Gets or sets the DefaultInteraction property. The default interaction state defines the chart's response to mouse events.",
       "valueOptions": [
         {
           "name": "none",
           "type": "string",
-          "description": " User gesture will not change the state of the chart."
+          "description": "User gesture will not change the state of the chart."
         },
         {
           "name": "dragZoom",
           "type": "string",
-          "description": " User gesture will start a drag rectangle to zoom the chart."
+          "description": "User gesture will start a drag rectangle to zoom the chart."
         },
         {
           "name": "dragPan",
           "type": "string",
-          "description": " User gesture will start a pan action to move the chart's window."
+          "description": "User gesture will start a pan action to move the chart's window."
         }
       ]
     },
@@ -423,50 +423,50 @@
     },
     "dragModifier": {
       "type": "string",
-      "defaultValue": null,
-      "description": " Gets or sets the current Chart's DragModifier property.",
+      "defaultValue": "none",
+      "description": "Gets or sets the current Chart's DragModifier property.",
       "valueOptions": [
         {
           "name": "none",
           "type": "string",
-          "description": " No modifier key is set."
+          "description": "No modifier key is set."
         },
         {
           "name": "alt",
           "type": "string",
-          "description": " The modifier is set to alt key."
+          "description": "The modifier is set to alt key."
         },
         {
           "name": "control",
           "type": "string",
-          "description": " The modifier is set to control key."
+          "description": "The modifier is set to control key."
         },
         {
           "name": "shift",
           "type": "string",
-          "description": " The modifier is set to shift key."
+          "description": "The modifier is set to shift key."
         }
       ]
     },
     "gridMode": {
       "type": "string",
-      "defaultValue": null,
-      "description": " Gets or sets the GridMode property.",
+      "defaultValue": "behindSeries",
+      "description": "Gets or sets the GridMode property.",
       "valueOptions": [
         {
           "name": "none",
           "type": "string",
-          "description": " No chart grid."
+          "description": "No chart grid."
         },
         {
           "name": "beforeSeries",
           "type": "string",
-          "description": " Chart grid should be rendered before or in front of the data series."
+          "description": "Chart grid should be rendered before or in front of the data series."
         },
         {
           "name": "behindSeries",
           "type": "string",
-          "description": " Chart grid should be rendered behind or in back of the data series."
+          "description": "Chart grid should be rendered behind or in back of the data series."
         }
       ]
     },
@@ -544,45 +544,45 @@
     },
     "overviewPlusDetailPaneVisibility": {
       "type": "string",
-      "defaultValue": null,
-      "description": " The visibility of the OverviewPlusDetailPane.",
+      "defaultValue": "collapsed",
+      "description": "The visibility of the OverviewPlusDetailPane.",
       "valueOptions": [
         {
           "name": "visible",
           "type": "string",
-          "description": " The overview pane should be visible."
+          "description": "The overview pane should be visible."
         },
         {
           "name": "collapsed",
           "type": "string",
-          "description": " The overview pane should not be visible."
+          "description": "The overview pane should not be visible."
         }
       ]
     },
     "panModifier": {
       "type": "string",
-      "defaultValue": null,
-      "description": " Gets or sets the current Chart's PanModifier property.",
+      "defaultValue": "shift",
+      "description": "Gets or sets the current Chart's PanModifier property.",
       "valueOptions": [
         {
           "name": "none",
           "type": "string",
-          "description": " No modifier key is set."
+          "description": "No modifier key is set."
         },
         {
           "name": "alt",
           "type": "string",
-          "description": " The modifier is set to alt key."
+          "description": "The modifier is set to alt key."
         },
         {
           "name": "control",
           "type": "string",
-          "description": " The modifier is set to control key."
+          "description": "The modifier is set to control key."
         },
         {
           "name": "shift",
           "type": "string",
-          "description": " The modifier is set to shift key."
+          "description": "The modifier is set to shift key."
         }
       ]
     },
@@ -660,23 +660,23 @@
     },
     "subtitleHorizontalAlignment": {
       "type": "string",
-      "defaultValue": null,
-      "description": " the horizontal alignment to use for the subtitle. ",
+      "defaultValue": "center",
+      "description": "The horizontal alignment to use for the subtitle. ",
       "valueOptions": [
         {
           "name": "left",
           "type": "string",
-          "description": " left aligns the subtitle."
+          "description": "Left aligns the subtitle."
         },
         {
           "name": "center",
           "type": "string",
-          "description": " center aligns the subtitle."
+          "description": "Center aligns the subtitle."
         },
         {
           "name": "right",
           "type": "string",
-          "description": " right aligns the subtitle."
+          "description": "Right aligns the subtitle."
         }
       ]
     },
@@ -754,23 +754,23 @@
     },
     "titleHorizontalAlignment": {
       "type": "string",
-      "defaultValue": null,
-      "description": " the horizontal alignment to use for the title. ",
+      "defaultValue": "center",
+      "description": "The horizontal alignment to use for the title.",
       "valueOptions": [
         {
           "name": "left",
           "type": "string",
-          "description": " left aligns the title."
+          "description": "Left aligns the title."
         },
         {
           "name": "center",
           "type": "string",
-          "description": " center aligns the title."
+          "description": "Center aligns the title."
         },
         {
           "name": "right",
           "type": "string",
-          "description": " right aligns the title."
+          "description": "Right aligns the title."
         }
       ]
     },
@@ -855,17 +855,17 @@
     "windowResponse": {
       "type": "string",
       "defaultValue": null,
-      "description": "",
+      "description": "Set or get the upating method of the view on a user action",
       "valueOptions": [
         {
           "name": "deferred",
           "type": "string",
-          "description": " Defer the view update until after the user action is complete.             "
+          "description": "Defer the view update until after the user action is complete.             "
         },
         {
           "name": "immediate",
           "type": "string",
-          "description": " Update the view immediately while the user action is happening."
+          "description": "Update the view immediately while the user action is happening."
         }
       ]
     },
