@@ -278,18 +278,18 @@
     },
     "crosshairVisibility": {
       "type": "string",
-      "defaultValue": null,
-      "description": " Gets or sets the current Map's crosshair visibility override.",
+      "defaultValue": "collapsed",
+      "description": "Gets or sets the current Map's crosshair visibility override.",
       "valueOptions": [
         {
           "name": "visible",
           "type": "string",
-          "description": " Crosshair should be visible."
+          "description": "Crosshair should be visible."
         },
         {
           "name": "collapsed",
           "type": "string",
-          "description": " Crosshair should not be visible."
+          "description": "Crosshair should not be visible."
         }
       ]
     },
@@ -313,23 +313,23 @@
     },
     "defaultInteraction": {
       "type": "string",
-      "defaultValue": null,
+      "defaultValue": "dragPan",
       "description": " Gets or sets the DefaultInteraction property. The default interaction state defines the map's response to mouse events.",
       "valueOptions": [
         {
           "name": "none",
           "type": "string",
-          "description": " User gesture will not change the state of the map."
+          "description": "User gesture will not change the state of the map."
         },
         {
           "name": "dragZoom",
           "type": "string",
-          "description": " User gesture will start a drag rectangle to zoom the map."
+          "description": "User gesture will start a drag rectangle to zoom the map."
         },
         {
           "name": "dragPan",
           "type": "string",
-          "description": " User gesture will start a pan action to move the map's window."
+          "description": "User gesture will start a pan action to move the map's window."
         }
       ]
     },
@@ -341,28 +341,28 @@
     },
     "dragModifier": {
       "type": "string",
-      "defaultValue": null,
+      "defaultValue": "none",
       "description": " Gets or sets the current Map's DragModifier property.",
       "valueOptions": [
         {
           "name": "none",
           "type": "string",
-          "description": " No modifier key is set."
+          "description": "No modifier key is set."
         },
         {
           "name": "alt",
           "type": "string",
-          "description": " The modifier is set to alt key."
+          "description": "The modifier is set to alt key."
         },
         {
           "name": "control",
           "type": "string",
-          "description": " The modifier is set to control key."
+          "description": "The modifier is set to control key."
         },
         {
           "name": "shift",
           "type": "string",
-          "description": " The modifier is set to shift key."
+          "description": "The modifier is set to shift key."
         }
       ]
     },
@@ -398,28 +398,28 @@
     },
     "panModifier": {
       "type": "string",
-      "defaultValue": null,
+      "defaultValue": "shift",
       "description": " Gets or sets the current Map's PanModifier property.",
       "valueOptions": [
         {
           "name": "none",
           "type": "string",
-          "description": " No modifier key is set."
+          "description": "No modifier key is set."
         },
         {
           "name": "alt",
           "type": "string",
-          "description": " The modifier is set to alt key."
+          "description": "The modifier is set to alt key."
         },
         {
           "name": "control",
           "type": "string",
-          "description": " The modifier is set to control key."
+          "description": "The modifier is set to control key."
         },
         {
           "name": "shift",
           "type": "string",
-          "description": " The modifier is set to shift key."
+          "description": "The modifier is set to shift key."
         }
       ]
     },
@@ -533,12 +533,12 @@
         {
           "name": "deferred",
           "type": "string",
-          "description": " Defer the view update until after the user action is complete.             "
+          "description": "Defer the view update until after the user action is complete.             "
         },
         {
           "name": "immediate",
           "type": "string",
-          "description": " Update the view immediately while the user action is happening."
+          "description": "Update the view immediately while the user action is happening."
         }
       ]
     }

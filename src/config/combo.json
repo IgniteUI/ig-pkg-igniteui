@@ -258,7 +258,29 @@
       "type": "object",
       "defaultValue": null,
       "description": "Gets sets collection (array or dictonary) of javascript objects which allows to configure dataSource and other properties of this igCombo.<br>&nbsp;&nbsp;&nbsp;&nbsp;The key in dictionary should represent selected value in parent igCombo. If value in parent igCombo is integer, then array can be used instead of dictionary.<br>&nbsp;&nbsp;&nbsp;&nbsp;Each item in collection may contain dataSource, or an object, which should have following members.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dataSource: reference to dataSource,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;valueKey: optional override for valueKey of this igCombo,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;textKey: optional override for textKey of this igCombo,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dataSourceUrl: optional dataSourceUrl when dataSource is not set.<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: that option has effect only when \"parentCombo\" option is set and it has priority over \"parentComboKey\".",
-      "valueOptions": null
+      "valueOptions": null,
+      "schema": {
+        "dataSource": {
+          "type": "object",
+          "defaultValue": null,
+          "description": "Reference to dataSource"
+        },
+        "dataSourceUrl": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Reference to dataSource URL, if dataSource property is not set"
+        },
+        "valueKey": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Override for valueKey of this igCombo"
+        },
+        "textKey": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Override for textKey of this igCombo"
+        }
+      }
     },
     "caseSensitive": {
       "type": "bool",
@@ -442,7 +464,19 @@
       "type": "object",
       "defaultValue": null,
       "description": "Gets sets container of variables which define load on demand functionality.<br>&nbsp;&nbsp;&nbsp;&nbsp;Notes:<br>&nbsp;&nbsp;&nbsp;&nbsp;That option has effect only when data is loaded remotely using dataSourceUrl.<br>&nbsp;&nbsp;&nbsp;&nbsp;If the parentComboKey is set, then that option is not supported.<br>&nbsp;&nbsp;&nbsp;&nbsp;Selection is supported only for already loaded items.",
-      "valueOptions": null
+      "valueOptions": null,
+      "schema": {
+        "enabled": {
+          "type": "bool",
+          "defaultValue": false,
+          "description": "Gets sets option to enable load on demand."
+        },
+        "pageSize": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Gets sets number of records loaded on each request."
+        }
+      }
     },
     "mode": {
       "type": "string",
@@ -588,7 +622,25 @@
       "type": "array",
       "defaultValue": null,
       "description": "Gets sets list of selected items. It should contain array of objects.<br>&nbsp;&nbsp;&nbsp;&nbsp;Each object should contain the member \"index\" equals to the index of selected item or the member \"value\" equals to value of item in dataSource in \"valueKey\" column.<br>&nbsp;&nbsp;&nbsp;&nbsp;The member \"text\" contains value of item in \"textKey\" column.<br>&nbsp;&nbsp;&nbsp;&nbsp;Missing values are filled automatically while rendering list items and on other actions. If application set more than one member, then it is responsible for match.<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: that option is supported only for currently available list of items. When load-on-demand or filtering is enabled, then attempt to select not loaded item will fail.",
-      "valueOptions": null
+      "valueOptions": null,
+      "designerDisplayProperty": "text",
+      "schema": {
+        "index": {
+          "type": "number",
+          "defaultValue": -1,
+          "description": "Index of item in list. Value should be larger than -1 and less than number of items in list (rows in  dataSource)"
+        },
+        "value": {
+          "type": "object",
+          "defaultValue": null,
+          "description": "Value of cell in valueKey column for index"
+        },
+        "text": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Value of cell in textKey column for index"
+        }
+      }
     },
     "selectItemBySpaceKey": {
       "type": "bool",
@@ -661,7 +713,8 @@
       "type": "object",
       "defaultValue": null,
       "description": "Gets or sets object which contains options supported by igValidator.<br>&nbsp;&nbsp;&nbsp;&nbsp;Notes: in order for validator to work, application should ensure that igValidator is loaded (ig.ui.validator.js/css files).<br>&nbsp;&nbsp;&nbsp;&nbsp;Example:<br>&nbsp;&nbsp;&nbsp;&nbsp;$('#combo1').igCombo({ validatorOptions: { required: true } });",
-      "valueOptions": null
+      "valueOptions": null,
+      "schemaRef": "validator"
     },
     "valueKey": {
       "type": "string",

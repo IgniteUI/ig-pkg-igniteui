@@ -340,23 +340,23 @@
     },
     "button": {
       "type": "string",
-      "defaultValue": null,
+      "defaultValue": "none",
       "description": " Sets gets visibility of spin and drop-down button. That option can be set only on initialization. Combinations like 'dropdown,spin' or 'spinclear' are supported too.",
       "valueOptions": [
         {
           "name": "dropdown",
           "type": "string",
-          "description": " button to open list is located on the right side of input-field (or left side if base html element has direction:rtl);"
+          "description": "Button to open list is located on the right side of input-field (or left side if base html element has direction:rtl);"
         },
         {
           "name": "clear",
           "type": "string",
-          "description": " button to clear value is located on the right side of input-field (or left side if base html element has direction:rtl);"
+          "description": "Button to clear value is located on the right side of input-field (or left side if base html element has direction:rtl);"
         },
         {
           "name": "spin",
           "type": "string",
-          "description": " spin buttons are located on the right side of input-field (or left side if base html element has direction:rtl)."
+          "description": "Spin buttons are located on the right side of input-field (or left side if base html element has direction:rtl)."
         }
       ]
     },
@@ -374,7 +374,7 @@
     },
     "dropDownTriggers": {
       "type": "string",
-      "defaultValue": null,
+      "defaultValue": "button,ctrl+arrow,alt+arrow",
       "description": " Sets gets list of actions which trigger display of drop-down list or calendar.",
       "valueOptions": [
         {
@@ -439,7 +439,8 @@
       "type": "array",
       "defaultValue": null,
       "description": "Sets gets list of items which are used for drop-down list, spin, validation and auto-complete functionality.<br>&nbsp;&nbsp;&nbsp;&nbsp;Items in list can be strings, numbers, dates or objects in any combination.<br>&nbsp;&nbsp;&nbsp;&nbsp;If type of editor is date or datepicker and item is string, then igEditor will try to convert it to Date object and show item in display format.<br>&nbsp;&nbsp;&nbsp;&nbsp;If type of editor is numeric, currency or percent and item is string, then igEditor will try to convert it to number and show item in display format.<br>&nbsp;&nbsp;&nbsp;&nbsp;If item is object and it has member \"text\", then that member is used.<br>&nbsp;&nbsp;&nbsp;&nbsp;If item is object and besides \"text\" has function getHtml(), then that function is used to render item in list.<br>&nbsp;&nbsp;&nbsp;&nbsp;The item or item.text is used to set \"value\" of particular editor when list-item is selected.",
-      "valueOptions": null
+      "valueOptions": null, 
+	  "arrayMemberType" : "string,number,date"
     },
     "listMaxHeight": {
       "type": "number",
@@ -457,7 +458,8 @@
       "type": "object",
       "defaultValue": null,
       "description": "Sets gets strings used for title of buttons. Value of object should contain pairs or key:value members. Note: any sub-option of locale can appear within the main option of igEditor. In this case those values within main options will have highest priority and override corresponding value in locale.",
-      "valueOptions": null
+      "valueOptions": null,
+	  "arrayMemberType" : "string"
     },
     "nullText": {
       "type": "string",
@@ -556,22 +558,22 @@
         {
           "name": "null",
           "type": "object",
-          "description": ""
+          "description": "Sets to default option"
         },
         {
           "name": "left",
           "type": "string",
-          "description": ""
+          "description": "Aligns the text on left"
         },
         {
           "name": "right",
           "type": "string",
-          "description": ""
+          "description": "Aligns the text on right"
         },
         {
           "name": "center",
           "type": "string",
-          "description": ""
+          "description": "Aligns the text on center"
         }
       ]
     },
@@ -662,13 +664,15 @@
       "type": "object",
       "defaultValue": null,
       "description": "Sets gets options supported by igValidator.<br>&nbsp;&nbsp;&nbsp;&nbsp;In order to enable validation and use defaults, an empty object can be used.<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: validation rules of igValidator, such as min, max, minLength, required are not supported, but similar properties of igEditor should be used.",
-      "valueOptions": null
+      "valueOptions": null,
+	  "schemaRef": "validator"
     },
     "value": {
       "type": "object",
       "defaultValue": null,
       "description": "Gets sets value in editor. The effect of setting/getting that option depends on type of editor and on dataMode options. That can be string, number or Date depending on type of editor. If it is used on initialization and the type option is missing, then if 'value' is Number, then 'numeric' editor is created automatically and if 'value' is Date, then the 'date' editor is created.",
-      "valueOptions": null
+      "valueOptions": null,
+	  "arrayMemberType": "object"
     },
     "width": {
       "type": "number",
