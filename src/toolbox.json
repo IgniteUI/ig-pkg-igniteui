@@ -247,15 +247,13 @@
     		"width": 150,
     		"height": 30
     	},
-    	"fileUpload": {
-    		"id": "fileUpload",
+    	"Upload": {
+    		"id": "Upload",
     		"toolboxTitle": "File Upload",
     		"icon": "fileupload.png",
     		"dragDropIcon": "fileupload-dragdrop.png",
     		"category": "editors",
     		"visual": true,
-    		"width":150,
-    		"height":40,
     		"framework": false
     	},
     	"radialGauge": {
