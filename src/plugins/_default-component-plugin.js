@@ -39,26 +39,64 @@ define (function (require, exports, module) {
 				console.error("Could not get widget name for '" + descriptor.type +"'.");
 				return null;
 			}
-			var lineCount = 5;
-			code = "\t\t\t\t$(\"#" + descriptor.id + "\")." + name + "({\n";
+			//Initial lineCount value
+			var lineCount = 0;
+			code = "\t\t\t\t$(\"#" + descriptor.id + "\")." + name + "({";
 				if (opts.height) {
-				code += "\t\t\t\t\theight: " + opts.height + ",\n";
+					if (code.lastIndexOf("{") == code.length - 1) {
+						code += "\n\t\t\t\t\theight: " + opts.height ;
+					} else {
+						code += ",\n\t\t\t\t\theight: " + opts.height ;
+					}
+				lineCount ++;
 				}
 				if (opts.width) {
-				code += "\t\t\t\t\twidth: " + opts.width;
+					if (code.lastIndexOf("{") == code.length - 1) {
+						code += "\n\t\t\t\t\twidth: " + opts.width;
+					} else {
+						code += ",\n\t\t\t\t\twidth: " + opts.width;
+					}								
+				lineCount ++;
 				}
 			if (descriptor.data && window[descriptor.data]) {
-				code += ",\n\t\t\t\t\tdataSource: " + descriptor.data;
+				if (code.lastIndexOf("{") == code.length - 1) {
+					code += "\n\t\t\t\t\tdataSource: " + descriptor.data;
+				} else {
+					code += ",\n\t\t\t\t\tdataSource: " + descriptor.data;
+				}
+				//code += ",\n\t\t\t\t\tdataSource: " + descriptor.data;
+				lineCount ++;
 			}
 			var props = this.settings.packageInfo.components[descriptor.type].properties;
 			for (var key in opts) {
 				if (opts.hasOwnProperty(key) && key !== "dataSource" && key !== "height" && key !== "width") {
 					if (props[key].type === "string") {
-						code += ",\n\t\t\t\t\t" + key + ": \"" + opts[key] + "\"";
+						if (code.lastIndexOf("{") == code.length - 1) {
+							code += "\n\t\t\t\t\t" + key + ": \"" + opts[key] + "\"";
+						} else {
+							code += ",\n\t\t\t\t\t" + key + ": \"" + opts[key] + "\"";
+						}						
+						//code += ",\n\t\t\t\t\t" + key + ": \"" + opts[key] + "\"";
+						lineCount++;
 					} else if (props[key].type === "array") {
-						var formattedStr = beautify(JSON.stringify(opts[key]));
 						//code += ",\n\t\t\t\t\t" + key + ": " + formattedStr;
-						code += ",\n";
+						for (var p = 0; p < opts[key].length; p ++) {
+							if(opts[key][p].hasOwnProperty("dataSource")){
+								opts[key][p].dataSource = opts[key][p].dataSourceVal;
+								delete opts[key][p]["dataSourceVal"];
+							}
+						}
+						var formattedStr = beautify(JSON.stringify(opts[key]));
+						for (var p = 0; p < opts[key].length; p ++) {
+							if(opts[key][p].hasOwnProperty("dataSource")){
+								formattedStr = formattedStr.replace('"' + opts[key][p].dataSource + '"', opts[key][p].dataSource);
+							}
+						}
+						if (code.lastIndexOf("{") != code.length - 1) {
+							code += ",\n";
+						}						
+						//code += ",\n";
+						lineCount ++;
 						formattedStr = key + ": " + formattedStr;
 						var formattedStrTabbed = "";
 						var tabbedArr = formattedStr.split("\n");
@@ -69,14 +107,21 @@ define (function (require, exports, module) {
 							}
 						}
 						code += formattedStrTabbed;
-						lineCount += code.split("\n").length;
+						
+						lineCount += formattedStrTabbed.split("\n").length - 1;
 					} else {
-						code += ",\n\t\t\t\t\t" + key + ": " + opts[key];
+						if (code.lastIndexOf("{") == code.length - 1) {
+							code += "\n\t\t\t\t\t" + key + ": " + opts[key];
+						} else {
+							code += ",\n\t\t\t\t\t" + key + ": " + opts[key];
+						}							
+						//code += ",\n\t\t\t\t\t" + key + ": " + opts[key];
+						lineCount++;
 					}
-					lineCount++;
 				}
 			}
 			code += "\n\t\t\t\t});\n";
+			lineCount += 2;
 			return {codeString: code, lineCount: lineCount};
 			//return this.evalTemplate("default.code.js", descriptor);
 		},
