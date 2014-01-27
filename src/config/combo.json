@@ -469,7 +469,8 @@
         "enabled": {
           "type": "bool",
           "defaultValue": false,
-          "description": "Gets sets option to enable load on demand."
+          "description": "Gets sets option to enable load on demand.",
+          "required": true
         },
         "pageSize": {
           "type": "string",
@@ -628,7 +629,8 @@
         "index": {
           "type": "number",
           "defaultValue": -1,
-          "description": "Index of item in list. Value should be larger than -1 and less than number of items in list (rows in  dataSource)"
+          "description": "Index of item in list. Value should be larger than -1 and less than number of items in list (rows in  dataSource)",
+          "required": true
         },
         "value": {
           "type": "object",

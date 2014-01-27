@@ -470,7 +470,7 @@
         },
         "format": {
           "type": "string",
-          "defaultValue": "null",
+          "defaultValue": null,
           "description": "Sets gets format for cells in column. Default value is null. If dataType is \"date\", then supported formats are following: \"date\", \"dateLong\", \"dateTime\", \"time\", \"timeLong\", \"MM/dd/yyyy\", \"MMM-d, yy, h:mm:ss tt\", \"dddd d MMM\", etc. If dataType is \"number\", then supported numeric formats are following: \"number\", \"currency\", \"percent\", \"int\", \"double\", \"0.00\", \"#.0####\", \"0\", \"#.#######\", etc. The value of \"double\" will be similar to \"number\", but with unlimited maximum number of decimal places. The format patterns and rules for numbers and dates are defined in $.ig.regional.defaults object. If dataType is \"string\" or not set, then format is rendered as it is with replacement of possible \"{0}\" flag by value in cell. Example, if format is set to \"Name: {0}\" and value in cell is \"Bob\", then value will appear as \"Name: Bob\". If value is set to \"checkbox\", then checkboxes are used regardless of renderCheckboxes option of igGrid. That has effect only when dataType option of column is set to \"bool\"."
         },
         "formatter": {

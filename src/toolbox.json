@@ -2,7 +2,8 @@
     "name": "igniteui",
     "toolboxTitle": "Ignite UI",
     "scripts": [
-        "/bower_components/jquery-ui/ui/minified/jquery-ui.min.js",
+        "http://code.jquery.com/jquery-1.10.2.min.js",
+        "http://code.jquery.com/ui/1.10.4/jquery-ui.min.js",
         "/js/infragistics.core.js",
         "/js/infragistics.lob.js",
         "js/infragistics.dv.js"
@@ -13,6 +14,8 @@
         "css/structure/infragistics.css"
     ],
     "iconsPath": "icons",
+    "iconSpriteCssFile": "ignite-icons.css",
+    "iconSpriteCssPrefix": "ignite-icons", 
     "configPath": "config",
     "pluginsPath": "plugins",
     "autocompletePath": "autocomplete", 
@@ -36,7 +39,7 @@
     	"hierarchicalGrid": {
     		"id": "hierarchicalGrid",
     		"toolboxTitle": "Hierarchical Grid",
-    		"icon": "hierarchicalgrid.png",
+    		"icon": "hierarchicalGrid.png",
 			"componentPlugin": "hierarchical-grid-component-plugin",
     		"dragDropIcon": "hierarchicalgrid-dragdrop.png",
     		"category": "lists",

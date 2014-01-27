@@ -1,6 +1,6 @@
 define (function (require, exports, module) {
 	var ComponentPlugin = require("ide-component-plugin");
-	var beautify = require("js-beautify");
+	var beautify = require("/bower_components/js-beautify/js/lib/beautify.js");
 	var collectionEditor = require("ide-collectioneditor");
 	var IgniteUIComponentPlugin = IgniteUIComponentPlugin || ComponentPlugin.extend({
 		init: function (options) {
@@ -220,6 +220,7 @@ define (function (require, exports, module) {
 				var val = descriptor.propValue;
 				var oldVal = descriptor.oldPropValue;
 				var valueEnumType = "string";
+				var oldValueEnumType = "string";
 				if (descriptor.valueOptions) {
 					for (var i = 0; i < descriptor.valueOptions.length; i++) {
 						if (descriptor.valueOptions[i].name === val) {
@@ -284,6 +285,50 @@ define (function (require, exports, module) {
 			collectionEditor(descriptor);
 			$('.adorner-column-container').insertAfter(wrapper.children().last());
 			wrapper.animate({left: '-=250'}, 250);
+			this.showBackButton();
+		},
+		openPropertyEditor: function (descriptor) {
+			var propertyExplorer = require("ide-propertyexplorer"),
+				container = $('<div class="adorner-summary-sheet"></div>').appendTo($('.adorner-wrapper')),
+				editor = $('<div class="adorner-property-list"></div>').appendTo(container),
+				options = {
+					element: descriptor.element,
+					id: "propEditor",
+					containerId: "property",
+					parent: editor,
+					data: [],
+					type: descriptor.type,
+					compObject: descriptor.compObject,
+					provider: descriptor.provider,
+					ide: descriptor.ide
+				},
+				property,
+				count = 0,
+				prop,
+				type = this._getWidgetName(descriptor.type);
+				
+			if (descriptor.iframe && descriptor.iframe.jQuery) {
+				prop = descriptor.iframe.jQuery($("#designer-frame").contents().find("#" + descriptor.element.attr("id"))).data(type).options[descriptor.propName];
+			} else {
+				prop = descriptor.element.data(type).options[descriptor.propName];
+			}
+			for (property in descriptor.schema) {
+				if (descriptor.schema.hasOwnProperty(property)) {
+					options.data.push({
+						id: count++,
+						propName: property,
+						defaultValue: descriptor.schema[property].defaultValue,
+						propValue: prop.hasOwnProperty(property) ? prop[property] : descriptor.schema[property].defaultValue,
+						propType: descriptor.schema[property].propType,
+						description: descriptor.schema[property].description,
+						valueOptions: descriptor.schema[property].valueOptions,
+						displayProp: descriptor.schema[property].designerDisplayProperty
+					});
+				}
+			}
+			// render and open a property explorer
+			propertyExplorer(options);
+			$(".adorner-wrapper").animate({left: "-=250"}, 250);
 			this.showBackButton();
 		}
 	});

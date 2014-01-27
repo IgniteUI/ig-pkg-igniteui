@@ -218,7 +218,31 @@
       "type": "array",
       "defaultValue": null,
       "description": " Gets sets the tiles configurations. Every tile is described by rowSpan, colSpan, rowIndex and colIndex.",
-      "valueOptions": null
+      "valueOptions": null,
+      "schema": {
+        "colSpan": {
+          "type": "number",
+          "defaultValue": 1,
+          "description": "Defines the column span of the item"
+        },
+        "rowSpan": {
+          "type": "number",
+          "defaultValue": 1,
+          "description": "Defines the row span of the item"
+        },
+        "colIndex": {
+          "type": "number",
+          "defaultValue": 0,
+          "description": "Defines the column index of the item",
+          "required": true
+        },
+        "rowIndex": {
+          "type": "number",
+          "defaultValue": 0,
+          "description": "Defines the row index of the item",
+          "required": true
+        }
+      }
     },
     "marginLeft": {
       "type": "number",

@@ -259,16 +259,96 @@
       "valueOptions": null
     },
     "banners": {
-      "type": "unknown",
+      "type": "array",
       "defaultValue": null,
       "description": "Get or set an array of banner objects that will show the banners when the video clip is played.",
-      "valueOptions": null
+      "valueOptions": null,
+      "schema": {
+        "imageUrl": {
+          "type": "string",
+          "defaultValue": "",
+          "description": "Get or set the banner image url."
+        },
+        "times": {
+          "type": "array",
+          "defaultValue": [],
+          "description": "Get or set an array of numbers. Each number specifies on which second in the movie the banner will pop.",
+          "arrayMemberType": "number"
+        },
+        "closeBanner": {
+          "type": "bool",
+          "defaultValue": true,
+          "description": "Get or set whether the user will be able to close the banner or not."
+        },
+        "animate": {
+          "type": "bool",
+          "defaultValue": true,
+          "description": "Get or set whether to apply animation effects when showing or hiding the banner. If set to true, the animation is played for banner.duration in milliseconds."
+        },
+        "visible": {
+          "type": "bool",
+          "defaultValue": true,
+          "description": "Get or set whether the banner is visible or not."
+        },
+        "duration": {
+          "type": "number",
+          "defaultValue": 1000,
+          "description": "Get or set the banner animation duration."
+        },
+        "autohide": {
+          "type": "bool",
+          "defaultValue": false,
+          "description": "Get or set whether to automatically hide the banner. If set to true, the banner is hidden after banner.hidedelay in milliseconds."
+        },
+        "hidedelay": {
+          "type": "number",
+          "defaultValue": 10000,
+          "description": "Get or set the banner autohide delay in milliseconds. It is taken into account only if the banner.autohide option is set to true."
+        },
+        "link": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Get or set the banner link that will open in new window."
+        },
+        "width": {
+          "type": "number",
+          "defaultValue": null,
+          "description": "Get or set the banner width"
+        },
+        "height": {
+          "type": "number",
+          "defaultValue": null,
+          "description": "Get or set the banner height"
+        },
+        "css": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Get or set the banner specific css class, that will be applied on the banner grid."
+        }
+      }
     },
     "bookmarks": {
-      "type": "unknown",
+      "type": "array",
       "defaultValue": null,
       "description": "Get or set an array of bookmarks that will be displayed in the video player control.",
-      "valueOptions": null
+      "valueOptions": null,
+      "schema": {
+        "time": {
+          "type": "number",
+          "defaultValue": 0,
+          "description": "Get or set where the bookmark will be positioned. Should be between 0 and movie duration in seconds."
+        },
+        "title": {
+          "type": "bool",
+          "defaultValue": false,
+          "description": "Get or set bookmark title. It is shown as tooltip on hover."
+        },
+        "disabled": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Get or set whether the bookmark is disabled or not."
+        }
+      }
     },
     "browserControls": {
       "type": "bool",
@@ -283,10 +363,67 @@
       "valueOptions": null
     },
     "commercials": {
-      "type": "unknown",
+      "type": "object",
       "defaultValue": null,
       "description": "Get or set an array of commercials objects that will be displayed when the video is playing.",
-      "valueOptions": null
+      "valueOptions": null,
+      "schema": {
+        "linkedCommercials": {
+          "type": "array",
+          "defaultValue": null,
+          "description": "Get or set an array of linked commercial objects. A linked commercial is a separate video file that will be played in the specified position of the original movie clip by the startTime property. This feature is useful if you have frequently changing outside commercial sources.",
+          "schema": {
+            "sources": {
+              "type": "array",
+              "defaultValue": [],
+              "description": "Get or set the sources of the linked commercial video.",
+              "arrayMemberType": "string"
+            },
+            "startTime": {
+              "type": "number",
+              "defaultValue": 10,
+              "description": "Get or set the second in the video at which the linked commercial should play"
+            },
+            "link": {
+              "type": "string",
+              "defaultValue": "",
+              "description": "Get or set the link to open on linked commercial click"
+            },
+            "title": {
+              "type": "string",
+              "defaultValue": "",
+              "description": "Get or set the tooltip for the linked commercial bookmark"
+            }
+          }
+        },
+        "embeddedCommercials": {
+          "type": "array",
+          "defaultValue": null,
+          "description": "Get or set an array of embedded commercials objects. An embedded commercial is an ad that is contained in the original video file. It is suitable when you want to mark some sections of the video as commercials.",
+          "schema": {
+            "startTime": {
+              "type": "number",
+              "defaultValue": 20,
+              "description": "Get or set the start second of the embedded commercial"
+            },
+            "endTime": {
+              "type": "number",
+              "defaultValue": 30,
+              "description": "Get or set the end second of the embedded commercial"
+            },
+            "link": {
+              "type": "string",
+              "defaultValue": "",
+              "description": "Get or set the sponsored link of the embedded commercial"
+            },
+            "title": {
+              "type": "string",
+              "defaultValue": "",
+              "description": "Get or set the tooltip for the bookmark of the embedded commercial"
+            }
+          }
+        }
+      }
     },
     "fullscreen": {
       "type": "bool",
@@ -331,10 +468,48 @@
       "valueOptions": null
     },
     "relatedVideos": {
-      "type": "unknown",
+      "type": "array",
       "defaultValue": null,
       "description": "Get or set an array of related videos that will be displayed when video playback has ended.",
-      "valueOptions": null
+      "valueOptions": null,
+      "schema": {
+        "imageUrl": {
+          "type": "string",
+          "defaultValue": "",
+          "description": "Get or set the URL of the related video image"
+        },
+        "title": {
+          "type": "string",
+          "defaultValue": "",
+          "description": "Get or set the title of the video"
+        },
+        "width": {
+          "type": "number",
+          "defaultValue": null,
+          "description": "Get or set the width of the related video image"
+        },
+        "height": {
+          "type": "number",
+          "defaultValue": null,
+          "description": "Get or set the height of the related video image"
+        },
+        "link": {
+          "type": "string",
+          "defaultValue": "",
+          "description": "Get or set a link to a page that will play the related video. It will be opened in a new window. If there are sources also, the link property has a priority"
+        },
+        "sources": {
+          "type": "array",
+          "defaultValue": [],
+          "description": "Get or set custom CSS class to be applied on the related video element",
+          "arrayMemberType": "string"
+        },
+        "css": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Get or set custom CSS class to be applied on the related video element"
+        }
+      } 
     },
     "showSeekTime": {
       "type": "bool",
