@@ -222,23 +222,25 @@
       "schema": {
         "colSpan": {
           "type": "number",
-          "defaultValue": null,
-          "description": ""
+          "defaultValue": 1,
+          "description": "Defines the column span of the item"
         },
         "rowSpan": {
           "type": "number",
-          "defaultValue": null,
-          "description": ""
+          "defaultValue": 1,
+          "description": "Defines the row span of the item"
         },
         "colIndex": {
           "type": "number",
-          "defaultValue": null,
-          "description": ""
+          "defaultValue": 0,
+          "description": "Defines the column index of the item",
+          "required": true
         },
         "rowIndex": {
           "type": "number",
-          "defaultValue": null,
-          "description": ""
+          "defaultValue": 0,
+          "description": "Defines the row index of the item",
+          "required": true
         }
       }
     },
