@@ -2,11 +2,29 @@
     "name": "igniteui",
     "toolboxTitle": "Ignite UI",
     "scripts": [
-        "http://code.jquery.com/jquery-1.10.2.min.js",
-        "http://code.jquery.com/ui/1.10.4/jquery-ui.min.js",
-        "/js/infragistics.core.js",
-        "/js/infragistics.lob.js",
-        "js/infragistics.dv.js"
+        {
+            "url": "http://code.jquery.com/jquery-1.10.2.min.js",
+            "lazyLoad": false
+        },
+        {
+            "url": "http://code.jquery.com/ui/1.10.4/jquery-ui.min.js",
+            "lazyLoad": false
+        },
+        {
+            "url": "/js/infragistics.core.js",
+            "lazyLoad": false,
+            "id": "core"
+        },
+        {
+            "url": "/js/infragistics.lob.js",
+            "lazyLoad": false,
+            "id": "lob"
+        },
+        {
+            "url": "js/infragistics.dv.js",
+            "lazyLoad": true,
+            "id": "dv"
+        }
     ],
     "stylesheets": [
         "css/jquery-ui.css",
@@ -52,6 +70,7 @@
     	},
     	"dataChart": {
     		"id": "dataChart",
+            "dependsOn": ["core", "lob", "dv"],
     		"toolboxTitle": "Chart",
     		"icon": "chart.png",
     		"dragDropIcon": "chart-dragdrop.png",
@@ -83,6 +102,7 @@
     	},
 		"pieChart": {
     		"id": "pieChart",
+            "dependsOn": ["core", "lob", "dv"],
     		"toolboxTitle": "Pie Chart",
     		"icon": "pie-chart.png",
     		"dragDropIcon": "pie-chart-dragdrop.png",
@@ -97,6 +117,7 @@
 		},	
 		"sparkline": {
     		"id": "sparkline",
+            "dependsOn": ["core", "lob", "dv"],
     		"toolboxTitle": "Sparkline",
     		"icon": "sparkline.png",
     		"dragDropIcon": "sparkline-dragdrop.png",
@@ -127,6 +148,7 @@
 		},	
 		"bulletGraph": {
     		"id": "bulletGraph",
+            "dependsOn": ["core", "lob", "dv"],
     		"toolboxTitle": "Bulletgraph",
     		"icon": "bullet-graph.png",
     		"dragDropIcon": "bullet-graph-dragdrop.png",
@@ -145,6 +167,7 @@
 		},
 		"doughnutChart": {
     		"id": "doughnutChart",
+            "dependsOn": ["core", "lob", "dv"],
     		"toolboxTitle": "Doughnut Chart",
     		"icon": "doughnut-chart.png",
     		"dragDropIcon": "doughnut-chart-dragdrop.png",
@@ -167,6 +190,7 @@
 		},
 		"funnelChart": {
     		"id": "funnelChart",
+            "dependsOn": ["core", "lob", "dv"],
     		"toolboxTitle": "Funnel Chart",
     		"icon": "funnel-chart.png",
     		"dragDropIcon": "funnel-chart-dragdrop.png",			
@@ -236,6 +260,7 @@
     	},
     	"radialGauge": {
     		"id": "radialGauge",
+            "dependsOn": ["core", "lob", "dv"],
     		"toolboxTitle": "Radial Gauge",
     		"icon": "gauge.png",
     		"dragDropIcon": "gauge-dragdrop.png",
@@ -250,6 +275,7 @@
     	},
 		"linearGauge": {
     		"id": "linearGauge",
+            "dependsOn": ["core", "lob", "dv"],
     		"toolboxTitle": "Linear Gauge",
     		"icon": "linear-gauge.png",
     		"dragDropIcon": "linear-gauge-dragdrop.png",
@@ -273,6 +299,7 @@
     	},
 		"QRCodeBarcode": {
     		"id": "QRCodeBarcode",
+            "dependsOn": ["core", "lob", "dv"],
     		"toolboxTitle": "Barcode",
     		"icon": "barcode.png",
     		"dragDropIcon": "barcode-dragdrop.png",
@@ -309,6 +336,7 @@
     	},
     	"map": {
     		"id": "map",
+            "dependsOn": ["core", "lob", "dv"],
     		"toolboxTitle": "Map",
     		"icon": "map.png",
     		"dragDropIcon": "map-dragdrop.png",
@@ -320,6 +348,7 @@
     	},
     	"pivotGrid": {
     		"id": "pivotGrid",
+            "dependsOn": ["core", "lob", "dv"],
     		"toolboxTitle": "Pivot Grid",
     		"icon": "pivotgrid.png",
     		"dragDropIcon": "pivotgrid-dragdrop.png",
