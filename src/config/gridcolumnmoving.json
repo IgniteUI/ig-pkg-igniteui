@@ -272,7 +272,24 @@
       "type": "array",
       "defaultValue": null,
       "description": "A list of column settings that specifies moving options on a per column basis.",
-      "valueOptions": null
+      "valueOptions": null,
+      "schema": {
+        "allowMoving": {
+          "type": "bool",
+          "defaultValue": true,
+          "description": "Defines if the column is allowed to be moved"
+        },
+        "columnIndex": {
+          "type": "number",
+          "defaultValue": null,
+          "description": "Defines the index of the column for moving"
+        },
+        "columnKey": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Defines the key of the column for moving"
+        }
+      }
     },
     "dragHelperOpacity": {
       "type": "number",
