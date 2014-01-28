@@ -208,8 +208,106 @@
     "columnSettings": {
       "type": "array",
       "defaultValue": null,
-      "description": "a list of column settings that specifies custom summaries options per column basis",
-      "valueOptions": null
+      "description": "List of column settings that specifies custom summaries options per column basis",
+      "valueOptions": null,
+      "schema": {
+        "columnKey": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Specifies the column key of the column with summary",
+          "required": true
+        },
+        "columnIndex": {
+          "type": "number",
+          "defaultValue": -1,
+          "description": "Column index can be used in place of column key. The preferred way of populating a column setting is to always use the column keys as identifiers"
+        },
+        "allowSummaries": {
+          "type": "bool",
+          "defaultValue": true,
+          "description": "Enables disables summaries for the column",
+          "valueOptions": null
+        },
+        "summaryOperands": {
+          "type": "array",
+          "defaultValue": null,
+          "description": "Defines the summary operands",
+          "valueOptions": null,
+          "schema": {
+            "rowDisplayLabel": {
+              "type": "string",
+              "defaultValue": "",
+              "description": "Text of the summary method which is shown in summary cell"
+            },
+            "type": {
+              "type": "string",
+              "defaultValue": "custom",
+              "description": "Set type of summary operand",
+              "valueOptions": [
+                {
+                  "name": "count",
+                  "type": "string",
+                  "description": "The summaries are calculated using count function"
+                },
+                {
+                  "name": "min",
+                  "type": "string",
+                  "description": "The summaries are calculated using min function"
+                },
+                {
+                  "name": "max",
+                  "type": "string",
+                  "description": "The summaries are calculated using max function"
+                },
+                {
+                  "name": "sum",
+                  "type": "string",
+                  "description": "The summaries are calculated using sum function"
+                },
+                {
+                  "name": "avg",
+                  "type": "string",
+                  "description": "The summaries are calculated using average function"
+                },
+                {
+                  "name": "custom",
+                  "type": "string",
+                  "description": "The summaries are calculated using custom function"
+                }
+              ]
+            },
+            "active": {
+              "type": "bool",
+              "defaultValue": true,
+              "description": "If it is false the summary operand will be shown in dropdown but it will not be made calculation",
+              "valueOptions": null
+            },
+            "summaryCalculator": {
+              "type": "string",
+              "defaultValue": null,
+              "description": "Name of the custom summary function which should be executed when type is custom",
+              "required": true
+            },
+            "order": {
+              "type": "number",
+              "defaultValue": 5,
+              "description": "Specifies the order of elements in dropdown. It is recommended to set order of custom operands and to be greater or equal to 5"
+            },
+            "decimalDisplay": {
+              "type": "number",
+              "defaultValue": 2,
+              "description": "Specifies the number of digits after the decimal point for result of the current summary operand. This property will be ignored when isGridFormatter is true",
+              "valueOptions": null
+            },
+            "isGridFormatter": {
+              "type": "bool",
+              "defaultValue": false,
+              "description": "Specifies whether to be used grid formatter for result for the current summary operand",
+              "valueOptions": null
+            }
+          }
+        }
+      }
     },
     "compactRenderingMode": {
       "type": "string",
@@ -315,17 +413,17 @@
         {
           "name": "priortofilteringandpaging",
           "type": "string",
-          "description": " summaries are calculated prior to filtering and paging"
+          "description": "Summaries are calculated prior to filtering and paging"
         },
         {
           "name": "afterfilteringbeforepaging",
           "type": "string",
-          "description": " summaries are calculated after filtering and before paging"
+          "description": "Summaries are calculated after filtering and before paging"
         },
         {
           "name": "afterfilteringandpaging",
           "type": "string",
-          "description": " summaries are calculated after filtering and paging"
+          "description": "Summaries are calculated after filtering and paging"
         }
       ]
     },
@@ -348,7 +446,7 @@
         {
           "name": "local",
           "type": "string",
-          "description": "\tWhen it is local calculations are made on the client"
+          "description": "When it is local calculations are made on the client"
         }
       ]
     }

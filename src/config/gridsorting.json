@@ -245,8 +245,60 @@
     "columnSettings": {
       "type": "array",
       "defaultValue": null,
-      "description": "a list of custom column settings that specify custom sorting settings for a specific column (whether sorting is enabled / disabled, default sort direction, first sort direction, etc.)",
-      "valueOptions": null
+      "description": "List of custom column settings that specify custom sorting settings for a specific column (whether sorting is enabled / disabled, default sort direction, first sort direction, etc.)",
+      "valueOptions": null,
+      "schema": {
+        "columnKey": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Specifies the column key of the sorted column",
+          "required": true
+        },
+        "columnIndex": {
+          "type": "number",
+          "defaultValue": null,
+          "description": "Column index can be used in place of column key. The preferred way of populating a column setting is to always use the column keys as identifiers."
+        },
+        "firstSortDirection": {
+          "type": "string",
+          "defaultValue": true,
+          "description": "This will be the first sort direction when the column hasn't been sorted before",
+          "valueOptions": [
+            {
+              "name": "asc",
+              "type": "string",
+              "description": "The sort direction will be ascending"
+            },
+            {
+              "name": "desc",
+              "type": "string",
+              "description": "The sort direction will be descending"
+            }
+          ]
+        },
+        "currentSortDirection": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "The current (or default) sort direction. If this setting is specified, the column will be rendered sorted according to this option.",
+          "valueOptions": [
+            {
+              "name": "asc",
+              "type": "string",
+              "description": "The sort direction will be ascending"
+            },
+            {
+              "name": "desc",
+              "type": "string",
+              "description": "The sort direction will be descending"
+            }
+          ]
+        },
+        "allowSorting": {
+          "type": "bool",
+          "defaultValue": true,
+          "description": "Enables / disables sorting on the specified column. By default all columns are sortable"
+        }
+      }
     },
     "customSortFunction": {
       "type": "function",
@@ -255,15 +307,15 @@
       "valueOptions": null
     },
     "featureChooserSortAsc": {
-      "type": "unknown",
+      "type": "string",
       "defaultValue": "",
-      "description": "",
+      "description": "Specifies text for sorting ascending",
       "valueOptions": null
     },
     "featureChooserSortDesc": {
-      "type": "unknown",
+      "type": "string",
       "defaultValue": "",
-      "description": "",
+      "description": "Specifies text for sorting descending",
       "valueOptions": null
     },
     "featureChooserText": {
@@ -274,8 +326,8 @@
     },
     "firstSortDirection": {
       "type": "string",
-      "defaultValue": null,
-      "description": " Specifies which direction to use on the first click / keydown, if the column hasn't been sorted before ",
+      "defaultValue": "ascending",
+      "description": "Specifies which direction to use on the first click / keydown, if the column hasn't been sorted before ",
       "valueOptions": [
         {
           "name": "ascending",
@@ -333,8 +385,8 @@
     },
     "modalDialogHeight": {
       "type": "string",
-      "defaultValue": null,
-      "description": " Specifies height of multiple sorting dialog ",
+      "defaultValue": "",
+      "description": "Specifies height of multiple sorting dialog ",
       "valueOptions": [
         {
           "name": null,
@@ -374,18 +426,18 @@
     },
     "mode": {
       "type": "string",
-      "defaultValue": null,
-      "description": " Defines single column sorting or multiple column sorting.",
+      "defaultValue": "single",
+      "description": "Defines single column sorting or multiple column sorting.",
       "valueOptions": [
         {
           "name": "single",
           "type": "string",
-          "description": ""
+          "description": "Defines single column sorting"
         },
         {
           "name": "multi",
           "type": "string",
-          "description": " if enabled, previous sorted state for columns won't be cleared"
+          "description": "Defines multiple column sorting. If enabled, previous sorted state for columns won't be cleared"
         }
       ]
     },
@@ -416,24 +468,24 @@
     "type": {
       "type": "string",
       "defaultValue": null,
-      "description": " Defines local or remote sorting.",
+      "description": "Defines local or remote sorting.",
       "valueOptions": [
         {
           "name": "remote",
           "type": "string",
-          "description": ""
+          "description": "Defines remote sorting."
         },
         {
           "name": "local",
           "type": "string",
-          "description": ""
+          "description": "Defines local sorting."
         }
       ]
     },
     "unsortedColumnTooltip": {
       "type": "string",
       "defaultValue": "",
-      "description": "custom unsorted column tooltip in jQuery templating format",
+      "description": "Custom unsorted column tooltip in jQuery templating format",
       "valueOptions": null
     }
   }

@@ -74,7 +74,24 @@
       "type": "unknown",
       "defaultValue": null,
       "description": "a list of custom column settings that specify custom tooltip settings for a specific column (whether tooltips are enabled / disabled)",
-      "valueOptions": null
+      "valueOptions": null,
+      "schema": {
+        "columnKey": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Specifies the column key of the column with tooltip"
+        },
+        "columnIndex": {
+          "type": "number",
+          "defaultValue": -1,
+          "description": "Specifies the column index of the column with tooltip"
+        },
+        "allowTooltips": {
+          "type": "bool",
+          "defaultValue": true,
+          "description": "Enables / disables tooltips on the specified column. By default tooltips are displayed for each column. Note: This option is mandatory."
+        }
+      }
     },
     "cursorLeftOffset": {
       "type": "number",
@@ -108,40 +125,40 @@
     },
     "style": {
       "type": "string",
-      "defaultValue": null,
-      "description": " controls the tooltip's style ",
+      "defaultValue": "tooltip",
+      "description": "Controls the tooltip's style ",
       "valueOptions": [
         {
           "name": "tooltip",
           "type": "string",
-          "description": " the tooltip will be positioned according to the mouse cursor"
+          "description": "The tooltip will be positioned according to the mouse cursor"
         },
         {
           "name": "popover",
           "type": "string",
-          "description": " the tooltip will be positioned according to the target element"
+          "description": "The tooltip will be positioned according to the target element"
         }
       ]
     },
     "visibility": {
       "type": "string",
-      "defaultValue": null,
-      "description": " determines the tooltip visibility option ",
+      "defaultValue": "overflow",
+      "description": "Determines the tooltip visibility option",
       "valueOptions": [
         {
           "name": "always",
           "type": "string",
-          "description": " tooltips always show for hovered elements"
+          "description": "Tooltips always show for hovered elements"
         },
         {
           "name": "never",
           "type": "string",
-          "description": " tooltips do not show automatically"
+          "description": "TooltipsDo not show automatically"
         },
         {
           "name": "overflow",
           "type": "string",
-          "description": " tooltips show only when the underlying data overflows its container"
+          "description": "Tooltips show only when the underlying data overflows its container"
         }
       ]
     }

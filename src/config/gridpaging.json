@@ -212,18 +212,18 @@
     },
     "pageSizeDropDownLocation": {
       "type": "string",
-      "defaultValue": null,
-      "description": "",
+      "defaultValue": "above",
+      "description": "Gets or sets the location of the drop down for page size",
       "valueOptions": [
         {
           "name": "above",
           "type": "string",
-          "description": " it will be rendered above the grid header"
+          "description": "The drop down will be rendered above the grid header"
         },
         {
           "name": "inpager",
           "type": "string",
-          "description": " it will be rendered next to page links"
+          "description": "The drop down will be rendered next to page links"
         }
       ]
     },
@@ -243,7 +243,8 @@
       "type": "array",
       "defaultValue": null,
       "description": "Default: [5, 10, 20, 25, 50, 75, 100]. contents of the page size dropdown indicating what preconfigured page sizes are available to the end user",
-      "valueOptions": null
+      "valueOptions": null,
+      "arrayMemeberType": "number"
     },
     "pageSizeUrlKey": {
       "type": "string",

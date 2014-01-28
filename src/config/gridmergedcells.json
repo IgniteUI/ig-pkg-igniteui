@@ -40,18 +40,18 @@
   "properties": {
     "initialState": {
       "type": "string",
-      "defaultValue": null,
-      "description": " controls the initial state ",
+      "defaultValue": "regular",
+      "description": "Controls the initial state ",
       "valueOptions": [
         {
           "name": "regular",
           "type": "string",
-          "description": " the grid won't be initialized with cells merged"
+          "description": "The grid won't be initialized with cells merged"
         },
         {
           "name": "merged",
           "type": "string",
-          "description": " the grid will be initialized with cells merged"
+          "description": "The grid will be initialized with cells merged"
         }
       ]
     }

@@ -354,7 +354,49 @@
       "type": "array",
       "defaultValue": null,
       "description": "Sets gets array of settings for each column.",
-      "valueOptions": null
+      "valueOptions": null,
+      "schema": {
+        "columnKey": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Specifies the column key of the column with tooltip"
+        },
+        "editorType": {
+          "type": "number",
+          "defaultValue": -1,
+          "description": "Specifies the column index of the column with tooltip"
+        },
+        "editorProvider": {
+          "type": "bool",
+          "defaultValue": true,
+          "description": "Enables / disables tooltips on the specified column. By default tooltips are displayed for each column. Note: This option is mandatory."
+        },
+        "editorOptions": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Specifies the column key of the column with tooltip"
+        },
+        "required": {
+          "type": "number",
+          "defaultValue": -1,
+          "description": "Specifies the column index of the column with tooltip"
+        },
+        "readOnly": {
+          "type": "bool",
+          "defaultValue": true,
+          "description": "Enables / disables tooltips on the specified column. By default tooltips are displayed for each column. Note: This option is mandatory."
+        },
+        "validation": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Specifies the column key of the column with tooltip"
+        },
+        "defaultValue": {
+          "type": "number",
+          "defaultValue": -1,
+          "description": "Specifies the column index of the column with tooltip"
+        }
+      }
     },
     "deleteRowLabel": {
       "type": "string",
@@ -382,33 +424,33 @@
     },
     "editMode": {
       "type": "string",
-      "defaultValue": null,
-      "description": " Sets gets edit mode.",
+      "defaultValue": "row",
+      "description": "Sets gets edit mode.",
       "valueOptions": [
         {
           "name": "row",
           "type": "string",
-          "description": " editors in all cells in a row are displayed. Editor under clicked cell should get input focus. Optional Done/Cancel buttons can be displayed."
+          "description": "Editors in all cells in a row are displayed. Editor under clicked cell should get input focus. Optional Done/Cancel buttons can be displayed."
         },
         {
           "name": "cell",
           "type": "string",
-          "description": " editor only for clicked cell is displayed. The Done/Cancel buttons are not supported."
+          "description": "Editor only for clicked cell is displayed. The Done/Cancel buttons are not supported."
         },
         {
           "name": "rowedittemplate",
           "type": "string",
-          "description": " editor for all cells will be rendered as popup dialog"
+          "description": "Editor for all cells will be rendered as popup dialog"
         },
         {
           "name": "none",
           "type": "string",
-          "description": " editing of grid-cells is disabled"
+          "description": "Editing of grid-cells is disabled"
         },
         {
           "name": "null",
           "type": "object",
-          "description": " editing of grid-cells is disabled"
+          "description": "Editing of grid-cells is disabled"
         }
       ]
     },
@@ -452,24 +494,24 @@
       "type": "string",
       "defaultValue": "owner",
       "description": "Controls containment behavior. <br>&nbsp;&nbsp;&nbsp;&nbsp;owner  The row edit dialog will be draggable only in the grid area<br>&nbsp;&nbsp;&nbsp;&nbsp;window  The row edit dialog will be draggable in the whole window area",
-      "valueOptions": null
-    },
-    "rowEditDialogContentHeight": {
-      "type": "string",
-      "defaultValue": null,
-      "description": " the height of the row edit dialog content",
       "valueOptions": [
         {
-          "name": null,
+          "name": "owner",
           "type": "string",
-          "description": " The dialog content height in pixels (150px)."
+          "description": "The row edit dialog will be draggable only in the grid area"
         },
         {
-          "name": null,
-          "type": "number",
-          "description": " The dialog content height as a number (150)."
+          "name": "window",
+          "type": "string",
+          "description": "The row edit dialog will be draggable in the whole window area"
         }
       ]
+    },
+    "rowEditDialogContentHeight": {
+      "type": "number",
+      "defaultValue": 150,
+      "description": " the height of the row edit dialog content",
+      "valueOptions": null
     },
     "rowEditDialogFieldWidth": {
       "type": "number",
@@ -478,38 +520,16 @@
       "valueOptions": null
     },
     "rowEditDialogHeight": {
-      "type": "string",
-      "defaultValue": null,
-      "description": " default row edit dialog height",
-      "valueOptions": [
-        {
-          "name": null,
-          "type": "string",
-          "description": " The dialog window height in pixels (350px)."
-        },
-        {
-          "name": null,
-          "type": "number",
-          "description": " The dialog window height as a number (350)."
-        }
-      ]
+      "type": "number",
+      "defaultValue": 350,
+      "description": "Default row edit dialog height",
+      "valueOptions": null
     },
     "rowEditDialogOkCancelButtonWidth": {
-      "type": "string",
-      "defaultValue": null,
-      "description": " Width of the Ok and Cancel buttons in the row edit dialogs ",
-      "valueOptions": [
-        {
-          "name": null,
-          "type": "string",
-          "description": " The advanced row edit dialog Ok and Cancel buttons width in pixels (100px)."
-        },
-        {
-          "name": null,
-          "type": "number",
-          "description": " The advanced row edit dialog Ok and Cancel buttons width as a number (100)."
-        }
-      ]
+      "type": "number",
+      "defaultValue": 120,
+      "description": "Width of the Ok and Cancel buttons in the row edit dialogs ",
+      "valueOptions": null
     },
     "rowEditDialogRowTemplate": {
       "type": "string",
@@ -524,21 +544,10 @@
       "valueOptions": null
     },
     "rowEditDialogWidth": {
-      "type": "string",
-      "defaultValue": null,
-      "description": " default row edit dialog width",
-      "valueOptions": [
-        {
-          "name": null,
-          "type": "string",
-          "description": " The dialog window width in pixels (370px)."
-        },
-        {
-          "name": null,
-          "type": "number",
-          "description": " The dialog window width as a number (370)."
-        }
-      ]
+      "type": "number",
+      "defaultValue": 370,
+      "description": "Default row edit dialog width",
+      "valueOptions": null
     },
     "saveChangesErrorHandler": {
       "type": "function",
@@ -568,7 +577,43 @@
       "type": "string",
       "defaultValue": "click,F2,enter",
       "description": "Sets gets triggers for start edit mode.<br>&nbsp;&nbsp;&nbsp;Possible values: \"click\", \"dblclick\", \"F2\", \"enter\" and their combinations separated by coma.<br>&nbsp;&nbsp;&nbsp;Notes:<br>&nbsp;&nbsp;&nbsp;The array of strings similar to ['dblclick', 'f2'] is also supported.<br>&nbsp;&nbsp;&nbsp;The keyboard triggers have effect only when \"Selection\" feature of grid is enabled.<br>&nbsp;&nbsp;&nbsp;If the 'dblclick' is included, then 'click' has no effect.",
-      "valueOptions": null
+      "valueOptions": [
+        {
+          "name": "click",
+          "type": "string",
+          "description": "Editing can be started using 'click'"
+        },
+        {
+          "name": "F2",
+          "type": "string",
+          "description": "Editing can be started using 'F2'"
+        },
+        {
+          "name": "enter",
+          "type": "string",
+          "description": "Editing can be started using 'enter'"
+        },
+        {
+          "name": "click,F2",
+          "type": "string",
+          "description": "Editing can be started using 'click,F2'"
+        },
+        {
+          "name": "click,enter",
+          "type": "string",
+          "description": "Editing can be started using 'click,enter'"
+        },
+        {
+          "name": "F2,enter",
+          "type": "string",
+          "description": "Editing can be started using 'F2,enter'"
+        },
+         {
+          "name": "click,F2,enter",
+          "type": "string",
+          "description": "Editing can be started using 'click,F2,enter'"
+        }
+      ]
     },
     "validation": {
       "type": "bool",
