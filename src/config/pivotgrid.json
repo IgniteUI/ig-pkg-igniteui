@@ -464,7 +464,300 @@
       "type": "object",
       "defaultValue": null,
       "description": "An object that will be used to create an instance of $.ig.OlapXmlaDataSource or $.ig.OlapFlatDataSource.<br>            The provided value must contain an object with settings for one of the data source types - xmlaOptions or flatDataOptions.",
-      "valueOptions": null
+      "valueOptions": null,
+      "schema": {
+        "xmlaOptions": {
+          "type": "object",
+          "defaultValue": null,
+          "description": "Settings for creating an instance of $.ig.OlapXmlaDataSource.",
+          "schema": {
+            "serverUrl": {
+              "type": "string",
+              "defaultValue": null,
+              "description": "The URL of the XMLA server.",
+              "reuqired": true
+            },
+            "catalog": {
+              "type": "string",
+              "defaultValue": null,
+              "description": "The catalog name."
+            },
+            "cube": {
+              "type": "string",
+              "defaultValue": null,
+              "description": "The name of the cube in the data source."
+            },
+            "measureGroup": {
+              "type": "string",
+              "defaultValue": null,
+              "description": "The name of the measure group in the data source."
+            },
+            "requestOptions": {
+              "type": "object",
+              "defaultValue": null,
+              "description": "An object containing information about how the request to the XMLA server should be processed.",
+              "schema": {
+                "withCredentials": {
+                  "type": "bool",
+                  "defaultValue": false,
+                  "description": "The value is applied to XmlHttpRequest.withCredentials if supported by the user agent. Setting this property to true will allow IE8/IE9 to make authenticated cross-origin requests to tusted domains through XmlHttpRequest instead of XDomainRequest and will prompt the user for credentials."
+                },
+                "beforeSend": {
+                  "type": "function",
+                  "defaultValue": null,
+                  "description": "A callback to be invoked right before the request is send to the server. Extends beforeSend callback of jQuery.ajax’s options object."
+                }
+              }
+            },
+            "enableResultCache": {
+              "type": "bool",
+              "defaultValue": true,
+              "description": "Enables/disables caching of the XMLA result object."
+            },
+            "discoverProperties": {
+              "type": "object",
+              "defaultValue": null,
+              "description": "Additional properties sent with every discover request. The object is treated as a key/value store where each property name is used as the key and the property value as the value."
+            },
+            "executeProperties": {
+              "type": "object",
+              "defaultValue": null,
+              "description": "Additional properties sent with every execute request. The object is treated as a key/value store where each property name is used as the key and the property value as the value."
+            },
+            "mdxSettings": {
+              "type": "object",
+              "defaultValue": null,
+              "description": "Javascript object containing information about how the request to the xmla server should be processed",
+              "schema": {
+                "nonEmptyOnRows": {
+                  "type": "bool",
+                  "defaultValue": true,
+                  "description": "Value indicating whether a NON EMPTY clause is present on ROWS axis. Default value is true"
+                },
+                "nonEmptyOnColumns": {
+                  "type": "bool",
+                  "defaultValue": true,
+                  "description": "Value indicating whether a NON EMPTY clause is present on COLUMNS axis. Default value is true"
+                },
+                "addCalculatedMembersOnRows": {
+                  "type": "bool",
+                  "defaultValue": true,
+                  "description": "Value indicating whether a members' set expressions on ROWS axis should be wrapped with AddCalculatedMembers MDX method. Default value is true "
+                },
+                "addCalculatedMembersOnColumns": {
+                  "type": "bool",
+                  "defaultValue": true,
+                  "description": "Value indicating whether a members' set expressions on COLUMNS axis should be wrapped with AddCalculatedMembers MDX method. Default value is true"
+                },
+                "dimensionPropertiesOnRows": {
+                  "type": "array",
+                  "defaultValue": [],
+                  "description": "String array with the names of intrinsic non-context sensitive member properties applied on ROWS axis. By defult CHILDREN_CARDINALITY and PARENT_UNIQUE_NAME properties are always added to DIMENSION PROPERTIES",
+                  "arrayMemberType": "string"
+                },
+                "dimensionPropertiesOnColumns": {
+                  "type": "array",
+                  "defaultValue": [],
+                  "description": "String array with the names of intrinsic non-context sensitive member properties applied on COLUMNS axis. By defult CHILDREN_CARDINALITY and PARENT_UNIQUE_NAME properties are always added to DIMENSION PROPERTIES",
+                  "arrayMemberType": "string"
+                }
+              }
+            }
+          }
+        },
+        "flatDataOptions": {
+          "type": "object",
+          "defaultValue": null,
+          "description": "Settings for creating an instance of $.ig.OlapFlatDataSource.",
+          "schema": {
+            "dataSource": {
+              "type": "object",
+              "defaultValue": null,
+              "description": "Specifies any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself."
+            },
+            "dataSourceUrl": {
+              "type": "string",
+              "defaultValue": null,
+              "description": "Specifies a remote URL accepted by $.ig.DataSource in order to request data from it."
+            },
+            "dataSourceType": {
+              "type": "string",
+              "defaultValue": null,
+              "description": "Explicitly set data source type (such as 'json'). Please refer to the documentation of $.ig.DataSource and its type property."
+            },
+            "responseDataKey": {
+              "type": "string",
+              "defaultValue": null,
+              "description": "Specifies the name of the property in which data records are held if the response is wrapped."
+            },
+            "responseDataType": {
+              "type": "string",
+              "defaultValue": null,
+              "description": "Explicitly set data source type (such as 'json'). Please refer to the documentation of $.ig.DataSource and its type property."
+            },
+            "metadata": {
+              "type": "object",
+              "defaultValue": null,
+              "description": "An object containing processing instructions for the $.ig.DataSource data.",
+              "required": true,
+              "schema": {
+                "cube": {
+                  "type": "object",
+                  "defaultValue": null,
+                  "description": "Metadata used for the creation of the cube.",
+                  "required": true,
+                  "schema": {
+                    "name": {
+                      "type": "string",
+                      "defaultValue": null,
+                      "description": "A caption for the cube.",
+                      "required": true
+                    },
+                    "caption": {
+                      "type": "string",
+                      "defaultValue": null,
+                      "description": "A caption for the measures dimension."
+                    },
+                    "measuresDimension": {
+                      "type": "object",
+                      "defaultValue": null,
+                      "description": "An object providing information about the measures' root node.",
+                      "schema": {
+                        "name": {
+                          "type": "string",
+                          "defaultValue": "Measures",
+                          "description": "A unique name for the measures dimension.",
+                          "required": true
+                        },
+                        "caption": {
+                          "type": "string",
+                          "defaultValue": "Measures",
+                          "description": "A caption for the measures dimension."
+                        },
+                        "measures": {
+                          "type": "array",
+                          "defaultValue": null,
+                          "description": "An array of measure metadata objects.",
+                          "schema": {
+                            "name": {
+                              "type": "string",
+                              "defaultValue": null,
+                              "description": "A unique name for the measure.",
+                              "required": true
+                            },
+                            "caption": {
+                              "type": "string",
+                              "defaultValue": null,
+                              "description": "A caption for the measure."
+                            },
+                            "aggregator": {
+                              "type": "function",
+                              "defaultValue": null,
+                              "description": "An aggregator function called when each cell is evaluated. Returns a value for the cell. If the returned value is null, no cell will be created in for the data source result.",
+                              "required": true
+                            },
+                            "displayFolder": {
+                              "type": "string",
+                              "defaultValue": null,
+                              "description": "The path used when displaying the measure in the user interface. Nested folders are indicated by a backslash (\\)."
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "dimensions": {
+                      "type": "array",
+                      "defaultValue": null,
+                      "description": "An array of dimension metadata objects.",
+                      "required": true,
+                      "schema": {
+                        "name": {
+                          "type": "string",
+                          "defaultValue": null,
+                          "description": "A unique name for the dimension.",
+                          "required": true
+                        },
+                        "caption": {
+                          "type": "string",
+                          "defaultValue": null,
+                          "description": "A caption for the dimension."
+                        },
+                        "hierarchies": {
+                          "type": "array",
+                          "defaultValue": null,
+                          "description": "An array of hierarchy metadata objects.",
+                          "required": true,
+                          "schema": {
+                            "name": {
+                              "type": "string",
+                              "defaultValue": null,
+                              "description": "A name for the hierarchy. The unique name of the hierarchy is formed using the following pattern: [<parentDimension.name>].[<hierarchyMetadata.name>]",
+                              "required": true
+                            },
+                            "caption": {
+                              "type": "string",
+                              "defaultValue": null,
+                              "description": "A caption for the hierarchy."
+                            },
+                            "displayFolder": {
+                              "type": "string",
+                              "defaultValue": null,
+                              "description": "The path to be used when displaying the hierarchy in the user interface. Nested folders are indicated by a backslash (\\). The folder hierarchy will appear under parent dimension node."
+                            },
+                            "levels": {
+                              "type": "array",
+                              "defaultValue": null,
+                              "description": "An array of level metadata objects.",
+                              "schema": {
+                                "name": {
+                                  "type": "string",
+                                  "defaultValue": null,
+                                  "description": "A name for the level. The unique name of the level is formed using the following pattern: {<hierarchy.uniqueName>}.[<levelMetadata.name>]",
+                                  "required": true
+                                },
+                                "caption": {
+                                  "type": "string",
+                                  "defaultValue": null,
+                                  "description": "A caption for the level."
+                                },
+                                "memberProvider": {
+                                  "type": "function",
+                                  "defaultValue": null,
+                                  "description": "A function called for each item of the data source array when level members are created. Based on the item parameter the function should return a value that will form the $.ig.Member’s name and caption."
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "measures": {
+          "type": "string",
+          "defaultValue": "null",
+          "description": "A list of measure names separated by comma (,). These will be the measures of the data source."
+        },
+        "filters": {
+          "type": "string",
+          "defaultValue": "null",
+          "description": "A list of hierarchy names separated by comma (,). These will be hierarchies in the filters of the data source."
+        },
+        "rows": {
+          "type": "string",
+          "defaultValue": "null",
+          "description": "A list of hierarchy names separated by comma (,). These will be the hierarchies in the rows of the data source."
+        },
+        "columns": {
+          "type": "string",
+          "defaultValue": "null",
+          "description": "A list of hierarchy names separated by comma (,). These will be the hierarchies in the columns of the data source."
+        }
+      }
     },
     "defaultRowHeaderWidth": {
       "type": "number",
@@ -506,7 +799,24 @@
       "type": "object",
       "defaultValue": null,
       "description": "Settings for the drag and drop functionality of the igPivotGrid.",
-      "valueOptions": null
+      "valueOptions": null,
+      "schema": {
+        "appendTo": {
+          "type": "string",
+          "defaultValue": "body",
+          "description": "Which element the draggable helper should be appended to while dragging."
+        },
+        "containment": {
+          "type": "bool",
+          "defaultValue": false,
+          "description": "Specifies the containment for the drag helper. The area inside of which the helper is contained would be scrollable while dragging."
+        },
+        "zIndex": {
+          "type": "number",
+          "defaultValue": 10,
+          "description": "Specifies z-index that would be set for the drag helper."
+        }
+      }
     },
     "dropDownParent": {
       "type": "string",
@@ -517,20 +827,58 @@
     "firstLevelSortDirection": {
       "type": "string",
       "defaultValue": null,
-      "description": " Spefies the default sort direction for the levels if no sort direction is specified in an item from the levelSortDirections option.",
+      "description": "Spefies the default sort direction for the levels if no sort direction is specified in an item from the levelSortDirections option.",
       "valueOptions": []
     },
     "firstSortDirection": {
       "type": "string",
       "defaultValue": null,
-      "description": " Spefies the default sort direction for the rows.",
+      "description": "Spefies the default sort direction for the rows.",
       "valueOptions": []
     },
     "gridOptions": {
       "type": "object",
       "defaultValue": null,
       "description": "Options specific to the igGrid that will render the pivot grid view.",
-      "valueOptions": null
+      "valueOptions": null,
+      "schema": {
+        "defaultColumnWidth": {
+          "type": "number",
+          "defaultValue": null,
+          "description": "Default column width that will be set for all columns."
+        },
+        "fixedHeaders": {
+          "type": "bool",
+          "defaultValue": true,
+          "description": "Headers will be fixed if this option is set to true, and only the grid data will be scrollable."
+        },
+        "caption": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Caption text that will be shown above the pivot grid header."
+        },
+        "features": {
+          "type": "object",
+          "defaultValue": [],
+          "description": "A list of grid features definitions. The supported features are Resizing and Tooltips. Each feature goes with its separate options that are documented for the feature accordingly.",
+          "schemaRef": "grid.features"
+        },
+        "tabIndex": {
+          "type": "number",
+          "defaultValue": 0,
+          "description": "Initial tabIndex attribute that will be set on the container element."
+        },
+        "alternateRowStyles": {
+          "type": "bool",
+          "defaultValue": true,
+          "description": "Enables/disables rendering of alternating row styles (odd and even rows receive different styling). Note that if a custom jQuery template is set, this has no effect and CSS for the row should be adjusted manually in the template contents."
+        },
+        "enableHoverStyles": {
+          "type": "bool",
+          "defaultValue": false,
+          "description": "Enables/disables rendering of ui-state-hover classes when the mouse is over a record. This can be useful in templating scenarios, for example, where we don't want to apply hover styling to templated content."
+        }
+      }
     },
     "height": {
       "type": "string",
@@ -594,7 +942,30 @@
       "type": "array",
       "defaultValue": null,
       "description": "An array of level sort direction items, which predefine the sorted header cells.",
-      "valueOptions": null
+      "valueOptions": null,
+      "schema": {
+        "levelUniqueName": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Specifies the unique name of the level, which will be sorted."
+        },
+        "sortDirections": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Specifies the sort direction. If no direction is specified, the level is going to be sorted in the direction specified by the firstLevelSortDirection option.",
+          "valueOptions": [
+          {
+            "name": "ascending",
+            "type": "string",
+            "description": "The sort direction is ascending"
+          },
+          {
+            "name": "descending",
+            "type": "string",
+            "description": "The sort direction is descending"
+          }]
+        }
+      }
     },
     "width": {
       "type": "string",
