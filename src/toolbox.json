@@ -261,7 +261,7 @@
             "dependsOn": ["core", "lob", "dv"],
     		"toolboxTitle": "Radial Gauge",
     		"icon": "gauge.png",
-    		"dragDropIcon": "gauge-dragdrop.png",
+    		"dragDropIcon": "radial-gauge-dragdrop.png",
     		"category": "dataviz",
     		"visual": true,
     		"framework": false,
@@ -372,7 +372,7 @@
     		"id": "numericEditor",
     		"toolboxTitle": "Numeric Editor",
     		"icon": "numeric-editor.png",
-    		"dragDropIcon": "numeric-editor-dragdrop.png",
+    		"dragDropIcon": "editor-dragdrop.png",
     		"category": "editors",
     		"visual": true,
     		"framework": false
@@ -381,7 +381,7 @@
     		"id": "currencyEditor",
     		"toolboxTitle": "Currency Editor",
     		"icon": "currency-editor.png",
-    		"dragDropIcon": "currency-editor-dragdrop.png",
+    		"dragDropIcon": "editor-dragdrop.png",
     		"category": "editors",
     		"visual": true,
     		"framework": false
@@ -390,7 +390,7 @@
     		"id": "dateEditor",
     		"toolboxTitle": "Date Editor",
     		"icon": "currency-editor.png",
-    		"dragDropIcon": "currency-editor-dragdrop.png",
+    		"dragDropIcon": "editor-dragdrop.png",
     		"category": "editors",
     		"visual": true,
     		"framework": false
@@ -399,7 +399,7 @@
     		"id": "maskEditor",
     		"toolboxTitle": "Mask Editor",
     		"icon": "mask-editor.png",
-    		"dragDropIcon": "mask-editor-dragdrop.png",
+    		"dragDropIcon": "editor-dragdrop.png",
     		"category": "editors",
     		"visual": true,
     		"framework": false
@@ -408,7 +408,7 @@
     		"id": "percentEditor",
     		"toolboxTitle": "Percent Editor",
     		"icon": "percent-editor.png",
-    		"dragDropIcon": "percent-editor-dragdrop.png",
+    		"dragDropIcon": "editor-dragdrop.png",
     		"category": "editors",
     		"visual": true,
     		"framework": false
