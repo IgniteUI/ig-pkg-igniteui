@@ -297,22 +297,15 @@ define (function (require, exports, module) {
 			var propertyExplorer = require("ide-propertyexplorer"),
 				container = $('<div class="adorner-summary-sheet"></div>').appendTo($('.adorner-wrapper')),
 				editor = $('<div class="adorner-property-list"></div>').appendTo(container),
-				options = {
-					element: descriptor.element,
-					id: "propEditor",
-					containerId: "property",
-					parent: editor,
-					data: [],
-					type: descriptor.type,
-					compObject: descriptor.compObject,
-					provider: descriptor.provider,
-					ide: descriptor.ide
-				},
 				property,
 				count = 0,
 				prop,
 				type = this._getWidgetName(descriptor.type);
-				
+			
+			descriptor.id = "propEditor";
+			descriptor.containerId = "property";
+			descriptor.parent = editor;
+			descriptor.data = [];
 			if (descriptor.iframe && descriptor.iframe.jQuery) {
 				prop = descriptor.iframe.jQuery($("#designer-frame").contents().find("#" + descriptor.element.attr("id"))).data(type).options[descriptor.propName];
 			} else {
@@ -320,7 +313,7 @@ define (function (require, exports, module) {
 			}
 			for (property in descriptor.schema) {
 				if (descriptor.schema.hasOwnProperty(property)) {
-					options.data.push({
+					descriptor.data.push({
 						id: count++,
 						propName: property,
 						defaultValue: descriptor.schema[property].defaultValue,
@@ -333,7 +326,7 @@ define (function (require, exports, module) {
 				}
 			}
 			// render and open a property explorer
-			propertyExplorer(options);
+			propertyExplorer(descriptor);
 			$(".adorner-wrapper").animate({left: "-=250"}, 250);
 			this.showBackButton();
 		}
