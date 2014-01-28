@@ -821,20 +821,41 @@
     "dropDownParent": {
       "type": "string",
       "defaultValue": null,
-      "description": " Specifies the parent for the drop downs.",
-      "valueOptions": []
+      "description": " Specifies the parent for the drop downs."
     },
     "firstLevelSortDirection": {
       "type": "string",
-      "defaultValue": null,
+      "defaultValue": "ascending",
       "description": "Spefies the default sort direction for the levels if no sort direction is specified in an item from the levelSortDirections option.",
-      "valueOptions": []
+      "valueOptions": [
+        {
+          "name": "ascending",
+          "type": "object",
+          "description": "Specifies ascending sorting direction"
+        },
+        {
+          "name": "descending",
+          "type": "string",
+          "description": "Specifies descending sorting direction"
+        }
+      ]
     },
     "firstSortDirection": {
       "type": "string",
-      "defaultValue": null,
+      "defaultValue": "ascending",
       "description": "Spefies the default sort direction for the rows.",
-      "valueOptions": []
+      "valueOptions": [
+        {
+          "name": "ascending",
+          "type": "object",
+          "description": "Specifies ascending sorting direction"
+        },
+        {
+          "name": "descending",
+          "type": "string",
+          "description": "Specifies descending sorting direction"
+        }
+      ]
     },
     "gridOptions": {
       "type": "object",
