@@ -215,7 +215,13 @@ define (function (require, exports, module) {
 			} else {
 				// also check type here
 				// use the jQuery loaded by the package, not the one loaded by the IDE !
-				window.frames[0].$(descriptor.placeholder)[name]("option", descriptor.propName, descriptor.propValue);
+				if (descriptor.propType !== "object" && descriptor.propType !== "array") {
+					window.frames[0].$(descriptor.placeholder)[name]("option", descriptor.propName, descriptor.propValue);
+				} else {
+					var options = window.frames[0].jQuery($("#designer-frame").contents().find("#" + descriptor.id)).data(name).options;
+					window.frames[0].jQuery($("#designer-frame").contents().find("#" + descriptor.id))[name]("destroy");
+					window.frames[0].jQuery($("#designer-frame").contents().find("#" + descriptor.id))[name](options);
+				}
 				var codeRange = descriptor.codeEditor.find("$(\"#" + descriptor.id + "\")." + name + "({");
 				var val = descriptor.propValue;
 				var oldVal = descriptor.oldPropValue;
