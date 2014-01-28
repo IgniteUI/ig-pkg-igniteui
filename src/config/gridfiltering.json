@@ -295,7 +295,177 @@
       "type": "array",
       "defaultValue": null,
       "description": "a list of column settings that specifies custom filtering options on a per column basis",
-      "valueOptions": null
+      "valueOptions": null,
+      "schema": {
+        "columnKey": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Specifies column key. Either key or index must be set in every column setting."
+        },
+        "columnIndex": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Specifies column index. Either key or index must be set in every column setting."
+        },
+        "allowFiltering": {
+          "type": "bool",
+          "defaultValue": true,
+          "description": "Enables/disables filtering for the column."
+        },
+        "condition": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Specifies filtering condition for the column",
+          "valueOptions": [
+            {
+              "name": "empty",
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "notEmpty",
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "null",
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "notNull",
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "equals",
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "doesNotEqual",
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "startsWith",
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "contains",
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "doesNotContain",
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "endsWith",
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "greaterThan",
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "lessThan",
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "greaterThanOrEqualTo",
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "lessThanOrEqualTo",
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "on type",
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "notOn",
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "before",
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "after",
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "today",
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "yesterday",
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "thisMonth",
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "lastMonth",
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "nextMonth",
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "thisYear",
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "nextYear",
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "lastYear",
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "true",
+              "type": "bool",
+              "description": ""
+            },
+            {
+              "name": "false",
+              "type": "bool",
+              "description": ""
+            }
+          ]
+        },
+        "defaultExpressions": {
+          "type": "array",
+          "defaultValue": [],
+          "description": "Initial filtering expressions - if set they will be applied on initialization"
+        }
+
+      }
     },
     "featureChooserText": {
       "type": "string",
@@ -317,7 +487,7 @@
     },
     "filterButtonLocation": {
       "type": "string",
-      "defaultValue": null,
+      "defaultValue": "left",
       "description": " the filtering button for filter dropdowns can be rendered either on the left of the filter editor or on the right ",
       "valueOptions": [
         {
@@ -340,7 +510,7 @@
     },
     "filterDialogAddButtonWidth": {
       "type": "string",
-      "defaultValue": null,
+      "defaultValue": 100,
       "description": " add button width - in the advanced filter dialog ",
       "valueOptions": [
         {
@@ -392,7 +562,7 @@
     },
     "filterDialogExprInputDefaultWidth": {
       "type": "string",
-      "defaultValue": null,
+      "defaultValue": 80,
       "description": " width of the filtering expression input boxes in the advanced filter dialog ",
       "valueOptions": [
         {
@@ -415,7 +585,7 @@
     },
     "filterDialogFilterDropDownDefaultWidth": {
       "type": "string",
-      "defaultValue": null,
+      "defaultValue": 80,
       "description": " Width of the filtering condition dropdowns in the advanced filter dialog ",
       "valueOptions": [
         {
@@ -438,7 +608,7 @@
     },
     "filterDialogHeight": {
       "type": "string",
-      "defaultValue": null,
+      "defaultValue": "",
       "description": " default filter dialog height (used for Advanced filtering)  ",
       "valueOptions": [
         {
@@ -461,7 +631,7 @@
     },
     "filterDialogMaxHeight": {
       "type": "string",
-      "defaultValue": null,
+      "defaultValue": "",
       "description": " maximum filter dialog height (used for Advanced filtering)  ",
       "valueOptions": [
         {
@@ -478,7 +648,7 @@
     },
     "filterDialogOkCancelButtonWidth": {
       "type": "string",
-      "defaultValue": null,
+      "defaultValue": 120,
       "description": " Width of the Ok and Cancel buttons in the advanced filtering dialogs ",
       "valueOptions": [
         {
@@ -495,7 +665,7 @@
     },
     "filterDialogWidth": {
       "type": "string",
-      "defaultValue": null,
+      "defaultValue": 370,
       "description": " default filter dialog width (used for Advanced filtering) ",
       "valueOptions": [
         {
@@ -518,7 +688,7 @@
     },
     "filterDropDownAnimations": {
       "type": "string",
-      "defaultValue": null,
+      "defaultValue": "linear",
       "description": " type of animations for the column filter dropdowns",
       "valueOptions": [
         {
@@ -534,31 +704,20 @@
       ]
     },
     "filterDropDownHeight": {
-      "type": "object",
+      "type": "number",
       "defaultValue": 0.0,
       "description": "Height of the column filter dropdowns<br>                string The height of the column filter dropdowns in pixels (0px).<br>                number The height of the column filter dropdowns as a number (0).",
       "valueOptions": null
     },
     "filterDropDownItemIcons": {
-      "type": "string",
-      "defaultValue": null,
+      "type": "bool",
+      "defaultValue": true,
       "description": " Enable/disable filter icons visibility.",
-      "valueOptions": [
-        {
-          "name": "true",
-          "type": "bool",
-          "description": " all predefined filters in the filter dropdowns will have icons rendered in front of the text"
-        },
-        {
-          "name": "false",
-          "type": "bool",
-          "description": ""
-        }
-      ]
+      "valueOptions": null
     },
     "filterDropDownWidth": {
       "type": "string",
-      "defaultValue": null,
+      "defaultValue": 0,
       "description": " width of the column filter dropdowns",
       "valueOptions": [
         {
@@ -592,12 +751,12 @@
       "valueOptions": null
     },
     "labels": {
-      "type": "unknown",
+      "type": "object",
       "defaultValue": null,
       "description": "A list of configurable and localized labels that will be used for teh predefnied filtering conditions in the filter dropdowns.",
       "valueOptions": null
     },
-    "mode": {
+    "": {
       "type": "string",
       "defaultValue": null,
       "description": " Default is 'simple' for non-virtualized grids, and 'advanced' when virtualization is enabled ",
@@ -615,7 +774,7 @@
       ]
     },
     "nullTexts": {
-      "type": "unknown",
+      "type": "object",
       "defaultValue": null,
       "description": "list of configurable and localized null texts that will be used for the filter editors",
       "valueOptions": null

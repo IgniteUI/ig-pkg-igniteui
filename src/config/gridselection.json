@@ -142,18 +142,18 @@
     },
     "mode": {
       "type": "string",
-      "defaultValue": null,
-      "description": " Defines type of the selection.",
+      "defaultValue": "row",
+      "description": "Defines type of the selection.",
       "valueOptions": [
         {
           "name": "row",
           "type": "string",
-          "description": " Defines row selection mode."
+          "description": "Defines row selection mode."
         },
         {
           "name": "cell",
           "type": "string",
-          "description": " Defines cell selection mode."
+          "description": "Defines cell selection mode."
         }
       ]
     },

@@ -80,23 +80,23 @@
     },
     "rowSelectorColumnWidth": {
       "type": "string",
-      "defaultValue": null,
-      "description": "",
+      "defaultValue": 0,
+      "description": "Gets or sets the width of th row selector column",
       "valueOptions": [
         {
           "name": null,
           "type": "string",
-          "description": " The row selector column width can be set in pixels (px) and percentage (%)"
+          "description": "The row selector column width can be set in pixels (px) and percentage (%)"
         },
         {
           "name": null,
           "type": "number",
-          "description": " The row selector width can be set as a number"
+          "description": "The row selector width can be set as a number"
         },
         {
           "name": "null",
           "type": "object",
-          "description": " will let the feature decide the best width depending on enabled contents"
+          "description": "Will let the feature decide the best width depending on enabled contents"
         }
       ]
     },

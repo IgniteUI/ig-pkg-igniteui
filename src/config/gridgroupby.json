@@ -269,10 +269,86 @@
       "valueOptions": null
     },
     "columnSettings": {
-      "type": "object",
+      "type": "array",
       "defaultValue": null,
       "description": "Get sets settings for individual columns such as whether the grid is grouped by that column or grouping is allowed for that column.",
-      "valueOptions": null
+      "valueOptions": null,
+      "schema": {
+        "allowGrouping": {
+          "type": "bool",
+          "defaultValue": true,
+          "description": "Enables/disables a column to participate in grouping. By default all columns can be grouped"
+        },
+        "isGroupBy": {
+          "type": "false",
+          "defaultValue": true,
+          "description": "Specifies if a column should be grouped by default"
+        },
+        "groupComparerFunction": {
+          "type": "function",
+          "defaultValue": null,
+          "description": "Specifies a custom group by function, which accepts the column setting, the first and the second value to compare and returns bool"
+        },
+        "groupLabelFormatter": {
+          "type": "function",
+          "defaultValue": null,
+          "description": "Reference to a function which will be used for formatting the cell values. The function should accept a value from the grouped column and return the new formatted value in the label of the row."
+        },
+        "summaries": {
+          "type": "array",
+          "defaultValue": true,
+          "description": "Enables/disables a column to participate in grouping. By default all columns can be grouped",
+          "schema": {
+            "summaryFunction": {
+              "type": "string",
+              "defaultValue": "avg",
+              "description": "Specifies summary function",
+              "valueOptions": [
+                {
+                  "name": "avg",
+                  "type": "string",
+                  "description": "Summary function calculates the avarege of the values in the column"
+                },
+                {
+                  "name": "min",
+                  "type": "string",
+                  "description": "Summary function calculates the minimum of the values in the column"
+                },
+                {
+                  "name": "max",
+                  "type": "string",
+                  "description": "Summary function calculates the maximum of the values in the column"
+                },
+                {
+                  "name": "sum",
+                  "type": "string",
+                  "description": "Summary function calculates the sum of the values in the column"
+                },
+                {
+                  "name": "count",
+                  "type": "string",
+                  "description": "Summary function calculates the count of the values in the column"
+                },
+                {
+                  "name": "custom",
+                  "type": "string",
+                  "description": "Custom summary function is used to manipulate the values in the column"
+                }
+              ]
+            },
+            "text": {
+              "type": "string",
+              "defaultValue": null,
+              "description": "Summary text that will be shown before the value"
+            },
+            "customSummary": {
+              "type": "function",
+              "defaultValue": null,
+              "description": "Specifies a custom summary function, which is called for each group, accepts an array of cell values for the specific column and returns the custom summary result"
+            }
+          }
+        }
+      }
     },
     "emptyGroupByAreaContent": {
       "type": "string",
@@ -318,23 +394,23 @@
     },
     "groupByAreaVisibility": {
       "type": "string",
-      "defaultValue": null,
+      "defaultValue": "top",
       "description": " Sets the place in the grid where the groupBy area will be ",
       "valueOptions": [
         {
           "name": "top",
           "type": "string",
-          "description": " the GroupBy area will be rendered above the grid headers "
+          "description": "The GroupBy area will be rendered above the grid headers "
         },
         {
           "name": "hidden",
           "type": "string",
-          "description": " the GroupBy area will not be rendered"
+          "description": " The GroupBy area will not be rendered"
         },
         {
           "name": "bottom",
           "type": "string",
-          "description": " the GroupBy area will be rendered below the grid footer (and above the pager, if any)"
+          "description": "The GroupBy area will be rendered below the grid footer (and above the pager, if any)"
         }
       ]
     },
@@ -363,10 +439,44 @@
       "valueOptions": null
     },
     "groupedColumns": {
-      "type": "object",
+      "type": "array",
       "defaultValue": null,
       "description": "Returns the list of currently grouped columns. The option is read-only and cannot be set at initialization or at runtime.",
-      "valueOptions": null
+      "valueOptions": null,
+      "schema": {
+        "key": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Defines the key of the column that's grouped"
+        },
+        "dir": {
+          "type": "string",
+          "defaultValue": "asc",
+          "description": "Defines sorting order",
+          "valueOptions": [
+            {
+              "name": "asc",
+              "type": "string",
+              "description": "Sorting order is ascending"
+            },
+            {
+              "name": "desc",
+              "type": "string",
+              "description": "Sorting order is descending"
+            }
+          ]
+        },
+        "layout": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Defines th key of the column layout, if the grid is hierarchical"
+        },
+        "col": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Gets or sets column object for the column that is grouped"
+        }
+      }
     },
     "groupedRowTextTemplate": {
       "type": "string",
@@ -510,7 +620,20 @@
       "type": "object",
       "defaultValue": null,
       "description": "specifies the settings for GroupBy summaries",
-      "valueOptions": null
+      "valueOptions": null,
+      "schema": {
+        "multiSummaryDelimiter": {
+          "type": "string",
+          "defaultValue": ",",
+          "description": "Specifies the delimiter for multiple summaries, in case they are rendered inline in the grouped row"
+        },
+        "summaryFormat": {
+          "type": "string",
+          "defaultValue": "#.00",
+          "description": "Specifies the decimal format of the summary value"
+        }
+
+      }
     },
     "type": {
       "type": "string",

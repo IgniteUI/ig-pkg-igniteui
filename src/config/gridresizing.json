@@ -64,7 +64,35 @@
       "type": "array",
       "defaultValue": null,
       "description": "A list of column settings that specifies resizing options on a per column basis.",
-      "valueOptions": null
+      "valueOptions": null,
+      "schema": {
+        "columnKey": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Specifies the column key of the resized column",
+          "required": true
+        },
+        "columnIndex": {
+          "type": "number",
+          "defaultValue": null,
+          "description": "Column index can be used in place of column key. The preferred way of populating a column setting is to always use the column keys as identifiers."
+        },
+        "allowResizing": {
+          "type": "bool",
+          "defaultValue": true,
+          "description": "Enables disables resizing for the column."
+        },
+        "minimumWidth": {
+          "type": "number",
+          "defaultValue": 20,
+          "description": "Minimum column width in pixels."
+        },
+        "maximumWidth": {
+          "type": "number",
+          "defaultValue": null,
+          "description": "Maximum column width in pixels."
+        }
+      }
     },
     "deferredResizing": {
       "type": "bool",

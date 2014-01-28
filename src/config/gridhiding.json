@@ -258,7 +258,18 @@
       "type": "string",
       "defaultValue": "owner",
       "description": "Controls containment behavior. <br>                owner  The column chooser dialog will be draggable only in the grid area<br>                window  The column chooser dialog will be draggable in the whole window area",
-      "valueOptions": null
+      "valueOptions": [
+        {
+          "name": "owner",
+          "type": "string",
+          "description": "The column chooser dialog will be draggable only in the grid area"
+        },
+        {
+          "name": "window",
+          "type": "string",
+          "description": "The column chooser dialog will be draggable in the whole window area"
+        }
+      ]
     },
     "columnChooserDisplayText": {
       "type": "string",
@@ -312,7 +323,30 @@
       "type": "array",
       "defaultValue": null,
       "description": "A list of column settings that specifies hiding options on a per column basis.",
-      "valueOptions": null
+      "valueOptions": null,
+      "schema": {
+        "columnKey": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Specifies the column key of the hidden column",
+          "required": true
+        },
+        "columnIndex": {
+          "type": "number",
+          "defaultValue": null,
+          "description": "Column index can be used in place of column key. The preferred way of populating a column setting is to always use the column keys as identifiers."
+        },
+        "allowHiding": {
+          "type": "bool",
+          "defaultValue": true,
+          "description": "Allows the column to be hidden."
+        },
+        "hidden": {
+          "type": "bool",
+          "defaultValue": false,
+          "description": "Sets the initial visibility of the column."
+        }
+      }
     },
     "dropDownAnimationDuration": {
       "type": "number",
