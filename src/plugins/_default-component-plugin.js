@@ -153,8 +153,13 @@ define (function (require, exports, module) {
 				window.frames[0].$(descriptor.placeholder)[name](descriptor.options);
 			}
 		},
-		navigate: function (descriptor) {
-
+		getPropPosition: function (descriptor) {
+			var pos = {row: 0, column: 0};
+			// if the property doesn't exist, returns the position of the last one
+			var ide = this.settings.ide;
+			// need to concatenate the hash with the parent prop, if any
+			
+			return pos;
 		},
 		update: function (descriptor) {
 			//console.log("Updating property or event: " + descriptor.propName);
