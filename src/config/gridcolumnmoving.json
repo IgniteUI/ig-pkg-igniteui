@@ -265,14 +265,12 @@
     "addMovingDropdown": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Specifies if header cells should include an additional button that opens a moving helper dropdown.",
-      "valueOptions": null
+      "description": "Specifies if header cells should include an additional button that opens a moving helper dropdown."
     },
     "columnSettings": {
       "type": "array",
       "defaultValue": null,
       "description": "A list of column settings that specifies moving options on a per column basis.",
-      "valueOptions": null,
       "schema": {
         "allowMoving": {
           "type": "bool",
@@ -294,44 +292,37 @@
     "dragHelperOpacity": {
       "type": "number",
       "defaultValue": 1.0,
-      "description": "Specifies the opacity of the drag markup, while a column header is being dragged.<br>&nbsp;&nbsp;&nbsp;The value must be between 0 and 1. When GroupBy is enabled, the corresponding option in the GroupBy configuration <br>&nbsp;&nbsp;&nbsp;will be used with priority over this one.",
-      "valueOptions": null
+      "description": "Specifies the opacity of the drag markup, while a column header is being dragged.<br>&nbsp;&nbsp;&nbsp;The value must be between 0 and 1. When GroupBy is enabled, the corresponding option in the GroupBy configuration <br>&nbsp;&nbsp;&nbsp;will be used with priority over this one."
     },
     "dropDownMoveFirstText": {
       "type": "string",
       "defaultValue": "",
-      "description": "Specifies caption for the move first dropdown button",
-      "valueOptions": null
+      "description": "Specifies caption for the move first dropdown button"
     },
     "dropDownMoveLastText": {
       "type": "string",
       "defaultValue": "",
-      "description": "Specifies caption for the move last dropdown button",
-      "valueOptions": null
+      "description": "Specifies caption for the move last dropdown button"
     },
     "dropDownMoveLeftText": {
       "type": "string",
       "defaultValue": "",
-      "description": "Specifies caption for the move left dropdown button",
-      "valueOptions": null
+      "description": "Specifies caption for the move left dropdown button"
     },
     "dropDownMoveRightText": {
       "type": "string",
       "defaultValue": "",
-      "description": "Specifies caption for the move right dropdown button",
-      "valueOptions": null
+      "description": "Specifies caption for the move right dropdown button"
     },
     "featureChooserSubmenuText": {
       "type": "string",
       "defaultValue": "",
-      "description": "Specifies caption text for the feature chooser submenu button",
-      "valueOptions": null
+      "description": "Specifies caption text for the feature chooser submenu button"
     },
     "hideHeaderContentsDuringDrag": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Specifies whether the contents of the column being dragged will get hidden. The option is only<br>&nbsp;&nbsp;&nbsp;relevant in immediate moving mode.",
-      "valueOptions": null
+      "description": "Specifies whether the contents of the column being dragged will get hidden. The option is only<br>&nbsp;&nbsp;&nbsp;relevant in immediate moving mode."
     },
     "mode": {
       "type": "string",
@@ -370,74 +361,62 @@
     "movingAcceptanceTolerance": {
       "type": "number",
       "defaultValue": 20.0,
-      "description": "Specifies the length (in pixels) between the dragged column and the column edges below which the move operation is accepted",
-      "valueOptions": null
+      "description": "Specifies the length (in pixels) between the dragged column and the column edges below which the move operation is accepted"
     },
     "movingDialogAnimationDuration": {
       "type": "number",
       "defaultValue": 200.0,
-      "description": "Specifies time in milliseconds for animation duration to show/hide modal dialog",
-      "valueOptions": null
+      "description": "Specifies time in milliseconds for animation duration to show/hide modal dialog"
     },
     "movingDialogCaptionButtonAsc": {
       "type": "string",
       "defaultValue": "",
-      "description": "Specifies caption for each move up button in the column moving dialog",
-      "valueOptions": null
+      "description": "Specifies caption for each move up button in the column moving dialog"
     },
     "movingDialogCaptionButtonDesc": {
       "type": "string",
       "defaultValue": "",
-      "description": "Specifies caption for each move down button in the column moving dialog",
-      "valueOptions": null
+      "description": "Specifies caption for each move down button in the column moving dialog"
     },
     "movingDialogCaptionText": {
       "type": "string",
       "defaultValue": "",
-      "description": "Specifies caption text for the column moving dialog",
-      "valueOptions": null
+      "description": "Specifies caption text for the column moving dialog"
     },
     "movingDialogDisplayText": {
       "type": "string",
       "defaultValue": "",
-      "description": "Specifies caption text for the feature chooser entry",
-      "valueOptions": null
+      "description": "Specifies caption text for the feature chooser entry"
     },
     "movingDialogHeight": {
       "type": "number",
       "defaultValue": "",
-      "description": "Specifies height of column moving dialog",
-      "valueOptions": null
+      "description": "Specifies height of column moving dialog"
     },
     "movingDialogWidth": {
       "type": "number",
       "defaultValue": 400.0,
-      "description": "Specifies width of column moving dialog",
-      "valueOptions": null
+      "description": "Specifies width of column moving dialog"
     },
     "movingScrollTolerance": {
       "type": "number",
       "defaultValue": 20.0,
-      "description": "Specifies the length (in pixels) between the dragged column and the grid edges below which horizontal scrolling occurs",
-      "valueOptions": null
+      "description": "Specifies the length (in pixels) between the dragged column and the grid edges below which horizontal scrolling occurs"
     },
     "movingToolTipMove": {
       "type": "string",
       "defaultValue": "",
-      "description": "Specifies tooltip text for the move indicator",
-      "valueOptions": null
+      "description": "Specifies tooltip text for the move indicator"
     },
     "scrollDelta": {
       "type": "number",
       "defaultValue": 2.0,
-      "description": "Specifies the length (in pixels) of each individual scroll operation",
-      "valueOptions": null
+      "description": "Specifies the length (in pixels) of each individual scroll operation"
     },
     "scrollSpeedMultiplier": {
       "type": "number",
       "defaultValue": 2.0,
-      "description": "Specifies a multiplier for the delay between subsequent scroll operations. The larger this number is, the slower scrolling will appear to be.",
-      "valueOptions": null
+      "description": "Specifies a multiplier for the delay between subsequent scroll operations. The larger this number is, the slower scrolling will appear to be."
     }
   }
 }

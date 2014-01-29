@@ -122,98 +122,82 @@
       "type": "array",
       "defaultValue": null,
       "description": "Get or set file allowed file extensions. When this array is empty - it is not made such validation. Example [\"gif\", \"jpg\", \"bmp\"].",
-      "valueOptions": null,
       "arrayMemberType": "string"
     },
     "autostartupload": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Get or set whether the file start upload automatically when it is selected. Default is false.",
-      "valueOptions": null
+      "description": "Get or set whether the file start upload automatically when it is selected. Default is false."
     },
     "controlId": {
       "type": "string",
       "defaultValue": "",
-      "description": "UniqueId of the control - should not be changed by developer. Set from server-side wrapper.",
-      "valueOptions": null
+      "description": "UniqueId of the control - should not be changed by developer. Set from server-side wrapper."
     },
     "css": {
       "type": "string",
       "defaultValue": null,
-      "description": "Get or set control specific CSS options. For example you can override specific control classes with custom ones.",
-      "valueOptions": null
+      "description": "Get or set control specific CSS options. For example you can override specific control classes with custom ones."
     },
     "errorMessageAJAXRequestFileSize": {
       "type": "string",
       "defaultValue": "",
-      "description": "Get or set error message when AJAX Request to get file size throws error.",
-      "valueOptions": null
+      "description": "Get or set error message when AJAX Request to get file size throws error."
     },
     "errorMessageCancelUpload": {
       "type": "string",
       "defaultValue": "",
-      "description": "Get or set error message when ajax call to send cancel upload command.",
-      "valueOptions": null
+      "description": "Get or set error message when ajax call to send cancel upload command."
     },
     "errorMessageGetFileStatus": {
       "type": "string",
       "defaultValue": "",
-      "description": "Get or set error message when ajax call to get file status throws error.",
-      "valueOptions": null
+      "description": "Get or set error message when ajax call to get file status throws error."
     },
     "errorMessageMaxFileSizeExceeded": {
       "type": "string",
       "defaultValue": "",
-      "description": "Get or set message shown when max file size of the uploaded file exceeds the limit.",
-      "valueOptions": null
+      "description": "Get or set message shown when max file size of the uploaded file exceeds the limit."
     },
     "errorMessageMaxSimultaneousFiles": {
       "type": "string",
       "defaultValue": "",
-      "description": "Get or set error message when maximum simultaneous files is less or equal to 0.",
-      "valueOptions": null
+      "description": "Get or set error message when maximum simultaneous files is less or equal to 0."
     },
     "errorMessageMaxUploadedFiles": {
       "type": "string",
       "defaultValue": "",
-      "description": "Get or set error message when maximum allowed files exceeded.",
-      "valueOptions": null
+      "description": "Get or set error message when maximum allowed files exceeded."
     },
     "errorMessageNoSuchFile": {
       "type": "string",
       "defaultValue": "",
-      "description": "Get or set error message when file is not found.",
-      "valueOptions": null
+      "description": "Get or set error message when file is not found."
     },
     "errorMessageOther": {
       "type": "string",
       "defaultValue": "",
-      "description": "Get or set error message different from the other messages.",
-      "valueOptions": null
+      "description": "Get or set error message different from the other messages."
     },
     "errorMessageTryToRemoveNonExistingFile": {
       "type": "string",
       "defaultValue": "",
-      "description": "Get or set error message when trying to remove non existing file.",
-      "valueOptions": null
+      "description": "Get or set error message when trying to remove non existing file."
     },
     "errorMessageTryToStartNonExistingFile": {
       "type": "string",
       "defaultValue": "",
-      "description": "Get or set error message when trying to start non existing file.",
-      "valueOptions": null
+      "description": "Get or set error message when trying to start non existing file."
     },
     "errorMessageValidatingFileExtension": {
       "type": "string",
       "defaultValue": "",
-      "description": "Get or set error message when file extension validation failed.",
-      "valueOptions": null
+      "description": "Get or set error message when file extension validation failed."
     },
     "fileExtensionIcons": {
       "type": "array",
       "defaultValue": null,
       "description": "Set icon css classes for specified file extension",
-      "valueOptions": null,
       "schema": {
         "ext": {
           "type": "array",
@@ -236,8 +220,7 @@
     "fileSizeDecimalDisplay": {
       "type": "number",
       "defaultValue": 2.0,
-      "description": "The number of digits after the decimal point.",
-      "valueOptions": null
+      "description": "The number of digits after the decimal point."
     },
     "fileSizeMetric": {
       "type": "string",
@@ -274,86 +257,72 @@
     "height": {
       "type": "number",
       "defaultValue": "",
-      "description": "Get or set height of the main container of the file upload control. Main container contains all buttons, progressbar, etc.",
-      "valueOptions": null
+      "description": "Get or set height of the main container of the file upload control. Main container contains all buttons, progressbar, etc."
     },
     "labelAddButton": {
       "type": "string",
       "defaultValue": "",
-      "description": "Get or set label for browse button in main container.",
-      "valueOptions": null
+      "description": "Get or set label for browse button in main container."
     },
     "labelClearAllButton": {
       "type": "string",
       "defaultValue": "",
-      "description": "Get or set label for summary Clear all button. It will be shown only in multiple upload mode.",
-      "valueOptions": null
+      "description": "Get or set label for summary Clear all button. It will be shown only in multiple upload mode."
     },
     "labelHideDetails": {
       "type": "string",
       "defaultValue": "",
-      "description": "Get or set label for show/hide details button when main container is shown.",
-      "valueOptions": null
+      "description": "Get or set label for show/hide details button when main container is shown."
     },
     "labelProgressBarFileNameContinue": {
       "type": "string",
       "defaultValue": "",
-      "description": "Get or set filename when it could not be shown the whole file name and should be shorten.",
-      "valueOptions": null
+      "description": "Get or set filename when it could not be shown the whole file name and should be shorten."
     },
     "labelShowDetails": {
       "type": "string",
       "defaultValue": "",
-      "description": "Get or set label for show/hide details button when main container is hidden.",
-      "valueOptions": null
+      "description": "Get or set label for show/hide details button when main container is hidden."
     },
     "labelSummaryProgressBarTemplate": {
       "type": "string",
       "defaultValue": "",
-      "description": "Get or set template for showing uploading information in summary progress bar. It will be shown only in multiple upload mode. {0} uploaded filesize. {1} - total file size.",
-      "valueOptions": null
+      "description": "Get or set template for showing uploading information in summary progress bar. It will be shown only in multiple upload mode. {0} uploaded filesize. {1} - total file size."
     },
     "labelSummaryProgressButtonCancel": {
       "type": "string",
       "defaultValue": "",
-      "description": "Get or set label for button cancelling all files. Shown only in multiple upload mode.",
-      "valueOptions": null
+      "description": "Get or set label for button cancelling all files. Shown only in multiple upload mode."
     },
     "labelSummaryProgressButtonContinue": {
       "type": "string",
       "defaultValue": "",
-      "description": "Get or set label for start upload batch files. Shown only in multiple upload mode and autostartupload is false.",
-      "valueOptions": null
+      "description": "Get or set label for start upload batch files. Shown only in multiple upload mode and autostartupload is false."
     },
     "labelSummaryProgressButtonDone": {
       "type": "string",
       "defaultValue": "",
-      "description": "Get or set label when upload is finished. Shown only in multiple upload mode.",
-      "valueOptions": null
+      "description": "Get or set label when upload is finished. Shown only in multiple upload mode."
     },
     "labelSummaryTemplate": {
       "type": "string",
       "defaultValue": "",
-      "description": "Get or set template for showing summary template. {0} is count of uploaded files. {1} is total count of file to be uploaded.",
-      "valueOptions": null
+      "description": "Get or set template for showing summary template. {0} is count of uploaded files. {1} is total count of file to be uploaded."
     },
     "labelUploadButton": {
       "type": "string",
       "defaultValue": "",
-      "description": "Get or set label for the first shown browse button. When file is selected for the first time this button is hidden.",
-      "valueOptions": null
+      "description": "Get or set label for the first shown browse button. When file is selected for the first time this button is hidden."
     },
     "maxSimultaneousFilesUploads": {
       "type": "number",
       "defaultValue": 1.0,
-      "description": "Get or set count of files that could be uploaded at the same time.",
-      "valueOptions": null
+      "description": "Get or set count of files that could be uploaded at the same time."
     },
     "maxUploadedFiles": {
       "type": "number",
       "defaultValue": -1.0,
-      "description": "Get or set the maximum number of allowed files to upload.",
-      "valueOptions": null
+      "description": "Get or set the maximum number of allowed files to upload."
     },
     "mode": {
       "type": "string",
@@ -375,32 +344,27 @@
     "multipleFiles": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Get or set a bool setting that allows user to select(for upload) more than 1 file from the browse dialog at once. HTML 5+ - it is supported by Chrome, MOzilla FF, Safar, Opera latest versions and IE10+",
-      "valueOptions": null
+      "description": "Get or set a bool setting that allows user to select(for upload) more than 1 file from the browse dialog at once. HTML 5+ - it is supported by Chrome, MOzilla FF, Safar, Opera latest versions and IE10+"
     },
     "progressUrl": {
       "type": "string",
       "defaultValue": "IGUploadStatusHandler.ashx",
-      "description": "Get or set URL of HTTPHandler to get information about file upload, current size and also to get commands",
-      "valueOptions": null
+      "description": "Get or set URL of HTTPHandler to get information about file upload, current size and also to get commands"
     },
     "showFileExtensionIcon": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Get or set whether to show File Extension icon",
-      "valueOptions": null
+      "description": "Get or set whether to show File Extension icon"
     },
     "uploadUrl": {
       "type": "string",
       "defaultValue": "ig_fua34sf345sdf13sdf3454erdsf2345asd3425df5235d54df345.aspx",
-      "description": "Get or set URL for uploading.",
-      "valueOptions": null
+      "description": "Get or set URL for uploading."
     },
     "width": {
       "type": "number",
       "defaultValue": "",
-      "description": "Get or set width of the main container of the file upload control. Main container contains all buttons, progressbar, etc.",
-      "valueOptions": null
+      "description": "Get or set width of the main container of the file upload control. Main container contains all buttons, progressbar, etc."
     }
   }
 }

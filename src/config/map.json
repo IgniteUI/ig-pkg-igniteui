@@ -249,32 +249,27 @@
     "autoMarginHeight": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "Sets or gets the automatic height to add when automatically adding margins to the map.",
-      "valueOptions": null
+      "description": "Sets or gets the automatic height to add when automatically adding margins to the map."
     },
     "autoMarginWidth": {
       "type": "number",
       "defaultValue": 20.0,
-      "description": "Sets or gets the automatic width to add when automatically adding margins to the map.",
-      "valueOptions": null
+      "description": "Sets or gets the automatic width to add when automatically adding margins to the map."
     },
     "backgroundContent": {
       "type": "object",
       "defaultValue": null,
-      "description": "background content object",
-      "valueOptions": null
+      "description": "background content object"
     },
     "circleMarkerTemplate": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the template to use for circle markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of circle.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-      "valueOptions": null
+      "description": "Gets or sets the template to use for circle markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of circle.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
     },
     "crosshairPoint": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the cross hair point (in world coordinates)<br>&nbsp;&nbsp;&nbsp;Either or both of the crosshair point's X and Y may be set to double.NaN, in which<br>&nbsp;&nbsp;&nbsp;case the relevant crosshair line is hidden.",
-      "valueOptions": null
+      "description": "Gets or sets the cross hair point (in world coordinates)<br>&nbsp;&nbsp;&nbsp;Either or both of the crosshair point's X and Y may be set to double.NaN, in which<br>&nbsp;&nbsp;&nbsp;case the relevant crosshair line is hidden."
     },
     "crosshairVisibility": {
       "type": "string",
@@ -296,20 +291,17 @@
     "dataSource": {
       "type": "object",
       "defaultValue": null,
-      "description": "can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself",
-      "valueOptions": null
+      "description": "can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself"
     },
     "dataSourceType": {
       "type": "string",
       "defaultValue": null,
-      "description": "Explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property.",
-      "valueOptions": null
+      "description": "Explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property."
     },
     "dataSourceUrl": {
       "type": "string",
       "defaultValue": null,
-      "description": "Specifies a remote URL accepted by $.ig.DataSource in order to request data from it",
-      "valueOptions": null
+      "description": "Specifies a remote URL accepted by $.ig.DataSource in order to request data from it"
     },
     "defaultInteraction": {
       "type": "string",
@@ -336,8 +328,7 @@
     "diamondMarkerTemplate": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the template to use for diamond markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of diamond.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-      "valueOptions": null
+      "description": "Gets or sets the template to use for diamond markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of diamond.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
     },
     "dragModifier": {
       "type": "string",
@@ -369,32 +360,27 @@
     "height": {
       "type": "number",
       "defaultValue": null,
-      "description": "The height of the map. It can be set as a number in pixels, string (px) or percentage (%).",
-      "valueOptions": null
+      "description": "The height of the map. It can be set as a number in pixels, string (px) or percentage (%)."
     },
     "hexagonMarkerTemplate": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the template to use for hexagon markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of hexagon.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-      "valueOptions": null
+      "description": "Gets or sets the template to use for hexagon markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of hexagon.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
     },
     "hexagramMarkerTemplate": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the template to use for hexagram markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of hexagram.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-      "valueOptions": null
+      "description": "Gets or sets the template to use for hexagram markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of hexagram.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
     },
     "horizontalZoomable": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Gets or sets the current Map's horizontal zoomability.",
-      "valueOptions": null
+      "description": "Gets or sets the current Map's horizontal zoomability."
     },
     "overviewPlusDetailPaneBackgroundImageUri": {
       "type": "string",
       "defaultValue": null,
-      "description": "The background image uri use in the overview detail pane.",
-      "valueOptions": null
+      "description": "The background image uri use in the overview detail pane."
     },
     "panModifier": {
       "type": "string",
@@ -426,104 +412,87 @@
     "pentagonMarkerTemplate": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the template to use for pentagon markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of pentagon.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-      "valueOptions": null
+      "description": "Gets or sets the template to use for pentagon markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of pentagon.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
     },
     "pentagramMarkerTemplate": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the template to use for pentragram markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of pentagram.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-      "valueOptions": null
+      "description": "Gets or sets the template to use for pentragram markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of pentagram.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
     },
     "plotAreaBackground": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets or sets the brush used as the background for the current Map object's plot area.",
-      "valueOptions": null
+      "description": "Gets or sets the brush used as the background for the current Map object's plot area."
     },
     "previewRect": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the preview rectangle.<br>&nbsp;&nbsp;&nbsp;The preview rectangle may be set to Rect.Empty, in which case the visible preview<br>&nbsp;&nbsp;&nbsp;strokePath is hidden.<br>&nbsp;&nbsp;&nbsp;The provided object should have numeric properties called left, top, width and height.",
-      "valueOptions": null
+      "description": "Gets or sets the preview rectangle.<br>&nbsp;&nbsp;&nbsp;The preview rectangle may be set to Rect.Empty, in which case the visible preview<br>&nbsp;&nbsp;&nbsp;strokePath is hidden.<br>&nbsp;&nbsp;&nbsp;The provided object should have numeric properties called left, top, width and height."
     },
     "pyramidMarkerTemplate": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the template to use for pyramid markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of pyramid.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-      "valueOptions": null
+      "description": "Gets or sets the template to use for pyramid markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of pyramid.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
     },
     "responseDataKey": {
       "type": "string",
       "defaultValue": null,
-      "description": "see $.ig.DataSource. Specifies the name of the property in which data records are held if the response is wrapped.",
-      "valueOptions": null
+      "description": "see $.ig.DataSource. Specifies the name of the property in which data records are held if the response is wrapped."
     },
     "series": {
       "type": "array",
       "defaultValue": null,
-      "description": "an array of series objects",
-      "valueOptions": null
+      "description": "an array of series objects"
     },
     "squareMarkerTemplate": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the template to use for square markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of square.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-      "valueOptions": null
+      "description": "Gets or sets the template to use for square markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of square.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
     },
     "tetragramMarkerTemplate": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the template to use for tetragram markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of tetragram.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-      "valueOptions": null
+      "description": "Gets or sets the template to use for tetragram markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of tetragram.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
     },
     "theme": {
       "type": "string",
       "defaultValue": "c",
-      "description": "The swatch used to style this widget",
-      "valueOptions": null
+      "description": "The swatch used to style this widget"
     },
     "triangleMarkerTemplate": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the template to use for triangle markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of triangle.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-      "valueOptions": null
+      "description": "Gets or sets the template to use for triangle markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of triangle.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
     },
     "verticalZoomable": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Gets or sets the current Map's vertical zoomability.",
-      "valueOptions": null
+      "description": "Gets or sets the current Map's vertical zoomability."
     },
     "width": {
       "type": "number",
       "defaultValue": null,
-      "description": "The width of the map. It can be set as a number in pixels, string (px) or percentage (%).",
-      "valueOptions": null
+      "description": "The width of the map. It can be set as a number in pixels, string (px) or percentage (%)."
     },
     "windowPositionHorizontal": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "A number between 0 and 1 determining the position of the horizontal scroll.<br>&nbsp;&nbsp;&nbsp;This property is effectively a shortcut to the X position of the WindowRect property.",
-      "valueOptions": null
+      "description": "A number between 0 and 1 determining the position of the horizontal scroll.<br>&nbsp;&nbsp;&nbsp;This property is effectively a shortcut to the X position of the WindowRect property."
     },
     "windowPositionVertical": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "A number between 0 and 1 determining the position of the vertical scroll.<br>&nbsp;&nbsp;&nbsp;This property is effectively a shortcut to the Y position of the WindowRect property.",
-      "valueOptions": null
+      "description": "A number between 0 and 1 determining the position of the vertical scroll.<br>&nbsp;&nbsp;&nbsp;This property is effectively a shortcut to the Y position of the WindowRect property."
     },
     "windowRect": {
       "type": "object",
       "defaultValue": null,
-      "description": "A rectangle representing the portion of the map currently in view.<br>&nbsp;&nbsp;&nbsp;A rectangle at X=0, Y=0 with a Height and Width of 1 implies the entire plotting area is in view.  A Height and Width of .5 would imply that the view is halfway zoomed in.<br>&nbsp;&nbsp;&nbsp;The provided object should have numeric properties called left, top, width and height.",
-      "valueOptions": null
+      "description": "A rectangle representing the portion of the map currently in view.<br>&nbsp;&nbsp;&nbsp;A rectangle at X=0, Y=0 with a Height and Width of 1 implies the entire plotting area is in view.  A Height and Width of .5 would imply that the view is halfway zoomed in.<br>&nbsp;&nbsp;&nbsp;The provided object should have numeric properties called left, top, width and height."
     },
     "windowRectMinWidth": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "Sets or gets the minimum width that the window rect is allowed to reach before being clamped.<br>&nbsp;&nbsp;&nbsp;Decrease this value if you want to allow for further zooming into the viewer.<br>&nbsp;&nbsp;&nbsp;If this value is lowered too much it can cause graphical corruption due to floating point arithmetic inaccuracy.",
-      "valueOptions": null
+      "description": "Sets or gets the minimum width that the window rect is allowed to reach before being clamped.<br>&nbsp;&nbsp;&nbsp;Decrease this value if you want to allow for further zooming into the viewer.<br>&nbsp;&nbsp;&nbsp;If this value is lowered too much it can cause graphical corruption due to floating point arithmetic inaccuracy."
     },
     "windowResponse": {
       "type": "string",

@@ -169,56 +169,47 @@
     "animationDuration": {
       "type": "number",
       "defaultValue": 500.0,
-      "description": "Gets sets the duration of the animations in the tile manager.",
-      "valueOptions": null
+      "description": "Gets sets the duration of the animations in the tile manager."
     },
     "cols": {
       "type": "number",
       "defaultValue": null,
-      "description": " Gets sets the columns count in the container.",
-      "valueOptions": null
+      "description": " Gets sets the columns count in the container."
     },
     "columnHeight": {
       "type": "string",
       "defaultValue": null,
-      "description": " The height of each column in the container. The container height can be set as a number in pixels or as a string in pixels (px) or percentage (%).",
-      "valueOptions": null
+      "description": " The height of each column in the container. The container height can be set as a number in pixels or as a string in pixels (px) or percentage (%)."
     },
     "columnWidth": {
       "type": "string",
       "defaultValue": null,
-      "description": " Gets sets the width of each column in the container. The container width can be set as a number in pixels or as a string in pixels (px) or percentage (%).",
-      "valueOptions": null
+      "description": " Gets sets the width of each column in the container. The container width can be set as a number in pixels or as a string in pixels (px) or percentage (%)."
     },
     "dataSource": {
       "type": "object",
       "defaultValue": null,
-      "description": "Specifies any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself.",
-      "valueOptions": null
+      "description": "Specifies any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself."
     },
     "dataSourceType": {
       "type": "string",
       "defaultValue": null,
-      "description": "Explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property.",
-      "valueOptions": null
+      "description": "Explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property."
     },
     "dataSourceUrl": {
       "type": "string",
       "defaultValue": null,
-      "description": "Specifies a remote URL accepted by $.ig.DataSource in order to request data from it.",
-      "valueOptions": null
+      "description": "Specifies a remote URL accepted by $.ig.DataSource in order to request data from it."
     },
     "height": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets sets the height of igTileManager. The height can be set as a number in pixels or as a string in pixels (px) or percentage (%).",
-      "valueOptions": null
+      "description": "Gets sets the height of igTileManager. The height can be set as a number in pixels or as a string in pixels (px) or percentage (%)."
     },
     "items": {
       "type": "array",
       "defaultValue": null,
       "description": " Gets sets the tiles configurations. Every tile is described by rowSpan, colSpan, rowIndex and colIndex.",
-      "valueOptions": null,
       "schema": {
         "colSpan": {
           "type": "number",
@@ -247,110 +238,92 @@
     "marginLeft": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "Gets sets the horizontal spacing between tiles.<br>                number The horizontal spacing between tiles can be set as a number.",
-      "valueOptions": null
+      "description": "Gets sets the horizontal spacing between tiles.<br>                number The horizontal spacing between tiles can be set as a number."
     },
     "marginTop": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "Gets sets the vertical spacing between tiles.<br>                number The vertical spacing between tiles can be set as a number.",
-      "valueOptions": null
+      "description": "Gets sets the vertical spacing between tiles.<br>                number The vertical spacing between tiles can be set as a number."
     },
     "maximizedState": {
       "type": "string",
       "defaultValue": null,
-      "description": " Gets sets the content of the tiles in maximized state. When initializing on html markup provide jQuery selector specifying which elements of the tile to be shown in maximized state. When initializing on data source provide igTemplate that will be rendered for the maximized state.",
-      "valueOptions": null
+      "description": " Gets sets the content of the tiles in maximized state. When initializing on html markup provide jQuery selector specifying which elements of the tile to be shown in maximized state. When initializing on data source provide igTemplate that will be rendered for the maximized state."
     },
     "maximizedTileIndex": {
       "type": "number",
       "defaultValue": null,
-      "description": " Gets sets the index of which items configuration will be used for positioning and sizing of the maximized tile.",
-      "valueOptions": null
+      "description": " Gets sets the index of which items configuration will be used for positioning and sizing of the maximized tile."
     },
     "minimizedState": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets sets the content of the tiles in minimized state. When initializing on html markup provide jQuery selector specifying what content of the tile to be shown in minimized state. When initializing on data source provide igTemplate that will be rendered for the minimized state.",
-      "valueOptions": null
+      "description": "Gets sets the content of the tiles in minimized state. When initializing on html markup provide jQuery selector specifying what content of the tile to be shown in minimized state. When initializing on data source provide igTemplate that will be rendered for the minimized state."
     },
     "preventMaximizingSelector": {
       "type": "string",
       "defaultValue": "a, input",
-      "description": "Gets sets JQuery selector that specifies which elements will not trigger maximizing when clicked on.",
-      "valueOptions": null
+      "description": "Gets sets JQuery selector that specifies which elements will not trigger maximizing when clicked on."
     },
     "rearrangeItems": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Gets sets whether the items will rearrange when the container is resized.",
-      "valueOptions": null
+      "description": "Gets sets whether the items will rearrange when the container is resized."
     },
     "requestType": {
       "type": "string",
       "defaultValue": "GET",
-      "description": "specifies the HTTP verb to be used to issue the request.",
-      "valueOptions": null
+      "description": "specifies the HTTP verb to be used to issue the request."
     },
     "responseContentType": {
       "type": "string",
       "defaultValue": null,
-      "description": "content type of the response. See http://api.jquery.com/jQuery.ajax/ => contentType.",
-      "valueOptions": null
+      "description": "content type of the response. See http://api.jquery.com/jQuery.ajax/ => contentType."
     },
     "responseDataKey": {
       "type": "string",
       "defaultValue": null,
-      "description": "Specifies the name of the property in which data records are held if the response is wrapped.",
-      "valueOptions": null
+      "description": "Specifies the name of the property in which data records are held if the response is wrapped."
     },
     "responseDataType": {
       "type": "string",
       "defaultValue": null,
-      "description": "string Explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property.<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored.",
-      "valueOptions": null
+      "description": "string Explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property.<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored."
     },
     "rightPanelCols": {
       "type": "number",
       "defaultValue": null,
-      "description": " Gets sets how many columns to be displayed in the right panel when the tiles are minimized. he minimum value is 1.",
-      "valueOptions": null
+      "description": " Gets sets how many columns to be displayed in the right panel when the tiles are minimized. he minimum value is 1."
     },
     "rightPanelTilesHeight": {
       "type": "number",
       "defaultValue": null,
-      "description": " Gets sets the height of the minimized tiles in the right panel.",
-      "valueOptions": null
+      "description": " Gets sets the height of the minimized tiles in the right panel."
     },
     "rightPanelTilesWidth": {
       "type": "number",
       "defaultValue": null,
-      "description": " Gets sets the width of the minimized tiles in the right panel.",
-      "valueOptions": null
+      "description": " Gets sets the width of the minimized tiles in the right panel."
     },
     "rows": {
       "type": "number",
       "defaultValue": null,
-      "description": " Gets sets the rows count in the container.",
-      "valueOptions": null
+      "description": " Gets sets the rows count in the container."
     },
     "showRightPanelScroll": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Gets sets whether the right panel should show scrollbar when tiles are overflowing.",
-      "valueOptions": null
+      "description": "Gets sets whether the right panel should show scrollbar when tiles are overflowing."
     },
     "showSplitter": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Gets sets whether the splitter should be shown.",
-      "valueOptions": null
+      "description": "Gets sets whether the splitter should be shown."
     },
     "width": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets sets the width of igTileManager. The width can be set as a number in pixels or as a string in pixels (px) or percentage (%).",
-      "valueOptions": null
+      "description": "Gets sets the width of igTileManager. The width can be set as a number in pixels or as a string in pixels (px) or percentage (%)."
     }
   }
 }

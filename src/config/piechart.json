@@ -105,74 +105,62 @@
     "allowSliceExplosion": {
       "type": "bool",
       "defaultValue": null,
-      "description": "Gets or sets whether the slices can be exploded.",
-      "valueOptions": null
+      "description": "Gets or sets whether the slices can be exploded."
     },
     "allowSliceSelection": {
       "type": "bool",
       "defaultValue": null,
-      "description": "Gets or sets whether the slices can be selected.",
-      "valueOptions": null
+      "description": "Gets or sets whether the slices can be selected."
     },
     "brushes": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the Brushes property.<br>&nbsp;&nbsp;&nbsp;The brushes property defines the palette from which automatically assigned slice brushes are selected.<br>&nbsp;&nbsp;&nbsp;The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
-      "valueOptions": null
+      "description": "Gets or sets the Brushes property.<br>&nbsp;&nbsp;&nbsp;The brushes property defines the palette from which automatically assigned slice brushes are selected.<br>&nbsp;&nbsp;&nbsp;The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
     },
     "dataSource": {
       "type": "object",
       "defaultValue": null,
-      "description": "can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself",
-      "valueOptions": null
+      "description": "can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself"
     },
     "dataSourceType": {
       "type": "string",
       "defaultValue": null,
-      "description": "Explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property.",
-      "valueOptions": null
+      "description": "Explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property."
     },
     "dataSourceUrl": {
       "type": "string",
       "defaultValue": null,
-      "description": "Specifies a remote URL accepted by $.ig.DataSource in order to request data from it",
-      "valueOptions": null
+      "description": "Specifies a remote URL accepted by $.ig.DataSource in order to request data from it"
     },
     "explodedRadius": {
       "type": "number",
       "defaultValue": 0.2,
-      "description": "Determines how much the exploded slice is offset from the center. Value between 0 and 1.",
-      "valueOptions": null
+      "description": "Determines how much the exploded slice is offset from the center. Value between 0 and 1."
     },
     "explodedSlices": {
       "type": "array",
       "defaultValue": null,
-      "description": "Gets or sets the collection of exploded slice indices.<br>            Should be an array of integers that indicate the indexes of the slices to explode.",
-      "valueOptions": null
+      "description": "Gets or sets the collection of exploded slice indices.<br>            Should be an array of integers that indicate the indexes of the slices to explode."
     },
     "formatLabel": {
       "type": "function",
       "defaultValue": null,
-      "description": "Gets or sets the function to use to transform a pie slice data context into a label for the slice. Function takes one argument of type object.<br>&nbsp;&nbsp;&nbsp;Use context.item to get the item associated with the slice, if any.<br>&nbsp;&nbsp;&nbsp;Use context.actualItemBrush to get the brush used to paint the slice.<br>&nbsp;&nbsp;&nbsp;Use context.outline to get the outline brush used to paint the slice.<br>&nbsp;&nbsp;&nbsp;Use context.itemLabel to get the label object that would be used for the slice.<br>&nbsp;&nbsp;&nbsp;Use context.percentValue to see the percentage value that is associated with the slice.<br>&nbsp;&nbsp;&nbsp;Use context.isOthersSlice to tell if the associated slice is the others slice.<br>&nbsp;&nbsp;&nbsp;Should return a string value that should be used for the label.",
-      "valueOptions": null
+      "description": "Gets or sets the function to use to transform a pie slice data context into a label for the slice. Function takes one argument of type object.<br>&nbsp;&nbsp;&nbsp;Use context.item to get the item associated with the slice, if any.<br>&nbsp;&nbsp;&nbsp;Use context.actualItemBrush to get the brush used to paint the slice.<br>&nbsp;&nbsp;&nbsp;Use context.outline to get the outline brush used to paint the slice.<br>&nbsp;&nbsp;&nbsp;Use context.itemLabel to get the label object that would be used for the slice.<br>&nbsp;&nbsp;&nbsp;Use context.percentValue to see the percentage value that is associated with the slice.<br>&nbsp;&nbsp;&nbsp;Use context.isOthersSlice to tell if the associated slice is the others slice.<br>&nbsp;&nbsp;&nbsp;Should return a string value that should be used for the label."
     },
     "height": {
       "type": "number",
       "defaultValue": null,
-      "description": "The height of the chart. It can be set as a number in pixels, string (px) or percentage (%).",
-      "valueOptions": null
+      "description": "The height of the chart. It can be set as a number in pixels, string (px) or percentage (%)."
     },
     "labelExtent": {
       "type": "number",
       "defaultValue": 10.0,
-      "description": "Gets or sets the pixel amount, by which the labels are offset from the edge of the slices.",
-      "valueOptions": null
+      "description": "Gets or sets the pixel amount, by which the labels are offset from the edge of the slices."
     },
     "labelMemberPath": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets or sets the property name that contains the labels.",
-      "valueOptions": null
+      "description": "Gets or sets the property name that contains the labels."
     },
     "labelsPosition": {
       "type": "string",
@@ -209,8 +197,7 @@
     "leaderLineMargin": {
       "type": "number",
       "defaultValue": 6.0,
-      "description": "Gets or sets the margin between a label and the end of its leader line.",
-      "valueOptions": null
+      "description": "Gets or sets the margin between a label and the end of its leader line."
     },
     "leaderLineType": {
       "type": "string",
@@ -254,38 +241,32 @@
     "legend": {
       "type": "object",
       "defaultValue": null,
-      "description": "can be any valid options accepted by $.ig.ChartLegend, or an instance of an $.ig.ChartLegend itself.",
-      "valueOptions": null
+      "description": "can be any valid options accepted by $.ig.ChartLegend, or an instance of an $.ig.ChartLegend itself."
     },
     "legendItemBadgeTemplate": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the LegendItemBadgeTemplate property.<br>&nbsp;&nbsp;&nbsp;The legend item badge is created according to the LegendItemBadgeTemplate on-demand by<br>&nbsp;&nbsp;&nbsp;the chart object itself.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-      "valueOptions": null
+      "description": "Gets or sets the LegendItemBadgeTemplate property.<br>&nbsp;&nbsp;&nbsp;The legend item badge is created according to the LegendItemBadgeTemplate on-demand by<br>&nbsp;&nbsp;&nbsp;the chart object itself.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
     },
     "legendItemTemplate": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the LegendItemTemplate property.<br>&nbsp;&nbsp;&nbsp;The legend item control content is created according to the LegendItemTemplate on-demand by<br>&nbsp;&nbsp;&nbsp;the chart object itself.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-      "valueOptions": null
+      "description": "Gets or sets the LegendItemTemplate property.<br>&nbsp;&nbsp;&nbsp;The legend item control content is created according to the LegendItemTemplate on-demand by<br>&nbsp;&nbsp;&nbsp;the chart object itself.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
     },
     "othersCategoryStyle": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets a style object that can be used to override the style settings on the others category slice.",
-      "valueOptions": null
+      "description": "Gets or sets a style object that can be used to override the style settings on the others category slice."
     },
     "othersCategoryText": {
       "type": "string",
       "defaultValue": "Others",
-      "description": "Gets or sets the label of the Others slice.",
-      "valueOptions": null
+      "description": "Gets or sets the label of the Others slice."
     },
     "othersCategoryThreshold": {
       "type": "number",
       "defaultValue": 3.0,
-      "description": "Gets or sets the threshold value that determines if slices are grouped into the Others slice.",
-      "valueOptions": null
+      "description": "Gets or sets the threshold value that determines if slices are grouped into the Others slice."
     },
     "othersCategoryType": {
       "type": "string",
@@ -307,38 +288,32 @@
     "outlines": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the Outlines property.<br>&nbsp;&nbsp;&nbsp;The Outlines property defines the palette from which automatically assigned slice outlines are selected.<br>&nbsp;&nbsp;&nbsp;The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
-      "valueOptions": null
+      "description": "Gets or sets the Outlines property.<br>&nbsp;&nbsp;&nbsp;The Outlines property defines the palette from which automatically assigned slice outlines are selected.<br>&nbsp;&nbsp;&nbsp;The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
     },
     "radiusFactor": {
       "type": "number",
       "defaultValue": 0.9,
-      "description": "Gets or sets the scaling factor of the chart's radius. Value between 0 and 1.",
-      "valueOptions": null
+      "description": "Gets or sets the scaling factor of the chart's radius. Value between 0 and 1."
     },
     "responseDataKey": {
       "type": "string",
       "defaultValue": null,
-      "description": "see $.ig.DataSource. Specifies the name of the property in which data records are held if the response is wrapped.",
-      "valueOptions": null
+      "description": "see $.ig.DataSource. Specifies the name of the property in which data records are held if the response is wrapped."
     },
     "selectedStyle": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the style used when a slice is selected.",
-      "valueOptions": null
+      "description": "Gets or sets the style used when a slice is selected."
     },
     "showTooltip": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Whether the chart should render a tooltip.",
-      "valueOptions": null
+      "description": "Whether the chart should render a tooltip."
     },
     "startAngle": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "Gets or sets the starting angle of the chart.<br>&nbsp;&nbsp;&nbsp;The default zero value is equivalent to 3 o'clock.",
-      "valueOptions": null
+      "description": "Gets or sets the starting angle of the chart.<br>&nbsp;&nbsp;&nbsp;The default zero value is equivalent to 3 o'clock."
     },
     "sweepDirection": {
       "type": "string",
@@ -360,32 +335,27 @@
     "textStyle": {
       "type": "string",
       "defaultValue": null,
-      "description": "Overrides the style used for text in the pie chart.",
-      "valueOptions": null
+      "description": "Overrides the style used for text in the pie chart."
     },
     "theme": {
       "type": "string",
       "defaultValue": "c",
-      "description": "The swatch used to style this widget",
-      "valueOptions": null
+      "description": "The swatch used to style this widget"
     },
     "tooltipTemplate": {
       "type": "string",
       "defaultValue": null,
-      "description": "The name of template or the template itself that chart tooltip will use to render.",
-      "valueOptions": null
+      "description": "The name of template or the template itself that chart tooltip will use to render."
     },
     "valueMemberPath": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets or Sets the property name that contains the values.",
-      "valueOptions": null
+      "description": "Gets or Sets the property name that contains the values."
     },
     "width": {
       "type": "number",
       "defaultValue": null,
-      "description": "The width of the chart. It can be set as a number in pixels, string (px) or percentage (%).",
-      "valueOptions": null
+      "description": "The width of the chart. It can be set as a number in pixels, string (px) or percentage (%)."
     }
   }
 }

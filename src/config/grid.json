@@ -313,44 +313,37 @@
     "accessibilityRendering": {
       "type": "bool",
       "defaultValue": false,
-      "description": "if this option is set to true, ARIA and role attributes will be rendered for data records, cells and grid containers",
-      "valueOptions": null
+      "description": "if this option is set to true, ARIA and role attributes will be rendered for data records, cells and grid containers"
     },
     "adjustVirtualHeights": {
       "type": "bool",
       "defaultValue": false,
-      "description": "If this option is set to true, the height of the grid row will be calculated automatically based on the average row height and the visible virtual records. If no average row height is specified, one will be calculated automatically at runtime.",
-      "valueOptions": null
+      "description": "If this option is set to true, the height of the grid row will be calculated automatically based on the average row height and the visible virtual records. If no average row height is specified, one will be calculated automatically at runtime."
     },
     "aggregateTransactions": {
       "type": "bool",
       "defaultValue": false,
-      "description": "if set to true, the following behavior will take place:<br>&nbsp;&nbsp;&nbsp;&nbsp;if a new row is added, and then deleted, there will be no transaction added to the log <br>&nbsp;&nbsp;&nbsp;&nbsp;if a new role is added, edited, then deleted, there will be no transaction added to the log<br>&nbsp;&nbsp;&nbsp;&nbsp;if several edits are made to a row or an individual cell, this should result in a single transaction<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: This option takes effect only when autoCommit is set to false.",
-      "valueOptions": null
+      "description": "if set to true, the following behavior will take place:<br>&nbsp;&nbsp;&nbsp;&nbsp;if a new row is added, and then deleted, there will be no transaction added to the log <br>&nbsp;&nbsp;&nbsp;&nbsp;if a new role is added, edited, then deleted, there will be no transaction added to the log<br>&nbsp;&nbsp;&nbsp;&nbsp;if several edits are made to a row or an individual cell, this should result in a single transaction<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: This option takes effect only when autoCommit is set to false."
     },
     "alternateRowStyles": {
       "type": "bool",
       "defaultValue": true,
-      "description": "enables/disables rendering of alternating row styles (odd and even rows receive different styling). Note that if a custom jQuery template is set, this has no effect and CSS for the row should be adjusted manually in the template contents.",
-      "valueOptions": null
+      "description": "enables/disables rendering of alternating row styles (odd and even rows receive different styling). Note that if a custom jQuery template is set, this has no effect and CSS for the row should be adjusted manually in the template contents."
     },
     "autoAdjustHeight": {
       "type": "bool",
       "defaultValue": true,
-      "description": "If autoAdjustHeight is set to false, the options.height will be set only on the scrolling container, and all other UI elements such as paging footer / filter row/ headers will add on top of that, so the total height of the grid will be more than this value - the height of the scroll container (content area) will not be dynamically calculated. Setting this option to false will usually result in a lot better initial rendering performance for large data sets ( > 1000 rows rendered at once, no virtualization enabled), since no reflows will be made by browsers when accessing DOM properties such as offsetHeight.",
-      "valueOptions": null
+      "description": "If autoAdjustHeight is set to false, the options.height will be set only on the scrolling container, and all other UI elements such as paging footer / filter row/ headers will add on top of that, so the total height of the grid will be more than this value - the height of the scroll container (content area) will not be dynamically calculated. Setting this option to false will usually result in a lot better initial rendering performance for large data sets ( > 1000 rows rendered at once, no virtualization enabled), since no reflows will be made by browsers when accessing DOM properties such as offsetHeight."
     },
     "autoCommit": {
       "type": "bool",
       "defaultValue": false,
-      "description": "automatically commits the transactions as rows/cells are being edited",
-      "valueOptions": null
+      "description": "automatically commits the transactions as rows/cells are being edited"
     },
     "autofitLastColumn": {
       "type": "bool",
       "defaultValue": true,
-      "description": "If autofitLastColumn is true and all columns' widths are specified and their combined width is less than the grid width then the last column width will be automatically adjusted to fill the entire grid.",
-      "valueOptions": null
+      "description": "If autofitLastColumn is true and all columns' widths are specified and their combined width is less than the grid width then the last column width will be automatically adjusted to fill the entire grid."
     },
     "autoFormat": {
       "type": "string",
@@ -387,32 +380,27 @@
     "autoGenerateColumns": {
       "type": "bool",
       "defaultValue": true,
-      "description": "if no columns collection is defined, and autoGenerateColumns is set to true, columns will be inferred from the data source",
-      "valueOptions": null
+      "description": "if no columns collection is defined, and autoGenerateColumns is set to true, columns will be inferred from the data source"
     },
     "avgColumnWidth": {
       "type": "string",
       "defaultValue": null,
-      "description": " used for virtualization, this is the average value in pixels for a column width ",
-      "valueOptions": null
+      "description": " used for virtualization, this is the average value in pixels for a column width "
     },
     "avgRowHeight": {
       "type": "string",
       "defaultValue": null,
-      "description": " used for virtualization, this is the average value in pixels (default) that will be used to calculate how many rows and which ones to render as the end user scrolls. Also all rows' height will be automatically equal to this value ",
-      "valueOptions": null
+      "description": " used for virtualization, this is the average value in pixels (default) that will be used to calculate how many rows and which ones to render as the end user scrolls. Also all rows' height will be automatically equal to this value "
     },
     "caption": {
       "type": "string",
       "defaultValue": null,
-      "description": "caption text that will be shown above the grid header",
-      "valueOptions": null
+      "description": "caption text that will be shown above the grid header"
     },
     "columns": {
       "type": "array",
       "defaultValue": null,
       "description": "an array of column objects",
-      "valueOptions": null,
       "designerDisplayProperty": "key",
       "schema": {
         "key": {
@@ -514,105 +502,88 @@
     "columnVirtualization": {
       "type": "bool",
       "defaultValue": false,
-      "description": "option to enable virtualization for columns only (horizontal)",
-      "valueOptions": null
+      "description": "option to enable virtualization for columns only (horizontal)"
     },
     "dataSource": {
       "type": "object",
       "defaultValue": null,
-      "description": "can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself",
-      "valueOptions": null
+      "description": "can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself"
     },
     "dataSourceType": {
       "type": "string",
       "defaultValue": null,
-      "description": "explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property",
-      "valueOptions": null
+      "description": "explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property"
     },
     "dataSourceUrl": {
       "type": "string",
       "defaultValue": null,
-      "description": "specifies a remote URL as a data source, from which data will be retrieved using an AJAX call ($.ajax)",
-      "valueOptions": null
+      "description": "specifies a remote URL as a data source, from which data will be retrieved using an AJAX call ($.ajax)"
     },
     "defaultColumnWidth": {
       "type": "string",
       "defaultValue": null,
-      "description": " Default column width that will be set for all columns.",
-      "valueOptions": null
+      "description": " Default column width that will be set for all columns."
     },
     "enableHoverStyles": {
       "type": "bool",
       "defaultValue": true,
-      "description": "enables/disables rendering of ui-state-hover classes when the mouse is over a record. this can be useful in templating scenarios, for example, where we don't want to apply hover styling to templated content",
-      "valueOptions": null
+      "description": "enables/disables rendering of ui-state-hover classes when the mouse is over a record. this can be useful in templating scenarios, for example, where we don't want to apply hover styling to templated content"
     },
     "enableUTCDates": {
       "type": "bool",
       "defaultValue": false,
-      "description": "enables formatting of the dates as UTC. Note that this may be desirable when the dates are coming from a backend, encoded as UTC. Otherwise, if dates are created on the client (in the browser), most probably keeping enableUTCDates to false is the desired behavior",
-      "valueOptions": null
+      "description": "enables formatting of the dates as UTC. Note that this may be desirable when the dates are coming from a backend, encoded as UTC. Otherwise, if dates are created on the client (in the browser), most probably keeping enableUTCDates to false is the desired behavior"
     },
     "features": {
       "type": "object",
       "defaultValue": null,
        "components": ["gridfiltering", "gridupdating", "gridtooltips", "gridsummaries", "gridsorting", "gridselection", "gridrowselectors", "gridresizing", "gridpaging", "gridmulticolumnheaders", "gridmergedcells", "gridhiding", "gridgroupby", "gridcolumnmoving"],
-      "description": "a list of grid features definitions: sorting, paging, etc. Each feature goes with its separate options that are documented for the feature accordingly",
-      "valueOptions": null
+      "description": "a list of grid features definitions: sorting, paging, etc. Each feature goes with its separate options that are documented for the feature accordingly"
     },
     "fixedFooters": {
       "type": "bool",
       "defaultValue": true,
-      "description": "footers will be fixed if this option is set to true, and only the grid data will be scrollable. If virtualization is enabled, fixedFooters will always act as if it's true, no matter which value is set",
-      "valueOptions": null
+      "description": "footers will be fixed if this option is set to true, and only the grid data will be scrollable. If virtualization is enabled, fixedFooters will always act as if it's true, no matter which value is set"
     },
     "fixedHeaders": {
       "type": "bool",
       "defaultValue": true,
-      "description": "headers will be fixed if this option is set to true, and only the grid data will be scrollable. If virtualization is enabled, fixedHeaders will always act as if it's true, no matter which value is set",
-      "valueOptions": null
+      "description": "headers will be fixed if this option is set to true, and only the grid data will be scrollable. If virtualization is enabled, fixedHeaders will always act as if it's true, no matter which value is set"
     },
     "height": {
       "type": "string",
       "defaultValue": null,
-      "description": " This is the total height of the grid, including all UI elements - scroll container with data rows, header, footer, filter row -  (if any), etc.  ",
-      "valueOptions": null
+      "description": " This is the total height of the grid, including all UI elements - scroll container with data rows, header, footer, filter row -  (if any), etc.  "
     },
     "jQueryTemplating": {
       "type": "bool",
       "defaultValue": false,
-      "description": "custom high-performance rendering will be used for rendering by default. jQuery Templating plugin can be used and enabled by setting this option to true. This will allow usage of column / row templates in jQuery Templating style. If virtualization is enabled, it is advised to keep this option to \"false\", in order to have better scrolling/rendering performance  <br>&nbsp;&nbsp;&nbsp;*** IMPORTANT ***<br>&nbsp;&nbsp;&nbsp;This option has been depricated as of the 12.1 release. The igGrid now uses the custom Infragistics templating engine by default.",
-      "valueOptions": null
+      "description": "custom high-performance rendering will be used for rendering by default. jQuery Templating plugin can be used and enabled by setting this option to true. This will allow usage of column / row templates in jQuery Templating style. If virtualization is enabled, it is advised to keep this option to \"false\", in order to have better scrolling/rendering performance  <br>&nbsp;&nbsp;&nbsp;*** IMPORTANT ***<br>&nbsp;&nbsp;&nbsp;This option has been depricated as of the 12.1 release. The igGrid now uses the custom Infragistics templating engine by default."
     },
     "jsonpRequest": {
       "type": "bool",
       "defaultValue": null,
-      "description": "When dataSource is string defines whether to set data source of type JSONP",
-      "valueOptions": null
+      "description": "When dataSource is string defines whether to set data source of type JSONP"
     },
     "localSchemaTransform": {
       "type": "bool",
       "defaultValue": true,
-      "description": "if this option is set to false, the data to which the grid is bound will be used \"as is\" with no additional transformations based on columns defined",
-      "valueOptions": null
+      "description": "if this option is set to false, the data to which the grid is bound will be used \"as is\" with no additional transformations based on columns defined"
     },
     "mergeUnboundColumns": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Merge unbound columns values inside datasource when data source is remote. If true then the unbound columns are merged to the datasource at runtime - indeed DataSource is expanded with the new data and this could cause performance issues when dataSource is huge, if false then the unbound data is sent to the client",
-      "valueOptions": null
+      "description": "Merge unbound columns values inside datasource when data source is remote. If true then the unbound columns are merged to the datasource at runtime - indeed DataSource is expanded with the new data and this could cause performance issues when dataSource is huge, if false then the unbound data is sent to the client"
     },
     "primaryKey": {
       "type": "string",
       "defaultValue": null,
-      "description": "primary key name of the column containing unique identifiers",
-      "valueOptions": null
+      "description": "primary key name of the column containing unique identifiers"
     },
     "renderCheckboxes": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Gets sets ability to render checkboxes and use checkbox editor when dataType of a column is \"bool\". That option is not available when jQueryTemplating is used.",
-      "valueOptions": null
+      "description": "Gets sets ability to render checkboxes and use checkbox editor when dataType of a column is \"bool\". That option is not available when jQueryTemplating is used."
     },
     "requestType": {
       "type": "string",
@@ -634,26 +605,22 @@
     "responseContentType": {
       "type": "string",
       "defaultValue": "application/json; charset=utf-8",
-      "description": "content type of the response. See http://api.jquery.com/jQuery.ajax/ => contentType",
-      "valueOptions": null
+      "description": "content type of the response. See http://api.jquery.com/jQuery.ajax/ => contentType"
     },
     "responseDataKey": {
       "type": "string",
       "defaultValue": null,
-      "description": "see $.ig.DataSource. This is basically the property in the responses where data records are held, if the response is wrapped",
-      "valueOptions": null
+      "description": "see $.ig.DataSource. This is basically the property in the responses where data records are held, if the response is wrapped"
     },
     "responseTotalRecCountKey": {
       "type": "string",
       "defaultValue": null,
-      "description": "See $.ig.DataSource. Property in the response specifying the total number of records on the server.",
-      "valueOptions": null
+      "description": "See $.ig.DataSource. Property in the response specifying the total number of records on the server."
     },
     "restSettings": {
       "type": "object",
       "defaultValue": null,
       "description": "Settings related to REST compliant update routine",
-      "valueOptions": null,
       "schema": {
         "create": {
           "type": "object",
@@ -710,38 +677,32 @@
     "rowTemplate": {
       "type": "string",
       "defaultValue": null,
-      "description": "jQuery templating style template that will be used to render data records",
-      "valueOptions": null
+      "description": "jQuery templating style template that will be used to render data records"
     },
     "rowVirtualization": {
       "type": "bool",
       "defaultValue": false,
-      "description": "option to enable virtualization for rows only (vertical)",
-      "valueOptions": null
+      "description": "option to enable virtualization for rows only (vertical)"
     },
     "serializeTransactionLog": {
       "type": "bool",
       "defaultValue": true,
-      "description": "if true, the transaction log will always be sent in the request for remote data, by the data source. Also this means that if there are values in the log, a POST will be done instead of GET",
-      "valueOptions": null
+      "description": "if true, the transaction log will always be sent in the request for remote data, by the data source. Also this means that if there are values in the log, a POST will be done instead of GET"
     },
     "showFooter": {
       "type": "bool",
       "defaultValue": true,
-      "description": "option controlling the visibility of the grid footer",
-      "valueOptions": null
+      "description": "option controlling the visibility of the grid footer"
     },
     "showHeader": {
       "type": "bool",
       "defaultValue": true,
-      "description": "option controlling the visibility of the grid header",
-      "valueOptions": null
+      "description": "option controlling the visibility of the grid header"
     },
     "tabIndex": {
       "type": "number",
       "defaultValue": 0,
-      "description": "initial tabIndex attribute that will be set on the container element",
-      "valueOptions": null
+      "description": "initial tabIndex attribute that will be set on the container element"
     },
     "templatingEngine": {
       "type": "string",
@@ -763,14 +724,12 @@
     "updateUrl": {
       "type": "string",
       "defaultValue": null,
-      "description": "URL to which updating requests will be made. If autoCommit is true, updates will be done immediately to the data source, without keeping interim transaction logs",
-      "valueOptions": null
+      "description": "URL to which updating requests will be made. If autoCommit is true, updates will be done immediately to the data source, without keeping interim transaction logs"
     },
     "virtualization": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Enables/disables virtualization. Virtualization can greatly enhance rendering performance. If enabled, the number of actual rendered rows (DOM elements) will be constant and related to the visible viewport of the grid. As the end user scrolls, those DOM elements will be dynamically reused to render the new data.",
-      "valueOptions": null
+      "description": "Enables/disables virtualization. Virtualization can greatly enhance rendering performance. If enabled, the number of actual rendered rows (DOM elements) will be constant and related to the visible viewport of the grid. As the end user scrolls, those DOM elements will be dynamically reused to render the new data."
     },
     "virtualizationMode": {
       "type": "string",
@@ -792,14 +751,12 @@
     "virtualizationMouseWheelStep": {
       "type": "number",
       "defaultValue": null,
-      "description": "number of pixels to move the grid when virtualization is enabled, and mouse wheel scrolling is performed over the virtual grid area. The \"null\" value will assume this is set to avgRowHeight",
-      "valueOptions": null
+      "description": "number of pixels to move the grid when virtualization is enabled, and mouse wheel scrolling is performed over the virtual grid area. The \"null\" value will assume this is set to avgRowHeight"
     },
     "width": {
       "type": "string",
       "defaultValue": null,
-      "description": "",
-      "valueOptions": null
+      "description": ""
     }
   }
 }

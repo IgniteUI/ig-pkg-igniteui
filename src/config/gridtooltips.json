@@ -74,7 +74,6 @@
       "type": "unknown",
       "defaultValue": null,
       "description": "a list of custom column settings that specify custom tooltip settings for a specific column (whether tooltips are enabled / disabled)",
-      "valueOptions": null,
       "schema": {
         "columnKey": {
           "type": "string",
@@ -96,32 +95,27 @@
     "cursorLeftOffset": {
       "type": "number",
       "defaultValue": 10.0,
-      "description": "sets the left position of the tooltip relative to the mouse cursor",
-      "valueOptions": null
+      "description": "sets the left position of the tooltip relative to the mouse cursor"
     },
     "cursorTopOffset": {
       "type": "number",
       "defaultValue": 15.0,
-      "description": "sets the top position of the tooltip relative to the mouse cursor",
-      "valueOptions": null
+      "description": "sets the top position of the tooltip relative to the mouse cursor"
     },
     "fadeTimespan": {
       "type": "number",
       "defaultValue": 150.0,
-      "description": "sets the time tooltip fades in and out when showing/hiding",
-      "valueOptions": null
+      "description": "sets the time tooltip fades in and out when showing/hiding"
     },
     "hideDelay": {
       "type": "number",
       "defaultValue": 300.0,
-      "description": "Type=\"integer\" The time in milliseconds after which tooltip hides when mouse <br>&nbsp;&nbsp;&nbsp;cursor gets outside of the cell.",
-      "valueOptions": null
+      "description": "Type=\"integer\" The time in milliseconds after which tooltip hides when mouse <br>&nbsp;&nbsp;&nbsp;cursor gets outside of the cell."
     },
     "showDelay": {
       "type": "number",
       "defaultValue": 500.0,
-      "description": "The time in milliseconds after which tooltip will show when <br>&nbsp;&nbsp;&nbsp;mouse cursor is hovered over a cell.",
-      "valueOptions": null
+      "description": "The time in milliseconds after which tooltip will show when <br>&nbsp;&nbsp;&nbsp;mouse cursor is hovered over a cell."
     },
     "style": {
       "type": "string",

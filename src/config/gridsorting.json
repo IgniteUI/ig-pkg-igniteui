@@ -233,20 +233,17 @@
     "applySortedColumnCss": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Enables/disables special styling for sorted columns. If false, sorted column cells will not have any special sort-related styling",
-      "valueOptions": null
+      "description": "Enables/disables special styling for sorted columns. If false, sorted column cells will not have any special sort-related styling"
     },
     "caseSensitive": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Enables or disables the case sensitivity of the sorting. Works only for local sorting",
-      "valueOptions": null
+      "description": "Enables or disables the case sensitivity of the sorting. Works only for local sorting"
     },
     "columnSettings": {
       "type": "array",
       "defaultValue": null,
       "description": "List of custom column settings that specify custom sorting settings for a specific column (whether sorting is enabled / disabled, default sort direction, first sort direction, etc.)",
-      "valueOptions": null,
       "schema": {
         "columnKey": {
           "type": "string",
@@ -303,26 +300,22 @@
     "customSortFunction": {
       "type": "function",
       "defaultValue": null,
-      "description": "custom sort function accepting three parameters - the data to be sorted, an array of data source field definitions, and the direction to sort with (optional). The function should return the sorted data array",
-      "valueOptions": null
+      "description": "custom sort function accepting three parameters - the data to be sorted, an array of data source field definitions, and the direction to sort with (optional). The function should return the sorted data array"
     },
     "featureChooserSortAsc": {
       "type": "string",
       "defaultValue": "",
-      "description": "Specifies text for sorting ascending",
-      "valueOptions": null
+      "description": "Specifies text for sorting ascending"
     },
     "featureChooserSortDesc": {
       "type": "string",
       "defaultValue": "",
-      "description": "Specifies text for sorting descending",
-      "valueOptions": null
+      "description": "Specifies text for sorting descending"
     },
     "featureChooserText": {
       "type": "string",
       "defaultValue": "",
-      "description": "Specifies text in feature chooser",
-      "valueOptions": null
+      "description": "Specifies text in feature chooser"
     },
     "firstSortDirection": {
       "type": "string",
@@ -332,97 +325,75 @@
         {
           "name": "ascending",
           "type": "string",
-          "description": ""
+          "description": "Direction is ascending"
         },
         {
           "name": "descending",
           "type": "string",
-          "description": ""
+          "description": "Direction is descending"
         }
       ]
     },
     "modalDialogAnimationDuration": {
       "type": "number",
       "defaultValue": 200.0,
-      "description": "Specifies time of milliseconds for animation duration to show/hide modal dialog",
-      "valueOptions": null
+      "description": "Specifies time of milliseconds for animation duration to show/hide modal dialog"
     },
     "modalDialogButtonApplyText": {
       "type": "string",
       "defaultValue": "",
-      "description": "Specifies text of button which apply changes in modal dialog",
-      "valueOptions": null
+      "description": "Specifies text of button which apply changes in modal dialog"
     },
     "modalDialogButtonCancelText": {
       "type": "string",
       "defaultValue": "",
-      "description": "Specifies text of button which cancel changes in modal dialog",
-      "valueOptions": null
+      "description": "Specifies text of button which cancel changes in modal dialog"
     },
     "modalDialogCaptionButtonAsc": {
       "type": "string",
       "defaultValue": "",
-      "description": "Specifies caption for each ascending sorted column in multiple sorting dialog",
-      "valueOptions": null
+      "description": "Specifies caption for each ascending sorted column in multiple sorting dialog"
     },
     "modalDialogCaptionButtonDesc": {
       "type": "string",
       "defaultValue": "",
-      "description": "Specifies caption for each descending sorted column in multiple sorting dialog",
-      "valueOptions": null
+      "description": "Specifies caption for each descending sorted column in multiple sorting dialog"
     },
     "modalDialogCaptionButtonUnsort": {
       "type": "string",
       "defaultValue": "",
-      "description": "Specifies caption for unsort button in multiple sorting dialog",
-      "valueOptions": null
+      "description": "Specifies caption for unsort button in multiple sorting dialog"
     },
     "modalDialogCaptionText": {
       "type": "string",
       "defaultValue": "",
-      "description": "Specifies caption text for multiple sorting dialog",
-      "valueOptions": null
+      "description": "Specifies caption text for multiple sorting dialog"
     },
     "modalDialogHeight": {
-      "type": "string",
+      "type": "number",
       "defaultValue": "",
-      "description": "Specifies height of multiple sorting dialog ",
-      "valueOptions": [
-        {
-          "name": null,
-          "type": "string",
-          "description": " The widget height can be set in pixels (px) and percentage (%)."
-        },
-        {
-          "name": null,
-          "type": "number",
-          "description": " The widget height can be set as a number"
-        }
+      "description": "Specifies height of multiple sorting dialog "
       ]
     },
     "modalDialogResetButtonLabel": {
       "type": "string",
       "defaultValue": "",
-      "description": "Specifies sortby button label for each unsorted column in multiple sorting dialog",
-      "valueOptions": null
+      "description": "Specifies sortby button label for each unsorted column in multiple sorting dialog"
     },
     "modalDialogSortByButtonText": {
       "type": "string",
       "defaultValue": "",
-      "description": "Specifies sortby button text for each unsorted column in multiple sorting dialog",
-      "valueOptions": null
+      "description": "Specifies sortby button text for each unsorted column in multiple sorting dialog"
     },
     "modalDialogSortOnClick": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Specifies whether sorting to be applied immediately when click sort/unsort columns in multiple sorting dialog. When it is false Apply button shows and sorting is applied when the button is clicked",
-      "valueOptions": null
+      "description": "Specifies whether sorting to be applied immediately when click sort/unsort columns in multiple sorting dialog. When it is false Apply button shows and sorting is applied when the button is clicked"
     },
     "modalDialogWidth": {
       "type": "number",
       "defaultValue": 350.0,
-      "description": "Specifies width of multiple sorting dialog",
-      "valueOptions": null
+      "description": "Specifies width of multiple sorting dialog"
     },
     "mode": {
       "type": "string",
@@ -444,26 +415,22 @@
     "sortedColumnTooltip": {
       "type": "string",
       "defaultValue": "",
-      "description": "custom sorted column tooltip in jQuery templating format",
-      "valueOptions": null
+      "description": "custom sorted column tooltip in jQuery templating format"
     },
     "sortUrlKey": {
       "type": "string",
       "defaultValue": null,
-      "description": "URL param name which specifies how sorting expressions will be encoded in the URL. Uses OData conventions. ex: ?sort(col1)=asc",
-      "valueOptions": null
+      "description": "URL param name which specifies how sorting expressions will be encoded in the URL. Uses OData conventions. ex: ?sort(col1)=asc"
     },
     "sortUrlKeyAscValue": {
       "type": "string",
       "defaultValue": null,
-      "description": "URL param value for ascending type of sorting. Uses OData conventions. Example: ?sort(col1)=asc",
-      "valueOptions": null
+      "description": "URL param value for ascending type of sorting. Uses OData conventions. Example: ?sort(col1)=asc"
     },
     "sortUrlKeyDescValue": {
       "type": "string",
       "defaultValue": null,
-      "description": "URL param value for descending type of sorting. Uses OData conventions",
-      "valueOptions": null
+      "description": "URL param value for descending type of sorting. Uses OData conventions"
     },
     "type": {
       "type": "string",
@@ -485,8 +452,7 @@
     "unsortedColumnTooltip": {
       "type": "string",
       "defaultValue": "",
-      "description": "Custom unsorted column tooltip in jQuery templating format",
-      "valueOptions": null
+      "description": "Custom unsorted column tooltip in jQuery templating format"
     }
   }
 }

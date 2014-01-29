@@ -137,87 +137,73 @@
     "animationDuration": {
       "type": "number",
       "defaultValue": 500.0,
-      "description": "The row expanding/collapsing animation duration in ms.",
-      "valueOptions": null
+      "description": "The row expanding/collapsing animation duration in ms."
     },
     "autoGenerateLayouts": {
       "type": "bool",
       "defaultValue": false,
-      "description": "if true, will autogenerate all layouts assuming default values for \"childrenDataProperty\" <br>&nbsp;&nbsp;&nbsp;&nbsp;When autoGenerateLayouts is enabled, it will automatically generate all columns recursively. (all columns on all levels)",
-      "valueOptions": null
+      "description": "if true, will autogenerate all layouts assuming default values for \"childrenDataProperty\" <br>&nbsp;&nbsp;&nbsp;&nbsp;When autoGenerateLayouts is enabled, it will automatically generate all columns recursively. (all columns on all levels)"
     },
     "collapseTooltip": {
       "type": "string",
       "defaultValue": "",
-      "description": "Specifies the default tooltip applied to an expand column cell, that is currently expanded",
-      "valueOptions": null
+      "description": "Specifies the default tooltip applied to an expand column cell, that is currently expanded"
     },
     "columnLayouts": {
       "type": "array",
       "defaultValue": null,
       "description": "List of columnLayout objects that specify the structure of the child grids. All options that are applicable to a flat grid are also applicable here",
-      "valueOptions": null,
       "schema": "grid.properties"
     },
     "defaultChildrenDataProperty": {
       "type": "string",
       "defaultValue": "children",
-      "description": "Specifies the default property in the response where children will be located",
-      "valueOptions": null
+      "description": "Specifies the default property in the response where children will be located"
     },
     "expandCollapseAnimations": {
       "type": "bool",
       "defaultValue": true,
-      "description": "applies a linear animation - either expanding or collapsing depending on the parent row state",
-      "valueOptions": null
+      "description": "applies a linear animation - either expanding or collapsing depending on the parent row state"
     },
     "expandColWidth": {
       "type": "number",
       "defaultValue": 30.0,
-      "description": "Specifies the expand column width",
-      "valueOptions": null
+      "description": "Specifies the expand column width"
     },
     "expandTooltip": {
       "type": "string",
       "defaultValue": "",
-      "description": "Specifies the default tooltip applied to an expand column cell, that is currently collapsed",
-      "valueOptions": null
+      "description": "Specifies the default tooltip applied to an expand column cell, that is currently collapsed"
     },
     "initialDataBindDepth": {
       "type": "number",
       "defaultValue": -1.0,
-      "description": "Only the first level will be data-bound initially. Also serves as \"render\" depth, meaning that depending on this prop, the grid will",
-      "valueOptions": null
+      "description": "Only the first level will be data-bound initially. Also serves as \"render\" depth, meaning that depending on this prop, the grid will"
     },
     "initialExpandDepth": {
       "type": "number",
       "defaultValue": -1.0,
-      "description": "No levels will be automatically expanded when the widget is instantiated for the first time",
-      "valueOptions": null
+      "description": "No levels will be automatically expanded when the widget is instantiated for the first time"
     },
     "maxDataBindDepth": {
       "type": "number",
       "defaultValue": -1.0,
-      "description": "Specifies the limit on the number of levels to bind to",
-      "valueOptions": null
+      "description": "Specifies the limit on the number of levels to bind to"
     },
     "odata": {
       "type": "bool",
       "defaultValue": false,
-      "description": "If true, encodes all requests using OData conventions and the $expand syntax",
-      "valueOptions": null
+      "description": "If true, encodes all requests using OData conventions and the $expand syntax"
     },
     "pathSeparator": {
       "type": "string",
       "defaultValue": "/",
-      "description": "Specifies the delimiter for constructing paths , for hierarchical lookup of data",
-      "valueOptions": null
+      "description": "Specifies the delimiter for constructing paths , for hierarchical lookup of data"
     },
     "rest": {
       "type": "bool",
       "defaultValue": false,
-      "description": "If true, load on demand will be achieved using REST compliant resource access with appropriate url-s for<br>&nbsp;&nbsp;&nbsp;&nbsp;the ajax GET calls.",
-      "valueOptions": null
+      "description": "If true, load on demand will be achieved using REST compliant resource access with appropriate url-s for<br>&nbsp;&nbsp;&nbsp;&nbsp;the ajax GET calls."
     }
   }
 }

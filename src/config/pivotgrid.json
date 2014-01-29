@@ -409,62 +409,52 @@
     "allowHeaderColumnsSorting": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Enables sorting of the header cells in columns.",
-      "valueOptions": null
+      "description": "Enables sorting of the header cells in columns."
     },
     "allowHeaderRowsSorting": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Enables sorting of the header cells in rows.",
-      "valueOptions": null
+      "description": "Enables sorting of the header cells in rows."
     },
     "allowSorting": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Enables sorting of the value cells in columns.",
-      "valueOptions": null
+      "description": "Enables sorting of the value cells in columns."
     },
     "compactColumnHeaderIndentation": {
       "type": "number",
       "defaultValue": 30.0,
-      "description": "The indentation for every level column when the compactColumnHeaders is set to true.",
-      "valueOptions": null
+      "description": "The indentation for every level column when the compactColumnHeaders is set to true."
     },
     "compactColumnHeaders": {
       "type": "bool",
       "defaultValue": false,
-      "description": "A boolean value indicating wheter the column headers should be arranged for compact header layout – each hieararchy is in a single row.",
-      "valueOptions": null
+      "description": "A boolean value indicating wheter the column headers should be arranged for compact header layout – each hieararchy is in a single row."
     },
     "compactRowHeaderIndentation": {
       "type": "number",
       "defaultValue": 20.0,
-      "description": "The indentation for every level row when the compactRowHeaders is set to true.",
-      "valueOptions": null
+      "description": "The indentation for every level row when the compactRowHeaders is set to true."
     },
     "compactRowHeaders": {
       "type": "bool",
       "defaultValue": true,
-      "description": "A boolean value indicating wheter the row headers should be arranged for compact header layout – each hieararchy is in a single column.",
-      "valueOptions": null
+      "description": "A boolean value indicating wheter the row headers should be arranged for compact header layout – each hieararchy is in a single column."
     },
     "customMoveValidation": {
       "type": "function",
       "defaultValue": null,
-      "description": "A function that will be called to determine if an item can be moved in or dropped on an area of the pivot grid.<br>            paramType=\"string\" The location where the item will be moved - igPivotGrid, igPivotDataSelector, filters, rows, columns or measures.<br>            paramType=\"string\" The type of the item - Hierarchy, Measure or MeasureList.<br>            paramType=\"string\" The unique name of the item.<br>            returnType=\"bool\"  The function must return true if the item should be accepted.",
-      "valueOptions": null
+      "description": "A function that will be called to determine if an item can be moved in or dropped on an area of the pivot grid.<br>            paramType=\"string\" The location where the item will be moved - igPivotGrid, igPivotDataSelector, filters, rows, columns or measures.<br>            paramType=\"string\" The type of the item - Hierarchy, Measure or MeasureList.<br>            paramType=\"string\" The unique name of the item.<br>            returnType=\"bool\"  The function must return true if the item should be accepted."
     },
     "dataSource": {
       "type": "object",
       "defaultValue": null,
-      "description": "An instance of $.ig.OlapXmlaDataSource or $.ig.OlapFlatDataSource.",
-      "valueOptions": null
+      "description": "An instance of $.ig.OlapXmlaDataSource or $.ig.OlapFlatDataSource."
     },
     "dataSourceOptions": {
       "type": "object",
       "defaultValue": null,
       "description": "An object that will be used to create an instance of $.ig.OlapXmlaDataSource or $.ig.OlapFlatDataSource.<br>            The provided value must contain an object with settings for one of the data source types - xmlaOptions or flatDataOptions.",
-      "valueOptions": null,
       "schema": {
         "xmlaOptions": {
           "type": "object",
@@ -762,44 +752,37 @@
     "defaultRowHeaderWidth": {
       "type": "number",
       "defaultValue": 200.0,
-      "description": "Specifies the width of the row headers.",
-      "valueOptions": null
+      "description": "Specifies the width of the row headers."
     },
     "deferUpdate": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Setting deferUpdate to true will not apply changes to the data source until the updateGrid method is called.",
-      "valueOptions": null
+      "description": "Setting deferUpdate to true will not apply changes to the data source until the updateGrid method is called."
     },
     "disableColumnsDropArea": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Disable the drag and drop for the columns drop area and the ability to use filtering and remove items from it.",
-      "valueOptions": null
+      "description": "Disable the drag and drop for the columns drop area and the ability to use filtering and remove items from it."
     },
     "disableFiltersDropArea": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Disable the drag and drop for the filters drop area and the ability to use filtering and remove items from it.",
-      "valueOptions": null
+      "description": "Disable the drag and drop for the filters drop area and the ability to use filtering and remove items from it."
     },
     "disableMeasuresDropArea": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Disable the drag and drop for the measures drop area and the ability to use filtering and remove items from it.",
-      "valueOptions": null
+      "description": "Disable the drag and drop for the measures drop area and the ability to use filtering and remove items from it."
     },
     "disableRowsDropArea": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Disable the drag and drop for the rows drop area and the ability to use filtering and remove items from it.",
-      "valueOptions": null
+      "description": "Disable the drag and drop for the rows drop area and the ability to use filtering and remove items from it."
     },
     "dragAndDropSettings": {
       "type": "object",
       "defaultValue": null,
       "description": "Settings for the drag and drop functionality of the igPivotGrid.",
-      "valueOptions": null,
       "schema": {
         "appendTo": {
           "type": "string",
@@ -861,7 +844,6 @@
       "type": "object",
       "defaultValue": null,
       "description": "Options specific to the igGrid that will render the pivot grid view.",
-      "valueOptions": null,
       "schema": {
         "defaultColumnWidth": {
           "type": "number",
@@ -926,44 +908,37 @@
     "hideColumnsDropArea": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Hide the columns drop area.",
-      "valueOptions": null
+      "description": "Hide the columns drop area."
     },
     "hideFiltersDropArea": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Hide the filters drop area.",
-      "valueOptions": null
+      "description": "Hide the filters drop area."
     },
     "hideMeasuresDropArea": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Hide the measures drop area.",
-      "valueOptions": null
+      "description": "Hide the measures drop area."
     },
     "hideRowsDropArea": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Hide the rows drop area.",
-      "valueOptions": null
+      "description": "Hide the rows drop area."
     },
     "isParentInFrontForColumns": {
       "type": "bool",
       "defaultValue": false,
-      "description": "A boolean value indicating whether a parent in the columns is in front of its children.<br>            If set to true, the query set sorts members in a level in their natural order - child members immediately follow their parent members.<br>            If set to false the query set sorts the members in a level using a post-natural order. In other words, child members precede their parents.",
-      "valueOptions": null
+      "description": "A boolean value indicating whether a parent in the columns is in front of its children.<br>            If set to true, the query set sorts members in a level in their natural order - child members immediately follow their parent members.<br>            If set to false the query set sorts the members in a level using a post-natural order. In other words, child members precede their parents."
     },
     "isParentInFrontForRows": {
       "type": "bool",
       "defaultValue": true,
-      "description": "A boolean value indicating whether a parent in the rows is in front of its children.<br>            If set to true, the query set sorts members in a level in their natural order - child members immediately follow their parent members.<br>            If set to false the query set sorts the members in a level using a post-natural order. In other words, child members precede their parents.",
-      "valueOptions": null
+      "description": "A boolean value indicating whether a parent in the rows is in front of its children.<br>            If set to true, the query set sorts members in a level in their natural order - child members immediately follow their parent members.<br>            If set to false the query set sorts the members in a level using a post-natural order. In other words, child members precede their parents."
     },
     "levelSortDirections": {
       "type": "array",
       "defaultValue": null,
       "description": "An array of level sort direction items, which predefine the sorted header cells.",
-      "valueOptions": null,
       "schema": {
         "levelUniqueName": {
           "type": "string",

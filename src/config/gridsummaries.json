@@ -202,14 +202,12 @@
     "callee": {
       "type": "function",
       "defaultValue": null,
-      "description": "Function reference - it is called when data is retrieved from the data source",
-      "valueOptions": null
+      "description": "Function reference - it is called when data is retrieved from the data source"
     },
     "columnSettings": {
       "type": "array",
       "defaultValue": null,
       "description": "List of column settings that specifies custom summaries options per column basis",
-      "valueOptions": null,
       "schema": {
         "columnKey": {
           "type": "string",
@@ -225,14 +223,12 @@
         "allowSummaries": {
           "type": "bool",
           "defaultValue": true,
-          "description": "Enables disables summaries for the column",
-          "valueOptions": null
+          "description": "Enables disables summaries for the column"
         },
         "summaryOperands": {
           "type": "array",
           "defaultValue": null,
           "description": "Defines the summary operands",
-          "valueOptions": null,
           "schema": {
             "rowDisplayLabel": {
               "type": "string",
@@ -279,8 +275,7 @@
             "active": {
               "type": "bool",
               "defaultValue": true,
-              "description": "If it is false the summary operand will be shown in dropdown but it will not be made calculation",
-              "valueOptions": null
+              "description": "If it is false the summary operand will be shown in dropdown but it will not be made calculation"
             },
             "summaryCalculator": {
               "type": "string",
@@ -302,8 +297,7 @@
             "isGridFormatter": {
               "type": "bool",
               "defaultValue": false,
-              "description": "Specifies whether to be used grid formatter for result for the current summary operand",
-              "valueOptions": null
+              "description": "Specifies whether to be used grid formatter for result for the current summary operand"
             }
           }
         }
@@ -311,99 +305,100 @@
     },
     "compactRenderingMode": {
       "type": "string",
-      "defaultValue": null,
-      "description": " Specifies how compact the summaries are rendered. ",
-      "valueOptions": []
+      "defaultValue": "true",
+      "description": "Specifies how compact the summaries are rendered.",
+      "valueOptions": [
+		{
+		  "name": "auto",
+          "type": "string",
+          "description": "Will use True if the maximum number of visible summaries is one or less and False otherwise"
+        },
+        {
+          "name": "true",
+          "type": "string",
+          "description": "Indicates that the summaries may be rendered compactly, even mixing different summaries on the same line."
+		},
+		{
+          "name": "false",
+          "type": "string",
+          "description": "Ensures that each summary type is occupying a separate line."
+		}
+	  ]
     },
     "defaultDecimalDisplay": {
       "type": "number",
       "defaultValue": 2.0,
-      "description": "The number of digits after the decimal point. If gridFormatter is True then this option is ignored.",
-      "valueOptions": null
+      "description": "The number of digits after the decimal point. If gridFormatter is True then this option is ignored."
     },
     "dialogButtonCancelText": {
       "type": "string",
       "defaultValue": "",
-      "description": "Text of the button Cancel in the summaries dropdown",
-      "valueOptions": null
+      "description": "Text of the button Cancel in the summaries dropdown"
     },
     "dialogButtonOKText": {
       "type": "string",
       "defaultValue": "",
-      "description": "Text of the button OK in the summaries dropdown",
-      "valueOptions": null
+      "description": "Text of the button OK in the summaries dropdown"
     },
     "dropDownDialogAnimationDuration": {
       "type": "number",
       "defaultValue": 400.0,
-      "description": "Dropdown animation duration",
-      "valueOptions": null
+      "description": "Dropdown animation duration"
     },
     "dropDownHeight": {
-      "type": "number",
+	  "type": "number",
       "defaultValue": "",
-      "description": "Height of the dropdown in pixels",
-      "valueOptions": null
+      "description": "Height of the dropdown in pixels"
     },
     "dropDownWidth": {
       "type": "number",
       "defaultValue": "",
-      "description": "Width of the dropdown in pixels",
-      "valueOptions": null
+      "description": "Width of the dropdown in pixels"
     },
     "emptyCellText": {
       "type": "string",
       "defaultValue": "",
-      "description": "Empty text template to be shown for empty cells",
-      "valueOptions": null
+      "description": "Empty text template to be shown for empty cells"
     },
     "featureChooserText": {
       "type": "string",
       "defaultValue": "",
-      "description": "Get or set text that is shown in the feature chooser dropdown when summaries are hidden",
-      "valueOptions": null
+      "description": "Get or set text that is shown in the feature chooser dropdown when summaries are hidden"
     },
     "featureChooserTextHide": {
       "type": "string",
       "defaultValue": "",
-      "description": "Get or set text that is shown in the feauture chooser dropdown when summaries are shown",
-      "valueOptions": null
+      "description": "Get or set text that is shown in the feauture chooser dropdown when summaries are shown"
     },
     "isGridFormatter": {
       "type": "bool",
       "defaultValue": true,
-      "description": "if this property is enabled and in summaryOperand isGridFormatter  is undefined then use grid formatting for cells",
-      "valueOptions": null
+      "description": "if this property is enabled and in summaryOperand isGridFormatter  is undefined then use grid formatting for cells"
     },
     "resultTemplate": {
       "type": "string",
       "defaultValue": "{0} = {1}",
-      "description": "Result template for summary result(shown in table cell)",
-      "valueOptions": null
+      "description": "Result template for summary result(shown in table cell)"
     },
     "showDropDownButton": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Show/hide footer button(on click show/hide dropdown)",
-      "valueOptions": null
+      "description": "Show/hide footer button(on click show/hide dropdown)"
     },
     "showSummariesButton": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Show header button icon in the header cell. On click - shows/hides summaries",
-      "valueOptions": null
+      "description": "Show header button icon in the header cell. On click - shows/hides summaries"
     },
     "summariesHeaderButtonTooltip": {
       "type": "string",
       "defaultValue": "",
-      "description": "Tooltip text for header cell button",
-      "valueOptions": null
+      "description": "Tooltip text for header cell button"
     },
     "summariesResponseKey": {
       "type": "string",
       "defaultValue": "summaries",
-      "description": "Result key by which we get data from the result returned by remote data source.",
-      "valueOptions": null
+      "description": "Result key by which we get data from the result returned by remote data source."
     },
     "summaryExecution": {
       "type": "string",
@@ -430,8 +425,7 @@
     "summaryExprUrlKey": {
       "type": "string",
       "defaultValue": "summaries",
-      "description": "Set key in GET Request for summaries - used only when type is remote",
-      "valueOptions": null
+      "description": "Set key in GET Request for summaries - used only when type is remote"
     },
     "type": {
       "type": "string",

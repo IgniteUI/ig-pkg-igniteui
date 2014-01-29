@@ -345,14 +345,12 @@
     "animationDuration": {
       "type": "number",
       "defaultValue": 200.0,
-      "description": "Specifies the duration of each animation such as the expand/collapse.",
-      "valueOptions": null
+      "description": "Specifies the duration of each animation such as the expand/collapse."
     },
     "bindings": {
       "type": "object",
       "defaultValue": null,
       "description": "Specifies the data binding properties and keys.",
-      "valueOptions": null,
       "schema": {
         "textKey": {
           "type": "string",
@@ -463,38 +461,32 @@
     "dataSource": {
       "type": "array",
       "defaultValue": null,
-      "description": "Specifies any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself.",
-      "valueOptions": null
+      "description": "Specifies any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself."
     },
     "dataSourceType": {
       "type": "string",
       "defaultValue": null,
-      "description": "Explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property.",
-      "valueOptions": null
+      "description": "Explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property."
     },
     "dataSourceUrl": {
       "type": "string",
       "defaultValue": null,
-      "description": "Specifies a remote URL accepted by $.ig.DataSource in order to request data from it",
-      "valueOptions": null
+      "description": "Specifies a remote URL accepted by $.ig.DataSource in order to request data from it"
     },
     "defaultNodeTarget": {
       "type": "string",
       "defaultValue": "_self",
-      "description": "Specifies the default target of the node anchor.",
-      "valueOptions": null
+      "description": "Specifies the default target of the node anchor."
     },
     "dragAndDrop": {
       "type": "bool",
       "defaultValue": false,
-      "description": "If set to true it would enable drag and drop functionality.",
-      "valueOptions": null
+      "description": "If set to true it would enable drag and drop functionality."
     },
     "dragAndDropSettings": {
       "type": "object",
       "defaultValue": null,
       "description": "Specific settings for the drag and drop functionality.",
-      "valueOptions": null,
       "schema": {
         "allowDrop": {
           "type": "bool",
@@ -630,68 +622,57 @@
     "height": {
       "type": "string",
       "defaultValue": null,
-      "description": "",
-      "valueOptions": null
+      "description": ""
     },
     "hotTracking": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Setting this option to false would make the tree to not apply hover styles on the nodes when they are hovered",
-      "valueOptions": null
+      "description": "Setting this option to false would make the tree to not apply hover styles on the nodes when they are hovered"
     },
     "initialExpandDepth": {
       "type": "number",
       "defaultValue": -1.0,
-      "description": "Specifies the depth down to which the tree would be expanded upon initial render.",
-      "valueOptions": null
+      "description": "Specifies the depth down to which the tree would be expanded upon initial render."
     },
     "leafNodeImageClass": {
       "type": "string",
       "defaultValue": null,
-      "description": "string Specified class with a CSS sprite would be rendered for each node that has no children (If you define both image URL and class the URL would be rendered).<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored",
-      "valueOptions": null
+      "description": "string Specified class with a CSS sprite would be rendered for each node that has no children (If you define both image URL and class the URL would be rendered).<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored"
     },
     "leafNodeImageTooltip": {
       "type": "string",
       "defaultValue": null,
-      "description": "string Specified a tooltip that would be rendered for each node that has no children.<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored",
-      "valueOptions": null
+      "description": "string Specified a tooltip that would be rendered for each node that has no children.<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored"
     },
     "leafNodeImageUrl": {
       "type": "string",
       "defaultValue": null,
-      "description": "string Image with the specified URL will be rendered for each node that has no children (If you define both image URL and class the URL would be rendered).<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored",
-      "valueOptions": null
+      "description": "string Image with the specified URL will be rendered for each node that has no children (If you define both image URL and class the URL would be rendered).<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored"
     },
     "loadOnDemand": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Specifies all the data would be bound initially or each child collection would be bound upon demand.",
-      "valueOptions": null
+      "description": "Specifies all the data would be bound initially or each child collection would be bound upon demand."
     },
     "parentNodeImageClass": {
       "type": "string",
       "defaultValue": null,
-      "description": "string Specified class with a CSS sprite would be rendered for each node that has children (If you define both image URL and class the URL would be rendered).<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored",
-      "valueOptions": null
+      "description": "string Specified class with a CSS sprite would be rendered for each node that has children (If you define both image URL and class the URL would be rendered).<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored"
     },
     "parentNodeImageTooltip": {
       "type": "string",
       "defaultValue": null,
-      "description": "string Specified a tooltip that would be rendered for each node that has children.<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored",
-      "valueOptions": null
+      "description": "string Specified a tooltip that would be rendered for each node that has children.<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored"
     },
     "parentNodeImageUrl": {
       "type": "string",
       "defaultValue": null,
-      "description": "string Image with the specified URL will be rendered for each node that has children (If you define both image URL and class the URL would be rendered).<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored",
-      "valueOptions": null
+      "description": "string Image with the specified URL will be rendered for each node that has children (If you define both image URL and class the URL would be rendered).<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored"
     },
     "pathSeparator": {
       "type": "string",
       "defaultValue": "_",
-      "description": "Specifies the node data-path separator character.",
-      "valueOptions": null
+      "description": "Specifies the node data-path separator character."
     },
     "requestType": {
       "type": "string",
@@ -713,38 +694,32 @@
     "responseContentType": {
       "type": "string",
       "defaultValue": null,
-      "description": "content type of the response. See http://api.jquery.com/jQuery.ajax/ => contentType",
-      "valueOptions": null
+      "description": "content type of the response. See http://api.jquery.com/jQuery.ajax/ => contentType"
     },
     "responseDataKey": {
       "type": "string",
       "defaultValue": null,
-      "description": "see $.ig.DataSource. <br>&nbsp;&nbsp;&nbsp;&nbsp;string Specifies the name of the property in which data records are held if the response is wrapped. <br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored.",
-      "valueOptions": null
+      "description": "see $.ig.DataSource. <br>&nbsp;&nbsp;&nbsp;&nbsp;string Specifies the name of the property in which data records are held if the response is wrapped. <br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored."
     },
     "responseDataType": {
       "type": "string",
       "defaultValue": null,
-      "description": "string Explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property.<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored.",
-      "valueOptions": null
+      "description": "string Explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property.<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored."
     },
     "singleBranchExpand": {
       "type": "bool",
       "defaultValue": false,
-      "description": "If set to true then only one branch at each level of the tree can be expanded at a time. Otherwise multiple branches can be expanded at a time.",
-      "valueOptions": null
+      "description": "If set to true then only one branch at each level of the tree can be expanded at a time. Otherwise multiple branches can be expanded at a time."
     },
     "updateUrl": {
       "type": "string",
       "defaultValue": null,
-      "description": "URL to which updating requests will be made.",
-      "valueOptions": null
+      "description": "URL to which updating requests will be made."
     },
     "width": {
       "type": "string",
       "defaultValue": null,
-      "description": "",
-      "valueOptions": null
+      "description": ""
     }
   }
 }

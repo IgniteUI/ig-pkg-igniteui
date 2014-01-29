@@ -121,14 +121,12 @@
     "dragDelta": {
       "type": "number",
       "defaultValue": 3.0,
-      "description": "Specifies drag delta of the split bar. In order to start dragging move, the mouse has to be moved specific distance from original position.",
-      "valueOptions": null
+      "description": "Specifies drag delta of the split bar. In order to start dragging move, the mouse has to be moved specific distance from original position."
     },
     "height": {
       "type": "string",
       "defaultValue": null,
-      "description": " Gets sets how the height of the control can be set. Splitter will fit the tree inside its parent container, if no other heights are defined.",
-      "valueOptions": null
+      "description": " Gets sets how the height of the control can be set. Splitter will fit the tree inside its parent container, if no other heights are defined."
     },
     "orientation": {
       "type": "string",
@@ -151,7 +149,6 @@
       "type": "array",
       "defaultValue": null,
       "description": "Specifies the panel settings. The panels are no more than two. Settings are specified via enumeration.<br>&nbsp;&nbsp;&nbsp;size=\"string|int\"<br>&nbsp;&nbsp;&nbsp;min type=\"string|int\"<br>&nbsp;&nbsp;&nbsp;max type=\"string|int\"<br>&nbsp;&nbsp;&nbsp;resizable <br>&nbsp;&nbsp;&nbsp;collapsed <br>&nbsp;&nbsp;&nbsp;collapsible",
-      "valueOptions": null,
       "schema": {
           "size": {
               "type": "string",
@@ -183,8 +180,7 @@
     "width": {
       "type": "string",
       "defaultValue": null,
-      "description": " Gets sets how the width of the control can be set. Splitter will fit the tree inside its parent container, if no other widths are defined.",
-      "valueOptions": null
+      "description": " Gets sets how the width of the control can be set. Splitter will fit the tree inside its parent container, if no other widths are defined."
     }
   }
 }

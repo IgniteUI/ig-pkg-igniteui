@@ -41,32 +41,27 @@
     "applicationIndicator": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets or sets the Application Indicator assigned to identify the specification concerned by AIM International.<br>&nbsp;The value is respected only when the Fnc1Mode is set to Industry. Its value may take the form of any single Latin alphabetic character from the set {a - z, A - Z} or a two-digit number.",
-      "valueOptions": null
+      "description": "Gets or sets the Application Indicator assigned to identify the specification concerned by AIM International.<br>&nbsp;The value is respected only when the Fnc1Mode is set to Industry. Its value may take the form of any single Latin alphabetic character from the set {a - z, A - Z} or a two-digit number."
     },
     "backingBrush": {
       "type": "string",
       "defaultValue": "white",
-      "description": "Gets or sets the brush to use to fill the backing of the barcode.",
-      "valueOptions": null
+      "description": "Gets or sets the brush to use to fill the backing of the barcode."
     },
     "backingOutline": {
       "type": "string",
       "defaultValue": "transparent",
-      "description": "Gets or sets the brush to use for the outline of the backing.",
-      "valueOptions": null
+      "description": "Gets or sets the brush to use for the outline of the backing."
     },
     "backingStrokeThickness": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "Gets or sets the stroke thickness of the backing outline.",
-      "valueOptions": null
+      "description": "Gets or sets the stroke thickness of the backing outline."
     },
     "barBrush": {
       "type": "string",
       "defaultValue": "black",
-      "description": "Gets or sets the brush to use to fill the background of the bars.",
-      "valueOptions": null
+      "description": "Gets or sets the brush to use to fill the background of the bars."
     },
     "barsFillMode": {
       "type": "string",
@@ -88,8 +83,7 @@
     "data": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets or sets the data value.",
-      "valueOptions": null
+      "description": "Gets or sets the data value."
     },
     "eciHeaderDisplayMode": {
       "type": "string",
@@ -111,8 +105,7 @@
     "eciNumber": {
       "type": "number",
       "defaultValue": 26.0,
-      "description": "Each Extended Channel Interpretation (ECI) is designated by a six-digit assignment number: 000000 - 999999. <br>&nbsp;The default value depends on the loaded encodings. The default is ECI 000003 (representing ISO/IEC 8859-1) if the ISO/IEC 8859-1 character set is loaded. Otherwise the default value is 000026 (representing UTF-8).",
-      "valueOptions": null
+      "description": "Each Extended Channel Interpretation (ECI) is designated by a six-digit assignment number: 000000 - 999999. <br>&nbsp;The default value depends on the loaded encodings. The default is ECI 000003 (representing ISO/IEC 8859-1) if the ISO/IEC 8859-1 character set is loaded. Otherwise the default value is 000026 (representing UTF-8)."
     },
     "encodingMode": {
       "type": "string",
@@ -176,8 +169,7 @@
     "errorMessageText": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets or sets the message text displayed when some error occurs.",
-      "valueOptions": null
+      "description": "Gets or sets the message text displayed when some error occurs."
     },
     "fnc1Mode": {
       "type": "string",
@@ -204,14 +196,12 @@
     "font": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets or sets the font of the text displayed by the control.",
-      "valueOptions": null
+      "description": "Gets or sets the font of the text displayed by the control."
     },
     "fontBrush": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets or sets the brush to use for the label font.",
-      "valueOptions": null
+      "description": "Gets or sets the brush to use for the label font."
     },
     "sizeVersion": {
       "type": "string",
@@ -455,14 +445,12 @@
     "widthToHeightRatio": {
       "type": "number",
       "defaultValue": 3.0,
-      "description": "Gets or sets the width (XDimension) to height (YDimension) ratio. It accepts only positive values. This property does not apply for the QR barcode.",
-      "valueOptions": null
+      "description": "Gets or sets the width (XDimension) to height (YDimension) ratio. It accepts only positive values. This property does not apply for the QR barcode."
     },
     "xDimension": {
       "type": "number",
       "defaultValue": 0.25,
-      "description": "Gets or sets the X-dimension (narrow element width) for a symbol in mm. It accepts values from 0.01 to 100.",
-      "valueOptions": null
+      "description": "Gets or sets the X-dimension (narrow element width) for a symbol in mm. It accepts values from 0.01 to 100."
     }
   }
 }
