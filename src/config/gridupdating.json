@@ -329,252 +329,270 @@
     "addRowLabel": {
       "type": "string",
       "defaultValue": null,
-      "description": "Sets gets text for add-new-row button. If that is not set, then $.ig.GridUpdating.locale.addRowLabel is used.",
-      "valueOptions": null
+      "description": "Sets gets text for add-new-row button. If that is not set, then $.ig.GridUpdating.locale.addRowLabel is used."
     },
     "addRowTooltip": {
       "type": "string",
       "defaultValue": null,
-      "description": "Sets gets text for title of add-new-row button. If that is not set, then $.ig.GridUpdating.locale.addRowTooltip is used.",
-      "valueOptions": null
+      "description": "Sets gets text for title of add-new-row button. If that is not set, then $.ig.GridUpdating.locale.addRowTooltip is used."
     },
     "cancelLabel": {
       "type": "string",
       "defaultValue": null,
-      "description": "Sets gets text for Cancel editing button. If that is not set, then $.ig.GridUpdating.locale.cancelLabel is used.",
-      "valueOptions": null
+      "description": "Sets gets text for Cancel editing button. If that is not set, then $.ig.GridUpdating.locale.cancelLabel is used."
     },
     "cancelTooltip": {
       "type": "string",
       "defaultValue": null,
-      "description": "Sets gets text for title of Cancel editing button. If that is not set, then $.ig.GridUpdating.locale.cancelTooltip is used.",
-      "valueOptions": null
+      "description": "Sets gets text for title of Cancel editing button. If that is not set, then $.ig.GridUpdating.locale.cancelTooltip is used."
     },
     "columnSettings": {
       "type": "array",
       "defaultValue": null,
       "description": "Sets gets array of settings for each column.",
-      "valueOptions": null
+      "schema": {
+        "columnKey": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Specifies the column key of the column with tooltip"
+        },
+        "editorType": {
+          "type": "number",
+          "defaultValue": -1,
+          "description": "Specifies the column index of the column with tooltip"
+        },
+        "editorProvider": {
+          "type": "bool",
+          "defaultValue": true,
+          "description": "Enables / disables tooltips on the specified column. By default tooltips are displayed for each column. Note: This option is mandatory."
+        },
+        "editorOptions": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Specifies the column key of the column with tooltip"
+        },
+        "required": {
+          "type": "number",
+          "defaultValue": -1,
+          "description": "Specifies the column index of the column with tooltip"
+        },
+        "readOnly": {
+          "type": "bool",
+          "defaultValue": true,
+          "description": "Enables / disables tooltips on the specified column. By default tooltips are displayed for each column. Note: This option is mandatory."
+        },
+        "validation": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Specifies the column key of the column with tooltip"
+        },
+        "defaultValue": {
+          "type": "number",
+          "defaultValue": -1,
+          "description": "Specifies the column index of the column with tooltip"
+        }
+      }
     },
     "deleteRowLabel": {
       "type": "string",
       "defaultValue": null,
-      "description": "Sets gets text for Delete row button. If that is not set, then $.ig.GridUpdating.locale.deleteRowLabel is used.",
-      "valueOptions": null
+      "description": "Sets gets text for Delete row button. If that is not set, then $.ig.GridUpdating.locale.deleteRowLabel is used."
     },
     "deleteRowTooltip": {
       "type": "string",
       "defaultValue": null,
-      "description": "Sets gets text for title of Delete row button. If that is not set, then $.ig.GridUpdating.locale.deleteRowTooltip is used.",
-      "valueOptions": null
+      "description": "Sets gets text for title of Delete row button. If that is not set, then $.ig.GridUpdating.locale.deleteRowTooltip is used."
     },
     "doneLabel": {
       "type": "string",
       "defaultValue": null,
-      "description": "Sets gets text for Done editing button. If that is not set, then $.ig.GridUpdating.locale.doneLabel is used.",
-      "valueOptions": null
+      "description": "Sets gets text for Done editing button. If that is not set, then $.ig.GridUpdating.locale.doneLabel is used."
     },
     "doneTooltip": {
       "type": "string",
       "defaultValue": null,
-      "description": "Sets gets text for title of Done editing button. If that is not set, then $.ig.GridUpdating.locale.doneTooltip is used.",
-      "valueOptions": null
+      "description": "Sets gets text for title of Done editing button. If that is not set, then $.ig.GridUpdating.locale.doneTooltip is used."
     },
     "editMode": {
       "type": "string",
-      "defaultValue": null,
-      "description": " Sets gets edit mode.",
+      "defaultValue": "row",
+      "description": "Sets gets edit mode.",
       "valueOptions": [
         {
           "name": "row",
           "type": "string",
-          "description": " editors in all cells in a row are displayed. Editor under clicked cell should get input focus. Optional Done/Cancel buttons can be displayed."
+          "description": "Editors in all cells in a row are displayed. Editor under clicked cell should get input focus. Optional Done/Cancel buttons can be displayed."
         },
         {
           "name": "cell",
           "type": "string",
-          "description": " editor only for clicked cell is displayed. The Done/Cancel buttons are not supported."
+          "description": "Editor only for clicked cell is displayed. The Done/Cancel buttons are not supported."
         },
         {
           "name": "rowedittemplate",
           "type": "string",
-          "description": " editor for all cells will be rendered as popup dialog"
+          "description": "Editor for all cells will be rendered as popup dialog"
         },
         {
           "name": "none",
           "type": "string",
-          "description": " editing of grid-cells is disabled"
+          "description": "Editing of grid-cells is disabled"
         },
         {
           "name": "null",
           "type": "object",
-          "description": " editing of grid-cells is disabled"
+          "description": "Editing of grid-cells is disabled"
         }
       ]
     },
     "enableAddRow": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Sets gets add-new-row functionality.<br>&nbsp;&nbsp;&nbsp;Notes: If igGrid has primaryKey, then application should process generatePrimaryKeyValue event and provide value for a cell.<br>&nbsp;&nbsp;&nbsp;It is also recommended to set readOnly:true for the column (within columnSettings) with the primaryKey or to use editorOptions:{readOnly:true}.<br>&nbsp;&nbsp;&nbsp;By default the value of a cell with primary key is generated automatically and its value is equal to number of rows in grid plus 1.<br>&nbsp;&nbsp;&nbsp;Value true: the \"Add Row\" button is displayed on header, click on that button shows editors in all columns and new row inserted at the end of editing.<br>&nbsp;&nbsp;&nbsp;Value false: add-row functionality is disabled.",
-      "valueOptions": null
+      "description": "Sets gets add-new-row functionality.<br>&nbsp;&nbsp;&nbsp;Notes: If igGrid has primaryKey, then application should process generatePrimaryKeyValue event and provide value for a cell.<br>&nbsp;&nbsp;&nbsp;It is also recommended to set readOnly:true for the column (within columnSettings) with the primaryKey or to use editorOptions:{readOnly:true}.<br>&nbsp;&nbsp;&nbsp;By default the value of a cell with primary key is generated automatically and its value is equal to number of rows in grid plus 1.<br>&nbsp;&nbsp;&nbsp;Value true: the \"Add Row\" button is displayed on header, click on that button shows editors in all columns and new row inserted at the end of editing.<br>&nbsp;&nbsp;&nbsp;Value false: add-row functionality is disabled."
     },
     "enableDataDirtyException": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Sets gets ability to enable or disable exception, which is raised when grid has pending transaction and may fail to render data correctly.",
-      "valueOptions": null
+      "description": "Sets gets ability to enable or disable exception, which is raised when grid has pending transaction and may fail to render data correctly."
     },
     "enableDeleteRow": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Sets gets delete-row functionality.<br>&nbsp;&nbsp;&nbsp;Value true: the \"Delete\" button is displayed on mouse-over a row and all selected rows are deleted by Delete-key.<br>&nbsp;&nbsp;&nbsp;Value false: delete-row is disabled.",
-      "valueOptions": null
+      "description": "Sets gets delete-row functionality.<br>&nbsp;&nbsp;&nbsp;Value true: the \"Delete\" button is displayed on mouse-over a row and all selected rows are deleted by Delete-key.<br>&nbsp;&nbsp;&nbsp;Value false: delete-row is disabled."
     },
     "excelNavigationMode": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Enables excel navigating style while editing a cell<br>&nbsp;&nbsp;&nbsp;Value true: Arrows will not navigate inside the edited cell, but will exit the edit mode<br>&nbsp;&nbsp;&nbsp;and move the focus to the nearest cell.<br>&nbsp;&nbsp;&nbsp;Value false: Arrows will navigate the cursor inside the edited cell",
-      "valueOptions": null
+      "description": "Enables excel navigating style while editing a cell<br>&nbsp;&nbsp;&nbsp;Value true: Arrows will not navigate inside the edited cell, but will exit the edit mode<br>&nbsp;&nbsp;&nbsp;and move the focus to the nearest cell.<br>&nbsp;&nbsp;&nbsp;Value false: Arrows will navigate the cursor inside the edited cell"
     },
     "horizontalMoveOnEnter": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Enables horizontal move to the right on Enter while editing a cell.<br>&nbsp;&nbsp;&nbsp;Value true: Pressing Enter will move the focus to the next edited cell on the right<br>&nbsp;&nbsp;&nbsp;Value false: Pressing Enter will move the focus to the next edited cell on the row below",
-      "valueOptions": null
+      "description": "Enables horizontal move to the right on Enter while editing a cell.<br>&nbsp;&nbsp;&nbsp;Value true: Pressing Enter will move the focus to the next edited cell on the right<br>&nbsp;&nbsp;&nbsp;Value false: Pressing Enter will move the focus to the next edited cell on the row below"
     },
     "labels": {
       "type": "unknown",
       "defaultValue": null,
-      "description": "A list of configurable and localized labels that will be used for the row edit dialog.",
-      "valueOptions": null
+      "description": "A list of configurable and localized labels that will be used for the row edit dialog."
     },
     "rowEditDialogContainment": {
       "type": "string",
       "defaultValue": "owner",
       "description": "Controls containment behavior. <br>&nbsp;&nbsp;&nbsp;&nbsp;owner  The row edit dialog will be draggable only in the grid area<br>&nbsp;&nbsp;&nbsp;&nbsp;window  The row edit dialog will be draggable in the whole window area",
-      "valueOptions": null
-    },
-    "rowEditDialogContentHeight": {
-      "type": "string",
-      "defaultValue": null,
-      "description": " the height of the row edit dialog content",
       "valueOptions": [
         {
-          "name": null,
+          "name": "owner",
           "type": "string",
-          "description": " The dialog content height in pixels (150px)."
+          "description": "The row edit dialog will be draggable only in the grid area"
         },
         {
-          "name": null,
-          "type": "number",
-          "description": " The dialog content height as a number (150)."
+          "name": "window",
+          "type": "string",
+          "description": "The row edit dialog will be draggable in the whole window area"
         }
       ]
+    },
+    "rowEditDialogContentHeight": {
+      "type": "number",
+      "defaultValue": 150,
+      "description": " the height of the row edit dialog content"
     },
     "rowEditDialogFieldWidth": {
       "type": "number",
       "defaultValue": 140.0,
-      "description": "width of the row edit dialog fields<br>&nbsp;&nbsp;&nbsp;&nbsp;number The width as a number (0)",
-      "valueOptions": null
+      "description": "width of the row edit dialog fields<br>&nbsp;&nbsp;&nbsp;&nbsp;number The width as a number (0)"
     },
     "rowEditDialogHeight": {
-      "type": "string",
-      "defaultValue": null,
-      "description": " default row edit dialog height",
-      "valueOptions": [
-        {
-          "name": null,
-          "type": "string",
-          "description": " The dialog window height in pixels (350px)."
-        },
-        {
-          "name": null,
-          "type": "number",
-          "description": " The dialog window height as a number (350)."
-        }
-      ]
+      "type": "number",
+      "defaultValue": 350,
+      "description": "Default row edit dialog height"
     },
     "rowEditDialogOkCancelButtonWidth": {
-      "type": "string",
-      "defaultValue": null,
-      "description": " Width of the Ok and Cancel buttons in the row edit dialogs ",
-      "valueOptions": [
-        {
-          "name": null,
-          "type": "string",
-          "description": " The advanced row edit dialog Ok and Cancel buttons width in pixels (100px)."
-        },
-        {
-          "name": null,
-          "type": "number",
-          "description": " The advanced row edit dialog Ok and Cancel buttons width as a number (100)."
-        }
-      ]
+      "type": "number",
+      "defaultValue": 120,
+      "description": "Width of the Ok and Cancel buttons in the row edit dialogs "
     },
     "rowEditDialogRowTemplate": {
       "type": "string",
       "defaultValue": "<tr><td>${headerText}</td><td data-key=${dataKey}><input /></td></tr>",
-      "description": "Custom template for rows in row edit dialog",
-      "valueOptions": null
+      "description": "Custom template for rows in row edit dialog"
     },
     "rowEditDialogRowTemplateID": {
       "type": "string",
       "defaultValue": null,
-      "description": "ID to x-jquery-tmpl template. If both rowEditDialogRowTemplate and rowEditDialogRowTemplateID are<br>&nbsp;&nbsp;&nbsp;&nbsp;specified, then rowEditDialogRowTemplateID will be used",
-      "valueOptions": null
+      "description": "ID to x-jquery-tmpl template. If both rowEditDialogRowTemplate and rowEditDialogRowTemplateID are<br>&nbsp;&nbsp;&nbsp;&nbsp;specified, then rowEditDialogRowTemplateID will be used"
     },
     "rowEditDialogWidth": {
-      "type": "string",
-      "defaultValue": null,
-      "description": " default row edit dialog width",
-      "valueOptions": [
-        {
-          "name": null,
-          "type": "string",
-          "description": " The dialog window width in pixels (370px)."
-        },
-        {
-          "name": null,
-          "type": "number",
-          "description": " The dialog window width as a number (370)."
-        }
-      ]
+      "type": "number",
+      "defaultValue": 370,
+      "description": "Default row edit dialog width"
     },
     "saveChangesErrorHandler": {
       "type": "function",
       "defaultValue": null,
-      "description": "Specifies a custom function to be called when AJAX request to the updateUrl option fails. Receives three arguments - the jqXHR, string describing the type of error and an optional exception object",
-      "valueOptions": null
+      "description": "Specifies a custom function to be called when AJAX request to the updateUrl option fails. Receives three arguments - the jqXHR, string describing the type of error and an optional exception object"
     },
     "saveChangesSuccessHandler": {
       "type": "function",
       "defaultValue": null,
-      "description": "Specifies a custom function to be called when AJAX request to the updateUrl option succeeds. Receives as argument the data returned by the server",
-      "valueOptions": null
+      "description": "Specifies a custom function to be called when AJAX request to the updateUrl option succeeds. Receives as argument the data returned by the server"
     },
     "showDoneCancelButtons": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Sets gets visibility of the end-edit pop-up dialog with Done/Cancel buttons.",
-      "valueOptions": null
+      "description": "Sets gets visibility of the end-edit pop-up dialog with Done/Cancel buttons."
     },
     "showReadonlyEditors": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Used in row edit template when editing is disabled for a particular column<br>&nbsp;&nbsp;&nbsp;Value true: disabled columns are rendered as disabled<br>&nbsp;&nbsp;&nbsp;Value false: disabled columns are not rendered in the editors",
-      "valueOptions": null
+      "description": "Used in row edit template when editing is disabled for a particular column<br>&nbsp;&nbsp;&nbsp;Value true: disabled columns are rendered as disabled<br>&nbsp;&nbsp;&nbsp;Value false: disabled columns are not rendered in the editors"
     },
     "startEditTriggers": {
       "type": "string",
       "defaultValue": "click,F2,enter",
       "description": "Sets gets triggers for start edit mode.<br>&nbsp;&nbsp;&nbsp;Possible values: \"click\", \"dblclick\", \"F2\", \"enter\" and their combinations separated by coma.<br>&nbsp;&nbsp;&nbsp;Notes:<br>&nbsp;&nbsp;&nbsp;The array of strings similar to ['dblclick', 'f2'] is also supported.<br>&nbsp;&nbsp;&nbsp;The keyboard triggers have effect only when \"Selection\" feature of grid is enabled.<br>&nbsp;&nbsp;&nbsp;If the 'dblclick' is included, then 'click' has no effect.",
-      "valueOptions": null
+      "valueOptions": [
+        {
+          "name": "click",
+          "type": "string",
+          "description": "Editing can be started using 'click'"
+        },
+        {
+          "name": "F2",
+          "type": "string",
+          "description": "Editing can be started using 'F2'"
+        },
+        {
+          "name": "enter",
+          "type": "string",
+          "description": "Editing can be started using 'enter'"
+        },
+        {
+          "name": "click,F2",
+          "type": "string",
+          "description": "Editing can be started using 'click,F2'"
+        },
+        {
+          "name": "click,enter",
+          "type": "string",
+          "description": "Editing can be started using 'click,enter'"
+        },
+        {
+          "name": "F2,enter",
+          "type": "string",
+          "description": "Editing can be started using 'F2,enter'"
+        },
+         {
+          "name": "click,F2,enter",
+          "type": "string",
+          "description": "Editing can be started using 'click,F2,enter'"
+        }
+      ]
     },
     "validation": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Sets gets option to enable validation for all columns.",
-      "valueOptions": null
+      "description": "Sets gets option to enable validation for all columns."
     }
   }
 }

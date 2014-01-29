@@ -57,54 +57,49 @@
     "enableCheckBoxes": {
       "type": "bool",
       "defaultValue": false,
-      "description": "determines whether the row selectors column should contain checkboxes",
-      "valueOptions": null
+      "description": "determines whether the row selectors column should contain checkboxes"
     },
     "enableRowNumbering": {
       "type": "bool",
       "defaultValue": true,
-      "description": "determines whether the row selectors column should contain row numbering",
-      "valueOptions": null
+      "description": "determines whether the row selectors column should contain row numbering"
     },
     "requireSelection": {
       "type": "bool",
       "defaultValue": true,
-      "description": "determines whether the selection feature is required for the row selectors. If set to \"false\" <br>&nbsp;&nbsp;&nbsp;the widget will not check for Selection availability. If set to \"true\" an exception will be thrown if Selection is<br>&nbsp;&nbsp;&nbsp;not available.",
-      "valueOptions": null
+      "description": "determines whether the selection feature is required for the row selectors. If set to \"false\" <br>&nbsp;&nbsp;&nbsp;the widget will not check for Selection availability. If set to \"true\" an exception will be thrown if Selection is<br>&nbsp;&nbsp;&nbsp;not available."
     },
     "rowNumberingSeed": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "the seed to be added to the default numbering",
-      "valueOptions": null
+      "description": "the seed to be added to the default numbering"
     },
     "rowSelectorColumnWidth": {
       "type": "string",
-      "defaultValue": null,
-      "description": "",
+      "defaultValue": 0,
+      "description": "Gets or sets the width of th row selector column",
       "valueOptions": [
         {
           "name": null,
           "type": "string",
-          "description": " The row selector column width can be set in pixels (px) and percentage (%)"
+          "description": "The row selector column width can be set in pixels (px) and percentage (%)"
         },
         {
           "name": null,
           "type": "number",
-          "description": " The row selector width can be set as a number"
+          "description": "The row selector width can be set as a number"
         },
         {
           "name": "null",
           "type": "object",
-          "description": " will let the feature decide the best width depending on enabled contents"
+          "description": "Will let the feature decide the best width depending on enabled contents"
         }
       ]
     },
     "showCheckBoxesOnFocus": {
       "type": "bool",
       "defaultValue": false,
-      "description": "determines whether checkboxes will be shown only if row selectors are on focus/selected.",
-      "valueOptions": null
+      "description": "determines whether checkboxes will be shown only if row selectors are on focus/selected."
     }
   }
 }

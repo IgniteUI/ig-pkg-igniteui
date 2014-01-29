@@ -121,38 +121,32 @@
     "allowSliceExplosion": {
       "type": "bool",
       "defaultValue": null,
-      "description": "Gets or sets whether the slices can be exploded.",
-      "valueOptions": null
+      "description": "Gets or sets whether the slices can be exploded."
     },
     "allowSliceSelection": {
       "type": "bool",
       "defaultValue": null,
-      "description": "Gets or sets whether the slices can be selected.",
-      "valueOptions": null
+      "description": "Gets or sets whether the slices can be selected."
     },
     "innerExtent": {
       "type": "number",
       "defaultValue": 40.0,
-      "description": "Gets or sets the inner extent of the doughnut chart. It is percent from the outer ring's radius.",
-      "valueOptions": null
+      "description": "Gets or sets the inner extent of the doughnut chart. It is percent from the outer ring's radius."
     },
     "isSurfaceInteractionDisabled": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Gets or sets whether all surface interactions with the plot area should be disabled.",
-      "valueOptions": null
+      "description": "Gets or sets whether all surface interactions with the plot area should be disabled."
     },
     "selectedStyle": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the style used when a slice is selected.",
-      "valueOptions": null
+      "description": "Gets or sets the style used when a slice is selected."
     },
     "series": {
       "type": "array",
       "defaultValue": null,
-      "description": "An array of series objects.",
-      "valueOptions": null
+      "description": "An array of series objects."
     }
   }
 }

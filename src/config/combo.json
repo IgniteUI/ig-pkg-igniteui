@@ -233,32 +233,27 @@
     "allowCustomValue": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Gets sets ability to enter and keep custom value in field.<br>&nbsp;&nbsp;&nbsp;&nbsp;Notes for enabled:<br>&nbsp;&nbsp;&nbsp;&nbsp;1. The matching item in list becomes active, but not selected.<br>&nbsp;&nbsp;&nbsp;&nbsp;2. If load on demand or dataBindOnOpen is enabled, then after the load, the matching item can be selected.<br>&nbsp;&nbsp;&nbsp;&nbsp;3. If text option was not set, the selectedItems contain only one item and that item was not found in dataSource, then the \"value\" member of that selected item will be used as the custom text.",
-      "valueOptions": null
+      "description": "Gets sets ability to enter and keep custom value in field.<br>&nbsp;&nbsp;&nbsp;&nbsp;Notes for enabled:<br>&nbsp;&nbsp;&nbsp;&nbsp;1. The matching item in list becomes active, but not selected.<br>&nbsp;&nbsp;&nbsp;&nbsp;2. If load on demand or dataBindOnOpen is enabled, then after the load, the matching item can be selected.<br>&nbsp;&nbsp;&nbsp;&nbsp;3. If text option was not set, the selectedItems contain only one item and that item was not found in dataSource, then the \"value\" member of that selected item will be used as the custom text."
     },
     "animationHideDuration": {
       "type": "number",
       "defaultValue": 50.0,
-      "description": "Gets sets duration of hide drop-down list animation in milliseconds.",
-      "valueOptions": null
+      "description": "Gets sets duration of hide drop-down list animation in milliseconds."
     },
     "animationShowDuration": {
       "type": "number",
       "defaultValue": 100.0,
-      "description": "Gets sets duration of show drop-down list animation in milliseconds.",
-      "valueOptions": null
+      "description": "Gets sets duration of show drop-down list animation in milliseconds."
     },
     "autoComplete": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Gets sets ability to autocomplete field from matching item in list.<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: if \"autoComplete\" option is enabled, then the \"startsWith\" is used for \"filteringCondition\" option",
-      "valueOptions": null
+      "description": "Gets sets ability to autocomplete field from matching item in list.<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: if \"autoComplete\" option is enabled, then the \"startsWith\" is used for \"filteringCondition\" option"
     },
     "cascadingDataSources": {
       "type": "object",
       "defaultValue": null,
       "description": "Gets sets collection (array or dictonary) of javascript objects which allows to configure dataSource and other properties of this igCombo.<br>&nbsp;&nbsp;&nbsp;&nbsp;The key in dictionary should represent selected value in parent igCombo. If value in parent igCombo is integer, then array can be used instead of dictionary.<br>&nbsp;&nbsp;&nbsp;&nbsp;Each item in collection may contain dataSource, or an object, which should have following members.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dataSource: reference to dataSource,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;valueKey: optional override for valueKey of this igCombo,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;textKey: optional override for textKey of this igCombo,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dataSourceUrl: optional dataSourceUrl when dataSource is not set.<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: that option has effect only when \"parentCombo\" option is set and it has priority over \"parentComboKey\".",
-      "valueOptions": null,
       "schema": {
         "dataSource": {
           "type": "object",
@@ -285,116 +280,97 @@
     "caseSensitive": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Gets sets ability to use case sensitive or ignore case searching for matches defined by \"renderMatchItems\" and \"filteringCondition\" options",
-      "valueOptions": null
+      "description": "Gets sets ability to use case sensitive or ignore case searching for matches defined by \"renderMatchItems\" and \"filteringCondition\" options"
     },
     "clearButtonTitle": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets sets title for html element which represend clear button. That is an override for the $.ig.Combo.locale.clearButtonTitle.",
-      "valueOptions": null
+      "description": "Gets sets title for html element which represend clear button. That is an override for the $.ig.Combo.locale.clearButtonTitle."
     },
     "closeDropDownOnBlur": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Sets gets ability to close drop-down list when control loses focus. Note: if application disables that option, then it is responsible for closing drop-down list.",
-      "valueOptions": null
+      "description": "Sets gets ability to close drop-down list when control loses focus. Note: if application disables that option, then it is responsible for closing drop-down list."
     },
     "closeDropDownOnSelect": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Sets gets ability to close drop-down list when item is the list is selected.",
-      "valueOptions": null
+      "description": "Sets gets ability to close drop-down list when item is the list is selected."
     },
     "dataBindOnOpen": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Gets sets ability to load data (bind dataSource) at the time when drop-down list is opened.<br>&nbsp;&nbsp;&nbsp;&nbsp;Notes:<br>&nbsp;&nbsp;&nbsp;&nbsp;1. Before data is loaded the selectedItems, value, text and other options/methods will fail.<br>&nbsp;&nbsp;&nbsp;&nbsp;2. Initial selection, text and value will have no effect.<br>&nbsp;&nbsp;&nbsp;&nbsp;3. If on first drop-down the dataSource does not contain selectedItems (for example, enabled load on demand), then selection will be destroyed.<br>&nbsp;&nbsp;&nbsp;&nbsp;4. To get around with values, an application may enable \"allowCustomValue\" option and use the \"text\" option instead of \"selectedItems\".",
-      "valueOptions": null
+      "description": "Gets sets ability to load data (bind dataSource) at the time when drop-down list is opened.<br>&nbsp;&nbsp;&nbsp;&nbsp;Notes:<br>&nbsp;&nbsp;&nbsp;&nbsp;1. Before data is loaded the selectedItems, value, text and other options/methods will fail.<br>&nbsp;&nbsp;&nbsp;&nbsp;2. Initial selection, text and value will have no effect.<br>&nbsp;&nbsp;&nbsp;&nbsp;3. If on first drop-down the dataSource does not contain selectedItems (for example, enabled load on demand), then selection will be destroyed.<br>&nbsp;&nbsp;&nbsp;&nbsp;4. To get around with values, an application may enable \"allowCustomValue\" option and use the \"text\" option instead of \"selectedItems\"."
     },
     "dataSource": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets sets a valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself.<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: if it is set to string and \"dataSourceType\" option is not set, then $.ig.JSONPDataSource is used.",
-      "valueOptions": null
+      "description": "Gets sets a valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself.<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: if it is set to string and \"dataSourceType\" option is not set, then $.ig.JSONPDataSource is used."
     },
     "dataSourceType": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets sets data source type (such as \"json\", \"xml\", etc). Please refer to the documentation of $.ig.DataSource and its type property",
-      "valueOptions": null
+      "description": "Gets sets data source type (such as \"json\", \"xml\", etc). Please refer to the documentation of $.ig.DataSource and its type property"
     },
     "dataSourceUrl": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets sets url which is used for sending JSON on request for remote filtering (MVC for example). That option is required when load on demand is enabled and its type is remote.",
-      "valueOptions": null
+      "description": "Gets sets url which is used for sending JSON on request for remote filtering (MVC for example). That option is required when load on demand is enabled and its type is remote."
     },
     "dropDownAsChild": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Gets sets ability to append container of drop-down list to the body or to the parent of combo.",
-      "valueOptions": null
+      "description": "Gets sets ability to append container of drop-down list to the body or to the parent of combo."
     },
     "dropDownButtonTitle": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets sets title for html element which represend drop-down button. That is an override for the $.ig.Combo.locale.dropDownButtonTitle.",
-      "valueOptions": null
+      "description": "Gets sets title for html element which represend drop-down button. That is an override for the $.ig.Combo.locale.dropDownButtonTitle."
     },
     "dropDownMaxHeight": {
       "type": "number",
       "defaultValue": 300.0,
-      "description": "Gets sets maximum height of drop-down list in pixels.",
-      "valueOptions": null
+      "description": "Gets sets maximum height of drop-down list in pixels."
     },
     "dropDownMinHeight": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "Gets sets minimum height of drop-down list in pixels.",
-      "valueOptions": null
+      "description": "Gets sets minimum height of drop-down list in pixels."
     },
     "dropDownOnFocus": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Sets gets ability to show drop-down list when combo gets focus.",
-      "valueOptions": null
+      "description": "Sets gets ability to show drop-down list when combo gets focus."
     },
     "dropDownWidth": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "Gets sets width of drop-down list in pixels. If it is 0, then width of combo is used.",
-      "valueOptions": null
+      "description": "Gets sets width of drop-down list in pixels. If it is 0, then width of combo is used."
     },
     "enableActiveItem": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Gets sets ability to render focus/active item in drop-down list.<br>&nbsp;&nbsp;&nbsp;&nbsp;Notes: If list had active item and it was closed and opened again, then active item is reset to the first selected item.<br>&nbsp;&nbsp;&nbsp;&nbsp;It there is no selected items, then active item is not reset.<br>&nbsp;&nbsp;&nbsp;&nbsp;If that option is disabled, then functionality becomes similar to the SELECT html element.<br>&nbsp;&nbsp;&nbsp;&nbsp;For example, if list is opened then action keys like up/down arrows/page, home and end will change selected item instead of active item.<br>&nbsp;&nbsp;&nbsp;&nbsp;If list is closed, then up/down arrow keys will change selected item and update text field for it.<br>&nbsp;&nbsp;&nbsp;&nbsp;If list is opened, then text-changes in field will select matching item in list instead of activating it.",
-      "valueOptions": null
+      "description": "Gets sets ability to render focus/active item in drop-down list.<br>&nbsp;&nbsp;&nbsp;&nbsp;Notes: If list had active item and it was closed and opened again, then active item is reset to the first selected item.<br>&nbsp;&nbsp;&nbsp;&nbsp;It there is no selected items, then active item is not reset.<br>&nbsp;&nbsp;&nbsp;&nbsp;If that option is disabled, then functionality becomes similar to the SELECT html element.<br>&nbsp;&nbsp;&nbsp;&nbsp;For example, if list is opened then action keys like up/down arrows/page, home and end will change selected item instead of active item.<br>&nbsp;&nbsp;&nbsp;&nbsp;If list is closed, then up/down arrow keys will change selected item and update text field for it.<br>&nbsp;&nbsp;&nbsp;&nbsp;If list is opened, then text-changes in field will select matching item in list instead of activating it."
     },
     "enableClearButton": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Gets sets ability to show a button which allows to clear field.<br>&nbsp;&nbsp;&nbsp;&nbsp;Button is automatically hidden when field is empty and it automatically appears when field is not empty.",
-      "valueOptions": null
+      "description": "Gets sets ability to show a button which allows to clear field.<br>&nbsp;&nbsp;&nbsp;&nbsp;Button is automatically hidden when field is empty and it automatically appears when field is not empty."
     },
     "enableDisplayBlock": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Gets sets style.display \"block\" or \"inline-block\" applied to main/outer html element.",
-      "valueOptions": null
+      "description": "Gets sets style.display \"block\" or \"inline-block\" applied to main/outer html element."
     },
     "filterExprUrlKey": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets sets url key name that specifies how the remote filtering expressions will be encoded for remote requests, e.g. &filter('col') = startsWith. Default is OData",
-      "valueOptions": null
+      "description": "Gets sets url key name that specifies how the remote filtering expressions will be encoded for remote requests, e.g. &filter('col') = startsWith. Default is OData"
     },
     "filteringCondition": {
       "type": "string",
       "defaultValue": "contains",
-      "description": "Gets sets condition used for filtering.<br>&nbsp;&nbsp;&nbsp;&nbsp;Notes:<br>&nbsp;&nbsp;&nbsp;&nbsp;If the \"autoComplete\" option is enabled, then the \"startsWith\" is used regardless of value for this option.<br>&nbsp;&nbsp;&nbsp;&nbsp;If \"parentComboKey\" option is set, then data is filtered internally, therefore, filtering while changing text in editor is not available.",
-      "valueOptions": null
+      "description": "Gets sets condition used for filtering.<br>&nbsp;&nbsp;&nbsp;&nbsp;Notes:<br>&nbsp;&nbsp;&nbsp;&nbsp;If the \"autoComplete\" option is enabled, then the \"startsWith\" is used regardless of value for this option.<br>&nbsp;&nbsp;&nbsp;&nbsp;If \"parentComboKey\" option is set, then data is filtered internally, therefore, filtering while changing text in editor is not available."
     },
     "filteringType": {
       "type": "string",
@@ -421,50 +397,42 @@
     "footerTemplate": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets sets template used to render footer in drop-down list. Note: template is rendered inside of DIV html element.",
-      "valueOptions": null
+      "description": "Gets sets template used to render footer in drop-down list. Note: template is rendered inside of DIV html element."
     },
     "format": {
       "type": "string",
       "defaultValue": true,
-      "description": "Gets sets format which is applied to items in list. Values null or false will disable format.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value \"auto\" or true will use automatic format for Date and number objects.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value null or false will disable automatic format.<br>&nbsp;&nbsp;&nbsp;&nbsp;Custom values can be something like \"currency\", \"percent\", \"dateLong\", \"time\", \"MMM-dd-yyyy H:mm tt\", etc.<br>&nbsp;&nbsp;&nbsp;&nbsp;However, custom format should be valid for a specific data type in \"textKey\" column.",
-      "valueOptions": null
+      "description": "Gets sets format which is applied to items in list. Values null or false will disable format.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value \"auto\" or true will use automatic format for Date and number objects.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value null or false will disable automatic format.<br>&nbsp;&nbsp;&nbsp;&nbsp;Custom values can be something like \"currency\", \"percent\", \"dateLong\", \"time\", \"MMM-dd-yyyy H:mm tt\", etc.<br>&nbsp;&nbsp;&nbsp;&nbsp;However, custom format should be valid for a specific data type in \"textKey\" column."
     },
     "headerTemplate": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets sets template used to render header in drop-down list. Template is rendered inside of DIV html element.",
-      "valueOptions": null
+      "description": "Gets sets template used to render header in drop-down list. Template is rendered inside of DIV html element."
     },
     "height": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets sets height of combo. The numeric and string values (valid html units for size) are supported. It includes %, px, em and other units.",
-      "valueOptions": null
+      "description": "Gets sets height of combo. The numeric and string values (valid html units for size) are supported. It includes %, px, em and other units."
     },
     "inputName": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets sets name of (hidden) INPUT element, which value will be set to values of selected items separated by \",\" character on any change in igCombo.",
-      "valueOptions": null
+      "description": "Gets sets name of (hidden) INPUT element, which value will be set to values of selected items separated by \",\" character on any change in igCombo."
     },
     "itemSeparator": {
       "type": "string",
       "defaultValue": ", ",
-      "description": "Gets sets separator between items in field. Note: that option has effect only when \"multiSelection\" option is enabled",
-      "valueOptions": null
+      "description": "Gets sets separator between items in field. Note: that option has effect only when \"multiSelection\" option is enabled"
     },
     "itemTemplate": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets sets template used to render an item in list. Notes:<br>&nbsp;&nbsp;&nbsp;&nbsp;1. The jquery.tmpl.js of Microsoft is used and application should provide supported syntax for content.<br>&nbsp;&nbsp;&nbsp;&nbsp;2. Template is rendered inside of LI html element.<br>&nbsp;&nbsp;&nbsp;&nbsp;So, application should consider restriction for layout: do not use \"block\" html elements and in case of absolutely positioned elements,<br>&nbsp;&nbsp;&nbsp;&nbsp;they should not overlap with checkbox icons.",
-      "valueOptions": null
+      "description": "Gets sets template used to render an item in list. Notes:<br>&nbsp;&nbsp;&nbsp;&nbsp;1. The jquery.tmpl.js of Microsoft is used and application should provide supported syntax for content.<br>&nbsp;&nbsp;&nbsp;&nbsp;2. Template is rendered inside of LI html element.<br>&nbsp;&nbsp;&nbsp;&nbsp;So, application should consider restriction for layout: do not use \"block\" html elements and in case of absolutely positioned elements,<br>&nbsp;&nbsp;&nbsp;&nbsp;they should not overlap with checkbox icons."
     },
     "loadOnDemandSettings": {
       "type": "object",
       "defaultValue": null,
       "description": "Gets sets container of variables which define load on demand functionality.<br>&nbsp;&nbsp;&nbsp;&nbsp;Notes:<br>&nbsp;&nbsp;&nbsp;&nbsp;That option has effect only when data is loaded remotely using dataSourceUrl.<br>&nbsp;&nbsp;&nbsp;&nbsp;If the parentComboKey is set, then that option is not supported.<br>&nbsp;&nbsp;&nbsp;&nbsp;Selection is supported only for already loaded items.",
-      "valueOptions": null,
       "schema": {
         "enabled": {
           "type": "bool",
@@ -531,26 +499,22 @@
     "noMatchFoundText": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets sets text of list item for condition when \"filteringType\" option is enabled and no match was found. That is an override for the $.ig.Combo.locale.noMatchFoundText.",
-      "valueOptions": null
+      "description": "Gets sets text of list item for condition when \"filteringType\" option is enabled and no match was found. That is an override for the $.ig.Combo.locale.noMatchFoundText."
     },
     "nullText": {
       "type": "string",
       "defaultValue": null,
-      "description": "Sets gets text which appears in field in no-focus state and there is no value.",
-      "valueOptions": null
+      "description": "Sets gets text which appears in field in no-focus state and there is no value."
     },
     "parentCombo": {
       "type": "string",
       "defaultValue": null,
-      "description": " Gets sets selector/id of parent igCombo or reference to parent igCombo object, which is used for cascading functionality.",
-      "valueOptions": []
+      "description": "Gets sets selector/id of parent igCombo or reference to parent igCombo object, which is used for cascading functionality."
     },
     "parentComboKey": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets sets column key in dataSource, which will be used by cascading functionality in order to get records matching with selected value in parent igCombo.<br>&nbsp;&nbsp;&nbsp;&nbsp;Notes:<br>&nbsp;&nbsp;&nbsp;&nbsp;That option has effect only when \"parentCombo\" option is set and it has no effect if \"cascadingDataSources\" is set.<br>&nbsp;&nbsp;&nbsp;&nbsp;If that option is set, then data is filtered internally, therefore, filtering while changing text in editor is not available.<br>&nbsp;&nbsp;&nbsp;&nbsp;If that option is set, then loadOnDemand is not supported.",
-      "valueOptions": null
+      "description": "Gets sets column key in dataSource, which will be used by cascading functionality in order to get records matching with selected value in parent igCombo.<br>&nbsp;&nbsp;&nbsp;&nbsp;Notes:<br>&nbsp;&nbsp;&nbsp;&nbsp;That option has effect only when \"parentCombo\" option is set and it has no effect if \"cascadingDataSources\" is set.<br>&nbsp;&nbsp;&nbsp;&nbsp;If that option is set, then data is filtered internally, therefore, filtering while changing text in editor is not available.<br>&nbsp;&nbsp;&nbsp;&nbsp;If that option is set, then loadOnDemand is not supported."
     },
     "renderMatchItems": {
       "type": "string",
@@ -604,26 +568,22 @@
     "responseContentType": {
       "type": "string",
       "defaultValue": null,
-      "description": "content type of the response. See http://api.jquery.com/jQuery.ajax/ => contentType",
-      "valueOptions": null
+      "description": "content type of the response. See http://api.jquery.com/jQuery.ajax/ => contentType"
     },
     "responseDataKey": {
       "type": "string",
       "defaultValue": null,
-      "description": "see $.ig.DataSource. This is basically the property in the responses where data records are held, if the response is wrapped.",
-      "valueOptions": null
+      "description": "see $.ig.DataSource. This is basically the property in the responses where data records are held, if the response is wrapped."
     },
     "responseTotalRecCountKey": {
       "type": "string",
       "defaultValue": null,
-      "description": "see $.ig.DataSource. property in the response specifying the total number of records on the server.",
-      "valueOptions": null
+      "description": "see $.ig.DataSource. property in the response specifying the total number of records on the server."
     },
     "selectedItems": {
       "type": "array",
       "defaultValue": null,
       "description": "Gets sets list of selected items. It should contain array of objects.<br>&nbsp;&nbsp;&nbsp;&nbsp;Each object should contain the member \"index\" equals to the index of selected item or the member \"value\" equals to value of item in dataSource in \"valueKey\" column.<br>&nbsp;&nbsp;&nbsp;&nbsp;The member \"text\" contains value of item in \"textKey\" column.<br>&nbsp;&nbsp;&nbsp;&nbsp;Missing values are filled automatically while rendering list items and on other actions. If application set more than one member, then it is responsible for match.<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: that option is supported only for currently available list of items. When load-on-demand or filtering is enabled, then attempt to select not loaded item will fail.",
-      "valueOptions": null,
       "designerDisplayProperty": "text",
       "schema": {
         "index": {
@@ -647,32 +607,27 @@
     "selectItemBySpaceKey": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Gets sets ability to select active item in list by Space key.<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: if that options is enabled, then it will be not possible to type-in the Space character when list is opened.",
-      "valueOptions": null
+      "description": "Gets sets ability to select active item in list by Space key.<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: if that options is enabled, then it will be not possible to type-in the Space character when list is opened."
     },
     "showDropDownButton": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Gets sets visibility of drop-down button.",
-      "valueOptions": null
+      "description": "Gets sets visibility of drop-down button."
     },
     "tabIndex": {
       "type": "number",
       "defaultValue": null,
-      "description": "Gets sets tabIndex for field of combo.",
-      "valueOptions": null
+      "description": "Gets sets tabIndex for field of combo."
     },
     "text": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets sets text which appears in combo on initialization. If it is not set, then the value from target html element is used automatically.<br>&nbsp;&nbsp;&nbsp;&nbsp;If selectedItems option is not set and allowCustomValue option is enabled, then first matching item in list will be selected.<br>&nbsp;&nbsp;&nbsp;&nbsp;Notes: After initialization that option is reset to null. To get text in field, the text() method can be used.",
-      "valueOptions": null
+      "description": "Gets sets text which appears in combo on initialization. If it is not set, then the value from target html element is used automatically.<br>&nbsp;&nbsp;&nbsp;&nbsp;If selectedItems option is not set and allowCustomValue option is enabled, then first matching item in list will be selected.<br>&nbsp;&nbsp;&nbsp;&nbsp;Notes: After initialization that option is reset to null. To get text in field, the text() method can be used."
     },
     "textKey": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets sets name of column which contains the displayed text. If it is missing, then \"valueKey\" option will be used.",
-      "valueOptions": null
+      "description": "Gets sets name of column which contains the displayed text. If it is missing, then \"valueKey\" option will be used."
     },
     "textKeyType": {
       "type": "string",
@@ -715,14 +670,12 @@
       "type": "object",
       "defaultValue": null,
       "description": "Gets or sets object which contains options supported by igValidator.<br>&nbsp;&nbsp;&nbsp;&nbsp;Notes: in order for validator to work, application should ensure that igValidator is loaded (ig.ui.validator.js/css files).<br>&nbsp;&nbsp;&nbsp;&nbsp;Example:<br>&nbsp;&nbsp;&nbsp;&nbsp;$('#combo1').igCombo({ validatorOptions: { required: true } });",
-      "valueOptions": null,
       "schemaRef": "validator"
     },
     "valueKey": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets sets name of column which contains the \"value\". If it is missing, then name of first column will be used.",
-      "valueOptions": null
+      "description": "Gets sets name of column which contains the \"value\". If it is missing, then name of first column will be used."
     },
     "valueKeyType": {
       "type": "string",
@@ -764,14 +717,12 @@
     "virtualization": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Gets sets ability to use virtual rendering for drop-down list.<br>&nbsp;&nbsp;&nbsp;&nbsp;If that option is enabled, then only visible items are created and top edge of first visible item in list is alligned to the top edge of list.",
-      "valueOptions": null
+      "description": "Gets sets ability to use virtual rendering for drop-down list.<br>&nbsp;&nbsp;&nbsp;&nbsp;If that option is enabled, then only visible items are created and top edge of first visible item in list is alligned to the top edge of list."
     },
     "width": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets sets width of combo. The numeric and string values (valid html units for size) are supported. It includes %, px, em and other units.",
-      "valueOptions": null
+      "description": "Gets sets width of combo. The numeric and string values (valid html units for size) are supported. It includes %, px, em and other units."
     }
   }
 }

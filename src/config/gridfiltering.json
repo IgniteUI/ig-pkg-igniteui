@@ -265,8 +265,7 @@
     "advancedModeEditorsVisible": {
       "type": "bool",
       "defaultValue": false,
-      "description": "defines whether to show/hide editors in advanced mode. If false, no editors will be rendered in the advanced mode",
-      "valueOptions": null
+      "description": "defines whether to show/hide editors in advanced mode. If false, no editors will be rendered in the advanced mode"
     },
     "advancedModeHeaderButtonLocation": {
       "type": "string",
@@ -288,36 +287,213 @@
     "caseSensitive": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Enables or disables the filtering case sensitivity. Works only for local filtering.If true, it enables filtering case sensitivity. If false, it disables filtering case sensitivity.",
-      "valueOptions": null
+      "description": "Enables or disables the filtering case sensitivity. Works only for local filtering.If true, it enables filtering case sensitivity. If false, it disables filtering case sensitivity."
     },
     "columnSettings": {
       "type": "array",
       "defaultValue": null,
       "description": "a list of column settings that specifies custom filtering options on a per column basis",
-      "valueOptions": null
+      "schema": {
+        "columnKey": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Specifies column key. Either key or index must be set in every column setting."
+        },
+        "columnIndex": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Specifies column index. Either key or index must be set in every column setting."
+        },
+        "allowFiltering": {
+          "type": "bool",
+          "defaultValue": true,
+          "description": "Enables/disables filtering for the column."
+        },
+        "condition": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Specifies filtering condition for the column",
+          "valueOptions": [
+            {
+              "name": "empty",
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "notEmpty",
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "null",
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "notNull",
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "equals",
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "doesNotEqual",
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "startsWith",
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "contains",
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "doesNotContain",
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "endsWith",
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "greaterThan",
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "lessThan",
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "greaterThanOrEqualTo",
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "lessThanOrEqualTo",
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "on type",
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "notOn",
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "before",
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "after",
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "today",
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "yesterday",
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "thisMonth",
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "lastMonth",
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "nextMonth",
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "thisYear",
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "nextYear",
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "lastYear",
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "true",
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "false",
+              "type": "string",
+              "description": ""
+            }
+          ]
+        },
+        "defaultExpressions": {
+          "type": "array",
+          "defaultValue": [],
+          "description": "Initial filtering expressions - if set they will be applied on initialization",
+          "valueOptions": [
+            {
+              "name": "expr",
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "cond",
+              "type": "string",
+              "description": ""
+            }
+          ]
+        }
+
+      }
     },
     "featureChooserText": {
       "type": "string",
       "defaultValue": "",
-      "description": "Feature chooser text when filter is shown and filter mode is simple",
-      "valueOptions": null
+      "description": "Feature chooser text when filter is shown and filter mode is simple"
     },
     "featureChooserTextAdvancedFilter": {
       "type": "string",
       "defaultValue": "",
-      "description": "Feature chooser text when filter mode is advanced",
-      "valueOptions": null
+      "description": "Feature chooser text when filter mode is advanced"
     },
     "featureChooserTextHide": {
       "type": "string",
       "defaultValue": "",
-      "description": "Feature chooser text when filter is hidden and filter mode is simple",
-      "valueOptions": null
+      "description": "Feature chooser text when filter is hidden and filter mode is simple"
     },
     "filterButtonLocation": {
       "type": "string",
-      "defaultValue": null,
+      "defaultValue": "left",
       "description": " the filtering button for filter dropdowns can be rendered either on the left of the filter editor or on the right ",
       "valueOptions": [
         {
@@ -335,12 +511,11 @@
     "filterDelay": {
       "type": "number",
       "defaultValue": 500.0,
-      "description": "Time in milliseconds for which widget will wait for keystrokes before sending filtering request.",
-      "valueOptions": null
+      "description": "Time in milliseconds for which widget will wait for keystrokes before sending filtering request."
     },
     "filterDialogAddButtonWidth": {
       "type": "string",
-      "defaultValue": null,
+      "defaultValue": 100,
       "description": " add button width - in the advanced filter dialog ",
       "valueOptions": [
         {
@@ -358,14 +533,12 @@
     "filterDialogAddConditionDropDownTemplate": {
       "type": "string",
       "defaultValue": "<option value=${value}>${text}</option>",
-      "description": "Custom template for options in dropdown in add condition area in the filter dialog.",
-      "valueOptions": null
+      "description": "Custom template for options in dropdown in add condition area in the filter dialog."
     },
     "filterDialogAddConditionTemplate": {
       "type": "string",
       "defaultValue": "<div><span>${label1}</span><div><select></select></div><span>${label2}</span></div>",
-      "description": "Custom template for add condition area in the filter dialog.",
-      "valueOptions": null
+      "description": "Custom template for add condition area in the filter dialog."
     },
     "filterDialogColumnDropDownDefaultWidth": {
       "type": "string",
@@ -387,12 +560,11 @@
     "filterDialogContainment": {
       "type": "string",
       "defaultValue": "owner",
-      "description": "Controls containment behavior. <br>                owner  The filter dialog will be draggable only in the grid area<br>                window  The filter dialog will be draggable in the whole window area",
-      "valueOptions": null
+      "description": "Controls containment behavior. <br>                owner  The filter dialog will be draggable only in the grid area<br>                window  The filter dialog will be draggable in the whole window area"
     },
     "filterDialogExprInputDefaultWidth": {
       "type": "string",
-      "defaultValue": null,
+      "defaultValue": 80,
       "description": " width of the filtering expression input boxes in the advanced filter dialog ",
       "valueOptions": [
         {
@@ -410,12 +582,11 @@
     "filterDialogFilterConditionTemplate": {
       "type": "string",
       "defaultValue": "<option value=${conditionName}>${conditionLabel}</option>",
-      "description": "Custom template for options in condition list in filter dialog",
-      "valueOptions": null
+      "description": "Custom template for options in condition list in filter dialog"
     },
     "filterDialogFilterDropDownDefaultWidth": {
       "type": "string",
-      "defaultValue": null,
+      "defaultValue": 80,
       "description": " Width of the filtering condition dropdowns in the advanced filter dialog ",
       "valueOptions": [
         {
@@ -433,12 +604,11 @@
     "filterDialogFilterTemplate": {
       "type": "string",
       "defaultValue": "<tr><td><input/></td><td><select></select></td><td><input /> </td><td><span></span></td></tr>",
-      "description": "Custom template for filter dialog",
-      "valueOptions": null
+      "description": "Custom template for filter dialog"
     },
     "filterDialogHeight": {
       "type": "string",
-      "defaultValue": null,
+      "defaultValue": "",
       "description": " default filter dialog height (used for Advanced filtering)  ",
       "valueOptions": [
         {
@@ -456,12 +626,11 @@
     "filterDialogMaxFilterCount": {
       "type": "number",
       "defaultValue": 5.0,
-      "description": "Maximum number of filter rows in the advanced filtering dialog. if this number is exceeded, an error message will be rendered",
-      "valueOptions": null
+      "description": "Maximum number of filter rows in the advanced filtering dialog. if this number is exceeded, an error message will be rendered"
     },
     "filterDialogMaxHeight": {
       "type": "string",
-      "defaultValue": null,
+      "defaultValue": "",
       "description": " maximum filter dialog height (used for Advanced filtering)  ",
       "valueOptions": [
         {
@@ -478,7 +647,7 @@
     },
     "filterDialogOkCancelButtonWidth": {
       "type": "string",
-      "defaultValue": null,
+      "defaultValue": 120,
       "description": " Width of the Ok and Cancel buttons in the advanced filtering dialogs ",
       "valueOptions": [
         {
@@ -495,7 +664,7 @@
     },
     "filterDialogWidth": {
       "type": "string",
-      "defaultValue": null,
+      "defaultValue": 370,
       "description": " default filter dialog width (used for Advanced filtering) ",
       "valueOptions": [
         {
@@ -513,12 +682,11 @@
     "filterDropDownAnimationDuration": {
       "type": "number",
       "defaultValue": 500.0,
-      "description": "animation duration in milliseconds for the filter dropdown animations",
-      "valueOptions": null
+      "description": "animation duration in milliseconds for the filter dropdown animations"
     },
     "filterDropDownAnimations": {
       "type": "string",
-      "defaultValue": null,
+      "defaultValue": "linear",
       "description": " type of animations for the column filter dropdowns",
       "valueOptions": [
         {
@@ -534,31 +702,18 @@
       ]
     },
     "filterDropDownHeight": {
-      "type": "object",
+      "type": "number",
       "defaultValue": 0.0,
-      "description": "Height of the column filter dropdowns<br>                string The height of the column filter dropdowns in pixels (0px).<br>                number The height of the column filter dropdowns as a number (0).",
-      "valueOptions": null
+      "description": "Height of the column filter dropdowns<br>                string The height of the column filter dropdowns in pixels (0px).<br>                number The height of the column filter dropdowns as a number (0)."
     },
     "filterDropDownItemIcons": {
-      "type": "string",
-      "defaultValue": null,
-      "description": " Enable/disable filter icons visibility.",
-      "valueOptions": [
-        {
-          "name": "true",
-          "type": "bool",
-          "description": " all predefined filters in the filter dropdowns will have icons rendered in front of the text"
-        },
-        {
-          "name": "false",
-          "type": "bool",
-          "description": ""
-        }
-      ]
+      "type": "bool",
+      "defaultValue": true,
+      "description": " Enable/disable filter icons visibility."
     },
     "filterDropDownWidth": {
       "type": "string",
-      "defaultValue": null,
+      "defaultValue": 0,
       "description": " width of the column filter dropdowns",
       "valueOptions": [
         {
@@ -576,28 +731,24 @@
     "filterExprUrlKey": {
       "type": "string",
       "defaultValue": null,
-      "description": "URL key name that specifies how the filtering expressions will be encoded for remote requests, e.g. &filter('col') = startsWith. Default is OData",
-      "valueOptions": null
+      "description": "URL key name that specifies how the filtering expressions will be encoded for remote requests, e.g. &filter('col') = startsWith. Default is OData"
     },
     "filterSummaryAlwaysVisible": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Enable/disable footer visibility with summary info about the filter.If false, the filter summary row (in the footer) will only be visible when paging is enabled (or some other feature that renders a footer)",
-      "valueOptions": null
+      "description": "Enable/disable footer visibility with summary info about the filter.If false, the filter summary row (in the footer) will only be visible when paging is enabled (or some other feature that renders a footer)"
     },
     "filterSummaryTemplate": {
       "type": "string",
       "defaultValue": "",
-      "description": "Summary template that will appear in the bottom left corner of the footer. Has the format '${matches} matching records'",
-      "valueOptions": null
+      "description": "Summary template that will appear in the bottom left corner of the footer. Has the format '${matches} matching records'"
     },
     "labels": {
-      "type": "unknown",
+      "type": "object",
       "defaultValue": null,
-      "description": "A list of configurable and localized labels that will be used for teh predefnied filtering conditions in the filter dropdowns.",
-      "valueOptions": null
+      "description": "A list of configurable and localized labels that will be used for teh predefnied filtering conditions in the filter dropdowns."
     },
-    "mode": {
+    "": {
       "type": "string",
       "defaultValue": null,
       "description": " Default is 'simple' for non-virtualized grids, and 'advanced' when virtualization is enabled ",
@@ -615,40 +766,34 @@
       ]
     },
     "nullTexts": {
-      "type": "unknown",
+      "type": "object",
       "defaultValue": null,
-      "description": "list of configurable and localized null texts that will be used for the filter editors",
-      "valueOptions": null
+      "description": "list of configurable and localized null texts that will be used for the filter editors"
     },
     "renderFC": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Render in feature chooser. Feature chooser is dialog which lists all the enabled features (like Sorting, Filtering, Hiding etc.) of igGrid.",
-      "valueOptions": null
+      "description": "Render in feature chooser. Feature chooser is dialog which lists all the enabled features (like Sorting, Filtering, Hiding etc.) of igGrid."
     },
     "renderFilterButton": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Enable/disable filter button visibility. If false,no filter dropdown buttons will be rendered and predefined list of filters will not be rendered for the columns",
-      "valueOptions": null
+      "description": "Enable/disable filter button visibility. If false,no filter dropdown buttons will be rendered and predefined list of filters will not be rendered for the columns"
     },
     "showEmptyConditions": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Enable/disable empty condition visibility in the filter. If true, shows empty and not empty filtering conditions in the dropdowns",
-      "valueOptions": null
+      "description": "Enable/disable empty condition visibility in the filter. If true, shows empty and not empty filtering conditions in the dropdowns"
     },
     "showNullConditions": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Enable/disable visibility of null and not null filtering conditions in the dropdowns. If true, shows null and not null filtering conditions in the dropdowns",
-      "valueOptions": null
+      "description": "Enable/disable visibility of null and not null filtering conditions in the dropdowns. If true, shows null and not null filtering conditions in the dropdowns"
     },
     "tooltipTemplate": {
       "type": "string",
       "defaultValue": "",
-      "description": "custom tooltip template for the filter button, when a filter is applied",
-      "valueOptions": null
+      "description": "custom tooltip template for the filter button, when a filter is applied"
     },
     "type": {
       "type": "string",

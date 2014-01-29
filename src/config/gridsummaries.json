@@ -202,110 +202,203 @@
     "callee": {
       "type": "function",
       "defaultValue": null,
-      "description": "Function reference - it is called when data is retrieved from the data source",
-      "valueOptions": null
+      "description": "Function reference - it is called when data is retrieved from the data source"
     },
     "columnSettings": {
       "type": "array",
       "defaultValue": null,
-      "description": "a list of column settings that specifies custom summaries options per column basis",
-      "valueOptions": null
+      "description": "List of column settings that specifies custom summaries options per column basis",
+      "schema": {
+        "columnKey": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Specifies the column key of the column with summary",
+          "required": true
+        },
+        "columnIndex": {
+          "type": "number",
+          "defaultValue": -1,
+          "description": "Column index can be used in place of column key. The preferred way of populating a column setting is to always use the column keys as identifiers"
+        },
+        "allowSummaries": {
+          "type": "bool",
+          "defaultValue": true,
+          "description": "Enables disables summaries for the column"
+        },
+        "summaryOperands": {
+          "type": "array",
+          "defaultValue": null,
+          "description": "Defines the summary operands",
+          "schema": {
+            "rowDisplayLabel": {
+              "type": "string",
+              "defaultValue": "",
+              "description": "Text of the summary method which is shown in summary cell"
+            },
+            "type": {
+              "type": "string",
+              "defaultValue": "custom",
+              "description": "Set type of summary operand",
+              "valueOptions": [
+                {
+                  "name": "count",
+                  "type": "string",
+                  "description": "The summaries are calculated using count function"
+                },
+                {
+                  "name": "min",
+                  "type": "string",
+                  "description": "The summaries are calculated using min function"
+                },
+                {
+                  "name": "max",
+                  "type": "string",
+                  "description": "The summaries are calculated using max function"
+                },
+                {
+                  "name": "sum",
+                  "type": "string",
+                  "description": "The summaries are calculated using sum function"
+                },
+                {
+                  "name": "avg",
+                  "type": "string",
+                  "description": "The summaries are calculated using average function"
+                },
+                {
+                  "name": "custom",
+                  "type": "string",
+                  "description": "The summaries are calculated using custom function"
+                }
+              ]
+            },
+            "active": {
+              "type": "bool",
+              "defaultValue": true,
+              "description": "If it is false the summary operand will be shown in dropdown but it will not be made calculation"
+            },
+            "summaryCalculator": {
+              "type": "string",
+              "defaultValue": null,
+              "description": "Name of the custom summary function which should be executed when type is custom",
+              "required": true
+            },
+            "order": {
+              "type": "number",
+              "defaultValue": 5,
+              "description": "Specifies the order of elements in dropdown. It is recommended to set order of custom operands and to be greater or equal to 5"
+            },
+            "decimalDisplay": {
+              "type": "number",
+              "defaultValue": 2,
+              "description": "Specifies the number of digits after the decimal point for result of the current summary operand. This property will be ignored when isGridFormatter is true",
+              "valueOptions": null
+            },
+            "isGridFormatter": {
+              "type": "bool",
+              "defaultValue": false,
+              "description": "Specifies whether to be used grid formatter for result for the current summary operand"
+            }
+          }
+        }
+      }
     },
     "compactRenderingMode": {
       "type": "string",
-      "defaultValue": null,
-      "description": " Specifies how compact the summaries are rendered. ",
-      "valueOptions": []
+      "defaultValue": "true",
+      "description": "Specifies how compact the summaries are rendered.",
+      "valueOptions": [
+		{
+		  "name": "auto",
+          "type": "string",
+          "description": "Will use True if the maximum number of visible summaries is one or less and False otherwise"
+        },
+        {
+          "name": "true",
+          "type": "string",
+          "description": "Indicates that the summaries may be rendered compactly, even mixing different summaries on the same line."
+		},
+		{
+          "name": "false",
+          "type": "string",
+          "description": "Ensures that each summary type is occupying a separate line."
+		}
+	  ]
     },
     "defaultDecimalDisplay": {
       "type": "number",
       "defaultValue": 2.0,
-      "description": "The number of digits after the decimal point. If gridFormatter is True then this option is ignored.",
-      "valueOptions": null
+      "description": "The number of digits after the decimal point. If gridFormatter is True then this option is ignored."
     },
     "dialogButtonCancelText": {
       "type": "string",
       "defaultValue": "",
-      "description": "Text of the button Cancel in the summaries dropdown",
-      "valueOptions": null
+      "description": "Text of the button Cancel in the summaries dropdown"
     },
     "dialogButtonOKText": {
       "type": "string",
       "defaultValue": "",
-      "description": "Text of the button OK in the summaries dropdown",
-      "valueOptions": null
+      "description": "Text of the button OK in the summaries dropdown"
     },
     "dropDownDialogAnimationDuration": {
       "type": "number",
       "defaultValue": 400.0,
-      "description": "Dropdown animation duration",
-      "valueOptions": null
+      "description": "Dropdown animation duration"
     },
     "dropDownHeight": {
-      "type": "number",
+	  "type": "number",
       "defaultValue": "",
-      "description": "Height of the dropdown in pixels",
-      "valueOptions": null
+      "description": "Height of the dropdown in pixels"
     },
     "dropDownWidth": {
       "type": "number",
       "defaultValue": "",
-      "description": "Width of the dropdown in pixels",
-      "valueOptions": null
+      "description": "Width of the dropdown in pixels"
     },
     "emptyCellText": {
       "type": "string",
       "defaultValue": "",
-      "description": "Empty text template to be shown for empty cells",
-      "valueOptions": null
+      "description": "Empty text template to be shown for empty cells"
     },
     "featureChooserText": {
       "type": "string",
       "defaultValue": "",
-      "description": "Get or set text that is shown in the feature chooser dropdown when summaries are hidden",
-      "valueOptions": null
+      "description": "Get or set text that is shown in the feature chooser dropdown when summaries are hidden"
     },
     "featureChooserTextHide": {
       "type": "string",
       "defaultValue": "",
-      "description": "Get or set text that is shown in the feauture chooser dropdown when summaries are shown",
-      "valueOptions": null
+      "description": "Get or set text that is shown in the feauture chooser dropdown when summaries are shown"
     },
     "isGridFormatter": {
       "type": "bool",
       "defaultValue": true,
-      "description": "if this property is enabled and in summaryOperand isGridFormatter  is undefined then use grid formatting for cells",
-      "valueOptions": null
+      "description": "if this property is enabled and in summaryOperand isGridFormatter  is undefined then use grid formatting for cells"
     },
     "resultTemplate": {
       "type": "string",
       "defaultValue": "{0} = {1}",
-      "description": "Result template for summary result(shown in table cell)",
-      "valueOptions": null
+      "description": "Result template for summary result(shown in table cell)"
     },
     "showDropDownButton": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Show/hide footer button(on click show/hide dropdown)",
-      "valueOptions": null
+      "description": "Show/hide footer button(on click show/hide dropdown)"
     },
     "showSummariesButton": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Show header button icon in the header cell. On click - shows/hides summaries",
-      "valueOptions": null
+      "description": "Show header button icon in the header cell. On click - shows/hides summaries"
     },
     "summariesHeaderButtonTooltip": {
       "type": "string",
       "defaultValue": "",
-      "description": "Tooltip text for header cell button",
-      "valueOptions": null
+      "description": "Tooltip text for header cell button"
     },
     "summariesResponseKey": {
       "type": "string",
       "defaultValue": "summaries",
-      "description": "Result key by which we get data from the result returned by remote data source.",
-      "valueOptions": null
+      "description": "Result key by which we get data from the result returned by remote data source."
     },
     "summaryExecution": {
       "type": "string",
@@ -315,25 +408,24 @@
         {
           "name": "priortofilteringandpaging",
           "type": "string",
-          "description": " summaries are calculated prior to filtering and paging"
+          "description": "Summaries are calculated prior to filtering and paging"
         },
         {
           "name": "afterfilteringbeforepaging",
           "type": "string",
-          "description": " summaries are calculated after filtering and before paging"
+          "description": "Summaries are calculated after filtering and before paging"
         },
         {
           "name": "afterfilteringandpaging",
           "type": "string",
-          "description": " summaries are calculated after filtering and paging"
+          "description": "Summaries are calculated after filtering and paging"
         }
       ]
     },
     "summaryExprUrlKey": {
       "type": "string",
       "defaultValue": "summaries",
-      "description": "Set key in GET Request for summaries - used only when type is remote",
-      "valueOptions": null
+      "description": "Set key in GET Request for summaries - used only when type is remote"
     },
     "type": {
       "type": "string",
@@ -348,7 +440,7 @@
         {
           "name": "local",
           "type": "string",
-          "description": "\tWhen it is local calculations are made on the client"
+          "description": "When it is local calculations are made on the client"
         }
       ]
     }

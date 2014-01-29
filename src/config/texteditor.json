@@ -329,14 +329,12 @@
     "animationHideDuration": {
       "type": "number",
       "defaultValue": 200.0,
-      "description": "Sets gets duration of animation in milliseconds when drop-down list is hidden. That option is not supported when \"type\" is set to \"datepicker\", because the jquery.ui.datepicker does not have similar feature. Default is 200. If value is less than 5, then animation is disabled.",
-      "valueOptions": null
+      "description": "Sets gets duration of animation in milliseconds when drop-down list is hidden. That option is not supported when \"type\" is set to \"datepicker\", because the jquery.ui.datepicker does not have similar feature. Default is 200. If value is less than 5, then animation is disabled."
     },
     "animationShowDuration": {
       "type": "number",
       "defaultValue": 200.0,
-      "description": "Sets gets duration of animation in milliseconds when drop-down list or calendar is displayed. Default is 200. If value is less than 5, then animation is disabled.",
-      "valueOptions": null
+      "description": "Sets gets duration of animation in milliseconds when drop-down list or calendar is displayed. Default is 200. If value is less than 5, then animation is disabled."
     },
     "button": {
       "type": "string",
@@ -363,14 +361,12 @@
     "display": {
       "type": "string",
       "defaultValue": "inline-block",
-      "description": "Sets gets style.display for outer html element.<br>&nbsp;&nbsp;&nbsp;&nbsp;The value of \"\" will disable changing style.display.<br>&nbsp;&nbsp;&nbsp;&nbsp;If the base html element is not INPUT, TEXTAREA, SPAN or DIV, then it is recommended to set this option to an empty string,<br>&nbsp;&nbsp;&nbsp;&nbsp;because, some browsers may fail to handle display other than default value of browser.<br>&nbsp;&nbsp;&nbsp;&nbsp;For example, if base element for editor is TD, then behavior in Chrome can be problematic.",
-      "valueOptions": null
+      "description": "Sets gets style.display for outer html element.<br>&nbsp;&nbsp;&nbsp;&nbsp;The value of \"\" will disable changing style.display.<br>&nbsp;&nbsp;&nbsp;&nbsp;If the base html element is not INPUT, TEXTAREA, SPAN or DIV, then it is recommended to set this option to an empty string,<br>&nbsp;&nbsp;&nbsp;&nbsp;because, some browsers may fail to handle display other than default value of browser.<br>&nbsp;&nbsp;&nbsp;&nbsp;For example, if base element for editor is TD, then behavior in Chrome can be problematic."
     },
     "dropDownOnReadOnly": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Sets gets ability to override the \"readOnly\" option and allow showing the drop-down list and changing the value in the editor from a list. Value false does not allow drop-down when \"readOnly\" is true.",
-      "valueOptions": null
+      "description": "Sets gets ability to override the \"readOnly\" option and allow showing the drop-down list and changing the value in the editor from a list. Value false does not allow drop-down when \"readOnly\" is true."
     },
     "dropDownTriggers": {
       "type": "string",
@@ -402,130 +398,109 @@
     "excludeKeys": {
       "type": "string",
       "defaultValue": null,
-      "description": "Sets gets ability to prevent entering specific characters from keyboard or on paste.<br>&nbsp;&nbsp;&nbsp;&nbsp;Notes:<br>&nbsp;&nbsp;&nbsp;&nbsp;If a character is specified in \"includeKeys\" option also, then \"excludeKeys\" has priority.<br>&nbsp;&nbsp;&nbsp;&nbsp;Letters should be set in upper case.<br>&nbsp;&nbsp;&nbsp;&nbsp;Making difference between upper and lower case is not supported.",
-      "valueOptions": null
+      "description": "Sets gets ability to prevent entering specific characters from keyboard or on paste.<br>&nbsp;&nbsp;&nbsp;&nbsp;Notes:<br>&nbsp;&nbsp;&nbsp;&nbsp;If a character is specified in \"includeKeys\" option also, then \"excludeKeys\" has priority.<br>&nbsp;&nbsp;&nbsp;&nbsp;Letters should be set in upper case.<br>&nbsp;&nbsp;&nbsp;&nbsp;Making difference between upper and lower case is not supported."
     },
     "focusOnSpin": {
       "type": "bool",
       "defaultValue": false,
-      "description": "If that option is disabled and the editor is not focused, then a mouse click on the spin button will keep the text in the editor in display (not focus) format and perform spin actions.",
-      "valueOptions": null
+      "description": "If that option is disabled and the editor is not focused, then a mouse click on the spin button will keep the text in the editor in display (not focus) format and perform spin actions."
     },
     "height": {
       "type": "number",
       "defaultValue": null,
-      "description": "Sets gets height of editor in pixels.<br>&nbsp;&nbsp;&nbsp;&nbsp;Only positive values have effect.<br>&nbsp;&nbsp;&nbsp;&nbsp;If that option is not set, then value of style.height of base html element will be used automatically. However, that value should be in the px units.",
-      "valueOptions": null
+      "description": "Sets gets height of editor in pixels.<br>&nbsp;&nbsp;&nbsp;&nbsp;Only positive values have effect.<br>&nbsp;&nbsp;&nbsp;&nbsp;If that option is not set, then value of style.height of base html element will be used automatically. However, that value should be in the px units."
     },
     "hideEnterKey": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Sets gets ability to hide the Enter key from browser.",
-      "valueOptions": null
+      "description": "Sets gets ability to hide the Enter key from browser."
     },
     "includeKeys": {
       "type": "string",
       "defaultValue": null,
-      "description": "Sets gets ability to enter only specific characters in input-field from keyboard and on paste.<br>&nbsp;&nbsp;&nbsp;&nbsp;Notes:<br>&nbsp;&nbsp;&nbsp;&nbsp;If \"excludeKeys\" option contains same characters as this option, then \"excludeKeys\" has priority.<br>&nbsp;&nbsp;&nbsp;&nbsp;Letters should be set in upper case.<br>&nbsp;&nbsp;&nbsp;&nbsp;Making difference between upper and lower case is not supported.",
-      "valueOptions": null
+      "description": "Sets gets ability to enter only specific characters in input-field from keyboard and on paste.<br>&nbsp;&nbsp;&nbsp;&nbsp;Notes:<br>&nbsp;&nbsp;&nbsp;&nbsp;If \"excludeKeys\" option contains same characters as this option, then \"excludeKeys\" has priority.<br>&nbsp;&nbsp;&nbsp;&nbsp;Letters should be set in upper case.<br>&nbsp;&nbsp;&nbsp;&nbsp;Making difference between upper and lower case is not supported."
     },
     "inputName": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets sets name of (hidden) INPUT element, which value will be set to current value of editor on any change.",
-      "valueOptions": null
+      "description": "Gets sets name of (hidden) INPUT element, which value will be set to current value of editor on any change."
     },
     "listAutoComplete": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Sets gets autocomplete.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value true enables and false disables auto-complete functionality to fill value of editor by a partially matching item from the listOfItems.<br>&nbsp;&nbsp;&nbsp;&nbsp;If that option is enabled and entered text does not match with a part of any item in list, then original value is preserved.<br>&nbsp;&nbsp;&nbsp;&nbsp;Notes:<br>&nbsp;&nbsp;&nbsp;&nbsp;That option is supported only when the \"type\" of editor is \"text\" and it has effect only when listOfItems is set.<br>&nbsp;&nbsp;&nbsp;&nbsp;Partial match can be validated from the beginning of an item or anywhere within an item. That is defined by the \"listMatchContains\" option.<br>&nbsp;&nbsp;&nbsp;&nbsp;Validation can be case sensitive or not and that is defined by the \"listMatchIgnoreCase\" option.",
-      "valueOptions": null
+      "description": "Sets gets autocomplete.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value true enables and false disables auto-complete functionality to fill value of editor by a partially matching item from the listOfItems.<br>&nbsp;&nbsp;&nbsp;&nbsp;If that option is enabled and entered text does not match with a part of any item in list, then original value is preserved.<br>&nbsp;&nbsp;&nbsp;&nbsp;Notes:<br>&nbsp;&nbsp;&nbsp;&nbsp;That option is supported only when the \"type\" of editor is \"text\" and it has effect only when listOfItems is set.<br>&nbsp;&nbsp;&nbsp;&nbsp;Partial match can be validated from the beginning of an item or anywhere within an item. That is defined by the \"listMatchContains\" option.<br>&nbsp;&nbsp;&nbsp;&nbsp;Validation can be case sensitive or not and that is defined by the \"listMatchIgnoreCase\" option."
     },
     "listColumns": {
       "type": "number",
       "defaultValue": 1.0,
-      "description": "Sets gets number of columns in drop-down list.",
-      "valueOptions": null
+      "description": "Sets gets number of columns in drop-down list."
     },
     "listDropDownAsChild": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Sets gets location of drop-down list.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value true will create html element for list as a child of main html element.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value false creates list as a child of body.<br>&nbsp;&nbsp;&nbsp;&nbsp;Notes:<br>&nbsp;&nbsp;&nbsp;&nbsp;That option has effect only for drop-down defined by listOfItems.<br>&nbsp;&nbsp;&nbsp;&nbsp;The value of true is supported only when main (outer) html element of editor is container such as SPAN or DIV, or buttons are enabled, or renderInContainer is enabled, the theme is set.<br>&nbsp;&nbsp;&nbsp;&nbsp;The value of true allows a better positioning and can be useful when editor is located in complex layout and containers with \"position:fixed\".",
-      "valueOptions": null
+      "description": "Sets gets location of drop-down list.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value true will create html element for list as a child of main html element.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value false creates list as a child of body.<br>&nbsp;&nbsp;&nbsp;&nbsp;Notes:<br>&nbsp;&nbsp;&nbsp;&nbsp;That option has effect only for drop-down defined by listOfItems.<br>&nbsp;&nbsp;&nbsp;&nbsp;The value of true is supported only when main (outer) html element of editor is container such as SPAN or DIV, or buttons are enabled, or renderInContainer is enabled, the theme is set.<br>&nbsp;&nbsp;&nbsp;&nbsp;The value of true allows a better positioning and can be useful when editor is located in complex layout and containers with \"position:fixed\"."
     },
     "listItems": {
       "type": "array",
       "defaultValue": null,
       "description": "Sets gets list of items which are used for drop-down list, spin, validation and auto-complete functionality.<br>&nbsp;&nbsp;&nbsp;&nbsp;Items in list can be strings, numbers, dates or objects in any combination.<br>&nbsp;&nbsp;&nbsp;&nbsp;If type of editor is date or datepicker and item is string, then igEditor will try to convert it to Date object and show item in display format.<br>&nbsp;&nbsp;&nbsp;&nbsp;If type of editor is numeric, currency or percent and item is string, then igEditor will try to convert it to number and show item in display format.<br>&nbsp;&nbsp;&nbsp;&nbsp;If item is object and it has member \"text\", then that member is used.<br>&nbsp;&nbsp;&nbsp;&nbsp;If item is object and besides \"text\" has function getHtml(), then that function is used to render item in list.<br>&nbsp;&nbsp;&nbsp;&nbsp;The item or item.text is used to set \"value\" of particular editor when list-item is selected.",
-      "valueOptions": null,
 	  "arrayMemberType" : "string,number,date"
     },
     "listMatchContains": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Sets gets list match contains.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value true enables and false disables validation for partial match of entered text anywhere within an item in the listOfItems or only from the beginning of an item.<br>&nbsp;&nbsp;&nbsp;&nbsp;That option has effect only when \"listMatchOnly\" or \"listAutoComplete\" options are enabled.",
-      "valueOptions": null
+      "description": "Sets gets list match contains.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value true enables and false disables validation for partial match of entered text anywhere within an item in the listOfItems or only from the beginning of an item.<br>&nbsp;&nbsp;&nbsp;&nbsp;That option has effect only when \"listMatchOnly\" or \"listAutoComplete\" options are enabled."
     },
     "listMatchIgnoreCase": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Sets gets case validation. Value of false enables and true disables validation for case of entries to match with items in listOfItems.<br>&nbsp;&nbsp;&nbsp;&nbsp;That option has effect only when \"listMatchOnly\" or \"listAutoComplete\" options are enabled.",
-      "valueOptions": null
+      "description": "Sets gets case validation. Value of false enables and true disables validation for case of entries to match with items in listOfItems.<br>&nbsp;&nbsp;&nbsp;&nbsp;That option has effect only when \"listMatchOnly\" or \"listAutoComplete\" options are enabled."
     },
     "listMatchOnly": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Set gets list match.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value true enables and false disables validation of keyboard entries to match with items in listOfItems.<br>&nbsp;&nbsp;&nbsp;&nbsp;If that option is enabled and entered text does not match with a part of any item in list, then entry is canceled.<br>&nbsp;&nbsp;&nbsp;&nbsp;Notes:<br>&nbsp;&nbsp;&nbsp;&nbsp;That option is supported only when the \"type\" of editor is \"text\" and it has effect only when listOfItems is set.<br>&nbsp;&nbsp;&nbsp;&nbsp;Partial match can be validated from the beginning of an item or anywhere within an item. That is defined by the \"listMatchContains\" option.<br>&nbsp;&nbsp;&nbsp;&nbsp;Validation can be case sensitive or not and that is defined by the \"listMatchIgnoreCase\" option.",
-      "valueOptions": null
+      "description": "Set gets list match.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value true enables and false disables validation of keyboard entries to match with items in listOfItems.<br>&nbsp;&nbsp;&nbsp;&nbsp;If that option is enabled and entered text does not match with a part of any item in list, then entry is canceled.<br>&nbsp;&nbsp;&nbsp;&nbsp;Notes:<br>&nbsp;&nbsp;&nbsp;&nbsp;That option is supported only when the \"type\" of editor is \"text\" and it has effect only when listOfItems is set.<br>&nbsp;&nbsp;&nbsp;&nbsp;Partial match can be validated from the beginning of an item or anywhere within an item. That is defined by the \"listMatchContains\" option.<br>&nbsp;&nbsp;&nbsp;&nbsp;Validation can be case sensitive or not and that is defined by the \"listMatchIgnoreCase\" option."
     },
     "listMaxHeight": {
       "type": "number",
       "defaultValue": 300.0,
-      "description": "Sets gets maximum height of drop-down list in pixels. If value is equal to 0 or negative, then the height of list is defined by number of items in list.",
-      "valueOptions": null
+      "description": "Sets gets maximum height of drop-down list in pixels. If value is equal to 0 or negative, then the height of list is defined by number of items in list."
     },
     "listWidth": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "Sets gets custom width of drop-down list in pixels. If value is equal to 0 or negative, then the width of editor is used.",
-      "valueOptions": null
+      "description": "Sets gets custom width of drop-down list in pixels. If value is equal to 0 or negative, then the width of editor is used."
     },
     "locale": {
       "type": "object",
       "defaultValue": null,
       "description": "Sets gets strings used for title of buttons. Value of object should contain pairs or key:value members. Note: any sub-option of locale can appear within the main option of igEditor. In this case those values within main options will have highest priority and override corresponding value in locale.",
-      "valueOptions": null,
 	  "arrayMemberType" : "object"
     },
     "maxLength": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "Sets gets maximum length of text which can be entered by user.<br>&nbsp;&nbsp;&nbsp;&nbsp;Negative values or 0 disables that behavior.",
-      "valueOptions": null
+      "description": "Sets gets maximum length of text which can be entered by user.<br>&nbsp;&nbsp;&nbsp;&nbsp;Negative values or 0 disables that behavior."
     },
     "nullText": {
       "type": "string",
       "defaultValue": null,
-      "description": "Sets gets text which appears in editor when editor has no focus and \"value\" in editor is null or empty string.",
-      "valueOptions": null
+      "description": "Sets gets text which appears in editor when editor has no focus and \"value\" in editor is null or empty string."
     },
     "readOnly": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Set gets ability to modify editor from keyboard (false) or disables keyboard (true).<br>&nbsp;&nbsp;&nbsp;&nbsp;Notes:<br>&nbsp;&nbsp;&nbsp;&nbsp;If the \"spinOnReadOnly\" is enabled, then value will be modified on spin regardless of the \"readOnly\".<br>&nbsp;&nbsp;&nbsp;&nbsp;If the \"listItems\" has items and \"dropDownTriggers\" is defined, then value will be modified from drop-down list regardless of the \"readOnly\".",
-      "valueOptions": null
+      "description": "Set gets ability to modify editor from keyboard (false) or disables keyboard (true).<br>&nbsp;&nbsp;&nbsp;&nbsp;Notes:<br>&nbsp;&nbsp;&nbsp;&nbsp;If the \"spinOnReadOnly\" is enabled, then value will be modified on spin regardless of the \"readOnly\".<br>&nbsp;&nbsp;&nbsp;&nbsp;If the \"listItems\" has items and \"dropDownTriggers\" is defined, then value will be modified from drop-down list regardless of the \"readOnly\"."
     },
     "renderInContainer": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Sets gets option to wrap input field into SPAN..<br>&nbsp;&nbsp;&nbsp;&nbsp;That option can be set only on initialization and it is available only when base element is INPUT or TEXTAREA.<br>&nbsp;&nbsp;&nbsp;&nbsp;If drop-down button or spin-buttons are enabled or the theme is set, then that option has no effect.<br>&nbsp;&nbsp;&nbsp;&nbsp;The reason for that property is to allow vertical alignment of several igEditor controls when they are located in html inline and some of them have enabled buttons.<br>&nbsp;&nbsp;&nbsp;&nbsp;If all editors are created within SPAN wrapper, then they will appear on the same line. Otherwise, editors in SPANs will be shifted 3-6 pixels above INPUT editors.",
-      "valueOptions": null
+      "description": "Sets gets option to wrap input field into SPAN..<br>&nbsp;&nbsp;&nbsp;&nbsp;That option can be set only on initialization and it is available only when base element is INPUT or TEXTAREA.<br>&nbsp;&nbsp;&nbsp;&nbsp;If drop-down button or spin-buttons are enabled or the theme is set, then that option has no effect.<br>&nbsp;&nbsp;&nbsp;&nbsp;The reason for that property is to allow vertical alignment of several igEditor controls when they are located in html inline and some of them have enabled buttons.<br>&nbsp;&nbsp;&nbsp;&nbsp;If all editors are created within SPAN wrapper, then they will appear on the same line. Otherwise, editors in SPANs will be shifted 3-6 pixels above INPUT editors."
     },
     "required": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Set gets validation for empty value in editor.",
-      "valueOptions": null
+      "description": "Set gets validation for empty value in editor."
     },
     "selectionOnFocus": {
       "type": "object",
@@ -577,20 +552,17 @@
     "spinOnReadOnly": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Sets gets ability to override the \"readOnly\" option and allow changes \"value\" of editor on spin events. Value false does not allow spin when \"readOnly\" is true.",
-      "valueOptions": null
+      "description": "Sets gets ability to override the \"readOnly\" option and allow changes \"value\" of editor on spin events. Value false does not allow spin when \"readOnly\" is true."
     },
     "spinWrapAround": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Sets gets ability to automatically set value in editor to opposite limit, when spin action reached minimum or maximum limit.<br>&nbsp;&nbsp;&nbsp;&nbsp;In case of listOfItems, the first and the last items in list are used as minimum and maximum values.",
-      "valueOptions": null
+      "description": "Sets gets ability to automatically set value in editor to opposite limit, when spin action reached minimum or maximum limit.<br>&nbsp;&nbsp;&nbsp;&nbsp;In case of listOfItems, the first and the last items in list are used as minimum and maximum values."
     },
     "tabIndex": {
       "type": "number",
       "defaultValue": null,
-      "description": "Gets sets value in tabIndex for editor.",
-      "valueOptions": null
+      "description": "Gets sets value in tabIndex for editor."
     },
     "textAlign": {
       "type": "string",
@@ -649,20 +621,17 @@
     "theme": {
       "type": "string",
       "defaultValue": null,
-      "description": "Sets gets selector for css classes used by editor.<br>&nbsp;&nbsp;&nbsp;&nbsp;That option allows replacing all default css styles of editor by custom values.<br>&nbsp;&nbsp;&nbsp;&nbsp;Application should provide css classes for all members defined in the css options with \"theme\" selector.<br>&nbsp;&nbsp;&nbsp;&nbsp;For example, if that property is set to \"mytheme\", then application should provide following css classes:<br>&nbsp;&nbsp;&nbsp;&nbsp;.mytheme .ui-igedit-field{...};<br>&nbsp;&nbsp;&nbsp;&nbsp;.mytheme .ui-igedit-focus{...};<br>&nbsp;&nbsp;&nbsp;&nbsp;etc.<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: changing theme is not supported when base element is INPUT or TEXTAREA and renderInContainer or button are not enabled.",
-      "valueOptions": null
+      "description": "Sets gets selector for css classes used by editor.<br>&nbsp;&nbsp;&nbsp;&nbsp;That option allows replacing all default css styles of editor by custom values.<br>&nbsp;&nbsp;&nbsp;&nbsp;Application should provide css classes for all members defined in the css options with \"theme\" selector.<br>&nbsp;&nbsp;&nbsp;&nbsp;For example, if that property is set to \"mytheme\", then application should provide following css classes:<br>&nbsp;&nbsp;&nbsp;&nbsp;.mytheme .ui-igedit-field{...};<br>&nbsp;&nbsp;&nbsp;&nbsp;.mytheme .ui-igedit-focus{...};<br>&nbsp;&nbsp;&nbsp;&nbsp;etc.<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: changing theme is not supported when base element is INPUT or TEXTAREA and renderInContainer or button are not enabled."
     },
     "toLower": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Sets gets ability to convert input characters to lower case (true) or keeps characters as they are (false). That option has effect only while keyboard entries and paste.",
-      "valueOptions": null
+      "description": "Sets gets ability to convert input characters to lower case (true) or keeps characters as they are (false). That option has effect only while keyboard entries and paste."
     },
     "toUpper": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Sets gets ability to convert input characters to upper case (true) or keeps characters as they are (false). That option has effect only while keyboard entries and paste.",
-      "valueOptions": null
+      "description": "Sets gets ability to convert input characters to upper case (true) or keeps characters as they are (false). That option has effect only while keyboard entries and paste."
     },
     "type": {
       "type": "string",
@@ -745,21 +714,18 @@
       "type": "object",
       "defaultValue": null,
       "description": "Sets gets options supported by igValidator.<br>&nbsp;&nbsp;&nbsp;&nbsp;In order to enable validation and use defaults, an empty object can be used.<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: validation rules of igValidator, such as min, max, minLength, required are not supported, but similar properties of igEditor should be used.",
-      "valueOptions": null,
 	  "schemaRef": "validator"
     },
     "value": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets sets value in editor. The effect of setting/getting that option depends on type of editor and on dataMode options. That can be string, number or Date depending on type of editor. If it is used on initialization and the type option is missing, then if 'value' is Number, then 'numeric' editor is created automatically and if 'value' is Date, then the 'date' editor is created.",
-      "valueOptions": null, 
+      "description": "Gets sets value in editor. The effect of setting/getting that option depends on type of editor and on dataMode options. That can be string, number or Date depending on type of editor. If it is used on initialization and the type option is missing, then if 'value' is Number, then 'numeric' editor is created automatically and if 'value' is Date, then the 'date' editor is created.", 
 	  "arrayMemberType" : "string,number"
     },
     "width": {
       "type": "number",
       "defaultValue": null,
-      "description": "Sets gets width of editor in pixels.<br>&nbsp;&nbsp;&nbsp;&nbsp;Only positive values have effect. If that option is not set, then value of style.width of base html element will be used automatically. However, that value should be in the px units.",
-      "valueOptions": null
+      "description": "Sets gets width of editor in pixels.<br>&nbsp;&nbsp;&nbsp;&nbsp;Only positive values have effect. If that option is not set, then value of style.width of base html element will be used automatically. However, that value should be in the px units."
     }
   }
 }

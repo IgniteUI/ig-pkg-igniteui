@@ -90,7 +90,6 @@
       "type": "object",
       "defaultValue": null,
       "description": "options specific to a border layout",
-      "valueOptions": null,
       "schema": {
         "leftWidth": {
           "type": "string",
@@ -128,7 +127,6 @@
       "type": "object",
       "defaultValue": null,
       "description": "options specific to grid layout mode",
-      "valueOptions": null,
       "schema": {
         "cols": {
           "type": "number",
@@ -177,20 +175,17 @@
     "height": {
       "type": "string",
       "defaultValue": null,
-      "description": "height of the layout container",
-      "valueOptions": null
+      "description": "height of the layout container"
     },
     "itemCount": {
       "type": "number",
       "defaultValue": null,
-      "description": "number of items to render, this is only applicable to layouts: vertical and flow",
-      "valueOptions": null
+      "description": "number of items to render, this is only applicable to layouts: vertical and flow"
     },
     "items": {
       "type": "array",
       "defaultValue": null,
       "description": "an array of item descriptions <br>&nbsp;&nbsp;&nbsp;&nbsp;this assumes the container is empty, and every item<br>&nbsp;&nbsp;&nbsp;&nbsp;is described by rowspan,colspan, etc. - otherwise values of<br>&nbsp;&nbsp;&nbsp;&nbsp;1 are assumed<br>&nbsp;&nbsp;&nbsp;&nbsp;items can have various properties some of which may not be applicable<br>&nbsp;&nbsp;&nbsp;&nbsp;depending on the layoutMode.<br>&nbsp;&nbsp;&nbsp;&nbsp;for example rowSpan/colSpan/colIndex/rowIndex are only applicable to gridlayout",
-      "valueOptions": null,
       "schema": {
         "width": {
           "required": true,
@@ -261,8 +256,7 @@
     "width": {
       "type": "string",
       "defaultValue": null,
-      "description": "width of the layout container",
-      "valueOptions": null
+      "description": "width of the layout container"
     }
   }
 }

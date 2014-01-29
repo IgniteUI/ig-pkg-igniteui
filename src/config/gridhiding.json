@@ -233,104 +233,122 @@
     "columnChooserAnimationDuration": {
       "type": "number",
       "defaultValue": 200.0,
-      "description": "Specifies time of milliseconds for animation duration to show/hide modal dialog",
-      "valueOptions": null
+      "description": "Specifies time of milliseconds for animation duration to show/hide modal dialog"
     },
     "columnChooserButtonApplyText": {
       "type": "string",
       "defaultValue": "",
-      "description": "Specifies text of button which apply changes in modal dialog",
-      "valueOptions": null
+      "description": "Specifies text of button which apply changes in modal dialog"
     },
     "columnChooserButtonCancelText": {
       "type": "string",
       "defaultValue": "",
-      "description": "Specifies text of button which cancel changes in modal dialog",
-      "valueOptions": null
+      "description": "Specifies text of button which cancel changes in modal dialog"
     },
     "columnChooserCaptionText": {
       "type": "string",
       "defaultValue": "",
-      "description": "The caption of the column chooser dialog.",
-      "valueOptions": null
+      "description": "The caption of the column chooser dialog."
     },
     "columnChooserContainment": {
       "type": "string",
       "defaultValue": "owner",
       "description": "Controls containment behavior. <br>                owner  The column chooser dialog will be draggable only in the grid area<br>                window  The column chooser dialog will be draggable in the whole window area",
-      "valueOptions": null
+      "valueOptions": [
+        {
+          "name": "owner",
+          "type": "string",
+          "description": "The column chooser dialog will be draggable only in the grid area"
+        },
+        {
+          "name": "window",
+          "type": "string",
+          "description": "The column chooser dialog will be draggable in the whole window area"
+        }
+      ]
     },
     "columnChooserDisplayText": {
       "type": "string",
       "defaultValue": "",
-      "description": "The text used in the drop down tools menu(Feature Chooser) to launch the column chooser dialog.",
-      "valueOptions": null
+      "description": "The text used in the drop down tools menu(Feature Chooser) to launch the column chooser dialog."
     },
     "columnChooserHeight": {
       "type": "number",
       "defaultValue": "",
-      "description": "The default column chooser height in pixels.",
-      "valueOptions": null
+      "description": "The default column chooser height in pixels."
     },
     "columnChooserHideOnClick": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Specifies on click show/hide directly to be shown/hidden columns. If columnChooserHideOnClick is false then Apply and Cancel Buttons are shown on the bottom of modal dialog. Columns are Shown/Hidden after the Apply button is clicked",
-      "valueOptions": null
+      "description": "Specifies on click show/hide directly to be shown/hidden columns. If columnChooserHideOnClick is false then Apply and Cancel Buttons are shown on the bottom of modal dialog. Columns are Shown/Hidden after the Apply button is clicked"
     },
     "columnChooserHideText": {
       "type": "string",
       "defaultValue": "",
-      "description": "The text used in the column chooser to hide column",
-      "valueOptions": null
+      "description": "The text used in the column chooser to hide column"
     },
     "columnChooserResetButtonLabel": {
       "type": "string",
       "defaultValue": "",
-      "description": "Text label for reset button.",
-      "valueOptions": null
+      "description": "Text label for reset button."
     },
     "columnChooserShowText": {
       "type": "string",
       "defaultValue": "",
-      "description": "The text used in the column chooser to show column",
-      "valueOptions": null
+      "description": "The text used in the column chooser to show column"
     },
     "columnChooserWidth": {
       "type": "number",
       "defaultValue": 350.0,
-      "description": "The default column chooser width in pixels.",
-      "valueOptions": null
+      "description": "The default column chooser width in pixels."
     },
     "columnHideText": {
       "type": "string",
       "defaultValue": "",
-      "description": "The text used in the drop down tools menu(Feature Chooser) to hide a column.",
-      "valueOptions": null
+      "description": "The text used in the drop down tools menu(Feature Chooser) to hide a column."
     },
     "columnSettings": {
       "type": "array",
       "defaultValue": null,
       "description": "A list of column settings that specifies hiding options on a per column basis.",
-      "valueOptions": null
+      "schema": {
+        "columnKey": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Specifies the column key of the hidden column",
+          "required": true
+        },
+        "columnIndex": {
+          "type": "number",
+          "defaultValue": null,
+          "description": "Column index can be used in place of column key. The preferred way of populating a column setting is to always use the column keys as identifiers."
+        },
+        "allowHiding": {
+          "type": "bool",
+          "defaultValue": true,
+          "description": "Allows the column to be hidden."
+        },
+        "hidden": {
+          "type": "bool",
+          "defaultValue": false,
+          "description": "Sets the initial visibility of the column."
+        }
+      }
     },
     "dropDownAnimationDuration": {
       "type": "number",
       "defaultValue": 500.0,
-      "description": "The duration of the dropdown animation in milliseconds.",
-      "valueOptions": null
+      "description": "The duration of the dropdown animation in milliseconds."
     },
     "hiddenColumnIndicatorHeaderWidth": {
       "type": "number",
       "defaultValue": 7.0,
-      "description": "The width in pixels of the hidden column indicator in the header.",
-      "valueOptions": null
+      "description": "The width in pixels of the hidden column indicator in the header."
     },
     "hiddenColumnIndicatorTooltipText": {
       "type": "string",
       "defaultValue": "",
-      "description": "The text displayed in the tooltip of the hidden column indicator.",
-      "valueOptions": null
+      "description": "The text displayed in the tooltip of the hidden column indicator."
     }
   }
 }

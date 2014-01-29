@@ -217,62 +217,52 @@
     "customToolbars": {
       "type": "array",
       "defaultValue": null,
-      "description": "The html editor custom toolbars list.",
-      "valueOptions": null
+      "description": "The html editor custom toolbars list."
     },
     "height": {
       "type": "number",
       "defaultValue": 350.0,
-      "description": "Set or get the widget height.",
-      "valueOptions": null
+      "description": "Set or get the widget height."
     },
     "inputName": {
       "type": "string",
       "defaultValue": "source",
-      "description": "The name attribute of the html editor source view.",
-      "valueOptions": null
+      "description": "The name attribute of the html editor source view."
     },
     "showCopyPasteToolbar": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Shows/hides the \"Copy Paste\" toolbar.",
-      "valueOptions": null
+      "description": "Shows/hides the \"Copy Paste\" toolbar."
     },
     "showFormattingToolbar": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Shows/hides the \"Formating\" toolbar.",
-      "valueOptions": null
+      "description": "Shows/hides the \"Formating\" toolbar."
     },
     "showInsertObjectToolbar": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Shows/hides the \"Insert Object\" toolbar.",
-      "valueOptions": null
+      "description": "Shows/hides the \"Insert Object\" toolbar."
     },
     "showTextToolbar": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Shows/hides the \"Text\" toolbar.",
-      "valueOptions": null
+      "description": "Shows/hides the \"Text\" toolbar."
     },
     "toolbarSettings": {
       "type": "array",
       "defaultValue": null,
-      "description": "The html editor toolbars list.",
-      "valueOptions": null
+      "description": "The html editor toolbars list."
     },
     "value": {
       "type": "string",
       "defaultValue": "",
-      "description": "Used to render inside the html editor as initial content",
-      "valueOptions": null
+      "description": "Used to render inside the html editor as initial content"
     },
     "width": {
       "type": "number",
       "defaultValue": 725.0,
-      "description": "Set or get the widget width.",
-      "valueOptions": null
+      "description": "Set or get the widget width."
     }
   }
 }

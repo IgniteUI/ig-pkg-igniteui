@@ -41,194 +41,162 @@
     "backingBrush": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets or sets the brush to use to fill the backing of the linear gauge.",
-      "valueOptions": null
+      "description": "Gets or sets the brush to use to fill the backing of the linear gauge."
     },
     "backingInnerExtent": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "Gets or sets the inner extent of the linear gauge backing.",
-      "valueOptions": null
+      "description": "Gets or sets the inner extent of the linear gauge backing."
     },
     "backingOuterExtent": {
       "type": "number",
       "defaultValue": 1.0,
-      "description": "Gets or sets the outer extent of the linear gauge backing.",
-      "valueOptions": null
+      "description": "Gets or sets the outer extent of the linear gauge backing."
     },
     "backingOutline": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets or sets the brush to use for the outline of the backing.",
-      "valueOptions": null
+      "description": "Gets or sets the brush to use for the outline of the backing."
     },
     "backingStrokeThickness": {
       "type": "number",
       "defaultValue": 2.0,
-      "description": "Gets or sets the stroke thickness of the backing outline.",
-      "valueOptions": null
+      "description": "Gets or sets the stroke thickness of the backing outline."
     },
     "font": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets or sets the font.",
-      "valueOptions": null
+      "description": "Gets or sets the font."
     },
     "fontBrush": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets or sets the brush to use for the label font.",
-      "valueOptions": null
+      "description": "Gets or sets the brush to use for the label font."
     },
     "interval": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "Gets or sets the interval to use for the scale.",
-      "valueOptions": null
+      "description": "Gets or sets the interval to use for the scale."
     },
     "isScaleInverted": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Gets or sets a value indicating whether the scale is inverted.<br>&nbsp;When the scale is inverted the direction in which the scale values increase is right to left.",
-      "valueOptions": null
+      "description": "Gets or sets a value indicating whether the scale is inverted.<br>&nbsp;When the scale is inverted the direction in which the scale values increase is right to left."
     },
     "labelExtent": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "Gets or sets the position at which to put the labels as a value from 0 to 1, measured from the bottom of the scale.<br>&nbsp;Values further from zero than 1 can be used to hide the labels of the linear gauge.",
-      "valueOptions": null
+      "description": "Gets or sets the position at which to put the labels as a value from 0 to 1, measured from the bottom of the scale.<br>&nbsp;Values further from zero than 1 can be used to hide the labels of the linear gauge."
     },
     "labelInterval": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "Gets or sets the interval to use for rendering labels. This defaults to be the same interval as the tickmarks on the scale.",
-      "valueOptions": null
+      "description": "Gets or sets the interval to use for rendering labels. This defaults to be the same interval as the tickmarks on the scale."
     },
     "labelsPostInitial": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "A value to start adding labels, added to the scale's MinimumValue.",
-      "valueOptions": null
+      "description": "A value to start adding labels, added to the scale's MinimumValue."
     },
     "labelsPreTerminal": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "A value to stop adding labels, subtracted from the scale's MaximumValue.",
-      "valueOptions": null
+      "description": "A value to stop adding labels, subtracted from the scale's MaximumValue."
     },
     "maximumValue": {
       "type": "number",
       "defaultValue": 100.0,
-      "description": "Gets or sets the maximum value of the scale.",
-      "valueOptions": null
+      "description": "Gets or sets the maximum value of the scale."
     },
     "minimumValue": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "Gets or sets the minimum value of the scale.",
-      "valueOptions": null
+      "description": "Gets or sets the minimum value of the scale."
     },
     "minorTickBrush": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets or sets the brush to use for the minor tickmarks.",
-      "valueOptions": null
+      "description": "Gets or sets the brush to use for the minor tickmarks."
     },
     "minorTickCount": {
       "type": "number",
       "defaultValue": 3.0,
-      "description": "Gets or sets the number of minor tickmarks to place between major tickmarks.",
-      "valueOptions": null
+      "description": "Gets or sets the number of minor tickmarks to place between major tickmarks."
     },
     "minorTickEndExtent": {
       "type": "number",
       "defaultValue": 0.35,
-      "description": "Gets or sets the position at which to stop rendering the minor tickmarks as a value from 0 to 1, measured from the front/bottom of the linear gauge.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.",
-      "valueOptions": null
+      "description": "Gets or sets the position at which to stop rendering the minor tickmarks as a value from 0 to 1, measured from the front/bottom of the linear gauge.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge."
     },
     "minorTickStartExtent": {
       "type": "number",
       "defaultValue": 0.05,
-      "description": "Gets or sets the position at which to start rendering the minor tickmarks as a value from 0 to 1, measured from the front/bottom of the linear gauge.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.",
-      "valueOptions": null
+      "description": "Gets or sets the position at which to start rendering the minor tickmarks as a value from 0 to 1, measured from the front/bottom of the linear gauge.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge."
     },
     "minorTickStrokeThickness": {
       "type": "number",
       "defaultValue": 1.0,
-      "description": "Gets or sets the stroke thickness to use when rendering minor ticks.",
-      "valueOptions": null
+      "description": "Gets or sets the stroke thickness to use when rendering minor ticks."
     },
     "needleBreadth": {
       "type": "number",
       "defaultValue": 6.0,
-      "description": "Gets or sets the needle breadth.",
-      "valueOptions": null
+      "description": "Gets or sets the needle breadth."
     },
     "needleBrush": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets or sets the brush to use for needle element.",
-      "valueOptions": null
+      "description": "Gets or sets the brush to use for needle element."
     },
     "needleInnerBaseWidth": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "Gets or sets the width of the needle's inner base.",
-      "valueOptions": null
+      "description": "Gets or sets the width of the needle's inner base."
     },
     "needleInnerExtent": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "Gets or sets the position at which to start rendering the needle geometry, measured from the front/bottom of the linear gauge as a value from 0 to 1.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.",
-      "valueOptions": null
+      "description": "Gets or sets the position at which to start rendering the needle geometry, measured from the front/bottom of the linear gauge as a value from 0 to 1.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge."
     },
     "needleInnerPointExtent": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "Gets or sets the extent of the needle's inner point.",
-      "valueOptions": null
+      "description": "Gets or sets the extent of the needle's inner point."
     },
     "needleInnerPointWidth": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "Gets or sets the width of the needle's inner point.",
-      "valueOptions": null
+      "description": "Gets or sets the width of the needle's inner point."
     },
     "needleName": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets or sets the name used for needle.",
-      "valueOptions": null
+      "description": "Gets or sets the name used for needle."
     },
     "needleOuterBaseWidth": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "Gets or sets the width of the needle's outer base.",
-      "valueOptions": null
+      "description": "Gets or sets the width of the needle's outer base."
     },
     "needleOuterExtent": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "Gets or sets the position at which to stop rendering the needle geometry as a value from 0 to 1 measured from the front/bottom of the linear gauge.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.",
-      "valueOptions": null
+      "description": "Gets or sets the position at which to stop rendering the needle geometry as a value from 0 to 1 measured from the front/bottom of the linear gauge.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge."
     },
     "needleOuterPointExtent": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "Gets or sets the extent of the needle's outer point.",
-      "valueOptions": null
+      "description": "Gets or sets the extent of the needle's outer point."
     },
     "needleOuterPointWidth": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "Gets or sets the width of the needle's outer point.",
-      "valueOptions": null
+      "description": "Gets or sets the width of the needle's outer point."
     },
     "needleOutline": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets or sets the brush to use for the outline of needle element.",
-      "valueOptions": null
+      "description": "Gets or sets the brush to use for the outline of needle element."
     },
     "needleShape": {
       "type": "string",
@@ -265,14 +233,12 @@
     "needleStrokeThickness": {
       "type": "number",
       "defaultValue": 1.0,
-      "description": "Gets or sets the stroke thickness to use when rendering single actual value element.",
-      "valueOptions": null
+      "description": "Gets or sets the stroke thickness to use when rendering single actual value element."
     },
     "needleToolTipTemplate": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets or sets the needle's tooltip template.",
-      "valueOptions": null
+      "description": "Gets or sets the needle's tooltip template."
     },
     "orientation": {
       "type": "string",
@@ -294,140 +260,117 @@
     "rangeBrushes": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets a collection of brushes to be used as the palette for linear gauge ranges.<br>&nbsp;The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
-      "valueOptions": null
+      "description": "Gets or sets a collection of brushes to be used as the palette for linear gauge ranges.<br>&nbsp;The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
     },
     "rangeInnerExtent": {
       "type": "number",
       "defaultValue": 0.05,
-      "description": "Gets or sets the position at which to start rendering the ranges, measured from the front/bottom of the control as a value from 0 to 1.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.",
-      "valueOptions": null
+      "description": "Gets or sets the position at which to start rendering the ranges, measured from the front/bottom of the control as a value from 0 to 1.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge."
     },
     "rangeOuterExtent": {
       "type": "number",
       "defaultValue": 0.65,
-      "description": "Gets or sets the position at which to stop rendering the range as a value from 0 to 1 measured from the front/bottom of the linear gauge.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.",
-      "valueOptions": null
+      "description": "Gets or sets the position at which to stop rendering the range as a value from 0 to 1 measured from the front/bottom of the linear gauge.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge."
     },
     "rangeOutlines": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets a collection of brushes to be used as the palette for linear gauge outlines.<br>&nbsp;The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
-      "valueOptions": null
+      "description": "Gets or sets a collection of brushes to be used as the palette for linear gauge outlines.<br>&nbsp;The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
     },
     "ranges": {
       "type": "array",
       "defaultValue": null,
-      "description": "Gets or sets the scale ranges to render on the linear gauge.",
-      "valueOptions": null
+      "description": "Gets or sets the scale ranges to render on the linear gauge."
     },
     "rangeToolTipTemplate": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets or sets the ranges' tooltip template.",
-      "valueOptions": null
+      "description": "Gets or sets the ranges' tooltip template."
     },
     "scaleBrush": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets or sets the brush to use to fill the scale of the linear gauge.",
-      "valueOptions": null
+      "description": "Gets or sets the brush to use to fill the scale of the linear gauge."
     },
     "scaleEndExtent": {
       "type": "number",
       "defaultValue": 0.95,
-      "description": "Gets or sets the position at which to stop rendering the scale as a value from 0 to 1, measured from the front/bottom of the linear gauge.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.",
-      "valueOptions": null
+      "description": "Gets or sets the position at which to stop rendering the scale as a value from 0 to 1, measured from the front/bottom of the linear gauge.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge."
     },
     "scaleInnerExtent": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "Gets or sets the position at which to start rendering the scale, measured from the bottom/front (when orientation is horizontal/vertical) of the control as a value from 0 to 1.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.",
-      "valueOptions": null
+      "description": "Gets or sets the position at which to start rendering the scale, measured from the bottom/front (when orientation is horizontal/vertical) of the control as a value from 0 to 1.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge."
     },
     "scaleOuterExtent": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "Gets or sets the position at which to stop rendering the scale as a value from 0 to 1 measured from the bottom/front (when orientation is horizontal/vertical) of the linear gauge.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.",
-      "valueOptions": null
+      "description": "Gets or sets the position at which to stop rendering the scale as a value from 0 to 1 measured from the bottom/front (when orientation is horizontal/vertical) of the linear gauge.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge."
     },
     "scaleOutline": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets or sets the brush to use for the outline of the scale.",
-      "valueOptions": null
+      "description": "Gets or sets the brush to use for the outline of the scale."
     },
     "scaleStartExtent": {
       "type": "number",
       "defaultValue": 0.05,
-      "description": "Gets or sets the position at which to start rendering the scale, measured from the front/bottom of the linear gauge as a value from 0 to 1.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.",
-      "valueOptions": null
+      "description": "Gets or sets the position at which to start rendering the scale, measured from the front/bottom of the linear gauge as a value from 0 to 1.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge."
     },
     "scaleStrokeThickness": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "Gets or sets the stroke thickness of the scale outline.",
-      "valueOptions": null
+      "description": "Gets or sets the stroke thickness of the scale outline."
     },
     "showToolTip": {
       "type": "bool",
       "defaultValue": null,
-      "description": "Gets or sets a value indicating whether tooltips are enabled.",
-      "valueOptions": null
+      "description": "Gets or sets a value indicating whether tooltips are enabled."
     },
     "showToolTipTimeout": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "Gets or sets the time in milliseconds that tooltip appearance is delayed with.",
-      "valueOptions": null
+      "description": "Gets or sets the time in milliseconds that tooltip appearance is delayed with."
     },
     "tickBrush": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets or sets the brush to use for the major tickmarks.",
-      "valueOptions": null
+      "description": "Gets or sets the brush to use for the major tickmarks."
     },
     "tickEndExtent": {
       "type": "number",
       "defaultValue": 0.65,
-      "description": "Gets or sets the position at which to stop rendering the major tickmarks as a value from 0 to 1, measured from the front/bottom of the linear gauge.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.",
-      "valueOptions": null
+      "description": "Gets or sets the position at which to stop rendering the major tickmarks as a value from 0 to 1, measured from the front/bottom of the linear gauge.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge."
     },
     "ticksPostInitial": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "A value to start adding tickmarks, added to the scale's MinimumValue.",
-      "valueOptions": null
+      "description": "A value to start adding tickmarks, added to the scale's MinimumValue."
     },
     "ticksPreTerminal": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "A value to stop adding tickmarks, subtracted from the scale's MaximumValue.",
-      "valueOptions": null
+      "description": "A value to stop adding tickmarks, subtracted from the scale's MaximumValue."
     },
     "tickStartExtent": {
       "type": "number",
       "defaultValue": 0.05,
-      "description": "Gets or sets the position at which to start rendering the major tickmarks as a value from 0 to 1, measured from the front/bottom of the linear gauge.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.",
-      "valueOptions": null
+      "description": "Gets or sets the position at which to start rendering the major tickmarks as a value from 0 to 1, measured from the front/bottom of the linear gauge.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge."
     },
     "tickStrokeThickness": {
       "type": "number",
       "defaultValue": 2.0,
-      "description": "Gets or sets the stroke thickness to use when rendering ticks.",
-      "valueOptions": null
+      "description": "Gets or sets the stroke thickness to use when rendering ticks."
     },
     "transitionDuration": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "Gets or sets the number of milliseconds over which changes to the linear gauge should be animated.",
-      "valueOptions": null
+      "description": "Gets or sets the number of milliseconds over which changes to the linear gauge should be animated."
     },
     "value": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "Gets or sets the value at which the needle is positioned.",
-      "valueOptions": null
+      "description": "Gets or sets the value at which the needle is positioned."
     }
   }
 }

@@ -105,199 +105,170 @@
     "currentPageDropDownLeadingLabel": {
       "type": "string",
       "defaultValue": "",
-      "description": "leading label for the dropdown from where the page index can be switched",
-      "valueOptions": null
+      "description": "leading label for the dropdown from where the page index can be switched"
     },
     "currentPageDropDownTooltip": {
       "type": "string",
       "defaultValue": "",
-      "description": "custom localized tooltip for the page index dropdown",
-      "valueOptions": null
+      "description": "custom localized tooltip for the page index dropdown"
     },
     "currentPageDropDownTrailingLabel": {
       "type": "string",
       "defaultValue": "",
-      "description": "localized trailing label for the dropdown from where the page index can be switched",
-      "valueOptions": null
+      "description": "localized trailing label for the dropdown from where the page index can be switched"
     },
     "currentPageIndex": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "current page index that's bound and rendered in the UI",
-      "valueOptions": null
+      "description": "current page index that's bound and rendered in the UI"
     },
     "defaultDropDownWidth": {
       "type": "number",
       "defaultValue": 70.0,
-      "description": "dropdown width for page size and page index dropdowns",
-      "valueOptions": null
+      "description": "dropdown width for page size and page index dropdowns"
     },
     "delayOnPageChanged": {
       "type": "number",
       "defaultValue": 350.0,
-      "description": "Time in milliseconds for which page dropdown will wait for keystrokes before changing the page.",
-      "valueOptions": null
+      "description": "Time in milliseconds for which page dropdown will wait for keystrokes before changing the page."
     },
     "firstPageLabelText": {
       "type": "string",
       "defaultValue": "",
-      "description": "localized text for the first page label",
-      "valueOptions": null
+      "description": "localized text for the first page label"
     },
     "firstPageTooltip": {
       "type": "string",
       "defaultValue": "",
-      "description": "custom localized tooltip for the first. page button",
-      "valueOptions": null
+      "description": "custom localized tooltip for the first. page button"
     },
     "lastPageLabelText": {
       "type": "string",
       "defaultValue": "",
-      "description": "localized text for the last page label",
-      "valueOptions": null
+      "description": "localized text for the last page label"
     },
     "lastPageTooltip": {
       "type": "string",
       "defaultValue": "",
-      "description": "custom localized tooltip for the last. page button",
-      "valueOptions": null
+      "description": "custom localized tooltip for the last. page button"
     },
     "nextPageLabelText": {
       "type": "string",
       "defaultValue": "",
-      "description": "localized text for the next page label",
-      "valueOptions": null
+      "description": "localized text for the next page label"
     },
     "nextPageTooltip": {
       "type": "string",
       "defaultValue": "",
-      "description": "custom localized tooltip for the next. page button",
-      "valueOptions": null
+      "description": "custom localized tooltip for the next. page button"
     },
     "pageCountLimit": {
       "type": "number",
       "defaultValue": 10.0,
-      "description": "sets gets the number of pages which if exceeded a drop down list of page indices is displayed. If the number of pages is less than or equal to this option then page buttons are displayed.",
-      "valueOptions": null
+      "description": "sets gets the number of pages which if exceeded a drop down list of page indices is displayed. If the number of pages is less than or equal to this option then page buttons are displayed."
     },
     "pageIndexUrlKey": {
       "type": "string",
       "defaultValue": null,
-      "description": "denotes the name of the encoded URL parameter that will state what is the currently requested page index",
-      "valueOptions": null
+      "description": "denotes the name of the encoded URL parameter that will state what is the currently requested page index"
     },
     "pagerRecordsLabelTemplate": {
       "type": "string",
       "defaultValue": "",
-      "description": "custom pager records label template - in jQuery templating style and syntax",
-      "valueOptions": null
+      "description": "custom pager records label template - in jQuery templating style and syntax"
     },
     "pagerRecordsLabelTooltip": {
       "type": "string",
       "defaultValue": "",
-      "description": "custom localized tooltip for the pager records label",
-      "valueOptions": null
+      "description": "custom localized tooltip for the pager records label"
     },
     "pageSize": {
       "type": "number",
       "defaultValue": 25.0,
-      "description": "default number of records per page",
-      "valueOptions": null
+      "description": "default number of records per page"
     },
     "pageSizeDropDownLabel": {
       "type": "string",
       "defaultValue": "",
-      "description": "label rendered in front of the page size dropdown",
-      "valueOptions": null
+      "description": "label rendered in front of the page size dropdown"
     },
     "pageSizeDropDownLocation": {
       "type": "string",
-      "defaultValue": null,
-      "description": "",
+      "defaultValue": "above",
+      "description": "Gets or sets the location of the drop down for page size",
       "valueOptions": [
         {
           "name": "above",
           "type": "string",
-          "description": " it will be rendered above the grid header"
+          "description": "The drop down will be rendered above the grid header"
         },
         {
           "name": "inpager",
           "type": "string",
-          "description": " it will be rendered next to page links"
+          "description": "The drop down will be rendered next to page links"
         }
       ]
     },
     "pageSizeDropDownTooltip": {
       "type": "string",
       "defaultValue": "",
-      "description": "custom localized tooltip for the page size dropdown",
-      "valueOptions": null
+      "description": "custom localized tooltip for the page size dropdown"
     },
     "pageSizeDropDownTrailingLabel": {
       "type": "string",
       "defaultValue": "",
-      "description": "Trailing label for the page size dropdown",
-      "valueOptions": null
+      "description": "Trailing label for the page size dropdown"
     },
     "pageSizeList": {
       "type": "array",
       "defaultValue": null,
       "description": "Default: [5, 10, 20, 25, 50, 75, 100]. contents of the page size dropdown indicating what preconfigured page sizes are available to the end user",
-      "valueOptions": null
+      "arrayMemeberType": "number"
     },
     "pageSizeUrlKey": {
       "type": "string",
       "defaultValue": null,
-      "description": "denotes the name of the encoded URL parameter that will state what is the currently requested page size",
-      "valueOptions": null
+      "description": "denotes the name of the encoded URL parameter that will state what is the currently requested page size"
     },
     "pageTooltipFormat": {
       "type": "string",
       "defaultValue": "",
-      "description": "custom localized format string for tooltips of buttons that directly jump to a particular page. The format string follows the jQuery templating style and syntax. See also the pageCountLimit option.",
-      "valueOptions": null
+      "description": "custom localized format string for tooltips of buttons that directly jump to a particular page. The format string follows the jQuery templating style and syntax. See also the pageCountLimit option."
     },
     "prevPageLabelText": {
       "type": "string",
       "defaultValue": "",
-      "description": "localized text for the prev page label",
-      "valueOptions": null
+      "description": "localized text for the prev page label"
     },
     "prevPageTooltip": {
       "type": "string",
       "defaultValue": "",
-      "description": "custom localized tooltip for the prev. page button",
-      "valueOptions": null
+      "description": "custom localized tooltip for the prev. page button"
     },
     "recordCountKey": {
       "type": "string",
       "defaultValue": null,
-      "description": "the property in the response that will hold the total number of records in the data source",
-      "valueOptions": null
+      "description": "the property in the response that will hold the total number of records in the data source"
     },
     "showFirstLastPages": {
       "type": "bool",
       "defaultValue": true,
-      "description": "option specifying whether to render the first and last page buttons",
-      "valueOptions": null
+      "description": "option specifying whether to render the first and last page buttons"
     },
     "showPagerRecordsLabel": {
       "type": "bool",
       "defaultValue": true,
-      "description": "option specifying whether to show summary label for the currently rendered records or not",
-      "valueOptions": null
+      "description": "option specifying whether to show summary label for the currently rendered records or not"
     },
     "showPageSizeDropDown": {
       "type": "bool",
       "defaultValue": true,
-      "description": "if false, a dropdown allowing to change the page size will not be rendered in the UI",
-      "valueOptions": null
+      "description": "if false, a dropdown allowing to change the page size will not be rendered in the UI"
     },
     "showPrevNextPages": {
       "type": "bool",
       "defaultValue": true,
-      "description": "option specifying whether to render the previous and next page buttons",
-      "valueOptions": null
+      "description": "option specifying whether to render the previous and next page buttons"
     },
     "type": {
       "type": "string",
@@ -319,8 +290,7 @@
     "visiblePageCount": {
       "type": "number",
       "defaultValue": 5.0,
-      "description": "number of pages that are constantly visible. For the invisible pages, prev and next buttons are used",
-      "valueOptions": null
+      "description": "number of pages that are constantly visible. For the invisible pages, prev and next buttons are used"
     }
   }
 }

@@ -137,61 +137,54 @@
     "activation": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Enables / disables activation of rows and cells. Activation implies ability to perform navigating through cells and rows via the keyboard, and selecting rows and cells using CTRL / SHIFT - in the way cells/rows are selected in Ms Excel",
-      "valueOptions": null
+      "description": "Enables / disables activation of rows and cells. Activation implies ability to perform navigating through cells and rows via the keyboard, and selecting rows and cells using CTRL / SHIFT - in the way cells/rows are selected in Ms Excel"
     },
     "mode": {
       "type": "string",
-      "defaultValue": null,
-      "description": " Defines type of the selection.",
+      "defaultValue": "row",
+      "description": "Defines type of the selection.",
       "valueOptions": [
         {
           "name": "row",
           "type": "string",
-          "description": " Defines row selection mode."
+          "description": "Defines row selection mode."
         },
         {
           "name": "cell",
           "type": "string",
-          "description": " Defines cell selection mode."
+          "description": "Defines cell selection mode."
         }
       ]
     },
     "mouseDragSelect": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Enables / disables selection via dragging with the mouse - only applicable for cell selection",
-      "valueOptions": null
+      "description": "Enables / disables selection via dragging with the mouse - only applicable for cell selection"
     },
     "multipleCellSelectOnClick": {
       "type": "bool",
       "defaultValue": false,
-      "description": "if true multiple selection of cells is done as if CTRL is being held. the option is disregarded if mode is set<br>&nbsp;&nbsp;&nbsp;to row. this option is useful for enabling multiple discountinued selection on touch environments.",
-      "valueOptions": null
+      "description": "if true multiple selection of cells is done as if CTRL is being held. the option is disregarded if mode is set<br>&nbsp;&nbsp;&nbsp;to row. this option is useful for enabling multiple discountinued selection on touch environments."
     },
     "multipleSelection": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Enables / Disables multiple selection of cells and rows - depending on the mode",
-      "valueOptions": null
+      "description": "Enables / Disables multiple selection of cells and rows - depending on the mode"
     },
     "skipChildren": {
       "type": "bool",
       "defaultValue": true,
-      "description": "if true will basically skip going into child grids with down / up / right / left arrow keys, when in the context of hierarchical grid",
-      "valueOptions": null
+      "description": "if true will basically skip going into child grids with down / up / right / left arrow keys, when in the context of hierarchical grid"
     },
     "touchDragSelect": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Enables / disables selection via continuous touch event - only applicable for cell selection and<br>&nbsp;&nbsp;&nbsp;touch-supported environments",
-      "valueOptions": null
+      "description": "Enables / disables selection via continuous touch event - only applicable for cell selection and<br>&nbsp;&nbsp;&nbsp;touch-supported environments"
     },
     "wrapAround": {
       "type": "bool",
       "defaultValue": true,
-      "description": "if wrapAround is enabled and selection is on the first or last row or cell, then when the end user tries to go beyond that, the first/last row or cell will be selected",
-      "valueOptions": null
+      "description": "if wrapAround is enabled and selection is on the first or last row or cell, then when the end user tries to go beyond that, the first/last row or cell will be selected"
     }
   }
 }

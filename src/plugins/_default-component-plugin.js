@@ -153,8 +153,13 @@ define (function (require, exports, module) {
 				window.frames[0].$(descriptor.placeholder)[name](descriptor.options);
 			}
 		},
-		navigate: function (descriptor) {
+		getPropPosition: function (descriptor) {
+			var pos = {row: 0, column: 0};
+			// if the property doesn't exist, returns the position of the last one
+			var ide = this.settings.ide;
+			// need to concatenate the hash with the parent prop, if any
 
+			return pos;
 		},
 		update: function (descriptor) {
 			//console.log("Updating property or event: " + descriptor.propName);
@@ -215,7 +220,21 @@ define (function (require, exports, module) {
 			} else {
 				// also check type here
 				// use the jQuery loaded by the package, not the one loaded by the IDE !
-				window.frames[0].$(descriptor.placeholder)[name]("option", descriptor.propName, descriptor.propValue);
+				if (descriptor.propType !== "object" && descriptor.propType !== "array") {
+					try {
+						window.frames[0].$(descriptor.placeholder)[name]("option", descriptor.propName, descriptor.propValue);
+					} catch (err) {
+						// we need to re-create (destroy & create) the widget again. 
+						// this usually happens when we try to use setOption at runtime for props that don't allow this 
+						// those are usually props which need to re-render the whole widget to take effect, 
+						// like changing virtualization from false to true
+						//TODO: options
+						//this._recreateWidget(descriptor.placeholder, name, window.frames[0].$(descriptor.placeholder).data(name).options);
+					}
+				} else {
+					var options = window.frames[0].$(descriptor.placeholder).data(name).options;
+					this._recreateWidget(descriptor.placeholder, name, options);
+				}
 				var codeRange = descriptor.codeEditor.find("$(\"#" + descriptor.id + "\")." + name + "({");
 				var val = descriptor.propValue;
 				var oldVal = descriptor.oldPropValue;
@@ -291,22 +310,15 @@ define (function (require, exports, module) {
 			var propertyExplorer = require("ide-propertyexplorer"),
 				container = $('<div class="adorner-summary-sheet"></div>').appendTo($('.adorner-wrapper')),
 				editor = $('<div class="adorner-property-list"></div>').appendTo(container),
-				options = {
-					element: descriptor.element,
-					id: "propEditor",
-					containerId: "property",
-					parent: editor,
-					data: [],
-					type: descriptor.type,
-					compObject: descriptor.compObject,
-					provider: descriptor.provider,
-					ide: descriptor.ide
-				},
 				property,
 				count = 0,
 				prop,
 				type = this._getWidgetName(descriptor.type);
-				
+			
+			descriptor.id = "propEditor";
+			descriptor.containerId = "property";
+			descriptor.parent = editor;
+			descriptor.data = [];
 			if (descriptor.iframe && descriptor.iframe.jQuery) {
 				prop = descriptor.iframe.jQuery($("#designer-frame").contents().find("#" + descriptor.element.attr("id"))).data(type).options[descriptor.propName];
 			} else {
@@ -314,7 +326,7 @@ define (function (require, exports, module) {
 			}
 			for (property in descriptor.schema) {
 				if (descriptor.schema.hasOwnProperty(property)) {
-					options.data.push({
+					descriptor.data.push({
 						id: count++,
 						propName: property,
 						defaultValue: descriptor.schema[property].defaultValue,
@@ -327,9 +339,13 @@ define (function (require, exports, module) {
 				}
 			}
 			// render and open a property explorer
-			propertyExplorer(options);
+			propertyExplorer(descriptor);
 			$(".adorner-wrapper").animate({left: "-=250"}, 250);
 			this.showBackButton();
+		},
+		_recreateWidget: function (element, widgetName, options) {
+			window.frames[0].$(element)[widgetName]("destroy");
+			window.frames[0].$(element)[widgetName](options);
 		}
 	});
 	return IgniteUIComponentPlugin;
