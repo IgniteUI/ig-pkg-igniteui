@@ -176,10 +176,11 @@
       ]
     },
     "rangeBrushes": {
-      "type": "object",
+      "type": "array",
       "defaultValue": null,
       "description": "Gets or sets a collection of brushes to be used as the palette for bullet graph ranges.<br>&nbsp;The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
-      "valueOptions": null
+      "valueOptions": null,
+      "arrayMemberType": "string"
     },
     "rangeInnerExtent": {
       "type": "number",
@@ -194,16 +195,64 @@
       "valueOptions": null
     },
     "rangeOutlines": {
-      "type": "object",
+      "type": "array",
       "defaultValue": null,
       "description": "Gets or sets a collection of brushes to be used as the palette for bullet graph outlines.<br>&nbsp;The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
-      "valueOptions": null
+      "valueOptions": null,
+      "arrayMemberType": "string"
     },
     "ranges": {
       "type": "array",
       "defaultValue": null,
       "description": "Gets or sets the scale ranges to render on the bullet graph.",
-      "valueOptions": null
+      "valueOptions": null,
+      "schema": {
+        "name": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Name of the range"
+        },
+        "startValue": {
+          "type": "number",
+          "defaultValue": null,
+          "description": "The start value of the range"
+        },
+        "endValue": {
+          "type": "number",
+          "defaultValue": null,
+          "description": "The end value of the range"
+        },
+        "brush": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Gets or sets the brush for the entire range."
+        },
+        "startExtent": {
+          "type": "number",
+          "defaultValue": 0,
+          "description": "Gets or sets the starting value of the extent of the range."
+        },
+        "endExtent": {
+          "type": "number",
+          "defaultValue": 0,
+          "description": "Gets or sets the ending value of the extent of the range."
+        },
+        "outline": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Gets or sets the brush for the outline of the range."
+        },
+        "remove": {
+          "type": "bool",
+          "defaultValue": false,
+          "description": "Gets or sets the flag used to determine if the range should be removed. If set to true, the range (if existing) is removed."
+        },
+        "strokeThickness": {
+          "type": "number",
+          "defaultValue": 0,
+          "description": "Gets or sets the thickness of the range outline."
+        }
+      }
     },
     "rangeToolTipTemplate": {
       "type": "string",
