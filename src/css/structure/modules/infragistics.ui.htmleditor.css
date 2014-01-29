@@ -1,7 +1,7 @@
 ﻿.ui-ightmleditor,.ui-widget .ui-ightmleditor{font-size:13px}
 .ui-ightmleditor-content{padding:0 7px 0 5px;position:relative}
 .ui-ightmleditor-content iframe{background-color:white;background-image:none;border-width:1px;display:block;width:100%;position:relative;margin:0}
-.ui-ightmleditor-content textarea{resize:none;box-sizing:border-box;border-width:1px;display:none;width:100%;overflow:auto;overflow-x:auto;overflow-y:auto}
+.ui-ightmleditor-content textarea{resize:none;border-width:1px;display:block;width:100%;padding:0;margin:0;overflow:auto;overflow-x:auto;overflow-y:auto}
 .ui-ightmleditor-content>div{background-color:white;margin:5px;padding:5px;border-top-width:2px;border-right-width:2px;border-bottom-width:2px;border-left-width:2px;border-top-color:#333;border-right-color:#333;border-bottom-color:#333;border-left-color:#333;border-top-style:inset;border-left-style:inset;overflow:auto}
 .ui-ightmleditor .ui-igtoolbars-holder{padding:0 .3em;display:block;margin:.3em}
 .ui-ightmleditor .ui-igtoolbar{margin:.3em .3em 0 0}

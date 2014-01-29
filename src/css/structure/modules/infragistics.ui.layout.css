@@ -2,14 +2,13 @@
 .ig-layout-griditem-rel{display:inline-block;position:relative;float:left;overflow:auto;vertical-align:top}
 .ig-layout-griditem-abs{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-o-box-sizing:border-box;box-sizing:border-box;position:absolute;padding:5px}
 .ig-layout-item-title{width:100%;text-align:center;background-color:#EBEBEB}
-.ig-layout{display:inline-block}
+.ig-layout{display:block}
 .ig-layout-item-float{float:left;margin:5px}
 .ig-layout-item-v{float:left}
-.ig-layout-flow{display:inline;position:relative;padding:0}
+.ig-layout-flow{overflow:auto;padding:0}
 .ig-layout-flow-item{float:left;margin:5px;width:10%;list-style-type:none;border:1px solid #D3D3D3;height:100px;overflow:hidden}
-.ig-layout-vertical{float:left;width:100%}
-.ig-layout-vertical-item{margin:5px;width:10%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-o-box-sizing:border-box;box-sizing:border-box;border:1px solid #D3D3D3;height:100px}
-.ig-layout-border{display:block}
+.ig-layout-vertical{overflow:auto}
+.ig-layout-vertical-item{margin:5px;width:10%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-o-box-sizing:border-box;box-sizing:border-box;border:1px solid #D3D3D3;height:100px;overflow:hidden}
 .ig-layout-border-item{position:relative}
 .ig-layout-border-container{float:left;height:100%;width:100%}
 .ig-layout-border-wrapper1{position:relative;float:left;width:100%}
@@ -22,7 +21,7 @@
 .ig-layout-col{padding-left:20px;padding-right:20px;*zoom:1}
 .ig-layout-col:after{clear:both}
 .ig-layout-col:before,.ig-layout-col:after{content:"";display:table;line-height:0;clear:both}
-.ig-layout-col .row{width:100%;*zoom:1}
+.ig-layout-col .row{width:100%;clear:both;*zoom:1}
 .ig-layout-col .row [class*="col"]{float:left;width:100%;min-height:30px;margin-left:2.127659574468085%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-o-box-sizing:border-box;box-sizing:border-box;display:block}
 .ig-layout-col .row [class*="col"]:first-child{margin-left:0}
 .ig-layout-col .row .col1{width:6.382978723404255%}

@@ -2,7 +2,7 @@
 .ui-igtree ul{list-style:none;padding-left:0;margin-left:0}
 .ui-igtree .ui-igtree-root{padding-left:0;margin-left:0}
 .ui-igtree-root{padding-left:0;margin-left:0}
-.ui-igtree li{position:relative;line-height:1.6em;padding-top:.1em;padding-bottom:.1em}
+.ui-igtree li{position:relative;line-height:1.9em;padding-top:.1em;padding-bottom:.1em}
 .ui-igtree-collection{white-space:nowrap}
 .ui-igtree-expander{position:absolute;left:.8em;top:.8em;margin-top:-8px;margin-left:-8px;width:16px;height:16px}
 .ui-igtree a{text-decoration:none;padding:1px 3px}

@@ -17,5 +17,6 @@
 .ui-igdialog-buttonpane .ui-igdialog-buttonset{float:right}
 .ui-igdialog-buttonpane button{margin:.5em .4em .5em 0;cursor:pointer}
 .touch .ui-igdialog .ui-igdialog-header{line-height:1.6em}
+.touch .ui-dialog .ui-dialog-titlebar{padding:1em!important}
 .touch .ui-igdialog .ui-igdialog-headerbutton{height:30px;width:44px;position:relative;top:.8em;margin:-15px 0 0 .3em}
 .touch .ui-igdialog .ui-igdialog-headerbutton .ui-icon{position:absolute;top:50%;margin-top:-8px;left:50%;margin-left:-8px}
