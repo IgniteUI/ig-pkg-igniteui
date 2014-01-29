@@ -313,50 +313,396 @@
     "animateSeriesWhenAxisRangeChanges": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Set to true in order to override the default behavior in which series do not animate if an axis range changes",
-      "valueOptions": null
+      "description": "Set to true in order to override the default behavior in which series do not animate if an axis range changes"
     },
     "autoMarginHeight": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "Sets or gets the automatic height to add when automatically adding margins to the chart.",
-      "valueOptions": null
+      "description": "Sets or gets the automatic height to add when automatically adding margins to the chart."
     },
     "autoMarginWidth": {
       "type": "number",
       "defaultValue": 20.0,
-      "description": "Sets or gets the automatic width to add when automatically adding margins to the chart.",
-      "valueOptions": null
+      "description": "Sets or gets the automatic width to add when automatically adding margins to the chart."
     },
     "axes": {
       "type": "array",
       "defaultValue": null,
       "description": "an array of axis objects",
-      "valueOptions": null
+      "schema": {
+        "type": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Type of the axis",
+          "valueOptions": [
+            {
+              "name": "numericX",
+              "type": "string",
+              "description": "Specify the axis as numeric X axis. Useful for displaying scatter, category and financial price series."
+            },
+            {
+              "name": "numericY",
+              "type": "string",
+              "description": "Specify the axis as numeric Y axis.Useful for displaying scatter, category and financial price series."
+            },
+			{
+              "name": "categoryX",
+              "type": "string",
+              "description": "Specify the axis as category X axis. Useful for displaying scatter, category and financial price series."
+            },
+            {
+              "name": "categoryDateTimeX",
+              "type": "string",
+              "description": "Specify the axis as category datetime X axis. Useful for displaying category and financial price series with date based data."
+            },
+			{
+              "name": "categoryY",
+              "type": "string",
+              "description": "Specify the axis as category Y axis. Useful for displaying scatter, category and financial price series."
+            },
+            {
+              "name": "categoryAngle",
+              "type": "string",
+              "description": "Specify the axis as category angle axis. Useful for displaying polar and radial categories."
+            },
+			{
+              "name": "numericAngle",
+              "type": "string",
+              "description": "Specify the axis as numeric angle axis. Useful for displaying polar and radial series."
+            },
+            {
+              "name": "numericRadius",
+              "type": "string",
+              "description": "Specify the axis as numeric radius axis. Useful for displaying polar and radial series."
+            }
+          ]
+        },
+        "name": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "The unique identifier of the axis."
+        },
+        "dataSource": {
+          "type": "object",
+          "defaultValue": null,
+          "description": "Can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself."
+        },
+        "dataSourceUrl": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Specifies a remote URL accepted by $.ig.DataSource in order to request data from it."
+        },
+        "dataSourceType": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property."
+        },
+        "responseDataKey": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Specifies the name of the property in which data records are held if the response is wrapped."
+        },
+		"remove": {
+		  "type": "bool",
+          "defaultValue": true,
+		  "description": "Set to true in order to have an existing axis removed from the chart, by name"
+		},
+        "labelLocation": {
+          "type": "string",
+          "defaultValue": null,
+          "description": ""
+        },
+        "labelVisibility": {
+          "type": "string",
+          "defaultValue": null,
+          "description": ""
+        },
+        "labelExtent": {
+          "type": "string",
+          "defaultValue": null,
+          "description": ""
+        },
+        "labelAngle": {
+          "type": "string",
+          "defaultValue": null,
+          "description": ""
+        },
+        "labelTextStyle": {
+          "type": "string",
+          "defaultValue": null,
+          "description": ""
+        },
+        "labelTextColor": {
+          "type": "string",
+          "defaultValue": null,
+          "description": ""
+        },
+        "formatLabel": {
+          "type": "string",
+          "defaultValue": null,
+          "description": ""
+        },
+        "stroke": {
+          "type": "string",
+          "defaultValue": null,
+          "description": ""
+        },
+        "strokeThickness": {
+          "type": "string",
+          "defaultValue": null,
+          "description": ""
+        },
+        "strip": {
+          "type": "string",
+          "defaultValue": null,
+          "description": ""
+        },
+        "majorStroke": {
+          "type": "string",
+          "defaultValue": null,
+          "description": ""
+        },
+        "majorStrokeThickness": {
+          "type": "string",
+          "defaultValue": null,
+          "description": ""
+        },
+        "minorStroke": {
+          "type": "string",
+          "defaultValue": null,
+          "description": ""
+        },
+        "minorStrokeThickness": {
+          "type": "string",
+          "defaultValue": null,
+          "description": ""
+        },
+        "isInverted": {
+          "type": "string",
+          "defaultValue": null,
+          "description": ""
+        },
+        "crossingAxis": {
+          "type": "string",
+          "defaultValue": null,
+          "description": ""
+        },
+        "crossingValue": {
+          "type": "string",
+          "defaultValue": null,
+          "description": ""
+        },
+        "coercionMethods": {
+          "type": "string",
+          "defaultValue": null,
+          "description": ""
+        },
+        "label": {
+          "type": "string",
+          "defaultValue": null,
+          "description": ""
+        },
+        "gap": {
+          "type": "string",
+          "defaultValue": null,
+          "description": ""
+        },
+        "overlap": {
+          "type": "string",
+          "defaultValue": null,
+          "description": ""
+        },
+        "startAngleOffset": {
+          "type": "string",
+          "defaultValue": null,
+          "description": ""
+        },
+        "interval": {
+          "type": "string",
+          "defaultValue": null,
+          "description": ""
+        },
+        "displayType": {
+          "type": "string",
+          "defaultValue": null,
+          "description": ""
+        },
+        "minimumValue": {
+          "type": "string",
+          "defaultValue": null,
+          "description": ""
+        },
+        "maximumValue": {
+          "type": "string",
+          "defaultValue": null,
+          "description": ""
+        },
+        "dateTimeMemberPath": {
+          "type": "string",
+          "defaultValue": null,
+          "description": ""
+        },
+        "referenceValue": {
+          "type": "string",
+          "defaultValue": null,
+          "description": ""
+        },
+        "isLogarithmic": {
+          "type": "string",
+          "defaultValue": null,
+          "description": ""
+        },
+        "logarithmBase": {
+          "type": "string",
+          "defaultValue": null,
+          "description": ""
+        },
+        "radiusExtentScale": {
+          "type": "string",
+          "defaultValue": null,
+          "description": ""
+        },
+        "innerRadiusExtentScale": {
+          "type": "string",
+          "defaultValue": null,
+          "description": ""
+        },
+        "title": {
+          "type": "string",
+          "defaultValue": null,
+          "description": ""
+        },
+        "titleTextStyle": {
+          "type": "string",
+          "defaultValue": null,
+          "description": ""
+        },
+        "titleMargin": {
+          "type": "string",
+          "defaultValue": null,
+          "description": ""
+        },
+        "titleHorizontalAlignment": {
+          "type": "string",
+          "defaultValue": null,
+          "description": ""
+        },
+        "titleVerticalAlignment": {
+          "type": "string",
+          "defaultValue": null,
+          "description": ""
+        },
+        "titlePosition": {
+          "type": "string",
+          "defaultValue": null,
+          "description": ""
+        },
+        "titleTopMargin": {
+          "type": "string",
+          "defaultValue": null,
+          "description": ""
+        },
+        "titleLeftMargin": {
+          "type": "string",
+          "defaultValue": null,
+          "description": ""
+        },
+        "titleRightMargin": {
+          "type": "string",
+          "defaultValue": null,
+          "description": ""
+        },
+        "titleBottomMargin": {
+          "type": "string",
+          "defaultValue": null,
+          "description": ""
+        },
+        "labelHorizontalAlignment": {
+          "type": "string",
+          "defaultValue": null,
+          "description": ""
+        },
+        "labelVerticalAlignment": {
+          "type": "string",
+          "defaultValue": null,
+          "description": ""
+        },
+        "labelMargin": {
+          "type": "string",
+          "defaultValue": null,
+          "description": ""
+        },
+        "labelTopMargin": {
+          "type": "string",
+          "defaultValue": null,
+          "description": ""
+        },
+        "labelLeftMargin": {
+          "type": "string",
+          "defaultValue": null,
+          "description": ""
+        },
+        "labelRightMargin": {
+          "type": "string",
+          "defaultValue": null,
+          "description": ""
+        },
+        "labelBottomMargin": {
+          "type": "string",
+          "defaultValue": null,
+          "description": ""
+        },
+        "showFirstLabel": {
+          "type": "string",
+          "defaultValue": null,
+          "description": ""
+        },
+        "titleAngle": {
+          "type": "string",
+          "defaultValue": null,
+          "description": ""
+        },
+        "tickLength": {
+          "type": "string",
+          "defaultValue": null,
+          "description": ""
+        },
+        "tickStrokeThickness": {
+          "type": "string",
+          "defaultValue": null,
+          "description": ""
+        },
+        "tickStroke": {
+          "type": "string",
+          "defaultValue": null,
+          "description": ""
+        },
+        "useClusteringMode": {
+          "type": "string",
+          "defaultValue": null,
+          "description": ""
+        }
+      }
     },
     "bottomMargin": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "Sets or gets the bottom margin to use around the chart content in the canvas.",
-      "valueOptions": null
+      "description": "Sets or gets the bottom margin to use around the chart content in the canvas."
     },
     "brushes": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the Brushes property.<br>&nbsp;&nbsp;&nbsp;The brushes property defines the palette from which automatically assigned series brushes are selected.<br>&nbsp;&nbsp;&nbsp;The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
-      "valueOptions": null
+      "description": "Gets or sets the Brushes property.<br>&nbsp;&nbsp;&nbsp;The brushes property defines the palette from which automatically assigned series brushes are selected.<br>&nbsp;&nbsp;&nbsp;The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
     },
     "circleMarkerTemplate": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the template to use for circle markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of circle.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-      "valueOptions": null
+      "description": "Gets or sets the template to use for circle markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of circle.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
     },
     "crosshairPoint": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the cross hair point (in world coordinates)<br>&nbsp;&nbsp;&nbsp;Either or both of the crosshair point's X and Y may be set to double.NaN, in which<br>&nbsp;&nbsp;&nbsp;case the relevant crosshair line is hidden.",
-      "valueOptions": null
+      "description": "Gets or sets the cross hair point (in world coordinates)<br>&nbsp;&nbsp;&nbsp;Either or both of the crosshair point's X and Y may be set to double.NaN, in which<br>&nbsp;&nbsp;&nbsp;case the relevant crosshair line is hidden."
     },
     "crosshairVisibility": {
       "type": "string",
@@ -378,20 +724,17 @@
     "dataSource": {
       "type": "object",
       "defaultValue": null,
-      "description": "can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself",
-      "valueOptions": null
+      "description": "can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself"
     },
     "dataSourceType": {
       "type": "string",
       "defaultValue": null,
-      "description": "Explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property.",
-      "valueOptions": null
+      "description": "Explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property."
     },
     "dataSourceUrl": {
       "type": "string",
       "defaultValue": null,
-      "description": "Specifies a remote URL accepted by $.ig.DataSource in order to request data from it",
-      "valueOptions": null
+      "description": "Specifies a remote URL accepted by $.ig.DataSource in order to request data from it"
     },
     "defaultInteraction": {
       "type": "string",
@@ -418,8 +761,7 @@
     "diamondMarkerTemplate": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the template to use for diamond markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of diamond.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-      "valueOptions": null
+      "description": "Gets or sets the template to use for diamond markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of diamond.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
     },
     "dragModifier": {
       "type": "string",
@@ -473,74 +815,62 @@
     "height": {
       "type": "number",
       "defaultValue": null,
-      "description": "The height of the chart. It can be set as a number in pixels, string (px) or percentage (%).",
-      "valueOptions": null
+      "description": "The height of the chart. It can be set as a number in pixels, string (px) or percentage (%)."
     },
     "hexagonMarkerTemplate": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the template to use for hexagon markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of hexagon.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-      "valueOptions": null
+      "description": "Gets or sets the template to use for hexagon markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of hexagon.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
     },
     "hexagramMarkerTemplate": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the template to use for hexagram markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of hexagram.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-      "valueOptions": null
+      "description": "Gets or sets the template to use for hexagram markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of hexagram.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
     },
     "highlightingTransitionDuration": {
       "type": "number",
       "defaultValue": 300.0,
-      "description": "the length, in milliseconds of the highlighting transition.",
-      "valueOptions": null
+      "description": "the length, in milliseconds of the highlighting transition."
     },
     "horizontalZoomable": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Gets or sets the current Chart's horizontal zoomability.",
-      "valueOptions": null
+      "description": "Gets or sets the current Chart's horizontal zoomability."
     },
     "isSquare": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Gets or sets whether to use a square aspect ratio for the chart. This is locked to true for polar and radial charts.",
-      "valueOptions": null
+      "description": "Gets or sets whether to use a square aspect ratio for the chart. This is locked to true for polar and radial charts."
     },
     "isSurfaceInteractionDisabled": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Set to true in order to disable any interactions with the plot surface.",
-      "valueOptions": null
+      "description": "Set to true in order to disable any interactions with the plot surface."
     },
     "leftMargin": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "Sets or gets the left margin to use around the chart content in the canvas.",
-      "valueOptions": null
+      "description": "Sets or gets the left margin to use around the chart content in the canvas."
     },
     "legend": {
       "type": "object",
       "defaultValue": null,
-      "description": "can be any valid options accepted by $.ig.ChartLegend, or an instance of an $.ig.ChartLegend itself.",
-      "valueOptions": null
+      "description": "can be any valid options accepted by $.ig.ChartLegend, or an instance of an $.ig.ChartLegend itself."
     },
     "markerBrushes": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the MarkerBrushes property.<br>&nbsp;&nbsp;&nbsp;The marker brushes property defines the palette from which automatically assigned marker brushes are selected.<br>&nbsp;&nbsp;&nbsp;The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
-      "valueOptions": null
+      "description": "Gets or sets the MarkerBrushes property.<br>&nbsp;&nbsp;&nbsp;The marker brushes property defines the palette from which automatically assigned marker brushes are selected.<br>&nbsp;&nbsp;&nbsp;The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
     },
     "markerOutlines": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the MarkerOutlines property.<br>&nbsp;&nbsp;&nbsp;The marker outlines property defines the palette from which automatically assigned marker outlines are selected.<br>&nbsp;&nbsp;&nbsp;The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
-      "valueOptions": null
+      "description": "Gets or sets the MarkerOutlines property.<br>&nbsp;&nbsp;&nbsp;The marker outlines property defines the palette from which automatically assigned marker outlines are selected.<br>&nbsp;&nbsp;&nbsp;The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
     },
     "outlines": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the Outlines property.<br>&nbsp;&nbsp;&nbsp;The outlines property defines the palette from which automatically assigned series outlines are selected.<br>&nbsp;&nbsp;&nbsp;The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
-      "valueOptions": null
+      "description": "Gets or sets the Outlines property.<br>&nbsp;&nbsp;&nbsp;The outlines property defines the palette from which automatically assigned series outlines are selected.<br>&nbsp;&nbsp;&nbsp;The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
     },
     "overviewPlusDetailPaneVisibility": {
       "type": "string",
@@ -589,74 +919,62 @@
     "pentagonMarkerTemplate": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the template to use for pentagon markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of pentagon.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-      "valueOptions": null
+      "description": "Gets or sets the template to use for pentagon markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of pentagon.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
     },
     "pentagramMarkerTemplate": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the template to use for pentragram markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of pentagram.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-      "valueOptions": null
+      "description": "Gets or sets the template to use for pentragram markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of pentagram.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
     },
     "plotAreaBackground": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets or sets the brush used as the background for the current Chart object's plot area.",
-      "valueOptions": null
+      "description": "Gets or sets the brush used as the background for the current Chart object's plot area."
     },
     "previewRect": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the preview rectangle.<br>&nbsp;&nbsp;&nbsp;The preview rectangle may be set to Rect.Empty, in which case the visible preview<br>&nbsp;&nbsp;&nbsp;strokePath is hidden.<br>&nbsp;&nbsp;&nbsp;The provided object should have numeric properties called left, top, width and height.",
-      "valueOptions": null
+      "description": "Gets or sets the preview rectangle.<br>&nbsp;&nbsp;&nbsp;The preview rectangle may be set to Rect.Empty, in which case the visible preview<br>&nbsp;&nbsp;&nbsp;strokePath is hidden.<br>&nbsp;&nbsp;&nbsp;The provided object should have numeric properties called left, top, width and height."
     },
     "pyramidMarkerTemplate": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the template to use for pyramid markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of pyramid.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-      "valueOptions": null
+      "description": "Gets or sets the template to use for pyramid markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of pyramid.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
     },
     "responseDataKey": {
       "type": "string",
       "defaultValue": null,
-      "description": "see $.ig.DataSource. Specifies the name of the property in which data records are held if the response is wrapped.",
-      "valueOptions": null
+      "description": "see $.ig.DataSource. Specifies the name of the property in which data records are held if the response is wrapped."
     },
     "rightMargin": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "Sets or gets the right margin to use around the chart content in the canvas.",
-      "valueOptions": null
+      "description": "Sets or gets the right margin to use around the chart content in the canvas."
     },
     "series": {
       "type": "array",
       "defaultValue": null,
-      "description": "an array of series objects",
-      "valueOptions": null
+      "description": "an array of series objects"
     },
     "size": {
       "type": "object",
       "defaultValue": null,
-      "description": "To set both dimensions of the chart simultaneously an object with a width and height property can be provided",
-      "valueOptions": null
+      "description": "To set both dimensions of the chart simultaneously an object with a width and height property can be provided"
     },
     "squareMarkerTemplate": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the template to use for square markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of square.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-      "valueOptions": null
+      "description": "Gets or sets the template to use for square markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of square.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
     },
     "subtitle": {
       "type": "string",
       "defaultValue": null,
-      "description": "the subtitle to display for the component.",
-      "valueOptions": null
+      "description": "the subtitle to display for the component."
     },
     "subtitleBottomMargin": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "the bottom margin to use for the subtitle.",
-      "valueOptions": null
+      "description": "the bottom margin to use for the subtitle."
     },
     "subtitleHorizontalAlignment": {
       "type": "string",
@@ -683,74 +1001,62 @@
     "subtitleLeftMargin": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "the left margin to use for the subtitle.",
-      "valueOptions": null
+      "description": "the left margin to use for the subtitle."
     },
     "subtitleRightMargin": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "the right margin to use for the subtitle.",
-      "valueOptions": null
+      "description": "the right margin to use for the subtitle."
     },
     "subtitleTextColor": {
       "type": "object",
       "defaultValue": "black",
-      "description": "the color to use for the subtitle.",
-      "valueOptions": null
+      "description": "the color to use for the subtitle."
     },
     "subtitleTextStyle": {
       "type": "string",
       "defaultValue": null,
-      "description": "the css font property to use for the title.",
-      "valueOptions": null
+      "description": "the css font property to use for the title."
     },
     "subtitleTopMargin": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "the top margin to use for the subtitle.",
-      "valueOptions": null
+      "description": "the top margin to use for the subtitle."
     },
     "syncChannel": {
       "type": "string",
       "defaultValue": null,
-      "description": "The channel name to use to sync this chart with other charts.",
-      "valueOptions": null
+      "description": "The channel name to use to sync this chart with other charts."
     },
     "synchronizeVertically": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Whether the chart should be synchronized vertically",
-      "valueOptions": null
+      "description": "Whether the chart should be synchronized vertically"
     },
     "syncrhonizeHorizontally": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Whether the chart should be synchronized horizontally",
-      "valueOptions": null
+      "description": "Whether the chart should be synchronized horizontally"
     },
     "tetragramMarkerTemplate": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the template to use for tetragram markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of tetragram.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-      "valueOptions": null
+      "description": "Gets or sets the template to use for tetragram markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of tetragram.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
     },
     "theme": {
       "type": "string",
       "defaultValue": "c",
-      "description": "The swatch used to style this widget",
-      "valueOptions": null
+      "description": "The swatch used to style this widget"
     },
     "title": {
       "type": "string",
       "defaultValue": null,
-      "description": "the title to display for the component.",
-      "valueOptions": null
+      "description": "the title to display for the component."
     },
     "titleBottomMargin": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "the bottom margin to use for the title.",
-      "valueOptions": null
+      "description": "the bottom margin to use for the title."
     },
     "titleHorizontalAlignment": {
       "type": "string",
@@ -777,80 +1083,67 @@
     "titleLeftMargin": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "the left margin to use for the title.",
-      "valueOptions": null
+      "description": "the left margin to use for the title."
     },
     "titleRightMargin": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "the right margin to use for the title.",
-      "valueOptions": null
+      "description": "the right margin to use for the title."
     },
     "titleTextColor": {
       "type": "object",
       "defaultValue": "black",
-      "description": "the color to use for the title.",
-      "valueOptions": null
+      "description": "the color to use for the title."
     },
     "titleTextStyle": {
       "type": "string",
       "defaultValue": null,
-      "description": "the css font property to use for the title.",
-      "valueOptions": null
+      "description": "the css font property to use for the title."
     },
     "titleTopMargin": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "the top margin to use for the title.",
-      "valueOptions": null
+      "description": "the top margin to use for the title."
     },
     "topMargin": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "Sets or gets the top margin to use around the chart content in the canvas.",
-      "valueOptions": null
+      "description": "Sets or gets the top margin to use around the chart content in the canvas."
     },
     "triangleMarkerTemplate": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the template to use for triangle markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of triangle.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-      "valueOptions": null
+      "description": "Gets or sets the template to use for triangle markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of triangle.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
     },
     "verticalZoomable": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Gets or sets the current Chart's vertical zoomability.",
-      "valueOptions": null
+      "description": "Gets or sets the current Chart's vertical zoomability."
     },
     "width": {
       "type": "number",
       "defaultValue": null,
-      "description": "The width of the chart. It can be set as a number in pixels, string (px) or percentage (%).",
-      "valueOptions": null
+      "description": "The width of the chart. It can be set as a number in pixels, string (px) or percentage (%)."
     },
     "windowPositionHorizontal": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "A number between 0 and 1 determining the position of the horizontal scroll.<br>&nbsp;&nbsp;&nbsp;This property is effectively a shortcut to the X position of the WindowRect property.",
-      "valueOptions": null
+      "description": "A number between 0 and 1 determining the position of the horizontal scroll.<br>&nbsp;&nbsp;&nbsp;This property is effectively a shortcut to the X position of the WindowRect property."
     },
     "windowPositionVertical": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "A number between 0 and 1 determining the position of the vertical scroll.<br>&nbsp;&nbsp;&nbsp;This property is effectively a shortcut to the Y position of the WindowRect property.",
-      "valueOptions": null
+      "description": "A number between 0 and 1 determining the position of the vertical scroll.<br>&nbsp;&nbsp;&nbsp;This property is effectively a shortcut to the Y position of the WindowRect property."
     },
     "windowRect": {
       "type": "object",
       "defaultValue": null,
-      "description": "A rectangle representing the portion of the chart currently in view.<br>&nbsp;&nbsp;&nbsp;A rectangle at X=0, Y=0 with a Height and Width of 1 implies the entire plotting area is in view.  A Height and Width of .5 would imply that the view is halfway zoomed in.<br>&nbsp;&nbsp;&nbsp;The provided object should have numeric properties called left, top, width and height.",
-      "valueOptions": null
+      "description": "A rectangle representing the portion of the chart currently in view.<br>&nbsp;&nbsp;&nbsp;A rectangle at X=0, Y=0 with a Height and Width of 1 implies the entire plotting area is in view.  A Height and Width of .5 would imply that the view is halfway zoomed in.<br>&nbsp;&nbsp;&nbsp;The provided object should have numeric properties called left, top, width and height."
     },
     "windowRectMinWidth": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "Sets or gets the minimum width that the window rect is allowed to reach before being clamped.<br>&nbsp;&nbsp;&nbsp;Decrease this value if you want to allow for further zooming into the viewer.<br>&nbsp;&nbsp;&nbsp;If this value is lowered too much it can cause graphical corruption due to floating point arithmetic inaccuracy.",
-      "valueOptions": null
+      "description": "Sets or gets the minimum width that the window rect is allowed to reach before being clamped.<br>&nbsp;&nbsp;&nbsp;Decrease this value if you want to allow for further zooming into the viewer.<br>&nbsp;&nbsp;&nbsp;If this value is lowered too much it can cause graphical corruption due to floating point arithmetic inaccuracy."
     },
     "windowResponse": {
       "type": "string",
@@ -872,14 +1165,12 @@
     "windowScaleHorizontal": {
       "type": "number",
       "defaultValue": 1.0,
-      "description": "A number between 0 and 1 determining the scale of the horizontal zoom.<br>&nbsp;&nbsp;&nbsp;This property is effectively a shortcut to the Width of the WindowRect property.",
-      "valueOptions": null
+      "description": "A number between 0 and 1 determining the scale of the horizontal zoom.<br>&nbsp;&nbsp;&nbsp;This property is effectively a shortcut to the Width of the WindowRect property."
     },
     "windowScaleVertical": {
       "type": "number",
       "defaultValue": 1.0,
-      "description": "A number between 0 and 1 determining the scale of the vertical zoom.<br>&nbsp;&nbsp;&nbsp;This property is effectively a shortcut to the Height of the WindowRect property.",
-      "valueOptions": null
+      "description": "A number between 0 and 1 determining the scale of the vertical zoom.<br>&nbsp;&nbsp;&nbsp;This property is effectively a shortcut to the Height of the WindowRect property."
     }
   }
 }

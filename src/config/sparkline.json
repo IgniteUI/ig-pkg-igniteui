@@ -41,14 +41,12 @@
     "brush": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets or sets the sparkline brush.",
-      "valueOptions": null
+      "description": "Gets or sets the sparkline brush."
     },
     "displayNormalRangeInFront": {
       "type": "bool",
       "defaultValue": "collapsed",
-      "description": "Gets or sets the position of the normal range on the sparkline.",
-      "valueOptions": null
+      "description": "Gets or sets the position of the normal range on the sparkline."
     },
     "displayType": {
       "type": "string",
@@ -80,14 +78,12 @@
     "firstMarkerBrush": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets or sets the first marker brush of the sparkline.",
-      "valueOptions": null
+      "description": "Gets or sets the first marker brush of the sparkline."
     },
     "firstMarkerSize": {
       "type": "number",
       "defaultValue": -1.0,
-      "description": "Gets or sets the first marker size of the sparkline.",
-      "valueOptions": null
+      "description": "Gets or sets the first marker size of the sparkline."
     },
     "firstMarkerVisibility": {
       "type": "string",
@@ -109,20 +105,17 @@
     "formatLabel": {
       "type": "object",
       "defaultValue": null,
-      "description": "Sets or gets a function which takes an object that produces a formatted label for displaying in the chart.",
-      "valueOptions": null
+      "description": "Sets or gets a function which takes an object that produces a formatted label for displaying in the chart."
     },
     "highMarkerBrush": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets or sets the high marker brush of the sparkline.",
-      "valueOptions": null
+      "description": "Gets or sets the high marker brush of the sparkline."
     },
     "highMarkerSize": {
       "type": "number",
       "defaultValue": -1.0,
-      "description": "Gets or sets the high marker size of the sparkline.",
-      "valueOptions": null
+      "description": "Gets or sets the high marker size of the sparkline."
     },
     "highMarkerVisibility": {
       "type": "string",
@@ -144,14 +137,12 @@
     "horizontalAxisBrush": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets or sets the horizontal axis line brush of the sparkline.",
-      "valueOptions": null
+      "description": "Gets or sets the horizontal axis line brush of the sparkline."
     },
     "horizontalAxisLabel": {
       "type": "object",
       "defaultValue": null,
-      "description": "The value or content to display on the horizontal axis.<br>&nbsp;This can be set to a formatted string, such as \"{0}\", or it can be set to a DataTemplate.",
-      "valueOptions": null
+      "description": "The value or content to display on the horizontal axis.<br>&nbsp;This can be set to a formatted string, such as \"{0}\", or it can be set to a DataTemplate."
     },
     "horizontalAxisVisibility": {
       "type": "string",
@@ -173,20 +164,17 @@
     "labelMemberPath": {
       "type": "string",
       "defaultValue": null,
-      "description": "String identifier of a column or property name to get labels from on each item in the data source.  These labels will be retrieved from the first and last item, and displayed by the horizontal axis.",
-      "valueOptions": null
+      "description": "String identifier of a column or property name to get labels from on each item in the data source.  These labels will be retrieved from the first and last item, and displayed by the horizontal axis."
     },
     "lastMarkerBrush": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets or sets the last marker brush of the sparkline.",
-      "valueOptions": null
+      "description": "Gets or sets the last marker brush of the sparkline."
     },
     "lastMarkerSize": {
       "type": "number",
       "defaultValue": -1.0,
-      "description": "Gets or sets the last marker size of the sparkline.",
-      "valueOptions": null
+      "description": "Gets or sets the last marker size of the sparkline."
     },
     "lastMarkerVisibility": {
       "type": "string",
@@ -208,20 +196,17 @@
     "lineThickness": {
       "type": "number",
       "defaultValue": -1.0,
-      "description": "Gets or sets the line thickness of the sparkline.",
-      "valueOptions": null
+      "description": "Gets or sets the line thickness of the sparkline."
     },
     "lowMarkerBrush": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets or sets the low marker brush of the sparkline.",
-      "valueOptions": null
+      "description": "Gets or sets the low marker brush of the sparkline."
     },
     "lowMarkerSize": {
       "type": "number",
       "defaultValue": -1.0,
-      "description": "Gets or sets the low marker size of the sparkline.",
-      "valueOptions": null
+      "description": "Gets or sets the low marker size of the sparkline."
     },
     "lowMarkerVisibility": {
       "type": "string",
@@ -243,14 +228,12 @@
     "markerBrush": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets or sets the marker brush of the sparkline.",
-      "valueOptions": null
+      "description": "Gets or sets the marker brush of the sparkline."
     },
     "markerSize": {
       "type": "number",
       "defaultValue": -1.0,
-      "description": "Gets or sets the marker size of the sparkline.",
-      "valueOptions": null
+      "description": "Gets or sets the marker size of the sparkline."
     },
     "markerVisibility": {
       "type": "string",
@@ -272,20 +255,17 @@
     "negativeBrush": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets or sets the negative brush of the sparkline.",
-      "valueOptions": null
+      "description": "Gets or sets the negative brush of the sparkline."
     },
     "negativeMarkerBrush": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets or sets the negative marker brush of the sparkline.",
-      "valueOptions": null
+      "description": "Gets or sets the negative marker brush of the sparkline."
     },
     "negativeMarkerSize": {
       "type": "number",
       "defaultValue": -1.0,
-      "description": "Gets or sets the negative marker size of the sparkline.",
-      "valueOptions": null
+      "description": "Gets or sets the negative marker size of the sparkline."
     },
     "negativeMarkerVisibility": {
       "type": "string",
@@ -307,20 +287,17 @@
     "normalRangeFill": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets or sets the normal range brush of the sparkline.",
-      "valueOptions": null
+      "description": "Gets or sets the normal range brush of the sparkline."
     },
     "normalRangeMaximum": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "Gets or sets the maximum value of the normal range.",
-      "valueOptions": null
+      "description": "Gets or sets the maximum value of the normal range."
     },
     "normalRangeMinimum": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "Gets or sets the minimum value of the normal range.",
-      "valueOptions": null
+      "description": "Gets or sets the minimum value of the normal range."
     },
     "normalRangeVisibility": {
       "type": "string",
@@ -342,20 +319,17 @@
     "trendLineBrush": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets or sets the trendline brush of the sparkline.",
-      "valueOptions": null
+      "description": "Gets or sets the trendline brush of the sparkline."
     },
     "trendLinePeriod": {
       "type": "number",
       "defaultValue": 7.0,
-      "description": "Gets or sets the trendline period used by the sparkline.",
-      "valueOptions": null
+      "description": "Gets or sets the trendline period used by the sparkline."
     },
     "trendLineThickness": {
       "type": "number",
       "defaultValue": -1.0,
-      "description": "Gets or sets the thickness of the sparkline's trendline.",
-      "valueOptions": null
+      "description": "Gets or sets the thickness of the sparkline's trendline."
     },
     "trendLineType": {
       "type": "string",
@@ -454,20 +428,17 @@
     "valueMemberPath": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets or sets the string path to the value column.",
-      "valueOptions": null
+      "description": "Gets or sets the string path to the value column."
     },
     "verticalAxisBrush": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets or sets the vertical axis line brush of the sparkline.",
-      "valueOptions": null
+      "description": "Gets or sets the vertical axis line brush of the sparkline."
     },
     "verticalAxisLabel": {
       "type": "object",
       "defaultValue": null,
-      "description": "The value or content to display on the vertical axis.<br>&nbsp;This can be set to a formatted string, such as \"{0:n}\", or it can be set to a DataTemplate.",
-      "valueOptions": null
+      "description": "The value or content to display on the vertical axis.<br>&nbsp;This can be set to a formatted string, such as \"{0:n}\", or it can be set to a DataTemplate."
     },
     "verticalAxisVisibility": {
       "type": "string",

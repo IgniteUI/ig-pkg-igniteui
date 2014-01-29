@@ -57,14 +57,12 @@
     "allowDoubleClickToResize": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Resize the column to the size of the longest currently visible cell value.",
-      "valueOptions": null
+      "description": "Resize the column to the size of the longest currently visible cell value."
     },
     "columnSettings": {
       "type": "array",
       "defaultValue": null,
       "description": "A list of column settings that specifies resizing options on a per column basis.",
-      "valueOptions": null,
       "schema": {
         "columnKey": {
           "type": "string",
@@ -97,14 +95,12 @@
     "deferredResizing": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Specifies whether the resizing should be deferred until the user finishes resizing or applied immediately.",
-      "valueOptions": null
+      "description": "Specifies whether the resizing should be deferred until the user finishes resizing or applied immediately."
     },
     "handleTreshold": {
       "type": "number",
       "defaultValue": 5.0,
-      "description": "The width in pixels of the resizing handle which is position at the right side of each resizeable column header.",
-      "valueOptions": null
+      "description": "The width in pixels of the resizing handle which is position at the right side of each resizeable column header."
     }
   }
 }

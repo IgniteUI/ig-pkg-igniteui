@@ -42,14 +42,12 @@
       "type": "array",
       "defaultValue": null,
       "description": "Gets or sets custom css votes.<br>&nbsp;&nbsp;&nbsp;&nbsp;That object should be 2-dimentional array or object with indexes, where every item of first level represents settings for a vote at that index.<br>&nbsp;&nbsp;&nbsp;&nbsp;Second level of an item is settings for a vote and it should contain classes for a specific state of vote.<br>&nbsp;&nbsp;&nbsp;&nbsp;Item at index [0] on second level is used for css class of vote in normal state.<br>&nbsp;&nbsp;&nbsp;&nbsp;Item at index [1] on second level is used for css class of vote in selected state.<br>&nbsp;&nbsp;&nbsp;&nbsp;Item at index [2] on second level is used for css class of vote in hover state.<br>&nbsp;&nbsp;&nbsp;&nbsp;Examples:<br>&nbsp;&nbsp;&nbsp;&nbsp;{ 1: { 0: \"normalCss\", 1: \"selectedCss\", 2: \"hoverCss\"} }<br>&nbsp;&nbsp;&nbsp;&nbsp;will customize only second vote with normalCss for normal state, hoverCss for hover state and selectedCss for selected state.<br>&nbsp;&nbsp;&nbsp;&nbsp;[[null, 's1', 'h1'], [null, 's2', 'h2'], [null, 's3', 'h3']]<br>&nbsp;&nbsp;&nbsp;&nbsp;will customize selected and hover states for first 3 votes with classes h# and s#.",
-      "valueOptions": null,
       "arrayMemberType": "array"
     },
     "focusable": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Gets sets ability to get focus. Change of that option is not supported after igRating was created.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value true: can get focus and process key events.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value false: cannot get focus.",
-      "valueOptions": null
+      "description": "Gets sets ability to get focus. Change of that option is not supported after igRating was created.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value true: can get focus and process key events.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value false: cannot get focus."
     },
     "precision": {
       "type": "string",
@@ -76,75 +74,63 @@
     "precisionZeroVote": {
       "type": "number",
       "defaultValue": 0.25,
-      "description": "Gets or sets part of vote-size, which is considered as zero value.<br>&nbsp;&nbsp;&nbsp;&nbsp;It has effect only when precision is set to \"half\" or \"whole\".<br>&nbsp;&nbsp;&nbsp;&nbsp;If user clicks between edge of the first vote and (sizeOfVote * precisionZeroVote), then value is set to 0.<br>&nbsp;&nbsp;&nbsp;&nbsp;Same is applied for mouseover as well.",
-      "valueOptions": null
+      "description": "Gets or sets part of vote-size, which is considered as zero value.<br>&nbsp;&nbsp;&nbsp;&nbsp;It has effect only when precision is set to \"half\" or \"whole\".<br>&nbsp;&nbsp;&nbsp;&nbsp;If user clicks between edge of the first vote and (sizeOfVote * precisionZeroVote), then value is set to 0.<br>&nbsp;&nbsp;&nbsp;&nbsp;Same is applied for mouseover as well."
     },
     "roundedDecimalPlaces": {
       "type": "number",
       "defaultValue": 3.0,
-      "description": "Gets or sets number of decimal places used to round value and value-hover.<br>&nbsp;&nbsp;&nbsp;&nbsp;Negative value will disable that option and value will not be rounded.<br>&nbsp;&nbsp;&nbsp;&nbsp;Notes:<br>&nbsp;&nbsp;&nbsp;&nbsp;If precision is \"whole\" or \"half\" and roundedDecimalPlaces is set in range of 0..2, then 3 is used.<br>&nbsp;&nbsp;&nbsp;&nbsp;If valueAsPercent is enabled and roundedDecimalPlaces is set to 0, then 1 is used.<br>&nbsp;&nbsp;&nbsp;&nbsp;If it is larger than 15, then 15 is used.",
-      "valueOptions": null
+      "description": "Gets or sets number of decimal places used to round value and value-hover.<br>&nbsp;&nbsp;&nbsp;&nbsp;Negative value will disable that option and value will not be rounded.<br>&nbsp;&nbsp;&nbsp;&nbsp;Notes:<br>&nbsp;&nbsp;&nbsp;&nbsp;If precision is \"whole\" or \"half\" and roundedDecimalPlaces is set in range of 0..2, then 3 is used.<br>&nbsp;&nbsp;&nbsp;&nbsp;If valueAsPercent is enabled and roundedDecimalPlaces is set to 0, then 1 is used.<br>&nbsp;&nbsp;&nbsp;&nbsp;If it is larger than 15, then 15 is used."
     },
     "swapDirection": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Gets or sets direction of selected and hovered votes. Change of that option is not supported after igRating was created.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value true: from left to right or from top to bottom.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value false: from right to left or from bottom to left.",
-      "valueOptions": null
+      "description": "Gets or sets direction of selected and hovered votes. Change of that option is not supported after igRating was created.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value true: from left to right or from top to bottom.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value false: from right to left or from bottom to left."
     },
     "theme": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets or sets selector for css classes.<br>&nbsp;&nbsp;&nbsp;&nbsp;That option allows replacing all default css styles by custom values.<br>&nbsp;&nbsp;&nbsp;&nbsp;Application should provide css classes for all members defined in the css options with \"theme\" selector.",
-      "valueOptions": null
+      "description": "Gets or sets selector for css classes.<br>&nbsp;&nbsp;&nbsp;&nbsp;That option allows replacing all default css styles by custom values.<br>&nbsp;&nbsp;&nbsp;&nbsp;Application should provide css classes for all members defined in the css options with \"theme\" selector."
     },
     "validatorOptions": {
       "type": "object",
       "defaultValue": null,
       "description": "Gets or sets object which contains options supported by igValidator.<br>&nbsp;&nbsp;&nbsp;&nbsp;That option is not supported if the \"focusable\" option is set to false.<br>&nbsp;&nbsp;&nbsp;&nbsp;Example:<br>&nbsp;&nbsp;&nbsp;&nbsp;$('#rating1').igRating({ validatorOptions: { min: 0.2, max: 0.7 } });",
-      "valueOptions": null,
       "schemaRef": "validator"
     },
     "value": {
       "type": "number",
       "defaultValue": null,
-      "description": "Gets or sets value (selected votes or percent).",
-      "valueOptions": null
+      "description": "Gets or sets value (selected votes or percent)."
     },
     "valueAsPercent": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Gets or sets percent or vote number to measure value and value-hover.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value true: value is measured as percent (from 0 to 1).<br>&nbsp;&nbsp;&nbsp;&nbsp;Value false: value is measured in number of voted (from 0 to voteCount)",
-      "valueOptions": null
+      "description": "Gets or sets percent or vote number to measure value and value-hover.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value true: value is measured as percent (from 0 to 1).<br>&nbsp;&nbsp;&nbsp;&nbsp;Value false: value is measured in number of voted (from 0 to voteCount)"
     },
     "valueHover": {
       "type": "number",
       "defaultValue": null,
-      "description": "Gets or sets value-hover (hovered votes or percent of hovered votes). Default is same as value.",
-      "valueOptions": null
+      "description": "Gets or sets value-hover (hovered votes or percent of hovered votes). Default is same as value."
     },
     "vertical": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Gets or sets vertical or horizontal orientation of votes.<br>&nbsp;&nbsp;&nbsp;&nbsp;Change of that option is not supported after igRating was created.",
-      "valueOptions": null
+      "description": "Gets or sets vertical or horizontal orientation of votes.<br>&nbsp;&nbsp;&nbsp;&nbsp;Change of that option is not supported after igRating was created."
     },
     "voteCount": {
       "type": "number",
       "defaultValue": 5.0,
-      "description": "Gets or sets number of votes.",
-      "valueOptions": null
+      "description": "Gets or sets number of votes."
     },
     "voteHeight": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "Gets or sets custom height of a vote in pixels. In case of 0 the run time style value is used.",
-      "valueOptions": null
+      "description": "Gets or sets custom height of a vote in pixels. In case of 0 the run time style value is used."
     },
     "voteWidth": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "Gets or sets custom width of a vote in pixels. In case of 0 the run time style value is used.",
-      "valueOptions": null
+      "description": "Gets or sets custom width of a vote in pixels. In case of 0 the run time style value is used."
     }
   }
 }
