@@ -220,6 +220,11 @@ define (function (require, exports, module) {
 			} else {
 				// also check type here
 				// use the jQuery loaded by the package, not the one loaded by the IDE !
+				var opts = descriptor.comp.options ? descriptor.comp.options : {};
+				//ATT: TODO: ALSO needs to handle the case where an option gets changed manually in the code view
+				var newOpts = $.extend({}, opts);
+				//ATT: TODO: we may not be setting an option on the root level ! 
+				newOpts[descriptor.propName] = descriptor.propValue;
 				if (descriptor.propType !== "object" && descriptor.propType !== "array") {
 					try {
 						window.frames[0].$(descriptor.placeholder)[name]("option", descriptor.propName, descriptor.propValue);
@@ -229,11 +234,11 @@ define (function (require, exports, module) {
 						// those are usually props which need to re-render the whole widget to take effect, 
 						// like changing virtualization from false to true
 						//TODO: options
-						//this._recreateWidget(descriptor.placeholder, name, window.frames[0].$(descriptor.placeholder).data(name).options);
+						this._recreateWidget(descriptor.placeholder, name, newOpts);
 					}
 				} else {
-					var options = window.frames[0].$(descriptor.placeholder).data(name).options;
-					this._recreateWidget(descriptor.placeholder, name, options);
+					//var options = window.frames[0].$(descriptor.placeholder).data(name).options;
+					this._recreateWidget(descriptor.placeholder, name, newOpts);
 				}
 				var codeRange = descriptor.codeEditor.find("$(\"#" + descriptor.id + "\")." + name + "({");
 				var val = descriptor.propValue;
