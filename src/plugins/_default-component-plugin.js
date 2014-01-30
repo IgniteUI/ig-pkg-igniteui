@@ -261,6 +261,10 @@ define (function (require, exports, module) {
 					if (oldValueEnumType === "string") {
 						oldVal = "\"" + oldVal + "\"";
 					}
+				} else if (descriptor.propType === "object") {
+					val = this.getObjectCodeString(descriptor.propValue, 5);
+				} else if (descriptor.propType === "array") {
+					val = this.getArrayCodeString(descriptor.propValue, 5);
 				}
 				var optionRange = descriptor.codeEditor.find(descriptor.propName + ": " + oldVal);
 				var optCode = descriptor.propName + ": " + val;
@@ -273,6 +277,35 @@ define (function (require, exports, module) {
 					ide.session.insert({row: codeRange.start.row + 1, column: 0}, optCode);
 				}
 			}
+		},
+		getObjectCodeString: function (obj, tabs) {
+			val = "{\n";
+			for (var prop in obj) {
+				if (obj.hasOwnProperty(prop)) {
+					var subType = typeof obj[prop];
+					if (subType === "string") {
+						val += new Array(tabs + 2).join("\t") + prop + ": \"" + obj[prop] + "\",\n"
+					} else if (subType === "boolean" || subType === "number") {
+						val += new Array(tabs + 2).join("\t") + prop + ": " + obj[prop] + ",\n"
+					}
+				}
+			}
+			val = val.substring(0, val.length - 2);
+			val += "\n" + new Array(tabs + 1).join("\t") + "}";
+			return val;
+		},
+		getArrayCodeString: function (obj, tabs) {
+			val = "[\n" + new Array(tabs + 2).join("\t");
+			for (var i = 0; i < obj.length; i++) {
+				val += this.getObjectCodeString(obj[i], tabs + 1);
+				if (i < obj.length - 1) {
+					val += ",\n" + new Array(tabs + 2).join("\t");
+				} else {
+					val += "\n";
+				}
+			}
+			val += new Array(tabs + 1).join("\t") + "]";
+			return val;
 		},
 		addExtraMarkers: function (marker, descriptor) {
 
