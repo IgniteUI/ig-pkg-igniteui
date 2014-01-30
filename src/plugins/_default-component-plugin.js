@@ -43,29 +43,29 @@ define (function (require, exports, module) {
 			var lineCount = 0;
 			code = "\t\t\t\t$(\"#" + descriptor.id + "\")." + name + "({";
 				if (opts.height) {
-					if (code.lastIndexOf("{") == code.length - 1) {
+					if (code.lastIndexOf("{") === code.length - 1) {
 						code += "\n\t\t\t\t\theight: " + opts.height ;
 					} else {
 						code += ",\n\t\t\t\t\theight: " + opts.height ;
 					}
-				lineCount ++;
+					lineCount++;
 				}
 				if (opts.width) {
-					if (code.lastIndexOf("{") == code.length - 1) {
+					if (code.lastIndexOf("{") === code.length - 1) {
 						code += "\n\t\t\t\t\twidth: " + opts.width;
 					} else {
 						code += ",\n\t\t\t\t\twidth: " + opts.width;
 					}								
-				lineCount ++;
+					lineCount++;
 				}
 			if (descriptor.data && window[descriptor.data]) {
-				if (code.lastIndexOf("{") == code.length - 1) {
+				if (code.lastIndexOf("{") === code.length - 1) {
 					code += "\n\t\t\t\t\tdataSource: " + descriptor.data;
 				} else {
 					code += ",\n\t\t\t\t\tdataSource: " + descriptor.data;
 				}
 				//code += ",\n\t\t\t\t\tdataSource: " + descriptor.data;
-				lineCount ++;
+				lineCount++;
 			}
 			var props = this.settings.packageInfo.components[descriptor.type].properties;
 			for (var key in opts) {
@@ -75,11 +75,9 @@ define (function (require, exports, module) {
 							code += "\n\t\t\t\t\t" + key + ": \"" + opts[key] + "\"";
 						} else {
 							code += ",\n\t\t\t\t\t" + key + ": \"" + opts[key] + "\"";
-						}						
-						//code += ",\n\t\t\t\t\t" + key + ": \"" + opts[key] + "\"";
+						}
 						lineCount++;
 					} else if (props[key].type === "array") {
-						//code += ",\n\t\t\t\t\t" + key + ": " + formattedStr;
 						for (var p = 0; p < opts[key].length; p ++) {
 							if(opts[key][p].hasOwnProperty("dataSource")){
 								opts[key][p].dataSource = opts[key][p].dataSourceVal;
@@ -94,9 +92,8 @@ define (function (require, exports, module) {
 						}
 						if (code.lastIndexOf("{") != code.length - 1) {
 							code += ",\n";
-						}						
-						//code += ",\n";
-						lineCount ++;
+						}
+						lineCount++;
 						formattedStr = key + ": " + formattedStr;
 						var formattedStrTabbed = "";
 						var tabbedArr = formattedStr.split("\n");
@@ -107,7 +104,6 @@ define (function (require, exports, module) {
 							}
 						}
 						code += formattedStrTabbed;
-						
 						lineCount += formattedStrTabbed.split("\n").length - 1;
 					} else {
 						if (code.lastIndexOf("{") == code.length - 1) {
@@ -123,10 +119,8 @@ define (function (require, exports, module) {
 			code += "\n\t\t\t\t});\n";
 			lineCount += 2;
 			return {codeString: code, lineCount: lineCount};
-			//return this.evalTemplate("default.code.js", descriptor);
 		},
 		getCodeEditorMarkupSnippet: function (descriptor) {
-			// as a developer, i would like to be able to provide the direct manual formatting, as well as specify a template, and evaluate it
 			var extraIndentStr = "", i = 0;
 			if (descriptor.extraIndent) {
 				for (i = 0; i < descriptor.extraIndent; i++) {
@@ -134,7 +128,6 @@ define (function (require, exports, module) {
 				}
 			}
 			return {codeString: "\t" + extraIndentStr + "<div id=\"" + descriptor.id + "\"></div>\n", lineCount: 1};
-			//return this.evalTemplate("default.code.html", descriptor);
 		},
 		requiresInitialization: function () {
 			return true;
@@ -274,8 +267,8 @@ define (function (require, exports, module) {
 				}
 			}
 		},
-		addExtraMarkers: function (marker, descriptor) {
-
+		addExtraMarkers: function (descriptor) {
+			
 		},
 		isContainer: function (descriptor) {
 			if (typeof (descriptor) === "undefined" || descriptor === null) {

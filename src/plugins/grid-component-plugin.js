@@ -41,6 +41,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			//return this.evalTemplate("grid.code.js", descriptor);
 		},
 		addExtraMarkers: function (descriptor) {
+			alert(this._super);
 			// we don't want to hardcode this value but find it in the current range
 			// it may well happen that someone adds lots of options and extra code *above* the features or any other object
 			var featuresRange = this.settings.editor.find("features", {start: descriptor.marker.range.start});
