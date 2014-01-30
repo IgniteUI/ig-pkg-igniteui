@@ -50,7 +50,7 @@
     		"visual": true, 
     		"framework": false,
     		"height": 300,
-    		"width": 300,
+    		"width": 500,
     		"dataSource": "sampleData1"
     	},
     	"hierarchicalGrid": {
@@ -440,12 +440,13 @@
     		"id": "splitter",
     		"toolboxTitle": "Splitter",
     		"icon": "splitter.png",
+			"componentPlugin": "splitter-component-plugin", 
     		"dragDropIcon": "splitter-dragdrop.png",
     		"category": "layout",
     		"visual": true,
     		"framework": false,
-			"width": 200, 
-			"height": 200
+			"width": 500, 
+			"height": 500
     	},
     	"tileManager": {
     		"id": "tileManager",
