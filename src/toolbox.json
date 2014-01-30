@@ -27,7 +27,6 @@
         }
     ],
     "stylesheets": [
-        "css/jquery-ui.css",
         "css/themes/infragistics/infragistics.theme.css",
         "css/structure/infragistics.css"
     ],
@@ -78,8 +77,8 @@
     		"visual": true,
     		"framework": false,
     		"height": 200,
-    		"width": 400,
-    		"dataSource": "samplePieChartData",
+    		"width": 500,
+    		"dataSource": "sampleChartData",
 			"defaultOptions" : {
 				"axes": [
                     {
@@ -87,6 +86,11 @@
                         "type": "categoryX",
                         "title": "Population",
                         "label": "CountryName"
+                    },
+					{
+                        "name": "PopulationAxis",
+                        "type": "numericY",
+						"minimumValue": 0
                     }
                 ],
 				"series": [
@@ -112,7 +116,7 @@
     		"framework": false,
     		"height": 200,
     		"width": 200,
-			"dataSource": "samplePieChartData",
+			"dataSource": "sampleChartData",
 			"defaultOptions": {"valueMemberPath": "Pop2008", "labelMemberPath": "CountryName", "labelsPosition": "bestFit" } 
 		},	
 		"sparkline": {
@@ -355,7 +359,8 @@
     		"framework": false,
     		"width": 400,
     		"height": 400,
-    		"dataSource": "samplePivotData1"
+      		"defaultOptions": {               
+    		}  		
     	},
     	"rating": {
     		"id": "rating",

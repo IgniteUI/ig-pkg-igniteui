@@ -16,7 +16,7 @@
 .ui-igpivot-filterdropdown .ui-igbutton{cursor:pointer;margin:1px}
 .ui-igpivot-filterdropdown .ui-igtree-expander{top:.6em}
 .ui-igpivot-filterdropdown .ui-igtree-node{line-height:1em}
-.ui-igpivot-filterdropdown span[data-role=checkbox]{width:1em;height:1em}
+.ui-igpivot-filterdropdown span[data-role=checkbox]{min-height:14px;min-width:14px;width:1em;height:1em}
 .ui-igpivot-filterdropdown .ui-igtree-node a{font-size:1em}
 .ui-igpivot-filterdropdown-buttoncontainer{float:right;padding:6px}
 .ui-igpivot-droparea{margin:0;padding:0}
@@ -30,6 +30,7 @@
 .ui-igpivotdataselector{background:#F3F3F3;font-size:.9em;overflow-x:hidden;overflow-y:auto}
 .ui-igpivotdataselector .ui-igpivotdataselector-root{padding:10px}
 .ui-igpivotdataselector-metadata{height:300px}
+.ui-igpivotdataselector-metadata .ui-igtree-root{margin-top:.5em}
 .ui-igpivotdataselector-metadata .ui-igpivot-metadataitem .cube,.ui-igpivotdataselector-metadata .ui-igpivot-metadataitem .dimension,.ui-igpivotdataselector-metadata .ui-igpivot-metadataitem .folder,.ui-igpivotdataselector-metadata .ui-igpivot-metadataitem .hierarchykey,.ui-igpivotdataselector-metadata .ui-igpivot-metadataitem .hierarchydirect,.ui-igpivotdataselector-metadata .ui-igpivot-metadataitem .hierarchymultiple,.ui-igpivotdataselector-metadata .ui-igpivot-metadataitem .hierarchysingle,.ui-igpivotdataselector-metadata .ui-igpivot-metadataitem .kpi,.ui-igpivotdataselector-metadata .ui-igpivot-metadataitem .level1,.ui-igpivotdataselector-metadata .ui-igpivot-metadataitem .level2,.ui-igpivotdataselector-metadata .ui-igpivot-metadataitem .level3,.ui-igpivotdataselector-metadata .ui-igpivot-metadataitem .level4,.ui-igpivotdataselector-metadata .ui-igpivot-metadataitem .level5,.ui-igpivotdataselector-metadata .ui-igpivot-metadataitem .measure,.ui-igpivotdataselector-metadata .ui-igpivot-metadataitem .member,.ui-igpivotdataselector-metadata .ui-igpivot-metadataitem .members{width:16px;height:16px;display:inline-block;vertical-align:baseline;margin-right:.2em;background-image:url(../images/igPivot/dataselector-sprite.png)}
 .ui-igpivotdataselector-metadata .ui-igpivot-metadataitem .cube{background-position:0 0}
 .ui-igpivotdataselector-metadata .ui-igpivot-metadataitem .dimension{background-position:-16px 0}
@@ -64,6 +65,7 @@
 .ui-igbutton.ui-igpivotdataselector-updatelayout{height:18px;width:18px;margin-left:10px;vertical-align:middle}
 .ui-igbutton.ui-igpivotdataselector-updatelayout .ui-icon{margin-left:0}
 .ui-igpivotgrid-blockarea{background:rgba(0,0,0,0.70) url("../images/ui-anim_basic_16x16.gif") no-repeat center center;position:absolute;width:100%;height:100%;top:0;z-index:10}
+.ui-igpivotgrid-tree-blockarea{background:url("../images/ui-anim_basic_16x16.gif") no-repeat center center;position:absolute;width:16px;height:16px;z-index:20000}
 .ui-igpivotgrid-header{background-size:contain;white-space:nowrap}
 .ui-igpivotgrid.ui-iggrid-table .ui-igpivotgrid-header{overflow:hidden;text-overflow:ellipsis}
 .ui-igpivotgrid-header .ui-icon{display:inline-block}

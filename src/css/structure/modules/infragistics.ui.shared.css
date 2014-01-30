@@ -62,7 +62,8 @@ button.ui-button::-moz-focus-inner{border:0;padding:0}
 .ui-igplayer-tooltip ui-igtooltip-arrow-left{z-index:10000;background:transparent url("../images/igTooltip/igTooltipArrowLeft.png") no-repeat 100% 100%;width:7px;height:14px;position:relative;top:50%;left:-1px;margin-top:7px}
 .ui-igplayer-tooltip ui-igtooltip-arrow-right{z-index:10000;background:transparent url("../images/igTooltip/igTooltipArrowRight.png") no-repeat 100% 100%;width:7px;height:14px;position:relative;top:50%;left:-1px;margin-top:7px}
 .ui-igplayer-tooltip ui-igtooltip-arrow-bottom{z-index:10000;background:transparent url("../images/igTooltip/igTooltipArrowBottom.png") no-repeat 100% 100%;width:14px;height:7px;position:relative;left:50%;top:-1px;margin-left:-7px}
-.ui-igloadingmsg{background-image:url(../images/ui-anim_basic_16x16.gif);position:absolute;z-index:20000;width:16px;height:16px}
+.ui-igloadingmsg{position:absolute;z-index:20000}
+.ui-igloadingmsg{background-image:url(../images/igLoadingSmall.gif);width:64px;height:64px}
 .ui-iggrid-indicatorcontainer{display:inline}
 .ui-igcheckbox-normal{display:inline-block;_display:inline;overflow:hidden;width:16px;height:16px}
 .ui-igcheckbox-normal-off{background:none!important}

@@ -158,7 +158,7 @@ define (function (require, exports, module) {
 			// if the property doesn't exist, returns the position of the last one
 			var ide = this.settings.ide;
 			// need to concatenate the hash with the parent prop, if any
-			
+
 			return pos;
 		},
 		update: function (descriptor) {
@@ -220,12 +220,25 @@ define (function (require, exports, module) {
 			} else {
 				// also check type here
 				// use the jQuery loaded by the package, not the one loaded by the IDE !
+				var opts = descriptor.comp.options ? descriptor.comp.options : {};
+				//ATT: TODO: ALSO needs to handle the case where an option gets changed manually in the code view
+				var newOpts = $.extend({}, opts);
+				//ATT: TODO: we may not be setting an option on the root level ! 
+				newOpts[descriptor.propName] = descriptor.propValue;
 				if (descriptor.propType !== "object" && descriptor.propType !== "array") {
-					window.frames[0].$(descriptor.placeholder)[name]("option", descriptor.propName, descriptor.propValue);
+					try {
+						window.frames[0].$(descriptor.placeholder)[name]("option", descriptor.propName, descriptor.propValue);
+					} catch (err) {
+						// we need to re-create (destroy & create) the widget again. 
+						// this usually happens when we try to use setOption at runtime for props that don't allow this 
+						// those are usually props which need to re-render the whole widget to take effect, 
+						// like changing virtualization from false to true
+						//TODO: options
+						this._recreateWidget(descriptor.placeholder, name, newOpts);
+					}
 				} else {
-					var options = window.frames[0].jQuery($("#designer-frame").contents().find("#" + descriptor.id)).data(name).options;
-					window.frames[0].jQuery($("#designer-frame").contents().find("#" + descriptor.id))[name]("destroy");
-					window.frames[0].jQuery($("#designer-frame").contents().find("#" + descriptor.id))[name](options);
+					//var options = window.frames[0].$(descriptor.placeholder).data(name).options;
+					this._recreateWidget(descriptor.placeholder, name, newOpts);
 				}
 				var codeRange = descriptor.codeEditor.find("$(\"#" + descriptor.id + "\")." + name + "({");
 				var val = descriptor.propValue;
@@ -367,6 +380,10 @@ define (function (require, exports, module) {
 			propertyExplorer(descriptor);
 			$(".adorner-wrapper").animate({left: "-=250"}, 250);
 			this.showBackButton();
+		},
+		_recreateWidget: function (element, widgetName, options) {
+			window.frames[0].$(element)[widgetName]("destroy");
+			window.frames[0].$(element)[widgetName](options);
 		}
 	});
 	return IgniteUIComponentPlugin;

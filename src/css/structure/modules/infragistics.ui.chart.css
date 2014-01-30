@@ -1,15 +1,12 @@
-﻿.ui-chart-container{font-family:Arial,Helvetica,sans-serif;font-size:13px;border-width:0}
-.ui-chart-axis{border-color:#B1B1B1;background-color:#B1B1B1}
-.ui-horizontal-axis-labels{vertical-align:top;margin:16px 0;color:#818181}
-.ui-vertical-axis-labels{text-align:right;margin:0 16px;color:#818181}
-.ui-angular-axis-labels{margin:0;color:#818181}
-.ui-radial-axis-labels{vertical-align:top;margin-bottom:0 10px;color:#818181}
-.ui-chart-area-fill-opacity{opacity:.7}
-.ui-chart-axis-category-line{visibility:collapse}
+﻿.ui-chart-container{font-family:Arial,Helvetica,sans-serif;font-size:13px;-webkit-tap-highlight-color:rgba(0,0,0,0)}
+.ui-chart-axis{border-color:#989EA3;background-color:#989EA3}
 .ui-chart-legend-items-list{padding:0;margin:5px}
 .ui-chart-legend-item-text{vertical-align:middle}
 .ui-chart-legend-item-badge{vertical-align:middle}
 .ui-chart-tooltip{-moz-box-shadow:0 0 2px #555;-webkit-box-shadow:0 0 2px #555;box-shadow:0 0 2px #555;padding:3px}
+.ui-chart-default-tooltip-content{white-space:nowrap}
+.ui-chart-pointer-tooltip-content-container{margin:3px}
+.ui-chart-pointer-tooltip{background-color:white;border-color:#4d4d4d;border-radius:4px;border-width:1px}
 .ui-chart-toolbar{position:absolute;width:100%;text-align:center}
 .ui-chart-toolbar li{list-style:none;display:table-cell;vertical-align:middle}
 .ui-chart-slider{width:40px;padding:5px 9px}
