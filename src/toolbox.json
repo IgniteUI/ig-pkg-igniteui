@@ -27,7 +27,6 @@
         }
     ],
     "stylesheets": [
-        "css/jquery-ui.css",
         "css/themes/infragistics/infragistics.theme.css",
         "css/structure/infragistics.css"
     ],
