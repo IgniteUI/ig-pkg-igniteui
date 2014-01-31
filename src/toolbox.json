@@ -50,7 +50,7 @@
     		"visual": true, 
     		"framework": false,
     		"height": 300,
-    		"width": 500,
+    		"width": 300,
     		"dataSource": "sampleData1"
     	},
     	"hierarchicalGrid": {
@@ -453,9 +453,16 @@
     		"toolboxTitle": "Tile Manager",
     		"icon": "tilemanager.png",
     		"dragDropIcon": "tilemanager-dragdrop.png",
+			"componentPlugin": "tilemanager-component-plugin", 
     		"category": "layout",
     		"visual": true,
-    		"framework": false
+    		"framework": false,
+			"defaultOptions": {
+				"columnWidth": 250,
+                "columnHeight": 250,
+                "marginLeft": 10,
+                "marginTop": 10
+			}
     	},
     	"tree": {
     		"id": "tree",
