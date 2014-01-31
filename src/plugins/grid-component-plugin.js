@@ -16,32 +16,59 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			var code = "";
 			var opts = descriptor.options;
 			var lineCount = 7;
+			var orderedReturnProps = [];
 			var xtraMarkup = ",\n\t\t\t\t\tfeatures: [\n" + "\t\t\t\t\t]";
 			//A.T. - we can either drop with no features in the code editor
 			// or an empty array - empty arr makes it easier to manage with markers
-			code = "\t\t\t\t$(\"#" + descriptor.id + "\").igGrid({\n" +
+			code = "\t\t\t\t$(\"#" + descriptor.id + "\").igGrid({\n" + 
 				"\t\t\t\t\theight: " + opts.height + ",\n" + 
 				"\t\t\t\t\twidth: " + opts.width + xtraMarkup;
+			orderedReturnProps.push({
+				name: "height",
+				value: opts.height,
+				type: "number"
+			});
+			orderedReturnProps.push({
+				name: "width",
+				value: opts.width,
+				type: "number"
+			});
 			if (descriptor.data && window[descriptor.data]) {
 				code += ",\n\t\t\t\t\tdataSource: " + descriptor.data;
+				orderedReturnProps.push({
+					name: "dataSource",
+					value: descriptor.data,
+					type: "literal"
+				});
 			}
 			var props = this.settings.packageInfo.components[descriptor.type].properties;
 			for (var key in opts) {
 				if (opts.hasOwnProperty(key) && key !== "dataSource" && key !== "height" && key !== "width") {
+					orderedReturnProps.push({
+						name: key,
+						value: opts[key],
+						type: props[key].type
+					});
 					if (props[key].type === "string") {
 						code += ",\n\t\t\t\t\t" + key + ": \"" + opts[key] + "\"";
+						orderedReturnProps[orderedReturnProps.length - 1].type = "string";
 					} else {
 						code += ",\n\t\t\t\t\t" + key + ": " + opts[key];
+						orderedReturnProps[orderedReturnProps.length - 1].type = "literal";
 					}
 					lineCount++;
 				}
 			}
 			code += "\n\t\t\t\t});\n";
-			return {codeString: code, lineCount: lineCount};
+			return {
+				codeString: code, 
+				lineCount: lineCount, 
+				orderedProps: orderedReturnProps
+			};
 			//return this.evalTemplate("grid.code.js", descriptor);
 		},
 		addExtraMarkers: function (descriptor) {
-			alert(this._super);
+			this._super(descriptor);
 			// we don't want to hardcode this value but find it in the current range
 			// it may well happen that someone adds lots of options and extra code *above* the features or any other object
 			var featuresRange = this.settings.editor.find("features", {start: descriptor.marker.range.start});

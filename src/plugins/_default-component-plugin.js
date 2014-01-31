@@ -34,6 +34,7 @@ define (function (require, exports, module) {
 		getCodeEditorScriptSnippet: function (descriptor) {
 			var code = "";
 			var opts = descriptor.options;
+			var orderedReturnProps = [];
 			var name = this._getWidgetName(descriptor.type);
 			if (!name) {
 				console.error("Could not get widget name for '" + descriptor.type +"'.");
@@ -42,22 +43,32 @@ define (function (require, exports, module) {
 			//Initial lineCount value
 			var lineCount = 0;
 			code = "\t\t\t\t$(\"#" + descriptor.id + "\")." + name + "({";
-				if (opts.height) {
-					if (code.lastIndexOf("{") === code.length - 1) {
-						code += "\n\t\t\t\t\theight: " + opts.height ;
-					} else {
-						code += ",\n\t\t\t\t\theight: " + opts.height ;
-					}
-					lineCount++;
+			if (opts.height) {
+				if (code.lastIndexOf("{") === code.length - 1) {
+					code += "\n\t\t\t\t\theight: " + opts.height ;
+				} else {
+					code += ",\n\t\t\t\t\theight: " + opts.height ;
 				}
-				if (opts.width) {
-					if (code.lastIndexOf("{") === code.length - 1) {
-						code += "\n\t\t\t\t\twidth: " + opts.width;
-					} else {
-						code += ",\n\t\t\t\t\twidth: " + opts.width;
-					}								
-					lineCount++;
+				orderedReturnProps.push({
+					name: "height",
+					value: opts.height,
+					type: "number"
+				});
+				lineCount++;
+			}
+			if (opts.width) {
+				if (code.lastIndexOf("{") === code.length - 1) {
+					code += "\n\t\t\t\t\twidth: " + opts.width;
+				} else {
+					code += ",\n\t\t\t\t\twidth: " + opts.width;
 				}
+				orderedReturnProps.push({
+					name: "width",
+					value: opts.width,
+					type: "number"
+				});								
+				lineCount++;
+			}
 			if (descriptor.data && window[descriptor.data]) {
 				if (code.lastIndexOf("{") === code.length - 1) {
 					code += "\n\t\t\t\t\tdataSource: " + descriptor.data;
@@ -66,6 +77,11 @@ define (function (require, exports, module) {
 				}
 				//code += ",\n\t\t\t\t\tdataSource: " + descriptor.data;
 				lineCount++;
+				orderedReturnProps.push({
+					name: "dataSource",
+					value: descriptor.data,
+					type: "literal"
+				});
 			}
 			var props = this.settings.packageInfo.components[descriptor.type].properties;
 			for (var key in opts) {
@@ -76,6 +92,11 @@ define (function (require, exports, module) {
 						} else {
 							code += ",\n\t\t\t\t\t" + key + ": \"" + opts[key] + "\"";
 						}
+						orderedReturnProps.push({
+							name: key,
+							value: opts[key],
+							type: "string"
+						});
 						lineCount++;
 					} else if (props[key].type === "array") {
 						for (var p = 0; p < opts[key].length; p ++) {
@@ -112,13 +133,22 @@ define (function (require, exports, module) {
 							code += ",\n\t\t\t\t\t" + key + ": " + opts[key];
 						}							
 						//code += ",\n\t\t\t\t\t" + key + ": " + opts[key];
+						orderedReturnProps.push({
+							name: key,
+							value: opts[key],
+							type: "literal"
+						});
 						lineCount++;
 					}
 				}
 			}
 			code += "\n\t\t\t\t});\n";
 			lineCount += 2;
-			return {codeString: code, lineCount: lineCount};
+			return {
+				codeString: code,
+				lineCount: lineCount,
+				orderedProps: orderedReturnProps
+			};
 		},
 		getCodeEditorMarkupSnippet: function (descriptor) {
 			var extraIndentStr = "", i = 0;
@@ -148,10 +178,130 @@ define (function (require, exports, module) {
 		},
 		getPropPosition: function (descriptor) {
 			var pos = {row: 0, column: 0};
-			// if the property doesn't exist, returns the position of the last one
+			// if the property doesn't exist, add it to the code view and return the newly added prop position
+			// note: this logic *must* happen in the module plugin logic, not in the ide's property explorer logic ! 
+			var ide = this.settings.ide, name = descriptor.propName;
+			var codeMarker = descriptor.component.codeMarker;
+			var meta = codeMarker.extraMarkers;
+			var options = meta.options;
+			if (!options[name]) {
+				pos = this.addPropCode(descriptor, true);
+			} else {
+				// put the cursor at the end of the property definition
+				pos.row = options[name].marker.end.row;
+				pos.column = options[name].marker.end.column;
+			}
+			return pos;
+		},
+		updatePropCode: function (descriptor) {
+			/*
+			var val = descriptor.propValue;
+			var oldVal = descriptor.oldPropValue;
+			var valueEnumType = "string";
+			var oldValueEnumType = "string";
+			if (descriptor.valueOptions) {
+				for (var i = 0; i < descriptor.valueOptions.length; i++) {
+					if (descriptor.valueOptions[i].name === val) {
+						valueEnumType = descriptor.valueOptions[i].type;
+					} else if (descriptor.valueOptions[i].name === oldVal) {
+						oldValueEnumType = descriptor.valueOptions[i].type;
+					}
+				}
+			}
+			if (descriptor.propType === "string") {
+				if (valueEnumType === "string") {
+					val = "\"" + val + "\"";
+				} 
+				if (oldValueEnumType === "string") {
+					oldVal = "\"" + oldVal + "\"";
+				}
+			} else if (descriptor.propType === "object") {
+				val = this.getObjectCodeString(descriptor.propValue, 5);
+			} else if (descriptor.propType === "array") {
+				val = this.getArrayCodeString(descriptor.propValue, 5);
+			}
+			*/
 			var ide = this.settings.ide;
-			// need to concatenate the hash with the parent prop, if any
-
+			var codeMarker = descriptor.component.codeMarker;
+			var meta = codeMarker.extraMarkers;
+			var options = meta.options;
+			var propStr = "";
+			var marker = options[descriptor.propName].marker;
+			propStr += ide._tabStr(codeMarker.baseIndent + 1);
+			propStr += descriptor.propName + ": "  + ide._propCodeDefaultVal(descriptor.propType, descriptor.propValue);
+			var currentPropStr = ide.session.getTextRange(marker);
+			if (!currentPropStr) {
+				currentPropStr = "";
+			}
+			currentPropStr = currentPropStr.trim();
+			options[descriptor.propName].propValue = descriptor.propValue;
+			if ( currentPropStr.lastIndexOf(",") === currentPropStr.length - 1) { 
+				propStr += ",";
+			}
+			propStr += "\n";
+			ide.session.replace(marker, propStr);
+			//reattach the marker
+			/*
+			ide.session.removeMarker(marker.id);
+			options[descriptor.propName].marker = ide.createAndAddMarker(
+				marker.start.row,
+				marker.start.column,
+				marker.end.row,
+				marker.end.column
+			);
+			*/
+		},
+		addPropCode: function (descriptor, insertInCode, lastProp) {
+			var pos = {row: 0, column: 0};
+			var ide = this.settings.ide;
+			var codeMarker = descriptor.component.codeMarker;
+			var meta = codeMarker.extraMarkers;
+			var options = meta.options;
+			// add new prop
+			// get the innerMarker
+			var innerMarker = codeMarker.rangeInner;
+			var propStr = "";
+			propStr += ide._tabStr(codeMarker.baseIndent + 1);
+			var val = ide._propCodeDefaultVal(descriptor.propType, descriptor.defaultValue);
+			propStr += descriptor.propName + ": " + val;
+			if (meta.optionsCount !== 0 && !lastProp) { 
+				propStr += ",";
+			}
+			propStr += "\n";
+			if (insertInCode) {
+				// insert the prop below, take tabs into account
+				// need to concatenate the hash with the parent prop, if any
+				pos.row = innerMarker.start.row;
+				pos.column = propStr.length;
+				ide.session.insert({row: pos.row, column: 0}, propStr); // column: lastPropEndCol, instead of column: 0
+				var omarker = null;
+				pos.row++;
+				omarker = ide.createAndAddMarker(pos.row, 0, pos.row, propStr.length);
+				// change selection so that the prop value is selected
+			} else {
+				// the prop is already added, just find it and return its position, also add a marker for it
+				var r = ide.editor.find({
+					needle: propStr,
+					start: {
+						row: innerMarker.start.row,
+						column: innerMarker.start.column
+					}
+				});
+				if (r) {
+					omarker = ide.createAndAddMarker(r.start.row, r.start.column, r.end.row, r.end.column);
+					pos.row = omarker.start.row;
+					pos.column = omarker.start.column;
+				}
+			}
+			meta.optionsCount++;
+			options[descriptor.propName] = {
+				marker: omarker,
+				propName: descriptor.propName,
+				defaultValue: descriptor.defaultValue,
+				propValue: descriptor.propValue,
+				propType: descriptor.propType
+			};
+			//pos.row++;
 			return pos;
 		},
 		update: function (descriptor) {
@@ -233,41 +383,28 @@ define (function (require, exports, module) {
 					//var options = window.frames[0].$(descriptor.placeholder).data(name).options;
 					this._recreateWidget(descriptor.placeholder, name, newOpts);
 				}
-				var codeRange = descriptor.codeEditor.find("$(\"#" + descriptor.id + "\")." + name + "({");
-				var val = descriptor.propValue;
-				var oldVal = descriptor.oldPropValue;
-				var valueEnumType = "string";
-				var oldValueEnumType = "string";
-				if (descriptor.valueOptions) {
-					for (var i = 0; i < descriptor.valueOptions.length; i++) {
-						if (descriptor.valueOptions[i].name === val) {
-							valueEnumType = descriptor.valueOptions[i].type;
-						} else if (descriptor.valueOptions[i].name === oldVal) {
-							oldValueEnumType = descriptor.valueOptions[i].type;
-						}
-					}
-				}
-				if (descriptor.propType === "string") {
-					if (valueEnumType === "string") {
-						val = "\"" + val + "\"";
-					} 
-					if (oldValueEnumType === "string") {
-						oldVal = "\"" + oldVal + "\"";
-					}
-				} else if (descriptor.propType === "object") {
-					val = this.getObjectCodeString(descriptor.propValue, 5);
-				} else if (descriptor.propType === "array") {
-					val = this.getArrayCodeString(descriptor.propValue, 5);
-				}
-				var optionRange = descriptor.codeEditor.find(descriptor.propName + ": " + oldVal);
-				var optCode = descriptor.propName + ": " + val;
-				if (optionRange) {
-					descriptor.codeEditor.replace(optCode);
+				// check if prop exists
+				var codeMarker = descriptor.comp.codeMarker;
+				var meta = codeMarker.extraMarkers;
+				var options = meta.options;
+				if (!options[descriptor.propName]) {
+					this.addPropCode({
+						component: descriptor.comp,
+						propName: descriptor.propName,
+						propValue: descriptor.propValue,
+						oldPropValue: descriptor.oldPropValue,
+						defaultValue: descriptor.propValue,
+						propType: descriptor.propType		
+					}, true, false);
 				} else {
-					// we are adding a new option
-					//TODO: indents
-					optCode = "\t\t\t\t\t" + optCode + ",\n";
-					ide.session.insert({row: codeRange.start.row + 1, column: 0}, optCode);
+					this.updatePropCode({
+						component: descriptor.comp,
+						propName: descriptor.propName,
+						propValue: descriptor.propValue,
+						oldPropValue: descriptor.oldPropValue,
+						propType: descriptor.propType,
+						valueOptions: descriptor.valueOptions
+					});
 				}
 			}
 		},
@@ -301,7 +438,23 @@ define (function (require, exports, module) {
 			return val;
 		},
 		addExtraMarkers: function (descriptor) {
-
+			// add markers for all the default options
+			var markers = descriptor.marker.extraMarkers;
+			var props = descriptor.codeObj.orderedProps;
+			if (!markers.options) {
+				markers.options = {};
+				markers.optionsCount = 0;
+			}
+			// add all existing options
+			for (var i = 0; i < props.length; i++) {
+				this.addPropCode({
+					component: {codeMarker: descriptor.marker},
+					propName: props[i].name,
+					propValue: props[i].value,
+					defaultValue: props[i].value, //same
+					propType: props[i].type
+				}, false, i === props.length - 1); // we just want to add markers for those props, not insert them; they're already inserted
+			}
 		},
 		isContainer: function (descriptor) {
 			if (typeof (descriptor) === "undefined" || descriptor === null) {
@@ -375,7 +528,9 @@ define (function (require, exports, module) {
 			this.showBackButton();
 		},
 		_recreateWidget: function (element, widgetName, options) {
-			window.frames[0].$(element)[widgetName]("destroy");
+			if (window.frames[0].$(element).data(widgetName)) {
+				window.frames[0].$(element)[widgetName]("destroy");
+			}	
 			window.frames[0].$(element)[widgetName](options);
 		}
 	});
