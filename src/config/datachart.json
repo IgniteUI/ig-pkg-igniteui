@@ -345,7 +345,7 @@
               "type": "string",
               "description": "Specify the axis as numeric Y axis.Useful for displaying scatter, category and financial price series."
             },
-			{
+			      {
               "name": "categoryX",
               "type": "string",
               "description": "Specify the axis as category X axis. Useful for displaying scatter, category and financial price series."
@@ -355,7 +355,7 @@
               "type": "string",
               "description": "Specify the axis as category datetime X axis. Useful for displaying category and financial price series with date based data."
             },
-			{
+			      {
               "name": "categoryY",
               "type": "string",
               "description": "Specify the axis as category Y axis. Useful for displaying scatter, category and financial price series."
@@ -365,7 +365,7 @@
               "type": "string",
               "description": "Specify the axis as category angle axis. Useful for displaying polar and radial categories."
             },
-			{
+			      {
               "name": "numericAngle",
               "type": "string",
               "description": "Specify the axis as numeric angle axis. Useful for displaying polar and radial series."
@@ -402,285 +402,446 @@
           "defaultValue": null,
           "description": "Specifies the name of the property in which data records are held if the response is wrapped."
         },
-		"remove": {
-		  "type": "bool",
+    		"remove": {
+    		  "type": "bool",
           "defaultValue": true,
-		  "description": "Set to true in order to have an existing axis removed from the chart, by name"
-		},
+		      "description": "Set to true in order to have an existing axis removed from the chart, by name"
+    		},
         "labelLocation": {
           "type": "string",
           "defaultValue": null,
-          "description": ""
+          "description": "Specifies the location to display the axis labels for this axis.",
+          "valueOptions": [
+            {
+              "name": "outsideTop",
+              "type": "string",
+              "description": "The labels should have an outside top position."
+            },
+            {
+              "name": "outsideBottom",
+              "type": "string",
+              "description": "The labels should have an outside bottom position."
+            },
+            {
+              "name": "outsideLeft",
+              "type": "string",
+              "description": "The labels should have an outside left position."
+            },
+            {
+              "name": "outsideRight",
+              "type": "string",
+              "description": "The labels should have an outside right position."
+            },
+            {
+              "name": "insideTop",
+              "type": "string",
+              "description": "The labels should have an inside top position."
+            },
+            {
+              "name": "insideBottom",
+              "type": "string",
+              "description": "The labels should have an inside bottom position."
+            },
+            {
+              "name": "insideLeft",
+              "type": "string",
+              "description": "The labels should have an inside left position."
+            },
+            {
+              "name": "insideRight",
+              "type": "string",
+              "description": "The labels should have an inside right position. "
+            }
+          ]
         },
         "labelVisibility": {
           "type": "string",
-          "defaultValue": null,
-          "description": ""
+          "defaultValue": "visible",
+          "description": "Specifies whether the labels are visible.",
+          "valueOptions": [
+            {
+              "name": "visible",
+              "type": "string",
+              "description": "The labels should be visisble for this axis."
+            },
+            {
+              "name": "collapsed",
+              "type": "string",
+              "description": "The labels should not be visible for this axis."
+            }
+          ]
         },
         "labelExtent": {
-          "type": "string",
+          "type": "number",
           "defaultValue": null,
-          "description": ""
+          "description": "Specifies the extent of the area dedicated to the labels for this axis. If unspecified, this value is auto-calculated."
         },
         "labelAngle": {
           "type": "string",
-          "defaultValue": null,
-          "description": ""
+          "defaultValue": 0,
+          "description": "Specifies the angle that labels on the axis should be rotated."
         },
         "labelTextStyle": {
           "type": "string",
           "defaultValue": null,
-          "description": ""
+          "description": "Overrides the style of the text used for the axis labels."
         },
         "labelTextColor": {
           "type": "string",
           "defaultValue": null,
-          "description": ""
+          "description": "Overrides the color of the text used for the axis labels."
         },
         "formatLabel": {
-          "type": "string",
+          "type": "function",
           "defaultValue": null,
-          "description": ""
+          "description": "Sets or gets a function which takes an object that produces a formatted label for displaying in the chart."
         },
         "stroke": {
           "type": "string",
           "defaultValue": null,
-          "description": ""
+          "description": "Gets or sets the Stroke property."
         },
         "strokeThickness": {
-          "type": "string",
-          "defaultValue": null,
-          "description": ""
+          "type": "number",
+          "defaultValue": 1,
+          "description": "Gets or sets the StrokeThickness property."
         },
         "strip": {
           "type": "string",
           "defaultValue": null,
-          "description": ""
+          "description": "Gets or sets the Strip property."
         },
         "majorStroke": {
           "type": "string",
           "defaultValue": null,
-          "description": ""
+          "description": "Gets or sets the MajorStroke property."
         },
         "majorStrokeThickness": {
-          "type": "string",
-          "defaultValue": null,
-          "description": ""
+          "type": "number",
+          "defaultValue": 1,
+          "description": "Gets or sets the MajorStrokeThickness property."
         },
         "minorStroke": {
           "type": "string",
           "defaultValue": null,
-          "description": ""
+          "description": "Gets or sets the MinorStroke property."
         },
         "minorStrokeThickness": {
-          "type": "string",
-          "defaultValue": null,
-          "description": ""
+          "type": "number",
+          "defaultValue": 1,
+          "description": "Gets or sets the MinorStrokeThickness property."
         },
         "isInverted": {
-          "type": "string",
-          "defaultValue": null,
-          "description": ""
+          "type": "bool",
+          "defaultValue": false,
+          "description": "Gets or sets the IsInverted property."
         },
         "crossingAxis": {
           "type": "string",
           "defaultValue": null,
-          "description": ""
+          "description": "Gets or sets the CrossingAxis property."
         },
         "crossingValue": {
-          "type": "string",
+          "type": "object",
           "defaultValue": null,
-          "description": ""
+          "description": "Gets or sets the CrossingValue property."
         },
         "coercionMethods": {
-          "type": "string",
+          "type": "object",
           "defaultValue": null,
-          "description": ""
+          "description": "Gets or sets the coercion methods to use when loading data from data sources. Should be specified before setting any member paths, if being used. Setting it later will not cause data to be reimported into the chart."
         },
         "label": {
           "type": "string",
           "defaultValue": null,
-          "description": ""
+          "description": "Gets or sets the axis label format string."
         },
         "gap": {
-          "type": "string",
-          "defaultValue": null,
-          "description": ""
+          "type": "number",
+          "defaultValue": 0,
+          "description": "Gets or sets the amount of space between adjacent categories for the current axis object. The gap is silently clamped to the range [0, 1] when used."
         },
         "overlap": {
-          "type": "string",
-          "defaultValue": null,
-          "description": ""
+          "type": "number",
+          "defaultValue": 0,
+          "description": "Gets or sets the amount of overlap between adjacent categories for the current axis object. The overlap is silently clamped to the range [-1, 1] when used."
         },
         "startAngleOffset": {
-          "type": "string",
-          "defaultValue": null,
-          "description": ""
+          "type": "number",
+          "defaultValue": 0,
+          "description": "Indicates the angle in degress that the chart's 0th angle should be offset."
         },
         "interval": {
-          "type": "string",
-          "defaultValue": null,
-          "description": ""
+          "type": "number",
+          "defaultValue": 0,
+          "description": "Gets or sets the frequency of displayed labels. The set value is a factor that determines which labels will be hidden. For example, an interval of 2 will display every other label."
         },
         "displayType": {
           "type": "string",
           "defaultValue": null,
-          "description": ""
+          "description": "Gets or sets the axis display type. Continuous display type divides the axis into even intervals, where labels will not necessarily be aligned with data points. Discrete display type will not use a constant interval, but will align each label with its data point.",
+          "valueOptions": [
+            {
+              "name": "continuous",
+              "type": "string",
+              "description": "Points occur at even intervals, even where data is not present at a given point."
+            },
+            {
+              "name": "discrete",
+              "type": "string",
+              "description": "Points occur when data is present, possibly at uneven intervals."
+            }
+          ]
         },
         "minimumValue": {
-          "type": "string",
-          "defaultValue": null,
-          "description": ""
+          "type": "number",
+          "defaultValue": 0,
+          "description": "Gets or sets the axis MinimumValue."
         },
         "maximumValue": {
           "type": "string",
-          "defaultValue": null,
-          "description": ""
+          "defaultValue": 0,
+          "description": "Gets or sets the axis MaximumValue."
         },
         "dateTimeMemberPath": {
           "type": "string",
           "defaultValue": null,
-          "description": ""
+          "description": "Gets or sets the DateTime mapping property for the CategoryDateTimeXAxis."
         },
         "referenceValue": {
-          "type": "string",
-          "defaultValue": null,
-          "description": ""
+          "type": "number",
+          "defaultValue": 0,
+          "description": "Gets or sets the ReferenceValue property."
         },
         "isLogarithmic": {
-          "type": "string",
-          "defaultValue": null,
-          "description": ""
+          "type": "bool",
+          "defaultValue": false,
+          "description": "Gets or sets the LogarithmBase property."
         },
         "logarithmBase": {
-          "type": "string",
-          "defaultValue": null,
-          "description": ""
+          "type": "number",
+          "defaultValue": 10,
+          "description": "Gets or sets the LogarithmBase property."
         },
         "radiusExtentScale": {
-          "type": "string",
-          "defaultValue": null,
-          "description": ""
+          "type": "number",
+          "defaultValue": 0.75,
+          "description": "Defines the percentage of the maximum radius extent to use as the maximum radius. Should be a value between 0.0 and 1.0."
         },
         "innerRadiusExtentScale": {
-          "type": "string",
-          "defaultValue": null,
-          "description": ""
+          "type": "number",
+          "defaultValue": 0,
+          "description": "Defines the percentage of the maximum radius extent to leave blank at the center of the chart. Should be a value between 0.0 and 1.0."
         },
         "title": {
           "type": "string",
           "defaultValue": null,
-          "description": ""
+          "description": "The title to display for the component. "
         },
         "titleTextStyle": {
           "type": "string",
           "defaultValue": null,
-          "description": ""
+          "description": "The css font property to use for the title."
         },
         "titleMargin": {
-          "type": "string",
-          "defaultValue": null,
-          "description": ""
+          "type": "number",
+          "defaultValue": 0,
+          "description": "The margin to display around the title of the axis."
         },
         "titleHorizontalAlignment": {
           "type": "string",
-          "defaultValue": null,
-          "description": ""
+          "defaultValue": "center",
+          "description": "The horizontal alignment to use for the title.",
+          "valueOptions": [
+            {
+              "name": "top",
+              "type": "string",
+              "description": "Top aligns the title"
+            },
+            {
+              "name": "center",
+              "type": "string",
+              "description": "Center aligns the title."
+            },
+            {
+              "name": "bottom",
+              "type": "string",
+              "description": "Bottom aligns the title."
+            }
+          ]
         },
         "titleVerticalAlignment": {
           "type": "string",
-          "defaultValue": null,
-          "description": ""
+          "defaultValue": "center",
+          "description": "The vertical alignment to use for the title. ",
+          "valueOptions": [
+            {
+              "name": "top",
+              "type": "string",
+              "description": "Top aligns the title"
+            },
+            {
+              "name": "center",
+              "type": "string",
+              "description": "Center aligns the title."
+            },
+            {
+              "name": "bottom",
+              "type": "string",
+              "description": "Bottom aligns the title."
+            }
+          ]
         },
         "titlePosition": {
           "type": "string",
-          "defaultValue": null,
-          "description": ""
+          "defaultValue": "auto",
+          "description": "The position to use for the title.",
+          "valueOptions": [
+            {
+              "name": "auto",
+              "type": "string",
+              "description": "The title is positioned automatically."
+            },
+            {
+              "name": "left",
+              "type": "string",
+              "description": "The title is positioned on the left of the labels, if applicable."
+            },
+            {
+              "name": "right",
+              "type": "string",
+              "description": "The title is positioned on the right of the labels, if applicable."
+            },
+            {
+              "name": "top",
+              "type": "string",
+              "description": "The title is positioned on the top of the labels, if applicable."
+            },
+            {
+              "name": "bottom",
+              "type": "string",
+              "description": "The title is positioned on the bottom of the labels, if applicable."
+            }
+          ]
         },
         "titleTopMargin": {
-          "type": "string",
-          "defaultValue": null,
-          "description": ""
+          "type": "number",
+          "defaultValue": 0,
+          "description": "The top margin to use for the title."
         },
         "titleLeftMargin": {
-          "type": "string",
-          "defaultValue": null,
-          "description": ""
+          "type": "number",
+          "defaultValue": 0,
+          "description": "The left margin to use for the title."
         },
         "titleRightMargin": {
-          "type": "string",
-          "defaultValue": null,
-          "description": ""
+          "type": "number",
+          "defaultValue": 0,
+          "description": "The right margin to use for the title."
         },
         "titleBottomMargin": {
-          "type": "string",
-          "defaultValue": null,
-          "description": ""
+          "type": "number",
+          "defaultValue": 0,
+          "description": "The bottom margin to use for the title."
         },
         "labelHorizontalAlignment": {
           "type": "string",
-          "defaultValue": null,
-          "description": ""
+          "defaultValue": "right",
+          "description": "The horizontal alignment to use for the labels. Only applicable to vertical axes.",
+          "valueOptions": [
+            {
+              "name": "left",
+              "type": "string",
+              "description": "Left aligns the labels."
+            },
+            {
+              "name": "center",
+              "type": "string",
+              "description": "Center aligns the labels."
+            },
+            {
+              "name": "right",
+              "type": "string",
+              "description": "Right aligns the labels."
+            }
+          ]
         },
         "labelVerticalAlignment": {
           "type": "string",
-          "defaultValue": null,
-          "description": ""
+          "defaultValue": "top",
+          "description": "The vertical alignment to use for the labels. Only applicable to horizontal axes.",
+          "valueOptions": [
+            {
+              "name": "top",
+              "type": "string",
+              "description": "Top aligns the labels"
+            },
+            {
+              "name": "center",
+              "type": "string",
+              "description": "Center aligns the labels."
+            },
+            {
+              "name": "bottom",
+              "type": "string",
+              "description": "Bottom aligns the labels."
+            }
+          ]
         },
         "labelMargin": {
-          "type": "string",
-          "defaultValue": null,
-          "description": ""
+          "type": "number",
+          "defaultValue": 0,
+          "description": "The margin to use for the labels."
         },
         "labelTopMargin": {
-          "type": "string",
-          "defaultValue": null,
-          "description": ""
+          "type": "number",
+          "defaultValue": 0,
+          "description": "The top margin to use for the labels."
         },
         "labelLeftMargin": {
-          "type": "string",
-          "defaultValue": null,
-          "description": ""
+          "type": "number",
+          "defaultValue": 0,
+          "description": "The left margin to use for the labels."
         },
         "labelRightMargin": {
-          "type": "string",
-          "defaultValue": null,
-          "description": ""
+          "type": "number",
+          "defaultValue": 0,
+          "description": "The right margin to use for the labels."
         },
         "labelBottomMargin": {
-          "type": "string",
-          "defaultValue": null,
-          "description": ""
+          "type": "number",
+          "defaultValue": 0,
+          "description": "The bottom margin to use for the labels."
         },
         "showFirstLabel": {
-          "type": "string",
-          "defaultValue": null,
-          "description": ""
+          "type": "bool",
+          "defaultValue": true,
+          "description": "Sets whether or not to show the first label on the axis."
         },
         "titleAngle": {
-          "type": "string",
-          "defaultValue": null,
-          "description": ""
+          "type": "number",
+          "defaultValue": 0,
+          "description": "The angle to use for the axis title."
         },
         "tickLength": {
-          "type": "string",
-          "defaultValue": null,
-          "description": ""
+          "type": "number",
+          "defaultValue": 0,
+          "description": "The length of the tickmarks to display for this axis."
         },
         "tickStrokeThickness": {
-          "type": "string",
-          "defaultValue": null,
-          "description": ""
+          "type": "number",
+          "defaultValue": 0.5,
+          "description": "The stroke thickness to use for the tickmarks."
         },
         "tickStroke": {
           "type": "string",
-          "defaultValue": null,
-          "description": ""
+          "defaultValue": "black",
+          "description": "The color to use for the tickmarks."
         },
         "useClusteringMode": {
-          "type": "string",
-          "defaultValue": null,
-          "description": ""
+          "type": "bool",
+          "defaultValue": false,
+          "description": "Gets or sets whether the cateogory axis should use clustering display mode even if no series are present that would force clustering mode."
         }
       }
     },
@@ -690,19 +851,122 @@
       "description": "Sets or gets the bottom margin to use around the chart content in the canvas."
     },
     "brushes": {
-      "type": "object",
+      "type": "array",
       "defaultValue": null,
-      "description": "Gets or sets the Brushes property.<br>&nbsp;&nbsp;&nbsp;The brushes property defines the palette from which automatically assigned series brushes are selected.<br>&nbsp;&nbsp;&nbsp;The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
+      "description": "Gets or sets the Brushes property.<br>&nbsp;&nbsp;&nbsp;The brushes property defines the palette from which automatically assigned series brushes are selected.<br>&nbsp;&nbsp;&nbsp;The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
+      "arrayMemberType": "string"
     },
     "circleMarkerTemplate": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the template to use for circle markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of circle.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
+      "description": "Gets or sets the template to use for circle markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of circle.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure.",
+      "schema": {
+        "measure": {
+          "type": "function",
+          "defaultValue": null,
+          "description": "Custom measure function",
+          "args": [
+            {
+              "name": "measureInfo",
+              "type": "object",
+              "optional": false,
+              "schema": {
+                "context": {
+                  "type": "object",
+                  "defaultValue": null,
+                  "description": "Either a DOM element or a CanvasContext2D depending on the particular template scenario"
+                },
+                "width": {
+                  "type": "number",
+                  "defaultValue": null,
+                  "description": "If value is present, specifies the available width, user may set to desired width for content"
+                },
+                "height": {
+                  "type": "number",
+                  "defaultValue": null,
+                  "description": "Either a DOM element or a CanvasContext2D depending on the particular template scenario"
+                },
+                "isConstant": {
+                  "type": "bool",
+                  "defaultValue": false,
+                  "description": "User should set to true if desired with and height will always be the same for this template"
+                },
+                "data": {
+                  "type": "object",
+                  "defaultValue": null,
+                  "description": "If present, represents the contextual data for this template"
+                }
+              }
+            }
+          ]
+        },
+        "render": {
+          "type": "function",
+          "defaultValue": null,
+          "description": "Custom render function",
+          "args": [
+            {
+              "name": "renderInfo",
+              "type": "object",
+              "optional": false,
+              "schema": {
+                "context": {
+                  "type": "object",
+                  "defaultValue": null,
+                  "description": "Either a DOM element or a CanvasContext2D depending on the particular template scenario"
+                },
+                "xPosition": {
+                  "type": "number",
+                  "defaultValue": null,
+                  "description": "If present, specifies the x position at which to render the content"
+                },
+                "yPosition": {
+                  "type": "number",
+                  "defaultValue": null,
+                  "description": "If present, specifies the y position at which to render the content"
+                },
+                "availableWidth": {
+                  "type": "number",
+                  "defaultValue": false,
+                  "description": "If present, specifies the available width in which to render the content"
+                },
+                "availableHeight": {
+                  "type": "number",
+                  "defaultValue": null,
+                  "description": "If present, specifies the available height in which to render the content"
+                },
+                "data": {
+                  "type": "object",
+                  "defaultValue": false,
+                  "description": "If present, specifies the data that is in context for this content"
+                },
+                "isHitTestRender": {
+                  "type": "bool",
+                  "defaultValue": false,
+                  "description": "If true, indicates that this is a special render pass for hit testing, in which case the brushes from the data should be used]"
+                }
+              }
+            }
+          ]
+        }
+      }
     },
     "crosshairPoint": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the cross hair point (in world coordinates)<br>&nbsp;&nbsp;&nbsp;Either or both of the crosshair point's X and Y may be set to double.NaN, in which<br>&nbsp;&nbsp;&nbsp;case the relevant crosshair line is hidden."
+      "description": "Gets or sets the cross hair point (in world coordinates)<br>&nbsp;&nbsp;&nbsp;Either or both of the crosshair point's X and Y may be set to double.NaN, in which<br>&nbsp;&nbsp;&nbsp;case the relevant crosshair line is hidden.",
+      "schema": {
+        "x": {
+          "type": "number",
+          "defaultValue": 0,
+          "description": "The x coordinate."
+        },
+        "y": {
+          "type": "number",
+          "defaultValue": 0,
+          "description": "The y coordinate."
+        }
+      }
     },
     "crosshairVisibility": {
       "type": "string",
@@ -761,7 +1025,8 @@
     "diamondMarkerTemplate": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the template to use for diamond markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of diamond.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
+      "description": "Gets or sets the template to use for diamond markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of diamond.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
+      "schemaRef": "datachart.circleMarkerTemplate"
     },
     "dragModifier": {
       "type": "string",
@@ -820,12 +1085,14 @@
     "hexagonMarkerTemplate": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the template to use for hexagon markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of hexagon.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
+      "description": "Gets or sets the template to use for hexagon markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of hexagon.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
+      "schemaRef": "datachart.circleMarkerTemplate"
     },
     "hexagramMarkerTemplate": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the template to use for hexagram markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of hexagram.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
+      "description": "Gets or sets the template to use for hexagram markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of hexagram.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
+      "schemaRef": "datachart.circleMarkerTemplate"
     },
     "highlightingTransitionDuration": {
       "type": "number",
@@ -855,22 +1122,59 @@
     "legend": {
       "type": "object",
       "defaultValue": null,
-      "description": "can be any valid options accepted by $.ig.ChartLegend, or an instance of an $.ig.ChartLegend itself."
+      "description": "Can be any valid options accepted by $.ig.ChartLegend, or an instance of an $.ig.ChartLegend itself.",
+      "schema": {
+        "element": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "The name of the element to turn into a legend."
+        },
+        "type": {
+          "type": "string",
+          "defaultValue": "legend",
+          "description": "The name of the element to turn into a legend.",
+          "valueOptions": [
+            {
+              "name": "item",
+              "type": "string",
+              "description": "Specify the legend as item legend. It displays a legend item for each pie in the igPieChart control."
+            },
+            {
+              "name": "legend",
+              "type": "string",
+              "description": "Specify the legend as legend. It is supported by all types of series in the igDataChart control."
+            }
+          ]
+        },
+        "width": {
+          "type": "number",
+          "defaultValue": null,
+          "description": "The width of the legend."
+        },
+        "height": {
+          "type": "number",
+          "defaultValue": null,
+          "description": "The height of the legend."
+        }
+      }
     },
     "markerBrushes": {
-      "type": "object",
+      "type": "array",
       "defaultValue": null,
-      "description": "Gets or sets the MarkerBrushes property.<br>&nbsp;&nbsp;&nbsp;The marker brushes property defines the palette from which automatically assigned marker brushes are selected.<br>&nbsp;&nbsp;&nbsp;The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
+      "description": "Gets or sets the MarkerBrushes property.<br>&nbsp;&nbsp;&nbsp;The marker brushes property defines the palette from which automatically assigned marker brushes are selected.<br>&nbsp;&nbsp;&nbsp;The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
+      "arrayMemberType": "string"
     },
     "markerOutlines": {
-      "type": "object",
+      "type": "array",
       "defaultValue": null,
-      "description": "Gets or sets the MarkerOutlines property.<br>&nbsp;&nbsp;&nbsp;The marker outlines property defines the palette from which automatically assigned marker outlines are selected.<br>&nbsp;&nbsp;&nbsp;The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
+      "description": "Gets or sets the MarkerOutlines property.<br>&nbsp;&nbsp;&nbsp;The marker outlines property defines the palette from which automatically assigned marker outlines are selected.<br>&nbsp;&nbsp;&nbsp;The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
+      "arrayMemberType": "string"
     },
     "outlines": {
-      "type": "object",
+      "type": "array",
       "defaultValue": null,
-      "description": "Gets or sets the Outlines property.<br>&nbsp;&nbsp;&nbsp;The outlines property defines the palette from which automatically assigned series outlines are selected.<br>&nbsp;&nbsp;&nbsp;The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
+      "description": "Gets or sets the Outlines property.<br>&nbsp;&nbsp;&nbsp;The outlines property defines the palette from which automatically assigned series outlines are selected.<br>&nbsp;&nbsp;&nbsp;The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
+      "arrayMemberType": "string"
     },
     "overviewPlusDetailPaneVisibility": {
       "type": "string",
@@ -919,12 +1223,14 @@
     "pentagonMarkerTemplate": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the template to use for pentagon markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of pentagon.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
+      "description": "Gets or sets the template to use for pentagon markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of pentagon.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
+      "schemaRef": "datachart.circleMarkerTemplate"
     },
     "pentagramMarkerTemplate": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the template to use for pentragram markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of pentagram.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
+      "description": "Gets or sets the template to use for pentragram markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of pentagram.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
+      "schemaRef": "datachart.circleMarkerTemplate"
     },
     "plotAreaBackground": {
       "type": "string",
@@ -934,12 +1240,35 @@
     "previewRect": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the preview rectangle.<br>&nbsp;&nbsp;&nbsp;The preview rectangle may be set to Rect.Empty, in which case the visible preview<br>&nbsp;&nbsp;&nbsp;strokePath is hidden.<br>&nbsp;&nbsp;&nbsp;The provided object should have numeric properties called left, top, width and height."
+      "description": "Gets or sets the preview rectangle.<br>&nbsp;&nbsp;&nbsp;The preview rectangle may be set to Rect.Empty, in which case the visible preview<br>&nbsp;&nbsp;&nbsp;strokePath is hidden.<br>&nbsp;&nbsp;&nbsp;The provided object should have numeric properties called left, top, width and height.",
+      "schema": {
+        "left": {
+          "type": "number",
+          "defaultValue": null,
+          "description": "Gets sets left position of the rectangle"
+        },
+        "top": {
+          "type": "number",
+          "defaultValue": null,
+          "description": "Gets sets top position of the rectangle"
+        },
+        "width": {
+          "type": "number",
+          "defaultValue": null,
+          "description": "Gets sets width position of the rectangle"
+        },
+        "height": {
+          "type": "number",
+          "defaultValue": null,
+          "description": "Gets sets height position of the rectangle"
+        }
+      }
     },
     "pyramidMarkerTemplate": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the template to use for pyramid markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of pyramid.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
+      "description": "Gets or sets the template to use for pyramid markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of pyramid.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
+      "schemaRef": "datachart.circleMarkerTemplate"
     },
     "responseDataKey": {
       "type": "string",
@@ -954,17 +1283,1390 @@
     "series": {
       "type": "array",
       "defaultValue": null,
-      "description": "an array of series objects"
+      "description": "an array of series objects",
+      "schema": {
+        "type": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Type of the series.",
+          "valueOptions": [
+            {
+              "name": "area",
+              "type": "string",
+              "description": "Specify the series as Area series."
+            },
+            {
+              "name": "bar",
+              "type": "string",
+              "description": "Specify the series as Bar series."
+            },
+            {
+              "name": "column",
+              "type": "string",
+              "description": "Specify the series as Column series."
+            },
+            {
+              "name": "line",
+              "type": "string",
+              "description": "Specify the series as Line series."
+            },
+            {
+              "name": "rangeArea",
+              "type": "string",
+              "description": "Specify the series as Range Area series."
+            },
+            {
+              "name": "rangeColumn",
+              "type": "string",
+              "description": "Specify the series as Range Column series."
+            },
+            {
+              "name": "splineArea",
+              "type": "string",
+              "description": "Specify the series as Spline Area series."
+            },
+            {
+              "name": "spline",
+              "type": "string",
+              "description": "Specify the series as Spline series."
+            },
+            {
+              "name": "stepArea",
+              "type": "string",
+              "description": "Specify the series as Step Area series"
+            },
+            {
+              "name": "stepLine",
+              "type": "string",
+              "description": "Specify the series as Step Line series."
+            },
+            {
+              "name": "waterfall",
+              "type": "string",
+              "description": "Specify the series as Waterfall series."
+            },
+            {
+              "name": "financial",
+              "type": "string",
+              "description": "Specify the series as Financial series."
+            },
+            {
+              "name": "typicalPriceIndicator",
+              "type": "string",
+              "description": "Specify the series as Typical Price Indicator series."
+            },
+            {
+              "name": "point",
+              "type": "string",
+              "description": "Specify the series as Point series."
+            },
+            {
+              "name": "polarSplineArea",
+              "type": "string",
+              "description": "Specify the series as Polar Spline Area series."
+            },
+            {
+              "name": "polarSpline",
+              "type": "string",
+              "description": "Specify the series as Polar Spline series."
+            },
+            {
+              "name": "polarArea",
+              "type": "string",
+              "description": "Specify the series as Polar Area series."
+            },
+            {
+              "name": "polarLine",
+              "type": "string",
+              "description": "Specify the series as Polar Line series."
+            },
+            {
+              "name": "polarScatter",
+              "type": "string",
+              "description": "Specify the series as Polar Scatter series."
+            },
+            {
+              "name": "radialColumn",
+              "type": "string",
+              "description": "Specify the series as Radial Column series."
+            },
+            {
+              "name": "radialLine",
+              "type": "string",
+              "description": "Specify the series as Radial Line series."
+            },
+            {
+              "name": "radialPie",
+              "type": "string",
+              "description": "Specify the series as Radial Pie series."
+            },
+            {
+              "name": "radialArea",
+              "type": "string",
+              "description": "Specify the series as Radial Area series."
+            },
+            {
+              "name": "scatter",
+              "type": "string",
+              "description": "Specify the series as Scatter series."
+            },
+            {
+              "name": "scatterLine",
+              "type": "string",
+              "description": "Specify the series as Scatter Line series."
+            },
+            {
+              "name": "scatterSpline",
+              "type": "string",
+              "description": "Specify the series as Scatter Spline series."
+            },
+            {
+              "name": "bubble",
+              "type": "string",
+              "description": "Specify the series as Bubble series."
+            },
+            {
+              "name": "absoluteVolumeOscillatorIndicator",
+              "type": "string",
+              "description": "Specify the series as Absolute Volume Oscillator Indicator series."
+            },
+            {
+              "name": "averageTrueRangeIndicator",
+              "type": "string",
+              "description": "Specify the series as Average True Range Indicator series."
+            },
+            {
+              "name": "accumulationDistributionIndicator",
+              "type": "string",
+              "description": "Specify the series as Accumulation Distribution Indicator series"
+            },
+            {
+              "name": "averageDirectionalIndexIndicator",
+              "type": "string",
+              "description": "Specify the series as Average Directional Index Indicator series."
+            },
+            {
+              "name": "bollingerBandWidthIndicator",
+              "type": "string",
+              "description": "Specify the series as Bollinger Band Width Indicator series."
+            },
+            {
+              "name": "chaikinOscillatorIndicator",
+              "type": "string",
+              "description": "Specify the series as Chaikin Oscillator Indicator series."
+            },
+            {
+              "name": "chaikinVolatilityIndicator",
+              "type": "string",
+              "description": "Specify the series as Chaikin Volitility Indicator series."
+            },
+            {
+              "name": "commodityChannelIndexIndicator",
+              "type": "string",
+              "description": "Specify the series as Commodity Channel Index Indicator series."
+            },
+            {
+              "name": "detrendedPriceOscillatorIndicator",
+              "type": "string",
+              "description": "Specify the series as Detrended Price Oscillator Indicator series."
+            },
+            {
+              "name": "easeOfMovementIndicator",
+              "type": "string",
+              "description": "Specify the series as Ease Of Movement Indicator series."
+            },
+            {
+              "name": "fastStochasticOscillatorIndicator",
+              "type": "string",
+              "description": "Specify the series as Fast Stochastic Oscillator Indicator series."
+            },
+            {
+              "name": "forceIndexIndicator",
+              "type": "string",
+              "description": "Specify the series as Force Index Indicator series."
+            },
+            {
+              "name": "fullStochasticOscillatorIndicator",
+              "type": "string",
+              "description": "Specify the series as Full Stochastic Oscillator Indicator series."
+            },
+            {
+              "name": "marketFacilitationIndexIndicator",
+              "type": "string",
+              "description": "Specify the series as Market Facilitation Index Indicator series."
+            },
+            {
+              "name": "massIndexIndicator",
+              "type": "string",
+              "description": "Specify the series as Mass Index Indicator series."
+            },
+            {
+              "name": "medianPriceIndicator",
+              "type": "string",
+              "description": "Specify the series as Median Price Indicator series."
+            },
+            {
+              "name": "moneyFlowIndexIndicator",
+              "type": "string",
+              "description": "Specify the series as Money Flow Index Indicator series."
+            },
+            {
+              "name": "movingAverageConvergenceDivergenceIndicator",
+              "type": "string",
+              "description": "Specify the series as Moving Average Convergence Divergence Indicator series."
+            },
+            {
+              "name": "negativeVolumeIndexIndicator",
+              "type": "string",
+              "description": "Specify the series as Negative Volume Index Indicator series."
+            },
+            {
+              "name": "onBalanceVolumeIndicator",
+              "type": "string",
+              "description": "Specify the series as On Balance Volume Indicator series."
+            },
+            {
+              "name": "percentagePriceOscillatorIndicator",
+              "type": "string",
+              "description": "Specify the series as Percentage Price Oscillator Indicator series."
+            },
+            {
+              "name": "percentageVolumeOscillatorIndicator",
+              "type": "string",
+              "description": "Specify the series as Percentage Volume Oscillator Indicator series."
+            },
+            {
+              "name": "positiveVolumeIndexIndicator",
+              "type": "string",
+              "description": "Specify the series as Positive Volume Index Indicator series."
+            },
+            {
+              "name": "priceVolumeTrendIndictor",
+              "type": "string",
+              "description": "Specify the series as Price Volume Trend Indictor series."
+            },
+            {
+              "name": "rateOfChangeAndMomentumIndicator",
+              "type": "string",
+              "description": "Specify the series as Rate Of Change And Momentum Indicator series."
+            },
+            {
+              "name": "relativeStrengthIndexIndicator",
+              "type": "string",
+              "description": "Specify the series as Relative Strength Index Indicator series."
+            },
+            {
+              "name": "slowStochasticOscillatorIndicator",
+              "type": "string",
+              "description": "Specify the series as Slow Stochastic Oscillator Indicator series."
+            },
+            {
+              "name": "standardDeviationIndicator",
+              "type": "string",
+              "description": "Specify the series as Standard Deviation Indicator series."
+            },
+            {
+              "name": "stochRSIIndicator",
+              "type": "string",
+              "description": "Specify the series as Stoch RSI Indicator series."
+            },
+            {
+              "name": "trixIndicator",
+              "type": "string",
+              "description": "Specify the series as Trix Indicator series."
+            },
+            {
+              "name": "ultimateOscillatorIndicator",
+              "type": "string",
+              "description": "Specify the series as Ultimate Oscillator Indicator series."
+            },
+            {
+              "name": "weightedCloseIndicator",
+              "type": "string",
+              "description": "Specify the series as Weighted Close Indicator series."
+            },
+            {
+              "name": "williamsPercentRIndicator",
+              "type": "string",
+              "description": "Specify the series as Williams Percent R Indicator series."
+            },
+            {
+              "name": "bollingerBandsOverlay",
+              "type": "string",
+              "description": "Specify the series as Bollinger Bands Overlay series."
+            },
+            {
+              "name": "priceChannelOverlay",
+              "type": "string",
+              "description": "Specify the series as Price Channel Overlay series."
+            },
+            {
+              "name": "customIndicator",
+              "type": "string",
+              "description": "Specify the series as Custom Indicator series."
+            },
+            {
+              "name": "stackedBar",
+              "type": "string",
+              "description": "Specify the series as Stacked Bar series."
+            },
+            {
+              "name": "stacked100Bar",
+              "type": "string",
+              "description": "Specify the series as Stacked 100 Bar series."
+            },
+            {
+              "name": "stackedArea",
+              "type": "string",
+              "description": "Specify the series as Stacked Area series."
+            },
+            {
+              "name": "stacked100Area",
+              "type": "string",
+              "description": "Specify the series as Stacked 100 Area series."
+            },
+            {
+              "name": "stackedColumn",
+              "type": "string",
+              "description": "Specify the series as Stacked Column series."
+            },
+            {
+              "name": "stacked100Column",
+              "type": "string",
+              "description": "Specify the series as Stacked 100 Column series."
+            },
+            {
+              "name": "stackedLine",
+              "type": "string",
+              "description": "Specify the series as Stacked Line series."
+            },
+            {
+              "name": "stacked100Line",
+              "type": "string",
+              "description": "Specify the series as Stacked 100 Line series."
+            },
+            {
+              "name": "stackedSpline",
+              "type": "string",
+              "description": "Specify the series as Stacked Spline series."
+            },
+            {
+              "name": "stacked100Spline",
+              "type": "string",
+              "description": "Specify the series as Stacked 100 Spline series."
+            },
+            {
+              "name": "stackedSplineArea",
+              "type": "string",
+              "description": "Specify the series as Stacked Spline Area series."
+            },
+            {
+              "name": "stacked100SplineArea",
+              "type": "string",
+              "description": "Specify the series as Stacked 100 Spline Area series."
+            },
+            {
+              "name": "crosshairLayer",
+              "type": "string",
+              "description": "Specify the series as a crosshair layer."
+            },
+            {
+              "name": "categoryHighlightLayer",
+              "type": "string",
+              "description": "Specify the series as a category highlight layer."
+            },
+            {
+              "name": "categoryItemHighlightLayer",
+              "type": "string",
+              "description": "Specify the series as a category item highlight layer."
+            },
+            {
+              "name": "itemToolTipLayer",
+              "type": "string",
+              "description": "Specify the series as an item tooltip layer."
+            },
+            {
+              "name": "categoryToolTipLayer",
+              "type": "string",
+              "description": "Specify the series as a category tooltip layer."
+            }
+          ]
+        },
+        "name": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "The unique identifier of the series."
+        },
+        "dataSource": {
+          "type": "object",
+          "defaultValue": null,
+          "description": "Can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself "
+        },
+        "dataSourceUrl": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Specifies a remote URL accepted by $.ig.DataSource in order to request data from it"
+        },
+        "dataSourceType": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property."
+        },
+        "responseDataKey": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Specifies the name of the property in which data records are held if the response is wrapped."
+        },
+        "remove": {
+          "type": "bool",
+          "defaultValue": false,
+          "description": "Set to true in order to have an existing series removed from the chart, by name"
+        },
+        "showTooltip": {
+          "type": "bool",
+          "defaultValue": false,
+          "description": "Whether the chart should render a tooltip."
+        },
+        "tooltipTemplate": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "The name of template or the template itself that chart tooltip will use to render."
+        },
+        "legend": {
+          "type": "object",
+          "defaultValue": null,
+          "description": "Can be any valid options accepted by $.ig.ChartLegend, or an instance of an $.ig.ChartLegend itself.",
+          "schema": {
+            "element": {
+              "type": "object",
+              "defaultValue": null,
+              "description": "The name of the element to turn into a legend."
+            },
+            "type": {
+              "type": "object",
+              "defaultValue": "legend",
+              "description": "Type of the legend.",
+              "valueOptions": [
+                {
+                  "name": "item",
+                  "type": "string",
+                  "description": "Specify the legend as item legend. It displays a legend item for each pie in the igPieChart control."
+                },
+                {
+                  "name": "legend",
+                  "type": "string",
+                  "description": "Specify the legend as legend. It is supported by all types of series in the igDataChart control."
+                }
+              ]
+            },
+            "width": {
+              "type": "number",
+              "defaultValue": null,
+              "description": "The width of the legend."
+            },
+            "height": {
+              "type": "number",
+              "defaultValue": null,
+              "description": "The height of the legend."
+            }
+          }
+        },
+        "legendItemVisibility": {
+          "type": "string",
+          "defaultValue": "visible",
+          "description": "Gets or sets the legend item visibility for the current series object.",
+          "valueOptions": [
+            {
+              "name": "visible",
+              "type": "string",
+              "description": "The legend item should be visible."
+            },
+            {
+              "name": "collapsed",
+              "type": "string",
+              "description": "The legend item should not be visible."
+            }
+          ]
+        },
+        "legendItemBadgeTemplate": {
+          "type": "object",
+          "defaultValue": null,
+          "description": "Gets or sets the LegendItemBadgeTemplate property. The legend item badge is created according to the LegendItemBadgeTemplate on-demand by the series object itself.",
+          "schemaRef": "datachart.circleMarkerTemplate"
+        },
+        "legendItemTemplate": {
+          "type": "object",
+          "defaultValue": null,
+          "description": "Gets or sets the LegendItemTemplate property. The legend item control content is created according to the LegendItemTemplate on-demand by the series object itself.",
+          "schemaRef": "datachart.circleMarkerTemplate"
+        },
+        "discreteLegendItemTemplate": {
+          "type": "object",
+          "defaultValue": null,
+          "description": "Gets or sets the DiscreteLegendItemTemplate property. The legend item control content is created according to the LegendItemTemplate on-demand by the series object itself.",
+          "schemaRef": "datachart.circleMarkerTemplate"
+        },
+        "transitionDuration": {
+          "type": "number",
+          "defaultValue": 0,
+          "description": "Gets or sets the duration of the current series's morph."
+        },
+        "transitionEasingFunction": {
+          "type": "function",
+          "defaultValue": null,
+          "description": "Provides an easing function to use for the transitions. This should either be a well known name of an easing function (The only currently supported name is cubic), or it should be a function that takes a number and returns the output with the function applied."
+        },
+        "resolution": {
+          "type": "number",
+          "defaultValue": 1,
+          "description": "Gets or sets the current series object's rendering resolution."
+        },
+        "title": {
+          "type": "string",
+          "defaultValue": 1,
+          "description": "Gets or sets the Title property. The legend item control is created according to the Title on-demand by the series object itself."
+        },
+        "brush": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Gets or sets the brush to use for the series."
+        },
+        "outline": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Gets or sets the brush to use for the outline of the series. Some series types, such as LineSeries, do not display outlines.  Therefore, this property does not affect some charts."
+        },
+        "thickness": {
+          "type": "number",
+          "defaultValue": 0,
+          "description": "Gets or sets the brush to use for the outline of the series. Some series types, such as LineSeries, do not display outlines.  Therefore, this property does not affect some charts."
+        },
+        "coercionMethods": {
+          "type": "object",
+          "defaultValue": null,
+          "description": "Gets or gets the coercion methods to use when loading data from data sources. Should be specified before setting any member paths, if being used. Setting it later will not cause data to be reimported into the chart."
+        },
+        "markerType": {
+          "type": "string",
+          "defaultValue": "none",
+          "description": "Gets or sets the marker type for the current series object. If the MarkerTemplate property is set, the setting of the MarkerType property will be ignored.",
+          "valueOptions": [
+            {
+              "name": "unset",
+              "type": "string",
+              "description": "Marker hasn't been set."
+            },
+            {
+              "name": "none",
+              "type": "string",
+              "description": "No markerItems."
+            },
+            {
+              "name": "automatic",
+              "type": "string",
+              "description": "Automatic marker shape."
+            },
+            {
+              "name": "circle",
+              "type": "string",
+              "description": "Circle marker shape."
+            },
+            {
+              "name": "triangle",
+              "type": "string",
+              "description": "Flat-top triangle marker shape."
+            },
+            {
+              "name": "pyramid",
+              "type": "string",
+              "description": "Flat-base triangle marker shape."
+            },
+            {
+              "name": "square",
+              "type": "string",
+              "description": "Square marker shape."
+            },
+            {
+              "name": "diamond",
+              "type": "string",
+              "description": "Diamond marker shape."
+            },
+            {
+              "name": "pentagon",
+              "type": "string",
+              "description": "Pentagon marker shape."
+            },
+            {
+              "name": "hexagon",
+              "type": "string",
+              "description": "Hexagon marker shape."
+            },
+            {
+              "name": "tetragram",
+              "type": "string",
+              "description": "Four-pointed star marker shape."
+            },
+            {
+              "name": "pentagram",
+              "type": "string",
+              "description": "Five-pointed star marker shape."
+            },
+            {
+              "name": "hexagram",
+              "type": "string",
+              "description": "Six-pointed star marker shape."
+            }
+          ]
+        },
+        "markerTemplate": {
+          "type": "object",
+          "defaultValue": null,
+          "description": "Gets or sets the MarkerTemplate for the current series object.",
+          "schemaRef": "datachart.circleMarkerTemplate"
+        },
+        "markerBrush": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Gets or sets the brush that specifies how the current series object's marker interiors are painted."
+        },
+        "markerOutline": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Gets or sets the brush that specifies how the current series object's marker outlines are painted."
+        },
+        "xAxis": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Gets or sets the effective x-axis for the current object."
+        },
+        "yAxis": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Gets or sets the effective y-axis for the current object."
+        },
+        "xMemberPath": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Gets or sets the value mapping property for the current series object."
+        },
+        "yMemberPath": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Gets or sets the value mapping property for the current series object."
+        },
+        "trendLineType": {
+          "type": "string",
+          "defaultValue": "none",
+          "description": "Gets or sets the trend type for the current scatter series.",
+          "valueOptions": [
+            {
+              "name": "none",
+              "type": "string",
+              "description": "No trendline should display."
+            },
+            {
+              "name": "linearFit",
+              "type": "string",
+              "description": "Linear fit."
+            },
+            {
+              "name": "quadraticFit",
+              "type": "string",
+              "description": "Quadratic polynomial fit."
+            },
+            {
+              "name": "cubicFit",
+              "type": "string",
+              "description": "Cubic polynomial fit."
+            },
+            {
+              "name": "quarticFit",
+              "type": "string",
+              "description": "Quartic polynomial fit."
+            },
+            {
+              "name": "quinticFit",
+              "type": "string",
+              "description": "Quintic polynomial fit."
+            },
+            {
+              "name": "logarithmicFit",
+              "type": "string",
+              "description": "Logarithmic fit."
+            },
+            {
+              "name": "exponentialFit",
+              "type": "string",
+              "description": "Exponential fit."
+            },
+            {
+              "name": "powerLawFit",
+              "type": "string",
+              "description": "Powerlaw fit."
+            },
+            {
+              "name": "simpleAverage",
+              "type": "string",
+              "description": "Simple moving average."
+            },
+            {
+              "name": "exponentialAverage",
+              "type": "string",
+              "description": "Exponential moving average."
+            },
+            {
+              "name": "modifiedAverage",
+              "type": "string",
+              "description": "Modified moving average."
+            },
+            {
+              "name": "cumulativeAverage",
+              "type": "string",
+              "description": "Cumulative moving average."
+            },
+            {
+              "name": "weightedAverage",
+              "type": "string",
+              "description": "Weighted moving average."
+            }
+          ]
+        },
+        "trendLineBrush": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Gets or sets the brush to use to draw the trend line."
+        },
+        "trendLineThickness": {
+          "type": "number",
+          "defaultValue": 1.5,
+          "description": "Gets or sets the thickness of the current scatter series object's trend line."
+        },
+        "trendLinePeriod": {
+          "type": "number",
+          "defaultValue": 7,
+          "description": "Gets or sets the moving average period for the current scatter series object. The typical, and initial, value for trend line period is 7."
+        },
+        "trendLineZIndex": {
+          "type": "number",
+          "defaultValue": 1001,
+          "description": "Gets or sets the Z-Index of the trend line.  Values greater than 1000 will result in the trend line being rendered in front of the series data."
+        },
+        "maximumMarkers": {
+          "type": "number",
+          "defaultValue": 400,
+          "description": "Gets or sets the maximum number of markerItems displayed by the current series. If more than the specified number of markerItems are visible, the series will automatically choose a representative set."
+        },
+        "unknownValuePlotting": {
+          "type": "number",
+          "defaultValue": "dontPlot",
+          "description": "Determines how unknown values will be plotted on the chart. Null and Double.NaN are two examples of unknown values.",
+          "valueOptions": [
+            {
+              "name": "linearInterpolate",
+              "type": "string",
+              "description": "Plot the unknown value as the midpoint between surrounding known values using linear interpolation."
+            },
+            {
+              "name": "dontPlot",
+              "type": "string",
+              "description": "Do not plot the unknown value on the chart."
+            }
+          ]
+        },
+        "radiusMemberPath": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Gets or sets the radius mapping property for the current series object."
+        },
+        "radiusScale": {
+          "type": "object",
+          "defaultValue": null,
+          "description": "Gets or sets the radius size scale for the bubbles."
+        },
+        "labelMemberPath": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Gets or sets the Label mapping property for the current series object."
+        },
+        "fillMemberPath": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Gets or sets the fill mapping property for the current series object."
+        },
+        "fillScale": {
+          "type": "object",
+          "defaultValue": null,
+          "description": "Gets or sets the brush scale for the marker brush."
+        },
+        "angleAxis": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Gets the effective angle axis for the current series object."
+        },
+        "valueAxis": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Gets the effective value axis for the current series object."
+        },
+        "clipSeriesToBounds": {
+          "type": "bool",
+          "defaultValue": null,
+          "description": "Gets or sets whether to clip the series to the bounds. Setting this to true can effect performance."
+        },
+        "valueMemberPath": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Gets or sets the item path that provides the values for the current series."
+        },
+        "radiusX": {
+          "type": "number",
+          "defaultValue": 2.0,
+          "description": "Gets or sets the x-radius of the ellipse that is used to round the corners of the column."
+        },
+        "radiusY": {
+          "type": "number",
+          "defaultValue": 2.0,
+          "description": "Gets or sets the y-radius of the ellipse that is used to round the corners of the column."
+        },
+        "angleMemberPath": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Gets or sets the x-radius of the ellipse that is used to round the corners of the column."
+        },
+        "radiusAxis": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Gets the effective radius axis for the current series object."
+        },
+        "useCartesianInterpolation": {
+          "type": "bool",
+          "defaultValue": true,
+          "description": "Gets or sets whether Cartesian Interpolation should be used rather than Archimedian spiral based interpolation."
+        },
+        "negativeBrush": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Gets or sets the brush to use for negative portions of the series."
+        },
+        "splineType": {
+          "type": "string",
+          "defaultValue": "natural",
+          "description": "Gets or sets the type of spline to be rendered.",
+          "valueOptions": [
+            {
+              "name": "natural",
+              "type": "string",
+              "description": "Calculates the spline using a natural spline calculation formula."
+            },
+            {
+              "name": "clamped",
+              "type": "string",
+              "description": "Calculated the spline using a clamped spline calculation formula."
+            }
+          ]
+        },
+        "lowMemberPath": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Gets or sets the value mapping property for the current series object."
+        },
+        "highMemberPath": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Gets or sets the value mapping property for the current series object."
+        },
+        "openMemberPath": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Gets or sets the open mapping property for the current series object."
+        },
+        "closeMemberPath": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Gets or sets the close mapping property for the current series object."
+        },
+        "volumeMemberPath": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Gets or sets the volume mapping property for the current series object."
+        },
+        "displayType": {
+          "type": "string",
+          "defaultValue": "candlestick",
+          "description": "Gets or sets the display for the current FinancialIndicator object.",
+          "valueOptions": [
+            {
+              "name": "candlestick",
+              "type": "string",
+              "description": "Displays prices as a Japanese Candlestick."
+            },
+            {
+              "name": "OHLC",
+              "type": "string",
+              "description": "Displays prices as a Japanese Candlestick."
+            }
+          ]
+        },
+        "ignoreFirst": {
+          "type": "number",
+          "defaultValue": 0,
+          "description": "Gets or sets the number of values to hide at the beginning of the indicator."
+        },
+        "period": {
+          "type": "number",
+          "defaultValue": 0,
+          "description": "Gets or sets the moving average period for the current AverageDirectionalIndexIndicator object. The typical, and initial, value for AverageDirectionalIndexIndicator periods is 14."
+        },
+        "shortPeriod": {
+          "type": "number",
+          "defaultValue": 0,
+          "description": "Gets or sets the short moving average period for the current AbsoluteVolumeOscillatorIndicator object. The typical, and initial, value for short AVO periods is 10."
+        },
+        "longPeriod": {
+          "type": "number",
+          "defaultValue": 0,
+          "description": "Gets or sets the short moving average period for the current AbsoluteVolumeOscillatorIndicator object. The typical, and initial, value for long AVO periods is 30."
+        },
+        "markerCollisionAvoidance": {
+          "type": "string",
+          "defaultValue": "none",
+          "description": "Gets or sets the MarkerCollisionAvoidance",
+          "valueOptions": [
+            {
+              "name": "none",
+              "type": "string",
+              "description": "No collision avoidance is attempted."
+            },
+            {
+              "name": "omit",
+              "type": "string",
+              "description": "Markers that collide will be omitted."
+            },
+            {
+              "name": "fade",
+              "type": "string",
+              "description": "Markers that collide will be faded in opacity."
+            },
+            {
+              "name": "omitAndShift",
+              "type": "string",
+              "description": "Markers that collide may be shifted or omitted."
+            },
+            {
+              "name": "omitAndFade",
+              "type": "string",
+              "description": "Markers that collide may be shifted or faded."
+            }
+          ]
+        },
+        "useHighMarkerFidelity": {
+          "type": "bool",
+          "defaultValue": false,
+          "description": "Sets or Gets whether to increase marker fidelity for extreme data shapes that have lots of Y variation over short X intervals."
+        },
+        "useBruteForce": {
+          "type": "bool",
+          "defaultValue": false,
+          "description": "Gets or sets the whether to use use brute force mode."
+        },
+        "progressiveLoad": {
+          "type": "bool",
+          "defaultValue": true,
+          "description": "Gets or sets the whether to progressively load the data into the chart."
+        },
+        "mouseOverEnabled": {
+          "type": "bool",
+          "defaultValue": false,
+          "description": "Gets or sets the whether the chart reacts to mouse move events."
+        },
+        "useSquareCutoffStyle": {
+          "type": "bool",
+          "defaultValue": false,
+          "description": "Gets or sets the whether to use squares when halting a render traversal rather than the shape of the coalesced area."
+        },
+        "heatMinimum": {
+          "type": "number",
+          "defaultValue": 0,
+          "description": "Gets or sets the density value that maps to the minimum heat color."
+        },
+        "heatMaximum": {
+          "type": "number",
+          "defaultValue": 50,
+          "description": "Gets or sets the value that maps to the maximum heat color."
+        },
+        "heatMaximum": {
+          "type": "number",
+          "defaultValue": 50,
+          "description": "Gets or sets the value that maps to the maximum heat color."
+        },
+        "heatMinimumColor": {
+          "type": "string",
+          "defaultValue": "black",
+          "description": "Gets or sets the minimum heat color for the density scale."
+        },
+        "heatMaximumColor": {
+          "type": "string",
+          "defaultValue": "red",
+          "description": "Gets or sets the maximum heat color for the density scale."
+        },
+        "series": {
+          "type": "array",
+          "defaultValue": null,
+          "description": "Gets or sets the series for stacked charts. It should contain array of series objects. Each item in array should represent a series with type=\"stackedFragment\" and it may have most options supported by top-level series object, such as xAxis, yAxis, valueMemberPath, etc.",
+          "schemaRef": "datachart.series"
+        },
+        "isDropShadowEnabled": {
+          "type": "bool",
+          "defaultValue": false,
+          "description": "Gets or sets whether drop shadow should be enabled for this series."
+        },
+        "useSingleShadow": {
+          "type": "bool",
+          "defaultValue": true,
+          "description": "Gets or sets whether drop shadow is applied to the whole series visual or to each of the individual shapes forming the series."
+        },
+        "shadowColor": {
+          "type": "string",
+          "defaultValue": "rgba(95,95,95,0.5)",
+          "description": "Gets or sets the color to use for the drop shadow."
+        },
+        "shadowBlur": {
+          "type": "number",
+          "defaultValue": 10,
+          "description": "Gets or sets the blur amount to use for the drop shadow."
+        },
+        "shadowOffsetX": {
+          "type": "number",
+          "defaultValue": 5,
+          "description": "Gets or sets the x offset amount to use for the drop shadow."
+        },
+        "shadowOffsetY": {
+          "type": "number",
+          "defaultValue": 5,
+          "description": "Gets or sets the y offset amount to use for the drop shadow."
+        },
+        "isTransitionInEnabled": {
+          "type": "bool",
+          "defaultValue": false,
+          "description": "Gets or sets if the series should play a transition in animation when the data source is assigned."
+        },
+        "isTransitionInEnabled": {
+          "type": "bool",
+          "defaultValue": false,
+          "description": "Gets or sets if the series should play a transition in animation when the data source is assigned."
+        },
+        "transitionInSpeedType": {
+          "type": "string",
+          "defaultValue": "auto",
+          "description": "Gets or sets the speed to transition in the series data points.",
+          "valueOptions": [
+            {
+              "name": "auto",
+              "type": "string",
+              "description": "A speed type is automatically selected."
+            },
+            {
+              "name": "normal",
+              "type": "string",
+              "description": "All speeds are normal, data points will arrive at the same time."
+            },
+            {
+              "name": "valueScaled",
+              "type": "string",
+              "description": "Data points will arrive later if their value is further from the start point."
+            },
+            {
+              "name": "indexScaled",
+              "type": "string",
+              "description": "Data points will arrive later if their index is further from the axis origin."
+            },
+            {
+              "name": "random",
+              "type": "string",
+              "description": "Data points will arrive at random times."
+            }
+          ]
+        },
+        "transitionInMode": {
+          "type": "string",
+          "defaultValue": "auto",
+          "description": "Gets or sets the method to transition in the series.",
+          "valueOptions": [
+            {
+              "name": "auto",
+              "type": "string",
+              "description": "Series transitions in an automatically chosen way."
+            },
+            {
+              "name": "fromZero",
+              "type": "string",
+              "description": "Series transitions in from the reference value of the value axis."
+            },
+            {
+              "name": "sweepFromLeft",
+              "type": "string",
+              "description": "Series sweeps in from the left."
+            },
+            {
+              "name": "sweepFromRight",
+              "type": "string",
+              "description": "Series sweeps in from the right."
+            },
+            {
+              "name": "sweepFromTop",
+              "type": "string",
+              "description": "Series sweeps in from the top."
+            },
+            {
+              "name": "sweepFromBottom",
+              "type": "string",
+              "description": "Series sweeps in from the bottom."
+            },
+            {
+              "name": "sweepFromCenter",
+              "type": "string",
+              "description": "Series sweeps in from the center."
+            },
+            {
+              "name": "accordionFromLeft",
+              "type": "string",
+              "description": "Series accordions in from the left."
+            },
+            {
+              "name": "accordionFromRight",
+              "type": "string",
+              "description": "Series accordions in from the right."
+            },
+            {
+              "name": "accordionFromTop",
+              "type": "string",
+              "description": "Series accordions in from the top."
+            },
+            {
+              "name": "accordionFromBottom",
+              "type": "string",
+              "description": "Series accordions in from the bottom."
+            },
+            {
+              "name": "expand",
+              "type": "string",
+              "description": "Series expands from the value midpoints."
+            },
+            {
+              "name": "sweepFromCategoryAxisMinimum",
+              "type": "string",
+              "description": "Series sweeps in from the category axis minimum."
+            },
+            {
+              "name": "sweepFromCategoryAxisMaximum",
+              "type": "string",
+              "description": "Series sweeps in from the category axis maximum."
+            },
+            {
+              "name": "sweepFromValueAxisMinimum",
+              "type": "string",
+              "description": "Series sweeps in from the value axis minimum."
+            },
+            {
+              "name": "sweepFromValueAxisMaximum",
+              "type": "string",
+              "description": "Series sweeps in from the value axis maximum."
+            },
+            {
+              "name": "accordionFromCategoryAxisMinimum",
+              "type": "string",
+              "description": "Series accordions in from the category axis minimum."
+            },
+            {
+              "name": "accordionFromCategoryAxisMaximum",
+              "type": "string",
+              "description": "Series accordions in from the category axis maximum."
+            },
+            {
+              "name": "accordionFromValueAxisMinimum",
+              "type": "string",
+              "description": "Series accordions in from the value axis minimum."
+            },
+            {
+              "name": "accordionFromValueAxisMaximum",
+              "type": "string",
+              "description": "Series accordions in from the value axis maximum."
+            }
+          ]
+        },
+        "transitionInDuration": {
+          "type": "number",
+          "defaultValue": 500,
+          "description": "Gets or sets the duration of the current series's transition in morph in milliseconds."
+        },
+        "radius": {
+          "type": "number",
+          "defaultValue": 2,
+          "description": "Gets or sets the corner radius to use for the series, if applicable."
+        },
+        "areaFillOpacity": {
+          "type": "number",
+          "defaultValue": 1.0,
+          "description": "Gets or sets the opacity modifier to apply to the area fill shape of the series, if applicable."
+        },
+        "expectFunctions": {
+          "type": "bool",
+          "defaultValue": false,
+          "description": "Gets or sets whether the series should expect that its data source members need to be called as functions to get their values."
+        },
+        "useInterpolation": {
+          "type": "bool",
+          "defaultValue": false,
+          "description": "Gets or sets whether the hover layer should use interpolation to position itself relative the closest values."
+        },
+        "skipUnknowns": {
+          "type": "bool",
+          "defaultValue": false,
+          "description": "Gets or sets whether the hover layer should skip unknown values when trying to find the closest values."
+        },
+        "skipUnknowns": {
+          "type": "bool",
+          "defaultValue": false,
+          "description": "Gets or sets whether the hover layer should skip unknown values when trying to find the closest values."
+        },
+        "verticalLineVisibility": {
+          "type": "bool",
+          "defaultValue": true,
+          "description": "Gets or sets whether the vertical crosshair portion of the layer should be visible."
+        },
+        "horizontalLineVisibility": {
+          "type": "bool",
+          "defaultValue": true,
+          "description": "Gets or sets whether the horizontal crosshair portion of the layer should be visible."
+        },
+        "targetSeries": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Gets or sets the name of the target series for the layer, if desired. Setting the target series will scope the layer to target just that series."
+        },
+        "targetAxis": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Gets or sets the name of the target axis for the layer, if desired. Setting the target axis will scope the layer to target just that axis."
+        },
+        "isCustomCategoryStyleAllowed": {
+          "type": "bool",
+          "defaultValue": false,
+          "description": "Gets or sets whether a custom category style is allowed. Setting this to true will case the assigningCategoryStyle event to get fired, if provided."
+        },
+        "isCustomCategoryMarkerStyleAllowed": {
+          "type": "bool",
+          "defaultValue": false,
+          "description": "Gets or sets whether a custom category marker style is allowed. Setting this to true will case the assigningCategoryMarkerStyle event to get fired, if provided."
+        },
+        "isHighlightingEnabled": {
+          "type": "bool",
+          "defaultValue": false,
+          "description": "Gets or sets whether highlighting should be enabled for the series, if supported."
+        },
+        "bandHighlightWidth": {
+          "type": "number",
+          "defaultValue": 10.0,
+          "description": "Gets or sets the width to use for the highlight region if highlighting items in a grid aligned series (line, spline, etc), with a banded shape."
+        },
+        "highlightType": {
+          "type": "string",
+          "defaultValue": "auto",
+          "description": "Gets or sets which type of highlight shape to use when highlighting items.",
+          "valueOptions": [
+            {
+              "name": "auto",
+              "type": "string",
+              "description": "Use an automatic highlight type for this series."
+            },
+            {
+              "name": "marker",
+              "type": "string",
+              "description": "Use a marker highlight type for this series."
+            },
+            {
+              "name": "shape",
+              "type": "string",
+              "description": "Use a shape highlight type for this series."
+            }
+          ]
+        },
+        "highlightType": {
+          "type": "string",
+          "defaultValue": "auto",
+          "description": "Gets or sets the Position to apply to the tooltip containers.",
+          "valueOptions": [
+            {
+              "name": "auto",
+              "type": "string",
+              "description": "Use an automatic position for the category tooltips."
+            },
+            {
+              "name": "outsideStart",
+              "type": "string",
+              "description": "Position the category tooltip at the outside start of the value axis."
+            },
+            {
+              "name": "insideStart",
+              "type": "string",
+              "description": "Position the category tooltip at the inside start of the value axis."
+            },
+            {
+              "name": "insideEnd",
+              "type": "string",
+              "description": "Position the category tooltip at the inside end of the value axis."
+            },
+            {
+              "name": "outsideEnd",
+              "type": "string",
+              "description": "Position the category tooltip at the outside end of the value axis."
+            }
+          ]
+        },
+        "cursorPosition": {
+          "type": "object",
+          "defaultValue": null,
+          "description": "Sets the position a cursor position to use instead of the current mouse cursor position for displaying the annotations in this layer. Should be an object with an x and a y property in world coordinates (ranging from 0 to 1)"
+        },
+        "isDefaultCrosshairDisabled": {
+          "type": "bool",
+          "defaultValue": true,
+          "description": "Sets if the presence of this layer should disable the default crosshair behavior of the chart, if present."
+        },
+        "useIndex": {
+          "type": "bool",
+          "defaultValue": false,
+          "description": "Sets if the current layer should take up a brush/ordering index in the series collection to derive its color automatically."
+        },
+        "useLegend": {
+          "type": "bool",
+          "defaultValue": false,
+          "description": "Sets if the current layer should have an entry in the legend of the chart. By default annotation layers are not present in the legend."
+        }
+      }
     },
     "size": {
       "type": "object",
       "defaultValue": null,
-      "description": "To set both dimensions of the chart simultaneously an object with a width and height property can be provided"
+      "description": "To set both dimensions of the chart simultaneously an object with a width and height property can be provided",
+      "schema": {
+        "width": {
+          "type": "number",
+          "defaultValue": null,
+          "description": "Defines the width dimension of the chart"
+        },
+        "height": {
+          "type": "number",
+          "defaultValue": null,
+          "description": "Defines the height dimension of the chart"
+        }
+      }
     },
     "squareMarkerTemplate": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the template to use for square markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of square.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
+      "description": "Gets or sets the template to use for square markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of square.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
+      "schemaRef": "datachart.circleMarkerTemplate"
     },
     "subtitle": {
       "type": "string",
@@ -1009,7 +2711,7 @@
       "description": "the right margin to use for the subtitle."
     },
     "subtitleTextColor": {
-      "type": "object",
+      "type": "string",
       "defaultValue": "black",
       "description": "the color to use for the subtitle."
     },
@@ -1041,7 +2743,8 @@
     "tetragramMarkerTemplate": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the template to use for tetragram markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of tetragram.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
+      "description": "Gets or sets the template to use for tetragram markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of tetragram.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
+      "schemaRef": "datachart.circleMarkerTemplate"
     },
     "theme": {
       "type": "string",
@@ -1091,7 +2794,7 @@
       "description": "the right margin to use for the title."
     },
     "titleTextColor": {
-      "type": "object",
+      "type": "string",
       "defaultValue": "black",
       "description": "the color to use for the title."
     },
@@ -1113,7 +2816,8 @@
     "triangleMarkerTemplate": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the template to use for triangle markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of triangle.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
+      "description": "Gets or sets the template to use for triangle markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of triangle.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
+      "schemaRef": "datachart.circleMarkerTemplate"
     },
     "verticalZoomable": {
       "type": "bool",
@@ -1138,7 +2842,29 @@
     "windowRect": {
       "type": "object",
       "defaultValue": null,
-      "description": "A rectangle representing the portion of the chart currently in view.<br>&nbsp;&nbsp;&nbsp;A rectangle at X=0, Y=0 with a Height and Width of 1 implies the entire plotting area is in view.  A Height and Width of .5 would imply that the view is halfway zoomed in.<br>&nbsp;&nbsp;&nbsp;The provided object should have numeric properties called left, top, width and height."
+      "description": "A rectangle representing the portion of the chart currently in view.<br>&nbsp;&nbsp;&nbsp;A rectangle at X=0, Y=0 with a Height and Width of 1 implies the entire plotting area is in view.  A Height and Width of .5 would imply that the view is halfway zoomed in.<br>&nbsp;&nbsp;&nbsp;The provided object should have numeric properties called left, top, width and height.",
+      "schema": {
+        "left": {
+          "type": "number",
+          "defaultValue": null,
+          "description": "Gets sets left position of the rectangle"
+        },
+        "top": {
+          "type": "number",
+          "defaultValue": null,
+          "description": "Gets sets top position of the rectangle"
+        },
+        "width": {
+          "type": "number",
+          "defaultValue": null,
+          "description": "Gets sets width position of the rectangle"
+        },
+        "height": {
+          "type": "number",
+          "defaultValue": null,
+          "description": "Gets sets height position of the rectangle"
+        }
+      }
     },
     "windowRectMinWidth": {
       "type": "number",
@@ -1153,7 +2879,7 @@
         {
           "name": "deferred",
           "type": "string",
-          "description": "Defer the view update until after the user action is complete.             "
+          "description": "Defer the view update until after the user action is complete."
         },
         {
           "name": "immediate",
