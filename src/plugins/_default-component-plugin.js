@@ -191,6 +191,7 @@ define (function (require, exports, module) {
 				pos.row = options[name].marker.end.row;
 				pos.column = options[name].marker.end.column;
 			}
+			//get text
 			return pos;
 		},
 		updatePropCode: function (descriptor) {
@@ -238,18 +239,16 @@ define (function (require, exports, module) {
 			if ( currentPropStr.lastIndexOf(",") === currentPropStr.length - 1) { 
 				propStr += ",";
 			}
-			propStr += "\n";
+			//propStr += "\n";
+			var startRow = marker.start.row;
+			var startCol = marker.start.column;
+			var endRow = marker.end.row;
+			//var endColumn = marker.end.column;
+			var endColumn = propStr.length;
 			ide.session.replace(marker, propStr);
 			//reattach the marker
-			/*
 			ide.session.removeMarker(marker.id);
-			options[descriptor.propName].marker = ide.createAndAddMarker(
-				marker.start.row,
-				marker.start.column,
-				marker.end.row,
-				marker.end.column
-			);
-			*/
+			options[descriptor.propName].marker = ide.createAndAddMarker(startRow, startCol, endRow, endColumn);
 		},
 		addPropCode: function (descriptor, insertInCode, lastProp) {
 			var pos = {row: 0, column: 0};
@@ -259,7 +258,7 @@ define (function (require, exports, module) {
 			var options = meta.options;
 			// add new prop
 			// get the innerMarker
-			var innerMarker = codeMarker.rangeInner;
+			var innerMarker = codeMarker.range;
 			var propStr = "";
 			propStr += ide._tabStr(codeMarker.baseIndent + 1);
 			var val = ide._propCodeDefaultVal(descriptor.propType, descriptor.defaultValue);
@@ -268,39 +267,41 @@ define (function (require, exports, module) {
 				propStr += ",";
 			}
 			propStr += "\n";
-			if (insertInCode) {
-				// insert the prop below, take tabs into account
-				// need to concatenate the hash with the parent prop, if any
-				pos.row = innerMarker.start.row;
-				pos.column = propStr.length;
-				ide.session.insert({row: pos.row, column: 0}, propStr); // column: lastPropEndCol, instead of column: 0
-				var omarker = null;
-				pos.row++;
-				omarker = ide.createAndAddMarker(pos.row, 0, pos.row, propStr.length);
-				// change selection so that the prop value is selected
-			} else {
-				// the prop is already added, just find it and return its position, also add a marker for it
-				var r = ide.editor.find({
-					needle: propStr,
-					start: {
-						row: innerMarker.start.row,
-						column: innerMarker.start.column
-					}
-				});
-				if (r) {
-					omarker = ide.createAndAddMarker(r.start.row, r.start.column, r.end.row, r.end.column);
-					pos.row = omarker.start.row;
-					pos.column = omarker.start.column;
-				}
-			}
-			meta.optionsCount++;
 			options[descriptor.propName] = {
-				marker: omarker,
 				propName: descriptor.propName,
 				defaultValue: descriptor.defaultValue,
 				propValue: descriptor.propValue,
 				propType: descriptor.propType
 			};
+			if (insertInCode) {
+				// insert the prop below, take tabs into account
+				// need to concatenate the hash with the parent prop, if any
+				pos.row = innerMarker.start.row + 1;
+				pos.column = propStr.replace("\n", "").length;
+				ide.session.insert({row: pos.row, column: 0}, propStr); // column: lastPropEndCol, instead of column: 0
+				var omarker = null;
+				//pos.row;
+				omarker = ide.createAndAddMarker(pos.row, 0, pos.row, propStr.replace("\n", "").length);
+				options[descriptor.propName].marker = omarker;
+				// change selection so that the prop value is selected
+			} else {
+				// the prop is already added, just find it and return its position, also add a marker for it
+				var r = ide.editor.find({
+					needle: propStr.replace("\n", ""),
+					start: {
+						row: innerMarker.start.row + 1,
+						column: 0
+						//column: innerMarker.start.column
+					}
+				});
+				if (r) {
+					omarker = ide.createAndAddMarker(r.start.row, r.start.column, r.end.row, r.end.column);
+					options[descriptor.propName].marker = omarker;
+					pos.row = omarker.start.row;
+					pos.column = omarker.start.column;
+				}
+			}
+			meta.optionsCount++;
 			//pos.row++;
 			return pos;
 		},
