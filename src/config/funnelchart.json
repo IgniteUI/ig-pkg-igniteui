@@ -40,15 +40,16 @@
     "brushes": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the Brushes property.<br>&nbsp;The brushes property defines the palette from which automatically assigned brushes are selected.<br>&nbsp;The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
+      "description": "Gets or sets the Brushes property.<br>&nbsp;The brushes property defines the palette from which automatically assigned brushes are selected.<br>&nbsp;The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
+      "arrayMemberType": "string"
     },
     "formatInnerLabel": {
-      "type": "object",
+      "type": "function",
       "defaultValue": null,
       "description": "Gets or sets the formatter function for inner labels. Function should return string and it takes 3 parameters: 1st-value of item to format, 2nd-index of item within data, 3rd-reference to igFunnelChart."
     },
     "formatOuterLabel": {
-      "type": "object",
+      "type": "function",
       "defaultValue": null,
       "description": "Gets or sets the formatter function for outer labels. Function should return string and it takes 3 parameters: 1st-value of item to format, 2nd-index of item within data, 3rd-reference to igFunnelChart."
     },
@@ -143,7 +144,8 @@
     "outlines": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the Outlines property.<br>&nbsp;The Outlines property defines the palette from which automatically assigned Outlines are selected.<br>&nbsp;The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
+      "description": "Gets or sets the Outlines property.<br>&nbsp;The Outlines property defines the palette from which automatically assigned Outlines are selected.<br>&nbsp;The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
+      "arrayMemberType": "string"
     },
     "outlineThickness": {
       "type": "number",
@@ -153,7 +155,29 @@
     "selectedSliceStyle": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the style to use for selected slices.<br>&nbsp;That can be used to set stroke (outline color), fill (background color) and opacity."
+      "description": "Gets or sets the style to use for selected slices.<br>&nbsp;That can be used to set stroke (outline color), fill (background color) and opacity.",
+      "schema": {
+        "fill": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Defines the fill color of the selected slice"
+        },
+        "stroke": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Defines the stroke color of the selected slice"
+        },
+        "strokeThickness": {
+          "type": "number",
+          "defaultValue": null,
+          "description": "Defines the fill stroke thickness of the selected slice"
+        }, 
+        "opacity": {
+          "type": "number",
+          "defaultValue": null,
+          "description": "Defines the opacity of the selected slice"
+        }
+      }
     },
     "transitionDuration": {
       "type": "number",
