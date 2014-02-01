@@ -259,17 +259,79 @@
     "backgroundContent": {
       "type": "object",
       "defaultValue": null,
-      "description": "background content object"
+      "description": "Background content object",
+      "schema": {
+        "bingUrl": {
+          "type": "string",
+          "defaultValue": "http://dev.virtualearth.net/rest/v1/imagery/metadata/",
+          "description": "Gets or sets the bing maps url."
+        },
+        "imagerySet": {
+          "type": "string",
+          "defaultValue": "aerialwithlabels",
+          "description": "Gets or sets the type of the imagery."
+        },
+        "key": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Gets or sets the key."
+        },
+        "parameter": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Gets or sets the parameter."
+        },
+        "tilePath": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Gets or sets the map tile image uri."
+        },
+        "type": {
+          "type": "string",
+          "defaultValue": "openstreet",
+          "description": "Type of the background content for the map.",
+          "valueOptions": [
+            {
+              "name": "openStreet",
+              "type": "string",
+              "description": "Specify the background content to display OpenStreetMap geographic data. Set as default."
+            },
+            {
+              "name": "cloudMade",
+              "type": "string",
+              "description": "Specify the background content to display CloudMade geographic data."
+            },
+            {
+              "name": "bing",
+              "type": "string",
+              "description": "Specify the background content to BingMaps geographic data."
+            }
+          ]
+        }
+      }
     },
     "circleMarkerTemplate": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the template to use for circle markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of circle.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
+      "description": "Gets or sets the template to use for circle markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of circle.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
+      "schemaRef": "datachart.circleMarkerTemplate"
     },
     "crosshairPoint": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the cross hair point (in world coordinates)<br>&nbsp;&nbsp;&nbsp;Either or both of the crosshair point's X and Y may be set to double.NaN, in which<br>&nbsp;&nbsp;&nbsp;case the relevant crosshair line is hidden."
+      "description": "Gets or sets the cross hair point (in world coordinates)<br>&nbsp;&nbsp;&nbsp;Either or both of the crosshair point's X and Y may be set to double.NaN, in which<br>&nbsp;&nbsp;&nbsp;case the relevant crosshair line is hidden.",
+      "schema": {
+        "x": {
+          "type": "number",
+          "defaultValue": 0,
+          "description": "The x coordinate."
+        },
+        "y": {
+          "type": "number",
+          "defaultValue": 0,
+          "description": "The y coordinate."
+        }
+      }
     },
     "crosshairVisibility": {
       "type": "string",
@@ -328,7 +390,8 @@
     "diamondMarkerTemplate": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the template to use for diamond markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of diamond.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
+      "description": "Gets or sets the template to use for diamond markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of diamond.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
+      "schemaRef": "datachart.circleMarkerTemplate"
     },
     "dragModifier": {
       "type": "string",
@@ -365,12 +428,14 @@
     "hexagonMarkerTemplate": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the template to use for hexagon markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of hexagon.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
+      "description": "Gets or sets the template to use for hxagon markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of hexagon.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
+      "schemaRef": "datachart.circleMarkerTemplate"
     },
     "hexagramMarkerTemplate": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the template to use for hexagram markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of hexagram.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
+      "description": "Gets or sets the template to use for hexagram markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of hexagram.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
+      "schemaRef": "datachart.circleMarkerTemplate"
     },
     "horizontalZoomable": {
       "type": "bool",
@@ -412,12 +477,14 @@
     "pentagonMarkerTemplate": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the template to use for pentagon markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of pentagon.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
+      "description": "Gets or sets the template to use for pentagon markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of pentagon.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
+      "schemaRef": "datachart.circleMarkerTemplate"
     },
     "pentagramMarkerTemplate": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the template to use for pentragram markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of pentagram.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
+      "description": "Gets or sets the template to use for pentragram markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of pentagram.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
+      "schemaRef": "datachart.circleMarkerTemplate"
     },
     "plotAreaBackground": {
       "type": "string",
@@ -427,12 +494,35 @@
     "previewRect": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the preview rectangle.<br>&nbsp;&nbsp;&nbsp;The preview rectangle may be set to Rect.Empty, in which case the visible preview<br>&nbsp;&nbsp;&nbsp;strokePath is hidden.<br>&nbsp;&nbsp;&nbsp;The provided object should have numeric properties called left, top, width and height."
+      "description": "Gets or sets the preview rectangle.<br>&nbsp;&nbsp;&nbsp;The preview rectangle may be set to Rect.Empty, in which case the visible preview<br>&nbsp;&nbsp;&nbsp;strokePath is hidden.<br>&nbsp;&nbsp;&nbsp;The provided object should have numeric properties called left, top, width and height.",
+      "schema": {
+        "left": {
+          "type": "number",
+          "defaultValue": null,
+          "description": "Gets sets left position of the rectangle"
+        },
+        "top": {
+          "type": "number",
+          "defaultValue": null,
+          "description": "Gets sets top position of the rectangle"
+        },
+        "width": {
+          "type": "number",
+          "defaultValue": null,
+          "description": "Gets sets width position of the rectangle"
+        },
+        "height": {
+          "type": "number",
+          "defaultValue": null,
+          "description": "Gets sets height position of the rectangle"
+        }
+      }
     },
     "pyramidMarkerTemplate": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the template to use for pyramid markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of pyramid.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
+      "description": "Gets or sets the template to use for pyramid markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of pyramid.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
+      "schemaRef": "datachart.circleMarkerTemplate"
     },
     "responseDataKey": {
       "type": "string",
@@ -442,17 +532,662 @@
     "series": {
       "type": "array",
       "defaultValue": null,
-      "description": "an array of series objects"
+      "description": "an array of series objects",
+      "schema": {
+        "angleMemberPath": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Gets or sets the x-radius of the ellipse that is used to round the corners of the column."
+        },
+        "brush": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Gets or sets the brush to use for the series."
+        },
+        "clipSeriesToBounds": {
+          "type": "bool",
+          "defaultValue": null,
+          "description": "Gets or sets whether to clip the series to the bounds. Setting this to true can affect performance."
+        },
+        "closeMemberPath": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Gets or sets the close mapping property for the current series object."
+        },
+        "colorMemberPath": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "The name of the property on each data item containing a numeric value which can be converted to a color by the ColorScale."
+        },
+        "colorScale": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "The ColorScale used to resolve the color values of points in the series.",
+          "schema": {
+            "type": {
+              "type": "string",
+              "defaultValue": null,
+              "description": ""
+            },
+            "interpolationMode": {
+              "type": "string",
+              "defaultValue": null,
+              "description": ""
+            },
+            "palette": {
+              "type": "array",
+              "defaultValue": null,
+              "description": "",
+              "arrayMemberType": "string"
+            }
+          }
+        },
+        "databaseSource": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "String The database source URI."
+        },
+        "dataSource": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself."
+        },
+        "dataSourceType": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property."
+        },
+        "dataSourceUrl": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Specifies a remote URL accepted by $.ig.DataSource in order to request data from it."
+        },
+        "discreteLegendItemTemplate": {
+          "type": "object",
+          "defaultValue": null,
+          "description": "Gets or sets the DiscreteLegendItemTemplate property. The legend item control content is created according to the DiscreteLegendItemTemplate on-demand by the series object itself.",
+          "schemaRef": "datachart.circleMarkerTemplate"
+        },
+        "fillMemberPath": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "The name of the property on data source items which contains a numeric value to convert to a Brush using the FillScale."
+        },
+        "fillScale": {
+          "type": "object",
+          "defaultValue": null,
+          "description": "The ValueBrushScale to use when determining Brushes for each Shape, based on the values found in FillMemberPath.",
+          "arrayMemberType": "string"
+        },
+        "heatMaximum": {
+          "type": "number",
+          "defaultValue": 50,
+          "description": "Gets or sets the value that maps to the maximum heat color."
+        },
+        "heatMinimum": {
+          "type": "number",
+          "defaultValue": 0,
+          "description": "Gets or sets the density value that maps to the minimum heat color."
+        },
+        "highMemberPath": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Gets or sets the value mapping property for the current series object."
+        },
+        "ignoreFirst": {
+          "type": "number",
+          "defaultValue": 0,
+          "description": "Gets or sets the number of values to hide at the beginning of the indicator."
+        },
+        "labelMemberPath": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Gets or sets the Label mapping property for the current series object."
+        },
+        "latitudeMemberPath": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "The name of the property of data source items which contains the latitude coordinate of the symbol."
+        },
+        "legendItemBadgeTemplate": {
+          "type": "object",
+          "defaultValue": null,
+          "description": "Gets or sets the LegendItemBadgeTemplate property. The legend item badge is created according to the LegendItemBadgeTemplate on-demand by the series object itself.",
+          "schemaRef": "datachart.circleMarkerTemplate"
+        },
+        "legendItemTemplate": {
+          "type": "object",
+          "defaultValue": null,
+          "description": "Gets or sets the LegendItemTemplate property..",
+          "schemaRef": "datachart.circleMarkerTemplate"
+        },
+        "longitudeMemberPath": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "The name of the property of data source items which contains the longitude coordinate of the symbol."
+        },
+        "longPeriod": {
+          "type": "number",
+          "defaultValue": 0,
+          "description": "Gets or sets the short moving average period for the current AbsoluteVolumeOscillatorIndicator object. The typical, and initial, value for long AVO periods is 30."
+        },
+        "lowMemberPath": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Gets or sets the value mapping property for the current series object."
+        },
+        "markerBrush": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Gets or sets the brush that specifies how the current series object's marker interiors are painted."
+        },
+        "markerCollisionAvoidance": {
+          "type": "string",
+          "defaultValue": "none",
+          "description": "Gets or sets the MarkerCollisionAvoidance .",
+          "valueOptions": [
+            {
+              "name": "none",
+              "type": "string",
+              "description": "No collision avoidance is attempted."
+            },
+            {
+              "name": "omit",
+              "type": "string",
+              "description": "Markers that collide will be omitted."
+            },
+            {
+              "name": "fade",
+              "type": "string",
+              "description": "Markers that collide will be faded in opacity."
+            },
+            {
+              "name": "omitAndShift",
+              "type": "string",
+              "description": "Markers that collide may be shifted or omitted."
+            }
+          ]
+        },
+        "markerOutline": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Gets or sets the brush that specifies how the current series object's marker outlines are painted."
+        },
+        "markerTemplate": {
+          "type": "object",
+          "defaultValue": null,
+          "description": "Gets or sets the MarkerTemplate for the current series object.",
+          "schemaRef": "datachart.circleMarkerTemplate"
+        },
+        "markerType": {
+          "type": "string",
+          "defaultValue": "none",
+          "description": "Gets or sets the Marker Type .",
+          "valueOptions": [
+            {
+              "name": "unset",
+              "type": "string",
+              "description": "The type is unset"
+            },
+            {
+              "name": "none",
+              "type": "string",
+              "description": "There isn't a type"
+            },
+            {
+              "name": "automatic",
+              "type": "string",
+              "description": "The type is set to a automatic"
+            },
+            {
+              "name": "circle",
+              "type": "string",
+              "description": "The type is set to a circle"
+            },
+            {
+              "name": "triangle",
+              "type": "string",
+              "description": "The type is set to a triangle"
+            },
+            {
+              "name": "pyramid",
+              "type": "string",
+              "description": "The type is set to a pyramid"
+            },
+            {
+              "name": "square",
+              "type": "string",
+              "description": "The type is set to a square"
+            },
+            {
+              "name": "diamond",
+              "type": "string",
+              "description": "The type is set to a diamond"
+            },
+            {
+              "name": "pentagon",
+              "type": "string",
+              "description": "The type is set to a pentagon"
+            },
+            {
+              "name": "hexagon",
+              "type": "string",
+              "description": "The type is set to a hexagon"
+            },
+            {
+              "name": "tetragram",
+              "type": "string",
+              "description": "The type is set to a tetragram"
+            },
+            {
+              "name": "pentagram",
+              "type": "string",
+              "description": "The type is set to a pentagram"
+            },
+            {
+              "name": "hexagram",
+              "type": "string",
+              "description": "The type is set to a hexagram"
+            }
+          ]
+        },
+        "maximumMarkers": {
+          "type": "number",
+          "defaultValue": 400,
+          "description": "Gets or sets the maximum number of markerItems displayed by the current series. If more than the specified number of markerItems are visible, the series will automatically choose a representative set."
+        },
+        "mouseOverEnabled": {
+          "type": "bool",
+          "defaultValue": false,
+          "description": "Gets or sets the whether the map reacts to mouse move events."
+        },
+        "name": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "The unique identifier of the series."
+        },
+        "negativeBrush": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Gets or sets the brush to use for negative portions of the series."
+        },
+        "openMemberPath": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Gets or sets the value mapping property for the current series object."
+        },
+        "outline": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Gets or sets the brush to use for the outline of the series. Some series types, such as LineSeries, do not display outlines."
+        },
+        "period": {
+          "type": "number",
+          "defaultValue": 0,
+          "description": "Gets or sets the moving average period for the current AverageDirectionalIndexIndicator object. The typical, and initial, value for AverageDirectionalIndexIndicator periods is 14."
+        },
+        "progressiveLoad": {
+          "type": "bool",
+          "defaultValue": true,
+          "description": "Gets or sets the whether to progressively load the data into the map."
+        },
+        "radiusMemberPath": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Gets or sets the radius mapping property for the current series object."
+        },
+        "radiusScale": {
+          "type": "number",
+          "defaultValue": null,
+          "description": "Gets or sets the radius size scale for the bubbles."
+        },
+        "remove": {
+          "type": "bool",
+          "defaultValue": false,
+          "description": "Set to true in order to have an existing series removed from the map, by name."
+        },
+        "resolution": {
+          "type": "number",
+          "defaultValue": 1,
+          "description": "Gets or sets the current series object's rendering resolution."
+        },
+        "responseDataKey": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "See $.ig.DataSource. Specifies the name of the property in which data records are held if the response is wrapped."
+        },
+        "shapeDataSource": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "The triangulated file source URI or an instance of $.ig.ShapeDataSource."
+        },
+        "shapeFilterResolution": {
+          "type": "number",
+          "defaultValue": 2,
+          "description": "Gets or sets the resolution at which to filter out shapes in the series. For example, if the shapeFilterResolution is set to 3, then elements with a bounding rectangle smaller than 3 X 3 pixels will be filtered out."
+        },
+        "shapeMemberPath": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "The name of the property on data source items which, for each shape, contains a list of points to be converted to a polygon. To be consistent with the Shapefile technical description, it is expected that each list of points is defined as an IEnumerable of IEnumerable of Point, or in other words, a list of lists of points."
+        },
+        "shapeStyle": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "The default style to apply to all Shapes in the series.",
+          "schema": {
+            "type": {
+              "fill": "string",
+              "defaultValue": null,
+              "description": ""
+            },
+            "stroke": {
+              "type": "string",
+              "defaultValue": null,
+              "description": ""
+            }
+          }
+        },
+        "shapeStyleSelector": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "The StyleSelector which is used to select a style for each Shape.",
+          "schema": {
+            "fill": {
+              "type": "string",
+              "defaultValue": null,
+              "description": ""
+            },
+            "stroke": {
+              "type": "string",
+              "defaultValue": null,
+              "description": ""
+            }
+          }
+        },
+        "shortPeriod": {
+          "type": "number",
+          "defaultValue": 0,
+          "description": "Gets or sets the short moving average period for the current AbsoluteVolumeOscillatorIndicator object. The typical, and initial, value for short AVO periods is 10."
+        },
+        "showTooltip": {
+          "type": "bool",
+          "defaultValue": false,
+          "description": "Whether the map should render a tooltip."
+        },
+        "splineType": {
+          "type": "string",
+          "defaultValue": "natural",
+          "description": "Defines the spline type",
+          "valueOptions": [
+            {
+              "name": "natural",
+              "type": "string",
+              "description": "Calculates the spline using a natural spline calculation formula. "
+            },
+            {
+              "name": "clamped",
+              "type": "string",
+              "description": "Calculated the spline using a clamped spline calculation formula."
+            }
+          ]
+        },
+        "stiffness": {
+          "type": "number",
+          "defaultValue": 0.5,
+          "description": "Gets or sets the Stiffness property."
+        },
+        "thickness": {
+          "type": "number",
+          "defaultValue": 0,
+          "description": "Gets or sets the width of the current series object's line thickness."
+        },
+        "title": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Gets or sets the Title property. The legend item control is created according to the Title on-demand by the series object itself."
+        },
+        "transitionDuration": {
+          "type": "number",
+          "defaultValue": 0,
+          "description": "Gets or sets the duration of the current series's morph."
+        },
+        "trendLineBrush": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Gets or sets the brush to use to draw the trend line."
+        },
+        "trendLinePeriod": {
+          "type": "number",
+          "defaultValue": 7,
+          "description": "Gets or sets the moving average period for the current scatter series object. The typical, and initial, value for trend line period is 7."
+        },
+        "trendLineThickness": {
+          "type": "number",
+          "defaultValue": 1.5,
+          "description": "Gets or sets the thickness of the current scatter series object's trend line."
+        },
+        "trendLineType": {
+          "type": "string",
+          "defaultValue": "none",
+          "description": "Gets or sets the trend line type.",
+          "valueOptions": [
+            {
+              "name": "none",
+              "type": "string",
+              "description": "There isn't a type"
+            },
+            {
+              "name": "linearFit",
+              "type": "string",
+              "description": "The type is set to a linearFit"
+            },
+            {
+              "name": "quadraticFit",
+              "type": "string",
+              "description": "The type is set to a quadraticFit"
+            },
+            {
+              "name": "cubicFit",
+              "type": "string",
+              "description": "The type is set to a cubicFit"
+            },
+            {
+              "name": "quarticFit",
+              "type": "string",
+              "description": "The type is set to a quarticFit"
+            },
+            {
+              "name": "quinticFit",
+              "type": "string",
+              "description": "The type is set to a quinticFit"
+            },
+            {
+              "name": "logarithmicFit",
+              "type": "string",
+              "description": "The type is set to a logarithmicFit"
+            },
+            {
+              "name": "exponentialFit",
+              "type": "string",
+              "description": "The type is set to a exponentialFit"
+            },
+            {
+              "name": "powerLawFit",
+              "type": "string",
+              "description": "The type is set to a powerLawFit"
+            },
+            {
+              "name": "simpleAverage",
+              "type": "string",
+              "description": "The type is set to a simpleAverage"
+            },
+            {
+              "name": "exponentialAverage",
+              "type": "string",
+              "description": "The type is set to a exponentialAverage"
+            },
+            {
+              "name": "modifiedAverage",
+              "type": "string",
+              "description": "The type is set to a modifiedAverage"
+            },
+            {
+              "name": "cumulativeAverage",
+              "type": "string",
+              "description": "The type is set to a cumulativeAverage"
+            },
+            {
+              "name": "weightedAverage",
+              "type": "string",
+              "description": "The type is set to a weightedAverage"
+            }
+          ]
+        },
+        "trianglesSource": {
+          "type": "object",
+          "defaultValue": null,
+          "description": "The source of triangulation data. This property is optional. If it is left as null, the triangulation will be created based on the items in the data source. Triangulation is a demanding operation, so the runtime performance will be better when specifying a TriangulationSource, especially when a large number of data items are present."
+        },
+        "triangleVertexMemberPath1": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "The name of the property of the TrianglesSource items which, for each triangle, contains the index of the first vertex point in the data source."
+        },
+        "triangleVertexMemberPath2": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "The name of the property of the TrianglesSource items which, for each triangle, contains the index of the second vertex point in the data source."
+        },
+        "triangleVertexMemberPath3": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "The name of the property of the TrianglesSource items which, for each triangle, contains the index of the third vertex point in the data source."
+        },
+        "triangulationDataSource": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "The triangulated file source URI or an instance of $.ig.TriangulationDataSource."
+        },
+        "type": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Type of the series.",
+          "valueOptions": [
+            {
+              "name": "geographicSymbolSeries",
+              "type": "string",
+              "description": "Specify the series as geographic Symbol Series series."
+            },
+            {
+              "name": "geographicPolyLine",
+              "type": "string",
+              "description": "Specify the series as geographic Poly Line series."
+            },
+            {
+              "name": "geographicScatterArea",
+              "type": "string",
+              "description": "Specify the series as geographic Scatter Area series."
+            },
+            {
+              "name": "geographicShape",
+              "type": "string",
+              "description": "Specify the series as geographic Shape series."
+            },
+            {
+              "name": "geographicContourLine",
+              "type": "string",
+              "description": "Specify the series as geographic Contour Line series."
+            },
+            {
+              "name": "geographicHighDensityScatter",
+              "type": "string",
+              "description": "Specify the series as geographic High Density Scatter series."
+            },
+            {
+              "name": "geographicProportionalSize",
+              "type": "string",
+              "description": "Specify the series as geographic Proportional Size series."
+            }
+          ]
+        },
+        "unknownValuePlotting": {
+          "type": "string",
+          "defaultValue": "dontPlot",
+          "description": "Determines how unknown values will be plotted on the map. Null and Double.NaN are two examples of unknown values.",
+          "valueOptions": [
+            {
+              "name": "linearInterpolate",
+              "type": "string",
+              "description": "Plot the unknown value as the midpoint between surrounding known values using linear interpolation."
+            },
+            {
+              "name": "dontPlot",
+              "type": "string",
+              "description": "Do not plot the unknown value on the map."
+            }
+          ]
+        },
+        "useBruteForce": {
+          "type": "bool",
+          "defaultValue": false,
+          "description": "Gets or sets the whether to use use brute force mode."
+        },
+        "useCartesianInterpolation": {
+          "type": "bool",
+          "defaultValue": true,
+          "description": "Gets or sets whether Cartesian Interpolation should be used rather than Archimedian spiral based interpolation."
+        },
+        "useSquareCutoffStyle": {
+          "type": "bool",
+          "defaultValue": false,
+          "description": "Gets or sets the whether to use squares when halting a render traversal rather than the shape of the coalesced area."
+        },
+        "valueMemberPath": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Gets or sets the item path that provides the values for the current series."
+        },
+        "valueResolver": {
+          "type": "object",
+          "defaultValue": null,
+          "description": "Gets or sets the ContourValueResolver used to determine the numeric values of contours.",
+          "schema": {
+            "type": {
+              "type": "string",
+              "defaultValue": null,
+              "description": ""
+            },
+            "valueCount": {
+              "type": "number",
+              "defaultValue": null,
+              "description": ""
+            }
+          }
+        },
+        "visibleFromScale": {
+          "type": "numeric",
+          "defaultValue": 0,
+          "description": "The minimum scale at which this series becomes visible. The default value for this property is 1.0, which means the series will always be visible. At a VisibleFromScale setting of 0.0, the series will never be visible. At a VisibleFromScale setting of 0.5, the series will be visible as long as the map is zoomed in to at least 200%."
+        },
+        "volumeMemberPath": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Gets or sets the volume mapping property for the current series object."
+        }
+      }
     },
     "squareMarkerTemplate": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the template to use for square markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of square.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
+      "description": "Gets or sets the template to use for square markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of square.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
+      "schemaRef": "datachart.circleMarkerTemplate"
     },
     "tetragramMarkerTemplate": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the template to use for tetragram markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of tetragram.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
+      "description": "Gets or sets the template to use for tetragram markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of tetragram.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
+      "schemaRef": "datachart.circleMarkerTemplate"
     },
     "theme": {
       "type": "string",
@@ -462,7 +1197,8 @@
     "triangleMarkerTemplate": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the template to use for triangle markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of triangle.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
+      "description": "Gets or sets the template to use for triangle markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of triangle.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
+      "schemaRef": "datachart.circleMarkerTemplate"
     },
     "verticalZoomable": {
       "type": "bool",
@@ -487,7 +1223,29 @@
     "windowRect": {
       "type": "object",
       "defaultValue": null,
-      "description": "A rectangle representing the portion of the map currently in view.<br>&nbsp;&nbsp;&nbsp;A rectangle at X=0, Y=0 with a Height and Width of 1 implies the entire plotting area is in view.  A Height and Width of .5 would imply that the view is halfway zoomed in.<br>&nbsp;&nbsp;&nbsp;The provided object should have numeric properties called left, top, width and height."
+      "description": "A rectangle representing the portion of the map currently in view.<br>&nbsp;&nbsp;&nbsp;A rectangle at X=0, Y=0 with a Height and Width of 1 implies the entire plotting area is in view.  A Height and Width of .5 would imply that the view is halfway zoomed in.<br>&nbsp;&nbsp;&nbsp;The provided object should have numeric properties called left, top, width and height.",
+      "schema": {
+        "left": {
+          "type": "number",
+          "defaultValue": null,
+          "description": "Gets sets left position of the rectangle"
+        },
+        "top": {
+          "type": "number",
+          "defaultValue": null,
+          "description": "Gets sets top position of the rectangle"
+        },
+        "width": {
+          "type": "number",
+          "defaultValue": null,
+          "description": "Gets sets width position of the rectangle"
+        },
+        "height": {
+          "type": "number",
+          "defaultValue": null,
+          "description": "Gets sets height position of the rectangle"
+        }
+      }
     },
     "windowRectMinWidth": {
       "type": "number",
