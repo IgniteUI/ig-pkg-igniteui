@@ -1284,6 +1284,7 @@
       "type": "array",
       "defaultValue": null,
       "description": "an array of series objects",
+      "designerDisplayProperty": "name",
       "schema": {
         "type": {
           "type": "string",
@@ -1738,12 +1739,12 @@
           "description": "Can be any valid options accepted by $.ig.ChartLegend, or an instance of an $.ig.ChartLegend itself.",
           "schema": {
             "element": {
-              "type": "object",
+              "type": "string",
               "defaultValue": null,
               "description": "The name of the element to turn into a legend."
             },
             "type": {
-              "type": "object",
+              "type": "string",
               "defaultValue": "legend",
               "description": "Type of the legend.",
               "valueOptions": [
