@@ -187,12 +187,25 @@ define (function (require, exports, module) {
 			if (!options[name]) {
 				pos = this.addPropCode(descriptor, true);
 			} else {
+				this._cachedVal = null;
 				// put the cursor at the end of the property definition
 				pos.row = options[name].marker.end.row;
 				pos.column = options[name].marker.end.column;
 			}
-			//get text
-			return pos;
+			// change selection
+			var propMarker = options[name].marker;
+			var selRange = null;
+			if (this._cachedVal === null || typeof (this._cachedVal) === "undefined") {
+				// retrieve value first
+				this._cachedVal = ide.session.getTextRange(propMarker).split(":")[1].trim().replace(",", "");
+			}
+			selRange = ide.editor.find({
+				needle: this._cachedVal + "", // ensure this is a string
+				start: propMarker.start
+			});
+			// we want to select the value only so that a developer can immediately start typing
+			//ide.editor.selection.setSelectionRange(selRange, false);
+			return {position: pos, selectionRange: selRange};
 		},
 		updatePropCode: function (descriptor) {
 			/*
@@ -261,7 +274,23 @@ define (function (require, exports, module) {
 			var innerMarker = codeMarker.range;
 			var propStr = "";
 			propStr += ide._tabStr(codeMarker.baseIndent + 1);
-			var val = ide._propCodeDefaultVal(descriptor.propType, descriptor.defaultValue);
+			var type = descriptor.propType;
+			if (descriptor.valueOptions) {
+				for (var i = 0; i < descriptor.valueOptions.length; i++) {
+					if (descriptor.valueOptions[i].name === descriptor.propValue) {
+						type = descriptor.valueOptions[i].type;
+						break;
+					}
+				}
+			}
+			var val = ide._propCodeDefaultVal(type, descriptor.defaultValue);
+			//TODO: Ensure those are markerized as well -  hierarchical support
+			if (descriptor.propType === "object") {
+				val = this.getObjectCodeString(descriptor.propValue, 5);
+			} else if (descriptor.propType === "array") {
+				val = this.getArrayCodeString(descriptor.propValue, 5);
+			}
+			this._cachedVal = val;
 			propStr += descriptor.propName + ": " + val;
 			if (meta.optionsCount !== 0 && !lastProp) { 
 				propStr += ",";
@@ -395,7 +424,8 @@ define (function (require, exports, module) {
 						propValue: descriptor.propValue,
 						oldPropValue: descriptor.oldPropValue,
 						defaultValue: descriptor.propValue,
-						propType: descriptor.propType		
+						propType: descriptor.propType,
+						valueOptions: descriptor.valueOptions
 					}, true, false);
 				} else {
 					this.updatePropCode({
