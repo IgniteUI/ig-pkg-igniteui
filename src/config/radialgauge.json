@@ -367,19 +367,68 @@
       "description": "Gets or sets the multiplying factor to apply to the normal radius of the gauge. <br>&nbsp;The radius of the gauge is defined by the minimum of the width and height of the control divided by 2.0. <br>&nbsp;This introduces a multiplicative factor to that value."
     },
     "rangeBrushes": {
-      "type": "object",
+      "type": "array",
       "defaultValue": null,
-      "description": "Gets or sets a collection of brushes to be used as the palette for gauge ranges.<br>&nbsp;The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
+      "description": "Gets or sets a collection of brushes to be used as the palette for gauge ranges.<br>&nbsp;The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
+      "arrayMemberType": "string"
     },
     "rangeOutlines": {
-      "type": "object",
+      "type": "array",
       "defaultValue": null,
-      "description": "Gets or sets a collection of brushes to be used as the palette for gauge outlines.<br>&nbsp;The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
+      "description": "Gets or sets a collection of brushes to be used as the palette for gauge outlines.<br>&nbsp;The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
+      "arrayMemberType": "string"
     },
     "ranges": {
       "type": "array",
       "defaultValue": null,
-      "description": "Gets or sets the scale ranges to render on the linear gauge."
+      "description": "Gets or sets the scale ranges to render on the linear gauge.",
+      "schema": {
+        "name": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Name of the range"
+        },
+        "startValue": {
+          "type": "number",
+          "defaultValue": null,
+          "description": "The start value of the range"
+        },
+        "endValue": {
+          "type": "number",
+          "defaultValue": null,
+          "description": "The end value of the range"
+        },
+        "brush": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Gets or sets the brush for the entire range."
+        },
+        "innerStartExtent": {
+          "type": "number",
+          "defaultValue": 0,
+          "description": "Gets or sets the starting value of the inner extent of the range."
+        },
+        "innerEndExtent": {
+          "type": "number",
+          "defaultValue": 0,
+          "description": "Gets or sets the ending value of the inner extent of the range."
+        },
+        "outline": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Gets or sets the brush for the outline of the range."
+        },
+        "remove": {
+          "type": "bool",
+          "defaultValue": false,
+          "description": "Gets or sets the flag used to determine if the range should be removed. If set to true, the range (if existing) is removed."
+        },
+        "strokeThickness": {
+          "type": "number",
+          "defaultValue": 0,
+          "description": "Gets or sets the thickness of the range outline."
+        }
+      }
     },
     "scaleBrush": {
       "type": "string",
@@ -476,7 +525,7 @@
       "description": "Gets or sets the number of milliseconds over which changes to the gauge should be animated."
     },
     "transitionEasingFunction": {
-      "type": "object",
+      "type": "string",
       "defaultValue": null,
       "description": "Gets or sets the easing function used to morph the current series."
     },
