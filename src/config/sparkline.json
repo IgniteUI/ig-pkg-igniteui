@@ -103,7 +103,7 @@
       ]
     },
     "formatLabel": {
-      "type": "object",
+      "type": "function",
       "defaultValue": null,
       "description": "Sets or gets a function which takes an object that produces a formatted label for displaying in the chart."
     },
@@ -140,7 +140,7 @@
       "description": "Gets or sets the horizontal axis line brush of the sparkline."
     },
     "horizontalAxisLabel": {
-      "type": "object",
+      "type": "string",
       "defaultValue": null,
       "description": "The value or content to display on the horizontal axis.<br>&nbsp;This can be set to a formatted string, such as \"{0}\", or it can be set to a DataTemplate."
     },
@@ -436,7 +436,7 @@
       "description": "Gets or sets the vertical axis line brush of the sparkline."
     },
     "verticalAxisLabel": {
-      "type": "object",
+      "type": "string",
       "defaultValue": null,
       "description": "The value or content to display on the vertical axis.<br>&nbsp;This can be set to a formatted string, such as \"{0:n}\", or it can be set to a DataTemplate."
     },

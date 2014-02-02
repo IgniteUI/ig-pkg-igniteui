@@ -115,7 +115,8 @@
     "brushes": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the Brushes property.<br>&nbsp;&nbsp;&nbsp;The brushes property defines the palette from which automatically assigned slice brushes are selected.<br>&nbsp;&nbsp;&nbsp;The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
+      "description": "Gets or sets the Brushes property.<br>&nbsp;&nbsp;&nbsp;The brushes property defines the palette from which automatically assigned slice brushes are selected.<br>&nbsp;&nbsp;&nbsp;The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
+      "arrayMemberType": "string"
     },
     "dataSource": {
       "type": "object",
@@ -140,7 +141,8 @@
     "explodedSlices": {
       "type": "array",
       "defaultValue": null,
-      "description": "Gets or sets the collection of exploded slice indices.<br>            Should be an array of integers that indicate the indexes of the slices to explode."
+      "description": "Gets or sets the collection of exploded slice indices.<br>            Should be an array of integers that indicate the indexes of the slices to explode.",
+      "arrayMemberType": "number"
     },
     "formatLabel": {
       "type": "function",
@@ -241,20 +243,56 @@
     "legend": {
       "type": "object",
       "defaultValue": null,
-      "description": "can be any valid options accepted by $.ig.ChartLegend, or an instance of an $.ig.ChartLegend itself."
+      "description": "can be any valid options accepted by $.ig.ChartLegend, or an instance of an $.ig.ChartLegend itself.",
+      "schema": {
+        "element": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "The name of the element to turn into a legend."
+        },
+        "type": {
+          "type": "string",
+          "defaultValue": "legend",
+          "description": "Type of the legend.",
+          "valueOptions": [
+            {
+              "name": "item",
+              "type": "string",
+              "description": "Specify the legend as item legend. It displays a legend item for each pie in the igPieChart control."
+            },
+            {
+              "name": "legend",
+              "type": "string",
+              "description": "Specify the legend as legend. It is supported by all types of series in the igDataChart control."
+            }
+          ]
+        },
+        "width": {
+          "type": "number",
+          "defaultValue": null,
+          "description": "The width of the legend."
+        },
+        "height": {
+          "type": "number",
+          "defaultValue": null,
+          "description": "The height of the legend."
+        }
+      }
     },
     "legendItemBadgeTemplate": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the LegendItemBadgeTemplate property.<br>&nbsp;&nbsp;&nbsp;The legend item badge is created according to the LegendItemBadgeTemplate on-demand by<br>&nbsp;&nbsp;&nbsp;the chart object itself.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
+      "description": "Gets or sets the LegendItemBadgeTemplate property.<br>&nbsp;&nbsp;&nbsp;The legend item badge is created according to the LegendItemBadgeTemplate on-demand by<br>&nbsp;&nbsp;&nbsp;the chart object itself.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
+      "schemaRef": "datachart.circleMarkerTemplate"
     },
     "legendItemTemplate": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the LegendItemTemplate property.<br>&nbsp;&nbsp;&nbsp;The legend item control content is created according to the LegendItemTemplate on-demand by<br>&nbsp;&nbsp;&nbsp;the chart object itself.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
+      "description": "Gets or sets the LegendItemTemplate property.<br>&nbsp;&nbsp;&nbsp;The legend item control content is created according to the LegendItemTemplate on-demand by<br>&nbsp;&nbsp;&nbsp;the chart object itself.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
+      "schemaRef": "datachart.circleMarkerTemplate"
     },
     "othersCategoryStyle": {
-      "type": "object",
+      "type": "string",
       "defaultValue": null,
       "description": "Gets or sets a style object that can be used to override the style settings on the others category slice."
     },
@@ -288,7 +326,8 @@
     "outlines": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the Outlines property.<br>&nbsp;&nbsp;&nbsp;The Outlines property defines the palette from which automatically assigned slice outlines are selected.<br>&nbsp;&nbsp;&nbsp;The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
+      "description": "Gets or sets the Outlines property.<br>&nbsp;&nbsp;&nbsp;The Outlines property defines the palette from which automatically assigned slice outlines are selected.<br>&nbsp;&nbsp;&nbsp;The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
+      "arrayMemberType": "string"
     },
     "radiusFactor": {
       "type": "number",
@@ -301,7 +340,7 @@
       "description": "see $.ig.DataSource. Specifies the name of the property in which data records are held if the response is wrapped."
     },
     "selectedStyle": {
-      "type": "object",
+      "type": "string",
       "defaultValue": null,
       "description": "Gets or sets the style used when a slice is selected."
     },

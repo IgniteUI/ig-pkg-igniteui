@@ -292,7 +292,6 @@
               "type": "number",
               "defaultValue": 2,
               "description": "Specifies the number of digits after the decimal point for result of the current summary operand. This property will be ignored when isGridFormatter is true",
-              "valueOptions": null
             },
             "isGridFormatter": {
               "type": "bool",

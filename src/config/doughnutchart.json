@@ -141,12 +141,215 @@
     "selectedStyle": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the style used when a slice is selected."
+      "description": "Gets or sets the style used when a slice is selected.",
+      "schema": {
+        "fill": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Defines the fill color of the selected slice"
+        },
+        "stroke": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Defines the stroke color of the selected slice"
+        },
+        "strokeThickness": {
+          "type": "number",
+          "defaultValue": null,
+          "description": "Defines the fill stroke thickness of the selected slice"
+        }, 
+        "opacity": {
+          "type": "number",
+          "defaultValue": null,
+          "description": "Defines the opacity of the selected slice"
+        }
+      }
     },
     "series": {
       "type": "array",
       "defaultValue": null,
-      "description": "An array of series objects."
+      "description": "An array of series objects.",
+      "schema": {
+        "brushes": {
+          "type": "array",
+          "defaultValue": null,
+          "description": "Gets or sets the Brushes property.<br>&nbsp;&nbsp;&nbsp;The brushes property defines the palette from which automatically assigned series brushes are selected.<br>&nbsp;&nbsp;&nbsp;The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
+          "arrayMemberType": "string"
+        },
+        "formatLabel": {
+          "type": "function",
+          "defaultValue": null,
+          "description": "Sets or gets a function which takes an object that produces a formatted label for displaying in the chart."
+        },
+        "isSurfaceInteractionDisabled": {
+          "type": "bool",
+          "defaultValue": false,
+          "description": "Gets or sets whether all surface interactions with the plot area should be disabled."
+        },
+        "itemsSource": {
+          "type": "array",
+          "defaultValue": null,
+          "description": "Gets or sets the data source for the chart.",
+          "arrayMemberType": "object"
+        },
+        "labelExtent": {
+          "type": "number",
+          "defaultValue": null,
+          "description": "Gets or sets the pixel amount, by which the labels are offset from the edge of the slices."
+        },
+        "labelMemberPath": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Gets or sets the property name that contains the labels."
+        },
+        "labelsPosition": {
+          "type": "string",
+          "defaultValue": "center",
+          "description": "Gets or sets the position of chart labels.",
+          "valueOptions": [
+            {
+              "name": "none",
+              "type": "string",
+              "description": "No labels will be displayed."
+            },
+            {
+              "name": "center",
+              "type": "string",
+              "description": "Labels will be displayed in the center."
+            },
+            {
+              "name": "insideEnd",
+              "type": "string",
+              "description": "Labels will be displayed inside and by the edge of the container."
+            },
+            {
+              "name": "outsideEnd",
+              "type": "string",
+              "description": "Labels will be displayed outside the container."
+            },
+            {
+              "name": "bestFit",
+              "type": "string",
+              "description": "Labels will automatically decide their location."
+            }
+          ]
+        },
+        "leaderLineMargin": {
+          "type": "number",
+          "defaultValue": 6,
+          "description": "Gets or sets the margin between a label and its leader line. The default is 6 pixels."
+        },
+        "labelsPosition": {
+          "type": "string",
+          "defaultValue": "straight",
+          "description": "Gets or sets what type of leader lines will be used for the outside end labels.",
+          "valueOptions": [
+            {
+              "name": "straight",
+              "type": "string",
+              "description": "A straight line is drawn between the slice and its label."
+            },
+            {
+              "name": "arc",
+              "type": "string",
+              "description": "A curved line is drawn between the slice and its label. The line follows makes a natural turn from the slice to the label."
+            },
+            {
+              "name": "spline",
+              "type": "string",
+              "description": "A curved line is drawn between the slice and its label. The line starts radially from the slice and then turns to the label."
+            }
+          ]
+        },
+        "leaderLineVisibility": {
+          "type": "string",
+          "defaultValue": "straight",
+          "description": "Gets or sets whether the leader lines are visible.",
+          "valueOptions": [
+            {
+              "name": "visible",
+              "type": "string",
+              "description": "Leader lines are visible."
+            },
+            {
+              "name": "collapsed",
+              "type": "string",
+              "description": "Leader lines are collapsed."
+            }
+          ]
+        },
+        "legend": {
+          "type": "object",
+          "defaultValue": null,
+          "description": "Gets or sets the legend used for the current chart. You need to supply a dom element to use for the legend (preferably a div element)"
+        },
+        "othersCategoryThreshold": {
+          "type": "number",
+          "defaultValue": 3,
+          "description": "Gets or sets the threshold value that determines if slices are grouped into the Others slice."
+        },
+        "othersCategoryType": {
+          "type": "string",
+          "defaultValue": "percent",
+          "description": "Gets or sets whether to use numeric or percent-based threshold value.",
+          "valueOptions": [
+            {
+              "name": "number",
+              "type": "string",
+              "description": "Data value is compared directly to the value of OthersCategoryThreshold."
+            },
+            {
+              "name": "percent",
+              "type": "string",
+              "description": "Data value is compared to OthersCategoryThreshold as a percentage of the total."
+            }
+          ]
+        },
+        "outlines": {
+          "type": "array",
+          "defaultValue": null,
+          "description": "Gets or sets the Outlines property. The Outlines property defines the palette from which automatically assigned slice outlines are selected. The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
+          "arrayMemberType": "string"
+        },
+        "radiusFactor": {
+          "type": "number",
+          "defaultValue": 0.9,
+          "description": "Gets or sets the scaling factor of the chart's radius. Value between 0 and 1."
+        },
+        "selectedStyle": {
+          "type": "object",
+          "defaultValue": null,
+          "description": "Gets or sets the style used when a slice is selected.",
+          "schemaRef": "doughnutchart.selectedStyle"
+        },
+        "startAngle": {
+          "type": "number",
+          "defaultValue": 0,
+          "description": "Gets or sets the starting angle of the chart. The default zero value is equivalent to 3 o'clock."
+        },
+        "toolTip": {
+          "type": "object",
+          "defaultValue": null,
+          "description": "Gets or sets the ToolTip for the pie chart."
+        },
+        "toolTip": {
+          "type": "object",
+          "defaultValue": "flat",
+          "description": "Gets or sets the current series type.",
+          "valueOptions": [
+            {
+              "name": "flat",
+              "type": "string",
+              "description": "Series has flat 1-dimensional data."
+            }
+          ]
+        },
+        "valueMemberPath": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Gets or Sets the property name that contains the values."
+        }
+      }
     }
   }
 }
