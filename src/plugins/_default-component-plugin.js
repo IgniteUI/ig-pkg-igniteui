@@ -199,10 +199,17 @@ define (function (require, exports, module) {
 				// retrieve value first
 				this._cachedVal = ide.session.getTextRange(propMarker).split(":")[1].trim().replace(",", "");
 			}
-			selRange = ide.editor.find({
-				needle: this._cachedVal + "", // ensure this is a string
-				start: propMarker.start
-			});
+			if (descriptor.propType === "string") {
+				this._cachedVal = this._cachedVal.replace(/"/g, "");
+			}
+			if (this._cachedVal === "") {
+				pos.column = pos.column -2;
+			} else {
+				selRange = ide.editor.find({
+					needle: this._cachedVal + "", // ensure this is a string
+					start: propMarker.start
+				});
+			}
 			// we want to select the value only so that a developer can immediately start typing
 			//ide.editor.selection.setSelectionRange(selRange, false);
 			return {position: pos, selectionRange: selRange};
@@ -292,7 +299,7 @@ define (function (require, exports, module) {
 			}
 			this._cachedVal = val;
 			propStr += descriptor.propName + ": " + val;
-			if (meta.optionsCount !== 0 && !lastProp) { 
+			if (meta.optionsCount !== 0 && !lastProp) {
 				propStr += ",";
 			}
 			propStr += "\n";
