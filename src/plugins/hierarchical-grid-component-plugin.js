@@ -48,7 +48,7 @@ define (["./grid-component-plugin"], function (IgniteUIGridPlugin) {
 					orderedReturnProps.push({
 						name: key,
 						value: opts[key],
-						type: props[key].types
+						type: props[key].type
 					});
 				}
 			}
