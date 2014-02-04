@@ -360,7 +360,7 @@
         },
         "textPath": {
           "type": "string",
-          "defaultValue": "@Text",
+          "defaultValue": "",
           "description": "Specifies the XPath to the text attribute/node. Used in client-only binding directly to XML."
         },
         "valueKey": {
@@ -370,7 +370,7 @@
         },
         "valueXPath": {
           "type": "string",
-          "defaultValue": "@Value",
+          "defaultValue": "",
           "description": "Specifies the XPath to the value attribute/node. Used in client-only binding directly to XML."
         },
         "imageUrlKey": {
@@ -380,7 +380,7 @@
         },
         "imageUrlXPath": {
           "type": "string",
-          "defaultValue": "@ImageUrl",
+          "defaultValue": "",
           "description": "Specifies the XPath to the image URL attribute/node. Used in client-only binding directly to XML."
         },
         "navigateUrlKey": {
@@ -390,7 +390,7 @@
         },
         "navigateUrlXPath": {
           "type": "string",
-          "defaultValue": "@NavigateUrl",
+          "defaultValue": "",
           "description": "Specifies the XPath to the navigate URL attribute/node. Used in client-only binding directly to XML."
         },
         "tergetKey": {
