@@ -553,7 +553,7 @@ define (function (require, exports, module) {
 						propName: property,
 						defaultValue: descriptor.schema[property].defaultValue,
 						propValue: prop.hasOwnProperty(property) ? prop[property] : descriptor.schema[property].defaultValue,
-						propType: descriptor.schema[property].propType,
+						propType: descriptor.schema[property].type,
 						description: descriptor.schema[property].description,
 						valueOptions: descriptor.schema[property].valueOptions,
 						displayProp: descriptor.schema[property].designerDisplayProperty
