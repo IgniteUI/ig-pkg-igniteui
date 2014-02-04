@@ -329,6 +329,7 @@
       "type": "array",
       "defaultValue": null,
       "description": "an array of axis objects",
+	  "designerDisplayProperty": "name",
       "schema": {
         "type": {
           "type": "string",

@@ -502,7 +502,7 @@
       "description": "Get or set whether the control seek tool tip will be shown when hovering the video progress bar."
     },
     "sources": {
-      "type": "string",
+      "type": "array",
       "defaultValue": null,
       "description": "Get or set a list of video sources to choose from. Best coded/format is automatically detected by the control. Supported types are depending on the browser and could be one of the following mov, mp4, webm, ogg."
     },
