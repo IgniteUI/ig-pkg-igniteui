@@ -20,6 +20,9 @@ define (function (require, exports, module) {
 			}*/
 			return "ig" + type.charAt(0).toUpperCase() + type.slice(1);
 		},
+		getProviderType: function (type) {
+			return this._getWidgetName(type);
+		},
 		getHeadMarkup: function () {
 			return null;
 		},
@@ -443,6 +446,18 @@ define (function (require, exports, module) {
 						propType: descriptor.propType,
 						valueOptions: descriptor.valueOptions
 					});
+				}
+			}
+		},
+		universalPropertyModified: function (descriptor) {
+			if (descriptor.propName === "id") {
+				// we need to change the id in the widget definition in the code view
+				var result = this.settings.ide.editor.find({
+					needle: /\$\("#(.*)?"\)/,
+					start: descriptor.comp.codeMarker.range.start
+				});
+				if (result) {
+					this.settings.ide.session.replace(result, "$(\"#" + descriptor.propValue + "\")");
 				}
 			}
 		},
