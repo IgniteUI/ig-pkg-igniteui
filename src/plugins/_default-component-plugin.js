@@ -299,12 +299,14 @@ define (function (require, exports, module) {
 					}
 				}
 			}
-			var val = ide._propCodeDefaultVal(type, descriptor.defaultValue);
+			var val;
 			//TODO: Ensure those are markerized as well -  hierarchical support
 			if (descriptor.propType === "object") {
-				val = this.getObjectCodeString(descriptor.propValue, 5);
+				val = this.getObjectCodeString(descriptor.propValue, codeMarker.baseIndent + 1);
 			} else if (descriptor.propType === "array") {
-				val = this.getArrayCodeString(descriptor.propValue, 5);
+				val = this.getArrayCodeString(descriptor.propValue, codeMarker.baseIndent + 1);
+			} else {
+				val = ide._propCodeDefaultVal(type, descriptor.defaultValue);
 			}
 			this._cachedVal = val;
 			propStr += descriptor.propName + ": " + val;
