@@ -138,7 +138,7 @@
     		"toolboxTitle": "Video Player",
     		"icon": "videoplayer.png",
     		"dragDropIcon": "videoplayer-dragdrop.png",
-    		"category": "layout",
+    		"category": "dataviz",
     		"visual": true,
     		"framework": false,
     		"height": 300,
