@@ -252,20 +252,26 @@ define (function (require, exports, module) {
 			var propStr = "";
 			var marker = options[descriptor.propName].marker;
 			propStr += ide._tabStr(codeMarker.baseIndent + 1);
-			propStr += descriptor.propName + ": "  + ide._propCodeDefaultVal(descriptor.propType, descriptor.propValue);
+			if (descriptor.propType === "object") {
+				propStr += descriptor.propName + ": "  + this.getObjectCodeString(descriptor.propValue, codeMarker.baseIndent + 1);
+			} else if (descriptor.propType === "array") {
+				propStr += descriptor.propName + ": "  + this.getArrayCodeString(descriptor.propValue, codeMarker.baseIndent + 1);
+			} else {
+				propStr += descriptor.propName + ": "  + ide._propCodeDefaultVal(descriptor.propType, descriptor.propValue);
+			}
 			var currentPropStr = ide.session.getTextRange(marker);
 			if (!currentPropStr) {
 				currentPropStr = "";
 			}
 			currentPropStr = currentPropStr.trim();
 			options[descriptor.propName].propValue = descriptor.propValue;
-			if ( currentPropStr.lastIndexOf(",") === currentPropStr.length - 1) { 
+			if (currentPropStr.lastIndexOf(",") === currentPropStr.length - 1) { 
 				propStr += ",";
 			}
 			//propStr += "\n";
 			var startRow = marker.start.row;
 			var startCol = marker.start.column;
-			var endRow = marker.end.row;
+			var endRow = marker.start.row + propStr.split('\n').length - 1;
 			//var endColumn = marker.end.column;
 			var endColumn = propStr.length;
 			ide.session.replace(marker, propStr);
@@ -320,7 +326,7 @@ define (function (require, exports, module) {
 				ide.session.insert({row: pos.row, column: 0}, propStr); // column: lastPropEndCol, instead of column: 0
 				var omarker = null;
 				//pos.row;
-				omarker = ide.createAndAddMarker(pos.row, 0, pos.row, propStr.replace("\n", "").length);
+				omarker = ide.createAndAddMarker(pos.row, 0, pos.row + propStr.split('\n').length - 2, propStr.replace("\n", "").length);
 				options[descriptor.propName].marker = omarker;
 				// change selection so that the prop value is selected
 			} else {
