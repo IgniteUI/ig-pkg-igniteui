@@ -394,7 +394,7 @@
 		"dateEditor": {
     		"id": "dateEditor",
     		"toolboxTitle": "Date Editor",
-    		"icon": "currency-editor.png",
+    		"icon": "datepicker.png",
     		"dragDropIcon": "editor-dragdrop.png",
     		"category": "editors",
     		"visual": true,
