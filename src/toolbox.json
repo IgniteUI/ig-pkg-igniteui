@@ -325,29 +325,37 @@
     		"width": 600,
     		"height": 300
     	},
-    	"layoutManager": {
-    		"id": "layoutManager",
-    		"toolboxTitle": "Layout Manager",
-    		"icon": "layoutmanager.png",
-    		"dragDropIcon": "layoutmanager-dragdrop.png",
-    		"category": "layout",
-    		"visual": true,
-    		"width": 150,
-    		"height": 150,
-    		"framework": false
-    	},
 		"flowLayout": {
     		"id": "flowLayout",
     		"toolboxTitle": "Flow Layout",
     		"icon": "layoutmanager.png",
 			"componentPlugin": "layout-component-plugin",
-    		"dragDropIcon": "layoutmanager-dragdrop.png",
+    		"dragDropIcon": "flow-layout-dragdrop.png",
     		"category": "layout",
     		"visual": true,
     		"framework": false,
 			"defaultOptions": {  			
 			    "layoutMode": "flow",
                 "itemCount": 10
+			}
+    	},
+		"borderLayout": {
+    		"id": "borderLayout",
+    		"toolboxTitle": "Border Layout",
+    		"icon": "layoutmanager.png",
+			"componentPlugin": "layout-component-plugin",
+    		"dragDropIcon": "layoutmanager-dragdrop.png",
+    		"category": "layout",
+    		"visual": true,
+			"width" : 650,
+			"height" : 300,
+    		"framework": false,
+			"defaultOptions": {  			
+                "layoutMode": "border",
+                "borderLayout": {
+                    "leftWidth": "10%",
+                    "rightWidth": "20%"
+                }
 			}
     	},
     	"map": {
