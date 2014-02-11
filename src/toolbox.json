@@ -358,6 +358,16 @@
                 }
 			}
     	},
+		"columnLayout": {
+    		"id": "columnLayout",
+    		"toolboxTitle": "Column Layout",
+    		"icon": "layoutmanager.png",
+			"componentPlugin": "layout-component-plugin",
+    		"dragDropIcon": "column-layout-dragdrop.png",
+    		"category": "layout",
+    		"visual": true,
+    		"framework": false
+    	},
     	"map": {
     		"id": "map",
             "dependsOn": ["core", "lob", "dv"],
