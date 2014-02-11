@@ -222,8 +222,10 @@
     	},
     	"dataSource": {
     		"id": "dataSource",
+            "componentPlugin": "datasource-component-plugin", 
     		"toolboxTitle": "Data Source",
     		"icon": "datasource.png",
+            "dragDropIcon": "datasource-dragdrop.png",
     		"classId": "$.ig.IgDataSource",
     		"category": "datasources",
     		"visual": false,

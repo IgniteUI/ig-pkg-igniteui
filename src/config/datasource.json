@@ -2,7 +2,6 @@
   "overview": null,
   "name": "ig.DataSource",
   "category": null,
-  "visual": true,
   "events": {},
   "properties": {
     "settings": {
