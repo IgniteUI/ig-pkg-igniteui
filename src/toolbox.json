@@ -336,6 +336,20 @@
     		"height": 150,
     		"framework": false
     	},
+		"flowLayout": {
+    		"id": "flowLayout",
+    		"toolboxTitle": "Flow Layout",
+    		"icon": "layoutmanager.png",
+			"componentPlugin": "layout-component-plugin",
+    		"dragDropIcon": "layoutmanager-dragdrop.png",
+    		"category": "layout",
+    		"visual": true,
+    		"framework": false,
+			"defaultOptions": {  			
+			    "layoutMode": "flow",
+                "itemCount": 10
+			}
+    	},
     	"map": {
     		"id": "map",
             "dependsOn": ["core", "lob", "dv"],
