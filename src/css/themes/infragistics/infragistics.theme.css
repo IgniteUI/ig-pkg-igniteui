@@ -497,6 +497,8 @@ input.ui-button::-moz-focus-inner,button.ui-button::-moz-focus-inner{border:0;pa
 .ui-iggrid tfoot td.ui-widget-content,.ui-iggrid tfoot td.ui-state-default{background-color:transparent;color:#333;border-color:#DCDCDC;border-style:solid}
 .ui-iggrid tfoot td.ui-state-hover{background-color:#ebebeb}
 .ui-iggrid tfoot td.ui-state-default .ui-icon{background-image:url("images/ui-icons_222222_256x240.png")}
+.ui-iggrid-columnmoving-dragtop{background:transparent url("images/ui-icons_222222_256x240.png") no-repeat scroll -65px -12px!important}
+.ui-iggrid-columnmoving-dragbottom{background:transparent url("images/ui-icons_222222_256x240.png") no-repeat scroll 0 -20px!important}
 @-webkit-keyframes addingHighlight{0%{background-color:#4EB7E2}
 100%{background-color:transparent}
 }
