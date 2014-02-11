@@ -176,8 +176,7 @@ body[dir="rtl"] .ui-iggrid-filtericoncontainer,body[dir="rtl"] .ui-iggrid-featur
 .ui-iggrid td.ui-iggrid-childarea{padding-left:34px}
 .ui-iggrid-childarea-collapsed{padding-top:0!important;padding-bottom:0!important;border-width:0!important}
 .ui-iggrid-childgridseparator{clear:both;display:block;margin:1.4em 0;height:0;border-top:1px dotted #000;border-bottom:1px dotted #FFF;opacity:.3;filter:alpha(opacity=30)}
-.ui-tooltip{background:none #fff;box-shadow:0 0 5px #AAA;padding:8px;z-index:9999}
-.ui-tooltip{background-image:none;border-width:2px}
+.ui-tooltip,.ui-iggrid .ui-tooltip{background:none #fff;box-shadow:0 0 5px #AAA;padding:8px;z-index:9999;border-width:1px}
 .ui-iggrid-columnmoving-dragtop{background:url(../images/igGrid/filter-icons-333333.png) no-repeat -80px 4px}
 .ui-iggrid-columnmoving-dragbottom{background:url(../images/igGrid/filter-icons-333333.png) no-repeat -96px -4px}
 .ui-iggrid-moving-indicator{cursor:pointer;display:block;float:right;font-family:"Segoe UI",Arial,sans-serif;font-size:10px;height:16px;line-height:20px;text-align:center;width:16px;background:url(../images/igGrid/filter-icons-FFFFFF.png) no-repeat -574px -2px}
