@@ -2,7 +2,6 @@
   "overview": null,
   "name": "ui.igGrid",
   "category": null,
-  "visual": true,
   "events": {
     "cellClick": {
       "cancellable": false,
