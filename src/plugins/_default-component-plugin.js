@@ -467,6 +467,8 @@ define (function (require, exports, module) {
 				if (result) {
 					this.settings.ide.session.replace(result, "$(\"#" + descriptor.propValue + "\")");
 				}
+			} else if (descriptor.propName === "class") {
+				window.frames[0].$(descriptor.placeholder).removeClass(descriptor.oldPropValue).addClass(descriptor.propValue);
 			}
 		},
 		getObjectCodeString: function (obj, tabs) {
