@@ -258,6 +258,7 @@
     		"dragDropIcon": "fileupload-dragdrop.png",
     		"category": "editors",
     		"visual": true,
+			"width": 200,
     		"framework": false
     	},
     	"radialGauge": {
@@ -367,6 +368,27 @@
     		"category": "layout",
     		"visual": true,
     		"framework": false
+    	},
+		"gridLayout": {
+    		"id": "gridLayout",
+    		"toolboxTitle": "Grid Layout",
+    		"icon": "layoutmanager.png",
+			"componentPlugin": "layout-component-plugin",
+    		"dragDropIcon": "grid-layout-dragdrop.png",
+    		"category": "layout",
+    		"visual": true,
+			"width": "600",
+            "height": "400",
+    		"framework": false,
+			"defaultOptions": {  			
+                "layoutMode": "grid",
+				"items": [
+					{ "rowSpan": 2, "colSpan": 2, "colIndex": 0, "rowIndex": 0 },
+                    { "rowSpan": 1, "colSpan": 1, "rowIndex": 0, "colIndex": 2 },
+                    { "rowSpan": 1, "colSpan": 1, "rowIndex": 1, "colIndex": 2 },
+                    { "rowSpan": 1, "colSpan": 3, "colIndex": 0, "rowIndex": 2 }
+                ]
+			}
     	},
     	"map": {
     		"id": "map",
