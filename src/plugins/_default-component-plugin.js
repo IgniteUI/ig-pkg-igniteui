@@ -478,6 +478,10 @@ define (function (require, exports, module) {
 						val += new Array(tabs + 2).join("\t") + prop + ": \"" + obj[prop] + "\",\n"
 					} else if (subType === "boolean" || subType === "number") {
 						val += new Array(tabs + 2).join("\t") + prop + ": " + obj[prop] + ",\n"
+					} else if (subType === "object" && obj[prop].length) {
+						val += new Array(tabs + 2).join("\t") + prop + ": " + this.getArrayCodeString(obj[prop], tabs + 1) + ",\n";
+					} else if (subType === "object" && obj[prop]) {
+						val += new Array(tabs + 2).join("\t") + prop + ": " + this.getObjectCodeString(obj[prop], tabs + 1) + ",\n";
 					}
 				}
 			}
@@ -557,11 +561,21 @@ define (function (require, exports, module) {
 				editor = $('<div class="adorner-property-list"></div>').appendTo(container),
 				property,
 				count = 0,
+				schemaRef,
+				schema,
 				prop,
-				type = this._getWidgetName(descriptor.type);
-			
-			descriptor.id = "propEditor";
-			descriptor.containerId = "property";
+				type = this._getWidgetName(descriptor.type),
+				id = "propEditor",
+				containerId = "property",
+				i = 0;
+			while ($("#" + containerId + "_scroll").length > 0) {
+				containerId = "property" + i;
+				id = "propEditor" + i;
+				i++;
+			}
+			editor.addClass("adorner-" + containerId + "-list");
+			descriptor.id = id;
+			descriptor.containerId = containerId;
 			descriptor.parent = editor;
 			descriptor.data = [];
 			if (descriptor.iframe && descriptor.iframe.jQuery) {
@@ -571,6 +585,13 @@ define (function (require, exports, module) {
 			}
 			for (property in descriptor.schema) {
 				if (descriptor.schema.hasOwnProperty(property)) {
+					if (descriptor.schema[property].schemaRef) {
+						schemaRef = descriptor.schema[property].schemaRef.split(".");
+						schema = descriptor.ide._packages.igniteui.components[schemaRef[0]].properties;
+						for (i = 1; i < schemaRef.length; i++) {
+							schema = schema[schemaRef[i]].schema;
+						}
+					}
 					descriptor.data.push({
 						id: count++,
 						propName: property,
@@ -579,7 +600,8 @@ define (function (require, exports, module) {
 						propType: descriptor.schema[property].type,
 						description: descriptor.schema[property].description,
 						valueOptions: descriptor.schema[property].valueOptions,
-						displayProp: descriptor.schema[property].designerDisplayProperty
+						displayProp: descriptor.schema[property].designerDisplayProperty,
+						schema: schema
 					});
 				}
 			}
