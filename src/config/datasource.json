@@ -10,12 +10,21 @@
 				{
 					"name": "ds",
 					"type": "Object",
-					"optional": false
+					"optional": false,
+					"description": "Reference to the data source object"
 				},
 				{
 					"name": "args",
 					"type": "Object",
-					"optional": false
+					"optional": false,
+					"description": "Arguments of the current control context",
+					"schema": {
+						"cancel": {
+							"type": "bool",
+							"defaultValue": false,
+							"description": "Argument that cancels the event"
+						}
+					}
 				}
 			],
 			"description": "Client-side dataBinding event. Can be a string pointing to a function name, or an object pointing to a function"
@@ -24,9 +33,10 @@
 			"cancellable": false,
 			"args": [
 				{
-				"name": "ds",
-				"type": "Object",
-				"optional": false
+					"name": "ds",
+					"type": "Object",
+					"optional": false,
+					"description": "Reference to the data source object"
 				}
 			],
 			"description": "Can be a string pointing to a function name, or an object pointing to a function"
@@ -37,12 +47,51 @@
 				{
 					"name": "ds",
 					"type": "Object",
-					"optional": false
+					"optional": false,
+					"description": "Reference to the data source object"
 				},
 				{
 					"name": "args",
 					"type": "Object",
-					"optional": false
+					"optional": false,
+					"description": "Arguments of the current control context",
+					"schema": {
+						"sortingParams": {
+							"type": "object",
+							"defaultValue": {},
+							"description": "Sorting parameters"
+						},
+						"filteringParams": {
+							"type": "object",
+							"defaultValue": {},
+							"description": "Filtering parameters"
+						},
+						"pagingParams": {
+							"type": "object",
+							"defaultValue": {},
+							"description": "Paging parameters"
+						},
+						"selectParams": {
+							"type": "object",
+							"defaultValue": {},
+							"description": "Select parameters"
+						},
+						"summariesParams": {
+							"type": "object",
+							"defaultValue": {},
+							"description": "Summaries parameters"
+						},
+						"extraParams": {
+							"type": "object",
+							"defaultValue": {},
+							"description": "Additional parameters"
+						},
+						"pkParams": {
+							"type": "object",
+							"defaultValue": {},
+							"description": ""
+						}
+					}
 				}
 			],
 			"description": "Event that is fired before URL parameters are encoded. Can point to a function name or the function object itself."
@@ -53,12 +102,51 @@
 				{
 					"name": "ds",
 					"type": "Object",
-					"optional": false
+					"optional": false,
+					"description": "Reference to the data source object"
 				},
 				{
 					"name": "args",
 					"type": "Object",
-					"optional": false
+					"optional": false,
+					"description": "Arguments of the current control context",
+					"schema": {
+						"sortingParams": {
+							"type": "object",
+							"defaultValue": {},
+							"description": "Sorting parameters"
+						},
+						"filteringParams": {
+							"type": "object",
+							"defaultValue": {},
+							"description": "Filtering parameters"
+						},
+						"pagingParams": {
+							"type": "object",
+							"defaultValue": {},
+							"description": "Paging parameters"
+						},
+						"selectParams": {
+							"type": "object",
+							"defaultValue": {},
+							"description": "Select parameters"
+						},
+						"summariesParams": {
+							"type": "object",
+							"defaultValue": {},
+							"description": "Summaries parameters"
+						},
+						"extraParams": {
+							"type": "object",
+							"defaultValue": {},
+							"description": "Additional parameters"
+						},
+						"pkParams": {
+							"type": "object",
+							"defaultValue": {},
+							"description": ""
+						}
+					}
 				}
 			],
 			"description": "Event that is fired after URL parameters are encoded (When a remote request is done). Can point to a function name or the function object itself."
@@ -69,12 +157,26 @@
 				{
 					"name": "item",
 					"type": "Object",
-					"optional": false
+					"optional": false,
+					"description": "Arguments of the current row context",
+					"schema": {
+						"row": {
+							"type": "object",
+							"defaultValue": null,
+							"description": "Obtain reference to the added row"
+						},
+						"rowId": {
+							"type": "string",
+							"defaultValue": null,
+							"description": "Get the row ID"
+						}
+					}
 				},
 				{
 					"name": "ds",
 					"type": "Object",
-					"optional": false
+					"optional": false,
+					"description": "Reference to the data source object"
 				}
 			],
 			"description": "A function to call when row is updated (edited)."
@@ -85,12 +187,31 @@
 				{
 					"name": "item",
 					"type": "Object",
-					"optional": false
+					"optional": false,
+					"description": "Arguments of the current row context.",
+					"schema": {
+						"rowIndex": {
+							"type": "number",
+							"defaultValue": null,
+							"description": "Get the row index."
+						},
+						"newRow": {
+							"type": "object",
+							"defaultValue": null,
+							"description": "Obtain reference to the updated row."
+						},
+						"oldRow": {
+							"type": "object",
+							"defaultValue": null,
+							"description": "Obtain reference to the row that was updated."
+						}
+					}
 				},
 				{
 					"name": "ds",
 					"type": "Object",
-					"optional": false
+					"optional": false,
+					"description": "Reference to the data source object"
 				}
 			],
 			"description": "A function to call when row is added."
@@ -101,12 +222,31 @@
 				{
 					"name": "item",
 					"type": "Object",
-					"optional": false
+					"optional": false,
+					"description": "Arguments of the current row context",
+					"schema": {
+						"row": {
+							"type": "object",
+							"defaultValue": null,
+							"description": "Obtain reference to the inserted row"
+						},
+						"rowId": {
+							"type": "string",
+							"defaultValue": null,
+							"description": "Get the row ID"
+						},
+						"rowIndex": {
+							"type": "number",
+							"defaultValue": null,
+							"description": "Get the row index."
+						}
+					}
 				},
 				{
 					"name": "ds",
 					"type": "Object",
-					"optional": false
+					"optional": false,
+					"description": "Reference to the data source object"
 				}
 			],
 			"description": "A function to call when row is inserted."
@@ -117,12 +257,31 @@
 				{
 					"name": "item",
 					"type": "Object",
-					"optional": false
+					"optional": false,
+					"description": "Arguments of the current row context",
+					"schema": {
+						"row": {
+							"type": "object",
+							"defaultValue": null,
+							"description": "Obtain reference to the deleted row"
+						},
+						"rowId": {
+							"type": "string",
+							"defaultValue": null,
+							"description": "Get the row ID"
+						},
+						"rowIndex": {
+							"type": "number",
+							"defaultValue": null,
+							"description": "Get the row index."
+						}
+					}
 				},
 				{
 					"name": "ds",
 					"type": "Object",
-					"optional": false
+					"optional": false,
+					"description": "Reference to the data source object"
 				}
 			],
 			"description": "A function to call when row is deleted."
@@ -408,7 +567,41 @@
 				"expressions": {
 					"type": "array",
 					"defaultValue": [],
-					"description": "A list of expression objects, containing the following key-value pairs: fieldName, expression (search string), condition , and logic (AND/OR)"
+					"description": "A list of expression objects, containing the following key-value pairs: fieldName, expression (search string), condition , and logic (AND/OR)",
+					"schema": {
+						"fieldName": {
+							"type": "string",
+							"defaultValue": null,
+							"description": "The name of the field to filter."
+						},
+						"expression": {
+							"type": "string",
+							"defaultValue": null,
+							"description": "The expression string used for filtering"
+						},
+						"condition": {
+							"type": "string",
+							"defaultValue": null,
+							"description": "The condition used for filtering"
+						},
+						"logic": {
+							"type": "string",
+							"defaultValue": null,
+							"description": "The logic used for filtering",
+							"valueOptions": [
+								{
+									"name": "AND",
+									"type": "string",
+									"description": "The logic used for filtering is AND"
+								},
+								{
+									"name": "OR",
+									"type": "string",
+									"description": "The logic used for filtering is OR"
+								}
+							]
+						}
+					}
 				},
 				"exprString": {
 					"type": "string",
@@ -509,7 +702,31 @@
 				"expressions": {
 					"type": "array",
 					"defaultValue": [],
-					"description": "A list of sorting expressions , consisting of the following keys (and their respective values): fieldName and direction."
+					"description": "A list of sorting expressions , consisting of the following keys (and their respective values): fieldName and direction.",
+					"schema": {
+						"fieldName": {
+							"type": "string",
+							"defaultValue": null,
+							"description": "The name of the field to filter."
+						},
+						"direction": {
+							"type": "string",
+							"defaultValue": null,
+							"description": "The direction of the sorting",
+							"valueOptions": [
+								{
+									"name": "ascending",
+									"type": "string",
+									"description": "Direction is ascending."
+								},
+								{
+									"name": "descending",
+									"type": "string",
+									"description": "Direction is descending."
+								}
+							]
+						}
+					}
 				},
 				"exprString": {
 					"type": "string",
