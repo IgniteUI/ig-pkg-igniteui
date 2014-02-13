@@ -392,6 +392,20 @@
                 ]
 			}
     	},
+		"verticalLayout": {
+    		"id": "verticalLayout",
+    		"toolboxTitle": "Vertical Layout",
+    		"icon": "layoutmanager.png",
+			"componentPlugin": "layout-component-plugin",
+    		"dragDropIcon": "vertical-layout-dragdrop.png",
+    		"category": "layout",
+    		"visual": true,
+    		"framework": false,
+			"defaultOptions": {  			
+                "layoutMode": "vertical",
+				"itemCount": 5
+			}
+    	},
     	"map": {
     		"id": "map",
             "dependsOn": ["core", "lob", "dv"],
