@@ -253,9 +253,9 @@ define (function (require, exports, module) {
 			var marker = options[descriptor.propName].marker;
 			propStr += ide._tabStr(codeMarker.baseIndent + 1);
 			if (descriptor.propType === "object") {
-				propStr += descriptor.propName + ": "  + this.getObjectCodeString(descriptor.propValue, codeMarker.baseIndent + 1);
+				propStr += descriptor.propName + ": "  + ide.getObjectCodeString(descriptor.propValue, codeMarker.baseIndent + 1);
 			} else if (descriptor.propType === "array") {
-				propStr += descriptor.propName + ": "  + this.getArrayCodeString(descriptor.propValue, codeMarker.baseIndent + 1);
+				propStr += descriptor.propName + ": "  + ide.getArrayCodeString(descriptor.propValue, codeMarker.baseIndent + 1);
 			} else {
 				propStr += descriptor.propName + ": "  + ide._propCodeDefaultVal(descriptor.propType, descriptor.propValue);
 			}
@@ -302,9 +302,9 @@ define (function (require, exports, module) {
 			var val;
 			//TODO: Ensure those are markerized as well -  hierarchical support
 			if (descriptor.propType === "object") {
-				val = this.getObjectCodeString(descriptor.propValue, codeMarker.baseIndent + 1);
+				val = ide.getObjectCodeString(descriptor.propValue, codeMarker.baseIndent + 1);
 			} else if (descriptor.propType === "array") {
-				val = this.getArrayCodeString(descriptor.propValue, codeMarker.baseIndent + 1);
+				val = ide.getArrayCodeString(descriptor.propValue, codeMarker.baseIndent + 1);
 			} else {
 				val = ide._propCodeDefaultVal(type, descriptor.defaultValue);
 			}
@@ -470,39 +470,6 @@ define (function (require, exports, module) {
 			} else if (descriptor.propName === "class") {
 				window.frames[0].$(descriptor.placeholder).removeClass(descriptor.oldPropValue).addClass(descriptor.propValue);
 			}
-		},
-		getObjectCodeString: function (obj, tabs) {
-			val = "{\n";
-			for (var prop in obj) {
-				if (obj.hasOwnProperty(prop)) {
-					var subType = typeof obj[prop];
-					if (subType === "string") {
-						val += new Array(tabs + 2).join("\t") + prop + ": \"" + obj[prop] + "\",\n"
-					} else if (subType === "boolean" || subType === "number") {
-						val += new Array(tabs + 2).join("\t") + prop + ": " + obj[prop] + ",\n"
-					} else if (subType === "object" && obj[prop].length) {
-						val += new Array(tabs + 2).join("\t") + prop + ": " + this.getArrayCodeString(obj[prop], tabs + 1) + ",\n";
-					} else if (subType === "object" && obj[prop]) {
-						val += new Array(tabs + 2).join("\t") + prop + ": " + this.getObjectCodeString(obj[prop], tabs + 1) + ",\n";
-					}
-				}
-			}
-			val = val.substring(0, val.length - 2);
-			val += "\n" + new Array(tabs + 1).join("\t") + "}";
-			return val;
-		},
-		getArrayCodeString: function (obj, tabs) {
-			val = "[\n" + new Array(tabs + 2).join("\t");
-			for (var i = 0; i < obj.length; i++) {
-				val += this.getObjectCodeString(obj[i], tabs + 1);
-				if (i < obj.length - 1) {
-					val += ",\n" + new Array(tabs + 2).join("\t");
-				} else {
-					val += "\n";
-				}
-			}
-			val += new Array(tabs + 1).join("\t") + "]";
-			return val;
 		},
 		addExtraMarkers: function (descriptor) {
 			// add markers for all the default options
