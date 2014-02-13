@@ -339,7 +339,7 @@
     		"framework": false,
 			"defaultOptions": {  			
 			    "layoutMode": "flow",
-                "itemCount": 10
+                "itemCount": 15
 			}
     	},
 		"borderLayout": {

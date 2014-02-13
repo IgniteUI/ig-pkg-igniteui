@@ -12,7 +12,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 		// retrieves the initial markup for the current component
 		getMarkup: function (descriptor) {
 			if (descriptor.type === "flowLayout") {
-				return "<div style=\"border: 1px solid #eee; height: 310px; width: 650px;\">\n\t\t<ul id=\"" + descriptor.id + "\"></ul>\n\t</div>";
+				return "<div style=\"border: 1px solid #eee; \">\n\t\t<ul id=\"" + descriptor.id + "\"></ul>\n\t</div>";
 			} else if (descriptor.type === "borderLayout") {
 				return "<div style=\"height: 300px; width: 600px;\" id=\"" + descriptor.id + "\"><div class=\"left\">" +
 			"<h3>LEFT AREA</h3><p>First paragraph</p><p>Second paragraph</p><p>Third paragraph</p><p>Fourth paragraph</p></div><div class=\"right\">" +
@@ -38,9 +38,9 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 				}
 			}
 			if (descriptor.type === "flowLayout") {
-				return {codeString: "\t" + extraIndentStr + "<div style=\"border: 1px solid #eee; height: 160px; width: 700px;\">\n\t\t\t<ul id=\"" + descriptor.id + "\"></ul>\n\t\t</div>\n", lineCount: 3};
+				return {codeString: "\t" + extraIndentStr + "<div style=\"border: 1px solid #eee; \">\n\t\t\t<ul id=\"" + descriptor.id + "\"></ul>\n\t\t</div>\n", lineCount: 3};
 			} else if (descriptor.type === "borderLayout") {
-				return {codeString: "\t" + extraIndentStr + "<div style=\"height: 300px; width: 650px;\" id=\"" + descriptor.id + "\">\n\t\t\t<div class=\"left\">" +
+				return {codeString: "\t" + extraIndentStr + "<div id=\"" + descriptor.id + "\">\n\t\t\t<div class=\"left\">" +
 			"\n\t\t\t\t<h3>LEFT AREA</h3>\n\t\t\t\t<p>First paragraph</p>\n\t\t\t\t<p>Second paragraph</p>\n\t\t\t\t<p>Third paragraph</p>\n\t\t\t\t<p>Fourth paragraph</p>\n\t\t\t</div>\n\t\t\t<div class=\"right\">" +
 			"\n\t\t\t\t<h3>RIGHT AREA</h3>" +
 			"\n\t\t\t\t<p>Aliquam ut tellus tristique massa gravida accumsan. Vivamus sodales, purus eget vehicula aliquam, arcu ipsum hendrerit mauris, ac faucibus massa turpis eget nibh. Etiam blandit sodales semper. Curabitur enim nunc, molestie ac aliquam eu, imperdiet tincidunt orci. Proin pulvinar vehicula lacus, ut lacinia tortor molestie vitae. Nunc ut augue id erat feugiat feugiat non sit amet erat. Suspendisse ultrices risus dapibus erat laoreet accumsan. Phasellus rutrum, lectus quis tempus blandit, libero lectus dignissim ligula, in semper orci nibh ut diam.</p>\n\t\t\t</div>" +
@@ -59,8 +59,18 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			var snippet = this._super(descriptor);
 			if (descriptor.type === "gridLayout") {
 				var handler = "\t\t\t\t$(\"#" + descriptor.id +"\").on(\"iglayoutmanageritemrendered\", function (event, args) {\n\t\t\t\t\t args.item.append(\"<ul><li>colspan: \" + args.itemData.colSpan + \"</li><li>rowspan: \" + args.itemData.rowSpan + \"</li></ul></span>\");\n\t\t\t\t});\n";
-				snippet.codeString = handler + snippet.codeString; 
+				snippet.codeString = snippet.codeString + handler; 
 				snippet.lineCount += 3;
+			} else if (descriptor.type === "flowLayout") {
+				var handler = "\t\t\t\t$(\"#" + descriptor.id +"\").on(\"iglayoutmanageritemrendered\", function (event, args) {" +
+					"\n\t\t\t\t\t args.item.text(args.index + 1);" +
+					"\n\t\t\t\t\t args.item.css(\"background-color\", \"#2CBDF9\");" +
+					"\n\t\t\t\t\t args.item.css(\"color\", \"#FFF\");" +
+					"\n\t\t\t\t\t args.item.css(\"font-size\", \"20px\");" +
+					"\n\t\t\t\t\t args.item.css(\"padding\", \"5px 0 0 5px\");" +
+					"\n\t\t\t\t});\n";
+				snippet.codeString = snippet.codeString + handler; 
+				snippet.lineCount += 8;
 			}
 			return snippet;
 		},
@@ -70,8 +80,17 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 				window.frames[0].$(descriptor.placeholder).on("iglayoutmanageritemrendered", function (e, args) {
 					args.item.append("<ul><li>colspan: " + args.itemData.colSpan + "</li><li>rowspan: " + args.itemData.rowSpan + "</li></ul></span>");
 				});
-			}
-			if (descriptor.type !== "columnLayout" && window.frames[0].$(descriptor.placeholder)[name]) {
+				window.frames[0].$(descriptor.placeholder)[name](descriptor.options);
+			} else if (descriptor.type === "flowLayout") {
+				window.frames[0].$(descriptor.placeholder).on("iglayoutmanageritemrendered", function (e, args) {
+					args.item.text(args.index + 1);
+					args.item.css("background-color", "#2CBDF9");
+					args.item.css("color", "#FFF");
+					args.item.css("font-size", "20px");
+					args.item.css("padding", "5px 0 0 5px");
+				});
+				window.frames[0].$(descriptor.placeholder)[name](descriptor.options);
+			} else if (descriptor.type !== "columnLayout" && window.frames[0].$(descriptor.placeholder)[name]) {
 				window.frames[0].$(descriptor.placeholder)[name](descriptor.options);
 			}
 
