@@ -350,15 +350,10 @@
     		"dragDropIcon": "layoutmanager-dragdrop.png",
     		"category": "layout",
     		"visual": true,
-			"width" : 650,
-			"height" : 300,
+			"height" : 350,
     		"framework": false,
 			"defaultOptions": {  			
-                "layoutMode": "border",
-                "borderLayout": {
-                    "leftWidth": "10%",
-                    "rightWidth": "20%"
-                }
+                "layoutMode": "border"
 			}
     	},
 		"columnLayout": {
