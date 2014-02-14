@@ -58,7 +58,21 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 		getCodeEditorScriptSnippet: function (descriptor) {
 			var snippet = this._super(descriptor);
 			if (descriptor.type === "gridLayout") {
-				var handler = "\t\t\t\t$(\"#" + descriptor.id +"\").on(\"iglayoutmanageritemrendered\", function (event, args) {\n\t\t\t\t\t args.item.append(\"<ul><li>colspan: \" + args.itemData.colSpan + \"</li><li>rowspan: \" + args.itemData.rowSpan + \"</li></ul></span>\");\n\t\t\t\t});\n";
+				var handler = "\t\t\t\t$(\"#" + descriptor.id +"\").on(\"iglayoutmanageritemrendered\", function (event, args) {\n\t\t\t\t\t args.item.append(\"<ul><li>colspan: \" + args.itemData.colSpan + \"</li><li>rowspan: \" + args.itemData.rowSpan + \"</li></ul></span>\");"+
+				"\n\t\t\t\t\t if (args.itemData.colSpan == 2 && args.itemData.rowSpan == 2) {" +
+                        "\n\t\t\t\t\t\t args.item.css(\"background-color\", \"#eee\");" + 
+                        "\n\t\t\t\t\t\t args.item.css(\"color\", \"#555\");" +
+                    "\n\t\t\t\t\t } else if (args.itemData.rowSpan == 1 && args.itemData.colSpan == 1) {" +
+                        "\n\t\t\t\t\t\t if (args.itemData.rowIndex == 0) {" +
+                            "\n\t\t\t\t\t\t\t args.item.css(\"background-color\, \"#2CBDF9\");" +
+                            "\n\t\t\t\t\t\t\t args.item.css(\"color\", \"#FFF\");" +
+                        "\n\t\t\t\t\t\t } else {" +
+                            "\n\t\t\t\t\t\t\t args.item.css(\"background-color\", \"#FFA72D\");" +
+                            "\n\t\t\t\t\t\t\t args.item.css(\"color\", \"#FFF\");" +
+                        "\n\t\t\t\t\t\t } \n\t\t\t\t\t } else {" +
+                        "\n\t\t\t\t\t\t args.item.css(\"background-color\", \"#2CBDF9\");" +
+                        "\n\t\t\t\t\t\t args.item.css(\"color\", \"#FFF\");" +
+                    "\n\t\t\t\t\t } \n\t\t\t\t});\n";
 				snippet.codeString = snippet.codeString + handler; 
 				snippet.lineCount += 3;
 			} else if (descriptor.type === "flowLayout") {
@@ -79,6 +93,21 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			if (descriptor.type === "gridLayout" && window.frames[0].$(descriptor.placeholder)[name]) {
 				window.frames[0].$(descriptor.placeholder).on("iglayoutmanageritemrendered", function (e, args) {
 					args.item.append("<ul><li>colspan: " + args.itemData.colSpan + "</li><li>rowspan: " + args.itemData.rowSpan + "</li></ul></span>");
+					if (args.itemData.colSpan == 2 && args.itemData.rowSpan == 2) {
+                        args.item.css("background-color", "#eee");
+                        args.item.css("color", "#555");
+                    } else if (args.itemData.rowSpan == 1 && args.itemData.colSpan == 1) {
+                        if (args.itemData.rowIndex == 0) {
+                            args.item.css("background-color", "#2CBDF9");
+                            args.item.css("color", "#FFF");
+                        } else {
+                            args.item.css("background-color", "#FFA72D");
+                            args.item.css("color", "#FFF");
+                        }
+                    } else {
+                        args.item.css("background-color", "#2CBDF9");
+                        args.item.css("color", "#FFF");
+                    }
 				});
 				window.frames[0].$(descriptor.placeholder)[name](descriptor.options);
 			} else if (descriptor.type === "flowLayout" && window.frames[0].$(descriptor.placeholder)[name]) {
