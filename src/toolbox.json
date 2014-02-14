@@ -520,13 +520,7 @@
 			"componentPlugin": "tilemanager-component-plugin", 
     		"category": "layout",
     		"visual": true,
-    		"framework": false,
-			"defaultOptions": {
-				"columnWidth": 250,
-                "columnHeight": 250,
-                "marginLeft": 10,
-                "marginTop": 10
-			}
+    		"framework": false
     	},
     	"tree": {
     		"id": "tree",
