@@ -74,8 +74,8 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
                         "\n\t\t\t\t\t\t args.item.css(\"color\", \"#FFF\");" +
                     "\n\t\t\t\t\t } \n\t\t\t\t});\n";
 				snippet.codeString = snippet.codeString + handler; 
-				snippet.lineCount += 3;
-			} else if (descriptor.type === "flowLayout") {
+				snippet.lineCount += 19;
+			} else if (descriptor.type === "flowLayout" || descriptor.type === "verticalLayout") {
 				var handler = "\t\t\t\t$(\"#" + descriptor.id +"\").on(\"iglayoutmanageritemrendered\", function (event, args) {" +
 					"\n\t\t\t\t\t args.item.text(args.index + 1);" +
 					"\n\t\t\t\t\t args.item.css(\"background-color\", \"#2CBDF9\");" +
@@ -110,7 +110,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
                     }
 				});
 				window.frames[0].$(descriptor.placeholder)[name](descriptor.options);
-			} else if (descriptor.type === "flowLayout" && window.frames[0].$(descriptor.placeholder)[name]) {
+			} else if ((descriptor.type === "flowLayout" || descriptor.type === "verticalLayout") && window.frames[0].$(descriptor.placeholder)[name]) {
 				window.frames[0].$(descriptor.placeholder).on("iglayoutmanageritemrendered", function (e, args) {
 					args.item.text(args.index + 1);
 					args.item.css("background-color", "#2CBDF9");
@@ -119,7 +119,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 					args.item.css("padding", "5px 0 0 5px");
 				});
 				window.frames[0].$(descriptor.placeholder)[name](descriptor.options);
-			} else if (descriptor.type !== "columnLayout" && window.frames[0].$(descriptor.placeholder)[name]) {
+			}  else if (descriptor.type !== "columnLayout" && window.frames[0].$(descriptor.placeholder)[name]) {
 				window.frames[0].$(descriptor.placeholder)[name](descriptor.options);
 			}
 		}
