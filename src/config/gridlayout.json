@@ -86,43 +86,6 @@
     }
   },
   "properties": {
-    "borderLayout": {
-      "type": "object",
-      "defaultValue": null,
-      "description": "options specific to a border layout",
-      "schema": {
-        "leftWidth": {
-          "type": "string",
-          "defaultValue": null,
-          "description": "width of the left area"
-        },
-        "rightWidth": {
-          "type": "string",
-          "defaultValue": null,
-          "description": "width of the right area"
-        },
-        "showHeader": {
-          "type": "bool",
-          "defaultValue": true,
-          "description": "specifies header visibility"
-        },
-        "showFooter": {
-          "type": "bool",
-          "defaultValue": true,
-          "description": "specifies footer visibility"
-        },
-        "showLeft": {
-          "type": "bool",
-          "defaultValue": true,
-          "description": "specifies left area visibility"
-        },
-        "showRight": {
-          "type": "bool",
-          "defaultValue": true,
-          "description": "specifies right area visibility"
-        }
-      }
-    },
     "gridLayout": {
       "type": "object",
       "defaultValue": null,
@@ -177,11 +140,6 @@
       "defaultValue": null,
       "description": "height of the layout container"
     },
-    "itemCount": {
-      "type": "number",
-      "defaultValue": null,
-      "description": "number of items to render, this is only applicable to layouts: vertical and flow"
-    },
     "items": {
       "type": "array",
       "defaultValue": null,
@@ -223,35 +181,8 @@
     },
     "layoutMode": {
       "type": "string",
-      "defaultValue": "column",
-      "description": " defines the layout type",
-      "valueOptions": [
-        {
-          "name": "grid",
-          "type": "string",
-          "description": "Defines grid layout"
-        },
-        {
-          "name": "border",
-          "type": "string",
-          "description": "Defines border layout"
-        },
-        {
-          "name": "flow",
-          "type": "string",
-          "description": "Defines flow layout"
-        },
-        {
-          "name": "column",
-          "type": "string",
-          "description": "Defines column layout. CSS only is used instead of initializing the igLayoutManager widget."
-        },
-        {
-          "name": "vertical",
-          "type": "string",
-          "description": "Defines vertical layout. CSS only is used instead of initializing the igLayoutManager widget"
-        }
-      ]
+      "defaultValue": "grid",
+      "description": " defines the layout type"
     },
     "width": {
       "type": "string",

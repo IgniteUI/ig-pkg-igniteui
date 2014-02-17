@@ -86,101 +86,10 @@
     }
   },
   "properties": {
-    "borderLayout": {
-      "type": "object",
-      "defaultValue": null,
-      "description": "options specific to a border layout",
-      "schema": {
-        "leftWidth": {
-          "type": "string",
-          "defaultValue": null,
-          "description": "width of the left area"
-        },
-        "rightWidth": {
-          "type": "string",
-          "defaultValue": null,
-          "description": "width of the right area"
-        },
-        "showHeader": {
-          "type": "bool",
-          "defaultValue": true,
-          "description": "specifies header visibility"
-        },
-        "showFooter": {
-          "type": "bool",
-          "defaultValue": true,
-          "description": "specifies footer visibility"
-        },
-        "showLeft": {
-          "type": "bool",
-          "defaultValue": true,
-          "description": "specifies left area visibility"
-        },
-        "showRight": {
-          "type": "bool",
-          "defaultValue": true,
-          "description": "specifies right area visibility"
-        }
-      }
-    },
-    "gridLayout": {
-      "type": "object",
-      "defaultValue": null,
-      "description": "options specific to grid layout mode",
-      "schema": {
-        "cols": {
-          "type": "number",
-          "defaultValue": 3,
-          "description": "number of columns in the grid layout",
-          "required": true
-        },
-        "rows": {
-          "type": "number",
-          "defaultValue": 3,
-          "description": "number of rows in the grid layout",
-          "required": true
-        },
-        "columnWidth": {
-          "type": "number",
-          "defaultValue": 300,
-          "description": "width for a single item"
-        },
-        "columnHeight": {
-          "type": "number",
-          "defaultValue": 200,
-          "description": "height for a single item"
-        },
-        "animationDuration": {
-          "type": "number",
-          "defaultValue": 500,
-          "description": ""
-        },
-        "marginLeft": {
-          "type": "number",
-          "defaultValue": 10,
-          "description": ""
-        },
-        "marginTop": {
-          "type": "number",
-          "defaultValue": 10,
-          "description": ""
-        },
-        "rearrangeItems": {
-          "type": "bool",
-          "defaultValue": true,
-          "description": "rearrange items automatically on layout change"
-        }
-      }
-    },
     "height": {
       "type": "string",
       "defaultValue": null,
       "description": "height of the layout container"
-    },
-    "itemCount": {
-      "type": "number",
-      "defaultValue": null,
-      "description": "number of items to render, this is only applicable to layouts: vertical and flow"
     },
     "items": {
       "type": "array",
@@ -224,34 +133,7 @@
     "layoutMode": {
       "type": "string",
       "defaultValue": "column",
-      "description": " defines the layout type",
-      "valueOptions": [
-        {
-          "name": "grid",
-          "type": "string",
-          "description": "Defines grid layout"
-        },
-        {
-          "name": "border",
-          "type": "string",
-          "description": "Defines border layout"
-        },
-        {
-          "name": "flow",
-          "type": "string",
-          "description": "Defines flow layout"
-        },
-        {
-          "name": "column",
-          "type": "string",
-          "description": "Defines column layout. CSS only is used instead of initializing the igLayoutManager widget."
-        },
-        {
-          "name": "vertical",
-          "type": "string",
-          "description": "Defines vertical layout. CSS only is used instead of initializing the igLayoutManager widget"
-        }
-      ]
+      "description": "Defines column layout. CSS only is used instead of initializing the igLayoutManager widget."
     },
     "width": {
       "type": "string",
