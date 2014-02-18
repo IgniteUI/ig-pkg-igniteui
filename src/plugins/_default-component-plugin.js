@@ -359,13 +359,7 @@ define (function (require, exports, module) {
 			if (descriptor.args) {
 				// handle events
 				// try to find an existing marker, for the event, if one doesn't exist, create it
-				var component = null;
-				for (var i = 0; i < ide.componentIds.length; i++) {
-					if (ide.componentIds[i].id === descriptor.id) {
-						component = ide.componentIds[i];
-						break;
-					}
-				}
+				var component = ide.componentById(descriptor.id);
 				if (component) {
 					if (!component.eventMarkers) {
 						component.eventMarkers = {};
