@@ -225,7 +225,9 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 				this.openCollectionEditor(descriptor);
 			} else if (p === "dataSource") {
 				this.openCollectionEditor(descriptor);
-			}			
+			} else {
+				this.openPropertyEditor(descriptor);
+			}
 		}
 	});
 	return IgniteUIGridPlugin;

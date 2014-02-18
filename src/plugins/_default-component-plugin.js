@@ -497,7 +497,9 @@ define (function (require, exports, module) {
 			// return true for splitter (splitterpanes - in the context of getDroppableChildren)
 			// also for dialog window, and tile manager tiles
 			//returns true for both  columns and rows
-			if (descriptor.type === "splitter" || descriptor.type === "dialog") {
+			if (descriptor.type === "splitter") {
+				return true;
+			} else if (descriptor.type === "dialog" && descriptor.element.hasClass('ui-igdialog-content')) {
 				return true;
 			}
 			return false;
