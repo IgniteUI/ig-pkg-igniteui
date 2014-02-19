@@ -234,6 +234,7 @@
     	"dialog": {
     		"id": "dialog",
     		"toolboxTitle": "Dialog Window",
+			"componentPlugin": "dialog-component-plugin", 
     		"icon": "dialogwindow.png",
     		"dragDropIcon": "dialogwindow-dragdrop.png",
     		"category": "layout",
