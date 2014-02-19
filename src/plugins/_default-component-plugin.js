@@ -520,11 +520,8 @@ define (function (require, exports, module) {
 			return [];
 		},
 		openCollectionEditor: function (descriptor) {
-			var wrapper = $('.adorner-wrapper');
 			collectionEditor(descriptor);
-			$('.adorner-column-container').insertAfter(wrapper.children().last());
-			wrapper.animate({left: '-=250'}, 250);
-			this.showBackButton();
+			descriptor.ide.adornerMoveLeft();
 		},
 		openPropertyEditor: function (descriptor) {
 			var propertyExplorer = require("ide-propertyexplorer"),
@@ -578,8 +575,7 @@ define (function (require, exports, module) {
 			}
 			// render and open a property explorer
 			propertyExplorer(descriptor);
-			$(".adorner-wrapper").animate({left: "-=250"}, 250);
-			this.showBackButton();
+			descriptor.ide.adornerMoveLeft();
 		},
 		_recreateWidget: function (element, widgetName, options) {
 			if (window.frames[0].$(element).data(widgetName)) {
