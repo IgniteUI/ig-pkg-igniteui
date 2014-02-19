@@ -358,7 +358,7 @@
     	},
 		"columnLayout": {
     		"id": "columnLayout",
-    		"toolboxTitle": "Column Layout",
+    		"toolboxTitle": "Row",
     		"icon": "layoutmanager.png",
 			"componentPlugin": "layout-component-plugin",
     		"dragDropIcon": "column-layout-dragdrop.png",

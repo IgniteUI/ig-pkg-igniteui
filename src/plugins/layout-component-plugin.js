@@ -1,5 +1,5 @@
 define (["./_default-component-plugin"], function (DefaultPlugin) {
-	var IgniteUIBorderLayoutPlugin = IgniteUIBorderLayoutPlugin || DefaultPlugin.extend({
+	var IgniteUILayoutPlugin = IgniteUILayoutPlugin || DefaultPlugin.extend({
 		init: function (options) {
 			this._super(options);
 		},
@@ -23,7 +23,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			"<div class=\"center\" style=\"background-color: #EEE;\">" +
 			"<h3>CENTER AREA</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget porta urna. Ut gravida mi at ligula commodo feugiat vehicula lacus tincidunt. Proin lobortis magna sed lacus malesuada commodo fermentum felis auctor. Sed quis nulla quis tellus facilisis malesuada. Mauris aliquam neque consequat mi blandit in luctus magna rutrum. Fusce sit amet ipsum magna. Vivamus porttitor arcu vitae eros molestie et sagittis dolor cursus. Quisque ultrices feugiat risus, vitae molestie felis interdum ac. Suspendisse pellentesque magna nec est commodo porttitor. </p><p>Nunc lacinia ligula a nisl porta sed facilisis mauris facilisis. Sed a ante turpis, eget semper odio. Curabitur facilisis faucibus iaculis. Ut fermentum pretium ultrices. Etiam sem dui, adipiscing sed tempus et, adipiscing eget erat. Vestibulum nec eros magna.</p><p>Praesent tristique arcu eget ligula pulvinar mollis. Maecenas at elit at justo posuere gravida id eu enim. Duis imperdiet lectus nec augue sollicitudin hendrerit. Suspendisse consectetur, lorem nec eleifend rutrum, eros metus sodales libero, et rutrum diam augue et lectus. Integer sed est vitae risus dignissim condimentum ullamcorper at massa. Donec a orci nisl, eget ullamcorper augue. Quisque sagittis fringilla tortor. Vivamus ligula velit, aliquam ut pellentesque quis, fringilla sit amet tortor.</p></div></div>";
 			} else if (descriptor.type === "columnLayout") {
-				return "<div id=\"layout\" class=\"ig-layout-col\"><div class=\"row\"><div class=\"col3\"><h3>Heading</h3><p>Contents</p></div><div class=\"col3\"><h3>Heading</h3><p>Contents</p></div><div class=\"col3\"><h3>Heading</h3><p>Contents</p></div></div></div>";
+				return "<div id=\"layout\" class=\"ig-layout-col\"><div class=\"row\" data-droppablechild=\"false\" data-hasdroppables=\"true\"><div data-droppablechild=\"true\" class=\"col3\"><h3>Heading</h3><p>Contents</p></div><div class=\"col3\" data-droppablechild=\"true\"><h3 data-droppablechild=\"true\">Heading</h3><p>Contents</p></div><div data-droppablechild=\"true\" class=\"col3\"><h3>Heading</h3><p>Contents</p></div></div></div>";
 			} else {
 				return "<div id=\"" + descriptor.id + "\"></div>";
 			}
@@ -49,7 +49,28 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			"\n\t\t\t<div class=\"center\" style=\"background-color: #EEE;\">" +
 			"\n\t\t\t\t<h3>CENTER AREA</h3>\n\t\t\t\t<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget porta urna. Ut gravida mi at ligula commodo feugiat vehicula lacus tincidunt. Proin lobortis magna sed lacus malesuada commodo fermentum felis auctor. Sed quis nulla quis tellus facilisis malesuada. Mauris aliquam neque consequat mi blandit in luctus magna rutrum. Fusce sit amet ipsum magna. Vivamus porttitor arcu vitae eros molestie et sagittis dolor cursus. Quisque ultrices feugiat risus, vitae molestie felis interdum ac. Suspendisse pellentesque magna nec est commodo porttitor. </p>\n\t\t\t\t<p>Nunc lacinia ligula a nisl porta sed facilisis mauris facilisis. Sed a ante turpis, eget semper odio. Curabitur facilisis faucibus iaculis. Ut fermentum pretium ultrices. Etiam sem dui, adipiscing sed tempus et, adipiscing eget erat. Vestibulum nec eros magna.</p>\n\t\t\t\t<p>Praesent tristique arcu eget ligula pulvinar mollis. Maecenas at elit at justo posuere gravida id eu enim. Duis imperdiet lectus nec augue sollicitudin hendrerit. Suspendisse consectetur, lorem nec eleifend rutrum, eros metus sodales libero, et rutrum diam augue et lectus. Integer sed est vitae risus dignissim condimentum ullamcorper at massa. Donec a orci nisl, eget ullamcorper augue. Quisque sagittis fringilla tortor. Vivamus ligula velit, aliquam ut pellentesque quis, fringilla sit amet tortor.</p>\n\t\t\t</div>\n\t\t</div>\n", lineCount: 21};
 			} else if (descriptor.type === "columnLayout") {
-				return {codeString: "\t" + extraIndentStr + "<div id=\"layout\" class=\"ig-layout-col\">\n\t\t\t<div class=\"row\">\n\t\t\t\t<div class=\"col3\">\n\t\t\t\t\t<h3>Heading</h3>\n\t\t\t\t\t<p>Contents</p>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"col3\">\n\t\t\t\t\t<h3>Heading</h3>\n\t\t\t\t\t<p>Contents</p>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"col3\">\n\t\t\t\t\t<h3>Heading</h3>\n\t\t\t\t\t<p>Contents</p>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n", lineCount: 1};
+				return {codeString: "\t" + extraIndentStr + "<div id=\"layout\" class=\"ig-layout-col\">\n\t\t\t<div class=\"row\">\n\t\t\t\t<div class=\"col3\">\n\t\t\t\t\t<h3>Heading</h3>\n\t\t\t\t\t<p>Contents</p>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"col3\">\n\t\t\t\t\t<h3>Heading</h3>\n\t\t\t\t\t<p>Contents</p>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"col3\">\n\t\t\t\t\t<h3>Heading</h3>\n\t\t\t\t\t<p>Contents</p>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n", lineCount: 20,
+				extraMarkers: [
+				{
+				  rowOffset: 2,
+				  colOffset: 0,
+				  rowCount: 4,
+				  colCount: 0
+				},
+				{
+				  rowOffset: 6,
+				  colOffset: 0,
+				  rowCount: 4, 
+				  colCount: 0
+				},
+				{
+				  rowOffset: 10,
+				  colOffset: 0,
+				  rowCount: 4,
+				  colCount: 0
+				}
+			  ]
+		  };
 			} else {
 				return {codeString: "\t" + extraIndentStr + "<div id=\"" + descriptor.id + "\"></div>\n", lineCount: 1};
 			}			
@@ -85,7 +106,9 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 					"\n\t\t\t\t});\n";
 				snippet.codeString = snippet.codeString + handler; 
 				snippet.lineCount += 8;
-			} 
+			} else if (descriptor.type === "columnLayout") {
+				return null;
+			}
 			return snippet;
 		},
 		initComponent: function (descriptor) {
@@ -122,7 +145,32 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			}  else if (descriptor.type !== "columnLayout" && window.frames[0].$(descriptor.placeholder)[name]) {
 				window.frames[0].$(descriptor.placeholder)[name](descriptor.options);
 			}
+		},
+		getDroppableChildren: function (descriptor) {
+		  if (typeof (descriptor) === "undefined" || descriptor === null) {
+			return $();
+		  } else if (descriptor.nodeName) {
+			return $(descriptor).find("div[data-droppablechild]");
+		  }
+		  return $();
+		},
+		hasDroppableChildren: function (descriptor) {
+		  if (typeof (descriptor) === "undefined" || descriptor === null) {
+			return false;
+		  }
+		  if (descriptor.nodeName && $(descriptor).attr("data-hasdroppables") === "true") {
+			return true;
+		  }
+		},
+		isDroppableChild: function (descriptor) {
+			if (typeof (descriptor) === "undefined" || descriptor === null) {
+				return false;
+			}
+			if (descriptor.type === "splitterPane" || descriptor.type === "tileManagerTile" || descriptor.type === "dialogWindowContent") {
+				return true;
+			}
+			return false;
 		}
 	});
-	return IgniteUIBorderLayoutPlugin;
+	return IgniteUILayoutPlugin;
 });
