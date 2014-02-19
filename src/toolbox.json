@@ -234,6 +234,7 @@
     	"dialog": {
     		"id": "dialog",
     		"toolboxTitle": "Dialog Window",
+			"componentPlugin": "dialog-component-plugin", 
     		"icon": "dialogwindow.png",
     		"dragDropIcon": "dialogwindow-dragdrop.png",
     		"category": "layout",
@@ -358,7 +359,7 @@
     	},
 		"columnLayout": {
     		"id": "columnLayout",
-    		"toolboxTitle": "Column Layout",
+    		"toolboxTitle": "Row",
     		"icon": "layoutmanager.png",
 			"componentPlugin": "layout-component-plugin",
     		"dragDropIcon": "column-layout-dragdrop.png",

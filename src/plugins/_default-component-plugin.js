@@ -491,7 +491,8 @@ define (function (require, exports, module) {
 			// return true for splitter (splitterpanes - in the context of getDroppableChildren)
 			// also for dialog window, and tile manager tiles
 			//returns true for both  columns and rows
-			if (descriptor.type === "splitter") {
+
+			if (descriptor.type === "splitter" || descriptor.type === "columnLayout") {
 				return true;
 			} else if (descriptor.type === "dialog" && descriptor.element.hasClass('ui-igdialog-content')) {
 				return true;
@@ -502,10 +503,11 @@ define (function (require, exports, module) {
 			if (typeof (descriptor) === "undefined" || descriptor === null) {
 				return false;
 			}
-			if (descriptor.type === "splitterPane" || descriptor.type === "tileManagerTile" || descriptor.type === "dialogWindowContent") {
+			if (descriptor.nodeName && $(descriptor).attr("data-droppablechild") === "true") {
 				return true;
+			} else {
+				return false;      
 			}
-			return false;
 		},
 		hasDroppableChildren: function () {
 			return false;
