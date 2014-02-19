@@ -359,13 +359,7 @@ define (function (require, exports, module) {
 			if (descriptor.args) {
 				// handle events
 				// try to find an existing marker, for the event, if one doesn't exist, create it
-				var component = null;
-				for (var i = 0; i < ide.componentIds.length; i++) {
-					if (ide.componentIds[i].id === descriptor.id) {
-						component = ide.componentIds[i];
-						break;
-					}
-				}
+				var component = ide.componentById(descriptor.id);
 				if (component) {
 					if (!component.eventMarkers) {
 						component.eventMarkers = {};
@@ -497,7 +491,10 @@ define (function (require, exports, module) {
 			// return true for splitter (splitterpanes - in the context of getDroppableChildren)
 			// also for dialog window, and tile manager tiles
 			//returns true for both  columns and rows
-			if (descriptor.type === "splitter" || descriptor.type === "dialog" || descriptor.type === "columnLayout") {
+
+			if (descriptor.type === "splitter" || descriptor.type === "columnLayout") {
+				return true;
+			} else if (descriptor.type === "dialog" && descriptor.element.hasClass('ui-igdialog-content')) {
 				return true;
 			}
 			return false;
@@ -519,11 +516,8 @@ define (function (require, exports, module) {
 			return [];
 		},
 		openCollectionEditor: function (descriptor) {
-			var wrapper = $('.adorner-wrapper');
 			collectionEditor(descriptor);
-			$('.adorner-column-container').insertAfter(wrapper.children().last());
-			wrapper.animate({left: '-=250'}, 250);
-			this.showBackButton();
+			descriptor.ide.adornerMoveLeft();
 		},
 		openPropertyEditor: function (descriptor) {
 			var propertyExplorer = require("ide-propertyexplorer"),
@@ -577,8 +571,7 @@ define (function (require, exports, module) {
 			}
 			// render and open a property explorer
 			propertyExplorer(descriptor);
-			$(".adorner-wrapper").animate({left: "-=250"}, 250);
-			this.showBackButton();
+			descriptor.ide.adornerMoveLeft();
 		},
 		_recreateWidget: function (element, widgetName, options) {
 			if (window.frames[0].$(element).data(widgetName)) {
