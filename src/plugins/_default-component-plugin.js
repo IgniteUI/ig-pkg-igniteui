@@ -527,7 +527,7 @@ define (function (require, exports, module) {
 				count = 0,
 				schemaRef,
 				schema,
-				prop,
+				prop = descriptor.provider.getPropValue(descriptor),
 				type = this._getWidgetName(descriptor.type),
 				id = "propEditor",
 				containerId = "property",
@@ -542,11 +542,6 @@ define (function (require, exports, module) {
 			descriptor.containerId = containerId;
 			descriptor.parent = editor;
 			descriptor.data = [];
-			if (descriptor.iframe && descriptor.iframe.jQuery) {
-				prop = descriptor.iframe.jQuery($("#designer-frame").contents().find("#" + descriptor.element.attr("id"))).data(type).options[descriptor.propName];
-			} else {
-				prop = descriptor.element.data(type).options[descriptor.propName];
-			}
 			for (property in descriptor.schema) {
 				if (descriptor.schema.hasOwnProperty(property)) {
 					if (descriptor.schema[property].schemaRef) {
@@ -560,7 +555,7 @@ define (function (require, exports, module) {
 						id: count++,
 						propName: property,
 						defaultValue: descriptor.schema[property].defaultValue,
-						propValue: prop.hasOwnProperty(property) ? prop[property] : descriptor.schema[property].defaultValue,
+						propValue: prop && prop.hasOwnProperty(property) ? prop[property] : descriptor.schema[property].defaultValue,
 						propType: descriptor.schema[property].type,
 						description: descriptor.schema[property].description,
 						valueOptions: descriptor.schema[property].valueOptions,
