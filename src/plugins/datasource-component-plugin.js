@@ -10,7 +10,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			return null; // this is a non-visual component so it doesn't have any markup
 		},
 		getCodeEditorScriptSnippet: function (descriptor) {
-			var code = "\t\t\t\tvar " + descriptor.id + " = new $.ig.DataSource({\n";
+			var code = "\t\t\t\twindow." + descriptor.id + " = new $.ig.DataSource({\n";
 			var orderedReturnProps = [];
 			// now write options / settings
 			code += "\n\t\t\t\t});\n";
@@ -32,15 +32,16 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			return true;
 		},
 		initComponent: function (descriptor) {
-			//N/A
+			window.frames[0][descriptor.id] = new $.ig.DataSource({});
 		},
 		getPropValue: function (descriptor) {
 			// locate the dataSource control. Note that since this is not a widget, it's also not associated with any DOM elements
 			// since it's not a visual control, and can be instantiated anywhere (including anonymous functions), there is no easy 
 			// way to get hold of the reference to that data source, unless its variable name is stored in the global (window) context.
-			var data = null;
-			if (data) {
-
+			var obj = descriptor.iframe[descriptor.placeholder.attr("id")];
+			if (obj && obj instanceof $.ig.DataSource) {
+				// get value from data source settings
+				return obj.settings[descriptor.propName];
 			}
 			return descriptor.defaultValue;
 		},
@@ -50,10 +51,28 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			var opts = component.options ? component.options : {};
 			var newOpts = $.extend({}, opts);
 			newOpts[descriptor.propName] = descriptor.propValue;
-			// what should happen when a new dataSource option is set - rebind the data source? 
 			var codeMarker = component.codeMarker;
 			var meta = codeMarker.extraMarkers;
 			var options = meta.options;
+			// set it in the ds
+			var obj = window.frames[0][descriptor.id];
+			if (obj && obj instanceof $.ig.DataSource) {
+				// what should happen when a new dataSource option is set - rebind the data source? 
+				obj.settings[descriptor.propName] = descriptor.propValue;
+				var rebind = function () {
+					//console.log("rebinding data source");
+					obj.dataBind();
+				}
+				if (descriptor.delayBind) {
+					// check if we have a wait in progress or not
+					if (this.rebindTimeoutID) {
+						clearTimeout(this.rebindTimeoutID);
+					}
+					this.rebindTimeoutID = setTimeout(rebind, descriptor.delayBind);
+				} else {
+					rebind();
+				}
+			}
 			if (!options[descriptor.propName]) {
 				this.addPropCode({
 					component: component,
@@ -80,7 +99,18 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			}
 		},
 		render: function (container, descriptor) {
-			container.remove(".ds-diag-container");
+			var ds = window.frames[0][descriptor.id];
+			var that = this;
+			if (!(ds instanceof $.ig.DataSource)) {
+				throw new Error("Object with ID " + descriptor.id + " is not an instance of IG Data Source");
+			}
+			descriptor.delayBind = 1000; // 1000 ms before the data source rebinds after a property has been changed
+
+			var dsval = ds.settings.dataSource;
+			if (dsval === null) {
+				dsval = "";
+			}
+			container.children(".ds-diag-container").remove();
 			var dscontainer = $("<div></div>").prependTo(container).addClass("ds-diag-container");
 			var remoteContainer = $("<div></div>").appendTo(dscontainer).addClass("ds-diag-remotecontainer");
 			var localRemoteArea = $("<div></div>").addClass("ds-diag-dt").prependTo(dscontainer);
@@ -96,8 +126,10 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 
 			var localContainer = $("<div></div>").addClass("ds-diag-localcontainer").css("display", "none").appendTo(dscontainer);
 			// for local
-			$("<label>Type variable name containing data:</label>").appendTo(localContainer);
+			$("<input type=\"radio\" name=\"localdstype\" checked value=\"variable\"/><label>Type var name containing data:</label>").appendTo(localContainer);
 			$("<input type=\"text\" class=\"form-control\"/>").appendTo(localContainer);
+			$("<input type=\"radio\" name=\"localdstype\" value=\"inline\"/><label>Or use inline data:</label>").appendTo(localContainer);
+			$("<span class=\"btn btn-default ds-diag-editdatainline\">Edit Data</span>").appendTo(localContainer);
 			dscontainer.find(".ds-diag-editschema").clone().appendTo(localContainer);
 
 			localRemoteArea.children("input[name=dstype]").on("change", function (event) {
@@ -110,6 +142,51 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 					localContainer.css("display", "none");
 					remoteContainer.css("display", "block");
 				}
+			});
+			remoteContainer.find(".ds-diag-url > input").val(dsval).keyup(function (event) {
+				// update the dataSource's url property
+				//ds.settings.dataSource = event.target.value; // validate?
+				//also update the code view
+				descriptor.propName = "dataSource";
+				descriptor.oldPropValue = event.target.value.substring(0, event.target.value.length - 1);
+				descriptor.propType = "string";
+				descriptor.propValue = event.target.value;
+				that.update(descriptor);
+			});
+			remoteContainer.find(".ds-diag-url > .btn").click(function (event) {
+				// test datasource by doing a query to it
+				var url = ds.settings.dataSource, testLabel = remoteContainer.find(".test-label");
+				if (testLabel.length === 0) {
+					testLabel = $("<div class=\"test-label\"></div>").insertAfter(remoteContainer.find("input"));
+				}
+				if (url) {
+					$.ajax(url).fail(function () {
+						testLabel.addClass("test-fail").removeClass("test-success").text("Request failed.");
+					}).done(function () {
+						testLabel.removeClass("test-fail").addClass("test-success").text("Success!");
+					});
+				} else {
+					testLabel.removeClass("test-fail").removeClass("test-success").text("Please set a valid URL");
+				} 
+			});
+			// edit schema
+			dscontainer.find(".ds-diag-editschema").click(function (event) {
+				descriptor.compObject = ide.componentById(descriptor.id);
+				descriptor.iframe = window.frames[0];
+				that.openPropertyEditor(descriptor);
+			});
+			dscontainer.find(".ds-diag-editdatainline").click(function (event) {
+				alert("Editing data inline");
+			});
+			localContainer.find("input").val(dsval).keyup(function (event) {
+				// editing local data source
+				//ds.settings.dataSource = event.target.value; // validate?
+				// also update the code view
+				descriptor.propName = "dataSource";
+				descriptor.oldPropValue = event.target.value.substring(0, event.target.value.length - 1);
+				descriptor.propType = "literal";
+				descriptor.propValue = event.target.value;
+				that.update(descriptor);
 			});
 		}
 	});
