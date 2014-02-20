@@ -100,6 +100,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 		},
 		render: function (container, descriptor) {
 			var ds = window.frames[0][descriptor.id];
+			var ide = this.settings.ide;
 			var that = this;
 			if (!(ds instanceof $.ig.DataSource)) {
 				throw new Error("Object with ID " + descriptor.id + " is not an instance of IG Data Source");
@@ -173,6 +174,18 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			dscontainer.find(".ds-diag-editschema").click(function (event) {
 				descriptor.compObject = ide.componentById(descriptor.id);
 				descriptor.iframe = window.frames[0];
+				descriptor.propName = "schema";
+				descriptor.ide = ide;
+				descriptor.propType = "object";
+				descriptor.placeholder = descriptor.element; //TODO
+				descriptor.provider = ide._codeProviders[descriptor.compObject.lib];
+				var props = container.closest(".adorners").find("#propertyGrid").data("igGrid").dataSource.data();
+				for (var i = 0; i < props.length; i++) {
+					if (props[i].propName === "schema") {
+						descriptor.schema = props[i].schema;
+						break;
+					}
+				}
 				that.openPropertyEditor(descriptor);
 			});
 			dscontainer.find(".ds-diag-editdatainline").click(function (event) {
