@@ -1,6 +1,7 @@
 {
   "overview": null,
   "name": "ui.igGridSelection",
+  "title": "Selection",
   "category": null,
   "visual": true,
   "events": {

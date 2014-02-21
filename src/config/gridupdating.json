@@ -1,6 +1,7 @@
 {
   "overview": null,
   "name": "ui.igGridUpdating",
+  "title": "Updating",
   "category": null,
   "visual": true,
   "events": {

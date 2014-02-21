@@ -1,6 +1,7 @@
 {
   "overview": null,
   "name": "ui.igGridPaging",
+  "title": "Paging",
   "category": null,
   "visual": true,
   "events": {

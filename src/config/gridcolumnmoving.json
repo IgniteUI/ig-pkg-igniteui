@@ -1,6 +1,7 @@
 {
   "overview": null,
   "name": "ui.igGridColumnMoving",
+  "title": "Column Moving",
   "category": null,
   "visual": true,
   "events": {

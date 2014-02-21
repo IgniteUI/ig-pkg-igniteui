@@ -95,15 +95,8 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 					buttons: [ 
 						{ 
 							text: "Save", click: function() {
-								// save features
-								var elem;
-								if (descriptor.iframe.jQuery) {
-									elem = descriptor.iframe.jQuery($("#designer-frame").contents().find("#" + descriptor.element.attr("id")));
-								} else {
-									elem = descriptor.element;
-								}
 								// get list of enabled features
-								var checkboxes = list.find("input:checked");
+								var checkboxes = list.find("input:checked"), elem = window.frames[0].$(descriptor.placeholder);
 								// now iterate through the existing features, if the feature is already there, don't do anything
 								// we need some object model to add/remove features easily
 								// get the features string from the code editor
@@ -196,12 +189,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 					}
 				}
 				// set default values
-				var enabledFeatures;
-				if (descriptor.iframe.jQuery && descriptor.iframe.jQuery(descriptor.element.data("igGrid"))) {
-					enabledFeatures = descriptor.iframe.jQuery($("#designer-frame").contents().find("#" + descriptor.element.attr("id"))).data("igGrid").options.features;
-				} else {
-					enabledFeatures = descriptor.element.data("igGrid").options.features;
-				}
+				var enabledFeatures = window.frames[0].$(descriptor.placeholder).data("igGrid").options.features;
 				for (var i = 0; enabledFeatures && i < enabledFeatures.length; i++) {
 					list.find("input[id=grid" + enabledFeatures[i].name.toLowerCase() + "]").attr("checked", true);
 				}
