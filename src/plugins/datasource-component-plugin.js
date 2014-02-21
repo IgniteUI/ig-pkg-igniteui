@@ -175,7 +175,11 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 					testLabel = $("<div class=\"test-label\"></div>").insertAfter(remoteContainer.find("input"));
 				}
 				if (url) {
-					$.ajax(url).fail(function () {
+					$.ajax({
+						url: url,
+						crossDomain: true,
+						dataType : "jsonp"
+					}).fail(function () {
 						testLabel.addClass("test-fail").removeClass("test-success").text("Request failed.");
 					}).done(function () {
 						testLabel.removeClass("test-fail").addClass("test-success").text("Success!");
