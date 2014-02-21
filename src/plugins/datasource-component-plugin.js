@@ -56,9 +56,19 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			var options = meta.options;
 			// set it in the ds
 			var obj = window.frames[0][descriptor.id];
+			var val = descriptor.propValue;
 			if (obj && obj instanceof $.ig.DataSource) {
 				// what should happen when a new dataSource option is set - rebind the data source? 
-				obj.settings[descriptor.propName] = descriptor.propValue;
+				if (descriptor.args) {
+					val = "function (event, args) { }";
+					descriptor.propType = "literal";
+				}
+				if (descriptor.propType === "literal") {
+					//We're binding to objects in the window scope
+					obj.settings[descriptor.propName] = window[val];
+				} else {
+					obj.settings[descriptor.propName] = val;
+				}
 				var rebind = function () {
 					//console.log("rebinding data source");
 					obj.dataBind();
@@ -77,9 +87,9 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 				this.addPropCode({
 					component: component,
 					propName: descriptor.propName,
-					propValue: descriptor.propValue,
+					propValue: val,
 					oldPropValue: descriptor.oldPropValue,
-					defaultValue: descriptor.propValue,
+					defaultValue: val,
 					propType: descriptor.propType,
 					valueOptions: descriptor.valueOptions
 				}, true, false);
@@ -87,7 +97,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 				this.updatePropCode({
 					component: component,
 					propName: descriptor.propName,
-					propValue: descriptor.propValue,
+					propValue: val,
 					oldPropValue: descriptor.oldPropValue,
 					propType: descriptor.propType,
 					valueOptions: descriptor.valueOptions
@@ -101,6 +111,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 		render: function (container, descriptor) {
 			var ds = window.frames[0][descriptor.id];
 			var that = this;
+			var ide = this.settings.ide;
 			if (!(ds instanceof $.ig.DataSource)) {
 				throw new Error("Object with ID " + descriptor.id + " is not an instance of IG Data Source");
 			}
@@ -176,7 +187,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 				that.openPropertyEditor(descriptor);
 			});
 			dscontainer.find(".ds-diag-editdatainline").click(function (event) {
-				alert("Editing data inline");
+				//openPropertyEditor
 			});
 			localContainer.find("input").val(dsval).keyup(function (event) {
 				// editing local data source
