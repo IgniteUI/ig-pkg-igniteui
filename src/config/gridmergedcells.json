@@ -1,6 +1,7 @@
 {
   "overview": null,
   "name": "ui.igGridCellMerging",
+  "title": "Cell Merging",
   "category": null,
   "visual": true,
   "events": {

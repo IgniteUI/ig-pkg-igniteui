@@ -1,6 +1,7 @@
 {
   "overview": null,
   "name": "ui.igGridHiding",
+  "title": "Column Hiding",
   "category": null,
   "visual": true,
   "events": {

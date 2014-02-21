@@ -1,6 +1,7 @@
 {
   "overview": null,
   "name": "ui.igGridSummaries",
+  "title": "Column Summaries",
   "category": null,
   "visual": true,
   "events": {
@@ -291,7 +292,7 @@
             "decimalDisplay": {
               "type": "number",
               "defaultValue": 2,
-              "description": "Specifies the number of digits after the decimal point for result of the current summary operand. This property will be ignored when isGridFormatter is true",
+              "description": "Specifies the number of digits after the decimal point for result of the current summary operand. This property will be ignored when isGridFormatter is true"
             },
             "isGridFormatter": {
               "type": "bool",

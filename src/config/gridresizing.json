@@ -1,6 +1,7 @@
 {
   "overview": null,
   "name": "ui.igGridResizing",
+  "title": "Column Resizing",
   "category": null,
   "visual": true,
   "events": {

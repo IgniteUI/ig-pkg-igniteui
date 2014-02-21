@@ -1,6 +1,7 @@
 {
   "overview": null,
   "name": "ui.igGridSorting",
+  "title": "Sorting",
   "category": null,
   "visual": true,
   "events": {
@@ -372,8 +373,7 @@
     "modalDialogHeight": {
       "type": "number",
       "defaultValue": "",
-      "description": "Specifies height of multiple sorting dialog "
-      ]
+      "description": "Specifies height of multiple sorting dialog"
     },
     "modalDialogResetButtonLabel": {
       "type": "string",

@@ -1,6 +1,7 @@
 {
   "overview": null,
   "name": "ui.igGridRowSelectors",
+  "title": "Row Selectors",
   "category": null,
   "visual": true,
   "events": {

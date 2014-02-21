@@ -1,6 +1,7 @@
 {
   "overview": null,
   "name": "ui.igGridTooltips",
+  "title": "Tooltips",
   "category": null,
   "visual": true,
   "events": {

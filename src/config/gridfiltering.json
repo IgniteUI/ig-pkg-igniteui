@@ -1,6 +1,7 @@
 {
   "overview": null,
   "name": "ui.igGridFiltering",
+  "title": "Filtering",
   "category": null,
   "visual": true,
   "events": {
