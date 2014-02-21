@@ -13,7 +13,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			var code = "\t\t\t\twindow." + descriptor.id + " = new $.ig.DataSource({\n";
 			var orderedReturnProps = [];
 			// now write options / settings
-			code += "\n\t\t\t\t});\n";
+			code += "\n\t\t\t\t}).dataBind();\n";
 			return {
 				codeString: code,
 				lineCount: 3,
@@ -65,7 +65,8 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 				}
 				if (descriptor.propType === "literal") {
 					//We're binding to objects in the window scope
-					obj.settings[descriptor.propName] = window[val];
+					obj.settings[descriptor.propName] = window.frames[0][val];
+					obj._runtimeType = null;
 				} else {
 					obj.settings[descriptor.propName] = val;
 				}
