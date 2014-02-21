@@ -126,11 +126,11 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			var dscontainer = $("<div></div>").prependTo(container).addClass("ds-diag-container");
 			var remoteContainer = $("<div></div>").appendTo(dscontainer).addClass("ds-diag-remotecontainer");
 			var localRemoteArea = $("<div></div>").addClass("ds-diag-dt").prependTo(dscontainer);
-			$("<span>Is Your Data</span>").appendTo(localRemoteArea).addClass("ds-diag-dt-label");
-			$("<input type=\"radio\" name=\"dstype\" checked value=\"Remote\"/>").addClass("ds-diag-dt-remote").appendTo(localRemoteArea);
-			$("<span>Remote</span>").appendTo(localRemoteArea).addClass("ds-diag-dt-remotelabel");
-			$("<input type=\"radio\" name=\"dstype\" value=\"Local\"/>").addClass("ds-diag-dt-local").appendTo(localRemoteArea);
-			$("<span>Local</span>").appendTo(localRemoteArea).addClass("ds-diag-dt-locallabel");
+			$("<span>Is Your Data: </span>").appendTo(localRemoteArea).addClass("ds-diag-dt-label");
+			$("<input type=\"radio\" name=\"dstype\" id=\"dstype1\" checked value=\"Remote\"/>").addClass("ds-diag-dt-remote").appendTo(localRemoteArea);
+			$("<label for=\"dstype1\">Remote</label>").appendTo(localRemoteArea).addClass("ds-diag-dt-remotelabel");
+			$("<input type=\"radio\" name=\"dstype\" id=\"dstype2\" value=\"Local\"/>").addClass("ds-diag-dt-local").appendTo(localRemoteArea);
+			$("<label for=\"dstype2\">Local</label>").appendTo(localRemoteArea).addClass("ds-diag-dt-locallabel");
 			// edit schema button
 			$("<span>Edit Schema</span>").addClass("btn btn-default ds-diag-editschema").appendTo(remoteContainer);
 			$("<br><label>URL Endpoint</label>").addClass("ds-diag-urllabel").appendTo(remoteContainer);
@@ -138,10 +138,13 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 
 			var localContainer = $("<div></div>").addClass("ds-diag-localcontainer").css("display", "none").appendTo(dscontainer);
 			// for local
-			$("<input type=\"radio\" name=\"localdstype\" checked value=\"variable\"/><label>Type var name containing data:</label>").appendTo(localContainer);
+			//$("<input type=\"radio\" name=\"localdstype\" checked value=\"variable\"/><label>Type var name containing data:</label>").appendTo(localContainer);
+			$("<label>Type var name containing data:</label>").appendTo(localContainer);
 			$("<input type=\"text\" class=\"form-control\"/>").appendTo(localContainer);
+			/*
 			$("<input type=\"radio\" name=\"localdstype\" value=\"inline\"/><label>Or use inline data:</label>").appendTo(localContainer);
 			$("<span class=\"btn btn-default ds-diag-editdatainline\">Edit Data</span>").appendTo(localContainer);
+			*/
 			dscontainer.find(".ds-diag-editschema").clone().appendTo(localContainer);
 
 			localRemoteArea.children("input[name=dstype]").on("change", function (event) {
