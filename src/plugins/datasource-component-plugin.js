@@ -188,19 +188,19 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			dscontainer.find(".ds-diag-editschema").click(function (event) {
 				descriptor.compObject = ide.componentById(descriptor.id);
 				descriptor.iframe = window.frames[0];
-				descriptor.propName = "schema";
+				descriptor.propName = "fields";
 				descriptor.ide = ide;
 				descriptor.propType = "object";
 				descriptor.placeholder = descriptor.element; //TODO
 				descriptor.provider = ide._codeProviders[descriptor.compObject.lib];
 				var props = container.closest(".adorners").find("#propertyGrid").data("igGrid").dataSource.data();
 				for (var i = 0; i < props.length; i++) {
-					if (props[i].propName === "schema") {
+					if (props[i].propName === "fields") {
 						descriptor.schema = props[i].schema;
 						break;
 					}
 				}
-				that.openPropertyEditor(descriptor);
+				that.openCollectionEditor(descriptor);
 			});
 			dscontainer.find(".ds-diag-editdatainline").click(function (event) {
 				//openPropertyEditor
