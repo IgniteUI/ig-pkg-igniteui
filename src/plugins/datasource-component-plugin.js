@@ -38,7 +38,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			// locate the dataSource control. Note that since this is not a widget, it's also not associated with any DOM elements
 			// since it's not a visual control, and can be instantiated anywhere (including anonymous functions), there is no easy 
 			// way to get hold of the reference to that data source, unless its variable name is stored in the global (window) context.
-			var obj = descriptor.iframe[descriptor.placeholder.attr("id")];
+			var obj = window.frames[0][descriptor.placeholder.attr("id")];
 			if (obj && obj instanceof $.ig.DataSource) {
 				// get value from data source settings
 				return obj.settings[descriptor.propName];
@@ -192,7 +192,6 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			// edit schema
 			dscontainer.find(".ds-diag-editschema").click(function (event) {
 				descriptor.compObject = ide.componentById(descriptor.id);
-				descriptor.iframe = window.frames[0];
 				descriptor.propName = "fields";
 				descriptor.ide = ide;
 				descriptor.propType = "object";
