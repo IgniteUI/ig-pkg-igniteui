@@ -202,6 +202,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 				for (var i = 0; i < props.length; i++) {
 					if (props[i].propName === "fields") {
 						descriptor.schema = props[i].schema;
+						descriptor.displayProp = props[i].displayProp;
 						break;
 					}
 				}
