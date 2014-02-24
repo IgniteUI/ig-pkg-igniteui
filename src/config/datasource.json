@@ -788,6 +788,7 @@
 					"type": "array",
 					"defaultValue": null,
 					"description": "A list of column settings that specifies custom summaries options per column basis.",
+					"designerDisplayProperty": "key",
 					"schema": {
 						"key": {
 							"type": "string",
@@ -799,7 +800,73 @@
 							"defaultValue": null,
 							"description": "List of summary operands",
 							"schema": {
-								
+								"active": {
+									"type": "bool",
+									"defaultValue": true,
+									"description": "If it is false the summary operand will be shown in dropdown but it will not be made calculation."
+								},
+								"decimalDisplay": {
+									"type": "number",
+									"defaultValue": 2,
+									"description": "Specifies the number of digits after the decimal point for result of the current summary operand. This property will be ignored when isGridFormatter is true."
+								},
+								"isGridFormatter": {
+									"type": "bool",
+									"defaultValue": false,
+									"description": "Specifies whether to be used grid formatter for result for the current summary operand."
+								},
+								"order": {
+									"type": "number",
+									"defaultValue": 5,
+									"description": "Specifies the order of elements in dropdown. It is recommended to set order of custom operands and to be greater or equal to 5."
+								},
+								"rowDisplayLabel": {
+									"type": "string",
+									"defaultValue": "",
+									"description": "Text of the summary method which is shown in summary cell."
+								},
+								"summaryCalculator": {
+									"type": "string",
+									"defaultValue": null,
+									"description": "Name of the custom summary function which should be executed when type is custom."
+								},
+								"type": {
+									"type": "string",
+									"defaultValue": "custom",
+									"description": "Set type of summary operand.",
+									"valueOptions": [
+										{
+											"name": "count",
+											"type": "string",
+											"description": "Calculate count of result rows for the specified column."
+										},
+										{
+											"name": "min",
+											"type": "string",
+											"description": "Calculate min of result rows for the specified column."
+										},
+										{
+											"name": "max",
+											"type": "string",
+											"description": "Calculate max of result rows for the specified column."
+										},
+										{
+											"name": "sum",
+											"type": "string",
+											"description": "Calculate sum of result rows for the specified column."
+										},
+										{
+											"name": "avg",
+											"type": "string",
+											"description": "Calculate average of result rows for the specified column."
+										},
+										{
+											"name": "custom",
+											"type": "string",
+											"description": "Calculate custom function (specified by summaryCalculator property) of result rows for the specified column."
+										}
+									]
+								}
 							}
 						}
 					}
