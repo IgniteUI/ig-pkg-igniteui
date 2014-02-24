@@ -481,7 +481,7 @@
 					]
 				},
 				"pageSize": {
-					"type": "string",
+					"type": "number",
 					"defaultValue": 5,
 					"description": "Number of records on each page."
 				},
