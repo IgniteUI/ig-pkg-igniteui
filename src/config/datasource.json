@@ -799,6 +799,7 @@
 							"type": "array",
 							"defaultValue": null,
 							"description": "List of summary operands",
+							"designerDisplayProperty": "type",
 							"schema": {
 								"active": {
 									"type": "bool",
@@ -883,16 +884,6 @@
 					"type": "string",
 					"defaultValue": null,
 					"description": "Name of the field."
-				},
-				"fieldDataType": {
-					"type": "array",
-					"defaultValue": null,
-					"description": "Data type of the field."
-				},
-				"fieldXPath": {
-					"type": "array",
-					"defaultValue": null,
-					"description": "X path of the field."
 				}
 			}
 		},
