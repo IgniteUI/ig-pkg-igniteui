@@ -396,8 +396,7 @@
     		"visual": true,
     		"framework": false,
 			"defaultOptions": {  			
-                "layoutMode": "vertical",
-				"itemCount": 5
+                "layoutMode": "vertical"
 			}
     	},
     	"map": {

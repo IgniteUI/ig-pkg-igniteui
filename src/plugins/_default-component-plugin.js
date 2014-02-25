@@ -495,7 +495,7 @@ define (function (require, exports, module) {
 			// also for dialog window, and tile manager tiles
 			//returns true for both  columns and rows
 
-			if (descriptor.type === "splitter" || descriptor.type === "columnLayout" || descriptor.type === "flowLayout") {
+			if (descriptor.type === "splitter" || descriptor.type === "columnLayout" || descriptor.type === "flowLayout" || descriptor.type === "verticalLayout") {
 				return true;
 			} else if (descriptor.type === "dialog" && descriptor.element.hasClass('ui-igdialog-content')) {
 				return true;
