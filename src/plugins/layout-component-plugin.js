@@ -12,7 +12,19 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 		// retrieves the initial markup for the current component
 		getMarkup: function (descriptor) {
 			if (descriptor.type === "flowLayout") {
-				return "<div style=\"border: 1px solid #eee; \">\n\t\t<ul id=\"" + descriptor.id + "\"></ul>\n\t</div>";
+				//return "<div style=\"border: 1px solid #eee; \">\n\t\t<ul id=\"" + descriptor.id + "\"></ul>\n\t</div>";
+				return "<ul id=\"" + descriptor.id + "\" data-droppablechild=\"false\" data-hasdroppables=\"true\">" +
+				"\n\t\t\t<li class=\"ig-layout-flow-item flowItem\" data-droppablechild=\"true\">1</li>" +
+				"\n\t\t\t<li class=\"ig-layout-flow-item flowItem\" data-droppablechild=\"true\">2</li>" +
+				"\n\t\t\t<li class=\"ig-layout-flow-item flowItem\" data-droppablechild=\"true\">3</li>" +
+				"\n\t\t\t<li class=\"ig-layout-flow-item flowItem\" data-droppablechild=\"true\">4</li>" +
+				"\n\t\t\t<li class=\"ig-layout-flow-item flowItem\" data-droppablechild=\"true\">5</li>" +
+				"\n\t\t\t<li class=\"ig-layout-flow-item flowItem\" data-droppablechild=\"true\">6</li>" +
+				"\n\t\t\t<li class=\"ig-layout-flow-item flowItem\" data-droppablechild=\"true\">7</li>" +
+				"\n\t\t\t<li class=\"ig-layout-flow-item flowItem\" data-droppablechild=\"true\">8</li>" + 
+				"\n\t\t\t<li class=\"ig-layout-flow-item flowItem\" data-droppablechild=\"true\">9</li>" +
+				"\n\t\t\t<li class=\"ig-layout-flow-item flowItem\" data-droppablechild=\"true\">10</li>"
+				+"</ul>";
 			} else if (descriptor.type === "borderLayout") {
 				return "<div id=\"" + descriptor.id + "\"><div class=\"left\" style=\"background-color: #FFA72D;\">" +
 			"<h3>LEFT AREA</h3><p>First paragraph</p><p>Second paragraph</p><p>Third paragraph</p><p>Fourth paragraph</p></div><div class=\"right\" style=\"background-color:#555; color: #EEE;\">" +
@@ -38,7 +50,20 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 				}
 			}
 			if (descriptor.type === "flowLayout") {
-				return {codeString: "\t" + extraIndentStr + "<div style=\"border: 1px solid #eee; \">\n\t\t\t<ul id=\"" + descriptor.id + "\"></ul>\n\t\t</div>\n", lineCount: 3};
+				return {codeString: "\t" + extraIndentStr + "<ul id=\"" + descriptor.id + "\">\n\t\t\t<li class=\"ig-layout-flow-item flowItem\">1\n\t\t\t</li>\n\t\t\t<li class=\"ig-layout-flow-item flowItem\">2\n\t\t\t</li>\n\t\t\t<li class=\"ig-layout-flow-item flowItem\">3\n\t\t\t</li>\n\t\t\t<li class=\"ig-layout-flow-item flowItem\">4\n\t\t\t</li>\n\t\t\t<li class=\"ig-layout-flow-item flowItem\">5\n\t\t\t</li>\n\t\t\t<li class=\"ig-layout-flow-item flowItem\">6\n\t\t\t</li>\n\t\t\t<li class=\"ig-layout-flow-item flowItem\">7\n\t\t\t</li>\n\t\t\t<li class=\"ig-layout-flow-item flowItem\">8\n\t\t\t</li>\n\t\t\t<li class=\"ig-layout-flow-item flowItem\">9\n\t\t\t</li>\n\t\t\t<li class=\"ig-layout-flow-item flowItem\">10\n\t\t\t</li>\n\t\t</ul>\n\t\t", lineCount: 22, 
+					extraMarkers: [
+						{ rowOffset: 2, colOffset: 0, rowCount: 1, colCount: 0 },
+						{ rowOffset: 4, colOffset: 0, rowCount: 1, colCount: 0 },
+						{ rowOffset: 6, colOffset: 0, rowCount: 1, colCount: 0 },
+						{ rowOffset: 8, colOffset: 0, rowCount: 1, colCount: 0 },
+						{ rowOffset: 10, colOffset: 0, rowCount: 1, colCount: 0 },
+						{ rowOffset: 12, colOffset: 0, rowCount: 1, colCount: 0 },
+						{ rowOffset: 14, colOffset: 0, rowCount: 1, colCount: 0 },
+						{ rowOffset: 16, colOffset: 0, rowCount: 1, colCount: 0 },
+						{ rowOffset: 18, colOffset: 0, rowCount: 1, colCount: 0 },
+						{ rowOffset: 20, colOffset: 0, rowCount: 1, colCount: 0 }
+					]
+				};
 			} else if (descriptor.type === "borderLayout") {
 				return {codeString: "\t" + extraIndentStr + "<div id=\"" + descriptor.id + "\">\n\t\t\t<div class=\"left\" style=\"background-color: #FFA72D;\">" +
 			"\n\t\t\t\t<h3>LEFT AREA</h3>\n\t\t\t\t<p>First paragraph</p>\n\t\t\t\t<p>Second paragraph</p>\n\t\t\t\t<p>Third paragraph</p>\n\t\t\t\t<p>Fourth paragraph</p>\n\t\t\t</div>\n\t\t\t<div class=\"right\" style=\"background-color:#555; color: #EEE;\">" +
@@ -51,25 +76,10 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			} else if (descriptor.type === "columnLayout") {
 				return {codeString: "\t" + extraIndentStr + "<div id=\"layout\" class=\"ig-layout-col\">\n\t\t\t<div class=\"row\">\n\t\t\t\t<div class=\"col3\">\n\t\t\t\t\t<h3>Heading</h3>\n\t\t\t\t\t<p>Contents</p>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"col3\">\n\t\t\t\t\t<h3>Heading</h3>\n\t\t\t\t\t<p>Contents</p>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"col3\">\n\t\t\t\t\t<h3>Heading</h3>\n\t\t\t\t\t<p>Contents</p>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n", lineCount: 20,
 				extraMarkers: [
-				{
-				  rowOffset: 2,
-				  colOffset: 0,
-				  rowCount: 4,
-				  colCount: 0
-				},
-				{
-				  rowOffset: 6,
-				  colOffset: 0,
-				  rowCount: 4, 
-				  colCount: 0
-				},
-				{
-				  rowOffset: 10,
-				  colOffset: 0,
-				  rowCount: 4,
-				  colCount: 0
-				}
-			  ]
+					{ rowOffset: 2, colOffset: 0, rowCount: 4, colCount: 0 },
+					{ rowOffset: 6, colOffset: 0, rowCount: 4, colCount: 0 },
+					{ rowOffset: 10, colOffset: 0, rowCount: 4, colCount: 0 }
+				]
 		  };
 			} else {
 				return {codeString: "\t" + extraIndentStr + "<div id=\"" + descriptor.id + "\"></div>\n", lineCount: 1};
@@ -96,7 +106,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
                     "\n\t\t\t\t\t } \n\t\t\t\t});\n";
 				snippet.codeString = snippet.codeString + handler; 
 				snippet.lineCount += 19;
-			} else if (descriptor.type === "flowLayout" || descriptor.type === "verticalLayout") {
+			} else if (descriptor.type === "verticalLayout") {
 				var handler = "\t\t\t\t$(\"#" + descriptor.id +"\").on(\"iglayoutmanageritemrendered\", function (event, args) {" +
 					"\n\t\t\t\t\t args.item.text(args.index + 1);" +
 					"\n\t\t\t\t\t args.item.css(\"background-color\", \"#2CBDF9\");" +
@@ -134,13 +144,28 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 				});
 				window.frames[0].$(descriptor.placeholder)[name](descriptor.options);
 			} else if ((descriptor.type === "flowLayout" || descriptor.type === "verticalLayout") && window.frames[0].$(descriptor.placeholder)[name]) {
-				window.frames[0].$(descriptor.placeholder).on("iglayoutmanageritemrendered", function (e, args) {
-					args.item.text(args.index + 1);
-					args.item.css("background-color", "#2CBDF9");
-					args.item.css("color", "#FFF");
-					args.item.css("font-size", "20px");
-					args.item.css("padding", "5px 0 0 5px");
-				});
+				var ide = this.settings.ide, pos, styleBlock, styleMarker, blockOffset = 7, flagAlreadyContainsCSS = false;
+				//If we have already dropped flowLayout there is a css class already added and we don't need a duplicate one
+				if (!ide.editor.find(".flowItem")) {
+					pos = ide.editor.find("</head>");
+					styleBlock = "\t\t<style>\n\t\t\t.flowItem {\n\t\t\t\t background-color: #2CBDF9; \n\t\t\t\t color : #FFF; \n\t\t\t\t font-size: \"20px\"; \n\t\t\t\t padding: \"5px 0 0 5px\";\n\t\t\t}\n\t\t</style>\n";
+					ide.session.insert({row: pos.start.row, column: 0}, styleBlock);
+					styleMarker = ide.createAndAddMarker(pos.start.row, 0, pos.start.row + blockOffset, 0);
+					
+					if (!ide._styleBlockMarker) {
+						ide._styleBlockMarker = styleMarker;
+					}
+				}
+				for (var i = 0; i < window.frames[0].$("head").children("style").length; i++) {
+					if (window.frames[0].$("head").children("style")[i].innerText.indexOf(".flowItem") !== -1) { 
+						flagAlreadyContainsCSS = true;
+						//We don't need to iterate if the class already exist
+						break;
+					}
+				}
+				if (!flagAlreadyContainsCSS) {
+					window.frames[0].$("head").append(styleBlock);
+				}
 				window.frames[0].$(descriptor.placeholder)[name](descriptor.options);
 			}  else if (descriptor.type !== "columnLayout" && window.frames[0].$(descriptor.placeholder)[name]) {
 				window.frames[0].$(descriptor.placeholder)[name](descriptor.options);

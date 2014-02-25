@@ -339,8 +339,7 @@
     		"visual": true,
     		"framework": false,
 			"defaultOptions": {  			
-			    "layoutMode": "flow",
-                "itemCount": 15
+			    "layoutMode": "flow"
 			}
     	},
 		"borderLayout": {
