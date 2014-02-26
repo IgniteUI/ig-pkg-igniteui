@@ -524,8 +524,8 @@ define (function (require, exports, module) {
 		},
 		openPropertyEditor: function (descriptor) {
 			var propertyExplorer = require("ide-propertyexplorer"),
-				container = $('<div class="adorner-property-sheet"></div>').insertAfter(descriptor.ide.currentAdorner()),
-				editor = $('<div class="adorner-property-list"></div>').appendTo(container),
+				container = $("<div class='adorner-property-sheet' data-property='" + descriptor.propName + "'></div>").insertAfter(descriptor.ide.currentAdorner()),
+				editor = $("<div class='adorner-property-list'></div>").appendTo(container),
 				property,
 				count = 0,
 				schemaRef,
