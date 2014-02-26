@@ -339,8 +339,7 @@
     		"visual": true,
     		"framework": false,
 			"defaultOptions": {  			
-			    "layoutMode": "flow",
-                "itemCount": 15
+			    "layoutMode": "flow"
 			}
     	},
 		"borderLayout": {
@@ -397,8 +396,7 @@
     		"visual": true,
     		"framework": false,
 			"defaultOptions": {  			
-                "layoutMode": "vertical",
-				"itemCount": 5
+                "layoutMode": "vertical"
 			}
     	},
     	"map": {
