@@ -547,6 +547,7 @@ define (function (require, exports, module) {
 			descriptor.data = [];
 			for (property in descriptor.schema) {
 				if (descriptor.schema.hasOwnProperty(property)) {
+					schema = descriptor.schema[property].schema;
 					if (descriptor.schema[property].schemaRef) {
 						schemaRef = descriptor.schema[property].schemaRef.split(".");
 						schema = descriptor.ide._packages.igniteui.components[schemaRef[0]].properties;
