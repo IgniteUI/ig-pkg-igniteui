@@ -416,12 +416,13 @@
             "dependsOn": ["core", "lob", "dv"],
     		"toolboxTitle": "Pivot Grid",
     		"icon": "pivotgrid.png",
+			"componentPlugin": "pivot-grid-component-plugin",
     		"dragDropIcon": "pivotgrid-dragdrop.png",
     		"category": "lists",
     		"visual": true,
     		"framework": false,
-    		"width": 400,
-    		"height": 400,
+    		"width": 670,
+    		"height": 650,
       		"defaultOptions": {               
     		}  		
     	},
