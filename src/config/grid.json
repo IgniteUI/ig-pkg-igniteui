@@ -644,9 +644,15 @@
           }
         },
         "update": {
+		  "type": "object",
+          "defaultValue": null,
+          "description": "Settings for update requests",	
           "schemaRef": "grid.restSettings.create"
         },
         "remove": {
+	      "type": "object",
+          "defaultValue": null,
+          "description": "Settings for remove requests",
           "schemaRef": "grid.restSettings.create"
         },
         "contentSerializer": {

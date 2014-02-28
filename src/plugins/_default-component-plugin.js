@@ -524,8 +524,8 @@ define (function (require, exports, module) {
 		},
 		openPropertyEditor: function (descriptor) {
 			var propertyExplorer = require("ide-propertyexplorer"),
-				container = $('<div class="adorner-property-sheet"></div>').insertAfter(descriptor.ide.currentAdorner()),
-				editor = $('<div class="adorner-property-list"></div>').appendTo(container),
+				container = $("<div class='adorner-property-sheet' data-property='" + descriptor.propName + "'></div>").insertAfter(descriptor.ide.currentAdorner()),
+				editor = $("<div class='adorner-property-list'></div>").appendTo(container),
 				property,
 				count = 0,
 				schemaRef,
@@ -547,6 +547,7 @@ define (function (require, exports, module) {
 			descriptor.data = [];
 			for (property in descriptor.schema) {
 				if (descriptor.schema.hasOwnProperty(property)) {
+					schema = descriptor.schema[property].schema;
 					if (descriptor.schema[property].schemaRef) {
 						schemaRef = descriptor.schema[property].schemaRef.split(".");
 						schema = descriptor.ide._packages.igniteui.components[schemaRef[0]].properties;
