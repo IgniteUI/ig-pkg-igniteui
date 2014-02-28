@@ -47,7 +47,6 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			} else {
 				return "<div id=\"" + descriptor.id + "\"></div>";
 			}
-			//return this.evalTemplate("default.html", descriptor, true);
 		},
 		getCodeEditorMarkupSnippet: function (descriptor) {
 			// as a developer, i would like to be able to provide the direct manual formatting, as well as specify a template, and evaluate it
@@ -60,26 +59,26 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			if (descriptor.type === "flowLayout") {
 				return {codeString: "\t" + extraIndentStr + "<ul id=\"" + descriptor.id + "\">\n\t\t\t<li class=\"ig-layout-flow-item flowItem\">1\n\t\t\t</li>\n\t\t\t<li class=\"ig-layout-flow-item flowItem\">2\n\t\t\t</li>\n\t\t\t<li class=\"ig-layout-flow-item flowItem\">3\n\t\t\t</li>\n\t\t\t<li class=\"ig-layout-flow-item flowItem\">4\n\t\t\t</li>\n\t\t\t<li class=\"ig-layout-flow-item flowItem\">5\n\t\t\t</li>\n\t\t\t<li class=\"ig-layout-flow-item flowItem\">6\n\t\t\t</li>\n\t\t\t<li class=\"ig-layout-flow-item flowItem\">7\n\t\t\t</li>\n\t\t\t<li class=\"ig-layout-flow-item flowItem\">8\n\t\t\t</li>\n\t\t\t<li class=\"ig-layout-flow-item flowItem\">9\n\t\t\t</li>\n\t\t\t<li class=\"ig-layout-flow-item flowItem\">10\n\t\t\t</li>\n\t\t</ul>\n\t\t", lineCount: 22, 
 					extraMarkers: [
-						{ rowOffset: 2, colOffset: 0, rowCount: 1, colCount: 0 },
-						{ rowOffset: 4, colOffset: 0, rowCount: 1, colCount: 0 },
-						{ rowOffset: 6, colOffset: 0, rowCount: 1, colCount: 0 },
-						{ rowOffset: 8, colOffset: 0, rowCount: 1, colCount: 0 },
-						{ rowOffset: 10, colOffset: 0, rowCount: 1, colCount: 0 },
-						{ rowOffset: 12, colOffset: 0, rowCount: 1, colCount: 0 },
-						{ rowOffset: 14, colOffset: 0, rowCount: 1, colCount: 0 },
-						{ rowOffset: 16, colOffset: 0, rowCount: 1, colCount: 0 },
-						{ rowOffset: 18, colOffset: 0, rowCount: 1, colCount: 0 },
-						{ rowOffset: 20, colOffset: 0, rowCount: 1, colCount: 0 }
+						{ rowOffset: 1, colOffset: 0, rowCount: 2, colCount: 0 },
+						{ rowOffset: 3, colOffset: 0, rowCount: 2, colCount: 0 },
+						{ rowOffset: 5, colOffset: 0, rowCount: 2, colCount: 0 },
+						{ rowOffset: 7, colOffset: 0, rowCount: 2, colCount: 0 },
+						{ rowOffset: 9, colOffset: 0, rowCount: 2, colCount: 0 },
+						{ rowOffset: 11, colOffset: 0, rowCount: 2, colCount: 0 },
+						{ rowOffset: 13, colOffset: 0, rowCount: 2, colCount: 0 },
+						{ rowOffset: 15, colOffset: 0, rowCount: 2, colCount: 0 },
+						{ rowOffset: 17, colOffset: 0, rowCount: 2, colCount: 0 },
+						{ rowOffset: 19, colOffset: 0, rowCount: 2, colCount: 0 }
 					]
 				};
 			} else if (descriptor.type === "verticalLayout") {
 				return {codeString: "\t" + extraIndentStr + "<ul id=\"" + descriptor.id + "\">\n\t\t\t<li class=\"ig-layout-vertical-item verticalItem\">1\n\t\t\t</li>\n\t\t\t<li class=\"ig-layout-vertical-item verticalItem\">2\n\t\t\t</li>\n\t\t\t<li class=\"ig-layout-vertical-item verticalItem\">3\n\t\t\t</li>\n\t\t\t<li class=\"ig-layout-vertical-item verticalItem\">4\n\t\t\t</li>\n\t\t\t<li class=\"ig-layout-vertical-item verticalItem\">5\n\t\t\t</li>\n\t\t</ul>\n\t\t", lineCount: 12, 
 					extraMarkers: [
-						{ rowOffset: 2, colOffset: 0, rowCount: 1, colCount: 0 },
-						{ rowOffset: 4, colOffset: 0, rowCount: 1, colCount: 0 },
-						{ rowOffset: 6, colOffset: 0, rowCount: 1, colCount: 0 },
-						{ rowOffset: 8, colOffset: 0, rowCount: 1, colCount: 0 },
-						{ rowOffset: 10, colOffset: 0, rowCount: 1, colCount: 0 }
+						{ rowOffset: 1, colOffset: 0, rowCount: 2, colCount: 0 },
+						{ rowOffset: 3, colOffset: 0, rowCount: 2, colCount: 0 },
+						{ rowOffset: 5, colOffset: 0, rowCount: 2, colCount: 0 },
+						{ rowOffset: 7, colOffset: 0, rowCount: 2, colCount: 0 },
+						{ rowOffset: 9, colOffset: 0, rowCount: 2, colCount: 0 }
 					]
 				};
 			} else if (descriptor.type === "borderLayout") {
@@ -92,9 +91,9 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			"\n\t\t\t<div class=\"center\" style=\"background-color: #EEE;\">" +
 			"\n\t\t\t\t<h3>CENTER AREA</h3>\n\t\t\t\t<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget porta urna. Ut gravida mi at ligula commodo feugiat vehicula lacus tincidunt. Proin lobortis magna sed lacus malesuada commodo fermentum felis auctor. Sed quis nulla quis tellus facilisis malesuada. Mauris aliquam neque consequat mi blandit in luctus magna rutrum. Fusce sit amet ipsum magna. Vivamus porttitor arcu vitae eros molestie et sagittis dolor cursus. Quisque ultrices feugiat risus, vitae molestie felis interdum ac. Suspendisse pellentesque magna nec est commodo porttitor. </p>\n\t\t\t\t<p>Nunc lacinia ligula a nisl porta sed facilisis mauris facilisis. Sed a ante turpis, eget semper odio. Curabitur facilisis faucibus iaculis. Ut fermentum pretium ultrices. Etiam sem dui, adipiscing sed tempus et, adipiscing eget erat. Vestibulum nec eros magna.</p>\n\t\t\t\t<p>Praesent tristique arcu eget ligula pulvinar mollis. Maecenas at elit at justo posuere gravida id eu enim. Duis imperdiet lectus nec augue sollicitudin hendrerit. Suspendisse consectetur, lorem nec eleifend rutrum, eros metus sodales libero, et rutrum diam augue et lectus. Integer sed est vitae risus dignissim condimentum ullamcorper at massa. Donec a orci nisl, eget ullamcorper augue. Quisque sagittis fringilla tortor. Vivamus ligula velit, aliquam ut pellentesque quis, fringilla sit amet tortor.</p>\n\t\t\t</div>\n\t\t</div>\n", lineCount: 21,
 				extraMarkers: [
-						{ rowOffset: 7, colOffset: 1, rowCount: 1, colCount: 0 },
-						{ rowOffset: 11, colOffset: 0, rowCount: 1, colCount: 0 },
-						{ rowOffset: 19, colOffset: 0, rowCount: 1, colCount: 0 }
+						{ rowOffset: 1, colOffset: 0, rowCount: 7, colCount: 0 },
+						{ rowOffset: 9, colOffset: 0, rowCount: 3, colCount: 0 },
+						{ rowOffset: 14, colOffset: 0, rowCount: 6, colCount: 0 }
 					]			
 			};
 			} else if (descriptor.type === "columnLayout") {
@@ -108,7 +107,6 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			} else {
 				return {codeString: "\t" + extraIndentStr + "<div id=\"" + descriptor.id + "\"></div>\n", lineCount: 1};
 			}			
-			//return this.evalTemplate("default.code.html", descriptor);
 		},
 		getCodeEditorScriptSnippet: function (descriptor) {
 			var snippet = this._super(descriptor);
