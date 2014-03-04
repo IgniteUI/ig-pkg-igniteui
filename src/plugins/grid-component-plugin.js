@@ -89,7 +89,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			if (p === "features") {
 				// open features editor
 				var list;
-				var contents = $("<div>features editor</div>").appendTo("body").dialog({
+				var contents = $("<div>features editor</div>").css("z-index", 10004).appendTo("body").dialog({
 					height: 400,
 					width: 300,
 					buttons: [ 
