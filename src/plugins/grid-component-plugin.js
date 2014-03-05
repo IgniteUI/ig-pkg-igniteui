@@ -82,7 +82,10 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			// THIS IS WHERE WE PUT FULLY CUSTOM EDITORS FOR COMPONENTS
 		},
 		*/
-		customPropertyEditor: function(descriptor) {
+		customPropertyEditor: function (descriptor) {
+			if (this._super && this._super(descriptor)) {
+				return;
+			}
 			// columns, features, dataSource, etc. - also reuse those UIs
 			// when something gets changed in this editor, we want to also update the code editor as well as the component itself
 			var p = descriptor.propName, packageInfo = this.settings.packageInfo, session = descriptor.editorSession, $this = this;
@@ -210,8 +213,6 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 					$("<div></div>").addClass("btn").addClass("cancel-button-features").text("Cancel").appendTo(buttonGroup);
 				*/
 			} else if (p === "columns") {
-				this.openCollectionEditor(descriptor);
-			} else if (p === "dataSource") {
 				this.openCollectionEditor(descriptor);
 			} else {
 				this.openPropertyEditor(descriptor);

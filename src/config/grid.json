@@ -504,7 +504,7 @@
       "description": "option to enable virtualization for columns only (horizontal)"
     },
     "dataSource": {
-      "type": "object",
+      "type": "custom",
       "defaultValue": null,
       "description": "can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself"
     },

@@ -572,6 +572,69 @@ define (function (require, exports, module) {
 			propertyExplorer(descriptor);
 			descriptor.ide.adornerMoveLeft();
 		},
+		setPropertyExplorerValueContents: function (descriptor) {
+			var ide = this.settings.ide, comps = ide.componentIds, dslist = [], i, td = descriptor.td;
+			// handle the dataSource rendering here
+			// 1. check if there are registered $.ig.DataSource components on the page
+			// 2. render either a dropdown or "..." depending on 1. 
+			// the dropdown should contain an item that allows to "Add new datasource". 
+			if (descriptor.propName === "dataSource") {
+				for (i = 0; i < comps.length; i++) {
+					if (comps[i].type === "dataSource" && comps[i].lib === "igniteui") {
+						dslist.push(comps[i]);
+					}
+				}
+				if (dslist.length > 0) {
+					// render a dropdown
+					var ddtmpl = $("#dropdownTemplate").html();
+					var texts = [];
+					for (i = 0; i < dslist.length; i++) {
+						texts.push({
+							key: dslist[i].id,
+							text: dslist[i].id,
+							title: dslist[i].id
+						});
+					}
+					texts.push({
+						key: "addNew",
+						text: "Configure New",
+						title: "Configure New Data Source"
+					});
+					var dd_id = descriptor.element.attr("id") + "_" + descriptor.propName + "_dropDown";
+					var propData = {
+						dropdownId: dd_id,
+						titleText: "Select Data Source",
+						closeOnClick: true,
+						defaultVal: texts[0].text,
+						defaultKey: texts[0].key,
+						itemTexts: texts
+					};
+					var Mustache = require("mustache");
+					var ddHtml = Mustache.to_html(ddtmpl, propData);
+					td.html(ddHtml).addClass("enum-prop-edit");
+					// attach events
+
+					// calc widths
+					var label = td.find(".ig-dropdown-label");
+					label.css({
+						display: "inline-block",
+						width: td.width() - td.find(".input-group-btn").outerWidth()
+					});
+				} else {
+					// render it as an object, because there are no dataSources to select from
+					return $("<span class='custom-editor'>...</span>");
+				}
+			}
+		},
+		customPropertyEditor: function (descriptor) {
+			if (descriptor.propName === "dataSource") {
+				//provide custom DOM inline in the property explorer
+				return true;
+			}
+			// return false so that other plugins which extend the base one know whether the property editing has been 
+			// already handled
+			return false;
+		},
 		_recreateWidget: function (element, widgetName, options) {
 			if (window.frames[0].$(element).data(widgetName)) {
 				window.frames[0].$(element)[widgetName]("destroy");
