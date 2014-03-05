@@ -387,8 +387,8 @@
       "description": " used for virtualization, this is the average value in pixels for a column width "
     },
     "avgRowHeight": {
-      "type": "string",
-      "defaultValue": null,
+      "type": "number",
+      "defaultValue": 25,
       "description": " used for virtualization, this is the average value in pixels (default) that will be used to calculate how many rows and which ones to render as the end user scrolls. Also all rows' height will be automatically equal to this value "
     },
     "caption": {
