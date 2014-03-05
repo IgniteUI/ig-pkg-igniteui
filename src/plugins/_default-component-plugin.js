@@ -620,9 +620,44 @@ define (function (require, exports, module) {
 						display: "inline-block",
 						width: td.width() - td.find(".input-group-btn").outerWidth()
 					});
+					td.find(".dropdown-menu").css({
+						"position": "absolute",
+						"z-index": 20000,
+						"min-height": 0
+					}).addClass("adorner-prop-menu").appendTo("body");
+					//TODO: sort out duplicate code with ide-propertyexplorer.js (enums editing)
+					td.find(".ig-dropdown-label,.ig-dropdown-button").on("mousedown", function (event) {
+						var target = $(event.target), dd = target.closest(".ig-dropdown");
+						var ddlist = dd.find("ul");
+						if (ddlist.length === 0) {
+							ddlist = $("body").find("ul[data-id=" + dd.attr("data-id") + "]");
+						}
+						ide._toggleDropDown(dd, ddlist);
+						if (ddlist.is(":visible")) {
+							$("input.ig-hidden").attr("data-id", dd.attr("data-id")).focus();
+						}
+						event.preventDefault();
+						event.stopPropagation();
+					}).on("mouseup click", function (event) {
+						event.preventDefault();
+						event.stopPropagation();
+					});
+					$(".layout-menu[data-id=" + dd_id + "] > li").on("mouseup", function (event) {
+						var $this = $(this), ddlist = $(event.target).closest("ul");
+						var dd = $("body").find(".ig-dropdown[data-id=" + ddlist.attr("data-id") + "]");
+						label.text($this.attr("data-text")).attr("data-key", $this.attr("data-key"));
+						var descriptor = {
+
+						};
+						alert($this.attr("data-key"));
+						ide._toggleDropDown(dd, ddlist);
+					}).on("mousedown click", function (event) {
+						event.preventDefault();
+						event.stopPropagation();
+					});
 				} else {
 					// render it as an object, because there are no dataSources to select from
-					return $("<span class='custom-editor'>...</span>");
+					 td.html("<span class='custom-editor'>...</span>");
 				}
 			}
 		},
