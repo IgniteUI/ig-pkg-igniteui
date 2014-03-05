@@ -356,7 +356,75 @@ define (function (require, exports, module) {
 			//console.log("Updating property or event: " + descriptor.propName);
 			var ide = this.settings.ide;
 			var name = this._getWidgetName(descriptor.type);
-			if (descriptor.args) {
+			if (descriptor.handlerFlag) {
+				var component = ide.componentById(descriptor.id);
+				if (component) {
+					if (!component.funcMarkers) {
+						component.funcMarkers = {};
+					}
+					//var codeRange = ide.editor.find("<script type=\"text\/javascript\" id=\"code\">\n");
+					// place all handlers below the grid definition
+					var codeRange = component.codeMarker.range;
+					var offset = codeRange.start.row;
+					var handlerMarker, funcMarker, funcBodyStart;
+					var funcName = descriptor.funcName;
+					if (!component.funcMarkers[funcName]) {
+						// build code
+						var handler = "\t\t\t\twindow." + funcName + " = function (";
+						for (var i = 0; i < descriptor.args.length; i++) {
+							handler += descriptor.args[i].name;
+							if (i < descriptor.args.length - 1) {
+								handler += ", ";
+							}
+						}
+						handler += ") {\n\t\t\t\t\t\n\t\t\t\t};\n";
+						// new marker => add an empty event handler and marker;
+						ide.session.insert({row: offset, column: 0}, handler);
+						handlerMarker = new ide.RangeClass(offset, 4, offset + 3, 4); // "4" tabs
+						funcMarker = new ide.RangeClass(offset + 2, 0, offset + 2, 0);
+						ide.addMarker(handlerMarker);
+						ide.addMarker(funcMarker);
+						component.funcMarkers[funcName] = {
+							"handlerMarker": handlerMarker,
+							"functionBodyMarker": funcMarker
+						};
+					} 
+					funcBodyStart = component.funcMarkers[funcName].functionBodyMarker.start.row;
+					ide._deselectComponent();
+					ide.element.find(".code-button").click();
+					if (!funcBodyStart) {
+						funcBodyStart = codeRange.start.row;
+					}
+					// check if prop exists
+					var codeMarker = descriptor.comp.codeMarker;
+					var meta = codeMarker.extraMarkers;
+					var options = meta.options;
+					if (!options[descriptor.propName]) {
+						this.addPropCode({
+							component: descriptor.comp,
+							propName: descriptor.propName,
+							propValue: descriptor.propValue,
+							oldPropValue: descriptor.oldPropValue,
+							defaultValue: descriptor.propValue,
+							propType: descriptor.propType,
+							valueOptions: descriptor.valueOptions
+						}, true, false);
+					} else {
+						this.updatePropCode({
+							component: descriptor.comp,
+							propName: descriptor.propName,
+							propValue: descriptor.propValue,
+							oldPropValue: descriptor.oldPropValue,
+							propType: descriptor.propType,
+							valueOptions: descriptor.valueOptions
+						});
+					}
+					// assuming TAB indentation for all event handlers will be 4
+					//TODO: the second and third param here don't work for some reason => Check with the ACE project 
+					// it always starts from zero col and there is no animation
+					ide.editor.gotoLine(funcBodyStart, 5, true);
+				}
+			} else if (descriptor.args && !descriptor.handlerFlag) {
 				// handle events
 				// try to find an existing marker, for the event, if one doesn't exist, create it
 				var component = ide.componentById(descriptor.id);
@@ -410,6 +478,7 @@ define (function (require, exports, module) {
 				var newOpts = $.extend({}, opts);
 				//ATT: TODO: we may not be setting an option on the root level ! 
 				newOpts[descriptor.propName] = descriptor.propValue;
+				descriptor.comp.options = newOpts;
 				if (descriptor.propType !== "object" && descriptor.propType !== "array") {
 					try {
 						window.frames[0].$(descriptor.placeholder)[name]("option", descriptor.propName, descriptor.propValue);
