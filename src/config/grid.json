@@ -463,6 +463,18 @@
         "formatter": {
           "type": "function",
           "defaultValue": null,
+		  "args": [
+			{
+			  "name": "val",
+			  "type": "string",
+			  "optional": false
+			},
+			{
+			  "name": "record",
+			  "type": "object",
+			  "optional": false
+			}
+		  ],
           "description": "Reference to a function (string or function) which will be used for formatting the cell values. The function should accept a value and return the new formatted value."
         },
         "formula": {
