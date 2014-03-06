@@ -643,6 +643,7 @@ define (function (require, exports, module) {
 		},
 		setPropertyExplorerValueContents: function (descriptor) {
 			var ide = this.settings.ide, comps = ide.componentIds, dslist = [], i, td = descriptor.td;
+			var that = this;
 			// handle the dataSource rendering here
 			// 1. check if there are registered $.ig.DataSource components on the page
 			// 2. render either a dropdown or "..." depending on 1. 
@@ -657,6 +658,13 @@ define (function (require, exports, module) {
 					// render a dropdown
 					var ddtmpl = $("#dropdownTemplate").html();
 					var texts = [];
+					/*
+					texts.push({
+						key: "default",
+						text: "<Default>",
+						title: "Default"
+					});
+					*/
 					for (i = 0; i < dslist.length; i++) {
 						texts.push({
 							key: dslist[i].id,
@@ -674,8 +682,8 @@ define (function (require, exports, module) {
 						dropdownId: dd_id,
 						titleText: "Select Data Source",
 						closeOnClick: true,
-						defaultVal: texts[0].text,
-						defaultKey: texts[0].key,
+						defaultVal: "<Default>",
+						defaultKey: "default",
 						itemTexts: texts
 					};
 					var Mustache = require("mustache");
@@ -713,13 +721,23 @@ define (function (require, exports, module) {
 					});
 					$(".layout-menu[data-id=" + dd_id + "] > li").on("mouseup", function (event) {
 						var $this = $(this), ddlist = $(event.target).closest("ul");
+						var key = $this.attr("data-key");
 						var dd = $("body").find(".ig-dropdown[data-id=" + ddlist.attr("data-id") + "]");
-						label.text($this.attr("data-text")).attr("data-key", $this.attr("data-key"));
-						var descriptor = {
-
+						label.text($this.attr("data-text")).attr("data-key", key);
+						var propDescriptor = {
+							propName: "dataSource",
+							propValue: key,
+							propType: "literal",
+							comp: descriptor.comp
 						};
-						alert($this.attr("data-key"));
 						ide._toggleDropDown(dd, ddlist);
+						if (key !== "addNew") {
+							// we are selecting from a list of available data sources
+							that.update(propDescriptor);
+						} else {
+							//navigate to new screen to configure data source
+							that.customPropertyEditor(descriptor);
+						}
 					}).on("mousedown click", function (event) {
 						event.preventDefault();
 						event.stopPropagation();
@@ -733,6 +751,10 @@ define (function (require, exports, module) {
 		customPropertyEditor: function (descriptor) {
 			if (descriptor.propName === "dataSource") {
 				//provide custom DOM inline in the property explorer
+				var container = $("<div> Custom data source editor goes here </div>")
+				.attr("data-property", "dataSource")
+				.insertAfter(this.settings.ide.currentAdorner());
+				this.settings.ide.adornerMoveLeft();
 				return true;
 			}
 			// return false so that other plugins which extend the base one know whether the property editing has been 
