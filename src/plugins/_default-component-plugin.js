@@ -371,7 +371,7 @@ define (function (require, exports, module) {
 					if (!component.funcMarkers[funcName]) {
 						// build code
 						var handler = "\t\t\t\twindow." + funcName + " = function (";
-						for (var i = 0; i < descriptor.args.length; i++) {
+						for (var i = 0; descriptor.args && i < descriptor.args.length; i++) {
 							handler += descriptor.args[i].name;
 							if (i < descriptor.args.length - 1) {
 								handler += ", ";
