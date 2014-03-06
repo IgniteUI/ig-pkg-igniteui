@@ -573,7 +573,7 @@
     },
     "jsonpRequest": {
       "type": "bool",
-      "defaultValue": null,
+      "defaultValue": false,
       "description": "When dataSource is string defines whether to set data source of type JSONP"
     },
     "localSchemaTransform": {
@@ -690,11 +690,6 @@
           "description": "Specifies whether the ids of the removed resources are send through the request URI"
         }
       }
-    },
-    "rowTemplate": {
-      "type": "string",
-      "defaultValue": null,
-      "description": "jQuery templating style template that will be used to render data records"
     },
     "rowVirtualization": {
       "type": "bool",
