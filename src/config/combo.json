@@ -679,7 +679,7 @@
     },
     "valueKeyType": {
       "type": "string",
-      "defaultValue": null,
+      "defaultValue": "string",
       "description": " Gets sets type of values used for data cell/items with valueKey. That value is assign to schema of $.ig.DataSource.",
       "valueOptions": [
         {
