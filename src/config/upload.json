@@ -129,11 +129,6 @@
       "defaultValue": false,
       "description": "Get or set whether the file start upload automatically when it is selected. Default is false."
     },
-    "controlId": {
-      "type": "string",
-      "defaultValue": "",
-      "description": "UniqueId of the control - should not be changed by developer. Set from server-side wrapper."
-    },
     "css": {
       "type": "string",
       "defaultValue": null,

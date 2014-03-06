@@ -483,7 +483,7 @@
           "description": "a reference or name of a javascript function which will calculate the value based on other cell values in the same row when column is unbound."
         },
         "group": {
-          "type": "array",
+          "type": "object",
           "schemaRef": "grid.columns",
           "description": "Array of other column definitions. If the column has the property group than the grid has multi column headers",
           "defaultValue": null
@@ -506,7 +506,7 @@
         "unboundValues": {
           "type": "array",
           "defaultValue": null,
-          "arrayMemberType": "object"
+          "arrayMemberType": "string"
         }
       }
     },
@@ -566,11 +566,6 @@
       "defaultValue": null,
       "description": " This is the total height of the grid, including all UI elements - scroll container with data rows, header, footer, filter row -  (if any), etc.  "
     },
-    "jQueryTemplating": {
-      "type": "bool",
-      "defaultValue": false,
-      "description": "custom high-performance rendering will be used for rendering by default. jQuery Templating plugin can be used and enabled by setting this option to true. This will allow usage of column / row templates in jQuery Templating style. If virtualization is enabled, it is advised to keep this option to \"false\", in order to have better scrolling/rendering performance  <br>&nbsp;&nbsp;&nbsp;*** IMPORTANT ***<br>&nbsp;&nbsp;&nbsp;This option has been depricated as of the 12.1 release. The igGrid now uses the custom Infragistics templating engine by default."
-    },
     "jsonpRequest": {
       "type": "bool",
       "defaultValue": false,
@@ -594,7 +589,7 @@
     "renderCheckboxes": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Gets sets ability to render checkboxes and use checkbox editor when dataType of a column is \"bool\". That option is not available when jQueryTemplating is used."
+      "description": "Gets sets ability to render checkboxes and use checkbox editor when dataType of a column is \"bool\"."
     },
     "requestType": {
       "type": "string",
