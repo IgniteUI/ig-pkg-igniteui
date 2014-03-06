@@ -492,7 +492,7 @@ define (function (require, exports, module) {
 						try {
 							this._recreateWidget(descriptor.placeholder, name, newOpts);
 						} catch(err) {
-							var errorContainer = $("<div class='prop-editor-error-message'>" + err + "</div>"),
+							var errorContainer = $("<div class='prop-editor-error-message' title='" + err + "'>" + err + "</div>"),
 								offset = window.frames[0].$(descriptor.placeholder).offset();
 							errorContainer.css({
 								"top": offset.top,
@@ -507,7 +507,7 @@ define (function (require, exports, module) {
 					try {
 						this._recreateWidget(descriptor.placeholder, name, newOpts);
 					} catch(err) {
-						var errorContainer = $("<div class='prop-editor-error-message'>" + err + "</div>"),
+						var errorContainer = $("<div class='prop-editor-error-message' title='" + err + "'>" + err + "</div>"),
 							offset = window.frames[0].$(descriptor.placeholder).offset();
 						errorContainer.css({
 							"top": offset.top,
