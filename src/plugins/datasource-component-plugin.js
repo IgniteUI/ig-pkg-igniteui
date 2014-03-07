@@ -207,9 +207,11 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 				}
 				that.openCollectionEditor(descriptor);
 			});
+			/*
 			dscontainer.find(".ds-diag-editdatainline").click(function (event) {
 				//openPropertyEditor
 			});
+			*/
 			localContainer.find("input").val(dsval).keyup(function (event) {
 				// editing local data source
 				//ds.settings.dataSource = event.target.value; // validate?

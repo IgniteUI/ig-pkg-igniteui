@@ -187,7 +187,7 @@
       "description": " Gets sets the width of each column in the container. The container width can be set as a number in pixels or as a string in pixels (px) or percentage (%)."
     },
     "dataSource": {
-      "type": "object",
+      "type": "custom",
       "defaultValue": null,
       "description": "Specifies any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself."
     },

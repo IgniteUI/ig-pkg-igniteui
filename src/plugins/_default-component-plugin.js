@@ -477,10 +477,14 @@ define (function (require, exports, module) {
 				//ATT: TODO: ALSO needs to handle the case where an option gets changed manually in the code view
 				var newOpts = $.extend({}, opts);
 				//ATT: TODO: we may not be setting an option on the root level ! 
-				newOpts[descriptor.propName] = descriptor.propValue;
+				if (descriptor.propType !== "literal") {
+					newOpts[descriptor.propName] = descriptor.propValue;
+				} else {
+					newOpts[descriptor.propName] = window.frames[0][descriptor.propValue];
+				}
 				descriptor.comp.options = newOpts;
 				window.frames[0].$(descriptor.placeholder).children(".prop-editor-error-message").remove();
-				if (descriptor.propType !== "object" && descriptor.propType !== "array") {
+				if (descriptor.propType !== "object" && descriptor.propType !== "array" && descriptor.propType !== "literal") {
 					try {
 						window.frames[0].$(descriptor.placeholder)[name]("option", descriptor.propName, descriptor.propValue);
 					} catch (err) {
@@ -698,8 +702,8 @@ define (function (require, exports, module) {
 					}
 					texts.push({
 						key: "addNew",
-						text: "Configure New",
-						title: "Configure New Data Source"
+						text: "Configure",
+						title: "Configure Data Source"
 					});
 					var dd_id = descriptor.element.attr("id") + "_" + descriptor.propName + "_dropDown";
 					var propData = {
@@ -758,6 +762,24 @@ define (function (require, exports, module) {
 						if (key !== "addNew") {
 							// we are selecting from a list of available data sources
 							that.update(propDescriptor);
+							// if the data source is defined below the component which is using it, then the data source needs to be put on top
+							// find the data source component and compare markers
+							var dsComp = ide.componentById(key);
+							//dsComp.codeMarker.range
+							//descriptor.comp.codeMarker.range
+							if (dsComp.codeMarker.range.start.row >= descriptor.comp.codeMarker.range.end.row) {
+								var prevStart = descriptor.comp.codeMarker.range.start.row;
+								// we need to bump the data source (move it) above the component on which it is used
+								ide.session.moveText(dsComp.codeMarker.range, {row: prevStart, column: 0});
+								// add datasource marker again, because it's now lost. 
+								ide.session.removeMarker(dsComp.codeMarker.id);
+								dsComp.codeMarker.range = ide.createAndAddMarker(
+									prevStart,
+									0,
+									descriptor.comp.codeMarker.range.start.row,
+									0
+								);
+							}
 						} else {
 							//navigate to new screen to configure data source
 							that.customPropertyEditor(descriptor);
@@ -772,12 +794,102 @@ define (function (require, exports, module) {
 				}
 			}
 		},
+		renderDataSourceArea: function (descriptor, container, dsval, localdsval) {
+			var that = this;
+			var localRemoteArea = $("<div></div>").addClass("ds-diag-dt").prependTo(container);
+			var remoteContainer = $("<div></div>").appendTo(container).addClass("ds-diag-remotecontainer");
+			$("<span>Is Your Data: </span>").appendTo(localRemoteArea).addClass("ds-diag-dt-label");
+			$("<input type=\"radio\" name=\"dsproptype\" id=\"dsproptype1\" checked value=\"Remote\"/>").addClass("ds-diag-dt-remote").appendTo(localRemoteArea);
+			$("<label for=\"dsproptype1\">Remote</label>").appendTo(localRemoteArea).addClass("ds-diag-dt-remotelabel");
+			$("<input type=\"radio\" name=\"dsproptype\" id=\"dsproptype2\" value=\"Local\"/>").addClass("ds-diag-dt-local").appendTo(localRemoteArea);
+			$("<label for=\"dsproptype2\">Local</label>").appendTo(localRemoteArea).addClass("ds-diag-dt-locallabel");
+			$("<br><label>URL Endpoint</label>").addClass("ds-diag-urllabel").appendTo(remoteContainer);
+			$("<div><input type=\"text\" class=\"form-control\"/><span class=\"btn btn-default\">Test</span></div>").addClass("ds-diag-url").appendTo(remoteContainer);
+			var localContainer = $("<div></div>").addClass("ds-diag-localcontainer").css("display", "none").appendTo(container);
+			$("<label>Type var name containing data:</label>").appendTo(localContainer);
+			$("<input type=\"text\" class=\"form-control\"/>").appendTo(localContainer);
+			localRemoteArea.children("input[name=dsproptype]").on("change", function (event) {
+				if ($(event.target).hasClass("ds-diag-dt-local")) {
+					// hide remote, show local
+					remoteContainer.css("display", "none");
+					localContainer.css("display", "block");
+				} else {
+					// hide local, show remote
+					localContainer.css("display", "none");
+					remoteContainer.css("display", "block");
+				}
+			});
+			var inputUrl = remoteContainer.find(".ds-diag-url > input");
+			if ($.type(dsval) === "string") {
+				inputUrl.val(dsval);
+			}
+			inputUrl.keyup(function (event) {
+				var descr = {};
+				descr.propName = "dataSource";
+				descr.placeholder = descriptor.element;
+				descr.comp = descriptor.comp;
+				descr.oldPropValue = event.target.value.substring(0, event.target.value.length - 1);
+				descr.propType = "string";
+				descr.propValue = event.target.value;
+				that.update(descr);
+			});
+			remoteContainer.find(".ds-diag-url > .btn").click(function (event) {
+				// test datasource by doing a query to it
+				var url = that.getPropValue({
+					type: descriptor.type,
+					propName: descriptor.propName,
+					placeholder: descriptor.element
+				});
+				var testLabel = remoteContainer.find(".test-label");
+				if (testLabel.length === 0) {
+					testLabel = $("<div class=\"test-label\"></div>").insertAfter(remoteContainer.find("input"));
+				}
+				if (url) {
+					$.ajax({
+						url: url,
+						crossDomain: true,
+						dataType : "jsonp"
+					}).fail(function () {
+						testLabel.addClass("test-fail").removeClass("test-success").text("Request failed.");
+					}).done(function () {
+						testLabel.removeClass("test-fail").addClass("test-success").text("Success!");
+					});
+				} else {
+					testLabel.removeClass("test-fail").removeClass("test-success").text("Please set a valid URL");
+				} 
+			});
+			localContainer.find("input").val(localdsval ? localdsval : dsval).keyup(function (event) {
+				var descr = {};
+				descr.propName = "dataSource";
+				descr.placeholder = descriptor.element;
+				descr.comp = descriptor.comp;
+				descr.oldPropValue = event.target.value.substring(0, event.target.value.length - 1);
+				descr.propType = "literal";
+				descr.propValue = event.target.value;
+				that.update(descr);
+			});
+		},
 		customPropertyEditor: function (descriptor) {
+			var that = this;
 			if (descriptor.propName === "dataSource") {
+				var dsval = this.getPropValue({
+					type: descriptor.type,
+					propName: descriptor.propName,
+					placeholder: descriptor.element
+				});
+				var localdsval = dsval;
+				if (dsval === null) {
+					dsval = "";
+				} else if ($.type(dsval) !== "string") {
+					localdsval = descriptor.comp.codeMarker.extraMarkers.options[descriptor.propName].propValue;
+					dsval = "";
+				}
 				//provide custom DOM inline in the property explorer
-				var container = $("<div> Custom data source editor goes here </div>")
+				var container = $("<div></div>")
+				.addClass("ds-diag-container adorner-summary-sheet")
 				.attr("data-property", "dataSource")
 				.insertAfter(this.settings.ide.currentAdorner());
+				this.renderDataSourceArea(descriptor, container, dsval, localdsval);
 				this.settings.ide.adornerMoveLeft();
 				return true;
 			}

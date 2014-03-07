@@ -303,7 +303,7 @@
       "description": "Gets sets ability to load data (bind dataSource) at the time when drop-down list is opened.<br>&nbsp;&nbsp;&nbsp;&nbsp;Notes:<br>&nbsp;&nbsp;&nbsp;&nbsp;1. Before data is loaded the selectedItems, value, text and other options/methods will fail.<br>&nbsp;&nbsp;&nbsp;&nbsp;2. Initial selection, text and value will have no effect.<br>&nbsp;&nbsp;&nbsp;&nbsp;3. If on first drop-down the dataSource does not contain selectedItems (for example, enabled load on demand), then selection will be destroyed.<br>&nbsp;&nbsp;&nbsp;&nbsp;4. To get around with values, an application may enable \"allowCustomValue\" option and use the \"text\" option instead of \"selectedItems\"."
     },
     "dataSource": {
-      "type": "object",
+      "type": "custom",
       "defaultValue": null,
       "description": "Gets sets a valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself.<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: if it is set to string and \"dataSourceType\" option is not set, then $.ig.JSONPDataSource is used."
     },

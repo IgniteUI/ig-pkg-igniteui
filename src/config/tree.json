@@ -459,7 +459,7 @@
       ]
     },
     "dataSource": {
-      "type": "array",
+      "type": "custom",
       "defaultValue": null,
       "description": "Specifies any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself."
     },
