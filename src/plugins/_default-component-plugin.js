@@ -371,7 +371,7 @@ define (function (require, exports, module) {
 					if (!component.funcMarkers[funcName]) {
 						// build code
 						var handler = "\t\t\t\twindow." + funcName + " = function (";
-						for (var i = 0; i < descriptor.args.length; i++) {
+						for (var i = 0; descriptor.args && i < descriptor.args.length; i++) {
 							handler += descriptor.args[i].name;
 							if (i < descriptor.args.length - 1) {
 								handler += ", ";
@@ -479,6 +479,7 @@ define (function (require, exports, module) {
 				//ATT: TODO: we may not be setting an option on the root level ! 
 				newOpts[descriptor.propName] = descriptor.propValue;
 				descriptor.comp.options = newOpts;
+				window.frames[0].$(descriptor.placeholder).children(".prop-editor-error-message").remove();
 				if (descriptor.propType !== "object" && descriptor.propType !== "array") {
 					try {
 						window.frames[0].$(descriptor.placeholder)[name]("option", descriptor.propName, descriptor.propValue);
@@ -487,12 +488,35 @@ define (function (require, exports, module) {
 						// this usually happens when we try to use setOption at runtime for props that don't allow this 
 						// those are usually props which need to re-render the whole widget to take effect, 
 						// like changing virtualization from false to true
-						//TODO: options
-						this._recreateWidget(descriptor.placeholder, name, newOpts);
+						// K.D. Catching exceptions raised from incorrect configurations.
+						try {
+							this._recreateWidget(descriptor.placeholder, name, newOpts);
+						} catch(err) {
+							var errorContainer = $("<div class='prop-editor-error-message' title='" + err + "'>" + err + "</div>"),
+								offset = window.frames[0].$(descriptor.placeholder).offset();
+							errorContainer.css({
+								"top": offset.top,
+								"left": offset.left,
+								"width": window.frames[0].$(descriptor.placeholder).outerWidth(),
+								"height": window.frames[0].$(descriptor.placeholder).outerHeight()
+							});
+							window.frames[0].$(descriptor.placeholder).append(errorContainer);
+						}
 					}
 				} else {
-					//var options = window.frames[0].$(descriptor.placeholder).data(name).options;
-					this._recreateWidget(descriptor.placeholder, name, newOpts);
+					try {
+						this._recreateWidget(descriptor.placeholder, name, newOpts);
+					} catch(err) {
+						var errorContainer = $("<div class='prop-editor-error-message' title='" + err + "'>" + err + "</div>"),
+							offset = window.frames[0].$(descriptor.placeholder).offset();
+						errorContainer.css({
+							"top": offset.top,
+							"left": offset.left,
+							"width": window.frames[0].$(descriptor.placeholder).outerWidth(),
+							"height": window.frames[0].$(descriptor.placeholder).outerHeight()
+						});
+						window.frames[0].$(descriptor.placeholder).append(errorContainer);
+					}
 				}
 				// check if prop exists
 				var codeMarker = descriptor.comp.codeMarker;
