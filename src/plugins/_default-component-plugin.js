@@ -706,7 +706,7 @@ define (function (require, exports, module) {
 					}
 					texts.push({
 						key: "addNew",
-						text: "Configure",
+						text: "Configure...",
 						title: "Configure Data Source"
 					});
 					var dd_id = descriptor.element.attr("id") + "_" + descriptor.propName + "_dropDown";
@@ -794,7 +794,7 @@ define (function (require, exports, module) {
 					});
 				} else {
 					// render it as an object, because there are no dataSources to select from
-					 td.html("<span class='custom-editor'>...</span>");
+					 td.html("<span class='custom-editor'>Configure...</span>");
 				}
 			}
 		},
