@@ -253,9 +253,9 @@ define (function (require, exports, module) {
 			var marker = options[descriptor.propName].marker;
 			propStr += ide._tabStr(codeMarker.baseIndent + 1);
 			if (descriptor.propType === "object") {
-				propStr += descriptor.propName + ": "  + ide.getObjectCodeString(descriptor.propValue, codeMarker.baseIndent + 1);
+				propStr += descriptor.propName + ": "  + ide.getObjectCodeString(descriptor.propValue, codeMarker.baseIndent + 1, descriptor.schema);
 			} else if (descriptor.propType === "array") {
-				propStr += descriptor.propName + ": "  + ide.getArrayCodeString(descriptor.propValue, codeMarker.baseIndent + 1);
+				propStr += descriptor.propName + ": "  + ide.getArrayCodeString(descriptor.propValue, codeMarker.baseIndent + 1, descriptor.schema);
 			} else {
 				propStr += descriptor.propName + ": "  + ide._propCodeDefaultVal(descriptor.propType, descriptor.propValue);
 			}
@@ -302,9 +302,9 @@ define (function (require, exports, module) {
 			var val;
 			//TODO: Ensure those are markerized as well -  hierarchical support
 			if (descriptor.propType === "object") {
-				val = ide.getObjectCodeString(descriptor.propValue, codeMarker.baseIndent + 1);
+				val = ide.getObjectCodeString(descriptor.propValue, codeMarker.baseIndent + 1, descriptor.schema);
 			} else if (descriptor.propType === "array") {
-				val = ide.getArrayCodeString(descriptor.propValue, codeMarker.baseIndent + 1);
+				val = ide.getArrayCodeString(descriptor.propValue, codeMarker.baseIndent + 1, descriptor.schema);
 			} else {
 				val = ide._propCodeDefaultVal(type, descriptor.defaultValue);
 			}
@@ -407,7 +407,8 @@ define (function (require, exports, module) {
 							oldPropValue: descriptor.oldPropValue,
 							defaultValue: descriptor.propValue,
 							propType: descriptor.propType,
-							valueOptions: descriptor.valueOptions
+							valueOptions: descriptor.valueOptions,
+							schema: descriptor.schema
 						}, true, false);
 					} else {
 						this.updatePropCode({
@@ -416,7 +417,8 @@ define (function (require, exports, module) {
 							propValue: descriptor.propValue,
 							oldPropValue: descriptor.oldPropValue,
 							propType: descriptor.propType,
-							valueOptions: descriptor.valueOptions
+							valueOptions: descriptor.valueOptions,
+							schema: descriptor.schema
 						});
 					}
 					// assuming TAB indentation for all event handlers will be 4
@@ -530,7 +532,8 @@ define (function (require, exports, module) {
 						oldPropValue: descriptor.oldPropValue,
 						defaultValue: descriptor.propValue,
 						propType: descriptor.propType,
-						valueOptions: descriptor.valueOptions
+						valueOptions: descriptor.valueOptions,
+						schema: descriptor.schema
 					}, true, false);
 				} else {
 					this.updatePropCode({
@@ -539,7 +542,8 @@ define (function (require, exports, module) {
 						propValue: descriptor.propValue,
 						oldPropValue: descriptor.oldPropValue,
 						propType: descriptor.propType,
-						valueOptions: descriptor.valueOptions
+						valueOptions: descriptor.valueOptions,
+						schema: descriptor.schema
 					});
 				}
 			}
