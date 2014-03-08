@@ -901,6 +901,9 @@ define (function (require, exports, module) {
 			// already handled
 			return false;
 		},
+		discoverComponents: function (descriptor) {
+			console.log("discovering ignite ui");
+		},
 		_recreateWidget: function (element, widgetName, options) {
 			if (window.frames[0].$(element).data(widgetName)) {
 				window.frames[0].$(element)[widgetName]("destroy");
