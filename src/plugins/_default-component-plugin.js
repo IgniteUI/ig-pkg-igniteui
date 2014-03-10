@@ -975,15 +975,29 @@ define (function (require, exports, module) {
 												codeMarkerEnd.end.row,
 												codeMarkerEnd.end.column
 											);
-											var totalCount = ide._getComponentCount(name);
+											var id = name + (ide._getComponentCount(name) + 1);
 											ide.componentIds.push({
-												id: totalCount + 1,
+												id: id,
 												lib: "igniteui",
 												type: name,
 												visual: true, //TODO: support for non-visual components
 												providerType: ide._codeProviders["igniteui"].getProviderType(name),
-												codeMarker: codeMarker,
-												htmlMarker: htmlMarker
+												codeMarker: {
+													range: ide.createAndAddMarker(
+														codeMarker.start.row,
+														codeMarker.start.column,
+														codeMarker.end.row,
+														codeMarker.end.column
+													) // make it dynamic
+												},
+												htmlMarker: {
+													range: ide.createAndAddMarker(
+														htmlMarker.start.row,
+														htmlMarker.start.column,
+														htmlMarker.end.row,
+														htmlMarker.end.column
+													) // make it dynamic	
+												}
 											});
 											// finally add the ig-component class to the DOM, and the special data-attributes
 											window.frames[0].$(selector).addClass("ig-component").attr("data-type", name).attr("data-lib", "igniteui");
