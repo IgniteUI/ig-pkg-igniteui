@@ -903,6 +903,106 @@ define (function (require, exports, module) {
 		},
 		discoverComponents: function (descriptor) {
 			console.log("discovering ignite ui");
+			var ide = this.settings.ide;
+			var that = this;
+			// we need to parse the javascript first and look for code like this
+			// $("#<compId").ig<Component>(options);
+			// Then we know some ig-component is defined via code
+			// then we look for the htmlMarker by looking for <div id=compId></div>
+			// for js parsing we'll use esprima
+			// we need to get all script blocks and evaluate their contents 
+			// as a start we start with the <script id=code>
+			var code =  ide.editor.getValue();
+			code = code.substring(code.indexOf("<script id=\"code\">"), code.length - 1).replace("<script id=\"code\">", "");
+			code = code.substring(0, code.indexOf("</script>"));
+			// get the HTML code 
+			var htmlCode = ide.editor.getValue();
+			htmlCode = htmlCode.substring(htmlCode.indexOf("<html>"), htmlCode.length - 1);
+			var esprima = require("esprima");
+			var ast = esprima.parse(code);
+			var estraverse = require("estraverse");
+			estraverse.traverse(ast, {
+				enter: function (node, parent) {
+					if (node.type === "CallExpression") {
+						// find the control selector
+						var selector, htmlMarker, codeMarker, comp;
+						if (!node.callee || (node.callee && !node.callee.property)) {
+							return;
+						}
+						comp = node.callee.property.name; //example: igGrid
+						// validate component
+						if (comp && comp.startsWith("ig")) {
+							var components = that.settings.packageInfo.components;
+							for (var name in components) {
+								if (components.hasOwnProperty(name) && that._getWidgetName(name) === comp) {
+									// detected an ignite comp call
+									// get the id
+									selector = node.callee.object.arguments[0].value; // assumes a literal
+									// now find a html line which includes <div id='[selector]'></div>
+									// and record this as the HTML marker
+									//TODO: currently only the ID selector is supported
+									// later we can actually find / dissect the selector and reach that element
+									var range = ide.editor.find("<div id=\"" + selector.replace("#", "") + "\"></div>");
+									if (!range) {
+										//fallback
+										range = ide.editor.find("<table id=\"" + selector.replace("#", "") + "\"></table>");
+									}
+									if (range) {
+										htmlMarker = range;
+										// then compare componentIds and this html marker to check if it's the same (already added component)
+										// if it is, exit
+										var exists = false;
+										for (var i = 0; i < ide.componentIds.length; i++) {
+											var mkr = ide.componentIds[i].htmlMarker;
+											if (mkr && mkr.start.row === htmlMarker.start.row
+												//&& mkr.start.column === htmlMarker.start.column
+												&& mkr.end.row === htmlMarker.end.row) {
+												//&& mkr.end.column === htmlMarker.end.column) {
+												exists = true;
+												break; // exists
+											}
+										}
+										// otherwise add it 
+										if (!exists) {
+											var codeMarkerStart = ide.editor.find("$(\"" + selector + "\")." + that._getWidgetName(name) + "({");
+											var codeMarkerEnd = ide.editor.find({
+												needle: "});",
+												start: codeMarkerStart.start
+											});
+											var codeMarker = new ide.RangeClass(
+												codeMarkerStart.start.row,
+												codeMarkerStart.start.column,
+												codeMarkerEnd.end.row,
+												codeMarkerEnd.end.column
+											);
+											var totalCount = ide._getComponentCount(name);
+											ide.componentIds.push({
+												id: totalCount + 1,
+												lib: "igniteui",
+												type: name,
+												visual: true, //TODO: support for non-visual components
+												providerType: ide._codeProviders["igniteui"].getProviderType(name),
+												codeMarker: codeMarker,
+												htmlMarker: htmlMarker
+											});
+											// finally add the ig-component class to the DOM, and the special data-attributes
+											window.frames[0].$(selector).addClass("ig-component").attr("data-type", name).attr("data-lib", "igniteui");
+											// finally, if metadata for component of type <name> is not loaded, load it
+											if (!components[name].properties) {
+												components[name].loadInfo();
+											}
+										}
+									}
+									break; // found
+								}
+							}
+						}
+					}
+				},
+				leave: function (node, parent) {
+
+				}
+			});
 		},
 		_recreateWidget: function (element, widgetName, options) {
 			if (window.frames[0].$(element).data(widgetName)) {
