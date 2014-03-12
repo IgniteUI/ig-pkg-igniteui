@@ -338,9 +338,19 @@ define (function (require, exports, module) {
 					start: {
 						row: innerMarker.start.row + 1,
 						column: 0
-						//column: innerMarker.start.column
 					}
 				});
+				//TODO:
+				if (typeof (r) === "undefined" && type === "string") {
+					// fallback
+					r = ide.editor.find({
+						needle: ide._tabStr(codeMarker.baseIndent + 1) + descriptor.propName + ": " + ide._propCodeDefaultVal("number", descriptor.defaultValue),
+						start: {
+							row: innerMarker.start.row + 1,
+							column: 0
+						}
+					});
+				}
 				if (r) {
 					omarker = ide.createAndAddMarker(r.start.row, r.start.column, r.end.row, r.end.column);
 					options[descriptor.propName].marker = omarker;
@@ -527,6 +537,9 @@ define (function (require, exports, module) {
 				// check if prop exists
 				var codeMarker = descriptor.comp.codeMarker;
 				var meta = codeMarker.extraMarkers;
+				if (!meta.options) {
+					meta.options = {};
+				}
 				var options = meta.options;
 				if (!options[descriptor.propName]) {
 					this.addPropCode({
@@ -903,7 +916,7 @@ define (function (require, exports, module) {
 		},
 		discoverComponents: function (descriptor) {
 			console.log("discovering ignite ui");
-			var ide = this.settings.ide;
+			var ide = this.settings.ide, i, j;
 			var that = this;
 			// we need to parse the javascript first and look for code like this
 			// $("#<compId").ig<Component>(options);
@@ -912,111 +925,166 @@ define (function (require, exports, module) {
 			// for js parsing we'll use esprima
 			// we need to get all script blocks and evaluate their contents 
 			// as a start we start with the <script id=code>
-			var code =  ide.editor.getValue();
-			code = code.substring(code.indexOf("<script id=\"code\">"), code.length - 1).replace("<script id=\"code\">", "");
-			code = code.substring(0, code.indexOf("</script>"));
-			// get the HTML code 
-			var htmlCode = ide.editor.getValue();
-			htmlCode = htmlCode.substring(htmlCode.indexOf("<html>"), htmlCode.length - 1);
-			var esprima = require("esprima");
-			var ast = esprima.parse(code);
+			//var code =  ide.editor.getValue();
+			//code = code.substring(code.indexOf("<script id=\"code\">"), code.length - 1).replace("<script id=\"code\">", "");
+			//code = code.substring(0, code.indexOf("</script>"));
+			// get the HTML code
+			var scripts = window.frames[0].$("script");
+			ide.editor.findAll("<script");
+			var scriptRanges = ide.editor.getSelection().ranges;
+			//var htmlCode = ide.editor.getValue();
+			//htmlCode = htmlCode.substring(htmlCode.indexOf("<html>"), htmlCode.length - 1);
 			var estraverse = require("estraverse");
-			estraverse.traverse(ast, {
-				enter: function (node, parent) {
-					if (node.type === "CallExpression") {
-						// find the control selector
-						var selector, htmlMarker, codeMarker, comp;
-						if (!node.callee || (node.callee && !node.callee.property)) {
-							return;
-						}
-						comp = node.callee.property.name; //example: igGrid
-						// validate component
-						if (comp && comp.startsWith("ig")) {
-							var components = that.settings.packageInfo.components;
-							for (var name in components) {
-								if (components.hasOwnProperty(name) && that._getWidgetName(name) === comp) {
-									// detected an ignite comp call
-									// get the id
-									selector = node.callee.object.arguments[0].value; // assumes a literal
-									// now find a html line which includes <div id='[selector]'></div>
-									// and record this as the HTML marker
-									//TODO: currently only the ID selector is supported
-									// later we can actually find / dissect the selector and reach that element
-									var range = ide.editor.find("<div id=\"" + selector.replace("#", "") + "\"></div>");
-									if (!range) {
-										//fallback
-										range = ide.editor.find("<table id=\"" + selector.replace("#", "") + "\"></table>");
-									}
-									if (range) {
-										htmlMarker = range;
-										// then compare componentIds and this html marker to check if it's the same (already added component)
-										// if it is, exit
-										var exists = false;
-										for (var i = 0; i < ide.componentIds.length; i++) {
-											var mkr = ide.componentIds[i].htmlMarker;
-											if (mkr && mkr.start.row === htmlMarker.start.row
-												//&& mkr.start.column === htmlMarker.start.column
-												&& mkr.end.row === htmlMarker.end.row) {
-												//&& mkr.end.column === htmlMarker.end.column) {
-												exists = true;
-												break; // exists
-											}
-										}
-										// otherwise add it 
-										if (!exists) {
-											var codeMarkerStart = ide.editor.find("$(\"" + selector + "\")." + that._getWidgetName(name) + "({");
-											var codeMarkerEnd = ide.editor.find({
-												needle: "});",
-												start: codeMarkerStart.start
-											});
-											var codeMarker = new ide.RangeClass(
-												codeMarkerStart.start.row,
-												codeMarkerStart.start.column,
-												codeMarkerEnd.end.row,
-												codeMarkerEnd.end.column
-											);
-											var id = name + (ide._getComponentCount(name) + 1);
-											ide.componentIds.push({
-												id: id,
-												lib: "igniteui",
-												type: name,
-												visual: true, //TODO: support for non-visual components
-												providerType: ide._codeProviders["igniteui"].getProviderType(name),
-												codeMarker: {
-													range: ide.createAndAddMarker(
-														codeMarker.start.row,
-														codeMarker.start.column,
-														codeMarker.end.row,
-														codeMarker.end.column
-													) // make it dynamic
-												},
-												htmlMarker: {
-													range: ide.createAndAddMarker(
-														htmlMarker.start.row,
-														htmlMarker.start.column,
-														htmlMarker.end.row,
-														htmlMarker.end.column
-													) // make it dynamic	
-												}
-											});
-											// finally add the ig-component class to the DOM, and the special data-attributes
-											window.frames[0].$(selector).addClass("ig-component").attr("data-type", name).attr("data-lib", "igniteui");
-											// finally, if metadata for component of type <name> is not loaded, load it
-											if (!components[name].properties) {
-												components[name].loadInfo();
-											}
-										}
-									}
-									break; // found
-								}
+			var esprima = require("esprima");
+			var compPromises = {};
+			var processFunc = function (node, name, components, sr) {
+				var selector, htmlMarker, codeMarker, 
+				// detected an ignite comp call
+				// get the id
+				selector = node.callee.object.arguments[0].value; // assumes a literal
+				// now find a html line which includes <div id='[selector]'></div>
+				// and record this as the HTML marker
+				//TODO: currently only the ID selector is supported
+				// later we can actually find / dissect the selector and reach that element
+				var range = ide.editor.find("<div id=\"" + selector.replace("#", "") + "\"></div>");
+				if (!range) {
+					//fallback
+					range = ide.editor.find("<table id=\"" + selector.replace("#", "") + "\"></table>");
+				}
+				if (range) {
+					htmlMarker = range;
+					// then compare componentIds and this html marker to check if it's the same (already added component)
+					// if it is, exit
+					var exists = false;
+					for (j = 0; j < ide.componentIds.length; j++) {
+						if (ide.componentIds[j].htmlMarker) {
+							var mkr = ide.componentIds[j].htmlMarker.range;
+							if (mkr && mkr.start.row === htmlMarker.start.row
+								//&& mkr.start.column === htmlMarker.start.column
+								&& mkr.end.row === htmlMarker.end.row) {
+								//&& mkr.end.column === htmlMarker.end.column) {
+								exists = true;
+								break; // exists
 							}
 						}
 					}
-				},
-				leave: function (node, parent) {
-
+					// otherwise add it 
+					if (!exists) {
+						/*
+						var codeMarkerStart = ide.editor.find("$(\"" + selector + "\")." + that._getWidgetName(name) + "({");
+						var codeMarkerEnd = ide.editor.find({
+							needle: "});",
+							start: codeMarkerStart.start
+						});
+						*/
+						var codeMarker = new ide.RangeClass(
+							//codeMarkerStart.start.row,
+							//codeMarkerStart.start.column,
+							//codeMarkerEnd.end.row,
+							//codeMarkerEnd.end.column
+							node.loc.start.line + sr.start.row - 1,
+							node.loc.start.column,
+							node.loc.end.line + sr.start.row - 1,
+							node.loc.end.column + 1
+						);
+						//console.log("marker start: " + codeMarker.start.row);
+						var id = name + (ide._getComponentCount(name) + 1);
+						ide.componentIds.push({
+							id: id,
+							lib: "igniteui",
+							type: name,
+							visual: true, //TODO: support for non-visual components
+							providerType: ide._codeProviders["igniteui"].getProviderType(name),
+							codeMarker: {
+								range: ide.createAndAddMarker(
+									codeMarker.start.row,
+									codeMarker.start.column,
+									codeMarker.end.row,
+									codeMarker.end.column
+								), // make it dynamic
+								extraMarkers: {},
+								baseIndent: 4
+							},
+							htmlMarker: {
+								range: ide.createAndAddMarker(
+									htmlMarker.start.row,
+									htmlMarker.start.column,
+									htmlMarker.end.row,
+									htmlMarker.end.column
+								) // make it dynamic	
+							}
+						});
+						// call addExtraMarkers, so that existing options are correctly parsed
+						var orderedProps = [];
+						var cprops = node.arguments[0].properties;
+						for (var k = 0; k < cprops.length; k++) {
+							orderedProps.push({
+								name: cprops[k].key.name,
+								value: cprops[k].value.value,
+								type: components[name].properties[cprops[k].key.name].type
+							});
+						}
+						var d = {
+							type: name,
+							codeObj: { 
+								orderedProps: orderedProps
+							},
+							marker: ide.componentIds[ide.componentIds.length - 1].codeMarker,
+							rclass: ide.RangeClass
+						};
+						// note that "addExtraMarkers" has its own way of figuring out offsets by starting
+						// at the beginning of the script snippet
+						// since we are using esprima with line/column numbering enabled
+						// we already have those offsets (potential optimization in addExtraMarkers)
+						ide._codeProviders["igniteui"].addExtraMarkers(d);
+						// finally add the ig-component class to the DOM, and the special data-attributes
+						window.frames[0].$(selector).addClass("ig-component").attr("data-type", name).attr("data-lib", "igniteui");
+					}
 				}
-			});
+			};
+			for (i = 0; i < scripts.length; i++) {
+				(function (i) {
+					var code = $(scripts[i]).text();
+					var ast = esprima.parse(code, {
+						loc: true // include location of nodes (row and column info, used in ACE markers)
+					});
+					estraverse.traverse(ast, {
+						enter: function (node, parent) {
+							if (node.type === "CallExpression") {
+								// find the control selector
+								var comp;
+								if (!node.callee || (node.callee && !node.callee.property)) {
+									return;
+								}
+								comp = node.callee.property.name; //example: igGrid
+								// validate component
+								if (comp && comp.startsWith("ig")) {
+									var components = that.settings.packageInfo.components;
+									for (var name in components) {
+										if (components.hasOwnProperty(name) && that._getWidgetName(name) === comp) {
+											//if metadata for component of type <name> is not loaded, load it
+											if (!components[name].properties && !compPromises[name]) {
+												compPromises[name] = components[name].loadInfo();
+											}
+											if (components[name].properties) {
+												processFunc(node, name, components, scriptRanges[i]);
+											} else {
+												compPromises[name].then(function () {
+													processFunc(node, name, components, scriptRanges[i]);
+												});
+											}
+											break; // found
+										}
+									}
+								}
+							}
+						},
+						leave: function (node, parent) {
+
+						}
+					});
+				} (i));
+			}
 		},
 		_recreateWidget: function (element, widgetName, options) {
 			if (window.frames[0].$(element).data(widgetName)) {
