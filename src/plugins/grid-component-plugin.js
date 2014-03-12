@@ -83,7 +83,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 		},
 		*/
 		customPropertyEditor: function (descriptor) {
-			if (this._super && this._super(descriptor)) {
+			if (this.handleCustomEditor(descriptor)) {
 				return;
 			}
 			// columns, features, dataSource, etc. - also reuse those UIs
