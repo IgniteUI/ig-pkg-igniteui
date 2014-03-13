@@ -506,6 +506,7 @@ define (function (require, exports, module) {
 						// like changing virtualization from false to true
 						// K.D. Catching exceptions raised from incorrect configurations.
 						try {
+							console.log("This option is not editable at runtime. Reloading the widget.");
 							this._recreateWidget(descriptor.placeholder, name, newOpts);
 						} catch(err) {
 							var errorContainer = $("<div class='prop-editor-error-message' title='" + err + "'>" + err + "</div>"),
@@ -521,6 +522,7 @@ define (function (require, exports, module) {
 					}
 				} else {
 					try {
+						console.log("This option is not editable at runtime. Reloading the widget.");
 						this._recreateWidget(descriptor.placeholder, name, newOpts);
 					} catch(err) {
 						var errorContainer = $("<div class='prop-editor-error-message' title='" + err + "'>" + err + "</div>"),
