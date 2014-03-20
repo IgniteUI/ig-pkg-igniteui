@@ -513,18 +513,8 @@
           "description": " Select all text"
         },
         {
-          "name": "-1",
-          "type": "number",
-          "description": " Select all text"
-        },
-        {
           "name": "start",
           "type": "string",
-          "description": " Set caret at the beginning of text"
-        },
-        {
-          "name": "0",
-          "type": "number",
           "description": " Set caret at the beginning of text"
         },
         {
@@ -533,19 +523,9 @@
           "description": " Set caret at the end of text"
         },
         {
-          "name": "1",
-          "type": "number",
-          "description": " Set caret at the end of text"
-        },
-        {
           "name": "default",
           "type": "string",
           "description": " Use default behavior of browser (in case of mask, numeric and date editors it may be unreliable)"
-        },
-        {
-          "name": "2",
-          "type": "number",
-          "description": " Use default behavior of browser (in case of mask, numeric and date editors it may be unreliable)."
         }
       ]
     },
@@ -644,19 +624,9 @@
           "description": " Text editor is created"
         },
         {
-          "name": "0",
-          "type": "number",
-          "description": " Text editor is created (same as 'text')"
-        },
-        {
           "name": "mask",
           "type": "string",
           "description": " Mask editor is created"
-        },
-        {
-          "name": "1",
-          "type": "number",
-          "description": " Mask editor is created (same as 'mask')"
         },
         {
           "name": "date",
@@ -664,19 +634,9 @@
           "description": " Date-time editor is created"
         },
         {
-          "name": "2",
-          "type": "number",
-          "description": " Date-time editor is created (same as 'date')"
-        },
-        {
           "name": "datepicker",
           "type": "string",
           "description": " Date-picker is created"
-        },
-        {
-          "name": "3",
-          "type": "number",
-          "description": " Date-picker is created (same as 'datepicker')"
         },
         {
           "name": "numeric",
@@ -684,29 +644,14 @@
           "description": " Numeric editor is created"
         },
         {
-          "name": "4",
-          "type": "number",
-          "description": " Numeric editor is created (same as 'numeric')"
-        },
-        {
           "name": "currency",
           "type": "string",
           "description": " Currency editor is created"
         },
         {
-          "name": "5",
-          "type": "number",
-          "description": " Currency editor is created (same as 'currency')"
-        },
-        {
           "name": "percent",
           "type": "string",
           "description": " Percent editor is created"
-        },
-        {
-          "name": "6",
-          "type": "number",
-          "description": " Percent editor is created (same as 'percent')"
         }
       ]
     },
