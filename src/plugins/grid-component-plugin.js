@@ -212,7 +212,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 					$("<div></div>").addClass("btn").addClass("btn-primary").addClass("ok-button-features").text("Save").appendTo(buttonGroup);
 					$("<div></div>").addClass("btn").addClass("cancel-button-features").text("Cancel").appendTo(buttonGroup);
 				*/
-			} else if (p === "columns") {
+			} else if (descriptor.propType === "array") {
 				this.openCollectionEditor(descriptor);
 			} else {
 				this.openPropertyEditor(descriptor);
