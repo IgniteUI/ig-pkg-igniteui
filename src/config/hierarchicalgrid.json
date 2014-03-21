@@ -457,7 +457,8 @@
       "type": "array",
       "defaultValue": null,
       "description": "List of columnLayout objects that specify the structure of the child grids. All options that are applicable to a flat grid are also applicable here",
-      "schemaRef": "grid.properties"
+      "schemaRef": "grid.properties",
+	  "designerDisplayProperty": "key"
     },
     "defaultChildrenDataProperty": {
       "type": "string",
