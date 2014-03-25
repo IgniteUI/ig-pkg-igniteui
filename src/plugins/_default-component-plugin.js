@@ -801,7 +801,7 @@ define (function (require, exports, module) {
 							}
 						} else {
 							//navigate to new screen to configure data source
-							that.handleCustomEditor(descriptor);
+							that.customPropertyEditor(descriptor);
 						}
 					}).on("mousedown click", function (event) {
 						event.preventDefault();
@@ -888,7 +888,7 @@ define (function (require, exports, module) {
 				that.update(descr);
 			});
 		},
-		handleCustomEditor: function (descriptor) {
+		customPropertyEditor: function (descriptor) {
 			var that = this;
 			if (descriptor.propName === "dataSource") {
 				var dsval = this.getPropValue({

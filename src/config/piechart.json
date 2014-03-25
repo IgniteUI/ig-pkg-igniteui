@@ -283,13 +283,13 @@
       "type": "object",
       "defaultValue": null,
       "description": "Gets or sets the LegendItemBadgeTemplate property.<br>&nbsp;&nbsp;&nbsp;The legend item badge is created according to the LegendItemBadgeTemplate on-demand by<br>&nbsp;&nbsp;&nbsp;the chart object itself.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-      "schemaRef": "datachart.circleMarkerTemplate"
+      "schemaRef": "dataChart.circleMarkerTemplate"
     },
     "legendItemTemplate": {
       "type": "object",
       "defaultValue": null,
       "description": "Gets or sets the LegendItemTemplate property.<br>&nbsp;&nbsp;&nbsp;The legend item control content is created according to the LegendItemTemplate on-demand by<br>&nbsp;&nbsp;&nbsp;the chart object itself.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-      "schemaRef": "datachart.circleMarkerTemplate"
+      "schemaRef": "dataChart.circleMarkerTemplate"
     },
     "othersCategoryStyle": {
       "type": "string",
