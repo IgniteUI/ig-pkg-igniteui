@@ -963,7 +963,7 @@ define (function (require, exports, module) {
 							var mkr = ide.componentIds[j].htmlMarker.range;
 							if (mkr && mkr.start.row === htmlMarker.start.row
 								//&& mkr.start.column === htmlMarker.start.column
-								&& mkr.end.row === htmlMarker.end.row) {
+								&& mkr.end.row === htmlMarker.end.row + 1) { //TODO ( the +1 part is not necessary, if we handle columns as well in ide-ui.js)
 								//&& mkr.end.column === htmlMarker.end.column) {
 								exists = true;
 								break; // exists
