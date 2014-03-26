@@ -670,6 +670,9 @@ define (function (require, exports, module) {
 						for (i = 1; i < schemaRef.length; i++) {
 							schema = schema[schemaRef[i]].schema;
 						}
+						if (descriptor.schema[property].schema) {
+							schema = $.extend(schema, descriptor.schema[property].schema);
+						}
 					}
 					descriptor.data.push({
 						id: count++,

@@ -457,6 +457,20 @@
       "type": "array",
       "defaultValue": null,
       "description": "List of columnLayout objects that specify the structure of the child grids. All options that are applicable to a flat grid are also applicable here",
+	  "schema": {
+		"key": {
+          "required": true,
+          "type": "string",
+          "defaultValue": null,
+          "description": "Specifies the columnLayout key. This is the property that holds the data records for the current column layout."
+        },
+		"foreignKey": {
+          "required": true,
+          "type": "string",
+          "defaultValue": null,
+          "description": "Specifies the foreignKey of the columnLayout. This is also the column key of the parent grid."
+        }
+	  },
       "schemaRef": "grid.properties",
 	  "designerDisplayProperty": "key"
     },
