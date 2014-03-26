@@ -465,11 +465,17 @@
           "description": "Specifies the columnLayout key. This is the property that holds the data records for the current column layout."
         },
 		"foreignKey": {
-          "required": true,
+          "required": false,
           "type": "string",
           "defaultValue": null,
           "description": "Specifies the foreignKey of the columnLayout. This is also the column key of the parent grid."
-        }
+        },
+		"childrenDataProperty": {
+		  "required": false,
+          "type": "string",
+          "defaultValue": "children",
+          "description": "Specifies the property name in the response where children will be located."
+		}
 	  },
       "schemaRef": "grid.properties",
 	  "designerDisplayProperty": "key"
