@@ -2,32 +2,32 @@
   "properties": {
     "showIcon": {
       "type": "bool",
-      "defaultValue": null,
+      "defaultValue": true,
       "description": "Gets or sets visibility of icon on error message."
     },
     "animationShow": {
       "type": "number",
-      "defaultValue": null,
+      "defaultValue": 300,
       "description": "Gets or sets duration of show animation in milliseconds."
     },
     "animationHide": {
       "type": "number",
-      "defaultValue": null,
+      "defaultValue": 300,
       "description": "Gets or sets duration of hide animation in milliseconds."
     },
     "enableTargetErrorCss": {
       "type": "bool",
-      "defaultValue": null,
+      "defaultValue": true,
       "description": "Gets or sets ability to apply error css to target element."
     },
     "alignment": {
       "type": "string",
-      "defaultValue": null,
+      "defaultValue": "bottom",
       "description": "Gets or sets location of error label relative to target element."
     },
     "keepFocus": {
       "type": "string",
-      "defaultValue": null,
+      "defaultValue": "never",
       "description": "Gets or sets option to set focus back to editor when validation failed. Default value comes from corresponding member in $.ui.igValidator.defaults object, which is undefined.",
       "valueOptions": [
           {
@@ -49,22 +49,22 @@
     },
     "onchange": {
       "type": "bool",
-      "defaultValue": null,
+      "defaultValue": true,
       "description": "Gets or sets triggering validation when value in editor was changed."
     },
     "onblur": {
       "type": "bool",
-      "defaultValue": null,
+      "defaultValue": true,
       "description": "Gets or sets triggering validation when editor lost focus."
     },
     "formSubmit": {
       "type": "bool",
-      "defaultValue": null,
+      "defaultValue": false,
       "description": "Gets or sets triggering validation when application called form.submit()."
     },
     "onsubmit": {
       "type": "bool",
-      "defaultValue": null,
+      "defaultValue": true,
       "description": "Gets or sets triggering validation when form gets onsubmit event."
     },
     "bodyAsParent": {
@@ -106,21 +106,6 @@
       "type": "bool",
       "defaultValue": false,
       "description": "Gets or sets option to use the name attribute of checkboxes in order to validate ranges."
-    },
-    "locale": {
-      "type": "object",
-      "defaultValue": null,
-      "description": "Gets or sets object that contains custom settings."
-    },
-    "errorLabel": {
-      "type": "object",
-      "defaultValue": null,
-      "description": "Gets or sets custom jquery element, which innerHTML will be used to show error message. That can be SPAN, LABEL or DIV."
-    },
-    "element": {
-      "type": "object",
-      "defaultValue": null,
-      "description": "Gets or sets reference to html element, which is used to process mousedown and mouseup events in order to trigger validation."
     },
     "theme": {
       "type": "string",
