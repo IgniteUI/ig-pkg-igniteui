@@ -95,7 +95,7 @@
       "type": "object",
       "defaultValue": null,
       "description": "Gets or sets object which contains options supported by igValidator.<br>&nbsp;&nbsp;&nbsp;&nbsp;That option is not supported if the \"focusable\" option is set to false.<br>&nbsp;&nbsp;&nbsp;&nbsp;Example:<br>&nbsp;&nbsp;&nbsp;&nbsp;$('#rating1').igRating({ validatorOptions: { min: 0.2, max: 0.7 } });",
-      "schemaRef": "validator"
+      "schemaRef": "validator.properties"
     },
     "value": {
       "type": "number",

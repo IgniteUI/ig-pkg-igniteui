@@ -1,5 +1,5 @@
 {
-  "schema": {
+  "properties": {
     "showIcon": {
       "type": "bool",
       "defaultValue": null,
