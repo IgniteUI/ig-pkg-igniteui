@@ -535,6 +535,7 @@
     		"dataSource": "sampleTreeData1"
     	},
 		"validator": {
+			"id": "validator",
 			"toolboxVisible": false
 		}
     }
