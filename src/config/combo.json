@@ -593,7 +593,7 @@
           "required": true
         },
         "value": {
-          "type": "object",
+          "type": "string",
           "defaultValue": null,
           "description": "Value of cell in valueKey column for index"
         },
