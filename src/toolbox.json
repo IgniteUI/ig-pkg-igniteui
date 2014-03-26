@@ -533,6 +533,9 @@
     		"width": 300,
     		"height": 400,
     		"dataSource": "sampleTreeData1"
-    	}
+    	},
+		"validator": {
+			"toolboxVisible": false
+		}
     }
 }
