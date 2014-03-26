@@ -1,4 +1,4 @@
-﻿.ui-igtree{list-style:none;overflow:auto;padding-bottom:.2em}
+﻿.ui-igtree{list-style:none;overflow:auto;padding-bottom:.2em;-moz-user-select:none;-ms-user-select:none;-webkit-user-select:none;user-select:none}
 .ui-igtree ul{list-style:none;padding-left:0;margin-left:0}
 .ui-igtree .ui-igtree-root{padding-left:0;margin-left:0}
 .ui-igtree-root{padding-left:0;margin-left:0}

@@ -86,3 +86,4 @@
 .ui-igpivotgrid .ui-igpivot-metadataitem .ui-icon-close{right:.5em}
 .ui-igpivot-dropareaheader .ui-igpivot-droparea .ui-igpivot-metadataitem *:not(.ui-icon){display:inline}
 .ui-igpivot-dropareaheader .ui-igpivot-droparea .ui-igpivot-insertitem{width:2px;height:26px;margin:0;display:inline-block;vertical-align:top}
+.ui-igpivotgrid-kpis{display:block;margin:auto;width:16px;height:16px;background-image:url('../images/igPivot/kpi-icons.png')}
