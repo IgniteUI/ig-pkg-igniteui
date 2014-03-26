@@ -617,12 +617,7 @@
       "defaultValue": null,
       "description": " Sets gets horizontal alignment of text in editor. If that option is not set, then 'right' is used for 'numeric', 'currency' and 'percent' editors and the 'left' is used for all other types of editor.",
       "valueOptions": [
-        {
-          "name": "null",
-          "type": "object",
-          "description": "Sets to default option in that case it's left"
-        },
-        {
+		{
           "name": "left",
           "type": "string",
           "description": "Aligns the text on left"
@@ -698,10 +693,10 @@
 	  "schemaRef": "validator"
     },
     "value": {
-      "type": "object",
+      "type": "string",
       "defaultValue": null,
       "description": "Gets sets value in editor. The effect of setting/getting that option depends on type of editor and on dataMode options. That can be string, number or Date depending on type of editor. If it is used on initialization and the type option is missing, then if 'value' is Number, then 'numeric' editor is created automatically and if 'value' is Date, then the 'date' editor is created.",
-	   "arrayMemberType" : "string,date"
+	  "arrayMemberType" : "string,date"
     },
     "width": {
       "type": "number",

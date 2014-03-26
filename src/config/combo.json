@@ -256,7 +256,7 @@
       "description": "Gets sets collection (array or dictonary) of javascript objects which allows to configure dataSource and other properties of this igCombo.<br>&nbsp;&nbsp;&nbsp;&nbsp;The key in dictionary should represent selected value in parent igCombo. If value in parent igCombo is integer, then array can be used instead of dictionary.<br>&nbsp;&nbsp;&nbsp;&nbsp;Each item in collection may contain dataSource, or an object, which should have following members.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dataSource: reference to dataSource,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;valueKey: optional override for valueKey of this igCombo,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;textKey: optional override for textKey of this igCombo,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dataSourceUrl: optional dataSourceUrl when dataSource is not set.<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: that option has effect only when \"parentCombo\" option is set and it has priority over \"parentComboKey\".",
       "schema": {
         "dataSource": {
-          "type": "object",
+          "type": "custom",
           "defaultValue": null,
           "description": "Reference to dataSource"
         },
@@ -481,12 +481,12 @@
       "valueOptions": [
         {
           "name": "false",
-          "type": "bool",
+          "type": "string",
           "description": " multiselection is disabled"
         },
         {
           "name": "true",
-          "type": "bool",
+          "type": "string",
           "description": " multiselection is enabled"
         },
         {
@@ -543,7 +543,7 @@
         },
         {
           "name": "null",
-          "type": "object",
+          "type": "string",
           "description": " matches are not rendered"
         }
       ]
@@ -661,7 +661,7 @@
         },
         {
           "name": "null",
-          "type": "object",
+          "type": "string",
           "description": " data source uses type defined by cell/items located in first row"
         }
       ]
@@ -709,7 +709,7 @@
         },
         {
           "name": "null",
-          "type": "object",
+          "type": "string",
           "description": " data source uses type defined by cell/items located in first row"
         }
       ]
