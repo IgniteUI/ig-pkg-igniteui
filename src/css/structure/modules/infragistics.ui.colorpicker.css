@@ -1,0 +1,11 @@
+﻿.ui-igColorPicker{padding:5px 0}
+.ui-igColorPicker{width:200px}
+.ui-igColorPicker .color-table,.ui-igtoolbar .color-table ul,.color-table ul{padding:0;margin:0;list-style:none outside none;line-height:1%}
+.ui-igColorPicker .color-table li{display:inline-block;margin:0;zoom:1;*display:inline}
+.ui-igColorPicker .color{display:inline-block;height:16px;width:16px;border:1px solid #CDCDCD;margin:1px}
+.ui-igColorPicker .color-table .color-table-first-row{margin-bottom:10px}
+.ui-igColorPicker .color-table .ui-colorpicker-standardcolors{margin-top:10px}
+.ui-igColorPicker .color-table a{outline:0;display:block}
+.ui-igColorPicker .color-table .selected-color{border:1px dotted black;background-image:url(../images/igHtmlEditor/check.png);background-position:center center;background-repeat:no-repeat}
+.touch .ui-igColorPicker .color{height:44px;width:44px}
+.touch .ui-igColorPicker{width:480px}

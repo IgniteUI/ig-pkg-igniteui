@@ -12,7 +12,6 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 		// retrieves the initial markup for the current component
 		getMarkup: function (descriptor) {
 			if (descriptor.type === "flowLayout") {
-				//return "<div style=\"border: 1px solid #eee; \">\n\t\t<ul id=\"" + descriptor.id + "\"></ul>\n\t</div>";
 				return "<ul id=\"" + descriptor.id + "\" data-droppablechild=\"false\" data-hasdroppables=\"true\">" +
 				"\n\t\t\t<li class=\"ig-layout-flow-item flowItem\" data-droppablechild=\"true\">1</li>" +
 				"\n\t\t\t<li class=\"ig-layout-flow-item flowItem\" data-droppablechild=\"true\">2</li>" +
@@ -25,6 +24,13 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 				"\n\t\t\t<li class=\"ig-layout-flow-item flowItem\" data-droppablechild=\"true\">9</li>" +
 				"\n\t\t\t<li class=\"ig-layout-flow-item flowItem\" data-droppablechild=\"true\">10</li>"
 				+"</ul>";
+			} else if (descriptor.type === "gridLayout") {
+				return "<div id=\"" + descriptor.id + "\" data-droppablechild=\"false\" data-hasdroppables=\"true\">" + 
+					"<div data-droppablechild=\"true\" style=\"background-color: #eee; color: #555\"><ul><li>colspan: 2</li><li>rowspan: 2</li></ul></div>" +
+					"<div data-droppablechild=\"true\" style=\"background-color: #2CBDF9; color: #FFF\"><ul><li>colspan: 1</li><li>rowspan: 1</li></ul></div>" +
+					"<div data-droppablechild=\"true\" style=\"background-color:#FFA72D; color: #FFF\"><ul><li>colspan: 1</li><li>rowspan: 1</li></ul></div>" +
+					"<div data-droppablechild=\"true\" style=\"background-color:#2CBDF9; color: #FFF\"><ul><li>colspan: 1</li><li>rowspan: 3</li></ul></div>" +
+				"</div>";
 			} else if (descriptor.type === "verticalLayout") {
 				return "<ul id=\"" + descriptor.id + "\" data-droppablechild=\"false\" data-hasdroppables=\"true\">" +
 				"\n\t\t\t<li class=\"ig-layout-vertical-item verticalItem\" data-droppablechild=\"true\">1</li>" +
@@ -71,6 +77,20 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 						{ rowOffset: 19, colOffset: 0, rowCount: 2, colCount: 0 }
 					]
 				};
+			} else if (descriptor.type === "gridLayout") {
+				return {codeString: "\t" + extraIndentStr + "<div id=\"" + descriptor.id + "\">" + 
+					"\n\t\t\t<div style=\"background-color: #eee; color: #555\">\n\t\t\t\t<ul>\n\t\t\t\t\t<li>colspan: 2</li>\n\t\t\t\t\t<li>rowspan: 2</li>\n\t\t\t\t</ul>\n\t\t\t</div>" +
+					"\n\t\t\t<div style=\"background-color: #2CBDF9; color: #FFF\">\n\t\t\t\t<ul>\n\t\t\t\t\t<li>colspan: 1</li>\n\t\t\t\t\t<li>rowspan: 1</li>\n\t\t\t\t</ul>\n\t\t\t</div>" +
+					"\n\t\t\t<div style=\"background-color:#FFA72D; color: #FFF\">\n\t\t\t\t<ul>\n\t\t\t\t\t<li>colspan: 1</li>\n\t\t\t\t\t<li>rowspan: 1</li>\n\t\t\t\t</ul>\n\t\t\t</div>" +
+					"\n\t\t\t<div style=\"background-color:#2CBDF9; color: #FFF\">\n\t\t\t\t<ul>\n\t\t\t\t\t<li>colspan: 1</li>\n\t\t\t\t\t<li>rowspan: 3</li>\n\t\t\t\t</ul>\n\t\t\t</div>" +
+				"\n\t" + extraIndentStr + "</div>", lineCount: 25, 
+					extraMarkers: [
+						{ rowOffset: 2, colOffset: 0, rowCount: 5, colCount: 0 },
+						{ rowOffset: 8, colOffset: 0, rowCount: 5, colCount: 0 },
+						{ rowOffset: 14, colOffset: 0, rowCount: 5, colCount: 0 },
+						{ rowOffset: 20, colOffset: 0, rowCount: 5, colCount: 0 }
+					]
+				};				
 			} else if (descriptor.type === "verticalLayout") {
 				return {codeString: "\t" + extraIndentStr + "<ul id=\"" + descriptor.id + "\">\n\t\t\t<li class=\"ig-layout-vertical-item verticalItem\">1\n\t\t\t</li>\n\t\t\t<li class=\"ig-layout-vertical-item verticalItem\">2\n\t\t\t</li>\n\t\t\t<li class=\"ig-layout-vertical-item verticalItem\">3\n\t\t\t</li>\n\t\t\t<li class=\"ig-layout-vertical-item verticalItem\">4\n\t\t\t</li>\n\t\t\t<li class=\"ig-layout-vertical-item verticalItem\">5\n\t\t\t</li>\n\t\t</ul>\n\t\t", lineCount: 12, 
 					extraMarkers: [
@@ -91,9 +111,9 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			"\n\t\t\t<div class=\"center\" style=\"background-color: #EEE;\">" +
 			"\n\t\t\t\t<h3>CENTER AREA</h3>\n\t\t\t\t<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget porta urna. Ut gravida mi at ligula commodo feugiat vehicula lacus tincidunt. Proin lobortis magna sed lacus malesuada commodo fermentum felis auctor. Sed quis nulla quis tellus facilisis malesuada. Mauris aliquam neque consequat mi blandit in luctus magna rutrum. Fusce sit amet ipsum magna. Vivamus porttitor arcu vitae eros molestie et sagittis dolor cursus. Quisque ultrices feugiat risus, vitae molestie felis interdum ac. Suspendisse pellentesque magna nec est commodo porttitor. </p>\n\t\t\t\t<p>Nunc lacinia ligula a nisl porta sed facilisis mauris facilisis. Sed a ante turpis, eget semper odio. Curabitur facilisis faucibus iaculis. Ut fermentum pretium ultrices. Etiam sem dui, adipiscing sed tempus et, adipiscing eget erat. Vestibulum nec eros magna.</p>\n\t\t\t\t<p>Praesent tristique arcu eget ligula pulvinar mollis. Maecenas at elit at justo posuere gravida id eu enim. Duis imperdiet lectus nec augue sollicitudin hendrerit. Suspendisse consectetur, lorem nec eleifend rutrum, eros metus sodales libero, et rutrum diam augue et lectus. Integer sed est vitae risus dignissim condimentum ullamcorper at massa. Donec a orci nisl, eget ullamcorper augue. Quisque sagittis fringilla tortor. Vivamus ligula velit, aliquam ut pellentesque quis, fringilla sit amet tortor.</p>\n\t\t\t</div>\n\t\t</div>\n", lineCount: 21,
 				extraMarkers: [
-						{ rowOffset: 1, colOffset: 0, rowCount: 7, colCount: 0 },
-						{ rowOffset: 9, colOffset: 0, rowCount: 3, colCount: 0 },
-						{ rowOffset: 14, colOffset: 0, rowCount: 6, colCount: 0 }
+						{ rowOffset: 3, colOffset: 0, rowCount: 3, colCount: 0 },
+						{ rowOffset: 6, colOffset: 0, rowCount: 3, colCount: 0 },
+						{ rowOffset: 10, colOffset: 0, rowCount: 3, colCount: 0 }
 					]			
 			};
 			} else if (descriptor.type === "columnLayout") {
@@ -108,52 +128,36 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 				return {codeString: "\t" + extraIndentStr + "<div id=\"" + descriptor.id + "\"></div>\n", lineCount: 1};
 			}			
 		},
-		getCodeEditorScriptSnippet: function (descriptor) {
-			var snippet = this._super(descriptor);
-			if (descriptor.type === "gridLayout") {
-				var handler = "\t\t\t\t$(\"#" + descriptor.id +"\").on(\"iglayoutmanageritemrendered\", function (event, args) {\n\t\t\t\t\t args.item.append(\"<ul><li>colspan: \" + args.itemData.colSpan + \"</li><li>rowspan: \" + args.itemData.rowSpan + \"</li></ul></span>\");"+
-				"\n\t\t\t\t\t if (args.itemData.colSpan == 2 && args.itemData.rowSpan == 2) {" +
-                        "\n\t\t\t\t\t\t args.item.css(\"background-color\", \"#eee\");" + 
-                        "\n\t\t\t\t\t\t args.item.css(\"color\", \"#555\");" +
-                    "\n\t\t\t\t\t } else if (args.itemData.rowSpan == 1 && args.itemData.colSpan == 1) {" +
-                        "\n\t\t\t\t\t\t if (args.itemData.rowIndex == 0) {" +
-                            "\n\t\t\t\t\t\t\t args.item.css(\"background-color\, \"#2CBDF9\");" +
-                            "\n\t\t\t\t\t\t\t args.item.css(\"color\", \"#FFF\");" +
-                        "\n\t\t\t\t\t\t } else {" +
-                            "\n\t\t\t\t\t\t\t args.item.css(\"background-color\", \"#FFA72D\");" +
-                            "\n\t\t\t\t\t\t\t args.item.css(\"color\", \"#FFF\");" +
-                        "\n\t\t\t\t\t\t } \n\t\t\t\t\t } else {" +
-                        "\n\t\t\t\t\t\t args.item.css(\"background-color\", \"#2CBDF9\");" +
-                        "\n\t\t\t\t\t\t args.item.css(\"color\", \"#FFF\");" +
-                    "\n\t\t\t\t\t } \n\t\t\t\t});\n";
-				snippet.codeString = snippet.codeString + handler; 
-				snippet.lineCount += 19;
-			} else if (descriptor.type === "columnLayout") {
-				return null;
-			}
-			return snippet;
-		},
+		//etCodeEditorScriptSnippet: function (descriptor) {
+		//	var snippet = this._super(descriptor);
+		//	if (descriptor.type === "gridLayout") {
+        //
+		//	} else if (descriptor.type === "columnLayout") {
+		//		return null;
+		//	}
+		//	return snippet;
+		//,
 		initComponent: function (descriptor) {
 			var name = this._getWidgetName(descriptor.type);
 			if (descriptor.type === "gridLayout" && window.frames[0].$(descriptor.placeholder)[name]) {
-				window.frames[0].$(descriptor.placeholder).on("iglayoutmanageritemrendered", function (e, args) {
-					args.item.append("<ul><li>colspan: " + args.itemData.colSpan + "</li><li>rowspan: " + args.itemData.rowSpan + "</li></ul></span>");
-					if (args.itemData.colSpan == 2 && args.itemData.rowSpan == 2) {
-                        args.item.css("background-color", "#eee");
-                        args.item.css("color", "#555");
-                    } else if (args.itemData.rowSpan == 1 && args.itemData.colSpan == 1) {
-                        if (args.itemData.rowIndex == 0) {
-                            args.item.css("background-color", "#2CBDF9");
-                            args.item.css("color", "#FFF");
-                        } else {
-                            args.item.css("background-color", "#FFA72D");
-                            args.item.css("color", "#FFF");
-                        }
-                    } else {
-                        args.item.css("background-color", "#2CBDF9");
-                        args.item.css("color", "#FFF");
-                    }
-				});
+				//window.frames[0].$(descriptor.placeholder).on("iglayoutmanageritemrendered", function (e, args) {
+				//	args.item.append("<ul><li>colspan: " + args.itemData.colSpan + "</li><li>rowspan: " + args.itemData.rowSpan + "</li></ul></span>");
+				//	if (args.itemData.colSpan == 2 && args.itemData.rowSpan == 2) {
+                //        args.item.css("background-color", "#eee");
+                //        args.item.css("color", "#555");
+                //    } else if (args.itemData.rowSpan == 1 && args.itemData.colSpan == 1) {
+                //        if (args.itemData.rowIndex == 0) {
+                //            args.item.css("background-color", "#2CBDF9");
+                //            args.item.css("color", "#FFF");
+                //        } else {
+                //            args.item.css("background-color", "#FFA72D");
+                //            args.item.css("color", "#FFF");
+                //        }
+                //    } else {
+                //        args.item.css("background-color", "#2CBDF9");
+                //        args.item.css("color", "#FFF");
+                //    }
+				//});
 				window.frames[0].$(descriptor.placeholder)[name](descriptor.options);
 			} else if ((descriptor.type === "flowLayout" || descriptor.type === "verticalLayout") && window.frames[0].$(descriptor.placeholder)[name]) {
 				var ide = this.settings.ide, pos, styleBlock, styleMarker, blockOffset = 7, flagAlreadyContainsCSS = false, itemClass;
