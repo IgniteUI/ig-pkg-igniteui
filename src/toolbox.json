@@ -374,7 +374,7 @@
     		"dragDropIcon": "grid-layout-dragdrop.png",
     		"category": "layout",
     		"visual": true,
-            "height": "400",
+            "height": "500",
     		"framework": false,
 			"defaultOptions": {  			
                 "layoutMode": "grid",
