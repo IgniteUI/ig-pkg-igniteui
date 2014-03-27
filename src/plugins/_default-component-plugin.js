@@ -747,17 +747,20 @@ define (function (require, exports, module) {
 						display: "inline-block",
 						width: td.width() - td.find(".input-group-btn").outerWidth()
 					});
-					td.find(".dropdown-menu").css({
-						"position": "absolute",
-						"z-index": 20000,
+					td.find(".layout-menu").css({
 						"min-height": 0
+					});
+					td.find(".dropdown-container").css({
+						"position": "absolute",
+						"display": "none",
+						"z-index": 20000
 					}).addClass("adorner-prop-menu").appendTo("body");
 					//TODO: sort out duplicate code with ide-propertyexplorer.js (enums editing)
 					td.find(".ig-dropdown-label,.ig-dropdown-button").on("mousedown", function (event) {
 						var target = $(event.target), dd = target.closest(".ig-dropdown");
-						var ddlist = dd.find("ul");
+						var ddlist = dd.find(".dropdown-container");
 						if (ddlist.length === 0) {
-							ddlist = $("body").find("ul[data-id=" + dd.attr("data-id") + "]");
+							ddlist = $("body").find(".dropdown-container[data-id=" + dd.attr("data-id") + "]");
 						}
 						ide._toggleDropDown(dd, ddlist);
 						if (ddlist.is(":visible")) {
@@ -769,8 +772,8 @@ define (function (require, exports, module) {
 						event.preventDefault();
 						event.stopPropagation();
 					});
-					$(".layout-menu[data-id=" + dd_id + "] > li").on("mouseup", function (event) {
-						var $this = $(this), ddlist = $(event.target).closest("ul");
+					$(".dropdown-container[data-id=" + dd_id + "] ul > li").on("mouseup", function (event) {
+						var $this = $(this), ddlist = $(event.target).closest(".dropdown-container");
 						var key = $this.attr("data-key");
 						var dd = $("body").find(".ig-dropdown[data-id=" + ddlist.attr("data-id") + "]");
 						label.text($this.attr("data-text")).attr("data-key", key);
@@ -778,6 +781,7 @@ define (function (require, exports, module) {
 							propName: "dataSource",
 							propValue: key,
 							propType: "literal",
+							placeholder: descriptor.element,
 							comp: descriptor.comp
 						};
 						ide._toggleDropDown(dd, ddlist);
@@ -1094,7 +1098,7 @@ define (function (require, exports, module) {
 		_recreateWidget: function (element, widgetName, options) {
 			if (window.frames[0].$(element).data(widgetName)) {
 				window.frames[0].$(element)[widgetName]("destroy");
-			}	
+			}
 			window.frames[0].$(element)[widgetName](options);
 		}
 	});
