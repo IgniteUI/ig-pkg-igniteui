@@ -480,12 +480,12 @@
       "description": " Gets sets ability to select multiple items in list and enter multiple items in field which are separated by the 'itemSeparator'.",
       "valueOptions": [
         {
-          "name": "false",
+          "name": "off",
           "type": "string",
           "description": " multiselection is disabled"
         },
         {
-          "name": "true",
+          "name": "on",
           "type": "string",
           "description": " multiselection is enabled"
         },
