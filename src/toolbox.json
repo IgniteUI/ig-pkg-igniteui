@@ -231,6 +231,17 @@
     		"visual": false,
     		"framework": true
     	},
+        "northwindDataSource": {
+            "id": "dataSource",
+            "componentPlugin": "datasource-northwind-component-plugin", 
+            "toolboxTitle": "NorthWind",
+            "icon": "datasource.png",
+            "dragDropIcon": "datasource-dragdrop.png",
+            "classId": "$.ig.IgDataSource",
+            "category": "datasources",
+            "visual": false,
+            "framework": true
+        },
     	"dialog": {
     		"id": "dialog",
     		"toolboxTitle": "Dialog Window",
