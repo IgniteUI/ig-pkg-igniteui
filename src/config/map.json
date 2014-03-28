@@ -314,7 +314,7 @@
       "type": "object",
       "defaultValue": null,
       "description": "Gets or sets the template to use for circle markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of circle.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-      "schemaRef": "datachart.circleMarkerTemplate"
+      "schemaRef": "dataChart.circleMarkerTemplate"
     },
     "crosshairPoint": {
       "type": "object",
@@ -391,7 +391,7 @@
       "type": "object",
       "defaultValue": null,
       "description": "Gets or sets the template to use for diamond markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of diamond.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-      "schemaRef": "datachart.circleMarkerTemplate"
+      "schemaRef": "dataChart.circleMarkerTemplate"
     },
     "dragModifier": {
       "type": "string",
@@ -429,13 +429,13 @@
       "type": "object",
       "defaultValue": null,
       "description": "Gets or sets the template to use for hxagon markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of hexagon.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-      "schemaRef": "datachart.circleMarkerTemplate"
+      "schemaRef": "dataChart.circleMarkerTemplate"
     },
     "hexagramMarkerTemplate": {
       "type": "object",
       "defaultValue": null,
       "description": "Gets or sets the template to use for hexagram markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of hexagram.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-      "schemaRef": "datachart.circleMarkerTemplate"
+      "schemaRef": "dataChart.circleMarkerTemplate"
     },
     "horizontalZoomable": {
       "type": "bool",
@@ -478,13 +478,13 @@
       "type": "object",
       "defaultValue": null,
       "description": "Gets or sets the template to use for pentagon markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of pentagon.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-      "schemaRef": "datachart.circleMarkerTemplate"
+      "schemaRef": "dataChart.circleMarkerTemplate"
     },
     "pentagramMarkerTemplate": {
       "type": "object",
       "defaultValue": null,
       "description": "Gets or sets the template to use for pentragram markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of pentagram.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-      "schemaRef": "datachart.circleMarkerTemplate"
+      "schemaRef": "dataChart.circleMarkerTemplate"
     },
     "plotAreaBackground": {
       "type": "string",
@@ -522,7 +522,7 @@
       "type": "object",
       "defaultValue": null,
       "description": "Gets or sets the template to use for pyramid markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of pyramid.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-      "schemaRef": "datachart.circleMarkerTemplate"
+      "schemaRef": "dataChart.circleMarkerTemplate"
     },
     "responseDataKey": {
       "type": "string",
@@ -606,7 +606,7 @@
           "type": "object",
           "defaultValue": null,
           "description": "Gets or sets the DiscreteLegendItemTemplate property. The legend item control content is created according to the DiscreteLegendItemTemplate on-demand by the series object itself.",
-          "schemaRef": "datachart.circleMarkerTemplate"
+          "schemaRef": "dataChart.circleMarkerTemplate"
         },
         "fillMemberPath": {
           "type": "string",
@@ -653,13 +653,13 @@
           "type": "object",
           "defaultValue": null,
           "description": "Gets or sets the LegendItemBadgeTemplate property. The legend item badge is created according to the LegendItemBadgeTemplate on-demand by the series object itself.",
-          "schemaRef": "datachart.circleMarkerTemplate"
+          "schemaRef": "dataChart.circleMarkerTemplate"
         },
         "legendItemTemplate": {
           "type": "object",
           "defaultValue": null,
           "description": "Gets or sets the LegendItemTemplate property..",
-          "schemaRef": "datachart.circleMarkerTemplate"
+          "schemaRef": "dataChart.circleMarkerTemplate"
         },
         "longitudeMemberPath": {
           "type": "string",
@@ -717,7 +717,7 @@
           "type": "object",
           "defaultValue": null,
           "description": "Gets or sets the MarkerTemplate for the current series object.",
-          "schemaRef": "datachart.circleMarkerTemplate"
+          "schemaRef": "dataChart.circleMarkerTemplate"
         },
         "markerType": {
           "type": "string",
@@ -1181,13 +1181,13 @@
       "type": "object",
       "defaultValue": null,
       "description": "Gets or sets the template to use for square markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of square.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-      "schemaRef": "datachart.circleMarkerTemplate"
+      "schemaRef": "dataChart.circleMarkerTemplate"
     },
     "tetragramMarkerTemplate": {
       "type": "object",
       "defaultValue": null,
       "description": "Gets or sets the template to use for tetragram markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of tetragram.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-      "schemaRef": "datachart.circleMarkerTemplate"
+      "schemaRef": "dataChart.circleMarkerTemplate"
     },
     "theme": {
       "type": "string",
@@ -1198,7 +1198,7 @@
       "type": "object",
       "defaultValue": null,
       "description": "Gets or sets the template to use for triangle markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of triangle.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-      "schemaRef": "datachart.circleMarkerTemplate"
+      "schemaRef": "dataChart.circleMarkerTemplate"
     },
     "verticalZoomable": {
       "type": "bool",
