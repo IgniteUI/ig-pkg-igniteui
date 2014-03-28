@@ -361,7 +361,7 @@
     		"dragDropIcon": "layoutmanager-dragdrop.png",
     		"category": "layout",
     		"visual": true,
-			"height" : 350,
+			"height" : 450,
     		"framework": false,
 			"defaultOptions": {  			
                 "layoutMode": "border"
