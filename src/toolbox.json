@@ -115,7 +115,7 @@
     		"visual": true,
     		"framework": false,
     		"height": 200,
-    		"width": 200,
+    		"width": 300,
 			"dataSource": "sampleChartData",
 			"defaultOptions": {"valueMemberPath": "Pop2008", "labelMemberPath": "CountryName", "labelsPosition": "bestFit" } 
 		},	
