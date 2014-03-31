@@ -390,8 +390,8 @@ define (function (require, exports, module) {
 						handler += ") {\n\t\t\t\t\t\n\t\t\t\t};\n";
 						// new marker => add an empty event handler and marker;
 						ide.session.insert({row: offset, column: 0}, handler);
-						handlerMarker = new ide.RangeClass(offset, 4, offset + 3, 4); // "4" tabs
-						funcMarker = new ide.RangeClass(offset + 2, 0, offset + 2, 0);
+						handlerMarker = new ide.RangeClass(offset + 1, 4, offset + 4, 4); // "4" tabs
+						funcMarker = new ide.RangeClass(offset + 2, 5, offset + 3, 5);
 						ide.addMarker(handlerMarker);
 						ide.addMarker(funcMarker);
 						component.funcMarkers[funcName] = {
@@ -400,8 +400,6 @@ define (function (require, exports, module) {
 						};
 					} 
 					funcBodyStart = component.funcMarkers[funcName].functionBodyMarker.start.row;
-					ide._deselectComponent();
-					ide.element.find(".code-button").click();
 					if (!funcBodyStart) {
 						funcBodyStart = codeRange.start.row;
 					}
@@ -420,17 +418,9 @@ define (function (require, exports, module) {
 							valueOptions: descriptor.valueOptions,
 							schema: descriptor.schema
 						}, true, false);
-					} else {
-						this.updatePropCode({
-							component: descriptor.comp,
-							propName: descriptor.propName,
-							propValue: descriptor.propValue,
-							oldPropValue: descriptor.oldPropValue,
-							propType: descriptor.propType,
-							valueOptions: descriptor.valueOptions,
-							schema: descriptor.schema
-						});
 					}
+					ide._deselectComponent();
+					ide.element.find(".code-button").click();
 					// assuming TAB indentation for all event handlers will be 4
 					//TODO: the second and third param here don't work for some reason => Check with the ACE project 
 					// it always starts from zero col and there is no animation
