@@ -690,7 +690,8 @@ define (function (require, exports, module) {
 			// the dropdown should contain an item that allows to "Add new datasource". 
 			if (descriptor.propName === "dataSource") {
 				for (i = 0; i < comps.length; i++) {
-					if (comps[i].type === "dataSource" && comps[i].lib === "igniteui") {
+					//if (comps[i].type === "dataSource" && comps[i].lib === "igniteui") {
+					if (comps[i].category === "datasources" && comps[i].lib === "igniteui") {
 						dslist.push(comps[i]);
 					}
 				}

@@ -232,7 +232,7 @@
     		"framework": true
     	},
         "northwindDataSource": {
-            "id": "dataSource",
+            "id": "northwindDataSource",
             "componentPlugin": "datasource-northwind-component-plugin", 
             "toolboxTitle": "NorthWind",
             "icon": "datasource.png",
