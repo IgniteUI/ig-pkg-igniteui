@@ -94,7 +94,7 @@
     },
     "isInverted": {
       "type": "bool",
-      "defaultValue": null,
+      "defaultValue": false,
       "description": "Gets or sets if the funnel should be rendered inverted."
     },
     "legend": {
