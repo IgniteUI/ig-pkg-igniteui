@@ -39,7 +39,8 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			// since it's not a visual control, and can be instantiated anywhere (including anonymous functions), there is no easy 
 			// way to get hold of the reference to that data source, unless its variable name is stored in the global (window) context.
 			var obj = window.frames[0][descriptor.placeholder.attr("id")];
-			if (obj && obj instanceof $.ig.DataSource) {
+			//if (obj && obj instanceof $.ig.DataSource) {
+			if (obj && obj._accumulatedTransactionLog) { // duck typing
 				// get value from data source settings
 				return obj.settings[descriptor.propName];
 			}
@@ -57,7 +58,8 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			// set it in the ds
 			var obj = window.frames[0][descriptor.id];
 			var val = descriptor.propValue;
-			if (obj && obj instanceof $.ig.DataSource) {
+			//if (obj && obj instanceof $.ig.DataSource) {
+			if (obj && obj._accumulatedTransactionLog) {
 				// what should happen when a new dataSource option is set - rebind the data source? 
 				if (descriptor.args) {
 					val = "function (event, args) { }";
@@ -114,7 +116,8 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			var ide = this.settings.ide;
 			var that = this;
 			var ide = this.settings.ide;
-			if (!(ds instanceof $.ig.DataSource)) {
+			//if (!(ds instanceof $.ig.DataSource)) {
+			if (!(ds && ds._accumulatedTransactionLog)) {
 				throw new Error("Object with ID " + descriptor.id + " is not an instance of IG Data Source");
 			}
 			descriptor.delayBind = 1000; // 1000 ms before the data source rebinds after a property has been changed
