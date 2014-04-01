@@ -102,12 +102,14 @@ define (function (require, exports, module) {
 						});
 						lineCount++;
 					} else if (props[key].type === "array") {
+						/*
 						for (var p = 0; p < opts[key].length; p ++) {
 							if(opts[key][p].hasOwnProperty("dataSource")){
 								opts[key][p].dataSource = opts[key][p].dataSourceVal;
 								delete opts[key][p]["dataSourceVal"];
 							}
 						}
+						*/
 						var formattedStr = beautify(JSON.stringify(opts[key]));
 						for (var p = 0; p < opts[key].length; p ++) {
 							if(opts[key][p].hasOwnProperty("dataSource")){
@@ -175,6 +177,16 @@ define (function (require, exports, module) {
 		},
 		initComponent: function (descriptor) {
 			var name = this._getWidgetName(descriptor.type);
+			//A.T. fixing again 165883
+			if (descriptor.options["dataSource"] && descriptor.options["dataSource"].length) {
+				var arr = descriptor.options["dataSource"];
+				for (var p = 0; p < arr.length; p ++) {
+					if(arr[p].hasOwnProperty("dataSource")){
+						arr[p].dataSource = arr[p].dataSourceVal;
+						delete arr[p]["dataSourceVal"];
+					}
+				}
+			}
 			if (window.frames[0].$(descriptor.placeholder)[name]) { 
 				window.frames[0].$(descriptor.placeholder)[name](descriptor.options);
 			}
@@ -560,6 +572,7 @@ define (function (require, exports, module) {
 		universalPropertyModified: function (descriptor) {
 			if (descriptor.propName === "id") {
 				// we need to change the id in the widget definition in the code view
+				debugger;
 				var result = this.settings.ide.editor.find({
 					needle: /\$\("#(.*)?"\)/,
 					start: descriptor.comp.codeMarker.range.start
