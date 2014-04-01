@@ -613,48 +613,6 @@
       "defaultValue": false,
       "description": "Sets gets ability to convert input characters to upper case (true) or keeps characters as they are (false). That option has effect only while keyboard entries and paste."
     },
-    "type": {
-      "type": "string",
-      "defaultValue": null,
-      "description": " Sets type of editor. If that option is not set, but the 'value' option is defined, then if type of 'value' is Number, then the 'numeric' type is used, if type of 'value' is Date, then the 'date' type is used. For all other types of 'value' the 'text' type is used. Note: if that option is set to 'datepicker', then application should ensure that css and js files used by jquery.ui.datepicker are available.",
-      "valueOptions": [
-        {
-          "name": "text",
-          "type": "string",
-          "description": " Text editor is created"
-        },
-        {
-          "name": "mask",
-          "type": "string",
-          "description": " Mask editor is created"
-        },
-        {
-          "name": "date",
-          "type": "string",
-          "description": " Date-time editor is created"
-        },
-        {
-          "name": "datepicker",
-          "type": "string",
-          "description": " Date-picker is created"
-        },
-        {
-          "name": "numeric",
-          "type": "string",
-          "description": " Numeric editor is created"
-        },
-        {
-          "name": "currency",
-          "type": "string",
-          "description": " Currency editor is created"
-        },
-        {
-          "name": "percent",
-          "type": "string",
-          "description": " Percent editor is created"
-        }
-      ]
-    },
     "validatorOptions": {
       "type": "object",
       "defaultValue": null,
@@ -662,10 +620,10 @@
 	  "schemaRef": "validator"
     },
     "value": {
-      "type": "object",
+      "type": "string",
       "defaultValue": null,
       "description": "Gets sets value in editor. The effect of setting/getting that option depends on type of editor and on dataMode options. That can be string, number or Date depending on type of editor. If it is used on initialization and the type option is missing, then if 'value' is Number, then 'numeric' editor is created automatically and if 'value' is Date, then the 'date' editor is created.", 
-	  "arrayMemberType" : "string,number"
+	  "arrayMemberType" : "string"
     },
     "width": {
       "type": "number",

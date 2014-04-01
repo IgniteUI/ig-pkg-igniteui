@@ -32,9 +32,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 					defTabbing + "rows: \"[Sales Territory].[Sales Territory]\",\n\t" + 
 					defTabbing + "columns: \"[Product].[Product Categories]\",\n\t" +
 					defTabbing + "measures: \"[Measures].[Internet Order Count]\"\n" +
-					defTabbing + "});\n"
-				
-			
+					defTabbing + "});\n";
 			pivotSelectorSnippet = defTabbing + "$(\"#" + descriptor.id +"DataSelector\").igPivotDataSelector({";
 			pivotSelectorSnippet += "\n\t" + defTabbing + "dataSource: pivotDataSource";
 			pivotSelectorSnippet += ",\n\t" + defTabbing + "width: 240";				

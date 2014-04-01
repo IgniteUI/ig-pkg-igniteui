@@ -572,19 +572,9 @@
           "description": " Text editor is created"
         },
         {
-          "name": "0",
-          "type": "number",
-          "description": " Text editor is created (same as 'text')"
-        },
-        {
           "name": "mask",
           "type": "string",
           "description": " Mask editor is created"
-        },
-        {
-          "name": "1",
-          "type": "number",
-          "description": " Mask editor is created (same as 'mask')"
         },
         {
           "name": "date",
@@ -592,19 +582,9 @@
           "description": " Date-time editor is created"
         },
         {
-          "name": "2",
-          "type": "number",
-          "description": " Date-time editor is created (same as 'date')"
-        },
-        {
           "name": "datepicker",
           "type": "string",
           "description": " Date-picker is created"
-        },
-        {
-          "name": "3",
-          "type": "number",
-          "description": " Date-picker is created (same as 'datepicker')"
         },
         {
           "name": "numeric",
@@ -612,29 +592,14 @@
           "description": " Numeric editor is created"
         },
         {
-          "name": "4",
-          "type": "number",
-          "description": " Numeric editor is created (same as 'numeric')"
-        },
-        {
           "name": "currency",
           "type": "string",
           "description": " Currency editor is created"
         },
         {
-          "name": "5",
-          "type": "number",
-          "description": " Currency editor is created (same as 'currency')"
-        },
-        {
           "name": "percent",
           "type": "string",
           "description": " Percent editor is created"
-        },
-        {
-          "name": "6",
-          "type": "number",
-          "description": " Percent editor is created (same as 'percent')"
         }
       ]
     },
@@ -645,10 +610,10 @@
 	  "schemaRef": "validator"
     },
     "value": {
-      "type": "object",
+      "type": "string",
       "defaultValue": null,
       "description": "Gets sets value in editor. The effect of setting/getting that option depends on type of editor and on dataMode options. That can be string, number or Date depending on type of editor. If it is used on initialization and the type option is missing, then if 'value' is Number, then 'numeric' editor is created automatically and if 'value' is Date, then the 'date' editor is created.",
-	  "arrayMemberType": "object"
+	  "arrayMemberType": "string"
     },
     "width": {
       "type": "number",
