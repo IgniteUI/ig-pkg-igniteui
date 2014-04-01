@@ -572,7 +572,6 @@ define (function (require, exports, module) {
 		universalPropertyModified: function (descriptor) {
 			if (descriptor.propName === "id") {
 				// we need to change the id in the widget definition in the code view
-				debugger;
 				var result = this.settings.ide.editor.find({
 					needle: /\$\("#(.*)?"\)/,
 					start: descriptor.comp.codeMarker.range.start
