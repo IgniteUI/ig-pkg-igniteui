@@ -949,6 +949,8 @@ define (function (require, exports, module) {
 			var estraverse = require("estraverse");
 			var esprima = require("esprima");
 			var compPromises = {};
+			ide.editor.gotoLine(0, 0); // problem with ace is that it will automatically select everything it finds 
+			ide.editor.clearSelection();
 			var processFunc = function (node, name, components, sr) {
 				var selector, htmlMarker, codeMarker, 
 				// detected an ignite comp call
