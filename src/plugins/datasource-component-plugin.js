@@ -122,6 +122,8 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			}
 			descriptor.delayBind = 1000; // 1000 ms before the data source rebinds after a property has been changed
 
+			container.empty(); // fix for 168980
+
 			var dsval = ds.settings.dataSource;
 			if (dsval === null) {
 				dsval = "";
