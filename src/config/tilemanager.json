@@ -196,11 +196,6 @@
       "defaultValue": null,
       "description": "Explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property."
     },
-    "dataSourceUrl": {
-      "type": "string",
-      "defaultValue": null,
-      "description": "Specifies a remote URL accepted by $.ig.DataSource in order to request data from it."
-    },
     "height": {
       "type": "string",
       "defaultValue": null,
@@ -273,7 +268,19 @@
     "requestType": {
       "type": "string",
       "defaultValue": "GET",
-      "description": "specifies the HTTP verb to be used to issue the request."
+      "description": "specifies the HTTP verb to be used to issue the request.",
+	  "valueOptions": [
+        {
+          "name": "GET",
+          "type": "string",
+          "description": "Initiates GET requests"
+        },
+        {
+          "name": "POST",
+          "type": "string",
+          "description": "Initiates POST requests"
+        }
+      ]
     },
     "responseContentType": {
       "type": "string",
