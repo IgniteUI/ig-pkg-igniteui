@@ -49,8 +49,6 @@
     		"category": "lists",
     		"visual": true, 
     		"framework": false,
-    		"height": 300,
-    		"width": 300,
     		"dataSource": "sampleData1"
     	},
     	"hierarchicalGrid": {
@@ -544,8 +542,6 @@
     		"category": "lists",
     		"visual": true,
     		"framework": false,
-    		"width": 300,
-    		"height": 400,
     		"dataSource": "sampleTreeData1"
     	},
 		"validator": {
