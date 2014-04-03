@@ -74,8 +74,6 @@
     		"category": "dataviz",
     		"visual": true,
     		"framework": false,
-    		"height": 200,
-    		"width": 500,
     		"dataSource": "sampleChartData",
 			"defaultOptions" : {
 				"axes": [
