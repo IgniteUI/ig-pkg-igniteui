@@ -547,8 +547,22 @@
     },
     "features": {
       "type": "object",
+      "schema": {
+         "Filtering": {
+            "type": "object",
+            "defaultValue": null,
+            "description": "Grid Filtering Feature",  
+            "schemaRef": "gridfiltering"
+          },
+         "Paging": {
+            "type": "object",
+            "defaultValue": null,
+            "description": "Grid Paging Feature",  
+            "schemaRef": "gridpaging"
+          }
+      },
       "defaultValue": null,
-       "components": ["gridfiltering", "gridupdating", "gridtooltips", "gridsummaries", "gridsorting", "gridselection", "gridrowselectors", "gridresizing", "gridpaging", "gridmulticolumnheaders", "gridmergedcells", "gridhiding", "gridgroupby", "gridcolumnmoving"],
+      "components": ["gridfiltering", "gridupdating", "gridtooltips", "gridsummaries", "gridsorting", "gridselection", "gridrowselectors", "gridresizing", "gridpaging", "gridmulticolumnheaders", "gridmergedcells", "gridhiding", "gridgroupby", "gridcolumnmoving"],
       "description": "a list of grid features definitions: sorting, paging, etc. Each feature goes with its separate options that are documented for the feature accordingly"
     },
     "fixedFooters": {

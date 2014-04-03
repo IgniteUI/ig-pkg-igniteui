@@ -208,6 +208,16 @@
       "type": "string",
       "defaultValue": null,
       "description": "Gets or sets the value member path for the funnel chart."
+    },
+    "width": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "Width of the Funnel Chart"
+    },
+    "height": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "Height of the Funnel Chart"
     }
   }
 }
