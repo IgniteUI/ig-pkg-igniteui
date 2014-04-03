@@ -15,14 +15,15 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 		getCodeEditorScriptSnippet: function (descriptor) {
 			var code = "";
 			var opts = descriptor.options;
-			var lineCount = 7;
+			var lineCount = 5;
 			var orderedReturnProps = [];
-			var xtraMarkup = ",\n\t\t\t\t\tfeatures: [\n" + "\t\t\t\t\t]";
+			var xtraMarkup = "\t\t\t\t\tfeatures: [\n" + "\t\t\t\t\t]";
 			//A.T. - we can either drop with no features in the code editor
 			// or an empty array - empty arr makes it easier to manage with markers
-			code = "\t\t\t\t$(\"#" + descriptor.id + "\").igGrid({\n" + 
-				"\t\t\t\t\theight: " + opts.height + ",\n" + 
-				"\t\t\t\t\twidth: " + opts.width + xtraMarkup;
+			code = "\t\t\t\t$(\"#" + descriptor.id + "\").igGrid({\n" + xtraMarkup;
+			//	"\t\t\t\t\theight: " + opts.height + ",\n" + 
+			//	"\t\t\t\t\twidth: " + opts.width + xtraMarkup;
+			/*
 			orderedReturnProps.push({
 				name: "height",
 				value: opts.height,
@@ -33,6 +34,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 				value: opts.width,
 				type: "number"
 			});
+			*/
 			if (descriptor.data && window[descriptor.data]) {
 				code += ",\n\t\t\t\t\tdataSource: " + descriptor.data;
 				orderedReturnProps.push({
@@ -43,7 +45,8 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			}
 			var props = this.settings.packageInfo.components[descriptor.type].properties;
 			for (var key in opts) {
-				if (opts.hasOwnProperty(key) && key !== "dataSource" && key !== "height" && key !== "width") {
+			//	if (opts.hasOwnProperty(key) && key !== "dataSource" && key !== "height" && key !== "width") {
+			if (opts.hasOwnProperty(key) && key !== "dataSource") {
 					orderedReturnProps.push({
 						name: key,
 						value: opts[key],
