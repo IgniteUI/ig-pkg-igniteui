@@ -390,12 +390,10 @@
     		"framework": false,
 			"defaultOptions": {  			
                 "layoutMode": "grid",
-				"items": [
-					{ "rowSpan": 2, "colSpan": 2, "colIndex": 0, "rowIndex": 0 },
-                    { "rowSpan": 1, "colSpan": 1, "rowIndex": 0, "colIndex": 2 },
-                    { "rowSpan": 1, "colSpan": 1, "rowIndex": 1, "colIndex": 2 },
-                    { "rowSpan": 1, "colSpan": 3, "colIndex": 0, "rowIndex": 2 }
-                ]
+				"gridLayout": {
+					"cols": 2,
+					"rows": 2
+				}
 			}
     	},
 		"verticalLayout": {
@@ -521,8 +519,8 @@
     		"category": "layout",
     		"visual": true,
     		"framework": false,
-			"width": 500, 
-			"height": 500
+			"width": 800, 
+			"height": 600
     	},
     	"tileManager": {
     		"id": "tileManager",

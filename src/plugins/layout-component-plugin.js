@@ -29,7 +29,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 					"<div data-droppablechild=\"true\" style=\"background-color: #eee; color: #555\"><ul><li>colspan: 2</li><li>rowspan: 2</li></ul></div>" +
 					"<div data-droppablechild=\"true\" style=\"background-color: #2CBDF9; color: #FFF\"><ul><li>colspan: 1</li><li>rowspan: 1</li></ul></div>" +
 					"<div data-droppablechild=\"true\" style=\"background-color:#FFA72D; color: #FFF\"><ul><li>colspan: 1</li><li>rowspan: 1</li></ul></div>" +
-					"<div data-droppablechild=\"true\" style=\"background-color:#2CBDF9; color: #FFF\"><ul><li>colspan: 1</li><li>rowspan: 3</li></ul></div>" +
+					"<div data-droppablechild=\"true\" style=\"background-color:#216e99; color: #FFF\"><ul><li>colspan: 1</li><li>rowspan: 3</li></ul></div>" +
 				"</div>";
 			} else if (descriptor.type === "verticalLayout") {
 				return "<ul id=\"" + descriptor.id + "\" data-droppablechild=\"false\" data-hasdroppables=\"true\">" +
@@ -82,7 +82,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 					"\n\t\t\t<div style=\"background-color: #eee; color: #555\">\n\t\t\t\t<ul>\n\t\t\t\t\t<li>colspan: 2</li>\n\t\t\t\t\t<li>rowspan: 2</li>\n\t\t\t\t</ul>\n\t\t\t</div>" +
 					"\n\t\t\t<div style=\"background-color: #2CBDF9; color: #FFF\">\n\t\t\t\t<ul>\n\t\t\t\t\t<li>colspan: 1</li>\n\t\t\t\t\t<li>rowspan: 1</li>\n\t\t\t\t</ul>\n\t\t\t</div>" +
 					"\n\t\t\t<div style=\"background-color:#FFA72D; color: #FFF\">\n\t\t\t\t<ul>\n\t\t\t\t\t<li>colspan: 1</li>\n\t\t\t\t\t<li>rowspan: 1</li>\n\t\t\t\t</ul>\n\t\t\t</div>" +
-					"\n\t\t\t<div style=\"background-color:#2CBDF9; color: #FFF\">\n\t\t\t\t<ul>\n\t\t\t\t\t<li>colspan: 1</li>\n\t\t\t\t\t<li>rowspan: 3</li>\n\t\t\t\t</ul>\n\t\t\t</div>" +
+					"\n\t\t\t<div style=\"background-color:#216e99; color: #FFF\">\n\t\t\t\t<ul>\n\t\t\t\t\t<li>colspan: 1</li>\n\t\t\t\t\t<li>rowspan: 3</li>\n\t\t\t\t</ul>\n\t\t\t</div>" +
 				"\n\t" + extraIndentStr + "</div>", lineCount: 25, 
 					extraMarkers: [
 						{ rowOffset: 2, colOffset: 0, rowCount: 5, colCount: 0 },
