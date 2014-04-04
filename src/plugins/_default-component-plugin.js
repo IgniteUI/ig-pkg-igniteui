@@ -944,7 +944,7 @@ define (function (require, exports, module) {
 			// get the HTML code
 			var scripts = window.frames[0].$("script");
 			ide.editor.findAll("<script");
-			var scriptRanges = ide.editor.getSelection().ranges;
+			var scriptRanges = ide.editor.getSelection().ranges.slice(0);
 			//var htmlCode = ide.editor.getValue();
 			//htmlCode = htmlCode.substring(htmlCode.indexOf("<html>"), htmlCode.length - 1);
 			var estraverse = require("estraverse");
