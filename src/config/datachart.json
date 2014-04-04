@@ -1079,7 +1079,7 @@
       ]
     },
     "height": {
-      "type": "number",
+      "type": "string",
       "defaultValue": null,
       "description": "The height of the chart. It can be set as a number in pixels, string (px) or percentage (%)."
     },
@@ -1153,7 +1153,7 @@
           "description": "The width of the legend."
         },
         "height": {
-          "type": "number",
+          "type": "string",
           "defaultValue": null,
           "description": "The height of the legend."
         }
@@ -2827,7 +2827,7 @@
       "description": "Gets or sets the current Chart's vertical zoomability."
     },
     "width": {
-      "type": "number",
+      "type": "string",
       "defaultValue": null,
       "description": "The width of the chart. It can be set as a number in pixels, string (px) or percentage (%)."
     },
