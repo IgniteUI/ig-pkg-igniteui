@@ -785,6 +785,7 @@ define (function (require, exports, module) {
 							propValue: key,
 							propType: "literal",
 							placeholder: descriptor.element,
+							type: descriptor.type,
 							comp: descriptor.comp
 						};
 						ide._toggleDropDown(dd, ddlist);

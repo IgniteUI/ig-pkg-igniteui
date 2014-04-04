@@ -384,7 +384,7 @@
           "description": "The unique identifier of the axis."
         },
         "dataSource": {
-          "type": "object",
+          "type": "custom",
           "defaultValue": null,
           "description": "Can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself."
         },
@@ -987,7 +987,7 @@
       ]
     },
     "dataSource": {
-      "type": "object",
+      "type": "custom",
       "defaultValue": null,
       "description": "can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself"
     },
@@ -1700,7 +1700,7 @@
           "description": "The unique identifier of the series."
         },
         "dataSource": {
-          "type": "object",
+          "type": "custom",
           "defaultValue": null,
           "description": "Can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself "
         },
