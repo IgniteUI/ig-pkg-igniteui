@@ -104,12 +104,12 @@
   "properties": {
     "allowSliceExplosion": {
       "type": "bool",
-      "defaultValue": null,
+      "defaultValue": false,
       "description": "Gets or sets whether the slices can be exploded."
     },
     "allowSliceSelection": {
       "type": "bool",
-      "defaultValue": null,
+      "defaultValue": false,
       "description": "Gets or sets whether the slices can be selected."
     },
     "brushes": {
@@ -119,7 +119,7 @@
       "arrayMemberType": "string"
     },
     "dataSource": {
-      "type": "object",
+      "type": "custom",
       "defaultValue": null,
       "description": "can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself"
     },

@@ -49,8 +49,6 @@
     		"category": "lists",
     		"visual": true, 
     		"framework": false,
-    		"height": 300,
-    		"width": 300,
     		"dataSource": "sampleData1"
     	},
     	"hierarchicalGrid": {
@@ -76,8 +74,6 @@
     		"category": "dataviz",
     		"visual": true,
     		"framework": false,
-    		"height": 200,
-    		"width": 500,
     		"dataSource": "sampleChartData",
 			"defaultOptions" : {
 				"axes": [
@@ -117,7 +113,7 @@
     		"height": 200,
     		"width": 300,
 			"dataSource": "sampleChartData",
-			"defaultOptions": {"valueMemberPath": "Pop2008", "labelMemberPath": "CountryName", "labelsPosition": "bestFit" } 
+			"defaultOptions": {"valueMemberPath": "Pop2008", "labelMemberPath": "CountryName", "labelsPosition": "bestFit", "allowSliceExplosion": false,  "allowSliceSelection": false } 
 		},	
 		"sparkline": {
     		"id": "sparkline",
@@ -131,7 +127,7 @@
     		"height": 100,
     		"width": 300,
 			"dataSource": "sampleSparklineData",
-			"defaultOptions": {"valueMemberPath": "ExtendedPrice" } 
+			"defaultOptions": {"valueMemberPath": "ExtendedPrice", "displayNormalRangeInFront" : false } 
 		},	
 		"videoPlayer": {
     		"id": "videoPlayer",
@@ -182,6 +178,8 @@
     		"width": 300,
 			
 			"defaultOptions": {
+				"allowSliceExplosion": false,  
+				"allowSliceSelection": false,
 				"series":
 					[{
 						"name": "Pop1990",
@@ -189,6 +187,7 @@
 						"valueMemberPath": "Pop1990",
 						"dataSource": "sampleDoughnutChartData",
 						"labelsPosition": "bestFit"
+						
 					}]
 			} 
 		},
@@ -205,7 +204,7 @@
     		"width": 325,
 			"dataSource": "sampleFunnelChartData",
 			"defaultOptions": {"valueMemberPath": "Budget", "innerLabelMemberPath": "Budget", "innerLabelVisibility": "visible", "outerLabelMemberPath": "Department",
-                "outerLabelVisibility": "visible" } 
+                "outerLabelVisibility": "visible", "isInverted": false } 
 		},			
     	"combo": {
     		"id": "combo",
@@ -232,7 +231,7 @@
     		"framework": true
     	},
         "northwindDataSource": {
-            "id": "dataSource",
+            "id": "northwindDataSource",
             "componentPlugin": "datasource-northwind-component-plugin", 
             "toolboxTitle": "NorthWind",
             "icon": "datasource.png",
@@ -361,7 +360,7 @@
     		"dragDropIcon": "layoutmanager-dragdrop.png",
     		"category": "layout",
     		"visual": true,
-			"height" : 350,
+			"height" : 450,
     		"framework": false,
 			"defaultOptions": {  			
                 "layoutMode": "border"
@@ -389,12 +388,10 @@
     		"framework": false,
 			"defaultOptions": {  			
                 "layoutMode": "grid",
-				"items": [
-					{ "rowSpan": 2, "colSpan": 2, "colIndex": 0, "rowIndex": 0 },
-                    { "rowSpan": 1, "colSpan": 1, "rowIndex": 0, "colIndex": 2 },
-                    { "rowSpan": 1, "colSpan": 1, "rowIndex": 1, "colIndex": 2 },
-                    { "rowSpan": 1, "colSpan": 3, "colIndex": 0, "rowIndex": 2 }
-                ]
+				"gridLayout": {
+					"cols": 2,
+					"rows": 2
+				}
 			}
     	},
 		"verticalLayout": {
@@ -520,8 +517,8 @@
     		"category": "layout",
     		"visual": true,
     		"framework": false,
-			"width": 500, 
-			"height": 500
+			"width": 800, 
+			"height": 600
     	},
     	"tileManager": {
     		"id": "tileManager",
@@ -541,8 +538,6 @@
     		"category": "lists",
     		"visual": true,
     		"framework": false,
-    		"width": 300,
-    		"height": 400,
     		"dataSource": "sampleTreeData1"
     	},
 		"validator": {

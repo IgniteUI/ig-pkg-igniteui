@@ -810,94 +810,10 @@
       "defaultValue": null,
       "description": "Sets gets selector for css classes used by editor.<br>&nbsp;&nbsp;&nbsp;&nbsp;That option allows replacing all default css styles of editor by custom values.<br>&nbsp;&nbsp;&nbsp;&nbsp;Application should provide css classes for all members defined in the css options with \"theme\" selector.<br>&nbsp;&nbsp;&nbsp;&nbsp;For example, if that property is set to \"mytheme\", then application should provide following css classes:<br>&nbsp;&nbsp;&nbsp;&nbsp;.mytheme .ui-igedit-field{...};<br>&nbsp;&nbsp;&nbsp;&nbsp;.mytheme .ui-igedit-focus{...};<br>&nbsp;&nbsp;&nbsp;&nbsp;etc.<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: changing theme is not supported when base element is INPUT or TEXTAREA and renderInContainer or button are not enabled."
     },
-    "type": {
-      "type": "string",
-      "defaultValue": null,
-      "description": " Sets type of editor. If that option is not set, but the 'value' option is defined, then if type of 'value' is Number, then the 'numeric' type is used, if type of 'value' is Date, then the 'date' type is used. For all other types of 'value' the 'text' type is used. Note: if that option is set to 'datepicker', then application should ensure that css and js files used by jquery.ui.datepicker are available.",
-      "valueOptions": [
-        {
-          "name": "text",
-          "type": "string",
-          "description": " Text editor is created"
-        },
-        {
-          "name": "0",
-          "type": "number",
-          "description": " Text editor is created (same as 'text')"
-        },
-        {
-          "name": "mask",
-          "type": "string",
-          "description": " Mask editor is created"
-        },
-        {
-          "name": "1",
-          "type": "number",
-          "description": " Mask editor is created (same as 'mask')"
-        },
-        {
-          "name": "date",
-          "type": "string",
-          "description": " Date-time editor is created"
-        },
-        {
-          "name": "2",
-          "type": "number",
-          "description": " Date-time editor is created (same as 'date')"
-        },
-        {
-          "name": "datepicker",
-          "type": "string",
-          "description": " Date-picker is created"
-        },
-        {
-          "name": "3",
-          "type": "number",
-          "description": " Date-picker is created (same as 'datepicker')"
-        },
-        {
-          "name": "numeric",
-          "type": "string",
-          "description": " Numeric editor is created"
-        },
-        {
-          "name": "4",
-          "type": "number",
-          "description": " Numeric editor is created (same as 'numeric')"
-        },
-        {
-          "name": "currency",
-          "type": "string",
-          "description": " Currency editor is created"
-        },
-        {
-          "name": "5",
-          "type": "number",
-          "description": " Currency editor is created (same as 'currency')"
-        },
-        {
-          "name": "percent",
-          "type": "string",
-          "description": " Percent editor is created"
-        },
-        {
-          "name": "6",
-          "type": "number",
-          "description": " Percent editor is created (same as 'percent')"
-        }
-      ]
-    },
-    "validatorOptions": {
-      "type": "object",
-      "defaultValue": null,
-      "description": "Sets gets options supported by igValidator.<br>&nbsp;&nbsp;&nbsp;&nbsp;In order to enable validation and use defaults, an empty object can be used.<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: validation rules of igValidator, such as min, max, minLength, required are not supported, but similar properties of igEditor should be used.",
-	  "schemaRef": "validator"
-    },
     "value": {
-      "type": "object",
+      "type": "number",
       "defaultValue": null,
-      "description": "Gets sets value in editor. The effect of setting/getting that option depends on type of editor and on dataMode options. That can be string, number or Date depending on type of editor. If it is used on initialization and the type option is missing, then if 'value' is Number, then 'numeric' editor is created automatically and if 'value' is Date, then the 'date' editor is created.",
-	  "arrayMemberType": "object"
+      "description": "Gets sets value in editor. The effect of setting/getting that option depends on type of editor and on dataMode options. That can be string, number or Date depending on type of editor. If it is used on initialization and the type option is missing, then if 'value' is Number, then 'numeric' editor is created automatically and if 'value' is Date, then the 'date' editor is created."
     },
     "width": {
       "type": "number",

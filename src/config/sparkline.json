@@ -45,7 +45,7 @@
     },
     "displayNormalRangeInFront": {
       "type": "bool",
-      "defaultValue": "collapsed",
+      "defaultValue": false,
       "description": "Gets or sets the position of the normal range on the sparkline."
     },
     "displayType": {

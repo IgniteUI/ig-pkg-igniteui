@@ -102,12 +102,14 @@ define (function (require, exports, module) {
 						});
 						lineCount++;
 					} else if (props[key].type === "array") {
+						/*
 						for (var p = 0; p < opts[key].length; p ++) {
 							if(opts[key][p].hasOwnProperty("dataSource")){
 								opts[key][p].dataSource = opts[key][p].dataSourceVal;
 								delete opts[key][p]["dataSourceVal"];
 							}
 						}
+						*/
 						var formattedStr = beautify(JSON.stringify(opts[key]));
 						for (var p = 0; p < opts[key].length; p ++) {
 							if(opts[key][p].hasOwnProperty("dataSource")){
@@ -175,6 +177,16 @@ define (function (require, exports, module) {
 		},
 		initComponent: function (descriptor) {
 			var name = this._getWidgetName(descriptor.type);
+			//A.T. fixing again 165883
+			if (descriptor.options["dataSource"] && descriptor.options["dataSource"].length) {
+				var arr = descriptor.options["dataSource"];
+				for (var p = 0; p < arr.length; p ++) {
+					if(arr[p].hasOwnProperty("dataSource")){
+						arr[p].dataSource = arr[p].dataSourceVal;
+						delete arr[p]["dataSourceVal"];
+					}
+				}
+			}
 			if (window.frames[0].$(descriptor.placeholder)[name]) { 
 				window.frames[0].$(descriptor.placeholder)[name](descriptor.options);
 			}
@@ -365,7 +377,10 @@ define (function (require, exports, module) {
 		update: function (descriptor) {
 			//console.log("Updating property or event: " + descriptor.propName);
 			var ide = this.settings.ide;
-			var name = this._getWidgetName(descriptor.type);
+			var name = "";
+			if (descriptor.type || descriptor.comp.type) {
+				name = this._getWidgetName(descriptor.type ? descriptor.type : descriptor.comp.type);
+			}
 			if (descriptor.handlerFlag) {
 				var component = ide.componentById(descriptor.id);
 				if (component) {
@@ -601,7 +616,7 @@ define (function (require, exports, module) {
 			// also for dialog window, and tile manager tiles
 			//returns true for both  columns and rows
 
-			if (descriptor.type === "splitter" || descriptor.type === "columnLayout" || descriptor.type === "flowLayout" || descriptor.type === "verticalLayout" || descriptor.type === "borderLayout" || descriptor.type === "pivotGrid") {
+			if (descriptor.type === "splitter" || descriptor.type === "columnLayout" || descriptor.type === "flowLayout" || descriptor.type === "verticalLayout" || descriptor.type === "borderLayout") {
 				return true;
 			} else if (descriptor.type === "dialog" && descriptor.element.hasClass('ui-igdialog-content')) {
 				return true;
@@ -690,7 +705,8 @@ define (function (require, exports, module) {
 			// the dropdown should contain an item that allows to "Add new datasource". 
 			if (descriptor.propName === "dataSource") {
 				for (i = 0; i < comps.length; i++) {
-					if (comps[i].type === "dataSource" && comps[i].lib === "igniteui") {
+					//if (comps[i].type === "dataSource" && comps[i].lib === "igniteui") {
+					if (comps[i].category === "datasources" && comps[i].lib === "igniteui") {
 						dslist.push(comps[i]);
 					}
 				}
@@ -772,6 +788,7 @@ define (function (require, exports, module) {
 							propValue: key,
 							propType: "literal",
 							placeholder: descriptor.element,
+							type: descriptor.type,
 							comp: descriptor.comp
 						};
 						ide._toggleDropDown(dd, ddlist);
@@ -795,6 +812,19 @@ define (function (require, exports, module) {
 									descriptor.comp.codeMarker.range.start.row,
 									0
 								);
+								// we also need to take care of the dataSource property, because its marker needs updating
+								// Bug #169298
+								// interestingly, the same issue cannot be observed for dragging & dropping a grid (to reorder)
+								// because option markers aren't really moved
+								// can't we just always move it on top, if there are other ignite widgets defined? 
+								// this way options will be always intact, and we won't need to perform this step here
+
+								// what's worse - if someone copy/pastes in ACE, option markers get messed up
+								// let's say i drag and drop two grids, then manually go and cut and paste one of them above
+								// and change some of the options
+
+								// that's because during the discovery process, it finds a componentId with the same Id , and thinks
+								// it already exists with the same configuration (and hence, markers). but the markers aren't dynamic any more
 							}
 						} else {
 							//navigate to new screen to configure data source
@@ -930,12 +960,14 @@ define (function (require, exports, module) {
 			// get the HTML code
 			var scripts = window.frames[0].$("script");
 			ide.editor.findAll("<script");
-			var scriptRanges = ide.editor.getSelection().ranges;
+			var scriptRanges = ide.editor.getSelection().ranges.slice(0);
 			//var htmlCode = ide.editor.getValue();
 			//htmlCode = htmlCode.substring(htmlCode.indexOf("<html>"), htmlCode.length - 1);
 			var estraverse = require("estraverse");
 			var esprima = require("esprima");
 			var compPromises = {};
+			ide.editor.gotoLine(0, 0); // problem with ace is that it will automatically select everything it finds 
+			ide.editor.clearSelection();
 			var processFunc = function (node, name, components, sr) {
 				var selector, htmlMarker, codeMarker, 
 				// detected an ignite comp call
@@ -1043,45 +1075,59 @@ define (function (require, exports, module) {
 			};
 			for (i = 0; i < scripts.length; i++) {
 				(function (i) {
-					var code = $(scripts[i]).text();
-					var ast = esprima.parse(code, {
-						loc: true // include location of nodes (row and column info, used in ACE markers)
-					});
-					estraverse.traverse(ast, {
-						enter: function (node, parent) {
-							if (node.type === "CallExpression") {
-								// find the control selector
-								var comp;
-								if (!node.callee || (node.callee && !node.callee.property)) {
-									return;
-								}
-								comp = node.callee.property.name; //example: igGrid
-								// validate component
-								if (comp && comp.startsWith("ig")) {
-									var components = that.settings.packageInfo.components;
-									for (var name in components) {
-										if (components.hasOwnProperty(name) && that._getWidgetName(name) === comp) {
-											//if metadata for component of type <name> is not loaded, load it
-											if (!components[name].properties && !compPromises[name]) {
-												compPromises[name] = components[name].loadInfo();
-											}
-											if (components[name].properties) {
-												processFunc(node, name, components, scriptRanges[i]);
-											} else {
-												compPromises[name].then(function () {
+					var $cblock = $(scripts[i]);
+					var code = $cblock.text();
+					var ast = {};
+					try {
+						ast = esprima.parse(code, {
+							loc: true // include location of nodes (row and column info, used in ACE markers)
+						});
+						estraverse.traverse(ast, {
+							enter: function (node, parent) {
+								if (node.type === "CallExpression") {
+									// find the control selector
+									var comp;
+									if (!node.callee || (node.callee && !node.callee.property)) {
+										return;
+									}
+									comp = node.callee.property.name; //example: igGrid
+									// validate component
+									if (comp && comp.startsWith("ig")) {
+										var components = that.settings.packageInfo.components;
+										for (var name in components) {
+											if (components.hasOwnProperty(name) && that._getWidgetName(name) === comp) {
+												//if metadata for component of type <name> is not loaded, load it
+												if (!components[name].properties && !compPromises[name]) {
+													compPromises[name] = components[name].loadInfo();
+												}
+												if (components[name].properties) {
 													processFunc(node, name, components, scriptRanges[i]);
-												});
+												} else {
+													compPromises[name].then(function () {
+														processFunc(node, name, components, scriptRanges[i]);
+													});
+												}
+												break; // found
 											}
-											break; // found
 										}
 									}
 								}
-							}
-						},
-						leave: function (node, parent) {
+							},
+							leave: function (node, parent) {
 
+							}
+						});
+					} catch (e) {
+						// open generic error dialog
+						console.log(e);
+						var blockid = "";
+						if ($cblock.attr("id")) {
+							blockid = "<p class='errordetailtrace'>(error from script block with id '" + $cblock.attr("id") + "'):</p>";
 						}
-					});
+						$("#modalerror > .errordetail").html(blockid + e);
+						$("#modalerror").dialog("open");
+						ide._hideLoading();
+					}
 				} (i));
 			}
 		},

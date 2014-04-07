@@ -29,7 +29,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 					"<div data-droppablechild=\"true\" style=\"background-color: #eee; color: #555\"><ul><li>colspan: 2</li><li>rowspan: 2</li></ul></div>" +
 					"<div data-droppablechild=\"true\" style=\"background-color: #2CBDF9; color: #FFF\"><ul><li>colspan: 1</li><li>rowspan: 1</li></ul></div>" +
 					"<div data-droppablechild=\"true\" style=\"background-color:#FFA72D; color: #FFF\"><ul><li>colspan: 1</li><li>rowspan: 1</li></ul></div>" +
-					"<div data-droppablechild=\"true\" style=\"background-color:#2CBDF9; color: #FFF\"><ul><li>colspan: 1</li><li>rowspan: 3</li></ul></div>" +
+					"<div data-droppablechild=\"true\" style=\"background-color:#216e99; color: #FFF\"><ul><li>colspan: 1</li><li>rowspan: 3</li></ul></div>" +
 				"</div>";
 			} else if (descriptor.type === "verticalLayout") {
 				return "<ul id=\"" + descriptor.id + "\" data-droppablechild=\"false\" data-hasdroppables=\"true\">" +
@@ -82,7 +82,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 					"\n\t\t\t<div style=\"background-color: #eee; color: #555\">\n\t\t\t\t<ul>\n\t\t\t\t\t<li>colspan: 2</li>\n\t\t\t\t\t<li>rowspan: 2</li>\n\t\t\t\t</ul>\n\t\t\t</div>" +
 					"\n\t\t\t<div style=\"background-color: #2CBDF9; color: #FFF\">\n\t\t\t\t<ul>\n\t\t\t\t\t<li>colspan: 1</li>\n\t\t\t\t\t<li>rowspan: 1</li>\n\t\t\t\t</ul>\n\t\t\t</div>" +
 					"\n\t\t\t<div style=\"background-color:#FFA72D; color: #FFF\">\n\t\t\t\t<ul>\n\t\t\t\t\t<li>colspan: 1</li>\n\t\t\t\t\t<li>rowspan: 1</li>\n\t\t\t\t</ul>\n\t\t\t</div>" +
-					"\n\t\t\t<div style=\"background-color:#2CBDF9; color: #FFF\">\n\t\t\t\t<ul>\n\t\t\t\t\t<li>colspan: 1</li>\n\t\t\t\t\t<li>rowspan: 3</li>\n\t\t\t\t</ul>\n\t\t\t</div>" +
+					"\n\t\t\t<div style=\"background-color:#216e99; color: #FFF\">\n\t\t\t\t<ul>\n\t\t\t\t\t<li>colspan: 1</li>\n\t\t\t\t\t<li>rowspan: 3</li>\n\t\t\t\t</ul>\n\t\t\t</div>" +
 				"\n\t" + extraIndentStr + "</div>", lineCount: 25, 
 					extraMarkers: [
 						{ rowOffset: 2, colOffset: 0, rowCount: 5, colCount: 0 },
@@ -111,9 +111,9 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			"\n\t\t\t<div class=\"center\" style=\"background-color: #EEE;\">" +
 			"\n\t\t\t\t<h3>CENTER AREA</h3>\n\t\t\t\t<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget porta urna. Ut gravida mi at ligula commodo feugiat vehicula lacus tincidunt. Proin lobortis magna sed lacus malesuada commodo fermentum felis auctor. Sed quis nulla quis tellus facilisis malesuada. Mauris aliquam neque consequat mi blandit in luctus magna rutrum. Fusce sit amet ipsum magna. Vivamus porttitor arcu vitae eros molestie et sagittis dolor cursus. Quisque ultrices feugiat risus, vitae molestie felis interdum ac. Suspendisse pellentesque magna nec est commodo porttitor. </p>\n\t\t\t\t<p>Nunc lacinia ligula a nisl porta sed facilisis mauris facilisis. Sed a ante turpis, eget semper odio. Curabitur facilisis faucibus iaculis. Ut fermentum pretium ultrices. Etiam sem dui, adipiscing sed tempus et, adipiscing eget erat. Vestibulum nec eros magna.</p>\n\t\t\t\t<p>Praesent tristique arcu eget ligula pulvinar mollis. Maecenas at elit at justo posuere gravida id eu enim. Duis imperdiet lectus nec augue sollicitudin hendrerit. Suspendisse consectetur, lorem nec eleifend rutrum, eros metus sodales libero, et rutrum diam augue et lectus. Integer sed est vitae risus dignissim condimentum ullamcorper at massa. Donec a orci nisl, eget ullamcorper augue. Quisque sagittis fringilla tortor. Vivamus ligula velit, aliquam ut pellentesque quis, fringilla sit amet tortor.</p>\n\t\t\t</div>\n\t\t</div>\n", lineCount: 21,
 				extraMarkers: [
-						{ rowOffset: 3, colOffset: 0, rowCount: 3, colCount: 0 },
-						{ rowOffset: 6, colOffset: 0, rowCount: 3, colCount: 0 },
-						{ rowOffset: 10, colOffset: 0, rowCount: 3, colCount: 0 }
+						{ rowOffset: 3, colOffset: 0, rowCount: 5, colCount: 0 },
+						{ rowOffset: 8, colOffset: 0, rowCount: 4, colCount: 0 },
+						{ rowOffset: 16, colOffset: 0, rowCount: 4, colCount: 0 }
 					]			
 			};
 			} else if (descriptor.type === "columnLayout") {
