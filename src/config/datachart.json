@@ -384,7 +384,7 @@
           "description": "The unique identifier of the axis."
         },
         "dataSource": {
-          "type": "object",
+          "type": "custom",
           "defaultValue": null,
           "description": "Can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself."
         },
@@ -987,7 +987,7 @@
       ]
     },
     "dataSource": {
-      "type": "object",
+      "type": "custom",
       "defaultValue": null,
       "description": "can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself"
     },
@@ -1079,7 +1079,7 @@
       ]
     },
     "height": {
-      "type": "number",
+      "type": "string",
       "defaultValue": null,
       "description": "The height of the chart. It can be set as a number in pixels, string (px) or percentage (%)."
     },
@@ -1153,7 +1153,7 @@
           "description": "The width of the legend."
         },
         "height": {
-          "type": "number",
+          "type": "string",
           "defaultValue": null,
           "description": "The height of the legend."
         }
@@ -1700,7 +1700,7 @@
           "description": "The unique identifier of the series."
         },
         "dataSource": {
-          "type": "object",
+          "type": "custom",
           "defaultValue": null,
           "description": "Can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself "
         },
@@ -2827,7 +2827,7 @@
       "description": "Gets or sets the current Chart's vertical zoomability."
     },
     "width": {
-      "type": "number",
+      "type": "string",
       "defaultValue": null,
       "description": "The width of the chart. It can be set as a number in pixels, string (px) or percentage (%)."
     },
