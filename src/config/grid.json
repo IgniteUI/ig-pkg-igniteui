@@ -546,7 +546,7 @@
       "description": "enables formatting of the dates as UTC. Note that this may be desirable when the dates are coming from a backend, encoded as UTC. Otherwise, if dates are created on the client (in the browser), most probably keeping enableUTCDates to false is the desired behavior"
     },
     "features": {
-      "type": "array",
+      "type": "custom",
       "schema": {
          "Filtering": {
             "type": "object",

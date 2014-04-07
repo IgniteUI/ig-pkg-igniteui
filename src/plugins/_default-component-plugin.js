@@ -640,8 +640,9 @@ define (function (require, exports, module) {
 			return [];
 		},
 		openCollectionEditor: function (descriptor) {
-			collectionEditor(descriptor);
+			var container = collectionEditor(descriptor);
 			descriptor.ide.adornerMoveLeft();
+			return container;
 		},
 		openPropertyEditor: function (descriptor) {
 			var propertyExplorer = require("ide-propertyexplorer"),
