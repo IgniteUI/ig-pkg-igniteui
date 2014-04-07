@@ -1075,45 +1075,59 @@ define (function (require, exports, module) {
 			};
 			for (i = 0; i < scripts.length; i++) {
 				(function (i) {
-					var code = $(scripts[i]).text();
-					var ast = esprima.parse(code, {
-						loc: true // include location of nodes (row and column info, used in ACE markers)
-					});
-					estraverse.traverse(ast, {
-						enter: function (node, parent) {
-							if (node.type === "CallExpression") {
-								// find the control selector
-								var comp;
-								if (!node.callee || (node.callee && !node.callee.property)) {
-									return;
-								}
-								comp = node.callee.property.name; //example: igGrid
-								// validate component
-								if (comp && comp.startsWith("ig")) {
-									var components = that.settings.packageInfo.components;
-									for (var name in components) {
-										if (components.hasOwnProperty(name) && that._getWidgetName(name) === comp) {
-											//if metadata for component of type <name> is not loaded, load it
-											if (!components[name].properties && !compPromises[name]) {
-												compPromises[name] = components[name].loadInfo();
-											}
-											if (components[name].properties) {
-												processFunc(node, name, components, scriptRanges[i]);
-											} else {
-												compPromises[name].then(function () {
+					var $cblock = $(scripts[i]);
+					var code = $cblock.text();
+					var ast = {};
+					try {
+						ast = esprima.parse(code, {
+							loc: true // include location of nodes (row and column info, used in ACE markers)
+						});
+						estraverse.traverse(ast, {
+							enter: function (node, parent) {
+								if (node.type === "CallExpression") {
+									// find the control selector
+									var comp;
+									if (!node.callee || (node.callee && !node.callee.property)) {
+										return;
+									}
+									comp = node.callee.property.name; //example: igGrid
+									// validate component
+									if (comp && comp.startsWith("ig")) {
+										var components = that.settings.packageInfo.components;
+										for (var name in components) {
+											if (components.hasOwnProperty(name) && that._getWidgetName(name) === comp) {
+												//if metadata for component of type <name> is not loaded, load it
+												if (!components[name].properties && !compPromises[name]) {
+													compPromises[name] = components[name].loadInfo();
+												}
+												if (components[name].properties) {
 													processFunc(node, name, components, scriptRanges[i]);
-												});
+												} else {
+													compPromises[name].then(function () {
+														processFunc(node, name, components, scriptRanges[i]);
+													});
+												}
+												break; // found
 											}
-											break; // found
 										}
 									}
 								}
-							}
-						},
-						leave: function (node, parent) {
+							},
+							leave: function (node, parent) {
 
+							}
+						});
+					} catch (e) {
+						// open generic error dialog
+						console.log(e);
+						var blockid = "";
+						if ($cblock.attr("id")) {
+							blockid = "<p class='errordetailtrace'>(error from script block with id '" + $cblock.attr("id") + "'):</p>";
 						}
-					});
+						$("#modalerror > .errordetail").html(blockid + e);
+						$("#modalerror").dialog("open");
+						ide._hideLoading();
+					}
 				} (i));
 			}
 		},
