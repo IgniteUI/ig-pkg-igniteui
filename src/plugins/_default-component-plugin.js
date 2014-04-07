@@ -378,8 +378,8 @@ define (function (require, exports, module) {
 			//console.log("Updating property or event: " + descriptor.propName);
 			var ide = this.settings.ide;
 			var name = "";
-			if (descriptor.type) {
-				name = this._getWidgetName(descriptor.type);
+			if (descriptor.type || descriptor.comp.type) {
+				name = this._getWidgetName(descriptor.type ? descriptor.type : descriptor.comp.type);
 			}
 			if (descriptor.handlerFlag) {
 				var component = ide.componentById(descriptor.id);
