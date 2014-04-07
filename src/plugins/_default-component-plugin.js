@@ -377,7 +377,10 @@ define (function (require, exports, module) {
 		update: function (descriptor) {
 			//console.log("Updating property or event: " + descriptor.propName);
 			var ide = this.settings.ide;
-			var name = this._getWidgetName(descriptor.type);
+			var name = "";
+			if (descriptor.type) {
+				name = this._getWidgetName(descriptor.type);
+			}
 			if (descriptor.handlerFlag) {
 				var component = ide.componentById(descriptor.id);
 				if (component) {
@@ -809,6 +812,19 @@ define (function (require, exports, module) {
 									descriptor.comp.codeMarker.range.start.row,
 									0
 								);
+								// we also need to take care of the dataSource property, because its marker needs updating
+								// Bug #169298
+								// interestingly, the same issue cannot be observed for dragging & dropping a grid (to reorder)
+								// because option markers aren't really moved
+								// can't we just always move it on top, if there are other ignite widgets defined? 
+								// this way options will be always intact, and we won't need to perform this step here
+
+								// what's worse - if someone copy/pastes in ACE, option markers get messed up
+								// let's say i drag and drop two grids, then manually go and cut and paste one of them above
+								// and change some of the options
+
+								// that's because during the discovery process, it finds a componentId with the same Id , and thinks
+								// it already exists with the same configuration (and hence, markers). but the markers aren't dynamic any more
 							}
 						} else {
 							//navigate to new screen to configure data source
