@@ -767,7 +767,22 @@
       "description": "enables formatting of the dates as UTC. Note that this may be desirable when the dates are coming from a backend, encoded as UTC. Otherwise, if dates are created on the client (in the browser), most probably keeping enableUTCDates to false is the desired behavior"
     },
     "features": {
-      "type": "object",
+      "type": "custom",
+	  "schema": {
+         "Filtering": {
+            "type": "object",
+            "defaultValue": null,
+            "description": "Grid Filtering Feature",  
+            "schemaRef": "gridfiltering"
+          },
+         "Paging": {
+            "type": "object",
+            "defaultValue": null,
+            "description": "Grid Paging Feature",  
+            "schemaRef": "gridpaging"
+          }
+      },
+	  "designerDisplayProperty": "name",
       "defaultValue": null,
        "components": ["gridfiltering", "gridupdating", "gridtooltips", "gridsummaries", "gridsorting", "gridselection", "gridrowselectors", "gridresizing", "gridpaging", "gridmulticolumnheaders", "gridmergedcells", "gridhiding", "gridgroupby", "gridcolumnmoving"],
       "description": "a list of grid features definitions: sorting, paging, etc. Each feature goes with its separate options that are documented for the feature accordingly"
