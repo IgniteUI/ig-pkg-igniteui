@@ -1024,6 +1024,7 @@ define (function (require, exports, module) {
 							id: id,
 							lib: "igniteui",
 							type: name,
+							title: components[name].toolboxTitle,
 							visual: true, //TODO: support for non-visual components
 							providerType: ide._codeProviders["igniteui"].getProviderType(name),
 							codeMarker: {
@@ -1069,7 +1070,11 @@ define (function (require, exports, module) {
 						// we already have those offsets (potential optimization in addExtraMarkers)
 						ide._codeProviders["igniteui"].addExtraMarkers(d);
 						// finally add the ig-component class to the DOM, and the special data-attributes
-						window.frames[0].$(selector).addClass("ig-component").attr("data-type", name).attr("data-lib", "igniteui");
+						window.frames[0].$(selector).addClass("ig-component").attr({
+							"data-type": name,
+							"data-lib": "igniteui",
+							"data-title": components[name].toolboxTitle
+						});
 					}
 				}
 			};
