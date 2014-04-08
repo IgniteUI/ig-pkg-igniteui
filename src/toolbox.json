@@ -268,10 +268,11 @@
     		"id": "Upload",
     		"toolboxTitle": "File Upload",
     		"icon": "fileupload.png",
+			"componentPlugin": "fileupload-component-plugin",
     		"dragDropIcon": "fileupload-dragdrop.png",
     		"category": "editors",
+			"width" : 150, 
     		"visual": true,
-			"width": 200,
     		"framework": false
     	},
     	"radialGauge": {
@@ -429,7 +430,6 @@
     		"category": "lists",
     		"visual": true,
     		"framework": false,
-    		"width": 670,
     		"height": 650,
       		"defaultOptions": {               
     		}  		
