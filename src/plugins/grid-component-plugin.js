@@ -113,7 +113,8 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 					itemTexts: texts
 				};
 				var enumHtml = Mustache.to_html(ddtmpl, propData);
-				var td = $("<div />").insertAfter(container.find("a.add-item"));
+				var td = $("<div />").insertBefore(container.find("a.add-item"));
+				container.find("a.add-item").text("Add");
 				td.html(enumHtml).addClass("enum-prop-edit");
 				var label = td.find(".ig-dropdown-label");
 				label.css({
@@ -279,6 +280,13 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 				schema = features.components[name].properties;
 			}
 			return schema;
+		},
+		setPropertyExplorerValueContents: function (descriptor) {
+			if (descriptor.propName === "features") {
+				descriptor.td.html("<span class='custom-editor'>Configure...</span>");
+			} else if (this._super) {
+				this._super(descriptor);
+			}
 		}
 		/*
 		render: function(descriptor) {
