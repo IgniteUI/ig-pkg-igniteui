@@ -767,7 +767,94 @@
       "description": "enables formatting of the dates as UTC. Note that this may be desirable when the dates are coming from a backend, encoded as UTC. Otherwise, if dates are created on the client (in the browser), most probably keeping enableUTCDates to false is the desired behavior"
     },
     "features": {
-      "type": "object",
+      "type": "custom",
+	  "schema": {
+        "ColumnMoving": {
+            "type": "object",
+            "defaultValue": null,
+            "description": "Grid Column Moving Feature",  
+            "schemaRef": "gridcolumnmoving"
+          },
+		  "Filtering": {
+            "type": "object",
+            "defaultValue": null,
+            "description": "Grid Filtering Feature", 
+            "schemaRef": "gridfiltering"
+          },
+		  "GroupBy": {
+            "type": "object",
+            "defaultValue": null,
+            "description": "Grid Group By Feature",  
+            "schemaRef": "gridgroupby"
+          },
+		  "Hiding": {
+            "type": "object",
+            "defaultValue": null,
+            "description": "Grid Hiding Feature",  
+            "schemaRef": "gridhiding"
+          },
+          "MergedCells": {
+            "type": "object",
+            "defaultValue": null,
+            "description": "Grid Merged Cells Feature",  
+            "schemaRef": "gridmergedcells"
+          },
+		  "MultiColumnHeaders": {
+            "type": "object",
+            "defaultValue": null,
+            "description": "Grid Multi Column Headers Feature",  
+            "schemaRef": "gridmulticolumnheaders"
+          },
+		  "Paging": {
+            "type": "object",
+            "defaultValue": null,
+            "description": "Grid Paging Feature",  
+            "schemaRef": "gridpaging"
+          },
+		  "Resizing": {
+            "type": "object",
+            "defaultValue": null,
+            "description": "Grid Resizing Feature",  
+            "schemaRef": "gridresizing"
+          },
+         "RowSelectors": {
+            "type": "object",
+            "defaultValue": null,
+            "description": "Grid Row Selectors Feature",  
+            "schemaRef": "gridrowselectors"
+          },
+		  "Selection": {
+            "type": "object",
+            "defaultValue": null,
+            "description": "Grid Selection Feature",  
+            "schemaRef": "gridselection"
+          },
+		  "Sorting": {
+            "type": "object",
+            "defaultValue": null,
+            "description": "Grid Sorting Feature",  
+            "schemaRef": "gridsorting"
+          },
+		  "Summaries": {
+            "type": "object",
+            "defaultValue": null,
+            "description": "Grid Summaries Feature",  
+            "schemaRef": "gridsummaries"
+          },
+          "Tooltips": {
+            "type": "object",
+            "defaultValue": null,
+            "description": "Grid Tooltips Feature",  
+            "schemaRef": "gridtooltips"
+          },
+		  "Updating": {
+            "type": "object",
+            "defaultValue": null,
+            "description": "Grid Updating Feature",  
+            "schemaRef": "gridupdating"
+          }
+      },
+	  "designerDisplayProperty": "name",
       "defaultValue": null,
        "components": ["gridfiltering", "gridupdating", "gridtooltips", "gridsummaries", "gridsorting", "gridselection", "gridrowselectors", "gridresizing", "gridpaging", "gridmulticolumnheaders", "gridmergedcells", "gridhiding", "gridgroupby", "gridcolumnmoving"],
       "description": "a list of grid features definitions: sorting, paging, etc. Each feature goes with its separate options that are documented for the feature accordingly"

@@ -15,6 +15,11 @@ define (["./datasource-component-plugin"], function (DataSourcePlugin) {
 				value: "http://services.odata.org/Northwind/Northwind.svc/Customers?$format=json&$select=CustomerID,CompanyName,ContactName&$callback=?",
 				type: "string"
 			});
+			orderedReturnProps.push({
+				name: "responseDataKey",
+				value: "value",
+				type: "string"
+			});
 			return {
 				codeString: code,
 				lineCount: 4,
