@@ -219,14 +219,12 @@
         "colIndex": {
           "type": "number",
           "defaultValue": 0,
-          "description": "Defines the column index of the item",
-          "required": true
+          "description": "Defines the column index of the item"
         },
         "rowIndex": {
           "type": "number",
           "defaultValue": 0,
-          "description": "Defines the row index of the item",
-          "required": true
+          "description": "Defines the row index of the item"
         }
       }
     },
