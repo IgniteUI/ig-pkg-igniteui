@@ -955,6 +955,9 @@ define (function (require, exports, module) {
 			//code = code.substring(code.indexOf("<script id=\"code\">"), code.length - 1).replace("<script id=\"code\">", "");
 			//code = code.substring(0, code.indexOf("</script>"));
 			// get the HTML code
+			if (typeof (window.frames[0].$) === "undefined") {
+				return;
+			}
 			var scripts = window.frames[0].$("script");
 			ide.editor.findAll("<script");
 			var scriptRanges = ide.editor.getSelection().ranges.slice(0);
