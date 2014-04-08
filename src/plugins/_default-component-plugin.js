@@ -513,32 +513,16 @@ define (function (require, exports, module) {
 						try {
 							console.log("This option is not editable at runtime. Reloading the widget.");
 							this._recreateWidget(descriptor.placeholder, name, newOpts);
-						} catch(err) {
-							var errorContainer = $("<div class='prop-editor-error-message' title='" + err + "'>" + err + "</div>"),
-								offset = window.frames[0].$(descriptor.placeholder).offset();
-							errorContainer.css({
-								"top": offset.top,
-								"left": offset.left,
-								"width": window.frames[0].$(descriptor.placeholder).outerWidth(),
-								"height": window.frames[0].$(descriptor.placeholder).outerHeight()
-							});
-							window.frames[0].$(descriptor.placeholder).append(errorContainer);
+						} catch (err) {
+							this._showErrorContainer(err, descriptor);
 						}
 					}
 				} else {
 					try {
 						console.log("This option is not editable at runtime. Reloading the widget.");
 						this._recreateWidget(descriptor.placeholder, name, newOpts);
-					} catch(err) {
-						var errorContainer = $("<div class='prop-editor-error-message' title='" + err + "'>" + err + "</div>"),
-							offset = window.frames[0].$(descriptor.placeholder).offset();
-						errorContainer.css({
-							"top": offset.top,
-							"left": offset.left,
-							"width": window.frames[0].$(descriptor.placeholder).outerWidth(),
-							"height": window.frames[0].$(descriptor.placeholder).outerHeight()
-						});
-						window.frames[0].$(descriptor.placeholder).append(errorContainer);
+					} catch (err) {
+						this._showErrorContainer(err, descriptor);
 					}
 				}
 				// check if prop exists
@@ -571,6 +555,17 @@ define (function (require, exports, module) {
 					});
 				}
 			}
+		},
+		_showErrorContainer: function (err, descriptor) {
+			var errorContainer = $("<div class='prop-editor-error-message' title='" + err + "'>" + err + "</div>"),
+				offset = window.frames[0].$(descriptor.placeholder).position();
+			errorContainer.css({
+				"top": offset.top,
+				"left": offset.left,
+				"width": window.frames[0].$(descriptor.placeholder).outerWidth(),
+				"height": window.frames[0].$(descriptor.placeholder).outerHeight()
+			});
+			window.frames[0].$(descriptor.placeholder).append(errorContainer);
 		},
 		universalPropertyModified: function (descriptor) {
 			if (descriptor.propName === "id") {
