@@ -110,7 +110,8 @@ define (function (require, exports, module) {
 							}
 						}
 						*/
-						var formattedStr = beautify(JSON.stringify(opts[key]));
+						//For bug #169309 - Consider using something like https://github.com/yeoman/stringify-object
+						var formattedStr = beautify(JSON.stringify(opts[key]).replace(/\"([^(\")"]+)\":/g,"$1:"));
 						for (var p = 0; p < opts[key].length; p ++) {
 							if(opts[key][p].hasOwnProperty("dataSource")){
 								formattedStr = formattedStr.replace('"' + opts[key][p].dataSource + '"', opts[key][p].dataSource);
@@ -961,6 +962,9 @@ define (function (require, exports, module) {
 			//code = code.substring(code.indexOf("<script id=\"code\">"), code.length - 1).replace("<script id=\"code\">", "");
 			//code = code.substring(0, code.indexOf("</script>"));
 			// get the HTML code
+			if (typeof (window.frames[0].$) === "undefined") {
+				return;
+			}
 			var scripts = window.frames[0].$("script");
 			ide.editor.findAll("<script");
 			var scriptRanges = ide.editor.getSelection().ranges.slice(0);

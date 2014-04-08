@@ -423,20 +423,6 @@
     		"width": 300,
     		"height": 300
     	},
-    	"pivotGrid": {
-    		"id": "pivotGrid",
-            "dependsOn": ["core", "lob", "dv"],
-    		"toolboxTitle": "Pivot Grid",
-    		"icon": "pivotgrid.png",
-			"componentPlugin": "pivot-grid-component-plugin",
-    		"dragDropIcon": "pivotgrid-dragdrop.png",
-    		"category": "lists",
-    		"visual": true,
-    		"framework": false,
-    		"height": 650,
-      		"defaultOptions": {               
-    		}  		
-    	},
     	"rating": {
     		"id": "rating",
     		"toolboxTitle": "Rating",

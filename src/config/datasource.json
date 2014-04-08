@@ -306,7 +306,8 @@
 		"callee": {
 			"type": "object",
 			"defaultValue": null,
-			"description": "Object on which to invoke the callback function."
+			"description": "Object on which to invoke the callback function.",
+			"hidden": true
 		},
 		"data": {
 			"type": "array",
@@ -557,12 +558,14 @@
 				"defaultFields": {
 					"type": "array",
 					"defaultValue": [],
-					"description": "Can point to either a string or a function object. The parameters that are passed are 1) the data array to be filtered, 2) the filtering expression definitions. Should return an array of the filtered data."
+					"description": "Can point to either a string or a function object. The parameters that are passed are 1) the data array to be filtered, 2) the filtering expression definitions. Should return an array of the filtered data.",
+					"arrayMemberType": "string"
 				},
 				"expressions": {
 					"type": "array",
 					"defaultValue": [],
 					"description": "A list of expression objects, containing the following key-value pairs: fieldName, expression (search string), condition , and logic (AND/OR)",
+					"designerDisplayProperty": "fieldName",
 					"schema": {
 						"fieldName": {
 							"type": "string",
@@ -635,7 +638,8 @@
 				"defaultFields": {
 					"type": "array",
 					"defaultValue": [],
-					"description": "When defaultDirection is different than \"none\", and defaultFields is specified, data will be initially sorted accordingly, directly after dataBind()."
+					"description": "When defaultDirection is different than \"none\", and defaultFields is specified, data will be initially sorted accordingly, directly after dataBind().",
+					"arrayMemberType": "string"
 				},
 				"applyToAllData": {
 					"type": "bool",
