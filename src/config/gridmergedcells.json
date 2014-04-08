@@ -39,6 +39,10 @@
     }
   },
   "properties": {
+	"name": {
+      "type": "string",
+      "defaultValue": "CellMerging"
+    },
     "initialState": {
       "type": "string",
       "defaultValue": "regular",

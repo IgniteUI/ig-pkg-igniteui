@@ -103,6 +103,10 @@
     }
   },
   "properties": {
+	"name": {
+      "type": "string",
+      "defaultValue": "Paging"
+    },
     "currentPageDropDownLeadingLabel": {
       "type": "string",
       "defaultValue": "",

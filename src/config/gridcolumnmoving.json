@@ -263,6 +263,10 @@
     }
   },
   "properties": {
+	"name": {
+      "type": "string",
+      "defaultValue": "ColumnMoving"
+    },
     "addMovingDropdown": {
       "type": "bool",
       "defaultValue": true,

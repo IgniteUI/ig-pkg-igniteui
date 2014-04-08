@@ -161,31 +161,15 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 						return;
 					}
 					var value = $this.getPropValue(descriptor),
-						features = packageInfo.components[descriptor.type].properties.features,
-						feature = features.components[labelText],
 						schema;
-					if (feature && feature.properties) {
-						schema = feature.properties;
-					} else {
-						try {
-							var url = packageInfo.configPath + "/" + descriptor.schema[labelText].schemaRef + ".json";
-							// load metadata for every feature
-							var json = $.ajax({ // TODO: we could refactor this usage into a shared func on package info perhaps
-								type: "GET",
-								url: url,
-								cache: true,
-								dataType: "json",
-								async: false
-							});
-							features.components[labelText] = $.parseJSON(json.responseText);
-							schema = features.components[labelText].properties;
-						} catch (e) {
-							console.error("Could not load feature info for '" + featureName + "'. Error: " + e);
-						}
+					try {
+						schema = $this.loadFeatureInfo(descriptor, labelText);
+					} catch (e) {
+						console.error("Could not load feature info for '" + labelText + "'. Error: " + e);
 					}
 					var descr = {
 						oldPropValue: value,
-						schema: schema // todo extract schema
+						schema: schema
 					};
 					if (!value) {
 						value = [];
@@ -198,8 +182,103 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 					$("<li><span class='delete-item glyphicon glyphicon-trash'></span><a href='#' class='adorner-collection-edit'>" + labelText + "</a></li>").insertBefore($(this).closest("li"));
 					descr.propValue = value;
 					descriptor.updateFunction(descr);
+					event.stopPropagation();
+					return false;
+				});
+				container.on('click', '.adorner-collection-edit', function (event) {
+					var labelText = $(this).text(),
+						propertyExplorer = require("ide-propertyexplorer"),
+						container = $("<div class='adorner-property-sheet' data-property='" + $(this).text() + "'></div>").insertAfter(descriptor.ide.currentAdorner()),
+						editor = $('<div class="adorner-property-list"></div>').appendTo(container),
+						options = $.extend({}, descriptor),
+						property,
+						count = 0,
+						schema,
+						updateComp = function (descr) {
+							var features = $this.getPropValue(descriptor),
+								i,
+								feature,
+								schema;
+							for (i = 0; i < features.length; i++ ) {
+								if (features[i].name === labelText) {
+									feature = features[i];
+									break;
+								}
+							}
+							if (!feature) {
+								return;
+							}
+							feature[descr.propName] = descr.propValue;
+							var opt = descriptor;
+							if (descr.handlerFlag) {
+								opt.args = descr.args;
+								opt.handlerFlag = true;
+								opt.funcName = descr.funcName;
+							}
+							opt.propValue = features;
+							schema = $this.settings.packageInfo.components[descriptor.type].properties.features.components;
+							schema.heterogeneous = true;
+							opt.schema = schema;
+							// updateComponent also updates the code editor
+							if (descriptor.updateFunction) {
+								descriptor.updateFunction(opt);
+							} else {
+								descriptor.provider.updateComponent(opt);
+							}
+						};
+					options.id = "propEditor";
+					options.containerId = "property";
+					options.parent = editor;
+					options.data = [];
+					options.updateFunction = updateComp;
+					try {
+						schema = $this.loadFeatureInfo(descriptor, labelText);
+					} catch (e) {
+						console.error("Could not load feature info for '" + labelText + "'. Error: " + e);
+					}
+					for (property in schema) {
+						if (schema.hasOwnProperty(property) && property !== "name") {
+							options.data.push({
+								id: count++,
+								propName: property,
+								defaultValue: schema[property].defaultValue,
+								propValue: schema[property].defaultValue,
+								propType: schema[property].type,
+								description: schema[property].description,
+								valueOptions: schema[property].valueOptions,
+								displayProp: schema[property].designerDisplayProperty,
+								args: schema[property].args
+							});
+						}
+					}
+					// render and open a property explorer
+					propertyExplorer(options);
+					descriptor.ide.adornerMoveLeft();
+					event.stopPropagation();
+					return false;
 				});
 			}
+		},
+		loadFeatureInfo: function (descriptor, name) {
+			var features = this.settings.packageInfo.components[descriptor.type].properties.features,
+				feature = features.components[name],
+				schema;
+			if (feature && feature.properties) {
+				schema = feature.properties;
+			} else {
+				var url = this.settings.packageInfo.configPath + "/" + descriptor.schema[name].schemaRef + ".json";
+				// load metadata for every feature
+				var json = $.ajax({ // TODO: we could refactor this usage into a shared func on package info perhaps
+					type: "GET",
+					url: url,
+					cache: true,
+					dataType: "json",
+					async: false
+				});
+				features.components[name] = $.parseJSON(json.responseText);
+				schema = features.components[name].properties;
+			}
+			return schema;
 		}
 		/*
 		render: function(descriptor) {

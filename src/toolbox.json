@@ -49,7 +49,10 @@
     		"category": "lists",
     		"visual": true, 
     		"framework": false,
-    		"dataSource": "sampleData1"
+    		"dataSource": "sampleData1",
+			"defaultOptions": {
+				"features": []
+			}
     	},
     	"hierarchicalGrid": {
     		"id": "hierarchicalGrid",
@@ -63,7 +66,7 @@
     		"width": 300,
     		"height": 300,
     		"dataSource": "sampleHierarchicalData1",
-    		"defaultOptions": {"autoGenerateLayouts": true}
+    		"defaultOptions": {"autoGenerateLayouts": true, "features": [], "columnLayouts": []}
     	},
     	"dataChart": {
     		"id": "dataChart",
@@ -75,7 +78,7 @@
     		"visual": true,
     		"framework": false,
     		"dataSource": "sampleChartData",
-			"defaultOptions" : {
+			"defaultOptions": {
 				"axes": [
                     {
                         "name": "NameAxis",

@@ -129,6 +129,12 @@ define (function (require, exports, module) {
 								formattedStrTabbed += "\n";
 							}
 						}
+						orderedReturnProps.push({
+							name: key,
+							value: opts[key],
+							type: "array",
+							schema: props[key].schema
+						});
 						code += formattedStrTabbed;
 						lineCount += formattedStrTabbed.split("\n").length - 1;
 					} else {
@@ -599,7 +605,8 @@ define (function (require, exports, module) {
 					propName: props[i].name,
 					propValue: props[i].value,
 					defaultValue: props[i].value, //same
-					propType: props[i].type
+					propType: props[i].type,
+					schema: props[i].schema
 				}, false, i === props.length - 1); // we just want to add markers for those props, not insert them; they're already inserted
 			}
 		},

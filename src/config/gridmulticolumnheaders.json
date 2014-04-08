@@ -5,5 +5,10 @@
   "category": null,
   "visual": true,
   "events": {},
-  "properties": {}
+  "properties": {
+	"name": {
+      "type": "string",
+      "defaultValue": "MultiColumnHeaders"
+    }
+  }
 }

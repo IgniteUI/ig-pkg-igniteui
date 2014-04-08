@@ -231,6 +231,10 @@
     }
   },
   "properties": {
+	"name": {
+      "type": "string",
+      "defaultValue": "Hiding"
+    },
     "columnChooserAnimationDuration": {
       "type": "number",
       "defaultValue": 200.0,

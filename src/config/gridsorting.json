@@ -231,6 +231,10 @@
     }
   },
   "properties": {
+	"name": {
+      "type": "string",
+      "defaultValue": "Sorting"
+    },
     "applySortedColumnCss": {
       "type": "bool",
       "defaultValue": true,

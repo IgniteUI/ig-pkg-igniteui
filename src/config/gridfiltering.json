@@ -263,6 +263,10 @@
     }
   },
   "properties": {
+	"name": {
+      "type": "string",
+      "defaultValue": "Filtering"
+    },
     "advancedModeEditorsVisible": {
       "type": "bool",
       "defaultValue": false,

@@ -327,6 +327,10 @@
     }
   },
   "properties": {
+	"name": {
+      "type": "string",
+      "defaultValue": "Updating"
+    },
     "addRowLabel": {
       "type": "string",
       "defaultValue": null,

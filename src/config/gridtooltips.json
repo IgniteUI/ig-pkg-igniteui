@@ -71,6 +71,10 @@
     }
   },
   "properties": {
+	"name": {
+      "type": "string",
+      "defaultValue": "Tooltips"
+    },
     "columnSettings": {
       "type": "unknown",
       "defaultValue": null,

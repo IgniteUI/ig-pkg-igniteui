@@ -183,6 +183,10 @@
     }
   },
   "properties": {
+	"name": {
+      "type": "string",
+      "defaultValue": "Summaries"
+    },
     "calculateRenderMode": {
       "type": "string",
       "defaultValue": null,

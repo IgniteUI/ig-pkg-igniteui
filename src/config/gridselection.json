@@ -135,6 +135,10 @@
     }
   },
   "properties": {
+	"name": {
+      "type": "string",
+      "defaultValue": "Selection"
+    },
     "activation": {
       "type": "bool",
       "defaultValue": true,

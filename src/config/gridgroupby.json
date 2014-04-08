@@ -263,6 +263,10 @@
     }
   },
   "properties": {
+	"name": {
+      "type": "string",
+      "defaultValue": "GroupBy"
+    },
     "collapseTooltip": {
       "type": "string",
       "defaultValue": "",
