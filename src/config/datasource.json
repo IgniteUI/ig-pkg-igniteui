@@ -306,7 +306,8 @@
 		"callee": {
 			"type": "object",
 			"defaultValue": null,
-			"description": "Object on which to invoke the callback function."
+			"description": "Object on which to invoke the callback function.",
+			"hidden": true
 		},
 		"data": {
 			"type": "array",
