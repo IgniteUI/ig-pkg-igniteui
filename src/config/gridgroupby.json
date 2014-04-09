@@ -265,7 +265,7 @@
   "properties": {
 	"name": {
       "type": "string",
-      "defaultValue": "GroupBy"
+      "defaultValue": null
     },
     "collapseTooltip": {
       "type": "string",

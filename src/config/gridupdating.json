@@ -329,7 +329,7 @@
   "properties": {
 	"name": {
       "type": "string",
-      "defaultValue": "Updating"
+      "defaultValue": null
     },
     "addRowLabel": {
       "type": "string",

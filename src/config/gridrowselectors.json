@@ -57,7 +57,7 @@
   "properties": {
 	"name": {
       "type": "string",
-      "defaultValue": "RowSelectors"
+      "defaultValue": null
     },
     "enableCheckBoxes": {
       "type": "bool",

@@ -265,7 +265,7 @@
   "properties": {
 	"name": {
       "type": "string",
-      "defaultValue": "Filtering"
+      "defaultValue": null
     },
     "advancedModeEditorsVisible": {
       "type": "bool",
