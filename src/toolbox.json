@@ -51,7 +51,14 @@
     		"framework": false,
     		"dataSource": "sampleData1",
 			"defaultOptions": {
-				"features": []
+				"features": [{
+					"name": "Sorting"
+				},
+				{
+					"name": "Filtering",
+					"type": "local",
+					"mode": "simple"
+				}]
 			}
     	},
     	"hierarchicalGrid": {
