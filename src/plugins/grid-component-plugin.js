@@ -158,130 +158,18 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 				});
 				
 				container.off();
-				container.on("click", ".add-item", function () {
-					var label = td.find(".ig-dropdown-label"),
-						labelText = label.text();
-					if (!labelText) {
-						return;
-					}
-					var value = $this.getPropValue(descriptor),
-						schema;
-					try {
-						schema = $this.loadFeatureInfo(descriptor, labelText);
-					} catch (e) {
-						console.error("Could not load feature info for '" + labelText + "'. Error: " + e);
-					}
-					var descr = {
-						oldPropValue: value,
-						schema: schema
-					};
-					if (!value) {
-						value = [];
-					}
-					value.push({
-						name: labelText
-					});
-					label.text("");
-					$(".dropdown-container[data-id=" + dd_id + "] li[data-text=" + labelText + "]").remove();
-					$("<li><span class='delete-item glyphicon glyphicon-trash'></span><a href='#' class='adorner-collection-edit'>" + labelText + "</a></li>").insertBefore($(this).closest("li"));
-					descr.propValue = value;
-					descriptor.updateFunction(descr);
+				container.on("click", ".add-item", function (event) {
+					$this.addFeatureHandler(descriptor, td, $(this).closest("li"), dd_id);
 					event.stopPropagation();
 					return false;
 				});
 				container.on('click', '.adorner-collection-edit', function (event) {
-					var labelText = $(this).text(),
-						propertyExplorer = require("ide-propertyexplorer"),
-						container = $("<div class='adorner-property-sheet' data-property='" + $(this).text() + "'></div>").insertAfter(descriptor.ide.currentAdorner()),
-						editor = $('<div class="adorner-feature-list"></div>').appendTo(container),
-						options = $.extend({}, descriptor),
-						property,
-						count = 0,
-						schema,
-						updateComp = function (descr) {
-							var features = $this.getPropValue(descriptor),
-								i,
-								feature,
-								schema;
-							for (i = 0; i < features.length; i++ ) {
-								if (features[i].name === labelText) {
-									feature = features[i];
-									break;
-								}
-							}
-							if (!feature) {
-								return;
-							}
-							feature[descr.propName] = descr.propValue;
-							var opt = descriptor;
-							if (descr.handlerFlag) {
-								opt.args = descr.args;
-								opt.handlerFlag = true;
-								opt.funcName = descr.funcName;
-							}
-							opt.propValue = features;
-							schema = $this.settings.packageInfo.components[descriptor.type].properties.features.components;
-							schema.heterogeneous = true;
-							opt.schema = schema;
-							// updateComponent also updates the code editor
-							if (descriptor.updateFunction) {
-								descriptor.updateFunction(opt);
-							} else {
-								descriptor.provider.updateComponent(opt);
-							}
-						};
-					options.id = "featureEditor";
-					options.containerId = "feature";
-					options.parent = editor;
-					options.data = [];
-					options.updateFunction = updateComp;
-					try {
-						schema = $this.loadFeatureInfo(descriptor, labelText);
-					} catch (e) {
-						console.error("Could not load feature info for '" + labelText + "'. Error: " + e);
-					}
-					for (property in schema) {
-						if (schema.hasOwnProperty(property) && property !== "name") {
-							options.data.push({
-								id: count++,
-								propName: property,
-								defaultValue: schema[property].defaultValue,
-								propValue: schema[property].defaultValue,
-								propType: schema[property].type,
-								description: schema[property].description,
-								valueOptions: schema[property].valueOptions,
-								displayProp: schema[property].designerDisplayProperty,
-								args: schema[property].args,
-								schema: schema[property].schema
-							});
-						}
-					}
-					// render and open a property explorer
-					propertyExplorer(options);
-					descriptor.ide.adornerMoveLeft();
+					$this.editFeatureHandler(descriptor, $(this));
 					event.stopPropagation();
 					return false;
 				});
-				container.on('click', '.delete-item', function (event, ui) {
-					var labelText = $(this).closest("li").text(), value = $this.getPropValue(descriptor), schema, i, opt = $.extend({}, descriptor);
-					$(this).closest('li').remove();
-					for (i = 0; i < value.length; i++) {
-						if (value[i].name === labelText) {
-							value.splice(i, 1);
-							break;
-						}
-					}
-					schema = $this.settings.packageInfo.components[opt.type].properties.features.components;
-					opt.propValue = value;
-					opt.propType = "array";
-					schema.heterogeneous = true;
-					opt.schema = schema;
-					$("<li><a href='#'>" + labelText + "</a></li>").attr({
-							"data-text": labelText,
-							"data-key": labelText,
-							"title": labelText
-						}).appendTo(".dropdown-container[data-id=" + dd_id + "] ul");
-					descriptor.provider.updateComponent(opt);
+				container.on('click', '.delete-item', function (event) {
+					$this.deleteFeatureHandler(descriptor, $(this).closest("li"), dd_id);
 				});
 			}
 		},
@@ -305,6 +193,128 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 				schema = features.components[name].properties;
 			}
 			return schema;
+		},
+		addFeatureHandler: function (descriptor, td, target, id) {
+			var label = td.find(".ig-dropdown-label"),
+				labelText = label.text();
+			if (!labelText) {
+				return;
+			}
+			var value = this.getPropValue(descriptor),
+				schema;
+			try {
+				schema = this.loadFeatureInfo(descriptor, labelText);
+			} catch (e) {
+				console.error("Could not load feature info for '" + labelText + "'. Error: " + e);
+			}
+			var descr = {
+				oldPropValue: value,
+				schema: schema
+			};
+			if (!value) {
+				value = [];
+			}
+			value.push({
+				name: labelText
+			});
+			label.text("");
+			$(".dropdown-container[data-id=" + id + "] li[data-text=" + labelText + "]").remove();
+			$("<li><span class='delete-item glyphicon glyphicon-trash'></span><a href='#' class='adorner-collection-edit'>" + labelText + "</a></li>").insertBefore(target);
+			descr.propValue = value;
+			descriptor.updateFunction(descr);
+		},
+		editFeatureHandler: function (descriptor, target) {
+			var labelText = target.text(),
+				$this = this,
+				propertyExplorer = require("ide-propertyexplorer"),
+				container = $("<div class='adorner-property-sheet' data-property='" + labelText + "'></div>").insertAfter(descriptor.ide.currentAdorner()),
+				editor = $('<div class="adorner-feature-list"></div>').appendTo(container),
+				options = $.extend({}, descriptor),
+				property,
+				count = 0,
+				schema,
+				updateComp = function (descr) {
+					var features = $this.getPropValue(descriptor),
+						i,
+						feature,
+						schema;
+					for (i = 0; i < features.length; i++ ) {
+						if (features[i].name === labelText) {
+							feature = features[i];
+							break;
+						}
+					}
+					if (!feature) {
+						return;
+					}
+					feature[descr.propName] = descr.propValue;
+					var opt = descriptor;
+					if (descr.handlerFlag) {
+						opt.args = descr.args;
+						opt.handlerFlag = true;
+						opt.funcName = descr.funcName;
+					}
+					opt.propValue = features;
+					schema = $this.settings.packageInfo.components[descriptor.type].properties.features.components;
+					schema.heterogeneous = true;
+					opt.schema = schema;
+					// updateComponent also updates the code editor
+					if (descriptor.updateFunction) {
+						descriptor.updateFunction(opt);
+					} else {
+						descriptor.provider.updateComponent(opt);
+					}
+				};
+			options.id = "featureEditor";
+			options.containerId = "feature";
+			options.parent = editor;
+			options.data = [];
+			options.updateFunction = updateComp;
+			try {
+				schema = this.loadFeatureInfo(descriptor, labelText);
+			} catch (e) {
+				console.error("Could not load feature info for '" + labelText + "'. Error: " + e);
+			}
+			for (property in schema) {
+				if (schema.hasOwnProperty(property) && property !== "name") {
+					options.data.push({
+						id: count++,
+						propName: property,
+						defaultValue: schema[property].defaultValue,
+						propValue: schema[property].defaultValue,
+						propType: schema[property].type,
+						description: schema[property].description,
+						valueOptions: schema[property].valueOptions,
+						displayProp: schema[property].designerDisplayProperty,
+						args: schema[property].args,
+						schema: schema[property].schema
+					});
+				}
+			}
+			// render and open a property explorer
+			propertyExplorer(options);
+			descriptor.ide.adornerMoveLeft();
+		},
+		deleteFeatureHandler: function (descriptor, target, id) {
+			var labelText = target.text(), value = this.getPropValue(descriptor), schema, i, opt = $.extend({}, descriptor);
+			target.remove();
+			for (i = 0; i < value.length; i++) {
+				if (value[i].name === labelText) {
+					value.splice(i, 1);
+					break;
+				}
+			}
+			schema = this.settings.packageInfo.components[opt.type].properties.features.components;
+			opt.propValue = value;
+			opt.propType = "array";
+			schema.heterogeneous = true;
+			opt.schema = schema;
+			$("<li><a href='#'>" + labelText + "</a></li>").attr({
+					"data-text": labelText,
+					"data-key": labelText,
+					"title": labelText
+				}).appendTo(".dropdown-container[data-id=" + id + "] ul");
+			descriptor.provider.updateComponent(opt);
 		},
 		setPropertyExplorerValueContents: function (descriptor) {
 			if (descriptor.propName === "features") {
