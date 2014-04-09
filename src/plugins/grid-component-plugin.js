@@ -15,7 +15,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 		getCodeEditorScriptSnippet: function (descriptor) {
 			var code = "";
 			var opts = descriptor.options;
-			var lineCount = 5;
+			var lineCount = 4;
 			var orderedReturnProps = [];
 			var xtraMarkup = "\t\t\t\t\tfeatures: []";
 			//A.T. - we can either drop with no features in the code editor
