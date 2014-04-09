@@ -137,7 +137,7 @@
   "properties": {
 	"name": {
       "type": "string",
-      "defaultValue": "Selection"
+      "defaultValue": null
     },
     "activation": {
       "type": "bool",

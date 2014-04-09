@@ -185,7 +185,7 @@
   "properties": {
 	"name": {
       "type": "string",
-      "defaultValue": "Summaries"
+      "defaultValue": null
     },
     "calculateRenderMode": {
       "type": "string",

@@ -233,7 +233,7 @@
   "properties": {
 	"name": {
       "type": "string",
-      "defaultValue": "Hiding"
+      "defaultValue": null
     },
     "columnChooserAnimationDuration": {
       "type": "number",

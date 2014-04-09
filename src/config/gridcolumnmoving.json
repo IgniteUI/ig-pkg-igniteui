@@ -265,7 +265,7 @@
   "properties": {
 	"name": {
       "type": "string",
-      "defaultValue": "ColumnMoving"
+      "defaultValue": null
     },
     "addMovingDropdown": {
       "type": "bool",

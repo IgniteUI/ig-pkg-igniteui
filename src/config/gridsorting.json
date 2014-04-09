@@ -233,7 +233,7 @@
   "properties": {
 	"name": {
       "type": "string",
-      "defaultValue": "Sorting"
+      "defaultValue": null
     },
     "applySortedColumnCss": {
       "type": "bool",
