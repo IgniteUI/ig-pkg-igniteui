@@ -17,7 +17,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			var opts = descriptor.options;
 			var lineCount = 5;
 			var orderedReturnProps = [];
-			var xtraMarkup = "\t\t\t\t\tfeatures: [\n" + "\t\t\t\t\t]";
+			var xtraMarkup = "\t\t\t\t\tfeatures: []";
 			//A.T. - we can either drop with no features in the code editor
 			// or an empty array - empty arr makes it easier to manage with markers
 			code = "\t\t\t\t$(\"#" + descriptor.id + "\").igGrid({\n" + xtraMarkup;
@@ -46,7 +46,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			var props = this.settings.packageInfo.components[descriptor.type].properties;
 			for (var key in opts) {
 			//	if (opts.hasOwnProperty(key) && key !== "dataSource" && key !== "height" && key !== "width") {
-			if (opts.hasOwnProperty(key) && key !== "dataSource") {
+				if (opts.hasOwnProperty(key) && key !== "dataSource" && key !== "features") {
 					orderedReturnProps.push({
 						name: key,
 						value: opts[key],
@@ -78,7 +78,10 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			featuresRange = new descriptor.rclass(featuresRange.start.row, 0, featuresRange.start.row + 1, 0);
 			featuresRange.start = this.settings.editor.getSession().doc.createAnchor(featuresRange.start); 
 			featuresRange.end = this.settings.editor.getSession().doc.createAnchor(featuresRange.end);
-			descriptor.marker.extraMarkers["features"] = {range: featuresRange};
+			if (!descriptor.marker.extraMarkers.options) {
+				descriptor.marker.extraMarkers.options = {};
+			}
+			descriptor.marker.extraMarkers.options.features = {marker: featuresRange};
 		},
 		customPropertyEditor: function (descriptor) {
 			if (this._super && this._super(descriptor)) {

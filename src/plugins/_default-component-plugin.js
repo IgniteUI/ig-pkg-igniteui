@@ -287,7 +287,7 @@ define (function (require, exports, module) {
 			if (currentPropStr.lastIndexOf(",") === currentPropStr.length - 1) { 
 				propStr += ",";
 			}
-			//propStr += "\n";
+			propStr += "\n";
 			var startRow = marker.start.row;
 			var startCol = marker.start.column;
 			var endRow = marker.start.row + propStr.split('\n').length - 1;
