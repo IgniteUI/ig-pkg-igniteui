@@ -117,7 +117,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 				};
 				var enumHtml = Mustache.to_html(ddtmpl, propData);
 				var td = $("<div />").insertBefore(container.find("a.add-item"));
-				container.find("a.add-item").text("Add");
+				container.find("a.add-item").addClass("add-feature").text("Add");
 				td.html(enumHtml).addClass("enum-prop-edit");
 				var label = td.find(".ig-dropdown-label");
 				label.css({
@@ -193,7 +193,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 					var labelText = $(this).text(),
 						propertyExplorer = require("ide-propertyexplorer"),
 						container = $("<div class='adorner-property-sheet' data-property='" + $(this).text() + "'></div>").insertAfter(descriptor.ide.currentAdorner()),
-						editor = $('<div class="adorner-property-list"></div>').appendTo(container),
+						editor = $('<div class="adorner-feature-list"></div>').appendTo(container),
 						options = $.extend({}, descriptor),
 						property,
 						count = 0,
@@ -230,8 +230,8 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 								descriptor.provider.updateComponent(opt);
 							}
 						};
-					options.id = "propEditor";
-					options.containerId = "property";
+					options.id = "featureEditor";
+					options.containerId = "feature";
 					options.parent = editor;
 					options.data = [];
 					options.updateFunction = updateComp;
@@ -251,7 +251,8 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 								description: schema[property].description,
 								valueOptions: schema[property].valueOptions,
 								displayProp: schema[property].designerDisplayProperty,
-								args: schema[property].args
+								args: schema[property].args,
+								schema: schema[property].schema
 							});
 						}
 					}
