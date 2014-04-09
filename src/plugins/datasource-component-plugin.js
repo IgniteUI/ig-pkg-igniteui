@@ -94,7 +94,8 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 					oldPropValue: descriptor.oldPropValue,
 					defaultValue: val,
 					propType: descriptor.propType,
-					valueOptions: descriptor.valueOptions
+					valueOptions: descriptor.valueOptions,
+					schema: descriptor.schema
 				}, true, false);
 			} else {
 				this.updatePropCode({
@@ -103,7 +104,8 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 					propValue: val,
 					oldPropValue: descriptor.oldPropValue,
 					propType: descriptor.propType,
-					valueOptions: descriptor.valueOptions
+					valueOptions: descriptor.valueOptions,
+					schema: descriptor.schema
 				});
 			}
 			if (descriptor.args) {
