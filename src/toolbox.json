@@ -79,6 +79,8 @@
     		"framework": false,
     		"dataSource": "sampleChartData",
 			"defaultOptions": {
+				"width": "\"100%\"",
+				"height": 300,
 				"axes": [
                     {
                         "name": "NameAxis",
@@ -98,7 +100,12 @@
                         "type": "column",
                         "xAxis": "NameAxis",
                         "yAxis": "PopulationAxis",
-                        "valueMemberPath": "Pop2008"
+                        "valueMemberPath": "Pop2008",
+                        "isHighlightingEnabled": true,
+                        "isTransitionInEnabled": true,
+                        "transitionInMode": "accordionFromValueAxisMinimum",
+                        "showTooltip": true,
+                        "tooltipTemplate": "<div>${item.CountryName}: <strong>${item.Pop2008} Million</strong></div>"
                     }
                 ]
 			}
