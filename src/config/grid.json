@@ -482,12 +482,6 @@
           "defaultValue": null,
           "description": "a reference or name of a javascript function which will calculate the value based on other cell values in the same row when column is unbound."
         },
-        "group": {
-          "type": "object",
-          "schemaRef": "grid.columns",
-          "description": "Array of other column definitions. If the column has the property group than the grid has multi column headers",
-          "defaultValue": null
-        },
         "rowspan": {
           "type": "number",
           "defaultValue": 1,
@@ -502,11 +496,6 @@
           "type": "bool",
           "defaultValue": false,
           "description": "Sets whether column is bound to the datasource."
-        },
-        "unboundValues": {
-          "type": "array",
-          "defaultValue": null,
-          "arrayMemberType": "string"
         }
       }
     },

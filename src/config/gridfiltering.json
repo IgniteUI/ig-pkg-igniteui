@@ -537,12 +537,12 @@
     },
     "filterDialogAddConditionDropDownTemplate": {
       "type": "string",
-      "defaultValue": "<option value=${value}>${text}</option>",
+      "defaultValue": "",
       "description": "Custom template for options in dropdown in add condition area in the filter dialog."
     },
     "filterDialogAddConditionTemplate": {
       "type": "string",
-      "defaultValue": "<div><span>${label1}</span><div><select></select></div><span>${label2}</span></div>",
+      "defaultValue": "",
       "description": "Custom template for add condition area in the filter dialog."
     },
     "filterDialogColumnDropDownDefaultWidth": {
@@ -586,7 +586,7 @@
     },
     "filterDialogFilterConditionTemplate": {
       "type": "string",
-      "defaultValue": "<option value=${conditionName}>${conditionLabel}</option>",
+      "defaultValue": "",
       "description": "Custom template for options in condition list in filter dialog"
     },
     "filterDialogFilterDropDownDefaultWidth": {
@@ -608,7 +608,7 @@
     },
     "filterDialogFilterTemplate": {
       "type": "string",
-      "defaultValue": "<tr><td><input/></td><td><select></select></td><td><input /> </td><td><span></span></td></tr>",
+      "defaultValue": "",
       "description": "Custom template for filter dialog"
     },
     "filterDialogHeight": {
@@ -753,7 +753,7 @@
       "defaultValue": null,
       "description": "A list of configurable and localized labels that will be used for teh predefnied filtering conditions in the filter dropdowns."
     },
-    "": {
+    "mode": {
       "type": "string",
       "defaultValue": null,
       "description": " Default is 'simple' for non-virtualized grids, and 'advanced' when virtualization is enabled ",
