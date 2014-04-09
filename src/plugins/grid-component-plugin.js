@@ -146,13 +146,13 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 					event.stopPropagation();
 					event.preventDefault();
 				})
-				$(".dropdown-container[data-id=" + dd_id + "] ul > li").on("mouseup", function (event) {
+				$(".dropdown-container[data-id=" + dd_id + "]").on("mouseup", "ul > li", function (event) {
 					var $this = $(this), ddlist = $(event.target).closest(".dropdown-container");
 					var dd = $("body").find(".ig-dropdown[data-id=" + ddlist.attr("data-id") + "]");
 					var oldVal = label.attr("data-key");
 					label.text($this.attr("data-text")).attr("data-key", $this.attr("data-key"));
 					descriptor.ide._toggleDropDown(dd, ddlist);
-				}).on("mousedown click", function (event) {
+				}).on("mousedown click", "ul > li", function (event) {
 					event.preventDefault();
 					event.stopPropagation();
 				});
@@ -263,7 +263,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 					return false;
 				});
 				container.on('click', '.delete-item', function (event, ui) {
-					var labelText = $(this).closest("li").text(), value = $this.getPropValue(descriptor), schema, i;
+					var labelText = $(this).closest("li").text(), value = $this.getPropValue(descriptor), schema, i, opt = $.extend({}, descriptor);
 					$(this).closest('li').remove();
 					for (i = 0; i < value.length; i++) {
 						if (value[i].name === labelText) {
@@ -271,10 +271,17 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 							break;
 						}
 					}
-					schema = $this.settings.packageInfo.components[descriptor.type].properties.features.components;
-					descriptor.propValue = value;
-					descriptor.propType = "array";
-					descriptor.provider.updateComponent(descriptor);
+					schema = $this.settings.packageInfo.components[opt.type].properties.features.components;
+					opt.propValue = value;
+					opt.propType = "array";
+					schema.heterogeneous = true;
+					opt.schema = schema;
+					$("<li><a href='#'>" + labelText + "</a></li>").attr({
+							"data-text": labelText,
+							"data-key": labelText,
+							"title": labelText
+						}).appendTo(".dropdown-container[data-id=" + dd_id + "] ul");
+					descriptor.provider.updateComponent(opt);
 				});
 			}
 		},
