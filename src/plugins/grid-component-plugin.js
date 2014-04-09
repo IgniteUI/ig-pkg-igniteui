@@ -261,6 +261,20 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 					event.stopPropagation();
 					return false;
 				});
+				container.on('click', '.delete-item', function (event, ui) {
+					var labelText = $(this).closest("li").text(), value = $this.getPropValue(descriptor), schema, i;
+					$(this).closest('li').remove();
+					for (i = 0; i < value.length; i++) {
+						if (value[i].name === labelText) {
+							value.splice(i, 1);
+							break;
+						}
+					}
+					schema = $this.settings.packageInfo.components[descriptor.type].properties.features.components;
+					descriptor.propValue = value;
+					descriptor.propType = "array";
+					descriptor.provider.updateComponent(descriptor);
+				});
 			}
 		},
 		loadFeatureInfo: function (descriptor, name) {
