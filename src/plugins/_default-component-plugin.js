@@ -702,7 +702,7 @@ define (function (require, exports, module) {
 		},
 		setPropertyExplorerValueContents: function (descriptor) {
 			var ide = this.settings.ide, comps = ide.componentIds, dslist = [], i, td = descriptor.td;
-			var that = this;
+			var that = this, defaultVal, defaultKey;
 			// handle the dataSource rendering here
 			// 1. check if there are registered $.ig.DataSource components on the page
 			// 2. render either a dropdown or "..." depending on 1. 
@@ -712,6 +712,10 @@ define (function (require, exports, module) {
 					//if (comps[i].type === "dataSource" && comps[i].lib === "igniteui") {
 					if (comps[i].category === "datasources" && comps[i].lib === "igniteui") {
 						dslist.push(comps[i]);
+						if (descriptor.comp.options && window.frames[0][comps[i].id] === descriptor.comp.options.dataSource) {
+							defaultVal = comps[i].id;
+							defaultKey = comps[i].id;
+						}
 					}
 				}
 				if (dslist.length > 0) {
@@ -742,10 +746,11 @@ define (function (require, exports, module) {
 						dropdownId: dd_id,
 						titleText: "Select Data Source",
 						closeOnClick: true,
-						defaultVal: "<Default>",
-						defaultKey: "default",
+						defaultVal: defaultVal ? defaultVal : "<Default>",
+						defaultKey: defaultKey ? defaultKey : "default",
 						itemTexts: texts
 					};
+
 					var Mustache = require("mustache");
 					var ddHtml = Mustache.to_html(ddtmpl, propData);
 					td.html(ddHtml).addClass("enum-prop-edit");
