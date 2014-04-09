@@ -298,22 +298,11 @@
 			"defaultValue": null,
 			"description": "This is the property in the dataView where actual resulting records will be put. (So the dataView will not be array but an object if this is defined), after the potential data source transformation."
 		},
-		"callback": {
-			"type": "function",
-			"defaultValue": null,
-			"description": "Callback function to call when data binding is complete."
-		},
 		"callee": {
 			"type": "object",
 			"defaultValue": null,
 			"description": "Object on which to invoke the callback function.",
 			"hidden": true
-		},
-		"data": {
-			"type": "array",
-			"defaultValue": null,
-			"description": "Object on which to invoke the callback function.",
-			"arrayMemberType": "object"
 		},
 		"dataSource": {
 			"type": "array",
