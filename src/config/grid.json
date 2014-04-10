@@ -567,12 +567,6 @@
             "description": "Grid Merged Cells Feature",  
             "schemaRef": "gridmergedcells"
           },
-		  "MultiColumnHeaders": {
-            "type": "object",
-            "defaultValue": null,
-            "description": "Grid Multi Column Headers Feature",  
-            "schemaRef": "gridmulticolumnheaders"
-          },
 		  "Paging": {
             "type": "object",
             "defaultValue": null,
@@ -624,7 +618,7 @@
       },
 	  "designerDisplayProperty": "name",
       "defaultValue": null,
-      "components": ["gridfiltering", "gridupdating", "gridtooltips", "gridsummaries", "gridsorting", "gridselection", "gridrowselectors", "gridresizing", "gridpaging", "gridmulticolumnheaders", "gridmergedcells", "gridhiding", "gridgroupby", "gridcolumnmoving"],
+      "components": ["gridfiltering", "gridupdating", "gridtooltips", "gridsummaries", "gridsorting", "gridselection", "gridrowselectors", "gridresizing", "gridpaging", "gridmergedcells", "gridhiding", "gridgroupby", "gridcolumnmoving"],
       "description": "a list of grid features definitions: sorting, paging, etc. Each feature goes with its separate options that are documented for the feature accordingly"
     },
     "fixedFooters": {
