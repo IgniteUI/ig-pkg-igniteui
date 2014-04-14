@@ -659,7 +659,13 @@ define (function (require, exports, module) {
 				type = this._getWidgetName(descriptor.type),
 				id = "propEditor",
 				containerId = "property",
-				i = 0;
+				i = 0,
+				length = 1,
+				pname = descriptor.propName;
+			while ($(".adorner-wrapper div[data-property=" + pname + "]").length > 1) {
+				pname = descriptor.propName + length++;
+				container.attr("data-property", pname);
+			}
 			while ($("#" + containerId + "_scroll").length > 0) {
 				containerId = "property" + i;
 				id = "propEditor" + i;
