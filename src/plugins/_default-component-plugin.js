@@ -292,7 +292,8 @@ define (function (require, exports, module) {
 			var startCol = marker.start.column;
 			var endRow = marker.start.row + propStr.split('\n').length - 1;
 			//var endColumn = marker.end.column;
-			var endColumn = propStr.length;
+			//var endColumn = propStr.length;
+			var endColumn = 0;
 			ide.session.replace(marker, propStr);
 			//reattach the marker
 			ide.session.removeMarker(marker.id);
@@ -440,6 +441,16 @@ define (function (require, exports, module) {
 							valueOptions: descriptor.valueOptions,
 							schema: descriptor.schema
 						}, true, false);
+					} else {
+						this.updatePropCode({
+							component: descriptor.comp,
+							propName: descriptor.propName,
+							propValue: descriptor.propValue,
+							oldPropValue: descriptor.oldPropValue,
+							propType: descriptor.propType,
+							valueOptions: descriptor.valueOptions,
+							schema: descriptor.schema
+						});
 					}
 					ide._deselectComponent();
 					ide.element.find(".code-button").click();

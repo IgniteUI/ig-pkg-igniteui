@@ -9,6 +9,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 				axesRange = new descriptor.rclass(axesRange.start.row, 0, axesRange.start.row + 10, 0);
 				axesRange.start = this.settings.editor.getSession().doc.createAnchor(axesRange.start); 
 				axesRange.end = this.settings.editor.getSession().doc.createAnchor(axesRange.end);
+				axesRange.id = "axes";
 				if (!descriptor.marker.extraMarkers.options) {
 					descriptor.marker.extraMarkers.options = {};
 				}
@@ -29,6 +30,17 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 				descriptor.marker.extraMarkers.options = {};
 			}
 			descriptor.marker.extraMarkers.options.series = {marker: seriesRange};
+		},
+		getPropValue: function (descriptor) {
+			if (descriptor.comp) {
+				var prop = descriptor.comp.options[descriptor.propName];
+				if (!prop) {
+					prop = this._super(descriptor);
+				}
+				return prop;
+			} else {
+				return this._super(descriptor);
+			}
 		}
 	});
 	return IgniteUIChartsPlugin;
