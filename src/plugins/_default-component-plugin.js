@@ -670,7 +670,13 @@ define (function (require, exports, module) {
 				type = this._getWidgetName(descriptor.type),
 				id = "propEditor",
 				containerId = "property",
-				i = 0;
+				i = 0,
+				length = 1,
+				pname = descriptor.propName;
+			while ($(".adorner-wrapper div[data-property=" + pname + "]").length > 1) {
+				pname = descriptor.propName + length++;
+				container.attr("data-property", pname);
+			}
 			while ($("#" + containerId + "_scroll").length > 0) {
 				containerId = "property" + i;
 				id = "propEditor" + i;
@@ -1136,6 +1142,9 @@ define (function (require, exports, module) {
 												} else {
 													compPromises[name].then(function () {
 														processFunc(node, name, components, scriptRanges[i]);
+														// in order to avoid calling initddreorder more than once
+														// this can be additionally optimized with the cost of some significant refactoring && tracking of those calls 
+														ide._initddreorder(); // need to call this here otherwise components won't be recognized before events are hooked 
 													});
 												}
 												break; // found
