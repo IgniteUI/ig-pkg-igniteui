@@ -169,6 +169,7 @@
       "type": "array",
       "defaultValue": null,
       "description": "An array of series objects.",
+	  "designerDisplayProperty": "name",
       "schema": {
         "brushes": {
           "type": "array",
