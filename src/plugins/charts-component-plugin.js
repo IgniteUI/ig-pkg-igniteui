@@ -19,7 +19,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			if (descriptor.type === "dataChart") {
 				seriesCodeEditorLineNumbers = 12;
 			} else if (descriptor.type === "doughnutChart") {
-				seriesCodeEditorLineNumbers = 24;
+				seriesCodeEditorLineNumbers = 7;
 			} else {
 				//In that case just take the begining of the code sample				
 			}
@@ -41,6 +41,22 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			} else {
 				return this._super(descriptor);
 			}
+		},
+		getCodeEditorScriptSnippet: function (descriptor) {
+			var extraIndent = descriptor.extraIndent ? descriptor.extraIndent : 0, baseSnippet = this._super(descriptor), snippet = {},
+			codeStr = "\t\t\t\t$(\"#" + descriptor.id + "\").igDoughnutChart({\n\t\t\t\t\theight: 300,\n\t\t\t\t\twidth: 300,\n\t\t\t\t\tallowSliceExplosion: false,\n\t\t\t\t\tallowSliceSelection: false,\n\t\t\t\t\tseries: [{\n\t\t\t\t\t    name: \"Pop1990\",\n\t\t\t\t\t    labelMemberPath: \"CountryName\",\n\t\t\t\t\t    valueMemberPath: \"Pop1990\",\n\t\t\t\t\t    dataSource: sampleDoughnutChartData ,\n\t\t\t\t\t    labelsPosition: \"bestFit\",\n\t\t\t\t\t}]\n\t\t\t\t});\n";
+			if (descriptor.type === "doughnutChart") {
+				snippet = {
+					codeString: codeStr,
+					lineCount: 13,
+					orderedProps: baseSnippet.orderedProps
+				};
+			} else {
+				snippet.codeString = baseSnippet.codeString;
+				snippet.lineCount = baseSnippet.lineCount;
+				snippet.orderedProps = baseSnippet.orderedProps;
+			}
+			return snippet;
 		}
 	});
 	return IgniteUIChartsPlugin;
