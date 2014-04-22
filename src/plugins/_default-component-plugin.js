@@ -732,7 +732,7 @@ define (function (require, exports, module) {
 						// we can't compare objects because after the frame is reloaded, the references aren't the same any more
 						// so we need to use some smarter approach to infer whether they're the same ds
 						if (descriptor.comp.options && window.frames[0][comps[i].id] && window.frames[0][comps[i].id]._accumulatedTransactionLog 
-								&& descriptor.comp.codeMarker.extraMarkers.options["dataSource"].propValue === comps[i].id) {
+								&& descriptor.comp.codeMarker.extraMarkers.options["dataSource"] && descriptor.comp.codeMarker.extraMarkers.options["dataSource"].propValue === comps[i].id) {
 							defaultVal = comps[i].id;
 							defaultKey = comps[i].id;
 						}
