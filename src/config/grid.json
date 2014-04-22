@@ -546,7 +546,7 @@
 		  "Filtering": {
             "type": "object",
             "defaultValue": null,
-            "description": "Grid Filtering Feature", 
+            "description": "Grid Filtering Feature",
             "schemaRef": "gridfiltering"
           },
 		  "GroupBy": {
@@ -561,7 +561,7 @@
             "description": "Grid Hiding Feature",  
             "schemaRef": "gridhiding"
           },
-          "MergedCells": {
+          "CellMerging": {
             "type": "object",
             "defaultValue": null,
             "description": "Grid Merged Cells Feature",  
