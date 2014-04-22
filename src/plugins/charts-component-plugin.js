@@ -43,7 +43,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			}
 		},
 		getCodeEditorScriptSnippet: function (descriptor) {
-			var extraIndent = descriptor.extraIndent ? descriptor.extraIndent : 0, baseSnippet = this._super(descriptor), snippet = {},
+			var baseSnippet = this._super(descriptor), snippet,
 			codeStr = "\t\t\t\t$(\"#" + descriptor.id + "\").igDoughnutChart({\n\t\t\t\t\theight: 300,\n\t\t\t\t\twidth: 300,\n\t\t\t\t\tallowSliceExplosion: false,\n\t\t\t\t\tallowSliceSelection: false,\n\t\t\t\t\tseries: [{\n\t\t\t\t\t    name: \"Pop1990\",\n\t\t\t\t\t    labelMemberPath: \"CountryName\",\n\t\t\t\t\t    valueMemberPath: \"Pop1990\",\n\t\t\t\t\t    dataSource: sampleDoughnutChartData ,\n\t\t\t\t\t    labelsPosition: \"bestFit\",\n\t\t\t\t\t}]\n\t\t\t\t});\n";
 			if (descriptor.type === "doughnutChart") {
 				snippet = {
@@ -52,9 +52,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 					orderedProps: baseSnippet.orderedProps
 				};
 			} else {
-				snippet.codeString = baseSnippet.codeString;
-				snippet.lineCount = baseSnippet.lineCount;
-				snippet.orderedProps = baseSnippet.orderedProps;
+				snippet = baseSnippet;
 			}
 			return snippet;
 		}
