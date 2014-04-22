@@ -873,7 +873,7 @@
 			"description": "A list of field definitions specifying the schema of the data source.",
 			"designerDisplayProperty": "fieldName",
 			"schema": {
-				"fieldName": {
+				"name": {
 					"type": "string",
 					"defaultValue": null,
 					"description": "Name of the field."
