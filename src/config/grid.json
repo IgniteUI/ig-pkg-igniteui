@@ -546,7 +546,7 @@
 		  "Filtering": {
             "type": "object",
             "defaultValue": null,
-            "description": "Grid Filtering Feature",
+            "description": "Grid Filtering Feature", 
             "schemaRef": "gridfiltering"
           },
 		  "GroupBy": {
