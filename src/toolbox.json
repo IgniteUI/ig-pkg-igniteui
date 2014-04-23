@@ -534,6 +534,7 @@
     		"toolboxTitle": "Tree",
     		"icon": "tree.png",
     		"dragDropIcon": "tree-dragdrop.png",
+			"componentPlugin": "tree-component-plugin",
     		"category": "lists",
     		"visual": true,
     		"framework": false,
