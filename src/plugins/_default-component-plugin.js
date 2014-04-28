@@ -1,6 +1,6 @@
 define (function (require, exports, module) {
 	var ComponentPlugin = require("ide-component-plugin");
-	var beautify = require("/bower_components/js-beautify/js/lib/beautify.js");
+	var beautify = require("/bower_components/js-beautify/js/lib/beautify.js").js_beautify;
 	var collectionEditor = require("ide-collectioneditor");
 	var IgniteUIComponentPlugin = IgniteUIComponentPlugin || ComponentPlugin.extend({
 		init: function (options) {
