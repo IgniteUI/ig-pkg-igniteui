@@ -661,6 +661,8 @@ define (function (require, exports, module) {
 		openPropertyEditor: function (descriptor) {
 			var propertyExplorer = require("ide-propertyexplorer"),
 				container = $("<div class='adorner-property-sheet' data-property='" + descriptor.propName + "'></div>").insertAfter(descriptor.ide.currentAdorner()),
+				search = $("<div class=\"input-group prop-search\"><input type=\"text\" class=\"form-control prop-search-input\" placeholder=\"Search ...\"/></div>").appendTo(container),
+				input = search.children(".prop-search-input"),
 				editor = $("<div class='adorner-property-list'></div>").appendTo(container),
 				property,
 				count = 0,
@@ -672,7 +674,8 @@ define (function (require, exports, module) {
 				containerId = "property",
 				i = 0,
 				length = 1,
-				pname = descriptor.propName;
+				pname = descriptor.propName,
+				filterFn;
 			while ($(".adorner-wrapper div[data-property=" + pname + "]").length > 1) {
 				pname = descriptor.propName + length++;
 				container.attr("data-property", pname);
@@ -682,6 +685,16 @@ define (function (require, exports, module) {
 				id = "propEditor" + i;
 				i++;
 			}
+			filterFn = function () {
+				// filter properties and events
+				var val = input.val().toLowerCase();
+				var exprs = [
+					{fieldName: "propName", expr: val, cond: "contains", logic: "OR"},
+					{fieldName: "propValue", expr: val, cond: "contains", logic: "OR"}
+				];
+				$("#" + id).igGridFiltering("filter", exprs, true);
+			};
+			descriptor.ide._setupSearch(input, filterFn);
 			editor.addClass("adorner-" + containerId + "-list");
 			descriptor.id = id;
 			descriptor.containerId = containerId;
