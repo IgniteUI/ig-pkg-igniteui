@@ -35,6 +35,11 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 				type: "number"
 			});
 			*/
+			orderedReturnProps.push({
+				name: "features",
+				value: [],
+				type: "array"
+			})
 			if (descriptor.data && window[descriptor.data]) {
 				code += ",\n\t\t\t\t\tdataSource: " + descriptor.data;
 				orderedReturnProps.push({
@@ -74,8 +79,8 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			this._super(descriptor);
 			// we don't want to hardcode this value but find it in the current range
 			// it may well happen that someone adds lots of options and extra code *above* the features or any other object
-			var featuresRange = this.settings.editor.find("features", {start: descriptor.marker.range.start});
-			featuresRange = new descriptor.rclass(featuresRange.start.row, 0, featuresRange.start.row + 1, 0);
+			var featuresRange = this.settings.editor.find("features: [],", {start: descriptor.marker.range.start});
+			featuresRange = new descriptor.rclass(featuresRange.start.row, 0, featuresRange.end.row, featuresRange.end.column);
 			featuresRange.start = this.settings.editor.getSession().doc.createAnchor(featuresRange.start); 
 			featuresRange.end = this.settings.editor.getSession().doc.createAnchor(featuresRange.end);
 			if (!descriptor.marker.extraMarkers.options) {
