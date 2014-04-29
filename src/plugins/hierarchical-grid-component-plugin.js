@@ -15,25 +15,21 @@ define (["./grid-component-plugin"], function (IgniteUIGridPlugin) {
 		getCodeEditorScriptSnippet: function (descriptor) {
 			var code = "";
 			var opts = descriptor.options;
-			var lineCount = 9;
+			var lineCount = 6;
 			var orderedReturnProps = [];
-			var xtraMarkup = ",\n\t\t\t\t\tfeatures: [\n" + "\t\t\t\t\t],\n\t\t\t\t\tcolumnLayouts: [\n" + "\t\t\t\t\t]";
-			code = "\t\t\t\t$(\"#" + descriptor.id + "\").igHierarchicalGrid({\n" + 
-				"\t\t\t\t\theight: " + opts.height + ",\n" + 
-				"\t\t\t\t\twidth: " + opts.width + xtraMarkup;
+			code = "\t\t\t\t$(\"#" + descriptor.id + "\").igHierarchicalGrid({\n\t\t\t\t\tfeatures: [],\n\t\t\t\t\tcolumnLayouts: []";
 			if (descriptor.data && window[descriptor.data]) {
 				code += ",\n\t\t\t\t\tdataSource: " + descriptor.data;
 			}
-			//TODO : refactor this so that more code is reused with the grid-component-plugin
 			orderedReturnProps.push({
-				name: "height",
-				value: opts.height,
-				type: "number"
+				name: "features",
+				value: [],
+				type: "array"
 			});
 			orderedReturnProps.push({
-				name: "width",
-				value: opts.width,
-				type: "number"
+				name: "columnLayouts",
+				value: [],
+				type: "array"
 			});
 			orderedReturnProps.push({
 				name: "dataSource",
@@ -42,7 +38,7 @@ define (["./grid-component-plugin"], function (IgniteUIGridPlugin) {
 			});
 			var props = this.settings.packageInfo.components[descriptor.type].properties;
 			for (var key in opts) {
-				if (opts.hasOwnProperty(key) && key !== "dataSource" && key !== "height" && key !== "width") {
+				if (opts.hasOwnProperty(key) && key !== "dataSource" && key !== "features" && key !== "columnLayouts" && key !== "height" && key !== "width") {
 					code += ",\n\t\t\t\t\t" + key + ": " + opts[key];
 					lineCount++;
 					orderedReturnProps.push({
@@ -58,7 +54,18 @@ define (["./grid-component-plugin"], function (IgniteUIGridPlugin) {
 				lineCount: lineCount,
 				orderedProps: orderedReturnProps
 			};
-		}
+		},
+		addExtraMarkers: function (descriptor) {
+			this._super(descriptor);
+			var layoutsRange = this.settings.editor.find("columnLayouts: [],", {start: descriptor.marker.range.start});
+			layoutsRange = new descriptor.rclass(layoutsRange.start.row, 0, layoutsRange.end.row, layoutsRange.end.column);
+			layoutsRange.start = this.settings.editor.getSession().doc.createAnchor(layoutsRange.start); 
+			layoutsRange.end = this.settings.editor.getSession().doc.createAnchor(layoutsRange.end);
+			if (!descriptor.marker.extraMarkers.options) {
+				descriptor.marker.extraMarkers.options = {};
+			}
+			descriptor.marker.extraMarkers.options.columnLayouts = {marker: layoutsRange};
+		},
 	});
 	return IgniteUIHierarchicalGridPlugin;
 });

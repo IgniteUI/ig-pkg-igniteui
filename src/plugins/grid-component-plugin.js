@@ -39,7 +39,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 				name: "features",
 				value: [],
 				type: "array"
-			})
+			});
 			if (descriptor.data && window[descriptor.data]) {
 				code += ",\n\t\t\t\t\tdataSource: " + descriptor.data;
 				orderedReturnProps.push({
