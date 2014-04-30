@@ -145,11 +145,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 						ddlist = $("body").find(".dropdown-container[data-id=" + dd.attr("data-id") + "]");
 					}
 					$this.settings.ide._toggleDropDown(dd, ddlist);
-					if (ddlist.is(":visible")) {
-						$("input.ig-hidden").attr("data-id", dd.attr("data-id")).focus();
-					}
-					event.stopPropagation();
-					event.preventDefault();
+					return false;
 				})
 				$(".dropdown-container[data-id=" + dd_id + "]").on("mouseup", "ul > li", function (event) {
 					var $this = $(this), ddlist = $(event.target).closest(".dropdown-container");
@@ -158,19 +154,16 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 					label.text($this.attr("data-text")).attr("data-key", $this.attr("data-key"));
 					descriptor.ide._toggleDropDown(dd, ddlist);
 				}).on("mousedown click", "ul > li", function (event) {
-					event.preventDefault();
-					event.stopPropagation();
+					return false;
 				});
 				
 				container.off();
 				container.on("click", ".add-item", function (event) {
 					$this.addFeatureHandler(descriptor, td, $(this).closest("li"), dd_id);
-					event.stopPropagation();
 					return false;
 				});
 				container.on('click', '.adorner-collection-edit', function (event) {
 					$this.editFeatureHandler(descriptor, $(this));
-					event.stopPropagation();
 					return false;
 				});
 				container.on('click', '.delete-item', function (event) {
