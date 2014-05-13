@@ -94,7 +94,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			}
 			// columns, features, dataSource, etc. - also reuse those UIs
 			// when something gets changed in this editor, we want to also update the code editor as well as the component itself
-			var p = descriptor.propName, rec = descriptor, packageInfo = this.settings.packageInfo, session = descriptor.editorSession, $this = this;
+			var p = descriptor.propName, rec = descriptor, packageInfo = this.settings.packageInfo, session = descriptor.editorSession, $this = this, currentValue = this.getPropValue(descriptor), exists;
 			if (p === "features") {
 				// open features editor
 				var container = this.openCollectionEditor(descriptor);
@@ -104,22 +104,32 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 				var Mustache = require("mustache");
 				for (var i in rec.schema) {
 					if (rec.schema.hasOwnProperty(i)) {
-						texts.push({
-							key: i,
-							text: i,
-							title: rec.schema[i].description // tooltip
-						});
+						exists = false;
+						for (var j = 0; j < currentValue.length; j++) {
+							if (currentValue[j].name === i) {
+								exists = true;
+								break;
+							}
+						}
+						if (!exists) {
+							texts.push({
+								key: i,
+								text: i,
+								title: rec.schema[i].description // tooltip
+							});
+						}
 					}
 				}
-				var dd_id = "features_dropDown";
+				//var dd_id = "features_dropDown";
 				var propData = {
-					dropdownId: dd_id,
+					dropdownId: "features_dropDown",
 					titleText: "Change property value",
 					closeOnClick: true,
 					defaultVal: rec.propValue,
 					defaultKey: rec.propValue,
 					itemTexts: texts
 				};
+				$(".dropdown-container[data-id=features_dropDown]").off().remove();
 				var enumHtml = Mustache.to_html(ddtmpl, propData);
 				var td = $("<div />").insertBefore(container.find("a.add-item"));
 				container.find("a.add-item").addClass("add-feature").text("Add");
@@ -142,14 +152,14 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 					var target = $(event.target), dd = target.closest(".ig-dropdown");
 					var ddlist = dd.find(".dropdown-container");
 					if (ddlist.length === 0) {
-						ddlist = $("body").find(".dropdown-container[data-id=" + dd.attr("data-id") + "]");
+						ddlist = $("body").find(".dropdown-container[data-id=features_dropDown]");
 					}
 					$this.settings.ide._toggleDropDown(dd, ddlist);
 					return false;
 				})
-				$(".dropdown-container[data-id=" + dd_id + "]").on("mouseup", "ul > li", function (event) {
+				$(".dropdown-container[data-id=features_dropDown]").on("mouseup", "ul > li", function (event) {
 					var $this = $(this), ddlist = $(event.target).closest(".dropdown-container");
-					var dd = $("body").find(".ig-dropdown[data-id=" + ddlist.attr("data-id") + "]");
+					var dd = $("body").find(".ig-dropdown[data-id=features_dropDown]");
 					var oldVal = label.attr("data-key");
 					label.text($this.attr("data-text")).attr("data-key", $this.attr("data-key"));
 					descriptor.ide._toggleDropDown(dd, ddlist);
@@ -159,7 +169,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 				
 				container.off();
 				container.on("click", ".add-item", function (event) {
-					$this.addFeatureHandler(descriptor, td, $(this).closest("li"), dd_id);
+					$this.addFeatureHandler(descriptor, td, $(this).closest("li"));
 					return false;
 				});
 				container.on('click', '.adorner-collection-edit', function (event) {
@@ -167,7 +177,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 					return false;
 				});
 				container.on('click', '.delete-item', function (event) {
-					$this.deleteFeatureHandler(descriptor, $(this).closest("li"), dd_id);
+					$this.deleteFeatureHandler(descriptor, $(this).closest("li"));
 				});
 			}
 		},
@@ -192,7 +202,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			}
 			return schema;
 		},
-		addFeatureHandler: function (descriptor, td, target, id) {
+		addFeatureHandler: function (descriptor, td, target) {
 			var label = td.find(".ig-dropdown-label"),
 				labelText = label.text();
 			if (!labelText) {
@@ -216,7 +226,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 				name: labelText
 			});
 			label.text("");
-			$(".dropdown-container[data-id=" + id + "] li[data-text=" + labelText + "]").remove();
+			$(".dropdown-container[data-id=features_dropDown] li[data-text=" + labelText + "]").remove();
 			$("<li><span class='delete-item glyphicon glyphicon-trash'></span><a href='#' class='adorner-collection-edit'>" + labelText + "</a></li>").insertBefore(target);
 			descr.propValue = value;
 			descriptor.updateFunction(descr);
@@ -293,7 +303,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			propertyExplorer(options);
 			descriptor.ide.adornerMoveLeft();
 		},
-		deleteFeatureHandler: function (descriptor, target, id) {
+		deleteFeatureHandler: function (descriptor, target) {
 			var labelText = target.text(), value = this.getPropValue(descriptor), schema, i, opt = $.extend({}, descriptor);
 			target.remove();
 			for (i = 0; i < value.length; i++) {
@@ -311,7 +321,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 					"data-text": labelText,
 					"data-key": labelText,
 					"title": labelText
-				}).appendTo(".dropdown-container[data-id=" + id + "] ul");
+				}).appendTo(".dropdown-container[data-id=features_dropDown] ul");
 			descriptor.provider.updateComponent(opt);
 		},
 		setPropertyExplorerValueContents: function (descriptor) {
