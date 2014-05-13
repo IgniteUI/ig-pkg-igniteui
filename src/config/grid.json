@@ -543,6 +543,12 @@
             "description": "Grid Column Moving Feature",  
             "schemaRef": "gridcolumnmoving"
           },
+		   "ColumnFixing": {
+            "type": "object",
+            "defaultValue": null,
+            "description": "Grid Column Fixing Feature",  
+            "schemaRef": "gridcolumnfixing"
+          },
 		  "Filtering": {
             "type": "object",
             "defaultValue": null,

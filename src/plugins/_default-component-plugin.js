@@ -519,6 +519,7 @@ define (function (require, exports, module) {
 				}
 				descriptor.comp.options = newOpts;
 				window.frames[0].$(descriptor.placeholder).children(".prop-editor-error-message").remove();
+				var dims;
 				if (descriptor.propType !== "object" && descriptor.propType !== "array" && descriptor.propType !== "literal") {
 					try {
 						window.frames[0].$(descriptor.placeholder)[name]("option", descriptor.propName, descriptor.propValue);
@@ -530,17 +531,25 @@ define (function (require, exports, module) {
 						// K.D. Catching exceptions raised from incorrect configurations.
 						try {
 							console.log("This option is not editable at runtime. Reloading the widget.");
+							dims = {
+								width: window.frames[0].$(descriptor.placeholder).outerWidth(),
+								height: window.frames[0].$(descriptor.placeholder).outerHeight()
+							};
 							this._recreateWidget(descriptor.placeholder, name, newOpts);
 						} catch (err) {
-							this._showErrorContainer(err, descriptor);
+							this._showErrorContainer(err, descriptor, dims);
 						}
 					}
 				} else {
 					try {
 						console.log("This option is not editable at runtime. Reloading the widget.");
+						dims = {
+							width: window.frames[0].$(descriptor.placeholder).outerWidth(),
+							height: window.frames[0].$(descriptor.placeholder).outerHeight()
+						};
 						this._recreateWidget(descriptor.placeholder, name, newOpts);
 					} catch (err) {
-						this._showErrorContainer(err, descriptor);
+						this._showErrorContainer(err, descriptor, dims);
 					}
 				}
 				// check if prop exists
@@ -574,14 +583,14 @@ define (function (require, exports, module) {
 				}
 			}
 		},
-		_showErrorContainer: function (err, descriptor) {
+		_showErrorContainer: function (err, descriptor, dims) {
 			var errorContainer = $("<div class='prop-editor-error-message' title='" + err + "'>" + err + "</div>"),
 				offset = window.frames[0].$(descriptor.placeholder).position();
 			errorContainer.css({
 				"top": offset.top,
 				"left": offset.left,
-				"width": window.frames[0].$(descriptor.placeholder).outerWidth(),
-				"height": window.frames[0].$(descriptor.placeholder).outerHeight()
+				"width": dims.width,
+				"height": dims.height
 			});
 			window.frames[0].$(descriptor.placeholder).append(errorContainer);
 		},
