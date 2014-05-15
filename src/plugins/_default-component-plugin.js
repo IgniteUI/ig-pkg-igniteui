@@ -390,7 +390,11 @@ define (function (require, exports, module) {
 				name = this._getWidgetName(descriptor.type ? descriptor.type : descriptor.comp.type);
 			}
 			if (descriptor.handlerFlag) {
-				var component = ide.componentById(descriptor.id);
+				var component = ide.componentById(descriptor.id),
+					opts = descriptor.comp.options ? descriptor.comp.options : {},
+					newOpts = $.extend({}, opts);
+				newOpts[descriptor.propName] = descriptor.propValue;
+				descriptor.comp.options = newOpts;
 				if (component) {
 					if (!component.funcMarkers) {
 						component.funcMarkers = {};
@@ -413,7 +417,7 @@ define (function (require, exports, module) {
 						handler += ") {\n\t\t\t\t\t\n\t\t\t\t};\n";
 						// new marker => add an empty event handler and marker;
 						ide.session.insert({row: offset, column: 0}, handler);
-						handlerMarker = new ide.RangeClass(offset + 1, 4, offset + 4, 4); // "4" tabs
+						handlerMarker = new ide.RangeClass(offset, 4, offset + 3, 4); // "4" tabs
 						funcMarker = new ide.RangeClass(offset + 2, 5, offset + 3, 5);
 						ide.addMarker(handlerMarker);
 						ide.addMarker(funcMarker);
