@@ -289,7 +289,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 						id: count++,
 						propName: property,
 						defaultValue: schema[property].defaultValue,
-						propValue: schema[property].defaultValue,
+						propValue: this.getFeatureValue(descriptor.id, labelText, property, schema[property].defaultValue),
 						propType: schema[property].type,
 						description: schema[property].description,
 						valueOptions: schema[property].valueOptions,
@@ -323,6 +323,14 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 					"title": labelText
 				}).appendTo(".dropdown-container[data-id=features_dropDown] ul");
 			descriptor.provider.updateComponent(opt);
+		},
+		getFeatureValue: function (id, feature, prop, defaultValue) {
+			var name = this._getWidgetName();
+			var data = typeof window.frames[0].$("#" + id + "_table").data === "function" && window.frames[0].$("#" + id + "_table").data(name + feature);
+			if (data) {
+				return data.options && typeof(data.options[prop]) !== "undefined" ? data.options[prop] : defaultValue;
+			}
+			return defaultValue;
 		},
 		setPropertyExplorerValueContents: function (descriptor) {
 			if (descriptor.propName === "features") {
