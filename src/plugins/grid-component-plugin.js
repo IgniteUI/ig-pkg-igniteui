@@ -186,7 +186,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 				feature = features.components[name],
 				schema;
 			if (feature && feature.properties) {
-				schema = feature.properties;
+				schema = feature;
 			} else {
 				var url = this.settings.packageInfo.configPath + "/" + descriptor.schema[name].schemaRef + ".json";
 				// load metadata for every feature
@@ -198,7 +198,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 					async: false
 				});
 				features.components[name] = $.parseJSON(json.responseText);
-				schema = features.components[name].properties;
+				schema = features.components[name];
 			}
 			return schema;
 		},
@@ -217,7 +217,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			}
 			var descr = {
 				oldPropValue: value,
-				schema: schema
+				schema: schema.properties
 			};
 			if (!value) {
 				value = [];
@@ -236,11 +236,19 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 				$this = this,
 				propertyExplorer = require("ide-propertyexplorer"),
 				container = $("<div class='adorner-property-sheet' data-property='" + labelText + "'></div>").insertAfter(descriptor.ide.currentAdorner()),
-				editor = $('<div class="adorner-feature-list"></div>').appendTo(container),
+				search = $("<div class=\"input-group prop-search\"><input type=\"text\" class=\"form-control prop-search-input\" placeholder=\"Search ...\"/></div>").appendTo(container),
+				input = search.children(".prop-search-input"),
+				evtsEditor,
+				editor,
 				options = $.extend({}, descriptor),
+				eventsOpts,
+				properties,
 				property,
 				count = 0,
 				schema,
+				events,
+				evtData = [],
+				filterFn,
 				updateComp = function (descr) {
 					var features = $this.getPropValue(descriptor),
 						i,
@@ -273,6 +281,19 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 						descriptor.provider.updateComponent(opt);
 					}
 				};
+			filterFn = function () {
+				// filter properties and events
+				var val = input.val().toLowerCase();
+				var exprs = [
+					{fieldName: "propName", expr: val, cond: "contains", logic: "OR"},
+					{fieldName: "propValue", expr: val, cond: "contains", logic: "OR"}
+				];
+				$("#featureEditor").igGridFiltering("filter", exprs, true);
+				$("#featureEvtsEditor").igGridFiltering("filter", exprs, true);
+			};
+			descriptor.ide._setupSearch(input, filterFn);
+			evtsEditor = $("<div class='adorner-featureEvts-list'><div class='adorner-label adorner-featureEvts-label'>EVENTS</div></div>").appendTo(container);
+			editor = $("<div class='adorner-feature-list'><div class='adorner-label adorner-feature-label'>PROPERTIES/OPTIONS</div></div>").appendTo(container);
 			options.id = "featureEditor";
 			options.containerId = "feature";
 			options.parent = editor;
@@ -283,23 +304,46 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			} catch (e) {
 				console.error("Could not load feature info for '" + labelText + "'. Error: " + e);
 			}
-			for (property in schema) {
-				if (schema.hasOwnProperty(property) && property !== "name") {
+			if (schema.events) {
+				events = schema.events;
+				for (var evt in events) {
+					if (events.hasOwnProperty(evt)) {
+						evtData.push({
+							id: count++,
+							propName: evt,
+							propValue: "",
+							propType: "event",
+							description: events[evt].description,
+							args: events[evt].args
+						});
+					}
+				}
+			}
+			eventsOpts = $.extend({}, options);
+			eventsOpts.id = "featureEvtsEditor";
+			eventsOpts.containerId = "featureEvts";
+			eventsOpts.parent = evtsEditor;
+			eventsOpts.data = evtData;
+			count = 0;
+			properties = schema.properties;
+			for (property in properties) {
+				if (properties.hasOwnProperty(property) && property !== "name") {
 					options.data.push({
 						id: count++,
 						propName: property,
-						defaultValue: schema[property].defaultValue,
-						propValue: this.getFeatureValue(descriptor.id, labelText, property, schema[property].defaultValue),
-						propType: schema[property].type,
-						description: schema[property].description,
-						valueOptions: schema[property].valueOptions,
-						displayProp: schema[property].designerDisplayProperty,
-						args: schema[property].args,
-						schema: schema[property].schema
+						defaultValue: properties[property].defaultValue,
+						propValue: this.getFeatureValue(descriptor.id, labelText, property, properties[property].defaultValue),
+						propType: properties[property].type,
+						description: properties[property].description,
+						valueOptions: properties[property].valueOptions,
+						displayProp: properties[property].designerDisplayProperty,
+						args: properties[property].args,
+						schema: properties[property].schema
 					});
 				}
 			}
 			// render and open a property explorer
+			propertyExplorer(eventsOpts);
 			propertyExplorer(options);
 			descriptor.ide.adornerMoveLeft();
 		},
