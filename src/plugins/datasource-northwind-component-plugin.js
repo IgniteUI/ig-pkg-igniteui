@@ -6,7 +6,8 @@ define (["./datasource-component-plugin"], function (DataSourcePlugin) {
 		getCodeEditorScriptSnippet: function (descriptor) {
 			var code = "\t\t\t\twindow." + descriptor.id + " = new $.ig.JSONPDataSource({\n";
 			code += "\t\t\t\t\tdataSource: \"http://services.odata.org/Northwind/Northwind.svc/Customers?$format=json&$select=CustomerID,CompanyName,ContactName&$callback=?\",\n";
-			code += "\t\t\t\t\tresponseDataKey: \"value\"\n";
+			code += "\t\t\t\t\tresponseDataKey: \"value\",\n";
+			code += "\t\t\t\t\tresponseTotalRecCountKey: \"odata.count\"\n";
 			var orderedReturnProps = [];
 			// now write options / settings
 			code += "\t\t\t\t}).dataBind();\n";
@@ -20,16 +21,22 @@ define (["./datasource-component-plugin"], function (DataSourcePlugin) {
 				value: "value",
 				type: "string"
 			});
+			orderedReturnProps.push({
+				name: "responseTotalRecCountKey",
+				value: "odata.count",
+				type: "string"
+			});
 			return {
 				codeString: code,
-				lineCount: 4,
+				lineCount: 5,
 				orderedProps: orderedReturnProps
 			};
 		},
 		initComponent: function (descriptor) {
 			window.frames[0][descriptor.id] = new $.ig.JSONPDataSource({
 				dataSource: "http://services.odata.org/Northwind/Northwind.svc/Customers?$format=json&$select=CustomerID,CompanyName,ContactName&$callback=?",
-				responseDataKey: "value"
+				responseDataKey: "value",
+				responseTotalRecCountKey: "odata.count"
 			}); //dataBind();
 		}
 	});
