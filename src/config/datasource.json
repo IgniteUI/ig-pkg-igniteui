@@ -871,12 +871,39 @@
 			"type": "array",
 			"defaultValue": null,
 			"description": "A list of field definitions specifying the schema of the data source.",
-			"designerDisplayProperty": "fieldName",
+			"designerDisplayProperty": "name",
 			"schema": {
 				"name": {
 					"type": "string",
 					"defaultValue": null,
 					"description": "Name of the field."
+				},
+				"type": {
+					"type": "string",
+					"defaultValue": "string",
+					"description": "Type of the field.",
+					"valueOptions": [
+						{
+							"name": "string",
+							"type": "string",
+							"description": "Sets the data source field type to be string."
+						},
+						{
+							"name": "number",
+							"type": "string",
+							"description": "Sets the data source field type to be number."
+						},
+						{
+							"name": "boolean",
+							"type": "string",
+							"description": "Sets the data source field type to be boolean."
+						},
+						{
+							"name": "date",
+							"type": "string",
+							"description": "Sets the data source field type to be date."
+						}
+					]
 				}
 			}
 		},
