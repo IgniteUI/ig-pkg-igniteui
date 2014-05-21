@@ -536,7 +536,14 @@
     		"category": "lists",
     		"visual": true,
     		"framework": false,
-    		"dataSource": "sampleTreeData1"
+    		"dataSource": "sampleHierarchicalData1",
+			"defaultOptions": {  			
+                "bindings": {
+					"textKey": "Name",
+					"valueKey": "ID",
+					"childDataProperty": "children"
+				}
+			}
     	},
 		"validator": {
 			"id": "validator",
