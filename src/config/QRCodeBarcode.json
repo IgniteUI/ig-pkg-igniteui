@@ -43,6 +43,16 @@
       "defaultValue": null,
       "description": "Gets or sets the Application Indicator assigned to identify the specification concerned by AIM International.<br>&nbsp;The value is respected only when the Fnc1Mode is set to Industry. Its value may take the form of any single Latin alphabetic character from the set {a - z, A - Z} or a two-digit number."
     },
+	"width": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "The width of the barcode. It can be set as a number in pixels, string (px) or percentage (%)."
+    },
+	"height": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "The height of the barcode. It can be set as a number in pixels, string (px) or percentage (%)."
+    },
     "backingBrush": {
       "type": "string",
       "defaultValue": "white",

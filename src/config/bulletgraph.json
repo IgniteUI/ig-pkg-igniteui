@@ -43,6 +43,16 @@
       "defaultValue": null,
       "description": "Gets or sets the brush to use to fill the backing of the bullet graph."
     },
+	"width": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "The width of the BulletGraph. It can be set as a number in pixels, string (px) or percentage (%)."
+    },
+	"height": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "The height of the BulletGraph. It can be set as a number in pixels, string (px) or percentage (%)."
+    },
     "backingInnerExtent": {
       "type": "number",
       "defaultValue": 0.0,
