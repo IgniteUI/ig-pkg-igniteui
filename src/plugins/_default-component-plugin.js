@@ -484,7 +484,7 @@ define (function (require, exports, module) {
 						var eventString = "\t\t\t\t$(\"#" + descriptor.id + "\").on(\"" + evtName + "\", function (event, args) {\n\t\t\t\t\t\n\t\t\t\t});\n";
 						// new marker => add an empty event handler and marker;
 						ide.session.insert({row: offset, column: 0}, eventString);
-						handlerMarker = new ide.RangeClass(offset + 1, 4, offset + 4, 4); // "4" tabs
+						handlerMarker = new ide.RangeClass(offset, 4, offset + 3, 4); // "4" tabs
 						funcMarker = new ide.RangeClass(offset + 2, 4, offset + 3, 4);
 						ide.addMarker(handlerMarker);
 						ide.addMarker(funcMarker);
@@ -609,8 +609,22 @@ define (function (require, exports, module) {
 				if (result) {
 					this.settings.ide.session.replace(result, "$(\"#" + descriptor.propValue + "\")");
 				}
-				var comp = descriptor.ide.componentById(descriptor.oldPropValue);
-				comp.id = descriptor.propValue;
+				//var comp = descriptor.ide.componentById(descriptor.oldPropValue);
+				var events = descriptor.comp.eventMarkers;
+				if (events) {
+					for (var item in events) {
+						if (events.hasOwnProperty(item)) {
+							result = this.settings.ide.editor.find({
+								needle: /\$\("#(.*)?"\)/,
+								start: events[item].handlerMarker.start
+							});
+							if (result) {
+								this.settings.ide.session.replace(result, "$(\"#" + descriptor.propValue + "\")");
+							}
+						}
+					}
+				}
+				descriptor.comp.id = descriptor.propValue;
 				descriptor.placeholder.attr("id", descriptor.propValue);
 			} else if (descriptor.propName === "class") {
 				window.frames[0].$(descriptor.placeholder).removeClass(descriptor.oldPropValue).addClass(descriptor.propValue);
