@@ -440,9 +440,7 @@
     		"dragDropIcon": "rating-dragdrop.png",
     		"category": "editors",
     		"visual": true,
-    		"framework": false,
-    		"width": 200,
-    		"height":40
+    		"framework": false
     	},
 		"numericEditor": {
     		"id": "numericEditor",
