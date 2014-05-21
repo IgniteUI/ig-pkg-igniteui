@@ -46,7 +46,8 @@ define (function (require, exports, module) {
 			//Initial lineCount value
 			var lineCount = 0;
 			code = "\t\t\t\t$(\"#" + descriptor.id + "\")." + name + "({";
-			if (opts.height) {
+			//#171869 Leave width and height being serialized by the standard logic.
+			/*if (opts.height) {
 				if (code.lastIndexOf("{") === code.length - 1) {
 					code += "\n\t\t\t\t\theight: " + opts.height ;
 				} else {
@@ -71,7 +72,7 @@ define (function (require, exports, module) {
 					type: "number"
 				});								
 				lineCount++;
-			}
+			}*/
 			if (descriptor.data && window[descriptor.data]) {
 				if (code.lastIndexOf("{") === code.length - 1) {
 					code += "\n\t\t\t\t\tdataSource: " + descriptor.data;
@@ -88,7 +89,7 @@ define (function (require, exports, module) {
 			}
 			var props = this.settings.packageInfo.components[descriptor.type].properties;
 			for (var key in opts) {
-				if (opts.hasOwnProperty(key) && key !== "dataSource" && key !== "height" && key !== "width") {
+				if (opts.hasOwnProperty(key) && key !== "dataSource") {
 					if (props[key].type === "string") {
 						if (code.lastIndexOf("{") == code.length - 1) {
 							code += "\n\t\t\t\t\t" + key + ": \"" + opts[key] + "\"";

@@ -1155,7 +1155,7 @@
           ]
         },
         "width": {
-          "type": "number",
+          "type": "string",
           "defaultValue": null,
           "description": "The width of the legend."
         },
@@ -1261,12 +1261,12 @@
           "description": "Gets sets top position of the rectangle"
         },
         "width": {
-          "type": "number",
+          "type": "string",
           "defaultValue": null,
           "description": "Gets sets width position of the rectangle"
         },
         "height": {
-          "type": "number",
+          "type": "string",
           "defaultValue": null,
           "description": "Gets sets height position of the rectangle"
         }
@@ -1769,12 +1769,12 @@
               ]
             },
             "width": {
-              "type": "number",
+              "type": "string",
               "defaultValue": null,
               "description": "The width of the legend."
             },
             "height": {
-              "type": "number",
+              "type": "string",
               "defaultValue": null,
               "description": "The height of the legend."
             }
@@ -2660,12 +2660,12 @@
       "description": "To set both dimensions of the chart simultaneously an object with a width and height property can be provided",
       "schema": {
         "width": {
-          "type": "number",
+          "type": "string",
           "defaultValue": null,
           "description": "Defines the width dimension of the chart"
         },
         "height": {
-          "type": "number",
+          "type": "string",
           "defaultValue": null,
           "description": "Defines the height dimension of the chart"
         }
