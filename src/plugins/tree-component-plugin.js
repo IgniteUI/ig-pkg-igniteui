@@ -9,7 +9,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 					+ "\t\t\t\t\t\tvalueKey: \"ID\",\n"
 					+ "\t\t\t\t\t\tchildDataProperty: \"children\"\n"
 					+ "\t\t\t\t\t}";
-			code = "\t\t\t\t$(\"#" + descriptor.id + "\").igGrid({\n" + xtraMarkup;
+			code = "\t\t\t\t$(\"#" + descriptor.id + "\").igTree({\n" + xtraMarkup;
 			orderedReturnProps.push({
 				name: "bindings",
 				value: {
