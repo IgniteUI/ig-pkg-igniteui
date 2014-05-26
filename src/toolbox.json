@@ -291,6 +291,7 @@
     	"radialGauge": {
     		"id": "radialGauge",
             "dependsOn": ["core", "lob", "dv"],
+			"componentPlugin": "gauge-component-plugin",
     		"toolboxTitle": "Radial Gauge",
     		"icon": "gauge.png",
     		"dragDropIcon": "radial-gauge-dragdrop.png",
@@ -300,7 +301,14 @@
     		"width": 150,
 			"height": 150,
     		"defaultOptions": {
-                "value": "20"
+                "value": "20",
+				"ranges": [
+					{
+						"name" : "Default",
+						"startValue": 10,
+						"endValue": 30
+					}
+				]
     		}
     	},
 		"linearGauge": {
