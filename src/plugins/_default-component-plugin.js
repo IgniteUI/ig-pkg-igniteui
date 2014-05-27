@@ -331,7 +331,7 @@ define (function (require, exports, module) {
 			}
 			this._cachedVal = val;
 			propStr += descriptor.propName + ": " + val;
-			if (meta.optionsCount !== 0 && !lastProp) {
+			if (!lastProp) {
 				propStr += ",";
 			}
 			propStr += "\n";
