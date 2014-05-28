@@ -331,7 +331,7 @@ define (function (require, exports, module) {
 			}
 			this._cachedVal = val;
 			propStr += descriptor.propName + ": " + val;
-			if (meta.optionsCount !== 0 && !lastProp) {
+			if (!lastProp) {
 				propStr += ",";
 			}
 			propStr += "\n";
@@ -484,8 +484,8 @@ define (function (require, exports, module) {
 						var eventString = "\t\t\t\t$(\"#" + descriptor.id + "\").on(\"" + evtName + "\", function (event, args) {\n\t\t\t\t\t\n\t\t\t\t});\n";
 						// new marker => add an empty event handler and marker;
 						ide.session.insert({row: offset, column: 0}, eventString);
-						handlerMarker = new ide.RangeClass(offset, 4, offset + 3, 4); // "4" tabs
-						funcMarker = new ide.RangeClass(offset + 2, 4, offset + 3, 4);
+						handlerMarker = new ide.RangeClass(offset, 4, offset + 3, 0); // "4" tabs
+						funcMarker = new ide.RangeClass(offset + 2, 4, offset + 3, 0);
 						ide.addMarker(handlerMarker);
 						ide.addMarker(funcMarker);
 						component.eventMarkers[descriptor.propName] = {
@@ -604,7 +604,8 @@ define (function (require, exports, module) {
 				// we need to change the id in the widget definition in the code view
 				var result = this.settings.ide.editor.find({
 					needle: /\$\("#(.*)?"\)/,
-					start: descriptor.comp.codeMarker.range.start
+					start: descriptor.comp.codeMarker.range.start,
+					$isMultiLine: false
 				});
 				if (result) {
 					this.settings.ide.session.replace(result, "$(\"#" + descriptor.propValue + "\")");
@@ -616,7 +617,8 @@ define (function (require, exports, module) {
 						if (events.hasOwnProperty(item)) {
 							result = this.settings.ide.editor.find({
 								needle: /\$\("#(.*)?"\)/,
-								start: events[item].handlerMarker.start
+								start: events[item].handlerMarker.start,
+								$isMultiLine: false
 							});
 							if (result) {
 								this.settings.ide.session.replace(result, "$(\"#" + descriptor.propValue + "\")");
