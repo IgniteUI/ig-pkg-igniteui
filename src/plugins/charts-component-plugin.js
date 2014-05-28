@@ -32,8 +32,8 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			descriptor.marker.extraMarkers.options.series = {marker: seriesRange};
 		},
 		getPropValue: function (descriptor) {
-			if (descriptor.comp) {
-				var prop = descriptor.comp.options[descriptor.propName];
+			if (descriptor.propValue) {
+				var prop = descriptor.propValue;
 				if (!prop) {
 					prop = this._super(descriptor);
 				}
