@@ -485,7 +485,7 @@ define (function (require, exports, module) {
 						// new marker => add an empty event handler and marker;
 						ide.session.insert({row: offset, column: 0}, eventString);
 						handlerMarker = new ide.RangeClass(offset, 4, offset + 3, 0); // "4" tabs
-						funcMarker = new ide.RangeClass(offset + 2, 4, offset + 3, 0);
+						funcMarker = new ide.RangeClass(offset + 2, 5, offset + 2, 5);
 						ide.addMarker(handlerMarker);
 						ide.addMarker(funcMarker);
 						component.eventMarkers[descriptor.propName] = {
