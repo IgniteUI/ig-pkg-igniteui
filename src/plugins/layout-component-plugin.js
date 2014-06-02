@@ -40,14 +40,16 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 				"\n\t\t\t<li class=\"ig-layout-vertical-item verticalItem\" data-droppablechild=\"true\">5</li>" 
 				+"</ul>";				
 			} else if (descriptor.type === "borderLayout") {
-				return "<div id=\"" + descriptor.id + "\" data-droppablechild=\"false\" data-hasdroppables=\"true\"><div class=\"left\" data-droppablechild=\"true\" style=\"background-color: #FFA72D;\">" +
-			"<h3>LEFT AREA</h3><p>First paragraph</p><p>Second paragraph</p><p>Third paragraph</p></div><div class=\"right\" style=\"background-color:#555; color: #EEE;\" data-droppablechild=\"true\">" +
+				return "<div id=\"" + descriptor.id + "\" data-droppablechild=\"false\" class=\"\" data-hasdroppables=\"true\" data-has-design-child=\"true\">" +
+				"<div class=\"header\" data-design-child=\"true\" style=\"background-color: #2CBDF9;\">HEADER - some text here</div>" +
+				"<div id=\"leftPane\" class=\"left\" data-droppablechild=\"true\" data-design-child=\"true\" style=\"background-color: #FFA72D;\">" +
+			"<h3>LEFT AREA</h3><p>First paragraph</p><p>Second paragraph</p><p>Third paragraph</p></div>" +
+			"<div class=\"right\" data-design-child=\"true\" style=\"background-color:#555; color: #EEE;\" data-droppablechild=\"true\">" +
 			"<h3>RIGHT AREA</h3>" +
 			"<p>Aliquam ut tellus tristique massa gravida accumsan. </p></div>" +
-			"<div class=\"header\" style=\"background-color: #2CBDF9;\">HEADER - some text here</div>" +
-			"<div class=\"footer\" style=\"background-color: #2CBDF9;\">FOOTER - some text here </div>" +
-			"<div class=\"center\" data-droppablechild=\"true\" style=\"background-color: #EEE;\">" +
-			"<h3>CENTER AREA</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget porta urna. Ut gravida mi at ligula commodo feugiat vehicula lacus tincidunt. Proin lobortis magna sed lacus malesuada commodo fermentum felis auctor. Sed quis nulla quis tellus facilisis malesuada. Mauris aliquam neque consequat mi blandit in luctus magna rutrum. Fusce sit amet ipsum magna. Vivamus porttitor arcu vitae eros molestie et sagittis dolor cursus. Quisque ultrices feugiat risus, vitae molestie felis interdum ac. Suspendisse pellentesque magna nec est commodo porttitor. </p></div></div>";
+			"<div data-design-child=\"true\" class=\"center\" data-droppablechild=\"true\" style=\"background-color: #EEE;\">" +
+			"<h3>CENTER AREA</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget porta urna. Ut gravida mi at ligula commodo feugiat vehicula lacus tincidunt. Proin lobortis magna sed lacus malesuada commodo fermentum felis auctor. Sed quis nulla quis tellus facilisis malesuada. Mauris aliquam neque consequat mi blandit in luctus magna rutrum. Fusce sit amet ipsum magna. Vivamus porttitor arcu vitae eros molestie et sagittis dolor cursus. Quisque ultrices feugiat risus, vitae molestie felis interdum ac. Suspendisse pellentesque magna nec est commodo porttitor. </p></div>"+
+			"<div data-design-child=\"true\" class=\"footer\" style=\"background-color: #2CBDF9;\">FOOTER - some text here </div></div>";
 			} else if (descriptor.type === "columnLayout") {
 				return "<div id=\"layout\" class=\"ig-layout-col\"><div class=\"row\" data-droppablechild=\"false\" data-hasdroppables=\"true\"><div data-droppablechild=\"true\" class=\"col3\"><h3>Heading</h3><p>Contents</p></div><div class=\"col3\" data-droppablechild=\"true\"><h3 data-droppablechild=\"true\">Heading</h3><p>Contents</p></div><div data-droppablechild=\"true\" class=\"col3\"><h3>Heading</h3><p>Contents</p></div></div></div>";
 			} else {
@@ -102,18 +104,21 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 					]
 				};
 			} else if (descriptor.type === "borderLayout") {
-				return {codeString: "\t" + extraIndentStr + "<div id=\"" + descriptor.id + "\">\n\t\t\t<div class=\"left\" style=\"background-color: #FFA72D;\">" +
-			"\n\t\t\t\t<h3>LEFT AREA</h3>\n\t\t\t\t<p>First paragraph</p>\n\t\t\t\t<p>Second paragraph</p>\n\t\t\t\t<p>Third paragraph</p>\n\t\t\t</div>\n\t\t\t<div class=\"right\" style=\"background-color:#555; color: #EEE;\">" +
+				return {codeString: "\t" + extraIndentStr + "<div id=\"" + descriptor.id + "\">" +
+			"\n\t\t\t<div class=\"header\" style=\"background-color: #2CBDF9;\">HEADER - some text here</div>" +
+			"\n\t\t\t<div class=\"left\" style=\"background-color: #FFA72D;\">" +
+			"\n\t\t\t\t<h3>LEFT AREA</h3>\n\t\t\t\t<p>First paragraph</p>\n\t\t\t\t<p>Second paragraph</p>\n\t\t\t\t<p>Third paragraph</p>\n\t\t\t</div>" +
+			"\n\t\t\t<div class=\"right\" style=\"background-color:#555; color: #EEE;\">" +
 			"\n\t\t\t\t<h3>RIGHT AREA</h3>" +
 			"\n\t\t\t\t<p>Aliquam ut tellus tristique massa gravida accumsan. </p>\n\t\t\t</div>" +
-			"\n\t\t\t<div class=\"header\" style=\"background-color: #2CBDF9;\">HEADER - some text here</div>" +
-			"\n\t\t\t<div class=\"footer\" style=\"background-color: #2CBDF9;\">FOOTER - some text here </div>" +
 			"\n\t\t\t<div class=\"center\" style=\"background-color: #EEE;\">" +
-			"\n\t\t\t\t<h3>CENTER AREA</h3>\n\t\t\t\t<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget porta urna. Ut gravida mi at ligula commodo feugiat vehicula lacus tincidunt. Proin lobortis magna sed lacus malesuada commodo fermentum felis auctor. Sed quis nulla quis tellus facilisis malesuada. Mauris aliquam neque consequat mi blandit in luctus magna rutrum. Fusce sit amet ipsum magna. Vivamus porttitor arcu vitae eros molestie et sagittis dolor cursus. Quisque ultrices feugiat risus, vitae molestie felis interdum ac. Suspendisse pellentesque magna nec est commodo porttitor. </p>\n\t\t\t</div>\n\t\t</div>\n", lineCount: 17,
+			"\n\t\t\t\t<h3>CENTER AREA</h3>\n\t\t\t\t<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget porta urna. Ut gravida mi at ligula commodo feugiat vehicula lacus tincidunt. Proin lobortis magna sed lacus malesuada commodo fermentum felis auctor. Sed quis nulla quis tellus facilisis malesuada. Mauris aliquam neque consequat mi blandit in luctus magna rutrum. Fusce sit amet ipsum magna. Vivamus porttitor arcu vitae eros molestie et sagittis dolor cursus. Quisque ultrices feugiat risus, vitae molestie felis interdum ac. Suspendisse pellentesque magna nec est commodo porttitor. </p>\n\t\t\t</div>" +
+			"\n\t\t\t<div class=\"footer\" style=\"background-color: #2CBDF9;\">FOOTER - some text here </div>" +
+			"\n\t\t</div>\n", lineCount: 18,
 				extraMarkers: [
-						{ rowOffset: 2, colOffset: 0, rowCount: 5, colCount: 0 },
-						{ rowOffset: 8, colOffset: 0, rowCount: 3, colCount: 0 },
-						{ rowOffset: 14, colOffset: 0, rowCount: 3, colCount: 0 }
+						{ rowOffset: 2, colOffset: 0, rowCount: 6, colCount: 0 },
+						{ rowOffset: 8, colOffset: 0, rowCount: 4, colCount: 0 },
+						{ rowOffset: 12, colOffset: 0, rowCount: 4, colCount: 0 }
 					]			
 				};
 			} else if (descriptor.type === "columnLayout") {
@@ -127,37 +132,14 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 				return {codeString: "\t" + extraIndentStr + "<div id=\"" + descriptor.id + "\"></div>\n", lineCount: 1};
 			}			
 		},
-		//etCodeEditorScriptSnippet: function (descriptor) {
-		//	var snippet = this._super(descriptor);
-		//	if (descriptor.type === "gridLayout") {
-        //
-		//	} else if (descriptor.type === "columnLayout") {
-		//		return null;
-		//	}
-		//	return snippet;
-		//,
 		initComponent: function (descriptor) {
 			var name = this._getWidgetName(descriptor.type);
-			if (descriptor.type === "gridLayout" && window.frames[0].$(descriptor.placeholder)[name]) {
-				//window.frames[0].$(descriptor.placeholder).on("iglayoutmanageritemrendered", function (e, args) {
-				//	args.item.append("<ul><li>colspan: " + args.itemData.colSpan + "</li><li>rowspan: " + args.itemData.rowSpan + "</li></ul></span>");
-				//	if (args.itemData.colSpan == 2 && args.itemData.rowSpan == 2) {
-                //        args.item.css("background-color", "#eee");
-                //        args.item.css("color", "#555");
-                //    } else if (args.itemData.rowSpan == 1 && args.itemData.colSpan == 1) {
-                //        if (args.itemData.rowIndex == 0) {
-                //            args.item.css("background-color", "#2CBDF9");
-                //            args.item.css("color", "#FFF");
-                //        } else {
-                //            args.item.css("background-color", "#FFA72D");
-                //            args.item.css("color", "#FFF");
-                //        }
-                //    } else {
-                //        args.item.css("background-color", "#2CBDF9");
-                //        args.item.css("color", "#FFF");
-                //    }
-				//});
+			if (descriptor.type === "borderLayout" && window.frames[0].$(descriptor.placeholder)[name]) {
 				window.frames[0].$(descriptor.placeholder)[name](descriptor.options);
+				//var container = window.frames[0].$(descriptor.placeholder).children(".ig-layout-border-container")[0];
+				//if (container) {
+					//window.frames[0].$(container).attr("data-skipparent", true);
+				//}
 			} else if ((descriptor.type === "flowLayout" || descriptor.type === "verticalLayout") && window.frames[0].$(descriptor.placeholder)[name]) {
 				var ide = this.settings.ide, pos, styleBlock, styleMarker, blockOffset = 7, flagAlreadyContainsCSS = false, itemClass;
 				switch (descriptor.type) {
