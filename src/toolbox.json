@@ -1,7 +1,7 @@
 {
     "name": "igniteui",
     "toolboxTitle": "Ignite UI",
-    "baseApiUrl": "http://help.staging.infragistics.local/jQuery/2014.1/",
+    "baseApiUrl": "http://help.infragistics.com/jQuery/2014.1/",
     "scripts": [
         {
             "url": "http://code.jquery.com/jquery-1.10.2.min.js",

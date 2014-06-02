@@ -418,8 +418,8 @@ define (function (require, exports, module) {
 						handler += ") {\n\t\t\t\t\t\n\t\t\t\t};\n";
 						// new marker => add an empty event handler and marker;
 						ide.session.insert({row: offset, column: 0}, handler);
-						handlerMarker = new ide.RangeClass(offset, 4, offset + 3, 4); // "4" tabs
-						funcMarker = new ide.RangeClass(offset + 2, 5, offset + 3, 5);
+						handlerMarker = new ide.RangeClass(offset, 0, offset + 3, 0); // "4" tabs
+						funcMarker = new ide.RangeClass(offset + 2, 0, offset + 3, 5);
 						ide.addMarker(handlerMarker);
 						ide.addMarker(funcMarker);
 						component.funcMarkers[funcName] = {
@@ -484,8 +484,8 @@ define (function (require, exports, module) {
 						var eventString = "\t\t\t\t$(\"#" + descriptor.id + "\").on(\"" + evtName + "\", function (event, args) {\n\t\t\t\t\t\n\t\t\t\t});\n";
 						// new marker => add an empty event handler and marker;
 						ide.session.insert({row: offset, column: 0}, eventString);
-						handlerMarker = new ide.RangeClass(offset, 4, offset + 3, 0); // "4" tabs
-						funcMarker = new ide.RangeClass(offset + 2, 4, offset + 3, 0);
+						handlerMarker = new ide.RangeClass(offset, 0, offset + 3, 0); // "4" tabs
+						funcMarker = new ide.RangeClass(offset + 2, 0, offset + 2, 5);
 						ide.addMarker(handlerMarker);
 						ide.addMarker(funcMarker);
 						component.eventMarkers[descriptor.propName] = {
