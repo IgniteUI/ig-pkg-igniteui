@@ -40,7 +40,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 				"\n\t\t\t<li class=\"ig-layout-vertical-item verticalItem\" data-droppablechild=\"true\">5</li>" 
 				+"</ul>";				
 			} else if (descriptor.type === "borderLayout") {
-				return "<div id=\"" + descriptor.id + "\" data-droppablechild=\"false\" class=\"\" data-hasdroppables=\"true\" data-has-design-child=\"true\">" +
+				return "<div id=\"" + descriptor.id + "\" data-droppablechild=\"false\" class=\"\" data-hasdroppables=\"true\">" +
 				"<div class=\"header\" data-design-child=\"true\" style=\"background-color: #2CBDF9;\">HEADER - some text here</div>" +
 				"<div id=\"leftPane\" class=\"left\" data-droppablechild=\"true\" data-design-child=\"true\" style=\"background-color: #FFA72D;\">" +
 			"<h3>LEFT AREA</h3><p>First paragraph</p><p>Second paragraph</p><p>Third paragraph</p></div>" +
@@ -116,9 +116,11 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			"\n\t\t\t<div class=\"footer\" style=\"background-color: #2CBDF9;\">FOOTER - some text here </div>" +
 			"\n\t\t</div>\n", lineCount: 18,
 				extraMarkers: [
+						{ rowOffset: 1, colOffset: 0, rowCount: 1, colCount: 0 },
 						{ rowOffset: 2, colOffset: 0, rowCount: 6, colCount: 0 },
 						{ rowOffset: 8, colOffset: 0, rowCount: 4, colCount: 0 },
-						{ rowOffset: 12, colOffset: 0, rowCount: 4, colCount: 0 }
+						{ rowOffset: 12, colOffset: 0, rowCount: 4, colCount: 0 },
+						{ rowOffset: 16, colOffset: 0, rowCount: 1, colCount: 0 }
 					]			
 				};
 			} else if (descriptor.type === "columnLayout") {
@@ -136,10 +138,10 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			var name = this._getWidgetName(descriptor.type);
 			if (descriptor.type === "borderLayout" && window.frames[0].$(descriptor.placeholder)[name]) {
 				window.frames[0].$(descriptor.placeholder)[name](descriptor.options);
-				//var container = window.frames[0].$(descriptor.placeholder).children(".ig-layout-border-container")[0];
-				//if (container) {
-					//window.frames[0].$(container).attr("data-skipparent", true);
-				//}
+				var container = window.frames[0].$(descriptor.placeholder).children(".ig-layout-border-container")[0];
+				if (container) {
+					window.frames[0].$(container).attr("data-skipparent", true);
+				}
 			} else if ((descriptor.type === "flowLayout" || descriptor.type === "verticalLayout") && window.frames[0].$(descriptor.placeholder)[name]) {
 				var ide = this.settings.ide, pos, styleBlock, styleMarker, blockOffset = 7, flagAlreadyContainsCSS = false, itemClass;
 				switch (descriptor.type) {
