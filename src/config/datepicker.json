@@ -326,16 +326,6 @@
     }
   },
   "properties": {
-    "animationHideDuration": {
-      "type": "number",
-      "defaultValue": 200.0,
-      "description": "Sets gets duration of animation in milliseconds when drop-down list is hidden. That option is not supported when \"type\" is set to \"datepicker\", because the jquery.ui.datepicker does not have similar feature. Default is 200. If value is less than 5, then animation is disabled."
-    },
-    "animationShowDuration": {
-      "type": "number",
-      "defaultValue": 200.0,
-      "description": "Sets gets duration of animation in milliseconds when drop-down list or calendar is displayed. Default is 200. If value is less than 5, then animation is disabled."
-    },
     "button": {
       "type": "string",
       "defaultValue": null,
