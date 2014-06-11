@@ -11,6 +11,10 @@
             "url": "http://code.jquery.com/ui/1.10.4/jquery-ui.min.js",
             "lazyLoad": false
         },
+		{
+            "url": "http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.min.js",
+            "lazyLoad": false
+        },
         {
             "url": "/js/infragistics.core.js",
             "lazyLoad": false,
