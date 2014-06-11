@@ -730,13 +730,45 @@
 		  "type": "object",
           "defaultValue": null,
           "description": "Settings for update requests",	
-          "schemaRef": "grid.restSettings.create"
+          "schema": {
+            "batch": {
+              "type": "bool",
+              "defaultValue": false,
+              "description": "Specifies whether create requests will be sent in batches"
+            },
+            "template": {
+              "type": "string",
+              "defaultValue": null,
+              "description": "Specifies a remote URL template. Use ${id} in place of the resource id"
+            },
+            "uri": {
+              "type": "string",
+              "defaultValue": null,
+              "description": "Specifies a remote URL to which create requests will be sent. This will be used for both batch and non-batch, however if template is also set, this URL will only be used for batch requests."
+            }
+          }
         },
         "remove": {
 	      "type": "object",
           "defaultValue": null,
           "description": "Settings for remove requests",
-          "schemaRef": "grid.restSettings.create"
+          "schema": {
+            "batch": {
+              "type": "bool",
+              "defaultValue": false,
+              "description": "Specifies whether create requests will be sent in batches"
+            },
+            "template": {
+              "type": "string",
+              "defaultValue": null,
+              "description": "Specifies a remote URL template. Use ${id} in place of the resource id"
+            },
+            "uri": {
+              "type": "string",
+              "defaultValue": null,
+              "description": "Specifies a remote URL to which create requests will be sent. This will be used for both batch and non-batch, however if template is also set, this URL will only be used for batch requests."
+            }
+          }
         },
         "contentSerializer": {
           "type": "function",
