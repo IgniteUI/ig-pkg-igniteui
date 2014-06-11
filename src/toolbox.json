@@ -173,12 +173,16 @@
     		"framework": false,
     		"height": 100,
     		"width": 300,
-			"defaultOptions": { 
-				"minimumValue": 0, 
+			"defaultOptions": {
+				"minimumValue": 0,
                 "maximumValue": 25,
                 "interval": 5,
                 "value": 17,
-                "targetValue": 21
+                "targetValue": 21,
+				"ranges":
+					[{
+						"name": "Range 1"
+					}]
 			}
 		},
 		"doughnutChart": {
