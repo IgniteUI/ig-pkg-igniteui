@@ -191,6 +191,7 @@
       "type": "array",
       "defaultValue": null,
       "description": "Gets or sets the scale ranges to render on the bullet graph.",
+	  "designerDisplayProperty": "name",
       "schema": {
         "name": {
           "type": "string",

@@ -154,6 +154,9 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 					if (ddlist.length === 0) {
 						ddlist = $("body").find(".dropdown-container[data-id=features_dropDown]");
 					}
+					ddlist.css({
+						width: td.innerWidth()
+					});
 					$this.settings.ide._toggleDropDown(dd, ddlist);
 					return false;
 				})

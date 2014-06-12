@@ -97,6 +97,7 @@
       "description": "number of items to render, this is only applicable to layouts: vertical and flow"
     },
     "layoutMode": {
+	  "hidden": true,
       "type": "string",
       "defaultValue": "flow",
       "description": "Defines flow layout"

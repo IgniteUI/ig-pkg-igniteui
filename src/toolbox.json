@@ -11,6 +11,10 @@
             "url": "http://code.jquery.com/ui/1.10.4/jquery-ui.min.js",
             "lazyLoad": false
         },
+		{
+            "url": "http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.min.js",
+            "lazyLoad": false
+        },
         {
             "url": "/js/infragistics.core.js",
             "lazyLoad": false,
@@ -169,12 +173,16 @@
     		"framework": false,
     		"height": 100,
     		"width": 300,
-			"defaultOptions": { 
-				"minimumValue": 0, 
+			"defaultOptions": {
+				"minimumValue": 0,
                 "maximumValue": 25,
                 "interval": 5,
                 "value": 17,
-                "targetValue": 21
+                "targetValue": 21,
+				"ranges":
+					[{
+						"name": "Range 1"
+					}]
 			}
 		},
 		"doughnutChart": {

@@ -180,6 +180,7 @@
       }
     },
     "layoutMode": {
+	  "hidden": true,
       "type": "string",
       "defaultValue": "grid",
       "description": " defines the layout type"
