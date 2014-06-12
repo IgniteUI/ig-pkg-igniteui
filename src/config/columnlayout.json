@@ -131,6 +131,7 @@
       }
     },
     "layoutMode": {
+	  "hidden": true,
       "type": "string",
       "defaultValue": "column",
       "description": "Defines column layout. CSS only is used instead of initializing the igLayoutManager widget."
