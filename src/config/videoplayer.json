@@ -340,8 +340,8 @@
           "description": "Get or set bookmark title. It is shown as tooltip on hover."
         },
         "disabled": {
-          "type": "string",
-          "defaultValue": null,
+          "type": "bool",
+          "defaultValue": false,
           "description": "Get or set whether the bookmark is disabled or not."
         }
       }
