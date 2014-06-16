@@ -166,6 +166,7 @@
     		"id": "bulletGraph",
             "dependsOn": ["core", "lob", "dv"],
     		"toolboxTitle": "Bulletgraph",
+			"componentPlugin": "bulletgraph-component-plugin", 
     		"icon": "bullet-graph.png",
     		"dragDropIcon": "bullet-graph-dragdrop.png",
     		"category": "dataviz",
@@ -179,11 +180,12 @@
                 "interval": 5,
                 "value": 17,
                 "targetValue": 21,
-				"ranges":
-					[{
-						"name": "Range 1"
-					}]
-			}
+				"ranges": [
+					{
+						"name": "Range 1"		
+					}
+				]
+			}			
 		},
 		"doughnutChart": {
     		"id": "doughnutChart",
