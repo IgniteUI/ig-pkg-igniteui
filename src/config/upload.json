@@ -189,29 +189,6 @@
       "defaultValue": "",
       "description": "Get or set error message when file extension validation failed."
     },
-    "fileExtensionIcons": {
-      "type": "array",
-      "defaultValue": null,
-      "description": "Set icon css classes for specified file extension",
-      "schema": {
-        "ext": {
-          "type": "array",
-          "defaultValue": [],
-          "description": "Array of string for file extensions.",
-          "arrayMemberType": "string"
-        },
-        "css": {
-          "type": "string",
-          "defaultValue": "",
-          "def": ""
-        },
-        "def": {
-          "type": "bool",
-          "defaultValue": false,
-          "description": "Default icons when the file extension is not found. It is taken only the first item which have def set to true, other are ignored."
-        }
-      }
-    },
     "fileSizeDecimalDisplay": {
       "type": "number",
       "defaultValue": 2.0,
