@@ -421,7 +421,7 @@
       ]
     },
     "height": {
-      "type": "number",
+      "type": "string",
       "defaultValue": null,
       "description": "The height of the map. It can be set as a number in pixels, string (px) or percentage (%)."
     },
@@ -436,11 +436,6 @@
       "defaultValue": null,
       "description": "Gets or sets the template to use for hexagram markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of hexagram.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
       "schemaRef": "dataChart.circleMarkerTemplate"
-    },
-    "horizontalZoomable": {
-      "type": "bool",
-      "defaultValue": false,
-      "description": "Gets or sets the current Map's horizontal zoomability."
     },
     "overviewPlusDetailPaneBackgroundImageUri": {
       "type": "string",
@@ -1200,13 +1195,8 @@
       "description": "Gets or sets the template to use for triangle markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of triangle.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
       "schemaRef": "dataChart.circleMarkerTemplate"
     },
-    "verticalZoomable": {
-      "type": "bool",
-      "defaultValue": false,
-      "description": "Gets or sets the current Map's vertical zoomability."
-    },
     "width": {
-      "type": "number",
+      "type": "string",
       "defaultValue": null,
       "description": "The width of the map. It can be set as a number in pixels, string (px) or percentage (%)."
     },
