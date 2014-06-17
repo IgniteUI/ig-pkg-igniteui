@@ -136,6 +136,7 @@
       }
     },
     "layoutMode": {
+	  "hidden": true,
       "type": "string",
       "defaultValue": "vertical",
       "description": " defines vertical layout"

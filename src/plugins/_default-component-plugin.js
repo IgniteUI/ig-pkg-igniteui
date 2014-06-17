@@ -237,6 +237,16 @@ define (function (require, exports, module) {
 			//ide.editor.selection.setSelectionRange(selRange, false);
 			return {position: pos, selectionRange: selRange};
 		},
+		deletePropCode: function (descriptor) {
+			var codeMarker = descriptor.component.codeMarker;
+			var meta = codeMarker.extraMarkers;
+			var options = meta.options;
+			var ide = this.settings.ide;
+			var marker = options[descriptor.propName].marker;
+			ide.session.removeMarker(marker.id);
+			ide.session.remove(marker);
+			delete options[descriptor.propName];
+		},
 		updatePropCode: function (descriptor) {
 			/*
 			var val = descriptor.propValue;
@@ -569,7 +579,13 @@ define (function (require, exports, module) {
 					meta.options = {};
 				}
 				var options = meta.options;
-				if (!options[descriptor.propName]) {
+				//A.T. bug #169154
+				if ((descriptor.propType === "string" || descriptor.propType === "number") && (descriptor.propValue === "" || descriptor.propValue === null)) {
+					this.deletePropCode({
+						component: descriptor.comp,
+						propName: descriptor.propName
+					});
+				} else if (!options[descriptor.propName]) {
 					this.addPropCode({
 						component: descriptor.comp,
 						propName: descriptor.propName,
