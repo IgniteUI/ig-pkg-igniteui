@@ -385,7 +385,7 @@ define (function (require, exports, module) {
 		},
 		update: function (descriptor) {
 			//console.log("Updating property or event: " + descriptor.propName);
-			var ide = this.settings.ide;
+			var ide = this.settings.ide, that = this;
 			var name = "";
 			if (descriptor.type || descriptor.comp.type) {
 				name = this._getWidgetName(descriptor.type ? descriptor.type : descriptor.comp.type);
@@ -518,7 +518,12 @@ define (function (require, exports, module) {
 				var newOpts = $.extend({}, opts);
 				//ATT: TODO: we may not be setting an option on the root level ! 
 				if (descriptor.propType !== "literal") {
-					newOpts[descriptor.propName] = descriptor.propValue;
+					//17th June 2014. Bug #172492 Get property of string array, when property is marked to process only value, but not the key.
+					if (descriptor.schema && descriptor.displayProp && descriptor.schema.hasOwnProperty(descriptor.displayProp) && descriptor.schema[descriptor.displayProp].hasOwnProperty("processValueOnly")) {
+						newOpts[descriptor.propName] = this._getArrayStringFromObject(descriptor.propValue, descriptor.displayProp);
+					} else {
+						newOpts[descriptor.propName] = descriptor.propValue;
+					}
 				} else {
 					newOpts[descriptor.propName] = window.frames[0][descriptor.propValue];
 				}
@@ -1219,6 +1224,13 @@ define (function (require, exports, module) {
 				window.frames[0].$(element)[widgetName]("destroy");
 			}
 			window.frames[0].$(element)[widgetName](options);
+		},
+		_getArrayStringFromObject: function (arr, valueMemberProperty) {
+			var result = [], i = 0;
+			for (i; i <  arr.length; i++) {
+				result.push(arr[i][valueMemberProperty]);
+			}
+			return result;
 		}
 	});
 	return IgniteUIComponentPlugin;
