@@ -532,7 +532,12 @@ define (function (require, exports, module) {
 					if (descriptor.schema && descriptor.displayProp && descriptor.schema.hasOwnProperty(descriptor.displayProp) && descriptor.schema[descriptor.displayProp].hasOwnProperty("processValueOnly")) {
 						newOpts[descriptor.propName] = this._getArrayStringFromObject(descriptor.propValue, descriptor.displayProp);
 					} else {
-						newOpts[descriptor.propName] = descriptor.propValue;
+						//T.P. 18th June 2014 Bug #172386 When we update property of type number, the value is coming as string from the adorner. We try to parse it.
+						if (descriptor.propType === "number" && !isNaN(parseFloat(descriptor.propValue))) {
+							newOpts[descriptor.propName] = parseFloat(descriptor.propValue);
+						} else {
+							newOpts[descriptor.propName] = descriptor.propValue;
+						}
 					}
 				} else {
 					newOpts[descriptor.propName] = window.frames[0][descriptor.propValue];
@@ -542,7 +547,8 @@ define (function (require, exports, module) {
 				var dims;
 				if (descriptor.propType !== "object" && descriptor.propType !== "array" && descriptor.propType !== "literal") {
 					try {
-						window.frames[0].$(descriptor.placeholder)[name]("option", descriptor.propName, descriptor.propValue);
+						//T.P. 18th June 2014 Bug #172386 When we try to use set option we need to pass the new value from the newOpts collection
+						window.frames[0].$(descriptor.placeholder)[name]("option", descriptor.propName, newOpts[descriptor.propName]);
 					} catch (err) {
 						// we need to re-create (destroy & create) the widget again. 
 						// this usually happens when we try to use setOption at runtime for props that don't allow this 
