@@ -37,7 +37,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 		addExtraMarkers: function (descriptor) {
 			this._super(descriptor);
 			var bindings = this.settings.editor.find("bindings", {start: descriptor.marker.range.start});
-			bindings = new descriptor.rclass(bindings.start.row, 0, bindings.start.row + 4, 7);
+			bindings = new descriptor.rclass(bindings.start.row, 0, bindings.start.row + 5, 0);
 			bindings.start = this.settings.editor.getSession().doc.createAnchor(bindings.start); 
 			bindings.end = this.settings.editor.getSession().doc.createAnchor(bindings.end);
 			if (!descriptor.marker.extraMarkers.options) {

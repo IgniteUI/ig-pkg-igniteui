@@ -198,6 +198,19 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 				return true;
 			}
 			return false;
+		},
+		addExtraMarkers: function (descriptor) {
+			this._super(descriptor);
+			if (descriptor.type === "gridLayout") {
+				var gridLayout = this.settings.editor.find("gridLayout:", {start: descriptor.marker.range.start});
+				gridLayout = new descriptor.rclass(gridLayout.start.row, 0, gridLayout.start.row + 4, 0);
+				gridLayout.start = this.settings.editor.getSession().doc.createAnchor(gridLayout.start); 
+				gridLayout.end = this.settings.editor.getSession().doc.createAnchor(gridLayout.end);
+				if (!descriptor.marker.extraMarkers.options) {
+					descriptor.marker.extraMarkers.options = {};
+				}
+				descriptor.marker.extraMarkers.options.gridLayout = {marker: gridLayout};
+			}
 		}
 	});
 	return IgniteUILayoutPlugin;

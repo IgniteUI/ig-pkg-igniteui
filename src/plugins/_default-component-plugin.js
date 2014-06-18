@@ -139,6 +139,34 @@ define (function (require, exports, module) {
 						});
 						code += formattedStrTabbed;
 						lineCount += formattedStrTabbed.split("\n").length - 1;
+					} else if (props[key].type === "object") {										
+						var formattedStr = beautify(JSON.stringify(opts[key]).replace(/\"([^(\")"]+)\":/g,"$1:"));
+						for (var p = 0; p < opts[key].length; p ++) {
+							if(opts[key][p].hasOwnProperty("dataSource")){
+								formattedStr = formattedStr.replace('"' + opts[key][p].dataSource + '"', opts[key][p].dataSource);
+							}
+						}
+						if (code.lastIndexOf("{") != code.length - 1) {
+							code += ",\n";
+						}
+						lineCount++;
+						formattedStr = key + ": " + formattedStr;
+						var formattedStrTabbed = "";
+						var tabbedArr = formattedStr.split("\n");
+						for (var i = 0; i < tabbedArr.length; i++) {
+							formattedStrTabbed += "\t\t\t\t\t" + tabbedArr[i];
+							if (i < tabbedArr.length - 1) {
+								formattedStrTabbed += "\n";
+							}
+						}
+						orderedReturnProps.push({
+							name: key,
+							value: opts[key],
+							type: "object",
+							schema: props[key].schema
+						});
+						code += formattedStrTabbed;
+						lineCount += formattedStrTabbed.split("\n").length - 1;
 					} else {
 						if (code.lastIndexOf("{") == code.length - 1) {
 							code += "\n\t\t\t\t\t" + key + ": " + opts[key];
