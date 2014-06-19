@@ -139,6 +139,34 @@ define (function (require, exports, module) {
 						});
 						code += formattedStrTabbed;
 						lineCount += formattedStrTabbed.split("\n").length - 1;
+					} else if (props[key].type === "object") {										
+						var formattedStr = beautify(JSON.stringify(opts[key]).replace(/\"([^(\")"]+)\":/g,"$1:"));
+						for (var p = 0; p < opts[key].length; p ++) {
+							if(opts[key][p].hasOwnProperty("dataSource")){
+								formattedStr = formattedStr.replace('"' + opts[key][p].dataSource + '"', opts[key][p].dataSource);
+							}
+						}
+						if (code.lastIndexOf("{") != code.length - 1) {
+							code += ",\n";
+						}
+						lineCount++;
+						formattedStr = key + ": " + formattedStr;
+						var formattedStrTabbed = "";
+						var tabbedArr = formattedStr.split("\n");
+						for (var i = 0; i < tabbedArr.length; i++) {
+							formattedStrTabbed += "\t\t\t\t\t" + tabbedArr[i];
+							if (i < tabbedArr.length - 1) {
+								formattedStrTabbed += "\n";
+							}
+						}
+						orderedReturnProps.push({
+							name: key,
+							value: opts[key],
+							type: "object",
+							schema: props[key].schema
+						});
+						code += formattedStrTabbed;
+						lineCount += formattedStrTabbed.split("\n").length - 1;
 					} else {
 						if (code.lastIndexOf("{") == code.length - 1) {
 							code += "\n\t\t\t\t\t" + key + ": " + opts[key];
@@ -208,7 +236,29 @@ define (function (require, exports, module) {
 			var meta = codeMarker.extraMarkers;
 			var options = meta.options;
 			if (!options[name]) {
-				pos = this.addPropCode(descriptor, true);
+				// if the code doesn't exist in the code view, but the option is set on the widget, we want to find it and reuse the marker instead of 
+				// adding a duplicate one 
+				if (descriptor.defaultValue !== null && typeof (descriptor.defaultValue) !== "undefined") {
+					// A.T. bug #173754 - it exists, but there's no marker for it in the extra option markers
+					// divide line by line the code in the code marker, and enter the new marker for that prop which isn't recorded yet
+					var codeStr = ide.session.getTextRange(codeMarker.range);
+					var strProps = codeStr.split("\n");
+					for (var i = 0; i < strProps.length; i++) {
+						if (strProps[i].indexOf(name) !== -1) {
+							options[name] = {
+								propName: descriptor.propName,
+								defaultValue: descriptor.defaultValue,
+								propValue: descriptor.propValue,
+								propType: descriptor.propType
+							};
+							options[name].marker = ide.createAndAddMarker(codeMarker.range.start.row + i, codeMarker.range.start.column, codeMarker.range.start.row + i, codeMarker.range.start.column + strProps[i].length);
+							break;
+						}
+					}
+					pos = this.updatePropCode(descriptor, true);
+				} else {
+					pos = this.addPropCode(descriptor, true);
+				}
 			} else {
 				this._cachedVal = null;
 				// put the cursor at the end of the property definition
@@ -226,7 +276,7 @@ define (function (require, exports, module) {
 				this._cachedVal = this._cachedVal.replace(/"/g, "");
 			}
 			if (this._cachedVal === "") {
-				pos.column = pos.column -2;
+				pos.column = pos.column - 2;
 			} else {
 				selRange = ide.editor.find({
 					needle: this._cachedVal + "", // ensure this is a string
@@ -247,7 +297,7 @@ define (function (require, exports, module) {
 			ide.session.remove(marker);
 			delete options[descriptor.propName];
 		},
-		updatePropCode: function (descriptor) {
+		updatePropCode: function (descriptor, addedFromCode) {
 			/*
 			var val = descriptor.propValue;
 			var oldVal = descriptor.oldPropValue;
@@ -298,17 +348,26 @@ define (function (require, exports, module) {
 			if (currentPropStr.lastIndexOf(",") === currentPropStr.length - 1) { 
 				propStr += ",";
 			}
-			propStr += "\n";
+			if (!addedFromCode) {
+				propStr += "\n";
+			}
 			var startRow = marker.start.row;
 			var startCol = marker.start.column;
-			var endRow = marker.start.row + propStr.split('\n').length - 1;
+			var propSpan = propStr.split('\n').length;
+			var endRow = 0;
+			if (propSpan > 0) {
+				endRow = marker.start.row + propStr.split('\n').length - 1;
+			} else {
+				endRow = startRow;
+			}
 			//var endColumn = marker.end.column;
-			//var endColumn = propStr.length;
-			var endColumn = 0;
+			var endColumn = propStr.length;
+			//var endColumn = 0;
 			ide.session.replace(marker, propStr);
 			//reattach the marker
 			ide.session.removeMarker(marker.id);
 			options[descriptor.propName].marker = ide.createAndAddMarker(startRow, startCol, endRow, endColumn);
+			return {row: startRow, column: propStr.length};
 		},
 		addPropCode: function (descriptor, insertInCode, lastProp) {
 			var pos = {row: 0, column: 0};
