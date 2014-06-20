@@ -142,7 +142,17 @@
       "type": "array",
       "defaultValue": null,
       "description": "Gets or sets the collection of exploded slice indices.<br>            Should be an array of integers that indicate the indexes of the slices to explode.",
-      "arrayMemberType": "number"
+      "arrayMemberType": "number",
+       "schema": {
+		"Slice Index": {
+			"type": "number",
+			"required": true,
+			"defaultValue": null,
+			"processValueOnly" : true,
+			"description": "The index of the slices to explode"
+			}
+		},
+	    "designerDisplayProperty": "Slice Index"
     },
     "formatLabel": {
       "type": "function",
