@@ -122,7 +122,17 @@
       "type": "array",
       "defaultValue": null,
       "description": "Get or set file allowed file extensions. When this array is empty - it is not made such validation. Example [\"gif\", \"jpg\", \"bmp\"].",
-      "arrayMemberType": "string"
+      "arrayMemberType": "string",
+            "schema": {
+			"item": {
+			  "type": "string",
+			  "required": true,
+			  "defaultValue": null,
+			  "processValueOnly" : true,
+			  "description": "File extension. In exapmple: gif"
+			}
+		},
+	    "designerDisplayProperty": "item"
     },
     "autostartupload": {
       "type": "bool",
