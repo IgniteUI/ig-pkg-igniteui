@@ -52,6 +52,11 @@
 		},
 		"designerDisplayProperty": "name"
     },
+    "dataSource": {
+        "type": "custom",
+        "defaultValue": null,
+        "description": "Can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself."
+    },
     "formatInnerLabel": {
       "type": "function",
       "defaultValue": null,

@@ -53,6 +53,11 @@
       "defaultValue": null,
       "description": "Gets or sets the sparkline brush."
     },
+    "dataSource": {
+      "type": "custom",
+      "defaultValue": null,
+      "description": "Can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself."
+    },
     "displayNormalRangeInFront": {
       "type": "bool",
       "defaultValue": false,
