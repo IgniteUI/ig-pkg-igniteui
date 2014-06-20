@@ -400,7 +400,7 @@ define (function (require, exports, module) {
 			}
 			this._cachedVal = val;
 			propStr += descriptor.propName + ": " + val;
-			if (!lastProp) {
+			if (!lastProp && !$.isEmptyObject(options)) {
 				propStr += ",";
 			}
 			propStr += "\n";
@@ -591,12 +591,8 @@ define (function (require, exports, module) {
 					if (descriptor.schema && descriptor.displayProp && descriptor.schema.hasOwnProperty(descriptor.displayProp) && descriptor.schema[descriptor.displayProp].hasOwnProperty("processValueOnly")) {
 						newOpts[descriptor.propName] = this._getArrayStringFromObject(descriptor.propValue, descriptor.displayProp);
 					} else {
-						//T.P. 18th June 2014 Bug #172386 When we update property of type number, the value is coming as string from the adorner. We try to parse it.
-						if (descriptor.propType === "number" && !isNaN(parseFloat(descriptor.propValue))) {
-							newOpts[descriptor.propName] = parseFloat(descriptor.propValue);
-						} else {
-							newOpts[descriptor.propName] = descriptor.propValue;
-						}
+						//T.P. 18th June 2014 Bug #172386 When we update property we try to parse the value according to the propType
+						newOpts[descriptor.propName] = ide._propCodeDefaultVal(descriptor.propType, descriptor.propValue);
 					}
 				} else {
 					newOpts[descriptor.propName] = window.frames[0][descriptor.propValue];

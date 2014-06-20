@@ -628,7 +628,17 @@
 					"type": "array",
 					"defaultValue": [],
 					"description": "When defaultDirection is different than \"none\", and defaultFields is specified, data will be initially sorted accordingly, directly after dataBind().",
-					"arrayMemberType": "string"
+					"arrayMemberType": "string",
+					"schema": {
+						"name": {
+							"type": "string",
+							"required": true,
+							"defaultValue": null,
+							"processValueOnly" : true,
+							"description": "Name of the defaultField"
+						}
+					},
+					"designerDisplayProperty": "name"
 				},
 				"applyToAllData": {
 					"type": "bool",
