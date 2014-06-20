@@ -369,19 +369,9 @@
           "description": " the String object is used with 'text' in display mode format."
         },
         {
-          "name": "-1",
-          "type": "number",
-          "description": ""
-        },
-        {
           "name": "editModeText",
           "type": "string",
           "description": " the String object is used with 'text' in edit mode format."
-        },
-        {
-          "name": "0",
-          "type": "number",
-          "description": ""
         },
         {
           "name": "double",
@@ -389,19 +379,9 @@
           "description": " the Number object is used with limits of double and if value is not set, then the null or Number.NaN is used depending on the option 'nullable'. Note: that is used as default."
         },
         {
-          "name": "1",
-          "type": "number",
-          "description": ""
-        },
-        {
           "name": "float",
           "type": "string",
           "description": " the Number object is used with limits of double and if value is not set, then the null or Number.NaN is used depending on the option 'nullable'."
-        },
-        {
-          "name": "2",
-          "type": "number",
-          "description": ""
         },
         {
           "name": "decimal",
@@ -409,19 +389,9 @@
           "description": " the Number object is used with limits of double and if value is not set, then the null or 0 is used depending on the option 'nullable'."
         },
         {
-          "name": "3",
-          "type": "number",
-          "description": ""
-        },
-        {
           "name": "long",
           "type": "string",
           "description": " the Number object is used with limits of signed long and if value is not set, then the null or 0 is used depending on the option 'nullable'. "
-        },
-        {
-          "name": "4",
-          "type": "number",
-          "description": ""
         },
         {
           "name": "ulong",
@@ -429,19 +399,9 @@
           "description": " the Number object is used with limits of unsigned long and if value is not set, then the null or 0 is used depending on the option 'nullable'."
         },
         {
-          "name": "5",
-          "type": "number",
-          "description": ""
-        },
-        {
           "name": "int",
           "type": "string",
           "description": " the Number object is used with limits of signed int and if value is not set, then the null or 0 is used depending on the option 'nullable'."
-        },
-        {
-          "name": "6",
-          "type": "number",
-          "description": ""
         },
         {
           "name": "uint",
@@ -449,19 +409,9 @@
           "description": " the Number object is used with limits of unsigned int and if value is not set, then the null or 0 is used depending on the option 'nullable'."
         },
         {
-          "name": "7",
-          "type": "number",
-          "description": ""
-        },
-        {
           "name": "short",
           "type": "string",
           "description": " the Number object is used with limits of signed short and if value is not set, then the null or 0 is used depending on the option 'nullable'."
-        },
-        {
-          "name": "8",
-          "type": "number",
-          "description": ""
         },
         {
           "name": "ushort",
@@ -469,29 +419,14 @@
           "description": " the Number object is used with limits of unsigned short and if value is not set, then the null or 0 is used depending on the option 'nullable'."
         },
         {
-          "name": "9",
-          "type": "number",
-          "description": ""
-        },
-        {
           "name": "sbyte",
           "type": "string",
           "description": " the Number object is used with limits of signed byte and if value is not set, then the null or 0 is used depending on the option 'nullable'."
         },
         {
-          "name": "10",
-          "type": "number",
-          "description": ""
-        },
-        {
           "name": "byte",
           "type": "string",
           "description": " the Number object is used with limits of unsigned byte and if value is not set, then the null or 0 is used depending on the option 'nullable'."
-        },
-        {
-          "name": "11",
-          "type": "number",
-          "description": ""
         }
       ]
     },
@@ -543,9 +478,20 @@
       "description": "If that option is disabled and the editor is not focused, then a mouse click on the spin button will keep the text in the editor in display (not focus) format and perform spin actions."
     },
     "groups": {
-      "type": "object",
+      "type": "array",
       "defaultValue": null,
-      "description": "(array of number objects) Sets gets the number of digits in integer part of number, which are divided into groups.<br>&nbsp;&nbsp;&nbsp;&nbsp;The \"numericGroupSeparator\" is inserted between groups.<br>&nbsp;&nbsp;&nbsp;&nbsp;If the sum of all values in array is smaller than the length of integer part, then the last item in array is used for all following groups.<br>&nbsp;&nbsp;&nbsp;&nbsp;Count of groups starts from the decimal point (from right to left).<br>&nbsp;&nbsp;&nbsp;&nbsp;That option has effect only in display (no focus) state.<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: this option has priority over possible regional settings."
+      "description": "(array of number objects) Sets gets the number of digits in integer part of number, which are divided into groups.<br>&nbsp;&nbsp;&nbsp;&nbsp;The \"numericGroupSeparator\" is inserted between groups.<br>&nbsp;&nbsp;&nbsp;&nbsp;If the sum of all values in array is smaller than the length of integer part, then the last item in array is used for all following groups.<br>&nbsp;&nbsp;&nbsp;&nbsp;Count of groups starts from the decimal point (from right to left).<br>&nbsp;&nbsp;&nbsp;&nbsp;That option has effect only in display (no focus) state.<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: this option has priority over possible regional settings.",
+      "arrayMemberType" : "number",
+      "schema": {
+			"item": {
+			  "type": "number",
+			  "required": true,
+			  "defaultValue": null,
+			  "processValueOnly" : true,
+			  "description": "Number of digits in integer part of number"
+			}
+		},
+	    "designerDisplayProperty": "item"
     },
     "groupSeparator": {
       "type": "string",
@@ -581,7 +527,17 @@
       "type": "array",
       "defaultValue": null,
       "description": "Sets gets list of items which are used for drop-down list, spin, validation and auto-complete functionality.<br>&nbsp;&nbsp;&nbsp;&nbsp;Items in list can be strings, numbers, dates or objects in any combination.<br>&nbsp;&nbsp;&nbsp;&nbsp;If type of editor is date or datepicker and item is string, then igEditor will try to convert it to Date object and show item in display format.<br>&nbsp;&nbsp;&nbsp;&nbsp;If type of editor is numeric, currency or percent and item is string, then igEditor will try to convert it to number and show item in display format.<br>&nbsp;&nbsp;&nbsp;&nbsp;If item is object and it has member \"text\", then that member is used.<br>&nbsp;&nbsp;&nbsp;&nbsp;If item is object and besides \"text\" has function getHtml(), then that function is used to render item in list.<br>&nbsp;&nbsp;&nbsp;&nbsp;The item or item.text is used to set \"value\" of particular editor when list-item is selected.", 
-	  "arrayMemberType" : "string,date,number"
+	  "arrayMemberType" : "string",
+      "schema": {
+			"item": {
+			  "type": "string",
+			  "required": true,
+			  "defaultValue": null,
+			  "processValueOnly" : true,
+			  "description": "Name of the range brush"
+			}
+		},
+	    "designerDisplayProperty": "item"
     },
     "listMaxHeight": {
       "type": "number",
@@ -594,11 +550,10 @@
       "description": "Sets gets custom width of drop-down list in pixels. If value is equal to 0 or negative, then the width of editor is used."
     },
     "locale": {
-      "type": "object",
+      "type": "string",
       "defaultValue": null,
-      "description": "Sets gets strings used for title of buttons. Value of object should contain pairs or key:value members. Note: any sub-option of locale can appear within the main option of igEditor. In this case those values within main options will have highest priority and override corresponding value in locale.",
-	  "arrayMemberType" : "object"
-    },
+      "description": "Sets gets strings used for title of buttons. Value of object should contain pairs or key:value members. Note: any sub-option of locale can appear within the main option of igEditor. In this case those values within main options will have highest priority and override corresponding value in locale."
+	 },
     "maxDecimals": {
       "type": "number",
       "defaultValue": null,
@@ -655,10 +610,9 @@
       "description": "Set gets ability to modify editor from keyboard (false) or disables keyboard (true).<br>&nbsp;&nbsp;&nbsp;&nbsp;Notes:<br>&nbsp;&nbsp;&nbsp;&nbsp;If the \"spinOnReadOnly\" is enabled, then value will be modified on spin regardless of the \"readOnly\".<br>&nbsp;&nbsp;&nbsp;&nbsp;If the \"listItems\" has items and \"dropDownTriggers\" is defined, then value will be modified from drop-down list regardless of the \"readOnly\"."
     },
     "regional": {
-      "type": "object",
+      "type": "string",
       "defaultValue": null,
-      "description": "Sets gets custom regional settings for editor. If it is string, then $.ig.regional[stringValue] is assumed.",
-	  "arrayMemberType" : "object"
+      "description": "Sets gets custom regional settings for editor. If it is string, then $.ig.regional[stringValue] is assumed."	  
     },
     "renderInContainer": {
       "type": "bool",
@@ -713,18 +667,8 @@
           "description": " Select all text"
         },
         {
-          "name": "-1",
-          "type": "number",
-          "description": " Select all text"
-        },
-        {
           "name": "start",
           "type": "string",
-          "description": " Set caret at the beginning of text"
-        },
-        {
-          "name": "0",
-          "type": "number",
           "description": " Set caret at the beginning of text"
         },
         {
@@ -733,19 +677,9 @@
           "description": " Set caret at the end of text"
         },
         {
-          "name": "1",
-          "type": "number",
-          "description": " Set caret at the end of text"
-        },
-        {
           "name": "default",
           "type": "string",
           "description": " Use default behavior of browser (in case of mask, numeric and date editors it may be unreliable)"
-        },
-        {
-          "name": "2",
-          "type": "number",
-          "description": " Use default behavior of browser (in case of mask, numeric and date editors it may be unreliable)."
         }
       ]
     },
