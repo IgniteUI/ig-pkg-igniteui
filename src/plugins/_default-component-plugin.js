@@ -400,7 +400,7 @@ define (function (require, exports, module) {
 			}
 			this._cachedVal = val;
 			propStr += descriptor.propName + ": " + val;
-			if (!lastProp) {
+			if (!lastProp && !$.isEmptyObject(options)) {
 				propStr += ",";
 			}
 			propStr += "\n";
@@ -1276,6 +1276,11 @@ define (function (require, exports, module) {
 											}
 										}
 									}
+								} else if (node.type === "AssignmentExpression") {
+									//A.T. Bug #168894 - recognize "pasted" data source code
+									// get the str
+									var line = ide.session.getTextRange(new ide.RangeClass(node.loc.start.line + scriptRanges[i].start.row - 1, 0, node.loc.start.line + scriptRanges[i].start.row - 1, 1000));
+									
 								}
 							},
 							leave: function (node, parent) {
