@@ -588,11 +588,11 @@ define (function (require, exports, module) {
 				//ATT: TODO: we may not be setting an option on the root level ! 
 				if (descriptor.propType !== "literal") {
 					//17th June 2014. Bug #172492 Get property of string array, when property is marked to process only value, but not the key.
-					if (descriptor.schema && descriptor.displayProp && descriptor.schema.hasOwnProperty(descriptor.displayProp) && descriptor.schema[descriptor.displayProp].hasOwnProperty("processValueOnly")) {
+					if (descriptor.schema && descriptor.displayProp && descriptor.schema.hasOwnProperty(descriptor.displayProp) && descriptor.schema[descriptor.displayProp].processValueOnly) {
 						newOpts[descriptor.propName] = this._getArrayStringFromObject(descriptor.propValue, descriptor.displayProp);
 					} else {
 						//T.P. 18th June 2014 Bug #172386 When we update property we try to parse the value according to the propType
-						newOpts[descriptor.propName] = ide._propCodeDefaultVal(descriptor.propType, descriptor.propValue);
+						newOpts[descriptor.propName] = descriptor.propValue;
 					}
 				} else {
 					newOpts[descriptor.propName] = window.frames[0][descriptor.propValue];
