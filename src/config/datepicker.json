@@ -326,28 +326,6 @@
     }
   },
   "properties": {
-    "button": {
-      "type": "string",
-      "defaultValue": null,
-      "description": " Sets gets visibility of spin and drop-down button.",
-      "valueOptions": [
-        {
-          "name": "dropdown",
-          "type": "string",
-          "description": " Button to open list is located on the right side of input-field (or left side if base html element has direction:rtl)"
-        },
-        {
-          "name": "clear",
-          "type": "string",
-          "description": " Button to clear value is located on the right side of input-field (or left side if base html element has direction:rtl)"
-        },
-        {
-          "name": "spin",
-          "type": "string",
-          "description": " Spin buttons are located on the right side of input-field (or left side if base html element has direction:rtl)"
-        }
-      ]
-    },
     "centuryThreshold": {
       "type": "number",
       "defaultValue": 29.0,
