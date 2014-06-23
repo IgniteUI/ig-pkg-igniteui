@@ -369,19 +369,9 @@
           "description": " the String object is used with 'text' in display mode format."
         },
         {
-          "name": "-1",
-          "type": "number",
-          "description": ""
-        },
-        {
           "name": "editModeText",
           "type": "string",
           "description": " the String object is used with 'text' in edit mode format."
-        },
-        {
-          "name": "0",
-          "type": "number",
-          "description": ""
         },
         {
           "name": "double",
@@ -389,19 +379,9 @@
           "description": " the Number object is used with limits of double and if value is not set, then the null or Number.NaN is used depending on the option 'nullable'. Note: that is used as default."
         },
         {
-          "name": "1",
-          "type": "number",
-          "description": ""
-        },
-        {
           "name": "float",
           "type": "string",
           "description": " the Number object is used with limits of double and if value is not set, then the null or Number.NaN is used depending on the option 'nullable'."
-        },
-        {
-          "name": "2",
-          "type": "number",
-          "description": ""
         },
         {
           "name": "decimal",
@@ -409,19 +389,9 @@
           "description": " the Number object is used with limits of double and if value is not set, then the null or 0 is used depending on the option 'nullable'."
         },
         {
-          "name": "3",
-          "type": "number",
-          "description": ""
-        },
-        {
           "name": "long",
           "type": "string",
           "description": " the Number object is used with limits of signed long and if value is not set, then the null or 0 is used depending on the option 'nullable'. "
-        },
-        {
-          "name": "4",
-          "type": "number",
-          "description": ""
         },
         {
           "name": "ulong",
@@ -429,19 +399,9 @@
           "description": " the Number object is used with limits of unsigned long and if value is not set, then the null or 0 is used depending on the option 'nullable'."
         },
         {
-          "name": "5",
-          "type": "number",
-          "description": ""
-        },
-        {
           "name": "int",
           "type": "string",
           "description": " the Number object is used with limits of signed int and if value is not set, then the null or 0 is used depending on the option 'nullable'."
-        },
-        {
-          "name": "6",
-          "type": "number",
-          "description": ""
         },
         {
           "name": "uint",
@@ -449,19 +409,9 @@
           "description": " the Number object is used with limits of unsigned int and if value is not set, then the null or 0 is used depending on the option 'nullable'."
         },
         {
-          "name": "7",
-          "type": "number",
-          "description": ""
-        },
-        {
           "name": "short",
           "type": "string",
           "description": " the Number object is used with limits of signed short and if value is not set, then the null or 0 is used depending on the option 'nullable'."
-        },
-        {
-          "name": "8",
-          "type": "number",
-          "description": ""
         },
         {
           "name": "ushort",
@@ -469,29 +419,14 @@
           "description": " the Number object is used with limits of unsigned short and if value is not set, then the null or 0 is used depending on the option 'nullable'."
         },
         {
-          "name": "9",
-          "type": "number",
-          "description": ""
-        },
-        {
           "name": "sbyte",
           "type": "string",
           "description": " the Number object is used with limits of signed byte and if value is not set, then the null or 0 is used depending on the option 'nullable'."
         },
         {
-          "name": "10",
-          "type": "number",
-          "description": ""
-        },
-        {
           "name": "byte",
           "type": "string",
           "description": " the Number object is used with limits of unsigned byte and if value is not set, then the null or 0 is used depending on the option 'nullable'."
-        },
-        {
-          "name": "11",
-          "type": "number",
-          "description": ""
         }
       ]
     },
@@ -717,18 +652,8 @@
           "description": " Select all text"
         },
         {
-          "name": "-1",
-          "type": "number",
-          "description": " Select all text"
-        },
-        {
           "name": "start",
           "type": "string",
-          "description": " Set caret at the beginning of text"
-        },
-        {
-          "name": "0",
-          "type": "number",
           "description": " Set caret at the beginning of text"
         },
         {
@@ -737,19 +662,9 @@
           "description": " Set caret at the end of text"
         },
         {
-          "name": "1",
-          "type": "number",
-          "description": " Set caret at the end of text"
-        },
-        {
           "name": "default",
           "type": "string",
           "description": " Use default behavior of browser (in case of mask, numeric and date editors it may be unreliable)"
-        },
-        {
-          "name": "2",
-          "type": "number",
-          "description": " Use default behavior of browser (in case of mask, numeric and date editors it may be unreliable)."
         }
       ]
     },
