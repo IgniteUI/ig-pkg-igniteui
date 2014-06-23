@@ -159,7 +159,13 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 					});
 					$this.settings.ide._toggleDropDown(dd, ddlist);
 					return false;
-				})
+				});
+				td.find(".ig-dropdown-label,.ig-dropdown-button").on("blur", function (event) {
+					var target = $(event.target), dd = target.closest(".ig-dropdown"),
+						ddlist = dd.find(".dropdown-container");
+					$this.settings.ide._toggleDropDown(dd, ddlist);
+					return false;
+				});
 				$(".dropdown-container[data-id=features_dropDown]").on("mouseup", "ul > li", function (event) {
 					var $this = $(this), ddlist = $(event.target).closest(".dropdown-container");
 					var dd = $("body").find(".ig-dropdown[data-id=features_dropDown]");
