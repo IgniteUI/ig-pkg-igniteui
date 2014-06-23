@@ -257,7 +257,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 				schema,
 				events,
 				evtData = [],
-				filterFn,
+				filterFn, apiUrl, apiLinkElement = $(".api-link"),
 				updateComp = function (descr) {
 					var features = $this.getPropValue(descriptor),
 						i,
@@ -308,6 +308,16 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			options.parent = editor;
 			options.data = [];
 			options.updateFunction = updateComp;
+			//In case of feature editing we need to change API link. 
+			if (apiLinkElement && apiLinkElement.length > 0) {
+				apiUrl = apiLinkElement.attr("href");
+				if (apiUrl && apiUrl.length > 0) {
+					apiUrl = apiUrl.substring(0, apiUrl.lastIndexOf("igGrid"));
+					apiUrl += "igGrid";
+					apiUrl += target.text();
+					apiLinkElement.attr("href", apiUrl);
+				}	
+			}
 			try {
 				schema = this.loadFeatureInfo(descriptor, labelText);
 			} catch (e) {
