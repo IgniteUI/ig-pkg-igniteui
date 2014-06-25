@@ -862,7 +862,17 @@
       "type": "array",
       "defaultValue": null,
       "description": "Gets or sets the Brushes property.<br>&nbsp;&nbsp;&nbsp;The brushes property defines the palette from which automatically assigned series brushes are selected.<br>&nbsp;&nbsp;&nbsp;The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
-      "arrayMemberType": "string"
+      "arrayMemberType": "string",
+	   "schema": {
+			"name": {
+			  "type": "string",
+			  "required": true,
+			  "defaultValue": null,
+			  "processValueOnly" : true,
+			  "description": "Css color string"
+			}
+		},
+		"designerDisplayProperty": "name"
     },
     "circleMarkerTemplate": {
       "type": "object",
@@ -1170,19 +1180,49 @@
       "type": "array",
       "defaultValue": null,
       "description": "Gets or sets the MarkerBrushes property.<br>&nbsp;&nbsp;&nbsp;The marker brushes property defines the palette from which automatically assigned marker brushes are selected.<br>&nbsp;&nbsp;&nbsp;The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
-      "arrayMemberType": "string"
+      "arrayMemberType": "string",
+	   "schema": {
+			"name": {
+			  "type": "string",
+			  "required": true,
+			  "defaultValue": null,
+			  "processValueOnly" : true,
+			  "description": "Css color string"
+			}
+		},
+		"designerDisplayProperty": "name"
     },
     "markerOutlines": {
       "type": "array",
       "defaultValue": null,
       "description": "Gets or sets the MarkerOutlines property.<br>&nbsp;&nbsp;&nbsp;The marker outlines property defines the palette from which automatically assigned marker outlines are selected.<br>&nbsp;&nbsp;&nbsp;The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
-      "arrayMemberType": "string"
+      "arrayMemberType": "string",
+	   "schema": {
+			"name": {
+			  "type": "string",
+			  "required": true,
+			  "defaultValue": null,
+			  "processValueOnly" : true,
+			  "description": "Css color string"
+			}
+		},
+		"designerDisplayProperty": "name"
     },
     "outlines": {
       "type": "array",
       "defaultValue": null,
       "description": "Gets or sets the Outlines property.<br>&nbsp;&nbsp;&nbsp;The outlines property defines the palette from which automatically assigned series outlines are selected.<br>&nbsp;&nbsp;&nbsp;The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
-      "arrayMemberType": "string"
+      "arrayMemberType": "string",
+	   "schema": {
+			"name": {
+			  "type": "string",
+			  "required": true,
+			  "defaultValue": null,
+			  "processValueOnly" : true,
+			  "description": "Css color string"
+			}
+		},
+		"designerDisplayProperty": "name"
     },
     "overviewPlusDetailPaneVisibility": {
       "type": "string",
