@@ -589,7 +589,12 @@ define (function (require, exports, module) {
 				if (descriptor.propType !== "literal") {
 					//17th June 2014. Bug #172492 Get property of string array, when property is marked to process only value, but not the key.
 					if (descriptor.schema && descriptor.displayProp && descriptor.schema.hasOwnProperty(descriptor.displayProp) && descriptor.schema[descriptor.displayProp].processValueOnly) {
-						newOpts[descriptor.propName] = this._getArrayStringFromObject(descriptor.propValue, descriptor.displayProp);
+					    //#172492 Imaplement Options with type array marked to process value only.
+					    if (descriptor.propValue.length > 0 && (typeof (descriptor.propValue[0]) === "string" || typeof(descriptor.propValue[0]) === "number")) {
+					        newOpts[descriptor.propName] = descriptor.propValue;
+					    } else {
+					        newOpts[descriptor.propName] = this._getArrayStringFromObject(descriptor.propValue, descriptor.displayProp);
+					    }
 					} else {
 						//T.P. 18th June 2014 Bug #172386 When we update property we try to parse the value according to the propType
 						newOpts[descriptor.propName] = descriptor.propValue;
@@ -1265,11 +1270,32 @@ define (function (require, exports, module) {
 												if (components[name].properties) {
 													processFunc(node, name, components, scriptRanges[i]);
 												} else {
-													compPromises[name].then(function () {
-														processFunc(node, name, components, scriptRanges[i]);
-														// in order to avoid calling initddreorder more than once
-														// this can be additionally optimized with the cost of some significant refactoring && tracking of those calls 
-														ide._initddreorder(); // need to call this here otherwise components won't be recognized before events are hooked 
+                                                    //Loading parent options when restored from localStorage
+												    compPromises[name].then(function () {
+												        if (components[name].propertiesRef) {
+												            schemaRef = components[name].propertiesRef.split(".");
+												            if (!components[schemaRef[0]].properties && !compPromises[schemaRef[0]]) {
+												                compPromises[schemaRef[0]] = components[schemaRef[0]].loadInfo();
+												            }
+												            var cmpRef = components[schemaRef[0]];
+												            if (cmpRef && cmpRef.properties) {
+												                components[name].properties = $.extend(components[name].properties, cmpRef.properties);
+												                processFunc(node, name, components, scriptRanges[i]);
+												                ide._initddreorder();
+												            } else {
+												                compPromises[schemaRef[0]].then(function () {
+												                    //load schemaRef
+												                    components[name].properties = $.extend(components[name].properties, components[schemaRef[0]].properties);
+												                    processFunc(node, name, components, scriptRanges[i]);
+												                    ide._initddreorder();
+												                });
+												            }
+												        } else {
+												            processFunc(node, name, components, scriptRanges[i]);
+												            // in order to avoid calling initddreorder more than once
+												            // this can be additionally optimized with the cost of some significant refactoring && tracking of those calls 
+												            ide._initddreorder(); // need to call this here otherwise components won't be recognized before events are hooked 
+												        }
 													});
 												}
 												break; // found
