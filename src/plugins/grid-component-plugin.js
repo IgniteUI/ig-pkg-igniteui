@@ -332,6 +332,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 							propName: evt,
 							propValue: "",
 							propType: "event",
+							featureName: labelText,
 							description: events[evt].description,
 							args: events[evt].args
 						});
@@ -342,7 +343,9 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			eventsOpts.id = "featureEvtsEditor";
 			eventsOpts.containerId = "featureEvts";
 			eventsOpts.parent = evtsEditor;
+			eventsOpts.updatingEnabled = false;
 			eventsOpts.data = evtData;
+			eventsOpts.featureName = labelText;
 			count = 0;
 			properties = schema.properties;
 			for (property in properties) {
@@ -351,7 +354,13 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 						id: count++,
 						propName: property,
 						defaultValue: properties[property].defaultValue,
-						propValue: this.getFeatureValue(descriptor.id, labelText, property, properties[property].defaultValue),
+						propValue: this.getFeatureValue({
+							id: descriptor.id, 
+							featureName: labelText, 
+							propName: property, 
+							defaultValue: properties[property].defaultValue
+						}),
+						featureName: labelText,
 						propType: properties[property].type,
 						description: properties[property].description,
 						valueOptions: properties[property].valueOptions,
@@ -387,13 +396,13 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 				}).appendTo(".dropdown-container[data-id=features_dropDown] ul");
 			descriptor.provider.updateComponent(opt);
 		},
-		getFeatureValue: function (id, feature, prop, defaultValue) {
+		getFeatureValue: function (descriptor) {
 			var name = this._getWidgetName();
-			var data = typeof window.frames[0].$("#" + id + "_table").data === "function" && window.frames[0].$("#" + id + "_table").data(name + feature);
+			var data = typeof window.frames[0].$("#" + descriptor.id + "_table").data === "function" && window.frames[0].$("#" + descriptor.id + "_table").data(name + descriptor.featureName);
 			if (data) {
-				return data.options && typeof(data.options[prop]) !== "undefined" ? data.options[prop] : defaultValue;
+				return data.options && typeof(data.options[descriptor.propName]) !== "undefined" ? data.options[descriptor.propName] : descriptor.defaultValue;
 			}
-			return defaultValue;
+			return descriptor.defaultValue;
 		},
 		setPropertyExplorerValueContents: function (descriptor) {
 			if (descriptor.propName === "features") {

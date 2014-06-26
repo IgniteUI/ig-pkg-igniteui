@@ -171,7 +171,7 @@
       "description": "Gets or sets a collection of brushes to be used as the palette for bullet graph ranges.<br>&nbsp;The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
       "arrayMemberType": "string",
 	   "schema": {
-			"name": {
+			"value": {
 			  "type": "string",
 			  "required": true,
 			  "defaultValue": null,
@@ -179,7 +179,7 @@
 			  "description": "Name of the range brush"
 			}
 		},
-		"designerDisplayProperty": "name"
+		"designerDisplayProperty": "value"
     },
     "rangeInnerExtent": {
       "type": "number",
@@ -197,7 +197,7 @@
       "description": "Gets or sets a collection of brushes to be used as the palette for bullet graph outlines.<br>&nbsp;The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
       "arrayMemberType": "string",
 	  "schema": {
-			"name": {
+			"value": {
 			  "type": "string",
 			  "required": true,
 			  "defaultValue": null,
@@ -205,7 +205,7 @@
 			  "description": "The value provided should be css color string or JavaScript object defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
 			}
 		},
-		"designerDisplayProperty": "name"
+		"designerDisplayProperty": "value"
     },
     "ranges": {
       "type": "array",
