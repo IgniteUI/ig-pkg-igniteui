@@ -343,7 +343,9 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			eventsOpts.id = "featureEvtsEditor";
 			eventsOpts.containerId = "featureEvts";
 			eventsOpts.parent = evtsEditor;
+			eventsOpts.updatingEnabled = false;
 			eventsOpts.data = evtData;
+			eventsOpts.featureName = labelText;
 			count = 0;
 			properties = schema.properties;
 			for (property in properties) {

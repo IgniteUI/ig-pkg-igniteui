@@ -546,11 +546,11 @@ define (function (require, exports, module) {
 					var codeRange = component.codeMarker.range;
 					var offset = codeRange.end.row;
 					var handlerMarker, funcMarker, funcBodyStart;
-					var evtName = name + descriptor.propName;
+					var evtName = name + descriptor.featureName + descriptor.propName;
 					evtName = evtName.toLowerCase();
 					if (!component.eventMarkers[descriptor.propName]) {
 						// build code
-						var eventString = "\t\t\t\t$(\"#" + descriptor.id + "\").on(\"" + evtName + "\", function (event, args) {\n\t\t\t\t\t\n\t\t\t\t});\n";
+						var eventString = "\t\t\t\t$(\"#" + descriptor.id + (descriptor.featureName ? "_table" : "") + "\").on(\"" + evtName + "\", function (event, args) {\n\t\t\t\t\t\n\t\t\t\t});\n";
 						// new marker => add an empty event handler and marker;
 						ide.session.insert({row: offset, column: 0}, eventString);
 						handlerMarker = new ide.RangeClass(offset, 0, offset + 3, 0); // "4" tabs
