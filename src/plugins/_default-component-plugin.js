@@ -207,7 +207,21 @@ define (function (require, exports, module) {
 			var name = this._getWidgetName(descriptor.type);
 			var data = typeof window.frames[0].$(descriptor.placeholder).data === "function" && window.frames[0].$(descriptor.placeholder).data(name);
 			if (data) {
-				return data.options && typeof(data.options[descriptor.propName]) !== "undefined" ? data.options[descriptor.propName] : descriptor.defaultValue;
+			    if (descriptor.schema && descriptor.schema[descriptor.displayProp] && descriptor.schema[descriptor.displayProp].processValueOnly && data.options && typeof (data.options[descriptor.propName]) !== "undefined") {
+			        var newProp = [], prop = data.options[descriptor.propName];
+			        if (prop) {
+			            for (var i = 0; i < prop.length; i++) {
+			                var key = descriptor.displayProp, item = {};
+			                item[key] = prop[i];
+			                newProp.push(item);
+			            }
+			            return newProp;
+			        } else {
+			            return descriptor.defaultValue;
+			        }
+			    } else {
+			        return data.options && typeof (data.options[descriptor.propName]) !== "undefined" ? data.options[descriptor.propName] : descriptor.defaultValue;
+			    }
 			} 
 			return descriptor.defaultValue;
 		},
@@ -589,14 +603,8 @@ define (function (require, exports, module) {
 				if (descriptor.propType !== "literal") {
 					//17th June 2014. Bug #172492 Get property of string array, when property is marked to process only value, but not the key.
 					if (descriptor.schema && descriptor.displayProp && descriptor.schema.hasOwnProperty(descriptor.displayProp) && descriptor.schema[descriptor.displayProp].processValueOnly) {
-					    //#172492 Imaplement Options with type array marked to process value only.
-					    if (descriptor.propValue.length > 0 && (typeof (descriptor.propValue[0]) === "string" || typeof(descriptor.propValue[0]) === "number")) {
-					        newOpts[descriptor.propName] = descriptor.propValue;
-					    } else {
-					        newOpts[descriptor.propName] = this._getArrayStringFromObject(descriptor.propValue, descriptor.displayProp);
-					    }
+						newOpts[descriptor.propName] = this._getArrayStringFromObject(descriptor.propValue, descriptor.displayProp);
 					} else {
-						//T.P. 18th June 2014 Bug #172386 When we update property we try to parse the value according to the propType
 						newOpts[descriptor.propName] = descriptor.propValue;
 					}
 				} else {
