@@ -1306,7 +1306,6 @@ define (function (require, exports, module) {
 									//A.T. Bug #168894 - recognize "pasted" data source code
 									// get the str
 									var line = ide.session.getTextRange(new ide.RangeClass(node.loc.start.line + scriptRanges[i].start.row - 1, 0, node.loc.start.line + scriptRanges[i].start.row - 1, 1000));
-									
 								}
 							},
 							leave: function (node, parent) {
@@ -1317,10 +1316,20 @@ define (function (require, exports, module) {
 						// open generic error dialog
 						console.log(e);
 						var blockid = "";
+						// highlight offending line
+						var line = parseInt(e.message.match(/Line (\d*)/)[1], 10);
+						line += scriptRanges[i].start.row - 1;
+						var processedMsg = e.message.replace(/Line (\d*)/, "Line " + (line + 1));
+						ide.session.addMarker(new ide.RangeClass(line, 0, line + 1, 0), "ide-error", "text", false);
 						if ($cblock.attr("id")) {
 							blockid = "<p class='errordetailtrace'>(error from script block with id '" + $cblock.attr("id") + "'):</p>";
 						}
-						$("#modalerror > .errordetail").html(blockid + e);
+						$("#modalerror > .errordetail").html(blockid + processedMsg);
+						ide.session.setAnnotations([{
+							row: line,
+							text: processedMsg,
+							type: "error" // also warning and information
+						}]);
 						$("#modalerror").dialog("open");
 						ide._hideLoading();
 					}
