@@ -211,6 +211,26 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 				}
 				descriptor.marker.extraMarkers.options.gridLayout = {marker: gridLayout};
 			}
+		},
+		update: function (descriptor) {
+			this._super(descriptor);
+			// K.D. June 30th, 2014 When changing the items array the current markup is cleared from the component.
+			// Clearing the markers in the code editor in order to keep the sync between designer and code view.
+			if (descriptor.propName === "items" && (descriptor.type === "verticalLayout" || descriptor.type === "flowLayout")) {
+				var htmlMarker = descriptor.htmlMarker,
+					children,
+					marker;
+				if (htmlMarker && htmlMarker.extraMarkers && htmlMarker.extraMarkers.children) {
+					children = htmlMarker.extraMarkers.children;
+					if (children.length) {
+						for (var i = 0; i < children.length; i++) {
+							this.settings.editor.session.remove(children[i]);
+							children[i].end.detach();
+							children[i].start.detach();
+						}
+					}
+				}
+			}
 		}
 	});
 	return IgniteUILayoutPlugin;

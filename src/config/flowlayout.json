@@ -106,6 +106,25 @@
       "type": "string",
       "defaultValue": null,
       "description": "width of the layout container"
+    },
+    "items": {
+      "type": "array",
+      "defaultValue": null,
+      "description": "an array of item descriptions <br>&nbsp;&nbsp;&nbsp;&nbsp;this assumes the container is empty, and every item<br>&nbsp;&nbsp;&nbsp;&nbsp;is described width and height. <br>&nbsp;&nbsp;&nbsp;&nbsp;itemCount should not be defined in order for items to be taken into account.",
+      "schema": {
+        "width": {
+          "required": true,
+          "type": "string",
+          "defaultValue": null,
+          "description": "item width"
+        },
+        "height": {
+          "required": true,
+          "type": "string",
+          "defaultValue": null,
+          "description": "item height"
+        }
+      }
     }
   }
 }
