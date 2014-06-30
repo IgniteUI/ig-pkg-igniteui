@@ -1320,15 +1320,17 @@ define (function (require, exports, module) {
 
 							}
 						});
+						ide._hasCodeError = false;
 					} catch (e) {
 						// open generic error dialog
+						ide._hasCodeError = true;
 						console.log(e);
 						var blockid = "";
 						// highlight offending line
 						var line = parseInt(e.message.match(/Line (\d*)/)[1], 10);
 						line += scriptRanges[i].start.row - 1;
 						var processedMsg = e.message.replace(/Line (\d*)/, "Line " + (line + 1));
-						ide.session.addMarker(new ide.RangeClass(line, 0, line + 1, 0), "ide-error", "text", false);
+						ide._errorMkr = ide.session.addMarker(new ide.RangeClass(line, 0, line + 1, 0), "ide-error", "text", false);
 						if ($cblock.attr("id")) {
 							blockid = "<p class='errordetailtrace'>(error from script block with id '" + $cblock.attr("id") + "'):</p>";
 						}
