@@ -27,7 +27,7 @@
 a.ui-iggrid-pagelink,a.ui-iggrid-pagelinkcurrent{line-height:1.4em}
 .ui-iggrid .ui-iggrid-paging .ui-icon,.ui-iggrid .ui-iggrid-results .ui-icon{padding:0}
 .ui-iggrid .ui-iggrid-paging-item,.ui-iggrid .ui-iggrid-results-item{float:left}
-.ui-iggrid .ui-iggrid-paging-item{position:relative;height:1.4em}
+.ui-iggrid .ui-iggrid-paging-item{position:relative;height:1.4em;box-sizing:content-box}
 .ui-iggrid .ui-iggrid-paging-item span{cursor:pointer;-moz-user-select:none;-webkit-user-select:none;user-select:none}
 .ui-iggrid .ui-iggrid-paging-item a:active,.ui-iggrid .ui-iggrid-paging-item a:focus{outline:0 none}
 .ui-iggrid .ui-iggrid-paging-item span.ui-icon{margin-top:-8px;position:absolute;top:50%}
@@ -284,7 +284,7 @@ td.ui-iggrid-addrow{text-align:left;position:relative;cursor:default;font-weight
 .ui-iggrid-groupby-dialog-groupedcolumns .ig-sorting-indicator,.ui-iggrid-sorting-dialog-sortedcolumns .ig-sorting-indicator{float:left;position:relative;top:50%;margin-top:-1em;height:2em;width:3.8em}
 .ui-iggrid-dialog-groupby-button,.ui-iggrid-columnchooser-hidebutton,.ui-iggrid-sorting-dialog-unsortedcolumns-sortbybutton{clear:left;float:left;min-width:3.8em;display:block;margin-top:-1.3em;position:relative;top:50%}
 .ui-iggrid-columnchooser-hidebutton{display:block;clear:left;float:left;min-width:2em}
-.ui-iggrid-dialog-layouts-dd-field{padding:0 1.5em 0 .5em}
+.ui-iggrid-dialog-layouts-dd-field{padding:0 1.5em 0 .5em;overflow:hidden}
 .ig-combo-icon-container{position:relative}
 .ig-combo-icon-container a{position:absolute;top:50%;margin-top:-8px;right:.2em}
 .ui-iggrid th.ui-iggrid-multiheader-cell{text-align:center}
