@@ -1218,8 +1218,9 @@ input.ui-igbutton {
 	margin: 0;
 	height: 4px;
 }
-.ui-progressbar-value {
+.ui-progressbar .ui-progressbar-value{
 	background: @accent-color-A;
+    margin:0;
 }
 
 /* jQuery UI buttons */
@@ -1535,7 +1536,7 @@ border-bottom: 0;
         background-image: @jq-icons-light;
     }
 .ui-iggrid th.ui-state-focus {
-  background: @accent1-mid;
+  background: @accent1;
 }
 
 .ui-iggrid .ui-iggrid-footer, 
@@ -1596,7 +1597,7 @@ border-bottom: 0;
  {	
     border-width:1px 0!important;
 	border-top:1px solid transparent;
-	border-bottom: 1px solid #E2E2E2;
+	border-bottom: 1px solid @igGray3;
 }
 
 .ui-iggrid tr.ui-ig-altrecord {
@@ -1610,7 +1611,7 @@ border-bottom: 0;
   color: @igGray9;
   font-weight: normal;
   border: 0 none;
-  box-shadow: inset 0 -1px 0 @accent1-mid; /*!important needed to override default cell colour */
+  border-bottom: 1px solid @accent1-mid; /*!important needed to override default cell colour */
 }
 /* hover */
 .ui-iggrid td.ui-state-hover,
@@ -1620,7 +1621,10 @@ border-bottom: 0;
 .ui-iggrid .ui-ig-altrecord th.ui-iggrid-rowselector-class.ui-state-hover,
 .ui-iggrid .ui-ig-altrecord th.ui-iggrid-rowselector-class.ui-state-default.ui-state-hover,
 .ui-iggrid-responsive-vertical tr > td.ui-state-hover:first-child,
-.ui-iggrid-responsive-vertical tr.ui-ig-altrecord > td.ui-state-hover:first-child {
+.ui-iggrid-responsive-vertical tr.ui-ig-altrecord > td.ui-state-hover:first-child,
+.ui-iggrid tbody .ui-iggrid-mergedcell.ui-state-hover,
+.ui-iggrid tbody .ui-ig-altrecord .ui-iggrid-mergedcell.ui-state-hover
+ {
   background: @igGray4;
   border-color: @igGray4;// same as bg so it's not noticeable
   color: @igGray10;
@@ -2017,15 +2021,15 @@ border-bottom: 0;
 }
 .ui-iggrid tbody .ui-iggrid-mergedcell.ui-state-hover,
 .ui-iggrid tbody .ui-ig-altrecord .ui-iggrid-mergedcell.ui-state-hover {
-  color: @igGray9;
+  /*color: @igGray10;
+  background-color: @igGray3;*/
 }
 .ui-iggrid .ui-ig-altrecord .ui-iggrid-mergedcellsbottom.ui-state-highlight,
 .ui-iggrid .ui-iggrid-mergedcellsbottom.ui-state-highlight {
-  border-bottom-color: #B3E2F6;
+  border-bottom-color: @igGray3!important;
 }
 .ui-iggrid tbody .ui-iggrid-mergedcell.ui-iggrid-mergedcellsbottom {
-  /*box-shadow: inset 0 -1px 0 #E2E2E2;*/
-	border-bottom: 1px solid #E2E2E2;
+	border-bottom: 1px solid @igGray3;
 }
 
 /************/
@@ -2243,7 +2247,7 @@ border-bottom: 0;
   background: url(images/icon_sprite.png) 0 -192px no-repeat !important;
 }
 .ui-igupload-cancel-button .ui-button-icon-primary {
-  background-image: url("images/ui-icons_888888_256x240.png");
+  background-image: @jq-icons-base;
 }
 .ui-state-hover.ui-igupload-cancel-button {
   background-color: transparent !important;
@@ -2254,7 +2258,7 @@ border-bottom: 0;
 }
 .ui-igupload-cancel-button.ui-state-hover .ui-icon-closethick,
 .ui-igupload-cancel-button.ui-state-focus .ui-icon-closethick {
-  background-image: url("images/ui-icons_222222_256x240.png");
+  background-image: @jq-icons-dark;
 }
 .ui-igupload .ui-igprogressbar {
   background-color: #E0E0E0;
@@ -2377,13 +2381,13 @@ border-bottom: 0;
 }
 
 .ui-splitbutton-arrow .ui-icon {
-  background-image: url("images/ui-icons_222222_256x240.png");
+  background-image: @jq-icons-dark;
 }
 
 .ui-splitbutton-arrow.ui-state-hover .ui-icon,
 .ui-splitbutton-arrow.ui-state-active .ui-icon,
 .ui-splitbutton-arrow.ui-state-focus .ui-icon {
-  background-image: url("images/ui-icons_ffffff_256x240.png");
+  background-image: @jq-icons-light;
 }
 .ui-ightmleditor .ui-igtoolbar-wrap .ui-igbutton.ui-state-hover,
 .ui-ightmleditor .ui-igtoolbar .ui-igbutton.ui-state-hover {
@@ -2628,13 +2632,13 @@ border-bottom: 0;
 .ui-igcombo-clear .ui-icon,
 .ui-igedit-buttonclear .ui-icon,
 .ui-igcombo-clear .ui-igcombo-clear-hover .ui-state-hover {
-  background-image: url("images/ui-icons_888888_256x240.png");
+  background-image: @jq-icons-base;
 }
 
 .ui-igedit-buttonclear .ui-igedit-buttonimagehover,
 .ui-igcombo-clear.ui-state-default.ui-state-hover .ui-icon,
 .ui-igedit-buttonclear.ui-state-default.ui-state-hover .ui-icon {
-  background-image: url("images/ui-icons_228ef1_256x240.png");
+  background-image: @jq-icons-accent;
 }
 
 .ui-igcombo-listitem-match {
@@ -2841,7 +2845,7 @@ border-bottom: 0;
 }
 
 .ui-igpivot-metadataitem .ui-icon.ui-icon-close {
-  background-image: url("images/ui-icons_888888_256x240.png");
+  background-image: @jq-icons-base;
 }
 .ui-igpivotgrid .ui-igpivot-metadataitem .ui-icon-pivot-smallfilter,
 .ui-igpivot-droparea .ui-igpivot-metadataitem  .ui-icon-pivot-smallfilter {
