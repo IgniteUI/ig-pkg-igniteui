@@ -462,7 +462,7 @@
           ]
         },
         "defaultExpressions": {
-          "type": "array",
+          "type": "object",
           "defaultValue": null,
           "description": "Initial filtering expressions - if set they will be applied on initialization",
 		  "schema": {
