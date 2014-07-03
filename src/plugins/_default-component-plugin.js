@@ -102,7 +102,7 @@ define (function (require, exports, module) {
 							type: "string"
 						});
 						lineCount++;
-					} else if (props[key].type === "array") {
+					} else if (props[key].type === "array" || props[key].type === "custom") {
 						/*
 						for (var p = 0; p < opts[key].length; p ++) {
 							if(opts[key][p].hasOwnProperty("dataSource")){

@@ -56,9 +56,63 @@
     		"category": "lists",
     		"visual": true, 
     		"framework": false,
-    		"dataSource": "sampleData1",
+			"width": "100%",
+			"height": 450,
+    		"dataSource": "defaultGridData1",
 			"defaultOptions": {
-				"features": []
+				"renderCheckboxes": true,
+				"autoGenerateColumns": false,
+				"columns": [
+					{
+						"key": "active",
+						"headerText": "Active",
+						"dataType": "bool",
+						"width": "7%"
+					},
+					{
+						"key": "registered",
+						"headerText": "Registered",
+						"dataType": "date",
+						"format": "d MMM yyyy",
+						"width": "13%"
+					},
+					{
+						"key": "name",
+						"headerText": "Name",
+						"width": "20%"
+					},
+					{
+						"key": "company",
+						"headerText": "Company",
+						"width": "15%"
+					},
+					{
+						"key": "phone",
+						"headerText": "Phone",
+						"width": "15%"
+					},
+					{
+						"key": "email",
+						"headerText": "Email",
+						"template": "<a href='mailto:${email}'>${email}</a>",
+						"width": "30%"
+					}
+				],
+				"features": [
+					{
+						"name": "Filtering"
+					},
+					{
+						"name": "Paging",
+						"showPageSizeDropDown": false
+					},
+					{
+						"name": "Sorting"
+					},
+					{
+						"name": "Selection"
+					}
+				]
 			}
     	},
     	"hierarchicalGrid": {
