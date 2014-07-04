@@ -375,8 +375,8 @@ define (function (require, exports, module) {
 				endRow = startRow;
 			}
 			//var endColumn = marker.end.column;
-			var endColumn = propStr.length;
-			//var endColumn = 0;
+			//var endColumn = propStr.length;
+			var endColumn = 0;
 			ide.session.replace(marker, propStr);
 			//reattach the marker
 			ide.session.removeMarker(marker.id);
