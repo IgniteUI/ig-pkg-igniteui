@@ -414,7 +414,7 @@ define (function (require, exports, module) {
 			}
 			this._cachedVal = val;
 			propStr += descriptor.propName + ": " + val;
-			if (!lastProp && !$.isEmptyObject(options)) {
+			if (!lastProp && (!$.isEmptyObject(options) || !insertInCode)) {
 				propStr += ",";
 			}
 			propStr += "\n";
