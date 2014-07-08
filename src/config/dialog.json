@@ -231,13 +231,13 @@
 
             "left": {
                 "type": "number",
-                "defaultValue": "",
+                "defaultValue": null,
                 "description": "X value",
                 "required": true
             },
             "top": {
                 "type": "number",
-                "defaultValue": "",
+                "defaultValue": null,
                 "description": "Y value",
                 "required": true
             }
