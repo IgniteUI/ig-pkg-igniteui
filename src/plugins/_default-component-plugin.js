@@ -414,7 +414,7 @@ define (function (require, exports, module) {
 			}
 			this._cachedVal = val;
 			propStr += descriptor.propName + ": " + val;
-			if (!lastProp && !$.isEmptyObject(options)) {
+			if (!lastProp && (!$.isEmptyObject(options) || !insertInCode)) {
 				propStr += ",";
 			}
 			propStr += "\n";
@@ -1330,16 +1330,20 @@ define (function (require, exports, module) {
 						var line = parseInt(e.message.match(/Line (\d*)/)[1], 10);
 						line += scriptRanges[i].start.row - 1;
 						var processedMsg = e.message.replace(/Line (\d*)/, "Line " + (line + 1));
+						if (ide._errorMkr) {
+							//ide.session.removeGutterDecoration(ide.session.$backMarkers[ide._errorMkr].range.start.row, "ide-error");
+							ide.session.removeMarker(ide._errorMkr);
+						}
 						ide._errorMkr = ide.session.addMarker(new ide.RangeClass(line, 0, line + 1, 0), "ide-error", "text", false);
 						if ($cblock.attr("id")) {
 							blockid = "<p class='errordetailtrace'>(error from script block with id '" + $cblock.attr("id") + "'):</p>";
 						}
-						$("#modalerror > .errordetail").html(blockid + processedMsg);
 						ide.session.setAnnotations([{
 							row: line,
 							text: processedMsg,
 							type: "error" // also warning and information
 						}]);
+						$("#modalerror > .errordetail").html(blockid + processedMsg);
 						$("#modalerror").dialog("open");
 						ide._hideLoading();
 					}

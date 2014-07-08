@@ -219,15 +219,15 @@
       "description": "Sets gets initial position of dialog. That can be array of 2 numeric values, which represent left/top coordinates.<br>&nbsp;&nbsp;&nbsp;&nbsp;Or it can be object supported by jquery.position(param) method, such as { my: \"left top\", at: \"left top\", offset: \"100 200\" }",
       "schema": {
 
-            "x": {
+            "left": {
                 "type": "number",
-                "defaultValue": 0,
+                "defaultValue": null,
                 "description": "X value",
                 "required": true
             },
-            "y": {
+            "top": {
                 "type": "number",
-                "defaultValue": 0,
+                "defaultValue": null,
                 "description": "Y value",
                 "required": true
             }
