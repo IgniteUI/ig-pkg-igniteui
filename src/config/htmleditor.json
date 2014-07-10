@@ -214,11 +214,6 @@
     }
   },
   "properties": {
-    "customToolbars": {
-      "type": "array",
-      "defaultValue": null,
-      "description": "The html editor custom toolbars list."
-    },
     "height": {
       "type": "number",
       "defaultValue": 350.0,
