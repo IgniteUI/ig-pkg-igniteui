@@ -543,6 +543,12 @@
             "description": "Grid Column Moving Feature",  
             "schemaRef": "gridcolumnmoving"
           },
+		   "ColumnFixing": {
+            "type": "object",
+            "defaultValue": null,
+            "description": "Grid Column Fixing Feature",  
+            "schemaRef": "gridcolumnfixing"
+          },
 		  "Filtering": {
             "type": "object",
             "defaultValue": null,
@@ -561,17 +567,11 @@
             "description": "Grid Hiding Feature",  
             "schemaRef": "gridhiding"
           },
-          "MergedCells": {
+          "CellMerging": {
             "type": "object",
             "defaultValue": null,
             "description": "Grid Merged Cells Feature",  
             "schemaRef": "gridmergedcells"
-          },
-		  "MultiColumnHeaders": {
-            "type": "object",
-            "defaultValue": null,
-            "description": "Grid Multi Column Headers Feature",  
-            "schemaRef": "gridmulticolumnheaders"
           },
 		  "Paging": {
             "type": "object",
@@ -579,6 +579,12 @@
             "description": "Grid Paging Feature",  
             "schemaRef": "gridpaging"
           },
+		  "MultiColumnHeaders": {
+			"type": "object",
+	        "defaultValue": null,
+			"description": "Grid Multi Column Headers Feature",  
+			"schemaRef": "gridmulticolumnheaders"
+		  },
 		  "Resizing": {
             "type": "object",
             "defaultValue": null,
@@ -730,13 +736,45 @@
 		  "type": "object",
           "defaultValue": null,
           "description": "Settings for update requests",	
-          "schemaRef": "grid.restSettings.create"
+          "schema": {
+            "batch": {
+              "type": "bool",
+              "defaultValue": false,
+              "description": "Specifies whether create requests will be sent in batches"
+            },
+            "template": {
+              "type": "string",
+              "defaultValue": null,
+              "description": "Specifies a remote URL template. Use ${id} in place of the resource id"
+            },
+            "uri": {
+              "type": "string",
+              "defaultValue": null,
+              "description": "Specifies a remote URL to which create requests will be sent. This will be used for both batch and non-batch, however if template is also set, this URL will only be used for batch requests."
+            }
+          }
         },
         "remove": {
 	      "type": "object",
           "defaultValue": null,
           "description": "Settings for remove requests",
-          "schemaRef": "grid.restSettings.create"
+          "schema": {
+            "batch": {
+              "type": "bool",
+              "defaultValue": false,
+              "description": "Specifies whether create requests will be sent in batches"
+            },
+            "template": {
+              "type": "string",
+              "defaultValue": null,
+              "description": "Specifies a remote URL template. Use ${id} in place of the resource id"
+            },
+            "uri": {
+              "type": "string",
+              "defaultValue": null,
+              "description": "Specifies a remote URL to which create requests will be sent. This will be used for both batch and non-batch, however if template is also set, this URL will only be used for batch requests."
+            }
+          }
         },
         "contentSerializer": {
           "type": "function",

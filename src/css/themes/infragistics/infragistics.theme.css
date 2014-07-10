@@ -531,9 +531,9 @@ body .ui-tooltip{border-width:2px}
 .ui-iggrid .ui-iggrid-mergedcell,.ui-iggrid .ui-ig-altrecord .ui-iggrid-mergedcell,.ui-iggrid .ui-iggrid-mergedcell.ui-state-highlight,.ui-iggrid .ui-ig-altrecord .ui-iggrid-mergedcell.ui-state-highlight{color:#DCDCDC;border-bottom-color:transparent}
 .ui-iggrid .ui-ig-altrecord .ui-iggrid-mergedcell,.ui-iggrid .ui-iggrid-mergedcellstop{border-left-color:#FFF}
 .ui-iggrid .ui-iggrid-mergedcellstop.ui-state-highlight,.ui-iggrid .ui-iggrid-mergedcell.ui-state-highlight,.ui-iggrid .ui-ig-altrecord .ui-iggrid-mergedcell.ui-state-highlight{border-left-color:#B3E2F6}
-.ui-iggrid .ui-iggrid-mergedcellstop,.ui-iggrid .ui-iggrid-mergedcellstop.ui-state-highlight,.ui-iggrid .ui-iggrid-mergedcell.ui-state-highlight,.ui-iggrid .ui-ig-altrecord .ui-iggrid-mergedcellstop,.ui-iggrid .ui-ig-altrecord .ui-iggrid-mergedcellstop.ui-state-highlight,.ui-iggrid .ui-ig-altrecord .ui-iggrid-mergedcell.ui-state-highlight{background-color:#FFF;border-bottom-color:transparent}
+.ui-iggrid .ui-iggrid-mergedcellstop,.ui-iggrid .ui-iggrid-mergedcellstop.ui-state-highlight,.ui-iggrid .ui-iggrid-mergedcell.ui-state-highlight,.ui-iggrid .ui-ig-altrecord .ui-iggrid-mergedcellstop,.ui-iggrid .ui-ig-altrecord .ui-iggrid-mergedcellstop.ui-state-highlight,.ui-iggrid .ui-ig-altrecord .ui-iggrid-mergedcell.ui-state-highlight{background-color:#FFF;border-bottom-color:transparent;box-shadow:none}
 .ui-iggrid .ui-iggrid-mergedcell.ui-state-active,.ui-iggrid .ui-ig-altrecord .ui-iggrid-mergedcell.ui-state-active,.ui-iggrid .ui-iggrid-mergedcell.ui-state-focus,.ui-iggrid .ui-ig-altrecord .ui-iggrid-mergedcell.ui-state-focus{color:#FFF}
-.ui-iggrid tbody .ui-iggrid-mergedcell.ui-state-hover,.ui-iggrid tbody .ui-ig-altrecord .ui-iggrid-mergedcell.ui-state-hover{color:#333}
+.ui-iggrid tbody .ui-iggrid-mergedcell.ui-state-hover,.ui-iggrid tbody .ui-ig-altrecord .ui-iggrid-mergedcell.ui-state-hover{background-color:#CCC;color:#333}
 .ui-iggrid .ui-ig-altrecord .ui-iggrid-mergedcellsbottom.ui-state-highlight,.ui-iggrid .ui-iggrid-mergedcellsbottom.ui-state-highlight{border-bottom-color:#B3E2F6}
 .ui-iggrid tbody .ui-iggrid-mergedcell.ui-iggrid-mergedcellsbottom{border-bottom:1px solid #E2E2E2}
 .ui-igrating,.ui-igrating.ui-state-default{background:transparent none;border:0}

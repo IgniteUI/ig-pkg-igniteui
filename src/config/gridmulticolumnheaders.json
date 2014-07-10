@@ -1,14 +1,14 @@
 {
-  "overview": null,
-  "name": "ui.igGridMultiColumnHeaders",
-  "title": "Multi-Column Headers",
-  "category": null,
-  "visual": true,
-  "events": {},
-  "properties": {
+	"overview": null,
+	"name": "ui.igGridMultiColumnHeaders",
+	"title": "Multi-Column Headers",
+	"category": null,
+	"visual": true,
+	"events": {},
+	"properties": {
 	"name": {
-      "type": "string",
-      "defaultValue": null
-    }
-  }
+		"type": "string",
+		"defaultValue": null
+		}
+	}
 }

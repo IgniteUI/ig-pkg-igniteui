@@ -128,6 +128,16 @@
       "defaultValue": false,
       "description": "Gets or sets whether the slices can be selected."
     },
+	"width": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "The width of the chart. It can be set as a number in pixels, string (px) or percentage (%)."
+    },
+	"height": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "The height of the chart. It can be set as a number in pixels, string (px) or percentage (%)."
+    },
     "innerExtent": {
       "type": "number",
       "defaultValue": 40.0,
@@ -169,12 +179,23 @@
       "type": "array",
       "defaultValue": null,
       "description": "An array of series objects.",
+	  "designerDisplayProperty": "name",
       "schema": {
         "brushes": {
           "type": "array",
           "defaultValue": null,
           "description": "Gets or sets the Brushes property.<br>&nbsp;&nbsp;&nbsp;The brushes property defines the palette from which automatically assigned series brushes are selected.<br>&nbsp;&nbsp;&nbsp;The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
           "arrayMemberType": "string"
+        },
+		"name": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "The unique identifier of the series."
+        },
+		"dataSource": {
+          "type": "custom",
+          "defaultValue": null,
+          "description": "Can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself "
         },
         "formatLabel": {
           "type": "function",

@@ -38,10 +38,25 @@
     }
   },
   "properties": {
+    "width": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "The width of the chart. It can be set as a number in pixels, string (px) or percentage (%)."
+    },
+	"height": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "The height of the chart. It can be set as a number in pixels, string (px) or percentage (%)."
+    },
     "brush": {
       "type": "string",
       "defaultValue": null,
       "description": "Gets or sets the sparkline brush."
+    },
+    "dataSource": {
+      "type": "custom",
+      "defaultValue": null,
+      "description": "Can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself."
     },
     "displayNormalRangeInFront": {
       "type": "bool",

@@ -173,6 +173,7 @@
       }
     },
     "layoutMode": {
+	  "hidden": true,
       "type": "string",
       "defaultValue": "border",
       "description": "Defines border layout"

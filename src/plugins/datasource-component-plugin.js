@@ -201,7 +201,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 				descriptor.compObject = ide.componentById(descriptor.id);
 				descriptor.propName = "fields";
 				descriptor.ide = ide;
-				descriptor.propType = "object";
+				descriptor.propType = "array";
 				descriptor.placeholder = descriptor.element; //TODO
 				descriptor.provider = ide._codeProviders[descriptor.compObject.lib];
 				var props = container.closest(".adorners").find("#propertyGrid").data("igGrid").dataSource.data();

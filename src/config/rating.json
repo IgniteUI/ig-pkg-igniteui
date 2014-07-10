@@ -38,12 +38,6 @@
     }
   },
   "properties": {
-    "cssVotes": { 
-      "type": "array",
-      "defaultValue": null,
-      "description": "Gets or sets custom css votes.<br>&nbsp;&nbsp;&nbsp;&nbsp;That object should be 2-dimentional array or object with indexes, where every item of first level represents settings for a vote at that index.<br>&nbsp;&nbsp;&nbsp;&nbsp;Second level of an item is settings for a vote and it should contain classes for a specific state of vote.<br>&nbsp;&nbsp;&nbsp;&nbsp;Item at index [0] on second level is used for css class of vote in normal state.<br>&nbsp;&nbsp;&nbsp;&nbsp;Item at index [1] on second level is used for css class of vote in selected state.<br>&nbsp;&nbsp;&nbsp;&nbsp;Item at index [2] on second level is used for css class of vote in hover state.<br>&nbsp;&nbsp;&nbsp;&nbsp;Examples:<br>&nbsp;&nbsp;&nbsp;&nbsp;{ 1: { 0: \"normalCss\", 1: \"selectedCss\", 2: \"hoverCss\"} }<br>&nbsp;&nbsp;&nbsp;&nbsp;will customize only second vote with normalCss for normal state, hoverCss for hover state and selectedCss for selected state.<br>&nbsp;&nbsp;&nbsp;&nbsp;[[null, 's1', 'h1'], [null, 's2', 'h2'], [null, 's3', 'h3']]<br>&nbsp;&nbsp;&nbsp;&nbsp;will customize selected and hover states for first 3 votes with classes h# and s#.",
-      "arrayMemberType": "array"
-    },
     "focusable": {
       "type": "bool",
       "defaultValue": true,

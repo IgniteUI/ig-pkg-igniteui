@@ -1,6 +1,6 @@
 define (function (require, exports, module) {
 	var ComponentPlugin = require("ide-component-plugin");
-	var beautify = require("/bower_components/js-beautify/js/lib/beautify.js");
+	var beautify = require("/bower_components/js-beautify/js/lib/beautify.js").js_beautify;
 	var collectionEditor = require("ide-collectioneditor");
 	var IgniteUIComponentPlugin = IgniteUIComponentPlugin || ComponentPlugin.extend({
 		init: function (options) {
@@ -46,7 +46,8 @@ define (function (require, exports, module) {
 			//Initial lineCount value
 			var lineCount = 0;
 			code = "\t\t\t\t$(\"#" + descriptor.id + "\")." + name + "({";
-			if (opts.height) {
+			//#171869 Leave width and height being serialized by the standard logic.
+			/*if (opts.height) {
 				if (code.lastIndexOf("{") === code.length - 1) {
 					code += "\n\t\t\t\t\theight: " + opts.height ;
 				} else {
@@ -71,7 +72,7 @@ define (function (require, exports, module) {
 					type: "number"
 				});								
 				lineCount++;
-			}
+			}*/
 			if (descriptor.data && window[descriptor.data]) {
 				if (code.lastIndexOf("{") === code.length - 1) {
 					code += "\n\t\t\t\t\tdataSource: " + descriptor.data;
@@ -88,7 +89,7 @@ define (function (require, exports, module) {
 			}
 			var props = this.settings.packageInfo.components[descriptor.type].properties;
 			for (var key in opts) {
-				if (opts.hasOwnProperty(key) && key !== "dataSource" && key !== "height" && key !== "width") {
+				if (opts.hasOwnProperty(key) && key !== "dataSource") {
 					if (props[key].type === "string") {
 						if (code.lastIndexOf("{") == code.length - 1) {
 							code += "\n\t\t\t\t\t" + key + ": \"" + opts[key] + "\"";
@@ -101,7 +102,7 @@ define (function (require, exports, module) {
 							type: "string"
 						});
 						lineCount++;
-					} else if (props[key].type === "array") {
+					} else if (props[key].type === "array" || props[key].type === "custom") {
 						/*
 						for (var p = 0; p < opts[key].length; p ++) {
 							if(opts[key][p].hasOwnProperty("dataSource")){
@@ -134,6 +135,34 @@ define (function (require, exports, module) {
 							name: key,
 							value: opts[key],
 							type: "array",
+							schema: props[key].schema
+						});
+						code += formattedStrTabbed;
+						lineCount += formattedStrTabbed.split("\n").length - 1;
+					} else if (props[key].type === "object") {										
+						var formattedStr = beautify(JSON.stringify(opts[key]).replace(/\"([^(\")"]+)\":/g,"$1:"));
+						for (var p = 0; p < opts[key].length; p ++) {
+							if(opts[key][p].hasOwnProperty("dataSource")){
+								formattedStr = formattedStr.replace('"' + opts[key][p].dataSource + '"', opts[key][p].dataSource);
+							}
+						}
+						if (code.lastIndexOf("{") != code.length - 1) {
+							code += ",\n";
+						}
+						lineCount++;
+						formattedStr = key + ": " + formattedStr;
+						var formattedStrTabbed = "";
+						var tabbedArr = formattedStr.split("\n");
+						for (var i = 0; i < tabbedArr.length; i++) {
+							formattedStrTabbed += "\t\t\t\t\t" + tabbedArr[i];
+							if (i < tabbedArr.length - 1) {
+								formattedStrTabbed += "\n";
+							}
+						}
+						orderedReturnProps.push({
+							name: key,
+							value: opts[key],
+							type: "object",
 							schema: props[key].schema
 						});
 						code += formattedStrTabbed;
@@ -178,7 +207,21 @@ define (function (require, exports, module) {
 			var name = this._getWidgetName(descriptor.type);
 			var data = typeof window.frames[0].$(descriptor.placeholder).data === "function" && window.frames[0].$(descriptor.placeholder).data(name);
 			if (data) {
-				return data.options && typeof(data.options[descriptor.propName]) !== "undefined" ? data.options[descriptor.propName] : descriptor.defaultValue;
+			    if (descriptor.schema && descriptor.schema[descriptor.displayProp] && descriptor.schema[descriptor.displayProp].processValueOnly && data.options && typeof (data.options[descriptor.propName]) !== "undefined") {
+			        var newProp = [], prop = data.options[descriptor.propName];
+			        if (prop) {
+			            for (var i = 0; i < prop.length; i++) {
+			                var key = descriptor.displayProp, item = {};
+			                item[key] = prop[i];
+			                newProp.push(item);
+			            }
+			            return newProp;
+			        } else {
+			            return descriptor.defaultValue;
+			        }
+			    } else {
+			        return data.options && typeof (data.options[descriptor.propName]) !== "undefined" ? data.options[descriptor.propName] : descriptor.defaultValue;
+			    }
 			} 
 			return descriptor.defaultValue;
 		},
@@ -207,7 +250,29 @@ define (function (require, exports, module) {
 			var meta = codeMarker.extraMarkers;
 			var options = meta.options;
 			if (!options[name]) {
-				pos = this.addPropCode(descriptor, true);
+				// if the code doesn't exist in the code view, but the option is set on the widget, we want to find it and reuse the marker instead of 
+				// adding a duplicate one 
+				if (descriptor.defaultValue !== null && typeof (descriptor.defaultValue) !== "undefined") {
+					// A.T. bug #173754 - it exists, but there's no marker for it in the extra option markers
+					// divide line by line the code in the code marker, and enter the new marker for that prop which isn't recorded yet
+					var codeStr = ide.session.getTextRange(codeMarker.range);
+					var strProps = codeStr.split("\n");
+					for (var i = 0; i < strProps.length; i++) {
+						if (strProps[i].indexOf(name) !== -1) {
+							options[name] = {
+								propName: descriptor.propName,
+								defaultValue: descriptor.defaultValue,
+								propValue: descriptor.propValue,
+								propType: descriptor.propType
+							};
+							options[name].marker = ide.createAndAddMarker(codeMarker.range.start.row + i, codeMarker.range.start.column, codeMarker.range.start.row + i, codeMarker.range.start.column + strProps[i].length);
+							break;
+						}
+					}
+					pos = this.updatePropCode(descriptor, true);
+				} else {
+					pos = this.addPropCode(descriptor, true);
+				}
 			} else {
 				this._cachedVal = null;
 				// put the cursor at the end of the property definition
@@ -225,7 +290,7 @@ define (function (require, exports, module) {
 				this._cachedVal = this._cachedVal.replace(/"/g, "");
 			}
 			if (this._cachedVal === "") {
-				pos.column = pos.column -2;
+				pos.column = pos.column - 2;
 			} else {
 				selRange = ide.editor.find({
 					needle: this._cachedVal + "", // ensure this is a string
@@ -236,7 +301,17 @@ define (function (require, exports, module) {
 			//ide.editor.selection.setSelectionRange(selRange, false);
 			return {position: pos, selectionRange: selRange};
 		},
-		updatePropCode: function (descriptor) {
+		deletePropCode: function (descriptor) {
+			var codeMarker = descriptor.component.codeMarker;
+			var meta = codeMarker.extraMarkers;
+			var options = meta.options;
+			var ide = this.settings.ide;
+			var marker = options[descriptor.propName].marker;
+			ide.session.removeMarker(marker.id);
+			ide.session.remove(marker);
+			delete options[descriptor.propName];
+		},
+		updatePropCode: function (descriptor, addedFromCode) {
 			/*
 			var val = descriptor.propValue;
 			var oldVal = descriptor.oldPropValue;
@@ -287,16 +362,26 @@ define (function (require, exports, module) {
 			if (currentPropStr.lastIndexOf(",") === currentPropStr.length - 1) { 
 				propStr += ",";
 			}
-			propStr += "\n";
+			if (!addedFromCode) {
+				propStr += "\n";
+			}
 			var startRow = marker.start.row;
 			var startCol = marker.start.column;
-			var endRow = marker.start.row + propStr.split('\n').length - 1;
+			var propSpan = propStr.split('\n').length;
+			var endRow = 0;
+			if (propSpan > 0) {
+				endRow = marker.start.row + propStr.split('\n').length - 1;
+			} else {
+				endRow = startRow;
+			}
 			//var endColumn = marker.end.column;
-			var endColumn = propStr.length;
+			//var endColumn = propStr.length;
+			var endColumn = 0;
 			ide.session.replace(marker, propStr);
 			//reattach the marker
 			ide.session.removeMarker(marker.id);
 			options[descriptor.propName].marker = ide.createAndAddMarker(startRow, startCol, endRow, endColumn);
+			return {row: startRow, column: propStr.length};
 		},
 		addPropCode: function (descriptor, insertInCode, lastProp) {
 			var pos = {row: 0, column: 0};
@@ -329,7 +414,7 @@ define (function (require, exports, module) {
 			}
 			this._cachedVal = val;
 			propStr += descriptor.propName + ": " + val;
-			if (meta.optionsCount !== 0 && !lastProp) {
+			if (!lastProp && (!$.isEmptyObject(options) || !insertInCode)) {
 				propStr += ",";
 			}
 			propStr += "\n";
@@ -383,13 +468,17 @@ define (function (require, exports, module) {
 		},
 		update: function (descriptor) {
 			//console.log("Updating property or event: " + descriptor.propName);
-			var ide = this.settings.ide;
+			var ide = this.settings.ide, that = this;
 			var name = "";
 			if (descriptor.type || descriptor.comp.type) {
 				name = this._getWidgetName(descriptor.type ? descriptor.type : descriptor.comp.type);
 			}
 			if (descriptor.handlerFlag) {
-				var component = ide.componentById(descriptor.id);
+				var component = ide.componentById(descriptor.id),
+					opts = descriptor.comp.options ? descriptor.comp.options : {},
+					newOpts = $.extend({}, opts);
+				newOpts[descriptor.propName] = descriptor.propValue;
+				descriptor.comp.options = newOpts;
 				if (component) {
 					if (!component.funcMarkers) {
 						component.funcMarkers = {};
@@ -412,8 +501,8 @@ define (function (require, exports, module) {
 						handler += ") {\n\t\t\t\t\t\n\t\t\t\t};\n";
 						// new marker => add an empty event handler and marker;
 						ide.session.insert({row: offset, column: 0}, handler);
-						handlerMarker = new ide.RangeClass(offset + 1, 4, offset + 4, 4); // "4" tabs
-						funcMarker = new ide.RangeClass(offset + 2, 5, offset + 3, 5);
+						handlerMarker = new ide.RangeClass(offset, 0, offset + 3, 0); // "4" tabs
+						funcMarker = new ide.RangeClass(offset + 2, 0, offset + 3, 5);
 						ide.addMarker(handlerMarker);
 						ide.addMarker(funcMarker);
 						component.funcMarkers[funcName] = {
@@ -440,6 +529,16 @@ define (function (require, exports, module) {
 							valueOptions: descriptor.valueOptions,
 							schema: descriptor.schema
 						}, true, false);
+					} else {
+						this.updatePropCode({
+							component: descriptor.comp,
+							propName: descriptor.propName,
+							propValue: descriptor.propValue,
+							oldPropValue: descriptor.oldPropValue,
+							propType: descriptor.propType,
+							valueOptions: descriptor.valueOptions,
+							schema: descriptor.schema
+						});
 					}
 					ide._deselectComponent();
 					ide.element.find(".code-button").click();
@@ -461,15 +560,15 @@ define (function (require, exports, module) {
 					var codeRange = component.codeMarker.range;
 					var offset = codeRange.end.row;
 					var handlerMarker, funcMarker, funcBodyStart;
-					var evtName = name + descriptor.propName;
+					var evtName = name + descriptor.featureName + descriptor.propName;
 					evtName = evtName.toLowerCase();
 					if (!component.eventMarkers[descriptor.propName]) {
 						// build code
-						var eventString = "\t\t\t\t$(\"#" + descriptor.id + "\").on(\"" + evtName + "\", function (event, args) {\n\t\t\t\t\t\n\t\t\t\t});\n";
+						var eventString = "\t\t\t\t$(\"#" + descriptor.id + (descriptor.featureName ? "_table" : "") + "\").on(\"" + evtName + "\", function (event, args) {\n\t\t\t\t\t\n\t\t\t\t});\n";
 						// new marker => add an empty event handler and marker;
 						ide.session.insert({row: offset, column: 0}, eventString);
-						handlerMarker = new ide.RangeClass(offset + 1, 4, offset + 4, 4); // "4" tabs
-						funcMarker = new ide.RangeClass(offset + 2, 4, offset + 3, 4);
+						handlerMarker = new ide.RangeClass(offset, 0, offset + 3, 0); // "4" tabs
+						funcMarker = new ide.RangeClass(offset + 2, 0, offset + 2, 5);
 						ide.addMarker(handlerMarker);
 						ide.addMarker(funcMarker);
 						component.eventMarkers[descriptor.propName] = {
@@ -502,15 +601,22 @@ define (function (require, exports, module) {
 				var newOpts = $.extend({}, opts);
 				//ATT: TODO: we may not be setting an option on the root level ! 
 				if (descriptor.propType !== "literal") {
-					newOpts[descriptor.propName] = descriptor.propValue;
+					//17th June 2014. Bug #172492 Get property of string array, when property is marked to process only value, but not the key.
+					if (descriptor.schema && descriptor.displayProp && descriptor.schema.hasOwnProperty(descriptor.displayProp) && descriptor.schema[descriptor.displayProp].processValueOnly) {
+						newOpts[descriptor.propName] = this._getArrayStringFromObject(descriptor.propValue, descriptor.displayProp);
+					} else {
+						newOpts[descriptor.propName] = descriptor.propValue;
+					}
 				} else {
 					newOpts[descriptor.propName] = window.frames[0][descriptor.propValue];
 				}
 				descriptor.comp.options = newOpts;
 				window.frames[0].$(descriptor.placeholder).children(".prop-editor-error-message").remove();
+				var dims;
 				if (descriptor.propType !== "object" && descriptor.propType !== "array" && descriptor.propType !== "literal") {
 					try {
-						window.frames[0].$(descriptor.placeholder)[name]("option", descriptor.propName, descriptor.propValue);
+						//T.P. 18th June 2014 Bug #172386 When we try to use set option we need to pass the new value from the newOpts collection
+						window.frames[0].$(descriptor.placeholder)[name]("option", descriptor.propName, newOpts[descriptor.propName]);
 					} catch (err) {
 						// we need to re-create (destroy & create) the widget again. 
 						// this usually happens when we try to use setOption at runtime for props that don't allow this 
@@ -519,17 +625,25 @@ define (function (require, exports, module) {
 						// K.D. Catching exceptions raised from incorrect configurations.
 						try {
 							console.log("This option is not editable at runtime. Reloading the widget.");
+							dims = {
+								width: window.frames[0].$(descriptor.placeholder).outerWidth(),
+								height: window.frames[0].$(descriptor.placeholder).outerHeight()
+							};
 							this._recreateWidget(descriptor.placeholder, name, newOpts);
 						} catch (err) {
-							this._showErrorContainer(err, descriptor);
+							this._showErrorContainer(err, descriptor, dims);
 						}
 					}
 				} else {
 					try {
 						console.log("This option is not editable at runtime. Reloading the widget.");
+						dims = {
+							width: window.frames[0].$(descriptor.placeholder).outerWidth(),
+							height: window.frames[0].$(descriptor.placeholder).outerHeight()
+						};
 						this._recreateWidget(descriptor.placeholder, name, newOpts);
 					} catch (err) {
-						this._showErrorContainer(err, descriptor);
+						this._showErrorContainer(err, descriptor, dims);
 					}
 				}
 				// check if prop exists
@@ -539,7 +653,13 @@ define (function (require, exports, module) {
 					meta.options = {};
 				}
 				var options = meta.options;
-				if (!options[descriptor.propName]) {
+				//A.T. bug #169154
+				if ((descriptor.propType === "string" || descriptor.propType === "number") && (descriptor.propValue === "" || descriptor.propValue === null)) {
+					this.deletePropCode({
+						component: descriptor.comp,
+						propName: descriptor.propName
+					});
+				} else if (!options[descriptor.propName]) {
 					this.addPropCode({
 						component: descriptor.comp,
 						propName: descriptor.propName,
@@ -563,14 +683,14 @@ define (function (require, exports, module) {
 				}
 			}
 		},
-		_showErrorContainer: function (err, descriptor) {
+		_showErrorContainer: function (err, descriptor, dims) {
 			var errorContainer = $("<div class='prop-editor-error-message' title='" + err + "'>" + err + "</div>"),
 				offset = window.frames[0].$(descriptor.placeholder).position();
 			errorContainer.css({
 				"top": offset.top,
 				"left": offset.left,
-				"width": window.frames[0].$(descriptor.placeholder).outerWidth(),
-				"height": window.frames[0].$(descriptor.placeholder).outerHeight()
+				"width": dims.width,
+				"height": dims.height
 			});
 			window.frames[0].$(descriptor.placeholder).append(errorContainer);
 		},
@@ -579,13 +699,29 @@ define (function (require, exports, module) {
 				// we need to change the id in the widget definition in the code view
 				var result = this.settings.ide.editor.find({
 					needle: /\$\("#(.*)?"\)/,
-					start: descriptor.comp.codeMarker.range.start
+					start: descriptor.comp.codeMarker.range.start,
+					$isMultiLine: false
 				});
 				if (result) {
 					this.settings.ide.session.replace(result, "$(\"#" + descriptor.propValue + "\")");
 				}
-				var comp = descriptor.ide.componentById(descriptor.oldPropValue);
-				comp.id = descriptor.propValue;
+				//var comp = descriptor.ide.componentById(descriptor.oldPropValue);
+				var events = descriptor.comp.eventMarkers;
+				if (events) {
+					for (var item in events) {
+						if (events.hasOwnProperty(item)) {
+							result = this.settings.ide.editor.find({
+								needle: /\$\("#(.*)?"\)/,
+								start: events[item].handlerMarker.start,
+								$isMultiLine: false
+							});
+							if (result) {
+								this.settings.ide.session.replace(result, "$(\"#" + descriptor.propValue + "\")");
+							}
+						}
+					}
+				}
+				descriptor.comp.id = descriptor.propValue;
 				descriptor.placeholder.attr("id", descriptor.propValue);
 			} else if (descriptor.propName === "class") {
 				window.frames[0].$(descriptor.placeholder).removeClass(descriptor.oldPropValue).addClass(descriptor.propValue);
@@ -650,6 +786,8 @@ define (function (require, exports, module) {
 		openPropertyEditor: function (descriptor) {
 			var propertyExplorer = require("ide-propertyexplorer"),
 				container = $("<div class='adorner-property-sheet' data-property='" + descriptor.propName + "'></div>").insertAfter(descriptor.ide.currentAdorner()),
+				search = $("<div class=\"input-group prop-search\"><input type=\"text\" class=\"form-control prop-search-input\" placeholder=\"Search ...\"/></div>").appendTo(container),
+				input = search.children(".prop-search-input"),
 				editor = $("<div class='adorner-property-list'></div>").appendTo(container),
 				property,
 				count = 0,
@@ -659,12 +797,29 @@ define (function (require, exports, module) {
 				type = this._getWidgetName(descriptor.type),
 				id = "propEditor",
 				containerId = "property",
-				i = 0;
+				i = 0,
+				length = 1,
+				pname = descriptor.propName,
+				filterFn;
+			while ($(".adorner-wrapper div[data-property=" + pname + "]").length > 1) {
+				pname = descriptor.propName + length++;
+				container.attr("data-property", pname);
+			}
 			while ($("#" + containerId + "_scroll").length > 0) {
 				containerId = "property" + i;
 				id = "propEditor" + i;
 				i++;
 			}
+			filterFn = function () {
+				// filter properties and events
+				var val = input.val().toLowerCase();
+				var exprs = [
+					{fieldName: "propName", expr: val, cond: "contains", logic: "OR"},
+					{fieldName: "propValue", expr: val, cond: "contains", logic: "OR"}
+				];
+				$("#" + id).igGridFiltering("filter", exprs, true);
+			};
+			descriptor.ide._setupSearch(input, filterFn);
 			editor.addClass("adorner-" + containerId + "-list");
 			descriptor.id = id;
 			descriptor.containerId = containerId;
@@ -712,7 +867,10 @@ define (function (require, exports, module) {
 					//if (comps[i].type === "dataSource" && comps[i].lib === "igniteui") {
 					if (comps[i].category === "datasources" && comps[i].lib === "igniteui") {
 						dslist.push(comps[i]);
-						if (descriptor.comp.options && window.frames[0][comps[i].id] === descriptor.comp.options.dataSource) {
+						// we can't compare objects because after the frame is reloaded, the references aren't the same any more
+						// so we need to use some smarter approach to infer whether they're the same ds
+						if (descriptor.comp.options && window.frames[0][comps[i].id] && window.frames[0][comps[i].id]._accumulatedTransactionLog 
+								&& descriptor.comp.codeMarker.extraMarkers.options["dataSource"] && descriptor.comp.codeMarker.extraMarkers.options["dataSource"].propValue === comps[i].id) {
 							defaultVal = comps[i].id;
 							defaultKey = comps[i].id;
 						}
@@ -1120,28 +1278,72 @@ define (function (require, exports, module) {
 												if (components[name].properties) {
 													processFunc(node, name, components, scriptRanges[i]);
 												} else {
-													compPromises[name].then(function () {
-														processFunc(node, name, components, scriptRanges[i]);
+                                                    //Loading parent options when restored from localStorage
+												    compPromises[name].then(function () {
+												        if (components[name].propertiesRef) {
+												            schemaRef = components[name].propertiesRef.split(".");
+												            if (!components[schemaRef[0]].properties && !compPromises[schemaRef[0]]) {
+												                compPromises[schemaRef[0]] = components[schemaRef[0]].loadInfo();
+												            }
+												            var cmpRef = components[schemaRef[0]];
+												            if (cmpRef && cmpRef.properties) {
+												                components[name].properties = $.extend(components[name].properties, cmpRef.properties);
+												                processFunc(node, name, components, scriptRanges[i]);
+												                ide._initddreorder();
+												            } else {
+												                compPromises[schemaRef[0]].then(function () {
+												                    //load schemaRef
+												                    components[name].properties = $.extend(components[name].properties, components[schemaRef[0]].properties);
+												                    processFunc(node, name, components, scriptRanges[i]);
+												                    ide._initddreorder();
+												                });
+												            }
+												        } else {
+												            processFunc(node, name, components, scriptRanges[i]);
+												            // in order to avoid calling initddreorder more than once
+												            // this can be additionally optimized with the cost of some significant refactoring && tracking of those calls 
+												            ide._initddreorder(); // need to call this here otherwise components won't be recognized before events are hooked 
+												        }
 													});
 												}
 												break; // found
 											}
 										}
 									}
+								} else if (node.type === "AssignmentExpression") {
+									//A.T. Bug #168894 - recognize "pasted" data source code
+									// get the str
+									var line = ide.session.getTextRange(new ide.RangeClass(node.loc.start.line + scriptRanges[i].start.row - 1, 0, node.loc.start.line + scriptRanges[i].start.row - 1, 1000));
 								}
 							},
 							leave: function (node, parent) {
 
 							}
 						});
+						ide._hasCodeError = false;
 					} catch (e) {
 						// open generic error dialog
+						ide._hasCodeError = true;
 						console.log(e);
 						var blockid = "";
+						// highlight offending line
+						var line = parseInt(e.message.match(/Line (\d*)/)[1], 10);
+						line += scriptRanges[i].start.row - 1;
+						var processedMsg = e.message.replace(/Line (\d*)/, "Line " + (line + 1));
+						if (ide._errorMkr) {
+							//ide.session.removeGutterDecoration(ide.session.$backMarkers[ide._errorMkr].range.start.row, "ide-error");
+							ide.session.removeMarker(ide._errorMkr);
+						}
+						ide._errorMkr = ide.session.addMarker(new ide.RangeClass(line, 0, line + 1, 0), "ide-error", "text", false);
 						if ($cblock.attr("id")) {
 							blockid = "<p class='errordetailtrace'>(error from script block with id '" + $cblock.attr("id") + "'):</p>";
 						}
-						$("#modalerror > .errordetail").html(blockid + e);
+						ide.session.setAnnotations([{
+							row: line,
+							text: processedMsg,
+							type: "error" // also warning and information
+						}]);
+						$("#modalerror > .errordetail").html(blockid + processedMsg);
 						$("#modalerror").dialog("open");
 						ide._hideLoading();
 					}
@@ -1153,6 +1355,13 @@ define (function (require, exports, module) {
 				window.frames[0].$(element)[widgetName]("destroy");
 			}
 			window.frames[0].$(element)[widgetName](options);
+		},
+		_getArrayStringFromObject: function (arr, valueMemberProperty) {
+			var result = [], i = 0;
+			for (i; i <  arr.length; i++) {
+				result.push(arr[i][valueMemberProperty]);
+			}
+			return result;
 		}
 	});
 	return IgniteUIComponentPlugin;

@@ -326,38 +326,6 @@
     }
   },
   "properties": {
-    "animationHideDuration": {
-      "type": "number",
-      "defaultValue": 200.0,
-      "description": "Sets gets duration of animation in milliseconds when drop-down list is hidden. That option is not supported when \"type\" is set to \"datepicker\", because the jquery.ui.datepicker does not have similar feature. Default is 200. If value is less than 5, then animation is disabled."
-    },
-    "animationShowDuration": {
-      "type": "number",
-      "defaultValue": 200.0,
-      "description": "Sets gets duration of animation in milliseconds when drop-down list or calendar is displayed. Default is 200. If value is less than 5, then animation is disabled."
-    },
-    "button": {
-      "type": "string",
-      "defaultValue": null,
-      "description": " Sets gets visibility of spin and drop-down button.",
-      "valueOptions": [
-        {
-          "name": "dropdown",
-          "type": "string",
-          "description": " Button to open list is located on the right side of input-field (or left side if base html element has direction:rtl)"
-        },
-        {
-          "name": "clear",
-          "type": "string",
-          "description": " Button to clear value is located on the right side of input-field (or left side if base html element has direction:rtl)"
-        },
-        {
-          "name": "spin",
-          "type": "string",
-          "description": " Spin buttons are located on the right side of input-field (or left side if base html element has direction:rtl)"
-        }
-      ]
-    },
     "centuryThreshold": {
       "type": "number",
       "defaultValue": 29.0,
@@ -466,32 +434,6 @@
       "type": "string",
       "defaultValue": null,
       "description": "Gets sets name of (hidden) INPUT element, which value will be set to current value of editor on any change."
-    },
-    "listColumns": {
-      "type": "number",
-      "defaultValue": 1.0,
-      "description": "Sets gets number of columns in drop-down list."
-    },
-    "listDropDownAsChild": {
-      "type": "bool",
-      "defaultValue": false,
-      "description": "Sets gets location of drop-down list.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value true will create html element for list as a child of main html element.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value false creates list as a child of body.<br>&nbsp;&nbsp;&nbsp;&nbsp;Notes:<br>&nbsp;&nbsp;&nbsp;&nbsp;That option has effect only for drop-down defined by listOfItems.<br>&nbsp;&nbsp;&nbsp;&nbsp;The value of true is supported only when main (outer) html element of editor is container such as SPAN or DIV, or buttons are enabled, or renderInContainer is enabled, the theme is set.<br>&nbsp;&nbsp;&nbsp;&nbsp;The value of true allows a better positioning and can be useful when editor is located in complex layout and containers with \"position:fixed\"."
-    },
-    "listItems": {
-      "type": "array",
-      "defaultValue": null,
-      "description": "Sets gets list of items which are used for drop-down list, spin, validation and auto-complete functionality.<br>&nbsp;&nbsp;&nbsp;&nbsp;Items in list can be strings, numbers, dates or objects in any combination.<br>&nbsp;&nbsp;&nbsp;&nbsp;If type of editor is date or datepicker and item is string, then igEditor will try to convert it to Date object and show item in display format.<br>&nbsp;&nbsp;&nbsp;&nbsp;If type of editor is numeric, currency or percent and item is string, then igEditor will try to convert it to number and show item in display format.<br>&nbsp;&nbsp;&nbsp;&nbsp;If item is object and it has member \"text\", then that member is used.<br>&nbsp;&nbsp;&nbsp;&nbsp;If item is object and besides \"text\" has function getHtml(), then that function is used to render item in list.<br>&nbsp;&nbsp;&nbsp;&nbsp;The item or item.text is used to set \"value\" of particular editor when list-item is selected.",
-	  "arrayMemberType" : "string,number,date"
-    },
-    "listMaxHeight": {
-      "type": "number",
-      "defaultValue": 300.0,
-      "description": "Sets gets maximum height of drop-down list in pixels. If value is equal to 0 or negative, then the height of list is defined by number of items in list."
-    },
-    "listWidth": {
-      "type": "number",
-      "defaultValue": 0.0,
-      "description": "Sets gets custom width of drop-down list in pixels. If value is equal to 0 or negative, then the width of editor is used."
     },
     "maxValue": {
       "type": "date",

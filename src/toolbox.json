@@ -1,6 +1,8 @@
 {
     "name": "igniteui",
     "toolboxTitle": "Ignite UI",
+    "baseApiUrl": "http://help.infragistics.com/jQuery/2014.1/",
+    "scriptsComment": "<!--\n\t\t\tUpdate the Ignite UI script references to your licensed copies before deploying.\n\t\t\tIgnite UI License: http://www.infragistics.com/legal/license/ultimate/\n\t\t-->",
     "scripts": [
         {
             "url": "http://code.jquery.com/jquery-1.10.2.min.js",
@@ -8,6 +10,10 @@
         },
         {
             "url": "http://code.jquery.com/ui/1.10.4/jquery-ui.min.js",
+            "lazyLoad": false
+        },
+		{
+            "url": "http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.min.js",
             "lazyLoad": false
         },
         {
@@ -26,6 +32,7 @@
             "id": "dv"
         }
     ],
+    "stylesheetsComment": "",
     "stylesheets": [
         "css/themes/infragistics/infragistics.theme.css",
         "css/structure/infragistics.css"
@@ -49,9 +56,63 @@
     		"category": "lists",
     		"visual": true, 
     		"framework": false,
-    		"dataSource": "sampleData1",
+			"width": "100%",
+			"height": 450,
+    		"dataSource": "defaultGridData1",
 			"defaultOptions": {
-				"features": []
+				"renderCheckboxes": true,
+				"autoGenerateColumns": false,
+				"columns": [
+					{
+						"key": "active",
+						"headerText": "Active",
+						"dataType": "bool",
+						"width": "7%"
+					},
+					{
+						"key": "registered",
+						"headerText": "Registered",
+						"dataType": "date",
+						"format": "d MMM yyyy",
+						"width": "13%"
+					},
+					{
+						"key": "name",
+						"headerText": "Name",
+						"width": "20%"
+					},
+					{
+						"key": "company",
+						"headerText": "Company",
+						"width": "15%"
+					},
+					{
+						"key": "phone",
+						"headerText": "Phone",
+						"width": "15%"
+					},
+					{
+						"key": "email",
+						"headerText": "Email",
+						"template": "<a href='mailto:${email}'>${email}</a>",
+						"width": "30%"
+					}
+				],
+				"features": [
+					{
+						"name": "Filtering"
+					},
+					{
+						"name": "Paging",
+						"showPageSizeDropDown": false
+					},
+					{
+						"name": "Sorting"
+					},
+					{
+						"name": "Selection"
+					}
+				]
 			}
     	},
     	"hierarchicalGrid": {
@@ -80,7 +141,7 @@
     		"framework": false,
     		"dataSource": "sampleChartData",
 			"defaultOptions": {
-				"width": "\"100%\"",
+				"width": "100%",
 				"height": 300,
 				"axes": [
                     {
@@ -161,6 +222,7 @@
     		"id": "bulletGraph",
             "dependsOn": ["core", "lob", "dv"],
     		"toolboxTitle": "Bulletgraph",
+			"componentPlugin": "bulletgraph-component-plugin", 
     		"icon": "bullet-graph.png",
     		"dragDropIcon": "bullet-graph-dragdrop.png",
     		"category": "dataviz",
@@ -168,13 +230,18 @@
     		"framework": false,
     		"height": 100,
     		"width": 300,
-			"defaultOptions": { 
-				"minimumValue": 0, 
+			"defaultOptions": {
+				"minimumValue": 0,
                 "maximumValue": 25,
                 "interval": 5,
                 "value": 17,
-                "targetValue": 21
-			}
+                "targetValue": 21,
+				"ranges": [
+					{
+						"name": "Range 1"		
+					}
+				]
+			}			
 		},
 		"doughnutChart": {
     		"id": "doughnutChart",
@@ -290,6 +357,7 @@
     	"radialGauge": {
     		"id": "radialGauge",
             "dependsOn": ["core", "lob", "dv"],
+			"componentPlugin": "gauge-component-plugin",
     		"toolboxTitle": "Radial Gauge",
     		"icon": "gauge.png",
     		"dragDropIcon": "radial-gauge-dragdrop.png",
@@ -299,7 +367,14 @@
     		"width": 150,
 			"height": 150,
     		"defaultOptions": {
-                "value": "20"
+                "value": "20",
+				"ranges": [
+					{
+						"name" : "Default",
+						"startValue": 10,
+						"endValue": 30
+					}
+				]
     		}
     	},
 		"linearGauge": {
@@ -439,9 +514,7 @@
     		"dragDropIcon": "rating-dragdrop.png",
     		"category": "editors",
     		"visual": true,
-    		"framework": false,
-    		"width": 200,
-    		"height":40
+    		"framework": false
     	},
 		"numericEditor": {
     		"id": "numericEditor",
@@ -533,10 +606,18 @@
     		"toolboxTitle": "Tree",
     		"icon": "tree.png",
     		"dragDropIcon": "tree-dragdrop.png",
+			"componentPlugin": "tree-component-plugin",
     		"category": "lists",
     		"visual": true,
     		"framework": false,
-    		"dataSource": "sampleTreeData1"
+    		"dataSource": "sampleHierarchicalData1",
+			"defaultOptions": {  			
+                "bindings": {
+					"textKey": "Name",
+					"valueKey": "ID",
+					"childDataProperty": "children"
+				}
+			}
     	},
 		"validator": {
 			"id": "validator",

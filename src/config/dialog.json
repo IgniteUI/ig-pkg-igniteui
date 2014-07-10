@@ -87,7 +87,7 @@
   },
   "properties": {
     "closeAnimation": {
-      "type": "object",
+      "type": "string",
       "defaultValue": null,
       "description": "Sets gets animation applied to dialog when it is closed. That can be any object supported by jquery hide(param) method."
     },
@@ -100,11 +100,6 @@
       "type": "bool",
       "defaultValue": true,
       "description": "Sets gets ability to close dialog on Esc key."
-    },
-    "container": {
-      "type": "string",
-      "defaultValue": null,
-      "description": "Sets gets container html element for dialog.<br>&nbsp;&nbsp;&nbsp;&nbsp;That can be reference to html element, jquery selector or jquery object.<br>&nbsp;&nbsp;&nbsp;&nbsp;By default the parent form of original target element is used. If form is not found, then body is used.<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: If the \"position\" of container is not set or it is \"static\", then position is set to \"relative\"."
     },
     "dialogClass": {
       "type": "string",
@@ -163,11 +158,6 @@
       "defaultValue": null,
       "description": "Sets gets name of css class which is applied to the SPAN element located on the left side of header."
     },
-    "mainElement": {
-      "type": "object",
-      "defaultValue": null,
-      "description": "Sets gets jquery DIV object which is used as main container for dialog.<br>&nbsp;&nbsp;&nbsp;&nbsp;Notes:<br>&nbsp;&nbsp;&nbsp;&nbsp;1. That object is optional and it should not contain any children.<br>&nbsp;&nbsp;&nbsp;&nbsp;2. It should not have parent.<br>&nbsp;&nbsp;&nbsp;&nbsp;3. It should not contain attributes which might destroy laout or appearance of dialog.<br>&nbsp;&nbsp;&nbsp;&nbsp;4. Change of that option is not supported."
-    },
     "maxHeight": {
       "type": "number",
       "defaultValue": null,
@@ -204,7 +194,7 @@
       "description": "Sets gets modal state of dialog.<br>&nbsp;&nbsp;&nbsp;&nbsp;If there are more than 1 modal igDialog, then last opened dialog wins and becomes on the top.<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: modal functionality is not supported when dialog is minimized or pinned, because that will trigger misbehavior."
     },
     "openAnimation": {
-      "type": "object",
+      "type": "string",
       "defaultValue": null,
       "description": "Sets gets animation applied to dialog when it is opened. That can be any object supported by jquery show(param) method."
     },
@@ -229,15 +219,15 @@
       "description": "Sets gets initial position of dialog. That can be array of 2 numeric values, which represent left/top coordinates.<br>&nbsp;&nbsp;&nbsp;&nbsp;Or it can be object supported by jquery.position(param) method, such as { my: \"left top\", at: \"left top\", offset: \"100 200\" }",
       "schema": {
 
-            "x": {
+            "left": {
                 "type": "number",
-                "defaultValue": 0,
+                "defaultValue": null,
                 "description": "X value",
                 "required": true
             },
-            "y": {
+            "top": {
                 "type": "number",
-                "defaultValue": 0,
+                "defaultValue": null,
                 "description": "Y value",
                 "required": true
             }

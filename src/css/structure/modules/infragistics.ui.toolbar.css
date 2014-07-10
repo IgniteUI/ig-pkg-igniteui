@@ -12,3 +12,4 @@
 .ui-igtoolbar .ui-igcombo{margin-right:.3em}
 .ui-igtoolbar,.ui-igtoolbar>div,.ui-igtoolbar>span,.ui-igtoolbar .ui-igbutton,.ui-igtoolbar .ui-splitbutton,.ui-ightmleditor .ui-splitbutton .ui-button.ui-splitbutton-arrow,.ui-igtoolbar .ui-igcombo{zoom:1;*display:inline!important}
 .ui-igtoolbar.hidden,.ui-igtoolbar.hidden>div,.ui-igtoolbar.hidden>span,.ui-igtoolbar.hidden .ui-igbutton,.ui-igtoolbar.hidden .ui-splitbutton,.ui-ightmleditor .hidden .ui-splitbutton .ui-button.ui-splitbutton-arrow,.ui-igtoolbar.hidden .ui-igcombo{*display:none!important}
+.ig-toolbar-buttons-holder{display:inline-block;width:auto}

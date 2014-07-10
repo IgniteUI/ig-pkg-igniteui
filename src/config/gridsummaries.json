@@ -213,6 +213,7 @@
       "type": "array",
       "defaultValue": null,
       "description": "List of column settings that specifies custom summaries options per column basis",
+	  "designerDisplayProperty": "columnKey",
       "schema": {
         "columnKey": {
           "type": "string",

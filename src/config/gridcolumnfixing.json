@@ -1,0 +1,188 @@
+{
+  "overview": null,
+  "name": "ui.igGridColumnFixing",
+   "title": "Column Fixing",
+  "category": null,
+  "visual": true,
+  "events": {
+    "columnFixed": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event which is fired when column fixing operation is finished<br>&nbsp;&nbsp;&nbsp;use args.columnKey to get the column key of the fixed column<br>&nbsp;&nbsp;&nbsp;use args.columnIndex to get the column index of the fixed column<br>&nbsp;&nbsp;&nbsp;use args.owner to get a reference to the widget"
+    },
+    "columnFixing": {
+      "cancellable": true,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event which is fired when column fixing operation is initiated<br>&nbsp;&nbsp;&nbsp;use args.columnKey to get the column key of the column to be fixed<br>&nbsp;&nbsp;&nbsp;use args.columnIndex to get the column index of the column to be fixed<br>&nbsp;&nbsp;&nbsp;use args.owner to get a reference to the widget"
+    },
+    "columnFixingRefused": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event which is fired when column fixing operation is initiated but sum of the width of the fixed columns container and width of the column to be fixed exceeds the grid width<br>&nbsp;&nbsp;&nbsp;use args.columnKey to get the column key of the column to be fixed<br>&nbsp;&nbsp;&nbsp;use args.isGroupHeader to get whether header cell is of type multicolumn (when multicolumn headers are defined)<br>&nbsp;&nbsp;&nbsp;use args.owner to get a reference to the widget"
+    },
+    "columnUnfixed": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event which is fired when column unfixing operation is done<br>&nbsp;&nbsp;&nbsp;use args.columnKey to get the column key of the unfixed column<br>&nbsp;&nbsp;&nbsp;use args.columnIndex to get the column index of the unfixed column<br>&nbsp;&nbsp;&nbsp;use args.owner to get a reference to the widget"
+    },
+    "columnUnfixing": {
+      "cancellable": true,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": "Event which is fired when column unfixing operation is initiated<br>&nbsp;&nbsp;&nbsp;use args.columnKey to get the column key of the column to be unfixed<br>&nbsp;&nbsp;&nbsp;use args.columnIndex to get the column index of the column to be unfixed<br>&nbsp;&nbsp;&nbsp;use args.owner to get a reference to the widget"
+    }
+  },
+  "properties": {
+    "columnSettings": {
+      "type": "array",
+      "defaultValue": null,
+      "description": "A list of column settings that specifies custom column fixing options on a per column basis",
+     "schema": {
+		"allowFixing": {
+          "type": "bool",
+          "defaultValue": true,
+          "description": "Defines if the column is allowed to be fixed"
+        },
+        "columnIndex": {
+          "type": "number",
+          "defaultValue": null,
+          "description": "Defines the index of the column for fixing"
+        },
+        "columnKey": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Defines the key of the column for fixing"
+        },
+		"isFixed": {
+          "type": "bool",
+          "defaultValue": false,
+          "description": "Defines if the column is fixed"
+        }
+      }
+    },
+    "featureChooserTextFixedColumn": {
+      "type": "string",
+      "defaultValue": "",
+      "description": "Feature chooser text of the fixed column",
+      "valueOptions": null
+    },
+    "featureChooserTextUnfixedColumn": {
+      "type": "string",
+      "defaultValue": "",
+      "description": "Feature chooser text of the unfixed column",
+      "valueOptions": null
+    },
+    "fixingDirection": {
+      "type": "string",
+      "defaultValue": null,
+      "description": " configure on which side to render fixed area",
+      "valueOptions": [
+        {
+          "name": "left",
+          "type": "string",
+          "description": " fixed column are rendered on the left side of the main grid."
+        },
+        {
+          "name": "right",
+          "type": "string",
+          "description": " fixed column are rendered on the right side of the main grid."
+        }
+      ]
+    },
+    "fixNondataColumns": {
+      "type": "bool",
+      "defaultValue": true,
+      "description": "Specify initial fixing of non data columns(like specific rowSelectors columns on the left side of the grid) when fixingDirection is left",
+      "valueOptions": null
+    },
+    "headerFixButtonText": {
+      "type": "string",
+      "defaultValue": "",
+      "description": "Specifies altering text on column fixing header icon when column is not fixed",
+      "valueOptions": null
+    },
+    "headerUnfixButtonText": {
+      "type": "string",
+      "defaultValue": "",
+      "description": "Specifies altering text on column fixing header icon when column is fixed",
+      "valueOptions": null
+    },
+    "minimalVisibleAreaWidth": {
+      "type": "string",
+      "defaultValue": 30,
+      "description": " minimal visible area for unfixed columns. For instance if you fix a column(or columns) and the width of the fixed columns is such that the width of visible are of unfixed columns is less than this option then fixing will be canceled"     
+    },
+    "scrollDelta": {
+      "type": "number",
+      "defaultValue": 40.0,
+      "description": "option to configure scroll delta when scrolling with mouse wheel or keyboard in fixed columns area",
+      "valueOptions": null
+    },
+    "showFixButtons": {
+      "type": "bool",
+      "defaultValue": true,
+      "description": "option to show column fixing buttons in header cells",
+      "valueOptions": null
+    },
+    "syncRowHeights": {
+      "type": "bool",
+      "defaultValue": true,
+      "description": "option enable syncing heights of rows between fixed/unfixed rows",
+      "valueOptions": null
+    }
+  }
+}

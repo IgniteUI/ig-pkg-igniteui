@@ -249,6 +249,7 @@
       "type": "array",
       "defaultValue": null,
       "description": "List of custom column settings that specify custom sorting settings for a specific column (whether sorting is enabled / disabled, default sort direction, first sort direction, etc.)",
+	  "designerDisplayProperty": "columnKey",
       "schema": {
         "columnKey": {
           "type": "string",

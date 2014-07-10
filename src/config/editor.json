@@ -478,18 +478,8 @@
           "description": " Select all text"
         },
         {
-          "name": "-1",
-          "type": "number",
-          "description": " Select all text"
-        },
-        {
           "name": "start",
           "type": "string",
-          "description": " Set caret at the beginning of text"
-        },
-        {
-          "name": "0",
-          "type": "number",
           "description": " Set caret at the beginning of text"
         },
         {
@@ -498,19 +488,9 @@
           "description": " Set caret at the end of text"
         },
         {
-          "name": "1",
-          "type": "number",
-          "description": " Set caret at the end of text"
-        },
-        {
           "name": "default",
           "type": "string",
           "description": " Use default behavior of browser (in case of mask, numeric and date editors it may be unreliable)"
-        },
-        {
-          "name": "2",
-          "type": "number",
-          "description": " Use default behavior of browser (in case of mask, numeric and date editors it may be unreliable)."
         }
       ]
     },

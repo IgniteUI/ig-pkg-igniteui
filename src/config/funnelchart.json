@@ -38,10 +38,24 @@
       "description": "Gets or sets the percentage (from near 0 to 1) of space the bottom edge of the funnel should take."
     },
     "brushes": {
-      "type": "object",
+      "type": "array",
       "defaultValue": null,
       "description": "Gets or sets the Brushes property.<br>&nbsp;The brushes property defines the palette from which automatically assigned brushes are selected.<br>&nbsp;The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
-      "arrayMemberType": "string"
+      "arrayMemberType": "string",
+	  "schema": {
+		"name": {
+			"type": "string",
+			"required": true,
+			"defaultValue": null,
+			"processValueOnly" : true			
+		}
+		},
+		"designerDisplayProperty": "name"
+    },
+    "dataSource": {
+        "type": "custom",
+        "defaultValue": null,
+        "description": "Can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself."
     },
     "formatInnerLabel": {
       "type": "function",
@@ -100,7 +114,15 @@
     "legend": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the Legend for the chart.<br>&nbsp;&nbsp;&nbsp;&nbsp;The value of that option can be a string with the id of existing html element. That element should be empty and it will be used to create igChartLegend widget.<br>&nbsp;&nbsp;&nbsp;&nbsp;If element was not found, then new DIV element is created and inserted into parent after chart element.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value of that option can be an object with member \"element\", which contains the id of legend-element.<br>&nbsp;&nbsp;&nbsp;&nbsp;In this case, that object also may contain options supported by the igChartLegend widget, such as \"width\", \"height\" and events, such as \"legendItemMouseLeftButtonDown\", \"legendItemMouseEnter\", etc.<br>&nbsp;&nbsp;&nbsp;&nbsp;Examples:<br>&nbsp;&nbsp;&nbsp;&nbsp;legend: {}<br>&nbsp;&nbsp;&nbsp;&nbsp;legend: \"idOfDiv\"<br>&nbsp;&nbsp;&nbsp;&nbsp;legend: { element: \"idOfDiv\", width: 300 }<br>&nbsp;&nbsp;&nbsp;&nbsp;legend: { legendItemMouseLeftButtonDown: function (evt, ui) { ui.chart.toggleSelection(ui.item); } }"
+      "description": "Gets or sets the Legend for the chart.<br>&nbsp;&nbsp;&nbsp;&nbsp;The value of that option can be a string with the id of existing html element. That element should be empty and it will be used to create igChartLegend widget.<br>&nbsp;&nbsp;&nbsp;&nbsp;If element was not found, then new DIV element is created and inserted into parent after chart element.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value of that option can be an object with member \"element\", which contains the id of legend-element.<br>&nbsp;&nbsp;&nbsp;&nbsp;In this case, that object also may contain options supported by the igChartLegend widget, such as \"width\", \"height\" and events, such as \"legendItemMouseLeftButtonDown\", \"legendItemMouseEnter\", etc.<br>&nbsp;&nbsp;&nbsp;&nbsp;Examples:<br>&nbsp;&nbsp;&nbsp;&nbsp;legend: {}<br>&nbsp;&nbsp;&nbsp;&nbsp;legend: \"idOfDiv\"<br>&nbsp;&nbsp;&nbsp;&nbsp;legend: { element: \"idOfDiv\", width: 300 }<br>&nbsp;&nbsp;&nbsp;&nbsp;legend: { legendItemMouseLeftButtonDown: function (evt, ui) { ui.chart.toggleSelection(ui.item); } }",
+	   "schema": {
+			"legend": {
+			  "type": "string",
+			  "required": true,
+			  "defaultValue": null,
+			  "description": "The value of that option can be a string with the id of existing html element. That element should be empty and it will be used to create igChartLegend widget.<br>&nbsp;&nbsp;&nbsp;&nbsp;If element was not found, then new DIV element is created and inserted into parent after chart element.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value of that option can be an object with member \"element\", which contains the id of legend-element.<br>&nbsp;&nbsp;&nbsp;&nbsp;In this case, that object also may contain options supported by the igChartLegend widget, such as \"width\", \"height\" and events, such as \"legendItemMouseLeftButtonDown\", \"legendItemMouseEnter\", etc.<br>&nbsp;&nbsp;&nbsp;&nbsp;Examples:<br>&nbsp;&nbsp;&nbsp;&nbsp;legend: {}<br>&nbsp;&nbsp;&nbsp;&nbsp;legend: \"idOfDiv\"<br>&nbsp;&nbsp;&nbsp;&nbsp;legend: { element: \"idOfDiv\", width: 300 }<br>&nbsp;&nbsp;&nbsp;&nbsp;legend: { legendItemMouseLeftButtonDown: function (evt, ui) { ui.chart.toggleSelection(ui.item); } }"
+			}
+		}
     },
     "outerLabelAlignment": {
       "type": "string",
@@ -142,10 +164,20 @@
       ]
     },
     "outlines": {
-      "type": "object",
+      "type": "array",
       "defaultValue": null,
       "description": "Gets or sets the Outlines property.<br>&nbsp;The Outlines property defines the palette from which automatically assigned Outlines are selected.<br>&nbsp;The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
-      "arrayMemberType": "string"
+      "arrayMemberType": "string",
+	  "schema": {
+		"name": {
+			"type": "string",
+			"required": true,
+			"defaultValue": null,
+			"processValueOnly" : true,
+			"description": "Name of the range brush"
+		}
+		},
+		"designerDisplayProperty": "name"
     },
     "outlineThickness": {
       "type": "number",
@@ -187,7 +219,29 @@
     "unselectedSliceStyle": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the style to use for unselected slices.<br>&nbsp;That can be used to set stroke (outline color), fill (background color) and opacity."
+      "description": "Gets or sets the style to use for unselected slices.<br>&nbsp;That can be used to set stroke (outline color), fill (background color) and opacity.",
+	   "schema": {
+        "fill": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Defines the fill color of the selected slice"
+        },
+        "stroke": {
+          "type": "string",
+          "defaultValue": null,
+          "description": "Defines the stroke color of the selected slice"
+        },
+        "strokeThickness": {
+          "type": "number",
+          "defaultValue": null,
+          "description": "Defines the fill stroke thickness of the selected slice"
+        }, 
+        "opacity": {
+          "type": "number",
+          "defaultValue": null,
+          "description": "Defines the opacity of the selected slice"
+        }
+      }
     },
     "useBezierCurve": {
       "type": "bool",

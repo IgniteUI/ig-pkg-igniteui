@@ -38,6 +38,16 @@
     }
   },
   "properties": {
+    "width": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "The width of the gauge. It can be set as a number in pixels, string (px) or percentage (%)."
+    },
+	"height": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "The height of the gauge. It can be set as a number in pixels, string (px) or percentage (%)."
+    },
     "backingBrush": {
       "type": "string",
       "defaultValue": null,
@@ -261,7 +271,17 @@
       "type": "array",
       "defaultValue": null,
       "description": "Gets or sets a collection of brushes to be used as the palette for linear gauge ranges.<br>&nbsp;The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
-      "arrayMemberType": "string"
+      "arrayMemberType": "string",
+	  "schema": {
+		"name": {
+			"type": "string",
+			"required": true,
+			"defaultValue": null,
+			"processValueOnly" : true,
+			"description": "Name of the range brush"
+		}
+		},
+		"designerDisplayProperty": "name"
     },
     "rangeInnerExtent": {
       "type": "number",
@@ -274,10 +294,20 @@
       "description": "Gets or sets the position at which to stop rendering the range as a value from 0 to 1 measured from the front/bottom of the linear gauge.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge."
     },
     "rangeOutlines": {
-      "type": "object",
+      "type": "array",
       "defaultValue": null,
       "description": "Gets or sets a collection of brushes to be used as the palette for linear gauge outlines.<br>&nbsp;The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
-      "arrayMemberType": "string"
+      "arrayMemberType": "string",
+	  	  "schema": {
+			"name": {
+			  "type": "string",
+			  "required": true,
+			  "defaultValue": null,
+			  "processValueOnly" : true,
+			  "description": "The value provided should be css color string or JavaScript object defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
+			}
+		},
+		"designerDisplayProperty": "name"
     },
     "ranges": {
       "type": "array",

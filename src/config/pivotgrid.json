@@ -886,24 +886,7 @@
     "height": {
       "type": "string",
       "defaultValue": null,
-      "description": " This is the total height of the grid.",
-      "valueOptions": [
-        {
-          "name": null,
-          "type": "string",
-          "description": " The widget height can be set in pixels (px) and percentage (%)."
-        },
-        {
-          "name": null,
-          "type": "number",
-          "description": " The widget height can be set as a number"
-        },
-        {
-          "name": "null",
-          "type": "object",
-          "description": " Will stretch vertically to fit data, if no other heights are defined"
-        }
-      ]
+      "description": " This is the total height of the grid. The widget height can be set in pixels (px) and percentage (%). The widget height can be set as a number"
     },
     "hideColumnsDropArea": {
       "type": "bool",
@@ -966,24 +949,7 @@
     "width": {
       "type": "string",
       "defaultValue": null,
-      "description": "",
-      "valueOptions": [
-        {
-          "name": null,
-          "type": "string",
-          "description": " The widget width can be set in pixels (px) and percentage (%)."
-        },
-        {
-          "name": null,
-          "type": "number",
-          "description": " The widget width can be set as a number"
-        },
-        {
-          "name": "null",
-          "type": "object",
-          "description": " Will stretch to fit the data, if no other widths are defined."
-        }
-      ]
+      "description": "The widget width can be set in pixels (px) and percentage (%). \n  The widget width can be set as a number."
     }
   }
 }

@@ -43,6 +43,16 @@
       "defaultValue": null,
       "description": "Gets or sets the brush to use to fill the backing of the bullet graph."
     },
+	"width": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "The width of the BulletGraph. It can be set as a number in pixels, string (px) or percentage (%)."
+    },
+	"height": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "The height of the BulletGraph. It can be set as a number in pixels, string (px) or percentage (%)."
+    },
     "backingInnerExtent": {
       "type": "number",
       "defaultValue": 0.0,
@@ -159,7 +169,17 @@
       "type": "array",
       "defaultValue": null,
       "description": "Gets or sets a collection of brushes to be used as the palette for bullet graph ranges.<br>&nbsp;The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
-      "arrayMemberType": "string"
+      "arrayMemberType": "string",
+	   "schema": {
+			"value": {
+			  "type": "string",
+			  "required": true,
+			  "defaultValue": null,
+			  "processValueOnly" : true,
+			  "description": "Name of the range brush"
+			}
+		},
+		"designerDisplayProperty": "value"
     },
     "rangeInnerExtent": {
       "type": "number",
@@ -175,12 +195,23 @@
       "type": "array",
       "defaultValue": null,
       "description": "Gets or sets a collection of brushes to be used as the palette for bullet graph outlines.<br>&nbsp;The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
-      "arrayMemberType": "string"
+      "arrayMemberType": "string",
+	  "schema": {
+			"value": {
+			  "type": "string",
+			  "required": true,
+			  "defaultValue": null,
+			  "processValueOnly" : true,
+			  "description": "The value provided should be css color string or JavaScript object defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
+			}
+		},
+		"designerDisplayProperty": "value"
     },
     "ranges": {
       "type": "array",
       "defaultValue": null,
       "description": "Gets or sets the scale ranges to render on the bullet graph.",
+	  "designerDisplayProperty": "name",
       "schema": {
         "name": {
           "type": "string",

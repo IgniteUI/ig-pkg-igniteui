@@ -462,23 +462,22 @@
           ]
         },
         "defaultExpressions": {
-          "type": "array",
-          "defaultValue": [],
+          "type": "object",
+          "defaultValue": null,
           "description": "Initial filtering expressions - if set they will be applied on initialization",
-          "valueOptions": [
-            {
-              "name": "expr",
-              "type": "string",
-              "description": ""
-            },
-            {
-              "name": "cond",
-              "type": "string",
-              "description": ""
-            }
-          ]
+		  "schema": {
+			"expr": {
+			  "type": "string",
+			  "defaultValue": "",
+			  "description": "Expression"
+			},
+			"cond": {
+			  "type": "string",
+			  "defaultValue": "",
+			  "description": "Condition"
+			}
+		  }         
         }
-
       }
     },
     "featureChooserText": {

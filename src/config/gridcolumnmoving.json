@@ -331,7 +331,7 @@
     },
     "mode": {
       "type": "string",
-      "defaultValue": null,
+      "defaultValue": "immediate",
       "description": " Specify the drag-and-drop mode for the feature",
       "valueOptions": [
         {
@@ -348,7 +348,7 @@
     },
     "moveType": {
       "type": "string",
-      "defaultValue": null,
+      "defaultValue": "dom",
       "description": " Specify the way columns will be rearranged",
       "valueOptions": [
         {

@@ -12,76 +12,93 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 		getMarkup: function (descriptor) {
 			return "<div style=\"display:inline-block;\" id=\"" + descriptor.id + "\"></div>";
 		},
-		getCodeEditorScriptSnippet: function (descriptor) {
-			var code = "";
-			var opts = descriptor.options;
-			var lineCount = 4;
-			var orderedReturnProps = [];
-			var xtraMarkup = "\t\t\t\t\tfeatures: []";
-			//A.T. - we can either drop with no features in the code editor
-			// or an empty array - empty arr makes it easier to manage with markers
-			code = "\t\t\t\t$(\"#" + descriptor.id + "\").igGrid({\n" + xtraMarkup;
-			//	"\t\t\t\t\theight: " + opts.height + ",\n" + 
-			//	"\t\t\t\t\twidth: " + opts.width + xtraMarkup;
-			/*
-			orderedReturnProps.push({
-				name: "height",
-				value: opts.height,
-				type: "number"
-			});
-			orderedReturnProps.push({
-				name: "width",
-				value: opts.width,
-				type: "number"
-			});
-			*/
-			if (descriptor.data && window[descriptor.data]) {
-				code += ",\n\t\t\t\t\tdataSource: " + descriptor.data;
-				orderedReturnProps.push({
-					name: "dataSource",
-					value: descriptor.data,
-					type: "literal"
-				});
-			}
-			var props = this.settings.packageInfo.components[descriptor.type].properties;
-			for (var key in opts) {
-			//	if (opts.hasOwnProperty(key) && key !== "dataSource" && key !== "height" && key !== "width") {
-				if (opts.hasOwnProperty(key) && key !== "dataSource" && key !== "features") {
-					orderedReturnProps.push({
-						name: key,
-						value: opts[key],
-						type: props[key].type
-					});
-					if (props[key].type === "string") {
-						code += ",\n\t\t\t\t\t" + key + ": \"" + opts[key] + "\"";
-						orderedReturnProps[orderedReturnProps.length - 1].type = "string";
-					} else {
-						code += ",\n\t\t\t\t\t" + key + ": " + opts[key];
-						orderedReturnProps[orderedReturnProps.length - 1].type = "literal";
-					}
-					lineCount++;
-				}
-			}
-			code += "\n\t\t\t\t});\n";
-			return {
-				codeString: code, 
-				lineCount: lineCount, 
-				orderedProps: orderedReturnProps
-			};
-			//return this.evalTemplate("grid.code.js", descriptor);
-		},
+		// getCodeEditorScriptSnippet: function (descriptor) {
+			// var code = "";
+			// var opts = descriptor.options;
+			// var lineCount = 4;
+			// var orderedReturnProps = [];
+			// var xtraMarkup = "\t\t\t\t\tfeatures: []";
+			// //A.T. - we can either drop with no features in the code editor
+			// // or an empty array - empty arr makes it easier to manage with markers
+			// code = "\t\t\t\t$(\"#" + descriptor.id + "\").igGrid({\n" + xtraMarkup;
+			// //	"\t\t\t\t\theight: " + opts.height + ",\n" + 
+			// //	"\t\t\t\t\twidth: " + opts.width + xtraMarkup;
+			// /*
+			// orderedReturnProps.push({
+				// name: "height",
+				// value: opts.height,
+				// type: "number"
+			// });
+			// orderedReturnProps.push({
+				// name: "width",
+				// value: opts.width,
+				// type: "number"
+			// });
+			// */
+			// orderedReturnProps.push({
+				// name: "features",
+				// value: [],
+				// type: "array"
+			// });
+			// if (descriptor.data && window[descriptor.data]) {
+				// code += ",\n\t\t\t\t\tdataSource: " + descriptor.data;
+				// orderedReturnProps.push({
+					// name: "dataSource",
+					// value: descriptor.data,
+					// type: "literal"
+				// });
+			// }
+			// var props = this.settings.packageInfo.components[descriptor.type].properties;
+			// for (var key in opts) {
+			// //	if (opts.hasOwnProperty(key) && key !== "dataSource" && key !== "height" && key !== "width") {
+				// if (opts.hasOwnProperty(key) && key !== "dataSource" && key !== "features") {
+					// orderedReturnProps.push({
+						// name: key,
+						// value: opts[key],
+						// type: props[key].type
+					// });
+					// if (props[key].type === "string") {
+						// code += ",\n\t\t\t\t\t" + key + ": \"" + opts[key] + "\"";
+						// orderedReturnProps[orderedReturnProps.length - 1].type = "string";
+					// } else {
+						// code += ",\n\t\t\t\t\t" + key + ": " + opts[key];
+						// orderedReturnProps[orderedReturnProps.length - 1].type = "literal";
+					// }
+					// lineCount++;
+				// }
+			// }
+			// code += "\n\t\t\t\t});\n";
+			// return {
+				// codeString: code, 
+				// lineCount: lineCount, 
+				// orderedProps: orderedReturnProps
+			// };
+			// //return this.evalTemplate("grid.code.js", descriptor);
+		// },
 		addExtraMarkers: function (descriptor) {
-			this._super(descriptor);
-			// we don't want to hardcode this value but find it in the current range
-			// it may well happen that someone adds lots of options and extra code *above* the features or any other object
-			var featuresRange = this.settings.editor.find("features", {start: descriptor.marker.range.start});
-			featuresRange = new descriptor.rclass(featuresRange.start.row, 0, featuresRange.start.row + 1, 0);
-			featuresRange.start = this.settings.editor.getSession().doc.createAnchor(featuresRange.start); 
-			featuresRange.end = this.settings.editor.getSession().doc.createAnchor(featuresRange.end);
-			if (!descriptor.marker.extraMarkers.options) {
-				descriptor.marker.extraMarkers.options = {};
-			}
-			descriptor.marker.extraMarkers.options.features = {marker: featuresRange};
+		    this._super(descriptor);
+		    // we don't want to hardcode this value but find it in the current range
+		    // it may well happen that someone adds lots of options and extra code *above* the features or any other object
+		    var colRange = this.settings.editor.find("columns: [", { start: descriptor.marker.range.start });
+		    if (colRange) {
+		        colRange = new descriptor.rclass(colRange.start.row, 0, colRange.end.row + 35, 0);
+		        colRange.start = this.settings.editor.getSession().doc.createAnchor(colRange.start);
+		        colRange.end = this.settings.editor.getSession().doc.createAnchor(colRange.end);
+		        if (!descriptor.marker.extraMarkers.options) {
+		            descriptor.marker.extraMarkers.options = {};
+		        }
+		        descriptor.marker.extraMarkers.options.columns = { marker: colRange };
+		    }
+		    var featuresRange = this.settings.editor.find("features: [", { start: descriptor.marker.range.start });
+		    if (featuresRange) {
+		        featuresRange = new descriptor.rclass(featuresRange.start.row, 0, featuresRange.end.row + 11, 0);
+		        featuresRange.start = this.settings.editor.getSession().doc.createAnchor(featuresRange.start);
+		        featuresRange.end = this.settings.editor.getSession().doc.createAnchor(featuresRange.end);
+		        if (!descriptor.marker.extraMarkers.options) {
+		            descriptor.marker.extraMarkers.options = {};
+		        }
+		        descriptor.marker.extraMarkers.options.features = { marker: featuresRange };
+		    }
 		},
 		customPropertyEditor: function (descriptor) {
 			if (this._super && this._super(descriptor)) {
@@ -89,7 +106,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			}
 			// columns, features, dataSource, etc. - also reuse those UIs
 			// when something gets changed in this editor, we want to also update the code editor as well as the component itself
-			var p = descriptor.propName, rec = descriptor, packageInfo = this.settings.packageInfo, session = descriptor.editorSession, $this = this;
+			var p = descriptor.propName, rec = descriptor, packageInfo = this.settings.packageInfo, session = descriptor.editorSession, $this = this, currentValue = this.getPropValue(descriptor), exists;
 			if (p === "features") {
 				// open features editor
 				var container = this.openCollectionEditor(descriptor);
@@ -99,22 +116,33 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 				var Mustache = require("mustache");
 				for (var i in rec.schema) {
 					if (rec.schema.hasOwnProperty(i)) {
-						texts.push({
-							key: i,
-							text: i,
-							title: rec.schema[i].description // tooltip
-						});
+						exists = false;
+						for (var j = 0; j < currentValue.length; j++) {
+							if (currentValue[j].name === i) {
+								exists = true;
+								this.loadFeatureInfo(descriptor, currentValue[j].name);
+								break;
+							}
+						}
+						if (!exists) {
+							texts.push({
+								key: i,
+								text: i,
+								title: rec.schema[i].description // tooltip
+							});
+						}
 					}
 				}
-				var dd_id = "features_dropDown";
+				//var dd_id = "features_dropDown";
 				var propData = {
-					dropdownId: dd_id,
+					dropdownId: "features_dropDown",
 					titleText: "Change property value",
 					closeOnClick: true,
 					defaultVal: rec.propValue,
 					defaultKey: rec.propValue,
 					itemTexts: texts
 				};
+				$(".dropdown-container[data-id=features_dropDown]").off().remove();
 				var enumHtml = Mustache.to_html(ddtmpl, propData);
 				var td = $("<div />").insertBefore(container.find("a.add-item"));
 				container.find("a.add-item").addClass("add-feature").text("Add");
@@ -137,39 +165,41 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 					var target = $(event.target), dd = target.closest(".ig-dropdown");
 					var ddlist = dd.find(".dropdown-container");
 					if (ddlist.length === 0) {
-						ddlist = $("body").find(".dropdown-container[data-id=" + dd.attr("data-id") + "]");
+						ddlist = $("body").find(".dropdown-container[data-id=features_dropDown]");
 					}
+					ddlist.css({
+						width: td.innerWidth()
+					});
 					$this.settings.ide._toggleDropDown(dd, ddlist);
-					if (ddlist.is(":visible")) {
-						$("input.ig-hidden").attr("data-id", dd.attr("data-id")).focus();
-					}
-					event.stopPropagation();
-					event.preventDefault();
-				})
-				$(".dropdown-container[data-id=" + dd_id + "]").on("mouseup", "ul > li", function (event) {
+					return false;
+				});
+				td.find(".ig-dropdown-label,.ig-dropdown-button").on("blur", function (event) {
+					var target = $(event.target), dd = target.closest(".ig-dropdown"),
+						ddlist = dd.find(".dropdown-container");
+					$this.settings.ide._toggleDropDown(dd, ddlist);
+					return false;
+				});
+				$(".dropdown-container[data-id=features_dropDown]").on("mouseup", "ul > li", function (event) {
 					var $this = $(this), ddlist = $(event.target).closest(".dropdown-container");
-					var dd = $("body").find(".ig-dropdown[data-id=" + ddlist.attr("data-id") + "]");
+					var dd = $("body").find(".ig-dropdown[data-id=features_dropDown]");
 					var oldVal = label.attr("data-key");
 					label.text($this.attr("data-text")).attr("data-key", $this.attr("data-key"));
 					descriptor.ide._toggleDropDown(dd, ddlist);
 				}).on("mousedown click", "ul > li", function (event) {
-					event.preventDefault();
-					event.stopPropagation();
+					return false;
 				});
 				
 				container.off();
 				container.on("click", ".add-item", function (event) {
-					$this.addFeatureHandler(descriptor, td, $(this).closest("li"), dd_id);
-					event.stopPropagation();
+					$this.addFeatureHandler(descriptor, td, $(this).closest("li"));
 					return false;
 				});
 				container.on('click', '.adorner-collection-edit', function (event) {
 					$this.editFeatureHandler(descriptor, $(this));
-					event.stopPropagation();
 					return false;
 				});
 				container.on('click', '.delete-item', function (event) {
-					$this.deleteFeatureHandler(descriptor, $(this).closest("li"), dd_id);
+					$this.deleteFeatureHandler(descriptor, $(this).closest("li"));
 				});
 			}
 		},
@@ -178,7 +208,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 				feature = features.components[name],
 				schema;
 			if (feature && feature.properties) {
-				schema = feature.properties;
+				schema = feature;
 			} else {
 				var url = this.settings.packageInfo.configPath + "/" + descriptor.schema[name].schemaRef + ".json";
 				// load metadata for every feature
@@ -190,11 +220,11 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 					async: false
 				});
 				features.components[name] = $.parseJSON(json.responseText);
-				schema = features.components[name].properties;
+				schema = features.components[name];
 			}
 			return schema;
 		},
-		addFeatureHandler: function (descriptor, td, target, id) {
+		addFeatureHandler: function (descriptor, td, target) {
 			var label = td.find(".ig-dropdown-label"),
 				labelText = label.text();
 			if (!labelText) {
@@ -209,7 +239,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			}
 			var descr = {
 				oldPropValue: value,
-				schema: schema
+				schema: schema.properties
 			};
 			if (!value) {
 				value = [];
@@ -218,7 +248,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 				name: labelText
 			});
 			label.text("");
-			$(".dropdown-container[data-id=" + id + "] li[data-text=" + labelText + "]").remove();
+			$(".dropdown-container[data-id=features_dropDown] li[data-text=" + labelText + "]").remove();
 			$("<li><span class='delete-item glyphicon glyphicon-trash'></span><a href='#' class='adorner-collection-edit'>" + labelText + "</a></li>").insertBefore(target);
 			descr.propValue = value;
 			descriptor.updateFunction(descr);
@@ -228,11 +258,19 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 				$this = this,
 				propertyExplorer = require("ide-propertyexplorer"),
 				container = $("<div class='adorner-property-sheet' data-property='" + labelText + "'></div>").insertAfter(descriptor.ide.currentAdorner()),
-				editor = $('<div class="adorner-feature-list"></div>').appendTo(container),
+				search = $("<div class=\"input-group prop-search\"><input type=\"text\" class=\"form-control prop-search-input\" placeholder=\"Search ...\"/></div>").appendTo(container),
+				input = search.children(".prop-search-input"),
+				evtsEditor,
+				editor,
 				options = $.extend({}, descriptor),
+				eventsOpts,
+				properties,
 				property,
 				count = 0,
 				schema,
+				events,
+				evtData = [],
+				filterFn, apiUrl, apiLinkElement = $(".api-link"),
 				updateComp = function (descr) {
 					var features = $this.getPropValue(descriptor),
 						i,
@@ -265,37 +303,92 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 						descriptor.provider.updateComponent(opt);
 					}
 				};
+			filterFn = function () {
+				// filter properties and events
+				var val = input.val().toLowerCase();
+				var exprs = [
+					{fieldName: "propName", expr: val, cond: "contains", logic: "OR"},
+					{fieldName: "propValue", expr: val, cond: "contains", logic: "OR"}
+				];
+				$("#featureEditor").igGridFiltering("filter", exprs, true);
+				$("#featureEvtsEditor").igGridFiltering("filter", exprs, true);
+			};
+			descriptor.ide._setupSearch(input, filterFn);
+			evtsEditor = $("<div class='adorner-featureEvts-list'><div class='adorner-label adorner-featureEvts-label'>EVENTS</div></div>").appendTo(container);
+			editor = $("<div class='adorner-feature-list'><div class='adorner-label adorner-feature-label'>PROPERTIES/OPTIONS</div></div>").appendTo(container);
 			options.id = "featureEditor";
 			options.containerId = "feature";
 			options.parent = editor;
 			options.data = [];
 			options.updateFunction = updateComp;
+			//In case of feature editing we need to change API link. 
+			if (apiLinkElement && apiLinkElement.length > 0) {
+				apiUrl = apiLinkElement.attr("href");
+				if (apiUrl && apiUrl.length > 0) {
+					apiUrl = apiUrl.substring(0, apiUrl.lastIndexOf("igGrid"));
+					apiUrl += "igGrid";
+					apiUrl += target.text();
+					apiLinkElement.attr("href", apiUrl);
+				}	
+			}
 			try {
 				schema = this.loadFeatureInfo(descriptor, labelText);
 			} catch (e) {
 				console.error("Could not load feature info for '" + labelText + "'. Error: " + e);
 			}
-			for (property in schema) {
-				if (schema.hasOwnProperty(property) && property !== "name") {
+			if (schema.events) {
+				events = schema.events;
+				for (var evt in events) {
+					if (events.hasOwnProperty(evt)) {
+						evtData.push({
+							id: count++,
+							propName: evt,
+							propValue: "",
+							propType: "event",
+							featureName: labelText,
+							description: events[evt].description,
+							args: events[evt].args
+						});
+					}
+				}
+			}
+			eventsOpts = $.extend({}, options);
+			eventsOpts.id = "featureEvtsEditor";
+			eventsOpts.containerId = "featureEvts";
+			eventsOpts.parent = evtsEditor;
+			eventsOpts.updatingEnabled = false;
+			eventsOpts.data = evtData;
+			eventsOpts.featureName = labelText;
+			count = 0;
+			properties = schema.properties;
+			for (property in properties) {
+				if (properties.hasOwnProperty(property) && property !== "name") {
 					options.data.push({
 						id: count++,
 						propName: property,
-						defaultValue: schema[property].defaultValue,
-						propValue: schema[property].defaultValue,
-						propType: schema[property].type,
-						description: schema[property].description,
-						valueOptions: schema[property].valueOptions,
-						displayProp: schema[property].designerDisplayProperty,
-						args: schema[property].args,
-						schema: schema[property].schema
+						defaultValue: properties[property].defaultValue,
+						propValue: this.getFeatureValue({
+							id: descriptor.id, 
+							featureName: labelText, 
+							propName: property, 
+							defaultValue: properties[property].defaultValue
+						}),
+						featureName: labelText,
+						propType: properties[property].type,
+						description: properties[property].description,
+						valueOptions: properties[property].valueOptions,
+						displayProp: properties[property].designerDisplayProperty,
+						args: properties[property].args,
+						schema: properties[property].schema
 					});
 				}
 			}
 			// render and open a property explorer
+			propertyExplorer(eventsOpts);
 			propertyExplorer(options);
 			descriptor.ide.adornerMoveLeft();
 		},
-		deleteFeatureHandler: function (descriptor, target, id) {
+		deleteFeatureHandler: function (descriptor, target) {
 			var labelText = target.text(), value = this.getPropValue(descriptor), schema, i, opt = $.extend({}, descriptor);
 			target.remove();
 			for (i = 0; i < value.length; i++) {
@@ -313,8 +406,16 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 					"data-text": labelText,
 					"data-key": labelText,
 					"title": labelText
-				}).appendTo(".dropdown-container[data-id=" + id + "] ul");
+				}).appendTo(".dropdown-container[data-id=features_dropDown] ul");
 			descriptor.provider.updateComponent(opt);
+		},
+		getFeatureValue: function (descriptor) {
+			var name = this._getWidgetName();
+			var data = typeof window.frames[0].$("#" + descriptor.id + "_table").data === "function" && window.frames[0].$("#" + descriptor.id + "_table").data(name + descriptor.featureName);
+			if (data) {
+				return data.options && typeof(data.options[descriptor.propName]) !== "undefined" ? data.options[descriptor.propName] : descriptor.defaultValue;
+			}
+			return descriptor.defaultValue;
 		},
 		setPropertyExplorerValueContents: function (descriptor) {
 			if (descriptor.propName === "features") {

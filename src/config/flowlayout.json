@@ -96,10 +96,21 @@
       "defaultValue": null,
       "description": "number of items to render, this is only applicable to layouts: vertical and flow"
     },
+    "layoutMode": {
+	  "hidden": true,
+      "type": "string",
+      "defaultValue": "flow",
+      "description": "Defines flow layout"
+    },
+    "width": {
+      "type": "string",
+      "defaultValue": null,
+      "description": "width of the layout container"
+    },
     "items": {
       "type": "array",
       "defaultValue": null,
-      "description": "an array of item descriptions <br>&nbsp;&nbsp;&nbsp;&nbsp;this assumes the container is empty, and every item<br>&nbsp;&nbsp;&nbsp;&nbsp;is described by rowspan,colspan, etc. - otherwise values of<br>&nbsp;&nbsp;&nbsp;&nbsp;1 are assumed<br>&nbsp;&nbsp;&nbsp;&nbsp;items can have various properties some of which may not be applicable<br>&nbsp;&nbsp;&nbsp;&nbsp;depending on the layoutMode.<br>&nbsp;&nbsp;&nbsp;&nbsp;for example rowSpan/colSpan/colIndex/rowIndex are only applicable to gridlayout",
+      "description": "an array of item descriptions <br>&nbsp;&nbsp;&nbsp;&nbsp;this assumes the container is empty, and every item<br>&nbsp;&nbsp;&nbsp;&nbsp;is described width and height. <br>&nbsp;&nbsp;&nbsp;&nbsp;itemCount should not be defined in order for items to be taken into account.",
       "schema": {
         "width": {
           "required": true,
@@ -112,38 +123,8 @@
           "type": "string",
           "defaultValue": null,
           "description": "item height"
-        },
-        "rowSpan": {
-          "type": "number",
-          "defaultValue": 1,
-          "description": "item row span - number of rows in a grid layout to span"
-        },
-        "colSpan": {
-          "type": "number",
-          "defaultValue": 1,
-          "description": "item column span - number of columns in a grid layout to span"
-        },
-        "rowIndex": {
-          "type": "number",
-          "defaultValue": 0,
-          "description": "row position"
-        },
-        "colIndex": {
-          "type": "number",
-          "defaultValue": 0,
-          "description": "column position"
         }
       }
-    },
-    "layoutMode": {
-      "type": "string",
-      "defaultValue": "flow",
-      "description": "Defines flow layout"
-    },
-    "width": {
-      "type": "string",
-      "defaultValue": null,
-      "description": "width of the layout container"
     }
   }
 }

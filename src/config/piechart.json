@@ -113,10 +113,20 @@
       "description": "Gets or sets whether the slices can be selected."
     },
     "brushes": {
-      "type": "object",
+      "type": "array",
       "defaultValue": null,
       "description": "Gets or sets the Brushes property.<br>&nbsp;&nbsp;&nbsp;The brushes property defines the palette from which automatically assigned slice brushes are selected.<br>&nbsp;&nbsp;&nbsp;The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
-      "arrayMemberType": "string"
+      "arrayMemberType": "string",
+       "schema": {
+		"name": {
+			"type": "string",
+			"required": true,
+			"defaultValue": null,
+			"processValueOnly" : true,
+			"description": "Plette from which automatically assigned slice brushes are selected."
+			}
+		},
+	    "designerDisplayProperty": "name"
     },
     "dataSource": {
       "type": "custom",
@@ -142,7 +152,17 @@
       "type": "array",
       "defaultValue": null,
       "description": "Gets or sets the collection of exploded slice indices.<br>            Should be an array of integers that indicate the indexes of the slices to explode.",
-      "arrayMemberType": "number"
+      "arrayMemberType": "number",
+       "schema": {
+		"Slice Index": {
+			"type": "number",
+			"required": true,
+			"defaultValue": null,
+			"processValueOnly" : true,
+			"description": "The index of the slices to explode"
+			}
+		},
+	    "designerDisplayProperty": "Slice Index"
     },
     "formatLabel": {
       "type": "function",

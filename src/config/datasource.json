@@ -628,7 +628,17 @@
 					"type": "array",
 					"defaultValue": [],
 					"description": "When defaultDirection is different than \"none\", and defaultFields is specified, data will be initially sorted accordingly, directly after dataBind().",
-					"arrayMemberType": "string"
+					"arrayMemberType": "string",
+					"schema": {
+						"name": {
+							"type": "string",
+							"required": true,
+							"defaultValue": null,
+							"processValueOnly" : true,
+							"description": "Name of the defaultField"
+						}
+					},
+					"designerDisplayProperty": "name"
 				},
 				"applyToAllData": {
 					"type": "bool",
@@ -871,12 +881,39 @@
 			"type": "array",
 			"defaultValue": null,
 			"description": "A list of field definitions specifying the schema of the data source.",
-			"designerDisplayProperty": "fieldName",
+			"designerDisplayProperty": "name",
 			"schema": {
-				"fieldName": {
+				"name": {
 					"type": "string",
 					"defaultValue": null,
 					"description": "Name of the field."
+				},
+				"type": {
+					"type": "string",
+					"defaultValue": "string",
+					"description": "Type of the field.",
+					"valueOptions": [
+						{
+							"name": "string",
+							"type": "string",
+							"description": "Sets the data source field type to be string."
+						},
+						{
+							"name": "number",
+							"type": "string",
+							"description": "Sets the data source field type to be number."
+						},
+						{
+							"name": "boolean",
+							"type": "string",
+							"description": "Sets the data source field type to be boolean."
+						},
+						{
+							"name": "date",
+							"type": "string",
+							"description": "Sets the data source field type to be date."
+						}
+					]
 				}
 			}
 		},

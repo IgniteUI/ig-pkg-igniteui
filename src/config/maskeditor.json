@@ -369,28 +369,13 @@
           "description": " only entered text. All unfilled prompts (positions) and literals are ignored (removed). Note: that is used as default."
         },
         {
-          "name": "0",
-          "type": "number",
-          "description": " only entered text. All unfilled prompts (positions) and literals are ignored (removed). Note: that is used as default."
-        },
-        {
           "name": "rawTextWithRequiredPrompts",
           "type": "string",
           "description": " only entered text and required prompts (positions). All optional unfilled prompts and literals are ignored (removed)"
         },
         {
-          "name": "1",
-          "type": "number",
-          "description": " only entered text and required prompts (positions). All optional unfilled prompts and literals are ignored (removed)."
-        },
-        {
           "name": "rawTextWithAllPrompts",
           "type": "string",
-          "description": " only entered text and prompts (positions). All literals are ignored (removed)."
-        },
-        {
-          "name": "2",
-          "type": "number",
           "description": " only entered text and prompts (positions). All literals are ignored (removed)."
         },
         {
@@ -399,28 +384,13 @@
           "description": " only entered text and literals. All unfilled prompts are ignored (removed)."
         },
         {
-          "name": "3",
-          "type": "number",
-          "description": " only entered text and literals. All unfilled prompts are ignored (removed)."
-        },
-        {
           "name": "rawTextWithRequiredPromptsAndLiterals",
           "type": "string",
           "description": " only entered text, required prompts (positions) and literals. All optional unfilled prompts are ignored (removed)."
         },
         {
-          "name": "4",
-          "type": "number",
-          "description": " only entered text, required prompts (positions) and literals. All optional unfilled prompts are ignored (removed)."
-        },
-        {
           "name": "allText",
           "type": "string",
-          "description": " entered text, all prompts (positions) and literals."
-        },
-        {
-          "name": "5",
-          "type": "number",
           "description": " entered text, all prompts (positions) and literals."
         }
       ]
@@ -600,18 +570,8 @@
           "description": " Select all text"
         },
         {
-          "name": "-1",
-          "type": "number",
-          "description": " Select all text"
-        },
-        {
           "name": "start",
           "type": "string",
-          "description": " Set caret at the beginning of text"
-        },
-        {
-          "name": "0",
-          "type": "number",
           "description": " Set caret at the beginning of text"
         },
         {
@@ -620,19 +580,9 @@
           "description": " Set caret at the end of text"
         },
         {
-          "name": "1",
-          "type": "number",
-          "description": " Set caret at the end of text"
-        },
-        {
           "name": "default",
           "type": "string",
           "description": " Use default behavior of browser (in case of mask, numeric and date editors it may be unreliable)"
-        },
-        {
-          "name": "2",
-          "type": "number",
-          "description": " Use default behavior of browser (in case of mask, numeric and date editors it may be unreliable)."
         }
       ]
     },
@@ -704,19 +654,9 @@
           "description": " Text editor is created"
         },
         {
-          "name": "0",
-          "type": "number",
-          "description": " Text editor is created (same as 'text')"
-        },
-        {
           "name": "mask",
           "type": "string",
           "description": " Mask editor is created"
-        },
-        {
-          "name": "1",
-          "type": "number",
-          "description": " Mask editor is created (same as 'mask')"
         },
         {
           "name": "date",
@@ -724,19 +664,9 @@
           "description": " Date-time editor is created"
         },
         {
-          "name": "2",
-          "type": "number",
-          "description": " Date-time editor is created (same as 'date')"
-        },
-        {
           "name": "datepicker",
           "type": "string",
           "description": " Date-picker is created"
-        },
-        {
-          "name": "3",
-          "type": "number",
-          "description": " Date-picker is created (same as 'datepicker')"
         },
         {
           "name": "numeric",
@@ -744,29 +674,14 @@
           "description": " Numeric editor is created"
         },
         {
-          "name": "4",
-          "type": "number",
-          "description": " Numeric editor is created (same as 'numeric')"
-        },
-        {
           "name": "currency",
           "type": "string",
           "description": " Currency editor is created"
         },
         {
-          "name": "5",
-          "type": "number",
-          "description": " Currency editor is created (same as 'currency')"
-        },
-        {
           "name": "percent",
           "type": "string",
           "description": " Percent editor is created"
-        },
-        {
-          "name": "6",
-          "type": "number",
-          "description": " Percent editor is created (same as 'percent')"
         }
       ]
     },
