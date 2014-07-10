@@ -113,7 +113,7 @@ define (function (require, exports, module) {
 						*/
 					    //For bug #169309 - Consider using something like https://github.com/yeoman/stringify-object
                         var formattedStr
-					    //#15510 When complex objects are set in default configuration, markers are not added correctly
+					    //#172510 When complex objects are set in default configuration, markers are not added correctly
                         if (props[key].type === "array") {
                             formattedStr = descriptor.ide.getArrayCodeString(opts[key], 0, props[key].schema);
                         } else {
