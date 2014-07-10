@@ -146,7 +146,8 @@ define (function (require, exports, module) {
 						code += formattedStrTabbed;
 						lineCount += formattedStrTabbed.split("\n").length - 1;
 					} else if (props[key].type === "object") {										
-						var formattedStr = beautify(JSON.stringify(opts[key]).replace(/\"([^(\")"]+)\":/g,"$1:"));
+					    //var formattedStr = beautify(JSON.stringify(opts[key]).replace(/\"([^(\")"]+)\":/g, "$1:"));
+					    var formattedStr = descriptor.ide.getObjectCodeString(opts[key], 0, props[key].schema);
 						for (var p = 0; p < opts[key].length; p ++) {
 							if(opts[key][p].hasOwnProperty("dataSource")){
 								formattedStr = formattedStr.replace('"' + opts[key][p].dataSource + '"', opts[key][p].dataSource);
@@ -443,14 +444,8 @@ define (function (require, exports, module) {
 				// change selection so that the prop value is selected
 			} else {
 			    // the prop is already added, just find it and return its position, also add a marker for it
-			    var needleVal;
-			    if (descriptor.propType === "array" || descriptor.propType === "object") {
-			        needleVal = propStr.substring(0, propStr.lastIndexOf("\n"));
-			    } else {
-			        needleVal = propStr.replace("\n", "");
-			    }
 				var r = ide.editor.find({
-				    needle: needleVal,
+				    needle: propStr,
 					start: {
 						row: innerMarker.start.row + 1,
 						column: 0

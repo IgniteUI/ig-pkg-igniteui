@@ -65,7 +65,7 @@ define (["./grid-component-plugin"], function (IgniteUIGridPlugin) {
 				descriptor.marker.extraMarkers.options = {};
 			}
 			descriptor.marker.extraMarkers.options.columnLayouts = {marker: layoutsRange};
-		},
+		}
 	});
 	return IgniteUIHierarchicalGridPlugin;
 });

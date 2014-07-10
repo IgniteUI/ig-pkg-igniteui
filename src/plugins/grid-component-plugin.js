@@ -79,16 +79,6 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 		    this._super(descriptor);
 		    // we don't want to hardcode this value but find it in the current range
 		    // it may well happen that someone adds lots of options and extra code *above* the features or any other object
-		    var colRange = this.settings.editor.find("columns: [", { start: descriptor.marker.range.start });
-		    if (colRange) {
-		        colRange = new descriptor.rclass(colRange.start.row, 0, colRange.end.row + 35, 0);
-		        colRange.start = this.settings.editor.getSession().doc.createAnchor(colRange.start);
-		        colRange.end = this.settings.editor.getSession().doc.createAnchor(colRange.end);
-		        if (!descriptor.marker.extraMarkers.options) {
-		            descriptor.marker.extraMarkers.options = {};
-		        }
-		        descriptor.marker.extraMarkers.options.columns = { marker: colRange };
-		    }
 		    var featuresRange = this.settings.editor.find("features: [", { start: descriptor.marker.range.start });
 		    if (featuresRange) {
 		        featuresRange = new descriptor.rclass(featuresRange.start.row, 0, featuresRange.end.row + 11, 0);
