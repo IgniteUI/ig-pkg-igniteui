@@ -661,7 +661,7 @@ define (function (require, exports, module) {
 				}
 				var options = meta.options;
 				//A.T. bug #169154
-				if ((descriptor.propType === "string" || descriptor.propType === "number") && (descriptor.propValue === "" || descriptor.propValue === null)) {
+				if (descriptor.propValue === "" || descriptor.propValue === null || descriptor.propValue === undefined) {
 					this.deletePropCode({
 						component: descriptor.comp,
 						propName: descriptor.propName

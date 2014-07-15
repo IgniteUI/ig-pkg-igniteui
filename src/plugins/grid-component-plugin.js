@@ -413,6 +413,38 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			} else if (this._super) {
 				this._super(descriptor);
 			}
+		},
+		update: function (descriptor) {
+			var self = this, base = this._super;
+			if (descriptor.propName === "dataSource") {
+				$("#resetGridColumns").igDialog({
+					modal: true,
+					draggable: false,
+					resizable: false,
+					width: "450px",
+					showHeader: false,
+					zIndex: 10004
+				}).one("click", "#resetGridColumnsOkButton", function () {
+					$("#resetGridColumns").igDialog("close");
+					descriptor.comp.options.columns = null;
+					descriptor.comp.options.autoGenerateColumns = true;
+					base.apply(self, [descriptor]);
+					descriptor.propName = "columns";
+					descriptor.propValue = null;
+					base.apply(self, [descriptor]);
+					descriptor.propName = "autoGenerateColumns";
+					descriptor.propValue = true;
+					base.apply(self, [descriptor]);
+					$("#resetGridColumns").igDialog("destroy");
+				}).one("click", "#resetGridColumnsCancelButton", function () {
+					$("#resetGridColumns").igDialog("close");
+					base.apply(self, [descriptor]);
+					$("#resetGridColumns").igDialog("destroy");
+					return false;
+				});
+			} else {
+				this._super(descriptor);
+			}
 		}
 		/*
 		render: function(descriptor) {
