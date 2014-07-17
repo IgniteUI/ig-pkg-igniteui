@@ -173,7 +173,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 				descriptor.propName = "dataSource";
 				descriptor.oldPropValue = event.target.value.substring(0, event.target.value.length - 1);
 				descriptor.propType = "string";
-				descriptor.propValue = event.target.value;
+				descriptor.propValue = event.target.value.trim();
 				that.update(descriptor);
 			});
 			remoteContainer.find(".ds-diag-url > .btn").click(function (event) {
@@ -226,7 +226,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 				descriptor.propName = "dataSource";
 				descriptor.oldPropValue = event.target.value.substring(0, event.target.value.length - 1);
 				descriptor.propType = "literal";
-				descriptor.propValue = event.target.value;
+				descriptor.propValue = event.target.value.trim();
 				that.update(descriptor);
 			});
 		}
