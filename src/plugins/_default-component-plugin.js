@@ -313,10 +313,12 @@ define (function (require, exports, module) {
 			var meta = codeMarker.extraMarkers;
 			var options = meta.options;
 			var ide = this.settings.ide;
-			var marker = options[descriptor.propName].marker;
-			ide.session.removeMarker(marker.id);
-			ide.session.remove(marker);
-			delete options[descriptor.propName];
+			if(options[descriptor.propName]) {
+				var marker = options[descriptor.propName].marker;
+				ide.session.removeMarker(marker.id);
+				ide.session.remove(marker);
+				delete options[descriptor.propName];
+			}
 		},
 		updatePropCode: function (descriptor, addedFromCode) {
 			/*
