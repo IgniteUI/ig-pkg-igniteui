@@ -421,8 +421,9 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 					modal: true,
 					draggable: false,
 					resizable: false,
-					width: "450px",
+					width: "480px",
 					showHeader: false,
+					closeOnEscape : false,
 					zIndex: 10004
 				}).one("click", "#resetGridColumnsOkButton", function () {
 					$("#resetGridColumns").igDialog("close");
