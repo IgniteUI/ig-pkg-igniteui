@@ -264,6 +264,7 @@ define (function (require, exports, module) {
 					// divide line by line the code in the code marker, and enter the new marker for that prop which isn't recorded yet
 					var codeStr = ide.session.getTextRange(codeMarker.range);
 					var strProps = codeStr.split("\n");
+					var propExixsts = false;
 					for (var i = 0; i < strProps.length; i++) {
 						if (strProps[i].indexOf(name) !== -1) {
 							options[name] = {
@@ -273,10 +274,16 @@ define (function (require, exports, module) {
 								propType: descriptor.propType
 							};
 							options[name].marker = ide.createAndAddMarker(codeMarker.range.start.row + i, codeMarker.range.start.column, codeMarker.range.start.row + i, codeMarker.range.start.column + strProps[i].length);
+							propExixsts = true;
 							break;
 						}
 					}
-					pos = this.updatePropCode(descriptor, true);
+					if (propExixsts) {
+						pos = this.updatePropCode(descriptor, true);
+					} else {
+						pos = this.addPropCode(descriptor, true);
+					}
+					
 				} else {
 					pos = this.addPropCode(descriptor, true);
 				}
