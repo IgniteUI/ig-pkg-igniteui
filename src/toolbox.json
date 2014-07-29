@@ -34,8 +34,8 @@
     ],
     "stylesheetsComment": "",
     "stylesheets": [
-        "css/themes/infragistics/infragistics.theme.css",
-        "css/structure/infragistics.css"
+        "/css/themes/infragistics/infragistics.theme.css",
+        "/css/structure/infragistics.css"
     ],
     "iconsPath": "icons",
     "iconSpriteCssFile": "ignite-icons.css",
@@ -52,6 +52,7 @@
     		"toolboxTitle": "Grid",
     		"componentPlugin": "grid-component-plugin", 
     		"icon": "grid.png",
+			"dataBoundable": true,
     		"dragDropIcon": "grid-dragdrop.png",
     		"category": "lists",
     		"visual": true, 
@@ -177,6 +178,7 @@
             "dependsOn": ["core", "lob", "dv"],
     		"toolboxTitle": "Pie Chart",
     		"icon": "pie-chart.png",
+			"componentPlugin": "charts-component-plugin",
     		"dragDropIcon": "pie-chart-dragdrop.png",
     		"category": "dataviz",
     		"visual": true,
