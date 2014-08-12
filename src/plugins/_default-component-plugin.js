@@ -624,7 +624,8 @@ define (function (require, exports, module) {
 						newOpts[descriptor.propName] = descriptor.propValue;
 					}
 				} else {
-					newOpts[descriptor.propName] = window.frames[0][descriptor.propValue];
+				    newOpts[descriptor.propName] = window.frames[0][descriptor.propValue];
+				    newOpts.dsID = descriptor.propValue;
 				}
 				descriptor.comp.options = newOpts;
 				window.frames[0].$(descriptor.placeholder).children(".prop-editor-error-message").remove();

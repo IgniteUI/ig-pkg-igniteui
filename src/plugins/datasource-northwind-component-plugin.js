@@ -10,7 +10,7 @@ define (["./datasource-component-plugin"], function (DataSourcePlugin) {
 			code += "\t\t\t\t\tresponseTotalRecCountKey: \"odata.count\"\n";
 			var orderedReturnProps = [];
 			// now write options / settings
-			code += "\t\t\t\t}).dataBind();\n";
+			code += "\t\t\t\t});\n";
 			orderedReturnProps.push({
 				name: "dataSource",
 				value: "http://services.odata.org/Northwind/Northwind.svc/Customers?$format=json&$select=CustomerID,CompanyName,ContactName&$callback=?",

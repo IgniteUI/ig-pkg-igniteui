@@ -13,7 +13,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			var code = "\t\t\t\twindow." + descriptor.id + " = new $.ig.DataSource({\n";
 			var orderedReturnProps = [];
 			// now write options / settings
-			code += "\n\t\t\t\t}).dataBind();\n";
+			code += "\n\t\t\t\t});\n";
 			return {
 				codeString: code,
 				lineCount: 3,
