@@ -432,8 +432,10 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 					base.apply(self, [descriptor]);
 					descriptor.propName = "columns";
 					descriptor.propValue = null;
+					descriptor.propType = "array";
 					base.apply(self, [descriptor]);
 					descriptor.propName = "autoGenerateColumns";
+					descriptor.propType = "bool";
 					descriptor.propValue = true;
 					base.apply(self, [descriptor]);
 					$("#resetGridColumns").igDialog("destroy");
