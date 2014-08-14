@@ -625,7 +625,9 @@ define (function (require, exports, module) {
 					}
 				} else {
 				    newOpts[descriptor.propName] = window.frames[0][descriptor.propValue];
-				    newOpts.dsID = descriptor.propValue;
+				    if (descriptor.propName === "dataSource") {
+				        newOpts.dsID = descriptor.propValue;
+				    }
 				}
 				descriptor.comp.options = newOpts;
 				window.frames[0].$(descriptor.placeholder).children(".prop-editor-error-message").remove();
