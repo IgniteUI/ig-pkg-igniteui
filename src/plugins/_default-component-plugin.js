@@ -3,7 +3,7 @@ define (function (require, exports, module) {
 	var beautify = require("/bower_components/js-beautify/js/lib/beautify.js").js_beautify;
 	var collectionEditor = require("ide-collectioneditor");
 	var IgniteUIComponentPlugin = IgniteUIComponentPlugin || ComponentPlugin.extend({
-		init: function (options) {
+	    init: function (options) {
 			this._super(options);
 		},
 		getName: function () {
@@ -804,9 +804,9 @@ define (function (require, exports, module) {
 		},
 		openPropertyEditor: function (descriptor) {
 			var propertyExplorer = require("ide-propertyexplorer"),
-				container = $("<div class='adorner-property-sheet' data-property='" + descriptor.propName + "'></div>").insertAfter(descriptor.ide.currentAdorner()),
-				search = $("<div class=\"input-group prop-search\"><input type=\"text\" class=\"form-control prop-search-input\" placeholder=\"Search ...\"/></div>").appendTo(container),
-				input = search.children(".prop-search-input"),
+				container = $("<div class='adorner-property-sheet' data-property='" + descriptor.propName + "'></div>").insertAfter(descriptor.ide.currentAdorner()), locale = $.plugin._default.locale,
+				search = $("<div class=\"input-group prop-search\"><input type=\"text\" class=\"form-control prop-search-input\" placeholder=\"" + locale.search + " ...\"/></div>").appendTo(container),
+				input = search.children(".prop-search-input"), 
 				editor = $("<div class='adorner-property-list'></div>").appendTo(container),
 				property,
 				count = 0,
@@ -875,7 +875,7 @@ define (function (require, exports, module) {
 			descriptor.ide.adornerMoveLeft();
 		},
 		setPropertyExplorerValueContents: function (descriptor) {
-			var ide = this.settings.ide, comps = ide.componentIds, dslist = [], i, td = descriptor.td;
+		    var ide = this.settings.ide, comps = ide.componentIds, dslist = [], i, td = descriptor.td, locale = $.plugin._default.locale;
 			var that = this, defaultVal, defaultKey;
 			// handle the dataSource rendering here
 			// 1. check if there are registered $.ig.DataSource components on the page
@@ -915,13 +915,13 @@ define (function (require, exports, module) {
 					}
 					texts.push({
 						key: "addNew",
-						text: "Configure...",
-						title: "Configure Data Source"
+						text: locale.configure + "...",
+						title: locale.configureDataSource
 					});
 					var dd_id = descriptor.element.attr("id") + "_" + descriptor.propName + "_dropDown";
 					var propData = {
 						dropdownId: dd_id,
-						titleText: "Select Data Source",
+						titleText: locale.selectDataSource,
 						closeOnClick: true,
 						defaultVal: defaultVal ? defaultVal : "<Default>",
 						defaultKey: defaultKey ? defaultKey : "default",
@@ -1027,18 +1027,18 @@ define (function (require, exports, module) {
 			}
 		},
 		renderDataSourceArea: function (descriptor, container, dsval, localdsval) {
-			var that = this;
+		    var that = this, locale = $.plugin._default.locale;
 			var localRemoteArea = $("<div></div>").addClass("ds-diag-dt").prependTo(container);
 			var remoteContainer = $("<div></div>").appendTo(container).addClass("ds-diag-remotecontainer");
 			$("<span>Is Your Data: </span>").appendTo(localRemoteArea).addClass("ds-diag-dt-label");
-			$("<input type=\"radio\" name=\"dsproptype\" id=\"dsproptype1\" checked value=\"Remote\"/>").addClass("ds-diag-dt-remote").appendTo(localRemoteArea);
-			$("<label for=\"dsproptype1\">Remote</label>").appendTo(localRemoteArea).addClass("ds-diag-dt-remotelabel");
-			$("<input type=\"radio\" name=\"dsproptype\" id=\"dsproptype2\" value=\"Local\"/>").addClass("ds-diag-dt-local").appendTo(localRemoteArea);
-			$("<label for=\"dsproptype2\">Local</label>").appendTo(localRemoteArea).addClass("ds-diag-dt-locallabel");
-			$("<br><label>URL Endpoint</label>").addClass("ds-diag-urllabel").appendTo(remoteContainer);
-			$("<div><input type=\"text\" class=\"form-control\"/><span class=\"btn btn-default\">Test</span></div>").addClass("ds-diag-url").appendTo(remoteContainer);
+			$("<input type=\"radio\" name=\"dsproptype\" id=\"dsproptype1\" checked value=\"" + locale.remote + "\"/>").addClass("ds-diag-dt-remote").appendTo(localRemoteArea);
+			$("<label for=\"dsproptype1\">" + locale.remote + "</label>").appendTo(localRemoteArea).addClass("ds-diag-dt-remotelabel");
+			$("<input type=\"radio\" name=\"dsproptype\" id=\"dsproptype2\" value=\"" + locale.local + "\"/>").addClass("ds-diag-dt-local").appendTo(localRemoteArea);
+			$("<label for=\"dsproptype2\">" + locale.local + "</label>").appendTo(localRemoteArea).addClass("ds-diag-dt-locallabel");
+			$("<br><label>" + locale.urlEndpoint + "</label>").addClass("ds-diag-urllabel").appendTo(remoteContainer);
+			$("<div><input type=\"text\" class=\"form-control\"/><span class=\"btn btn-default\">" + locale.test + "</span></div>").addClass("ds-diag-url").appendTo(remoteContainer);
 			var localContainer = $("<div></div>").addClass("ds-diag-localcontainer").css("display", "none").appendTo(container);
-			$("<label>Type var name containing data:</label>").appendTo(localContainer);
+			$("<label>" + locale.typeVarName + ":</label>").appendTo(localContainer);
 			$("<input type=\"text\" class=\"form-control\"/>").appendTo(localContainer);
 			localRemoteArea.children("input[name=dsproptype]").on("change", function (event) {
 				if ($(event.target).hasClass("ds-diag-dt-local")) {
@@ -1082,12 +1082,12 @@ define (function (require, exports, module) {
 						crossDomain: true,
 						dataType : "jsonp"
 					}).fail(function () {
-						testLabel.addClass("test-fail").removeClass("test-success").text("Request failed.");
+					    testLabel.addClass("test-fail").removeClass("test-success").text(locale.requestFailed);
 					}).done(function () {
-						testLabel.removeClass("test-fail").addClass("test-success").text("Success!");
+					    testLabel.removeClass("test-fail").addClass("test-success").text(locale.success);
 					});
 				} else {
-					testLabel.removeClass("test-fail").removeClass("test-success").text("Please set a valid URL");
+				    testLabel.removeClass("test-fail").removeClass("test-success").text(locale.setValidUrl);
 				} 
 			});
 			localContainer.find("input").val(localdsval ? localdsval : dsval).keyup(function (event) {
@@ -1355,7 +1355,7 @@ define (function (require, exports, module) {
 						}
 						ide._errorMkr = ide.session.addMarker(new ide.RangeClass(line, 0, line + 1, 0), "ide-error", "text", false);
 						if ($cblock.attr("id")) {
-							blockid = "<p class='errordetailtrace'>(error from script block with id '" + $cblock.attr("id") + "'):</p>";
+						    blockid = "<p class='errordetailtrace'>(" + $.plugin._default.locale.scriptError + " '" + $cblock.attr("id") + "'):</p>";
 						}
 						ide.session.setAnnotations([{
 							row: line,

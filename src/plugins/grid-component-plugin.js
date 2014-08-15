@@ -244,11 +244,11 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			descriptor.updateFunction(descr);
 		},
 		editFeatureHandler: function (descriptor, target) {
-			var labelText = target.text(),
+		    var labelText = target.text(), locale = $.plugin.grid.locale,
 				$this = this,
 				propertyExplorer = require("ide-propertyexplorer"),
 				container = $("<div class='adorner-property-sheet' data-property='" + labelText + "'></div>").insertAfter(descriptor.ide.currentAdorner()),
-				search = $("<div class=\"input-group prop-search\"><input type=\"text\" class=\"form-control prop-search-input\" placeholder=\"Search ...\"/></div>").appendTo(container),
+				search = $("<div class=\"input-group prop-search\"><input type=\"text\" class=\"form-control prop-search-input\" placeholder=\""+ locale.search+" ...\"/></div>").appendTo(container),
 				input = search.children(".prop-search-input"),
 				evtsEditor,
 				editor,
@@ -409,7 +409,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 		},
 		setPropertyExplorerValueContents: function (descriptor) {
 			if (descriptor.propName === "features") {
-				descriptor.td.html("<span class='custom-editor'>Configure...</span>");
+			    descriptor.td.html("<span class='custom-editor'>" + $.plugin.grid.locale.configure + "...</span>");
 			} else if (this._super) {
 				this._super(descriptor);
 			}

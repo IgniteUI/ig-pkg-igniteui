@@ -17,6 +17,14 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			} else {
 				return this._super(descriptor);
 			}
+		},
+		initComponent: function (descriptor) {
+		    var name = this._getWidgetName(descriptor.type);
+
+		    if (window.frames[0].$(descriptor.placeholder)[name]) {
+		        window.frames[0].$(descriptor.placeholder).after("<div id='legend'></div>");
+		        window.frames[0].$(descriptor.placeholder)[name](descriptor.options);
+		    }
 		}
 	});
 	return IgniteUIChartsPlugin;

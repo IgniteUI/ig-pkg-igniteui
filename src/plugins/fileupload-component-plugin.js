@@ -14,7 +14,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			return "<div id=\"" + descriptor.id + "\" style='display: inline-block' ></div>";			
 		},
 		initComponent: function (descriptor) {
-			var name = this._getWidgetName(descriptor.type), ide = this.settings.ide, blockOffset = 7, flagAlreadyContainsCSS = false;
+		    var name = this._getWidgetName(descriptor.type), ide = this.settings.ide, blockOffset = 7, flagAlreadyContainsCSS = false, locale = $.plugin.fileUpload.locale;
 			
 			if (window.frames[0].$(descriptor.placeholder)[name]) {			    
 				window.frames[0].$(descriptor.placeholder[0])[name](descriptor.options);
@@ -27,7 +27,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 						var timeoutID = setTimeout(function () {
 							var pos = target.offset();
 							
-								var tooltipText = "<p>File Upload needs a server-side handler to accept uploaded files that you will need to add in your code. It will not allow uploads in the designer or preview.</p>";
+								var tooltipText = "<p>" + locale.tooltip +"</p>";
 								tooltip.find(".tooltip-content").html(tooltipText);
 								tooltip.css({
 									left: pos.left + 18,

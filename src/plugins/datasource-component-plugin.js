@@ -115,7 +115,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 		},
 		render: function (container, descriptor) {
 			var ds = window.frames[0][descriptor.id];
-			var ide = this.settings.ide;
+			var ide = this.settings.ide, locale = $.plugin.dataSource.locale;
 			var that = this;
 			var ide = this.settings.ide;
 			//if (!(ds instanceof $.ig.DataSource)) {
@@ -134,20 +134,20 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			var dscontainer = $("<div></div>").prependTo(container).addClass("ds-diag-container");
 			var remoteContainer = $("<div></div>").appendTo(dscontainer).addClass("ds-diag-remotecontainer");
 			var localRemoteArea = $("<div></div>").addClass("ds-diag-dt").prependTo(dscontainer);
-			$("<span>Is Your Data: </span>").appendTo(localRemoteArea).addClass("ds-diag-dt-label");
-			$("<input type=\"radio\" name=\"dstype\" id=\"dstype1\" checked value=\"Remote\"/>").addClass("ds-diag-dt-remote").appendTo(localRemoteArea);
-			$("<label for=\"dstype1\">Remote</label>").appendTo(localRemoteArea).addClass("ds-diag-dt-remotelabel");
-			$("<input type=\"radio\" name=\"dstype\" id=\"dstype2\" value=\"Local\"/>").addClass("ds-diag-dt-local").appendTo(localRemoteArea);
-			$("<label for=\"dstype2\">Local</label>").appendTo(localRemoteArea).addClass("ds-diag-dt-locallabel");
+			$("<span>" + locale.isYourData + ": </span>").appendTo(localRemoteArea).addClass("ds-diag-dt-label");
+			$("<input type=\"radio\" name=\"dstype\" id=\"dstype1\" checked value=\"" + locale.remote + "\"/>").addClass("ds-diag-dt-remote").appendTo(localRemoteArea);
+			$("<label for=\"dstype1\">" + locale.remote + "</label>").appendTo(localRemoteArea).addClass("ds-diag-dt-remotelabel");
+			$("<input type=\"radio\" name=\"dstype\" id=\"dstype2\" value=\"" + locale.local + "\"/>").addClass("ds-diag-dt-local").appendTo(localRemoteArea);
+			$("<label for=\"dstype2\">" + locale.local + "</label>").appendTo(localRemoteArea).addClass("ds-diag-dt-locallabel");
 			// edit schema button
-			$("<span>Edit Schema</span>").addClass("btn btn-default ds-diag-editschema").appendTo(remoteContainer);
-			$("<br><label>URL Endpoint</label>").addClass("ds-diag-urllabel").appendTo(remoteContainer);
-			$("<div><input type=\"text\" class=\"form-control\"/><span class=\"btn btn-default\">Test</span></div>").addClass("ds-diag-url").appendTo(remoteContainer);
+			$("<span>" + locale.editSchema + "</span>").addClass("btn btn-default ds-diag-editschema").appendTo(remoteContainer);
+			$("<br><label>" + locale.urlEndpoint + "</label>").addClass("ds-diag-urllabel").appendTo(remoteContainer);
+			$("<div><input type=\"text\" class=\"form-control\"/><span class=\"btn btn-default\">" + locale.test + "</span></div>").addClass("ds-diag-url").appendTo(remoteContainer);
 
 			var localContainer = $("<div></div>").addClass("ds-diag-localcontainer").css("display", "none").appendTo(dscontainer);
 			// for local
 			//$("<input type=\"radio\" name=\"localdstype\" checked value=\"variable\"/><label>Type var name containing data:</label>").appendTo(localContainer);
-			$("<label>Type var name containing data:</label>").appendTo(localContainer);
+			$("<label>" + locale.typeVarName + ":</label>").appendTo(localContainer);
 			$("<input type=\"text\" class=\"form-control\"/>").appendTo(localContainer);
 			/*
 			$("<input type=\"radio\" name=\"localdstype\" value=\"inline\"/><label>Or use inline data:</label>").appendTo(localContainer);
@@ -178,7 +178,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			});
 			remoteContainer.find(".ds-diag-url > .btn").click(function (event) {
 				// test datasource by doing a query to it
-				var url = ds.settings.dataSource, testLabel = remoteContainer.find(".test-label");
+			    var url = ds.settings.dataSource, testLabel = remoteContainer.find(".test-label"), locale = $.plugin.dataSource.locale;
 				if (testLabel.length === 0) {
 					testLabel = $("<div class=\"test-label\"></div>").insertAfter(remoteContainer.find("input"));
 				}
@@ -188,12 +188,12 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 						crossDomain: true,
 						dataType : "jsonp"
 					}).fail(function () {
-						testLabel.addClass("test-fail").removeClass("test-success").text("Request failed.");
+						testLabel.addClass("test-fail").removeClass("test-success").text(locale.reqestFailed);
 					}).done(function () {
-						testLabel.removeClass("test-fail").addClass("test-success").text("Success!");
+						testLabel.removeClass("test-fail").addClass("test-success").text(locale.success);
 					});
 				} else {
-					testLabel.removeClass("test-fail").removeClass("test-success").text("Please set a valid URL");
+				    testLabel.removeClass("test-fail").removeClass("test-success").text(locale.setValidUrl);
 				} 
 			});
 			// edit schema
