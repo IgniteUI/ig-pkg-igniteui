@@ -18,7 +18,10 @@
           "optional": false
         }
       ],
-      "description": "event fired when the control is displayed on a non HTML5 compliant browser"
+      "description": {
+		"en": "event fired when the control is displayed on a non HTML5 compliant browser",
+		"jp": "event fired when the control is displayed on a non HTML5 compliant browser"
+	}
     },
     "holeDimensionsChanged": {
       "cancellable": false,
@@ -34,7 +37,10 @@
           "optional": false
         }
       ],
-      "description": "Raised when the dimensions (center point or radius) of the doughnut hole change."
+      "description": {
+		"en": "Raised when the dimensions (center point or radius) of the doughnut hole change.",
+		"jp": "Raised when the dimensions (center point or radius) of the doughnut hole change."
+	}
     },
     "sliceClick": {
       "cancellable": false,
@@ -50,7 +56,10 @@
           "optional": false
         }
       ],
-      "description": "Raised when the slice is clicked."
+      "description": {
+		"en": "Raised when the slice is clicked.",
+		"jp": "Raised when the slice is clicked."
+	}
     },
     "tooltipHidden": {
       "cancellable": false,
@@ -66,7 +75,10 @@
           "optional": false
         }
       ],
-      "description": "event fired after a tooltip is hidden <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush."
+      "description": {
+		"en": "event fired after a tooltip is hidden <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush.",
+		"jp": "event fired after a tooltip is hidden <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush."
+	}
     },
     "tooltipHiding": {
       "cancellable": true,
@@ -82,7 +94,10 @@
           "optional": false
         }
       ],
-      "description": "event fired when the mouse has left a series and the tooltip is about to hide<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush."
+      "description": {
+		"en": "event fired when the mouse has left a series and the tooltip is about to hide<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush.",
+		"jp": "event fired when the mouse has left a series and the tooltip is about to hide<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush."
+	}
     },
     "tooltipShowing": {
       "cancellable": true,
@@ -98,7 +113,10 @@
           "optional": false
         }
       ],
-      "description": "event fired when the mouse has hovered on a series and the tooltip is about to show <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush."
+      "description": {
+		"en": "event fired when the mouse has hovered on a series and the tooltip is about to show <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush.",
+		"jp": "event fired when the mouse has hovered on a series and the tooltip is about to show <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush."
+	}
     },
     "tooltipShown": {
       "cancellable": false,
@@ -114,77 +132,119 @@
           "optional": false
         }
       ],
-      "description": "event fired after a tooltip is shown<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush."
+      "description": {
+		"en": "event fired after a tooltip is shown<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush.",
+		"jp": "event fired after a tooltip is shown<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush."
+	}
     }
   },
   "properties": {
     "allowSliceExplosion": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Gets or sets whether the slices can be exploded."
+      "description": {
+		"en": "Gets or sets whether the slices can be exploded.",
+		"jp": "Gets or sets whether the slices can be exploded."
+	}
     },
     "allowSliceSelection": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Gets or sets whether the slices can be selected."
+      "description": {
+		"en": "Gets or sets whether the slices can be selected.",
+		"jp": "Gets or sets whether the slices can be selected."
+	}
     },
 	"width": {
       "type": "string",
       "defaultValue": null,
-      "description": "The width of the chart. It can be set as a number in pixels, string (px) or percentage (%)."
+      "description": {
+		"en": "The width of the chart. It can be set as a number in pixels, string (px) or percentage (%).",
+		"jp": "The width of the chart. It can be set as a number in pixels, string (px) or percentage (%)."
+	}
     },
 	"height": {
       "type": "string",
       "defaultValue": null,
-      "description": "The height of the chart. It can be set as a number in pixels, string (px) or percentage (%)."
+      "description": {
+		"en": "The height of the chart. It can be set as a number in pixels, string (px) or percentage (%).",
+		"jp": "The height of the chart. It can be set as a number in pixels, string (px) or percentage (%)."
+	}
     },
     "innerExtent": {
       "type": "number",
       "defaultValue": 40.0,
-      "description": "Gets or sets the inner extent of the doughnut chart. It is percent from the outer ring's radius."
+      "description": {
+		"en": "Gets or sets the inner extent of the doughnut chart. It is percent from the outer ring's radius.",
+		"jp": "Gets or sets the inner extent of the doughnut chart. It is percent from the outer ring's radius."
+	}
     },
     "isSurfaceInteractionDisabled": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Gets or sets whether all surface interactions with the plot area should be disabled."
+      "description": {
+		"en": "Gets or sets whether all surface interactions with the plot area should be disabled.",
+		"jp": "Gets or sets whether all surface interactions with the plot area should be disabled."
+	}
     },
     "selectedStyle": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the style used when a slice is selected.",
+      "description": {
+		"en": "Gets or sets the style used when a slice is selected.",
+		"jp": "Gets or sets the style used when a slice is selected."
+	},
       "schema": {
         "fill": {
           "type": "string",
           "defaultValue": null,
-          "description": "Defines the fill color of the selected slice"
+          "description": {
+		"en": "Defines the fill color of the selected slice",
+		"jp": "Defines the fill color of the selected slice"
+	}
         },
         "stroke": {
           "type": "string",
           "defaultValue": null,
-          "description": "Defines the stroke color of the selected slice"
+          "description": {
+		"en": "Defines the stroke color of the selected slice",
+		"jp": "Defines the stroke color of the selected slice"
+	}
         },
         "strokeThickness": {
           "type": "number",
           "defaultValue": null,
-          "description": "Defines the fill stroke thickness of the selected slice"
+          "description": {
+		"en": "Defines the fill stroke thickness of the selected slice",
+		"jp": "Defines the fill stroke thickness of the selected slice"
+	}
         }, 
         "opacity": {
           "type": "number",
           "defaultValue": null,
-          "description": "Defines the opacity of the selected slice"
+          "description": {
+		"en": "Defines the opacity of the selected slice",
+		"jp": "Defines the opacity of the selected slice"
+	}
         }
       }
     },
     "series": {
       "type": "array",
       "defaultValue": null,
-      "description": "An array of series objects.",
+      "description": {
+		"en": "An array of series objects.",
+		"jp": "An array of series objects."
+	},
 	  "designerDisplayProperty": "name",
       "schema": {
         "brushes": {
           "type": "array",
           "defaultValue": null,
-          "description": "Gets or sets the Brushes property.<br>&nbsp;&nbsp;&nbsp;The brushes property defines the palette from which automatically assigned series brushes are selected.<br>&nbsp;&nbsp;&nbsp;The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
+          "description": {
+		"en": "Gets or sets the Brushes property.<br>&nbsp;&nbsp;&nbsp;The brushes property defines the palette from which automatically assigned series brushes are selected.<br>&nbsp;&nbsp;&nbsp;The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
+		"jp": "Gets or sets the Brushes property.<br>&nbsp;&nbsp;&nbsp;The brushes property defines the palette from which automatically assigned series brushes are selected.<br>&nbsp;&nbsp;&nbsp;The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
+	},
           "arrayMemberType": "string",
 		  "schema": {
 			"name": {
@@ -192,7 +252,10 @@
 			  "required": true,
 			  "defaultValue": null,
 			  "processValueOnly" : true,
-			  "description": "Css color string"
+			  "description": {
+		"en": "Css color string",
+		"jp": "Css color string"
+	}
 			}
 		  },
 		  "designerDisplayProperty": "name"
@@ -200,179 +263,278 @@
 		"name": {
           "type": "string",
           "defaultValue": null,
-          "description": "The unique identifier of the series."
+          "description": {
+		"en": "The unique identifier of the series.",
+		"jp": "The unique identifier of the series."
+	}
         },
 		"dataSource": {
           "type": "custom",
           "defaultValue": null,
-          "description": "Can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself "
+          "description": {
+		"en": "Can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself ",
+		"jp": "Can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself "
+	}
         },
         "formatLabel": {
           "type": "function",
           "defaultValue": null,
-          "description": "Sets or gets a function which takes an object that produces a formatted label for displaying in the chart."
+          "description": {
+		"en": "Sets or gets a function which takes an object that produces a formatted label for displaying in the chart.",
+		"jp": "Sets or gets a function which takes an object that produces a formatted label for displaying in the chart."
+	}
         },
         "isSurfaceInteractionDisabled": {
           "type": "bool",
           "defaultValue": false,
-          "description": "Gets or sets whether all surface interactions with the plot area should be disabled."
+          "description": {
+		"en": "Gets or sets whether all surface interactions with the plot area should be disabled.",
+		"jp": "Gets or sets whether all surface interactions with the plot area should be disabled."
+	}
         },
         "labelExtent": {
           "type": "number",
           "defaultValue": null,
-          "description": "Gets or sets the pixel amount, by which the labels are offset from the edge of the slices."
+          "description": {
+		"en": "Gets or sets the pixel amount, by which the labels are offset from the edge of the slices.",
+		"jp": "Gets or sets the pixel amount, by which the labels are offset from the edge of the slices."
+	}
         },
         "labelMemberPath": {
           "type": "string",
           "defaultValue": null,
-          "description": "Gets or sets the property name that contains the labels."
+          "description": {
+		"en": "Gets or sets the property name that contains the labels.",
+		"jp": "Gets or sets the property name that contains the labels."
+	}
         },
         "labelsPosition": {
           "type": "string",
           "defaultValue": "center",
-          "description": "Gets or sets the position of chart labels.",
+          "description": {
+		"en": "Gets or sets the position of chart labels.",
+		"jp": "Gets or sets the position of chart labels."
+	},
           "valueOptions": [
             {
               "name": "none",
               "type": "string",
-              "description": "No labels will be displayed."
+              "description": {
+		"en": "No labels will be displayed.",
+		"jp": "No labels will be displayed."
+	}
             },
             {
               "name": "center",
               "type": "string",
-              "description": "Labels will be displayed in the center."
+              "description": {
+		"en": "Labels will be displayed in the center.",
+		"jp": "Labels will be displayed in the center."
+	}
             },
             {
               "name": "insideEnd",
               "type": "string",
-              "description": "Labels will be displayed inside and by the edge of the container."
+              "description": {
+		"en": "Labels will be displayed inside and by the edge of the container.",
+		"jp": "Labels will be displayed inside and by the edge of the container."
+	}
             },
             {
               "name": "outsideEnd",
               "type": "string",
-              "description": "Labels will be displayed outside the container."
+              "description": {
+		"en": "Labels will be displayed outside the container.",
+		"jp": "Labels will be displayed outside the container."
+	}
             },
             {
               "name": "bestFit",
               "type": "string",
-              "description": "Labels will automatically decide their location."
+              "description": {
+		"en": "Labels will automatically decide their location.",
+		"jp": "Labels will automatically decide their location."
+	}
             }
           ]
         },
         "leaderLineMargin": {
           "type": "number",
           "defaultValue": 6,
-          "description": "Gets or sets the margin between a label and its leader line. The default is 6 pixels."
+          "description": {
+		"en": "Gets or sets the margin between a label and its leader line. The default is 6 pixels.",
+		"jp": "Gets or sets the margin between a label and its leader line. The default is 6 pixels."
+	}
         },
         "labelsPosition": {
           "type": "string",
           "defaultValue": "straight",
-          "description": "Gets or sets what type of leader lines will be used for the outside end labels.",
+          "description": {
+		"en": "Gets or sets what type of leader lines will be used for the outside end labels.",
+		"jp": "Gets or sets what type of leader lines will be used for the outside end labels."
+	},
           "valueOptions": [
             {
               "name": "straight",
               "type": "string",
-              "description": "A straight line is drawn between the slice and its label."
+              "description": {
+		"en": "A straight line is drawn between the slice and its label.",
+		"jp": "A straight line is drawn between the slice and its label."
+	}
             },
             {
               "name": "arc",
               "type": "string",
-              "description": "A curved line is drawn between the slice and its label. The line follows makes a natural turn from the slice to the label."
+              "description": {
+		"en": "A curved line is drawn between the slice and its label. The line follows makes a natural turn from the slice to the label.",
+		"jp": "A curved line is drawn between the slice and its label. The line follows makes a natural turn from the slice to the label."
+	}
             },
             {
               "name": "spline",
               "type": "string",
-              "description": "A curved line is drawn between the slice and its label. The line starts radially from the slice and then turns to the label."
+              "description": {
+		"en": "A curved line is drawn between the slice and its label. The line starts radially from the slice and then turns to the label.",
+		"jp": "A curved line is drawn between the slice and its label. The line starts radially from the slice and then turns to the label."
+	}
             }
           ]
         },
         "leaderLineVisibility": {
           "type": "string",
           "defaultValue": "straight",
-          "description": "Gets or sets whether the leader lines are visible.",
+          "description": {
+		"en": "Gets or sets whether the leader lines are visible.",
+		"jp": "Gets or sets whether the leader lines are visible."
+	},
           "valueOptions": [
             {
               "name": "visible",
               "type": "string",
-              "description": "Leader lines are visible."
+              "description": {
+		"en": "Leader lines are visible.",
+		"jp": "Leader lines are visible."
+	}
             },
             {
               "name": "collapsed",
               "type": "string",
-              "description": "Leader lines are collapsed."
+              "description": {
+		"en": "Leader lines are collapsed.",
+		"jp": "Leader lines are collapsed."
+	}
             }
           ]
         },
         "legend": {
           "type": "object",
           "defaultValue": null,
-          "description": "Gets or sets the legend used for the current chart. You need to supply a dom element to use for the legend (preferably a div element)"
+          "description": {
+		"en": "Gets or sets the legend used for the current chart. You need to supply a dom element to use for the legend (preferably a div element)",
+		"jp": "Gets or sets the legend used for the current chart. You need to supply a dom element to use for the legend (preferably a div element)"
+	}
         },
         "othersCategoryThreshold": {
           "type": "number",
           "defaultValue": 3,
-          "description": "Gets or sets the threshold value that determines if slices are grouped into the Others slice."
+          "description": {
+		"en": "Gets or sets the threshold value that determines if slices are grouped into the Others slice.",
+		"jp": "Gets or sets the threshold value that determines if slices are grouped into the Others slice."
+	}
         },
         "othersCategoryType": {
           "type": "string",
           "defaultValue": "percent",
-          "description": "Gets or sets whether to use numeric or percent-based threshold value.",
+          "description": {
+		"en": "Gets or sets whether to use numeric or percent-based threshold value.",
+		"jp": "Gets or sets whether to use numeric or percent-based threshold value."
+	},
           "valueOptions": [
             {
               "name": "number",
               "type": "string",
-              "description": "Data value is compared directly to the value of OthersCategoryThreshold."
+              "description": {
+		"en": "Data value is compared directly to the value of OthersCategoryThreshold.",
+		"jp": "Data value is compared directly to the value of OthersCategoryThreshold."
+	}
             },
             {
               "name": "percent",
               "type": "string",
-              "description": "Data value is compared to OthersCategoryThreshold as a percentage of the total."
+              "description": {
+		"en": "Data value is compared to OthersCategoryThreshold as a percentage of the total.",
+		"jp": "Data value is compared to OthersCategoryThreshold as a percentage of the total."
+	}
             }
           ]
         },
         "outlines": {
           "type": "array",
           "defaultValue": null,
-          "description": "Gets or sets the Outlines property. The Outlines property defines the palette from which automatically assigned slice outlines are selected. The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
+          "description": {
+		"en": "Gets or sets the Outlines property. The Outlines property defines the palette from which automatically assigned slice outlines are selected. The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
+		"jp": "Gets or sets the Outlines property. The Outlines property defines the palette from which automatically assigned slice outlines are selected. The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
+	},
           "arrayMemberType": "string"
         },
         "radiusFactor": {
           "type": "number",
           "defaultValue": 0.9,
-          "description": "Gets or sets the scaling factor of the chart's radius. Value between 0 and 1."
+          "description": {
+		"en": "Gets or sets the scaling factor of the chart's radius. Value between 0 and 1.",
+		"jp": "Gets or sets the scaling factor of the chart's radius. Value between 0 and 1."
+	}
         },
         "selectedStyle": {
           "type": "object",
           "defaultValue": null,
-          "description": "Gets or sets the style used when a slice is selected.",
+          "description": {
+		"en": "Gets or sets the style used when a slice is selected.",
+		"jp": "Gets or sets the style used when a slice is selected."
+	},
           "schemaRef": "doughnutchart.selectedStyle"
         },
         "startAngle": {
           "type": "number",
           "defaultValue": 0,
-          "description": "Gets or sets the starting angle of the chart. The default zero value is equivalent to 3 o'clock."
+          "description": {
+		"en": "Gets or sets the starting angle of the chart. The default zero value is equivalent to 3 o'clock.",
+		"jp": "Gets or sets the starting angle of the chart. The default zero value is equivalent to 3 o'clock."
+	}
         },
         "toolTip": {
           "type": "object",
           "defaultValue": null,
-          "description": "Gets or sets the ToolTip for the pie chart."
+          "description": {
+		"en": "Gets or sets the ToolTip for the pie chart.",
+		"jp": "Gets or sets the ToolTip for the pie chart."
+	}
         },
         "toolTip": {
           "type": "object",
           "defaultValue": "flat",
-          "description": "Gets or sets the current series type.",
+          "description": {
+		"en": "Gets or sets the current series type.",
+		"jp": "Gets or sets the current series type."
+	},
           "valueOptions": [
             {
               "name": "flat",
               "type": "string",
-              "description": "Series has flat 1-dimensional data."
+              "description": {
+		"en": "Series has flat 1-dimensional data.",
+		"jp": "Series has flat 1-dimensional data."
+	}
             }
           ]
         },
         "valueMemberPath": {
           "type": "string",
           "defaultValue": null,
-          "description": "Gets or Sets the property name that contains the values."
+          "description": {
+		"en": "Gets or Sets the property name that contains the values.",
+		"jp": "Gets or Sets the property name that contains the values."
+	}
         }
       }
     }

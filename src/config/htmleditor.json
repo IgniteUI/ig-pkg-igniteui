@@ -18,7 +18,10 @@
           "optional": false
         }
       ],
-      "description": "Event fired after a toolbar item is clicked."
+      "description": {
+		"en": "Event fired after a toolbar item is clicked.",
+		"jp": "Event fired after a toolbar item is clicked."
+	}
     },
     "actionExecuting": {
       "cancellable": true,
@@ -34,7 +37,10 @@
           "optional": false
         }
       ],
-      "description": "Event fired before a toolbar item is clicked."
+      "description": {
+		"en": "Event fired before a toolbar item is clicked.",
+		"jp": "Event fired before a toolbar item is clicked."
+	}
     },
     "copy": {
       "cancellable": false,
@@ -50,7 +56,10 @@
           "optional": false
         }
       ],
-      "description": "Event is fired on keyboard copy action."
+      "description": {
+		"en": "Event is fired on keyboard copy action.",
+		"jp": "Event is fired on keyboard copy action."
+	}
     },
     "cut": {
       "cancellable": false,
@@ -66,7 +75,10 @@
           "optional": false
         }
       ],
-      "description": "Event is fired on keyboard cut action."
+      "description": {
+		"en": "Event is fired on keyboard cut action.",
+		"jp": "Event is fired on keyboard cut action."
+	}
     },
     "paste": {
       "cancellable": false,
@@ -82,7 +94,10 @@
           "optional": false
         }
       ],
-      "description": "Event is fired on keyboard paste action."
+      "description": {
+		"en": "Event is fired on keyboard paste action.",
+		"jp": "Event is fired on keyboard paste action."
+	}
     },
     "redo": {
       "cancellable": false,
@@ -98,7 +113,10 @@
           "optional": false
         }
       ],
-      "description": "Event is fired on keyboard redo action."
+      "description": {
+		"en": "Event is fired on keyboard redo action.",
+		"jp": "Event is fired on keyboard redo action."
+	}
     },
     "rendered": {
       "cancellable": false,
@@ -114,7 +132,10 @@
           "optional": false
         }
       ],
-      "description": "Event fired after the whole html editor widget has been rendered."
+      "description": {
+		"en": "Event fired after the whole html editor widget has been rendered.",
+		"jp": "Event fired after the whole html editor widget has been rendered."
+	}
     },
     "rendering": {
       "cancellable": false,
@@ -130,7 +151,10 @@
           "optional": false
         }
       ],
-      "description": "Event fired before the html editor widget has been rendered."
+      "description": {
+		"en": "Event fired before the html editor widget has been rendered.",
+		"jp": "Event fired before the html editor widget has been rendered."
+	}
     },
     "toolbarCollapsed": {
       "cancellable": false,
@@ -146,7 +170,10 @@
           "optional": false
         }
       ],
-      "description": "Event fired after a toolbar is collapsed."
+      "description": {
+		"en": "Event fired after a toolbar is collapsed.",
+		"jp": "Event fired after a toolbar is collapsed."
+	}
     },
     "toolbarCollapsing": {
       "cancellable": true,
@@ -162,7 +189,10 @@
           "optional": false
         }
       ],
-      "description": "Event fired before a toolbar is collapsed."
+      "description": {
+		"en": "Event fired before a toolbar is collapsed.",
+		"jp": "Event fired before a toolbar is collapsed."
+	}
     },
     "toolbarExpanded": {
       "cancellable": false,
@@ -178,7 +208,10 @@
           "optional": false
         }
       ],
-      "description": "Event fired after a toolbar is expanded."
+      "description": {
+		"en": "Event fired after a toolbar is expanded.",
+		"jp": "Event fired after a toolbar is expanded."
+	}
     },
     "toolbarExpanding": {
       "cancellable": true,
@@ -194,7 +227,10 @@
           "optional": false
         }
       ],
-      "description": "Event fired before a toolbar is expanded."
+      "description": {
+		"en": "Event fired before a toolbar is expanded.",
+		"jp": "Event fired before a toolbar is expanded."
+	}
     },
     "undo": {
       "cancellable": false,
@@ -210,54 +246,84 @@
           "optional": false
         }
       ],
-      "description": "Event is fired on keyboard undo action."
+      "description": {
+		"en": "Event is fired on keyboard undo action.",
+		"jp": "Event is fired on keyboard undo action."
+	}
     }
   },
   "properties": {
     "height": {
       "type": "number",
       "defaultValue": 350.0,
-      "description": "Set or get the widget height."
+      "description": {
+		"en": "Set or get the widget height.",
+		"jp": "Set or get the widget height."
+	}
     },
     "inputName": {
       "type": "string",
       "defaultValue": "source",
-      "description": "The name attribute of the html editor source view."
+      "description": {
+		"en": "The name attribute of the html editor source view.",
+		"jp": "The name attribute of the html editor source view."
+	}
     },
     "showCopyPasteToolbar": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Shows/hides the \"Copy Paste\" toolbar."
+      "description": {
+		"en": "Shows/hides the \"Copy Paste\" toolbar.",
+		"jp": "Shows/hides the \"Copy Paste\" toolbar."
+	}
     },
     "showFormattingToolbar": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Shows/hides the \"Formating\" toolbar."
+      "description": {
+		"en": "Shows/hides the \"Formating\" toolbar.",
+		"jp": "Shows/hides the \"Formating\" toolbar."
+	}
     },
     "showInsertObjectToolbar": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Shows/hides the \"Insert Object\" toolbar."
+      "description": {
+		"en": "Shows/hides the \"Insert Object\" toolbar.",
+		"jp": "Shows/hides the \"Insert Object\" toolbar."
+	}
     },
     "showTextToolbar": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Shows/hides the \"Text\" toolbar."
+      "description": {
+		"en": "Shows/hides the \"Text\" toolbar.",
+		"jp": "Shows/hides the \"Text\" toolbar."
+	}
     },
     "toolbarSettings": {
       "type": "array",
       "defaultValue": null,
-      "description": "The html editor toolbars list."
+      "description": {
+		"en": "The html editor toolbars list.",
+		"jp": "The html editor toolbars list."
+	}
     },
     "value": {
       "type": "string",
       "defaultValue": "",
-      "description": "Used to render inside the html editor as initial content"
+      "description": {
+		"en": "Used to render inside the html editor as initial content",
+		"jp": "Used to render inside the html editor as initial content"
+	}
     },
     "width": {
       "type": "number",
       "defaultValue": 725.0,
-      "description": "Set or get the widget width."
+      "description": {
+		"en": "Set or get the widget width.",
+		"jp": "Set or get the widget width."
+	}
     }
   }
 }

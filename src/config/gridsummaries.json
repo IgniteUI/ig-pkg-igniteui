@@ -19,7 +19,10 @@
           "optional": false
         }
       ],
-      "description": "Event is fired when Cancel button is clicked in drop down.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key for which Cancel button is clicked.<br>&nbsp;&nbsp;&nbsp;Use ui.owner in order to access the igGridSummaries widget object."
+      "description": {
+		"en": "Event is fired when Cancel button is clicked in drop down.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key for which Cancel button is clicked.<br>&nbsp;&nbsp;&nbsp;Use ui.owner in order to access the igGridSummaries widget object.",
+		"jp": "Event is fired when Cancel button is clicked in drop down.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key for which Cancel button is clicked.<br>&nbsp;&nbsp;&nbsp;Use ui.owner in order to access the igGridSummaries widget object."
+	}
     },
     "dropDownClosed": {
       "cancellable": false,
@@ -35,7 +38,10 @@
           "optional": false
         }
       ],
-      "description": "Event fired after the dropdown for a summary column is closed <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key of the column where drop down is closing.<br>&nbsp;&nbsp;&nbsp;Use ui.owner in order to access the igGridSummaries widget object."
+      "description": {
+		"en": "Event fired after the dropdown for a summary column is closed <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key of the column where drop down is closing.<br>&nbsp;&nbsp;&nbsp;Use ui.owner in order to access the igGridSummaries widget object.",
+		"jp": "Event fired after the dropdown for a summary column is closed <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key of the column where drop down is closing.<br>&nbsp;&nbsp;&nbsp;Use ui.owner in order to access the igGridSummaries widget object."
+	}
     },
     "dropDownClosing": {
       "cancellable": true,
@@ -51,7 +57,10 @@
           "optional": false
         }
       ],
-      "description": "Event fired before the dropdown for a summary column starts closing <br>&nbsp;&nbsp;&nbsp;Return false in order to cancel closing the drop down.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key of the column where drop down is closing.<br>&nbsp;&nbsp;&nbsp;Use ui.owner in order to access the igGridSummaries widget object."
+      "description": {
+		"en": "Event fired before the dropdown for a summary column starts closing <br>&nbsp;&nbsp;&nbsp;Return false in order to cancel closing the drop down.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key of the column where drop down is closing.<br>&nbsp;&nbsp;&nbsp;Use ui.owner in order to access the igGridSummaries widget object.",
+		"jp": "Event fired before the dropdown for a summary column starts closing <br>&nbsp;&nbsp;&nbsp;Return false in order to cancel closing the drop down.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key of the column where drop down is closing.<br>&nbsp;&nbsp;&nbsp;Use ui.owner in order to access the igGridSummaries widget object."
+	}
     },
     "dropDownOKClicked": {
       "cancellable": false,
@@ -67,7 +76,10 @@
           "optional": false
         }
       ],
-      "description": "Event is fired when OK button is clicked in drop down<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key for which OK button is clicked.<br>&nbsp;&nbsp;&nbsp;Use ui.eventData to get data about which summary methods are(not) selected. Format of event data is {type: 'min', active: false};<br>&nbsp;&nbsp;&nbsp;Use ui.owner in order to access the igGridSummaries widget object."
+      "description": {
+		"en": "Event is fired when OK button is clicked in drop down<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key for which OK button is clicked.<br>&nbsp;&nbsp;&nbsp;Use ui.eventData to get data about which summary methods are(not) selected. Format of event data is {type: 'min', active: false};<br>&nbsp;&nbsp;&nbsp;Use ui.owner in order to access the igGridSummaries widget object.",
+		"jp": "Event is fired when OK button is clicked in drop down<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key for which OK button is clicked.<br>&nbsp;&nbsp;&nbsp;Use ui.eventData to get data about which summary methods are(not) selected. Format of event data is {type: 'min', active: false};<br>&nbsp;&nbsp;&nbsp;Use ui.owner in order to access the igGridSummaries widget object."
+	}
     },
     "dropDownOpened": {
       "cancellable": false,
@@ -83,7 +95,10 @@
           "optional": false
         }
       ],
-      "description": "Event fired after the summaries dropdown is opened for a specific column<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key of the column where drop down is shown.<br>&nbsp;&nbsp;&nbsp;Use ui.owner in order to access the igGridSummaries widget object."
+      "description": {
+		"en": "Event fired after the summaries dropdown is opened for a specific column<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key of the column where drop down is shown.<br>&nbsp;&nbsp;&nbsp;Use ui.owner in order to access the igGridSummaries widget object.",
+		"jp": "Event fired after the summaries dropdown is opened for a specific column<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key of the column where drop down is shown.<br>&nbsp;&nbsp;&nbsp;Use ui.owner in order to access the igGridSummaries widget object."
+	}
     },
     "dropDownOpening": {
       "cancellable": true,
@@ -99,7 +114,10 @@
           "optional": false
         }
       ],
-      "description": "Event fired before drop down is opened for a specific column summary <br>&nbsp;&nbsp;&nbsp;Return false in order to cancel opening the drop down.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key of the column where drop down is opening.<br>&nbsp;&nbsp;&nbsp;Use ui.owner in order to access the igGridSummaries widget object."
+      "description": {
+		"en": "Event fired before drop down is opened for a specific column summary <br>&nbsp;&nbsp;&nbsp;Return false in order to cancel opening the drop down.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key of the column where drop down is opening.<br>&nbsp;&nbsp;&nbsp;Use ui.owner in order to access the igGridSummaries widget object.",
+		"jp": "Event fired before drop down is opened for a specific column summary <br>&nbsp;&nbsp;&nbsp;Return false in order to cancel opening the drop down.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key of the column where drop down is opening.<br>&nbsp;&nbsp;&nbsp;Use ui.owner in order to access the igGridSummaries widget object."
+	}
     },
     "summariesCalculated": {
       "cancellable": false,
@@ -115,7 +133,10 @@
           "optional": false
         }
       ],
-      "description": "Event fired after summaries calculation are completely made<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.data to get data for calculated summaries<br>&nbsp;&nbsp;&nbsp;Use ui.owner in order to access the igGridSummaries widget object."
+      "description": {
+		"en": "Event fired after summaries calculation are completely made<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.data to get data for calculated summaries<br>&nbsp;&nbsp;&nbsp;Use ui.owner in order to access the igGridSummaries widget object.",
+		"jp": "Event fired after summaries calculation are completely made<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.data to get data for calculated summaries<br>&nbsp;&nbsp;&nbsp;Use ui.owner in order to access the igGridSummaries widget object."
+	}
     },
     "summariesCalculating": {
       "cancellable": true,
@@ -131,7 +152,10 @@
           "optional": false
         }
       ],
-      "description": "Event fired before summaries calculations are made<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel calculation of summaries.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner in order to access the igGridSummaries widget object."
+      "description": {
+		"en": "Event fired before summaries calculations are made<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel calculation of summaries.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner in order to access the igGridSummaries widget object.",
+		"jp": "Event fired before summaries calculations are made<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel calculation of summaries.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner in order to access the igGridSummaries widget object."
+	}
     },
     "summariesMethodSelectionChanged": {
       "cancellable": false,
@@ -147,7 +171,10 @@
           "optional": false
         }
       ],
-      "description": "Event fired when user selects/deselects summary method from checkbox <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key of the column where it is changed selection of summary method<br>&nbsp;&nbsp;&nbsp;Use ui.isSelected to get whether method is selected or not<br>&nbsp;&nbsp;&nbsp;Use ui.methodName to get summary method name<br>&nbsp;&nbsp;&nbsp;Use ui.owner in order to access the igGridSummaries widget object."
+      "description": {
+		"en": "Event fired when user selects/deselects summary method from checkbox <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key of the column where it is changed selection of summary method<br>&nbsp;&nbsp;&nbsp;Use ui.isSelected to get whether method is selected or not<br>&nbsp;&nbsp;&nbsp;Use ui.methodName to get summary method name<br>&nbsp;&nbsp;&nbsp;Use ui.owner in order to access the igGridSummaries widget object.",
+		"jp": "Event fired when user selects/deselects summary method from checkbox <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key of the column where it is changed selection of summary method<br>&nbsp;&nbsp;&nbsp;Use ui.isSelected to get whether method is selected or not<br>&nbsp;&nbsp;&nbsp;Use ui.methodName to get summary method name<br>&nbsp;&nbsp;&nbsp;Use ui.owner in order to access the igGridSummaries widget object."
+	}
     },
     "summariesToggled": {
       "cancellable": false,
@@ -163,7 +190,10 @@
           "optional": false
         }
       ],
-      "description": "Event is fired after summary rows are toggled<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.isToShow to get whether summaries are shown or not.<br>&nbsp;&nbsp;&nbsp;Use ui.owner in order to access the igGridSummaries widget object."
+      "description": {
+		"en": "Event is fired after summary rows are toggled<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.isToShow to get whether summaries are shown or not.<br>&nbsp;&nbsp;&nbsp;Use ui.owner in order to access the igGridSummaries widget object.",
+		"jp": "Event is fired after summary rows are toggled<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.isToShow to get whether summaries are shown or not.<br>&nbsp;&nbsp;&nbsp;Use ui.owner in order to access the igGridSummaries widget object."
+	}
     },
     "summariesToggling": {
       "cancellable": true,
@@ -179,7 +209,10 @@
           "optional": false
         }
       ],
-      "description": "Event is fired bofore summary rows start toggling <br>&nbsp;&nbsp;&nbsp;Return false in order to cancel showing/hiding of summaries.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.isToShow to get whether summaries are shown or not.<br>&nbsp;&nbsp;&nbsp;Use ui.owner in order to access the igGridSummaries widget object."
+      "description": {
+		"en": "Event is fired bofore summary rows start toggling <br>&nbsp;&nbsp;&nbsp;Return false in order to cancel showing/hiding of summaries.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.isToShow to get whether summaries are shown or not.<br>&nbsp;&nbsp;&nbsp;Use ui.owner in order to access the igGridSummaries widget object.",
+		"jp": "Event is fired bofore summary rows start toggling <br>&nbsp;&nbsp;&nbsp;Return false in order to cancel showing/hiding of summaries.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.isToShow to get whether summaries are shown or not.<br>&nbsp;&nbsp;&nbsp;Use ui.owner in order to access the igGridSummaries widget object."
+	}
     }
   },
   "properties": {
@@ -190,119 +223,185 @@
     "calculateRenderMode": {
       "type": "string",
       "defaultValue": null,
-      "description": " Specifies when calculations are made. ",
+      "description": {
+		"en": " Specifies when calculations are made. ",
+		"jp": " Specifies when calculations are made. "
+	},
       "valueOptions": [
         {
           "name": "onselect",
           "type": "string",
-          "description": " summaries are updated when checkbox is checked/unchecked "
+          "description": {
+		"en": " summaries are updated when checkbox is checked/unchecked ",
+		"jp": " summaries are updated when checkbox is checked/unchecked "
+	}
         },
         {
           "name": "okcancelbuttons",
           "type": "string",
-          "description": " summaries are updated only when OK button is clicked"
+          "description": {
+		"en": " summaries are updated only when OK button is clicked",
+		"jp": " summaries are updated only when OK button is clicked"
+	}
         }
       ]
     },
     "callee": {
       "type": "function",
       "defaultValue": null,
-      "description": "Function reference - it is called when data is retrieved from the data source"
+      "description": {
+		"en": "Function reference - it is called when data is retrieved from the data source",
+		"jp": "Function reference - it is called when data is retrieved from the data source"
+	}
     },
     "columnSettings": {
       "type": "array",
       "defaultValue": null,
-      "description": "List of column settings that specifies custom summaries options per column basis",
+      "description": {
+		"en": "List of column settings that specifies custom summaries options per column basis",
+		"jp": "List of column settings that specifies custom summaries options per column basis"
+	},
 	  "designerDisplayProperty": "columnKey",
       "schema": {
         "columnKey": {
           "type": "string",
           "defaultValue": null,
-          "description": "Specifies the column key of the column with summary",
+          "description": {
+		"en": "Specifies the column key of the column with summary",
+		"jp": "Specifies the column key of the column with summary"
+	},
           "required": true
         },
         "columnIndex": {
           "type": "number",
           "defaultValue": -1,
-          "description": "Column index can be used in place of column key. The preferred way of populating a column setting is to always use the column keys as identifiers"
+          "description": {
+		"en": "Column index can be used in place of column key. The preferred way of populating a column setting is to always use the column keys as identifiers",
+		"jp": "Column index can be used in place of column key. The preferred way of populating a column setting is to always use the column keys as identifiers"
+	}
         },
         "allowSummaries": {
           "type": "bool",
           "defaultValue": true,
-          "description": "Enables disables summaries for the column"
+          "description": {
+		"en": "Enables disables summaries for the column",
+		"jp": "Enables disables summaries for the column"
+	}
         },
         "summaryOperands": {
           "type": "array",
           "defaultValue": null,
-          "description": "Defines the summary operands",
+          "description": {
+		"en": "Defines the summary operands",
+		"jp": "Defines the summary operands"
+	},
           "schema": {
             "rowDisplayLabel": {
               "type": "string",
               "defaultValue": "",
-              "description": "Text of the summary method which is shown in summary cell"
+              "description": {
+		"en": "Text of the summary method which is shown in summary cell",
+		"jp": "Text of the summary method which is shown in summary cell"
+	}
             },
             "type": {
               "type": "string",
               "defaultValue": "custom",
-              "description": "Set type of summary operand",
+              "description": {
+		"en": "Set type of summary operand",
+		"jp": "Set type of summary operand"
+	},
               "valueOptions": [
                 {
                   "name": "count",
                   "type": "string",
-                  "description": "The summaries are calculated using count function"
+                  "description": {
+		"en": "The summaries are calculated using count function",
+		"jp": "The summaries are calculated using count function"
+	}
                 },
                 {
                   "name": "min",
                   "type": "string",
-                  "description": "The summaries are calculated using min function"
+                  "description": {
+		"en": "The summaries are calculated using min function",
+		"jp": "The summaries are calculated using min function"
+	}
                 },
                 {
                   "name": "max",
                   "type": "string",
-                  "description": "The summaries are calculated using max function"
+                  "description": {
+		"en": "The summaries are calculated using max function",
+		"jp": "The summaries are calculated using max function"
+	}
                 },
                 {
                   "name": "sum",
                   "type": "string",
-                  "description": "The summaries are calculated using sum function"
+                  "description": {
+		"en": "The summaries are calculated using sum function",
+		"jp": "The summaries are calculated using sum function"
+	}
                 },
                 {
                   "name": "avg",
                   "type": "string",
-                  "description": "The summaries are calculated using average function"
+                  "description": {
+		"en": "The summaries are calculated using average function",
+		"jp": "The summaries are calculated using average function"
+	}
                 },
                 {
                   "name": "custom",
                   "type": "string",
-                  "description": "The summaries are calculated using custom function"
+                  "description": {
+		"en": "The summaries are calculated using custom function",
+		"jp": "The summaries are calculated using custom function"
+	}
                 }
               ]
             },
             "active": {
               "type": "bool",
               "defaultValue": true,
-              "description": "If it is false the summary operand will be shown in dropdown but it will not be made calculation"
+              "description": {
+		"en": "If it is false the summary operand will be shown in dropdown but it will not be made calculation",
+		"jp": "If it is false the summary operand will be shown in dropdown but it will not be made calculation"
+	}
             },
             "summaryCalculator": {
               "type": "string",
               "defaultValue": null,
-              "description": "Name of the custom summary function which should be executed when type is custom",
+              "description": {
+		"en": "Name of the custom summary function which should be executed when type is custom",
+		"jp": "Name of the custom summary function which should be executed when type is custom"
+	},
               "required": true
             },
             "order": {
               "type": "number",
               "defaultValue": 5,
-              "description": "Specifies the order of elements in dropdown. It is recommended to set order of custom operands and to be greater or equal to 5"
+              "description": {
+		"en": "Specifies the order of elements in dropdown. It is recommended to set order of custom operands and to be greater or equal to 5",
+		"jp": "Specifies the order of elements in dropdown. It is recommended to set order of custom operands and to be greater or equal to 5"
+	}
             },
             "decimalDisplay": {
               "type": "number",
               "defaultValue": 2,
-              "description": "Specifies the number of digits after the decimal point for result of the current summary operand. This property will be ignored when isGridFormatter is true"
+              "description": {
+		"en": "Specifies the number of digits after the decimal point for result of the current summary operand. This property will be ignored when isGridFormatter is true",
+		"jp": "Specifies the number of digits after the decimal point for result of the current summary operand. This property will be ignored when isGridFormatter is true"
+	}
             },
             "isGridFormatter": {
               "type": "bool",
               "defaultValue": false,
-              "description": "Specifies whether to be used grid formatter for result for the current summary operand"
+              "description": {
+		"en": "Specifies whether to be used grid formatter for result for the current summary operand",
+		"jp": "Specifies whether to be used grid formatter for result for the current summary operand"
+	}
             }
           }
         }
@@ -311,141 +410,222 @@
     "compactRenderingMode": {
       "type": "string",
       "defaultValue": "true",
-      "description": "Specifies how compact the summaries are rendered.",
+      "description": {
+		"en": "Specifies how compact the summaries are rendered.",
+		"jp": "Specifies how compact the summaries are rendered."
+	},
       "valueOptions": [
 		{
 		  "name": "auto",
           "type": "string",
-          "description": "Will use True if the maximum number of visible summaries is one or less and False otherwise"
+          "description": {
+		"en": "Will use True if the maximum number of visible summaries is one or less and False otherwise",
+		"jp": "Will use True if the maximum number of visible summaries is one or less and False otherwise"
+	}
         },
         {
           "name": "true",
           "type": "string",
-          "description": "Indicates that the summaries may be rendered compactly, even mixing different summaries on the same line."
+          "description": {
+		"en": "Indicates that the summaries may be rendered compactly, even mixing different summaries on the same line.",
+		"jp": "Indicates that the summaries may be rendered compactly, even mixing different summaries on the same line."
+	}
 		},
 		{
           "name": "false",
           "type": "string",
-          "description": "Ensures that each summary type is occupying a separate line."
+          "description": {
+		"en": "Ensures that each summary type is occupying a separate line.",
+		"jp": "Ensures that each summary type is occupying a separate line."
+	}
 		}
 	  ]
     },
     "defaultDecimalDisplay": {
       "type": "number",
       "defaultValue": 2.0,
-      "description": "The number of digits after the decimal point. If gridFormatter is True then this option is ignored."
+      "description": {
+		"en": "The number of digits after the decimal point. If gridFormatter is True then this option is ignored.",
+		"jp": "The number of digits after the decimal point. If gridFormatter is True then this option is ignored."
+	}
     },
     "dialogButtonCancelText": {
       "type": "string",
       "defaultValue": "",
-      "description": "Text of the button Cancel in the summaries dropdown"
+      "description": {
+		"en": "Text of the button Cancel in the summaries dropdown",
+		"jp": "Text of the button Cancel in the summaries dropdown"
+	}
     },
     "dialogButtonOKText": {
       "type": "string",
       "defaultValue": "",
-      "description": "Text of the button OK in the summaries dropdown"
+      "description": {
+		"en": "Text of the button OK in the summaries dropdown",
+		"jp": "Text of the button OK in the summaries dropdown"
+	}
     },
     "dropDownDialogAnimationDuration": {
       "type": "number",
       "defaultValue": 400.0,
-      "description": "Dropdown animation duration"
+      "description": {
+		"en": "Dropdown animation duration",
+		"jp": "Dropdown animation duration"
+	}
     },
     "dropDownHeight": {
 	  "type": "number",
       "defaultValue": "",
-      "description": "Height of the dropdown in pixels"
+      "description": {
+		"en": "Height of the dropdown in pixels",
+		"jp": "Height of the dropdown in pixels"
+	}
     },
     "dropDownWidth": {
       "type": "number",
       "defaultValue": "",
-      "description": "Width of the dropdown in pixels"
+      "description": {
+		"en": "Width of the dropdown in pixels",
+		"jp": "Width of the dropdown in pixels"
+	}
     },
     "emptyCellText": {
       "type": "string",
       "defaultValue": "",
-      "description": "Empty text template to be shown for empty cells"
+      "description": {
+		"en": "Empty text template to be shown for empty cells",
+		"jp": "Empty text template to be shown for empty cells"
+	}
     },
     "featureChooserText": {
       "type": "string",
       "defaultValue": "",
-      "description": "Get or set text that is shown in the feature chooser dropdown when summaries are hidden"
+      "description": {
+		"en": "Get or set text that is shown in the feature chooser dropdown when summaries are hidden",
+		"jp": "Get or set text that is shown in the feature chooser dropdown when summaries are hidden"
+	}
     },
     "featureChooserTextHide": {
       "type": "string",
       "defaultValue": "",
-      "description": "Get or set text that is shown in the feauture chooser dropdown when summaries are shown"
+      "description": {
+		"en": "Get or set text that is shown in the feauture chooser dropdown when summaries are shown",
+		"jp": "Get or set text that is shown in the feauture chooser dropdown when summaries are shown"
+	}
     },
     "isGridFormatter": {
       "type": "bool",
       "defaultValue": true,
-      "description": "if this property is enabled and in summaryOperand isGridFormatter  is undefined then use grid formatting for cells"
+      "description": {
+		"en": "if this property is enabled and in summaryOperand isGridFormatter  is undefined then use grid formatting for cells",
+		"jp": "if this property is enabled and in summaryOperand isGridFormatter  is undefined then use grid formatting for cells"
+	}
     },
     "resultTemplate": {
       "type": "string",
       "defaultValue": "{0} = {1}",
-      "description": "Result template for summary result(shown in table cell)"
+      "description": {
+		"en": "Result template for summary result(shown in table cell)",
+		"jp": "Result template for summary result(shown in table cell)"
+	}
     },
     "showDropDownButton": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Show/hide footer button(on click show/hide dropdown)"
+      "description": {
+		"en": "Show/hide footer button(on click show/hide dropdown)",
+		"jp": "Show/hide footer button(on click show/hide dropdown)"
+	}
     },
     "showSummariesButton": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Show header button icon in the header cell. On click - shows/hides summaries"
+      "description": {
+		"en": "Show header button icon in the header cell. On click - shows/hides summaries",
+		"jp": "Show header button icon in the header cell. On click - shows/hides summaries"
+	}
     },
     "summariesHeaderButtonTooltip": {
       "type": "string",
       "defaultValue": "",
-      "description": "Tooltip text for header cell button"
+      "description": {
+		"en": "Tooltip text for header cell button",
+		"jp": "Tooltip text for header cell button"
+	}
     },
     "summariesResponseKey": {
       "type": "string",
       "defaultValue": "summaries",
-      "description": "Result key by which we get data from the result returned by remote data source."
+      "description": {
+		"en": "Result key by which we get data from the result returned by remote data source.",
+		"jp": "Result key by which we get data from the result returned by remote data source."
+	}
     },
     "summaryExecution": {
       "type": "string",
       "defaultValue": null,
-      "description": " Determines when the summary values are calculated when type is local",
+      "description": {
+		"en": " Determines when the summary values are calculated when type is local",
+		"jp": " Determines when the summary values are calculated when type is local"
+	},
       "valueOptions": [
         {
           "name": "priortofilteringandpaging",
           "type": "string",
-          "description": "Summaries are calculated prior to filtering and paging"
+          "description": {
+		"en": "Summaries are calculated prior to filtering and paging",
+		"jp": "Summaries are calculated prior to filtering and paging"
+	}
         },
         {
           "name": "afterfilteringbeforepaging",
           "type": "string",
-          "description": "Summaries are calculated after filtering and before paging"
+          "description": {
+		"en": "Summaries are calculated after filtering and before paging",
+		"jp": "Summaries are calculated after filtering and before paging"
+	}
         },
         {
           "name": "afterfilteringandpaging",
           "type": "string",
-          "description": "Summaries are calculated after filtering and paging"
+          "description": {
+		"en": "Summaries are calculated after filtering and paging",
+		"jp": "Summaries are calculated after filtering and paging"
+	}
         }
       ]
     },
     "summaryExprUrlKey": {
       "type": "string",
       "defaultValue": "summaries",
-      "description": "Set key in GET Request for summaries - used only when type is remote"
+      "description": {
+		"en": "Set key in GET Request for summaries - used only when type is remote",
+		"jp": "Set key in GET Request for summaries - used only when type is remote"
+	}
     },
     "type": {
       "type": "string",
       "defaultValue": null,
-      "description": " type of summaries calculating.",
+      "description": {
+		"en": " type of summaries calculating.",
+		"jp": " type of summaries calculating."
+	},
       "valueOptions": [
         {
           "name": "remote",
           "type": "string",
-          "description": " when it is remote summaries calculations are made on the server"
+          "description": {
+		"en": " when it is remote summaries calculations are made on the server",
+		"jp": " when it is remote summaries calculations are made on the server"
+	}
         },
         {
           "name": "local",
           "type": "string",
-          "description": "When it is local calculations are made on the client"
+          "description": {
+		"en": "When it is local calculations are made on the client",
+		"jp": "When it is local calculations are made on the client"
+	}
         }
       ]
     }

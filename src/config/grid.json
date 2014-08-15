@@ -17,7 +17,10 @@
           "optional": false
         }
       ],
-      "description": "Event fired when a cell is clicked.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.cellElement to get reference to cell DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.rowIndex to get row index.<br>&nbsp;&nbsp;&nbsp;Use ui.colIndex to get column index.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid."
+      "description": {
+		"en": "Event fired when a cell is clicked.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.cellElement to get reference to cell DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.rowIndex to get row index.<br>&nbsp;&nbsp;&nbsp;Use ui.colIndex to get column index.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid.",
+		"jp": "Event fired when a cell is clicked.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.cellElement to get reference to cell DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.rowIndex to get row index.<br>&nbsp;&nbsp;&nbsp;Use ui.colIndex to get column index.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid."
+	}
     },
     "columnsCollectionModified": {
       "cancellable": false,
@@ -33,7 +36,10 @@
           "optional": false
         }
       ],
-      "description": "Event fired after the columns colection has been modified(e.g. a column is hidden)<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid."
+      "description": {
+		"en": "Event fired after the columns colection has been modified(e.g. a column is hidden)<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid.",
+		"jp": "Event fired after the columns colection has been modified(e.g. a column is hidden)<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid."
+	}
     },
     "created": {
       "cancellable": false,
@@ -49,7 +55,10 @@
           "optional": false
         }
       ],
-      "description": "fired when the grid is created and the initial structure is rendered (this doesn't necessarily imply the data will be there if the data source is remote) <br>&nbsp;&nbsp;&nbsp;&nbsp;use ui.owner to get a reference to the grid"
+      "description": {
+		"en": "fired when the grid is created and the initial structure is rendered (this doesn't necessarily imply the data will be there if the data source is remote) <br>&nbsp;&nbsp;&nbsp;&nbsp;use ui.owner to get a reference to the grid",
+		"jp": "fired when the grid is created and the initial structure is rendered (this doesn't necessarily imply the data will be there if the data source is remote) <br>&nbsp;&nbsp;&nbsp;&nbsp;use ui.owner to get a reference to the grid"
+	}
     },
     "dataBinding": {
       "cancellable": true,
@@ -65,7 +74,10 @@
           "optional": false
         }
       ],
-      "description": "Event fired before data binding takes place.<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel data binding.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid."
+      "description": {
+		"en": "Event fired before data binding takes place.<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel data binding.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid.",
+		"jp": "Event fired before data binding takes place.<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel data binding.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid."
+	}
     },
     "dataBound": {
       "cancellable": false,
@@ -81,7 +93,10 @@
           "optional": false
         }
       ],
-      "description": "Event fired after data binding is complete.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid."
+      "description": {
+		"en": "Event fired after data binding is complete.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid.",
+		"jp": "Event fired after data binding is complete.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid."
+	}
     },
     "dataRendered": {
       "cancellable": false,
@@ -97,7 +112,10 @@
           "optional": false
         }
       ],
-      "description": "Event fired after all of the data records in the grid table body have been rendered. <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid."
+      "description": {
+		"en": "Event fired after all of the data records in the grid table body have been rendered. <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid.",
+		"jp": "Event fired after all of the data records in the grid table body have been rendered. <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid."
+	}
     },
     "dataRendering": {
       "cancellable": true,
@@ -113,7 +131,10 @@
           "optional": false
         }
       ],
-      "description": "Event fired before the TBODY holding the data records starts its rendering.<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel data records rendering.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid."
+      "description": {
+		"en": "Event fired before the TBODY holding the data records starts its rendering.<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel data records rendering.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid.",
+		"jp": "Event fired before the TBODY holding the data records starts its rendering.<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel data records rendering.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid."
+	}
     },
     "destroyed": {
       "cancellable": false,
@@ -129,7 +150,10 @@
           "optional": false
         }
       ],
-      "description": "fired when the grid is destroyed<br>&nbsp;&nbsp;&nbsp;&nbsp;use ui.owner to get a reference to the grid"
+      "description": {
+		"en": "fired when the grid is destroyed<br>&nbsp;&nbsp;&nbsp;&nbsp;use ui.owner to get a reference to the grid",
+		"jp": "fired when the grid is destroyed<br>&nbsp;&nbsp;&nbsp;&nbsp;use ui.owner to get a reference to the grid"
+	}
     },
     "footerRendered": {
       "cancellable": false,
@@ -145,7 +169,10 @@
           "optional": false
         }
       ],
-      "description": "Event fired after the footer has been rendered.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.table to get reference to footers table DOM element."
+      "description": {
+		"en": "Event fired after the footer has been rendered.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.table to get reference to footers table DOM element.",
+		"jp": "Event fired after the footer has been rendered.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.table to get reference to footers table DOM element."
+	}
     },
     "footerRendering": {
       "cancellable": true,
@@ -161,7 +188,10 @@
           "optional": false
         }
       ],
-      "description": "Event fired before the footer starts its rendering.<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel footer rendering.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid."
+      "description": {
+		"en": "Event fired before the footer starts its rendering.<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel footer rendering.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid.",
+		"jp": "Event fired before the footer starts its rendering.<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel footer rendering.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid."
+	}
     },
     "headerCellRendered": {
       "cancellable": false,
@@ -177,7 +207,10 @@
           "optional": false
         }
       ],
-      "description": "Event fired after every TH in the grid header has been rendered.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key.<br>&nbsp;&nbsp;&nbsp;Use ui.th to get reference to header cell DOM element."
+      "description": {
+		"en": "Event fired after every TH in the grid header has been rendered.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key.<br>&nbsp;&nbsp;&nbsp;Use ui.th to get reference to header cell DOM element.",
+		"jp": "Event fired after every TH in the grid header has been rendered.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key.<br>&nbsp;&nbsp;&nbsp;Use ui.th to get reference to header cell DOM element."
+	}
     },
     "headerRendered": {
       "cancellable": false,
@@ -193,7 +226,10 @@
           "optional": false
         }
       ],
-      "description": "Event fired after the header has been rendered.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.table to get reference to headers table DOM element."
+      "description": {
+		"en": "Event fired after the header has been rendered.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.table to get reference to headers table DOM element.",
+		"jp": "Event fired after the header has been rendered.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.table to get reference to headers table DOM element."
+	}
     },
     "headerRendering": {
       "cancellable": true,
@@ -209,7 +245,10 @@
           "optional": false
         }
       ],
-      "description": "Event fired before the header starts its rendering.<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel header rendering.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid."
+      "description": {
+		"en": "Event fired before the header starts its rendering.<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel header rendering.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid.",
+		"jp": "Event fired before the header starts its rendering.<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel header rendering.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid."
+	}
     },
     "rendered": {
       "cancellable": false,
@@ -225,7 +264,10 @@
           "optional": false
         }
       ],
-      "description": "Event fired after the whole grid widget has been rendered (including headers, footers, etc.).<br>&nbsp;&nbsp;&nbsp;This event is fired only when the grid is being initialized. <br>&nbsp;&nbsp;&nbsp;It will not be fired if the grid is rebound to its data <br>&nbsp;&nbsp;&nbsp;(for example, when calling the dataBind() API method <br>&nbsp;&nbsp;&nbsp;or when changing the page size (when paging is enabled)).<br>&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid."
+      "description": {
+		"en": "Event fired after the whole grid widget has been rendered (including headers, footers, etc.).<br>&nbsp;&nbsp;&nbsp;This event is fired only when the grid is being initialized. <br>&nbsp;&nbsp;&nbsp;It will not be fired if the grid is rebound to its data <br>&nbsp;&nbsp;&nbsp;(for example, when calling the dataBind() API method <br>&nbsp;&nbsp;&nbsp;or when changing the page size (when paging is enabled)).<br>&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid.",
+		"jp": "Event fired after the whole grid widget has been rendered (including headers, footers, etc.).<br>&nbsp;&nbsp;&nbsp;This event is fired only when the grid is being initialized. <br>&nbsp;&nbsp;&nbsp;It will not be fired if the grid is rebound to its data <br>&nbsp;&nbsp;&nbsp;(for example, when calling the dataBind() API method <br>&nbsp;&nbsp;&nbsp;or when changing the page size (when paging is enabled)).<br>&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid."
+	}
     },
     "rendering": {
       "cancellable": true,
@@ -241,7 +283,10 @@
           "optional": false
         }
       ],
-      "description": "Event fired before the grid starts rendering (all contents).<br>&nbsp;&nbsp;&nbsp;This event is fired only when the grid is being initialized. <br>&nbsp;&nbsp;&nbsp;It will not be fired if the grid is rebound to its data <br>&nbsp;&nbsp;&nbsp;(for example, when calling the dataBind() API method <br>&nbsp;&nbsp;&nbsp;or when changing the page size (when paging is enabled)).<br>&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel grid rendering.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid."
+      "description": {
+		"en": "Event fired before the grid starts rendering (all contents).<br>&nbsp;&nbsp;&nbsp;This event is fired only when the grid is being initialized. <br>&nbsp;&nbsp;&nbsp;It will not be fired if the grid is rebound to its data <br>&nbsp;&nbsp;&nbsp;(for example, when calling the dataBind() API method <br>&nbsp;&nbsp;&nbsp;or when changing the page size (when paging is enabled)).<br>&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel grid rendering.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid.",
+		"jp": "Event fired before the grid starts rendering (all contents).<br>&nbsp;&nbsp;&nbsp;This event is fired only when the grid is being initialized. <br>&nbsp;&nbsp;&nbsp;It will not be fired if the grid is rebound to its data <br>&nbsp;&nbsp;&nbsp;(for example, when calling the dataBind() API method <br>&nbsp;&nbsp;&nbsp;or when changing the page size (when paging is enabled)).<br>&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel grid rendering.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid."
+	}
     },
     "requestError": {
       "cancellable": false,
@@ -257,7 +302,10 @@
           "optional": false
         }
       ],
-      "description": "event fired if there is an error in the request, when the grid is doing a remote operation,<br>&nbsp;&nbsp;&nbsp;&nbsp;such as data binding, paging, sorting, etc. <br>&nbsp;&nbsp;&nbsp;&nbsp;use ui.owner to get a reference to the grid<br>&nbsp;&nbsp;&nbsp;&nbsp;use ui.message to get the error message coming from the server"
+      "description": {
+		"en": "event fired if there is an error in the request, when the grid is doing a remote operation,<br>&nbsp;&nbsp;&nbsp;&nbsp;such as data binding, paging, sorting, etc. <br>&nbsp;&nbsp;&nbsp;&nbsp;use ui.owner to get a reference to the grid<br>&nbsp;&nbsp;&nbsp;&nbsp;use ui.message to get the error message coming from the server",
+		"jp": "event fired if there is an error in the request, when the grid is doing a remote operation,<br>&nbsp;&nbsp;&nbsp;&nbsp;such as data binding, paging, sorting, etc. <br>&nbsp;&nbsp;&nbsp;&nbsp;use ui.owner to get a reference to the grid<br>&nbsp;&nbsp;&nbsp;&nbsp;use ui.message to get the error message coming from the server"
+	}
     },
     "rowsRendered": {
       "cancellable": false,
@@ -273,7 +321,10 @@
           "optional": false
         }
       ],
-      "description": "Event fired after data rows are rendered.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.tbody to get reference to grid's table body."
+      "description": {
+		"en": "Event fired after data rows are rendered.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.tbody to get reference to grid's table body.",
+		"jp": "Event fired after data rows are rendered.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.tbody to get reference to grid's table body."
+	}
     },
     "rowsRendering": {
       "cancellable": true,
@@ -289,7 +340,10 @@
           "optional": false
         }
       ],
-      "description": "Event fired before actual data rows (TRs) are rendered.<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel rows rendering.&nbsp;<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.tbody to get reference to grid's table body."
+      "description": {
+		"en": "Event fired before actual data rows (TRs) are rendered.<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel rows rendering.&nbsp;<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.tbody to get reference to grid's table body.",
+		"jp": "Event fired before actual data rows (TRs) are rendered.<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel rows rendering.&nbsp;<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.tbody to get reference to grid's table body."
+	}
     },
     "schemaGenerated": {
       "cancellable": false,
@@ -305,160 +359,250 @@
           "optional": false
         }
       ],
-      "description": "Event fired after $.ig.DataSource schema has been generated, in case it needs to be modified.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.schema to get reference to data source schema.<br>&nbsp;&nbsp;&nbsp;Use ui.dataSource to get reference to data source."
+      "description": {
+		"en": "Event fired after $.ig.DataSource schema has been generated, in case it needs to be modified.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.schema to get reference to data source schema.<br>&nbsp;&nbsp;&nbsp;Use ui.dataSource to get reference to data source.",
+		"jp": "Event fired after $.ig.DataSource schema has been generated, in case it needs to be modified.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.schema to get reference to data source schema.<br>&nbsp;&nbsp;&nbsp;Use ui.dataSource to get reference to data source."
+	}
     }
   },
   "properties": {
     "accessibilityRendering": {
       "type": "bool",
       "defaultValue": false,
-      "description": "if this option is set to true, ARIA and role attributes will be rendered for data records, cells and grid containers"
+      "description": {
+		"en": "if this option is set to true, ARIA and role attributes will be rendered for data records, cells and grid containers",
+		"jp": "if this option is set to true, ARIA and role attributes will be rendered for data records, cells and grid containers"
+	}
     },
     "adjustVirtualHeights": {
       "type": "bool",
       "defaultValue": false,
-      "description": "If this option is set to true, the height of the grid row will be calculated automatically based on the average row height and the visible virtual records. If no average row height is specified, one will be calculated automatically at runtime."
+      "description": {
+		"en": "If this option is set to true, the height of the grid row will be calculated automatically based on the average row height and the visible virtual records. If no average row height is specified, one will be calculated automatically at runtime.",
+		"jp": "If this option is set to true, the height of the grid row will be calculated automatically based on the average row height and the visible virtual records. If no average row height is specified, one will be calculated automatically at runtime."
+	}
     },
     "aggregateTransactions": {
       "type": "bool",
       "defaultValue": false,
-      "description": "if set to true, the following behavior will take place:<br>&nbsp;&nbsp;&nbsp;&nbsp;if a new row is added, and then deleted, there will be no transaction added to the log <br>&nbsp;&nbsp;&nbsp;&nbsp;if a new role is added, edited, then deleted, there will be no transaction added to the log<br>&nbsp;&nbsp;&nbsp;&nbsp;if several edits are made to a row or an individual cell, this should result in a single transaction<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: This option takes effect only when autoCommit is set to false."
+      "description": {
+		"en": "if set to true, the following behavior will take place:<br>&nbsp;&nbsp;&nbsp;&nbsp;if a new row is added, and then deleted, there will be no transaction added to the log <br>&nbsp;&nbsp;&nbsp;&nbsp;if a new role is added, edited, then deleted, there will be no transaction added to the log<br>&nbsp;&nbsp;&nbsp;&nbsp;if several edits are made to a row or an individual cell, this should result in a single transaction<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: This option takes effect only when autoCommit is set to false.",
+		"jp": "if set to true, the following behavior will take place:<br>&nbsp;&nbsp;&nbsp;&nbsp;if a new row is added, and then deleted, there will be no transaction added to the log <br>&nbsp;&nbsp;&nbsp;&nbsp;if a new role is added, edited, then deleted, there will be no transaction added to the log<br>&nbsp;&nbsp;&nbsp;&nbsp;if several edits are made to a row or an individual cell, this should result in a single transaction<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: This option takes effect only when autoCommit is set to false."
+	}
     },
     "alternateRowStyles": {
       "type": "bool",
       "defaultValue": true,
-      "description": "enables/disables rendering of alternating row styles (odd and even rows receive different styling). Note that if a custom jQuery template is set, this has no effect and CSS for the row should be adjusted manually in the template contents."
+      "description": {
+		"en": "enables/disables rendering of alternating row styles (odd and even rows receive different styling). Note that if a custom jQuery template is set, this has no effect and CSS for the row should be adjusted manually in the template contents.",
+		"jp": "enables/disables rendering of alternating row styles (odd and even rows receive different styling). Note that if a custom jQuery template is set, this has no effect and CSS for the row should be adjusted manually in the template contents."
+	}
     },
     "autoAdjustHeight": {
       "type": "bool",
       "defaultValue": true,
-      "description": "If autoAdjustHeight is set to false, the options.height will be set only on the scrolling container, and all other UI elements such as paging footer / filter row/ headers will add on top of that, so the total height of the grid will be more than this value - the height of the scroll container (content area) will not be dynamically calculated. Setting this option to false will usually result in a lot better initial rendering performance for large data sets ( > 1000 rows rendered at once, no virtualization enabled), since no reflows will be made by browsers when accessing DOM properties such as offsetHeight."
+      "description": {
+		"en": "If autoAdjustHeight is set to false, the options.height will be set only on the scrolling container, and all other UI elements such as paging footer / filter row/ headers will add on top of that, so the total height of the grid will be more than this value - the height of the scroll container (content area) will not be dynamically calculated. Setting this option to false will usually result in a lot better initial rendering performance for large data sets ( > 1000 rows rendered at once, no virtualization enabled), since no reflows will be made by browsers when accessing DOM properties such as offsetHeight.",
+		"jp": "If autoAdjustHeight is set to false, the options.height will be set only on the scrolling container, and all other UI elements such as paging footer / filter row/ headers will add on top of that, so the total height of the grid will be more than this value - the height of the scroll container (content area) will not be dynamically calculated. Setting this option to false will usually result in a lot better initial rendering performance for large data sets ( > 1000 rows rendered at once, no virtualization enabled), since no reflows will be made by browsers when accessing DOM properties such as offsetHeight."
+	}
     },
     "autoCommit": {
       "type": "bool",
       "defaultValue": false,
-      "description": "automatically commits the transactions as rows/cells are being edited"
+      "description": {
+		"en": "automatically commits the transactions as rows/cells are being edited",
+		"jp": "automatically commits the transactions as rows/cells are being edited"
+	}
     },
     "autofitLastColumn": {
       "type": "bool",
       "defaultValue": true,
-      "description": "If autofitLastColumn is true and all columns' widths are specified and their combined width is less than the grid width then the last column width will be automatically adjusted to fill the entire grid."
+      "description": {
+		"en": "If autofitLastColumn is true and all columns' widths are specified and their combined width is less than the grid width then the last column width will be automatically adjusted to fill the entire grid.",
+		"jp": "If autofitLastColumn is true and all columns' widths are specified and their combined width is less than the grid width then the last column width will be automatically adjusted to fill the entire grid."
+	}
     },
     "autoFormat": {
       "type": "string",
       "defaultValue": "date",
-      "description": " Sets gets ability to automatically format text in cells for numeric and date columns. The format patterns and rules for numbers and dates are defined in $.ig.regional.defaults object.",
+      "description": {
+		"en": " Sets gets ability to automatically format text in cells for numeric and date columns. The format patterns and rules for numbers and dates are defined in $.ig.regional.defaults object.",
+		"jp": " Sets gets ability to automatically format text in cells for numeric and date columns. The format patterns and rules for numbers and dates are defined in $.ig.regional.defaults object."
+	},
       "valueOptions": [
         {
           "name": "date",
           "type": "string",
-          "description": " formats only Date columns"
+          "description": {
+		"en": " formats only Date columns",
+		"jp": " formats only Date columns"
+	}
         },
         {
           "name": "number",
           "type": "string",
-          "description": " formats only number columns"
+          "description": {
+		"en": " formats only number columns",
+		"jp": " formats only number columns"
+	}
         },
         {
           "name": "dateandnumber",
           "type": "string",
-          "description": ""
+          "description": {
+		"en": "",
+		"jp": ""
+	}
         },
         {
           "name": "true",
           "type": "bool",
-          "description": " formats Date and number columns"
+          "description": {
+		"en": " formats Date and number columns",
+		"jp": " formats Date and number columns"
+	}
         },
         {
           "name": "false",
           "type": "bool",
-          "description": " auto formatting is disabled"
+          "description": {
+		"en": " auto formatting is disabled",
+		"jp": " auto formatting is disabled"
+	}
         }
       ]
     },
     "autoGenerateColumns": {
       "type": "bool",
       "defaultValue": true,
-      "description": "if no columns collection is defined, and autoGenerateColumns is set to true, columns will be inferred from the data source"
+      "description": {
+		"en": "if no columns collection is defined, and autoGenerateColumns is set to true, columns will be inferred from the data source",
+		"jp": "if no columns collection is defined, and autoGenerateColumns is set to true, columns will be inferred from the data source"
+	}
     },
     "avgColumnWidth": {
       "type": "string",
       "defaultValue": null,
-      "description": " used for virtualization, this is the average value in pixels for a column width "
+      "description": {
+		"en": " used for virtualization, this is the average value in pixels for a column width ",
+		"jp": " used for virtualization, this is the average value in pixels for a column width "
+	}
     },
     "avgRowHeight": {
       "type": "number",
       "defaultValue": 25,
-      "description": " used for virtualization, this is the average value in pixels (default) that will be used to calculate how many rows and which ones to render as the end user scrolls. Also all rows' height will be automatically equal to this value "
+      "description": {
+		"en": " used for virtualization, this is the average value in pixels (default) that will be used to calculate how many rows and which ones to render as the end user scrolls. Also all rows' height will be automatically equal to this value ",
+		"jp": " used for virtualization, this is the average value in pixels (default) that will be used to calculate how many rows and which ones to render as the end user scrolls. Also all rows' height will be automatically equal to this value "
+	}
     },
     "caption": {
       "type": "string",
       "defaultValue": null,
-      "description": "caption text that will be shown above the grid header"
+      "description": {
+		"en": "caption text that will be shown above the grid header",
+		"jp": "caption text that will be shown above the grid header"
+	}
     },
     "columns": {
       "type": "array",
       "defaultValue": null,
-      "description": "an array of column objects",
+      "description": {
+		"en": "an array of column objects",
+		"jp": "an array of column objects"
+	},
       "designerDisplayProperty": "key",
       "schema": {
         "key": {
           "required": true,
           "type": "string",
           "defaultValue": null,
-          "description": "Column key (property in the data source to which the column is bound to)"
+          "description": {
+		"en": "Column key (property in the data source to which the column is bound to)",
+		"jp": "Column key (property in the data source to which the column is bound to)"
+	}
         },
         "headerText": {
           "type": "string",
           "defaultValue": null,
-          "description": "Column header text"
+          "description": {
+		"en": "Column header text",
+		"jp": "Column header text"
+	}
         },
         "width": {
           "type": "string",
           "defaultValue": null,
-          "description": "Width of the column in pixels or percentage. Can have optional 'px' at the end. If width is not defined and defaultColumnWidth is set, it is assumed for all columns"
+          "description": {
+		"en": "Width of the column in pixels or percentage. Can have optional 'px' at the end. If width is not defined and defaultColumnWidth is set, it is assumed for all columns",
+		"jp": "Width of the column in pixels or percentage. Can have optional 'px' at the end. If width is not defined and defaultColumnWidth is set, it is assumed for all columns"
+	}
         },
         "dataType": {
           "type": "string",
           "defaultValue": "string",
-          "description": "data type of the column cell values",
+          "description": {
+		"en": "data type of the column cell values",
+		"jp": "data type of the column cell values"
+	},
           "valueOptions": [
             {
               "name": "string",
               "type": "string",
-              "description": "The column values will be stored and formatted as strings"
+              "description": {
+		"en": "The column values will be stored and formatted as strings",
+		"jp": "The column values will be stored and formatted as strings"
+	}
             },
             {
               "name": "number",
               "type": "string",
-              "description": "The column values will be stored and formatted as numbers"
+              "description": {
+		"en": "The column values will be stored and formatted as numbers",
+		"jp": "The column values will be stored and formatted as numbers"
+	}
             },
             {
               "name": "date",
               "type": "string",
-              "description": "The column values will be stored and formatted as Date objects"
+              "description": {
+		"en": "The column values will be stored and formatted as Date objects",
+		"jp": "The column values will be stored and formatted as Date objects"
+	}
             },
             {
               "name": "bool",
               "type": "string",
-              "description": "The column values will be stored and formatted as boolean values"
+              "description": {
+		"en": "The column values will be stored and formatted as boolean values",
+		"jp": "The column values will be stored and formatted as boolean values"
+	}
             },
             {
               "name": "object",
               "type": "string",
-              "description": "The column values will be stored and formatted in the way they appear in the data source"
+              "description": {
+		"en": "The column values will be stored and formatted in the way they appear in the data source",
+		"jp": "The column values will be stored and formatted in the way they appear in the data source"
+	}
             }
           ]
         },
         "hidden": {
           "type": "bool",
           "defaultValue": false,
-          "description": "Initial visibility of the column. A column can be hidden without the Hiding feature being enabled but there will be no UI for unhiding it. Columns can be defined as hidden in the options of the Hiding feature as well and those definitions take precedence."
+          "description": {
+		"en": "Initial visibility of the column. A column can be hidden without the Hiding feature being enabled but there will be no UI for unhiding it. Columns can be defined as hidden in the options of the Hiding feature as well and those definitions take precedence.",
+		"jp": "Initial visibility of the column. A column can be hidden without the Hiding feature being enabled but there will be no UI for unhiding it. Columns can be defined as hidden in the options of the Hiding feature as well and those definitions take precedence."
+	}
         },
         "format": {
           "type": "string",
           "defaultValue": null,
-          "description": "Sets gets format for cells in column. Default value is null. If dataType is \"date\", then supported formats are following: \"date\", \"dateLong\", \"dateTime\", \"time\", \"timeLong\", \"MM/dd/yyyy\", \"MMM-d, yy, h:mm:ss tt\", \"dddd d MMM\", etc. If dataType is \"number\", then supported numeric formats are following: \"number\", \"currency\", \"percent\", \"int\", \"double\", \"0.00\", \"#.0####\", \"0\", \"#.#######\", etc. The value of \"double\" will be similar to \"number\", but with unlimited maximum number of decimal places. The format patterns and rules for numbers and dates are defined in $.ig.regional.defaults object. If dataType is \"string\" or not set, then format is rendered as it is with replacement of possible \"{0}\" flag by value in cell. Example, if format is set to \"Name: {0}\" and value in cell is \"Bob\", then value will appear as \"Name: Bob\". If value is set to \"checkbox\", then checkboxes are used regardless of renderCheckboxes option of igGrid. That has effect only when dataType option of column is set to \"bool\"."
+          "description": {
+		"en": "Sets gets format for cells in column. Default value is null. If dataType is \"date\", then supported formats are following: \"date\", \"dateLong\", \"dateTime\", \"time\", \"timeLong\", \"MM/dd/yyyy\", \"MMM-d, yy, h:mm:ss tt\", \"dddd d MMM\", etc. If dataType is \"number\", then supported numeric formats are following: \"number\", \"currency\", \"percent\", \"int\", \"double\", \"0.00\", \"#.0####\", \"0\", \"#.#######\", etc. The value of \"double\" will be similar to \"number\", but with unlimited maximum number of decimal places. The format patterns and rules for numbers and dates are defined in $.ig.regional.defaults object. If dataType is \"string\" or not set, then format is rendered as it is with replacement of possible \"{0}\" flag by value in cell. Example, if format is set to \"Name: {0}\" and value in cell is \"Bob\", then value will appear as \"Name: Bob\". If value is set to \"checkbox\", then checkboxes are used regardless of renderCheckboxes option of igGrid. That has effect only when dataType option of column is set to \"bool\".",
+		"jp": "Sets gets format for cells in column. Default value is null. If dataType is \"date\", then supported formats are following: \"date\", \"dateLong\", \"dateTime\", \"time\", \"timeLong\", \"MM/dd/yyyy\", \"MMM-d, yy, h:mm:ss tt\", \"dddd d MMM\", etc. If dataType is \"number\", then supported numeric formats are following: \"number\", \"currency\", \"percent\", \"int\", \"double\", \"0.00\", \"#.0####\", \"0\", \"#.#######\", etc. The value of \"double\" will be similar to \"number\", but with unlimited maximum number of decimal places. The format patterns and rules for numbers and dates are defined in $.ig.regional.defaults object. If dataType is \"string\" or not set, then format is rendered as it is with replacement of possible \"{0}\" flag by value in cell. Example, if format is set to \"Name: {0}\" and value in cell is \"Bob\", then value will appear as \"Name: Bob\". If value is set to \"checkbox\", then checkboxes are used regardless of renderCheckboxes option of igGrid. That has effect only when dataType option of column is set to \"bool\"."
+	}
         },
         "formatter": {
           "type": "function",
@@ -475,64 +619,100 @@
 			  "optional": false
 			}
 		  ],
-          "description": "Reference to a function (string or function) which will be used for formatting the cell values. The function should accept a value and return the new formatted value."
+          "description": {
+		"en": "Reference to a function (string or function) which will be used for formatting the cell values. The function should accept a value and return the new formatted value.",
+		"jp": "Reference to a function (string or function) which will be used for formatting the cell values. The function should accept a value and return the new formatted value."
+	}
         },
         "formula": {
           "type": "string",
           "defaultValue": null,
-          "description": "a reference or name of a javascript function which will calculate the value based on other cell values in the same row when column is unbound."
+          "description": {
+		"en": "a reference or name of a javascript function which will calculate the value based on other cell values in the same row when column is unbound.",
+		"jp": "a reference or name of a javascript function which will calculate the value based on other cell values in the same row when column is unbound."
+	}
         },
         "rowspan": {
           "type": "number",
           "defaultValue": 1,
-          "description": "Used to adjust span of multi column header cell."
+          "description": {
+		"en": "Used to adjust span of multi column header cell.",
+		"jp": "Used to adjust span of multi column header cell."
+	}
         },
         "template": {
           "type": "string",
           "defaultValue": null,
-          "description": "Sets a template for an individual column. the contents of the template should be the HTML markup that goes inside the table cell, without any and tags included in front and at the end. The syntax of the template, when referencing data keys and using conditional expressions is the same as the one for rowTemplate."
+          "description": {
+		"en": "Sets a template for an individual column. the contents of the template should be the HTML markup that goes inside the table cell, without any and tags included in front and at the end. The syntax of the template, when referencing data keys and using conditional expressions is the same as the one for rowTemplate.",
+		"jp": "Sets a template for an individual column. the contents of the template should be the HTML markup that goes inside the table cell, without any and tags included in front and at the end. The syntax of the template, when referencing data keys and using conditional expressions is the same as the one for rowTemplate."
+	}
         },
         "unbound": {
           "type": "bool",
           "defaultValue": false,
-          "description": "Sets whether column is bound to the datasource."
+          "description": {
+		"en": "Sets whether column is bound to the datasource.",
+		"jp": "Sets whether column is bound to the datasource."
+	}
         }
       }
     },
     "columnVirtualization": {
       "type": "bool",
       "defaultValue": false,
-      "description": "option to enable virtualization for columns only (horizontal)"
+      "description": {
+		"en": "option to enable virtualization for columns only (horizontal)",
+		"jp": "option to enable virtualization for columns only (horizontal)"
+	}
     },
     "dataSource": {
       "type": "custom",
       "defaultValue": null,
-      "description": "can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself"
+      "description": {
+		"en": "can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself",
+		"jp": "can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself"
+	}
     },
     "dataSourceType": {
       "type": "string",
       "defaultValue": null,
-      "description": "explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property"
+      "description": {
+		"en": "explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property",
+		"jp": "explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property"
+	}
     },
     "dataSourceUrl": {
       "type": "string",
       "defaultValue": null,
-      "description": "specifies a remote URL as a data source, from which data will be retrieved using an AJAX call ($.ajax)"
+      "description": {
+		"en": "specifies a remote URL as a data source, from which data will be retrieved using an AJAX call ($.ajax)",
+		"jp": "specifies a remote URL as a data source, from which data will be retrieved using an AJAX call ($.ajax)"
+	}
     },
     "defaultColumnWidth": {
       "type": "string",
       "defaultValue": null,
-      "description": " Default column width that will be set for all columns."
+      "description": {
+		"en": " Default column width that will be set for all columns.",
+		"jp": " Default column width that will be set for all columns."
+	}
     },
     "enableHoverStyles": {
       "type": "bool",
       "defaultValue": true,
-      "description": "enables/disables rendering of ui-state-hover classes when the mouse is over a record. this can be useful in templating scenarios, for example, where we don't want to apply hover styling to templated content"
+      "description": {
+		"en": "enables/disables rendering of ui-state-hover classes when the mouse is over a record. this can be useful in templating scenarios, for example, where we don't want to apply hover styling to templated content",
+		"jp": "enables/disables rendering of ui-state-hover classes when the mouse is over a record. this can be useful in templating scenarios, for example, where we don't want to apply hover styling to templated content"
+	}
     },
     "enableUTCDates": {
       "type": "bool",
       "defaultValue": false,
-      "description": "enables formatting of the dates as UTC. Note that this may be desirable when the dates are coming from a backend, encoded as UTC. Otherwise, if dates are created on the client (in the browser), most probably keeping enableUTCDates to false is the desired behavior"
+      "description": {
+		"en": "enables formatting of the dates as UTC. Note that this may be desirable when the dates are coming from a backend, encoded as UTC. Otherwise, if dates are created on the client (in the browser), most probably keeping enableUTCDates to false is the desired behavior",
+		"jp": "enables formatting of the dates as UTC. Note that this may be desirable when the dates are coming from a backend, encoded as UTC. Otherwise, if dates are created on the client (in the browser), most probably keeping enableUTCDates to false is the desired behavior"
+	}
     },
     "features": {
       "type": "custom",
@@ -540,246 +720,378 @@
          "ColumnMoving": {
             "type": "object",
             "defaultValue": null,
-            "description": "Grid Column Moving Feature",  
+            "description": {
+		"en": "Grid Column Moving Feature",
+		"jp": "Grid Column Moving Feature"
+	},  
             "schemaRef": "gridcolumnmoving"
           },
 		   "ColumnFixing": {
             "type": "object",
             "defaultValue": null,
-            "description": "Grid Column Fixing Feature",  
+            "description": {
+		"en": "Grid Column Fixing Feature",
+		"jp": "Grid Column Fixing Feature"
+	},  
             "schemaRef": "gridcolumnfixing"
           },
 		  "Filtering": {
             "type": "object",
             "defaultValue": null,
-            "description": "Grid Filtering Feature", 
+            "description": {
+		"en": "Grid Filtering Feature",
+		"jp": "Grid Filtering Feature"
+	}, 
             "schemaRef": "gridfiltering"
           },
 		  "GroupBy": {
             "type": "object",
             "defaultValue": null,
-            "description": "Grid Group By Feature",  
+            "description": {
+		"en": "Grid Group By Feature",
+		"jp": "Grid Group By Feature"
+	},  
             "schemaRef": "gridgroupby"
           },
 		  "Hiding": {
             "type": "object",
             "defaultValue": null,
-            "description": "Grid Hiding Feature",  
+            "description": {
+		"en": "Grid Hiding Feature",
+		"jp": "Grid Hiding Feature"
+	},  
             "schemaRef": "gridhiding"
           },
           "CellMerging": {
             "type": "object",
             "defaultValue": null,
-            "description": "Grid Merged Cells Feature",  
+            "description": {
+		"en": "Grid Merged Cells Feature",
+		"jp": "Grid Merged Cells Feature"
+	},  
             "schemaRef": "gridmergedcells"
           },
 		  "Paging": {
             "type": "object",
             "defaultValue": null,
-            "description": "Grid Paging Feature",  
+            "description": {
+		"en": "Grid Paging Feature",
+		"jp": "Grid Paging Feature"
+	},  
             "schemaRef": "gridpaging"
           },
 		  "MultiColumnHeaders": {
 			"type": "object",
 	        "defaultValue": null,
-			"description": "Grid Multi Column Headers Feature",  
+			"description": {
+		"en": "Grid Multi Column Headers Feature",
+		"jp": "Grid Multi Column Headers Feature"
+	},  
 			"schemaRef": "gridmulticolumnheaders"
 		  },
 		  "Resizing": {
             "type": "object",
             "defaultValue": null,
-            "description": "Grid Resizing Feature",  
+            "description": {
+		"en": "Grid Resizing Feature",
+		"jp": "Grid Resizing Feature"
+	},  
             "schemaRef": "gridresizing"
           },
          "RowSelectors": {
             "type": "object",
             "defaultValue": null,
-            "description": "Grid Row Selectors Feature",  
+            "description": {
+		"en": "Grid Row Selectors Feature",
+		"jp": "Grid Row Selectors Feature"
+	},  
             "schemaRef": "gridrowselectors"
           },
 		  "Selection": {
             "type": "object",
             "defaultValue": null,
-            "description": "Grid Selection Feature",  
+            "description": {
+		"en": "Grid Selection Feature",
+		"jp": "Grid Selection Feature"
+	},  
             "schemaRef": "gridselection"
           },
 		  "Sorting": {
             "type": "object",
             "defaultValue": null,
-            "description": "Grid Sorting Feature",  
+            "description": {
+		"en": "Grid Sorting Feature",
+		"jp": "Grid Sorting Feature"
+	},  
             "schemaRef": "gridsorting"
           },
 		  "Summaries": {
             "type": "object",
             "defaultValue": null,
-            "description": "Grid Summaries Feature",  
+            "description": {
+		"en": "Grid Summaries Feature",
+		"jp": "Grid Summaries Feature"
+	},  
             "schemaRef": "gridsummaries"
           },
           "Tooltips": {
             "type": "object",
             "defaultValue": null,
-            "description": "Grid Tooltips Feature",  
+            "description": {
+		"en": "Grid Tooltips Feature",
+		"jp": "Grid Tooltips Feature"
+	},  
             "schemaRef": "gridtooltips"
           },
 		  "Updating": {
             "type": "object",
             "defaultValue": null,
-            "description": "Grid Updating Feature",  
+            "description": {
+		"en": "Grid Updating Feature",
+		"jp": "Grid Updating Feature"
+	},  
             "schemaRef": "gridupdating"
           }
       },
 	  "designerDisplayProperty": "name",
       "defaultValue": null,
       "components": ["gridfiltering", "gridupdating", "gridtooltips", "gridsummaries", "gridsorting", "gridselection", "gridrowselectors", "gridresizing", "gridpaging", "gridmulticolumnheaders", "gridmergedcells", "gridhiding", "gridgroupby", "gridcolumnmoving"],
-      "description": "a list of grid features definitions: sorting, paging, etc. Each feature goes with its separate options that are documented for the feature accordingly"
+      "description": {
+		"en": "a list of grid features definitions: sorting, paging, etc. Each feature goes with its separate options that are documented for the feature accordingly",
+		"jp": "a list of grid features definitions: sorting, paging, etc. Each feature goes with its separate options that are documented for the feature accordingly"
+	}
     },
     "fixedFooters": {
       "type": "bool",
       "defaultValue": true,
-      "description": "footers will be fixed if this option is set to true, and only the grid data will be scrollable. If virtualization is enabled, fixedFooters will always act as if it's true, no matter which value is set"
+      "description": {
+		"en": "footers will be fixed if this option is set to true, and only the grid data will be scrollable. If virtualization is enabled, fixedFooters will always act as if it's true, no matter which value is set",
+		"jp": "footers will be fixed if this option is set to true, and only the grid data will be scrollable. If virtualization is enabled, fixedFooters will always act as if it's true, no matter which value is set"
+	}
     },
     "fixedHeaders": {
       "type": "bool",
       "defaultValue": true,
-      "description": "headers will be fixed if this option is set to true, and only the grid data will be scrollable. If virtualization is enabled, fixedHeaders will always act as if it's true, no matter which value is set"
+      "description": {
+		"en": "headers will be fixed if this option is set to true, and only the grid data will be scrollable. If virtualization is enabled, fixedHeaders will always act as if it's true, no matter which value is set",
+		"jp": "headers will be fixed if this option is set to true, and only the grid data will be scrollable. If virtualization is enabled, fixedHeaders will always act as if it's true, no matter which value is set"
+	}
     },
     "height": {
       "type": "string",
       "defaultValue": null,
-      "description": " This is the total height of the grid, including all UI elements - scroll container with data rows, header, footer, filter row -  (if any), etc.  "
+      "description": {
+		"en": " This is the total height of the grid, including all UI elements - scroll container with data rows, header, footer, filter row -  (if any), etc.  ",
+		"jp": " This is the total height of the grid, including all UI elements - scroll container with data rows, header, footer, filter row -  (if any), etc.  "
+	}
     },
     "jsonpRequest": {
       "type": "bool",
       "defaultValue": false,
-      "description": "When dataSource is string defines whether to set data source of type JSONP"
+      "description": {
+		"en": "When dataSource is string defines whether to set data source of type JSONP",
+		"jp": "When dataSource is string defines whether to set data source of type JSONP"
+	}
     },
     "localSchemaTransform": {
       "type": "bool",
       "defaultValue": true,
-      "description": "if this option is set to false, the data to which the grid is bound will be used \"as is\" with no additional transformations based on columns defined"
+      "description": {
+		"en": "if this option is set to false, the data to which the grid is bound will be used \"as is\" with no additional transformations based on columns defined",
+		"jp": "if this option is set to false, the data to which the grid is bound will be used \"as is\" with no additional transformations based on columns defined"
+	}
     },
     "mergeUnboundColumns": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Merge unbound columns values inside datasource when data source is remote. If true then the unbound columns are merged to the datasource at runtime - indeed DataSource is expanded with the new data and this could cause performance issues when dataSource is huge, if false then the unbound data is sent to the client"
+      "description": {
+		"en": "Merge unbound columns values inside datasource when data source is remote. If true then the unbound columns are merged to the datasource at runtime - indeed DataSource is expanded with the new data and this could cause performance issues when dataSource is huge, if false then the unbound data is sent to the client",
+		"jp": "Merge unbound columns values inside datasource when data source is remote. If true then the unbound columns are merged to the datasource at runtime - indeed DataSource is expanded with the new data and this could cause performance issues when dataSource is huge, if false then the unbound data is sent to the client"
+	}
     },
     "primaryKey": {
       "type": "string",
       "defaultValue": null,
-      "description": "primary key name of the column containing unique identifiers"
+      "description": {
+		"en": "primary key name of the column containing unique identifiers",
+		"jp": "primary key name of the column containing unique identifiers"
+	}
     },
     "renderCheckboxes": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Gets sets ability to render checkboxes and use checkbox editor when dataType of a column is \"bool\"."
+      "description": {
+		"en": "Gets sets ability to render checkboxes and use checkbox editor when dataType of a column is \"bool\".",
+		"jp": "Gets sets ability to render checkboxes and use checkbox editor when dataType of a column is \"bool\"."
+	}
     },
     "requestType": {
       "type": "string",
       "defaultValue": "GET",
-      "description": "specifies the HTTP verb to be used to issue the request",
+      "description": {
+		"en": "specifies the HTTP verb to be used to issue the request",
+		"jp": "specifies the HTTP verb to be used to issue the request"
+	},
       "valueOptions": [
         {
           "name": "GET",
           "type": "string",
-          "description": "initiates GET requests"
+          "description": {
+		"en": "initiates GET requests",
+		"jp": "initiates GET requests"
+	}
         },
         {
           "name": "POST",
           "type": "string",
-          "description": "initiates POST requests"
+          "description": {
+		"en": "initiates POST requests",
+		"jp": "initiates POST requests"
+	}
         }
       ]
     },
     "responseContentType": {
       "type": "string",
       "defaultValue": "application/json; charset=utf-8",
-      "description": "content type of the response. See http://api.jquery.com/jQuery.ajax/ => contentType"
+      "description": {
+		"en": "content type of the response. See http://api.jquery.com/jQuery.ajax/ => contentType",
+		"jp": "content type of the response. See http://api.jquery.com/jQuery.ajax/ => contentType"
+	}
     },
     "responseDataKey": {
       "type": "string",
       "defaultValue": null,
-      "description": "see $.ig.DataSource. This is basically the property in the responses where data records are held, if the response is wrapped"
+      "description": {
+		"en": "see $.ig.DataSource. This is basically the property in the responses where data records are held, if the response is wrapped",
+		"jp": "see $.ig.DataSource. This is basically the property in the responses where data records are held, if the response is wrapped"
+	}
     },
     "responseTotalRecCountKey": {
       "type": "string",
       "defaultValue": null,
-      "description": "See $.ig.DataSource. Property in the response specifying the total number of records on the server."
+      "description": {
+		"en": "See $.ig.DataSource. Property in the response specifying the total number of records on the server.",
+		"jp": "See $.ig.DataSource. Property in the response specifying the total number of records on the server."
+	}
     },
     "restSettings": {
       "type": "object",
       "defaultValue": null,
-      "description": "Settings related to REST compliant update routine",
+      "description": {
+		"en": "Settings related to REST compliant update routine",
+		"jp": "Settings related to REST compliant update routine"
+	},
       "schema": {
         "create": {
           "type": "object",
           "defaultValue": null,
-          "description": "Settings for create requests",
+          "description": {
+		"en": "Settings for create requests",
+		"jp": "Settings for create requests"
+	},
           "schema": {
             "batch": {
               "type": "bool",
               "defaultValue": false,
-              "description": "Specifies whether create requests will be sent in batches"
+              "description": {
+		"en": "Specifies whether create requests will be sent in batches",
+		"jp": "Specifies whether create requests will be sent in batches"
+	}
             },
             "template": {
               "type": "string",
               "defaultValue": null,
-              "description": "Specifies a remote URL template. Use ${id} in place of the resource id"
+              "description": {
+		"en": "Specifies a remote URL template. Use ${id} in place of the resource id",
+		"jp": "Specifies a remote URL template. Use ${id} in place of the resource id"
+	}
             },
             "uri": {
               "type": "string",
               "defaultValue": null,
-              "description": "Specifies a remote URL to which create requests will be sent. This will be used for both batch and non-batch, however if template is also set, this URL will only be used for batch requests."
+              "description": {
+		"en": "Specifies a remote URL to which create requests will be sent. This will be used for both batch and non-batch, however if template is also set, this URL will only be used for batch requests.",
+		"jp": "Specifies a remote URL to which create requests will be sent. This will be used for both batch and non-batch, however if template is also set, this URL will only be used for batch requests."
+	}
             }
           }
         },
         "update": {
 		  "type": "object",
           "defaultValue": null,
-          "description": "Settings for update requests",	
+          "description": {
+		"en": "Settings for update requests",
+		"jp": "Settings for update requests"
+	},	
           "schema": {
             "batch": {
               "type": "bool",
               "defaultValue": false,
-              "description": "Specifies whether create requests will be sent in batches"
+              "description": {
+		"en": "Specifies whether create requests will be sent in batches",
+		"jp": "Specifies whether create requests will be sent in batches"
+	}
             },
             "template": {
               "type": "string",
               "defaultValue": null,
-              "description": "Specifies a remote URL template. Use ${id} in place of the resource id"
+              "description": {
+		"en": "Specifies a remote URL template. Use ${id} in place of the resource id",
+		"jp": "Specifies a remote URL template. Use ${id} in place of the resource id"
+	}
             },
             "uri": {
               "type": "string",
               "defaultValue": null,
-              "description": "Specifies a remote URL to which create requests will be sent. This will be used for both batch and non-batch, however if template is also set, this URL will only be used for batch requests."
+              "description": {
+		"en": "Specifies a remote URL to which create requests will be sent. This will be used for both batch and non-batch, however if template is also set, this URL will only be used for batch requests.",
+		"jp": "Specifies a remote URL to which create requests will be sent. This will be used for both batch and non-batch, however if template is also set, this URL will only be used for batch requests."
+	}
             }
           }
         },
         "remove": {
 	      "type": "object",
           "defaultValue": null,
-          "description": "Settings for remove requests",
+          "description": {
+		"en": "Settings for remove requests",
+		"jp": "Settings for remove requests"
+	},
           "schema": {
             "batch": {
               "type": "bool",
               "defaultValue": false,
-              "description": "Specifies whether create requests will be sent in batches"
+              "description": {
+		"en": "Specifies whether create requests will be sent in batches",
+		"jp": "Specifies whether create requests will be sent in batches"
+	}
             },
             "template": {
               "type": "string",
               "defaultValue": null,
-              "description": "Specifies a remote URL template. Use ${id} in place of the resource id"
+              "description": {
+		"en": "Specifies a remote URL template. Use ${id} in place of the resource id",
+		"jp": "Specifies a remote URL template. Use ${id} in place of the resource id"
+	}
             },
             "uri": {
               "type": "string",
               "defaultValue": null,
-              "description": "Specifies a remote URL to which create requests will be sent. This will be used for both batch and non-batch, however if template is also set, this URL will only be used for batch requests."
+              "description": {
+		"en": "Specifies a remote URL to which create requests will be sent. This will be used for both batch and non-batch, however if template is also set, this URL will only be used for batch requests.",
+		"jp": "Specifies a remote URL to which create requests will be sent. This will be used for both batch and non-batch, however if template is also set, this URL will only be used for batch requests."
+	}
             }
           }
         },
         "contentSerializer": {
           "type": "function",
           "defaultValue": null,
-          "description": "Specifies a custom function to serialize content sent to the server. It should accept a single object or an array of objects and return a string. If not specified, JSON.stringify() will be used.",
+          "description": {
+		"en": "Specifies a custom function to serialize content sent to the server. It should accept a single object or an array of objects and return a string. If not specified, JSON.stringify() will be used.",
+		"jp": "Specifies a custom function to serialize content sent to the server. It should accept a single object or an array of objects and return a string. If not specified, JSON.stringify() will be used."
+	},
           "args": [
             {
               "name": "content",
@@ -791,93 +1103,144 @@
         "contentType": {
           "type": "string",
           "defaultValue": "application/json; charset=utf-8",
-          "description": "Specifies the content type of the request."
+          "description": {
+		"en": "Specifies the content type of the request.",
+		"jp": "Specifies the content type of the request."
+	}
         },
         "encodeRemoveInRequestUri": {
           "type": "bool",
           "defaultValue": true,
-          "description": "Specifies whether the ids of the removed resources are send through the request URI"
+          "description": {
+		"en": "Specifies whether the ids of the removed resources are send through the request URI",
+		"jp": "Specifies whether the ids of the removed resources are send through the request URI"
+	}
         }
       }
     },
     "rowVirtualization": {
       "type": "bool",
       "defaultValue": false,
-      "description": "option to enable virtualization for rows only (vertical)"
+      "description": {
+		"en": "option to enable virtualization for rows only (vertical)",
+		"jp": "option to enable virtualization for rows only (vertical)"
+	}
     },
     "serializeTransactionLog": {
       "type": "bool",
       "defaultValue": true,
-      "description": "if true, the transaction log will always be sent in the request for remote data, by the data source. Also this means that if there are values in the log, a POST will be done instead of GET"
+      "description": {
+		"en": "if true, the transaction log will always be sent in the request for remote data, by the data source. Also this means that if there are values in the log, a POST will be done instead of GET",
+		"jp": "if true, the transaction log will always be sent in the request for remote data, by the data source. Also this means that if there are values in the log, a POST will be done instead of GET"
+	}
     },
     "showFooter": {
       "type": "bool",
       "defaultValue": true,
-      "description": "option controlling the visibility of the grid footer"
+      "description": {
+		"en": "option controlling the visibility of the grid footer",
+		"jp": "option controlling the visibility of the grid footer"
+	}
     },
     "showHeader": {
       "type": "bool",
       "defaultValue": true,
-      "description": "option controlling the visibility of the grid header"
+      "description": {
+		"en": "option controlling the visibility of the grid header",
+		"jp": "option controlling the visibility of the grid header"
+	}
     },
     "tabIndex": {
       "type": "number",
       "defaultValue": 0,
-      "description": "initial tabIndex attribute that will be set on the container element"
+      "description": {
+		"en": "initial tabIndex attribute that will be set on the container element",
+		"jp": "initial tabIndex attribute that will be set on the container element"
+	}
     },
     "templatingEngine": {
       "type": "string",
       "defaultValue": "infragistics",
-      "description": " the templating engine that will be used to render the grid ",
+      "description": {
+		"en": " the templating engine that will be used to render the grid ",
+		"jp": " the templating engine that will be used to render the grid "
+	},
       "valueOptions": [
         {
           "name": "infragistics",
           "type": "string",
-          "description": " the grid will use the Infragistics Templating engine to render its content and specific parts of the UI"
+          "description": {
+		"en": " the grid will use the Infragistics Templating engine to render its content and specific parts of the UI",
+		"jp": " the grid will use the Infragistics Templating engine to render its content and specific parts of the UI"
+	}
         },
         {
           "name": "jsRender",
           "type": "string",
-          "description": " the grid will use jsRender to render its content and specific parts of the UI"
+          "description": {
+		"en": " the grid will use jsRender to render its content and specific parts of the UI",
+		"jp": " the grid will use jsRender to render its content and specific parts of the UI"
+	}
         }
       ]
     },
     "updateUrl": {
       "type": "string",
       "defaultValue": null,
-      "description": "URL to which updating requests will be made. If autoCommit is true, updates will be done immediately to the data source, without keeping interim transaction logs"
+      "description": {
+		"en": "URL to which updating requests will be made. If autoCommit is true, updates will be done immediately to the data source, without keeping interim transaction logs",
+		"jp": "URL to which updating requests will be made. If autoCommit is true, updates will be done immediately to the data source, without keeping interim transaction logs"
+	}
     },
     "virtualization": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Enables/disables virtualization. Virtualization can greatly enhance rendering performance. If enabled, the number of actual rendered rows (DOM elements) will be constant and related to the visible viewport of the grid. As the end user scrolls, those DOM elements will be dynamically reused to render the new data."
+      "description": {
+		"en": "Enables/disables virtualization. Virtualization can greatly enhance rendering performance. If enabled, the number of actual rendered rows (DOM elements) will be constant and related to the visible viewport of the grid. As the end user scrolls, those DOM elements will be dynamically reused to render the new data.",
+		"jp": "Enables/disables virtualization. Virtualization can greatly enhance rendering performance. If enabled, the number of actual rendered rows (DOM elements) will be constant and related to the visible viewport of the grid. As the end user scrolls, those DOM elements will be dynamically reused to render the new data."
+	}
     },
     "virtualizationMode": {
       "type": "string",
       "defaultValue": "fixed",
-      "description": " Determines virtualization mode",
+      "description": {
+		"en": " Determines virtualization mode",
+		"jp": " Determines virtualization mode"
+	},
       "valueOptions": [
         {
           "name": "fixed",
           "type": "string",
-          "description": " renders only the visible rows and/or columns in the grid. On scrolling the same rows and/or columns are updated with new data from the data source."
+          "description": {
+		"en": " renders only the visible rows and/or columns in the grid. On scrolling the same rows and/or columns are updated with new data from the data source.",
+		"jp": " renders only the visible rows and/or columns in the grid. On scrolling the same rows and/or columns are updated with new data from the data source."
+	}
         },
         {
           "name": "continuous",
           "type": "string",
-          "description": " renders a pre-defined number of rows in the grid. On scrolling the continuous virtualization loads another portion of rows and disposes the current one."
+          "description": {
+		"en": " renders a pre-defined number of rows in the grid. On scrolling the continuous virtualization loads another portion of rows and disposes the current one.",
+		"jp": " renders a pre-defined number of rows in the grid. On scrolling the continuous virtualization loads another portion of rows and disposes the current one."
+	}
         }
       ]
     },
     "virtualizationMouseWheelStep": {
       "type": "number",
       "defaultValue": null,
-      "description": "number of pixels to move the grid when virtualization is enabled, and mouse wheel scrolling is performed over the virtual grid area. The \"null\" value will assume this is set to avgRowHeight"
+      "description": {
+		"en": "number of pixels to move the grid when virtualization is enabled, and mouse wheel scrolling is performed over the virtual grid area. The \"null\" value will assume this is set to avgRowHeight",
+		"jp": "number of pixels to move the grid when virtualization is enabled, and mouse wheel scrolling is performed over the virtual grid area. The \"null\" value will assume this is set to avgRowHeight"
+	}
     },
     "width": {
       "type": "string",
       "defaultValue": null,
-      "description": ""
+      "description": {
+		"en": "",
+		"jp": ""
+	}
     }
   }
 }

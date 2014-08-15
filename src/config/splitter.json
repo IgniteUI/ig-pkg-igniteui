@@ -18,7 +18,10 @@
           "optional": false
         }
       ],
-      "description": "fired after collapsing is performed <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the splitter instance.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.index to get an index of collased panel."
+      "description": {
+		"en": "fired after collapsing is performed <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the splitter instance.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.index to get an index of collased panel.",
+		"jp": "fired after collapsing is performed <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the splitter instance.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.index to get an index of collased panel."
+	}
     },
     "expanded": {
       "cancellable": false,
@@ -34,7 +37,10 @@
           "optional": false
         }
       ],
-      "description": "fired after expanding is performed <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the splitter instance.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.index to get an index of expanded panel."
+      "description": {
+		"en": "fired after expanding is performed <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the splitter instance.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.index to get an index of expanded panel.",
+		"jp": "fired after expanding is performed <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the splitter instance.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.index to get an index of expanded panel."
+	}
     },
     "layoutRefreshed": {
       "cancellable": false,
@@ -50,7 +56,10 @@
           "optional": false
         }
       ],
-      "description": "fired after the panels are refreshed because of browser's resizing.<br>&nbsp;&nbsp;&nbsp;   Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;   Use ui.owner to get a reference to the splitter instance."
+      "description": {
+		"en": "fired after the panels are refreshed because of browser's resizing.<br>&nbsp;&nbsp;&nbsp;   Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;   Use ui.owner to get a reference to the splitter instance.",
+		"jp": "fired after the panels are refreshed because of browser's resizing.<br>&nbsp;&nbsp;&nbsp;   Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;   Use ui.owner to get a reference to the splitter instance."
+	}
     },
     "layoutRefreshing": {
       "cancellable": true,
@@ -66,7 +75,10 @@
           "optional": false
         }
       ],
-      "description": "Fired before the panels are going to go refreshed because of browser's resizing.<br>&nbsp;&nbsp;&nbsp;   Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;   Use ui.owner to get a reference to the splitter instance."
+      "description": {
+		"en": "Fired before the panels are going to go refreshed because of browser's resizing.<br>&nbsp;&nbsp;&nbsp;   Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;   Use ui.owner to get a reference to the splitter instance.",
+		"jp": "Fired before the panels are going to go refreshed because of browser's resizing.<br>&nbsp;&nbsp;&nbsp;   Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;   Use ui.owner to get a reference to the splitter instance."
+	}
     },
     "resizeEnded": {
       "cancellable": false,
@@ -82,7 +94,10 @@
           "optional": false
         }
       ],
-      "description": "fired after split bar move is performed <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the splitter instance."
+      "description": {
+		"en": "fired after split bar move is performed <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the splitter instance.",
+		"jp": "fired after split bar move is performed <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the splitter instance."
+	}
     },
     "resizeStarted": {
       "cancellable": false,
@@ -98,7 +113,10 @@
           "optional": false
         }
       ],
-      "description": "fired before split bar move is performed <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the splitter instance."
+      "description": {
+		"en": "fired before split bar move is performed <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the splitter instance.",
+		"jp": "fired before split bar move is performed <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the splitter instance."
+	}
     },
     "resizing": {
       "cancellable": true,
@@ -114,73 +132,112 @@
           "optional": false
         }
       ],
-      "description": "fired while split bar move is performed <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the splitter instance."
+      "description": {
+		"en": "fired while split bar move is performed <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the splitter instance.",
+		"jp": "fired while split bar move is performed <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the splitter instance."
+	}
     }
   },
   "properties": {
     "dragDelta": {
       "type": "number",
       "defaultValue": 3.0,
-      "description": "Specifies drag delta of the split bar. In order to start dragging move, the mouse has to be moved specific distance from original position."
+      "description": {
+		"en": "Specifies drag delta of the split bar. In order to start dragging move, the mouse has to be moved specific distance from original position.",
+		"jp": "Specifies drag delta of the split bar. In order to start dragging move, the mouse has to be moved specific distance from original position."
+	}
     },
     "height": {
       "type": "string",
       "defaultValue": null,
-      "description": " Gets sets how the height of the control can be set. Splitter will fit the tree inside its parent container, if no other heights are defined."
+      "description": {
+		"en": " Gets sets how the height of the control can be set. Splitter will fit the tree inside its parent container, if no other heights are defined.",
+		"jp": " Gets sets how the height of the control can be set. Splitter will fit the tree inside its parent container, if no other heights are defined."
+	}
     },
     "orientation": {
       "type": "string",
       "defaultValue": "vertical",
-      "description": " Specifies the orientation of the splitter.",
+      "description": {
+		"en": " Specifies the orientation of the splitter.",
+		"jp": " Specifies the orientation of the splitter."
+	},
       "valueOptions": [
         {
           "name": "vertical",
           "type": "string",
-          "description": "Sets the Splitter to have vertical orientation"
+          "description": {
+		"en": "Sets the Splitter to have vertical orientation",
+		"jp": "Sets the Splitter to have vertical orientation"
+	}
         },
         {
           "name": "horizontal",
           "type": "string",
-          "description": "Sets the Splitter to have horizontal orientation"
+          "description": {
+		"en": "Sets the Splitter to have horizontal orientation",
+		"jp": "Sets the Splitter to have horizontal orientation"
+	}
         }
       ]
     },
     "panels": {
       "type": "array",
       "defaultValue": null,
-      "description": "Specifies the panel settings. The panels are no more than two. Settings are specified via enumeration.<br>&nbsp;&nbsp;&nbsp;size=\"string|int\"<br>&nbsp;&nbsp;&nbsp;min type=\"string|int\"<br>&nbsp;&nbsp;&nbsp;max type=\"string|int\"<br>&nbsp;&nbsp;&nbsp;resizable <br>&nbsp;&nbsp;&nbsp;collapsed <br>&nbsp;&nbsp;&nbsp;collapsible",
+      "description": {
+		"en": "Specifies the panel settings. The panels are no more than two. Settings are specified via enumeration.<br>&nbsp;&nbsp;&nbsp;size=\"string|int\"<br>&nbsp;&nbsp;&nbsp;min type=\"string|int\"<br>&nbsp;&nbsp;&nbsp;max type=\"string|int\"<br>&nbsp;&nbsp;&nbsp;resizable <br>&nbsp;&nbsp;&nbsp;collapsed <br>&nbsp;&nbsp;&nbsp;collapsible",
+		"jp": "Specifies the panel settings. The panels are no more than two. Settings are specified via enumeration.<br>&nbsp;&nbsp;&nbsp;size=\"string|int\"<br>&nbsp;&nbsp;&nbsp;min type=\"string|int\"<br>&nbsp;&nbsp;&nbsp;max type=\"string|int\"<br>&nbsp;&nbsp;&nbsp;resizable <br>&nbsp;&nbsp;&nbsp;collapsed <br>&nbsp;&nbsp;&nbsp;collapsible"
+	},
       "schema": {
           "size": {
               "type": "string",
               "defaultValue": "0",
-              "description": "panel size"
+              "description": {
+		"en": "panel size",
+		"jp": "panel size"
+	}
           },
           "min": {
               "type": "string",
               "defaultValue": "0",
-              "description": "min size"
+              "description": {
+		"en": "min size",
+		"jp": "min size"
+	}
           },
           "max": {
               "type": "string",
               "defaultValue": "0",
-              "description": "max size"
+              "description": {
+		"en": "max size",
+		"jp": "max size"
+	}
           },
           "resizable": {
               "type": "bool",
               "defaultValue": true,
-              "description": "whether to render resizing UI"
+              "description": {
+		"en": "whether to render resizing UI",
+		"jp": "whether to render resizing UI"
+	}
           },
           "collapsed": {
               "type": "bool",
               "defaultValue": false,
-              "description": ""
+              "description": {
+		"en": "",
+		"jp": ""
+	}
           }
       }
     },
     "width": {
       "type": "string",
       "defaultValue": null,
-      "description": " Gets sets how the width of the control can be set. Splitter will fit the tree inside its parent container, if no other widths are defined."
+      "description": {
+		"en": " Gets sets how the width of the control can be set. Splitter will fit the tree inside its parent container, if no other widths are defined.",
+		"jp": " Gets sets how the width of the control can be set. Splitter will fit the tree inside its parent container, if no other widths are defined."
+	}
     }
   }
 }

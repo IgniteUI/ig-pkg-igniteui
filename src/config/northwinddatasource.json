@@ -11,23 +11,35 @@
 					"name": "ds",
 					"type": "Object",
 					"optional": false,
-					"description": "Reference to the data source object"
+					"description": {
+		"en": "Reference to the data source object",
+		"jp": "Reference to the data source object"
+	}
 				},
 				{
 					"name": "args",
 					"type": "Object",
 					"optional": false,
-					"description": "Arguments of the current control context",
+					"description": {
+		"en": "Arguments of the current control context",
+		"jp": "Arguments of the current control context"
+	},
 					"schema": {
 						"cancel": {
 							"type": "bool",
 							"defaultValue": false,
-							"description": "Argument that cancels the event"
+							"description": {
+		"en": "Argument that cancels the event",
+		"jp": "Argument that cancels the event"
+	}
 						}
 					}
 				}
 			],
-			"description": "Client-side dataBinding event. Can be a string pointing to a function name, or an object pointing to a function"
+			"description": {
+		"en": "Client-side dataBinding event. Can be a string pointing to a function name, or an object pointing to a function",
+		"jp": "Client-side dataBinding event. Can be a string pointing to a function name, or an object pointing to a function"
+	}
 		},
 		"dataBound": {
 			"cancellable": false,
@@ -36,10 +48,16 @@
 					"name": "ds",
 					"type": "Object",
 					"optional": false,
-					"description": "Reference to the data source object"
+					"description": {
+		"en": "Reference to the data source object",
+		"jp": "Reference to the data source object"
+	}
 				}
 			],
-			"description": "Can be a string pointing to a function name, or an object pointing to a function"
+			"description": {
+		"en": "Can be a string pointing to a function name, or an object pointing to a function",
+		"jp": "Can be a string pointing to a function name, or an object pointing to a function"
+	}
 		},
 		"urlParamsEncoding": {
 			"cancellable": true,
@@ -48,53 +66,83 @@
 					"name": "ds",
 					"type": "Object",
 					"optional": false,
-					"description": "Reference to the data source object"
+					"description": {
+		"en": "Reference to the data source object",
+		"jp": "Reference to the data source object"
+	}
 				},
 				{
 					"name": "args",
 					"type": "Object",
 					"optional": false,
-					"description": "Arguments of the current control context",
+					"description": {
+		"en": "Arguments of the current control context",
+		"jp": "Arguments of the current control context"
+	},
 					"schema": {
 						"sortingParams": {
 							"type": "object",
 							"defaultValue": {},
-							"description": "Sorting parameters"
+							"description": {
+		"en": "Sorting parameters",
+		"jp": "Sorting parameters"
+	}
 						},
 						"filteringParams": {
 							"type": "object",
 							"defaultValue": {},
-							"description": "Filtering parameters"
+							"description": {
+		"en": "Filtering parameters",
+		"jp": "Filtering parameters"
+	}
 						},
 						"pagingParams": {
 							"type": "object",
 							"defaultValue": {},
-							"description": "Paging parameters"
+							"description": {
+		"en": "Paging parameters",
+		"jp": "Paging parameters"
+	}
 						},
 						"selectParams": {
 							"type": "object",
 							"defaultValue": {},
-							"description": "Select parameters"
+							"description": {
+		"en": "Select parameters",
+		"jp": "Select parameters"
+	}
 						},
 						"summariesParams": {
 							"type": "object",
 							"defaultValue": {},
-							"description": "Summaries parameters"
+							"description": {
+		"en": "Summaries parameters",
+		"jp": "Summaries parameters"
+	}
 						},
 						"extraParams": {
 							"type": "object",
 							"defaultValue": {},
-							"description": "Additional parameters"
+							"description": {
+		"en": "Additional parameters",
+		"jp": "Additional parameters"
+	}
 						},
 						"pkParams": {
 							"type": "object",
 							"defaultValue": {},
-							"description": ""
+							"description": {
+		"en": "",
+		"jp": ""
+	}
 						}
 					}
 				}
 			],
-			"description": "Event that is fired before URL parameters are encoded. Can point to a function name or the function object itself."
+			"description": {
+		"en": "Event that is fired before URL parameters are encoded. Can point to a function name or the function object itself.",
+		"jp": "Event that is fired before URL parameters are encoded. Can point to a function name or the function object itself."
+	}
 		},
 		"urlParamsEncoded": {
 			"cancellable": true,
@@ -103,53 +151,83 @@
 					"name": "ds",
 					"type": "Object",
 					"optional": false,
-					"description": "Reference to the data source object"
+					"description": {
+		"en": "Reference to the data source object",
+		"jp": "Reference to the data source object"
+	}
 				},
 				{
 					"name": "args",
 					"type": "Object",
 					"optional": false,
-					"description": "Arguments of the current control context",
+					"description": {
+		"en": "Arguments of the current control context",
+		"jp": "Arguments of the current control context"
+	},
 					"schema": {
 						"sortingParams": {
 							"type": "object",
 							"defaultValue": {},
-							"description": "Sorting parameters"
+							"description": {
+		"en": "Sorting parameters",
+		"jp": "Sorting parameters"
+	}
 						},
 						"filteringParams": {
 							"type": "object",
 							"defaultValue": {},
-							"description": "Filtering parameters"
+							"description": {
+		"en": "Filtering parameters",
+		"jp": "Filtering parameters"
+	}
 						},
 						"pagingParams": {
 							"type": "object",
 							"defaultValue": {},
-							"description": "Paging parameters"
+							"description": {
+		"en": "Paging parameters",
+		"jp": "Paging parameters"
+	}
 						},
 						"selectParams": {
 							"type": "object",
 							"defaultValue": {},
-							"description": "Select parameters"
+							"description": {
+		"en": "Select parameters",
+		"jp": "Select parameters"
+	}
 						},
 						"summariesParams": {
 							"type": "object",
 							"defaultValue": {},
-							"description": "Summaries parameters"
+							"description": {
+		"en": "Summaries parameters",
+		"jp": "Summaries parameters"
+	}
 						},
 						"extraParams": {
 							"type": "object",
 							"defaultValue": {},
-							"description": "Additional parameters"
+							"description": {
+		"en": "Additional parameters",
+		"jp": "Additional parameters"
+	}
 						},
 						"pkParams": {
 							"type": "object",
 							"defaultValue": {},
-							"description": ""
+							"description": {
+		"en": "",
+		"jp": ""
+	}
 						}
 					}
 				}
 			],
-			"description": "Event that is fired after URL parameters are encoded (When a remote request is done). Can point to a function name or the function object itself."
+			"description": {
+		"en": "Event that is fired after URL parameters are encoded (When a remote request is done). Can point to a function name or the function object itself.",
+		"jp": "Event that is fired after URL parameters are encoded (When a remote request is done). Can point to a function name or the function object itself."
+	}
 		},
 		"rowAdded": {
 			"cancellable": false,
@@ -158,17 +236,26 @@
 					"name": "item",
 					"type": "Object",
 					"optional": false,
-					"description": "Arguments of the current row context",
+					"description": {
+		"en": "Arguments of the current row context",
+		"jp": "Arguments of the current row context"
+	},
 					"schema": {
 						"row": {
 							"type": "object",
 							"defaultValue": null,
-							"description": "Obtain reference to the added row"
+							"description": {
+		"en": "Obtain reference to the added row",
+		"jp": "Obtain reference to the added row"
+	}
 						},
 						"rowId": {
 							"type": "string",
 							"defaultValue": null,
-							"description": "Get the row ID"
+							"description": {
+		"en": "Get the row ID",
+		"jp": "Get the row ID"
+	}
 						}
 					}
 				},
@@ -176,10 +263,16 @@
 					"name": "ds",
 					"type": "Object",
 					"optional": false,
-					"description": "Reference to the data source object"
+					"description": {
+		"en": "Reference to the data source object",
+		"jp": "Reference to the data source object"
+	}
 				}
 			],
-			"description": "A function to call when row is updated (edited)."
+			"description": {
+		"en": "A function to call when row is updated (edited).",
+		"jp": "A function to call when row is updated (edited)."
+	}
 		},
 		"rowUpdated": {
 			"cancellable": false,
@@ -188,22 +281,34 @@
 					"name": "item",
 					"type": "Object",
 					"optional": false,
-					"description": "Arguments of the current row context.",
+					"description": {
+		"en": "Arguments of the current row context.",
+		"jp": "Arguments of the current row context."
+	},
 					"schema": {
 						"rowIndex": {
 							"type": "number",
 							"defaultValue": null,
-							"description": "Get the row index."
+							"description": {
+		"en": "Get the row index.",
+		"jp": "Get the row index."
+	}
 						},
 						"newRow": {
 							"type": "object",
 							"defaultValue": null,
-							"description": "Obtain reference to the updated row."
+							"description": {
+		"en": "Obtain reference to the updated row.",
+		"jp": "Obtain reference to the updated row."
+	}
 						},
 						"oldRow": {
 							"type": "object",
 							"defaultValue": null,
-							"description": "Obtain reference to the row that was updated."
+							"description": {
+		"en": "Obtain reference to the row that was updated.",
+		"jp": "Obtain reference to the row that was updated."
+	}
 						}
 					}
 				},
@@ -211,10 +316,16 @@
 					"name": "ds",
 					"type": "Object",
 					"optional": false,
-					"description": "Reference to the data source object"
+					"description": {
+		"en": "Reference to the data source object",
+		"jp": "Reference to the data source object"
+	}
 				}
 			],
-			"description": "A function to call when row is added."
+			"description": {
+		"en": "A function to call when row is added.",
+		"jp": "A function to call when row is added."
+	}
 		},
 		"rowInserted": {
 			"cancellable": false,
@@ -223,22 +334,34 @@
 					"name": "item",
 					"type": "Object",
 					"optional": false,
-					"description": "Arguments of the current row context",
+					"description": {
+		"en": "Arguments of the current row context",
+		"jp": "Arguments of the current row context"
+	},
 					"schema": {
 						"row": {
 							"type": "object",
 							"defaultValue": null,
-							"description": "Obtain reference to the inserted row"
+							"description": {
+		"en": "Obtain reference to the inserted row",
+		"jp": "Obtain reference to the inserted row"
+	}
 						},
 						"rowId": {
 							"type": "string",
 							"defaultValue": null,
-							"description": "Get the row ID"
+							"description": {
+		"en": "Get the row ID",
+		"jp": "Get the row ID"
+	}
 						},
 						"rowIndex": {
 							"type": "number",
 							"defaultValue": null,
-							"description": "Get the row index."
+							"description": {
+		"en": "Get the row index.",
+		"jp": "Get the row index."
+	}
 						}
 					}
 				},
@@ -246,10 +369,16 @@
 					"name": "ds",
 					"type": "Object",
 					"optional": false,
-					"description": "Reference to the data source object"
+					"description": {
+		"en": "Reference to the data source object",
+		"jp": "Reference to the data source object"
+	}
 				}
 			],
-			"description": "A function to call when row is inserted."
+			"description": {
+		"en": "A function to call when row is inserted.",
+		"jp": "A function to call when row is inserted."
+	}
 		},
 		"rowDeleted": {
 			"cancellable": false,
@@ -258,22 +387,34 @@
 					"name": "item",
 					"type": "Object",
 					"optional": false,
-					"description": "Arguments of the current row context",
+					"description": {
+		"en": "Arguments of the current row context",
+		"jp": "Arguments of the current row context"
+	},
 					"schema": {
 						"row": {
 							"type": "object",
 							"defaultValue": null,
-							"description": "Obtain reference to the deleted row"
+							"description": {
+		"en": "Obtain reference to the deleted row",
+		"jp": "Obtain reference to the deleted row"
+	}
 						},
 						"rowId": {
 							"type": "string",
 							"defaultValue": null,
-							"description": "Get the row ID"
+							"description": {
+		"en": "Get the row ID",
+		"jp": "Get the row ID"
+	}
 						},
 						"rowIndex": {
 							"type": "number",
 							"defaultValue": null,
-							"description": "Get the row index."
+							"description": {
+		"en": "Get the row index.",
+		"jp": "Get the row index."
+	}
 						}
 					}
 				},
@@ -281,319 +422,502 @@
 					"name": "ds",
 					"type": "Object",
 					"optional": false,
-					"description": "Reference to the data source object"
+					"description": {
+		"en": "Reference to the data source object",
+		"jp": "Reference to the data source object"
+	}
 				}
 			],
-			"description": "A function to call when row is deleted."
+			"description": {
+		"en": "A function to call when row is deleted.",
+		"jp": "A function to call when row is deleted."
+	}
 		}
 	},
 	"properties": {
 		"id": {
 			"type": "string",
 			"defaultValue": "ds",
-			"description": "Setting this is only necessary when the data source is set to a table in string format. We need to create an invisible dummy data container in the body and append the table data to it."
+			"description": {
+		"en": "Setting this is only necessary when the data source is set to a table in string format. We need to create an invisible dummy data container in the body and append the table data to it.",
+		"jp": "Setting this is only necessary when the data source is set to a table in string format. We need to create an invisible dummy data container in the body and append the table data to it."
+	}
 		},
 		"outputResultsName": {
 			"type": "string",
 			"defaultValue": null,
-			"description": "This is the property in the dataView where actual resulting records will be put. (So the dataView will not be array but an object if this is defined), after the potential data source transformation."
+			"description": {
+		"en": "This is the property in the dataView where actual resulting records will be put. (So the dataView will not be array but an object if this is defined), after the potential data source transformation.",
+		"jp": "This is the property in the dataView where actual resulting records will be put. (So the dataView will not be array but an object if this is defined), after the potential data source transformation."
+	}
 		},
 		"callback": {
 			"type": "function",
 			"defaultValue": null,
-			"description": "Callback function to call when data binding is complete."
+			"description": {
+		"en": "Callback function to call when data binding is complete.",
+		"jp": "Callback function to call when data binding is complete."
+	}
 		},
 		"callee": {
 			"type": "object",
 			"defaultValue": null,
-			"description": "Object on which to invoke the callback function.",
+			"description": {
+		"en": "Object on which to invoke the callback function.",
+		"jp": "Object on which to invoke the callback function."
+	},
 			"hidden": true
 		},
 		"data": {
 			"type": "array",
 			"defaultValue": null,
-			"description": "Object on which to invoke the callback function.",
+			"description": {
+		"en": "Object on which to invoke the callback function.",
+		"jp": "Object on which to invoke the callback function."
+	},
 			"arrayMemberType": "object"
 		},
 		"dataSource": {
 			"type": "array",
 			"defaultValue": null,
-			"description": "This is the source of data - non normalized. Can be an array, can be reference to some JSON object, can be a DOM element for a HTML TABLE, or a function."
+			"description": {
+		"en": "This is the source of data - non normalized. Can be an array, can be reference to some JSON object, can be a DOM element for a HTML TABLE, or a function.",
+		"jp": "This is the source of data - non normalized. Can be an array, can be reference to some JSON object, can be a DOM element for a HTML TABLE, or a function."
+	}
 		},
 		"requestType": {
 			"type": "string",
 			"defaultValue": "GET",
-			"description": "Specifies the HTTP verb to be used to issue the request."
+			"description": {
+		"en": "Specifies the HTTP verb to be used to issue the request.",
+		"jp": "Specifies the HTTP verb to be used to issue the request."
+	}
 		},
 		"type": {
 			"type": "string",
 			"defaultValue": "unknown",
-			"description": "Type of the data source.",
+			"description": {
+		"en": "Type of the data source.",
+		"jp": "Type of the data source."
+	},
 			"valueOptions": [
 				{
 					"name": "json",
 					"type": "string",
-					"description": "Specifies that the data source is an already evaluated JSON (JavaScript object/array) or a string that can be evaluated to JSON."
+					"description": {
+		"en": "Specifies that the data source is an already evaluated JSON (JavaScript object/array) or a string that can be evaluated to JSON.",
+		"jp": "Specifies that the data source is an already evaluated JSON (JavaScript object/array) or a string that can be evaluated to JSON."
+	}
 				},
 				{
 					"name": "xml",
 					"type": "string",
-					"description": "Specifies that the data source is a XML Document object or a string that can be evaluated to XML."
+					"description": {
+		"en": "Specifies that the data source is a XML Document object or a string that can be evaluated to XML.",
+		"jp": "Specifies that the data source is a XML Document object or a string that can be evaluated to XML."
+	}
 				},
 				{
 					"name": "unknown",
 					"type": "string",
-					"description": "Specifies that the data source is of unknown type. In that case it will be analyzed and automatically detected if possible."
+					"description": {
+		"en": "Specifies that the data source is of unknown type. In that case it will be analyzed and automatically detected if possible.",
+		"jp": "Specifies that the data source is of unknown type. In that case it will be analyzed and automatically detected if possible."
+	}
 				},
 				{
 					"name": "array",
 					"type": "string",
-					"description": "Specifies that the data source is a simple array of objects."
+					"description": {
+		"en": "Specifies that the data source is a simple array of objects.",
+		"jp": "Specifies that the data source is a simple array of objects."
+	}
 				},
 				{
 					"name": "function",
 					"type": "string",
-					"description": "Specifies that the data source points to a function. During data binding the function will be called and the result will be assumed to be an array of objects."
+					"description": {
+		"en": "Specifies that the data source points to a function. During data binding the function will be called and the result will be assumed to be an array of objects.",
+		"jp": "Specifies that the data source points to a function. During data binding the function will be called and the result will be assumed to be an array of objects."
+	}
 				},
 				{
 					"name": "htmlTableString",
 					"type": "string",
-					"description": "Specifies that the data source points to a string that represents a HTML table."
+					"description": {
+		"en": "Specifies that the data source points to a string that represents a HTML table.",
+		"jp": "Specifies that the data source points to a string that represents a HTML table."
+	}
 				},
 				{
 					"name": "json",
 					"type": "string",
-					"description": "Specifies that the data source points to an ID of a HTML Table element that's loaded on the page."
+					"description": {
+		"en": "Specifies that the data source points to an ID of a HTML Table element that's loaded on the page.",
+		"jp": "Specifies that the data source points to an ID of a HTML Table element that's loaded on the page."
+	}
 				},
 				{
 					"name": "htmlTableDom",
 					"type": "string",
-					"description": "The data source points to a DOM object that is of TABLE type."
+					"description": {
+		"en": "The data source points to a DOM object that is of TABLE type.",
+		"jp": "The data source points to a DOM object that is of TABLE type."
+	}
 				},
 				{
 					"name": "htmlTableId",
 					"type": "string",
-					"description": "Set whenever data source is analyzed (in case its type is unknown) and the type cannot be detected."
+					"description": {
+		"en": "Set whenever data source is analyzed (in case its type is unknown) and the type cannot be detected.",
+		"jp": "Set whenever data source is analyzed (in case its type is unknown) and the type cannot be detected."
+	}
 				},
 				{
 					"name": "remoteUrl",
 					"type": "string",
-					"description": "Specifies that the data source points to a remote URL, from which data will be retrieved using an AJAX call ($.ajax)."
+					"description": {
+		"en": "Specifies that the data source points to a remote URL, from which data will be retrieved using an AJAX call ($.ajax).",
+		"jp": "Specifies that the data source points to a remote URL, from which data will be retrieved using an AJAX call ($.ajax)."
+	}
 				},
 				{
 					"name": "htmlListDom",
 					"type": "string",
-					"description": "The data source points to a DOM object that is of UL/OL type."
+					"description": {
+		"en": "The data source points to a DOM object that is of UL/OL type.",
+		"jp": "The data source points to a DOM object that is of UL/OL type."
+	}
 				},
 				{
 					"name": "empty",
 					"type": "string",
-					"description": "There isn't any data source ."
+					"description": {
+		"en": "There isn't any data source .",
+		"jp": "There isn't any data source ."
+	}
 				}
 			]
 		},
 		"primaryKey": {
 			"type": "string",
 			"defaultValue": null,
-			"description": "The unique field identifier."
+			"description": {
+		"en": "The unique field identifier.",
+		"jp": "The unique field identifier."
+	}
 		},
 		"responseTotalRecCountKey": {
 			"type": "string",
 			"defaultValue": null,
-			"description": "Property in the response which specifies the total number of records in the back end (this is needed for paging)."
+			"description": {
+		"en": "Property in the response which specifies the total number of records in the back end (this is needed for paging).",
+		"jp": "Property in the response which specifies the total number of records in the back end (this is needed for paging)."
+	}
 		},
 		"responseDataKey": {
 			"type": "string",
 			"defaultValue": null,
-			"description": "Property in the response which specifies where the data records array will be held (if the response is wrapped)."
+			"description": {
+		"en": "Property in the response which specifies where the data records array will be held (if the response is wrapped).",
+		"jp": "Property in the response which specifies where the data records array will be held (if the response is wrapped)."
+	}
 		},
 		"responseDataType": {
 			"type": "string",
 			"defaultValue": null,
-			"description": "Response type when a URL is set as the data source. See http://api.jquery.com/jQuery.ajax/ => dataType.",
+			"description": {
+		"en": "Response type when a URL is set as the data source. See http://api.jquery.com/jQuery.ajax/ => dataType.",
+		"jp": "Response type when a URL is set as the data source. See http://api.jquery.com/jQuery.ajax/ => dataType."
+	},
 			"valueOptions": [
 				{
 					"name": "json",
 					"type": "string",
-					"description": "The type of the response data is json."
+					"description": {
+		"en": "The type of the response data is json.",
+		"jp": "The type of the response data is json."
+	}
 				},
 				{
 					"name": "xml",
 					"type": "string",
-					"description": "The type of the response data is xml."
+					"description": {
+		"en": "The type of the response data is xml.",
+		"jp": "The type of the response data is xml."
+	}
 				},
 				{
 					"name": "html",
 					"type": "string",
-					"description": "The type of the response data is html."
+					"description": {
+		"en": "The type of the response data is html.",
+		"jp": "The type of the response data is html."
+	}
 				},
 				{
 					"name": "script",
 					"type": "string",
-					"description": "The type of the response data is script."
+					"description": {
+		"en": "The type of the response data is script.",
+		"jp": "The type of the response data is script."
+	}
 				},
 				{
 					"name": "jsonp",
 					"type": "string",
-					"description": "The type of the response data is jsonp."
+					"description": {
+		"en": "The type of the response data is jsonp.",
+		"jp": "The type of the response data is jsonp."
+	}
 				},
 				{
 					"name": "text",
 					"type": "string",
-					"description": "The type of the response data is text."
+					"description": {
+		"en": "The type of the response data is text.",
+		"jp": "The type of the response data is text."
+	}
 				}
 			]
 		},
 		"responseContentType": {
 			"type": "string",
 			"defaultValue": null,
-			"description": "Content type of the response. See http://api.jquery.com/jQuery.ajax/ => contentType."
+			"description": {
+		"en": "Content type of the response. See http://api.jquery.com/jQuery.ajax/ => contentType.",
+		"jp": "Content type of the response. See http://api.jquery.com/jQuery.ajax/ => contentType."
+	}
 		},
 		"localSchemaTransform": {
 			"type": "bool",
 			"defaultValue": true,
-			"description": "If set to false will disable transformations on schema, even if it is defined locally in the javascript code."
+			"description": {
+		"en": "If set to false will disable transformations on schema, even if it is defined locally in the javascript code.",
+		"jp": "If set to false will disable transformations on schema, even if it is defined locally in the javascript code."
+	}
 		},
 		"paging": {
 			"type": "object",
 			"defaultValue": null,
-			"description": "Settings related to built-in paging functionality.",
+			"description": {
+		"en": "Settings related to built-in paging functionality.",
+		"jp": "Settings related to built-in paging functionality."
+	},
 			"schema": {
 				"enabled": {
 					"type": "bool",
 					"defaultValue": false,
-					"description": "Paging is not enabled by default."
+					"description": {
+		"en": "Paging is not enabled by default.",
+		"jp": "Paging is not enabled by default."
+	}
 				},
 				"type": {
 					"type": "string",
 					"defaultValue": "remote",
-					"description": "Type for the paging operation.",
+					"description": {
+		"en": "Type for the paging operation.",
+		"jp": "Type for the paging operation."
+	},
 					"valueOptions": [
 						{
 							"name": "local",
 							"type": "string",
-							"description": "Data is paged client-side."
+							"description": {
+		"en": "Data is paged client-side.",
+		"jp": "Data is paged client-side."
+	}
 						},
 						{
 							"name": "remote",
 							"type": "string",
-							"description": "A remote request is done and URL params encoded."
+							"description": {
+		"en": "A remote request is done and URL params encoded.",
+		"jp": "A remote request is done and URL params encoded."
+	}
 						}
 					]
 				},
 				"pageSize": {
 					"type": "number",
 					"defaultValue": 5,
-					"description": "Number of records on each page."
+					"description": {
+		"en": "Number of records on each page.",
+		"jp": "Number of records on each page."
+	}
 				},
 				"pageSizeUrlKey": {
 					"type": "string",
 					"defaultValue": null,
-					"description": "Denotes the name of the encoded URL parameter that will state what is the currently requested page size."
+					"description": {
+		"en": "Denotes the name of the encoded URL parameter that will state what is the currently requested page size.",
+		"jp": "Denotes the name of the encoded URL parameter that will state what is the currently requested page size."
+	}
 				},
 				"pageIndexUrlKey": {
 					"type": "string",
 					"defaultValue": null,
-					"description": "Denotes the name of the encoded URL parameter that will state what is the currently requested page index."
+					"description": {
+		"en": "Denotes the name of the encoded URL parameter that will state what is the currently requested page index.",
+		"jp": "Denotes the name of the encoded URL parameter that will state what is the currently requested page index."
+	}
 				},
 				"pageIndex": {
 					"type": "number",
 					"defaultValue": 0,
-					"description": "Current page index."
+					"description": {
+		"en": "Current page index.",
+		"jp": "Current page index."
+	}
 				},
 				"appendPage": {
 					"type": "bool",
 					"defaultValue": false,
-					"description": "Current page index."
+					"description": {
+		"en": "Current page index.",
+		"jp": "Current page index."
+	}
 				}
 			}
 		},
 		"filtering": {
 			"type": "object",
 			"defaultValue": null,
-			"description": "Settings related to built-in filtering functionality",
+			"description": {
+		"en": "Settings related to built-in filtering functionality",
+		"jp": "Settings related to built-in filtering functionality"
+	},
 			"schema": {
 				"type": {
 					"type": "string",
 					"defaultValue": "remote",
-					"description": "Filtering type.",
+					"description": {
+		"en": "Filtering type.",
+		"jp": "Filtering type."
+	},
 					"valueOptions": [
 						{
 							"name": "local",
 							"type": "string",
-							"description": "The data will be filtered automatically client-side."
+							"description": {
+		"en": "The data will be filtered automatically client-side.",
+		"jp": "The data will be filtered automatically client-side."
+	}
 						},
 						{
 							"name": "remote",
 							"type": "string",
-							"description": "Parameters will be encoded and it's up to the backend to interpred them from the response."
+							"description": {
+		"en": "Parameters will be encoded and it's up to the backend to interpred them from the response.",
+		"jp": "Parameters will be encoded and it's up to the backend to interpred them from the response."
+	}
 						}
 					]
 				},
 				"caseSensitive": {
 					"type": "bool",
 					"defaultValue": false,
-					"description": "Enables or disables case sensitive filtering on the data. Works only for local filtering."
+					"description": {
+		"en": "Enables or disables case sensitive filtering on the data. Works only for local filtering.",
+		"jp": "Enables or disables case sensitive filtering on the data. Works only for local filtering."
+	}
 				},
 				"applyToAllData": {
 					"type": "bool",
 					"defaultValue": true,
-					"description": "If the type of paging/sorting/filtering is local and applyToAllData is true, filtering will be performed on the whole data source that's present locally, otherwise only on the current dataView. if type is remote, this setting doesn't have any effect."
+					"description": {
+		"en": "If the type of paging/sorting/filtering is local and applyToAllData is true, filtering will be performed on the whole data source that's present locally, otherwise only on the current dataView. if type is remote, this setting doesn't have any effect.",
+		"jp": "If the type of paging/sorting/filtering is local and applyToAllData is true, filtering will be performed on the whole data source that's present locally, otherwise only on the current dataView. if type is remote, this setting doesn't have any effect."
+	}
 				},
 				"customFunc": {
 					"type": "function",
 					"defaultValue": null,
-					"description": "Can point to either a string or a function object. The parameters that are passed are 1) the data array to be filtered, 2) the filtering expression definitions. Should return an array of the filtered data."
+					"description": {
+		"en": "Can point to either a string or a function object. The parameters that are passed are 1) the data array to be filtered, 2) the filtering expression definitions. Should return an array of the filtered data.",
+		"jp": "Can point to either a string or a function object. The parameters that are passed are 1) the data array to be filtered, 2) the filtering expression definitions. Should return an array of the filtered data."
+	}
 				},
 				"filterExprUrlKey": {
 					"type": "string",
 					"defaultValue": null,
-					"description": "Url key that will be encoded in the request if remote filtering is performed. Default value of null implies OData-style URL encoding. Please see http://www.odata.org/developers/protocols/uri-conventions for details."
+					"description": {
+		"en": "Url key that will be encoded in the request if remote filtering is performed. Default value of null implies OData-style URL encoding. Please see http://www.odata.org/developers/protocols/uri-conventions for details.",
+		"jp": "Url key that will be encoded in the request if remote filtering is performed. Default value of null implies OData-style URL encoding. Please see http://www.odata.org/developers/protocols/uri-conventions for details."
+	}
 				},
 				"filterLogicUrlKey": {
 					"type": "string",
 					"defaultValue": "filterLogic",
-					"description": "Url key that will be encoded in the request, specifying if the filtering logic will be AND or OR"
+					"description": {
+		"en": "Url key that will be encoded in the request, specifying if the filtering logic will be AND or OR",
+		"jp": "Url key that will be encoded in the request, specifying if the filtering logic will be AND or OR"
+	}
 				},
 				"defaultFields": {
 					"type": "array",
 					"defaultValue": [],
-					"description": "Can point to either a string or a function object. The parameters that are passed are 1) the data array to be filtered, 2) the filtering expression definitions. Should return an array of the filtered data."
+					"description": {
+		"en": "Can point to either a string or a function object. The parameters that are passed are 1) the data array to be filtered, 2) the filtering expression definitions. Should return an array of the filtered data.",
+		"jp": "Can point to either a string or a function object. The parameters that are passed are 1) the data array to be filtered, 2) the filtering expression definitions. Should return an array of the filtered data."
+	}
 				},
 				"expressions": {
 					"type": "array",
 					"defaultValue": [],
-					"description": "A list of expression objects, containing the following key-value pairs: fieldName, expression (search string), condition , and logic (AND/OR)",
+					"description": {
+		"en": "A list of expression objects, containing the following key-value pairs: fieldName, expression (search string), condition , and logic (AND/OR)",
+		"jp": "A list of expression objects, containing the following key-value pairs: fieldName, expression (search string), condition , and logic (AND/OR)"
+	},
 					"schema": {
 						"fieldName": {
 							"type": "string",
 							"defaultValue": null,
-							"description": "The name of the field to filter."
+							"description": {
+		"en": "The name of the field to filter.",
+		"jp": "The name of the field to filter."
+	}
 						},
 						"expression": {
 							"type": "string",
 							"defaultValue": null,
-							"description": "The expression string used for filtering"
+							"description": {
+		"en": "The expression string used for filtering",
+		"jp": "The expression string used for filtering"
+	}
 						},
 						"condition": {
 							"type": "string",
 							"defaultValue": null,
-							"description": "The condition used for filtering"
+							"description": {
+		"en": "The condition used for filtering",
+		"jp": "The condition used for filtering"
+	}
 						},
 						"logic": {
 							"type": "string",
 							"defaultValue": null,
-							"description": "The logic used for filtering",
+							"description": {
+		"en": "The logic used for filtering",
+		"jp": "The logic used for filtering"
+	},
 							"valueOptions": [
 								{
 									"name": "AND",
 									"type": "string",
-									"description": "The logic used for filtering is AND"
+									"description": {
+		"en": "The logic used for filtering is AND",
+		"jp": "The logic used for filtering is AND"
+	}
 								},
 								{
 									"name": "OR",
 									"type": "string",
-									"description": "The logic used for filtering is OR"
+									"description": {
+		"en": "The logic used for filtering is OR",
+		"jp": "The logic used for filtering is OR"
+	}
 								}
 							]
 						}
@@ -602,123 +926,192 @@
 				"exprString": {
 					"type": "string",
 					"defaultValue": "",
-					"description": "an \"SQL-like\" encoded expressions string. Takes precedence over \"expressions\". Example: col2 > 100; col2 LIKE %test%"
+					"description": {
+		"en": "an \"SQL-like\" encoded expressions string. Takes precedence over \"expressions\". Example: col2 > 100; col2 LIKE %test%",
+		"jp": "an \"SQL-like\" encoded expressions string. Takes precedence over \"expressions\". Example: col2 > 100; col2 LIKE %test%"
+	}
 				}
 			}
 		},
 		"sorting": {
 			"type": "object",
 			"defaultValue": null,
-			"description": "Settings related to built-in paging functionality.",
+			"description": {
+		"en": "Settings related to built-in paging functionality.",
+		"jp": "Settings related to built-in paging functionality."
+	},
 			"schema": {
 				"defaultDirection": {
 					"type": "string",
 					"defaultValue": "none",
-					"description": "Defines the sorting direction.",
+					"description": {
+		"en": "Defines the sorting direction.",
+		"jp": "Defines the sorting direction."
+	},
 					"valueOptions": [
 						{
 							"name": "none",
 							"type": "string",
-							"description": "The sorting direction is not defined."
+							"description": {
+		"en": "The sorting direction is not defined.",
+		"jp": "The sorting direction is not defined."
+	}
 						},
 						{
 							"name": "asc",
 							"type": "string",
-							"description": "Sorting direction is ascending."
+							"description": {
+		"en": "Sorting direction is ascending.",
+		"jp": "Sorting direction is ascending."
+	}
 						},
 						{
 							"name": "desc",
 							"type": "string",
-							"description": "Sorting direction is descending."
+							"description": {
+		"en": "Sorting direction is descending.",
+		"jp": "Sorting direction is descending."
+	}
 						}
 					]
 				},
 				"defaultFields": {
 					"type": "array",
 					"defaultValue": [],
-					"description": "When defaultDirection is different than \"none\", and defaultFields is specified, data will be initially sorted accordingly, directly after dataBind()."
+					"description": {
+		"en": "When defaultDirection is different than \"none\", and defaultFields is specified, data will be initially sorted accordingly, directly after dataBind().",
+		"jp": "When defaultDirection is different than \"none\", and defaultFields is specified, data will be initially sorted accordingly, directly after dataBind()."
+	}
 				},
 				"applyToAllData": {
 					"type": "bool",
 					"defaultValue": true,
-					"description": "If the sorting type is local and applyToAllData is true, sorting will be performed on the whole data source that's present locally, otherwise only on the current dataView. If sorting type is remote, this setting doesn't have any effect."
+					"description": {
+		"en": "If the sorting type is local and applyToAllData is true, sorting will be performed on the whole data source that's present locally, otherwise only on the current dataView. If sorting type is remote, this setting doesn't have any effect.",
+		"jp": "If the sorting type is local and applyToAllData is true, sorting will be performed on the whole data source that's present locally, otherwise only on the current dataView. If sorting type is remote, this setting doesn't have any effect."
+	}
 				},
 				"customFunc": {
 					"type": "function",
 					"defaultValue": null,
-					"description": "Custom sorting function that can point to either a string or a function object. When the function is called, the following arguments are passed: data array, fields (array of field definitions) , direction (\"asc\" or \"desc\"). The function should return a sorted data array."
+					"description": {
+		"en": "Custom sorting function that can point to either a string or a function object. When the function is called, the following arguments are passed: data array, fields (array of field definitions) , direction (\"asc\" or \"desc\"). The function should return a sorted data array.",
+		"jp": "Custom sorting function that can point to either a string or a function object. When the function is called, the following arguments are passed: data array, fields (array of field definitions) , direction (\"asc\" or \"desc\"). The function should return a sorted data array."
+	}
 				},
 				"compareFunc": {
 					"type": "function",
 					"defaultValue": null,
-					"description": "Custom comparison sorting function. Accepts two values and returns a value 0 indicating that values are equal, 1 indicating that val1 > val2 and -1 indicating that val1 < val2."
+					"description": {
+		"en": "Custom comparison sorting function. Accepts two values and returns a value 0 indicating that values are equal, 1 indicating that val1 > val2 and -1 indicating that val1 < val2.",
+		"jp": "Custom comparison sorting function. Accepts two values and returns a value 0 indicating that values are equal, 1 indicating that val1 > val2 and -1 indicating that val1 < val2."
+	}
 				},
 				"customConvertFunc": {
 					"type": "function",
 					"defaultValue": null,
-					"description": "Custom data value conversion function. Accepts a value and should return the converted value."
+					"description": {
+		"en": "Custom data value conversion function. Accepts a value and should return the converted value.",
+		"jp": "Custom data value conversion function. Accepts a value and should return the converted value."
+	}
 				},
 				"type": {
 					"type": "string",
 					"defaultValue": "remote",
-					"description": "Type for the paging operation.",
+					"description": {
+		"en": "Type for the paging operation.",
+		"jp": "Type for the paging operation."
+	},
 					"valueOptions": [
 						{
 							"name": "local",
 							"type": "string",
-							"description": "Data is paged client-side."
+							"description": {
+		"en": "Data is paged client-side.",
+		"jp": "Data is paged client-side."
+	}
 						},
 						{
 							"name": "remote",
 							"type": "string",
-							"description": "A remote request is done and URL params encoded."
+							"description": {
+		"en": "A remote request is done and URL params encoded.",
+		"jp": "A remote request is done and URL params encoded."
+	}
 						}
 					]
 				},
 				"caseSensitive": {
 					"type": "bool",
 					"defaultValue": false,
-					"description": "Specifies if sorting will be case sensitive or not. Works only for local sorting."
+					"description": {
+		"en": "Specifies if sorting will be case sensitive or not. Works only for local sorting.",
+		"jp": "Specifies if sorting will be case sensitive or not. Works only for local sorting."
+	}
 				},
 				"sortUrlKey": {
 					"type": "string",
 					"defaultValue": null,
-					"description": "URL param name which specifies how sorting expressions will be encoded in the URL. Default is null and uses OData conventions."
+					"description": {
+		"en": "URL param name which specifies how sorting expressions will be encoded in the URL. Default is null and uses OData conventions.",
+		"jp": "URL param name which specifies how sorting expressions will be encoded in the URL. Default is null and uses OData conventions."
+	}
 				},
 				"sortUrlAscValueKey": {
 					"type": "string",
 					"defaultValue": null,
-					"description": "URL param value for ascending type of sorting. Default is null and uses OData conventions."
+					"description": {
+		"en": "URL param value for ascending type of sorting. Default is null and uses OData conventions.",
+		"jp": "URL param value for ascending type of sorting. Default is null and uses OData conventions."
+	}
 				},
 				"sortUrlDescValueKey": {
 					"type": "string",
 					"defaultValue": "number",
-					"description": "URL param value for descending type of sorting. Default is null and uses OData conventions."
+					"description": {
+		"en": "URL param value for descending type of sorting. Default is null and uses OData conventions.",
+		"jp": "URL param value for descending type of sorting. Default is null and uses OData conventions."
+	}
 				},
 				"expressions": {
 					"type": "array",
 					"defaultValue": [],
-					"description": "A list of sorting expressions , consisting of the following keys (and their respective values): fieldName and direction.",
+					"description": {
+		"en": "A list of sorting expressions , consisting of the following keys (and their respective values): fieldName and direction.",
+		"jp": "A list of sorting expressions , consisting of the following keys (and their respective values): fieldName and direction."
+	},
 					"schema": {
 						"fieldName": {
 							"type": "string",
 							"defaultValue": null,
-							"description": "The name of the field to filter."
+							"description": {
+		"en": "The name of the field to filter.",
+		"jp": "The name of the field to filter."
+	}
 						},
 						"direction": {
 							"type": "string",
 							"defaultValue": null,
-							"description": "The direction of the sorting",
+							"description": {
+		"en": "The direction of the sorting",
+		"jp": "The direction of the sorting"
+	},
 							"valueOptions": [
 								{
 									"name": "ascending",
 									"type": "string",
-									"description": "Direction is ascending."
+									"description": {
+		"en": "Direction is ascending.",
+		"jp": "Direction is ascending."
+	}
 								},
 								{
 									"name": "descending",
 									"type": "string",
-									"description": "Direction is descending."
+									"description": {
+		"en": "Direction is descending.",
+		"jp": "Direction is descending."
+	}
 								}
 							]
 						}
@@ -727,145 +1120,226 @@
 				"exprString": {
 					"type": "string",
 					"defaultValue": "",
-					"description": "takes precedence over experssions, an \"SQL-like\" encoded expressions string  : see sort(). Example col2 > 100 ORDER BY asc."
+					"description": {
+		"en": "takes precedence over experssions, an \"SQL-like\" encoded expressions string  : see sort(). Example col2 > 100 ORDER BY asc.",
+		"jp": "takes precedence over experssions, an \"SQL-like\" encoded expressions string  : see sort(). Example col2 > 100 ORDER BY asc."
+	}
 				}
 			}
 		},
 		"summaries": {
 			"type": "object",
 			"defaultValue": null,
-			"description": "Settings related to built-in paging functionality.",
+			"description": {
+		"en": "Settings related to built-in paging functionality.",
+		"jp": "Settings related to built-in paging functionality."
+	},
 			"schema": {
 				"type": {
 					"type": "string",
 					"defaultValue": "remote",
-					"description": "Specifies whether summaries will be applied locally or remotely (via a remote request).",
+					"description": {
+		"en": "Specifies whether summaries will be applied locally or remotely (via a remote request).",
+		"jp": "Specifies whether summaries will be applied locally or remotely (via a remote request)."
+	},
 					"valueOptions": [
 						{
 							"name": "local",
 							"type": "string",
-							"description": "Data is paged client-side."
+							"description": {
+		"en": "Data is paged client-side.",
+		"jp": "Data is paged client-side."
+	}
 						},
 						{
 							"name": "remote",
 							"type": "string",
-							"description": "A remote request is done and URL params encoded."
+							"description": {
+		"en": "A remote request is done and URL params encoded.",
+		"jp": "A remote request is done and URL params encoded."
+	}
 						}
 					]
 				},
 				"summaryExprUrlKey": {
 					"type": "string",
 					"defaultValue": "summaries",
-					"description": "Url key for retrieving data from response - used only when summaries are remote."
+					"description": {
+		"en": "Url key for retrieving data from response - used only when summaries are remote.",
+		"jp": "Url key for retrieving data from response - used only when summaries are remote."
+	}
 				},
 				"summariesResponseKey": {
 					"type": "string",
 					"defaultValue": "summaries",
-					"description": "Key for retrieving data from the summaries response - used only when summaries are remote."
+					"description": {
+		"en": "Key for retrieving data from the summaries response - used only when summaries are remote.",
+		"jp": "Key for retrieving data from the summaries response - used only when summaries are remote."
+	}
 				},
 				"summaryExecution": {
 					"type": "string",
 					"defaultValue": "afterfilteringandpaging",
-					"description": "Determines when the summary values are calculated.",
+					"description": {
+		"en": "Determines when the summary values are calculated.",
+		"jp": "Determines when the summary values are calculated."
+	},
 					"valueOptions": [
 						{
 							"name": "priortofilteringandpaging",
 							"type": "string",
-							"description": "Summary execution happens before filtering and paging"
+							"description": {
+		"en": "Summary execution happens before filtering and paging",
+		"jp": "Summary execution happens before filtering and paging"
+	}
 						},
 						{
 							"name": "afterfilteringbeforepaging",
 							"type": "string",
-							"description": "Summary execution happens after filtering and before paging"
+							"description": {
+		"en": "Summary execution happens after filtering and before paging",
+		"jp": "Summary execution happens after filtering and before paging"
+	}
 						},
 						{
 							"name": "afterfilteringandpaging",
 							"type": "string",
-							"description": "Summary execution happens after filtering and paging"
+							"description": {
+		"en": "Summary execution happens after filtering and paging",
+		"jp": "Summary execution happens after filtering and paging"
+	}
 						}
 					]
 				},
 				"columnSettings": {
 					"type": "array",
 					"defaultValue": null,
-					"description": "A list of column settings that specifies custom summaries options per column basis.",
+					"description": {
+		"en": "A list of column settings that specifies custom summaries options per column basis.",
+		"jp": "A list of column settings that specifies custom summaries options per column basis."
+	},
 					"designerDisplayProperty": "key",
 					"schema": {
 						"key": {
 							"type": "string",
 							"defaultValue": null,
-							"description": "Key of the column"
+							"description": {
+		"en": "Key of the column",
+		"jp": "Key of the column"
+	}
 						},
 						"summaryOperands": {
 							"type": "array",
 							"defaultValue": null,
-							"description": "List of summary operands",
+							"description": {
+		"en": "List of summary operands",
+		"jp": "List of summary operands"
+	},
 							"designerDisplayProperty": "type",
 							"schema": {
 								"active": {
 									"type": "bool",
 									"defaultValue": true,
-									"description": "If it is false the summary operand will be shown in dropdown but it will not be made calculation."
+									"description": {
+		"en": "If it is false the summary operand will be shown in dropdown but it will not be made calculation.",
+		"jp": "If it is false the summary operand will be shown in dropdown but it will not be made calculation."
+	}
 								},
 								"decimalDisplay": {
 									"type": "number",
 									"defaultValue": 2,
-									"description": "Specifies the number of digits after the decimal point for result of the current summary operand. This property will be ignored when isGridFormatter is true."
+									"description": {
+		"en": "Specifies the number of digits after the decimal point for result of the current summary operand. This property will be ignored when isGridFormatter is true.",
+		"jp": "Specifies the number of digits after the decimal point for result of the current summary operand. This property will be ignored when isGridFormatter is true."
+	}
 								},
 								"isGridFormatter": {
 									"type": "bool",
 									"defaultValue": false,
-									"description": "Specifies whether to be used grid formatter for result for the current summary operand."
+									"description": {
+		"en": "Specifies whether to be used grid formatter for result for the current summary operand.",
+		"jp": "Specifies whether to be used grid formatter for result for the current summary operand."
+	}
 								},
 								"order": {
 									"type": "number",
 									"defaultValue": 5,
-									"description": "Specifies the order of elements in dropdown. It is recommended to set order of custom operands and to be greater or equal to 5."
+									"description": {
+		"en": "Specifies the order of elements in dropdown. It is recommended to set order of custom operands and to be greater or equal to 5.",
+		"jp": "Specifies the order of elements in dropdown. It is recommended to set order of custom operands and to be greater or equal to 5."
+	}
 								},
 								"rowDisplayLabel": {
 									"type": "string",
 									"defaultValue": "",
-									"description": "Text of the summary method which is shown in summary cell."
+									"description": {
+		"en": "Text of the summary method which is shown in summary cell.",
+		"jp": "Text of the summary method which is shown in summary cell."
+	}
 								},
 								"summaryCalculator": {
 									"type": "string",
 									"defaultValue": null,
-									"description": "Name of the custom summary function which should be executed when type is custom."
+									"description": {
+		"en": "Name of the custom summary function which should be executed when type is custom.",
+		"jp": "Name of the custom summary function which should be executed when type is custom."
+	}
 								},
 								"type": {
 									"type": "string",
 									"defaultValue": "custom",
-									"description": "Set type of summary operand.",
+									"description": {
+		"en": "Set type of summary operand.",
+		"jp": "Set type of summary operand."
+	},
 									"valueOptions": [
 										{
 											"name": "count",
 											"type": "string",
-											"description": "Calculate count of result rows for the specified column."
+											"description": {
+		"en": "Calculate count of result rows for the specified column.",
+		"jp": "Calculate count of result rows for the specified column."
+	}
 										},
 										{
 											"name": "min",
 											"type": "string",
-											"description": "Calculate min of result rows for the specified column."
+											"description": {
+		"en": "Calculate min of result rows for the specified column.",
+		"jp": "Calculate min of result rows for the specified column."
+	}
 										},
 										{
 											"name": "max",
 											"type": "string",
-											"description": "Calculate max of result rows for the specified column."
+											"description": {
+		"en": "Calculate max of result rows for the specified column.",
+		"jp": "Calculate max of result rows for the specified column."
+	}
 										},
 										{
 											"name": "sum",
 											"type": "string",
-											"description": "Calculate sum of result rows for the specified column."
+											"description": {
+		"en": "Calculate sum of result rows for the specified column.",
+		"jp": "Calculate sum of result rows for the specified column."
+	}
 										},
 										{
 											"name": "avg",
 											"type": "string",
-											"description": "Calculate average of result rows for the specified column."
+											"description": {
+		"en": "Calculate average of result rows for the specified column.",
+		"jp": "Calculate average of result rows for the specified column."
+	}
 										},
 										{
 											"name": "custom",
 											"type": "string",
-											"description": "Calculate custom function (specified by summaryCalculator property) of result rows for the specified column."
+											"description": {
+		"en": "Calculate custom function (specified by summaryCalculator property) of result rows for the specified column.",
+		"jp": "Calculate custom function (specified by summaryCalculator property) of result rows for the specified column."
+	}
 										}
 									]
 								}
@@ -878,35 +1352,53 @@
 		"fields": {
 			"type": "array",
 			"defaultValue": null,
-			"description": "A list of field definitions specifying the schema of the data source.",
+			"description": {
+		"en": "A list of field definitions specifying the schema of the data source.",
+		"jp": "A list of field definitions specifying the schema of the data source."
+	},
 			"designerDisplayProperty": "fieldName",
 			"schema": {
 				"fieldName": {
 					"type": "string",
 					"defaultValue": null,
-					"description": "Name of the field."
+					"description": {
+		"en": "Name of the field.",
+		"jp": "Name of the field."
+	}
 				}
 			}
 		},
 		"serializeTransactionLog": {
 			"type": "bool",
 			"defaultValue": true,
-			"description": "If true, will serialize the transaction log of updated values - if any - whenever commit is performed via a remote request."
+			"description": {
+		"en": "If true, will serialize the transaction log of updated values - if any - whenever commit is performed via a remote request.",
+		"jp": "If true, will serialize the transaction log of updated values - if any - whenever commit is performed via a remote request."
+	}
 		},
 		"aggregateTransactions": {
 			"type": "bool",
 			"defaultValue": false,
-			"description": "If set to true, the following behaviour will take place: if a new row is added, and then deleted, there will be no transaction added to the log if an edit is made to a row or cell, then the value is brought back to its original value, the transaction should be removed Note: This option takes effect only when autoCommit is set to false."
+			"description": {
+		"en": "If set to true, the following behaviour will take place: if a new row is added, and then deleted, there will be no transaction added to the log if an edit is made to a row or cell, then the value is brought back to its original value, the transaction should be removed Note: This option takes effect only when autoCommit is set to false.",
+		"jp": "If set to true, the following behaviour will take place: if a new row is added, and then deleted, there will be no transaction added to the log if an edit is made to a row or cell, then the value is brought back to its original value, the transaction should be removed Note: This option takes effect only when autoCommit is set to false."
+	}
 		},
 		"autoCommit": {
 			"type": "bool",
 			"defaultValue": false,
-			"description": "If auto commit is true, data will be automatically committed to the data source, once a value or a batch of values are updated via saveChanges()."
+			"description": {
+		"en": "If auto commit is true, data will be automatically committed to the data source, once a value or a batch of values are updated via saveChanges().",
+		"jp": "If auto commit is true, data will be automatically committed to the data source, once a value or a batch of values are updated via saveChanges()."
+	}
 		},
 		"updateUrl": {
 			"type": "string",
 			"defaultValue": null,
-			"description": "Specifies an update remote URL, to which an AJAX request will be made as soon as saveChages() is called."
+			"description": {
+		"en": "Specifies an update remote URL, to which an AJAX request will be made as soon as saveChages() is called.",
+		"jp": "Specifies an update remote URL, to which an AJAX request will be made as soon as saveChages() is called."
+	}
 		}
 	}
 }

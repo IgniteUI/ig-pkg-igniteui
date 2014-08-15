@@ -18,7 +18,10 @@
           "optional": false
         }
       ],
-      "description": "Occurs when the banner is clicked.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.bannerElement to get the banner html element in the DOM."
+      "description": {
+		"en": "Occurs when the banner is clicked.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.bannerElement to get the banner html element in the DOM.",
+		"jp": "Occurs when the banner is clicked.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.bannerElement to get the banner html element in the DOM."
+	}
     },
     "bannerHidden": {
       "cancellable": false,
@@ -34,7 +37,10 @@
           "optional": false
         }
       ],
-      "description": "Occurs when the banner is hidden.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.index to get the banner index in the banners array.<br>&nbsp;&nbsp;&nbsp;Use ui.banner to get the banner object from the banners array.<br>&nbsp;&nbsp;&nbsp;Use ui.bannerElement to get the banner html element in the DOM."
+      "description": {
+		"en": "Occurs when the banner is hidden.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.index to get the banner index in the banners array.<br>&nbsp;&nbsp;&nbsp;Use ui.banner to get the banner object from the banners array.<br>&nbsp;&nbsp;&nbsp;Use ui.bannerElement to get the banner html element in the DOM.",
+		"jp": "Occurs when the banner is hidden.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.index to get the banner index in the banners array.<br>&nbsp;&nbsp;&nbsp;Use ui.banner to get the banner object from the banners array.<br>&nbsp;&nbsp;&nbsp;Use ui.bannerElement to get the banner html element in the DOM."
+	}
     },
     "bannerVisible": {
       "cancellable": false,
@@ -50,7 +56,10 @@
           "optional": false
         }
       ],
-      "description": "Defines the name of the player banner visible event. Fired when the banner has been displayed.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.index to get the banner index in the banners array.<br>&nbsp;&nbsp;&nbsp;Use ui.banner to get the banner object from the banners array.<br>&nbsp;&nbsp;&nbsp;Use ui.bannerElement to get the banner html element in the DOM."
+      "description": {
+		"en": "Defines the name of the player banner visible event. Fired when the banner has been displayed.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.index to get the banner index in the banners array.<br>&nbsp;&nbsp;&nbsp;Use ui.banner to get the banner object from the banners array.<br>&nbsp;&nbsp;&nbsp;Use ui.bannerElement to get the banner html element in the DOM.",
+		"jp": "Defines the name of the player banner visible event. Fired when the banner has been displayed.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.index to get the banner index in the banners array.<br>&nbsp;&nbsp;&nbsp;Use ui.banner to get the banner object from the banners array.<br>&nbsp;&nbsp;&nbsp;Use ui.bannerElement to get the banner html element in the DOM."
+	}
     },
     "bookmarkClick": {
       "cancellable": false,
@@ -66,7 +75,10 @@
           "optional": false
         }
       ],
-      "description": "Occurs when the bookmark is clicked.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.bookmark to get the bookmark object from the bookmarks array.<br>&nbsp;&nbsp;&nbsp;Use ui.bookmarkElement to get the html element in the DOM."
+      "description": {
+		"en": "Occurs when the bookmark is clicked.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.bookmark to get the bookmark object from the bookmarks array.<br>&nbsp;&nbsp;&nbsp;Use ui.bookmarkElement to get the html element in the DOM.",
+		"jp": "Occurs when the bookmark is clicked.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.bookmark to get the bookmark object from the bookmarks array.<br>&nbsp;&nbsp;&nbsp;Use ui.bookmarkElement to get the html element in the DOM."
+	}
     },
     "bookmarkHit": {
       "cancellable": false,
@@ -82,7 +94,10 @@
           "optional": false
         }
       ],
-      "description": "Occurs when the bookmark is hit.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.source to get the url of the playing video.<br>&nbsp;&nbsp;&nbsp;Use ui.bookmark to get the bookmark object from the bookmarks array.<br>&nbsp;&nbsp;&nbsp;Use ui.bookmarkElement to get the html element in the DOM."
+      "description": {
+		"en": "Occurs when the bookmark is hit.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.source to get the url of the playing video.<br>&nbsp;&nbsp;&nbsp;Use ui.bookmark to get the bookmark object from the bookmarks array.<br>&nbsp;&nbsp;&nbsp;Use ui.bookmarkElement to get the html element in the DOM.",
+		"jp": "Occurs when the bookmark is hit.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.source to get the url of the playing video.<br>&nbsp;&nbsp;&nbsp;Use ui.bookmark to get the bookmark object from the bookmarks array.<br>&nbsp;&nbsp;&nbsp;Use ui.bookmarkElement to get the html element in the DOM."
+	}
     },
     "browserNotSupported": {
       "cancellable": false,
@@ -98,7 +113,10 @@
           "optional": false
         }
       ],
-      "description": "Occurs when browser does not support HTML 5 video."
+      "description": {
+		"en": "Occurs when browser does not support HTML 5 video.",
+		"jp": "Occurs when browser does not support HTML 5 video."
+	}
     },
     "buffering": {
       "cancellable": false,
@@ -114,7 +132,10 @@
           "optional": false
         }
       ],
-      "description": "Occurs when a chunk of data is buffered.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.source to get the url of the playing video.<br>&nbsp;&nbsp;&nbsp;Use ui.buffered to get buffered percentage."
+      "description": {
+		"en": "Occurs when a chunk of data is buffered.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.source to get the url of the playing video.<br>&nbsp;&nbsp;&nbsp;Use ui.buffered to get buffered percentage.",
+		"jp": "Occurs when a chunk of data is buffered.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.source to get the url of the playing video.<br>&nbsp;&nbsp;&nbsp;Use ui.buffered to get buffered percentage."
+	}
     },
     "ended": {
       "cancellable": false,
@@ -130,7 +151,10 @@
           "optional": false
         }
       ],
-      "description": "Occurs when video has ended.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.source to get the url of the playing video.<br>&nbsp;&nbsp;&nbsp;Use ui.duration to get the video duration in seconds."
+      "description": {
+		"en": "Occurs when video has ended.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.source to get the url of the playing video.<br>&nbsp;&nbsp;&nbsp;Use ui.duration to get the video duration in seconds.",
+		"jp": "Occurs when video has ended.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.source to get the url of the playing video.<br>&nbsp;&nbsp;&nbsp;Use ui.duration to get the video duration in seconds."
+	}
     },
     "enterFullScreen": {
       "cancellable": true,
@@ -146,7 +170,10 @@
           "optional": false
         }
       ],
-      "description": "Occurs when igVideoPlayer enters full screen mode.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.source to get the url of the playing video."
+      "description": {
+		"en": "Occurs when igVideoPlayer enters full screen mode.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.source to get the url of the playing video.",
+		"jp": "Occurs when igVideoPlayer enters full screen mode.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.source to get the url of the playing video."
+	}
     },
     "exitFullScreen": {
       "cancellable": true,
@@ -162,7 +189,10 @@
           "optional": false
         }
       ],
-      "description": "Occurs when igVideoPlayer exits full screen mode.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.source to get the url of the playing video."
+      "description": {
+		"en": "Occurs when igVideoPlayer exits full screen mode.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.source to get the url of the playing video.",
+		"jp": "Occurs when igVideoPlayer exits full screen mode.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.source to get the url of the playing video."
+	}
     },
     "paused": {
       "cancellable": false,
@@ -178,7 +208,10 @@
           "optional": false
         }
       ],
-      "description": "Occurs when video is paused.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.source to get the url of the playing video.<br>&nbsp;&nbsp;&nbsp;Use ui.duration to get the video duration in seconds."
+      "description": {
+		"en": "Occurs when video is paused.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.source to get the url of the playing video.<br>&nbsp;&nbsp;&nbsp;Use ui.duration to get the video duration in seconds.",
+		"jp": "Occurs when video is paused.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.source to get the url of the playing video.<br>&nbsp;&nbsp;&nbsp;Use ui.duration to get the video duration in seconds."
+	}
     },
     "playing": {
       "cancellable": false,
@@ -194,7 +227,10 @@
           "optional": false
         }
       ],
-      "description": "Occurs when video gets playing.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.source to get the url of the playing video.<br>&nbsp;&nbsp;&nbsp;Use ui.duration to get the video duration in seconds."
+      "description": {
+		"en": "Occurs when video gets playing.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.source to get the url of the playing video.<br>&nbsp;&nbsp;&nbsp;Use ui.duration to get the video duration in seconds.",
+		"jp": "Occurs when video gets playing.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.source to get the url of the playing video.<br>&nbsp;&nbsp;&nbsp;Use ui.duration to get the video duration in seconds."
+	}
     },
     "progress": {
       "cancellable": false,
@@ -210,7 +246,10 @@
           "optional": false
         }
       ],
-      "description": "Occurs when video has advanced the playback position.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.source to get the url of the playing video.<br>&nbsp;&nbsp;&nbsp;Use ui.currentTime to get current position in the video at which the event was fired.<br>&nbsp;&nbsp;&nbsp;Use ui.duration to get the video duration in seconds."
+      "description": {
+		"en": "Occurs when video has advanced the playback position.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.source to get the url of the playing video.<br>&nbsp;&nbsp;&nbsp;Use ui.currentTime to get current position in the video at which the event was fired.<br>&nbsp;&nbsp;&nbsp;Use ui.duration to get the video duration in seconds.",
+		"jp": "Occurs when video has advanced the playback position.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.source to get the url of the playing video.<br>&nbsp;&nbsp;&nbsp;Use ui.currentTime to get current position in the video at which the event was fired.<br>&nbsp;&nbsp;&nbsp;Use ui.duration to get the video duration in seconds."
+	}
     },
     "relatedVideoClick": {
       "cancellable": true,
@@ -226,7 +265,10 @@
           "optional": false
         }
       ],
-      "description": "Occurs when related video is clicked.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.relatedVideo to get the relatedVideo object from the relatedVideos array.<br>&nbsp;&nbsp;&nbsp;Use ui.relatedVideoElement to get the relatedVideo html element in the DOM."
+      "description": {
+		"en": "Occurs when related video is clicked.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.relatedVideo to get the relatedVideo object from the relatedVideos array.<br>&nbsp;&nbsp;&nbsp;Use ui.relatedVideoElement to get the relatedVideo html element in the DOM.",
+		"jp": "Occurs when related video is clicked.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.relatedVideo to get the relatedVideo object from the relatedVideos array.<br>&nbsp;&nbsp;&nbsp;Use ui.relatedVideoElement to get the relatedVideo html element in the DOM."
+	}
     },
     "waiting": {
       "cancellable": false,
@@ -242,94 +284,148 @@
           "optional": false
         }
       ],
-      "description": "Occurs when igVideoPlayer is waiting for data from the server.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.source to get the url of the playing video.<br>&nbsp;&nbsp;&nbsp;Use ui.currentTime to get current position in the video at which the event was fired.<br>&nbsp;&nbsp;&nbsp;Use ui.duration to get the video duration in seconds."
+      "description": {
+		"en": "Occurs when igVideoPlayer is waiting for data from the server.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.source to get the url of the playing video.<br>&nbsp;&nbsp;&nbsp;Use ui.currentTime to get current position in the video at which the event was fired.<br>&nbsp;&nbsp;&nbsp;Use ui.duration to get the video duration in seconds.",
+		"jp": "Occurs when igVideoPlayer is waiting for data from the server.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.source to get the url of the playing video.<br>&nbsp;&nbsp;&nbsp;Use ui.currentTime to get current position in the video at which the event was fired.<br>&nbsp;&nbsp;&nbsp;Use ui.duration to get the video duration in seconds."
+	}
     }
   },
   "properties": {
     "autohide": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Get or set whether player controls will auto hide when video is not hovered. This is applicable only when Infragistics playback controls are used."
+      "description": {
+		"en": "Get or set whether player controls will auto hide when video is not hovered. This is applicable only when Infragistics playback controls are used.",
+		"jp": "Get or set whether player controls will auto hide when video is not hovered. This is applicable only when Infragistics playback controls are used."
+	}
     },
     "autoplay": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Get or set whether the video should start playing immediately after the control is loaded."
+      "description": {
+		"en": "Get or set whether the video should start playing immediately after the control is loaded.",
+		"jp": "Get or set whether the video should start playing immediately after the control is loaded."
+	}
     },
     "browserControls": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Get or set whether if you want to use the built in browser controls. By default player uses Infragistics playback controls. Note that you may have different look and feel across different browsers if you use the built in browser controls."
+      "description": {
+		"en": "Get or set whether if you want to use the built in browser controls. By default player uses Infragistics playback controls. Note that you may have different look and feel across different browsers if you use the built in browser controls.",
+		"jp": "Get or set whether if you want to use the built in browser controls. By default player uses Infragistics playback controls. Note that you may have different look and feel across different browsers if you use the built in browser controls."
+	}
     },
     "centerButtonHideDelay": {
       "type": "number",
       "defaultValue": 1200.0,
-      "description": "Get or set the center big button hide delay."
+      "description": {
+		"en": "Get or set the center big button hide delay.",
+		"jp": "Get or set the center big button hide delay."
+	}
     },
     "fullscreen": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Get or set whether the video player to be in full screen or not. This is not a pure full screen, because browsers do not allow that. It just sets 100% width and height to the control."
+      "description": {
+		"en": "Get or set whether the video player to be in full screen or not. This is not a pure full screen, because browsers do not allow that. It just sets 100% width and height to the control.",
+		"jp": "Get or set whether the video player to be in full screen or not. This is not a pure full screen, because browsers do not allow that. It just sets 100% width and height to the control."
+	}
     },
     "height": {
       "type": "number",
       "defaultValue": null,
-      "description": "Get or set the height of the control. By default null will stretch the control to fit data, if no other heights are defined."
+      "description": {
+		"en": "Get or set the height of the control. By default null will stretch the control to fit data, if no other heights are defined.",
+		"jp": "Get or set the height of the control. By default null will stretch the control to fit data, if no other heights are defined."
+	}
     },
     "loop": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Get or set whether the video to start again after it has ended."
+      "description": {
+		"en": "Get or set whether the video to start again after it has ended.",
+		"jp": "Get or set whether the video to start again after it has ended."
+	}
     },
     "muted": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Get or set whether the video volume is muted."
+      "description": {
+		"en": "Get or set whether the video volume is muted.",
+		"jp": "Get or set whether the video volume is muted."
+	}
     },
     "posterUrl": {
       "type": "string",
       "defaultValue": "",
-      "description": "Get or set a URL to an image to show, when no video data is available."
+      "description": {
+		"en": "Get or set a URL to an image to show, when no video data is available.",
+		"jp": "Get or set a URL to an image to show, when no video data is available."
+	}
     },
     "preload": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Get or set whether to preload load initial data for duration of video. If true it may start buffering the video, but this highly depends on the specific browser implementation."
+      "description": {
+		"en": "Get or set whether to preload load initial data for duration of video. If true it may start buffering the video, but this highly depends on the specific browser implementation.",
+		"jp": "Get or set whether to preload load initial data for duration of video. If true it may start buffering the video, but this highly depends on the specific browser implementation."
+	}
     },
     "progressLabelFormat": {
       "type": "string",
       "defaultValue": "${currentTime} / ${duration}",
-      "description": "Get or set the format of the video progress label. You should use ${currentTime} to represent current playback position and ${duration} to represent video duration."
+      "description": {
+		"en": "Get or set the format of the video progress label. You should use ${currentTime} to represent current playback position and ${duration} to represent video duration.",
+		"jp": "Get or set the format of the video progress label. You should use ${currentTime} to represent current playback position and ${duration} to represent video duration."
+	}
     },
     "showSeekTime": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Get or set whether the control seek tool tip will be shown when hovering the video progress bar."
+      "description": {
+		"en": "Get or set whether the control seek tool tip will be shown when hovering the video progress bar.",
+		"jp": "Get or set whether the control seek tool tip will be shown when hovering the video progress bar."
+	}
     },
     "sources": {
       "type": "array",
       "defaultValue": null,
-      "description": "Get or set a list of video sources to choose from. Best coded/format is automatically detected by the control. Supported types are depending on the browser and could be one of the following mov, mp4, webm, ogg."
+      "description": {
+		"en": "Get or set a list of video sources to choose from. Best coded/format is automatically detected by the control. Supported types are depending on the browser and could be one of the following mov, mp4, webm, ogg.",
+		"jp": "Get or set a list of video sources to choose from. Best coded/format is automatically detected by the control. Supported types are depending on the browser and could be one of the following mov, mp4, webm, ogg."
+	}
     },
     "title": {
       "type": "string",
       "defaultValue": "",
-      "description": "Get or set video title."
+      "description": {
+		"en": "Get or set video title.",
+		"jp": "Get or set video title."
+	}
     },
     "volume": {
       "type": "number",
       "defaultValue": 0.5,
-      "description": "Get or set the video volume. It can be between 0.0 and 1.0."
+      "description": {
+		"en": "Get or set the video volume. It can be between 0.0 and 1.0.",
+		"jp": "Get or set the video volume. It can be between 0.0 and 1.0."
+	}
     },
     "volumeAutohideDelay": {
       "type": "number",
       "defaultValue": 1000.0,
-      "description": "Get or set volume slider auto hide delay. This is applicable only when Infragistics playback controls are used."
+      "description": {
+		"en": "Get or set volume slider auto hide delay. This is applicable only when Infragistics playback controls are used.",
+		"jp": "Get or set volume slider auto hide delay. This is applicable only when Infragistics playback controls are used."
+	}
     },
     "width": {
       "type": "number",
       "defaultValue": null,
-      "description": "Get or set the width of the control. By default null will stretch the control to fit data, if no other widths are defined."
+      "description": {
+		"en": "Get or set the width of the control. By default null will stretch the control to fit data, if no other widths are defined.",
+		"jp": "Get or set the width of the control. By default null will stretch the control to fit data, if no other widths are defined."
+	}
     }
   }
 }

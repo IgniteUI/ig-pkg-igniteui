@@ -19,7 +19,10 @@
           "optional": false
         }
       ],
-      "description": "Event fired after the column has already been sorted and data - re-rendered.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridSorting.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key.<br>&nbsp;&nbsp;&nbsp;Use ui.direction to get sorting direction."
+      "description": {
+		"en": "Event fired after the column has already been sorted and data - re-rendered.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridSorting.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key.<br>&nbsp;&nbsp;&nbsp;Use ui.direction to get sorting direction.",
+		"jp": "Event fired after the column has already been sorted and data - re-rendered.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridSorting.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key.<br>&nbsp;&nbsp;&nbsp;Use ui.direction to get sorting direction."
+	}
     },
     "columnSorting": {
       "cancellable": true,
@@ -35,7 +38,10 @@
           "optional": false
         }
       ],
-      "description": "Event fired before sorting is invoked for a certain column.<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel column sorting.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridSorting.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key.<br>&nbsp;&nbsp;&nbsp;Use ui.direction to get sorting direction."
+      "description": {
+		"en": "Event fired before sorting is invoked for a certain column.<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel column sorting.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridSorting.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key.<br>&nbsp;&nbsp;&nbsp;Use ui.direction to get sorting direction.",
+		"jp": "Event fired before sorting is invoked for a certain column.<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel column sorting.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridSorting.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key.<br>&nbsp;&nbsp;&nbsp;Use ui.direction to get sorting direction."
+	}
     },
     "modalDialogButtonApplyClick": {
       "cancellable": true,
@@ -51,7 +57,10 @@
           "optional": false
         }
       ],
-      "description": "event fired when button Apply in modal dialog is clicked<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.<br>&nbsp;&nbsp;&nbsp;Use ui.columnsToSort to get array of columns which should be sorted - array of objects of sort order - Asc/Desc and columnIdentifier"
+      "description": {
+		"en": "event fired when button Apply in modal dialog is clicked<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.<br>&nbsp;&nbsp;&nbsp;Use ui.columnsToSort to get array of columns which should be sorted - array of objects of sort order - Asc/Desc and columnIdentifier",
+		"jp": "event fired when button Apply in modal dialog is clicked<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.<br>&nbsp;&nbsp;&nbsp;Use ui.columnsToSort to get array of columns which should be sorted - array of objects of sort order - Asc/Desc and columnIdentifier"
+	}
     },
     "modalDialogButtonResetClick": {
       "cancellable": true,
@@ -67,7 +76,10 @@
           "optional": false
         }
       ],
-      "description": "event fired when the button to reset sorting is clicked. <br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object."
+      "description": {
+		"en": "event fired when the button to reset sorting is clicked. <br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.",
+		"jp": "event fired when the button to reset sorting is clicked. <br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object."
+	}
     },
     "modalDialogButtonUnsortClick": {
       "cancellable": true,
@@ -83,7 +95,10 @@
           "optional": false
         }
       ],
-      "description": "event fired when button to unsort column is clicked in modal dialog<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get the column key"
+      "description": {
+		"en": "event fired when button to unsort column is clicked in modal dialog<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get the column key",
+		"jp": "event fired when button to unsort column is clicked in modal dialog<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get the column key"
+	}
     },
     "modalDialogClosed": {
       "cancellable": false,
@@ -99,7 +114,10 @@
           "optional": false
         }
       ],
-      "description": "event fired after the modal dialog has been closed.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object."
+      "description": {
+		"en": "event fired after the modal dialog has been closed.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.",
+		"jp": "event fired after the modal dialog has been closed.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object."
+	}
     },
     "modalDialogClosing": {
       "cancellable": true,
@@ -115,7 +133,10 @@
           "optional": false
         }
       ],
-      "description": "event fired before the modal dialog is closed.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object."
+      "description": {
+		"en": "event fired before the modal dialog is closed.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.",
+		"jp": "event fired before the modal dialog is closed.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object."
+	}
     },
     "modalDialogContentsRendered": {
       "cancellable": false,
@@ -131,7 +152,10 @@
           "optional": false
         }
       ],
-      "description": "event fired after the contents of the modal dialog are rendered.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object."
+      "description": {
+		"en": "event fired after the contents of the modal dialog are rendered.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.",
+		"jp": "event fired after the contents of the modal dialog are rendered.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object."
+	}
     },
     "modalDialogContentsRendering": {
       "cancellable": true,
@@ -147,7 +171,10 @@
           "optional": false
         }
       ],
-      "description": "event fired before the contents of the modal dialog are rendered.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object."
+      "description": {
+		"en": "event fired before the contents of the modal dialog are rendered.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.",
+		"jp": "event fired before the contents of the modal dialog are rendered.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object."
+	}
     },
     "modalDialogMoving": {
       "cancellable": true,
@@ -163,7 +190,10 @@
           "optional": false
         }
       ],
-      "description": "event fired every time the modal dialog changes its position.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.<br>&nbsp;&nbsp;&nbsp;Use ui.originalPosition to get the original position of the modal dialog div as { top, left } object, relative to the page.<br>&nbsp;&nbsp;&nbsp;Use ui.position to get the current position of the modal dialog div as { top, left } object, relative to the page."
+      "description": {
+		"en": "event fired every time the modal dialog changes its position.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.<br>&nbsp;&nbsp;&nbsp;Use ui.originalPosition to get the original position of the modal dialog div as { top, left } object, relative to the page.<br>&nbsp;&nbsp;&nbsp;Use ui.position to get the current position of the modal dialog div as { top, left } object, relative to the page.",
+		"jp": "event fired every time the modal dialog changes its position.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.<br>&nbsp;&nbsp;&nbsp;Use ui.originalPosition to get the original position of the modal dialog div as { top, left } object, relative to the page.<br>&nbsp;&nbsp;&nbsp;Use ui.position to get the current position of the modal dialog div as { top, left } object, relative to the page."
+	}
     },
     "modalDialogOpened": {
       "cancellable": false,
@@ -179,7 +209,10 @@
           "optional": false
         }
       ],
-      "description": "event fired after the modal dialog is already opened.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object."
+      "description": {
+		"en": "event fired after the modal dialog is already opened.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.",
+		"jp": "event fired after the modal dialog is already opened.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object."
+	}
     },
     "modalDialogOpening": {
       "cancellable": true,
@@ -195,7 +228,10 @@
           "optional": false
         }
       ],
-      "description": "event fired before the modal dialog is opened.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.columnChooserElement to get a reference to the modal dialog element. This is a jQuery object."
+      "description": {
+		"en": "event fired before the modal dialog is opened.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.columnChooserElement to get a reference to the modal dialog element. This is a jQuery object.",
+		"jp": "event fired before the modal dialog is opened.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.columnChooserElement to get a reference to the modal dialog element. This is a jQuery object."
+	}
     },
     "modalDialogSortClick": {
       "cancellable": true,
@@ -211,7 +247,10 @@
           "optional": false
         }
       ],
-      "description": "event fired when column(which is not sorted) is clicked to be sorted in modal dialog<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get the column key"
+      "description": {
+		"en": "event fired when column(which is not sorted) is clicked to be sorted in modal dialog<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get the column key",
+		"jp": "event fired when column(which is not sorted) is clicked to be sorted in modal dialog<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get the column key"
+	}
     },
     "modalDialogSortingChanged": {
       "cancellable": true,
@@ -227,7 +266,10 @@
           "optional": false
         }
       ],
-      "description": "event fired when sorting of column is changed in modal dialog. Column should be sorted<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get the column key<br>&nbsp;&nbsp;&nbsp;Use ui.isAsc to get whether column should be ascending or not. If true it should be ascending"
+      "description": {
+		"en": "event fired when sorting of column is changed in modal dialog. Column should be sorted<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get the column key<br>&nbsp;&nbsp;&nbsp;Use ui.isAsc to get whether column should be ascending or not. If true it should be ascending",
+		"jp": "event fired when sorting of column is changed in modal dialog. Column should be sorted<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get the column key<br>&nbsp;&nbsp;&nbsp;Use ui.isAsc to get whether column should be ascending or not. If true it should be ascending"
+	}
     }
   },
   "properties": {
@@ -238,226 +280,352 @@
     "applySortedColumnCss": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Enables/disables special styling for sorted columns. If false, sorted column cells will not have any special sort-related styling"
+      "description": {
+		"en": "Enables/disables special styling for sorted columns. If false, sorted column cells will not have any special sort-related styling",
+		"jp": "Enables/disables special styling for sorted columns. If false, sorted column cells will not have any special sort-related styling"
+	}
     },
     "caseSensitive": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Enables or disables the case sensitivity of the sorting. Works only for local sorting"
+      "description": {
+		"en": "Enables or disables the case sensitivity of the sorting. Works only for local sorting",
+		"jp": "Enables or disables the case sensitivity of the sorting. Works only for local sorting"
+	}
     },
     "columnSettings": {
       "type": "array",
       "defaultValue": null,
-      "description": "List of custom column settings that specify custom sorting settings for a specific column (whether sorting is enabled / disabled, default sort direction, first sort direction, etc.)",
+      "description": {
+		"en": "List of custom column settings that specify custom sorting settings for a specific column (whether sorting is enabled / disabled, default sort direction, first sort direction, etc.)",
+		"jp": "List of custom column settings that specify custom sorting settings for a specific column (whether sorting is enabled / disabled, default sort direction, first sort direction, etc.)"
+	},
 	  "designerDisplayProperty": "columnKey",
       "schema": {
         "columnKey": {
           "type": "string",
           "defaultValue": null,
-          "description": "Specifies the column key of the sorted column",
+          "description": {
+		"en": "Specifies the column key of the sorted column",
+		"jp": "Specifies the column key of the sorted column"
+	},
           "required": true
         },
         "columnIndex": {
           "type": "number",
           "defaultValue": null,
-          "description": "Column index can be used in place of column key. The preferred way of populating a column setting is to always use the column keys as identifiers."
+          "description": {
+		"en": "Column index can be used in place of column key. The preferred way of populating a column setting is to always use the column keys as identifiers.",
+		"jp": "Column index can be used in place of column key. The preferred way of populating a column setting is to always use the column keys as identifiers."
+	}
         },
         "firstSortDirection": {
           "type": "string",
           "defaultValue": true,
-          "description": "This will be the first sort direction when the column hasn't been sorted before",
+          "description": {
+		"en": "This will be the first sort direction when the column hasn't been sorted before",
+		"jp": "This will be the first sort direction when the column hasn't been sorted before"
+	},
           "valueOptions": [
             {
               "name": "asc",
               "type": "string",
-              "description": "The sort direction will be ascending"
+              "description": {
+		"en": "The sort direction will be ascending",
+		"jp": "The sort direction will be ascending"
+	}
             },
             {
               "name": "desc",
               "type": "string",
-              "description": "The sort direction will be descending"
+              "description": {
+		"en": "The sort direction will be descending",
+		"jp": "The sort direction will be descending"
+	}
             }
           ]
         },
         "currentSortDirection": {
           "type": "string",
           "defaultValue": null,
-          "description": "The current (or default) sort direction. If this setting is specified, the column will be rendered sorted according to this option.",
+          "description": {
+		"en": "The current (or default) sort direction. If this setting is specified, the column will be rendered sorted according to this option.",
+		"jp": "The current (or default) sort direction. If this setting is specified, the column will be rendered sorted according to this option."
+	},
           "valueOptions": [
             {
               "name": "asc",
               "type": "string",
-              "description": "The sort direction will be ascending"
+              "description": {
+		"en": "The sort direction will be ascending",
+		"jp": "The sort direction will be ascending"
+	}
             },
             {
               "name": "desc",
               "type": "string",
-              "description": "The sort direction will be descending"
+              "description": {
+		"en": "The sort direction will be descending",
+		"jp": "The sort direction will be descending"
+	}
             }
           ]
         },
         "allowSorting": {
           "type": "bool",
           "defaultValue": true,
-          "description": "Enables / disables sorting on the specified column. By default all columns are sortable"
+          "description": {
+		"en": "Enables / disables sorting on the specified column. By default all columns are sortable",
+		"jp": "Enables / disables sorting on the specified column. By default all columns are sortable"
+	}
         }
       }
     },
     "customSortFunction": {
       "type": "function",
       "defaultValue": null,
-      "description": "custom sort function accepting three parameters - the data to be sorted, an array of data source field definitions, and the direction to sort with (optional). The function should return the sorted data array"
+      "description": {
+		"en": "custom sort function accepting three parameters - the data to be sorted, an array of data source field definitions, and the direction to sort with (optional). The function should return the sorted data array",
+		"jp": "custom sort function accepting three parameters - the data to be sorted, an array of data source field definitions, and the direction to sort with (optional). The function should return the sorted data array"
+	}
     },
     "featureChooserSortAsc": {
       "type": "string",
       "defaultValue": "",
-      "description": "Specifies text for sorting ascending"
+      "description": {
+		"en": "Specifies text for sorting ascending",
+		"jp": "Specifies text for sorting ascending"
+	}
     },
     "featureChooserSortDesc": {
       "type": "string",
       "defaultValue": "",
-      "description": "Specifies text for sorting descending"
+      "description": {
+		"en": "Specifies text for sorting descending",
+		"jp": "Specifies text for sorting descending"
+	}
     },
     "featureChooserText": {
       "type": "string",
       "defaultValue": "",
-      "description": "Specifies text in feature chooser"
+      "description": {
+		"en": "Specifies text in feature chooser",
+		"jp": "Specifies text in feature chooser"
+	}
     },
     "firstSortDirection": {
       "type": "string",
       "defaultValue": "ascending",
-      "description": "Specifies which direction to use on the first click / keydown, if the column hasn't been sorted before ",
+      "description": {
+		"en": "Specifies which direction to use on the first click / keydown, if the column hasn't been sorted before ",
+		"jp": "Specifies which direction to use on the first click / keydown, if the column hasn't been sorted before "
+	},
       "valueOptions": [
         {
           "name": "ascending",
           "type": "string",
-          "description": "Direction is ascending"
+          "description": {
+		"en": "Direction is ascending",
+		"jp": "Direction is ascending"
+	}
         },
         {
           "name": "descending",
           "type": "string",
-          "description": "Direction is descending"
+          "description": {
+		"en": "Direction is descending",
+		"jp": "Direction is descending"
+	}
         }
       ]
     },
     "modalDialogAnimationDuration": {
       "type": "number",
       "defaultValue": 200.0,
-      "description": "Specifies time of milliseconds for animation duration to show/hide modal dialog"
+      "description": {
+		"en": "Specifies time of milliseconds for animation duration to show/hide modal dialog",
+		"jp": "Specifies time of milliseconds for animation duration to show/hide modal dialog"
+	}
     },
     "modalDialogButtonApplyText": {
       "type": "string",
       "defaultValue": "",
-      "description": "Specifies text of button which apply changes in modal dialog"
+      "description": {
+		"en": "Specifies text of button which apply changes in modal dialog",
+		"jp": "Specifies text of button which apply changes in modal dialog"
+	}
     },
     "modalDialogButtonCancelText": {
       "type": "string",
       "defaultValue": "",
-      "description": "Specifies text of button which cancel changes in modal dialog"
+      "description": {
+		"en": "Specifies text of button which cancel changes in modal dialog",
+		"jp": "Specifies text of button which cancel changes in modal dialog"
+	}
     },
     "modalDialogCaptionButtonAsc": {
       "type": "string",
       "defaultValue": "",
-      "description": "Specifies caption for each ascending sorted column in multiple sorting dialog"
+      "description": {
+		"en": "Specifies caption for each ascending sorted column in multiple sorting dialog",
+		"jp": "Specifies caption for each ascending sorted column in multiple sorting dialog"
+	}
     },
     "modalDialogCaptionButtonDesc": {
       "type": "string",
       "defaultValue": "",
-      "description": "Specifies caption for each descending sorted column in multiple sorting dialog"
+      "description": {
+		"en": "Specifies caption for each descending sorted column in multiple sorting dialog",
+		"jp": "Specifies caption for each descending sorted column in multiple sorting dialog"
+	}
     },
     "modalDialogCaptionButtonUnsort": {
       "type": "string",
       "defaultValue": "",
-      "description": "Specifies caption for unsort button in multiple sorting dialog"
+      "description": {
+		"en": "Specifies caption for unsort button in multiple sorting dialog",
+		"jp": "Specifies caption for unsort button in multiple sorting dialog"
+	}
     },
     "modalDialogCaptionText": {
       "type": "string",
       "defaultValue": "",
-      "description": "Specifies caption text for multiple sorting dialog"
+      "description": {
+		"en": "Specifies caption text for multiple sorting dialog",
+		"jp": "Specifies caption text for multiple sorting dialog"
+	}
     },
     "modalDialogHeight": {
       "type": "number",
       "defaultValue": "",
-      "description": "Specifies height of multiple sorting dialog"
+      "description": {
+		"en": "Specifies height of multiple sorting dialog",
+		"jp": "Specifies height of multiple sorting dialog"
+	}
     },
     "modalDialogResetButtonLabel": {
       "type": "string",
       "defaultValue": "",
-      "description": "Specifies sortby button label for each unsorted column in multiple sorting dialog"
+      "description": {
+		"en": "Specifies sortby button label for each unsorted column in multiple sorting dialog",
+		"jp": "Specifies sortby button label for each unsorted column in multiple sorting dialog"
+	}
     },
     "modalDialogSortByButtonText": {
       "type": "string",
       "defaultValue": "",
-      "description": "Specifies sortby button text for each unsorted column in multiple sorting dialog"
+      "description": {
+		"en": "Specifies sortby button text for each unsorted column in multiple sorting dialog",
+		"jp": "Specifies sortby button text for each unsorted column in multiple sorting dialog"
+	}
     },
     "modalDialogSortOnClick": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Specifies whether sorting to be applied immediately when click sort/unsort columns in multiple sorting dialog. When it is false Apply button shows and sorting is applied when the button is clicked"
+      "description": {
+		"en": "Specifies whether sorting to be applied immediately when click sort/unsort columns in multiple sorting dialog. When it is false Apply button shows and sorting is applied when the button is clicked",
+		"jp": "Specifies whether sorting to be applied immediately when click sort/unsort columns in multiple sorting dialog. When it is false Apply button shows and sorting is applied when the button is clicked"
+	}
     },
     "modalDialogWidth": {
       "type": "number",
       "defaultValue": 350.0,
-      "description": "Specifies width of multiple sorting dialog"
+      "description": {
+		"en": "Specifies width of multiple sorting dialog",
+		"jp": "Specifies width of multiple sorting dialog"
+	}
     },
     "mode": {
       "type": "string",
       "defaultValue": "single",
-      "description": "Defines single column sorting or multiple column sorting.",
+      "description": {
+		"en": "Defines single column sorting or multiple column sorting.",
+		"jp": "Defines single column sorting or multiple column sorting."
+	},
       "valueOptions": [
         {
           "name": "single",
           "type": "string",
-          "description": "Defines single column sorting"
+          "description": {
+		"en": "Defines single column sorting",
+		"jp": "Defines single column sorting"
+	}
         },
         {
           "name": "multi",
           "type": "string",
-          "description": "Defines multiple column sorting. If enabled, previous sorted state for columns won't be cleared"
+          "description": {
+		"en": "Defines multiple column sorting. If enabled, previous sorted state for columns won't be cleared",
+		"jp": "Defines multiple column sorting. If enabled, previous sorted state for columns won't be cleared"
+	}
         }
       ]
     },
     "sortedColumnTooltip": {
       "type": "string",
       "defaultValue": "",
-      "description": "custom sorted column tooltip in jQuery templating format"
+      "description": {
+		"en": "custom sorted column tooltip in jQuery templating format",
+		"jp": "custom sorted column tooltip in jQuery templating format"
+	}
     },
     "sortUrlKey": {
       "type": "string",
       "defaultValue": null,
-      "description": "URL param name which specifies how sorting expressions will be encoded in the URL. Uses OData conventions. ex: ?sort(col1)=asc"
+      "description": {
+		"en": "URL param name which specifies how sorting expressions will be encoded in the URL. Uses OData conventions. ex: ?sort(col1)=asc",
+		"jp": "URL param name which specifies how sorting expressions will be encoded in the URL. Uses OData conventions. ex: ?sort(col1)=asc"
+	}
     },
     "sortUrlKeyAscValue": {
       "type": "string",
       "defaultValue": null,
-      "description": "URL param value for ascending type of sorting. Uses OData conventions. Example: ?sort(col1)=asc"
+      "description": {
+		"en": "URL param value for ascending type of sorting. Uses OData conventions. Example: ?sort(col1)=asc",
+		"jp": "URL param value for ascending type of sorting. Uses OData conventions. Example: ?sort(col1)=asc"
+	}
     },
     "sortUrlKeyDescValue": {
       "type": "string",
       "defaultValue": null,
-      "description": "URL param value for descending type of sorting. Uses OData conventions"
+      "description": {
+		"en": "URL param value for descending type of sorting. Uses OData conventions",
+		"jp": "URL param value for descending type of sorting. Uses OData conventions"
+	}
     },
     "type": {
       "type": "string",
       "defaultValue": null,
-      "description": "Defines local or remote sorting.",
+      "description": {
+		"en": "Defines local or remote sorting.",
+		"jp": "Defines local or remote sorting."
+	},
       "valueOptions": [
         {
           "name": "remote",
           "type": "string",
-          "description": "Defines remote sorting."
+          "description": {
+		"en": "Defines remote sorting.",
+		"jp": "Defines remote sorting."
+	}
         },
         {
           "name": "local",
           "type": "string",
-          "description": "Defines local sorting."
+          "description": {
+		"en": "Defines local sorting.",
+		"jp": "Defines local sorting."
+	}
         }
       ]
     },
     "unsortedColumnTooltip": {
       "type": "string",
       "defaultValue": "",
-      "description": "Custom unsorted column tooltip in jQuery templating format"
+      "description": {
+		"en": "Custom unsorted column tooltip in jQuery templating format",
+		"jp": "Custom unsorted column tooltip in jQuery templating format"
+	}
     }
   }
 }

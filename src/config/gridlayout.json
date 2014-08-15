@@ -18,7 +18,10 @@
           "optional": false
         }
       ],
-      "description": "Event fired after items are resized.<br>                Use ui.owner to get a reference to the layout manager performing resizing."
+      "description": {
+		"en": "Event fired after items are resized.<br>                Use ui.owner to get a reference to the layout manager performing resizing.",
+		"jp": "Event fired after items are resized.<br>                Use ui.owner to get a reference to the layout manager performing resizing."
+	}
     },
     "internalResizing": {
       "cancellable": true,
@@ -34,7 +37,10 @@
           "optional": false
         }
       ],
-      "description": "Event fired before items are resized.<br>                Use ui.owner to get a reference to the layout manager performing resizing."
+      "description": {
+		"en": "Event fired before items are resized.<br>                Use ui.owner to get a reference to the layout manager performing resizing.",
+		"jp": "Event fired before items are resized.<br>                Use ui.owner to get a reference to the layout manager performing resizing."
+	}
     },
     "itemRendered": {
       "cancellable": false,
@@ -50,7 +56,10 @@
           "optional": false
         }
       ],
-      "description": "Event fired after an item has been rendered in the container<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to the igLayoutManager.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.itemData to get a reference of item's settings, such as colspan ,rowspan, etc. <br>&nbsp;&nbsp;&nbsp;&nbsp;use ui.index to get a reference of the item's index, if the layout is flow or vertical"
+      "description": {
+		"en": "Event fired after an item has been rendered in the container<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to the igLayoutManager.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.itemData to get a reference of item's settings, such as colspan ,rowspan, etc. <br>&nbsp;&nbsp;&nbsp;&nbsp;use ui.index to get a reference of the item's index, if the layout is flow or vertical",
+		"jp": "Event fired after an item has been rendered in the container<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to the igLayoutManager.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.itemData to get a reference of item's settings, such as colspan ,rowspan, etc. <br>&nbsp;&nbsp;&nbsp;&nbsp;use ui.index to get a reference of the item's index, if the layout is flow or vertical"
+	}
     },
     "itemRendering": {
       "cancellable": false,
@@ -66,7 +75,10 @@
           "optional": false
         }
       ],
-      "description": "Event fired before an item is rendered in the container<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to the igLayoutManager.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.itemData to get a reference of item's settings, such as colspan ,rowspan, etc. <br>&nbsp;&nbsp;&nbsp;&nbsp;use ui.index to get a reference of the item's index, if the layout is flow or vertical"
+      "description": {
+		"en": "Event fired before an item is rendered in the container<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to the igLayoutManager.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.itemData to get a reference of item's settings, such as colspan ,rowspan, etc. <br>&nbsp;&nbsp;&nbsp;&nbsp;use ui.index to get a reference of the item's index, if the layout is flow or vertical",
+		"jp": "Event fired before an item is rendered in the container<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to the igLayoutManager.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.itemData to get a reference of item's settings, such as colspan ,rowspan, etc. <br>&nbsp;&nbsp;&nbsp;&nbsp;use ui.index to get a reference of the item's index, if the layout is flow or vertical"
+	}
     },
     "rendered": {
       "cancellable": false,
@@ -82,100 +94,154 @@
           "optional": false
         }
       ],
-      "description": "Event fired after all items are rendered.<br>                Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to the igLayoutManager."
+      "description": {
+		"en": "Event fired after all items are rendered.<br>                Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to the igLayoutManager.",
+		"jp": "Event fired after all items are rendered.<br>                Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to the igLayoutManager."
+	}
     }
   },
   "properties": {
     "gridLayout": {
       "type": "object",
       "defaultValue": null,
-      "description": "options specific to grid layout mode",
+      "description": {
+		"en": "options specific to grid layout mode",
+		"jp": "options specific to grid layout mode"
+	},
       "schema": {
         "cols": {
           "type": "number",
           "defaultValue": 3,
-          "description": "number of columns in the grid layout",
+          "description": {
+		"en": "number of columns in the grid layout",
+		"jp": "number of columns in the grid layout"
+	},
           "required": true
         },
         "rows": {
           "type": "number",
           "defaultValue": 3,
-          "description": "number of rows in the grid layout",
+          "description": {
+		"en": "number of rows in the grid layout",
+		"jp": "number of rows in the grid layout"
+	},
           "required": true
         },
         "columnWidth": {
           "type": "number",
           "defaultValue": 300,
-          "description": "width for a single item"
+          "description": {
+		"en": "width for a single item",
+		"jp": "width for a single item"
+	}
         },
         "columnHeight": {
           "type": "number",
           "defaultValue": 200,
-          "description": "height for a single item"
+          "description": {
+		"en": "height for a single item",
+		"jp": "height for a single item"
+	}
         },
         "animationDuration": {
           "type": "number",
           "defaultValue": 500,
-          "description": ""
+          "description": {
+		"en": "",
+		"jp": ""
+	}
         },
         "marginLeft": {
           "type": "number",
           "defaultValue": 10,
-          "description": ""
+          "description": {
+		"en": "",
+		"jp": ""
+	}
         },
         "marginTop": {
           "type": "number",
           "defaultValue": 10,
-          "description": ""
+          "description": {
+		"en": "",
+		"jp": ""
+	}
         },
         "rearrangeItems": {
           "type": "bool",
           "defaultValue": true,
-          "description": "rearrange items automatically on layout change"
+          "description": {
+		"en": "rearrange items automatically on layout change",
+		"jp": "rearrange items automatically on layout change"
+	}
         }
       }
     },
     "height": {
       "type": "string",
       "defaultValue": null,
-      "description": "height of the layout container"
+      "description": {
+		"en": "height of the layout container",
+		"jp": "height of the layout container"
+	}
     },
     "items": {
       "type": "array",
       "defaultValue": null,
-      "description": "an array of item descriptions <br>&nbsp;&nbsp;&nbsp;&nbsp;this assumes the container is empty, and every item<br>&nbsp;&nbsp;&nbsp;&nbsp;is described by rowspan,colspan, etc. - otherwise values of<br>&nbsp;&nbsp;&nbsp;&nbsp;1 are assumed<br>&nbsp;&nbsp;&nbsp;&nbsp;items can have various properties some of which may not be applicable<br>&nbsp;&nbsp;&nbsp;&nbsp;depending on the layoutMode.<br>&nbsp;&nbsp;&nbsp;&nbsp;for example rowSpan/colSpan/colIndex/rowIndex are only applicable to gridlayout",
+      "description": {
+		"en": "an array of item descriptions <br>&nbsp;&nbsp;&nbsp;&nbsp;this assumes the container is empty, and every item<br>&nbsp;&nbsp;&nbsp;&nbsp;is described by rowspan,colspan, etc. - otherwise values of<br>&nbsp;&nbsp;&nbsp;&nbsp;1 are assumed<br>&nbsp;&nbsp;&nbsp;&nbsp;items can have various properties some of which may not be applicable<br>&nbsp;&nbsp;&nbsp;&nbsp;depending on the layoutMode.<br>&nbsp;&nbsp;&nbsp;&nbsp;for example rowSpan/colSpan/colIndex/rowIndex are only applicable to gridlayout",
+		"jp": "an array of item descriptions <br>&nbsp;&nbsp;&nbsp;&nbsp;this assumes the container is empty, and every item<br>&nbsp;&nbsp;&nbsp;&nbsp;is described by rowspan,colspan, etc. - otherwise values of<br>&nbsp;&nbsp;&nbsp;&nbsp;1 are assumed<br>&nbsp;&nbsp;&nbsp;&nbsp;items can have various properties some of which may not be applicable<br>&nbsp;&nbsp;&nbsp;&nbsp;depending on the layoutMode.<br>&nbsp;&nbsp;&nbsp;&nbsp;for example rowSpan/colSpan/colIndex/rowIndex are only applicable to gridlayout"
+	},
       "schema": {
         "width": {
           "required": true,
           "type": "string",
           "defaultValue": null,
-          "description": "item width"
+          "description": {
+		"en": "item width",
+		"jp": "item width"
+	}
         },
         "height": {
           "required": true,
           "type": "string",
           "defaultValue": null,
-          "description": "item height"
+          "description": {
+		"en": "item height",
+		"jp": "item height"
+	}
         },
         "rowSpan": {
           "type": "number",
           "defaultValue": 1,
-          "description": "item row span - number of rows in a grid layout to span"
+          "description": {
+		"en": "item row span - number of rows in a grid layout to span",
+		"jp": "item row span - number of rows in a grid layout to span"
+	}
         },
         "colSpan": {
           "type": "number",
           "defaultValue": 1,
-          "description": "item column span - number of columns in a grid layout to span"
+          "description": {
+		"en": "item column span - number of columns in a grid layout to span",
+		"jp": "item column span - number of columns in a grid layout to span"
+	}
         },
         "rowIndex": {
           "type": "number",
           "defaultValue": 0,
-          "description": "row position"
+          "description": {
+		"en": "row position",
+		"jp": "row position"
+	}
         },
         "colIndex": {
           "type": "number",
           "defaultValue": 0,
-          "description": "column position"
+          "description": {
+		"en": "column position",
+		"jp": "column position"
+	}
         }
       }
     },
@@ -183,12 +249,18 @@
 	  "hidden": true,
       "type": "string",
       "defaultValue": "grid",
-      "description": " defines the layout type"
+      "description": {
+		"en": " defines the layout type",
+		"jp": " defines the layout type"
+	}
     },
     "width": {
       "type": "string",
       "defaultValue": null,
-      "description": "width of the layout container"
+      "description": {
+		"en": "width of the layout container",
+		"jp": "width of the layout container"
+	}
     }
   }
 }

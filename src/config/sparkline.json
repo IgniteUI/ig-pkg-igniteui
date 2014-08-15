@@ -18,7 +18,10 @@
           "optional": false
         }
       ],
-      "description": "Event which is raised before data binding.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes first argument null and second argument ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igSparkline.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.dataSource to obtain reference to instance of $.ig.DataSource."
+      "description": {
+		"en": "Event which is raised before data binding.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes first argument null and second argument ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igSparkline.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.dataSource to obtain reference to instance of $.ig.DataSource.",
+		"jp": "Event which is raised before data binding.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes first argument null and second argument ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igSparkline.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.dataSource to obtain reference to instance of $.ig.DataSource."
+	}
     },
     "dataBound": {
       "cancellable": false,
@@ -34,441 +37,690 @@
           "optional": false
         }
       ],
-      "description": "Event which is raised after data binding.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes first argument null and second argument ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igSparkline.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.data to obtain reference to array actual data which is displayed by chart.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.dataSource to obtain reference to instance of $.ig.DataSource."
+      "description": {
+		"en": "Event which is raised after data binding.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes first argument null and second argument ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igSparkline.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.data to obtain reference to array actual data which is displayed by chart.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.dataSource to obtain reference to instance of $.ig.DataSource.",
+		"jp": "Event which is raised after data binding.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes first argument null and second argument ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igSparkline.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.data to obtain reference to array actual data which is displayed by chart.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.dataSource to obtain reference to instance of $.ig.DataSource."
+	}
     }
   },
   "properties": {
     "width": {
       "type": "string",
       "defaultValue": null,
-      "description": "The width of the chart. It can be set as a number in pixels, string (px) or percentage (%)."
+      "description": {
+		"en": "The width of the chart. It can be set as a number in pixels, string (px) or percentage (%).",
+		"jp": "The width of the chart. It can be set as a number in pixels, string (px) or percentage (%)."
+	}
     },
 	"height": {
       "type": "string",
       "defaultValue": null,
-      "description": "The height of the chart. It can be set as a number in pixels, string (px) or percentage (%)."
+      "description": {
+		"en": "The height of the chart. It can be set as a number in pixels, string (px) or percentage (%).",
+		"jp": "The height of the chart. It can be set as a number in pixels, string (px) or percentage (%)."
+	}
     },
     "brush": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets or sets the sparkline brush."
+      "description": {
+		"en": "Gets or sets the sparkline brush.",
+		"jp": "Gets or sets the sparkline brush."
+	}
     },
     "dataSource": {
       "type": "custom",
       "defaultValue": null,
-      "description": "Can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself."
+      "description": {
+		"en": "Can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself.",
+		"jp": "Can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself."
+	}
     },
     "displayNormalRangeInFront": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Gets or sets the position of the normal range on the sparkline."
+      "description": {
+		"en": "Gets or sets the position of the normal range on the sparkline.",
+		"jp": "Gets or sets the position of the normal range on the sparkline."
+	}
     },
     "displayType": {
       "type": "string",
       "defaultValue": "line",
-      "description": "Gets or sets the display type of the sparkline.",
+      "description": {
+		"en": "Gets or sets the display type of the sparkline.",
+		"jp": "Gets or sets the display type of the sparkline."
+	},
       "valueOptions": [
         {
           "name": "line",
           "type": "string",
-          "description": "Display the sparkline as a line."
+          "description": {
+		"en": "Display the sparkline as a line.",
+		"jp": "Display the sparkline as a line."
+	}
         },
         {
           "name": "area",
           "type": "string",
-          "description": "Display the sparkline as a filled polygon."
+          "description": {
+		"en": "Display the sparkline as a filled polygon.",
+		"jp": "Display the sparkline as a filled polygon."
+	}
         },
         {
           "name": "column",
           "type": "string",
-          "description": "Display the sparkline as a set of columns."
+          "description": {
+		"en": "Display the sparkline as a set of columns.",
+		"jp": "Display the sparkline as a set of columns."
+	}
         },
         {
           "name": "winLoss",
           "type": "string",
-          "description": "Display the sparkline as a set of columns on a boolean scale."
+          "description": {
+		"en": "Display the sparkline as a set of columns on a boolean scale.",
+		"jp": "Display the sparkline as a set of columns on a boolean scale."
+	}
         }
       ]
     },
     "firstMarkerBrush": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets or sets the first marker brush of the sparkline."
+      "description": {
+		"en": "Gets or sets the first marker brush of the sparkline.",
+		"jp": "Gets or sets the first marker brush of the sparkline."
+	}
     },
     "firstMarkerSize": {
       "type": "number",
       "defaultValue": -1.0,
-      "description": "Gets or sets the first marker size of the sparkline."
+      "description": {
+		"en": "Gets or sets the first marker size of the sparkline.",
+		"jp": "Gets or sets the first marker size of the sparkline."
+	}
     },
     "firstMarkerVisibility": {
       "type": "string",
       "defaultValue": "collapsed",
-      "description": "Gets or sets the first marker visibility of the sparkline.",
+      "description": {
+		"en": "Gets or sets the first marker visibility of the sparkline.",
+		"jp": "Gets or sets the first marker visibility of the sparkline."
+	},
       "valueOptions": [
         {
           "name": "visible",
           "type": "string",
-          "description": "Visualize the first igSparkline marker"
+          "description": {
+		"en": "Visualize the first igSparkline marker",
+		"jp": "Visualize the first igSparkline marker"
+	}
         },
         {
           "name": "collapsed",
           "type": "string",
-          "description": "Collapse the first igSparkline marker"
+          "description": {
+		"en": "Collapse the first igSparkline marker",
+		"jp": "Collapse the first igSparkline marker"
+	}
         }
       ]
     },
     "formatLabel": {
       "type": "function",
       "defaultValue": null,
-      "description": "Sets or gets a function which takes an object that produces a formatted label for displaying in the chart."
+      "description": {
+		"en": "Sets or gets a function which takes an object that produces a formatted label for displaying in the chart.",
+		"jp": "Sets or gets a function which takes an object that produces a formatted label for displaying in the chart."
+	}
     },
     "highMarkerBrush": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets or sets the high marker brush of the sparkline."
+      "description": {
+		"en": "Gets or sets the high marker brush of the sparkline.",
+		"jp": "Gets or sets the high marker brush of the sparkline."
+	}
     },
     "highMarkerSize": {
       "type": "number",
       "defaultValue": -1.0,
-      "description": "Gets or sets the high marker size of the sparkline."
+      "description": {
+		"en": "Gets or sets the high marker size of the sparkline.",
+		"jp": "Gets or sets the high marker size of the sparkline."
+	}
     },
     "highMarkerVisibility": {
       "type": "string",
       "defaultValue": "collapsed",
-      "description": " Gets or sets the high marker visibility of the sparkline.",
+      "description": {
+		"en": " Gets or sets the high marker visibility of the sparkline.",
+		"jp": " Gets or sets the high marker visibility of the sparkline."
+	},
       "valueOptions": [
         {
           "name": "visible",
           "type": "string",
-          "description": "Visualize the high igSparkline marker"
+          "description": {
+		"en": "Visualize the high igSparkline marker",
+		"jp": "Visualize the high igSparkline marker"
+	}
         },
         {
           "name": "collapsed",
           "type": "string",
-          "description": "Collapse the high igSparkline marker"
+          "description": {
+		"en": "Collapse the high igSparkline marker",
+		"jp": "Collapse the high igSparkline marker"
+	}
         }
       ]
     },
     "horizontalAxisBrush": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets or sets the horizontal axis line brush of the sparkline."
+      "description": {
+		"en": "Gets or sets the horizontal axis line brush of the sparkline.",
+		"jp": "Gets or sets the horizontal axis line brush of the sparkline."
+	}
     },
     "horizontalAxisLabel": {
       "type": "string",
       "defaultValue": null,
-      "description": "The value or content to display on the horizontal axis.<br>&nbsp;This can be set to a formatted string, such as \"{0}\", or it can be set to a DataTemplate."
+      "description": {
+		"en": "The value or content to display on the horizontal axis.<br>&nbsp;This can be set to a formatted string, such as \"{0}\", or it can be set to a DataTemplate.",
+		"jp": "The value or content to display on the horizontal axis.<br>&nbsp;This can be set to a formatted string, such as \"{0}\", or it can be set to a DataTemplate."
+	}
     },
     "horizontalAxisVisibility": {
       "type": "string",
       "defaultValue": "collapsed",
-      "description": "Gets or sets the display state of the horizontal axis.",
+      "description": {
+		"en": "Gets or sets the display state of the horizontal axis.",
+		"jp": "Gets or sets the display state of the horizontal axis."
+	},
       "valueOptions": [
         {
           "name": "visible",
           "type": "string",
-          "description": "Visualize the igSparkline horizontal axis"
+          "description": {
+		"en": "Visualize the igSparkline horizontal axis",
+		"jp": "Visualize the igSparkline horizontal axis"
+	}
         },
         {
           "name": "collapsed",
           "type": "string",
-          "description": "Collapse the igSparkline horizontal axis"
+          "description": {
+		"en": "Collapse the igSparkline horizontal axis",
+		"jp": "Collapse the igSparkline horizontal axis"
+	}
         }
       ]
     },
     "labelMemberPath": {
       "type": "string",
       "defaultValue": null,
-      "description": "String identifier of a column or property name to get labels from on each item in the data source.  These labels will be retrieved from the first and last item, and displayed by the horizontal axis."
+      "description": {
+		"en": "String identifier of a column or property name to get labels from on each item in the data source.  These labels will be retrieved from the first and last item, and displayed by the horizontal axis.",
+		"jp": "String identifier of a column or property name to get labels from on each item in the data source.  These labels will be retrieved from the first and last item, and displayed by the horizontal axis."
+	}
     },
     "lastMarkerBrush": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets or sets the last marker brush of the sparkline."
+      "description": {
+		"en": "Gets or sets the last marker brush of the sparkline.",
+		"jp": "Gets or sets the last marker brush of the sparkline."
+	}
     },
     "lastMarkerSize": {
       "type": "number",
       "defaultValue": -1.0,
-      "description": "Gets or sets the last marker size of the sparkline."
+      "description": {
+		"en": "Gets or sets the last marker size of the sparkline.",
+		"jp": "Gets or sets the last marker size of the sparkline."
+	}
     },
     "lastMarkerVisibility": {
       "type": "string",
       "defaultValue": "collapsed",
-      "description": "Gets or sets the last marker visibility of the sparkline.",
+      "description": {
+		"en": "Gets or sets the last marker visibility of the sparkline.",
+		"jp": "Gets or sets the last marker visibility of the sparkline."
+	},
       "valueOptions": [
         {
           "name": "visible",
           "type": "string",
-          "description": "Visualize the last igSparkline marker"
+          "description": {
+		"en": "Visualize the last igSparkline marker",
+		"jp": "Visualize the last igSparkline marker"
+	}
         },
         {
           "name": "collapsed",
           "type": "string",
-          "description": "Collapse the last igSparkline marker"
+          "description": {
+		"en": "Collapse the last igSparkline marker",
+		"jp": "Collapse the last igSparkline marker"
+	}
         }
       ]
     },
     "lineThickness": {
       "type": "number",
       "defaultValue": -1.0,
-      "description": "Gets or sets the line thickness of the sparkline."
+      "description": {
+		"en": "Gets or sets the line thickness of the sparkline.",
+		"jp": "Gets or sets the line thickness of the sparkline."
+	}
     },
     "lowMarkerBrush": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets or sets the low marker brush of the sparkline."
+      "description": {
+		"en": "Gets or sets the low marker brush of the sparkline.",
+		"jp": "Gets or sets the low marker brush of the sparkline."
+	}
     },
     "lowMarkerSize": {
       "type": "number",
       "defaultValue": -1.0,
-      "description": "Gets or sets the low marker size of the sparkline."
+      "description": {
+		"en": "Gets or sets the low marker size of the sparkline.",
+		"jp": "Gets or sets the low marker size of the sparkline."
+	}
     },
     "lowMarkerVisibility": {
       "type": "string",
       "defaultValue": "collapsed",
-      "description": " Gets or sets the low marker visibility of the sparkline.",
+      "description": {
+		"en": " Gets or sets the low marker visibility of the sparkline.",
+		"jp": " Gets or sets the low marker visibility of the sparkline."
+	},
       "valueOptions": [
         {
           "name": "visible",
           "type": "string",
-          "description": "Visualize the low igSparkline marker"
+          "description": {
+		"en": "Visualize the low igSparkline marker",
+		"jp": "Visualize the low igSparkline marker"
+	}
         },
         {
           "name": "collapsed",
           "type": "string",
-          "description": "Collapse the low igSparkline marker"
+          "description": {
+		"en": "Collapse the low igSparkline marker",
+		"jp": "Collapse the low igSparkline marker"
+	}
         }
       ]
     },
     "markerBrush": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets or sets the marker brush of the sparkline."
+      "description": {
+		"en": "Gets or sets the marker brush of the sparkline.",
+		"jp": "Gets or sets the marker brush of the sparkline."
+	}
     },
     "markerSize": {
       "type": "number",
       "defaultValue": -1.0,
-      "description": "Gets or sets the marker size of the sparkline."
+      "description": {
+		"en": "Gets or sets the marker size of the sparkline.",
+		"jp": "Gets or sets the marker size of the sparkline."
+	}
     },
     "markerVisibility": {
       "type": "string",
       "defaultValue": "collapsed",
-      "description": "Gets or sets the marker visibility of the sparkline.",
+      "description": {
+		"en": "Gets or sets the marker visibility of the sparkline.",
+		"jp": "Gets or sets the marker visibility of the sparkline."
+	},
       "valueOptions": [
         {
           "name": "visible",
           "type": "string",
-          "description": "Visualize the igSparkline marker"
+          "description": {
+		"en": "Visualize the igSparkline marker",
+		"jp": "Visualize the igSparkline marker"
+	}
         },
         {
           "name": "collapsed",
           "type": "string",
-          "description": "Collapse the low igSparkline marker"
+          "description": {
+		"en": "Collapse the low igSparkline marker",
+		"jp": "Collapse the low igSparkline marker"
+	}
         }
       ]
     },
     "negativeBrush": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets or sets the negative brush of the sparkline."
+      "description": {
+		"en": "Gets or sets the negative brush of the sparkline.",
+		"jp": "Gets or sets the negative brush of the sparkline."
+	}
     },
     "negativeMarkerBrush": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets or sets the negative marker brush of the sparkline."
+      "description": {
+		"en": "Gets or sets the negative marker brush of the sparkline.",
+		"jp": "Gets or sets the negative marker brush of the sparkline."
+	}
     },
     "negativeMarkerSize": {
       "type": "number",
       "defaultValue": -1.0,
-      "description": "Gets or sets the negative marker size of the sparkline."
+      "description": {
+		"en": "Gets or sets the negative marker size of the sparkline.",
+		"jp": "Gets or sets the negative marker size of the sparkline."
+	}
     },
     "negativeMarkerVisibility": {
       "type": "string",
       "defaultValue": "collapsed",
-      "description": " Gets or sets the negative marker visibility of the sparkline.",
+      "description": {
+		"en": " Gets or sets the negative marker visibility of the sparkline.",
+		"jp": " Gets or sets the negative marker visibility of the sparkline."
+	},
       "valueOptions": [
         {
           "name": "visible",
           "type": "string",
-          "description": "Visualize the negative igSparkline marker"
+          "description": {
+		"en": "Visualize the negative igSparkline marker",
+		"jp": "Visualize the negative igSparkline marker"
+	}
         },
         {
           "name": "collapsed",
           "type": "string",
-          "description": "Collapse the negative igSparkline marker"
+          "description": {
+		"en": "Collapse the negative igSparkline marker",
+		"jp": "Collapse the negative igSparkline marker"
+	}
         }
       ]
     },
     "normalRangeFill": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets or sets the normal range brush of the sparkline."
+      "description": {
+		"en": "Gets or sets the normal range brush of the sparkline.",
+		"jp": "Gets or sets the normal range brush of the sparkline."
+	}
     },
     "normalRangeMaximum": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "Gets or sets the maximum value of the normal range."
+      "description": {
+		"en": "Gets or sets the maximum value of the normal range.",
+		"jp": "Gets or sets the maximum value of the normal range."
+	}
     },
     "normalRangeMinimum": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "Gets or sets the minimum value of the normal range."
+      "description": {
+		"en": "Gets or sets the minimum value of the normal range.",
+		"jp": "Gets or sets the minimum value of the normal range."
+	}
     },
     "normalRangeVisibility": {
       "type": "string",
       "defaultValue": "collapsed",
-      "description": "Gets or sets the normal range visibility of the sparkline.",
+      "description": {
+		"en": "Gets or sets the normal range visibility of the sparkline.",
+		"jp": "Gets or sets the normal range visibility of the sparkline."
+	},
       "valueOptions": [
         {
           "name": "visible",
           "type": "string",
-          "description": "Enable the normal range visibility of the sparkline"
+          "description": {
+		"en": "Enable the normal range visibility of the sparkline",
+		"jp": "Enable the normal range visibility of the sparkline"
+	}
         },
         {
           "name": "collapsed",
           "type": "string",
-          "description": "Disable the normal range visibility of the sparkline"
+          "description": {
+		"en": "Disable the normal range visibility of the sparkline",
+		"jp": "Disable the normal range visibility of the sparkline"
+	}
         }
       ]
     },
     "trendLineBrush": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets or sets the trendline brush of the sparkline."
+      "description": {
+		"en": "Gets or sets the trendline brush of the sparkline.",
+		"jp": "Gets or sets the trendline brush of the sparkline."
+	}
     },
     "trendLinePeriod": {
       "type": "number",
       "defaultValue": 7.0,
-      "description": "Gets or sets the trendline period used by the sparkline."
+      "description": {
+		"en": "Gets or sets the trendline period used by the sparkline.",
+		"jp": "Gets or sets the trendline period used by the sparkline."
+	}
     },
     "trendLineThickness": {
       "type": "number",
       "defaultValue": -1.0,
-      "description": "Gets or sets the thickness of the sparkline's trendline."
+      "description": {
+		"en": "Gets or sets the thickness of the sparkline's trendline.",
+		"jp": "Gets or sets the thickness of the sparkline's trendline."
+	}
     },
     "trendLineType": {
       "type": "string",
       "defaultValue": "none",
-      "description": "Gets or sets the type of trendline used by the sparkline.",
+      "description": {
+		"en": "Gets or sets the type of trendline used by the sparkline.",
+		"jp": "Gets or sets the type of trendline used by the sparkline."
+	},
       "valueOptions": [
         {
           "name": "none",
           "type": "string",
-          "description": "Trendline is not going to be used by the sparkline"
+          "description": {
+		"en": "Trendline is not going to be used by the sparkline",
+		"jp": "Trendline is not going to be used by the sparkline"
+	}
         },
         {
           "name": "linearFit",
           "type": "string",
-          "description": "Linear trendline is used in the sparkline"
+          "description": {
+		"en": "Linear trendline is used in the sparkline",
+		"jp": "Linear trendline is used in the sparkline"
+	}
         },
         {
           "name": "quadraticFit",
           "type": "string",
-          "description": "Quadratic trendline is used in the sparkline"
+          "description": {
+		"en": "Quadratic trendline is used in the sparkline",
+		"jp": "Quadratic trendline is used in the sparkline"
+	}
         },
         {
           "name": "cubicFit",
           "type": "string",
-          "description": "Cubic trendline is used in the sparkline"
+          "description": {
+		"en": "Cubic trendline is used in the sparkline",
+		"jp": "Cubic trendline is used in the sparkline"
+	}
         },
         {
           "name": "quarticFit",
           "type": "string",
-          "description": "Quartic trendline is used in the sparkline"
+          "description": {
+		"en": "Quartic trendline is used in the sparkline",
+		"jp": "Quartic trendline is used in the sparkline"
+	}
         },
         {
           "name": "quinticFit",
           "type": "string",
-          "description": "Quintic trendline is used in the sparkline"
+          "description": {
+		"en": "Quintic trendline is used in the sparkline",
+		"jp": "Quintic trendline is used in the sparkline"
+	}
         },
         {
           "name": "logarithmicFit",
           "type": "string",
-          "description": "Logarithmic trendline is used in the sparkline"
+          "description": {
+		"en": "Logarithmic trendline is used in the sparkline",
+		"jp": "Logarithmic trendline is used in the sparkline"
+	}
         },
         {
           "name": "exponentialFit",
           "type": "string",
-          "description": "Exponential trendline is used in the sparkline"
+          "description": {
+		"en": "Exponential trendline is used in the sparkline",
+		"jp": "Exponential trendline is used in the sparkline"
+	}
         },
         {
           "name": "powerLawFit",
           "type": "string",
-          "description": "Power law trendline is used in the sparkline"
+          "description": {
+		"en": "Power law trendline is used in the sparkline",
+		"jp": "Power law trendline is used in the sparkline"
+	}
         },
         {
           "name": "simpleAverage",
           "type": "string",
-          "description": "Simple average trendline is used in the sparkline"
+          "description": {
+		"en": "Simple average trendline is used in the sparkline",
+		"jp": "Simple average trendline is used in the sparkline"
+	}
         },
         {
           "name": "exponentialAverage",
           "type": "string",
-          "description": "Exponential average trendline is used in the sparkline"
+          "description": {
+		"en": "Exponential average trendline is used in the sparkline",
+		"jp": "Exponential average trendline is used in the sparkline"
+	}
         },
         {
           "name": "modifiedAverage",
           "type": "string",
-          "description": " "
+          "description": {
+		"en": " ",
+		"jp": " "
+	}
         },
         {
           "name": "cumulativeAverage",
           "type": "string",
-          "description": "Modified average average trendline is used in the sparkline"
+          "description": {
+		"en": "Modified average average trendline is used in the sparkline",
+		"jp": "Modified average average trendline is used in the sparkline"
+	}
         },
         {
           "name": "weightedAverage",
           "type": "string",
-          "description": "Weighted average average trendline is used in the sparkline"
+          "description": {
+		"en": "Weighted average average trendline is used in the sparkline",
+		"jp": "Weighted average average trendline is used in the sparkline"
+	}
         }
       ]
     },
     "unknownValuePlotting": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets or sets the way null values are interpreted.",
+      "description": {
+		"en": "Gets or sets the way null values are interpreted.",
+		"jp": "Gets or sets the way null values are interpreted."
+	},
       "valueOptions": [
         {
           "name": "linearInterpolate",
           "type": "string",
-          "description": "The null values are interpreted linearly"
+          "description": {
+		"en": "The null values are interpreted linearly",
+		"jp": "The null values are interpreted linearly"
+	}
         },
         {
           "name": "dontPlot",
           "type": "string",
-          "description": "The null values are not plotted"
+          "description": {
+		"en": "The null values are not plotted",
+		"jp": "The null values are not plotted"
+	}
         }
       ]
     },
     "valueMemberPath": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets or sets the string path to the value column."
+      "description": {
+		"en": "Gets or sets the string path to the value column.",
+		"jp": "Gets or sets the string path to the value column."
+	}
     },
     "verticalAxisBrush": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets or sets the vertical axis line brush of the sparkline."
+      "description": {
+		"en": "Gets or sets the vertical axis line brush of the sparkline.",
+		"jp": "Gets or sets the vertical axis line brush of the sparkline."
+	}
     },
     "verticalAxisLabel": {
       "type": "string",
       "defaultValue": null,
-      "description": "The value or content to display on the vertical axis.<br>&nbsp;This can be set to a formatted string, such as \"{0:n}\", or it can be set to a DataTemplate."
+      "description": {
+		"en": "The value or content to display on the vertical axis.<br>&nbsp;This can be set to a formatted string, such as \"{0:n}\", or it can be set to a DataTemplate.",
+		"jp": "The value or content to display on the vertical axis.<br>&nbsp;This can be set to a formatted string, such as \"{0:n}\", or it can be set to a DataTemplate."
+	}
     },
     "verticalAxisVisibility": {
       "type": "string",
       "defaultValue": "collapsed",
-      "description": " Gets or sets the display state of the vertical axis.",
+      "description": {
+		"en": " Gets or sets the display state of the vertical axis.",
+		"jp": " Gets or sets the display state of the vertical axis."
+	},
       "valueOptions": [
         {
           "name": "visible",
           "type": "string",
-          "description": "Visualize the igSparkline vertical axis"
+          "description": {
+		"en": "Visualize the igSparkline vertical axis",
+		"jp": "Visualize the igSparkline vertical axis"
+	}
         },
         {
           "name": "collapsed",
           "type": "string",
-          "description": "Collapse the igSparkline vertical axis"
+          "description": {
+		"en": "Collapse the igSparkline vertical axis",
+		"jp": "Collapse the igSparkline vertical axis"
+	}
         }
       ]
     }

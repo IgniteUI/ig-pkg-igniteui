@@ -18,7 +18,10 @@
           "optional": false
         }
       ],
-      "description": "event fired when the control is displayed on a non HTML5 compliant browser"
+      "description": {
+		"en": "event fired when the control is displayed on a non HTML5 compliant browser",
+		"jp": "event fired when the control is displayed on a non HTML5 compliant browser"
+	}
     },
     "sliceClick": {
       "cancellable": false,
@@ -34,7 +37,10 @@
           "optional": false
         }
       ],
-      "description": "Raised when the slice is clicked.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.slice to get reference to slice object.<br>&nbsp;&nbsp;&nbsp;Use ui.slice.item to get reference to current pie chart item.<br>&nbsp;&nbsp;&nbsp;Use ui.slice.isExploded to get is the slice exploded.<br>&nbsp;&nbsp;&nbsp;Use ui.slice.isSelected to get is the slice selected."
+      "description": {
+		"en": "Raised when the slice is clicked.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.slice to get reference to slice object.<br>&nbsp;&nbsp;&nbsp;Use ui.slice.item to get reference to current pie chart item.<br>&nbsp;&nbsp;&nbsp;Use ui.slice.isExploded to get is the slice exploded.<br>&nbsp;&nbsp;&nbsp;Use ui.slice.isSelected to get is the slice selected.",
+		"jp": "Raised when the slice is clicked.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.slice to get reference to slice object.<br>&nbsp;&nbsp;&nbsp;Use ui.slice.item to get reference to current pie chart item.<br>&nbsp;&nbsp;&nbsp;Use ui.slice.isExploded to get is the slice exploded.<br>&nbsp;&nbsp;&nbsp;Use ui.slice.isSelected to get is the slice selected."
+	}
     },
     "tooltipHidden": {
       "cancellable": false,
@@ -50,7 +56,10 @@
           "optional": false
         }
       ],
-      "description": "event fired after a tooltip is hidden<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current pie chart item.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object."
+      "description": {
+		"en": "event fired after a tooltip is hidden<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current pie chart item.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.",
+		"jp": "event fired after a tooltip is hidden<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current pie chart item.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object."
+	}
     },
     "tooltipHiding": {
       "cancellable": true,
@@ -66,7 +75,10 @@
           "optional": false
         }
       ],
-      "description": "event fired when the mouse has left an element and the tooltip is about to hide <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current pie chart item.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object."
+      "description": {
+		"en": "event fired when the mouse has left an element and the tooltip is about to hide <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current pie chart item.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.",
+		"jp": "event fired when the mouse has left an element and the tooltip is about to hide <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current pie chart item.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object."
+	}
     },
     "tooltipShowing": {
       "cancellable": true,
@@ -82,7 +94,10 @@
           "optional": false
         }
       ],
-      "description": "event fired when the mouse has hovered on an element long enough to display a tooltip <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current pie chart item.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object."
+      "description": {
+		"en": "event fired when the mouse has hovered on an element long enough to display a tooltip <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current pie chart item.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.",
+		"jp": "event fired when the mouse has hovered on an element long enough to display a tooltip <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current pie chart item.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object."
+	}
     },
     "tooltipShown": {
       "cancellable": false,
@@ -98,24 +113,36 @@
           "optional": false
         }
       ],
-      "description": "event fired after a tooltip is shown <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current pie chart item.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object."
+      "description": {
+		"en": "event fired after a tooltip is shown <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current pie chart item.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.",
+		"jp": "event fired after a tooltip is shown <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current pie chart item.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object."
+	}
     }
   },
   "properties": {
     "allowSliceExplosion": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Gets or sets whether the slices can be exploded."
+      "description": {
+		"en": "Gets or sets whether the slices can be exploded.",
+		"jp": "Gets or sets whether the slices can be exploded."
+	}
     },
     "allowSliceSelection": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Gets or sets whether the slices can be selected."
+      "description": {
+		"en": "Gets or sets whether the slices can be selected.",
+		"jp": "Gets or sets whether the slices can be selected."
+	}
     },
     "brushes": {
       "type": "array",
       "defaultValue": null,
-      "description": "Gets or sets the Brushes property.<br>&nbsp;&nbsp;&nbsp;The brushes property defines the palette from which automatically assigned slice brushes are selected.<br>&nbsp;&nbsp;&nbsp;The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
+      "description": {
+		"en": "Gets or sets the Brushes property.<br>&nbsp;&nbsp;&nbsp;The brushes property defines the palette from which automatically assigned slice brushes are selected.<br>&nbsp;&nbsp;&nbsp;The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
+		"jp": "Gets or sets the Brushes property.<br>&nbsp;&nbsp;&nbsp;The brushes property defines the palette from which automatically assigned slice brushes are selected.<br>&nbsp;&nbsp;&nbsp;The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
+	},
       "arrayMemberType": "string",
        "schema": {
 		"name": {
@@ -123,7 +150,10 @@
 			"required": true,
 			"defaultValue": null,
 			"processValueOnly" : true,
-			"description": "Plette from which automatically assigned slice brushes are selected."
+			"description": {
+		"en": "Plette from which automatically assigned slice brushes are selected.",
+		"jp": "Plette from which automatically assigned slice brushes are selected."
+	}
 			}
 		},
 	    "designerDisplayProperty": "name"
@@ -131,27 +161,42 @@
     "dataSource": {
       "type": "custom",
       "defaultValue": null,
-      "description": "can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself"
+      "description": {
+		"en": "can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself",
+		"jp": "can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself"
+	}
     },
     "dataSourceType": {
       "type": "string",
       "defaultValue": null,
-      "description": "Explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property."
+      "description": {
+		"en": "Explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property.",
+		"jp": "Explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property."
+	}
     },
     "dataSourceUrl": {
       "type": "string",
       "defaultValue": null,
-      "description": "Specifies a remote URL accepted by $.ig.DataSource in order to request data from it"
+      "description": {
+		"en": "Specifies a remote URL accepted by $.ig.DataSource in order to request data from it",
+		"jp": "Specifies a remote URL accepted by $.ig.DataSource in order to request data from it"
+	}
     },
     "explodedRadius": {
       "type": "number",
       "defaultValue": 0.2,
-      "description": "Determines how much the exploded slice is offset from the center. Value between 0 and 1."
+      "description": {
+		"en": "Determines how much the exploded slice is offset from the center. Value between 0 and 1.",
+		"jp": "Determines how much the exploded slice is offset from the center. Value between 0 and 1."
+	}
     },
     "explodedSlices": {
       "type": "array",
       "defaultValue": null,
-      "description": "Gets or sets the collection of exploded slice indices.<br>            Should be an array of integers that indicate the indexes of the slices to explode.",
+      "description": {
+		"en": "Gets or sets the collection of exploded slice indices.<br>            Should be an array of integers that indicate the indexes of the slices to explode.",
+		"jp": "Gets or sets the collection of exploded slice indices.<br>            Should be an array of integers that indicate the indexes of the slices to explode."
+	},
       "arrayMemberType": "number",
        "schema": {
 		"Slice Index": {
@@ -159,7 +204,10 @@
 			"required": true,
 			"defaultValue": null,
 			"processValueOnly" : true,
-			"description": "The index of the slices to explode"
+			"description": {
+		"en": "The index of the slices to explode",
+		"jp": "The index of the slices to explode"
+	}
 			}
 		},
 	    "designerDisplayProperty": "Slice Index"
@@ -167,254 +215,395 @@
     "formatLabel": {
       "type": "function",
       "defaultValue": null,
-      "description": "Gets or sets the function to use to transform a pie slice data context into a label for the slice. Function takes one argument of type object.<br>&nbsp;&nbsp;&nbsp;Use context.item to get the item associated with the slice, if any.<br>&nbsp;&nbsp;&nbsp;Use context.actualItemBrush to get the brush used to paint the slice.<br>&nbsp;&nbsp;&nbsp;Use context.outline to get the outline brush used to paint the slice.<br>&nbsp;&nbsp;&nbsp;Use context.itemLabel to get the label object that would be used for the slice.<br>&nbsp;&nbsp;&nbsp;Use context.percentValue to see the percentage value that is associated with the slice.<br>&nbsp;&nbsp;&nbsp;Use context.isOthersSlice to tell if the associated slice is the others slice.<br>&nbsp;&nbsp;&nbsp;Should return a string value that should be used for the label."
+      "description": {
+		"en": "Gets or sets the function to use to transform a pie slice data context into a label for the slice. Function takes one argument of type object.<br>&nbsp;&nbsp;&nbsp;Use context.item to get the item associated with the slice, if any.<br>&nbsp;&nbsp;&nbsp;Use context.actualItemBrush to get the brush used to paint the slice.<br>&nbsp;&nbsp;&nbsp;Use context.outline to get the outline brush used to paint the slice.<br>&nbsp;&nbsp;&nbsp;Use context.itemLabel to get the label object that would be used for the slice.<br>&nbsp;&nbsp;&nbsp;Use context.percentValue to see the percentage value that is associated with the slice.<br>&nbsp;&nbsp;&nbsp;Use context.isOthersSlice to tell if the associated slice is the others slice.<br>&nbsp;&nbsp;&nbsp;Should return a string value that should be used for the label.",
+		"jp": "Gets or sets the function to use to transform a pie slice data context into a label for the slice. Function takes one argument of type object.<br>&nbsp;&nbsp;&nbsp;Use context.item to get the item associated with the slice, if any.<br>&nbsp;&nbsp;&nbsp;Use context.actualItemBrush to get the brush used to paint the slice.<br>&nbsp;&nbsp;&nbsp;Use context.outline to get the outline brush used to paint the slice.<br>&nbsp;&nbsp;&nbsp;Use context.itemLabel to get the label object that would be used for the slice.<br>&nbsp;&nbsp;&nbsp;Use context.percentValue to see the percentage value that is associated with the slice.<br>&nbsp;&nbsp;&nbsp;Use context.isOthersSlice to tell if the associated slice is the others slice.<br>&nbsp;&nbsp;&nbsp;Should return a string value that should be used for the label."
+	}
     },
     "height": {
       "type": "number",
       "defaultValue": null,
-      "description": "The height of the chart. It can be set as a number in pixels, string (px) or percentage (%)."
+      "description": {
+		"en": "The height of the chart. It can be set as a number in pixels, string (px) or percentage (%).",
+		"jp": "The height of the chart. It can be set as a number in pixels, string (px) or percentage (%)."
+	}
     },
     "labelExtent": {
       "type": "number",
       "defaultValue": 10.0,
-      "description": "Gets or sets the pixel amount, by which the labels are offset from the edge of the slices."
+      "description": {
+		"en": "Gets or sets the pixel amount, by which the labels are offset from the edge of the slices.",
+		"jp": "Gets or sets the pixel amount, by which the labels are offset from the edge of the slices."
+	}
     },
     "labelMemberPath": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets or sets the property name that contains the labels."
+      "description": {
+		"en": "Gets or sets the property name that contains the labels.",
+		"jp": "Gets or sets the property name that contains the labels."
+	}
     },
     "labelsPosition": {
       "type": "string",
       "defaultValue": "center",
-      "description": "Specifies the chart label position",
+      "description": {
+		"en": "Specifies the chart label position",
+		"jp": "Specifies the chart label position"
+	},
       "valueOptions": [
         {
           "name": "none",
           "type": "string",
-          "description": "No labels will be displayed."
+          "description": {
+		"en": "No labels will be displayed.",
+		"jp": "No labels will be displayed."
+	}
         },
         {
           "name": "center",
           "type": "string",
-          "description": "Labels will be displayed in the center."
+          "description": {
+		"en": "Labels will be displayed in the center.",
+		"jp": "Labels will be displayed in the center."
+	}
         },
         {
           "name": "insideEnd",
           "type": "string",
-          "description": "Labels will be displayed inside and by the edge of the container."
+          "description": {
+		"en": "Labels will be displayed inside and by the edge of the container.",
+		"jp": "Labels will be displayed inside and by the edge of the container."
+	}
         },
         {
           "name": "outsideEnd",
           "type": "string",
-          "description": "Labels will be displayed outside the container."
+          "description": {
+		"en": "Labels will be displayed outside the container.",
+		"jp": "Labels will be displayed outside the container."
+	}
         },
         {
           "name": "bestFit",
           "type": "string",
-          "description": "Labels will automatically decide their location."
+          "description": {
+		"en": "Labels will automatically decide their location.",
+		"jp": "Labels will automatically decide their location."
+	}
         }
       ]
     },
     "leaderLineMargin": {
       "type": "number",
       "defaultValue": 6.0,
-      "description": "Gets or sets the margin between a label and the end of its leader line."
+      "description": {
+		"en": "Gets or sets the margin between a label and the end of its leader line.",
+		"jp": "Gets or sets the margin between a label and the end of its leader line."
+	}
     },
     "leaderLineType": {
       "type": "string",
       "defaultValue": "straightLine",
-      "description": "Specifies the type of the igPieChart leader line",
+      "description": {
+		"en": "Specifies the type of the igPieChart leader line",
+		"jp": "Specifies the type of the igPieChart leader line"
+	},
       "valueOptions": [
         {
           "name": "straightLine",
           "type": "string",
-          "description": "Defines a stright leader line of the igPieChart"
+          "description": {
+		"en": "Defines a stright leader line of the igPieChart",
+		"jp": "Defines a stright leader line of the igPieChart"
+	}
         },
         {
           "name": "simpleCurve",
           "type": "string",
-          "description": "Defines a simple curve to be the igPieChart leader line"
+          "description": {
+		"en": "Defines a simple curve to be the igPieChart leader line",
+		"jp": "Defines a simple curve to be the igPieChart leader line"
+	}
         },
         {
           "name": "radialCurve",
           "type": "string",
-          "description": "Defines a radial curve to be the igPieChart leader line"
+          "description": {
+		"en": "Defines a radial curve to be the igPieChart leader line",
+		"jp": "Defines a radial curve to be the igPieChart leader line"
+	}
         }
       ]
     },
     "leaderLineVisibility": {
       "type": "string",
       "defaultValue": "visible",
-      "description": "Specifies the visibility of the igPieChart leader line",
+      "description": {
+		"en": "Specifies the visibility of the igPieChart leader line",
+		"jp": "Specifies the visibility of the igPieChart leader line"
+	},
       "valueOptions": [
         {
           "name": "visible",
           "type": "string",
-          "description": "The igPieChart leader line is visible"
+          "description": {
+		"en": "The igPieChart leader line is visible",
+		"jp": "The igPieChart leader line is visible"
+	}
         },
         {
           "name": "collapsed",
           "type": "string",
-          "description": "The igPieChart leader line is collapsed"
+          "description": {
+		"en": "The igPieChart leader line is collapsed",
+		"jp": "The igPieChart leader line is collapsed"
+	}
         }
       ]
     },
     "legend": {
       "type": "object",
       "defaultValue": null,
-      "description": "can be any valid options accepted by $.ig.ChartLegend, or an instance of an $.ig.ChartLegend itself.",
+      "description": {
+		"en": "can be any valid options accepted by $.ig.ChartLegend, or an instance of an $.ig.ChartLegend itself.",
+		"jp": "can be any valid options accepted by $.ig.ChartLegend, or an instance of an $.ig.ChartLegend itself."
+	},
       "schema": {
         "element": {
           "type": "string",
           "defaultValue": null,
-          "description": "The name of the element to turn into a legend."
+          "description": {
+		"en": "The name of the element to turn into a legend.",
+		"jp": "The name of the element to turn into a legend."
+	}
         },
         "type": {
           "type": "string",
           "defaultValue": "legend",
-          "description": "Type of the legend.",
+          "description": {
+		"en": "Type of the legend.",
+		"jp": "Type of the legend."
+	},
           "valueOptions": [
             {
               "name": "item",
               "type": "string",
-              "description": "Specify the legend as item legend. It displays a legend item for each pie in the igPieChart control."
+              "description": {
+		"en": "Specify the legend as item legend. It displays a legend item for each pie in the igPieChart control.",
+		"jp": "Specify the legend as item legend. It displays a legend item for each pie in the igPieChart control."
+	}
             },
             {
               "name": "legend",
               "type": "string",
-              "description": "Specify the legend as legend. It is supported by all types of series in the igDataChart control."
+              "description": {
+		"en": "Specify the legend as legend. It is supported by all types of series in the igDataChart control.",
+		"jp": "Specify the legend as legend. It is supported by all types of series in the igDataChart control."
+	}
             }
           ]
         },
         "width": {
           "type": "number",
           "defaultValue": null,
-          "description": "The width of the legend."
+          "description": {
+		"en": "The width of the legend.",
+		"jp": "The width of the legend."
+	}
         },
         "height": {
           "type": "number",
           "defaultValue": null,
-          "description": "The height of the legend."
+          "description": {
+		"en": "The height of the legend.",
+		"jp": "The height of the legend."
+	}
         }
       }
     },
     "legendItemBadgeTemplate": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the LegendItemBadgeTemplate property.<br>&nbsp;&nbsp;&nbsp;The legend item badge is created according to the LegendItemBadgeTemplate on-demand by<br>&nbsp;&nbsp;&nbsp;the chart object itself.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
+      "description": {
+		"en": "Gets or sets the LegendItemBadgeTemplate property.<br>&nbsp;&nbsp;&nbsp;The legend item badge is created according to the LegendItemBadgeTemplate on-demand by<br>&nbsp;&nbsp;&nbsp;the chart object itself.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
+		"jp": "Gets or sets the LegendItemBadgeTemplate property.<br>&nbsp;&nbsp;&nbsp;The legend item badge is created according to the LegendItemBadgeTemplate on-demand by<br>&nbsp;&nbsp;&nbsp;the chart object itself.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
+	},
       "schemaRef": "dataChart.circleMarkerTemplate"
     },
     "legendItemTemplate": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the LegendItemTemplate property.<br>&nbsp;&nbsp;&nbsp;The legend item control content is created according to the LegendItemTemplate on-demand by<br>&nbsp;&nbsp;&nbsp;the chart object itself.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
+      "description": {
+		"en": "Gets or sets the LegendItemTemplate property.<br>&nbsp;&nbsp;&nbsp;The legend item control content is created according to the LegendItemTemplate on-demand by<br>&nbsp;&nbsp;&nbsp;the chart object itself.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
+		"jp": "Gets or sets the LegendItemTemplate property.<br>&nbsp;&nbsp;&nbsp;The legend item control content is created according to the LegendItemTemplate on-demand by<br>&nbsp;&nbsp;&nbsp;the chart object itself.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
+	},
       "schemaRef": "dataChart.circleMarkerTemplate"
     },
     "othersCategoryStyle": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets or sets a style object that can be used to override the style settings on the others category slice."
+      "description": {
+		"en": "Gets or sets a style object that can be used to override the style settings on the others category slice.",
+		"jp": "Gets or sets a style object that can be used to override the style settings on the others category slice."
+	}
     },
     "othersCategoryText": {
       "type": "string",
       "defaultValue": "Others",
-      "description": "Gets or sets the label of the Others slice."
+      "description": {
+		"en": "Gets or sets the label of the Others slice.",
+		"jp": "Gets or sets the label of the Others slice."
+	}
     },
     "othersCategoryThreshold": {
       "type": "number",
       "defaultValue": 3.0,
-      "description": "Gets or sets the threshold value that determines if slices are grouped into the Others slice."
+      "description": {
+		"en": "Gets or sets the threshold value that determines if slices are grouped into the Others slice.",
+		"jp": "Gets or sets the threshold value that determines if slices are grouped into the Others slice."
+	}
     },
     "othersCategoryType": {
       "type": "string",
       "defaultValue": "percent",
-      "description": "Gets or sets whether to use numeric or percent-based threshold value.",
+      "description": {
+		"en": "Gets or sets whether to use numeric or percent-based threshold value.",
+		"jp": "Gets or sets whether to use numeric or percent-based threshold value."
+	},
       "valueOptions": [
         {
           "name": "number",
           "type": "string",
-          "description": "Data value is compared directly to the value of OthersCategoryThreshold."
+          "description": {
+		"en": "Data value is compared directly to the value of OthersCategoryThreshold.",
+		"jp": "Data value is compared directly to the value of OthersCategoryThreshold."
+	}
         },
         {
           "name": "percent",
           "type": "string",
-          "description": "Data value is compared to OthersCategoryThreshold as a percentage of the total."
+          "description": {
+		"en": "Data value is compared to OthersCategoryThreshold as a percentage of the total.",
+		"jp": "Data value is compared to OthersCategoryThreshold as a percentage of the total."
+	}
         }
       ]
     },
     "outlines": {
       "type": "object",
       "defaultValue": null,
-      "description": "Gets or sets the Outlines property.<br>&nbsp;&nbsp;&nbsp;The Outlines property defines the palette from which automatically assigned slice outlines are selected.<br>&nbsp;&nbsp;&nbsp;The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
+      "description": {
+		"en": "Gets or sets the Outlines property.<br>&nbsp;&nbsp;&nbsp;The Outlines property defines the palette from which automatically assigned slice outlines are selected.<br>&nbsp;&nbsp;&nbsp;The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
+		"jp": "Gets or sets the Outlines property.<br>&nbsp;&nbsp;&nbsp;The Outlines property defines the palette from which automatically assigned slice outlines are selected.<br>&nbsp;&nbsp;&nbsp;The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
+	},
       "arrayMemberType": "string"
     },
     "radiusFactor": {
       "type": "number",
       "defaultValue": 0.9,
-      "description": "Gets or sets the scaling factor of the chart's radius. Value between 0 and 1."
+      "description": {
+		"en": "Gets or sets the scaling factor of the chart's radius. Value between 0 and 1.",
+		"jp": "Gets or sets the scaling factor of the chart's radius. Value between 0 and 1."
+	}
     },
     "responseDataKey": {
       "type": "string",
       "defaultValue": null,
-      "description": "see $.ig.DataSource. Specifies the name of the property in which data records are held if the response is wrapped."
+      "description": {
+		"en": "see $.ig.DataSource. Specifies the name of the property in which data records are held if the response is wrapped.",
+		"jp": "see $.ig.DataSource. Specifies the name of the property in which data records are held if the response is wrapped."
+	}
     },
     "selectedStyle": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets or sets the style used when a slice is selected."
+      "description": {
+		"en": "Gets or sets the style used when a slice is selected.",
+		"jp": "Gets or sets the style used when a slice is selected."
+	}
     },
     "showTooltip": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Whether the chart should render a tooltip."
+      "description": {
+		"en": "Whether the chart should render a tooltip.",
+		"jp": "Whether the chart should render a tooltip."
+	}
     },
     "startAngle": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "Gets or sets the starting angle of the chart.<br>&nbsp;&nbsp;&nbsp;The default zero value is equivalent to 3 o'clock."
+      "description": {
+		"en": "Gets or sets the starting angle of the chart.<br>&nbsp;&nbsp;&nbsp;The default zero value is equivalent to 3 o'clock.",
+		"jp": "Gets or sets the starting angle of the chart.<br>&nbsp;&nbsp;&nbsp;The default zero value is equivalent to 3 o'clock."
+	}
     },
     "sweepDirection": {
       "type": "string",
       "defaultValue": "clockwise",
-      "description": "Specifies the igPieChart sweep direction",
+      "description": {
+		"en": "Specifies the igPieChart sweep direction",
+		"jp": "Specifies the igPieChart sweep direction"
+	},
       "valueOptions": [
         {
           "name": "counterclockwise",
           "type": "string",
-          "description": "Defines the igPieChart sweep direction to be anticlockwise"
+          "description": {
+		"en": "Defines the igPieChart sweep direction to be anticlockwise",
+		"jp": "Defines the igPieChart sweep direction to be anticlockwise"
+	}
         },
         {
           "name": "clockwise",
           "type": "string",
-          "description": "Defines the igPieChart sweep direction to follow the clock arrow"
+          "description": {
+		"en": "Defines the igPieChart sweep direction to follow the clock arrow",
+		"jp": "Defines the igPieChart sweep direction to follow the clock arrow"
+	}
         }
       ]
     },
     "textStyle": {
       "type": "string",
       "defaultValue": null,
-      "description": "Overrides the style used for text in the pie chart."
+      "description": {
+		"en": "Overrides the style used for text in the pie chart.",
+		"jp": "Overrides the style used for text in the pie chart."
+	}
     },
     "theme": {
       "type": "string",
       "defaultValue": "c",
-      "description": "The swatch used to style this widget"
+      "description": {
+		"en": "The swatch used to style this widget",
+		"jp": "The swatch used to style this widget"
+	}
     },
     "tooltipTemplate": {
       "type": "string",
       "defaultValue": null,
-      "description": "The name of template or the template itself that chart tooltip will use to render."
+      "description": {
+		"en": "The name of template or the template itself that chart tooltip will use to render.",
+		"jp": "The name of template or the template itself that chart tooltip will use to render."
+	}
     },
     "valueMemberPath": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets or Sets the property name that contains the values."
+      "description": {
+		"en": "Gets or Sets the property name that contains the values.",
+		"jp": "Gets or Sets the property name that contains the values."
+	}
     },
     "width": {
       "type": "number",
       "defaultValue": null,
-      "description": "The width of the chart. It can be set as a number in pixels, string (px) or percentage (%)."
+      "description": {
+		"en": "The width of the chart. It can be set as a number in pixels, string (px) or percentage (%).",
+		"jp": "The width of the chart. It can be set as a number in pixels, string (px) or percentage (%)."
+	}
     }
   }
 }

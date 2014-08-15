@@ -18,7 +18,10 @@
           "optional": false
         }
       ],
-      "description": "Event which is raised after end animation when dialod was closed or opened.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments \"evt\" and \"ui\".<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igDialog.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.action to obtain name of action, which triggered animation.<br>&nbsp;&nbsp;&nbsp;&nbsp;\"open\" - dialog was opened<br>&nbsp;&nbsp;&nbsp;&nbsp;\"close\" - dialog was closed"
+      "description": {
+		"en": "Event which is raised after end animation when dialod was closed or opened.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments \"evt\" and \"ui\".<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igDialog.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.action to obtain name of action, which triggered animation.<br>&nbsp;&nbsp;&nbsp;&nbsp;\"open\" - dialog was opened<br>&nbsp;&nbsp;&nbsp;&nbsp;\"close\" - dialog was closed",
+		"jp": "Event which is raised after end animation when dialod was closed or opened.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments \"evt\" and \"ui\".<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igDialog.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.action to obtain name of action, which triggered animation.<br>&nbsp;&nbsp;&nbsp;&nbsp;\"open\" - dialog was opened<br>&nbsp;&nbsp;&nbsp;&nbsp;\"close\" - dialog was closed"
+	}
     },
     "blur": {
       "cancellable": false,
@@ -34,7 +37,10 @@
           "optional": false
         }
       ],
-      "description": "Event which is raised when dialog or its content loses focus.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments \"evt\" and \"ui\".<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt to obtain browser event.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igDialog."
+      "description": {
+		"en": "Event which is raised when dialog or its content loses focus.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments \"evt\" and \"ui\".<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt to obtain browser event.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igDialog.",
+		"jp": "Event which is raised when dialog or its content loses focus.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments \"evt\" and \"ui\".<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt to obtain browser event.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igDialog."
+	}
     },
     "focus": {
       "cancellable": false,
@@ -50,7 +56,10 @@
           "optional": false
         }
       ],
-      "description": "Event which is raised when dialog or its content gets focus.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments \"evt\" and \"ui\".<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt to obtain browser event.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igDialog."
+      "description": {
+		"en": "Event which is raised when dialog or its content gets focus.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments \"evt\" and \"ui\".<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt to obtain browser event.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igDialog.",
+		"jp": "Event which is raised when dialog or its content gets focus.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments \"evt\" and \"ui\".<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt to obtain browser event.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igDialog."
+	}
     },
     "stateChanged": {
       "cancellable": false,
@@ -66,7 +75,10 @@
           "optional": false
         }
       ],
-      "description": "Event which is raised after state of dialog was changed.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments \"evt\" and \"ui\".<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt to obtain browser event. That parameter can be null if state was modified from codes.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igDialog.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.button to obtain name of button, which triggered event. Note: if state was modified from codes, then \"button\" is undefined.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.oldState to obtain old state of dialog, which can be one of following: \"opened\", \"minimized\", \"maximized\", \"closed\".<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.oldPinned to obtain boolean value of old pin state of dialog.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.action to obtain name of action. That can be one of the following:<br>&nbsp;&nbsp;&nbsp;&nbsp;\"open\" - dialog was opened. Note: event is raised before possible \"openAnimation\" started.<br>&nbsp;&nbsp;&nbsp;&nbsp;\"close\" - dialog was closed. Note: event is raised before possible \"closeAnimation\" started.<br>&nbsp;&nbsp;&nbsp;&nbsp;\"minimize\" - dialog was minimized<br>&nbsp;&nbsp;&nbsp;&nbsp;\"maximize\" - dialog was maximized<br>&nbsp;&nbsp;&nbsp;&nbsp;\"restore\" - dialog was restored from minimized or maximized state<br>&nbsp;&nbsp;&nbsp;&nbsp;\"pin\" - dialog was pinned<br>&nbsp;&nbsp;&nbsp;&nbsp;\"unpin\" - dialog was unpinned"
+      "description": {
+		"en": "Event which is raised after state of dialog was changed.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments \"evt\" and \"ui\".<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt to obtain browser event. That parameter can be null if state was modified from codes.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igDialog.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.button to obtain name of button, which triggered event. Note: if state was modified from codes, then \"button\" is undefined.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.oldState to obtain old state of dialog, which can be one of following: \"opened\", \"minimized\", \"maximized\", \"closed\".<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.oldPinned to obtain boolean value of old pin state of dialog.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.action to obtain name of action. That can be one of the following:<br>&nbsp;&nbsp;&nbsp;&nbsp;\"open\" - dialog was opened. Note: event is raised before possible \"openAnimation\" started.<br>&nbsp;&nbsp;&nbsp;&nbsp;\"close\" - dialog was closed. Note: event is raised before possible \"closeAnimation\" started.<br>&nbsp;&nbsp;&nbsp;&nbsp;\"minimize\" - dialog was minimized<br>&nbsp;&nbsp;&nbsp;&nbsp;\"maximize\" - dialog was maximized<br>&nbsp;&nbsp;&nbsp;&nbsp;\"restore\" - dialog was restored from minimized or maximized state<br>&nbsp;&nbsp;&nbsp;&nbsp;\"pin\" - dialog was pinned<br>&nbsp;&nbsp;&nbsp;&nbsp;\"unpin\" - dialog was unpinned",
+		"jp": "Event which is raised after state of dialog was changed.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments \"evt\" and \"ui\".<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt to obtain browser event. That parameter can be null if state was modified from codes.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igDialog.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.button to obtain name of button, which triggered event. Note: if state was modified from codes, then \"button\" is undefined.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.oldState to obtain old state of dialog, which can be one of following: \"opened\", \"minimized\", \"maximized\", \"closed\".<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.oldPinned to obtain boolean value of old pin state of dialog.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.action to obtain name of action. That can be one of the following:<br>&nbsp;&nbsp;&nbsp;&nbsp;\"open\" - dialog was opened. Note: event is raised before possible \"openAnimation\" started.<br>&nbsp;&nbsp;&nbsp;&nbsp;\"close\" - dialog was closed. Note: event is raised before possible \"closeAnimation\" started.<br>&nbsp;&nbsp;&nbsp;&nbsp;\"minimize\" - dialog was minimized<br>&nbsp;&nbsp;&nbsp;&nbsp;\"maximize\" - dialog was maximized<br>&nbsp;&nbsp;&nbsp;&nbsp;\"restore\" - dialog was restored from minimized or maximized state<br>&nbsp;&nbsp;&nbsp;&nbsp;\"pin\" - dialog was pinned<br>&nbsp;&nbsp;&nbsp;&nbsp;\"unpin\" - dialog was unpinned"
+	}
     },
     "stateChanging": {
       "cancellable": true,
@@ -82,153 +94,240 @@
           "optional": false
         }
       ],
-      "description": "Event which is raised before state of dialog was changed.<br>&nbsp;&nbsp;&nbsp;&nbsp;Return false in order to cancel action.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments \"evt\" and \"ui\".<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt to obtain browser event. That parameter can be null if state was modified from codes.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igDialog.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.button to obtain name of button, which triggered event. Note: if state was modified from codes, then \"button\" is undefined.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.oldState to obtain old state of dialog, which can be one of following: \"opened\", \"minimized\", \"maximized\", \"closed\".<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.oldPinned to obtain boolean value of old pin state of dialog.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.action to obtain name of action. That can be one of the following:<br>&nbsp;&nbsp;&nbsp;&nbsp;\"open\" - request to open dialog<br>&nbsp;&nbsp;&nbsp;&nbsp;\"close\" - request to close dialog<br>&nbsp;&nbsp;&nbsp;&nbsp;\"minimize\" - request to minimize dialog<br>&nbsp;&nbsp;&nbsp;&nbsp;\"maximize\" - request to maximize dialog<br>&nbsp;&nbsp;&nbsp;&nbsp;\"restore\" - request to restore dialog from minimized or maximized state<br>&nbsp;&nbsp;&nbsp;&nbsp;\"pin\" - request to pin dialog<br>&nbsp;&nbsp;&nbsp;&nbsp;\"unpin\" - request to unpin dialog"
+      "description": {
+		"en": "Event which is raised before state of dialog was changed.<br>&nbsp;&nbsp;&nbsp;&nbsp;Return false in order to cancel action.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments \"evt\" and \"ui\".<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt to obtain browser event. That parameter can be null if state was modified from codes.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igDialog.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.button to obtain name of button, which triggered event. Note: if state was modified from codes, then \"button\" is undefined.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.oldState to obtain old state of dialog, which can be one of following: \"opened\", \"minimized\", \"maximized\", \"closed\".<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.oldPinned to obtain boolean value of old pin state of dialog.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.action to obtain name of action. That can be one of the following:<br>&nbsp;&nbsp;&nbsp;&nbsp;\"open\" - request to open dialog<br>&nbsp;&nbsp;&nbsp;&nbsp;\"close\" - request to close dialog<br>&nbsp;&nbsp;&nbsp;&nbsp;\"minimize\" - request to minimize dialog<br>&nbsp;&nbsp;&nbsp;&nbsp;\"maximize\" - request to maximize dialog<br>&nbsp;&nbsp;&nbsp;&nbsp;\"restore\" - request to restore dialog from minimized or maximized state<br>&nbsp;&nbsp;&nbsp;&nbsp;\"pin\" - request to pin dialog<br>&nbsp;&nbsp;&nbsp;&nbsp;\"unpin\" - request to unpin dialog",
+		"jp": "Event which is raised before state of dialog was changed.<br>&nbsp;&nbsp;&nbsp;&nbsp;Return false in order to cancel action.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments \"evt\" and \"ui\".<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt to obtain browser event. That parameter can be null if state was modified from codes.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igDialog.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.button to obtain name of button, which triggered event. Note: if state was modified from codes, then \"button\" is undefined.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.oldState to obtain old state of dialog, which can be one of following: \"opened\", \"minimized\", \"maximized\", \"closed\".<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.oldPinned to obtain boolean value of old pin state of dialog.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.action to obtain name of action. That can be one of the following:<br>&nbsp;&nbsp;&nbsp;&nbsp;\"open\" - request to open dialog<br>&nbsp;&nbsp;&nbsp;&nbsp;\"close\" - request to close dialog<br>&nbsp;&nbsp;&nbsp;&nbsp;\"minimize\" - request to minimize dialog<br>&nbsp;&nbsp;&nbsp;&nbsp;\"maximize\" - request to maximize dialog<br>&nbsp;&nbsp;&nbsp;&nbsp;\"restore\" - request to restore dialog from minimized or maximized state<br>&nbsp;&nbsp;&nbsp;&nbsp;\"pin\" - request to pin dialog<br>&nbsp;&nbsp;&nbsp;&nbsp;\"unpin\" - request to unpin dialog"
+	}
     }
   },
   "properties": {
     "closeAnimation": {
       "type": "string",
       "defaultValue": null,
-      "description": "Sets gets animation applied to dialog when it is closed. That can be any object supported by jquery hide(param) method."
+      "description": {
+		"en": "Sets gets animation applied to dialog when it is closed. That can be any object supported by jquery hide(param) method.",
+		"jp": "Sets gets animation applied to dialog when it is closed. That can be any object supported by jquery hide(param) method."
+	}
     },
     "closeButtonTitle": {
       "type": "string",
       "defaultValue": null,
-      "description": "Sets gets title/tooltip for close button in dialog. That is override for $.ig.Dialog.locale.closeButtonTitle."
+      "description": {
+		"en": "Sets gets title/tooltip for close button in dialog. That is override for $.ig.Dialog.locale.closeButtonTitle.",
+		"jp": "Sets gets title/tooltip for close button in dialog. That is override for $.ig.Dialog.locale.closeButtonTitle."
+	}
     },
     "closeOnEscape": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Sets gets ability to close dialog on Esc key."
+      "description": {
+		"en": "Sets gets ability to close dialog on Esc key.",
+		"jp": "Sets gets ability to close dialog on Esc key."
+	}
     },
     "dialogClass": {
       "type": "string",
       "defaultValue": null,
-      "description": "Sets gets name of css class which is applied to the main DIV element of dialog."
+      "description": {
+		"en": "Sets gets name of css class which is applied to the main DIV element of dialog.",
+		"jp": "Sets gets name of css class which is applied to the main DIV element of dialog."
+	}
     },
     "draggable": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Sets gets ability to drag dialog by end user."
+      "description": {
+		"en": "Sets gets ability to drag dialog by end user.",
+		"jp": "Sets gets ability to drag dialog by end user."
+	}
     },
     "enableDblclick": {
       "type": "string",
       "defaultValue": "auto",
-      "description": " Sets gets processing dblclick on dialog-header.",
+      "description": {
+		"en": " Sets gets processing dblclick on dialog-header.",
+		"jp": " Sets gets processing dblclick on dialog-header."
+	},
       "valueOptions": [
         {
           "name": "auto",
           "type": "string",
-          "description": "If the dialog was minimized, then on double click its state will be set to normal. If option is set to 'auto' and showMaximizeButton is enabled then dialog will be maximized when it was in normal state, and dialog-state will be set to normal if it was maximized."
+          "description": {
+		"en": "If the dialog was minimized, then on double click its state will be set to normal. If option is set to 'auto' and showMaximizeButton is enabled then dialog will be maximized when it was in normal state, and dialog-state will be set to normal if it was maximized.",
+		"jp": "If the dialog was minimized, then on double click its state will be set to normal. If option is set to 'auto' and showMaximizeButton is enabled then dialog will be maximized when it was in normal state, and dialog-state will be set to normal if it was maximized."
+	}
         },
         {
           "name": "true",
           "type": "string",
-          "description": "If dialog was minimized, then its state will be set to normal. The dialog will be maximized when it was in normal state, and dialog-state will be set to normal if it was maximized."
+          "description": {
+		"en": "If dialog was minimized, then its state will be set to normal. The dialog will be maximized when it was in normal state, and dialog-state will be set to normal if it was maximized.",
+		"jp": "If dialog was minimized, then its state will be set to normal. The dialog will be maximized when it was in normal state, and dialog-state will be set to normal if it was maximized."
+	}
         },
         {
           "name": "false",
           "type": "string",
-          "description": "Dialog will not respond on double click"
+          "description": {
+		"en": "Dialog will not respond on double click",
+		"jp": "Dialog will not respond on double click"
+	}
         }
       ]
     },
     "enableHeaderFocus": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Sets gets ability to adjust state of header depending on focused and not-focused states. Note: the \"trackFocus\" option should be enabled."
+      "description": {
+		"en": "Sets gets ability to adjust state of header depending on focused and not-focused states. Note: the \"trackFocus\" option should be enabled.",
+		"jp": "Sets gets ability to adjust state of header depending on focused and not-focused states. Note: the \"trackFocus\" option should be enabled."
+	}
     },
     "footerText": {
       "type": "string",
       "defaultValue": null,
-      "description": "Sets gets text which appears in footer of dialog."
+      "description": {
+		"en": "Sets gets text which appears in footer of dialog.",
+		"jp": "Sets gets text which appears in footer of dialog."
+	}
     },
     "headerText": {
       "type": "string",
       "defaultValue": null,
-      "description": "Sets gets text which appears in header of dialog."
+      "description": {
+		"en": "Sets gets text which appears in header of dialog.",
+		"jp": "Sets gets text which appears in header of dialog."
+	}
     },
     "height": {
       "type": "number",
       "defaultValue": null,
-      "description": "Sets gets initial height of dialog in pixels for normal state.<br>&nbsp;&nbsp;&nbsp;&nbsp;Besides numeric values, following units are supported: \"px\", \"em\" and \"%\".<br>&nbsp;&nbsp;&nbsp;&nbsp;In case of \"%\", the size of browser window is used and it has effect only on open action."
+      "description": {
+		"en": "Sets gets initial height of dialog in pixels for normal state.<br>&nbsp;&nbsp;&nbsp;&nbsp;Besides numeric values, following units are supported: \"px\", \"em\" and \"%\".<br>&nbsp;&nbsp;&nbsp;&nbsp;In case of \"%\", the size of browser window is used and it has effect only on open action.",
+		"jp": "Sets gets initial height of dialog in pixels for normal state.<br>&nbsp;&nbsp;&nbsp;&nbsp;Besides numeric values, following units are supported: \"px\", \"em\" and \"%\".<br>&nbsp;&nbsp;&nbsp;&nbsp;In case of \"%\", the size of browser window is used and it has effect only on open action."
+	}
     },
     "imageClass": {
       "type": "string",
       "defaultValue": null,
-      "description": "Sets gets name of css class which is applied to the SPAN element located on the left side of header."
+      "description": {
+		"en": "Sets gets name of css class which is applied to the SPAN element located on the left side of header.",
+		"jp": "Sets gets name of css class which is applied to the SPAN element located on the left side of header."
+	}
     },
     "maxHeight": {
       "type": "number",
       "defaultValue": null,
-      "description": "Sets gets maximal height of dialog in normal state. Note: that option has effect only while resizing dialog by end user."
+      "description": {
+		"en": "Sets gets maximal height of dialog in normal state. Note: that option has effect only while resizing dialog by end user.",
+		"jp": "Sets gets maximal height of dialog in normal state. Note: that option has effect only while resizing dialog by end user."
+	}
     },
     "maximizeButtonTitle": {
       "type": "string",
       "defaultValue": null,
-      "description": "Sets gets title/tooltip for maximize button in dialog. That is override for $.ig.Dialog.locale.maximizeButtonTitle."
+      "description": {
+		"en": "Sets gets title/tooltip for maximize button in dialog. That is override for $.ig.Dialog.locale.maximizeButtonTitle.",
+		"jp": "Sets gets title/tooltip for maximize button in dialog. That is override for $.ig.Dialog.locale.maximizeButtonTitle."
+	}
     },
     "maxWidth": {
       "type": "number",
       "defaultValue": null,
-      "description": "Sets gets maximal width of dialog in normal state. Note: that option has effect only while resizing dialog by end user."
+      "description": {
+		"en": "Sets gets maximal width of dialog in normal state. Note: that option has effect only while resizing dialog by end user.",
+		"jp": "Sets gets maximal width of dialog in normal state. Note: that option has effect only while resizing dialog by end user."
+	}
     },
     "minHeight": {
       "type": "number",
       "defaultValue": 100.0,
-      "description": "Sets gets minimal height of dialog in normal state."
+      "description": {
+		"en": "Sets gets minimal height of dialog in normal state.",
+		"jp": "Sets gets minimal height of dialog in normal state."
+	}
     },
     "minimizeButtonTitle": {
       "type": "string",
       "defaultValue": null,
-      "description": "Sets gets title/tooltip for minimize button in dialog. That is override for $.ig.Dialog.locale.minimizeButtonTitle."
+      "description": {
+		"en": "Sets gets title/tooltip for minimize button in dialog. That is override for $.ig.Dialog.locale.minimizeButtonTitle.",
+		"jp": "Sets gets title/tooltip for minimize button in dialog. That is override for $.ig.Dialog.locale.minimizeButtonTitle."
+	}
     },
     "minWidth": {
       "type": "number",
       "defaultValue": 150.0,
-      "description": "Sets gets minimal width of dialog in normal state."
+      "description": {
+		"en": "Sets gets minimal width of dialog in normal state.",
+		"jp": "Sets gets minimal width of dialog in normal state."
+	}
     },
     "modal": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Sets gets modal state of dialog.<br>&nbsp;&nbsp;&nbsp;&nbsp;If there are more than 1 modal igDialog, then last opened dialog wins and becomes on the top.<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: modal functionality is not supported when dialog is minimized or pinned, because that will trigger misbehavior."
+      "description": {
+		"en": "Sets gets modal state of dialog.<br>&nbsp;&nbsp;&nbsp;&nbsp;If there are more than 1 modal igDialog, then last opened dialog wins and becomes on the top.<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: modal functionality is not supported when dialog is minimized or pinned, because that will trigger misbehavior.",
+		"jp": "Sets gets modal state of dialog.<br>&nbsp;&nbsp;&nbsp;&nbsp;If there are more than 1 modal igDialog, then last opened dialog wins and becomes on the top.<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: modal functionality is not supported when dialog is minimized or pinned, because that will trigger misbehavior."
+	}
     },
     "openAnimation": {
       "type": "string",
       "defaultValue": null,
-      "description": "Sets gets animation applied to dialog when it is opened. That can be any object supported by jquery show(param) method."
+      "description": {
+		"en": "Sets gets animation applied to dialog when it is opened. That can be any object supported by jquery show(param) method.",
+		"jp": "Sets gets animation applied to dialog when it is opened. That can be any object supported by jquery show(param) method."
+	}
     },
     "pinButtonTitle": {
       "type": "string",
       "defaultValue": null,
-      "description": "Sets gets title/tooltip for pin button in dialog. That is override for $.ig.Dialog.locale.pinButtonTitle."
+      "description": {
+		"en": "Sets gets title/tooltip for pin button in dialog. That is override for $.ig.Dialog.locale.pinButtonTitle.",
+		"jp": "Sets gets title/tooltip for pin button in dialog. That is override for $.ig.Dialog.locale.pinButtonTitle."
+	}
     },
     "pinned": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Sets gets pinned state of dialog.<br>&nbsp;&nbsp;&nbsp;&nbsp;When dialog is pinned, then the html element of dialog is moved to the original container where target element was located and position:absolute is removed.<br>&nbsp;&nbsp;&nbsp;&nbsp;Pinned dialog does not support modal state, maximized state and it can not be moved.<br>&nbsp;&nbsp;&nbsp;&nbsp;Notes:<br>&nbsp;&nbsp;&nbsp;&nbsp;1. If parent element of original target-element is invisible, then pinned dialog becomes invisible as well.<br>&nbsp;&nbsp;&nbsp;&nbsp;2. Pinned state is not supported for modal dialog."
+      "description": {
+		"en": "Sets gets pinned state of dialog.<br>&nbsp;&nbsp;&nbsp;&nbsp;When dialog is pinned, then the html element of dialog is moved to the original container where target element was located and position:absolute is removed.<br>&nbsp;&nbsp;&nbsp;&nbsp;Pinned dialog does not support modal state, maximized state and it can not be moved.<br>&nbsp;&nbsp;&nbsp;&nbsp;Notes:<br>&nbsp;&nbsp;&nbsp;&nbsp;1. If parent element of original target-element is invisible, then pinned dialog becomes invisible as well.<br>&nbsp;&nbsp;&nbsp;&nbsp;2. Pinned state is not supported for modal dialog.",
+		"jp": "Sets gets pinned state of dialog.<br>&nbsp;&nbsp;&nbsp;&nbsp;When dialog is pinned, then the html element of dialog is moved to the original container where target element was located and position:absolute is removed.<br>&nbsp;&nbsp;&nbsp;&nbsp;Pinned dialog does not support modal state, maximized state and it can not be moved.<br>&nbsp;&nbsp;&nbsp;&nbsp;Notes:<br>&nbsp;&nbsp;&nbsp;&nbsp;1. If parent element of original target-element is invisible, then pinned dialog becomes invisible as well.<br>&nbsp;&nbsp;&nbsp;&nbsp;2. Pinned state is not supported for modal dialog."
+	}
     },
     "pinOnMinimized": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Sets gets ability to automatically pin dialog when dialog was minimized."
+      "description": {
+		"en": "Sets gets ability to automatically pin dialog when dialog was minimized.",
+		"jp": "Sets gets ability to automatically pin dialog when dialog was minimized."
+	}
     },
     "position": {
       "type": "object",
       "defaultValue": null,
-      "description": "Sets gets initial position of dialog. That can be array of 2 numeric values, which represent left/top coordinates.<br>&nbsp;&nbsp;&nbsp;&nbsp;Or it can be object supported by jquery.position(param) method, such as { my: \"left top\", at: \"left top\", offset: \"100 200\" }",
+      "description": {
+		"en": "Sets gets initial position of dialog. That can be array of 2 numeric values, which represent left/top coordinates.<br>&nbsp;&nbsp;&nbsp;&nbsp;Or it can be object supported by jquery.position(param) method, such as { my: \"left top\", at: \"left top\", offset: \"100 200\" }",
+		"jp": "Sets gets initial position of dialog. That can be array of 2 numeric values, which represent left/top coordinates.<br>&nbsp;&nbsp;&nbsp;&nbsp;Or it can be object supported by jquery.position(param) method, such as { my: \"left top\", at: \"left top\", offset: \"100 200\" }"
+	},
       "schema": {
 
             "left": {
                 "type": "number",
                 "defaultValue": null,
-                "description": "X value",
+                "description": {
+		"en": "X value",
+		"jp": "X value"
+	},
                 "required": true
             },
             "top": {
                 "type": "number",
                 "defaultValue": null,
-                "description": "Y value",
+                "description": {
+		"en": "Y value",
+		"jp": "Y value"
+	},
                 "required": true
             }
       }
@@ -236,99 +335,156 @@
     "resizable": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Sets gets ability to resize dialog by end user."
+      "description": {
+		"en": "Sets gets ability to resize dialog by end user.",
+		"jp": "Sets gets ability to resize dialog by end user."
+	}
     },
     "restoreButtonTitle": {
       "type": "string",
       "defaultValue": null,
-      "description": "Sets gets title/tooltip for restore button in dialog. That is override for $.ig.Dialog.locale.restoreButtonTitle."
+      "description": {
+		"en": "Sets gets title/tooltip for restore button in dialog. That is override for $.ig.Dialog.locale.restoreButtonTitle.",
+		"jp": "Sets gets title/tooltip for restore button in dialog. That is override for $.ig.Dialog.locale.restoreButtonTitle."
+	}
     },
     "showCloseButton": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Sets gets visibility of close button in header."
+      "description": {
+		"en": "Sets gets visibility of close button in header.",
+		"jp": "Sets gets visibility of close button in header."
+	}
     },
     "showFooter": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Sets gets visibility of footer."
+      "description": {
+		"en": "Sets gets visibility of footer.",
+		"jp": "Sets gets visibility of footer."
+	}
     },
     "showHeader": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Sets gets visibility of header."
+      "description": {
+		"en": "Sets gets visibility of header.",
+		"jp": "Sets gets visibility of header."
+	}
     },
     "showMaximizeButton": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Sets gets visibility of maximize button in header."
+      "description": {
+		"en": "Sets gets visibility of maximize button in header.",
+		"jp": "Sets gets visibility of maximize button in header."
+	}
     },
     "showMinimizeButton": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Sets gets visibility of minimize button in header."
+      "description": {
+		"en": "Sets gets visibility of minimize button in header.",
+		"jp": "Sets gets visibility of minimize button in header."
+	}
     },
     "showPinButton": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Sets gets visibility of pin button in header."
+      "description": {
+		"en": "Sets gets visibility of pin button in header.",
+		"jp": "Sets gets visibility of pin button in header."
+	}
     },
     "state": {
       "type": "string",
       "defaultValue": "opened",
-      "description": " Sets gets state of dialog.",
+      "description": {
+		"en": " Sets gets state of dialog.",
+		"jp": " Sets gets state of dialog."
+	},
       "valueOptions": [
         {
           "name": "opened",
           "type": "string",
-          "description": " Dialog is opened."
+          "description": {
+		"en": " Dialog is opened.",
+		"jp": " Dialog is opened."
+	}
         },
         {
           "name": "minimized",
           "type": "string",
-          "description": " Dialog is minimized."
+          "description": {
+		"en": " Dialog is minimized.",
+		"jp": " Dialog is minimized."
+	}
         },
         {
           "name": "maximized",
           "type": "string",
-          "description": " Dialog is maximized."
+          "description": {
+		"en": " Dialog is maximized.",
+		"jp": " Dialog is maximized."
+	}
         },
         {
           "name": "closed",
           "type": "string",
-          "description": " Dialog is closed."
+          "description": {
+		"en": " Dialog is closed.",
+		"jp": " Dialog is closed."
+	}
         }
       ]
     },
     "tabIndex": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "Sets gets value for tabIndex attribute applied to main html element of dialog."
+      "description": {
+		"en": "Sets gets value for tabIndex attribute applied to main html element of dialog.",
+		"jp": "Sets gets value for tabIndex attribute applied to main html element of dialog."
+	}
     },
     "temporaryUrl": {
       "type": "string",
       "defaultValue": null,
-      "description": "Sets gets temporary value for src, which is used while changing parent of base element if it is instance of IFRAME. That is allows to get around possible javascript exceptions under IE."
+      "description": {
+		"en": "Sets gets temporary value for src, which is used while changing parent of base element if it is instance of IFRAME. That is allows to get around possible javascript exceptions under IE.",
+		"jp": "Sets gets temporary value for src, which is used while changing parent of base element if it is instance of IFRAME. That is allows to get around possible javascript exceptions under IE."
+	}
     },
     "trackFocus": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Sets gets ability to process focus and blur events of child elements located in dialog in order to maintain focused state.<br>&nbsp;&nbsp;&nbsp;&nbsp;Notes:<br>&nbsp;&nbsp;&nbsp;&nbsp;If that option is enabled, then focus and blur event handlers are added to all child elements of dialog.<br>&nbsp;&nbsp;&nbsp;&nbsp;If dialog is modal or it can be maximized, then it is not recommended to disable that option.<br>&nbsp;&nbsp;&nbsp;&nbsp;If that option is modified after igDialog was already created, then depending on current state of dialog, it will be temporary closed-opened or opened-closed."
+      "description": {
+		"en": "Sets gets ability to process focus and blur events of child elements located in dialog in order to maintain focused state.<br>&nbsp;&nbsp;&nbsp;&nbsp;Notes:<br>&nbsp;&nbsp;&nbsp;&nbsp;If that option is enabled, then focus and blur event handlers are added to all child elements of dialog.<br>&nbsp;&nbsp;&nbsp;&nbsp;If dialog is modal or it can be maximized, then it is not recommended to disable that option.<br>&nbsp;&nbsp;&nbsp;&nbsp;If that option is modified after igDialog was already created, then depending on current state of dialog, it will be temporary closed-opened or opened-closed.",
+		"jp": "Sets gets ability to process focus and blur events of child elements located in dialog in order to maintain focused state.<br>&nbsp;&nbsp;&nbsp;&nbsp;Notes:<br>&nbsp;&nbsp;&nbsp;&nbsp;If that option is enabled, then focus and blur event handlers are added to all child elements of dialog.<br>&nbsp;&nbsp;&nbsp;&nbsp;If dialog is modal or it can be maximized, then it is not recommended to disable that option.<br>&nbsp;&nbsp;&nbsp;&nbsp;If that option is modified after igDialog was already created, then depending on current state of dialog, it will be temporary closed-opened or opened-closed."
+	}
     },
     "unpinButtonTitle": {
       "type": "string",
       "defaultValue": null,
-      "description": "Sets gets title/tooltip for unpin button in dialog. That is override for $.ig.Dialog.locale.unpinButtonTitle."
+      "description": {
+		"en": "Sets gets title/tooltip for unpin button in dialog. That is override for $.ig.Dialog.locale.unpinButtonTitle.",
+		"jp": "Sets gets title/tooltip for unpin button in dialog. That is override for $.ig.Dialog.locale.unpinButtonTitle."
+	}
     },
     "width": {
       "type": "number",
       "defaultValue": 300.0,
-      "description": "Sets gets initial width of dialog in pixels for normal state.<br>&nbsp;&nbsp;&nbsp;&nbsp;Besides numeric values, following units are supported: \"px\", \"em\" and \"%\".<br>&nbsp;&nbsp;&nbsp;&nbsp;In case of \"%\", the size of browser window is used and it has effect only on open action."
+      "description": {
+		"en": "Sets gets initial width of dialog in pixels for normal state.<br>&nbsp;&nbsp;&nbsp;&nbsp;Besides numeric values, following units are supported: \"px\", \"em\" and \"%\".<br>&nbsp;&nbsp;&nbsp;&nbsp;In case of \"%\", the size of browser window is used and it has effect only on open action.",
+		"jp": "Sets gets initial width of dialog in pixels for normal state.<br>&nbsp;&nbsp;&nbsp;&nbsp;Besides numeric values, following units are supported: \"px\", \"em\" and \"%\".<br>&nbsp;&nbsp;&nbsp;&nbsp;In case of \"%\", the size of browser window is used and it has effect only on open action."
+	}
     },
     "zIndex": {
       "type": "number",
       "defaultValue": null,
-      "description": "Sets gets value of zIndex applied to the main html element of dialog. If value is not set, then 1000 is used."
+      "description": {
+		"en": "Sets gets value of zIndex applied to the main html element of dialog. If value is not set, then 1000 is used.",
+		"jp": "Sets gets value of zIndex applied to the main html element of dialog. If value is not set, then 1000 is used."
+	}
     }
   }
 }

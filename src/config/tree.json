@@ -18,7 +18,10 @@
           "optional": false
         }
       ],
-      "description": "fired before databinding is performed <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree performing databinding."
+      "description": {
+		"en": "fired before databinding is performed <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree performing databinding.",
+		"jp": "fired before databinding is performed <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree performing databinding."
+	}
     },
     "dataBound": {
       "cancellable": false,
@@ -34,7 +37,10 @@
           "optional": false
         }
       ],
-      "description": "fired after databinding is finished <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree performing databinding.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.dataView to get a reference to the data the tree has been databound to."
+      "description": {
+		"en": "fired after databinding is finished <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree performing databinding.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.dataView to get a reference to the data the tree has been databound to.",
+		"jp": "fired after databinding is finished <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree performing databinding.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.dataView to get a reference to the data the tree has been databound to."
+	}
     },
     "drag": {
       "cancellable": true,
@@ -50,7 +56,10 @@
           "optional": false
         }
       ],
-      "description": "fired on node drag<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.binding to gets a reference to the binding.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.data&nbsp;to get a reference to the data.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.element to get a reference to the element.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.helper to get a reference to the helper.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.offset to get a reference to the offset.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.orginalPosition to get a reference to the original position of the draggable element (the node).<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.path&nbsp;to get a reference to the node path.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.position to get a reference to the current position of the draggable element."
+      "description": {
+		"en": "fired on node drag<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.binding to gets a reference to the binding.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.data&nbsp;to get a reference to the data.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.element to get a reference to the element.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.helper to get a reference to the helper.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.offset to get a reference to the offset.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.orginalPosition to get a reference to the original position of the draggable element (the node).<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.path&nbsp;to get a reference to the node path.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.position to get a reference to the current position of the draggable element.",
+		"jp": "fired on node drag<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.binding to gets a reference to the binding.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.data&nbsp;to get a reference to the data.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.element to get a reference to the element.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.helper to get a reference to the helper.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.offset to get a reference to the offset.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.orginalPosition to get a reference to the original position of the draggable element (the node).<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.path&nbsp;to get a reference to the node path.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.position to get a reference to the current position of the draggable element."
+	}
     },
     "dragStart": {
       "cancellable": true,
@@ -66,7 +75,10 @@
           "optional": false
         }
       ],
-      "description": "fired on node drag start<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.binding to gets a reference to the binding.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.data&nbsp;to get a reference to the data.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.element to get a reference to the element.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.helper to get a reference to the helper.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.offset to get a reference to the offset.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.orginalPosition to get a reference to the original position of the draggable element (the node).<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.path&nbsp;to get a reference to the node path.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.position to get a reference to the current position of the draggable element."
+      "description": {
+		"en": "fired on node drag start<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.binding to gets a reference to the binding.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.data&nbsp;to get a reference to the data.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.element to get a reference to the element.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.helper to get a reference to the helper.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.offset to get a reference to the offset.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.orginalPosition to get a reference to the original position of the draggable element (the node).<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.path&nbsp;to get a reference to the node path.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.position to get a reference to the current position of the draggable element.",
+		"jp": "fired on node drag start<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.binding to gets a reference to the binding.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.data&nbsp;to get a reference to the data.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.element to get a reference to the element.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.helper to get a reference to the helper.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.offset to get a reference to the offset.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.orginalPosition to get a reference to the original position of the draggable element (the node).<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.path&nbsp;to get a reference to the node path.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.position to get a reference to the current position of the draggable element."
+	}
     },
     "dragStop": {
       "cancellable": false,
@@ -82,7 +94,10 @@
           "optional": false
         }
       ],
-      "description": "fired after a drag operation has completed<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.helper to get a reference to the helper.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.offset to get a reference to the offset.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.orginalPosition to get a reference to the original position of the draggable element (the node).<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.position to get a reference to the current position of the draggable element."
+      "description": {
+		"en": "fired after a drag operation has completed<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.helper to get a reference to the helper.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.offset to get a reference to the offset.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.orginalPosition to get a reference to the original position of the draggable element (the node).<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.position to get a reference to the current position of the draggable element.",
+		"jp": "fired after a drag operation has completed<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.helper to get a reference to the helper.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.offset to get a reference to the offset.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.orginalPosition to get a reference to the original position of the draggable element (the node).<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.position to get a reference to the current position of the draggable element."
+	}
     },
     "nodeCheckstateChanged": {
       "cancellable": false,
@@ -98,7 +113,10 @@
           "optional": false
         }
       ],
-      "description": "fired after the checkstate of a node is changed <br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.node to get a reference to the node object the checkbox of which is being interacted with.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.newState to get the new current state of the checkbox.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.newCheckedNodes to get the collection of all checked nodes.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.newPartiallyCheckedNodes to get the collection of all partially checked nodes."
+      "description": {
+		"en": "fired after the checkstate of a node is changed <br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.node to get a reference to the node object the checkbox of which is being interacted with.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.newState to get the new current state of the checkbox.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.newCheckedNodes to get the collection of all checked nodes.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.newPartiallyCheckedNodes to get the collection of all partially checked nodes.",
+		"jp": "fired after the checkstate of a node is changed <br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.node to get a reference to the node object the checkbox of which is being interacted with.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.newState to get the new current state of the checkbox.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.newCheckedNodes to get the collection of all checked nodes.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.newPartiallyCheckedNodes to get the collection of all partially checked nodes."
+	}
     },
     "nodeCheckstateChanging": {
       "cancellable": true,
@@ -114,7 +132,10 @@
           "optional": false
         }
       ],
-      "description": "fired before the checkstate of a node is changed <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.node to get a reference to the node object the checkbox of which is being interacted with.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.currentState to get the current state of the checkbox.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.newState to get the new future state of the checkbox.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.currentCheckedNodes to get the collection of all checked nodes before the new state is applied."
+      "description": {
+		"en": "fired before the checkstate of a node is changed <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.node to get a reference to the node object the checkbox of which is being interacted with.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.currentState to get the current state of the checkbox.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.newState to get the new future state of the checkbox.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.currentCheckedNodes to get the collection of all checked nodes before the new state is applied.",
+		"jp": "fired before the checkstate of a node is changed <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.node to get a reference to the node object the checkbox of which is being interacted with.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.currentState to get the current state of the checkbox.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.newState to get the new future state of the checkbox.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.currentCheckedNodes to get the collection of all checked nodes before the new state is applied."
+	}
     },
     "nodeClick": {
       "cancellable": false,
@@ -130,7 +151,10 @@
           "optional": false
         }
       ],
-      "description": "fired on node click <br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.node to get a reference to the node object being clicked."
+      "description": {
+		"en": "fired on node click <br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.node to get a reference to the node object being clicked.",
+		"jp": "fired on node click <br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.node to get a reference to the node object being clicked."
+	}
     },
     "nodeCollapsed": {
       "cancellable": false,
@@ -146,7 +170,10 @@
           "optional": false
         }
       ],
-      "description": "fired after a node is collapsed <br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.node to get a reference to the collapsed node object."
+      "description": {
+		"en": "fired after a node is collapsed <br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.node to get a reference to the collapsed node object.",
+		"jp": "fired after a node is collapsed <br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.node to get a reference to the collapsed node object."
+	}
     },
     "nodeCollapsing": {
       "cancellable": true,
@@ -162,7 +189,10 @@
           "optional": false
         }
       ],
-      "description": "fired before a node is collapsed <br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.node to get a reference to the node object about to collapse."
+      "description": {
+		"en": "fired before a node is collapsed <br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.node to get a reference to the node object about to collapse.",
+		"jp": "fired before a node is collapsed <br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.node to get a reference to the node object about to collapse."
+	}
     },
     "nodeDoubleClick": {
       "cancellable": false,
@@ -178,7 +208,10 @@
           "optional": false
         }
       ],
-      "description": "fired on node double click<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.path to get a reference to the path of the double clicked node.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.element to get a reference to the jQuery element of the double clicked node.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.data to get the node data.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.binding to get a reference to the bindings object for the level at which the double clicked node is located."
+      "description": {
+		"en": "fired on node double click<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.path to get a reference to the path of the double clicked node.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.element to get a reference to the jQuery element of the double clicked node.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.data to get the node data.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.binding to get a reference to the bindings object for the level at which the double clicked node is located.",
+		"jp": "fired on node double click<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.path to get a reference to the path of the double clicked node.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.element to get a reference to the jQuery element of the double clicked node.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.data to get the node data.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.binding to get a reference to the bindings object for the level at which the double clicked node is located."
+	}
     },
     "nodeDropped": {
       "cancellable": false,
@@ -194,7 +227,10 @@
           "optional": false
         }
       ],
-      "description": "fired after a node drop<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.binding to gets a reference to the binding.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.data&nbsp;to get a reference to the data.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.draggable to get a reference to the draggable element (the node).<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.element to get a reference to the element.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.helper to get a reference to the helper.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.offset to get a reference to the offset.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.path&nbsp;to get a reference to the node path.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.position to get a reference to the current position of the draggable element."
+      "description": {
+		"en": "fired after a node drop<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.binding to gets a reference to the binding.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.data&nbsp;to get a reference to the data.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.draggable to get a reference to the draggable element (the node).<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.element to get a reference to the element.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.helper to get a reference to the helper.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.offset to get a reference to the offset.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.path&nbsp;to get a reference to the node path.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.position to get a reference to the current position of the draggable element.",
+		"jp": "fired after a node drop<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.binding to gets a reference to the binding.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.data&nbsp;to get a reference to the data.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.draggable to get a reference to the draggable element (the node).<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.element to get a reference to the element.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.helper to get a reference to the helper.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.offset to get a reference to the offset.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.path&nbsp;to get a reference to the node path.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.position to get a reference to the current position of the draggable element."
+	}
     },
     "nodeDropping": {
       "cancellable": true,
@@ -210,7 +246,10 @@
           "optional": false
         }
       ],
-      "description": "fired before a node drop<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.binding to gets a reference to the binding.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.data&nbsp;to get a reference to the data.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.draggable to get a reference to the draggable element (the node).<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.element to get a reference to the element.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.helper to get a reference to the helper.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.offset to get a reference to the offset.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.path&nbsp;to get a reference to the node path.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.position to get a reference to the current position of the draggable element."
+      "description": {
+		"en": "fired before a node drop<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.binding to gets a reference to the binding.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.data&nbsp;to get a reference to the data.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.draggable to get a reference to the draggable element (the node).<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.element to get a reference to the element.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.helper to get a reference to the helper.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.offset to get a reference to the offset.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.path&nbsp;to get a reference to the node path.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.position to get a reference to the current position of the draggable element.",
+		"jp": "fired before a node drop<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.binding to gets a reference to the binding.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.data&nbsp;to get a reference to the data.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.draggable to get a reference to the draggable element (the node).<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.element to get a reference to the element.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.helper to get a reference to the helper.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.offset to get a reference to the offset.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.path&nbsp;to get a reference to the node path.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.position to get a reference to the current position of the draggable element."
+	}
     },
     "nodeExpanded": {
       "cancellable": false,
@@ -226,7 +265,10 @@
           "optional": false
         }
       ],
-      "description": "fired after a node is expanded <br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.node to get a reference to the expanded node object."
+      "description": {
+		"en": "fired after a node is expanded <br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.node to get a reference to the expanded node object.",
+		"jp": "fired after a node is expanded <br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.node to get a reference to the expanded node object."
+	}
     },
     "nodeExpanding": {
       "cancellable": true,
@@ -242,7 +284,10 @@
           "optional": false
         }
       ],
-      "description": "fired before a node is expanded <br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.node to get a reference to the node object about to expand."
+      "description": {
+		"en": "fired before a node is expanded <br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.node to get a reference to the node object about to expand.",
+		"jp": "fired before a node is expanded <br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.node to get a reference to the node object about to expand."
+	}
     },
     "nodePopulated": {
       "cancellable": false,
@@ -258,7 +303,10 @@
           "optional": false
         }
       ],
-      "description": "fired after the children of a node are populated in the case of load on demand <br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.path to get a reference to the path of the populated node.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.element to get a reference to the jQuery element of the populated node.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.data to get the node data.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.binding to get a reference to the bindings object for the level at which the populated node is located."
+      "description": {
+		"en": "fired after the children of a node are populated in the case of load on demand <br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.path to get a reference to the path of the populated node.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.element to get a reference to the jQuery element of the populated node.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.data to get the node data.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.binding to get a reference to the bindings object for the level at which the populated node is located.",
+		"jp": "fired after the children of a node are populated in the case of load on demand <br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.path to get a reference to the path of the populated node.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.element to get a reference to the jQuery element of the populated node.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.data to get the node data.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.binding to get a reference to the bindings object for the level at which the populated node is located."
+	}
     },
     "nodePopulating": {
       "cancellable": true,
@@ -274,7 +322,10 @@
           "optional": false
         }
       ],
-      "description": "fired before the children of a node are populated in the case of load on demand <br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.path to get a reference to the path of the node being populated.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.element to get a reference to the jQuery element of the node being populated.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.data to get the node data.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.binding to get a reference to the bindings object for the level at which the populating node is located."
+      "description": {
+		"en": "fired before the children of a node are populated in the case of load on demand <br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.path to get a reference to the path of the node being populated.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.element to get a reference to the jQuery element of the node being populated.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.data to get the node data.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.binding to get a reference to the bindings object for the level at which the populating node is located.",
+		"jp": "fired before the children of a node are populated in the case of load on demand <br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.path to get a reference to the path of the node being populated.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.element to get a reference to the jQuery element of the node being populated.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.data to get the node data.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.binding to get a reference to the bindings object for the level at which the populating node is located."
+	}
     },
     "rendered": {
       "cancellable": false,
@@ -290,7 +341,10 @@
           "optional": false
         }
       ],
-      "description": "fired after rendering of the tree has finished <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree."
+      "description": {
+		"en": "fired after rendering of the tree has finished <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree.",
+		"jp": "fired after rendering of the tree has finished <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree."
+	}
     },
     "rendering": {
       "cancellable": false,
@@ -306,7 +360,10 @@
           "optional": false
         }
       ],
-      "description": "fired before rendering of the tree begins <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree performing rendering.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.dataView to get a reference to the data the tree is going to render."
+      "description": {
+		"en": "fired before rendering of the tree begins <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree performing rendering.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.dataView to get a reference to the data the tree is going to render.",
+		"jp": "fired before rendering of the tree begins <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree performing rendering.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.dataView to get a reference to the data the tree is going to render."
+	}
     },
     "selectionChanged": {
       "cancellable": false,
@@ -322,7 +379,10 @@
           "optional": false
         }
       ],
-      "description": "fired after a new node is selected <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.selectedNodes to get a reference to the selected nodes.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.newNodes to get a reference to the newly added nodes to the selection."
+      "description": {
+		"en": "fired after a new node is selected <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.selectedNodes to get a reference to the selected nodes.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.newNodes to get a reference to the newly added nodes to the selection.",
+		"jp": "fired after a new node is selected <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.selectedNodes to get a reference to the selected nodes.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.newNodes to get a reference to the newly added nodes to the selection."
+	}
     },
     "selectionChanging": {
       "cancellable": true,
@@ -338,70 +398,109 @@
           "optional": false
         }
       ],
-      "description": "fired before a new node is selected <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.selectedNodes to get a reference to currently selected nodes.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.newNodes to get a reference to the new nodes getting selected."
+      "description": {
+		"en": "fired before a new node is selected <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.selectedNodes to get a reference to currently selected nodes.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.newNodes to get a reference to the new nodes getting selected.",
+		"jp": "fired before a new node is selected <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.selectedNodes to get a reference to currently selected nodes.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.newNodes to get a reference to the new nodes getting selected."
+	}
     }
   },
   "properties": {
     "animationDuration": {
       "type": "number",
       "defaultValue": 200.0,
-      "description": "Specifies the duration of each animation such as the expand/collapse."
+      "description": {
+		"en": "Specifies the duration of each animation such as the expand/collapse.",
+		"jp": "Specifies the duration of each animation such as the expand/collapse."
+	}
     },
     "bindings": {
       "type": "object",
       "defaultValue": null,
-      "description": "Specifies the data binding properties and keys.",
+      "description": {
+		"en": "Specifies the data binding properties and keys.",
+		"jp": "Specifies the data binding properties and keys."
+	},
       "schema": {
         "textKey": {
           "type": "string",
           "defaultValue": "",
-          "description": "Specifies the name of the data source property the value of which would be the node text.",
+          "description": {
+		"en": "Specifies the name of the data source property the value of which would be the node text.",
+		"jp": "Specifies the name of the data source property the value of which would be the node text."
+	},
           "required": true
         },
         "valueKey": {
           "type": "string",
           "defaultValue": "",
-          "description": "Specifies the name of the data source property the value of which would be the node value."
+          "description": {
+		"en": "Specifies the name of the data source property the value of which would be the node value.",
+		"jp": "Specifies the name of the data source property the value of which would be the node value."
+	}
         },
         "imageUrlKey": {
           "type": "string",
           "defaultValue": "",
-          "description": "Specifies the name of the data source property the value of which would be used as a URL for the node image."
+          "description": {
+		"en": "Specifies the name of the data source property the value of which would be used as a URL for the node image.",
+		"jp": "Specifies the name of the data source property the value of which would be used as a URL for the node image."
+	}
         },
         "navigateUrlKey": {
           "type": "string",
           "defaultValue": "",
-          "description": "Specifies the name of the data source property the value of which would be used as an href attribute for the node anchor."
+          "description": {
+		"en": "Specifies the name of the data source property the value of which would be used as an href attribute for the node anchor.",
+		"jp": "Specifies the name of the data source property the value of which would be used as an href attribute for the node anchor."
+	}
         },
         "targetKey": {
           "type": "string",
           "defaultValue": "",
-          "description": "Specifies the name of the data source property the value of which would be used as a target attribute for the node anchor."
+          "description": {
+		"en": "Specifies the name of the data source property the value of which would be used as a target attribute for the node anchor.",
+		"jp": "Specifies the name of the data source property the value of which would be used as a target attribute for the node anchor."
+	}
         },
         "expandedKey": {
           "type": "string",
           "defaultValue": "",
-          "description": "Specifies the name of the data source property the value of which would indicate that the node is expanded on initial load."
+          "description": {
+		"en": "Specifies the name of the data source property the value of which would indicate that the node is expanded on initial load.",
+		"jp": "Specifies the name of the data source property the value of which would indicate that the node is expanded on initial load."
+	}
         },
         "primaryKey": {
           "type": "string",
           "defaultValue": null,
-          "description": "Specifies the name of the data source property the value of which is the primary key attribute for the data. This property is used when load on demand is enabled and if specified the node paths would be generated using primary keys instead of indices."
+          "description": {
+		"en": "Specifies the name of the data source property the value of which is the primary key attribute for the data. This property is used when load on demand is enabled and if specified the node paths would be generated using primary keys instead of indices.",
+		"jp": "Specifies the name of the data source property the value of which is the primary key attribute for the data. This property is used when load on demand is enabled and if specified the node paths would be generated using primary keys instead of indices."
+	}
         },
         "nodeContentTemplate": {
           "type": "string",
           "defaultValue": null,
-          "description": "Specifies the node content template for the current layer of bindings. The igTree utilizes jQuery templating for generating node content templates. Please refer to http://api.jquery.com/jquery.tmpl/ for more information."
+          "description": {
+		"en": "Specifies the node content template for the current layer of bindings. The igTree utilizes jQuery templating for generating node content templates. Please refer to http://api.jquery.com/jquery.tmpl/ for more information.",
+		"jp": "Specifies the node content template for the current layer of bindings. The igTree utilizes jQuery templating for generating node content templates. Please refer to http://api.jquery.com/jquery.tmpl/ for more information."
+	}
         },
         "childDataProperty": {
           "type": "string",
           "defaultValue": "",
-          "description": "Specifies the name of the data source property that holds the child data of the current layer node."
+          "description": {
+		"en": "Specifies the name of the data source property that holds the child data of the current layer node.",
+		"jp": "Specifies the name of the data source property that holds the child data of the current layer node."
+	}
         },
         "bindings": {
           "type": "object",
           "defaultValue": {},
-          "description": "Specifies the next layer of bindings in a recursive fashion.",
+          "description": {
+		"en": "Specifies the next layer of bindings in a recursive fashion.",
+		"jp": "Specifies the next layer of bindings in a recursive fashion."
+	},
           "schemaRef": "tree.bindings"
         }
       }
@@ -409,126 +508,198 @@
     "checkboxMode": {
       "type": "string",
       "defaultValue": "off",
-      "description": " Gets the type of checkboxes rendered before the tree nodes. Can be set only at initialization.",
+      "description": {
+		"en": " Gets the type of checkboxes rendered before the tree nodes. Can be set only at initialization.",
+		"jp": " Gets the type of checkboxes rendered before the tree nodes. Can be set only at initialization."
+	},
       "valueOptions": [
         {
           "name": "off",
           "type": "string",
-          "description": " Checkboxes are turned off and not rendered for the tree."
+          "description": {
+		"en": " Checkboxes are turned off and not rendered for the tree.",
+		"jp": " Checkboxes are turned off and not rendered for the tree."
+	}
         },
         {
           "name": "biState",
           "type": "string",
-          "description": " Checkboxes are rendered and support two states (checked and unchecked). Checkboxes do not cascade down or up in this mode."
+          "description": {
+		"en": " Checkboxes are rendered and support two states (checked and unchecked). Checkboxes do not cascade down or up in this mode.",
+		"jp": " Checkboxes are rendered and support two states (checked and unchecked). Checkboxes do not cascade down or up in this mode."
+	}
         },
         {
           "name": "triState",
           "type": "string",
-          "description": " Checkboxes are rendered and support three states (checked, partial and unchecked). Checkboxes cascade up and down in this mode."
+          "description": {
+		"en": " Checkboxes are rendered and support three states (checked, partial and unchecked). Checkboxes cascade up and down in this mode.",
+		"jp": " Checkboxes are rendered and support three states (checked, partial and unchecked). Checkboxes cascade up and down in this mode."
+	}
         }
       ]
     },
     "dataSource": {
       "type": "custom",
       "defaultValue": null,
-      "description": "Specifies any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself."
+      "description": {
+		"en": "Specifies any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself.",
+		"jp": "Specifies any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself."
+	}
     },
     "dataSourceType": {
       "type": "string",
       "defaultValue": null,
-      "description": "Explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property."
+      "description": {
+		"en": "Explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property.",
+		"jp": "Explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property."
+	}
     },
     "dataSourceUrl": {
       "type": "string",
       "defaultValue": null,
-      "description": "Specifies a remote URL accepted by $.ig.DataSource in order to request data from it"
+      "description": {
+		"en": "Specifies a remote URL accepted by $.ig.DataSource in order to request data from it",
+		"jp": "Specifies a remote URL accepted by $.ig.DataSource in order to request data from it"
+	}
     },
     "defaultNodeTarget": {
       "type": "string",
       "defaultValue": "_self",
-      "description": "Specifies the default target of the node anchor."
+      "description": {
+		"en": "Specifies the default target of the node anchor.",
+		"jp": "Specifies the default target of the node anchor."
+	}
     },
     "dragAndDrop": {
       "type": "bool",
       "defaultValue": false,
-      "description": "If set to true it would enable drag and drop functionality."
+      "description": {
+		"en": "If set to true it would enable drag and drop functionality.",
+		"jp": "If set to true it would enable drag and drop functionality."
+	}
     },
     "dragAndDropSettings": {
       "type": "object",
       "defaultValue": null,
-      "description": "Specific settings for the drag and drop functionality.",
+      "description": {
+		"en": "Specific settings for the drag and drop functionality.",
+		"jp": "Specific settings for the drag and drop functionality."
+	},
       "schema": {
         "allowDrop": {
           "type": "bool",
           "defaultValue": false,
-          "description": "Specifies whether the widget will accept D&D from other controls. boolean. Default value is false."
+          "description": {
+		"en": "Specifies whether the widget will accept D&D from other controls. boolean. Default value is false.",
+		"jp": "Specifies whether the widget will accept D&D from other controls. boolean. Default value is false."
+	}
         },
         "dragAndDropMode": {
           "type": "string",
           "defaultValue": "default",
-          "description": "Specifies the D&D mode. Accepted values 'default', 'copy', 'move'. None means the tree does not accept this node.",
+          "description": {
+		"en": "Specifies the D&D mode. Accepted values 'default', 'copy', 'move'. None means the tree does not accept this node.",
+		"jp": "Specifies the D&D mode. Accepted values 'default', 'copy', 'move'. None means the tree does not accept this node."
+	},
           "valueOptions": [
             {
               "name": "default",
               "type": "string",
-              "description": "In this mode 'copy' when Ctrl key is hold, else it means 'move'."
+              "description": {
+		"en": "In this mode 'copy' when Ctrl key is hold, else it means 'move'.",
+		"jp": "In this mode 'copy' when Ctrl key is hold, else it means 'move'."
+	}
             },
             {
               "name": "copy",
               "type": "string",
-              "description": "Always copy the file when it is dragged"
+              "description": {
+		"en": "Always copy the file when it is dragged",
+		"jp": "Always copy the file when it is dragged"
+	}
             },
             {
               "name": "move",
               "type": "string",
-              "description": "Always move the file when it is dragged"
+              "description": {
+		"en": "Always move the file when it is dragged",
+		"jp": "Always move the file when it is dragged"
+	}
             }
           ]
         },
         "dragOpacity": {
           "type": "number",
           "defaultValue": 0.75,
-          "description": "Specifies the opacity of the drag helper: 0 is fully transparent while 1 is fully opaque."
+          "description": {
+		"en": "Specifies the opacity of the drag helper: 0 is fully transparent while 1 is fully opaque.",
+		"jp": "Specifies the opacity of the drag helper: 0 is fully transparent while 1 is fully opaque."
+	}
         },
         "revert": {
           "type": "bool",
           "defaultValue": true,
-          "description": "Specifies whether the helper would revert to its original position upon an invalid drop."
+          "description": {
+		"en": "Specifies whether the helper would revert to its original position upon an invalid drop.",
+		"jp": "Specifies whether the helper would revert to its original position upon an invalid drop."
+	}
         },
         "revertDuration": {
           "type": "number",
           "defaultValue": 500,
-          "description": "Specifies the duration of the revert animation."
+          "description": {
+		"en": "Specifies the duration of the revert animation.",
+		"jp": "Specifies the duration of the revert animation."
+	}
         },
         "zIndex": {
           "type": "number",
           "defaultValue": "10",
-          "description": "Specifies z-index that would be set for the drag helper."
+          "description": {
+		"en": "Specifies z-index that would be set for the drag helper.",
+		"jp": "Specifies z-index that would be set for the drag helper."
+	}
         },
         "dragStartDelay": {
           "type": "number",
           "defaultValue": 200,
-          "description": "Specifies the delay between mousedown and the start of the actual drag. Smaller values make the nodes more sensitive to drag."
+          "description": {
+		"en": "Specifies the delay between mousedown and the start of the actual drag. Smaller values make the nodes more sensitive to drag.",
+		"jp": "Specifies the delay between mousedown and the start of the actual drag. Smaller values make the nodes more sensitive to drag."
+	}
         },
         "expandOnDragOver": {
           "type": "bool",
           "defaultValue": true,
-          "description": "Specifies whether when dragging over a collapsed node with children the node will expand after the timeout specified in the expandDelay option."
+          "description": {
+		"en": "Specifies whether when dragging over a collapsed node with children the node will expand after the timeout specified in the expandDelay option.",
+		"jp": "Specifies whether when dragging over a collapsed node with children the node will expand after the timeout specified in the expandDelay option."
+	}
         },
         "expandDelay": {
           "type": "number",
           "defaultValue": 1000,
-          "description": "Specifies the delay after hovering a parent node before it expands to show its children during drag."
+          "description": {
+		"en": "Specifies the delay after hovering a parent node before it expands to show its children during drag.",
+		"jp": "Specifies the delay after hovering a parent node before it expands to show its children during drag."
+	}
         },
         "helper": {
           "type": "string",
           "defaultValue": "default",
-          "description": "Specifies the helper for the drag operation. 'default' would render the internal helper, while a function returning a jQuery element can build entirely custom helper."
+          "description": {
+		"en": "Specifies the helper for the drag operation. 'default' would render the internal helper, while a function returning a jQuery element can build entirely custom helper.",
+		"jp": "Specifies the helper for the drag operation. 'default' would render the internal helper, while a function returning a jQuery element can build entirely custom helper."
+	}
         },
         "customDropValidation": {
           "type": "function",
           "defaultValue": null,
-          "description": "Returning true from this function would render the drop point valid, while false would make it invalid. The function has one parameter which is the current drop point and the context of the function is the drag element.",
+          "description": {
+		"en": "Returning true from this function would render the drop point valid, while false would make it invalid. The function has one parameter which is the current drop point and the context of the function is the drag element.",
+		"jp": "Returning true from this function would render the drop point valid, while false would make it invalid. The function has one parameter which is the current drop point and the context of the function is the drag element."
+	},
           "args": [
             {
               "name": "point",
@@ -540,156 +711,246 @@
         "containment": {
           "type": "bool",
           "defaultValue": false,
-          "description": "Specifies the containment for the drag helper. The area inside of which the helper is contained would be scrollable while dragging."
+          "description": {
+		"en": "Specifies the containment for the drag helper. The area inside of which the helper is contained would be scrollable while dragging.",
+		"jp": "Specifies the containment for the drag helper. The area inside of which the helper is contained would be scrollable while dragging."
+	}
         },
         "invalidMoveToMarkup": {
           "type": "string",
           "defaultValue": "<div><p><span></span><strong>{0}</strong></p></div>",
-          "description": "Specifies the HTML markup for the invalid helper."
+          "description": {
+		"en": "Specifies the HTML markup for the invalid helper.",
+		"jp": "Specifies the HTML markup for the invalid helper."
+	}
         },
         "moveToMarkup": {
           "type": "string",
           "defaultValue": "<div><p><span></span><strong>Move to</strong> {0}</p></div>",
-          "description": "Specifies the HTML markup for the 'move to' helper."
+          "description": {
+		"en": "Specifies the HTML markup for the 'move to' helper.",
+		"jp": "Specifies the HTML markup for the 'move to' helper."
+	}
         },
         "moveBetweenMarkup": {
           "type": "string",
           "defaultValue": "<div><p><span></span><strong>Move between</strong> {0} and {1}</p></div>",
-          "description": "Specifies the HTML markup for the 'move between' helper."
+          "description": {
+		"en": "Specifies the HTML markup for the 'move between' helper.",
+		"jp": "Specifies the HTML markup for the 'move between' helper."
+	}
         },
         "moveAfterMarkup": {
           "type": "string",
           "defaultValue": "<div><p><span></span><strong>Move after</strong> {0}</p></div>",
-          "description": "Specifies the HTML markup for the 'move after' helper"
+          "description": {
+		"en": "Specifies the HTML markup for the 'move after' helper",
+		"jp": "Specifies the HTML markup for the 'move after' helper"
+	}
         },
         "moveBeforeMarkup": {
           "type": "string",
           "defaultValue": "<div><p><span></span><strong>Move before</strong> {0}</p></div>",
-          "description": "Specifies the HTML markup for the 'move before' helper."
+          "description": {
+		"en": "Specifies the HTML markup for the 'move before' helper.",
+		"jp": "Specifies the HTML markup for the 'move before' helper."
+	}
         },
         "copyToMarkup": {
           "type": "string",
           "defaultValue": "<div><p><span></span><strong>Copy to</strong> {0}</p></div>",
-          "description": "Specifies the HTML markup for the 'copy to' helper."
+          "description": {
+		"en": "Specifies the HTML markup for the 'copy to' helper.",
+		"jp": "Specifies the HTML markup for the 'copy to' helper."
+	}
         },
         "copyBetweenMarkup": {
           "type": "string",
           "defaultValue": "<div><p><span></span><strong>Copy between</strong> {0} and {1}</p></div>",
-          "description": "Specifies the HTML markup for the 'copy between' helper."
+          "description": {
+		"en": "Specifies the HTML markup for the 'copy between' helper.",
+		"jp": "Specifies the HTML markup for the 'copy between' helper."
+	}
         },
         "copyAfterMarkup": {
           "type": "string",
           "defaultValue": "<div><p><span></span><strong>Copy after</strong> {0}</p></div>",
-          "description": "Specifies the HTML markup for the 'copy after' helper."
+          "description": {
+		"en": "Specifies the HTML markup for the 'copy after' helper.",
+		"jp": "Specifies the HTML markup for the 'copy after' helper."
+	}
         },
         "copyBeforeMarkup": {
           "type": "string",
           "defaultValue": "<div><p><span></span><strong>Copy before</strong> {0}</p></div>",
-          "description": "Specifies the HTML markup for the 'copy before' helper."
+          "description": {
+		"en": "Specifies the HTML markup for the 'copy before' helper.",
+		"jp": "Specifies the HTML markup for the 'copy before' helper."
+	}
         }
       }
     },
     "height": {
       "type": "string",
       "defaultValue": null,
-      "description": ""
+      "description": {
+		"en": "",
+		"jp": ""
+	}
     },
     "hotTracking": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Setting this option to false would make the tree to not apply hover styles on the nodes when they are hovered"
+      "description": {
+		"en": "Setting this option to false would make the tree to not apply hover styles on the nodes when they are hovered",
+		"jp": "Setting this option to false would make the tree to not apply hover styles on the nodes when they are hovered"
+	}
     },
     "initialExpandDepth": {
       "type": "number",
       "defaultValue": -1.0,
-      "description": "Specifies the depth down to which the tree would be expanded upon initial render."
+      "description": {
+		"en": "Specifies the depth down to which the tree would be expanded upon initial render.",
+		"jp": "Specifies the depth down to which the tree would be expanded upon initial render."
+	}
     },
     "leafNodeImageClass": {
       "type": "string",
       "defaultValue": null,
-      "description": "string Specified class with a CSS sprite would be rendered for each node that has no children (If you define both image URL and class the URL would be rendered).<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored"
+      "description": {
+		"en": "string Specified class with a CSS sprite would be rendered for each node that has no children (If you define both image URL and class the URL would be rendered).<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored",
+		"jp": "string Specified class with a CSS sprite would be rendered for each node that has no children (If you define both image URL and class the URL would be rendered).<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored"
+	}
     },
     "leafNodeImageTooltip": {
       "type": "string",
       "defaultValue": null,
-      "description": "string Specified a tooltip that would be rendered for each node that has no children.<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored"
+      "description": {
+		"en": "string Specified a tooltip that would be rendered for each node that has no children.<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored",
+		"jp": "string Specified a tooltip that would be rendered for each node that has no children.<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored"
+	}
     },
     "leafNodeImageUrl": {
       "type": "string",
       "defaultValue": null,
-      "description": "string Image with the specified URL will be rendered for each node that has no children (If you define both image URL and class the URL would be rendered).<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored"
+      "description": {
+		"en": "string Image with the specified URL will be rendered for each node that has no children (If you define both image URL and class the URL would be rendered).<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored",
+		"jp": "string Image with the specified URL will be rendered for each node that has no children (If you define both image URL and class the URL would be rendered).<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored"
+	}
     },
     "loadOnDemand": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Specifies all the data would be bound initially or each child collection would be bound upon demand."
+      "description": {
+		"en": "Specifies all the data would be bound initially or each child collection would be bound upon demand.",
+		"jp": "Specifies all the data would be bound initially or each child collection would be bound upon demand."
+	}
     },
     "parentNodeImageClass": {
       "type": "string",
       "defaultValue": null,
-      "description": "string Specified class with a CSS sprite would be rendered for each node that has children (If you define both image URL and class the URL would be rendered).<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored"
+      "description": {
+		"en": "string Specified class with a CSS sprite would be rendered for each node that has children (If you define both image URL and class the URL would be rendered).<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored",
+		"jp": "string Specified class with a CSS sprite would be rendered for each node that has children (If you define both image URL and class the URL would be rendered).<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored"
+	}
     },
     "parentNodeImageTooltip": {
       "type": "string",
       "defaultValue": null,
-      "description": "string Specified a tooltip that would be rendered for each node that has children.<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored"
+      "description": {
+		"en": "string Specified a tooltip that would be rendered for each node that has children.<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored",
+		"jp": "string Specified a tooltip that would be rendered for each node that has children.<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored"
+	}
     },
     "parentNodeImageUrl": {
       "type": "string",
       "defaultValue": null,
-      "description": "string Image with the specified URL will be rendered for each node that has children (If you define both image URL and class the URL would be rendered).<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored"
+      "description": {
+		"en": "string Image with the specified URL will be rendered for each node that has children (If you define both image URL and class the URL would be rendered).<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored",
+		"jp": "string Image with the specified URL will be rendered for each node that has children (If you define both image URL and class the URL would be rendered).<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored"
+	}
     },
     "pathSeparator": {
       "type": "string",
       "defaultValue": "_",
-      "description": "Specifies the node data-path separator character."
+      "description": {
+		"en": "Specifies the node data-path separator character.",
+		"jp": "Specifies the node data-path separator character."
+	}
     },
     "requestType": {
       "type": "string",
       "defaultValue": "GET",
-      "description": "specifies the HTTP verb to be used to issue the request",
+      "description": {
+		"en": "specifies the HTTP verb to be used to issue the request",
+		"jp": "specifies the HTTP verb to be used to issue the request"
+	},
       "valueOptions": [
         {
           "name": "GET",
           "type": "string",
-          "description": "initiates GET requests"
+          "description": {
+		"en": "initiates GET requests",
+		"jp": "initiates GET requests"
+	}
         },
         {
           "name": "POST",
           "type": "string",
-          "description": "initiates POST requests"
+          "description": {
+		"en": "initiates POST requests",
+		"jp": "initiates POST requests"
+	}
         }
       ]
     },
     "responseContentType": {
       "type": "string",
       "defaultValue": null,
-      "description": "content type of the response. See http://api.jquery.com/jQuery.ajax/ => contentType"
+      "description": {
+		"en": "content type of the response. See http://api.jquery.com/jQuery.ajax/ => contentType",
+		"jp": "content type of the response. See http://api.jquery.com/jQuery.ajax/ => contentType"
+	}
     },
     "responseDataKey": {
       "type": "string",
       "defaultValue": null,
-      "description": "see $.ig.DataSource. <br>&nbsp;&nbsp;&nbsp;&nbsp;string Specifies the name of the property in which data records are held if the response is wrapped. <br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored."
+      "description": {
+		"en": "see $.ig.DataSource. <br>&nbsp;&nbsp;&nbsp;&nbsp;string Specifies the name of the property in which data records are held if the response is wrapped. <br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored.",
+		"jp": "see $.ig.DataSource. <br>&nbsp;&nbsp;&nbsp;&nbsp;string Specifies the name of the property in which data records are held if the response is wrapped. <br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored."
+	}
     },
     "responseDataType": {
       "type": "string",
       "defaultValue": null,
-      "description": "string Explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property.<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored."
+      "description": {
+		"en": "string Explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property.<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored.",
+		"jp": "string Explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property.<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored."
+	}
     },
     "singleBranchExpand": {
       "type": "bool",
       "defaultValue": false,
-      "description": "If set to true then only one branch at each level of the tree can be expanded at a time. Otherwise multiple branches can be expanded at a time."
+      "description": {
+		"en": "If set to true then only one branch at each level of the tree can be expanded at a time. Otherwise multiple branches can be expanded at a time.",
+		"jp": "If set to true then only one branch at each level of the tree can be expanded at a time. Otherwise multiple branches can be expanded at a time."
+	}
     },
     "updateUrl": {
       "type": "string",
       "defaultValue": null,
-      "description": "URL to which updating requests will be made."
+      "description": {
+		"en": "URL to which updating requests will be made.",
+		"jp": "URL to which updating requests will be made."
+	}
     },
     "width": {
       "type": "string",
       "defaultValue": null,
-      "description": ""
+      "description": {
+		"en": "",
+		"jp": ""
+	}
     }
   }
 }

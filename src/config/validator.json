@@ -3,119 +3,188 @@
     "showIcon": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Gets or sets visibility of icon on error message."
+      "description": {
+		"en": "Gets or sets visibility of icon on error message.",
+		"jp": "Gets or sets visibility of icon on error message."
+	}
     },
     "animationShow": {
       "type": "number",
       "defaultValue": 300,
-      "description": "Gets or sets duration of show animation in milliseconds."
+      "description": {
+		"en": "Gets or sets duration of show animation in milliseconds.",
+		"jp": "Gets or sets duration of show animation in milliseconds."
+	}
     },
     "animationHide": {
       "type": "number",
       "defaultValue": 300,
-      "description": "Gets or sets duration of hide animation in milliseconds."
+      "description": {
+		"en": "Gets or sets duration of hide animation in milliseconds.",
+		"jp": "Gets or sets duration of hide animation in milliseconds."
+	}
     },
     "enableTargetErrorCss": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Gets or sets ability to apply error css to target element."
+      "description": {
+		"en": "Gets or sets ability to apply error css to target element.",
+		"jp": "Gets or sets ability to apply error css to target element."
+	}
     },
     "alignment": {
       "type": "string",
       "defaultValue": "bottom",
-      "description": "Gets or sets location of error label relative to target element."
+      "description": {
+		"en": "Gets or sets location of error label relative to target element.",
+		"jp": "Gets or sets location of error label relative to target element."
+	}
     },
     "keepFocus": {
       "type": "string",
       "defaultValue": "never",
-      "description": "Gets or sets option to set focus back to editor when validation failed. Default value comes from corresponding member in $.ui.igValidator.defaults object, which is undefined.",
+      "description": {
+		"en": "Gets or sets option to set focus back to editor when validation failed. Default value comes from corresponding member in $.ui.igValidator.defaults object, which is undefined.",
+		"jp": "Gets or sets option to set focus back to editor when validation failed. Default value comes from corresponding member in $.ui.igValidator.defaults object, which is undefined."
+	},
       "valueOptions": [
           {
             "name": "never",
             "type": "string",
-            "description": "Don't keep focus"
+            "description": {
+		"en": "Don't keep focus",
+		"jp": "Don't keep focus"
+	}
           },
           {
             "name": "once",
             "type": "string",
-            "description": "Keep the focus only once"
+            "description": {
+		"en": "Keep the focus only once",
+		"jp": "Keep the focus only once"
+	}
           },
           {
             "name": "always",
             "type": "string",
-            "description": " Always keep the focus"
+            "description": {
+		"en": " Always keep the focus",
+		"jp": " Always keep the focus"
+	}
           }
         ]
     },
     "onchange": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Gets or sets triggering validation when value in editor was changed."
+      "description": {
+		"en": "Gets or sets triggering validation when value in editor was changed.",
+		"jp": "Gets or sets triggering validation when value in editor was changed."
+	}
     },
     "onblur": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Gets or sets triggering validation when editor lost focus."
+      "description": {
+		"en": "Gets or sets triggering validation when editor lost focus.",
+		"jp": "Gets or sets triggering validation when editor lost focus."
+	}
     },
     "formSubmit": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Gets or sets triggering validation when application called form.submit()."
+      "description": {
+		"en": "Gets or sets triggering validation when application called form.submit().",
+		"jp": "Gets or sets triggering validation when application called form.submit()."
+	}
     },
     "onsubmit": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Gets or sets triggering validation when form gets onsubmit event."
+      "description": {
+		"en": "Gets or sets triggering validation when form gets onsubmit event.",
+		"jp": "Gets or sets triggering validation when form gets onsubmit event."
+	}
     },
     "bodyAsParent": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Gets or sets parent/location of error message."
+      "description": {
+		"en": "Gets or sets parent/location of error message.",
+		"jp": "Gets or sets parent/location of error message."
+	}
     },
     "required": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Gets or sets option to validate if value was entered (not empty text, selected item, etc.)"
+      "description": {
+		"en": "Gets or sets option to validate if value was entered (not empty text, selected item, etc.)",
+		"jp": "Gets or sets option to validate if value was entered (not empty text, selected item, etc.)"
+	}
     },
     "minLength": {
       "type": "number",
       "defaultValue": -1,
-      "description": "Gets or sets minimum length of text or minimum number of selected items."
+      "description": {
+		"en": "Gets or sets minimum length of text or minimum number of selected items.",
+		"jp": "Gets or sets minimum length of text or minimum number of selected items."
+	}
     },
     "maxLength": {
       "type": "number",
       "defaultValue": -1,
-      "description": "Gets or sets maximum length of text or maximum number of selected items."
+      "description": {
+		"en": "Gets or sets maximum length of text or maximum number of selected items.",
+		"jp": "Gets or sets maximum length of text or maximum number of selected items."
+	}
     },
     "min": {
       "type": "number",
       "defaultValue": null,
-      "description": "Gets or sets validation for minimum number."
+      "description": {
+		"en": "Gets or sets validation for minimum number.",
+		"jp": "Gets or sets validation for minimum number."
+	}
     },
     "max": {
       "type": "number",
       "defaultValue": null,
-      "description": "Gets or sets validation for maximum number."
+      "description": {
+		"en": "Gets or sets validation for maximum number.",
+		"jp": "Gets or sets validation for maximum number."
+	}
     },
     "regExp": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets or sets regular expression which is used to validate value in text editor."
+      "description": {
+		"en": "Gets or sets regular expression which is used to validate value in text editor.",
+		"jp": "Gets or sets regular expression which is used to validate value in text editor."
+	}
     },
     "checkboxesName": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Gets or sets option to use the name attribute of checkboxes in order to validate ranges."
+      "description": {
+		"en": "Gets or sets option to use the name attribute of checkboxes in order to validate ranges.",
+		"jp": "Gets or sets option to use the name attribute of checkboxes in order to validate ranges."
+	}
     },
     "theme": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets or sets selector for css classes."
+      "description": {
+		"en": "Gets or sets selector for css classes.",
+		"jp": "Gets or sets selector for css classes."
+	}
     },
     "errorMessage": {
       "type": "string",
       "defaultValue": null,
-      "description": "Gets or sets text for error-message which overrides all possible specific error-messages."
+      "description": {
+		"en": "Gets or sets text for error-message which overrides all possible specific error-messages.",
+		"jp": "Gets or sets text for error-message which overrides all possible specific error-messages."
+	}
     }
   }
 }

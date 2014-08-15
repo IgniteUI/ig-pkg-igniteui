@@ -18,7 +18,10 @@
           "optional": false
         }
       ],
-      "description": "Fired after the data source has initialized.<br>            Function takes arguments evt and ui.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.dataSource to get a reference to the data source.<br>            Use ui.error to see if an error has occured during initialization.<br>            Use ui.metadataTreeRoot to get a reference to the root of the data source metatadata root item."
+      "description": {
+		"en": "Fired after the data source has initialized.<br>            Function takes arguments evt and ui.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.dataSource to get a reference to the data source.<br>            Use ui.error to see if an error has occured during initialization.<br>            Use ui.metadataTreeRoot to get a reference to the root of the data source metatadata root item.",
+		"jp": "Fired after the data source has initialized.<br>            Function takes arguments evt and ui.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.dataSource to get a reference to the data source.<br>            Use ui.error to see if an error has occured during initialization.<br>            Use ui.metadataTreeRoot to get a reference to the root of the data source metatadata root item."
+	}
     },
     "dataSourceUpdated": {
       "cancellable": false,
@@ -34,7 +37,10 @@
           "optional": false
         }
       ],
-      "description": "Fired after the data source has updated.<br>            Function takes arguments evt and ui.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.dataSource to get a reference to the data source.<br>            Use ui.error to see if an error has occured during update.<br>            Use ui.result to get the result of the update operation."
+      "description": {
+		"en": "Fired after the data source has updated.<br>            Function takes arguments evt and ui.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.dataSource to get a reference to the data source.<br>            Use ui.error to see if an error has occured during update.<br>            Use ui.result to get the result of the update operation.",
+		"jp": "Fired after the data source has updated.<br>            Function takes arguments evt and ui.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.dataSource to get a reference to the data source.<br>            Use ui.error to see if an error has occured during update.<br>            Use ui.result to get the result of the update operation."
+	}
     },
     "drag": {
       "cancellable": true,
@@ -50,7 +56,10 @@
           "optional": false
         }
       ],
-      "description": "Fired on drag. Return false to cancel the drag.<br>            Use ui.metadata&nbsp;to get a reference to the data.<br>            Use ui.helper to get a reference to the helper.<br>            Use ui.offset to get a reference to the offset.<br>            Use ui.originalPosition to get a reference to the original position of the draggable element.<br>            Use ui.position to get a reference to the current position of the draggable element."
+      "description": {
+		"en": "Fired on drag. Return false to cancel the drag.<br>            Use ui.metadata&nbsp;to get a reference to the data.<br>            Use ui.helper to get a reference to the helper.<br>            Use ui.offset to get a reference to the offset.<br>            Use ui.originalPosition to get a reference to the original position of the draggable element.<br>            Use ui.position to get a reference to the current position of the draggable element.",
+		"jp": "Fired on drag. Return false to cancel the drag.<br>            Use ui.metadata&nbsp;to get a reference to the data.<br>            Use ui.helper to get a reference to the helper.<br>            Use ui.offset to get a reference to the offset.<br>            Use ui.originalPosition to get a reference to the original position of the draggable element.<br>            Use ui.position to get a reference to the current position of the draggable element."
+	}
     },
     "dragStart": {
       "cancellable": true,
@@ -66,7 +75,10 @@
           "optional": false
         }
       ],
-      "description": "Fired on drag start. Return false to cancel the dragging.<br>            Use ui.metadata&nbsp;to get a reference to the data.<br>            Use ui.helper to get a reference to the helper.<br>            Use ui.offset to get a reference to the offset.<br>            Use ui.originalPosition to get a reference to the original position of the draggable element.<br>            Use ui.position to get a reference to the current position of the draggable element."
+      "description": {
+		"en": "Fired on drag start. Return false to cancel the dragging.<br>            Use ui.metadata&nbsp;to get a reference to the data.<br>            Use ui.helper to get a reference to the helper.<br>            Use ui.offset to get a reference to the offset.<br>            Use ui.originalPosition to get a reference to the original position of the draggable element.<br>            Use ui.position to get a reference to the current position of the draggable element.",
+		"jp": "Fired on drag start. Return false to cancel the dragging.<br>            Use ui.metadata&nbsp;to get a reference to the data.<br>            Use ui.helper to get a reference to the helper.<br>            Use ui.offset to get a reference to the offset.<br>            Use ui.originalPosition to get a reference to the original position of the draggable element.<br>            Use ui.position to get a reference to the current position of the draggable element."
+	}
     },
     "dragStop": {
       "cancellable": false,
@@ -82,7 +94,10 @@
           "optional": false
         }
       ],
-      "description": "Fired on drag stop.<br>            Use ui.helper to get a reference to the helper.<br>            Use ui.offset to get a reference to the offset.<br>            Use ui.originalPosition to get a reference to the original position of the draggable element.<br>            Use ui.position to get a reference to the current position of the draggable element."
+      "description": {
+		"en": "Fired on drag stop.<br>            Use ui.helper to get a reference to the helper.<br>            Use ui.offset to get a reference to the offset.<br>            Use ui.originalPosition to get a reference to the original position of the draggable element.<br>            Use ui.position to get a reference to the current position of the draggable element.",
+		"jp": "Fired on drag stop.<br>            Use ui.helper to get a reference to the helper.<br>            Use ui.offset to get a reference to the offset.<br>            Use ui.originalPosition to get a reference to the original position of the draggable element.<br>            Use ui.position to get a reference to the current position of the draggable element."
+	}
     },
     "filterDropDownClosed": {
       "cancellable": false,
@@ -98,7 +113,10 @@
           "optional": false
         }
       ],
-      "description": "Fired after the filter members drop down closes.<br>            Use ui.hierarchy for a reference to the hierarchy."
+      "description": {
+		"en": "Fired after the filter members drop down closes.<br>            Use ui.hierarchy for a reference to the hierarchy.",
+		"jp": "Fired after the filter members drop down closes.<br>            Use ui.hierarchy for a reference to the hierarchy."
+	}
     },
     "filterDropDownClosing": {
       "cancellable": true,
@@ -114,7 +132,10 @@
           "optional": false
         }
       ],
-      "description": "Fired before the filter members drop down closes. Return false to cancel the closing.<br>            Use ui.hierarchy for a reference to the hierarchy.<br>            Use ui.dropDownElement for a reference to the drop down."
+      "description": {
+		"en": "Fired before the filter members drop down closes. Return false to cancel the closing.<br>            Use ui.hierarchy for a reference to the hierarchy.<br>            Use ui.dropDownElement for a reference to the drop down.",
+		"jp": "Fired before the filter members drop down closes. Return false to cancel the closing.<br>            Use ui.hierarchy for a reference to the hierarchy.<br>            Use ui.dropDownElement for a reference to the drop down."
+	}
     },
     "filterDropDownOk": {
       "cancellable": true,
@@ -130,7 +151,10 @@
           "optional": false
         }
       ],
-      "description": "Fired after the OK button in the filter members drop down is clicked. Return false to cancel the applying of the filters.<br>            Use ui.hierarchy for a reference to the hierarchy.<br>            Use ui.filterMembers for a collection with the selected filter members. If all filter members are selected the collection will be empty.<br>            Use ui.dropDownElement for a reference to the drop down."
+      "description": {
+		"en": "Fired after the OK button in the filter members drop down is clicked. Return false to cancel the applying of the filters.<br>            Use ui.hierarchy for a reference to the hierarchy.<br>            Use ui.filterMembers for a collection with the selected filter members. If all filter members are selected the collection will be empty.<br>            Use ui.dropDownElement for a reference to the drop down.",
+		"jp": "Fired after the OK button in the filter members drop down is clicked. Return false to cancel the applying of the filters.<br>            Use ui.hierarchy for a reference to the hierarchy.<br>            Use ui.filterMembers for a collection with the selected filter members. If all filter members are selected the collection will be empty.<br>            Use ui.dropDownElement for a reference to the drop down."
+	}
     },
     "filterDropDownOpened": {
       "cancellable": false,
@@ -146,7 +170,10 @@
           "optional": false
         }
       ],
-      "description": "Fired after the filter members drop down opens.<br>            Use ui.hierarchy for a reference to the hierarchy.<br>            Use ui.dropDownElement for a reference to the drop down."
+      "description": {
+		"en": "Fired after the filter members drop down opens.<br>            Use ui.hierarchy for a reference to the hierarchy.<br>            Use ui.dropDownElement for a reference to the drop down.",
+		"jp": "Fired after the filter members drop down opens.<br>            Use ui.hierarchy for a reference to the hierarchy.<br>            Use ui.dropDownElement for a reference to the drop down."
+	}
     },
     "filterDropDownOpening": {
       "cancellable": true,
@@ -162,7 +189,10 @@
           "optional": false
         }
       ],
-      "description": "Fired before the filter members drop down opens. Return false to cancel the opening.<br>            Use ui.hierarchy for a reference to the hierarchy."
+      "description": {
+		"en": "Fired before the filter members drop down opens. Return false to cancel the opening.<br>            Use ui.hierarchy for a reference to the hierarchy.",
+		"jp": "Fired before the filter members drop down opens. Return false to cancel the opening.<br>            Use ui.hierarchy for a reference to the hierarchy."
+	}
     },
     "filterMembersLoaded": {
       "cancellable": false,
@@ -178,7 +208,10 @@
           "optional": false
         }
       ],
-      "description": "Fired after the filter members are loaded.<br>            Use ui.parent to get the parent node or the igTree instance in the initial load.<br>            Use ui.rootFilterMembers for a collection with the root filter members (deprecated).<br>            Use ui.filterMembers for a collection with the newly loaded filter members."
+      "description": {
+		"en": "Fired after the filter members are loaded.<br>            Use ui.parent to get the parent node or the igTree instance in the initial load.<br>            Use ui.rootFilterMembers for a collection with the root filter members (deprecated).<br>            Use ui.filterMembers for a collection with the newly loaded filter members.",
+		"jp": "Fired after the filter members are loaded.<br>            Use ui.parent to get the parent node or the igTree instance in the initial load.<br>            Use ui.rootFilterMembers for a collection with the root filter members (deprecated).<br>            Use ui.filterMembers for a collection with the newly loaded filter members."
+	}
     },
     "headersSorted": {
       "cancellable": false,
@@ -194,7 +227,10 @@
           "optional": false
         }
       ],
-      "description": "Fired after the sorting of the headers.<br>            Function takes arguments evt and ui.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.levelSortDirections to get an array of the level names and sort directions that were used.<br>            Use ui.appliedLevelSortDirections to get an array of the level names and sort directions that were actually applied to the table view."
+      "description": {
+		"en": "Fired after the sorting of the headers.<br>            Function takes arguments evt and ui.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.levelSortDirections to get an array of the level names and sort directions that were used.<br>            Use ui.appliedLevelSortDirections to get an array of the level names and sort directions that were actually applied to the table view.",
+		"jp": "Fired after the sorting of the headers.<br>            Function takes arguments evt and ui.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.levelSortDirections to get an array of the level names and sort directions that were used.<br>            Use ui.appliedLevelSortDirections to get an array of the level names and sort directions that were actually applied to the table view."
+	}
     },
     "headersSorting": {
       "cancellable": true,
@@ -210,7 +246,10 @@
           "optional": false
         }
       ],
-      "description": "Fired before the sorting of the headers.<br>            Function takes arguments evt and ui. Return false to cancel the sorting.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.levelSortDirections to get an array of the level names and sort directions that will be used."
+      "description": {
+		"en": "Fired before the sorting of the headers.<br>            Function takes arguments evt and ui. Return false to cancel the sorting.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.levelSortDirections to get an array of the level names and sort directions that will be used.",
+		"jp": "Fired before the sorting of the headers.<br>            Function takes arguments evt and ui. Return false to cancel the sorting.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.levelSortDirections to get an array of the level names and sort directions that will be used."
+	}
     },
     "metadataDropped": {
       "cancellable": false,
@@ -226,7 +265,10 @@
           "optional": false
         }
       ],
-      "description": "Fired after a metadata item drop.<br>            Use ui.targetElement for a reference to the drop target.<br>            Use ui.draggedElement for a reference to the dragged element.<br>            Use ui.metadata&nbsp;to get a reference to the data.<br>            Use ui.metadataIndex to get the index at which the metadata is inserted.<br>            Use ui.helper to get a reference to the helper.<br>            Use ui.offset to get a reference to the offset.<br>            Use ui.position to get a reference to the current position of the draggable element."
+      "description": {
+		"en": "Fired after a metadata item drop.<br>            Use ui.targetElement for a reference to the drop target.<br>            Use ui.draggedElement for a reference to the dragged element.<br>            Use ui.metadata&nbsp;to get a reference to the data.<br>            Use ui.metadataIndex to get the index at which the metadata is inserted.<br>            Use ui.helper to get a reference to the helper.<br>            Use ui.offset to get a reference to the offset.<br>            Use ui.position to get a reference to the current position of the draggable element.",
+		"jp": "Fired after a metadata item drop.<br>            Use ui.targetElement for a reference to the drop target.<br>            Use ui.draggedElement for a reference to the dragged element.<br>            Use ui.metadata&nbsp;to get a reference to the data.<br>            Use ui.metadataIndex to get the index at which the metadata is inserted.<br>            Use ui.helper to get a reference to the helper.<br>            Use ui.offset to get a reference to the offset.<br>            Use ui.position to get a reference to the current position of the draggable element."
+	}
     },
     "metadataDropping": {
       "cancellable": true,
@@ -242,7 +284,10 @@
           "optional": false
         }
       ],
-      "description": "Fired before a metadata item drop. Return false to cancel the drop.<br>            Use ui.targetElement for a reference to the drop target.<br>            Use ui.draggedElement for a reference to the metadata item element.<br>            Use ui.metadata&nbsp;to get a reference to the data.<br>            Use ui.metadataIndex to get the index at which the metadata will be inserted.<br>            Use ui.helper to get a reference to the helper.<br>            Use ui.offset to get a reference to the offset.<br>            Use ui.position to get a reference to the current position of the draggable element."
+      "description": {
+		"en": "Fired before a metadata item drop. Return false to cancel the drop.<br>            Use ui.targetElement for a reference to the drop target.<br>            Use ui.draggedElement for a reference to the metadata item element.<br>            Use ui.metadata&nbsp;to get a reference to the data.<br>            Use ui.metadataIndex to get the index at which the metadata will be inserted.<br>            Use ui.helper to get a reference to the helper.<br>            Use ui.offset to get a reference to the offset.<br>            Use ui.position to get a reference to the current position of the draggable element.",
+		"jp": "Fired before a metadata item drop. Return false to cancel the drop.<br>            Use ui.targetElement for a reference to the drop target.<br>            Use ui.draggedElement for a reference to the metadata item element.<br>            Use ui.metadata&nbsp;to get a reference to the data.<br>            Use ui.metadataIndex to get the index at which the metadata will be inserted.<br>            Use ui.helper to get a reference to the helper.<br>            Use ui.offset to get a reference to the offset.<br>            Use ui.position to get a reference to the current position of the draggable element."
+	}
     },
     "metadataRemoved": {
       "cancellable": false,
@@ -258,7 +303,10 @@
           "optional": false
         }
       ],
-      "description": "Fired after a metadata item is removed when the user clicks the close icon.<br>            Use ui.metadata&nbsp;to get a reference to the data."
+      "description": {
+		"en": "Fired after a metadata item is removed when the user clicks the close icon.<br>            Use ui.metadata&nbsp;to get a reference to the data.",
+		"jp": "Fired after a metadata item is removed when the user clicks the close icon.<br>            Use ui.metadata&nbsp;to get a reference to the data."
+	}
     },
     "metadataRemoving": {
       "cancellable": true,
@@ -274,7 +322,10 @@
           "optional": false
         }
       ],
-      "description": "Fired before a metadata item is removed when the user clicks the close icon. Return false to cancel the removing.<br>            Use ui.targetElement for a reference to the dragged element.<br>            Use ui.metadata&nbsp;to get a reference to the data."
+      "description": {
+		"en": "Fired before a metadata item is removed when the user clicks the close icon. Return false to cancel the removing.<br>            Use ui.targetElement for a reference to the dragged element.<br>            Use ui.metadata&nbsp;to get a reference to the data.",
+		"jp": "Fired before a metadata item is removed when the user clicks the close icon. Return false to cancel the removing.<br>            Use ui.targetElement for a reference to the dragged element.<br>            Use ui.metadata&nbsp;to get a reference to the data."
+	}
     },
     "pivotGridHeadersRendered": {
       "cancellable": false,
@@ -290,7 +341,10 @@
           "optional": false
         }
       ],
-      "description": "Event fired after the headers have been rendered.<br>            Function takes arguments evt and ui.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.grid to get a reference to the igGrid widget, which holds the headers.<br>            Use ui.table to get a reference to the headers table DOM element."
+      "description": {
+		"en": "Event fired after the headers have been rendered.<br>            Function takes arguments evt and ui.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.grid to get a reference to the igGrid widget, which holds the headers.<br>            Use ui.table to get a reference to the headers table DOM element.",
+		"jp": "Event fired after the headers have been rendered.<br>            Function takes arguments evt and ui.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.grid to get a reference to the igGrid widget, which holds the headers.<br>            Use ui.table to get a reference to the headers table DOM element."
+	}
     },
     "pivotGridRendered": {
       "cancellable": false,
@@ -306,7 +360,10 @@
           "optional": false
         }
       ],
-      "description": "Event fired after the whole grid widget has been rendered (including headers, footers, etc.).<br>            Function takes arguments evt and ui.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.grid to get reference to the igGrid widget, which represents the data."
+      "description": {
+		"en": "Event fired after the whole grid widget has been rendered (including headers, footers, etc.).<br>            Function takes arguments evt and ui.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.grid to get reference to the igGrid widget, which represents the data.",
+		"jp": "Event fired after the whole grid widget has been rendered (including headers, footers, etc.).<br>            Function takes arguments evt and ui.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.grid to get reference to the igGrid widget, which represents the data."
+	}
     },
     "sorted": {
       "cancellable": false,
@@ -322,7 +379,10 @@
           "optional": false
         }
       ],
-      "description": "Fired after the sorting of the columns.<br>            Function takes arguments evt and ui.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.sortDirections to get an array of the tuple indices and sort directions that were passed to the table view.<br>            Use ui.appliedSortDirections to get an array of the tuple indices and sort directions that were actually applied to the table view."
+      "description": {
+		"en": "Fired after the sorting of the columns.<br>            Function takes arguments evt and ui.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.sortDirections to get an array of the tuple indices and sort directions that were passed to the table view.<br>            Use ui.appliedSortDirections to get an array of the tuple indices and sort directions that were actually applied to the table view.",
+		"jp": "Fired after the sorting of the columns.<br>            Function takes arguments evt and ui.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.sortDirections to get an array of the tuple indices and sort directions that were passed to the table view.<br>            Use ui.appliedSortDirections to get an array of the tuple indices and sort directions that were actually applied to the table view."
+	}
     },
     "sorting": {
       "cancellable": true,
@@ -338,7 +398,10 @@
           "optional": false
         }
       ],
-      "description": "Fired before the sorting of the columns.<br>            Function takes arguments evt and ui. Return false to cancel the sorting.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.sortDirections to get an array of the tuple indices and sort directions that will be used."
+      "description": {
+		"en": "Fired before the sorting of the columns.<br>            Function takes arguments evt and ui. Return false to cancel the sorting.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.sortDirections to get an array of the tuple indices and sort directions that will be used.",
+		"jp": "Fired before the sorting of the columns.<br>            Function takes arguments evt and ui. Return false to cancel the sorting.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.sortDirections to get an array of the tuple indices and sort directions that will be used."
+	}
     },
     "tupleMemberCollapsed": {
       "cancellable": false,
@@ -354,7 +417,10 @@
           "optional": false
         }
       ],
-      "description": "Fired after the collapse of the tuple member.<br>            Function takes arguments evt and ui.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.dataSource to get a reference to the data source.<br>            Use ui.axisName to get the name of axis, which holds the member and the tuple.<br>            Use ui.tupleIndex to get the index of the tuple in the axis.<br>            Use ui.memberIndex to get the index of the member in the tuple."
+      "description": {
+		"en": "Fired after the collapse of the tuple member.<br>            Function takes arguments evt and ui.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.dataSource to get a reference to the data source.<br>            Use ui.axisName to get the name of axis, which holds the member and the tuple.<br>            Use ui.tupleIndex to get the index of the tuple in the axis.<br>            Use ui.memberIndex to get the index of the member in the tuple.",
+		"jp": "Fired after the collapse of the tuple member.<br>            Function takes arguments evt and ui.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.dataSource to get a reference to the data source.<br>            Use ui.axisName to get the name of axis, which holds the member and the tuple.<br>            Use ui.tupleIndex to get the index of the tuple in the axis.<br>            Use ui.memberIndex to get the index of the member in the tuple."
+	}
     },
     "tupleMemberCollapsing": {
       "cancellable": true,
@@ -370,7 +436,10 @@
           "optional": false
         }
       ],
-      "description": "Fired before the collapse of the tuple member.<br>            Function takes arguments evt and ui. Return false to cancel the collapsing.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.dataSource to get a reference to the data source.<br>            Use ui.axisName to get the name of axis, which holds the member and the tuple.<br>            Use ui.tupleIndex to get the index of the tuple in the axis.<br>            Use ui.memberIndex to get the index of the member in the tuple."
+      "description": {
+		"en": "Fired before the collapse of the tuple member.<br>            Function takes arguments evt and ui. Return false to cancel the collapsing.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.dataSource to get a reference to the data source.<br>            Use ui.axisName to get the name of axis, which holds the member and the tuple.<br>            Use ui.tupleIndex to get the index of the tuple in the axis.<br>            Use ui.memberIndex to get the index of the member in the tuple.",
+		"jp": "Fired before the collapse of the tuple member.<br>            Function takes arguments evt and ui. Return false to cancel the collapsing.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.dataSource to get a reference to the data source.<br>            Use ui.axisName to get the name of axis, which holds the member and the tuple.<br>            Use ui.tupleIndex to get the index of the tuple in the axis.<br>            Use ui.memberIndex to get the index of the member in the tuple."
+	}
     },
     "tupleMemberExpanded": {
       "cancellable": false,
@@ -386,7 +455,10 @@
           "optional": false
         }
       ],
-      "description": "Fired after the expand of the tuple member.<br>            Function takes arguments evt and ui.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.dataSource to get a reference to the data source.<br>            Use ui.axisName to get the name of axis, which holds the member and the tuple.<br>            Use ui.tupleIndex to get the index of the tuple in the axis.<br>            Use ui.memberIndex to get the index of the member in the tuple."
+      "description": {
+		"en": "Fired after the expand of the tuple member.<br>            Function takes arguments evt and ui.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.dataSource to get a reference to the data source.<br>            Use ui.axisName to get the name of axis, which holds the member and the tuple.<br>            Use ui.tupleIndex to get the index of the tuple in the axis.<br>            Use ui.memberIndex to get the index of the member in the tuple.",
+		"jp": "Fired after the expand of the tuple member.<br>            Function takes arguments evt and ui.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.dataSource to get a reference to the data source.<br>            Use ui.axisName to get the name of axis, which holds the member and the tuple.<br>            Use ui.tupleIndex to get the index of the tuple in the axis.<br>            Use ui.memberIndex to get the index of the member in the tuple."
+	}
     },
     "tupleMemberExpanding": {
       "cancellable": true,
@@ -402,153 +474,240 @@
           "optional": false
         }
       ],
-      "description": "Fired before the expand of the tuple member.<br>            Function takes arguments evt and ui. Return false to cancel the expanding.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.dataSource to get a reference to the data source.<br>            Use ui.axisName to get the name of axis, which holds the member and the tuple.<br>            Use ui.tupleIndex to get the index of the tuple in the axis.<br>            Use ui.memberIndex to get the index of the member in the tuple."
+      "description": {
+		"en": "Fired before the expand of the tuple member.<br>            Function takes arguments evt and ui. Return false to cancel the expanding.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.dataSource to get a reference to the data source.<br>            Use ui.axisName to get the name of axis, which holds the member and the tuple.<br>            Use ui.tupleIndex to get the index of the tuple in the axis.<br>            Use ui.memberIndex to get the index of the member in the tuple.",
+		"jp": "Fired before the expand of the tuple member.<br>            Function takes arguments evt and ui. Return false to cancel the expanding.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.dataSource to get a reference to the data source.<br>            Use ui.axisName to get the name of axis, which holds the member and the tuple.<br>            Use ui.tupleIndex to get the index of the tuple in the axis.<br>            Use ui.memberIndex to get the index of the member in the tuple."
+	}
     }
   },
   "properties": {
     "allowHeaderColumnsSorting": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Enables sorting of the header cells in columns."
+      "description": {
+		"en": "Enables sorting of the header cells in columns.",
+		"jp": "Enables sorting of the header cells in columns."
+	}
     },
     "allowHeaderRowsSorting": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Enables sorting of the header cells in rows."
+      "description": {
+		"en": "Enables sorting of the header cells in rows.",
+		"jp": "Enables sorting of the header cells in rows."
+	}
     },
     "allowSorting": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Enables sorting of the value cells in columns."
+      "description": {
+		"en": "Enables sorting of the value cells in columns.",
+		"jp": "Enables sorting of the value cells in columns."
+	}
     },
     "compactColumnHeaderIndentation": {
       "type": "number",
       "defaultValue": 30.0,
-      "description": "The indentation for every level column when the compactColumnHeaders is set to true."
+      "description": {
+		"en": "The indentation for every level column when the compactColumnHeaders is set to true.",
+		"jp": "The indentation for every level column when the compactColumnHeaders is set to true."
+	}
     },
     "compactColumnHeaders": {
       "type": "bool",
       "defaultValue": false,
-      "description": "A boolean value indicating wheter the column headers should be arranged for compact header layout – each hieararchy is in a single row."
+      "description": {
+		"en": "A boolean value indicating wheter the column headers should be arranged for compact header layout – each hieararchy is in a single row.",
+		"jp": "A boolean value indicating wheter the column headers should be arranged for compact header layout – each hieararchy is in a single row."
+	}
     },
     "compactRowHeaderIndentation": {
       "type": "number",
       "defaultValue": 20.0,
-      "description": "The indentation for every level row when the compactRowHeaders is set to true."
+      "description": {
+		"en": "The indentation for every level row when the compactRowHeaders is set to true.",
+		"jp": "The indentation for every level row when the compactRowHeaders is set to true."
+	}
     },
     "compactRowHeaders": {
       "type": "bool",
       "defaultValue": true,
-      "description": "A boolean value indicating wheter the row headers should be arranged for compact header layout – each hieararchy is in a single column."
+      "description": {
+		"en": "A boolean value indicating wheter the row headers should be arranged for compact header layout – each hieararchy is in a single column.",
+		"jp": "A boolean value indicating wheter the row headers should be arranged for compact header layout – each hieararchy is in a single column."
+	}
     },
     "customMoveValidation": {
       "type": "function",
       "defaultValue": null,
-      "description": "A function that will be called to determine if an item can be moved in or dropped on an area of the pivot grid.<br>            paramType=\"string\" The location where the item will be moved - igPivotGrid, igPivotDataSelector, filters, rows, columns or measures.<br>            paramType=\"string\" The type of the item - Hierarchy, Measure or MeasureList.<br>            paramType=\"string\" The unique name of the item.<br>            returnType=\"bool\"  The function must return true if the item should be accepted."
+      "description": {
+		"en": "A function that will be called to determine if an item can be moved in or dropped on an area of the pivot grid.<br>            paramType=\"string\" The location where the item will be moved - igPivotGrid, igPivotDataSelector, filters, rows, columns or measures.<br>            paramType=\"string\" The type of the item - Hierarchy, Measure or MeasureList.<br>            paramType=\"string\" The unique name of the item.<br>            returnType=\"bool\"  The function must return true if the item should be accepted.",
+		"jp": "A function that will be called to determine if an item can be moved in or dropped on an area of the pivot grid.<br>            paramType=\"string\" The location where the item will be moved - igPivotGrid, igPivotDataSelector, filters, rows, columns or measures.<br>            paramType=\"string\" The type of the item - Hierarchy, Measure or MeasureList.<br>            paramType=\"string\" The unique name of the item.<br>            returnType=\"bool\"  The function must return true if the item should be accepted."
+	}
     },
     "dataSource": {
       "type": "object",
       "defaultValue": null,
-      "description": "An instance of $.ig.OlapXmlaDataSource or $.ig.OlapFlatDataSource."
+      "description": {
+		"en": "An instance of $.ig.OlapXmlaDataSource or $.ig.OlapFlatDataSource.",
+		"jp": "An instance of $.ig.OlapXmlaDataSource or $.ig.OlapFlatDataSource."
+	}
     },
     "dataSourceOptions": {
       "type": "object",
       "defaultValue": null,
-      "description": "An object that will be used to create an instance of $.ig.OlapXmlaDataSource or $.ig.OlapFlatDataSource.<br>            The provided value must contain an object with settings for one of the data source types - xmlaOptions or flatDataOptions.",
+      "description": {
+		"en": "An object that will be used to create an instance of $.ig.OlapXmlaDataSource or $.ig.OlapFlatDataSource.<br>            The provided value must contain an object with settings for one of the data source types - xmlaOptions or flatDataOptions.",
+		"jp": "An object that will be used to create an instance of $.ig.OlapXmlaDataSource or $.ig.OlapFlatDataSource.<br>            The provided value must contain an object with settings for one of the data source types - xmlaOptions or flatDataOptions."
+	},
       "schema": {
         "xmlaOptions": {
           "type": "object",
           "defaultValue": null,
-          "description": "Settings for creating an instance of $.ig.OlapXmlaDataSource.",
+          "description": {
+		"en": "Settings for creating an instance of $.ig.OlapXmlaDataSource.",
+		"jp": "Settings for creating an instance of $.ig.OlapXmlaDataSource."
+	},
           "schema": {
             "serverUrl": {
               "type": "string",
               "defaultValue": null,
-              "description": "The URL of the XMLA server.",
+              "description": {
+		"en": "The URL of the XMLA server.",
+		"jp": "The URL of the XMLA server."
+	},
               "reuqired": true
             },
             "catalog": {
               "type": "string",
               "defaultValue": null,
-              "description": "The catalog name."
+              "description": {
+		"en": "The catalog name.",
+		"jp": "The catalog name."
+	}
             },
             "cube": {
               "type": "string",
               "defaultValue": null,
-              "description": "The name of the cube in the data source."
+              "description": {
+		"en": "The name of the cube in the data source.",
+		"jp": "The name of the cube in the data source."
+	}
             },
             "measureGroup": {
               "type": "string",
               "defaultValue": null,
-              "description": "The name of the measure group in the data source."
+              "description": {
+		"en": "The name of the measure group in the data source.",
+		"jp": "The name of the measure group in the data source."
+	}
             },
             "requestOptions": {
               "type": "object",
               "defaultValue": null,
-              "description": "An object containing information about how the request to the XMLA server should be processed.",
+              "description": {
+		"en": "An object containing information about how the request to the XMLA server should be processed.",
+		"jp": "An object containing information about how the request to the XMLA server should be processed."
+	},
               "schema": {
                 "withCredentials": {
                   "type": "bool",
                   "defaultValue": false,
-                  "description": "The value is applied to XmlHttpRequest.withCredentials if supported by the user agent. Setting this property to true will allow IE8/IE9 to make authenticated cross-origin requests to tusted domains through XmlHttpRequest instead of XDomainRequest and will prompt the user for credentials."
+                  "description": {
+		"en": "The value is applied to XmlHttpRequest.withCredentials if supported by the user agent. Setting this property to true will allow IE8/IE9 to make authenticated cross-origin requests to tusted domains through XmlHttpRequest instead of XDomainRequest and will prompt the user for credentials.",
+		"jp": "The value is applied to XmlHttpRequest.withCredentials if supported by the user agent. Setting this property to true will allow IE8/IE9 to make authenticated cross-origin requests to tusted domains through XmlHttpRequest instead of XDomainRequest and will prompt the user for credentials."
+	}
                 },
                 "beforeSend": {
                   "type": "function",
                   "defaultValue": null,
-                  "description": "A callback to be invoked right before the request is send to the server. Extends beforeSend callback of jQuery.ajax’s options object."
+                  "description": {
+		"en": "A callback to be invoked right before the request is send to the server. Extends beforeSend callback of jQuery.ajax’s options object.",
+		"jp": "A callback to be invoked right before the request is send to the server. Extends beforeSend callback of jQuery.ajax’s options object."
+	}
                 }
               }
             },
             "enableResultCache": {
               "type": "bool",
               "defaultValue": true,
-              "description": "Enables/disables caching of the XMLA result object."
+              "description": {
+		"en": "Enables/disables caching of the XMLA result object.",
+		"jp": "Enables/disables caching of the XMLA result object."
+	}
             },
             "discoverProperties": {
               "type": "object",
               "defaultValue": null,
-              "description": "Additional properties sent with every discover request. The object is treated as a key/value store where each property name is used as the key and the property value as the value."
+              "description": {
+		"en": "Additional properties sent with every discover request. The object is treated as a key/value store where each property name is used as the key and the property value as the value.",
+		"jp": "Additional properties sent with every discover request. The object is treated as a key/value store where each property name is used as the key and the property value as the value."
+	}
             },
             "executeProperties": {
               "type": "object",
               "defaultValue": null,
-              "description": "Additional properties sent with every execute request. The object is treated as a key/value store where each property name is used as the key and the property value as the value."
+              "description": {
+		"en": "Additional properties sent with every execute request. The object is treated as a key/value store where each property name is used as the key and the property value as the value.",
+		"jp": "Additional properties sent with every execute request. The object is treated as a key/value store where each property name is used as the key and the property value as the value."
+	}
             },
             "mdxSettings": {
               "type": "object",
               "defaultValue": null,
-              "description": "Javascript object containing information about how the request to the xmla server should be processed",
+              "description": {
+		"en": "Javascript object containing information about how the request to the xmla server should be processed",
+		"jp": "Javascript object containing information about how the request to the xmla server should be processed"
+	},
               "schema": {
                 "nonEmptyOnRows": {
                   "type": "bool",
                   "defaultValue": true,
-                  "description": "Value indicating whether a NON EMPTY clause is present on ROWS axis. Default value is true"
+                  "description": {
+		"en": "Value indicating whether a NON EMPTY clause is present on ROWS axis. Default value is true",
+		"jp": "Value indicating whether a NON EMPTY clause is present on ROWS axis. Default value is true"
+	}
                 },
                 "nonEmptyOnColumns": {
                   "type": "bool",
                   "defaultValue": true,
-                  "description": "Value indicating whether a NON EMPTY clause is present on COLUMNS axis. Default value is true"
+                  "description": {
+		"en": "Value indicating whether a NON EMPTY clause is present on COLUMNS axis. Default value is true",
+		"jp": "Value indicating whether a NON EMPTY clause is present on COLUMNS axis. Default value is true"
+	}
                 },
                 "addCalculatedMembersOnRows": {
                   "type": "bool",
                   "defaultValue": true,
-                  "description": "Value indicating whether a members' set expressions on ROWS axis should be wrapped with AddCalculatedMembers MDX method. Default value is true "
+                  "description": {
+		"en": "Value indicating whether a members' set expressions on ROWS axis should be wrapped with AddCalculatedMembers MDX method. Default value is true ",
+		"jp": "Value indicating whether a members' set expressions on ROWS axis should be wrapped with AddCalculatedMembers MDX method. Default value is true "
+	}
                 },
                 "addCalculatedMembersOnColumns": {
                   "type": "bool",
                   "defaultValue": true,
-                  "description": "Value indicating whether a members' set expressions on COLUMNS axis should be wrapped with AddCalculatedMembers MDX method. Default value is true"
+                  "description": {
+		"en": "Value indicating whether a members' set expressions on COLUMNS axis should be wrapped with AddCalculatedMembers MDX method. Default value is true",
+		"jp": "Value indicating whether a members' set expressions on COLUMNS axis should be wrapped with AddCalculatedMembers MDX method. Default value is true"
+	}
                 },
                 "dimensionPropertiesOnRows": {
                   "type": "array",
                   "defaultValue": [],
-                  "description": "String array with the names of intrinsic non-context sensitive member properties applied on ROWS axis. By defult CHILDREN_CARDINALITY and PARENT_UNIQUE_NAME properties are always added to DIMENSION PROPERTIES",
+                  "description": {
+		"en": "String array with the names of intrinsic non-context sensitive member properties applied on ROWS axis. By defult CHILDREN_CARDINALITY and PARENT_UNIQUE_NAME properties are always added to DIMENSION PROPERTIES",
+		"jp": "String array with the names of intrinsic non-context sensitive member properties applied on ROWS axis. By defult CHILDREN_CARDINALITY and PARENT_UNIQUE_NAME properties are always added to DIMENSION PROPERTIES"
+	},
                   "arrayMemberType": "string"
                 },
                 "dimensionPropertiesOnColumns": {
                   "type": "array",
                   "defaultValue": [],
-                  "description": "String array with the names of intrinsic non-context sensitive member properties applied on COLUMNS axis. By defult CHILDREN_CARDINALITY and PARENT_UNIQUE_NAME properties are always added to DIMENSION PROPERTIES",
+                  "description": {
+		"en": "String array with the names of intrinsic non-context sensitive member properties applied on COLUMNS axis. By defult CHILDREN_CARDINALITY and PARENT_UNIQUE_NAME properties are always added to DIMENSION PROPERTIES",
+		"jp": "String array with the names of intrinsic non-context sensitive member properties applied on COLUMNS axis. By defult CHILDREN_CARDINALITY and PARENT_UNIQUE_NAME properties are always added to DIMENSION PROPERTIES"
+	},
                   "arrayMemberType": "string"
                 }
               }
@@ -558,98 +717,152 @@
         "flatDataOptions": {
           "type": "object",
           "defaultValue": null,
-          "description": "Settings for creating an instance of $.ig.OlapFlatDataSource.",
+          "description": {
+		"en": "Settings for creating an instance of $.ig.OlapFlatDataSource.",
+		"jp": "Settings for creating an instance of $.ig.OlapFlatDataSource."
+	},
           "schema": {
             "dataSource": {
               "type": "object",
               "defaultValue": null,
-              "description": "Specifies any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself."
+              "description": {
+		"en": "Specifies any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself.",
+		"jp": "Specifies any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself."
+	}
             },
             "dataSourceUrl": {
               "type": "string",
               "defaultValue": null,
-              "description": "Specifies a remote URL accepted by $.ig.DataSource in order to request data from it."
+              "description": {
+		"en": "Specifies a remote URL accepted by $.ig.DataSource in order to request data from it.",
+		"jp": "Specifies a remote URL accepted by $.ig.DataSource in order to request data from it."
+	}
             },
             "dataSourceType": {
               "type": "string",
               "defaultValue": null,
-              "description": "Explicitly set data source type (such as 'json'). Please refer to the documentation of $.ig.DataSource and its type property."
+              "description": {
+		"en": "Explicitly set data source type (such as 'json'). Please refer to the documentation of $.ig.DataSource and its type property.",
+		"jp": "Explicitly set data source type (such as 'json'). Please refer to the documentation of $.ig.DataSource and its type property."
+	}
             },
             "responseDataKey": {
               "type": "string",
               "defaultValue": null,
-              "description": "Specifies the name of the property in which data records are held if the response is wrapped."
+              "description": {
+		"en": "Specifies the name of the property in which data records are held if the response is wrapped.",
+		"jp": "Specifies the name of the property in which data records are held if the response is wrapped."
+	}
             },
             "responseDataType": {
               "type": "string",
               "defaultValue": null,
-              "description": "Explicitly set data source type (such as 'json'). Please refer to the documentation of $.ig.DataSource and its type property."
+              "description": {
+		"en": "Explicitly set data source type (such as 'json'). Please refer to the documentation of $.ig.DataSource and its type property.",
+		"jp": "Explicitly set data source type (such as 'json'). Please refer to the documentation of $.ig.DataSource and its type property."
+	}
             },
             "metadata": {
               "type": "object",
               "defaultValue": null,
-              "description": "An object containing processing instructions for the $.ig.DataSource data.",
+              "description": {
+		"en": "An object containing processing instructions for the $.ig.DataSource data.",
+		"jp": "An object containing processing instructions for the $.ig.DataSource data."
+	},
               "required": true,
               "schema": {
                 "cube": {
                   "type": "object",
                   "defaultValue": null,
-                  "description": "Metadata used for the creation of the cube.",
+                  "description": {
+		"en": "Metadata used for the creation of the cube.",
+		"jp": "Metadata used for the creation of the cube."
+	},
                   "required": true,
                   "schema": {
                     "name": {
                       "type": "string",
                       "defaultValue": null,
-                      "description": "A caption for the cube.",
+                      "description": {
+		"en": "A caption for the cube.",
+		"jp": "A caption for the cube."
+	},
                       "required": true
                     },
                     "caption": {
                       "type": "string",
                       "defaultValue": null,
-                      "description": "A caption for the measures dimension."
+                      "description": {
+		"en": "A caption for the measures dimension.",
+		"jp": "A caption for the measures dimension."
+	}
                     },
                     "measuresDimension": {
                       "type": "object",
                       "defaultValue": null,
-                      "description": "An object providing information about the measures' root node.",
+                      "description": {
+		"en": "An object providing information about the measures' root node.",
+		"jp": "An object providing information about the measures' root node."
+	},
                       "schema": {
                         "name": {
                           "type": "string",
                           "defaultValue": "Measures",
-                          "description": "A unique name for the measures dimension.",
+                          "description": {
+		"en": "A unique name for the measures dimension.",
+		"jp": "A unique name for the measures dimension."
+	},
                           "required": true
                         },
                         "caption": {
                           "type": "string",
                           "defaultValue": "Measures",
-                          "description": "A caption for the measures dimension."
+                          "description": {
+		"en": "A caption for the measures dimension.",
+		"jp": "A caption for the measures dimension."
+	}
                         },
                         "measures": {
                           "type": "array",
                           "defaultValue": null,
-                          "description": "An array of measure metadata objects.",
+                          "description": {
+		"en": "An array of measure metadata objects.",
+		"jp": "An array of measure metadata objects."
+	},
                           "schema": {
                             "name": {
                               "type": "string",
                               "defaultValue": null,
-                              "description": "A unique name for the measure.",
+                              "description": {
+		"en": "A unique name for the measure.",
+		"jp": "A unique name for the measure."
+	},
                               "required": true
                             },
                             "caption": {
                               "type": "string",
                               "defaultValue": null,
-                              "description": "A caption for the measure."
+                              "description": {
+		"en": "A caption for the measure.",
+		"jp": "A caption for the measure."
+	}
                             },
                             "aggregator": {
                               "type": "function",
                               "defaultValue": null,
-                              "description": "An aggregator function called when each cell is evaluated. Returns a value for the cell. If the returned value is null, no cell will be created in for the data source result.",
+                              "description": {
+		"en": "An aggregator function called when each cell is evaluated. Returns a value for the cell. If the returned value is null, no cell will be created in for the data source result.",
+		"jp": "An aggregator function called when each cell is evaluated. Returns a value for the cell. If the returned value is null, no cell will be created in for the data source result."
+	},
                               "required": true
                             },
                             "displayFolder": {
                               "type": "string",
                               "defaultValue": null,
-                              "description": "The path used when displaying the measure in the user interface. Nested folders are indicated by a backslash (\\)."
+                              "description": {
+		"en": "The path used when displaying the measure in the user interface. Nested folders are indicated by a backslash (\\).",
+		"jp": "The path used when displaying the measure in the user interface. Nested folders are indicated by a backslash (\\)."
+	}
                             }
                           }
                         }
@@ -658,62 +871,95 @@
                     "dimensions": {
                       "type": "array",
                       "defaultValue": null,
-                      "description": "An array of dimension metadata objects.",
+                      "description": {
+		"en": "An array of dimension metadata objects.",
+		"jp": "An array of dimension metadata objects."
+	},
                       "required": true,
                       "schema": {
                         "name": {
                           "type": "string",
                           "defaultValue": null,
-                          "description": "A unique name for the dimension.",
+                          "description": {
+		"en": "A unique name for the dimension.",
+		"jp": "A unique name for the dimension."
+	},
                           "required": true
                         },
                         "caption": {
                           "type": "string",
                           "defaultValue": null,
-                          "description": "A caption for the dimension."
+                          "description": {
+		"en": "A caption for the dimension.",
+		"jp": "A caption for the dimension."
+	}
                         },
                         "hierarchies": {
                           "type": "array",
                           "defaultValue": null,
-                          "description": "An array of hierarchy metadata objects.",
+                          "description": {
+		"en": "An array of hierarchy metadata objects.",
+		"jp": "An array of hierarchy metadata objects."
+	},
                           "required": true,
                           "schema": {
                             "name": {
                               "type": "string",
                               "defaultValue": null,
-                              "description": "A name for the hierarchy. The unique name of the hierarchy is formed using the following pattern: [<parentDimension.name>].[<hierarchyMetadata.name>]",
+                              "description": {
+		"en": "A name for the hierarchy. The unique name of the hierarchy is formed using the following pattern: [<parentDimension.name>].[<hierarchyMetadata.name>]",
+		"jp": "A name for the hierarchy. The unique name of the hierarchy is formed using the following pattern: [<parentDimension.name>].[<hierarchyMetadata.name>]"
+	},
                               "required": true
                             },
                             "caption": {
                               "type": "string",
                               "defaultValue": null,
-                              "description": "A caption for the hierarchy."
+                              "description": {
+		"en": "A caption for the hierarchy.",
+		"jp": "A caption for the hierarchy."
+	}
                             },
                             "displayFolder": {
                               "type": "string",
                               "defaultValue": null,
-                              "description": "The path to be used when displaying the hierarchy in the user interface. Nested folders are indicated by a backslash (\\). The folder hierarchy will appear under parent dimension node."
+                              "description": {
+		"en": "The path to be used when displaying the hierarchy in the user interface. Nested folders are indicated by a backslash (\\). The folder hierarchy will appear under parent dimension node.",
+		"jp": "The path to be used when displaying the hierarchy in the user interface. Nested folders are indicated by a backslash (\\). The folder hierarchy will appear under parent dimension node."
+	}
                             },
                             "levels": {
                               "type": "array",
                               "defaultValue": null,
-                              "description": "An array of level metadata objects.",
+                              "description": {
+		"en": "An array of level metadata objects.",
+		"jp": "An array of level metadata objects."
+	},
                               "schema": {
                                 "name": {
                                   "type": "string",
                                   "defaultValue": null,
-                                  "description": "A name for the level. The unique name of the level is formed using the following pattern: {<hierarchy.uniqueName>}.[<levelMetadata.name>]",
+                                  "description": {
+		"en": "A name for the level. The unique name of the level is formed using the following pattern: {<hierarchy.uniqueName>}.[<levelMetadata.name>]",
+		"jp": "A name for the level. The unique name of the level is formed using the following pattern: {<hierarchy.uniqueName>}.[<levelMetadata.name>]"
+	},
                                   "required": true
                                 },
                                 "caption": {
                                   "type": "string",
                                   "defaultValue": null,
-                                  "description": "A caption for the level."
+                                  "description": {
+		"en": "A caption for the level.",
+		"jp": "A caption for the level."
+	}
                                 },
                                 "memberProvider": {
                                   "type": "function",
                                   "defaultValue": null,
-                                  "description": "A function called for each item of the data source array when level members are created. Based on the item parameter the function should return a value that will form the $.ig.Member’s name and caption."
+                                  "description": {
+		"en": "A function called for each item of the data source array when level members are created. Based on the item parameter the function should return a value that will form the $.ig.Member’s name and caption.",
+		"jp": "A function called for each item of the data source array when level members are created. Based on the item parameter the function should return a value that will form the $.ig.Member’s name and caption."
+	}
                                 }
                               }
                             }
@@ -730,218 +976,341 @@
         "measures": {
           "type": "string",
           "defaultValue": "null",
-          "description": "A list of measure names separated by comma (,). These will be the measures of the data source."
+          "description": {
+		"en": "A list of measure names separated by comma (,). These will be the measures of the data source.",
+		"jp": "A list of measure names separated by comma (,). These will be the measures of the data source."
+	}
         },
         "filters": {
           "type": "string",
           "defaultValue": "null",
-          "description": "A list of hierarchy names separated by comma (,). These will be hierarchies in the filters of the data source."
+          "description": {
+		"en": "A list of hierarchy names separated by comma (,). These will be hierarchies in the filters of the data source.",
+		"jp": "A list of hierarchy names separated by comma (,). These will be hierarchies in the filters of the data source."
+	}
         },
         "rows": {
           "type": "string",
           "defaultValue": "null",
-          "description": "A list of hierarchy names separated by comma (,). These will be the hierarchies in the rows of the data source."
+          "description": {
+		"en": "A list of hierarchy names separated by comma (,). These will be the hierarchies in the rows of the data source.",
+		"jp": "A list of hierarchy names separated by comma (,). These will be the hierarchies in the rows of the data source."
+	}
         },
         "columns": {
           "type": "string",
           "defaultValue": "null",
-          "description": "A list of hierarchy names separated by comma (,). These will be the hierarchies in the columns of the data source."
+          "description": {
+		"en": "A list of hierarchy names separated by comma (,). These will be the hierarchies in the columns of the data source.",
+		"jp": "A list of hierarchy names separated by comma (,). These will be the hierarchies in the columns of the data source."
+	}
         }
       }
     },
     "defaultRowHeaderWidth": {
       "type": "number",
       "defaultValue": 200.0,
-      "description": "Specifies the width of the row headers."
+      "description": {
+		"en": "Specifies the width of the row headers.",
+		"jp": "Specifies the width of the row headers."
+	}
     },
     "deferUpdate": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Setting deferUpdate to true will not apply changes to the data source until the updateGrid method is called."
+      "description": {
+		"en": "Setting deferUpdate to true will not apply changes to the data source until the updateGrid method is called.",
+		"jp": "Setting deferUpdate to true will not apply changes to the data source until the updateGrid method is called."
+	}
     },
     "disableColumnsDropArea": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Disable the drag and drop for the columns drop area and the ability to use filtering and remove items from it."
+      "description": {
+		"en": "Disable the drag and drop for the columns drop area and the ability to use filtering and remove items from it.",
+		"jp": "Disable the drag and drop for the columns drop area and the ability to use filtering and remove items from it."
+	}
     },
     "disableFiltersDropArea": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Disable the drag and drop for the filters drop area and the ability to use filtering and remove items from it."
+      "description": {
+		"en": "Disable the drag and drop for the filters drop area and the ability to use filtering and remove items from it.",
+		"jp": "Disable the drag and drop for the filters drop area and the ability to use filtering and remove items from it."
+	}
     },
     "disableMeasuresDropArea": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Disable the drag and drop for the measures drop area and the ability to use filtering and remove items from it."
+      "description": {
+		"en": "Disable the drag and drop for the measures drop area and the ability to use filtering and remove items from it.",
+		"jp": "Disable the drag and drop for the measures drop area and the ability to use filtering and remove items from it."
+	}
     },
     "disableRowsDropArea": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Disable the drag and drop for the rows drop area and the ability to use filtering and remove items from it."
+      "description": {
+		"en": "Disable the drag and drop for the rows drop area and the ability to use filtering and remove items from it.",
+		"jp": "Disable the drag and drop for the rows drop area and the ability to use filtering and remove items from it."
+	}
     },
     "dragAndDropSettings": {
       "type": "object",
       "defaultValue": null,
-      "description": "Settings for the drag and drop functionality of the igPivotGrid.",
+      "description": {
+		"en": "Settings for the drag and drop functionality of the igPivotGrid.",
+		"jp": "Settings for the drag and drop functionality of the igPivotGrid."
+	},
       "schema": {
         "appendTo": {
           "type": "string",
           "defaultValue": "body",
-          "description": "Which element the draggable helper should be appended to while dragging."
+          "description": {
+		"en": "Which element the draggable helper should be appended to while dragging.",
+		"jp": "Which element the draggable helper should be appended to while dragging."
+	}
         },
         "containment": {
           "type": "bool",
           "defaultValue": false,
-          "description": "Specifies the containment for the drag helper. The area inside of which the helper is contained would be scrollable while dragging."
+          "description": {
+		"en": "Specifies the containment for the drag helper. The area inside of which the helper is contained would be scrollable while dragging.",
+		"jp": "Specifies the containment for the drag helper. The area inside of which the helper is contained would be scrollable while dragging."
+	}
         },
         "zIndex": {
           "type": "number",
           "defaultValue": 10,
-          "description": "Specifies z-index that would be set for the drag helper."
+          "description": {
+		"en": "Specifies z-index that would be set for the drag helper.",
+		"jp": "Specifies z-index that would be set for the drag helper."
+	}
         }
       }
     },
     "dropDownParent": {
       "type": "string",
       "defaultValue": null,
-      "description": " Specifies the parent for the drop downs."
+      "description": {
+		"en": " Specifies the parent for the drop downs.",
+		"jp": " Specifies the parent for the drop downs."
+	}
     },
     "firstLevelSortDirection": {
       "type": "string",
       "defaultValue": "ascending",
-      "description": "Spefies the default sort direction for the levels if no sort direction is specified in an item from the levelSortDirections option.",
+      "description": {
+		"en": "Spefies the default sort direction for the levels if no sort direction is specified in an item from the levelSortDirections option.",
+		"jp": "Spefies the default sort direction for the levels if no sort direction is specified in an item from the levelSortDirections option."
+	},
       "valueOptions": [
         {
           "name": "ascending",
           "type": "object",
-          "description": "Specifies ascending sorting direction"
+          "description": {
+		"en": "Specifies ascending sorting direction",
+		"jp": "Specifies ascending sorting direction"
+	}
         },
         {
           "name": "descending",
           "type": "string",
-          "description": "Specifies descending sorting direction"
+          "description": {
+		"en": "Specifies descending sorting direction",
+		"jp": "Specifies descending sorting direction"
+	}
         }
       ]
     },
     "firstSortDirection": {
       "type": "string",
       "defaultValue": "ascending",
-      "description": "Spefies the default sort direction for the rows.",
+      "description": {
+		"en": "Spefies the default sort direction for the rows.",
+		"jp": "Spefies the default sort direction for the rows."
+	},
       "valueOptions": [
         {
           "name": "ascending",
           "type": "object",
-          "description": "Specifies ascending sorting direction"
+          "description": {
+		"en": "Specifies ascending sorting direction",
+		"jp": "Specifies ascending sorting direction"
+	}
         },
         {
           "name": "descending",
           "type": "string",
-          "description": "Specifies descending sorting direction"
+          "description": {
+		"en": "Specifies descending sorting direction",
+		"jp": "Specifies descending sorting direction"
+	}
         }
       ]
     },
     "gridOptions": {
       "type": "object",
       "defaultValue": null,
-      "description": "Options specific to the igGrid that will render the pivot grid view.",
+      "description": {
+		"en": "Options specific to the igGrid that will render the pivot grid view.",
+		"jp": "Options specific to the igGrid that will render the pivot grid view."
+	},
       "schema": {
         "defaultColumnWidth": {
           "type": "number",
           "defaultValue": null,
-          "description": "Default column width that will be set for all columns."
+          "description": {
+		"en": "Default column width that will be set for all columns.",
+		"jp": "Default column width that will be set for all columns."
+	}
         },
         "fixedHeaders": {
           "type": "bool",
           "defaultValue": true,
-          "description": "Headers will be fixed if this option is set to true, and only the grid data will be scrollable."
+          "description": {
+		"en": "Headers will be fixed if this option is set to true, and only the grid data will be scrollable.",
+		"jp": "Headers will be fixed if this option is set to true, and only the grid data will be scrollable."
+	}
         },
         "caption": {
           "type": "string",
           "defaultValue": null,
-          "description": "Caption text that will be shown above the pivot grid header."
+          "description": {
+		"en": "Caption text that will be shown above the pivot grid header.",
+		"jp": "Caption text that will be shown above the pivot grid header."
+	}
         },
         "features": {
           "type": "object",
           "defaultValue": [],
-          "description": "A list of grid features definitions. The supported features are Resizing and Tooltips. Each feature goes with its separate options that are documented for the feature accordingly.",
+          "description": {
+		"en": "A list of grid features definitions. The supported features are Resizing and Tooltips. Each feature goes with its separate options that are documented for the feature accordingly.",
+		"jp": "A list of grid features definitions. The supported features are Resizing and Tooltips. Each feature goes with its separate options that are documented for the feature accordingly."
+	},
           "schemaRef": "grid.features"
         },
         "tabIndex": {
           "type": "number",
           "defaultValue": 0,
-          "description": "Initial tabIndex attribute that will be set on the container element."
+          "description": {
+		"en": "Initial tabIndex attribute that will be set on the container element.",
+		"jp": "Initial tabIndex attribute that will be set on the container element."
+	}
         },
         "alternateRowStyles": {
           "type": "bool",
           "defaultValue": true,
-          "description": "Enables/disables rendering of alternating row styles (odd and even rows receive different styling). Note that if a custom jQuery template is set, this has no effect and CSS for the row should be adjusted manually in the template contents."
+          "description": {
+		"en": "Enables/disables rendering of alternating row styles (odd and even rows receive different styling). Note that if a custom jQuery template is set, this has no effect and CSS for the row should be adjusted manually in the template contents.",
+		"jp": "Enables/disables rendering of alternating row styles (odd and even rows receive different styling). Note that if a custom jQuery template is set, this has no effect and CSS for the row should be adjusted manually in the template contents."
+	}
         },
         "enableHoverStyles": {
           "type": "bool",
           "defaultValue": false,
-          "description": "Enables/disables rendering of ui-state-hover classes when the mouse is over a record. This can be useful in templating scenarios, for example, where we don't want to apply hover styling to templated content."
+          "description": {
+		"en": "Enables/disables rendering of ui-state-hover classes when the mouse is over a record. This can be useful in templating scenarios, for example, where we don't want to apply hover styling to templated content.",
+		"jp": "Enables/disables rendering of ui-state-hover classes when the mouse is over a record. This can be useful in templating scenarios, for example, where we don't want to apply hover styling to templated content."
+	}
         }
       }
     },
     "height": {
       "type": "string",
       "defaultValue": null,
-      "description": " This is the total height of the grid. The widget height can be set in pixels (px) and percentage (%). The widget height can be set as a number"
+      "description": {
+		"en": " This is the total height of the grid. The widget height can be set in pixels (px) and percentage (%). The widget height can be set as a number",
+		"jp": " This is the total height of the grid. The widget height can be set in pixels (px) and percentage (%). The widget height can be set as a number"
+	}
     },
     "hideColumnsDropArea": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Hide the columns drop area."
+      "description": {
+		"en": "Hide the columns drop area.",
+		"jp": "Hide the columns drop area."
+	}
     },
     "hideFiltersDropArea": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Hide the filters drop area."
+      "description": {
+		"en": "Hide the filters drop area.",
+		"jp": "Hide the filters drop area."
+	}
     },
     "hideMeasuresDropArea": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Hide the measures drop area."
+      "description": {
+		"en": "Hide the measures drop area.",
+		"jp": "Hide the measures drop area."
+	}
     },
     "hideRowsDropArea": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Hide the rows drop area."
+      "description": {
+		"en": "Hide the rows drop area.",
+		"jp": "Hide the rows drop area."
+	}
     },
     "isParentInFrontForColumns": {
       "type": "bool",
       "defaultValue": false,
-      "description": "A boolean value indicating whether a parent in the columns is in front of its children.<br>            If set to true, the query set sorts members in a level in their natural order - child members immediately follow their parent members.<br>            If set to false the query set sorts the members in a level using a post-natural order. In other words, child members precede their parents."
+      "description": {
+		"en": "A boolean value indicating whether a parent in the columns is in front of its children.<br>            If set to true, the query set sorts members in a level in their natural order - child members immediately follow their parent members.<br>            If set to false the query set sorts the members in a level using a post-natural order. In other words, child members precede their parents.",
+		"jp": "A boolean value indicating whether a parent in the columns is in front of its children.<br>            If set to true, the query set sorts members in a level in their natural order - child members immediately follow their parent members.<br>            If set to false the query set sorts the members in a level using a post-natural order. In other words, child members precede their parents."
+	}
     },
     "isParentInFrontForRows": {
       "type": "bool",
       "defaultValue": true,
-      "description": "A boolean value indicating whether a parent in the rows is in front of its children.<br>            If set to true, the query set sorts members in a level in their natural order - child members immediately follow their parent members.<br>            If set to false the query set sorts the members in a level using a post-natural order. In other words, child members precede their parents."
+      "description": {
+		"en": "A boolean value indicating whether a parent in the rows is in front of its children.<br>            If set to true, the query set sorts members in a level in their natural order - child members immediately follow their parent members.<br>            If set to false the query set sorts the members in a level using a post-natural order. In other words, child members precede their parents.",
+		"jp": "A boolean value indicating whether a parent in the rows is in front of its children.<br>            If set to true, the query set sorts members in a level in their natural order - child members immediately follow their parent members.<br>            If set to false the query set sorts the members in a level using a post-natural order. In other words, child members precede their parents."
+	}
     },
     "levelSortDirections": {
       "type": "array",
       "defaultValue": null,
-      "description": "An array of level sort direction items, which predefine the sorted header cells.",
+      "description": {
+		"en": "An array of level sort direction items, which predefine the sorted header cells.",
+		"jp": "An array of level sort direction items, which predefine the sorted header cells."
+	},
       "schema": {
         "levelUniqueName": {
           "type": "string",
           "defaultValue": null,
-          "description": "Specifies the unique name of the level, which will be sorted."
+          "description": {
+		"en": "Specifies the unique name of the level, which will be sorted.",
+		"jp": "Specifies the unique name of the level, which will be sorted."
+	}
         },
         "sortDirections": {
           "type": "string",
           "defaultValue": null,
-          "description": "Specifies the sort direction. If no direction is specified, the level is going to be sorted in the direction specified by the firstLevelSortDirection option.",
+          "description": {
+		"en": "Specifies the sort direction. If no direction is specified, the level is going to be sorted in the direction specified by the firstLevelSortDirection option.",
+		"jp": "Specifies the sort direction. If no direction is specified, the level is going to be sorted in the direction specified by the firstLevelSortDirection option."
+	},
           "valueOptions": [
           {
             "name": "ascending",
             "type": "string",
-            "description": "The sort direction is ascending"
+            "description": {
+		"en": "The sort direction is ascending",
+		"jp": "The sort direction is ascending"
+	}
           },
           {
             "name": "descending",
             "type": "string",
-            "description": "The sort direction is descending"
+            "description": {
+		"en": "The sort direction is descending",
+		"jp": "The sort direction is descending"
+	}
           }]
         }
       }
@@ -949,7 +1318,10 @@
     "width": {
       "type": "string",
       "defaultValue": null,
-      "description": "The widget width can be set in pixels (px) and percentage (%). \n  The widget width can be set as a number."
+      "description": {
+		"en": "The widget width can be set in pixels (px) and percentage (%). \n  The widget width can be set as a number.",
+		"jp": "The widget width can be set in pixels (px) and percentage (%). \n  The widget width can be set as a number."
+	}
     }
   }
 }

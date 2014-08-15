@@ -19,7 +19,10 @@
           "optional": false
         }
       ],
-      "description": "Event fired after the filtering has been executed and results are rendered.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.columnIndex to get column index.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key."
+      "description": {
+		"en": "Event fired after the filtering has been executed and results are rendered.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.columnIndex to get column index.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key.",
+		"jp": "Event fired after the filtering has been executed and results are rendered.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.columnIndex to get column index.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key."
+	}
     },
     "dataFiltering": {
       "cancellable": true,
@@ -35,7 +38,10 @@
           "optional": false
         }
       ],
-      "description": "Event fired before a filtering operation is executed (remote request or local). <br>&nbsp;&nbsp;&nbsp;Return false in order to cancel filtering operation.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.columnIndex to get column index.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key."
+      "description": {
+		"en": "Event fired before a filtering operation is executed (remote request or local). <br>&nbsp;&nbsp;&nbsp;Return false in order to cancel filtering operation.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.columnIndex to get column index.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key.",
+		"jp": "Event fired before a filtering operation is executed (remote request or local). <br>&nbsp;&nbsp;&nbsp;Return false in order to cancel filtering operation.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.columnIndex to get column index.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key."
+	}
     },
     "dropDownClosed": {
       "cancellable": false,
@@ -51,7 +57,10 @@
           "optional": false
         }
       ],
-      "description": "Event fired after a filter column dropdown is completely closed. <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dropDown to get reference to dropdown DOM element."
+      "description": {
+		"en": "Event fired after a filter column dropdown is completely closed. <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dropDown to get reference to dropdown DOM element.",
+		"jp": "Event fired after a filter column dropdown is completely closed. <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dropDown to get reference to dropdown DOM element."
+	}
     },
     "dropDownClosing": {
       "cancellable": true,
@@ -67,7 +76,10 @@
           "optional": false
         }
       ],
-      "description": "Event fired before the filter dropdown starts closing. <br>            Return false in order to cancel dropdown closing.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dropDown to get reference to dropdown DOM element."
+      "description": {
+		"en": "Event fired before the filter dropdown starts closing. <br>            Return false in order to cancel dropdown closing.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dropDown to get reference to dropdown DOM element.",
+		"jp": "Event fired before the filter dropdown starts closing. <br>            Return false in order to cancel dropdown closing.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dropDown to get reference to dropdown DOM element."
+	}
     },
     "dropDownOpened": {
       "cancellable": false,
@@ -83,7 +95,10 @@
           "optional": false
         }
       ],
-      "description": "Event fired after the filter dropdown is opened for a specific column. <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dropDown to get reference to dropdown DOM element."
+      "description": {
+		"en": "Event fired after the filter dropdown is opened for a specific column. <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dropDown to get reference to dropdown DOM element.",
+		"jp": "Event fired after the filter dropdown is opened for a specific column. <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dropDown to get reference to dropdown DOM element."
+	}
     },
     "dropDownOpening": {
       "cancellable": true,
@@ -99,7 +114,10 @@
           "optional": false
         }
       ],
-      "description": "Event fired before the filter dropdown is opened for a specific column. <br>&nbsp;&nbsp;&nbsp;Return false in order to cancel dropdown opening.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dropDown to get reference to dropdown DOM element."
+      "description": {
+		"en": "Event fired before the filter dropdown is opened for a specific column. <br>&nbsp;&nbsp;&nbsp;Return false in order to cancel dropdown opening.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dropDown to get reference to dropdown DOM element.",
+		"jp": "Event fired before the filter dropdown is opened for a specific column. <br>&nbsp;&nbsp;&nbsp;Return false in order to cancel dropdown opening.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dropDown to get reference to dropdown DOM element."
+	}
     },
     "filterDialogClosed": {
       "cancellable": false,
@@ -115,7 +133,10 @@
           "optional": false
         }
       ],
-      "description": "Event fired after the advanced filter dialog has been closed.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid."
+      "description": {
+		"en": "Event fired after the advanced filter dialog has been closed.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.",
+		"jp": "Event fired after the advanced filter dialog has been closed.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid."
+	}
     },
     "filterDialogClosing": {
       "cancellable": true,
@@ -131,7 +152,10 @@
           "optional": false
         }
       ],
-      "description": "Event fired before the advanced filter dialog is closed. <br>&nbsp;&nbsp;&nbsp;Return false in order to cancel filtering dialog closing.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid."
+      "description": {
+		"en": "Event fired before the advanced filter dialog is closed. <br>&nbsp;&nbsp;&nbsp;Return false in order to cancel filtering dialog closing.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.",
+		"jp": "Event fired before the advanced filter dialog is closed. <br>&nbsp;&nbsp;&nbsp;Return false in order to cancel filtering dialog closing.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid."
+	}
     },
     "filterDialogContentsRendered": {
       "cancellable": false,
@@ -147,7 +171,10 @@
           "optional": false
         }
       ],
-      "description": "Event fired after the contents of the advanced filter dialog are rendered.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dialogElement to get reference to filtering dialog DOM element."
+      "description": {
+		"en": "Event fired after the contents of the advanced filter dialog are rendered.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dialogElement to get reference to filtering dialog DOM element.",
+		"jp": "Event fired after the contents of the advanced filter dialog are rendered.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dialogElement to get reference to filtering dialog DOM element."
+	}
     },
     "filterDialogContentsRendering": {
       "cancellable": true,
@@ -163,7 +190,10 @@
           "optional": false
         }
       ],
-      "description": "Event fired before the contents of the advanced filter dialog are rendered. <br>&nbsp;&nbsp;&nbsp;Return false in order to cancel filtering dialog rendering.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dialogElement to get reference to filtering dialog DOM element."
+      "description": {
+		"en": "Event fired before the contents of the advanced filter dialog are rendered. <br>&nbsp;&nbsp;&nbsp;Return false in order to cancel filtering dialog rendering.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dialogElement to get reference to filtering dialog DOM element.",
+		"jp": "Event fired before the contents of the advanced filter dialog are rendered. <br>&nbsp;&nbsp;&nbsp;Return false in order to cancel filtering dialog rendering.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dialogElement to get reference to filtering dialog DOM element."
+	}
     },
     "filterDialogFilterAdded": {
       "cancellable": false,
@@ -179,7 +209,10 @@
           "optional": false
         }
       ],
-      "description": "Event fired after a filter row is added to the advanced filter dialog.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.filter to get reference to filters table row DOM element."
+      "description": {
+		"en": "Event fired after a filter row is added to the advanced filter dialog.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.filter to get reference to filters table row DOM element.",
+		"jp": "Event fired after a filter row is added to the advanced filter dialog.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.filter to get reference to filters table row DOM element."
+	}
     },
     "filterDialogFilterAdding": {
       "cancellable": true,
@@ -195,7 +228,10 @@
           "optional": false
         }
       ],
-      "description": "Event fired before a filter row is added to the advanced filter dialog.<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel filter adding to the advanced filtering dialog.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.filtersTableBody to get reference to filters table body DOM element."
+      "description": {
+		"en": "Event fired before a filter row is added to the advanced filter dialog.<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel filter adding to the advanced filtering dialog.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.filtersTableBody to get reference to filters table body DOM element.",
+		"jp": "Event fired before a filter row is added to the advanced filter dialog.<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel filter adding to the advanced filtering dialog.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.filtersTableBody to get reference to filters table body DOM element."
+	}
     },
     "filterDialogFiltering": {
       "cancellable": true,
@@ -211,7 +247,10 @@
           "optional": false
         }
       ],
-      "description": "Event fired when the OK button in the advanced filter dialog is pressed. <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dialog to get reference to filtering dialog DOM element."
+      "description": {
+		"en": "Event fired when the OK button in the advanced filter dialog is pressed. <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dialog to get reference to filtering dialog DOM element.",
+		"jp": "Event fired when the OK button in the advanced filter dialog is pressed. <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dialog to get reference to filtering dialog DOM element."
+	}
     },
     "filterDialogMoving": {
       "cancellable": true,
@@ -227,7 +266,10 @@
           "optional": false
         }
       ],
-      "description": "Event fired every time the advanced filter dialog changes its position.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dialog to get reference to filtering dialog DOM element."
+      "description": {
+		"en": "Event fired every time the advanced filter dialog changes its position.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dialog to get reference to filtering dialog DOM element.",
+		"jp": "Event fired every time the advanced filter dialog changes its position.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dialog to get reference to filtering dialog DOM element."
+	}
     },
     "filterDialogOpened": {
       "cancellable": false,
@@ -243,7 +285,10 @@
           "optional": false
         }
       ],
-      "description": "Event fired after the advanced filter dialog is already opened.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dialog to get reference to filtering dialog DOM element."
+      "description": {
+		"en": "Event fired after the advanced filter dialog is already opened.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dialog to get reference to filtering dialog DOM element.",
+		"jp": "Event fired after the advanced filter dialog is already opened.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dialog to get reference to filtering dialog DOM element."
+	}
     },
     "filterDialogOpening": {
       "cancellable": true,
@@ -259,7 +304,10 @@
           "optional": false
         }
       ],
-      "description": "Event fired before the advanced filtering dialog is opened.<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel filter dialog opening.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dialog to get reference to filtering dialog DOM element."
+      "description": {
+		"en": "Event fired before the advanced filtering dialog is opened.<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel filter dialog opening.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dialog to get reference to filtering dialog DOM element.",
+		"jp": "Event fired before the advanced filtering dialog is opened.<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel filter dialog opening.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dialog to get reference to filtering dialog DOM element."
+	}
     }
   },
   "properties": {
@@ -270,211 +318,334 @@
     "advancedModeEditorsVisible": {
       "type": "bool",
       "defaultValue": false,
-      "description": "defines whether to show/hide editors in advanced mode. If false, no editors will be rendered in the advanced mode"
+      "description": {
+		"en": "defines whether to show/hide editors in advanced mode. If false, no editors will be rendered in the advanced mode",
+		"jp": "defines whether to show/hide editors in advanced mode. If false, no editors will be rendered in the advanced mode"
+	}
     },
     "advancedModeHeaderButtonLocation": {
       "type": "string",
       "defaultValue": null,
-      "description": " location of the advanced filtering button when advancedModeEditorsVisible is false (i.e. when the button is rendered in the header) ",
+      "description": {
+		"en": " location of the advanced filtering button when advancedModeEditorsVisible is false (i.e. when the button is rendered in the header) ",
+		"jp": " location of the advanced filtering button when advancedModeEditorsVisible is false (i.e. when the button is rendered in the header) "
+	},
       "valueOptions": [
         {
           "name": "left",
           "type": "string",
-          "description": ""
+          "description": {
+		"en": "",
+		"jp": ""
+	}
         },
         {
           "name": "right",
           "type": "string",
-          "description": ""
+          "description": {
+		"en": "",
+		"jp": ""
+	}
         }
       ]
     },
     "caseSensitive": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Enables or disables the filtering case sensitivity. Works only for local filtering.If true, it enables filtering case sensitivity. If false, it disables filtering case sensitivity."
+      "description": {
+		"en": "Enables or disables the filtering case sensitivity. Works only for local filtering.If true, it enables filtering case sensitivity. If false, it disables filtering case sensitivity.",
+		"jp": "Enables or disables the filtering case sensitivity. Works only for local filtering.If true, it enables filtering case sensitivity. If false, it disables filtering case sensitivity."
+	}
     },
     "columnSettings": {
       "type": "array",
       "defaultValue": null,
-      "description": "a list of column settings that specifies custom filtering options on a per column basis",
+      "description": {
+		"en": "a list of column settings that specifies custom filtering options on a per column basis",
+		"jp": "a list of column settings that specifies custom filtering options on a per column basis"
+	},
       "schema": {
         "columnKey": {
           "type": "string",
           "defaultValue": null,
-          "description": "Specifies column key. Either key or index must be set in every column setting."
+          "description": {
+		"en": "Specifies column key. Either key or index must be set in every column setting.",
+		"jp": "Specifies column key. Either key or index must be set in every column setting."
+	}
         },
         "columnIndex": {
           "type": "string",
           "defaultValue": null,
-          "description": "Specifies column index. Either key or index must be set in every column setting."
+          "description": {
+		"en": "Specifies column index. Either key or index must be set in every column setting.",
+		"jp": "Specifies column index. Either key or index must be set in every column setting."
+	}
         },
         "allowFiltering": {
           "type": "bool",
           "defaultValue": true,
-          "description": "Enables/disables filtering for the column."
+          "description": {
+		"en": "Enables/disables filtering for the column.",
+		"jp": "Enables/disables filtering for the column."
+	}
         },
         "condition": {
           "type": "string",
           "defaultValue": null,
-          "description": "Specifies filtering condition for the column",
+          "description": {
+		"en": "Specifies filtering condition for the column",
+		"jp": "Specifies filtering condition for the column"
+	},
           "valueOptions": [
             {
               "name": "empty",
               "type": "string",
-              "description": ""
+              "description": {
+		"en": "",
+		"jp": ""
+	}
             },
             {
               "name": "notEmpty",
               "type": "string",
-              "description": ""
+              "description": {
+		"en": "",
+		"jp": ""
+	}
             },
             {
               "name": "null",
               "type": "string",
-              "description": ""
+              "description": {
+		"en": "",
+		"jp": ""
+	}
             },
             {
               "name": "notNull",
               "type": "string",
-              "description": ""
+              "description": {
+		"en": "",
+		"jp": ""
+	}
             },
             {
               "name": "equals",
               "type": "string",
-              "description": ""
+              "description": {
+		"en": "",
+		"jp": ""
+	}
             },
             {
               "name": "doesNotEqual",
               "type": "string",
-              "description": ""
+              "description": {
+		"en": "",
+		"jp": ""
+	}
             },
             {
               "name": "startsWith",
               "type": "string",
-              "description": ""
+              "description": {
+		"en": "",
+		"jp": ""
+	}
             },
             {
               "name": "contains",
               "type": "string",
-              "description": ""
+              "description": {
+		"en": "",
+		"jp": ""
+	}
             },
             {
               "name": "doesNotContain",
               "type": "string",
-              "description": ""
+              "description": {
+		"en": "",
+		"jp": ""
+	}
             },
             {
               "name": "endsWith",
               "type": "string",
-              "description": ""
+              "description": {
+		"en": "",
+		"jp": ""
+	}
             },
             {
               "name": "greaterThan",
               "type": "string",
-              "description": ""
+              "description": {
+		"en": "",
+		"jp": ""
+	}
             },
             {
               "name": "lessThan",
               "type": "string",
-              "description": ""
+              "description": {
+		"en": "",
+		"jp": ""
+	}
             },
             {
               "name": "greaterThanOrEqualTo",
               "type": "string",
-              "description": ""
+              "description": {
+		"en": "",
+		"jp": ""
+	}
             },
             {
               "name": "lessThanOrEqualTo",
               "type": "string",
-              "description": ""
+              "description": {
+		"en": "",
+		"jp": ""
+	}
             },
             {
               "name": "on type",
               "type": "string",
-              "description": ""
+              "description": {
+		"en": "",
+		"jp": ""
+	}
             },
             {
               "name": "notOn",
               "type": "string",
-              "description": ""
+              "description": {
+		"en": "",
+		"jp": ""
+	}
             },
             {
               "name": "before",
               "type": "string",
-              "description": ""
+              "description": {
+		"en": "",
+		"jp": ""
+	}
             },
             {
               "name": "after",
               "type": "string",
-              "description": ""
+              "description": {
+		"en": "",
+		"jp": ""
+	}
             },
             {
               "name": "today",
               "type": "string",
-              "description": ""
+              "description": {
+		"en": "",
+		"jp": ""
+	}
             },
             {
               "name": "yesterday",
               "type": "string",
-              "description": ""
+              "description": {
+		"en": "",
+		"jp": ""
+	}
             },
             {
               "name": "thisMonth",
               "type": "string",
-              "description": ""
+              "description": {
+		"en": "",
+		"jp": ""
+	}
             },
             {
               "name": "lastMonth",
               "type": "string",
-              "description": ""
+              "description": {
+		"en": "",
+		"jp": ""
+	}
             },
             {
               "name": "nextMonth",
               "type": "string",
-              "description": ""
+              "description": {
+		"en": "",
+		"jp": ""
+	}
             },
             {
               "name": "thisYear",
               "type": "string",
-              "description": ""
+              "description": {
+		"en": "",
+		"jp": ""
+	}
             },
             {
               "name": "nextYear",
               "type": "string",
-              "description": ""
+              "description": {
+		"en": "",
+		"jp": ""
+	}
             },
             {
               "name": "lastYear",
               "type": "string",
-              "description": ""
+              "description": {
+		"en": "",
+		"jp": ""
+	}
             },
             {
               "name": "true",
               "type": "string",
-              "description": ""
+              "description": {
+		"en": "",
+		"jp": ""
+	}
             },
             {
               "name": "false",
               "type": "string",
-              "description": ""
+              "description": {
+		"en": "",
+		"jp": ""
+	}
             }
           ]
         },
         "defaultExpressions": {
           "type": "object",
           "defaultValue": null,
-          "description": "Initial filtering expressions - if set they will be applied on initialization",
+          "description": {
+		"en": "Initial filtering expressions - if set they will be applied on initialization",
+		"jp": "Initial filtering expressions - if set they will be applied on initialization"
+	},
 		  "schema": {
 			"expr": {
 			  "type": "string",
 			  "defaultValue": "",
-			  "description": "Expression"
+			  "description": {
+		"en": "Expression",
+		"jp": "Expression"
+	}
 			},
 			"cond": {
 			  "type": "string",
 			  "defaultValue": "",
-			  "description": "Condition"
+			  "description": {
+		"en": "Condition",
+		"jp": "Condition"
+	}
 			}
 		  }         
         }
@@ -483,336 +654,522 @@
     "featureChooserText": {
       "type": "string",
       "defaultValue": "",
-      "description": "Feature chooser text when filter is shown and filter mode is simple"
+      "description": {
+		"en": "Feature chooser text when filter is shown and filter mode is simple",
+		"jp": "Feature chooser text when filter is shown and filter mode is simple"
+	}
     },
     "featureChooserTextAdvancedFilter": {
       "type": "string",
       "defaultValue": "",
-      "description": "Feature chooser text when filter mode is advanced"
+      "description": {
+		"en": "Feature chooser text when filter mode is advanced",
+		"jp": "Feature chooser text when filter mode is advanced"
+	}
     },
     "featureChooserTextHide": {
       "type": "string",
       "defaultValue": "",
-      "description": "Feature chooser text when filter is hidden and filter mode is simple"
+      "description": {
+		"en": "Feature chooser text when filter is hidden and filter mode is simple",
+		"jp": "Feature chooser text when filter is hidden and filter mode is simple"
+	}
     },
     "filterButtonLocation": {
       "type": "string",
       "defaultValue": "left",
-      "description": " the filtering button for filter dropdowns can be rendered either on the left of the filter editor or on the right ",
+      "description": {
+		"en": " the filtering button for filter dropdowns can be rendered either on the left of the filter editor or on the right ",
+		"jp": " the filtering button for filter dropdowns can be rendered either on the left of the filter editor or on the right "
+	},
       "valueOptions": [
         {
           "name": "left",
           "type": "string",
-          "description": ""
+          "description": {
+		"en": "",
+		"jp": ""
+	}
         },
         {
           "name": "right",
           "type": "string",
-          "description": ""
+          "description": {
+		"en": "",
+		"jp": ""
+	}
         }
       ]
     },
     "filterDelay": {
       "type": "number",
       "defaultValue": 500.0,
-      "description": "Time in milliseconds for which widget will wait for keystrokes before sending filtering request."
+      "description": {
+		"en": "Time in milliseconds for which widget will wait for keystrokes before sending filtering request.",
+		"jp": "Time in milliseconds for which widget will wait for keystrokes before sending filtering request."
+	}
     },
     "filterDialogAddButtonWidth": {
       "type": "string",
       "defaultValue": 100,
-      "description": " add button width - in the advanced filter dialog ",
+      "description": {
+		"en": " add button width - in the advanced filter dialog ",
+		"jp": " add button width - in the advanced filter dialog "
+	},
       "valueOptions": [
         {
           "name": null,
           "type": "string",
-          "description": " The dialog Add button width in pixels (100px)."
+          "description": {
+		"en": " The dialog Add button width in pixels (100px).",
+		"jp": " The dialog Add button width in pixels (100px)."
+	}
         },
         {
           "name": null,
           "type": "number",
-          "description": " The dialog Add button width as a number (100)."
+          "description": {
+		"en": " The dialog Add button width as a number (100).",
+		"jp": " The dialog Add button width as a number (100)."
+	}
         }
       ]
     },
     "filterDialogAddConditionDropDownTemplate": {
       "type": "string",
       "defaultValue": "",
-      "description": "Custom template for options in dropdown in add condition area in the filter dialog."
+      "description": {
+		"en": "Custom template for options in dropdown in add condition area in the filter dialog.",
+		"jp": "Custom template for options in dropdown in add condition area in the filter dialog."
+	}
     },
     "filterDialogAddConditionTemplate": {
       "type": "string",
       "defaultValue": "",
-      "description": "Custom template for add condition area in the filter dialog."
+      "description": {
+		"en": "Custom template for add condition area in the filter dialog.",
+		"jp": "Custom template for add condition area in the filter dialog."
+	}
     },
     "filterDialogColumnDropDownDefaultWidth": {
       "type": "string",
       "defaultValue": null,
-      "description": " Width of the column chooser dropdowns in the advanced filter dialog ",
+      "description": {
+		"en": " Width of the column chooser dropdowns in the advanced filter dialog ",
+		"jp": " Width of the column chooser dropdowns in the advanced filter dialog "
+	},
       "valueOptions": [
         {
           "name": null,
           "type": "string",
-          "description": " The column chooser dropdowns width in pixels (80px)."
+          "description": {
+		"en": " The column chooser dropdowns width in pixels (80px).",
+		"jp": " The column chooser dropdowns width in pixels (80px)."
+	}
         },
         {
           "name": null,
           "type": "number",
-          "description": " The column chooser dropdowns width as a number (80)."
+          "description": {
+		"en": " The column chooser dropdowns width as a number (80).",
+		"jp": " The column chooser dropdowns width as a number (80)."
+	}
         }
       ]
     },
     "filterDialogContainment": {
       "type": "string",
       "defaultValue": "owner",
-      "description": "Controls containment behavior. <br>                owner  The filter dialog will be draggable only in the grid area<br>                window  The filter dialog will be draggable in the whole window area"
+      "description": {
+		"en": "Controls containment behavior. <br>                owner  The filter dialog will be draggable only in the grid area<br>                window  The filter dialog will be draggable in the whole window area",
+		"jp": "Controls containment behavior. <br>                owner  The filter dialog will be draggable only in the grid area<br>                window  The filter dialog will be draggable in the whole window area"
+	}
     },
     "filterDialogExprInputDefaultWidth": {
       "type": "string",
       "defaultValue": 80,
-      "description": " width of the filtering expression input boxes in the advanced filter dialog ",
+      "description": {
+		"en": " width of the filtering expression input boxes in the advanced filter dialog ",
+		"jp": " width of the filtering expression input boxes in the advanced filter dialog "
+	},
       "valueOptions": [
         {
           "name": null,
           "type": "string",
-          "description": " The filtering expression input boxes width in pixels (80px)."
+          "description": {
+		"en": " The filtering expression input boxes width in pixels (80px).",
+		"jp": " The filtering expression input boxes width in pixels (80px)."
+	}
         },
         {
           "name": null,
           "type": "number",
-          "description": " The filtering expression input boxes width as a number (80)."
+          "description": {
+		"en": " The filtering expression input boxes width as a number (80).",
+		"jp": " The filtering expression input boxes width as a number (80)."
+	}
         }
       ]
     },
     "filterDialogFilterConditionTemplate": {
       "type": "string",
       "defaultValue": "",
-      "description": "Custom template for options in condition list in filter dialog"
+      "description": {
+		"en": "Custom template for options in condition list in filter dialog",
+		"jp": "Custom template for options in condition list in filter dialog"
+	}
     },
     "filterDialogFilterDropDownDefaultWidth": {
       "type": "string",
       "defaultValue": 80,
-      "description": " Width of the filtering condition dropdowns in the advanced filter dialog ",
+      "description": {
+		"en": " Width of the filtering condition dropdowns in the advanced filter dialog ",
+		"jp": " Width of the filtering condition dropdowns in the advanced filter dialog "
+	},
       "valueOptions": [
         {
           "name": null,
           "type": "string",
-          "description": " The filtering condition dropdowns width in pixels (80px)."
+          "description": {
+		"en": " The filtering condition dropdowns width in pixels (80px).",
+		"jp": " The filtering condition dropdowns width in pixels (80px)."
+	}
         },
         {
           "name": null,
           "type": "number",
-          "description": " The filtering condition dropdowns width as a number (80)."
+          "description": {
+		"en": " The filtering condition dropdowns width as a number (80).",
+		"jp": " The filtering condition dropdowns width as a number (80)."
+	}
         }
       ]
     },
     "filterDialogFilterTemplate": {
       "type": "string",
       "defaultValue": "",
-      "description": "Custom template for filter dialog"
+      "description": {
+		"en": "Custom template for filter dialog",
+		"jp": "Custom template for filter dialog"
+	}
     },
     "filterDialogHeight": {
       "type": "string",
       "defaultValue": "",
-      "description": " default filter dialog height (used for Advanced filtering)  ",
+      "description": {
+		"en": " default filter dialog height (used for Advanced filtering)  ",
+		"jp": " default filter dialog height (used for Advanced filtering)  "
+	},
       "valueOptions": [
         {
           "name": null,
           "type": "string",
-          "description": " The dialog window height in pixels (350px)."
+          "description": {
+		"en": " The dialog window height in pixels (350px).",
+		"jp": " The dialog window height in pixels (350px)."
+	}
         },
         {
           "name": null,
           "type": "number",
-          "description": " The dialog window height as a number (350)."
+          "description": {
+		"en": " The dialog window height as a number (350).",
+		"jp": " The dialog window height as a number (350)."
+	}
         }
       ]
     },
     "filterDialogMaxFilterCount": {
       "type": "number",
       "defaultValue": 5.0,
-      "description": "Maximum number of filter rows in the advanced filtering dialog. if this number is exceeded, an error message will be rendered"
+      "description": {
+		"en": "Maximum number of filter rows in the advanced filtering dialog. if this number is exceeded, an error message will be rendered",
+		"jp": "Maximum number of filter rows in the advanced filtering dialog. if this number is exceeded, an error message will be rendered"
+	}
     },
     "filterDialogMaxHeight": {
       "type": "string",
       "defaultValue": "",
-      "description": " maximum filter dialog height (used for Advanced filtering)  ",
+      "description": {
+		"en": " maximum filter dialog height (used for Advanced filtering)  ",
+		"jp": " maximum filter dialog height (used for Advanced filtering)  "
+	},
       "valueOptions": [
         {
           "name": null,
           "type": "string",
-          "description": " The dialog window height in pixels (350px)."
+          "description": {
+		"en": " The dialog window height in pixels (350px).",
+		"jp": " The dialog window height in pixels (350px)."
+	}
         },
         {
           "name": null,
           "type": "number",
-          "description": " The dialog window height as a number (350)."
+          "description": {
+		"en": " The dialog window height as a number (350).",
+		"jp": " The dialog window height as a number (350)."
+	}
         }
       ]
     },
     "filterDialogOkCancelButtonWidth": {
       "type": "string",
       "defaultValue": 120,
-      "description": " Width of the Ok and Cancel buttons in the advanced filtering dialogs ",
+      "description": {
+		"en": " Width of the Ok and Cancel buttons in the advanced filtering dialogs ",
+		"jp": " Width of the Ok and Cancel buttons in the advanced filtering dialogs "
+	},
       "valueOptions": [
         {
           "name": null,
           "type": "string",
-          "description": " The advanced filter dialog Ok and Cancel buttons width in pixels (120px)."
+          "description": {
+		"en": " The advanced filter dialog Ok and Cancel buttons width in pixels (120px).",
+		"jp": " The advanced filter dialog Ok and Cancel buttons width in pixels (120px)."
+	}
         },
         {
           "name": null,
           "type": "number",
-          "description": " The advanced filter dialog Ok and Cancel buttons width as a number (120)."
+          "description": {
+		"en": " The advanced filter dialog Ok and Cancel buttons width as a number (120).",
+		"jp": " The advanced filter dialog Ok and Cancel buttons width as a number (120)."
+	}
         }
       ]
     },
     "filterDialogWidth": {
       "type": "string",
       "defaultValue": 370,
-      "description": " default filter dialog width (used for Advanced filtering) ",
+      "description": {
+		"en": " default filter dialog width (used for Advanced filtering) ",
+		"jp": " default filter dialog width (used for Advanced filtering) "
+	},
       "valueOptions": [
         {
           "name": null,
           "type": "string",
-          "description": " The dialog window width in pixels (370px)."
+          "description": {
+		"en": " The dialog window width in pixels (370px).",
+		"jp": " The dialog window width in pixels (370px)."
+	}
         },
         {
           "name": null,
           "type": "number",
-          "description": " The dialog window width as a number (370)."
+          "description": {
+		"en": " The dialog window width as a number (370).",
+		"jp": " The dialog window width as a number (370)."
+	}
         }
       ]
     },
     "filterDropDownAnimationDuration": {
       "type": "number",
       "defaultValue": 500.0,
-      "description": "animation duration in milliseconds for the filter dropdown animations"
+      "description": {
+		"en": "animation duration in milliseconds for the filter dropdown animations",
+		"jp": "animation duration in milliseconds for the filter dropdown animations"
+	}
     },
     "filterDropDownAnimations": {
       "type": "string",
       "defaultValue": "linear",
-      "description": " type of animations for the column filter dropdowns",
+      "description": {
+		"en": " type of animations for the column filter dropdowns",
+		"jp": " type of animations for the column filter dropdowns"
+	},
       "valueOptions": [
         {
           "name": "linear",
           "type": "string",
-          "description": ""
+          "description": {
+		"en": "",
+		"jp": ""
+	}
         },
         {
           "name": "none",
           "type": "string",
-          "description": ""
+          "description": {
+		"en": "",
+		"jp": ""
+	}
         }
       ]
     },
     "filterDropDownHeight": {
       "type": "number",
       "defaultValue": 0.0,
-      "description": "Height of the column filter dropdowns<br>                string The height of the column filter dropdowns in pixels (0px).<br>                number The height of the column filter dropdowns as a number (0)."
+      "description": {
+		"en": "Height of the column filter dropdowns<br>                string The height of the column filter dropdowns in pixels (0px).<br>                number The height of the column filter dropdowns as a number (0).",
+		"jp": "Height of the column filter dropdowns<br>                string The height of the column filter dropdowns in pixels (0px).<br>                number The height of the column filter dropdowns as a number (0)."
+	}
     },
     "filterDropDownItemIcons": {
       "type": "bool",
       "defaultValue": true,
-      "description": " Enable/disable filter icons visibility."
+      "description": {
+		"en": " Enable/disable filter icons visibility.",
+		"jp": " Enable/disable filter icons visibility."
+	}
     },
     "filterDropDownWidth": {
       "type": "string",
       "defaultValue": 0,
-      "description": " width of the column filter dropdowns",
+      "description": {
+		"en": " width of the column filter dropdowns",
+		"jp": " width of the column filter dropdowns"
+	},
       "valueOptions": [
         {
           "name": null,
           "type": "string",
-          "description": " The width in pixels (0px)"
+          "description": {
+		"en": " The width in pixels (0px)",
+		"jp": " The width in pixels (0px)"
+	}
         },
         {
           "name": null,
           "type": "number",
-          "description": " The width as a number (0)"
+          "description": {
+		"en": " The width as a number (0)",
+		"jp": " The width as a number (0)"
+	}
         }
       ]
     },
     "filterExprUrlKey": {
       "type": "string",
       "defaultValue": null,
-      "description": "URL key name that specifies how the filtering expressions will be encoded for remote requests, e.g. &filter('col') = startsWith. Default is OData"
+      "description": {
+		"en": "URL key name that specifies how the filtering expressions will be encoded for remote requests, e.g. &filter('col') = startsWith. Default is OData",
+		"jp": "URL key name that specifies how the filtering expressions will be encoded for remote requests, e.g. &filter('col') = startsWith. Default is OData"
+	}
     },
     "filterSummaryAlwaysVisible": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Enable/disable footer visibility with summary info about the filter.If false, the filter summary row (in the footer) will only be visible when paging is enabled (or some other feature that renders a footer)"
+      "description": {
+		"en": "Enable/disable footer visibility with summary info about the filter.If false, the filter summary row (in the footer) will only be visible when paging is enabled (or some other feature that renders a footer)",
+		"jp": "Enable/disable footer visibility with summary info about the filter.If false, the filter summary row (in the footer) will only be visible when paging is enabled (or some other feature that renders a footer)"
+	}
     },
     "filterSummaryTemplate": {
       "type": "string",
       "defaultValue": "",
-      "description": "Summary template that will appear in the bottom left corner of the footer. Has the format '${matches} matching records'"
+      "description": {
+		"en": "Summary template that will appear in the bottom left corner of the footer. Has the format '${matches} matching records'",
+		"jp": "Summary template that will appear in the bottom left corner of the footer. Has the format '${matches} matching records'"
+	}
     },
     "labels": {
       "type": "object",
       "defaultValue": null,
-      "description": "A list of configurable and localized labels that will be used for teh predefnied filtering conditions in the filter dropdowns."
+      "description": {
+		"en": "A list of configurable and localized labels that will be used for teh predefnied filtering conditions in the filter dropdowns.",
+		"jp": "A list of configurable and localized labels that will be used for teh predefnied filtering conditions in the filter dropdowns."
+	}
     },
     "mode": {
       "type": "string",
       "defaultValue": null,
-      "description": " Default is 'simple' for non-virtualized grids, and 'advanced' when virtualization is enabled ",
+      "description": {
+		"en": " Default is 'simple' for non-virtualized grids, and 'advanced' when virtualization is enabled ",
+		"jp": " Default is 'simple' for non-virtualized grids, and 'advanced' when virtualization is enabled "
+	},
       "valueOptions": [
         {
           "name": "simple",
           "type": "string",
-          "description": " renders just a filter row"
+          "description": {
+		"en": " renders just a filter row",
+		"jp": " renders just a filter row"
+	}
         },
         {
           "name": "advanced",
           "type": "string",
-          "description": " allows to configure multiple filters from a dialog - Excel style"
+          "description": {
+		"en": " allows to configure multiple filters from a dialog - Excel style",
+		"jp": " allows to configure multiple filters from a dialog - Excel style"
+	}
         }
       ]
     },
     "nullTexts": {
       "type": "object",
       "defaultValue": null,
-      "description": "list of configurable and localized null texts that will be used for the filter editors"
+      "description": {
+		"en": "list of configurable and localized null texts that will be used for the filter editors",
+		"jp": "list of configurable and localized null texts that will be used for the filter editors"
+	}
     },
     "renderFC": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Render in feature chooser. Feature chooser is dialog which lists all the enabled features (like Sorting, Filtering, Hiding etc.) of igGrid."
+      "description": {
+		"en": "Render in feature chooser. Feature chooser is dialog which lists all the enabled features (like Sorting, Filtering, Hiding etc.) of igGrid.",
+		"jp": "Render in feature chooser. Feature chooser is dialog which lists all the enabled features (like Sorting, Filtering, Hiding etc.) of igGrid."
+	}
     },
     "renderFilterButton": {
       "type": "bool",
       "defaultValue": true,
-      "description": "Enable/disable filter button visibility. If false,no filter dropdown buttons will be rendered and predefined list of filters will not be rendered for the columns"
+      "description": {
+		"en": "Enable/disable filter button visibility. If false,no filter dropdown buttons will be rendered and predefined list of filters will not be rendered for the columns",
+		"jp": "Enable/disable filter button visibility. If false,no filter dropdown buttons will be rendered and predefined list of filters will not be rendered for the columns"
+	}
     },
     "showEmptyConditions": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Enable/disable empty condition visibility in the filter. If true, shows empty and not empty filtering conditions in the dropdowns"
+      "description": {
+		"en": "Enable/disable empty condition visibility in the filter. If true, shows empty and not empty filtering conditions in the dropdowns",
+		"jp": "Enable/disable empty condition visibility in the filter. If true, shows empty and not empty filtering conditions in the dropdowns"
+	}
     },
     "showNullConditions": {
       "type": "bool",
       "defaultValue": false,
-      "description": "Enable/disable visibility of null and not null filtering conditions in the dropdowns. If true, shows null and not null filtering conditions in the dropdowns"
+      "description": {
+		"en": "Enable/disable visibility of null and not null filtering conditions in the dropdowns. If true, shows null and not null filtering conditions in the dropdowns",
+		"jp": "Enable/disable visibility of null and not null filtering conditions in the dropdowns. If true, shows null and not null filtering conditions in the dropdowns"
+	}
     },
     "tooltipTemplate": {
       "type": "string",
       "defaultValue": "",
-      "description": "custom tooltip template for the filter button, when a filter is applied"
+      "description": {
+		"en": "custom tooltip template for the filter button, when a filter is applied",
+		"jp": "custom tooltip template for the filter button, when a filter is applied"
+	}
     },
     "type": {
       "type": "string",
       "defaultValue": null,
-      "description": " Type of filtering. Delegates all filtering functionality to the $.ig.DataSource.",
+      "description": {
+		"en": " Type of filtering. Delegates all filtering functionality to the $.ig.DataSource.",
+		"jp": " Type of filtering. Delegates all filtering functionality to the $.ig.DataSource."
+	},
       "valueOptions": [
         {
           "name": "remote",
           "type": "string",
-          "description": ""
+          "description": {
+		"en": "",
+		"jp": ""
+	}
         },
         {
           "name": "local",
           "type": "string",
-          "description": ""
+          "description": {
+		"en": "",
+		"jp": ""
+	}
         }
       ]
     }

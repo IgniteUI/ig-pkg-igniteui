@@ -18,7 +18,10 @@
           "optional": false
         }
       ],
-      "description": "Event fired after items are resized.<br>                Use ui.owner to get a reference to the layout manager performing resizing."
+      "description": {
+		"en": "Event fired after items are resized.<br>                Use ui.owner to get a reference to the layout manager performing resizing.",
+		"jp": "Event fired after items are resized.<br>                Use ui.owner to get a reference to the layout manager performing resizing."
+	}
     },
     "internalResizing": {
       "cancellable": true,
@@ -34,7 +37,10 @@
           "optional": false
         }
       ],
-      "description": "Event fired before items are resized.<br>                Use ui.owner to get a reference to the layout manager performing resizing."
+      "description": {
+		"en": "Event fired before items are resized.<br>                Use ui.owner to get a reference to the layout manager performing resizing.",
+		"jp": "Event fired before items are resized.<br>                Use ui.owner to get a reference to the layout manager performing resizing."
+	}
     },
     "itemRendered": {
       "cancellable": false,
@@ -50,7 +56,10 @@
           "optional": false
         }
       ],
-      "description": "Event fired after an item has been rendered in the container<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to the igLayoutManager.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.itemData to get a reference of item's settings, such as colspan ,rowspan, etc. <br>&nbsp;&nbsp;&nbsp;&nbsp;use ui.index to get a reference of the item's index, if the layout is flow or vertical"
+      "description": {
+		"en": "Event fired after an item has been rendered in the container<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to the igLayoutManager.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.itemData to get a reference of item's settings, such as colspan ,rowspan, etc. <br>&nbsp;&nbsp;&nbsp;&nbsp;use ui.index to get a reference of the item's index, if the layout is flow or vertical",
+		"jp": "Event fired after an item has been rendered in the container<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to the igLayoutManager.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.itemData to get a reference of item's settings, such as colspan ,rowspan, etc. <br>&nbsp;&nbsp;&nbsp;&nbsp;use ui.index to get a reference of the item's index, if the layout is flow or vertical"
+	}
     },
     "itemRendering": {
       "cancellable": false,
@@ -66,7 +75,10 @@
           "optional": false
         }
       ],
-      "description": "Event fired before an item is rendered in the container<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to the igLayoutManager.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.itemData to get a reference of item's settings, such as colspan ,rowspan, etc. <br>&nbsp;&nbsp;&nbsp;&nbsp;use ui.index to get a reference of the item's index, if the layout is flow or vertical"
+      "description": {
+		"en": "Event fired before an item is rendered in the container<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to the igLayoutManager.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.itemData to get a reference of item's settings, such as colspan ,rowspan, etc. <br>&nbsp;&nbsp;&nbsp;&nbsp;use ui.index to get a reference of the item's index, if the layout is flow or vertical",
+		"jp": "Event fired before an item is rendered in the container<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to the igLayoutManager.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.itemData to get a reference of item's settings, such as colspan ,rowspan, etc. <br>&nbsp;&nbsp;&nbsp;&nbsp;use ui.index to get a reference of the item's index, if the layout is flow or vertical"
+	}
     },
     "rendered": {
       "cancellable": false,
@@ -82,47 +94,71 @@
           "optional": false
         }
       ],
-      "description": "Event fired after all items are rendered.<br>                Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to the igLayoutManager."
+      "description": {
+		"en": "Event fired after all items are rendered.<br>                Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to the igLayoutManager.",
+		"jp": "Event fired after all items are rendered.<br>                Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to the igLayoutManager."
+	}
     }
   },
   "properties": {
     "height": {
       "type": "string",
       "defaultValue": null,
-      "description": "height of the layout container"
+      "description": {
+		"en": "height of the layout container",
+		"jp": "height of the layout container"
+	}
     },
     "itemCount": {
       "type": "number",
       "defaultValue": null,
-      "description": "number of items to render, this is only applicable to layouts: vertical and flow"
+      "description": {
+		"en": "number of items to render, this is only applicable to layouts: vertical and flow",
+		"jp": "number of items to render, this is only applicable to layouts: vertical and flow"
+	}
     },
     "layoutMode": {
 	  "hidden": true,
       "type": "string",
       "defaultValue": "flow",
-      "description": "Defines flow layout"
+      "description": {
+		"en": "Defines flow layout",
+		"jp": "Defines flow layout"
+	}
     },
     "width": {
       "type": "string",
       "defaultValue": null,
-      "description": "width of the layout container"
+      "description": {
+		"en": "width of the layout container",
+		"jp": "width of the layout container"
+	}
     },
     "items": {
       "type": "array",
       "defaultValue": null,
-      "description": "an array of item descriptions <br>&nbsp;&nbsp;&nbsp;&nbsp;this assumes the container is empty, and every item<br>&nbsp;&nbsp;&nbsp;&nbsp;is described width and height. <br>&nbsp;&nbsp;&nbsp;&nbsp;itemCount should not be defined in order for items to be taken into account.",
+      "description": {
+		"en": "an array of item descriptions <br>&nbsp;&nbsp;&nbsp;&nbsp;this assumes the container is empty, and every item<br>&nbsp;&nbsp;&nbsp;&nbsp;is described width and height. <br>&nbsp;&nbsp;&nbsp;&nbsp;itemCount should not be defined in order for items to be taken into account.",
+		"jp": "an array of item descriptions <br>&nbsp;&nbsp;&nbsp;&nbsp;this assumes the container is empty, and every item<br>&nbsp;&nbsp;&nbsp;&nbsp;is described width and height. <br>&nbsp;&nbsp;&nbsp;&nbsp;itemCount should not be defined in order for items to be taken into account."
+	},
       "schema": {
         "width": {
           "required": true,
           "type": "string",
           "defaultValue": null,
-          "description": "item width"
+          "description": {
+		"en": "item width",
+		"jp": "item width"
+	}
         },
         "height": {
           "required": true,
           "type": "string",
           "defaultValue": null,
-          "description": "item height"
+          "description": {
+		"en": "item height",
+		"jp": "item height"
+	}
         }
       }
     }
