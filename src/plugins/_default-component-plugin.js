@@ -422,11 +422,14 @@ define (function (require, exports, module) {
 			var val;
 			//TODO: Ensure those are markerized as well -  hierarchical support
 			if (descriptor.propType === "object") {
-				val = ide.getObjectCodeString(descriptor.propValue, codeMarker.baseIndent + 1, descriptor.schema);
+			    val = ide.getObjectCodeString(descriptor.propValue, codeMarker.baseIndent + 1, descriptor.schema);
+			    this._addObjectMarkers(descriptor);
 			} else if (descriptor.propType === "array") {
-				val = ide.getArrayCodeString(descriptor.propValue, codeMarker.baseIndent + 1, descriptor.schema);
+			    val = ide.getArrayCodeString(descriptor.propValue, codeMarker.baseIndent + 1, descriptor.schema);
+			    this._addArrayMarkers(descriptor, val);
 			} else {
-				val = ide._propCodeDefaultVal(type, descriptor.defaultValue);
+			    val = ide._propCodeDefaultVal(type, descriptor.defaultValue);
+			    this._addObjectMarkers(descriptor, val);
 			}
 			this._cachedVal = val;
 			propStr += descriptor.propName + ": " + val;
@@ -481,6 +484,48 @@ define (function (require, exports, module) {
 			meta.optionsCount++;
 			//pos.row++;
 			return pos;
+		},
+		_addArrayMarkers: function(descriptor, code)  {
+		    var index, member;
+		    if (descriptor.arrayMemberType === "object" || descriptor.arrayMemberType === undefined) {
+		        for(index = 0; index < descriptor.propValue.length; index++) {
+		            member = descriptor.propValue;
+		            this._addObjectMarkers(descriptor, code, member);
+		        }
+		    }
+		},
+		_addObjectMarkers: function (descriptor, code) {
+            
+        },
+		_addFunctionMarkers: function (descriptor, code) {
+		    
+		},
+		_addPrimitiveMarkers: function(descriptor, code) {
+		    
+		},
+		_updateArrayMarkers: function (descriptor, code) {
+
+		},
+		_updateObjectMarkers: function (descriptor, code) {
+
+		},
+		_updateFunctionMarkers: function (descriptor, code) {
+
+		},
+		_updatePrimitiveMarkers: function (descriptor, code) {
+
+		},
+		_deleteArrayMarkers: function (descriptor, code) {
+
+		},
+		_deleteObjectMarkers: function (descriptor, code) {
+
+		},
+		_deleteFunctionMarkers: function (descriptor, code) {
+
+		},
+		_deletePrimitiveMarkers: function (descriptor, code) {
+
 		},
 		update: function (descriptor) {
 			//console.log("Updating property or event: " + descriptor.propName);
