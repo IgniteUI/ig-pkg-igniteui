@@ -426,10 +426,10 @@ define (function (require, exports, module) {
 			    this._addObjectMarkers(descriptor);
 			} else if (descriptor.propType === "array") {
 			    val = ide.getArrayCodeString(descriptor.propValue, codeMarker.baseIndent + 1, descriptor.schema);
-			    this._addArrayMarkers(descriptor, val);
+			    //this._addArrayMarkers(descriptor, val);
 			} else {
 			    val = ide._propCodeDefaultVal(type, descriptor.defaultValue);
-			    this._addObjectMarkers(descriptor, val);
+			    //this._addObjectMarkers(descriptor, val);
 			}
 			this._cachedVal = val;
 			propStr += descriptor.propName + ": " + val;
@@ -495,10 +495,45 @@ define (function (require, exports, module) {
 		    }
 		},
 		_addObjectMarkers: function (descriptor, code) {
-            
+		    var startObject = this.settings.ide.editor.find({
+		        needle: "{",
+		        start: descriptor.comp.codeMarker.range.start,
+		        $isMultiLine: false
+		    });
+		    var endObject = this.settings.ide.editor.find({
+		        needle: "}",
+		        start: descriptor.comp.codeMarker.range.start,
+		        $isMultiLine: false
+		    });
+		    descriptor.extraMarkers.range = ide.createAndAddMarker(
+									prevStart,
+									0,
+									descriptor.comp.codeMarker.range.start.row,
+									0
+								);
+		    newVal = val.substring(val.indexOf("}") + 2, val.length);
         },
 		_addFunctionMarkers: function (descriptor, code) {
-		    
+		    var anonymousFunc = this.settings.ide.editor.find({
+		        needle: "function(",
+		        start: descriptor.comp.codeMarker.range.start,
+		        $isMultiLine: false
+		    });
+		    if (anonymousFunc) {
+		        var anonymousFuncEnd = this.settings.ide.editor.find({
+		            needle: "};",
+		            start: descriptor.comp.codeMarker.range.start,
+		            $isMultiLine: false
+		        });
+		        descriptor.extraMarkers.range = ide.createAndAddMarker(
+									prevStart,
+									0,
+									descriptor.comp.codeMarker.range.start.row,
+									0
+								);
+		    } else {
+		        this._addPrimitiveMarkers(descriptor, code);
+		    }
 		},
 		_addPrimitiveMarkers: function(descriptor, code) {
 		    
