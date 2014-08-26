@@ -497,11 +497,8 @@ define (function (require, exports, module) {
 		        type = descriptor.propType,
                 index, currProperty;
 
-	        if (descriptor.arrayMemberType === "object" || descriptor.arrayMemberType === undefined) {
+	        if (!descriptor.arrayMemberType) {
 	            this._addObjectMarkers(descriptor, parentMarker, parentIndent);
-	        } else if (descriptor.arrayMemberType === "number" || descriptor.arrayMemberType === "string"
-                || descriptor.arrayMemberType === "string,number" || descriptor.arrayMemberType === "string,number,date") {
-	            this._addPrimitiveMarkers(descriptor, parentMarker, parentIndent);
 	        }
 		},
 		_addObjectMarkers: function (descriptor, parentMarker, parentIndent) {
