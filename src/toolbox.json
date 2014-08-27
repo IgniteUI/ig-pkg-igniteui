@@ -17,17 +17,26 @@
             "lazyLoad": false
         },
         {
-            "url": "/js/infragistics.core.js",
+            "url": {
+				"en": "/js/infragistics.core.js",
+				"jp": "/js/jp/infragistics.core.js"
+			},
             "lazyLoad": false,
             "id": "core"
         },
         {
-            "url": "/js/infragistics.lob.js",
+		    "url": {
+				"en": "/js/infragistics.lob.js",
+				"jp": "/js/jp/infragistics.lob.js"
+			},
             "lazyLoad": false,
             "id": "lob"
         },
         {
-            "url": "js/infragistics.dv.js",
+		    "url": {
+				"en": "js/infragistics.dv.js",
+				"jp": "js/jp/infragistics.dv.js"
+			},
             "lazyLoad": true,
             "id": "dv"
         }
