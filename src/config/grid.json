@@ -18,8 +18,8 @@
         }
       ],
       "description": {
-		"en": "Event fired when a cell is clicked.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.cellElement to get reference to cell DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.rowIndex to get row index.<br>&nbsp;&nbsp;&nbsp;Use ui.colIndex to get column index.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid.",
-		"jp": "Event fired when a cell is clicked.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.cellElement to get reference to cell DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.rowIndex to get row index.<br>&nbsp;&nbsp;&nbsp;Use ui.colIndex to get column index.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid."
+		"en": "Event fired when a cell is clicked.<br>   Function takes arguments evt and ui.<br>   Use ui.cellElement to get reference to cell DOM element.<br>   Use ui.rowIndex to get row index.<br>   Use ui.colIndex to get column index.<br>   Use ui.owner to get reference to igGrid.",
+		"jp": "Event fired when a cell is clicked.<br>   Function takes arguments evt and ui.<br>   Use ui.cellElement to get reference to cell DOM element.<br>   Use ui.rowIndex to get row index.<br>   Use ui.colIndex to get column index.<br>   Use ui.owner to get reference to igGrid."
 	}
     },
     "columnsCollectionModified": {
@@ -37,8 +37,8 @@
         }
       ],
       "description": {
-		"en": "Event fired after the columns colection has been modified(e.g. a column is hidden)<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid.",
-		"jp": "Event fired after the columns colection has been modified(e.g. a column is hidden)<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid."
+		"en": "Event fired after the columns colection has been modified(e.g. a column is hidden)<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGrid.",
+		"jp": "Event fired after the columns colection has been modified(e.g. a column is hidden)<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGrid."
 	}
     },
     "created": {
@@ -56,8 +56,8 @@
         }
       ],
       "description": {
-		"en": "fired when the grid is created and the initial structure is rendered (this doesn't necessarily imply the data will be there if the data source is remote) <br>&nbsp;&nbsp;&nbsp;&nbsp;use ui.owner to get a reference to the grid",
-		"jp": "fired when the grid is created and the initial structure is rendered (this doesn't necessarily imply the data will be there if the data source is remote) <br>&nbsp;&nbsp;&nbsp;&nbsp;use ui.owner to get a reference to the grid"
+		"en": "fired when the grid is created and the initial structure is rendered (this doesn't necessarily imply the data will be there if the data source is remote) <br>    use ui.owner to get a reference to the grid",
+		"jp": "fired when the grid is created and the initial structure is rendered (this doesn't necessarily imply the data will be there if the data source is remote) <br>    use ui.owner to get a reference to the grid"
 	}
     },
     "dataBinding": {
@@ -75,8 +75,8 @@
         }
       ],
       "description": {
-		"en": "Event fired before data binding takes place.<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel data binding.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid.",
-		"jp": "Event fired before data binding takes place.<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel data binding.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid."
+		"en": "Event fired before data binding takes place.<br>   Return false in order to cancel data binding.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGrid.",
+		"jp": "Event fired before data binding takes place.<br>   Return false in order to cancel data binding.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGrid."
 	}
     },
     "dataBound": {
@@ -94,8 +94,8 @@
         }
       ],
       "description": {
-		"en": "Event fired after data binding is complete.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid.",
-		"jp": "Event fired after data binding is complete.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid."
+		"en": "Event fired after data binding is complete.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGrid.",
+		"jp": "Event fired after data binding is complete.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGrid."
 	}
     },
     "dataRendered": {
@@ -113,8 +113,8 @@
         }
       ],
       "description": {
-		"en": "Event fired after all of the data records in the grid table body have been rendered. <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid.",
-		"jp": "Event fired after all of the data records in the grid table body have been rendered. <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid."
+		"en": "Event fired after all of the data records in the grid table body have been rendered. <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGrid.",
+		"jp": "Event fired after all of the data records in the grid table body have been rendered. <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGrid."
 	}
     },
     "dataRendering": {
@@ -132,8 +132,8 @@
         }
       ],
       "description": {
-		"en": "Event fired before the TBODY holding the data records starts its rendering.<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel data records rendering.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid.",
-		"jp": "Event fired before the TBODY holding the data records starts its rendering.<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel data records rendering.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid."
+		"en": "Event fired before the TBODY holding the data records starts its rendering.<br>   Return false in order to cancel data records rendering.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGrid.",
+		"jp": "Event fired before the TBODY holding the data records starts its rendering.<br>   Return false in order to cancel data records rendering.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGrid."
 	}
     },
     "destroyed": {
@@ -151,8 +151,8 @@
         }
       ],
       "description": {
-		"en": "fired when the grid is destroyed<br>&nbsp;&nbsp;&nbsp;&nbsp;use ui.owner to get a reference to the grid",
-		"jp": "fired when the grid is destroyed<br>&nbsp;&nbsp;&nbsp;&nbsp;use ui.owner to get a reference to the grid"
+		"en": "fired when the grid is destroyed<br>    use ui.owner to get a reference to the grid",
+		"jp": "fired when the grid is destroyed<br>    use ui.owner to get a reference to the grid"
 	}
     },
     "footerRendered": {
@@ -170,8 +170,8 @@
         }
       ],
       "description": {
-		"en": "Event fired after the footer has been rendered.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.table to get reference to footers table DOM element.",
-		"jp": "Event fired after the footer has been rendered.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.table to get reference to footers table DOM element."
+		"en": "Event fired after the footer has been rendered.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGrid.<br>   Use ui.table to get reference to footers table DOM element.",
+		"jp": "Event fired after the footer has been rendered.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGrid.<br>   Use ui.table to get reference to footers table DOM element."
 	}
     },
     "footerRendering": {
@@ -189,8 +189,8 @@
         }
       ],
       "description": {
-		"en": "Event fired before the footer starts its rendering.<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel footer rendering.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid.",
-		"jp": "Event fired before the footer starts its rendering.<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel footer rendering.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid."
+		"en": "Event fired before the footer starts its rendering.<br>   Return false in order to cancel footer rendering.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGrid.",
+		"jp": "Event fired before the footer starts its rendering.<br>   Return false in order to cancel footer rendering.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGrid."
 	}
     },
     "headerCellRendered": {
@@ -208,8 +208,8 @@
         }
       ],
       "description": {
-		"en": "Event fired after every TH in the grid header has been rendered.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key.<br>&nbsp;&nbsp;&nbsp;Use ui.th to get reference to header cell DOM element.",
-		"jp": "Event fired after every TH in the grid header has been rendered.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key.<br>&nbsp;&nbsp;&nbsp;Use ui.th to get reference to header cell DOM element."
+		"en": "Event fired after every TH in the grid header has been rendered.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGrid.<br>   Use ui.columnKey to get column key.<br>   Use ui.th to get reference to header cell DOM element.",
+		"jp": "Event fired after every TH in the grid header has been rendered.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGrid.<br>   Use ui.columnKey to get column key.<br>   Use ui.th to get reference to header cell DOM element."
 	}
     },
     "headerRendered": {
@@ -227,8 +227,8 @@
         }
       ],
       "description": {
-		"en": "Event fired after the header has been rendered.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.table to get reference to headers table DOM element.",
-		"jp": "Event fired after the header has been rendered.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.table to get reference to headers table DOM element."
+		"en": "Event fired after the header has been rendered.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGrid.<br>   Use ui.table to get reference to headers table DOM element.",
+		"jp": "Event fired after the header has been rendered.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGrid.<br>   Use ui.table to get reference to headers table DOM element."
 	}
     },
     "headerRendering": {
@@ -246,8 +246,8 @@
         }
       ],
       "description": {
-		"en": "Event fired before the header starts its rendering.<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel header rendering.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid.",
-		"jp": "Event fired before the header starts its rendering.<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel header rendering.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid."
+		"en": "Event fired before the header starts its rendering.<br>   Return false in order to cancel header rendering.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGrid.",
+		"jp": "Event fired before the header starts its rendering.<br>   Return false in order to cancel header rendering.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGrid."
 	}
     },
     "rendered": {
@@ -265,8 +265,8 @@
         }
       ],
       "description": {
-		"en": "Event fired after the whole grid widget has been rendered (including headers, footers, etc.).<br>&nbsp;&nbsp;&nbsp;This event is fired only when the grid is being initialized. <br>&nbsp;&nbsp;&nbsp;It will not be fired if the grid is rebound to its data <br>&nbsp;&nbsp;&nbsp;(for example, when calling the dataBind() API method <br>&nbsp;&nbsp;&nbsp;or when changing the page size (when paging is enabled)).<br>&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid.",
-		"jp": "Event fired after the whole grid widget has been rendered (including headers, footers, etc.).<br>&nbsp;&nbsp;&nbsp;This event is fired only when the grid is being initialized. <br>&nbsp;&nbsp;&nbsp;It will not be fired if the grid is rebound to its data <br>&nbsp;&nbsp;&nbsp;(for example, when calling the dataBind() API method <br>&nbsp;&nbsp;&nbsp;or when changing the page size (when paging is enabled)).<br>&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid."
+		"en": "Event fired after the whole grid widget has been rendered (including headers, footers, etc.).<br>   This event is fired only when the grid is being initialized. <br>   It will not be fired if the grid is rebound to its data <br>   (for example, when calling the dataBind() API method <br>   or when changing the page size (when paging is enabled)).<br>   <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGrid.",
+		"jp": "Event fired after the whole grid widget has been rendered (including headers, footers, etc.).<br>   This event is fired only when the grid is being initialized. <br>   It will not be fired if the grid is rebound to its data <br>   (for example, when calling the dataBind() API method <br>   or when changing the page size (when paging is enabled)).<br>   <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGrid."
 	}
     },
     "rendering": {
@@ -284,8 +284,8 @@
         }
       ],
       "description": {
-		"en": "Event fired before the grid starts rendering (all contents).<br>&nbsp;&nbsp;&nbsp;This event is fired only when the grid is being initialized. <br>&nbsp;&nbsp;&nbsp;It will not be fired if the grid is rebound to its data <br>&nbsp;&nbsp;&nbsp;(for example, when calling the dataBind() API method <br>&nbsp;&nbsp;&nbsp;or when changing the page size (when paging is enabled)).<br>&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel grid rendering.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid.",
-		"jp": "Event fired before the grid starts rendering (all contents).<br>&nbsp;&nbsp;&nbsp;This event is fired only when the grid is being initialized. <br>&nbsp;&nbsp;&nbsp;It will not be fired if the grid is rebound to its data <br>&nbsp;&nbsp;&nbsp;(for example, when calling the dataBind() API method <br>&nbsp;&nbsp;&nbsp;or when changing the page size (when paging is enabled)).<br>&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel grid rendering.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid."
+		"en": "Event fired before the grid starts rendering (all contents).<br>   This event is fired only when the grid is being initialized. <br>   It will not be fired if the grid is rebound to its data <br>   (for example, when calling the dataBind() API method <br>   or when changing the page size (when paging is enabled)).<br>   <br>   Return false in order to cancel grid rendering.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGrid.",
+		"jp": "Event fired before the grid starts rendering (all contents).<br>   This event is fired only when the grid is being initialized. <br>   It will not be fired if the grid is rebound to its data <br>   (for example, when calling the dataBind() API method <br>   or when changing the page size (when paging is enabled)).<br>   <br>   Return false in order to cancel grid rendering.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGrid."
 	}
     },
     "requestError": {
@@ -303,8 +303,8 @@
         }
       ],
       "description": {
-		"en": "event fired if there is an error in the request, when the grid is doing a remote operation,<br>&nbsp;&nbsp;&nbsp;&nbsp;such as data binding, paging, sorting, etc. <br>&nbsp;&nbsp;&nbsp;&nbsp;use ui.owner to get a reference to the grid<br>&nbsp;&nbsp;&nbsp;&nbsp;use ui.message to get the error message coming from the server",
-		"jp": "event fired if there is an error in the request, when the grid is doing a remote operation,<br>&nbsp;&nbsp;&nbsp;&nbsp;such as data binding, paging, sorting, etc. <br>&nbsp;&nbsp;&nbsp;&nbsp;use ui.owner to get a reference to the grid<br>&nbsp;&nbsp;&nbsp;&nbsp;use ui.message to get the error message coming from the server"
+		"en": "event fired if there is an error in the request, when the grid is doing a remote operation,<br>    such as data binding, paging, sorting, etc. <br>    use ui.owner to get a reference to the grid<br>    use ui.message to get the error message coming from the server",
+		"jp": "event fired if there is an error in the request, when the grid is doing a remote operation,<br>    such as data binding, paging, sorting, etc. <br>    use ui.owner to get a reference to the grid<br>    use ui.message to get the error message coming from the server"
 	}
     },
     "rowsRendered": {
@@ -322,8 +322,8 @@
         }
       ],
       "description": {
-		"en": "Event fired after data rows are rendered.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.tbody to get reference to grid's table body.",
-		"jp": "Event fired after data rows are rendered.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.tbody to get reference to grid's table body."
+		"en": "Event fired after data rows are rendered.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGrid.<br>   Use ui.tbody to get reference to grid's table body.",
+		"jp": "Event fired after data rows are rendered.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGrid.<br>   Use ui.tbody to get reference to grid's table body."
 	}
     },
     "rowsRendering": {
@@ -341,8 +341,8 @@
         }
       ],
       "description": {
-		"en": "Event fired before actual data rows (TRs) are rendered.<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel rows rendering.&nbsp;<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.tbody to get reference to grid's table body.",
-		"jp": "Event fired before actual data rows (TRs) are rendered.<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel rows rendering.&nbsp;<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.tbody to get reference to grid's table body."
+		"en": "Event fired before actual data rows (TRs) are rendered.<br>   Return false in order to cancel rows rendering. <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGrid.<br>   Use ui.tbody to get reference to grid's table body.",
+		"jp": "Event fired before actual data rows (TRs) are rendered.<br>   Return false in order to cancel rows rendering. <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGrid.<br>   Use ui.tbody to get reference to grid's table body."
 	}
     },
     "schemaGenerated": {
@@ -360,8 +360,8 @@
         }
       ],
       "description": {
-		"en": "Event fired after $.ig.DataSource schema has been generated, in case it needs to be modified.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.schema to get reference to data source schema.<br>&nbsp;&nbsp;&nbsp;Use ui.dataSource to get reference to data source.",
-		"jp": "Event fired after $.ig.DataSource schema has been generated, in case it needs to be modified.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.schema to get reference to data source schema.<br>&nbsp;&nbsp;&nbsp;Use ui.dataSource to get reference to data source."
+		"en": "Event fired after $.ig.DataSource schema has been generated, in case it needs to be modified.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGrid.<br>   Use ui.schema to get reference to data source schema.<br>   Use ui.dataSource to get reference to data source.",
+		"jp": "Event fired after $.ig.DataSource schema has been generated, in case it needs to be modified.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGrid.<br>   Use ui.schema to get reference to data source schema.<br>   Use ui.dataSource to get reference to data source."
 	}
     }
   },
@@ -386,8 +386,8 @@
       "type": "bool",
       "defaultValue": false,
       "description": {
-		"en": "if set to true, the following behavior will take place:<br>&nbsp;&nbsp;&nbsp;&nbsp;if a new row is added, and then deleted, there will be no transaction added to the log <br>&nbsp;&nbsp;&nbsp;&nbsp;if a new role is added, edited, then deleted, there will be no transaction added to the log<br>&nbsp;&nbsp;&nbsp;&nbsp;if several edits are made to a row or an individual cell, this should result in a single transaction<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: This option takes effect only when autoCommit is set to false.",
-		"jp": "if set to true, the following behavior will take place:<br>&nbsp;&nbsp;&nbsp;&nbsp;if a new row is added, and then deleted, there will be no transaction added to the log <br>&nbsp;&nbsp;&nbsp;&nbsp;if a new role is added, edited, then deleted, there will be no transaction added to the log<br>&nbsp;&nbsp;&nbsp;&nbsp;if several edits are made to a row or an individual cell, this should result in a single transaction<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: This option takes effect only when autoCommit is set to false."
+		"en": "if set to true, the following behavior will take place:<br>    if a new row is added, and then deleted, there will be no transaction added to the log <br>    if a new role is added, edited, then deleted, there will be no transaction added to the log<br>    if several edits are made to a row or an individual cell, this should result in a single transaction<br>    Note: This option takes effect only when autoCommit is set to false.",
+		"jp": "if set to true, the following behavior will take place:<br>    if a new row is added, and then deleted, there will be no transaction added to the log <br>    if a new role is added, edited, then deleted, there will be no transaction added to the log<br>    if several edits are made to a row or an individual cell, this should result in a single transaction<br>    Note: This option takes effect only when autoCommit is set to false."
 	}
     },
     "alternateRowStyles": {

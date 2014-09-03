@@ -20,8 +20,8 @@
         }
       ],
       "description": {
-		"en": "event fired after a tooltip is hidden<br>&nbsp;&nbsp;&nbsp;use args.owner to get a reference to the widget<br>&nbsp;&nbsp;&nbsp;use args.tooltip to get the string displayed in the tooltip<br>&nbsp;&nbsp;&nbsp;use args.value to get the value of the cell the tooltip was displayed for<br>&nbsp;&nbsp;&nbsp;use args.element to get a reference to the cell the tooltip was displayed for<br>&nbsp;&nbsp;&nbsp;use args.index to get the row index of the cell the tooltip was displayed for<br>&nbsp;&nbsp;&nbsp;use args.columnKey to get the column key of the cell the tooltip was displayed for<br>&nbsp;&nbsp;&nbsp;use args.columnIndex to get the column index of the cell the tooltip was displayed for",
-		"jp": "event fired after a tooltip is hidden<br>&nbsp;&nbsp;&nbsp;use args.owner to get a reference to the widget<br>&nbsp;&nbsp;&nbsp;use args.tooltip to get the string displayed in the tooltip<br>&nbsp;&nbsp;&nbsp;use args.value to get the value of the cell the tooltip was displayed for<br>&nbsp;&nbsp;&nbsp;use args.element to get a reference to the cell the tooltip was displayed for<br>&nbsp;&nbsp;&nbsp;use args.index to get the row index of the cell the tooltip was displayed for<br>&nbsp;&nbsp;&nbsp;use args.columnKey to get the column key of the cell the tooltip was displayed for<br>&nbsp;&nbsp;&nbsp;use args.columnIndex to get the column index of the cell the tooltip was displayed for"
+		"en": "event fired after a tooltip is hidden<br>   use args.owner to get a reference to the widget<br>   use args.tooltip to get the string displayed in the tooltip<br>   use args.value to get the value of the cell the tooltip was displayed for<br>   use args.element to get a reference to the cell the tooltip was displayed for<br>   use args.index to get the row index of the cell the tooltip was displayed for<br>   use args.columnKey to get the column key of the cell the tooltip was displayed for<br>   use args.columnIndex to get the column index of the cell the tooltip was displayed for",
+		"jp": "event fired after a tooltip is hidden<br>   use args.owner to get a reference to the widget<br>   use args.tooltip to get the string displayed in the tooltip<br>   use args.value to get the value of the cell the tooltip was displayed for<br>   use args.element to get a reference to the cell the tooltip was displayed for<br>   use args.index to get the row index of the cell the tooltip was displayed for<br>   use args.columnKey to get the column key of the cell the tooltip was displayed for<br>   use args.columnIndex to get the column index of the cell the tooltip was displayed for"
 	}
     },
     "tooltipHiding": {
@@ -39,8 +39,8 @@
         }
       ],
       "description": {
-		"en": "event fired when the mouse has left an element and the tooltip is about to hide<br>&nbsp;&nbsp;&nbsp;use args.owner to get a reference to the widget<br>&nbsp;&nbsp;&nbsp;use args.tooltip to get the string displayed in the tooltip<br>&nbsp;&nbsp;&nbsp;use args.value to get the value of the cell the tooltip is displayed for<br>&nbsp;&nbsp;&nbsp;use args.element to get a reference to the cell the tooltip is displayed for<br>&nbsp;&nbsp;&nbsp;use args.index to get the row index of the cell the tooltip is displayed for<br>&nbsp;&nbsp;&nbsp;use args.columnKey to get the column key of the cell the tooltip is displayed for<br>&nbsp;&nbsp;&nbsp;use args.columnIndex to get the column index of the cell the tooltip is displayed for",
-		"jp": "event fired when the mouse has left an element and the tooltip is about to hide<br>&nbsp;&nbsp;&nbsp;use args.owner to get a reference to the widget<br>&nbsp;&nbsp;&nbsp;use args.tooltip to get the string displayed in the tooltip<br>&nbsp;&nbsp;&nbsp;use args.value to get the value of the cell the tooltip is displayed for<br>&nbsp;&nbsp;&nbsp;use args.element to get a reference to the cell the tooltip is displayed for<br>&nbsp;&nbsp;&nbsp;use args.index to get the row index of the cell the tooltip is displayed for<br>&nbsp;&nbsp;&nbsp;use args.columnKey to get the column key of the cell the tooltip is displayed for<br>&nbsp;&nbsp;&nbsp;use args.columnIndex to get the column index of the cell the tooltip is displayed for"
+		"en": "event fired when the mouse has left an element and the tooltip is about to hide<br>   use args.owner to get a reference to the widget<br>   use args.tooltip to get the string displayed in the tooltip<br>   use args.value to get the value of the cell the tooltip is displayed for<br>   use args.element to get a reference to the cell the tooltip is displayed for<br>   use args.index to get the row index of the cell the tooltip is displayed for<br>   use args.columnKey to get the column key of the cell the tooltip is displayed for<br>   use args.columnIndex to get the column index of the cell the tooltip is displayed for",
+		"jp": "event fired when the mouse has left an element and the tooltip is about to hide<br>   use args.owner to get a reference to the widget<br>   use args.tooltip to get the string displayed in the tooltip<br>   use args.value to get the value of the cell the tooltip is displayed for<br>   use args.element to get a reference to the cell the tooltip is displayed for<br>   use args.index to get the row index of the cell the tooltip is displayed for<br>   use args.columnKey to get the column key of the cell the tooltip is displayed for<br>   use args.columnIndex to get the column index of the cell the tooltip is displayed for"
 	}
     },
     "tooltipShowing": {
@@ -58,8 +58,8 @@
         }
       ],
       "description": {
-		"en": "event fired when the mouse has hovered on an element long enough to display a tooltip<br>&nbsp;&nbsp;&nbsp;use args.owner to get a reference to the widget<br>&nbsp;&nbsp;&nbsp;use args.tooltip to get or set the string to be displayed<br>&nbsp;&nbsp;&nbsp;use args.value to get the value of the cell the tooltip is displayed for<br>&nbsp;&nbsp;&nbsp;use args.element to get a reference to the cell the tooltip is displayed for<br>&nbsp;&nbsp;&nbsp;use args.index to get the row index of the cell the tooltip is displayed for<br>&nbsp;&nbsp;&nbsp;use args.columnKey to get the column key of the cell the tooltip is displayed for<br>&nbsp;&nbsp;&nbsp;use args.columnIndex to get the column index of the cell the tooltip is displayed for",
-		"jp": "event fired when the mouse has hovered on an element long enough to display a tooltip<br>&nbsp;&nbsp;&nbsp;use args.owner to get a reference to the widget<br>&nbsp;&nbsp;&nbsp;use args.tooltip to get or set the string to be displayed<br>&nbsp;&nbsp;&nbsp;use args.value to get the value of the cell the tooltip is displayed for<br>&nbsp;&nbsp;&nbsp;use args.element to get a reference to the cell the tooltip is displayed for<br>&nbsp;&nbsp;&nbsp;use args.index to get the row index of the cell the tooltip is displayed for<br>&nbsp;&nbsp;&nbsp;use args.columnKey to get the column key of the cell the tooltip is displayed for<br>&nbsp;&nbsp;&nbsp;use args.columnIndex to get the column index of the cell the tooltip is displayed for"
+		"en": "event fired when the mouse has hovered on an element long enough to display a tooltip<br>   use args.owner to get a reference to the widget<br>   use args.tooltip to get or set the string to be displayed<br>   use args.value to get the value of the cell the tooltip is displayed for<br>   use args.element to get a reference to the cell the tooltip is displayed for<br>   use args.index to get the row index of the cell the tooltip is displayed for<br>   use args.columnKey to get the column key of the cell the tooltip is displayed for<br>   use args.columnIndex to get the column index of the cell the tooltip is displayed for",
+		"jp": "event fired when the mouse has hovered on an element long enough to display a tooltip<br>   use args.owner to get a reference to the widget<br>   use args.tooltip to get or set the string to be displayed<br>   use args.value to get the value of the cell the tooltip is displayed for<br>   use args.element to get a reference to the cell the tooltip is displayed for<br>   use args.index to get the row index of the cell the tooltip is displayed for<br>   use args.columnKey to get the column key of the cell the tooltip is displayed for<br>   use args.columnIndex to get the column index of the cell the tooltip is displayed for"
 	}
     },
     "tooltipShown": {
@@ -77,8 +77,8 @@
         }
       ],
       "description": {
-		"en": "event fired after a tooltip is shown<br>&nbsp;&nbsp;&nbsp;use args.owner to get a reference to the widget<br>&nbsp;&nbsp;&nbsp;use args.tooltip to get the string displayed in the tooltip<br>&nbsp;&nbsp;&nbsp;use args.value to get the value of the cell the tooltip is displayed for<br>&nbsp;&nbsp;&nbsp;use args.element to get a reference to the cell the tooltip is displayed for<br>&nbsp;&nbsp;&nbsp;use args.index to get the row index of the cell the tooltip is displayed for<br>&nbsp;&nbsp;&nbsp;use args.columnKey to get the column key of the cell the tooltip is displayed for<br>&nbsp;&nbsp;&nbsp;use args.columnIndex to get the column index of the cell the tooltip is displayed for",
-		"jp": "event fired after a tooltip is shown<br>&nbsp;&nbsp;&nbsp;use args.owner to get a reference to the widget<br>&nbsp;&nbsp;&nbsp;use args.tooltip to get the string displayed in the tooltip<br>&nbsp;&nbsp;&nbsp;use args.value to get the value of the cell the tooltip is displayed for<br>&nbsp;&nbsp;&nbsp;use args.element to get a reference to the cell the tooltip is displayed for<br>&nbsp;&nbsp;&nbsp;use args.index to get the row index of the cell the tooltip is displayed for<br>&nbsp;&nbsp;&nbsp;use args.columnKey to get the column key of the cell the tooltip is displayed for<br>&nbsp;&nbsp;&nbsp;use args.columnIndex to get the column index of the cell the tooltip is displayed for"
+		"en": "event fired after a tooltip is shown<br>   use args.owner to get a reference to the widget<br>   use args.tooltip to get the string displayed in the tooltip<br>   use args.value to get the value of the cell the tooltip is displayed for<br>   use args.element to get a reference to the cell the tooltip is displayed for<br>   use args.index to get the row index of the cell the tooltip is displayed for<br>   use args.columnKey to get the column key of the cell the tooltip is displayed for<br>   use args.columnIndex to get the column index of the cell the tooltip is displayed for",
+		"jp": "event fired after a tooltip is shown<br>   use args.owner to get a reference to the widget<br>   use args.tooltip to get the string displayed in the tooltip<br>   use args.value to get the value of the cell the tooltip is displayed for<br>   use args.element to get a reference to the cell the tooltip is displayed for<br>   use args.index to get the row index of the cell the tooltip is displayed for<br>   use args.columnKey to get the column key of the cell the tooltip is displayed for<br>   use args.columnIndex to get the column index of the cell the tooltip is displayed for"
 	}
     }
   },
@@ -149,16 +149,16 @@
       "type": "number",
       "defaultValue": 300.0,
       "description": {
-		"en": "Type=\"integer\" The time in milliseconds after which tooltip hides when mouse <br>&nbsp;&nbsp;&nbsp;cursor gets outside of the cell.",
-		"jp": "Type=\"integer\" The time in milliseconds after which tooltip hides when mouse <br>&nbsp;&nbsp;&nbsp;cursor gets outside of the cell."
+		"en": "Type=\"integer\" The time in milliseconds after which tooltip hides when mouse <br>   cursor gets outside of the cell.",
+		"jp": "Type=\"integer\" The time in milliseconds after which tooltip hides when mouse <br>   cursor gets outside of the cell."
 	}
     },
     "showDelay": {
       "type": "number",
       "defaultValue": 500.0,
       "description": {
-		"en": "The time in milliseconds after which tooltip will show when <br>&nbsp;&nbsp;&nbsp;mouse cursor is hovered over a cell.",
-		"jp": "The time in milliseconds after which tooltip will show when <br>&nbsp;&nbsp;&nbsp;mouse cursor is hovered over a cell."
+		"en": "The time in milliseconds after which tooltip will show when <br>   mouse cursor is hovered over a cell.",
+		"jp": "The time in milliseconds after which tooltip will show when <br>   mouse cursor is hovered over a cell."
 	}
     },
     "style": {

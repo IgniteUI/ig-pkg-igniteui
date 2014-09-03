@@ -20,8 +20,8 @@
         }
       ],
       "description": {
-		"en": "Event fired after the column has already been sorted and data - re-rendered.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridSorting.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key.<br>&nbsp;&nbsp;&nbsp;Use ui.direction to get sorting direction.",
-		"jp": "Event fired after the column has already been sorted and data - re-rendered.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridSorting.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key.<br>&nbsp;&nbsp;&nbsp;Use ui.direction to get sorting direction."
+		"en": "Event fired after the column has already been sorted and data - re-rendered.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridSorting.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.columnKey to get column key.<br>   Use ui.direction to get sorting direction.",
+		"jp": "Event fired after the column has already been sorted and data - re-rendered.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridSorting.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.columnKey to get column key.<br>   Use ui.direction to get sorting direction."
 	}
     },
     "columnSorting": {
@@ -39,8 +39,8 @@
         }
       ],
       "description": {
-		"en": "Event fired before sorting is invoked for a certain column.<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel column sorting.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridSorting.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key.<br>&nbsp;&nbsp;&nbsp;Use ui.direction to get sorting direction.",
-		"jp": "Event fired before sorting is invoked for a certain column.<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel column sorting.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridSorting.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key.<br>&nbsp;&nbsp;&nbsp;Use ui.direction to get sorting direction."
+		"en": "Event fired before sorting is invoked for a certain column.<br>   Return false in order to cancel column sorting.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridSorting.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.columnKey to get column key.<br>   Use ui.direction to get sorting direction.",
+		"jp": "Event fired before sorting is invoked for a certain column.<br>   Return false in order to cancel column sorting.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridSorting.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.columnKey to get column key.<br>   Use ui.direction to get sorting direction."
 	}
     },
     "modalDialogButtonApplyClick": {
@@ -58,8 +58,8 @@
         }
       ],
       "description": {
-		"en": "event fired when button Apply in modal dialog is clicked<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.<br>&nbsp;&nbsp;&nbsp;Use ui.columnsToSort to get array of columns which should be sorted - array of objects of sort order - Asc/Desc and columnIdentifier",
-		"jp": "event fired when button Apply in modal dialog is clicked<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.<br>&nbsp;&nbsp;&nbsp;Use ui.columnsToSort to get array of columns which should be sorted - array of objects of sort order - Asc/Desc and columnIdentifier"
+		"en": "event fired when button Apply in modal dialog is clicked<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridSorting widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.<br>   Use ui.columnsToSort to get array of columns which should be sorted - array of objects of sort order - Asc/Desc and columnIdentifier",
+		"jp": "event fired when button Apply in modal dialog is clicked<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridSorting widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.<br>   Use ui.columnsToSort to get array of columns which should be sorted - array of objects of sort order - Asc/Desc and columnIdentifier"
 	}
     },
     "modalDialogButtonResetClick": {
@@ -77,8 +77,8 @@
         }
       ],
       "description": {
-		"en": "event fired when the button to reset sorting is clicked. <br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.",
-		"jp": "event fired when the button to reset sorting is clicked. <br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object."
+		"en": "event fired when the button to reset sorting is clicked. <br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridSorting widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.",
+		"jp": "event fired when the button to reset sorting is clicked. <br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridSorting widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object."
 	}
     },
     "modalDialogButtonUnsortClick": {
@@ -96,8 +96,8 @@
         }
       ],
       "description": {
-		"en": "event fired when button to unsort column is clicked in modal dialog<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get the column key",
-		"jp": "event fired when button to unsort column is clicked in modal dialog<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get the column key"
+		"en": "event fired when button to unsort column is clicked in modal dialog<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridSorting widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.<br>   Use ui.columnKey to get the column key",
+		"jp": "event fired when button to unsort column is clicked in modal dialog<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridSorting widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.<br>   Use ui.columnKey to get the column key"
 	}
     },
     "modalDialogClosed": {
@@ -115,8 +115,8 @@
         }
       ],
       "description": {
-		"en": "event fired after the modal dialog has been closed.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.",
-		"jp": "event fired after the modal dialog has been closed.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object."
+		"en": "event fired after the modal dialog has been closed.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridSorting widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.",
+		"jp": "event fired after the modal dialog has been closed.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridSorting widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object."
 	}
     },
     "modalDialogClosing": {
@@ -134,8 +134,8 @@
         }
       ],
       "description": {
-		"en": "event fired before the modal dialog is closed.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.",
-		"jp": "event fired before the modal dialog is closed.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object."
+		"en": "event fired before the modal dialog is closed.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridSorting widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.",
+		"jp": "event fired before the modal dialog is closed.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridSorting widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object."
 	}
     },
     "modalDialogContentsRendered": {
@@ -153,8 +153,8 @@
         }
       ],
       "description": {
-		"en": "event fired after the contents of the modal dialog are rendered.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.",
-		"jp": "event fired after the contents of the modal dialog are rendered.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object."
+		"en": "event fired after the contents of the modal dialog are rendered.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridSorting widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.",
+		"jp": "event fired after the contents of the modal dialog are rendered.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridSorting widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object."
 	}
     },
     "modalDialogContentsRendering": {
@@ -172,8 +172,8 @@
         }
       ],
       "description": {
-		"en": "event fired before the contents of the modal dialog are rendered.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.",
-		"jp": "event fired before the contents of the modal dialog are rendered.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object."
+		"en": "event fired before the contents of the modal dialog are rendered.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridSorting widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.",
+		"jp": "event fired before the contents of the modal dialog are rendered.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridSorting widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object."
 	}
     },
     "modalDialogMoving": {
@@ -191,8 +191,8 @@
         }
       ],
       "description": {
-		"en": "event fired every time the modal dialog changes its position.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.<br>&nbsp;&nbsp;&nbsp;Use ui.originalPosition to get the original position of the modal dialog div as { top, left } object, relative to the page.<br>&nbsp;&nbsp;&nbsp;Use ui.position to get the current position of the modal dialog div as { top, left } object, relative to the page.",
-		"jp": "event fired every time the modal dialog changes its position.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.<br>&nbsp;&nbsp;&nbsp;Use ui.originalPosition to get the original position of the modal dialog div as { top, left } object, relative to the page.<br>&nbsp;&nbsp;&nbsp;Use ui.position to get the current position of the modal dialog div as { top, left } object, relative to the page."
+		"en": "event fired every time the modal dialog changes its position.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridSorting widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.<br>   Use ui.originalPosition to get the original position of the modal dialog div as { top, left } object, relative to the page.<br>   Use ui.position to get the current position of the modal dialog div as { top, left } object, relative to the page.",
+		"jp": "event fired every time the modal dialog changes its position.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridSorting widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.<br>   Use ui.originalPosition to get the original position of the modal dialog div as { top, left } object, relative to the page.<br>   Use ui.position to get the current position of the modal dialog div as { top, left } object, relative to the page."
 	}
     },
     "modalDialogOpened": {
@@ -210,8 +210,8 @@
         }
       ],
       "description": {
-		"en": "event fired after the modal dialog is already opened.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.",
-		"jp": "event fired after the modal dialog is already opened.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object."
+		"en": "event fired after the modal dialog is already opened.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridSorting widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.",
+		"jp": "event fired after the modal dialog is already opened.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridSorting widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object."
 	}
     },
     "modalDialogOpening": {
@@ -229,8 +229,8 @@
         }
       ],
       "description": {
-		"en": "event fired before the modal dialog is opened.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.columnChooserElement to get a reference to the modal dialog element. This is a jQuery object.",
-		"jp": "event fired before the modal dialog is opened.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.columnChooserElement to get a reference to the modal dialog element. This is a jQuery object."
+		"en": "event fired before the modal dialog is opened.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridSorting widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnChooserElement to get a reference to the modal dialog element. This is a jQuery object.",
+		"jp": "event fired before the modal dialog is opened.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridSorting widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnChooserElement to get a reference to the modal dialog element. This is a jQuery object."
 	}
     },
     "modalDialogSortClick": {
@@ -248,8 +248,8 @@
         }
       ],
       "description": {
-		"en": "event fired when column(which is not sorted) is clicked to be sorted in modal dialog<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get the column key",
-		"jp": "event fired when column(which is not sorted) is clicked to be sorted in modal dialog<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get the column key"
+		"en": "event fired when column(which is not sorted) is clicked to be sorted in modal dialog<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridSorting widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.<br>   Use ui.columnKey to get the column key",
+		"jp": "event fired when column(which is not sorted) is clicked to be sorted in modal dialog<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridSorting widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.<br>   Use ui.columnKey to get the column key"
 	}
     },
     "modalDialogSortingChanged": {
@@ -267,8 +267,8 @@
         }
       ],
       "description": {
-		"en": "event fired when sorting of column is changed in modal dialog. Column should be sorted<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get the column key<br>&nbsp;&nbsp;&nbsp;Use ui.isAsc to get whether column should be ascending or not. If true it should be ascending",
-		"jp": "event fired when sorting of column is changed in modal dialog. Column should be sorted<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridSorting widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get the column key<br>&nbsp;&nbsp;&nbsp;Use ui.isAsc to get whether column should be ascending or not. If true it should be ascending"
+		"en": "event fired when sorting of column is changed in modal dialog. Column should be sorted<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridSorting widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.<br>   Use ui.columnKey to get the column key<br>   Use ui.isAsc to get whether column should be ascending or not. If true it should be ascending",
+		"jp": "event fired when sorting of column is changed in modal dialog. Column should be sorted<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridSorting widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.<br>   Use ui.columnKey to get the column key<br>   Use ui.isAsc to get whether column should be ascending or not. If true it should be ascending"
 	}
     }
   },

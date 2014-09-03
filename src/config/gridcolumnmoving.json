@@ -20,8 +20,8 @@
         }
       ],
       "description": {
-		"en": "Event which is fired when a drag operation is canceled<br>&nbsp;&nbsp;&nbsp;use args.columnKey to get the column key of the column that was being dragged<br>&nbsp;&nbsp;&nbsp;use args.columnIndex to get the column index of the column that was being dragged<br>&nbsp;&nbsp;&nbsp;use args.owner to get a reference to the widget<br>&nbsp;&nbsp;&nbsp;use args.header to get a reference to the orginal th that was being dragged<br>&nbsp;&nbsp;&nbsp;use args.helper to get a reference to cloned DOM element that was actually being dragged",
-		"jp": "Event which is fired when a drag operation is canceled<br>&nbsp;&nbsp;&nbsp;use args.columnKey to get the column key of the column that was being dragged<br>&nbsp;&nbsp;&nbsp;use args.columnIndex to get the column index of the column that was being dragged<br>&nbsp;&nbsp;&nbsp;use args.owner to get a reference to the widget<br>&nbsp;&nbsp;&nbsp;use args.header to get a reference to the orginal th that was being dragged<br>&nbsp;&nbsp;&nbsp;use args.helper to get a reference to cloned DOM element that was actually being dragged"
+		"en": "Event which is fired when a drag operation is canceled<br>   use args.columnKey to get the column key of the column that was being dragged<br>   use args.columnIndex to get the column index of the column that was being dragged<br>   use args.owner to get a reference to the widget<br>   use args.header to get a reference to the orginal th that was being dragged<br>   use args.helper to get a reference to cloned DOM element that was actually being dragged",
+		"jp": "Event which is fired when a drag operation is canceled<br>   use args.columnKey to get the column key of the column that was being dragged<br>   use args.columnIndex to get the column index of the column that was being dragged<br>   use args.owner to get a reference to the widget<br>   use args.header to get a reference to the orginal th that was being dragged<br>   use args.helper to get a reference to cloned DOM element that was actually being dragged"
 	}
     },
     "columnDragEnd": {
@@ -39,8 +39,8 @@
         }
       ],
       "description": {
-		"en": "Event which is fired when a drag operation ends on a column header<br>&nbsp;&nbsp;&nbsp;use args.columnKey to get the column key of the column that was being dragged<br>&nbsp;&nbsp;&nbsp;use args.columnIndex to get the column index of the column that was being dragged<br>&nbsp;&nbsp;&nbsp;use args.owner to get a reference to the widget<br>&nbsp;&nbsp;&nbsp;use args.header to get a reference to the orginal th that was being dragged<br>&nbsp;&nbsp;&nbsp;use args.helper to get a reference to cloned DOM element that was actually being dragged",
-		"jp": "Event which is fired when a drag operation ends on a column header<br>&nbsp;&nbsp;&nbsp;use args.columnKey to get the column key of the column that was being dragged<br>&nbsp;&nbsp;&nbsp;use args.columnIndex to get the column index of the column that was being dragged<br>&nbsp;&nbsp;&nbsp;use args.owner to get a reference to the widget<br>&nbsp;&nbsp;&nbsp;use args.header to get a reference to the orginal th that was being dragged<br>&nbsp;&nbsp;&nbsp;use args.helper to get a reference to cloned DOM element that was actually being dragged"
+		"en": "Event which is fired when a drag operation ends on a column header<br>   use args.columnKey to get the column key of the column that was being dragged<br>   use args.columnIndex to get the column index of the column that was being dragged<br>   use args.owner to get a reference to the widget<br>   use args.header to get a reference to the orginal th that was being dragged<br>   use args.helper to get a reference to cloned DOM element that was actually being dragged",
+		"jp": "Event which is fired when a drag operation ends on a column header<br>   use args.columnKey to get the column key of the column that was being dragged<br>   use args.columnIndex to get the column index of the column that was being dragged<br>   use args.owner to get a reference to the widget<br>   use args.header to get a reference to the orginal th that was being dragged<br>   use args.helper to get a reference to cloned DOM element that was actually being dragged"
 	}
     },
     "columnDragStart": {
@@ -58,8 +58,8 @@
         }
       ],
       "description": {
-		"en": "Event which is fired when a drag operation begins on a column header<br>&nbsp;&nbsp;&nbsp;use args.columnKey to get the column key of the column being dragged<br>&nbsp;&nbsp;&nbsp;use args.columnIndex to get the column index of the column being dragged<br>&nbsp;&nbsp;&nbsp;use args.owner to get a reference to the widget<br>&nbsp;&nbsp;&nbsp;use args.header to get a reference to the orginal th being dragged<br>&nbsp;&nbsp;&nbsp;use args.helper to get a reference to cloned DOM element that's actually being dragged",
-		"jp": "Event which is fired when a drag operation begins on a column header<br>&nbsp;&nbsp;&nbsp;use args.columnKey to get the column key of the column being dragged<br>&nbsp;&nbsp;&nbsp;use args.columnIndex to get the column index of the column being dragged<br>&nbsp;&nbsp;&nbsp;use args.owner to get a reference to the widget<br>&nbsp;&nbsp;&nbsp;use args.header to get a reference to the orginal th being dragged<br>&nbsp;&nbsp;&nbsp;use args.helper to get a reference to cloned DOM element that's actually being dragged"
+		"en": "Event which is fired when a drag operation begins on a column header<br>   use args.columnKey to get the column key of the column being dragged<br>   use args.columnIndex to get the column index of the column being dragged<br>   use args.owner to get a reference to the widget<br>   use args.header to get a reference to the orginal th being dragged<br>   use args.helper to get a reference to cloned DOM element that's actually being dragged",
+		"jp": "Event which is fired when a drag operation begins on a column header<br>   use args.columnKey to get the column key of the column being dragged<br>   use args.columnIndex to get the column index of the column being dragged<br>   use args.owner to get a reference to the widget<br>   use args.header to get a reference to the orginal th being dragged<br>   use args.helper to get a reference to cloned DOM element that's actually being dragged"
 	}
     },
     "columnMoved": {
@@ -77,8 +77,8 @@
         }
       ],
       "description": {
-		"en": "Event which is fired when a column moving operation completes<br>&nbsp;&nbsp;&nbsp;use args.columnKey to get the column key of the column that was moved<br>&nbsp;&nbsp;&nbsp;use args.oldIndex to get the previous column index of the column that was moved<br>&nbsp;&nbsp;&nbsp;use args.newIndex to get the new column index of the column that was being moved<br>&nbsp;&nbsp;&nbsp;use args.owner to get a reference to the widget",
-		"jp": "Event which is fired when a column moving operation completes<br>&nbsp;&nbsp;&nbsp;use args.columnKey to get the column key of the column that was moved<br>&nbsp;&nbsp;&nbsp;use args.oldIndex to get the previous column index of the column that was moved<br>&nbsp;&nbsp;&nbsp;use args.newIndex to get the new column index of the column that was being moved<br>&nbsp;&nbsp;&nbsp;use args.owner to get a reference to the widget"
+		"en": "Event which is fired when a column moving operation completes<br>   use args.columnKey to get the column key of the column that was moved<br>   use args.oldIndex to get the previous column index of the column that was moved<br>   use args.newIndex to get the new column index of the column that was being moved<br>   use args.owner to get a reference to the widget",
+		"jp": "Event which is fired when a column moving operation completes<br>   use args.columnKey to get the column key of the column that was moved<br>   use args.oldIndex to get the previous column index of the column that was moved<br>   use args.newIndex to get the new column index of the column that was being moved<br>   use args.owner to get a reference to the widget"
 	}
     },
     "columnMoving": {
@@ -96,8 +96,8 @@
         }
       ],
       "description": {
-		"en": "Event which is fired when a column moving operation is initiated<br>&nbsp;&nbsp;&nbsp;use args.columnKey to get the column key of the column that was being moved<br>&nbsp;&nbsp;&nbsp;use args.columnIndex to get the column index of the column that was being moved<br>&nbsp;&nbsp;&nbsp;use args.targetIndex to get the new column index of the column that was being moved<br>&nbsp;&nbsp;&nbsp;use args.owner to get a reference to the widget",
-		"jp": "Event which is fired when a column moving operation is initiated<br>&nbsp;&nbsp;&nbsp;use args.columnKey to get the column key of the column that was being moved<br>&nbsp;&nbsp;&nbsp;use args.columnIndex to get the column index of the column that was being moved<br>&nbsp;&nbsp;&nbsp;use args.targetIndex to get the new column index of the column that was being moved<br>&nbsp;&nbsp;&nbsp;use args.owner to get a reference to the widget"
+		"en": "Event which is fired when a column moving operation is initiated<br>   use args.columnKey to get the column key of the column that was being moved<br>   use args.columnIndex to get the column index of the column that was being moved<br>   use args.targetIndex to get the new column index of the column that was being moved<br>   use args.owner to get a reference to the widget",
+		"jp": "Event which is fired when a column moving operation is initiated<br>   use args.columnKey to get the column key of the column that was being moved<br>   use args.columnIndex to get the column index of the column that was being moved<br>   use args.targetIndex to get the new column index of the column that was being moved<br>   use args.owner to get a reference to the widget"
 	}
     },
     "movingDialogClosed": {
@@ -115,8 +115,8 @@
         }
       ],
       "description": {
-		"en": "event fired after the moving dialog has been closed.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridColumnMoving widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.movingDialogElement to get a reference to the moving dialog element. This is a jQuery object.",
-		"jp": "event fired after the moving dialog has been closed.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridColumnMoving widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.movingDialogElement to get a reference to the moving dialog element. This is a jQuery object."
+		"en": "event fired after the moving dialog has been closed.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridColumnMoving widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.movingDialogElement to get a reference to the moving dialog element. This is a jQuery object.",
+		"jp": "event fired after the moving dialog has been closed.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridColumnMoving widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.movingDialogElement to get a reference to the moving dialog element. This is a jQuery object."
 	}
     },
     "movingDialogClosing": {
@@ -134,8 +134,8 @@
         }
       ],
       "description": {
-		"en": "event fired before the moving dialog is closed.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridColumnMoving widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.movingDialogElement to get a reference to the moving dialog element. This is a jQuery object.",
-		"jp": "event fired before the moving dialog is closed.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridColumnMoving widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.movingDialogElement to get a reference to the moving dialog element. This is a jQuery object."
+		"en": "event fired before the moving dialog is closed.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridColumnMoving widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.movingDialogElement to get a reference to the moving dialog element. This is a jQuery object.",
+		"jp": "event fired before the moving dialog is closed.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridColumnMoving widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.movingDialogElement to get a reference to the moving dialog element. This is a jQuery object."
 	}
     },
     "movingDialogContentsRendered": {
@@ -153,8 +153,8 @@
         }
       ],
       "description": {
-		"en": "event fired after the contents of the model dialog are rendered.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridColumnMoving widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.movingDialog to get a reference to the Moving Dialog element. This is a jQuery object.",
-		"jp": "event fired after the contents of the model dialog are rendered.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridColumnMoving widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.movingDialog to get a reference to the Moving Dialog element. This is a jQuery object."
+		"en": "event fired after the contents of the model dialog are rendered.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridColumnMoving widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.movingDialog to get a reference to the Moving Dialog element. This is a jQuery object.",
+		"jp": "event fired after the contents of the model dialog are rendered.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridColumnMoving widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.movingDialog to get a reference to the Moving Dialog element. This is a jQuery object."
 	}
     },
     "movingDialogContentsRendering": {
@@ -172,8 +172,8 @@
         }
       ],
       "description": {
-		"en": "event fired before the contents of the model dialog are rendered.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridColumnMoving widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.movingDialog to get a reference to the Moving Dialog element. This is a jQuery object.",
-		"jp": "event fired before the contents of the model dialog are rendered.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridColumnMoving widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.movingDialog to get a reference to the Moving Dialog element. This is a jQuery object."
+		"en": "event fired before the contents of the model dialog are rendered.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridColumnMoving widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.movingDialog to get a reference to the Moving Dialog element. This is a jQuery object.",
+		"jp": "event fired before the contents of the model dialog are rendered.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridColumnMoving widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.movingDialog to get a reference to the Moving Dialog element. This is a jQuery object."
 	}
     },
     "movingDialogDragColumnMoved": {
@@ -191,8 +191,8 @@
         }
       ],
       "description": {
-		"en": "event fired when column moving is completed through dragging it in the moving dialog<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridColumnMoving widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.movingDialog to get a reference to the Moving Dialog element. This is a jQuery object.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get the column key of the column that was being moved<br>&nbsp;&nbsp;&nbsp;Use ui.columnIndex to get the column index of the column that was being moved<br>&nbsp;&nbsp;&nbsp;Use ui.targetIndex to get the new column index of the column that was being moved",
-		"jp": "event fired when column moving is completed through dragging it in the moving dialog<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridColumnMoving widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.movingDialog to get a reference to the Moving Dialog element. This is a jQuery object.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get the column key of the column that was being moved<br>&nbsp;&nbsp;&nbsp;Use ui.columnIndex to get the column index of the column that was being moved<br>&nbsp;&nbsp;&nbsp;Use ui.targetIndex to get the new column index of the column that was being moved"
+		"en": "event fired when column moving is completed through dragging it in the moving dialog<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridColumnMoving widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.movingDialog to get a reference to the Moving Dialog element. This is a jQuery object.<br>   Use ui.columnKey to get the column key of the column that was being moved<br>   Use ui.columnIndex to get the column index of the column that was being moved<br>   Use ui.targetIndex to get the new column index of the column that was being moved",
+		"jp": "event fired when column moving is completed through dragging it in the moving dialog<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridColumnMoving widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.movingDialog to get a reference to the Moving Dialog element. This is a jQuery object.<br>   Use ui.columnKey to get the column key of the column that was being moved<br>   Use ui.columnIndex to get the column index of the column that was being moved<br>   Use ui.targetIndex to get the new column index of the column that was being moved"
 	}
     },
     "movingDialogDragColumnMoving": {
@@ -210,8 +210,8 @@
         }
       ],
       "description": {
-		"en": "event fired when column moving is initiated through dragging it in the moving dialog<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridColumnMoving widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.movingDialog to get a reference to the Moving Dialog element. This is a jQuery object.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get the column key of the column that was being moved<br>&nbsp;&nbsp;&nbsp;Use ui.columnIndex to get the column index of the column that was being moved<br>&nbsp;&nbsp;&nbsp;Use ui.targetIndex to get the new column index of the column that was being moved",
-		"jp": "event fired when column moving is initiated through dragging it in the moving dialog<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridColumnMoving widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.movingDialog to get a reference to the Moving Dialog element. This is a jQuery object.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get the column key of the column that was being moved<br>&nbsp;&nbsp;&nbsp;Use ui.columnIndex to get the column index of the column that was being moved<br>&nbsp;&nbsp;&nbsp;Use ui.targetIndex to get the new column index of the column that was being moved"
+		"en": "event fired when column moving is initiated through dragging it in the moving dialog<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridColumnMoving widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.movingDialog to get a reference to the Moving Dialog element. This is a jQuery object.<br>   Use ui.columnKey to get the column key of the column that was being moved<br>   Use ui.columnIndex to get the column index of the column that was being moved<br>   Use ui.targetIndex to get the new column index of the column that was being moved",
+		"jp": "event fired when column moving is initiated through dragging it in the moving dialog<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridColumnMoving widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.movingDialog to get a reference to the Moving Dialog element. This is a jQuery object.<br>   Use ui.columnKey to get the column key of the column that was being moved<br>   Use ui.columnIndex to get the column index of the column that was being moved<br>   Use ui.targetIndex to get the new column index of the column that was being moved"
 	}
     },
     "movingDialogDragged": {
@@ -229,8 +229,8 @@
         }
       ],
       "description": {
-		"en": "event fired every time the moving dialog changes its position.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridMoving widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.movingDialogElement to get a reference to the moving dialog element. This is a jQuery object.<br>&nbsp;&nbsp;&nbsp;Use ui.originalPosition to get the original position of the moving dialog div as { top, left } object, relative to the page.<br>&nbsp;&nbsp;&nbsp;Use ui.position to get the current position of the moving dialog div as { top, left } object, relative to the page.",
-		"jp": "event fired every time the moving dialog changes its position.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridMoving widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.movingDialogElement to get a reference to the moving dialog element. This is a jQuery object.<br>&nbsp;&nbsp;&nbsp;Use ui.originalPosition to get the original position of the moving dialog div as { top, left } object, relative to the page.<br>&nbsp;&nbsp;&nbsp;Use ui.position to get the current position of the moving dialog div as { top, left } object, relative to the page."
+		"en": "event fired every time the moving dialog changes its position.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridMoving widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.movingDialogElement to get a reference to the moving dialog element. This is a jQuery object.<br>   Use ui.originalPosition to get the original position of the moving dialog div as { top, left } object, relative to the page.<br>   Use ui.position to get the current position of the moving dialog div as { top, left } object, relative to the page.",
+		"jp": "event fired every time the moving dialog changes its position.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridMoving widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.movingDialogElement to get a reference to the moving dialog element. This is a jQuery object.<br>   Use ui.originalPosition to get the original position of the moving dialog div as { top, left } object, relative to the page.<br>   Use ui.position to get the current position of the moving dialog div as { top, left } object, relative to the page."
 	}
     },
     "movingDialogMoveDownButtonPressed": {
@@ -248,8 +248,8 @@
         }
       ],
       "description": {
-		"en": "event fired when move down button is pressed in the moving dialog<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridColumnMoving widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.movingDialog to get a reference to the Moving Dialog element. This is a jQuery object.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get the column key of the column that was being moved<br>&nbsp;&nbsp;&nbsp;Use ui.columnIndex to get the column index of the column that was being moved<br>&nbsp;&nbsp;&nbsp;Use ui.targetIndex to get the new column index of the column that was being moved",
-		"jp": "event fired when move down button is pressed in the moving dialog<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridColumnMoving widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.movingDialog to get a reference to the Moving Dialog element. This is a jQuery object.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get the column key of the column that was being moved<br>&nbsp;&nbsp;&nbsp;Use ui.columnIndex to get the column index of the column that was being moved<br>&nbsp;&nbsp;&nbsp;Use ui.targetIndex to get the new column index of the column that was being moved"
+		"en": "event fired when move down button is pressed in the moving dialog<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridColumnMoving widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.movingDialog to get a reference to the Moving Dialog element. This is a jQuery object.<br>   Use ui.columnKey to get the column key of the column that was being moved<br>   Use ui.columnIndex to get the column index of the column that was being moved<br>   Use ui.targetIndex to get the new column index of the column that was being moved",
+		"jp": "event fired when move down button is pressed in the moving dialog<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridColumnMoving widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.movingDialog to get a reference to the Moving Dialog element. This is a jQuery object.<br>   Use ui.columnKey to get the column key of the column that was being moved<br>   Use ui.columnIndex to get the column index of the column that was being moved<br>   Use ui.targetIndex to get the new column index of the column that was being moved"
 	}
     },
     "movingDialogMoveUpButtonPressed": {
@@ -267,8 +267,8 @@
         }
       ],
       "description": {
-		"en": "event fired when move up button is pressed in the moving dialog<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridColumnMoving widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.movingDialog to get a reference to the Moving Dialog element. This is a jQuery object.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get the column key of the column that was being moved<br>&nbsp;&nbsp;&nbsp;Use ui.columnIndex to get the column index of the column that was being moved<br>&nbsp;&nbsp;&nbsp;Use ui.targetIndex to get the new column index of the column that was being moved",
-		"jp": "event fired when move up button is pressed in the moving dialog<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridColumnMoving widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.movingDialog to get a reference to the Moving Dialog element. This is a jQuery object.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get the column key of the column that was being moved<br>&nbsp;&nbsp;&nbsp;Use ui.columnIndex to get the column index of the column that was being moved<br>&nbsp;&nbsp;&nbsp;Use ui.targetIndex to get the new column index of the column that was being moved"
+		"en": "event fired when move up button is pressed in the moving dialog<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridColumnMoving widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.movingDialog to get a reference to the Moving Dialog element. This is a jQuery object.<br>   Use ui.columnKey to get the column key of the column that was being moved<br>   Use ui.columnIndex to get the column index of the column that was being moved<br>   Use ui.targetIndex to get the new column index of the column that was being moved",
+		"jp": "event fired when move up button is pressed in the moving dialog<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridColumnMoving widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.movingDialog to get a reference to the Moving Dialog element. This is a jQuery object.<br>   Use ui.columnKey to get the column key of the column that was being moved<br>   Use ui.columnIndex to get the column index of the column that was being moved<br>   Use ui.targetIndex to get the new column index of the column that was being moved"
 	}
     },
     "movingDialogOpened": {
@@ -286,8 +286,8 @@
         }
       ],
       "description": {
-		"en": "event fired after the column chooser is already opened.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridColumnMoving widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.movingDialogElement to get a reference to the moving dialog element. This is a jQuery object.",
-		"jp": "event fired after the column chooser is already opened.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridColumnMoving widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.movingDialogElement to get a reference to the moving dialog element. This is a jQuery object."
+		"en": "event fired after the column chooser is already opened.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridColumnMoving widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.movingDialogElement to get a reference to the moving dialog element. This is a jQuery object.",
+		"jp": "event fired after the column chooser is already opened.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridColumnMoving widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.movingDialogElement to get a reference to the moving dialog element. This is a jQuery object."
 	}
     },
     "movingDialogOpening": {
@@ -305,8 +305,8 @@
         }
       ],
       "description": {
-		"en": "event fired before the moving dialog is opened.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridColumnMoving widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.movingDialogElement to get a reference to the moving dialog element. This is a jQuery object.",
-		"jp": "event fired before the moving dialog is opened.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridColumnMoving widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.movingDialogElement to get a reference to the moving dialog element. This is a jQuery object."
+		"en": "event fired before the moving dialog is opened.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridColumnMoving widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.movingDialogElement to get a reference to the moving dialog element. This is a jQuery object.",
+		"jp": "event fired before the moving dialog is opened.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridColumnMoving widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.movingDialogElement to get a reference to the moving dialog element. This is a jQuery object."
 	}
     }
   },
@@ -361,8 +361,8 @@
       "type": "number",
       "defaultValue": 1.0,
       "description": {
-		"en": "Specifies the opacity of the drag markup, while a column header is being dragged.<br>&nbsp;&nbsp;&nbsp;The value must be between 0 and 1. When GroupBy is enabled, the corresponding option in the GroupBy configuration <br>&nbsp;&nbsp;&nbsp;will be used with priority over this one.",
-		"jp": "Specifies the opacity of the drag markup, while a column header is being dragged.<br>&nbsp;&nbsp;&nbsp;The value must be between 0 and 1. When GroupBy is enabled, the corresponding option in the GroupBy configuration <br>&nbsp;&nbsp;&nbsp;will be used with priority over this one."
+		"en": "Specifies the opacity of the drag markup, while a column header is being dragged.<br>   The value must be between 0 and 1. When GroupBy is enabled, the corresponding option in the GroupBy configuration <br>   will be used with priority over this one.",
+		"jp": "Specifies the opacity of the drag markup, while a column header is being dragged.<br>   The value must be between 0 and 1. When GroupBy is enabled, the corresponding option in the GroupBy configuration <br>   will be used with priority over this one."
 	}
     },
     "dropDownMoveFirstText": {
@@ -409,8 +409,8 @@
       "type": "bool",
       "defaultValue": true,
       "description": {
-		"en": "Specifies whether the contents of the column being dragged will get hidden. The option is only<br>&nbsp;&nbsp;&nbsp;relevant in immediate moving mode.",
-		"jp": "Specifies whether the contents of the column being dragged will get hidden. The option is only<br>&nbsp;&nbsp;&nbsp;relevant in immediate moving mode."
+		"en": "Specifies whether the contents of the column being dragged will get hidden. The option is only<br>   relevant in immediate moving mode.",
+		"jp": "Specifies whether the contents of the column being dragged will get hidden. The option is only<br>   relevant in immediate moving mode."
 	}
     },
     "mode": {

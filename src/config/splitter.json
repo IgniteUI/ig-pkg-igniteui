@@ -19,8 +19,8 @@
         }
       ],
       "description": {
-		"en": "fired after collapsing is performed <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the splitter instance.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.index to get an index of collased panel.",
-		"jp": "fired after collapsing is performed <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the splitter instance.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.index to get an index of collased panel."
+		"en": "fired after collapsing is performed <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the splitter instance.<br>    Use ui.index to get an index of collased panel.",
+		"jp": "fired after collapsing is performed <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the splitter instance.<br>    Use ui.index to get an index of collased panel."
 	}
     },
     "expanded": {
@@ -38,8 +38,8 @@
         }
       ],
       "description": {
-		"en": "fired after expanding is performed <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the splitter instance.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.index to get an index of expanded panel.",
-		"jp": "fired after expanding is performed <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the splitter instance.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.index to get an index of expanded panel."
+		"en": "fired after expanding is performed <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the splitter instance.<br>    Use ui.index to get an index of expanded panel.",
+		"jp": "fired after expanding is performed <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the splitter instance.<br>    Use ui.index to get an index of expanded panel."
 	}
     },
     "layoutRefreshed": {
@@ -57,8 +57,8 @@
         }
       ],
       "description": {
-		"en": "fired after the panels are refreshed because of browser's resizing.<br>&nbsp;&nbsp;&nbsp;   Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;   Use ui.owner to get a reference to the splitter instance.",
-		"jp": "fired after the panels are refreshed because of browser's resizing.<br>&nbsp;&nbsp;&nbsp;   Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;   Use ui.owner to get a reference to the splitter instance."
+		"en": "fired after the panels are refreshed because of browser's resizing.<br>      Function takes arguments evt and ui.<br>      Use ui.owner to get a reference to the splitter instance.",
+		"jp": "fired after the panels are refreshed because of browser's resizing.<br>      Function takes arguments evt and ui.<br>      Use ui.owner to get a reference to the splitter instance."
 	}
     },
     "layoutRefreshing": {
@@ -76,8 +76,8 @@
         }
       ],
       "description": {
-		"en": "Fired before the panels are going to go refreshed because of browser's resizing.<br>&nbsp;&nbsp;&nbsp;   Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;   Use ui.owner to get a reference to the splitter instance.",
-		"jp": "Fired before the panels are going to go refreshed because of browser's resizing.<br>&nbsp;&nbsp;&nbsp;   Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;   Use ui.owner to get a reference to the splitter instance."
+		"en": "Fired before the panels are going to go refreshed because of browser's resizing.<br>      Function takes arguments evt and ui.<br>      Use ui.owner to get a reference to the splitter instance.",
+		"jp": "Fired before the panels are going to go refreshed because of browser's resizing.<br>      Function takes arguments evt and ui.<br>      Use ui.owner to get a reference to the splitter instance."
 	}
     },
     "resizeEnded": {
@@ -95,8 +95,8 @@
         }
       ],
       "description": {
-		"en": "fired after split bar move is performed <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the splitter instance.",
-		"jp": "fired after split bar move is performed <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the splitter instance."
+		"en": "fired after split bar move is performed <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the splitter instance.",
+		"jp": "fired after split bar move is performed <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the splitter instance."
 	}
     },
     "resizeStarted": {
@@ -114,8 +114,8 @@
         }
       ],
       "description": {
-		"en": "fired before split bar move is performed <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the splitter instance.",
-		"jp": "fired before split bar move is performed <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the splitter instance."
+		"en": "fired before split bar move is performed <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the splitter instance.",
+		"jp": "fired before split bar move is performed <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the splitter instance."
 	}
     },
     "resizing": {
@@ -133,8 +133,8 @@
         }
       ],
       "description": {
-		"en": "fired while split bar move is performed <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the splitter instance.",
-		"jp": "fired while split bar move is performed <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the splitter instance."
+		"en": "fired while split bar move is performed <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the splitter instance.",
+		"jp": "fired while split bar move is performed <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the splitter instance."
 	}
     }
   },
@@ -185,8 +185,8 @@
       "type": "array",
       "defaultValue": null,
       "description": {
-		"en": "Specifies the panel settings. The panels are no more than two. Settings are specified via enumeration.<br>&nbsp;&nbsp;&nbsp;size=\"string|int\"<br>&nbsp;&nbsp;&nbsp;min type=\"string|int\"<br>&nbsp;&nbsp;&nbsp;max type=\"string|int\"<br>&nbsp;&nbsp;&nbsp;resizable <br>&nbsp;&nbsp;&nbsp;collapsed <br>&nbsp;&nbsp;&nbsp;collapsible",
-		"jp": "Specifies the panel settings. The panels are no more than two. Settings are specified via enumeration.<br>&nbsp;&nbsp;&nbsp;size=\"string|int\"<br>&nbsp;&nbsp;&nbsp;min type=\"string|int\"<br>&nbsp;&nbsp;&nbsp;max type=\"string|int\"<br>&nbsp;&nbsp;&nbsp;resizable <br>&nbsp;&nbsp;&nbsp;collapsed <br>&nbsp;&nbsp;&nbsp;collapsible"
+		"en": "Specifies the panel settings. The panels are no more than two. Settings are specified via enumeration.<br>   size=\"string|int\"<br>   min type=\"string|int\"<br>   max type=\"string|int\"<br>   resizable <br>   collapsed <br>   collapsible",
+		"jp": "Specifies the panel settings. The panels are no more than two. Settings are specified via enumeration.<br>   size=\"string|int\"<br>   min type=\"string|int\"<br>   max type=\"string|int\"<br>   resizable <br>   collapsed <br>   collapsible"
 	},
       "schema": {
           "size": {

@@ -19,8 +19,8 @@
         }
       ],
       "description": {
-		"en": "Event which is raised before data binding.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes first argument null and second argument ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igSparkline.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.dataSource to obtain reference to instance of $.ig.DataSource.",
-		"jp": "Event which is raised before data binding.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes first argument null and second argument ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igSparkline.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.dataSource to obtain reference to instance of $.ig.DataSource."
+		"en": "Event which is raised before data binding.<br>    Function takes first argument null and second argument ui.<br>    Use ui.owner to obtain reference to igSparkline.<br>    Use ui.dataSource to obtain reference to instance of $.ig.DataSource.",
+		"jp": "Event which is raised before data binding.<br>    Function takes first argument null and second argument ui.<br>    Use ui.owner to obtain reference to igSparkline.<br>    Use ui.dataSource to obtain reference to instance of $.ig.DataSource."
 	}
     },
     "dataBound": {
@@ -38,8 +38,8 @@
         }
       ],
       "description": {
-		"en": "Event which is raised after data binding.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes first argument null and second argument ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igSparkline.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.data to obtain reference to array actual data which is displayed by chart.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.dataSource to obtain reference to instance of $.ig.DataSource.",
-		"jp": "Event which is raised after data binding.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes first argument null and second argument ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igSparkline.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.data to obtain reference to array actual data which is displayed by chart.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.dataSource to obtain reference to instance of $.ig.DataSource."
+		"en": "Event which is raised after data binding.<br>    Function takes first argument null and second argument ui.<br>    Use ui.owner to obtain reference to igSparkline.<br>    Use ui.data to obtain reference to array actual data which is displayed by chart.<br>    Use ui.dataSource to obtain reference to instance of $.ig.DataSource.",
+		"jp": "Event which is raised after data binding.<br>    Function takes first argument null and second argument ui.<br>    Use ui.owner to obtain reference to igSparkline.<br>    Use ui.data to obtain reference to array actual data which is displayed by chart.<br>    Use ui.dataSource to obtain reference to instance of $.ig.DataSource."
 	}
     }
   },
@@ -230,8 +230,8 @@
       "type": "string",
       "defaultValue": null,
       "description": {
-		"en": "The value or content to display on the horizontal axis.<br>&nbsp;This can be set to a formatted string, such as \"{0}\", or it can be set to a DataTemplate.",
-		"jp": "The value or content to display on the horizontal axis.<br>&nbsp;This can be set to a formatted string, such as \"{0}\", or it can be set to a DataTemplate."
+		"en": "The value or content to display on the horizontal axis.<br> This can be set to a formatted string, such as \"{0}\", or it can be set to a DataTemplate.",
+		"jp": "The value or content to display on the horizontal axis.<br> This can be set to a formatted string, such as \"{0}\", or it can be set to a DataTemplate."
 	}
     },
     "horizontalAxisVisibility": {
@@ -694,8 +694,8 @@
       "type": "string",
       "defaultValue": null,
       "description": {
-		"en": "The value or content to display on the vertical axis.<br>&nbsp;This can be set to a formatted string, such as \"{0:n}\", or it can be set to a DataTemplate.",
-		"jp": "The value or content to display on the vertical axis.<br>&nbsp;This can be set to a formatted string, such as \"{0:n}\", or it can be set to a DataTemplate."
+		"en": "The value or content to display on the vertical axis.<br> This can be set to a formatted string, such as \"{0:n}\", or it can be set to a DataTemplate.",
+		"jp": "The value or content to display on the vertical axis.<br> This can be set to a formatted string, such as \"{0:n}\", or it can be set to a DataTemplate."
 	}
     },
     "verticalAxisVisibility": {

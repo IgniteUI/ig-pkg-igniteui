@@ -58,8 +58,8 @@
         }
       ],
       "description": {
-		"en": "Event which is fired when children have been populated (Load on demand) <br>&nbsp;&nbsp;&nbsp;&nbsp;use args.owner to access the hierarchical grid object<br>&nbsp;&nbsp;&nbsp;&nbsp;use args.parentrow to access the row element for the row that was populated<br>&nbsp;&nbsp;&nbsp;&nbsp;use args.id to get the data ID of the row",
-		"jp": "Event which is fired when children have been populated (Load on demand) <br>&nbsp;&nbsp;&nbsp;&nbsp;use args.owner to access the hierarchical grid object<br>&nbsp;&nbsp;&nbsp;&nbsp;use args.parentrow to access the row element for the row that was populated<br>&nbsp;&nbsp;&nbsp;&nbsp;use args.id to get the data ID of the row"
+		"en": "Event which is fired when children have been populated (Load on demand) <br>    use args.owner to access the hierarchical grid object<br>    use args.parentrow to access the row element for the row that was populated<br>    use args.id to get the data ID of the row",
+		"jp": "Event which is fired when children have been populated (Load on demand) <br>    use args.owner to access the hierarchical grid object<br>    use args.parentrow to access the row element for the row that was populated<br>    use args.id to get the data ID of the row"
 	}
     },
     "childrenPopulating": {
@@ -77,8 +77,8 @@
         }
       ],
       "description": {
-		"en": "Event which is fired when children are about to be populated (Load on demand)<br>&nbsp;&nbsp;&nbsp;&nbsp;use args.owner to access the hierarchical grid object<br>&nbsp;&nbsp;&nbsp;&nbsp;use args.parentrow to access the row element for the row that's about to be populated<br>&nbsp;&nbsp;&nbsp;&nbsp;use args.id to get the data ID of the row",
-		"jp": "Event which is fired when children are about to be populated (Load on demand)<br>&nbsp;&nbsp;&nbsp;&nbsp;use args.owner to access the hierarchical grid object<br>&nbsp;&nbsp;&nbsp;&nbsp;use args.parentrow to access the row element for the row that's about to be populated<br>&nbsp;&nbsp;&nbsp;&nbsp;use args.id to get the data ID of the row"
+		"en": "Event which is fired when children are about to be populated (Load on demand)<br>    use args.owner to access the hierarchical grid object<br>    use args.parentrow to access the row element for the row that's about to be populated<br>    use args.id to get the data ID of the row",
+		"jp": "Event which is fired when children are about to be populated (Load on demand)<br>    use args.owner to access the hierarchical grid object<br>    use args.parentrow to access the row element for the row that's about to be populated<br>    use args.id to get the data ID of the row"
 	}
     },
     "rowCollapsed": {
@@ -96,8 +96,8 @@
         }
       ],
       "description": {
-		"en": "Event which is fired when a hierarchical row has been collapsed <br>&nbsp;&nbsp;&nbsp;&nbsp;use args.owner to access the hierarchical grid object<br>&nbsp;&nbsp;&nbsp;&nbsp;use args.parentrow to access the row element for the row that was collapsd",
-		"jp": "Event which is fired when a hierarchical row has been collapsed <br>&nbsp;&nbsp;&nbsp;&nbsp;use args.owner to access the hierarchical grid object<br>&nbsp;&nbsp;&nbsp;&nbsp;use args.parentrow to access the row element for the row that was collapsd"
+		"en": "Event which is fired when a hierarchical row has been collapsed <br>    use args.owner to access the hierarchical grid object<br>    use args.parentrow to access the row element for the row that was collapsd",
+		"jp": "Event which is fired when a hierarchical row has been collapsed <br>    use args.owner to access the hierarchical grid object<br>    use args.parentrow to access the row element for the row that was collapsd"
 	}
     },
     "rowCollapsing": {
@@ -115,8 +115,8 @@
         }
       ],
       "description": {
-		"en": "Event which is fired when a hierarchical row is about to be collapsed <br>&nbsp;&nbsp;&nbsp;&nbsp;use args.owner to access the hierarchical grid object<br>&nbsp;&nbsp;&nbsp;&nbsp;use args.parentrow to access the row element for the row that's about to be collapsed",
-		"jp": "Event which is fired when a hierarchical row is about to be collapsed <br>&nbsp;&nbsp;&nbsp;&nbsp;use args.owner to access the hierarchical grid object<br>&nbsp;&nbsp;&nbsp;&nbsp;use args.parentrow to access the row element for the row that's about to be collapsed"
+		"en": "Event which is fired when a hierarchical row is about to be collapsed <br>    use args.owner to access the hierarchical grid object<br>    use args.parentrow to access the row element for the row that's about to be collapsed",
+		"jp": "Event which is fired when a hierarchical row is about to be collapsed <br>    use args.owner to access the hierarchical grid object<br>    use args.parentrow to access the row element for the row that's about to be collapsed"
 	}
     },
     "rowExpanded": {
@@ -134,8 +134,8 @@
         }
       ],
       "description": {
-		"en": "Event which is fired after a hierarchical row has been expanded <br>&nbsp;&nbsp;&nbsp;&nbsp;use args.owner to access the hierarchical grid object<br>&nbsp;&nbsp;&nbsp;&nbsp;use args.parentrow to access the row element for the row that was expanded",
-		"jp": "Event which is fired after a hierarchical row has been expanded <br>&nbsp;&nbsp;&nbsp;&nbsp;use args.owner to access the hierarchical grid object<br>&nbsp;&nbsp;&nbsp;&nbsp;use args.parentrow to access the row element for the row that was expanded"
+		"en": "Event which is fired after a hierarchical row has been expanded <br>    use args.owner to access the hierarchical grid object<br>    use args.parentrow to access the row element for the row that was expanded",
+		"jp": "Event which is fired after a hierarchical row has been expanded <br>    use args.owner to access the hierarchical grid object<br>    use args.parentrow to access the row element for the row that was expanded"
 	}
     },
     "rowExpanding": {
@@ -153,8 +153,8 @@
         }
       ],
       "description": {
-		"en": "Event which is fired when a hierarchical row is about to be expanded<br>&nbsp;&nbsp;&nbsp;&nbsp;use args.owner to access the hierarchical grid object<br>&nbsp;&nbsp;&nbsp;&nbsp;use args.parentrow to access the row element for the row that's about to be expanded",
-		"jp": "Event which is fired when a hierarchical row is about to be expanded<br>&nbsp;&nbsp;&nbsp;&nbsp;use args.owner to access the hierarchical grid object<br>&nbsp;&nbsp;&nbsp;&nbsp;use args.parentrow to access the row element for the row that's about to be expanded"
+		"en": "Event which is fired when a hierarchical row is about to be expanded<br>    use args.owner to access the hierarchical grid object<br>    use args.parentrow to access the row element for the row that's about to be expanded",
+		"jp": "Event which is fired when a hierarchical row is about to be expanded<br>    use args.owner to access the hierarchical grid object<br>    use args.parentrow to access the row element for the row that's about to be expanded"
 	}
     }   
   },
@@ -171,8 +171,8 @@
       "type": "bool",
       "defaultValue": false,
       "description": {
-		"en": "if true, will autogenerate all layouts assuming default values for \"childrenDataProperty\" <br>&nbsp;&nbsp;&nbsp;&nbsp;When autoGenerateLayouts is enabled, it will automatically generate all columns recursively. (all columns on all levels)",
-		"jp": "if true, will autogenerate all layouts assuming default values for \"childrenDataProperty\" <br>&nbsp;&nbsp;&nbsp;&nbsp;When autoGenerateLayouts is enabled, it will automatically generate all columns recursively. (all columns on all levels)"
+		"en": "if true, will autogenerate all layouts assuming default values for \"childrenDataProperty\" <br>    When autoGenerateLayouts is enabled, it will automatically generate all columns recursively. (all columns on all levels)",
+		"jp": "if true, will autogenerate all layouts assuming default values for \"childrenDataProperty\" <br>    When autoGenerateLayouts is enabled, it will automatically generate all columns recursively. (all columns on all levels)"
 	}
     },
     "collapseTooltip": {
@@ -298,8 +298,8 @@
       "type": "bool",
       "defaultValue": false,
       "description": {
-		"en": "If true, load on demand will be achieved using REST compliant resource access with appropriate url-s for<br>&nbsp;&nbsp;&nbsp;&nbsp;the ajax GET calls.",
-		"jp": "If true, load on demand will be achieved using REST compliant resource access with appropriate url-s for<br>&nbsp;&nbsp;&nbsp;&nbsp;the ajax GET calls."
+		"en": "If true, load on demand will be achieved using REST compliant resource access with appropriate url-s for<br>    the ajax GET calls.",
+		"jp": "If true, load on demand will be achieved using REST compliant resource access with appropriate url-s for<br>    the ajax GET calls."
 	}
     }
   }

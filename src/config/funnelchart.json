@@ -19,8 +19,8 @@
         }
       ],
       "description": {
-		"en": "Event which is raised when a slice is clicked.<br>&nbsp;Function takes first argument null and second argument ui.<br>&nbsp;Use ui.owner to obtain reference to igFunnelChart.<br>&nbsp;Use ui.index to obtain index of clicked slice.<br>&nbsp;Use ui.item to obtain reference to clicked slice item.<br>&nbsp;Use ui.selected to check if slice became selected.",
-		"jp": "Event which is raised when a slice is clicked.<br>&nbsp;Function takes first argument null and second argument ui.<br>&nbsp;Use ui.owner to obtain reference to igFunnelChart.<br>&nbsp;Use ui.index to obtain index of clicked slice.<br>&nbsp;Use ui.item to obtain reference to clicked slice item.<br>&nbsp;Use ui.selected to check if slice became selected."
+		"en": "Event which is raised when a slice is clicked.<br> Function takes first argument null and second argument ui.<br> Use ui.owner to obtain reference to igFunnelChart.<br> Use ui.index to obtain index of clicked slice.<br> Use ui.item to obtain reference to clicked slice item.<br> Use ui.selected to check if slice became selected.",
+		"jp": "Event which is raised when a slice is clicked.<br> Function takes first argument null and second argument ui.<br> Use ui.owner to obtain reference to igFunnelChart.<br> Use ui.index to obtain index of clicked slice.<br> Use ui.item to obtain reference to clicked slice item.<br> Use ui.selected to check if slice became selected."
 	}
     }
   },
@@ -37,8 +37,8 @@
       "type": "string",
       "defaultValue": null,
       "description": {
-		"en": "Gets or sets values for upper and lower bezier points. That option has effect only when useBezierCurve is enabled.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value should provide 4 numeric values in range from 0 to 1 separated by space character.<br>&nbsp;&nbsp;&nbsp;&nbsp;The first number defines upper-x position, second: upper-y, third: lower-x, fourth: lower-y.<br>&nbsp;&nbsp;&nbsp;&nbsp;The null or invalid value will reset internal default, which is \"0.5 0 0.5 1\".<br>&nbsp;&nbsp;&nbsp;&nbsp;Example:<br>&nbsp;&nbsp;&nbsp;&nbsp;bezierPoints: \"0.4 0.1 0.6 1\"",
-		"jp": "Gets or sets values for upper and lower bezier points. That option has effect only when useBezierCurve is enabled.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value should provide 4 numeric values in range from 0 to 1 separated by space character.<br>&nbsp;&nbsp;&nbsp;&nbsp;The first number defines upper-x position, second: upper-y, third: lower-x, fourth: lower-y.<br>&nbsp;&nbsp;&nbsp;&nbsp;The null or invalid value will reset internal default, which is \"0.5 0 0.5 1\".<br>&nbsp;&nbsp;&nbsp;&nbsp;Example:<br>&nbsp;&nbsp;&nbsp;&nbsp;bezierPoints: \"0.4 0.1 0.6 1\""
+		"en": "Gets or sets values for upper and lower bezier points. That option has effect only when useBezierCurve is enabled.<br>    Value should provide 4 numeric values in range from 0 to 1 separated by space character.<br>    The first number defines upper-x position, second: upper-y, third: lower-x, fourth: lower-y.<br>    The null or invalid value will reset internal default, which is \"0.5 0 0.5 1\".<br>    Example:<br>    bezierPoints: \"0.4 0.1 0.6 1\"",
+		"jp": "Gets or sets values for upper and lower bezier points. That option has effect only when useBezierCurve is enabled.<br>    Value should provide 4 numeric values in range from 0 to 1 separated by space character.<br>    The first number defines upper-x position, second: upper-y, third: lower-x, fourth: lower-y.<br>    The null or invalid value will reset internal default, which is \"0.5 0 0.5 1\".<br>    Example:<br>    bezierPoints: \"0.4 0.1 0.6 1\""
 	}
     },
     "bottomEdgeWidth": {
@@ -53,8 +53,8 @@
       "type": "array",
       "defaultValue": null,
       "description": {
-		"en": "Gets or sets the Brushes property.<br>&nbsp;The brushes property defines the palette from which automatically assigned brushes are selected.<br>&nbsp;The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
-		"jp": "Gets or sets the Brushes property.<br>&nbsp;The brushes property defines the palette from which automatically assigned brushes are selected.<br>&nbsp;The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
+		"en": "Gets or sets the Brushes property.<br> The brushes property defines the palette from which automatically assigned brushes are selected.<br> The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
+		"jp": "Gets or sets the Brushes property.<br> The brushes property defines the palette from which automatically assigned brushes are selected.<br> The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
 	},
       "arrayMemberType": "string",
 	  "schema": {
@@ -163,8 +163,8 @@
       "type": "object",
       "defaultValue": null,
       "description": {
-		"en": "Gets or sets the Legend for the chart.<br>&nbsp;&nbsp;&nbsp;&nbsp;The value of that option can be a string with the id of existing html element. That element should be empty and it will be used to create igChartLegend widget.<br>&nbsp;&nbsp;&nbsp;&nbsp;If element was not found, then new DIV element is created and inserted into parent after chart element.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value of that option can be an object with member \"element\", which contains the id of legend-element.<br>&nbsp;&nbsp;&nbsp;&nbsp;In this case, that object also may contain options supported by the igChartLegend widget, such as \"width\", \"height\" and events, such as \"legendItemMouseLeftButtonDown\", \"legendItemMouseEnter\", etc.<br>&nbsp;&nbsp;&nbsp;&nbsp;Examples:<br>&nbsp;&nbsp;&nbsp;&nbsp;legend: {}<br>&nbsp;&nbsp;&nbsp;&nbsp;legend: \"idOfDiv\"<br>&nbsp;&nbsp;&nbsp;&nbsp;legend: { element: \"idOfDiv\", width: 300 }<br>&nbsp;&nbsp;&nbsp;&nbsp;legend: { legendItemMouseLeftButtonDown: function (evt, ui) { ui.chart.toggleSelection(ui.item); } }",
-		"jp": "Gets or sets the Legend for the chart.<br>&nbsp;&nbsp;&nbsp;&nbsp;The value of that option can be a string with the id of existing html element. That element should be empty and it will be used to create igChartLegend widget.<br>&nbsp;&nbsp;&nbsp;&nbsp;If element was not found, then new DIV element is created and inserted into parent after chart element.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value of that option can be an object with member \"element\", which contains the id of legend-element.<br>&nbsp;&nbsp;&nbsp;&nbsp;In this case, that object also may contain options supported by the igChartLegend widget, such as \"width\", \"height\" and events, such as \"legendItemMouseLeftButtonDown\", \"legendItemMouseEnter\", etc.<br>&nbsp;&nbsp;&nbsp;&nbsp;Examples:<br>&nbsp;&nbsp;&nbsp;&nbsp;legend: {}<br>&nbsp;&nbsp;&nbsp;&nbsp;legend: \"idOfDiv\"<br>&nbsp;&nbsp;&nbsp;&nbsp;legend: { element: \"idOfDiv\", width: 300 }<br>&nbsp;&nbsp;&nbsp;&nbsp;legend: { legendItemMouseLeftButtonDown: function (evt, ui) { ui.chart.toggleSelection(ui.item); } }"
+		"en": "Gets or sets the Legend for the chart.<br>    The value of that option can be a string with the id of existing html element. That element should be empty and it will be used to create igChartLegend widget.<br>    If element was not found, then new DIV element is created and inserted into parent after chart element.<br>    Value of that option can be an object with member \"element\", which contains the id of legend-element.<br>    In this case, that object also may contain options supported by the igChartLegend widget, such as \"width\", \"height\" and events, such as \"legendItemMouseLeftButtonDown\", \"legendItemMouseEnter\", etc.<br>    Examples:<br>    legend: {}<br>    legend: \"idOfDiv\"<br>    legend: { element: \"idOfDiv\", width: 300 }<br>    legend: { legendItemMouseLeftButtonDown: function (evt, ui) { ui.chart.toggleSelection(ui.item); } }",
+		"jp": "Gets or sets the Legend for the chart.<br>    The value of that option can be a string with the id of existing html element. That element should be empty and it will be used to create igChartLegend widget.<br>    If element was not found, then new DIV element is created and inserted into parent after chart element.<br>    Value of that option can be an object with member \"element\", which contains the id of legend-element.<br>    In this case, that object also may contain options supported by the igChartLegend widget, such as \"width\", \"height\" and events, such as \"legendItemMouseLeftButtonDown\", \"legendItemMouseEnter\", etc.<br>    Examples:<br>    legend: {}<br>    legend: \"idOfDiv\"<br>    legend: { element: \"idOfDiv\", width: 300 }<br>    legend: { legendItemMouseLeftButtonDown: function (evt, ui) { ui.chart.toggleSelection(ui.item); } }"
 	},
 	   "schema": {
 			"legend": {
@@ -172,8 +172,8 @@
 			  "required": true,
 			  "defaultValue": null,
 			  "description": {
-		"en": "The value of that option can be a string with the id of existing html element. That element should be empty and it will be used to create igChartLegend widget.<br>&nbsp;&nbsp;&nbsp;&nbsp;If element was not found, then new DIV element is created and inserted into parent after chart element.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value of that option can be an object with member \"element\", which contains the id of legend-element.<br>&nbsp;&nbsp;&nbsp;&nbsp;In this case, that object also may contain options supported by the igChartLegend widget, such as \"width\", \"height\" and events, such as \"legendItemMouseLeftButtonDown\", \"legendItemMouseEnter\", etc.<br>&nbsp;&nbsp;&nbsp;&nbsp;Examples:<br>&nbsp;&nbsp;&nbsp;&nbsp;legend: {}<br>&nbsp;&nbsp;&nbsp;&nbsp;legend: \"idOfDiv\"<br>&nbsp;&nbsp;&nbsp;&nbsp;legend: { element: \"idOfDiv\", width: 300 }<br>&nbsp;&nbsp;&nbsp;&nbsp;legend: { legendItemMouseLeftButtonDown: function (evt, ui) { ui.chart.toggleSelection(ui.item); } }",
-		"jp": "The value of that option can be a string with the id of existing html element. That element should be empty and it will be used to create igChartLegend widget.<br>&nbsp;&nbsp;&nbsp;&nbsp;If element was not found, then new DIV element is created and inserted into parent after chart element.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value of that option can be an object with member \"element\", which contains the id of legend-element.<br>&nbsp;&nbsp;&nbsp;&nbsp;In this case, that object also may contain options supported by the igChartLegend widget, such as \"width\", \"height\" and events, such as \"legendItemMouseLeftButtonDown\", \"legendItemMouseEnter\", etc.<br>&nbsp;&nbsp;&nbsp;&nbsp;Examples:<br>&nbsp;&nbsp;&nbsp;&nbsp;legend: {}<br>&nbsp;&nbsp;&nbsp;&nbsp;legend: \"idOfDiv\"<br>&nbsp;&nbsp;&nbsp;&nbsp;legend: { element: \"idOfDiv\", width: 300 }<br>&nbsp;&nbsp;&nbsp;&nbsp;legend: { legendItemMouseLeftButtonDown: function (evt, ui) { ui.chart.toggleSelection(ui.item); } }"
+		"en": "The value of that option can be a string with the id of existing html element. That element should be empty and it will be used to create igChartLegend widget.<br>    If element was not found, then new DIV element is created and inserted into parent after chart element.<br>    Value of that option can be an object with member \"element\", which contains the id of legend-element.<br>    In this case, that object also may contain options supported by the igChartLegend widget, such as \"width\", \"height\" and events, such as \"legendItemMouseLeftButtonDown\", \"legendItemMouseEnter\", etc.<br>    Examples:<br>    legend: {}<br>    legend: \"idOfDiv\"<br>    legend: { element: \"idOfDiv\", width: 300 }<br>    legend: { legendItemMouseLeftButtonDown: function (evt, ui) { ui.chart.toggleSelection(ui.item); } }",
+		"jp": "The value of that option can be a string with the id of existing html element. That element should be empty and it will be used to create igChartLegend widget.<br>    If element was not found, then new DIV element is created and inserted into parent after chart element.<br>    Value of that option can be an object with member \"element\", which contains the id of legend-element.<br>    In this case, that object also may contain options supported by the igChartLegend widget, such as \"width\", \"height\" and events, such as \"legendItemMouseLeftButtonDown\", \"legendItemMouseEnter\", etc.<br>    Examples:<br>    legend: {}<br>    legend: \"idOfDiv\"<br>    legend: { element: \"idOfDiv\", width: 300 }<br>    legend: { legendItemMouseLeftButtonDown: function (evt, ui) { ui.chart.toggleSelection(ui.item); } }"
 	}
 			}
 		}
@@ -242,8 +242,8 @@
       "type": "array",
       "defaultValue": null,
       "description": {
-		"en": "Gets or sets the Outlines property.<br>&nbsp;The Outlines property defines the palette from which automatically assigned Outlines are selected.<br>&nbsp;The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
-		"jp": "Gets or sets the Outlines property.<br>&nbsp;The Outlines property defines the palette from which automatically assigned Outlines are selected.<br>&nbsp;The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
+		"en": "Gets or sets the Outlines property.<br> The Outlines property defines the palette from which automatically assigned Outlines are selected.<br> The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
+		"jp": "Gets or sets the Outlines property.<br> The Outlines property defines the palette from which automatically assigned Outlines are selected.<br> The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
 	},
       "arrayMemberType": "string",
 	  "schema": {
@@ -272,8 +272,8 @@
       "type": "object",
       "defaultValue": null,
       "description": {
-		"en": "Gets or sets the style to use for selected slices.<br>&nbsp;That can be used to set stroke (outline color), fill (background color) and opacity.",
-		"jp": "Gets or sets the style to use for selected slices.<br>&nbsp;That can be used to set stroke (outline color), fill (background color) and opacity."
+		"en": "Gets or sets the style to use for selected slices.<br> That can be used to set stroke (outline color), fill (background color) and opacity.",
+		"jp": "Gets or sets the style to use for selected slices.<br> That can be used to set stroke (outline color), fill (background color) and opacity."
 	},
       "schema": {
         "fill": {
@@ -322,8 +322,8 @@
       "type": "object",
       "defaultValue": null,
       "description": {
-		"en": "Gets or sets the style to use for unselected slices.<br>&nbsp;That can be used to set stroke (outline color), fill (background color) and opacity.",
-		"jp": "Gets or sets the style to use for unselected slices.<br>&nbsp;That can be used to set stroke (outline color), fill (background color) and opacity."
+		"en": "Gets or sets the style to use for unselected slices.<br> That can be used to set stroke (outline color), fill (background color) and opacity.",
+		"jp": "Gets or sets the style to use for unselected slices.<br> That can be used to set stroke (outline color), fill (background color) and opacity."
 	},
 	   "schema": {
         "fill": {

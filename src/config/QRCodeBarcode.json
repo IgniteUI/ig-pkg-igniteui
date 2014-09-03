@@ -19,8 +19,8 @@
         }
       ],
       "description": {
-		"en": "Occurs when the data has changed.<br>&nbsp;Function takes first argument evt and second argument ui.<br>&nbsp;Use ui.owner to obtain reference to the barcode widget.<br>&nbsp;Use ui.newData to obtain the new data.",
-		"jp": "Occurs when the data has changed.<br>&nbsp;Function takes first argument evt and second argument ui.<br>&nbsp;Use ui.owner to obtain reference to the barcode widget.<br>&nbsp;Use ui.newData to obtain the new data."
+		"en": "Occurs when the data has changed.<br> Function takes first argument evt and second argument ui.<br> Use ui.owner to obtain reference to the barcode widget.<br> Use ui.newData to obtain the new data.",
+		"jp": "Occurs when the data has changed.<br> Function takes first argument evt and second argument ui.<br> Use ui.owner to obtain reference to the barcode widget.<br> Use ui.newData to obtain the new data."
 	}
     },
     "errorMessageDisplaying": {
@@ -38,8 +38,8 @@
         }
       ],
       "description": {
-		"en": "Occurs when an error has happened.<br>&nbsp;Function takes first argument evt and second argument ui.<br>&nbsp;Use ui.owner to obtain reference to the barcode widget.<br>&nbsp;Use ui.errorMessage to get or set the error message that is to be shown.",
-		"jp": "Occurs when an error has happened.<br>&nbsp;Function takes first argument evt and second argument ui.<br>&nbsp;Use ui.owner to obtain reference to the barcode widget.<br>&nbsp;Use ui.errorMessage to get or set the error message that is to be shown."
+		"en": "Occurs when an error has happened.<br> Function takes first argument evt and second argument ui.<br> Use ui.owner to obtain reference to the barcode widget.<br> Use ui.errorMessage to get or set the error message that is to be shown.",
+		"jp": "Occurs when an error has happened.<br> Function takes first argument evt and second argument ui.<br> Use ui.owner to obtain reference to the barcode widget.<br> Use ui.errorMessage to get or set the error message that is to be shown."
 	}
     }
   },
@@ -48,8 +48,8 @@
       "type": "string",
       "defaultValue": null,
       "description": {
-		"en": "Gets or sets the Application Indicator assigned to identify the specification concerned by AIM International.<br>&nbsp;The value is respected only when the Fnc1Mode is set to Industry. Its value may take the form of any single Latin alphabetic character from the set {a - z, A - Z} or a two-digit number.",
-		"jp": "Gets or sets the Application Indicator assigned to identify the specification concerned by AIM International.<br>&nbsp;The value is respected only when the Fnc1Mode is set to Industry. Its value may take the form of any single Latin alphabetic character from the set {a - z, A - Z} or a two-digit number."
+		"en": "Gets or sets the Application Indicator assigned to identify the specification concerned by AIM International.<br> The value is respected only when the Fnc1Mode is set to Industry. Its value may take the form of any single Latin alphabetic character from the set {a - z, A - Z} or a two-digit number.",
+		"jp": "Gets or sets the Application Indicator assigned to identify the specification concerned by AIM International.<br> The value is respected only when the Fnc1Mode is set to Industry. Its value may take the form of any single Latin alphabetic character from the set {a - z, A - Z} or a two-digit number."
 	}
     },
 	"width": {
@@ -164,8 +164,8 @@
       "type": "number",
       "defaultValue": 26.0,
       "description": {
-		"en": "Each Extended Channel Interpretation (ECI) is designated by a six-digit assignment number: 000000 - 999999. <br>&nbsp;The default value depends on the loaded encodings. The default is ECI 000003 (representing ISO/IEC 8859-1) if the ISO/IEC 8859-1 character set is loaded. Otherwise the default value is 000026 (representing UTF-8).",
-		"jp": "Each Extended Channel Interpretation (ECI) is designated by a six-digit assignment number: 000000 - 999999. <br>&nbsp;The default value depends on the loaded encodings. The default is ECI 000003 (representing ISO/IEC 8859-1) if the ISO/IEC 8859-1 character set is loaded. Otherwise the default value is 000026 (representing UTF-8)."
+		"en": "Each Extended Channel Interpretation (ECI) is designated by a six-digit assignment number: 000000 - 999999. <br> The default value depends on the loaded encodings. The default is ECI 000003 (representing ISO/IEC 8859-1) if the ISO/IEC 8859-1 character set is loaded. Otherwise the default value is 000026 (representing UTF-8).",
+		"jp": "Each Extended Channel Interpretation (ECI) is designated by a six-digit assignment number: 000000 - 999999. <br> The default value depends on the loaded encodings. The default is ECI 000003 (representing ISO/IEC 8859-1) if the ISO/IEC 8859-1 character set is loaded. Otherwise the default value is 000026 (representing UTF-8)."
 	}
     },
     "encodingMode": {

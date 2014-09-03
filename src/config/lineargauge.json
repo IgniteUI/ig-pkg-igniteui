@@ -128,16 +128,16 @@
       "type": "bool",
       "defaultValue": false,
       "description": {
-		"en": "Gets or sets a value indicating whether the scale is inverted.<br>&nbsp;When the scale is inverted the direction in which the scale values increase is right to left.",
-		"jp": "Gets or sets a value indicating whether the scale is inverted.<br>&nbsp;When the scale is inverted the direction in which the scale values increase is right to left."
+		"en": "Gets or sets a value indicating whether the scale is inverted.<br> When the scale is inverted the direction in which the scale values increase is right to left.",
+		"jp": "Gets or sets a value indicating whether the scale is inverted.<br> When the scale is inverted the direction in which the scale values increase is right to left."
 	}
     },
     "labelExtent": {
       "type": "number",
       "defaultValue": 0.0,
       "description": {
-		"en": "Gets or sets the position at which to put the labels as a value from 0 to 1, measured from the bottom of the scale.<br>&nbsp;Values further from zero than 1 can be used to hide the labels of the linear gauge.",
-		"jp": "Gets or sets the position at which to put the labels as a value from 0 to 1, measured from the bottom of the scale.<br>&nbsp;Values further from zero than 1 can be used to hide the labels of the linear gauge."
+		"en": "Gets or sets the position at which to put the labels as a value from 0 to 1, measured from the bottom of the scale.<br> Values further from zero than 1 can be used to hide the labels of the linear gauge.",
+		"jp": "Gets or sets the position at which to put the labels as a value from 0 to 1, measured from the bottom of the scale.<br> Values further from zero than 1 can be used to hide the labels of the linear gauge."
 	}
     },
     "labelInterval": {
@@ -200,16 +200,16 @@
       "type": "number",
       "defaultValue": 0.35,
       "description": {
-		"en": "Gets or sets the position at which to stop rendering the minor tickmarks as a value from 0 to 1, measured from the front/bottom of the linear gauge.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.",
-		"jp": "Gets or sets the position at which to stop rendering the minor tickmarks as a value from 0 to 1, measured from the front/bottom of the linear gauge.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge."
+		"en": "Gets or sets the position at which to stop rendering the minor tickmarks as a value from 0 to 1, measured from the front/bottom of the linear gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.",
+		"jp": "Gets or sets the position at which to stop rendering the minor tickmarks as a value from 0 to 1, measured from the front/bottom of the linear gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge."
 	}
     },
     "minorTickStartExtent": {
       "type": "number",
       "defaultValue": 0.05,
       "description": {
-		"en": "Gets or sets the position at which to start rendering the minor tickmarks as a value from 0 to 1, measured from the front/bottom of the linear gauge.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.",
-		"jp": "Gets or sets the position at which to start rendering the minor tickmarks as a value from 0 to 1, measured from the front/bottom of the linear gauge.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge."
+		"en": "Gets or sets the position at which to start rendering the minor tickmarks as a value from 0 to 1, measured from the front/bottom of the linear gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.",
+		"jp": "Gets or sets the position at which to start rendering the minor tickmarks as a value from 0 to 1, measured from the front/bottom of the linear gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge."
 	}
     },
     "minorTickStrokeThickness": {
@@ -248,8 +248,8 @@
       "type": "number",
       "defaultValue": 0.0,
       "description": {
-		"en": "Gets or sets the position at which to start rendering the needle geometry, measured from the front/bottom of the linear gauge as a value from 0 to 1.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.",
-		"jp": "Gets or sets the position at which to start rendering the needle geometry, measured from the front/bottom of the linear gauge as a value from 0 to 1.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge."
+		"en": "Gets or sets the position at which to start rendering the needle geometry, measured from the front/bottom of the linear gauge as a value from 0 to 1.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.",
+		"jp": "Gets or sets the position at which to start rendering the needle geometry, measured from the front/bottom of the linear gauge as a value from 0 to 1.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge."
 	}
     },
     "needleInnerPointExtent": {
@@ -288,8 +288,8 @@
       "type": "number",
       "defaultValue": 0.0,
       "description": {
-		"en": "Gets or sets the position at which to stop rendering the needle geometry as a value from 0 to 1 measured from the front/bottom of the linear gauge.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.",
-		"jp": "Gets or sets the position at which to stop rendering the needle geometry as a value from 0 to 1 measured from the front/bottom of the linear gauge.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge."
+		"en": "Gets or sets the position at which to stop rendering the needle geometry as a value from 0 to 1 measured from the front/bottom of the linear gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.",
+		"jp": "Gets or sets the position at which to stop rendering the needle geometry as a value from 0 to 1 measured from the front/bottom of the linear gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge."
 	}
     },
     "needleOuterPointExtent": {
@@ -412,8 +412,8 @@
       "type": "array",
       "defaultValue": null,
       "description": {
-		"en": "Gets or sets a collection of brushes to be used as the palette for linear gauge ranges.<br>&nbsp;The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
-		"jp": "Gets or sets a collection of brushes to be used as the palette for linear gauge ranges.<br>&nbsp;The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
+		"en": "Gets or sets a collection of brushes to be used as the palette for linear gauge ranges.<br> The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
+		"jp": "Gets or sets a collection of brushes to be used as the palette for linear gauge ranges.<br> The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
 	},
       "arrayMemberType": "string",
 	  "schema": {
@@ -434,24 +434,24 @@
       "type": "number",
       "defaultValue": 0.05,
       "description": {
-		"en": "Gets or sets the position at which to start rendering the ranges, measured from the front/bottom of the control as a value from 0 to 1.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.",
-		"jp": "Gets or sets the position at which to start rendering the ranges, measured from the front/bottom of the control as a value from 0 to 1.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge."
+		"en": "Gets or sets the position at which to start rendering the ranges, measured from the front/bottom of the control as a value from 0 to 1.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.",
+		"jp": "Gets or sets the position at which to start rendering the ranges, measured from the front/bottom of the control as a value from 0 to 1.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge."
 	}
     },
     "rangeOuterExtent": {
       "type": "number",
       "defaultValue": 0.65,
       "description": {
-		"en": "Gets or sets the position at which to stop rendering the range as a value from 0 to 1 measured from the front/bottom of the linear gauge.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.",
-		"jp": "Gets or sets the position at which to stop rendering the range as a value from 0 to 1 measured from the front/bottom of the linear gauge.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge."
+		"en": "Gets or sets the position at which to stop rendering the range as a value from 0 to 1 measured from the front/bottom of the linear gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.",
+		"jp": "Gets or sets the position at which to stop rendering the range as a value from 0 to 1 measured from the front/bottom of the linear gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge."
 	}
     },
     "rangeOutlines": {
       "type": "array",
       "defaultValue": null,
       "description": {
-		"en": "Gets or sets a collection of brushes to be used as the palette for linear gauge outlines.<br>&nbsp;The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
-		"jp": "Gets or sets a collection of brushes to be used as the palette for linear gauge outlines.<br>&nbsp;The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
+		"en": "Gets or sets a collection of brushes to be used as the palette for linear gauge outlines.<br> The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
+		"jp": "Gets or sets a collection of brushes to be used as the palette for linear gauge outlines.<br> The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
 	},
       "arrayMemberType": "string",
 	  	  "schema": {
@@ -570,24 +570,24 @@
       "type": "number",
       "defaultValue": 0.95,
       "description": {
-		"en": "Gets or sets the position at which to stop rendering the scale as a value from 0 to 1, measured from the front/bottom of the linear gauge.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.",
-		"jp": "Gets or sets the position at which to stop rendering the scale as a value from 0 to 1, measured from the front/bottom of the linear gauge.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge."
+		"en": "Gets or sets the position at which to stop rendering the scale as a value from 0 to 1, measured from the front/bottom of the linear gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.",
+		"jp": "Gets or sets the position at which to stop rendering the scale as a value from 0 to 1, measured from the front/bottom of the linear gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge."
 	}
     },
     "scaleInnerExtent": {
       "type": "number",
       "defaultValue": 0.0,
       "description": {
-		"en": "Gets or sets the position at which to start rendering the scale, measured from the bottom/front (when orientation is horizontal/vertical) of the control as a value from 0 to 1.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.",
-		"jp": "Gets or sets the position at which to start rendering the scale, measured from the bottom/front (when orientation is horizontal/vertical) of the control as a value from 0 to 1.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge."
+		"en": "Gets or sets the position at which to start rendering the scale, measured from the bottom/front (when orientation is horizontal/vertical) of the control as a value from 0 to 1.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.",
+		"jp": "Gets or sets the position at which to start rendering the scale, measured from the bottom/front (when orientation is horizontal/vertical) of the control as a value from 0 to 1.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge."
 	}
     },
     "scaleOuterExtent": {
       "type": "number",
       "defaultValue": 0.0,
       "description": {
-		"en": "Gets or sets the position at which to stop rendering the scale as a value from 0 to 1 measured from the bottom/front (when orientation is horizontal/vertical) of the linear gauge.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.",
-		"jp": "Gets or sets the position at which to stop rendering the scale as a value from 0 to 1 measured from the bottom/front (when orientation is horizontal/vertical) of the linear gauge.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge."
+		"en": "Gets or sets the position at which to stop rendering the scale as a value from 0 to 1 measured from the bottom/front (when orientation is horizontal/vertical) of the linear gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.",
+		"jp": "Gets or sets the position at which to stop rendering the scale as a value from 0 to 1 measured from the bottom/front (when orientation is horizontal/vertical) of the linear gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge."
 	}
     },
     "scaleOutline": {
@@ -602,8 +602,8 @@
       "type": "number",
       "defaultValue": 0.05,
       "description": {
-		"en": "Gets or sets the position at which to start rendering the scale, measured from the front/bottom of the linear gauge as a value from 0 to 1.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.",
-		"jp": "Gets or sets the position at which to start rendering the scale, measured from the front/bottom of the linear gauge as a value from 0 to 1.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge."
+		"en": "Gets or sets the position at which to start rendering the scale, measured from the front/bottom of the linear gauge as a value from 0 to 1.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.",
+		"jp": "Gets or sets the position at which to start rendering the scale, measured from the front/bottom of the linear gauge as a value from 0 to 1.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge."
 	}
     },
     "scaleStrokeThickness": {
@@ -642,8 +642,8 @@
       "type": "number",
       "defaultValue": 0.65,
       "description": {
-		"en": "Gets or sets the position at which to stop rendering the major tickmarks as a value from 0 to 1, measured from the front/bottom of the linear gauge.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.",
-		"jp": "Gets or sets the position at which to stop rendering the major tickmarks as a value from 0 to 1, measured from the front/bottom of the linear gauge.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge."
+		"en": "Gets or sets the position at which to stop rendering the major tickmarks as a value from 0 to 1, measured from the front/bottom of the linear gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.",
+		"jp": "Gets or sets the position at which to stop rendering the major tickmarks as a value from 0 to 1, measured from the front/bottom of the linear gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge."
 	}
     },
     "ticksPostInitial": {
@@ -666,8 +666,8 @@
       "type": "number",
       "defaultValue": 0.05,
       "description": {
-		"en": "Gets or sets the position at which to start rendering the major tickmarks as a value from 0 to 1, measured from the front/bottom of the linear gauge.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.",
-		"jp": "Gets or sets the position at which to start rendering the major tickmarks as a value from 0 to 1, measured from the front/bottom of the linear gauge.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge."
+		"en": "Gets or sets the position at which to start rendering the major tickmarks as a value from 0 to 1, measured from the front/bottom of the linear gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.",
+		"jp": "Gets or sets the position at which to start rendering the major tickmarks as a value from 0 to 1, measured from the front/bottom of the linear gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge."
 	}
     },
     "tickStrokeThickness": {

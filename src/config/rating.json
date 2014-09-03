@@ -19,8 +19,8 @@
         }
       ],
       "description": {
-		"en": "Event which is raised before hover value is changed.<br>&nbsp;&nbsp;&nbsp;&nbsp;If application returns false, then action is canceled and hover value stays unchanged.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.value to get new value.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.oldValue to get old value.",
-		"jp": "Event which is raised before hover value is changed.<br>&nbsp;&nbsp;&nbsp;&nbsp;If application returns false, then action is canceled and hover value stays unchanged.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.value to get new value.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.oldValue to get old value."
+		"en": "Event which is raised before hover value is changed.<br>    If application returns false, then action is canceled and hover value stays unchanged.<br>    Function takes arguments evt and ui.<br>    Use ui.value to get new value.<br>    Use ui.oldValue to get old value.",
+		"jp": "Event which is raised before hover value is changed.<br>    If application returns false, then action is canceled and hover value stays unchanged.<br>    Function takes arguments evt and ui.<br>    Use ui.value to get new value.<br>    Use ui.oldValue to get old value."
 	}
     },
     "valueChange": {
@@ -38,8 +38,8 @@
         }
       ],
       "description": {
-		"en": "Event which is raised before (selected) value is changed.<br>&nbsp;&nbsp;&nbsp;&nbsp;If application returns false, then action is canceled and value stays unchanged.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.value to get new value.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.oldValue to get old value.",
-		"jp": "Event which is raised before (selected) value is changed.<br>&nbsp;&nbsp;&nbsp;&nbsp;If application returns false, then action is canceled and value stays unchanged.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.value to get new value.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.oldValue to get old value."
+		"en": "Event which is raised before (selected) value is changed.<br>    If application returns false, then action is canceled and value stays unchanged.<br>    Function takes arguments evt and ui.<br>    Use ui.value to get new value.<br>    Use ui.oldValue to get old value.",
+		"jp": "Event which is raised before (selected) value is changed.<br>    If application returns false, then action is canceled and value stays unchanged.<br>    Function takes arguments evt and ui.<br>    Use ui.value to get new value.<br>    Use ui.oldValue to get old value."
 	}
     }
   },
@@ -48,8 +48,8 @@
       "type": "bool",
       "defaultValue": true,
       "description": {
-		"en": "Gets sets ability to get focus. Change of that option is not supported after igRating was created.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value true: can get focus and process key events.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value false: cannot get focus.",
-		"jp": "Gets sets ability to get focus. Change of that option is not supported after igRating was created.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value true: can get focus and process key events.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value false: cannot get focus."
+		"en": "Gets sets ability to get focus. Change of that option is not supported after igRating was created.<br>    Value true: can get focus and process key events.<br>    Value false: cannot get focus.",
+		"jp": "Gets sets ability to get focus. Change of that option is not supported after igRating was created.<br>    Value true: can get focus and process key events.<br>    Value false: cannot get focus."
 	}
     },
     "precision": {
@@ -90,40 +90,40 @@
       "type": "number",
       "defaultValue": 0.25,
       "description": {
-		"en": "Gets or sets part of vote-size, which is considered as zero value.<br>&nbsp;&nbsp;&nbsp;&nbsp;It has effect only when precision is set to \"half\" or \"whole\".<br>&nbsp;&nbsp;&nbsp;&nbsp;If user clicks between edge of the first vote and (sizeOfVote * precisionZeroVote), then value is set to 0.<br>&nbsp;&nbsp;&nbsp;&nbsp;Same is applied for mouseover as well.",
-		"jp": "Gets or sets part of vote-size, which is considered as zero value.<br>&nbsp;&nbsp;&nbsp;&nbsp;It has effect only when precision is set to \"half\" or \"whole\".<br>&nbsp;&nbsp;&nbsp;&nbsp;If user clicks between edge of the first vote and (sizeOfVote * precisionZeroVote), then value is set to 0.<br>&nbsp;&nbsp;&nbsp;&nbsp;Same is applied for mouseover as well."
+		"en": "Gets or sets part of vote-size, which is considered as zero value.<br>    It has effect only when precision is set to \"half\" or \"whole\".<br>    If user clicks between edge of the first vote and (sizeOfVote * precisionZeroVote), then value is set to 0.<br>    Same is applied for mouseover as well.",
+		"jp": "Gets or sets part of vote-size, which is considered as zero value.<br>    It has effect only when precision is set to \"half\" or \"whole\".<br>    If user clicks between edge of the first vote and (sizeOfVote * precisionZeroVote), then value is set to 0.<br>    Same is applied for mouseover as well."
 	}
     },
     "roundedDecimalPlaces": {
       "type": "number",
       "defaultValue": 3.0,
       "description": {
-		"en": "Gets or sets number of decimal places used to round value and value-hover.<br>&nbsp;&nbsp;&nbsp;&nbsp;Negative value will disable that option and value will not be rounded.<br>&nbsp;&nbsp;&nbsp;&nbsp;Notes:<br>&nbsp;&nbsp;&nbsp;&nbsp;If precision is \"whole\" or \"half\" and roundedDecimalPlaces is set in range of 0..2, then 3 is used.<br>&nbsp;&nbsp;&nbsp;&nbsp;If valueAsPercent is enabled and roundedDecimalPlaces is set to 0, then 1 is used.<br>&nbsp;&nbsp;&nbsp;&nbsp;If it is larger than 15, then 15 is used.",
-		"jp": "Gets or sets number of decimal places used to round value and value-hover.<br>&nbsp;&nbsp;&nbsp;&nbsp;Negative value will disable that option and value will not be rounded.<br>&nbsp;&nbsp;&nbsp;&nbsp;Notes:<br>&nbsp;&nbsp;&nbsp;&nbsp;If precision is \"whole\" or \"half\" and roundedDecimalPlaces is set in range of 0..2, then 3 is used.<br>&nbsp;&nbsp;&nbsp;&nbsp;If valueAsPercent is enabled and roundedDecimalPlaces is set to 0, then 1 is used.<br>&nbsp;&nbsp;&nbsp;&nbsp;If it is larger than 15, then 15 is used."
+		"en": "Gets or sets number of decimal places used to round value and value-hover.<br>    Negative value will disable that option and value will not be rounded.<br>    Notes:<br>    If precision is \"whole\" or \"half\" and roundedDecimalPlaces is set in range of 0..2, then 3 is used.<br>    If valueAsPercent is enabled and roundedDecimalPlaces is set to 0, then 1 is used.<br>    If it is larger than 15, then 15 is used.",
+		"jp": "Gets or sets number of decimal places used to round value and value-hover.<br>    Negative value will disable that option and value will not be rounded.<br>    Notes:<br>    If precision is \"whole\" or \"half\" and roundedDecimalPlaces is set in range of 0..2, then 3 is used.<br>    If valueAsPercent is enabled and roundedDecimalPlaces is set to 0, then 1 is used.<br>    If it is larger than 15, then 15 is used."
 	}
     },
     "swapDirection": {
       "type": "bool",
       "defaultValue": false,
       "description": {
-		"en": "Gets or sets direction of selected and hovered votes. Change of that option is not supported after igRating was created.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value true: from left to right or from top to bottom.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value false: from right to left or from bottom to left.",
-		"jp": "Gets or sets direction of selected and hovered votes. Change of that option is not supported after igRating was created.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value true: from left to right or from top to bottom.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value false: from right to left or from bottom to left."
+		"en": "Gets or sets direction of selected and hovered votes. Change of that option is not supported after igRating was created.<br>    Value true: from left to right or from top to bottom.<br>    Value false: from right to left or from bottom to left.",
+		"jp": "Gets or sets direction of selected and hovered votes. Change of that option is not supported after igRating was created.<br>    Value true: from left to right or from top to bottom.<br>    Value false: from right to left or from bottom to left."
 	}
     },
     "theme": {
       "type": "string",
       "defaultValue": null,
       "description": {
-		"en": "Gets or sets selector for css classes.<br>&nbsp;&nbsp;&nbsp;&nbsp;That option allows replacing all default css styles by custom values.<br>&nbsp;&nbsp;&nbsp;&nbsp;Application should provide css classes for all members defined in the css options with \"theme\" selector.",
-		"jp": "Gets or sets selector for css classes.<br>&nbsp;&nbsp;&nbsp;&nbsp;That option allows replacing all default css styles by custom values.<br>&nbsp;&nbsp;&nbsp;&nbsp;Application should provide css classes for all members defined in the css options with \"theme\" selector."
+		"en": "Gets or sets selector for css classes.<br>    That option allows replacing all default css styles by custom values.<br>    Application should provide css classes for all members defined in the css options with \"theme\" selector.",
+		"jp": "Gets or sets selector for css classes.<br>    That option allows replacing all default css styles by custom values.<br>    Application should provide css classes for all members defined in the css options with \"theme\" selector."
 	}
     },
     "validatorOptions": {
       "type": "object",
       "defaultValue": null,
       "description": {
-		"en": "Gets or sets object which contains options supported by igValidator.<br>&nbsp;&nbsp;&nbsp;&nbsp;That option is not supported if the \"focusable\" option is set to false.<br>&nbsp;&nbsp;&nbsp;&nbsp;Example:<br>&nbsp;&nbsp;&nbsp;&nbsp;$('#rating1').igRating({ validatorOptions: { min: 0.2, max: 0.7 } });",
-		"jp": "Gets or sets object which contains options supported by igValidator.<br>&nbsp;&nbsp;&nbsp;&nbsp;That option is not supported if the \"focusable\" option is set to false.<br>&nbsp;&nbsp;&nbsp;&nbsp;Example:<br>&nbsp;&nbsp;&nbsp;&nbsp;$('#rating1').igRating({ validatorOptions: { min: 0.2, max: 0.7 } });"
+		"en": "Gets or sets object which contains options supported by igValidator.<br>    That option is not supported if the \"focusable\" option is set to false.<br>    Example:<br>    $('#rating1').igRating({ validatorOptions: { min: 0.2, max: 0.7 } });",
+		"jp": "Gets or sets object which contains options supported by igValidator.<br>    That option is not supported if the \"focusable\" option is set to false.<br>    Example:<br>    $('#rating1').igRating({ validatorOptions: { min: 0.2, max: 0.7 } });"
 	},
       "schemaRef": "validator.properties"
     },
@@ -139,8 +139,8 @@
       "type": "bool",
       "defaultValue": true,
       "description": {
-		"en": "Gets or sets percent or vote number to measure value and value-hover.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value true: value is measured as percent (from 0 to 1).<br>&nbsp;&nbsp;&nbsp;&nbsp;Value false: value is measured in number of voted (from 0 to voteCount)",
-		"jp": "Gets or sets percent or vote number to measure value and value-hover.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value true: value is measured as percent (from 0 to 1).<br>&nbsp;&nbsp;&nbsp;&nbsp;Value false: value is measured in number of voted (from 0 to voteCount)"
+		"en": "Gets or sets percent or vote number to measure value and value-hover.<br>    Value true: value is measured as percent (from 0 to 1).<br>    Value false: value is measured in number of voted (from 0 to voteCount)",
+		"jp": "Gets or sets percent or vote number to measure value and value-hover.<br>    Value true: value is measured as percent (from 0 to 1).<br>    Value false: value is measured in number of voted (from 0 to voteCount)"
 	}
     },
     "valueHover": {
@@ -155,8 +155,8 @@
       "type": "bool",
       "defaultValue": false,
       "description": {
-		"en": "Gets or sets vertical or horizontal orientation of votes.<br>&nbsp;&nbsp;&nbsp;&nbsp;Change of that option is not supported after igRating was created.",
-		"jp": "Gets or sets vertical or horizontal orientation of votes.<br>&nbsp;&nbsp;&nbsp;&nbsp;Change of that option is not supported after igRating was created."
+		"en": "Gets or sets vertical or horizontal orientation of votes.<br>    Change of that option is not supported after igRating was created.",
+		"jp": "Gets or sets vertical or horizontal orientation of votes.<br>    Change of that option is not supported after igRating was created."
 	}
     },
     "voteCount": {

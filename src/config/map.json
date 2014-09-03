@@ -38,8 +38,8 @@
         }
       ],
       "description": {
-		"en": "Occurs just after the current Map's grid area rectangle is changed.<br>&nbsp;&nbsp;&nbsp;The grid area may change as the result of the Map being resized.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.map to get reference to map object.<br>&nbsp;&nbsp;&nbsp;Use ui.newHeight to get new height value.<br>&nbsp;&nbsp;&nbsp;Use ui.newLeft to get new left value.<br>&nbsp;&nbsp;&nbsp;Use ui.newTop to get new top value.<br>&nbsp;&nbsp;&nbsp;Use ui.newWidth to get new top value.<br>&nbsp;&nbsp;&nbsp;Use ui.oldHeight to get old height value.<br>&nbsp;&nbsp;&nbsp;Use ui.oldLeft to get old left value.<br>&nbsp;&nbsp;&nbsp;Use ui.oldTop to get old top value.<br>&nbsp;&nbsp;&nbsp;Use ui.oldWidth to get old top value.",
-		"jp": "Occurs just after the current Map's grid area rectangle is changed.<br>&nbsp;&nbsp;&nbsp;The grid area may change as the result of the Map being resized.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.map to get reference to map object.<br>&nbsp;&nbsp;&nbsp;Use ui.newHeight to get new height value.<br>&nbsp;&nbsp;&nbsp;Use ui.newLeft to get new left value.<br>&nbsp;&nbsp;&nbsp;Use ui.newTop to get new top value.<br>&nbsp;&nbsp;&nbsp;Use ui.newWidth to get new top value.<br>&nbsp;&nbsp;&nbsp;Use ui.oldHeight to get old height value.<br>&nbsp;&nbsp;&nbsp;Use ui.oldLeft to get old left value.<br>&nbsp;&nbsp;&nbsp;Use ui.oldTop to get old top value.<br>&nbsp;&nbsp;&nbsp;Use ui.oldWidth to get old top value."
+		"en": "Occurs just after the current Map's grid area rectangle is changed.<br>   The grid area may change as the result of the Map being resized.<br>   Function takes arguments evt and ui.<br>   Use ui.map to get reference to map object.<br>   Use ui.newHeight to get new height value.<br>   Use ui.newLeft to get new left value.<br>   Use ui.newTop to get new top value.<br>   Use ui.newWidth to get new top value.<br>   Use ui.oldHeight to get old height value.<br>   Use ui.oldLeft to get old left value.<br>   Use ui.oldTop to get old top value.<br>   Use ui.oldWidth to get old top value.",
+		"jp": "Occurs just after the current Map's grid area rectangle is changed.<br>   The grid area may change as the result of the Map being resized.<br>   Function takes arguments evt and ui.<br>   Use ui.map to get reference to map object.<br>   Use ui.newHeight to get new height value.<br>   Use ui.newLeft to get new left value.<br>   Use ui.newTop to get new top value.<br>   Use ui.newWidth to get new top value.<br>   Use ui.oldHeight to get old height value.<br>   Use ui.oldLeft to get old left value.<br>   Use ui.oldTop to get old top value.<br>   Use ui.oldWidth to get old top value."
 	}
     },
     "refreshCompleted": {
@@ -57,8 +57,8 @@
         }
       ],
       "description": {
-		"en": "Raised when the map's processing for an update has completed.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.map to get reference to map object.",
-		"jp": "Raised when the map's processing for an update has completed.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.map to get reference to map object."
+		"en": "Raised when the map's processing for an update has completed.<br>   Function takes arguments evt and ui.<br>   Use ui.map to get reference to map object.",
+		"jp": "Raised when the map's processing for an update has completed.<br>   Function takes arguments evt and ui.<br>   Use ui.map to get reference to map object."
 	}
     },
     "seriesCursorMouseMove": {
@@ -76,8 +76,8 @@
         }
       ],
       "description": {
-		"en": "Occurs when the cursors are moved over a series in this map.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.map to get reference to map object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush.<br>&nbsp;&nbsp;&nbsp;Use ui.positionX to get mouse X position.<br>&nbsp;&nbsp;&nbsp;Use ui.positionY to get mouse Y position.",
-		"jp": "Occurs when the cursors are moved over a series in this map.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.map to get reference to map object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush.<br>&nbsp;&nbsp;&nbsp;Use ui.positionX to get mouse X position.<br>&nbsp;&nbsp;&nbsp;Use ui.positionY to get mouse Y position."
+		"en": "Occurs when the cursors are moved over a series in this map.<br>   Function takes arguments evt and ui.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.map to get reference to map object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush.<br>   Use ui.positionX to get mouse X position.<br>   Use ui.positionY to get mouse Y position.",
+		"jp": "Occurs when the cursors are moved over a series in this map.<br>   Function takes arguments evt and ui.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.map to get reference to map object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush.<br>   Use ui.positionX to get mouse X position.<br>   Use ui.positionY to get mouse Y position."
 	}
     },
     "seriesMouseEnter": {
@@ -95,8 +95,8 @@
         }
       ],
       "description": {
-		"en": "Occurs when the left mouse pointer enters an element of this map.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.map to get reference to map object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush.<br>&nbsp;&nbsp;&nbsp;Use ui.positionX to get mouse X position.<br>&nbsp;&nbsp;&nbsp;Use ui.positionY to get mouse Y position.",
-		"jp": "Occurs when the left mouse pointer enters an element of this map.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.map to get reference to map object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush.<br>&nbsp;&nbsp;&nbsp;Use ui.positionX to get mouse X position.<br>&nbsp;&nbsp;&nbsp;Use ui.positionY to get mouse Y position."
+		"en": "Occurs when the left mouse pointer enters an element of this map.<br>   Function takes arguments evt and ui.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.map to get reference to map object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush.<br>   Use ui.positionX to get mouse X position.<br>   Use ui.positionY to get mouse Y position.",
+		"jp": "Occurs when the left mouse pointer enters an element of this map.<br>   Function takes arguments evt and ui.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.map to get reference to map object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush.<br>   Use ui.positionX to get mouse X position.<br>   Use ui.positionY to get mouse Y position."
 	}
     },
     "seriesMouseLeave": {
@@ -114,8 +114,8 @@
         }
       ],
       "description": {
-		"en": "Occurs when the left mouse pointer leaves an element of this map.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.map to get reference to map object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush.<br>&nbsp;&nbsp;&nbsp;Use ui.positionX to get mouse X position.<br>&nbsp;&nbsp;&nbsp;Use ui.positionY to get mouse Y position.",
-		"jp": "Occurs when the left mouse pointer leaves an element of this map.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.map to get reference to map object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush.<br>&nbsp;&nbsp;&nbsp;Use ui.positionX to get mouse X position.<br>&nbsp;&nbsp;&nbsp;Use ui.positionY to get mouse Y position."
+		"en": "Occurs when the left mouse pointer leaves an element of this map.<br>   Function takes arguments evt and ui.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.map to get reference to map object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush.<br>   Use ui.positionX to get mouse X position.<br>   Use ui.positionY to get mouse Y position.",
+		"jp": "Occurs when the left mouse pointer leaves an element of this map.<br>   Function takes arguments evt and ui.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.map to get reference to map object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush.<br>   Use ui.positionX to get mouse X position.<br>   Use ui.positionY to get mouse Y position."
 	}
     },
     "seriesMouseLeftButtonDown": {
@@ -133,8 +133,8 @@
         }
       ],
       "description": {
-		"en": "Occurs when the left mouse button is pressed while the mouse pointer is over an element of this map.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.map to get reference to map object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush.<br>&nbsp;&nbsp;&nbsp;Use ui.positionX to get mouse X position.<br>&nbsp;&nbsp;&nbsp;Use ui.positionY to get mouse Y position.",
-		"jp": "Occurs when the left mouse button is pressed while the mouse pointer is over an element of this map.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.map to get reference to map object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush.<br>&nbsp;&nbsp;&nbsp;Use ui.positionX to get mouse X position.<br>&nbsp;&nbsp;&nbsp;Use ui.positionY to get mouse Y position."
+		"en": "Occurs when the left mouse button is pressed while the mouse pointer is over an element of this map.<br>   Function takes arguments evt and ui.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.map to get reference to map object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush.<br>   Use ui.positionX to get mouse X position.<br>   Use ui.positionY to get mouse Y position.",
+		"jp": "Occurs when the left mouse button is pressed while the mouse pointer is over an element of this map.<br>   Function takes arguments evt and ui.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.map to get reference to map object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush.<br>   Use ui.positionX to get mouse X position.<br>   Use ui.positionY to get mouse Y position."
 	}
     },
     "seriesMouseLeftButtonUp": {
@@ -152,8 +152,8 @@
         }
       ],
       "description": {
-		"en": "Occurs when the left mouse button is released while the mouse pointer is over an element of this map.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.map to get reference to map object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush.<br>&nbsp;&nbsp;&nbsp;Use ui.positionX to get mouse X position.<br>&nbsp;&nbsp;&nbsp;Use ui.positionY to get mouse Y position.",
-		"jp": "Occurs when the left mouse button is released while the mouse pointer is over an element of this map.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.map to get reference to map object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush.<br>&nbsp;&nbsp;&nbsp;Use ui.positionX to get mouse X position.<br>&nbsp;&nbsp;&nbsp;Use ui.positionY to get mouse Y position."
+		"en": "Occurs when the left mouse button is released while the mouse pointer is over an element of this map.<br>   Function takes arguments evt and ui.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.map to get reference to map object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush.<br>   Use ui.positionX to get mouse X position.<br>   Use ui.positionY to get mouse Y position.",
+		"jp": "Occurs when the left mouse button is released while the mouse pointer is over an element of this map.<br>   Function takes arguments evt and ui.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.map to get reference to map object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush.<br>   Use ui.positionX to get mouse X position.<br>   Use ui.positionY to get mouse Y position."
 	}
     },
     "seriesMouseMove": {
@@ -171,8 +171,8 @@
         }
       ],
       "description": {
-		"en": "Occurs when the left mouse pointer moves while over an element of this map.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.map to get reference to map object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush.<br>&nbsp;&nbsp;&nbsp;Use ui.positionX to get mouse X position.<br>&nbsp;&nbsp;&nbsp;Use ui.positionY to get mouse Y position.",
-		"jp": "Occurs when the left mouse pointer moves while over an element of this map.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.map to get reference to map object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush.<br>&nbsp;&nbsp;&nbsp;Use ui.positionX to get mouse X position.<br>&nbsp;&nbsp;&nbsp;Use ui.positionY to get mouse Y position."
+		"en": "Occurs when the left mouse pointer moves while over an element of this map.<br>   Function takes arguments evt and ui.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.map to get reference to map object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush.<br>   Use ui.positionX to get mouse X position.<br>   Use ui.positionY to get mouse Y position.",
+		"jp": "Occurs when the left mouse pointer moves while over an element of this map.<br>   Function takes arguments evt and ui.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.map to get reference to map object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush.<br>   Use ui.positionX to get mouse X position.<br>   Use ui.positionY to get mouse Y position."
 	}
     },
     "tooltipHidden": {
@@ -190,8 +190,8 @@
         }
       ],
       "description": {
-		"en": "event fired after a tooltip is hidden <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.map to get reference to map object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush.",
-		"jp": "event fired after a tooltip is hidden <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.map to get reference to map object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush."
+		"en": "event fired after a tooltip is hidden <br>   Function takes arguments evt and ui.<br>   Use ui.element to get reference to tooltip DOM element.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.map to get reference to map object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush.",
+		"jp": "event fired after a tooltip is hidden <br>   Function takes arguments evt and ui.<br>   Use ui.element to get reference to tooltip DOM element.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.map to get reference to map object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush."
 	}
     },
     "tooltipHiding": {
@@ -209,8 +209,8 @@
         }
       ],
       "description": {
-		"en": "event fired when the mouse has left a series and the tooltip is about to hide<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.map to get reference to map object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush.",
-		"jp": "event fired when the mouse has left a series and the tooltip is about to hide<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.map to get reference to map object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush."
+		"en": "event fired when the mouse has left a series and the tooltip is about to hide<br>   Function takes arguments evt and ui.<br>   Use ui.element to get reference to tooltip DOM element.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.map to get reference to map object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush.",
+		"jp": "event fired when the mouse has left a series and the tooltip is about to hide<br>   Function takes arguments evt and ui.<br>   Use ui.element to get reference to tooltip DOM element.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.map to get reference to map object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush."
 	}
     },
     "tooltipShowing": {
@@ -228,8 +228,8 @@
         }
       ],
       "description": {
-		"en": "event fired when the mouse has hovered on a series and the tooltip is about to show <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.map to get reference to map object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush.",
-		"jp": "event fired when the mouse has hovered on a series and the tooltip is about to show <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.map to get reference to map object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush."
+		"en": "event fired when the mouse has hovered on a series and the tooltip is about to show <br>   Function takes arguments evt and ui.<br>   Use ui.element to get reference to tooltip DOM element.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.map to get reference to map object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush.",
+		"jp": "event fired when the mouse has hovered on a series and the tooltip is about to show <br>   Function takes arguments evt and ui.<br>   Use ui.element to get reference to tooltip DOM element.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.map to get reference to map object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush."
 	}
     },
     "tooltipShown": {
@@ -247,8 +247,8 @@
         }
       ],
       "description": {
-		"en": "event fired after a tooltip is shown<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.map to get reference to map object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush.",
-		"jp": "event fired after a tooltip is shown<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.map to get reference to map object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush."
+		"en": "event fired after a tooltip is shown<br>   Function takes arguments evt and ui.<br>   Use ui.element to get reference to tooltip DOM element.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.map to get reference to map object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush.",
+		"jp": "event fired after a tooltip is shown<br>   Function takes arguments evt and ui.<br>   Use ui.element to get reference to tooltip DOM element.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.map to get reference to map object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush."
 	}
     },
     "triangulationStatusChanged": {
@@ -266,8 +266,8 @@
         }
       ],
       "description": {
-		"en": "Event fired when the status of an ongoing Triangulation has changed.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.map to get reference to map object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.currentStatus to get current status.",
-		"jp": "Event fired when the status of an ongoing Triangulation has changed.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.map to get reference to map object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.currentStatus to get current status."
+		"en": "Event fired when the status of an ongoing Triangulation has changed.<br>   Function takes arguments evt and ui.<br>   Use ui.map to get reference to map object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.currentStatus to get current status.",
+		"jp": "Event fired when the status of an ongoing Triangulation has changed.<br>   Function takes arguments evt and ui.<br>   Use ui.map to get reference to map object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.currentStatus to get current status."
 	}
     },
     "windowRectChanged": {
@@ -285,8 +285,8 @@
         }
       ],
       "description": {
-		"en": "Occurs just after the current Map's window rectangle is changed.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.map to get reference to map object.<br>&nbsp;&nbsp;&nbsp;Use ui.newHeight to get new height value.<br>&nbsp;&nbsp;&nbsp;Use ui.newLeft to get new left value.<br>&nbsp;&nbsp;&nbsp;Use ui.newTop to get new top value.<br>&nbsp;&nbsp;&nbsp;Use ui.newWidth to get new top value.<br>&nbsp;&nbsp;&nbsp;Use ui.oldHeight to get old height value.<br>&nbsp;&nbsp;&nbsp;Use ui.oldLeft to get old left value.<br>&nbsp;&nbsp;&nbsp;Use ui.oldTop to get old top value.<br>&nbsp;&nbsp;&nbsp;Use ui.oldWidth to get old top value.",
-		"jp": "Occurs just after the current Map's window rectangle is changed.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.map to get reference to map object.<br>&nbsp;&nbsp;&nbsp;Use ui.newHeight to get new height value.<br>&nbsp;&nbsp;&nbsp;Use ui.newLeft to get new left value.<br>&nbsp;&nbsp;&nbsp;Use ui.newTop to get new top value.<br>&nbsp;&nbsp;&nbsp;Use ui.newWidth to get new top value.<br>&nbsp;&nbsp;&nbsp;Use ui.oldHeight to get old height value.<br>&nbsp;&nbsp;&nbsp;Use ui.oldLeft to get old left value.<br>&nbsp;&nbsp;&nbsp;Use ui.oldTop to get old top value.<br>&nbsp;&nbsp;&nbsp;Use ui.oldWidth to get old top value."
+		"en": "Occurs just after the current Map's window rectangle is changed.<br>   Function takes arguments evt and ui.<br>   Use ui.map to get reference to map object.<br>   Use ui.newHeight to get new height value.<br>   Use ui.newLeft to get new left value.<br>   Use ui.newTop to get new top value.<br>   Use ui.newWidth to get new top value.<br>   Use ui.oldHeight to get old height value.<br>   Use ui.oldLeft to get old left value.<br>   Use ui.oldTop to get old top value.<br>   Use ui.oldWidth to get old top value.",
+		"jp": "Occurs just after the current Map's window rectangle is changed.<br>   Function takes arguments evt and ui.<br>   Use ui.map to get reference to map object.<br>   Use ui.newHeight to get new height value.<br>   Use ui.newLeft to get new left value.<br>   Use ui.newTop to get new top value.<br>   Use ui.newWidth to get new top value.<br>   Use ui.oldHeight to get old height value.<br>   Use ui.oldLeft to get old left value.<br>   Use ui.oldTop to get old top value.<br>   Use ui.oldWidth to get old top value."
 	}
     }
   },
@@ -395,8 +395,8 @@
       "type": "object",
       "defaultValue": null,
       "description": {
-		"en": "Gets or sets the template to use for circle markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of circle.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-		"jp": "Gets or sets the template to use for circle markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of circle.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
+		"en": "Gets or sets the template to use for circle markers on the map.<br>   Defines the marker template used for<br>   series with a marker type of circle.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
+		"jp": "Gets or sets the template to use for circle markers on the map.<br>   Defines the marker template used for<br>   series with a marker type of circle.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
 	},
       "schemaRef": "dataChart.circleMarkerTemplate"
     },
@@ -404,8 +404,8 @@
       "type": "object",
       "defaultValue": null,
       "description": {
-		"en": "Gets or sets the cross hair point (in world coordinates)<br>&nbsp;&nbsp;&nbsp;Either or both of the crosshair point's X and Y may be set to double.NaN, in which<br>&nbsp;&nbsp;&nbsp;case the relevant crosshair line is hidden.",
-		"jp": "Gets or sets the cross hair point (in world coordinates)<br>&nbsp;&nbsp;&nbsp;Either or both of the crosshair point's X and Y may be set to double.NaN, in which<br>&nbsp;&nbsp;&nbsp;case the relevant crosshair line is hidden."
+		"en": "Gets or sets the cross hair point (in world coordinates)<br>   Either or both of the crosshair point's X and Y may be set to double.NaN, in which<br>   case the relevant crosshair line is hidden.",
+		"jp": "Gets or sets the cross hair point (in world coordinates)<br>   Either or both of the crosshair point's X and Y may be set to double.NaN, in which<br>   case the relevant crosshair line is hidden."
 	},
       "schema": {
         "x": {
@@ -514,8 +514,8 @@
       "type": "object",
       "defaultValue": null,
       "description": {
-		"en": "Gets or sets the template to use for diamond markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of diamond.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-		"jp": "Gets or sets the template to use for diamond markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of diamond.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
+		"en": "Gets or sets the template to use for diamond markers on the map.<br>   Defines the marker template used for<br>   series with a marker type of diamond.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
+		"jp": "Gets or sets the template to use for diamond markers on the map.<br>   Defines the marker template used for<br>   series with a marker type of diamond.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
 	},
       "schemaRef": "dataChart.circleMarkerTemplate"
     },
@@ -573,8 +573,8 @@
       "type": "object",
       "defaultValue": null,
       "description": {
-		"en": "Gets or sets the template to use for hxagon markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of hexagon.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-		"jp": "Gets or sets the template to use for hxagon markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of hexagon.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
+		"en": "Gets or sets the template to use for hxagon markers on the map.<br>   Defines the marker template used for<br>   series with a marker type of hexagon.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
+		"jp": "Gets or sets the template to use for hxagon markers on the map.<br>   Defines the marker template used for<br>   series with a marker type of hexagon.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
 	},
       "schemaRef": "dataChart.circleMarkerTemplate"
     },
@@ -582,8 +582,8 @@
       "type": "object",
       "defaultValue": null,
       "description": {
-		"en": "Gets or sets the template to use for hexagram markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of hexagram.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-		"jp": "Gets or sets the template to use for hexagram markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of hexagram.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
+		"en": "Gets or sets the template to use for hexagram markers on the map.<br>   Defines the marker template used for<br>   series with a marker type of hexagram.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
+		"jp": "Gets or sets the template to use for hexagram markers on the map.<br>   Defines the marker template used for<br>   series with a marker type of hexagram.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
 	},
       "schemaRef": "dataChart.circleMarkerTemplate"
     },
@@ -641,8 +641,8 @@
       "type": "object",
       "defaultValue": null,
       "description": {
-		"en": "Gets or sets the template to use for pentagon markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of pentagon.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-		"jp": "Gets or sets the template to use for pentagon markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of pentagon.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
+		"en": "Gets or sets the template to use for pentagon markers on the map.<br>   Defines the marker template used for<br>   series with a marker type of pentagon.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
+		"jp": "Gets or sets the template to use for pentagon markers on the map.<br>   Defines the marker template used for<br>   series with a marker type of pentagon.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
 	},
       "schemaRef": "dataChart.circleMarkerTemplate"
     },
@@ -650,8 +650,8 @@
       "type": "object",
       "defaultValue": null,
       "description": {
-		"en": "Gets or sets the template to use for pentragram markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of pentagram.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-		"jp": "Gets or sets the template to use for pentragram markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of pentagram.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
+		"en": "Gets or sets the template to use for pentragram markers on the map.<br>   Defines the marker template used for<br>   series with a marker type of pentagram.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
+		"jp": "Gets or sets the template to use for pentragram markers on the map.<br>   Defines the marker template used for<br>   series with a marker type of pentagram.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
 	},
       "schemaRef": "dataChart.circleMarkerTemplate"
     },
@@ -667,8 +667,8 @@
       "type": "object",
       "defaultValue": null,
       "description": {
-		"en": "Gets or sets the preview rectangle.<br>&nbsp;&nbsp;&nbsp;The preview rectangle may be set to Rect.Empty, in which case the visible preview<br>&nbsp;&nbsp;&nbsp;strokePath is hidden.<br>&nbsp;&nbsp;&nbsp;The provided object should have numeric properties called left, top, width and height.",
-		"jp": "Gets or sets the preview rectangle.<br>&nbsp;&nbsp;&nbsp;The preview rectangle may be set to Rect.Empty, in which case the visible preview<br>&nbsp;&nbsp;&nbsp;strokePath is hidden.<br>&nbsp;&nbsp;&nbsp;The provided object should have numeric properties called left, top, width and height."
+		"en": "Gets or sets the preview rectangle.<br>   The preview rectangle may be set to Rect.Empty, in which case the visible preview<br>   strokePath is hidden.<br>   The provided object should have numeric properties called left, top, width and height.",
+		"jp": "Gets or sets the preview rectangle.<br>   The preview rectangle may be set to Rect.Empty, in which case the visible preview<br>   strokePath is hidden.<br>   The provided object should have numeric properties called left, top, width and height."
 	},
       "schema": {
         "left": {
@@ -709,8 +709,8 @@
       "type": "object",
       "defaultValue": null,
       "description": {
-		"en": "Gets or sets the template to use for pyramid markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of pyramid.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-		"jp": "Gets or sets the template to use for pyramid markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of pyramid.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
+		"en": "Gets or sets the template to use for pyramid markers on the map.<br>   Defines the marker template used for<br>   series with a marker type of pyramid.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
+		"jp": "Gets or sets the template to use for pyramid markers on the map.<br>   Defines the marker template used for<br>   series with a marker type of pyramid.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
 	},
       "schemaRef": "dataChart.circleMarkerTemplate"
     },
@@ -1746,8 +1746,8 @@
       "type": "object",
       "defaultValue": null,
       "description": {
-		"en": "Gets or sets the template to use for square markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of square.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-		"jp": "Gets or sets the template to use for square markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of square.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
+		"en": "Gets or sets the template to use for square markers on the map.<br>   Defines the marker template used for<br>   series with a marker type of square.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
+		"jp": "Gets or sets the template to use for square markers on the map.<br>   Defines the marker template used for<br>   series with a marker type of square.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
 	},
       "schemaRef": "dataChart.circleMarkerTemplate"
     },
@@ -1755,8 +1755,8 @@
       "type": "object",
       "defaultValue": null,
       "description": {
-		"en": "Gets or sets the template to use for tetragram markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of tetragram.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-		"jp": "Gets or sets the template to use for tetragram markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of tetragram.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
+		"en": "Gets or sets the template to use for tetragram markers on the map.<br>   Defines the marker template used for<br>   series with a marker type of tetragram.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
+		"jp": "Gets or sets the template to use for tetragram markers on the map.<br>   Defines the marker template used for<br>   series with a marker type of tetragram.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
 	},
       "schemaRef": "dataChart.circleMarkerTemplate"
     },
@@ -1772,8 +1772,8 @@
       "type": "object",
       "defaultValue": null,
       "description": {
-		"en": "Gets or sets the template to use for triangle markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of triangle.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-		"jp": "Gets or sets the template to use for triangle markers on the map.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of triangle.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
+		"en": "Gets or sets the template to use for triangle markers on the map.<br>   Defines the marker template used for<br>   series with a marker type of triangle.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
+		"jp": "Gets or sets the template to use for triangle markers on the map.<br>   Defines the marker template used for<br>   series with a marker type of triangle.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
 	},
       "schemaRef": "dataChart.circleMarkerTemplate"
     },
@@ -1789,24 +1789,24 @@
       "type": "number",
       "defaultValue": 0.0,
       "description": {
-		"en": "A number between 0 and 1 determining the position of the horizontal scroll.<br>&nbsp;&nbsp;&nbsp;This property is effectively a shortcut to the X position of the WindowRect property.",
-		"jp": "A number between 0 and 1 determining the position of the horizontal scroll.<br>&nbsp;&nbsp;&nbsp;This property is effectively a shortcut to the X position of the WindowRect property."
+		"en": "A number between 0 and 1 determining the position of the horizontal scroll.<br>   This property is effectively a shortcut to the X position of the WindowRect property.",
+		"jp": "A number between 0 and 1 determining the position of the horizontal scroll.<br>   This property is effectively a shortcut to the X position of the WindowRect property."
 	}
     },
     "windowPositionVertical": {
       "type": "number",
       "defaultValue": 0.0,
       "description": {
-		"en": "A number between 0 and 1 determining the position of the vertical scroll.<br>&nbsp;&nbsp;&nbsp;This property is effectively a shortcut to the Y position of the WindowRect property.",
-		"jp": "A number between 0 and 1 determining the position of the vertical scroll.<br>&nbsp;&nbsp;&nbsp;This property is effectively a shortcut to the Y position of the WindowRect property."
+		"en": "A number between 0 and 1 determining the position of the vertical scroll.<br>   This property is effectively a shortcut to the Y position of the WindowRect property.",
+		"jp": "A number between 0 and 1 determining the position of the vertical scroll.<br>   This property is effectively a shortcut to the Y position of the WindowRect property."
 	}
     },
     "windowRect": {
       "type": "object",
       "defaultValue": null,
       "description": {
-		"en": "A rectangle representing the portion of the map currently in view.<br>&nbsp;&nbsp;&nbsp;A rectangle at X=0, Y=0 with a Height and Width of 1 implies the entire plotting area is in view.  A Height and Width of .5 would imply that the view is halfway zoomed in.<br>&nbsp;&nbsp;&nbsp;The provided object should have numeric properties called left, top, width and height.",
-		"jp": "A rectangle representing the portion of the map currently in view.<br>&nbsp;&nbsp;&nbsp;A rectangle at X=0, Y=0 with a Height and Width of 1 implies the entire plotting area is in view.  A Height and Width of .5 would imply that the view is halfway zoomed in.<br>&nbsp;&nbsp;&nbsp;The provided object should have numeric properties called left, top, width and height."
+		"en": "A rectangle representing the portion of the map currently in view.<br>   A rectangle at X=0, Y=0 with a Height and Width of 1 implies the entire plotting area is in view.  A Height and Width of .5 would imply that the view is halfway zoomed in.<br>   The provided object should have numeric properties called left, top, width and height.",
+		"jp": "A rectangle representing the portion of the map currently in view.<br>   A rectangle at X=0, Y=0 with a Height and Width of 1 implies the entire plotting area is in view.  A Height and Width of .5 would imply that the view is halfway zoomed in.<br>   The provided object should have numeric properties called left, top, width and height."
 	},
       "schema": {
         "left": {
@@ -1847,8 +1847,8 @@
       "type": "number",
       "defaultValue": 0.0,
       "description": {
-		"en": "Sets or gets the minimum width that the window rect is allowed to reach before being clamped.<br>&nbsp;&nbsp;&nbsp;Decrease this value if you want to allow for further zooming into the viewer.<br>&nbsp;&nbsp;&nbsp;If this value is lowered too much it can cause graphical corruption due to floating point arithmetic inaccuracy.",
-		"jp": "Sets or gets the minimum width that the window rect is allowed to reach before being clamped.<br>&nbsp;&nbsp;&nbsp;Decrease this value if you want to allow for further zooming into the viewer.<br>&nbsp;&nbsp;&nbsp;If this value is lowered too much it can cause graphical corruption due to floating point arithmetic inaccuracy."
+		"en": "Sets or gets the minimum width that the window rect is allowed to reach before being clamped.<br>   Decrease this value if you want to allow for further zooming into the viewer.<br>   If this value is lowered too much it can cause graphical corruption due to floating point arithmetic inaccuracy.",
+		"jp": "Sets or gets the minimum width that the window rect is allowed to reach before being clamped.<br>   Decrease this value if you want to allow for further zooming into the viewer.<br>   If this value is lowered too much it can cause graphical corruption due to floating point arithmetic inaccuracy."
 	}
     },
     "windowResponse": {

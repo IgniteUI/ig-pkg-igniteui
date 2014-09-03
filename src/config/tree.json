@@ -19,8 +19,8 @@
         }
       ],
       "description": {
-		"en": "fired before databinding is performed <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree performing databinding.",
-		"jp": "fired before databinding is performed <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree performing databinding."
+		"en": "fired before databinding is performed <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tree performing databinding.",
+		"jp": "fired before databinding is performed <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tree performing databinding."
 	}
     },
     "dataBound": {
@@ -38,8 +38,8 @@
         }
       ],
       "description": {
-		"en": "fired after databinding is finished <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree performing databinding.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.dataView to get a reference to the data the tree has been databound to.",
-		"jp": "fired after databinding is finished <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree performing databinding.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.dataView to get a reference to the data the tree has been databound to."
+		"en": "fired after databinding is finished <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tree performing databinding.<br>    Use ui.dataView to get a reference to the data the tree has been databound to.",
+		"jp": "fired after databinding is finished <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tree performing databinding.<br>    Use ui.dataView to get a reference to the data the tree has been databound to."
 	}
     },
     "drag": {
@@ -57,8 +57,8 @@
         }
       ],
       "description": {
-		"en": "fired on node drag<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.binding to gets a reference to the binding.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.data&nbsp;to get a reference to the data.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.element to get a reference to the element.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.helper to get a reference to the helper.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.offset to get a reference to the offset.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.orginalPosition to get a reference to the original position of the draggable element (the node).<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.path&nbsp;to get a reference to the node path.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.position to get a reference to the current position of the draggable element.",
-		"jp": "fired on node drag<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.binding to gets a reference to the binding.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.data&nbsp;to get a reference to the data.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.element to get a reference to the element.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.helper to get a reference to the helper.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.offset to get a reference to the offset.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.orginalPosition to get a reference to the original position of the draggable element (the node).<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.path&nbsp;to get a reference to the node path.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.position to get a reference to the current position of the draggable element."
+		"en": "fired on node drag<br>    Use ui.binding to gets a reference to the binding.<br>    Use ui.data to get a reference to the data.<br>    Use ui.element to get a reference to the element.<br>    Use ui.helper to get a reference to the helper.<br>    Use ui.offset to get a reference to the offset.<br>    Use ui.orginalPosition to get a reference to the original position of the draggable element (the node).<br>    Use ui.path to get a reference to the node path.<br>    Use ui.position to get a reference to the current position of the draggable element.",
+		"jp": "fired on node drag<br>    Use ui.binding to gets a reference to the binding.<br>    Use ui.data to get a reference to the data.<br>    Use ui.element to get a reference to the element.<br>    Use ui.helper to get a reference to the helper.<br>    Use ui.offset to get a reference to the offset.<br>    Use ui.orginalPosition to get a reference to the original position of the draggable element (the node).<br>    Use ui.path to get a reference to the node path.<br>    Use ui.position to get a reference to the current position of the draggable element."
 	}
     },
     "dragStart": {
@@ -76,8 +76,8 @@
         }
       ],
       "description": {
-		"en": "fired on node drag start<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.binding to gets a reference to the binding.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.data&nbsp;to get a reference to the data.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.element to get a reference to the element.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.helper to get a reference to the helper.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.offset to get a reference to the offset.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.orginalPosition to get a reference to the original position of the draggable element (the node).<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.path&nbsp;to get a reference to the node path.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.position to get a reference to the current position of the draggable element.",
-		"jp": "fired on node drag start<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.binding to gets a reference to the binding.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.data&nbsp;to get a reference to the data.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.element to get a reference to the element.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.helper to get a reference to the helper.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.offset to get a reference to the offset.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.orginalPosition to get a reference to the original position of the draggable element (the node).<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.path&nbsp;to get a reference to the node path.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.position to get a reference to the current position of the draggable element."
+		"en": "fired on node drag start<br>    Use ui.binding to gets a reference to the binding.<br>    Use ui.data to get a reference to the data.<br>    Use ui.element to get a reference to the element.<br>    Use ui.helper to get a reference to the helper.<br>    Use ui.offset to get a reference to the offset.<br>    Use ui.orginalPosition to get a reference to the original position of the draggable element (the node).<br>    Use ui.path to get a reference to the node path.<br>    Use ui.position to get a reference to the current position of the draggable element.",
+		"jp": "fired on node drag start<br>    Use ui.binding to gets a reference to the binding.<br>    Use ui.data to get a reference to the data.<br>    Use ui.element to get a reference to the element.<br>    Use ui.helper to get a reference to the helper.<br>    Use ui.offset to get a reference to the offset.<br>    Use ui.orginalPosition to get a reference to the original position of the draggable element (the node).<br>    Use ui.path to get a reference to the node path.<br>    Use ui.position to get a reference to the current position of the draggable element."
 	}
     },
     "dragStop": {
@@ -95,8 +95,8 @@
         }
       ],
       "description": {
-		"en": "fired after a drag operation has completed<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.helper to get a reference to the helper.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.offset to get a reference to the offset.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.orginalPosition to get a reference to the original position of the draggable element (the node).<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.position to get a reference to the current position of the draggable element.",
-		"jp": "fired after a drag operation has completed<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.helper to get a reference to the helper.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.offset to get a reference to the offset.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.orginalPosition to get a reference to the original position of the draggable element (the node).<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.position to get a reference to the current position of the draggable element."
+		"en": "fired after a drag operation has completed<br>    Use ui.helper to get a reference to the helper.<br>    Use ui.offset to get a reference to the offset.<br>    Use ui.orginalPosition to get a reference to the original position of the draggable element (the node).<br>    Use ui.position to get a reference to the current position of the draggable element.",
+		"jp": "fired after a drag operation has completed<br>    Use ui.helper to get a reference to the helper.<br>    Use ui.offset to get a reference to the offset.<br>    Use ui.orginalPosition to get a reference to the original position of the draggable element (the node).<br>    Use ui.position to get a reference to the current position of the draggable element."
 	}
     },
     "nodeCheckstateChanged": {
@@ -114,8 +114,8 @@
         }
       ],
       "description": {
-		"en": "fired after the checkstate of a node is changed <br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.node to get a reference to the node object the checkbox of which is being interacted with.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.newState to get the new current state of the checkbox.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.newCheckedNodes to get the collection of all checked nodes.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.newPartiallyCheckedNodes to get the collection of all partially checked nodes.",
-		"jp": "fired after the checkstate of a node is changed <br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.node to get a reference to the node object the checkbox of which is being interacted with.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.newState to get the new current state of the checkbox.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.newCheckedNodes to get the collection of all checked nodes.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.newPartiallyCheckedNodes to get the collection of all partially checked nodes."
+		"en": "fired after the checkstate of a node is changed <br>    Use ui.owner to get a reference to the tree.<br>    Use ui.node to get a reference to the node object the checkbox of which is being interacted with.<br>    Use ui.newState to get the new current state of the checkbox.<br>    Use ui.newCheckedNodes to get the collection of all checked nodes.<br>    Use ui.newPartiallyCheckedNodes to get the collection of all partially checked nodes.",
+		"jp": "fired after the checkstate of a node is changed <br>    Use ui.owner to get a reference to the tree.<br>    Use ui.node to get a reference to the node object the checkbox of which is being interacted with.<br>    Use ui.newState to get the new current state of the checkbox.<br>    Use ui.newCheckedNodes to get the collection of all checked nodes.<br>    Use ui.newPartiallyCheckedNodes to get the collection of all partially checked nodes."
 	}
     },
     "nodeCheckstateChanging": {
@@ -133,8 +133,8 @@
         }
       ],
       "description": {
-		"en": "fired before the checkstate of a node is changed <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.node to get a reference to the node object the checkbox of which is being interacted with.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.currentState to get the current state of the checkbox.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.newState to get the new future state of the checkbox.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.currentCheckedNodes to get the collection of all checked nodes before the new state is applied.",
-		"jp": "fired before the checkstate of a node is changed <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.node to get a reference to the node object the checkbox of which is being interacted with.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.currentState to get the current state of the checkbox.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.newState to get the new future state of the checkbox.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.currentCheckedNodes to get the collection of all checked nodes before the new state is applied."
+		"en": "fired before the checkstate of a node is changed <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tree.<br>    Use ui.node to get a reference to the node object the checkbox of which is being interacted with.<br>    Use ui.currentState to get the current state of the checkbox.<br>    Use ui.newState to get the new future state of the checkbox.<br>    Use ui.currentCheckedNodes to get the collection of all checked nodes before the new state is applied.",
+		"jp": "fired before the checkstate of a node is changed <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tree.<br>    Use ui.node to get a reference to the node object the checkbox of which is being interacted with.<br>    Use ui.currentState to get the current state of the checkbox.<br>    Use ui.newState to get the new future state of the checkbox.<br>    Use ui.currentCheckedNodes to get the collection of all checked nodes before the new state is applied."
 	}
     },
     "nodeClick": {
@@ -152,8 +152,8 @@
         }
       ],
       "description": {
-		"en": "fired on node click <br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.node to get a reference to the node object being clicked.",
-		"jp": "fired on node click <br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.node to get a reference to the node object being clicked."
+		"en": "fired on node click <br>    Use ui.owner to get a reference to the tree.<br>    Use ui.node to get a reference to the node object being clicked.",
+		"jp": "fired on node click <br>    Use ui.owner to get a reference to the tree.<br>    Use ui.node to get a reference to the node object being clicked."
 	}
     },
     "nodeCollapsed": {
@@ -171,8 +171,8 @@
         }
       ],
       "description": {
-		"en": "fired after a node is collapsed <br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.node to get a reference to the collapsed node object.",
-		"jp": "fired after a node is collapsed <br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.node to get a reference to the collapsed node object."
+		"en": "fired after a node is collapsed <br>    Use ui.owner to get a reference to the tree.<br>    Use ui.node to get a reference to the collapsed node object.",
+		"jp": "fired after a node is collapsed <br>    Use ui.owner to get a reference to the tree.<br>    Use ui.node to get a reference to the collapsed node object."
 	}
     },
     "nodeCollapsing": {
@@ -190,8 +190,8 @@
         }
       ],
       "description": {
-		"en": "fired before a node is collapsed <br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.node to get a reference to the node object about to collapse.",
-		"jp": "fired before a node is collapsed <br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.node to get a reference to the node object about to collapse."
+		"en": "fired before a node is collapsed <br>    Use ui.owner to get a reference to the tree.<br>    Use ui.node to get a reference to the node object about to collapse.",
+		"jp": "fired before a node is collapsed <br>    Use ui.owner to get a reference to the tree.<br>    Use ui.node to get a reference to the node object about to collapse."
 	}
     },
     "nodeDoubleClick": {
@@ -209,8 +209,8 @@
         }
       ],
       "description": {
-		"en": "fired on node double click<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.path to get a reference to the path of the double clicked node.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.element to get a reference to the jQuery element of the double clicked node.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.data to get the node data.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.binding to get a reference to the bindings object for the level at which the double clicked node is located.",
-		"jp": "fired on node double click<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.path to get a reference to the path of the double clicked node.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.element to get a reference to the jQuery element of the double clicked node.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.data to get the node data.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.binding to get a reference to the bindings object for the level at which the double clicked node is located."
+		"en": "fired on node double click<br>    Use ui.path to get a reference to the path of the double clicked node.<br>    Use ui.element to get a reference to the jQuery element of the double clicked node.<br>    Use ui.data to get the node data.<br>    Use ui.binding to get a reference to the bindings object for the level at which the double clicked node is located.",
+		"jp": "fired on node double click<br>    Use ui.path to get a reference to the path of the double clicked node.<br>    Use ui.element to get a reference to the jQuery element of the double clicked node.<br>    Use ui.data to get the node data.<br>    Use ui.binding to get a reference to the bindings object for the level at which the double clicked node is located."
 	}
     },
     "nodeDropped": {
@@ -228,8 +228,8 @@
         }
       ],
       "description": {
-		"en": "fired after a node drop<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.binding to gets a reference to the binding.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.data&nbsp;to get a reference to the data.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.draggable to get a reference to the draggable element (the node).<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.element to get a reference to the element.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.helper to get a reference to the helper.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.offset to get a reference to the offset.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.path&nbsp;to get a reference to the node path.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.position to get a reference to the current position of the draggable element.",
-		"jp": "fired after a node drop<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.binding to gets a reference to the binding.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.data&nbsp;to get a reference to the data.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.draggable to get a reference to the draggable element (the node).<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.element to get a reference to the element.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.helper to get a reference to the helper.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.offset to get a reference to the offset.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.path&nbsp;to get a reference to the node path.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.position to get a reference to the current position of the draggable element."
+		"en": "fired after a node drop<br>    Use ui.binding to gets a reference to the binding.<br>    Use ui.data to get a reference to the data.<br>    Use ui.draggable to get a reference to the draggable element (the node).<br>    Use ui.element to get a reference to the element.<br>    Use ui.helper to get a reference to the helper.<br>    Use ui.offset to get a reference to the offset.<br>    Use ui.path to get a reference to the node path.<br>    Use ui.position to get a reference to the current position of the draggable element.",
+		"jp": "fired after a node drop<br>    Use ui.binding to gets a reference to the binding.<br>    Use ui.data to get a reference to the data.<br>    Use ui.draggable to get a reference to the draggable element (the node).<br>    Use ui.element to get a reference to the element.<br>    Use ui.helper to get a reference to the helper.<br>    Use ui.offset to get a reference to the offset.<br>    Use ui.path to get a reference to the node path.<br>    Use ui.position to get a reference to the current position of the draggable element."
 	}
     },
     "nodeDropping": {
@@ -247,8 +247,8 @@
         }
       ],
       "description": {
-		"en": "fired before a node drop<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.binding to gets a reference to the binding.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.data&nbsp;to get a reference to the data.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.draggable to get a reference to the draggable element (the node).<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.element to get a reference to the element.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.helper to get a reference to the helper.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.offset to get a reference to the offset.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.path&nbsp;to get a reference to the node path.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.position to get a reference to the current position of the draggable element.",
-		"jp": "fired before a node drop<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.binding to gets a reference to the binding.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.data&nbsp;to get a reference to the data.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.draggable to get a reference to the draggable element (the node).<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.element to get a reference to the element.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.helper to get a reference to the helper.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.offset to get a reference to the offset.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.path&nbsp;to get a reference to the node path.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.position to get a reference to the current position of the draggable element."
+		"en": "fired before a node drop<br>    Use ui.binding to gets a reference to the binding.<br>    Use ui.data to get a reference to the data.<br>    Use ui.draggable to get a reference to the draggable element (the node).<br>    Use ui.element to get a reference to the element.<br>    Use ui.helper to get a reference to the helper.<br>    Use ui.offset to get a reference to the offset.<br>    Use ui.path to get a reference to the node path.<br>    Use ui.position to get a reference to the current position of the draggable element.",
+		"jp": "fired before a node drop<br>    Use ui.binding to gets a reference to the binding.<br>    Use ui.data to get a reference to the data.<br>    Use ui.draggable to get a reference to the draggable element (the node).<br>    Use ui.element to get a reference to the element.<br>    Use ui.helper to get a reference to the helper.<br>    Use ui.offset to get a reference to the offset.<br>    Use ui.path to get a reference to the node path.<br>    Use ui.position to get a reference to the current position of the draggable element."
 	}
     },
     "nodeExpanded": {
@@ -266,8 +266,8 @@
         }
       ],
       "description": {
-		"en": "fired after a node is expanded <br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.node to get a reference to the expanded node object.",
-		"jp": "fired after a node is expanded <br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.node to get a reference to the expanded node object."
+		"en": "fired after a node is expanded <br>    Use ui.owner to get a reference to the tree.<br>    Use ui.node to get a reference to the expanded node object.",
+		"jp": "fired after a node is expanded <br>    Use ui.owner to get a reference to the tree.<br>    Use ui.node to get a reference to the expanded node object."
 	}
     },
     "nodeExpanding": {
@@ -285,8 +285,8 @@
         }
       ],
       "description": {
-		"en": "fired before a node is expanded <br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.node to get a reference to the node object about to expand.",
-		"jp": "fired before a node is expanded <br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.node to get a reference to the node object about to expand."
+		"en": "fired before a node is expanded <br>    Use ui.owner to get a reference to the tree.<br>    Use ui.node to get a reference to the node object about to expand.",
+		"jp": "fired before a node is expanded <br>    Use ui.owner to get a reference to the tree.<br>    Use ui.node to get a reference to the node object about to expand."
 	}
     },
     "nodePopulated": {
@@ -304,8 +304,8 @@
         }
       ],
       "description": {
-		"en": "fired after the children of a node are populated in the case of load on demand <br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.path to get a reference to the path of the populated node.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.element to get a reference to the jQuery element of the populated node.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.data to get the node data.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.binding to get a reference to the bindings object for the level at which the populated node is located.",
-		"jp": "fired after the children of a node are populated in the case of load on demand <br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.path to get a reference to the path of the populated node.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.element to get a reference to the jQuery element of the populated node.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.data to get the node data.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.binding to get a reference to the bindings object for the level at which the populated node is located."
+		"en": "fired after the children of a node are populated in the case of load on demand <br>    Use ui.path to get a reference to the path of the populated node.<br>    Use ui.element to get a reference to the jQuery element of the populated node.<br>    Use ui.data to get the node data.<br>    Use ui.binding to get a reference to the bindings object for the level at which the populated node is located.",
+		"jp": "fired after the children of a node are populated in the case of load on demand <br>    Use ui.path to get a reference to the path of the populated node.<br>    Use ui.element to get a reference to the jQuery element of the populated node.<br>    Use ui.data to get the node data.<br>    Use ui.binding to get a reference to the bindings object for the level at which the populated node is located."
 	}
     },
     "nodePopulating": {
@@ -323,8 +323,8 @@
         }
       ],
       "description": {
-		"en": "fired before the children of a node are populated in the case of load on demand <br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.path to get a reference to the path of the node being populated.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.element to get a reference to the jQuery element of the node being populated.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.data to get the node data.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.binding to get a reference to the bindings object for the level at which the populating node is located.",
-		"jp": "fired before the children of a node are populated in the case of load on demand <br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.path to get a reference to the path of the node being populated.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.element to get a reference to the jQuery element of the node being populated.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.data to get the node data.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.binding to get a reference to the bindings object for the level at which the populating node is located."
+		"en": "fired before the children of a node are populated in the case of load on demand <br>    Use ui.path to get a reference to the path of the node being populated.<br>    Use ui.element to get a reference to the jQuery element of the node being populated.<br>    Use ui.data to get the node data.<br>    Use ui.binding to get a reference to the bindings object for the level at which the populating node is located.",
+		"jp": "fired before the children of a node are populated in the case of load on demand <br>    Use ui.path to get a reference to the path of the node being populated.<br>    Use ui.element to get a reference to the jQuery element of the node being populated.<br>    Use ui.data to get the node data.<br>    Use ui.binding to get a reference to the bindings object for the level at which the populating node is located."
 	}
     },
     "rendered": {
@@ -342,8 +342,8 @@
         }
       ],
       "description": {
-		"en": "fired after rendering of the tree has finished <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree.",
-		"jp": "fired after rendering of the tree has finished <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree."
+		"en": "fired after rendering of the tree has finished <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tree.",
+		"jp": "fired after rendering of the tree has finished <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tree."
 	}
     },
     "rendering": {
@@ -361,8 +361,8 @@
         }
       ],
       "description": {
-		"en": "fired before rendering of the tree begins <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree performing rendering.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.dataView to get a reference to the data the tree is going to render.",
-		"jp": "fired before rendering of the tree begins <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree performing rendering.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.dataView to get a reference to the data the tree is going to render."
+		"en": "fired before rendering of the tree begins <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tree performing rendering.<br>    Use ui.dataView to get a reference to the data the tree is going to render.",
+		"jp": "fired before rendering of the tree begins <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tree performing rendering.<br>    Use ui.dataView to get a reference to the data the tree is going to render."
 	}
     },
     "selectionChanged": {
@@ -380,8 +380,8 @@
         }
       ],
       "description": {
-		"en": "fired after a new node is selected <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.selectedNodes to get a reference to the selected nodes.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.newNodes to get a reference to the newly added nodes to the selection.",
-		"jp": "fired after a new node is selected <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.selectedNodes to get a reference to the selected nodes.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.newNodes to get a reference to the newly added nodes to the selection."
+		"en": "fired after a new node is selected <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tree.<br>    Use ui.selectedNodes to get a reference to the selected nodes.<br>    Use ui.newNodes to get a reference to the newly added nodes to the selection.",
+		"jp": "fired after a new node is selected <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tree.<br>    Use ui.selectedNodes to get a reference to the selected nodes.<br>    Use ui.newNodes to get a reference to the newly added nodes to the selection."
 	}
     },
     "selectionChanging": {
@@ -399,8 +399,8 @@
         }
       ],
       "description": {
-		"en": "fired before a new node is selected <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.selectedNodes to get a reference to currently selected nodes.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.newNodes to get a reference to the new nodes getting selected.",
-		"jp": "fired before a new node is selected <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tree.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.selectedNodes to get a reference to currently selected nodes.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.newNodes to get a reference to the new nodes getting selected."
+		"en": "fired before a new node is selected <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tree.<br>    Use ui.selectedNodes to get a reference to currently selected nodes.<br>    Use ui.newNodes to get a reference to the new nodes getting selected.",
+		"jp": "fired before a new node is selected <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tree.<br>    Use ui.selectedNodes to get a reference to currently selected nodes.<br>    Use ui.newNodes to get a reference to the new nodes getting selected."
 	}
     }
   },
@@ -818,24 +818,24 @@
       "type": "string",
       "defaultValue": null,
       "description": {
-		"en": "string Specified class with a CSS sprite would be rendered for each node that has no children (If you define both image URL and class the URL would be rendered).<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored",
-		"jp": "string Specified class with a CSS sprite would be rendered for each node that has no children (If you define both image URL and class the URL would be rendered).<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored"
+		"en": "string Specified class with a CSS sprite would be rendered for each node that has no children (If you define both image URL and class the URL would be rendered).<br>    null Option is ignored",
+		"jp": "string Specified class with a CSS sprite would be rendered for each node that has no children (If you define both image URL and class the URL would be rendered).<br>    null Option is ignored"
 	}
     },
     "leafNodeImageTooltip": {
       "type": "string",
       "defaultValue": null,
       "description": {
-		"en": "string Specified a tooltip that would be rendered for each node that has no children.<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored",
-		"jp": "string Specified a tooltip that would be rendered for each node that has no children.<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored"
+		"en": "string Specified a tooltip that would be rendered for each node that has no children.<br>    null Option is ignored",
+		"jp": "string Specified a tooltip that would be rendered for each node that has no children.<br>    null Option is ignored"
 	}
     },
     "leafNodeImageUrl": {
       "type": "string",
       "defaultValue": null,
       "description": {
-		"en": "string Image with the specified URL will be rendered for each node that has no children (If you define both image URL and class the URL would be rendered).<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored",
-		"jp": "string Image with the specified URL will be rendered for each node that has no children (If you define both image URL and class the URL would be rendered).<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored"
+		"en": "string Image with the specified URL will be rendered for each node that has no children (If you define both image URL and class the URL would be rendered).<br>    null Option is ignored",
+		"jp": "string Image with the specified URL will be rendered for each node that has no children (If you define both image URL and class the URL would be rendered).<br>    null Option is ignored"
 	}
     },
     "loadOnDemand": {
@@ -850,24 +850,24 @@
       "type": "string",
       "defaultValue": null,
       "description": {
-		"en": "string Specified class with a CSS sprite would be rendered for each node that has children (If you define both image URL and class the URL would be rendered).<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored",
-		"jp": "string Specified class with a CSS sprite would be rendered for each node that has children (If you define both image URL and class the URL would be rendered).<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored"
+		"en": "string Specified class with a CSS sprite would be rendered for each node that has children (If you define both image URL and class the URL would be rendered).<br>    null Option is ignored",
+		"jp": "string Specified class with a CSS sprite would be rendered for each node that has children (If you define both image URL and class the URL would be rendered).<br>    null Option is ignored"
 	}
     },
     "parentNodeImageTooltip": {
       "type": "string",
       "defaultValue": null,
       "description": {
-		"en": "string Specified a tooltip that would be rendered for each node that has children.<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored",
-		"jp": "string Specified a tooltip that would be rendered for each node that has children.<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored"
+		"en": "string Specified a tooltip that would be rendered for each node that has children.<br>    null Option is ignored",
+		"jp": "string Specified a tooltip that would be rendered for each node that has children.<br>    null Option is ignored"
 	}
     },
     "parentNodeImageUrl": {
       "type": "string",
       "defaultValue": null,
       "description": {
-		"en": "string Image with the specified URL will be rendered for each node that has children (If you define both image URL and class the URL would be rendered).<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored",
-		"jp": "string Image with the specified URL will be rendered for each node that has children (If you define both image URL and class the URL would be rendered).<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored"
+		"en": "string Image with the specified URL will be rendered for each node that has children (If you define both image URL and class the URL would be rendered).<br>    null Option is ignored",
+		"jp": "string Image with the specified URL will be rendered for each node that has children (If you define both image URL and class the URL would be rendered).<br>    null Option is ignored"
 	}
     },
     "pathSeparator": {
@@ -916,16 +916,16 @@
       "type": "string",
       "defaultValue": null,
       "description": {
-		"en": "see $.ig.DataSource. <br>&nbsp;&nbsp;&nbsp;&nbsp;string Specifies the name of the property in which data records are held if the response is wrapped. <br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored.",
-		"jp": "see $.ig.DataSource. <br>&nbsp;&nbsp;&nbsp;&nbsp;string Specifies the name of the property in which data records are held if the response is wrapped. <br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored."
+		"en": "see $.ig.DataSource. <br>    string Specifies the name of the property in which data records are held if the response is wrapped. <br>    null Option is ignored.",
+		"jp": "see $.ig.DataSource. <br>    string Specifies the name of the property in which data records are held if the response is wrapped. <br>    null Option is ignored."
 	}
     },
     "responseDataType": {
       "type": "string",
       "defaultValue": null,
       "description": {
-		"en": "string Explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property.<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored.",
-		"jp": "string Explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property.<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored."
+		"en": "string Explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property.<br>    null Option is ignored.",
+		"jp": "string Explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property.<br>    null Option is ignored."
 	}
     },
     "singleBranchExpand": {

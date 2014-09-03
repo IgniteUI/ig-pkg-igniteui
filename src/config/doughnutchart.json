@@ -76,8 +76,8 @@
         }
       ],
       "description": {
-		"en": "event fired after a tooltip is hidden <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush.",
-		"jp": "event fired after a tooltip is hidden <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush."
+		"en": "event fired after a tooltip is hidden <br>   Function takes arguments evt and ui.<br>   Use ui.element to get reference to tooltip DOM element.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.chart to get reference to chart object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush.",
+		"jp": "event fired after a tooltip is hidden <br>   Function takes arguments evt and ui.<br>   Use ui.element to get reference to tooltip DOM element.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.chart to get reference to chart object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush."
 	}
     },
     "tooltipHiding": {
@@ -95,8 +95,8 @@
         }
       ],
       "description": {
-		"en": "event fired when the mouse has left a series and the tooltip is about to hide<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush.",
-		"jp": "event fired when the mouse has left a series and the tooltip is about to hide<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush."
+		"en": "event fired when the mouse has left a series and the tooltip is about to hide<br>   Function takes arguments evt and ui.<br>   Use ui.element to get reference to tooltip DOM element.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.chart to get reference to chart object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush.",
+		"jp": "event fired when the mouse has left a series and the tooltip is about to hide<br>   Function takes arguments evt and ui.<br>   Use ui.element to get reference to tooltip DOM element.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.chart to get reference to chart object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush."
 	}
     },
     "tooltipShowing": {
@@ -114,8 +114,8 @@
         }
       ],
       "description": {
-		"en": "event fired when the mouse has hovered on a series and the tooltip is about to show <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush.",
-		"jp": "event fired when the mouse has hovered on a series and the tooltip is about to show <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush."
+		"en": "event fired when the mouse has hovered on a series and the tooltip is about to show <br>   Function takes arguments evt and ui.<br>   Use ui.element to get reference to tooltip DOM element.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.chart to get reference to chart object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush.",
+		"jp": "event fired when the mouse has hovered on a series and the tooltip is about to show <br>   Function takes arguments evt and ui.<br>   Use ui.element to get reference to tooltip DOM element.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.chart to get reference to chart object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush."
 	}
     },
     "tooltipShown": {
@@ -133,8 +133,8 @@
         }
       ],
       "description": {
-		"en": "event fired after a tooltip is shown<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush.",
-		"jp": "event fired after a tooltip is shown<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush."
+		"en": "event fired after a tooltip is shown<br>   Function takes arguments evt and ui.<br>   Use ui.element to get reference to tooltip DOM element.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.chart to get reference to chart object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush.",
+		"jp": "event fired after a tooltip is shown<br>   Function takes arguments evt and ui.<br>   Use ui.element to get reference to tooltip DOM element.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.chart to get reference to chart object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush."
 	}
     }
   },
@@ -242,8 +242,8 @@
           "type": "array",
           "defaultValue": null,
           "description": {
-		"en": "Gets or sets the Brushes property.<br>&nbsp;&nbsp;&nbsp;The brushes property defines the palette from which automatically assigned series brushes are selected.<br>&nbsp;&nbsp;&nbsp;The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
-		"jp": "Gets or sets the Brushes property.<br>&nbsp;&nbsp;&nbsp;The brushes property defines the palette from which automatically assigned series brushes are selected.<br>&nbsp;&nbsp;&nbsp;The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
+		"en": "Gets or sets the Brushes property.<br>   The brushes property defines the palette from which automatically assigned series brushes are selected.<br>   The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
+		"jp": "Gets or sets the Brushes property.<br>   The brushes property defines the palette from which automatically assigned series brushes are selected.<br>   The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
 	},
           "arrayMemberType": "string",
 		  "schema": {

@@ -19,8 +19,8 @@
         }
       ],
       "description": {
-		"en": "Event which is raised when a label of the gauge is aligned along the scale.<br>&nbsp;Function takes first argument null and second argument ui.<br>&nbsp;Use ui.owner to obtain reference to gauge widget.<br>&nbsp;Use ui.actualMinimumValue to obtain the mimimum value of gauge scale.<br>&nbsp;Use ui.actualMaximumValue to obtain the maximum value of gauge scale.<br>&nbsp;Use ui.startAngle to obtain the starting angle of gauge scale.<br>&nbsp;Use ui.endAngle to obtain the ending angle of gauge scale.<br>&nbsp;Use ui.angle to obtain the angle on the gauge scale at which the label will be located.<br>&nbsp;Use ui.value to obtain the value on the gauge scale associated with the label.<br>&nbsp;Use ui.label to obtain the string value of the label.<br>&nbsp;Use ui.width to obtain the width of the label.<br>&nbsp;Use ui.height to obtain the height of the label.<br>&nbsp;Use ui.offsetX to obtain the X offset of the label on the gauge scale.<br>&nbsp;Use ui.offsetY to obtain the Y offset of the label on the gauge scale.",
-		"jp": "Event which is raised when a label of the gauge is aligned along the scale.<br>&nbsp;Function takes first argument null and second argument ui.<br>&nbsp;Use ui.owner to obtain reference to gauge widget.<br>&nbsp;Use ui.actualMinimumValue to obtain the mimimum value of gauge scale.<br>&nbsp;Use ui.actualMaximumValue to obtain the maximum value of gauge scale.<br>&nbsp;Use ui.startAngle to obtain the starting angle of gauge scale.<br>&nbsp;Use ui.endAngle to obtain the ending angle of gauge scale.<br>&nbsp;Use ui.angle to obtain the angle on the gauge scale at which the label will be located.<br>&nbsp;Use ui.value to obtain the value on the gauge scale associated with the label.<br>&nbsp;Use ui.label to obtain the string value of the label.<br>&nbsp;Use ui.width to obtain the width of the label.<br>&nbsp;Use ui.height to obtain the height of the label.<br>&nbsp;Use ui.offsetX to obtain the X offset of the label on the gauge scale.<br>&nbsp;Use ui.offsetY to obtain the Y offset of the label on the gauge scale."
+		"en": "Event which is raised when a label of the gauge is aligned along the scale.<br> Function takes first argument null and second argument ui.<br> Use ui.owner to obtain reference to gauge widget.<br> Use ui.actualMinimumValue to obtain the mimimum value of gauge scale.<br> Use ui.actualMaximumValue to obtain the maximum value of gauge scale.<br> Use ui.startAngle to obtain the starting angle of gauge scale.<br> Use ui.endAngle to obtain the ending angle of gauge scale.<br> Use ui.angle to obtain the angle on the gauge scale at which the label will be located.<br> Use ui.value to obtain the value on the gauge scale associated with the label.<br> Use ui.label to obtain the string value of the label.<br> Use ui.width to obtain the width of the label.<br> Use ui.height to obtain the height of the label.<br> Use ui.offsetX to obtain the X offset of the label on the gauge scale.<br> Use ui.offsetY to obtain the Y offset of the label on the gauge scale.",
+		"jp": "Event which is raised when a label of the gauge is aligned along the scale.<br> Function takes first argument null and second argument ui.<br> Use ui.owner to obtain reference to gauge widget.<br> Use ui.actualMinimumValue to obtain the mimimum value of gauge scale.<br> Use ui.actualMaximumValue to obtain the maximum value of gauge scale.<br> Use ui.startAngle to obtain the starting angle of gauge scale.<br> Use ui.endAngle to obtain the ending angle of gauge scale.<br> Use ui.angle to obtain the angle on the gauge scale at which the label will be located.<br> Use ui.value to obtain the value on the gauge scale associated with the label.<br> Use ui.label to obtain the string value of the label.<br> Use ui.width to obtain the width of the label.<br> Use ui.height to obtain the height of the label.<br> Use ui.offsetX to obtain the X offset of the label on the gauge scale.<br> Use ui.offsetY to obtain the Y offset of the label on the gauge scale."
 	}
     },
     "formatLabel": {
@@ -38,8 +38,8 @@
         }
       ],
       "description": {
-		"en": "Event which is raised when a label of the gauge is formatted.<br>&nbsp;Function takes first argument null and second argument ui.<br>&nbsp;Use ui.owner to obtain reference to gauge widget.<br>&nbsp;Use ui.actualMinimumValue to obtain the mimimum value of gauge scale.<br>&nbsp;Use ui.actualMaximumValue to obtain the maximum value of gauge scale.<br>&nbsp;Use ui.startAngle to obtain the starting angle of gauge scale.<br>&nbsp;Use ui.endAngle to obtain the ending angle of gauge scale.<br>&nbsp;Use ui.angle to obtain the angle on the gauge scale at which the label will be located.<br>&nbsp;Use ui.value to obtain the value on the gauge scale associated with the label.<br>&nbsp;Use ui.label to obtain the string value of the label.",
-		"jp": "Event which is raised when a label of the gauge is formatted.<br>&nbsp;Function takes first argument null and second argument ui.<br>&nbsp;Use ui.owner to obtain reference to gauge widget.<br>&nbsp;Use ui.actualMinimumValue to obtain the mimimum value of gauge scale.<br>&nbsp;Use ui.actualMaximumValue to obtain the maximum value of gauge scale.<br>&nbsp;Use ui.startAngle to obtain the starting angle of gauge scale.<br>&nbsp;Use ui.endAngle to obtain the ending angle of gauge scale.<br>&nbsp;Use ui.angle to obtain the angle on the gauge scale at which the label will be located.<br>&nbsp;Use ui.value to obtain the value on the gauge scale associated with the label.<br>&nbsp;Use ui.label to obtain the string value of the label."
+		"en": "Event which is raised when a label of the gauge is formatted.<br> Function takes first argument null and second argument ui.<br> Use ui.owner to obtain reference to gauge widget.<br> Use ui.actualMinimumValue to obtain the mimimum value of gauge scale.<br> Use ui.actualMaximumValue to obtain the maximum value of gauge scale.<br> Use ui.startAngle to obtain the starting angle of gauge scale.<br> Use ui.endAngle to obtain the ending angle of gauge scale.<br> Use ui.angle to obtain the angle on the gauge scale at which the label will be located.<br> Use ui.value to obtain the value on the gauge scale associated with the label.<br> Use ui.label to obtain the string value of the label.",
+		"jp": "Event which is raised when a label of the gauge is formatted.<br> Function takes first argument null and second argument ui.<br> Use ui.owner to obtain reference to gauge widget.<br> Use ui.actualMinimumValue to obtain the mimimum value of gauge scale.<br> Use ui.actualMaximumValue to obtain the maximum value of gauge scale.<br> Use ui.startAngle to obtain the starting angle of gauge scale.<br> Use ui.endAngle to obtain the ending angle of gauge scale.<br> Use ui.angle to obtain the angle on the gauge scale at which the label will be located.<br> Use ui.value to obtain the value on the gauge scale associated with the label.<br> Use ui.label to obtain the string value of the label."
 	}
     }
   },
@@ -228,8 +228,8 @@
       "type": "number",
       "defaultValue": 0.0,
       "description": {
-		"en": "Gets or sets the position at which to put the labels as a value from 0 to 1, measured form the center of the gauge.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
-		"jp": "Gets or sets the position at which to put the labels as a value from 0 to 1, measured form the center of the gauge.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge."
+		"en": "Gets or sets the position at which to put the labels as a value from 0 to 1, measured form the center of the gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
+		"jp": "Gets or sets the position at which to put the labels as a value from 0 to 1, measured form the center of the gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge."
 	}
     },
     "labelInterval": {
@@ -276,16 +276,16 @@
       "type": "number",
       "defaultValue": 0.0,
       "description": {
-		"en": "Gets or sets the position at which to stop rendering the minor tickmarks as a value from 0 to 1, measured from the center of the gauge.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
-		"jp": "Gets or sets the position at which to stop rendering the minor tickmarks as a value from 0 to 1, measured from the center of the gauge.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge."
+		"en": "Gets or sets the position at which to stop rendering the minor tickmarks as a value from 0 to 1, measured from the center of the gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
+		"jp": "Gets or sets the position at which to stop rendering the minor tickmarks as a value from 0 to 1, measured from the center of the gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge."
 	}
     },
     "minorTickStartExtent": {
       "type": "number",
       "defaultValue": 0.0,
       "description": {
-		"en": "Gets or sets the position at which to start rendering the minor tickmarks as a value from 0 to 1, measured from the center of the gauge.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
-		"jp": "Gets or sets the position at which to start rendering the minor tickmarks as a value from 0 to 1, measured from the center of the gauge.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge."
+		"en": "Gets or sets the position at which to start rendering the minor tickmarks as a value from 0 to 1, measured from the center of the gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
+		"jp": "Gets or sets the position at which to start rendering the minor tickmarks as a value from 0 to 1, measured from the center of the gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge."
 	}
     },
     "minorTickStrokeThickness": {
@@ -300,16 +300,16 @@
       "type": "number",
       "defaultValue": 0.0,
       "description": {
-		"en": "Gets or sets the extent of the feature which is closest to the base (e.g. a bulb) with a value from -1 to 1. Note: Only some needle shapes respect this property.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
-		"jp": "Gets or sets the extent of the feature which is closest to the base (e.g. a bulb) with a value from -1 to 1. Note: Only some needle shapes respect this property.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge."
+		"en": "Gets or sets the extent of the feature which is closest to the base (e.g. a bulb) with a value from -1 to 1. Note: Only some needle shapes respect this property.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
+		"jp": "Gets or sets the extent of the feature which is closest to the base (e.g. a bulb) with a value from -1 to 1. Note: Only some needle shapes respect this property.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge."
 	}
     },
     "needleBaseFeatureWidthRatio": {
       "type": "number",
       "defaultValue": 0.0,
       "description": {
-		"en": "Gets or sets the width of the needle at its feature which is closest to the base (e.g. a bulb) with a value from 0 to 1. Note: Only some needle shapes respect this property.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
-		"jp": "Gets or sets the width of the needle at its feature which is closest to the base (e.g. a bulb) with a value from 0 to 1. Note: Only some needle shapes respect this property.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge."
+		"en": "Gets or sets the width of the needle at its feature which is closest to the base (e.g. a bulb) with a value from 0 to 1. Note: Only some needle shapes respect this property.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
+		"jp": "Gets or sets the width of the needle at its feature which is closest to the base (e.g. a bulb) with a value from 0 to 1. Note: Only some needle shapes respect this property.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge."
 	}
     },
     "needleBrush": {
@@ -324,16 +324,16 @@
       "type": "number",
       "defaultValue": 0.0,
       "description": {
-		"en": "Gets or sets the extent (from -1 to 1) at which to end rendering the needle, measured from the center of the gauge.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
-		"jp": "Gets or sets the extent (from -1 to 1) at which to end rendering the needle, measured from the center of the gauge.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge."
+		"en": "Gets or sets the extent (from -1 to 1) at which to end rendering the needle, measured from the center of the gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
+		"jp": "Gets or sets the extent (from -1 to 1) at which to end rendering the needle, measured from the center of the gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge."
 	}
     },
     "needleEndWidthRatio": {
       "type": "number",
       "defaultValue": 0.0,
       "description": {
-		"en": "Gets or sets the width of the needle at its point using a value from (0 to 1). Note: Only some needle shapes respect this property.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
-		"jp": "Gets or sets the width of the needle at its point using a value from (0 to 1). Note: Only some needle shapes respect this property.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge."
+		"en": "Gets or sets the width of the needle at its point using a value from (0 to 1). Note: Only some needle shapes respect this property.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
+		"jp": "Gets or sets the width of the needle at its point using a value from (0 to 1). Note: Only some needle shapes respect this property.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge."
 	}
     },
     "needleOutline": {
@@ -446,24 +446,24 @@
       "type": "number",
       "defaultValue": 0.0,
       "description": {
-		"en": "Gets or sets hte width of the cap of the needle with a value from 0 to 1. Note: Will only take effect if you have a cap set on the needle.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
-		"jp": "Gets or sets hte width of the cap of the needle with a value from 0 to 1. Note: Will only take effect if you have a cap set on the needle.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge."
+		"en": "Gets or sets hte width of the cap of the needle with a value from 0 to 1. Note: Will only take effect if you have a cap set on the needle.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
+		"jp": "Gets or sets hte width of the cap of the needle with a value from 0 to 1. Note: Will only take effect if you have a cap set on the needle.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge."
 	}
     },
     "needlePointFeatureExtent": {
       "type": "number",
       "defaultValue": 0.0,
       "description": {
-		"en": "Gets or sets the extent of the feature which is closest to the point (e.g. the tapering point of a needle) with a value from -1 to 1. Note: Only some needle shapes respect this property.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
-		"jp": "Gets or sets the extent of the feature which is closest to the point (e.g. the tapering point of a needle) with a value from -1 to 1. Note: Only some needle shapes respect this property.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge."
+		"en": "Gets or sets the extent of the feature which is closest to the point (e.g. the tapering point of a needle) with a value from -1 to 1. Note: Only some needle shapes respect this property.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
+		"jp": "Gets or sets the extent of the feature which is closest to the point (e.g. the tapering point of a needle) with a value from -1 to 1. Note: Only some needle shapes respect this property.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge."
 	}
     },
     "needlePointFeatureWidthRatio": {
       "type": "number",
       "defaultValue": 0.0,
       "description": {
-		"en": "Gets or sets the width of the needle at its feature which is closest to the point (e.g. the tapering point of a needle) with a value from 0 to 1. Note: Only some needle shapes respect this property.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
-		"jp": "Gets or sets the width of the needle at its feature which is closest to the point (e.g. the tapering point of a needle) with a value from 0 to 1. Note: Only some needle shapes respect this property.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge."
+		"en": "Gets or sets the width of the needle at its feature which is closest to the point (e.g. the tapering point of a needle) with a value from 0 to 1. Note: Only some needle shapes respect this property.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
+		"jp": "Gets or sets the width of the needle at its feature which is closest to the point (e.g. the tapering point of a needle) with a value from 0 to 1. Note: Only some needle shapes respect this property.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge."
 	}
     },
     "needleShape": {
@@ -552,16 +552,16 @@
       "type": "number",
       "defaultValue": 0.0,
       "description": {
-		"en": "Gets or sets the extent (from -1 to 1) at which to start rendering the needle, measured from the center of the gauge. <br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
-		"jp": "Gets or sets the extent (from -1 to 1) at which to start rendering the needle, measured from the center of the gauge. <br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge."
+		"en": "Gets or sets the extent (from -1 to 1) at which to start rendering the needle, measured from the center of the gauge. <br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
+		"jp": "Gets or sets the extent (from -1 to 1) at which to start rendering the needle, measured from the center of the gauge. <br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge."
 	}
     },
     "needleStartWidthRatio": {
       "type": "number",
       "defaultValue": 0.0,
       "description": {
-		"en": "Gets or sets the width of the needle at its point using a value from (0 to 1). Note: Only some needle shapes respect this property.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
-		"jp": "Gets or sets the width of the needle at its point using a value from (0 to 1). Note: Only some needle shapes respect this property.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge."
+		"en": "Gets or sets the width of the needle at its point using a value from (0 to 1). Note: Only some needle shapes respect this property.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
+		"jp": "Gets or sets the width of the needle at its point using a value from (0 to 1). Note: Only some needle shapes respect this property.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge."
 	}
     },
     "needleStrokeThickness": {
@@ -576,16 +576,16 @@
       "type": "number",
       "defaultValue": 0.0,
       "description": {
-		"en": "Gets or sets the multiplying factor to apply to the normal radius of the gauge. <br>&nbsp;The radius of the gauge is defined by the minimum of the width and height of the control divided by 2.0. <br>&nbsp;This introduces a multiplicative factor to that value.",
-		"jp": "Gets or sets the multiplying factor to apply to the normal radius of the gauge. <br>&nbsp;The radius of the gauge is defined by the minimum of the width and height of the control divided by 2.0. <br>&nbsp;This introduces a multiplicative factor to that value."
+		"en": "Gets or sets the multiplying factor to apply to the normal radius of the gauge. <br> The radius of the gauge is defined by the minimum of the width and height of the control divided by 2.0. <br> This introduces a multiplicative factor to that value.",
+		"jp": "Gets or sets the multiplying factor to apply to the normal radius of the gauge. <br> The radius of the gauge is defined by the minimum of the width and height of the control divided by 2.0. <br> This introduces a multiplicative factor to that value."
 	}
     },
     "rangeBrushes": {
       "type": "array",
       "defaultValue": null,
       "description": {
-		"en": "Gets or sets a collection of brushes to be used as the palette for gauge ranges.<br>&nbsp;The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
-		"jp": "Gets or sets a collection of brushes to be used as the palette for gauge ranges.<br>&nbsp;The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
+		"en": "Gets or sets a collection of brushes to be used as the palette for gauge ranges.<br> The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
+		"jp": "Gets or sets a collection of brushes to be used as the palette for gauge ranges.<br> The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
 	},
       "arrayMemberType": "string",
 	  "schema": {
@@ -606,8 +606,8 @@
       "type": "array",
       "defaultValue": null,
       "description": {
-		"en": "Gets or sets a collection of brushes to be used as the palette for gauge outlines.<br>&nbsp;The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
-		"jp": "Gets or sets a collection of brushes to be used as the palette for gauge outlines.<br>&nbsp;The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
+		"en": "Gets or sets a collection of brushes to be used as the palette for gauge outlines.<br> The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
+		"jp": "Gets or sets a collection of brushes to be used as the palette for gauge outlines.<br> The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
 	},
       "arrayMemberType": "string",
 	  	  "schema": {
@@ -726,8 +726,8 @@
       "type": "number",
       "defaultValue": 0.0,
       "description": {
-		"en": "Gets or sets the position at which to stop rendering the scale as a value from 0 to 1 measured from the center of the gauge.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
-		"jp": "Gets or sets the position at which to stop rendering the scale as a value from 0 to 1 measured from the center of the gauge.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge."
+		"en": "Gets or sets the position at which to stop rendering the scale as a value from 0 to 1 measured from the center of the gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
+		"jp": "Gets or sets the position at which to stop rendering the scale as a value from 0 to 1 measured from the center of the gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge."
 	}
     },
     "scaleOversweep": {
@@ -784,8 +784,8 @@
       "type": "number",
       "defaultValue": 0.0,
       "description": {
-		"en": "Gets or sets the position at which to start rendering the scale, measured from the center of the gauge as a value from 0 to 1.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
-		"jp": "Gets or sets the position at which to start rendering the scale, measured from the center of the gauge as a value from 0 to 1.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge."
+		"en": "Gets or sets the position at which to start rendering the scale, measured from the center of the gauge as a value from 0 to 1.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
+		"jp": "Gets or sets the position at which to start rendering the scale, measured from the center of the gauge as a value from 0 to 1.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge."
 	}
     },
     "scaleSweepDirection": {
@@ -826,16 +826,16 @@
       "type": "number",
       "defaultValue": 0.0,
       "description": {
-		"en": "Gets or sets the position at which to stop rendering the major tickmarks as a value from 0 to 1, measured from the center of the gauge.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
-		"jp": "Gets or sets the position at which to stop rendering the major tickmarks as a value from 0 to 1, measured from the center of the gauge.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge."
+		"en": "Gets or sets the position at which to stop rendering the major tickmarks as a value from 0 to 1, measured from the center of the gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
+		"jp": "Gets or sets the position at which to stop rendering the major tickmarks as a value from 0 to 1, measured from the center of the gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge."
 	}
     },
     "tickStartExtent": {
       "type": "number",
       "defaultValue": 0.0,
       "description": {
-		"en": "Gets or sets the position at which to start rendering the major tickmarks as a value from 0 to 1, measured from the center of the gauge.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
-		"jp": "Gets or sets the position at which to start rendering the major tickmarks as a value from 0 to 1, measured from the center of the gauge.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge."
+		"en": "Gets or sets the position at which to start rendering the major tickmarks as a value from 0 to 1, measured from the center of the gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
+		"jp": "Gets or sets the position at which to start rendering the major tickmarks as a value from 0 to 1, measured from the center of the gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge."
 	}
     },
     "tickStrokeThickness": {

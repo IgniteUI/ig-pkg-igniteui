@@ -20,8 +20,8 @@
         }
       ],
       "description": {
-		"en": "Event fired after the filtering has been executed and results are rendered.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.columnIndex to get column index.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key.",
-		"jp": "Event fired after the filtering has been executed and results are rendered.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.columnIndex to get column index.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key."
+		"en": "Event fired after the filtering has been executed and results are rendered.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.columnIndex to get column index.<br>   Use ui.columnKey to get column key.",
+		"jp": "Event fired after the filtering has been executed and results are rendered.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.columnIndex to get column index.<br>   Use ui.columnKey to get column key."
 	}
     },
     "dataFiltering": {
@@ -39,8 +39,8 @@
         }
       ],
       "description": {
-		"en": "Event fired before a filtering operation is executed (remote request or local). <br>&nbsp;&nbsp;&nbsp;Return false in order to cancel filtering operation.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.columnIndex to get column index.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key.",
-		"jp": "Event fired before a filtering operation is executed (remote request or local). <br>&nbsp;&nbsp;&nbsp;Return false in order to cancel filtering operation.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.columnIndex to get column index.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key."
+		"en": "Event fired before a filtering operation is executed (remote request or local). <br>   Return false in order to cancel filtering operation.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.columnIndex to get column index.<br>   Use ui.columnKey to get column key.",
+		"jp": "Event fired before a filtering operation is executed (remote request or local). <br>   Return false in order to cancel filtering operation.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.columnIndex to get column index.<br>   Use ui.columnKey to get column key."
 	}
     },
     "dropDownClosed": {
@@ -58,8 +58,8 @@
         }
       ],
       "description": {
-		"en": "Event fired after a filter column dropdown is completely closed. <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dropDown to get reference to dropdown DOM element.",
-		"jp": "Event fired after a filter column dropdown is completely closed. <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dropDown to get reference to dropdown DOM element."
+		"en": "Event fired after a filter column dropdown is completely closed. <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.dropDown to get reference to dropdown DOM element.",
+		"jp": "Event fired after a filter column dropdown is completely closed. <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.dropDown to get reference to dropdown DOM element."
 	}
     },
     "dropDownClosing": {
@@ -77,8 +77,8 @@
         }
       ],
       "description": {
-		"en": "Event fired before the filter dropdown starts closing. <br>            Return false in order to cancel dropdown closing.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dropDown to get reference to dropdown DOM element.",
-		"jp": "Event fired before the filter dropdown starts closing. <br>            Return false in order to cancel dropdown closing.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dropDown to get reference to dropdown DOM element."
+		"en": "Event fired before the filter dropdown starts closing. <br>            Return false in order to cancel dropdown closing.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.dropDown to get reference to dropdown DOM element.",
+		"jp": "Event fired before the filter dropdown starts closing. <br>            Return false in order to cancel dropdown closing.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.dropDown to get reference to dropdown DOM element."
 	}
     },
     "dropDownOpened": {
@@ -96,8 +96,8 @@
         }
       ],
       "description": {
-		"en": "Event fired after the filter dropdown is opened for a specific column. <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dropDown to get reference to dropdown DOM element.",
-		"jp": "Event fired after the filter dropdown is opened for a specific column. <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dropDown to get reference to dropdown DOM element."
+		"en": "Event fired after the filter dropdown is opened for a specific column. <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.dropDown to get reference to dropdown DOM element.",
+		"jp": "Event fired after the filter dropdown is opened for a specific column. <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.dropDown to get reference to dropdown DOM element."
 	}
     },
     "dropDownOpening": {
@@ -115,8 +115,8 @@
         }
       ],
       "description": {
-		"en": "Event fired before the filter dropdown is opened for a specific column. <br>&nbsp;&nbsp;&nbsp;Return false in order to cancel dropdown opening.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dropDown to get reference to dropdown DOM element.",
-		"jp": "Event fired before the filter dropdown is opened for a specific column. <br>&nbsp;&nbsp;&nbsp;Return false in order to cancel dropdown opening.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dropDown to get reference to dropdown DOM element."
+		"en": "Event fired before the filter dropdown is opened for a specific column. <br>   Return false in order to cancel dropdown opening.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.dropDown to get reference to dropdown DOM element.",
+		"jp": "Event fired before the filter dropdown is opened for a specific column. <br>   Return false in order to cancel dropdown opening.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.dropDown to get reference to dropdown DOM element."
 	}
     },
     "filterDialogClosed": {
@@ -134,8 +134,8 @@
         }
       ],
       "description": {
-		"en": "Event fired after the advanced filter dialog has been closed.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.",
-		"jp": "Event fired after the advanced filter dialog has been closed.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid."
+		"en": "Event fired after the advanced filter dialog has been closed.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.",
+		"jp": "Event fired after the advanced filter dialog has been closed.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid."
 	}
     },
     "filterDialogClosing": {
@@ -153,8 +153,8 @@
         }
       ],
       "description": {
-		"en": "Event fired before the advanced filter dialog is closed. <br>&nbsp;&nbsp;&nbsp;Return false in order to cancel filtering dialog closing.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.",
-		"jp": "Event fired before the advanced filter dialog is closed. <br>&nbsp;&nbsp;&nbsp;Return false in order to cancel filtering dialog closing.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid."
+		"en": "Event fired before the advanced filter dialog is closed. <br>   Return false in order to cancel filtering dialog closing.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.",
+		"jp": "Event fired before the advanced filter dialog is closed. <br>   Return false in order to cancel filtering dialog closing.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid."
 	}
     },
     "filterDialogContentsRendered": {
@@ -172,8 +172,8 @@
         }
       ],
       "description": {
-		"en": "Event fired after the contents of the advanced filter dialog are rendered.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dialogElement to get reference to filtering dialog DOM element.",
-		"jp": "Event fired after the contents of the advanced filter dialog are rendered.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dialogElement to get reference to filtering dialog DOM element."
+		"en": "Event fired after the contents of the advanced filter dialog are rendered.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.dialogElement to get reference to filtering dialog DOM element.",
+		"jp": "Event fired after the contents of the advanced filter dialog are rendered.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.dialogElement to get reference to filtering dialog DOM element."
 	}
     },
     "filterDialogContentsRendering": {
@@ -191,8 +191,8 @@
         }
       ],
       "description": {
-		"en": "Event fired before the contents of the advanced filter dialog are rendered. <br>&nbsp;&nbsp;&nbsp;Return false in order to cancel filtering dialog rendering.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dialogElement to get reference to filtering dialog DOM element.",
-		"jp": "Event fired before the contents of the advanced filter dialog are rendered. <br>&nbsp;&nbsp;&nbsp;Return false in order to cancel filtering dialog rendering.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dialogElement to get reference to filtering dialog DOM element."
+		"en": "Event fired before the contents of the advanced filter dialog are rendered. <br>   Return false in order to cancel filtering dialog rendering.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.dialogElement to get reference to filtering dialog DOM element.",
+		"jp": "Event fired before the contents of the advanced filter dialog are rendered. <br>   Return false in order to cancel filtering dialog rendering.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.dialogElement to get reference to filtering dialog DOM element."
 	}
     },
     "filterDialogFilterAdded": {
@@ -210,8 +210,8 @@
         }
       ],
       "description": {
-		"en": "Event fired after a filter row is added to the advanced filter dialog.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.filter to get reference to filters table row DOM element.",
-		"jp": "Event fired after a filter row is added to the advanced filter dialog.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.filter to get reference to filters table row DOM element."
+		"en": "Event fired after a filter row is added to the advanced filter dialog.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.filter to get reference to filters table row DOM element.",
+		"jp": "Event fired after a filter row is added to the advanced filter dialog.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.filter to get reference to filters table row DOM element."
 	}
     },
     "filterDialogFilterAdding": {
@@ -229,8 +229,8 @@
         }
       ],
       "description": {
-		"en": "Event fired before a filter row is added to the advanced filter dialog.<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel filter adding to the advanced filtering dialog.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.filtersTableBody to get reference to filters table body DOM element.",
-		"jp": "Event fired before a filter row is added to the advanced filter dialog.<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel filter adding to the advanced filtering dialog.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.filtersTableBody to get reference to filters table body DOM element."
+		"en": "Event fired before a filter row is added to the advanced filter dialog.<br>   Return false in order to cancel filter adding to the advanced filtering dialog.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.filtersTableBody to get reference to filters table body DOM element.",
+		"jp": "Event fired before a filter row is added to the advanced filter dialog.<br>   Return false in order to cancel filter adding to the advanced filtering dialog.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.filtersTableBody to get reference to filters table body DOM element."
 	}
     },
     "filterDialogFiltering": {
@@ -248,8 +248,8 @@
         }
       ],
       "description": {
-		"en": "Event fired when the OK button in the advanced filter dialog is pressed. <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dialog to get reference to filtering dialog DOM element.",
-		"jp": "Event fired when the OK button in the advanced filter dialog is pressed. <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dialog to get reference to filtering dialog DOM element."
+		"en": "Event fired when the OK button in the advanced filter dialog is pressed. <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.dialog to get reference to filtering dialog DOM element.",
+		"jp": "Event fired when the OK button in the advanced filter dialog is pressed. <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.dialog to get reference to filtering dialog DOM element."
 	}
     },
     "filterDialogMoving": {
@@ -267,8 +267,8 @@
         }
       ],
       "description": {
-		"en": "Event fired every time the advanced filter dialog changes its position.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dialog to get reference to filtering dialog DOM element.",
-		"jp": "Event fired every time the advanced filter dialog changes its position.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dialog to get reference to filtering dialog DOM element."
+		"en": "Event fired every time the advanced filter dialog changes its position.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.dialog to get reference to filtering dialog DOM element.",
+		"jp": "Event fired every time the advanced filter dialog changes its position.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.dialog to get reference to filtering dialog DOM element."
 	}
     },
     "filterDialogOpened": {
@@ -286,8 +286,8 @@
         }
       ],
       "description": {
-		"en": "Event fired after the advanced filter dialog is already opened.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dialog to get reference to filtering dialog DOM element.",
-		"jp": "Event fired after the advanced filter dialog is already opened.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dialog to get reference to filtering dialog DOM element."
+		"en": "Event fired after the advanced filter dialog is already opened.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.dialog to get reference to filtering dialog DOM element.",
+		"jp": "Event fired after the advanced filter dialog is already opened.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.dialog to get reference to filtering dialog DOM element."
 	}
     },
     "filterDialogOpening": {
@@ -305,8 +305,8 @@
         }
       ],
       "description": {
-		"en": "Event fired before the advanced filtering dialog is opened.<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel filter dialog opening.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dialog to get reference to filtering dialog DOM element.",
-		"jp": "Event fired before the advanced filtering dialog is opened.<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel filter dialog opening.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridFiltering.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dialog to get reference to filtering dialog DOM element."
+		"en": "Event fired before the advanced filtering dialog is opened.<br>   Return false in order to cancel filter dialog opening.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.dialog to get reference to filtering dialog DOM element.",
+		"jp": "Event fired before the advanced filtering dialog is opened.<br>   Return false in order to cancel filter dialog opening.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.dialog to get reference to filtering dialog DOM element."
 	}
     }
   },

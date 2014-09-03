@@ -57,8 +57,8 @@
         }
       ],
       "description": {
-		"en": "Fired on drag. Return false to cancel the drag.<br>            Use ui.metadata&nbsp;to get a reference to the data.<br>            Use ui.helper to get a reference to the helper.<br>            Use ui.offset to get a reference to the offset.<br>            Use ui.originalPosition to get a reference to the original position of the draggable element.<br>            Use ui.position to get a reference to the current position of the draggable element.",
-		"jp": "Fired on drag. Return false to cancel the drag.<br>            Use ui.metadata&nbsp;to get a reference to the data.<br>            Use ui.helper to get a reference to the helper.<br>            Use ui.offset to get a reference to the offset.<br>            Use ui.originalPosition to get a reference to the original position of the draggable element.<br>            Use ui.position to get a reference to the current position of the draggable element."
+		"en": "Fired on drag. Return false to cancel the drag.<br>            Use ui.metadata to get a reference to the data.<br>            Use ui.helper to get a reference to the helper.<br>            Use ui.offset to get a reference to the offset.<br>            Use ui.originalPosition to get a reference to the original position of the draggable element.<br>            Use ui.position to get a reference to the current position of the draggable element.",
+		"jp": "Fired on drag. Return false to cancel the drag.<br>            Use ui.metadata to get a reference to the data.<br>            Use ui.helper to get a reference to the helper.<br>            Use ui.offset to get a reference to the offset.<br>            Use ui.originalPosition to get a reference to the original position of the draggable element.<br>            Use ui.position to get a reference to the current position of the draggable element."
 	}
     },
     "dragStart": {
@@ -76,8 +76,8 @@
         }
       ],
       "description": {
-		"en": "Fired on drag start. Return false to cancel the dragging.<br>            Use ui.metadata&nbsp;to get a reference to the data.<br>            Use ui.helper to get a reference to the helper.<br>            Use ui.offset to get a reference to the offset.<br>            Use ui.originalPosition to get a reference to the original position of the draggable element.<br>            Use ui.position to get a reference to the current position of the draggable element.",
-		"jp": "Fired on drag start. Return false to cancel the dragging.<br>            Use ui.metadata&nbsp;to get a reference to the data.<br>            Use ui.helper to get a reference to the helper.<br>            Use ui.offset to get a reference to the offset.<br>            Use ui.originalPosition to get a reference to the original position of the draggable element.<br>            Use ui.position to get a reference to the current position of the draggable element."
+		"en": "Fired on drag start. Return false to cancel the dragging.<br>            Use ui.metadata to get a reference to the data.<br>            Use ui.helper to get a reference to the helper.<br>            Use ui.offset to get a reference to the offset.<br>            Use ui.originalPosition to get a reference to the original position of the draggable element.<br>            Use ui.position to get a reference to the current position of the draggable element.",
+		"jp": "Fired on drag start. Return false to cancel the dragging.<br>            Use ui.metadata to get a reference to the data.<br>            Use ui.helper to get a reference to the helper.<br>            Use ui.offset to get a reference to the offset.<br>            Use ui.originalPosition to get a reference to the original position of the draggable element.<br>            Use ui.position to get a reference to the current position of the draggable element."
 	}
     },
     "dragStop": {
@@ -266,8 +266,8 @@
         }
       ],
       "description": {
-		"en": "Fired after a metadata item drop.<br>            Use ui.targetElement for a reference to the drop target.<br>            Use ui.draggedElement for a reference to the dragged element.<br>            Use ui.metadata&nbsp;to get a reference to the data.<br>            Use ui.metadataIndex to get the index at which the metadata is inserted.<br>            Use ui.helper to get a reference to the helper.<br>            Use ui.offset to get a reference to the offset.<br>            Use ui.position to get a reference to the current position of the draggable element.",
-		"jp": "Fired after a metadata item drop.<br>            Use ui.targetElement for a reference to the drop target.<br>            Use ui.draggedElement for a reference to the dragged element.<br>            Use ui.metadata&nbsp;to get a reference to the data.<br>            Use ui.metadataIndex to get the index at which the metadata is inserted.<br>            Use ui.helper to get a reference to the helper.<br>            Use ui.offset to get a reference to the offset.<br>            Use ui.position to get a reference to the current position of the draggable element."
+		"en": "Fired after a metadata item drop.<br>            Use ui.targetElement for a reference to the drop target.<br>            Use ui.draggedElement for a reference to the dragged element.<br>            Use ui.metadata to get a reference to the data.<br>            Use ui.metadataIndex to get the index at which the metadata is inserted.<br>            Use ui.helper to get a reference to the helper.<br>            Use ui.offset to get a reference to the offset.<br>            Use ui.position to get a reference to the current position of the draggable element.",
+		"jp": "Fired after a metadata item drop.<br>            Use ui.targetElement for a reference to the drop target.<br>            Use ui.draggedElement for a reference to the dragged element.<br>            Use ui.metadata to get a reference to the data.<br>            Use ui.metadataIndex to get the index at which the metadata is inserted.<br>            Use ui.helper to get a reference to the helper.<br>            Use ui.offset to get a reference to the offset.<br>            Use ui.position to get a reference to the current position of the draggable element."
 	}
     },
     "metadataDropping": {
@@ -285,8 +285,8 @@
         }
       ],
       "description": {
-		"en": "Fired before a metadata item drop. Return false to cancel the drop.<br>            Use ui.targetElement for a reference to the drop target.<br>            Use ui.draggedElement for a reference to the metadata item element.<br>            Use ui.metadata&nbsp;to get a reference to the data.<br>            Use ui.metadataIndex to get the index at which the metadata will be inserted.<br>            Use ui.helper to get a reference to the helper.<br>            Use ui.offset to get a reference to the offset.<br>            Use ui.position to get a reference to the current position of the draggable element.",
-		"jp": "Fired before a metadata item drop. Return false to cancel the drop.<br>            Use ui.targetElement for a reference to the drop target.<br>            Use ui.draggedElement for a reference to the metadata item element.<br>            Use ui.metadata&nbsp;to get a reference to the data.<br>            Use ui.metadataIndex to get the index at which the metadata will be inserted.<br>            Use ui.helper to get a reference to the helper.<br>            Use ui.offset to get a reference to the offset.<br>            Use ui.position to get a reference to the current position of the draggable element."
+		"en": "Fired before a metadata item drop. Return false to cancel the drop.<br>            Use ui.targetElement for a reference to the drop target.<br>            Use ui.draggedElement for a reference to the metadata item element.<br>            Use ui.metadata to get a reference to the data.<br>            Use ui.metadataIndex to get the index at which the metadata will be inserted.<br>            Use ui.helper to get a reference to the helper.<br>            Use ui.offset to get a reference to the offset.<br>            Use ui.position to get a reference to the current position of the draggable element.",
+		"jp": "Fired before a metadata item drop. Return false to cancel the drop.<br>            Use ui.targetElement for a reference to the drop target.<br>            Use ui.draggedElement for a reference to the metadata item element.<br>            Use ui.metadata to get a reference to the data.<br>            Use ui.metadataIndex to get the index at which the metadata will be inserted.<br>            Use ui.helper to get a reference to the helper.<br>            Use ui.offset to get a reference to the offset.<br>            Use ui.position to get a reference to the current position of the draggable element."
 	}
     },
     "metadataRemoved": {
@@ -304,8 +304,8 @@
         }
       ],
       "description": {
-		"en": "Fired after a metadata item is removed when the user clicks the close icon.<br>            Use ui.metadata&nbsp;to get a reference to the data.",
-		"jp": "Fired after a metadata item is removed when the user clicks the close icon.<br>            Use ui.metadata&nbsp;to get a reference to the data."
+		"en": "Fired after a metadata item is removed when the user clicks the close icon.<br>            Use ui.metadata to get a reference to the data.",
+		"jp": "Fired after a metadata item is removed when the user clicks the close icon.<br>            Use ui.metadata to get a reference to the data."
 	}
     },
     "metadataRemoving": {
@@ -323,8 +323,8 @@
         }
       ],
       "description": {
-		"en": "Fired before a metadata item is removed when the user clicks the close icon. Return false to cancel the removing.<br>            Use ui.targetElement for a reference to the dragged element.<br>            Use ui.metadata&nbsp;to get a reference to the data.",
-		"jp": "Fired before a metadata item is removed when the user clicks the close icon. Return false to cancel the removing.<br>            Use ui.targetElement for a reference to the dragged element.<br>            Use ui.metadata&nbsp;to get a reference to the data."
+		"en": "Fired before a metadata item is removed when the user clicks the close icon. Return false to cancel the removing.<br>            Use ui.targetElement for a reference to the dragged element.<br>            Use ui.metadata to get a reference to the data.",
+		"jp": "Fired before a metadata item is removed when the user clicks the close icon. Return false to cancel the removing.<br>            Use ui.targetElement for a reference to the dragged element.<br>            Use ui.metadata to get a reference to the data."
 	}
     },
     "pivotGridHeadersRendered": {

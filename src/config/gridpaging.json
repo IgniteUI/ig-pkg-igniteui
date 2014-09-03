@@ -20,8 +20,8 @@
         }
       ],
       "description": {
-		"en": "Event fired after the page index is changed , but before grid data rebinds <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridPaging.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.pageIndex to get current page index.",
-		"jp": "Event fired after the page index is changed , but before grid data rebinds <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridPaging.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.pageIndex to get current page index."
+		"en": "Event fired after the page index is changed , but before grid data rebinds <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridPaging.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.pageIndex to get current page index.",
+		"jp": "Event fired after the page index is changed , but before grid data rebinds <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridPaging.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.pageIndex to get current page index."
 	}
     },
     "pageIndexChanging": {
@@ -39,8 +39,8 @@
         }
       ],
       "description": {
-		"en": "Event fired before the page index is changed.<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel page index changing.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridPaging.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.currentPageIndex to get current page index.<br>&nbsp;&nbsp;&nbsp;Use ui.newPageIndex to get new page index.",
-		"jp": "Event fired before the page index is changed.<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel page index changing.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridPaging.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.currentPageIndex to get current page index.<br>&nbsp;&nbsp;&nbsp;Use ui.newPageIndex to get new page index."
+		"en": "Event fired before the page index is changed.<br>   Return false in order to cancel page index changing.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridPaging.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.currentPageIndex to get current page index.<br>   Use ui.newPageIndex to get new page index.",
+		"jp": "Event fired before the page index is changed.<br>   Return false in order to cancel page index changing.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridPaging.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.currentPageIndex to get current page index.<br>   Use ui.newPageIndex to get new page index."
 	}
     },
     "pagerRendered": {
@@ -58,8 +58,8 @@
         }
       ],
       "description": {
-		"en": "Event fired after the pager footer is rendered <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridPaging.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dataSource to get reference to grid's data source.",
-		"jp": "Event fired after the pager footer is rendered <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridPaging.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dataSource to get reference to grid's data source."
+		"en": "Event fired after the pager footer is rendered <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridPaging.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.dataSource to get reference to grid's data source.",
+		"jp": "Event fired after the pager footer is rendered <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridPaging.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.dataSource to get reference to grid's data source."
 	}
     },
     "pagerRendering": {
@@ -77,8 +77,8 @@
         }
       ],
       "description": {
-		"en": "Event fired before the pager footer is rendered (the whole area below the grid records). <br>&nbsp;&nbsp;&nbsp;Return false in order to cancel pager footer rendering.&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridPaging.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dataSource to get reference to grid's data source.",
-		"jp": "Event fired before the pager footer is rendered (the whole area below the grid records). <br>&nbsp;&nbsp;&nbsp;Return false in order to cancel pager footer rendering.&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridPaging.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.dataSource to get reference to grid's data source."
+		"en": "Event fired before the pager footer is rendered (the whole area below the grid records). <br>   Return false in order to cancel pager footer rendering.   <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridPaging.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.dataSource to get reference to grid's data source.",
+		"jp": "Event fired before the pager footer is rendered (the whole area below the grid records). <br>   Return false in order to cancel pager footer rendering.   <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridPaging.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.dataSource to get reference to grid's data source."
 	}
     },
     "pageSizeChanged": {
@@ -96,8 +96,8 @@
         }
       ],
       "description": {
-		"en": "Event fired after the page size is changed from the page size dropdown. <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridPaging.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.pageSize to get current page size.",
-		"jp": "Event fired after the page size is changed from the page size dropdown. <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridPaging.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.pageSize to get current page size."
+		"en": "Event fired after the page size is changed from the page size dropdown. <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridPaging.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.pageSize to get current page size.",
+		"jp": "Event fired after the page size is changed from the page size dropdown. <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridPaging.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.pageSize to get current page size."
 	}
     },
     "pageSizeChanging": {
@@ -115,8 +115,8 @@
         }
       ],
       "description": {
-		"en": "Event fired when the page size is about to be changed from the page size dropdown.<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel page size changing.&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridPaging.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.currentPageSize to get current page size.<br>&nbsp;&nbsp;&nbsp;Use ui.newPageSize to get new page size.",
-		"jp": "Event fired when the page size is about to be changed from the page size dropdown.<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel page size changing.&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridPaging.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.currentPageSize to get current page size.<br>&nbsp;&nbsp;&nbsp;Use ui.newPageSize to get new page size."
+		"en": "Event fired when the page size is about to be changed from the page size dropdown.<br>   Return false in order to cancel page size changing.   <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridPaging.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.currentPageSize to get current page size.<br>   Use ui.newPageSize to get new page size.",
+		"jp": "Event fired when the page size is about to be changed from the page size dropdown.<br>   Return false in order to cancel page size changing.   <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridPaging.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.currentPageSize to get current page size.<br>   Use ui.newPageSize to get new page size."
 	}
     }
   },

@@ -20,8 +20,8 @@
         }
       ],
       "description": {
-		"en": "event fired when button Apply in column chooser is clicked<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridHiding widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object.<br>&nbsp;&nbsp;&nbsp;Use ui.columnsToShow to get array of columns identifiers which should be shown<br>&nbsp;&nbsp;&nbsp;Use ui.columnsToHide to get array of columns identifiers which should be hidden",
-		"jp": "event fired when button Apply in column chooser is clicked<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridHiding widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object.<br>&nbsp;&nbsp;&nbsp;Use ui.columnsToShow to get array of columns identifiers which should be shown<br>&nbsp;&nbsp;&nbsp;Use ui.columnsToHide to get array of columns identifiers which should be hidden"
+		"en": "event fired when button Apply in column chooser is clicked<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridHiding widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object.<br>   Use ui.columnsToShow to get array of columns identifiers which should be shown<br>   Use ui.columnsToHide to get array of columns identifiers which should be hidden",
+		"jp": "event fired when button Apply in column chooser is clicked<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridHiding widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object.<br>   Use ui.columnsToShow to get array of columns identifiers which should be shown<br>   Use ui.columnsToHide to get array of columns identifiers which should be hidden"
 	}
     },
     "columnChooserButtonResetClick": {
@@ -39,8 +39,8 @@
         }
       ],
       "description": {
-		"en": "event fired when button Reset in column chooser is clicked<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridHiding widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object.",
-		"jp": "event fired when button Reset in column chooser is clicked<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridHiding widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object."
+		"en": "event fired when button Reset in column chooser is clicked<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridHiding widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object.",
+		"jp": "event fired when button Reset in column chooser is clicked<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridHiding widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object."
 	}
     },
     "columnChooserClosed": {
@@ -58,8 +58,8 @@
         }
       ],
       "description": {
-		"en": "event fired after the column chooser has been closed.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridHiding widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object.",
-		"jp": "event fired after the column chooser has been closed.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridHiding widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object."
+		"en": "event fired after the column chooser has been closed.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridHiding widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object.",
+		"jp": "event fired after the column chooser has been closed.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridHiding widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object."
 	}
     },
     "columnChooserClosing": {
@@ -77,8 +77,8 @@
         }
       ],
       "description": {
-		"en": "event fired before the column chooser is closed.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridHiding widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object.",
-		"jp": "event fired before the column chooser is closed.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridHiding widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object."
+		"en": "event fired before the column chooser is closed.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridHiding widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object.",
+		"jp": "event fired before the column chooser is closed.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridHiding widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object."
 	}
     },
     "columnChooserContentsRendered": {
@@ -96,8 +96,8 @@
         }
       ],
       "description": {
-		"en": "event fired after the contents of the column chooser are rendered.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridHiding widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object.",
-		"jp": "event fired after the contents of the column chooser are rendered.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridHiding widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object."
+		"en": "event fired after the contents of the column chooser are rendered.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridHiding widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object.",
+		"jp": "event fired after the contents of the column chooser are rendered.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridHiding widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object."
 	}
     },
     "columnChooserContentsRendering": {
@@ -115,8 +115,8 @@
         }
       ],
       "description": {
-		"en": "event fired before the contents of the column chooser are rendered.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridHiding widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object.",
-		"jp": "event fired before the contents of the column chooser are rendered.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridHiding widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object."
+		"en": "event fired before the contents of the column chooser are rendered.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridHiding widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object.",
+		"jp": "event fired before the contents of the column chooser are rendered.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridHiding widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object."
 	}
     },
     "columnChooserMoving": {
@@ -134,8 +134,8 @@
         }
       ],
       "description": {
-		"en": "event fired every time the column chooser changes its position.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridHiding widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object.<br>&nbsp;&nbsp;&nbsp;Use ui.originalPosition to get the original position of the column chooser div as { top, left } object, relative to the page.<br>&nbsp;&nbsp;&nbsp;Use ui.position to get the current position of the column chooser div as { top, left } object, relative to the page.",
-		"jp": "event fired every time the column chooser changes its position.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridHiding widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object.<br>&nbsp;&nbsp;&nbsp;Use ui.originalPosition to get the original position of the column chooser div as { top, left } object, relative to the page.<br>&nbsp;&nbsp;&nbsp;Use ui.position to get the current position of the column chooser div as { top, left } object, relative to the page."
+		"en": "event fired every time the column chooser changes its position.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridHiding widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object.<br>   Use ui.originalPosition to get the original position of the column chooser div as { top, left } object, relative to the page.<br>   Use ui.position to get the current position of the column chooser div as { top, left } object, relative to the page.",
+		"jp": "event fired every time the column chooser changes its position.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridHiding widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object.<br>   Use ui.originalPosition to get the original position of the column chooser div as { top, left } object, relative to the page.<br>   Use ui.position to get the current position of the column chooser div as { top, left } object, relative to the page."
 	}
     },
     "columnChooserOpened": {
@@ -153,8 +153,8 @@
         }
       ],
       "description": {
-		"en": "event fired after the column chooser is already opened.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridHiding widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object.",
-		"jp": "event fired after the column chooser is already opened.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridHiding widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object."
+		"en": "event fired after the column chooser is already opened.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridHiding widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object.",
+		"jp": "event fired after the column chooser is already opened.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridHiding widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object."
 	}
     },
     "columnChooserOpening": {
@@ -172,8 +172,8 @@
         }
       ],
       "description": {
-		"en": "event fired before the column chooser is opened.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridHiding widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object.",
-		"jp": "event fired before the column chooser is opened.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridHiding widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object."
+		"en": "event fired before the column chooser is opened.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridHiding widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object.",
+		"jp": "event fired before the column chooser is opened.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridHiding widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object."
 	}
     },
     "columnHidden": {
@@ -191,8 +191,8 @@
         }
       ],
       "description": {
-		"en": "event fired after the hiding has been executed and results are rendered.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridHiding widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.columnIndex to get the hidden column index. Has a value only if the column's key is a number.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get the hidden column key. Has a value only if the column's key is a string.",
-		"jp": "event fired after the hiding has been executed and results are rendered.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridHiding widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.columnIndex to get the hidden column index. Has a value only if the column's key is a number.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get the hidden column key. Has a value only if the column's key is a string."
+		"en": "event fired after the hiding has been executed and results are rendered.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridHiding widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnIndex to get the hidden column index. Has a value only if the column's key is a number.<br>   Use ui.columnKey to get the hidden column key. Has a value only if the column's key is a string.",
+		"jp": "event fired after the hiding has been executed and results are rendered.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridHiding widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnIndex to get the hidden column index. Has a value only if the column's key is a number.<br>   Use ui.columnKey to get the hidden column key. Has a value only if the column's key is a string."
 	}
     },
     "columnHiding": {
@@ -210,8 +210,8 @@
         }
       ],
       "description": {
-		"en": "event fired before a hiding operation is executed.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridHiding widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.columnIndex to get the hidden column index. Has a value only if the column's key is a number.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get the hidden column key. Has a value only if the column's key is a string.",
-		"jp": "event fired before a hiding operation is executed.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridHiding widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.columnIndex to get the hidden column index. Has a value only if the column's key is a number.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get the hidden column key. Has a value only if the column's key is a string."
+		"en": "event fired before a hiding operation is executed.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridHiding widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnIndex to get the hidden column index. Has a value only if the column's key is a number.<br>   Use ui.columnKey to get the hidden column key. Has a value only if the column's key is a string.",
+		"jp": "event fired before a hiding operation is executed.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridHiding widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnIndex to get the hidden column index. Has a value only if the column's key is a number.<br>   Use ui.columnKey to get the hidden column key. Has a value only if the column's key is a string."
 	}
     },
     "columnShowing": {
@@ -229,8 +229,8 @@
         }
       ],
       "description": {
-		"en": "event fired before a showing operation is executed.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridHiding widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.columnIndex to get the shown column index.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get the shown column key.",
-		"jp": "event fired before a showing operation is executed.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridHiding widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.columnIndex to get the shown column index.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get the shown column key."
+		"en": "event fired before a showing operation is executed.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridHiding widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnIndex to get the shown column index.<br>   Use ui.columnKey to get the shown column key.",
+		"jp": "event fired before a showing operation is executed.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridHiding widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnIndex to get the shown column index.<br>   Use ui.columnKey to get the shown column key."
 	}
     },
     "columnShown": {
@@ -248,8 +248,8 @@
         }
       ],
       "description": {
-		"en": "event fired after the showing has been executed and results are rendered.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridHiding widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.columnIndex to get the shown column index.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get the shown column key.",
-		"jp": "event fired after the showing has been executed and results are rendered.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridHiding widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.columnIndex to get the shown column index.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get the shown column key."
+		"en": "event fired after the showing has been executed and results are rendered.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridHiding widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnIndex to get the shown column index.<br>   Use ui.columnKey to get the shown column key.",
+		"jp": "event fired after the showing has been executed and results are rendered.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridHiding widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnIndex to get the shown column index.<br>   Use ui.columnKey to get the shown column key."
 	}
     },
     "multiColumnHiding": {
@@ -267,8 +267,8 @@
         }
       ],
       "description": {
-		"en": "event fired before a hiding operation is executed.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridHiding widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKeys to get array of the hidden column keys.",
-		"jp": "event fired before a hiding operation is executed.<br>&nbsp;&nbsp;&nbsp;The handler function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get the reference to the igGridHiding widget.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get the reference to the igGrid widget.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKeys to get array of the hidden column keys."
+		"en": "event fired before a hiding operation is executed.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridHiding widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnKeys to get array of the hidden column keys.",
+		"jp": "event fired before a hiding operation is executed.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridHiding widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnKeys to get array of the hidden column keys."
 	}
     }
   },

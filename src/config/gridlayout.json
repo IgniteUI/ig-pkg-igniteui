@@ -57,8 +57,8 @@
         }
       ],
       "description": {
-		"en": "Event fired after an item has been rendered in the container<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to the igLayoutManager.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.itemData to get a reference of item's settings, such as colspan ,rowspan, etc. <br>&nbsp;&nbsp;&nbsp;&nbsp;use ui.index to get a reference of the item's index, if the layout is flow or vertical",
-		"jp": "Event fired after an item has been rendered in the container<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to the igLayoutManager.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.itemData to get a reference of item's settings, such as colspan ,rowspan, etc. <br>&nbsp;&nbsp;&nbsp;&nbsp;use ui.index to get a reference of the item's index, if the layout is flow or vertical"
+		"en": "Event fired after an item has been rendered in the container<br>    Function takes arguments evt and ui.<br>    Use ui.owner to get reference to the igLayoutManager.<br>    Use ui.itemData to get a reference of item's settings, such as colspan ,rowspan, etc. <br>    use ui.index to get a reference of the item's index, if the layout is flow or vertical",
+		"jp": "Event fired after an item has been rendered in the container<br>    Function takes arguments evt and ui.<br>    Use ui.owner to get reference to the igLayoutManager.<br>    Use ui.itemData to get a reference of item's settings, such as colspan ,rowspan, etc. <br>    use ui.index to get a reference of the item's index, if the layout is flow or vertical"
 	}
     },
     "itemRendering": {
@@ -76,8 +76,8 @@
         }
       ],
       "description": {
-		"en": "Event fired before an item is rendered in the container<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to the igLayoutManager.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.itemData to get a reference of item's settings, such as colspan ,rowspan, etc. <br>&nbsp;&nbsp;&nbsp;&nbsp;use ui.index to get a reference of the item's index, if the layout is flow or vertical",
-		"jp": "Event fired before an item is rendered in the container<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to the igLayoutManager.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.itemData to get a reference of item's settings, such as colspan ,rowspan, etc. <br>&nbsp;&nbsp;&nbsp;&nbsp;use ui.index to get a reference of the item's index, if the layout is flow or vertical"
+		"en": "Event fired before an item is rendered in the container<br>    Function takes arguments evt and ui.<br>    Use ui.owner to get reference to the igLayoutManager.<br>    Use ui.itemData to get a reference of item's settings, such as colspan ,rowspan, etc. <br>    use ui.index to get a reference of the item's index, if the layout is flow or vertical",
+		"jp": "Event fired before an item is rendered in the container<br>    Function takes arguments evt and ui.<br>    Use ui.owner to get reference to the igLayoutManager.<br>    Use ui.itemData to get a reference of item's settings, such as colspan ,rowspan, etc. <br>    use ui.index to get a reference of the item's index, if the layout is flow or vertical"
 	}
     },
     "rendered": {
@@ -95,8 +95,8 @@
         }
       ],
       "description": {
-		"en": "Event fired after all items are rendered.<br>                Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to the igLayoutManager.",
-		"jp": "Event fired after all items are rendered.<br>                Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to the igLayoutManager."
+		"en": "Event fired after all items are rendered.<br>                Function takes arguments evt and ui.<br>    Use ui.owner to get reference to the igLayoutManager.",
+		"jp": "Event fired after all items are rendered.<br>                Function takes arguments evt and ui.<br>    Use ui.owner to get reference to the igLayoutManager."
 	}
     }
   },
@@ -189,8 +189,8 @@
       "type": "array",
       "defaultValue": null,
       "description": {
-		"en": "an array of item descriptions <br>&nbsp;&nbsp;&nbsp;&nbsp;this assumes the container is empty, and every item<br>&nbsp;&nbsp;&nbsp;&nbsp;is described by rowspan,colspan, etc. - otherwise values of<br>&nbsp;&nbsp;&nbsp;&nbsp;1 are assumed<br>&nbsp;&nbsp;&nbsp;&nbsp;items can have various properties some of which may not be applicable<br>&nbsp;&nbsp;&nbsp;&nbsp;depending on the layoutMode.<br>&nbsp;&nbsp;&nbsp;&nbsp;for example rowSpan/colSpan/colIndex/rowIndex are only applicable to gridlayout",
-		"jp": "an array of item descriptions <br>&nbsp;&nbsp;&nbsp;&nbsp;this assumes the container is empty, and every item<br>&nbsp;&nbsp;&nbsp;&nbsp;is described by rowspan,colspan, etc. - otherwise values of<br>&nbsp;&nbsp;&nbsp;&nbsp;1 are assumed<br>&nbsp;&nbsp;&nbsp;&nbsp;items can have various properties some of which may not be applicable<br>&nbsp;&nbsp;&nbsp;&nbsp;depending on the layoutMode.<br>&nbsp;&nbsp;&nbsp;&nbsp;for example rowSpan/colSpan/colIndex/rowIndex are only applicable to gridlayout"
+		"en": "an array of item descriptions <br>    this assumes the container is empty, and every item<br>    is described by rowspan,colspan, etc. - otherwise values of<br>    1 are assumed<br>    items can have various properties some of which may not be applicable<br>    depending on the layoutMode.<br>    for example rowSpan/colSpan/colIndex/rowIndex are only applicable to gridlayout",
+		"jp": "an array of item descriptions <br>    this assumes the container is empty, and every item<br>    is described by rowspan,colspan, etc. - otherwise values of<br>    1 are assumed<br>    items can have various properties some of which may not be applicable<br>    depending on the layoutMode.<br>    for example rowSpan/colSpan/colIndex/rowIndex are only applicable to gridlayout"
 	},
       "schema": {
         "width": {

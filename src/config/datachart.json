@@ -19,8 +19,8 @@
         }
       ],
       "description": {
-		"en": "Event fired to allow you to override the style of markers for the items in a category or financial series. Only fires if you set allowCustomCategoryMarkerStyle to true for a series.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.startIndex to get the start index for the current items.<br>&nbsp;&nbsp;&nbsp;Use ui.endIndex to get the end index for the current items.<br>&nbsp;&nbsp;&nbsp;Use ui.hasDateRange to tell if you should use the startDate and endDate to know the current items instead of startIndex/endIndex.<br>&nbsp;&nbsp;&nbsp;Use ui.startDate if ui.hasDateRange is true.<br>&nbsp;&nbsp;&nbsp;Use ui.endDate if ui.hasDateRange is true.<br>&nbsp;&nbsp;&nbsp;Use ui.getItems to get all the items associated with the event (only if necessary).<br>&nbsp;&nbsp;&nbsp;Use ui.fill to get or set the fill to use for the current item.<br>&nbsp;&nbsp;&nbsp;Use ui.stroke to get or set the stroke to use for the current item.<br>&nbsp;&nbsp;&nbsp;Use ui.opacity to get or set the opacity to use for the current item.<br>&nbsp;&nbsp;&nbsp;Use ui.highlightingHandled to set if the default highlighting behavior should not run, given that you are handling it in this event.<br>&nbsp;&nbsp;&nbsp;Use ui.maxAllSeriesHighlightingProgress to get the maximum highlighted progress across all series.<br>&nbsp;&nbsp;&nbsp;Use ui.sumAllSeriesHighlightingProgress to get the sum of highlighting progtess across all series.<br>&nbsp;&nbsp;&nbsp;Use ui.highlightingInfo.progress to tell what the highlighting progress is for the current item, if highlightingInfo is not null.<br>&nbsp;&nbsp;&nbsp;Use ui.highlightingInfo.state to tell whether the current item is currently highlighting in or out, is static, if highlightingInfo is not null.",
-		"jp": "Event fired to allow you to override the style of markers for the items in a category or financial series. Only fires if you set allowCustomCategoryMarkerStyle to true for a series.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.startIndex to get the start index for the current items.<br>&nbsp;&nbsp;&nbsp;Use ui.endIndex to get the end index for the current items.<br>&nbsp;&nbsp;&nbsp;Use ui.hasDateRange to tell if you should use the startDate and endDate to know the current items instead of startIndex/endIndex.<br>&nbsp;&nbsp;&nbsp;Use ui.startDate if ui.hasDateRange is true.<br>&nbsp;&nbsp;&nbsp;Use ui.endDate if ui.hasDateRange is true.<br>&nbsp;&nbsp;&nbsp;Use ui.getItems to get all the items associated with the event (only if necessary).<br>&nbsp;&nbsp;&nbsp;Use ui.fill to get or set the fill to use for the current item.<br>&nbsp;&nbsp;&nbsp;Use ui.stroke to get or set the stroke to use for the current item.<br>&nbsp;&nbsp;&nbsp;Use ui.opacity to get or set the opacity to use for the current item.<br>&nbsp;&nbsp;&nbsp;Use ui.highlightingHandled to set if the default highlighting behavior should not run, given that you are handling it in this event.<br>&nbsp;&nbsp;&nbsp;Use ui.maxAllSeriesHighlightingProgress to get the maximum highlighted progress across all series.<br>&nbsp;&nbsp;&nbsp;Use ui.sumAllSeriesHighlightingProgress to get the sum of highlighting progtess across all series.<br>&nbsp;&nbsp;&nbsp;Use ui.highlightingInfo.progress to tell what the highlighting progress is for the current item, if highlightingInfo is not null.<br>&nbsp;&nbsp;&nbsp;Use ui.highlightingInfo.state to tell whether the current item is currently highlighting in or out, is static, if highlightingInfo is not null."
+		"en": "Event fired to allow you to override the style of markers for the items in a category or financial series. Only fires if you set allowCustomCategoryMarkerStyle to true for a series.<br>   Function takes arguments evt and ui.<br>   Use ui.chart to get reference to chart object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.startIndex to get the start index for the current items.<br>   Use ui.endIndex to get the end index for the current items.<br>   Use ui.hasDateRange to tell if you should use the startDate and endDate to know the current items instead of startIndex/endIndex.<br>   Use ui.startDate if ui.hasDateRange is true.<br>   Use ui.endDate if ui.hasDateRange is true.<br>   Use ui.getItems to get all the items associated with the event (only if necessary).<br>   Use ui.fill to get or set the fill to use for the current item.<br>   Use ui.stroke to get or set the stroke to use for the current item.<br>   Use ui.opacity to get or set the opacity to use for the current item.<br>   Use ui.highlightingHandled to set if the default highlighting behavior should not run, given that you are handling it in this event.<br>   Use ui.maxAllSeriesHighlightingProgress to get the maximum highlighted progress across all series.<br>   Use ui.sumAllSeriesHighlightingProgress to get the sum of highlighting progtess across all series.<br>   Use ui.highlightingInfo.progress to tell what the highlighting progress is for the current item, if highlightingInfo is not null.<br>   Use ui.highlightingInfo.state to tell whether the current item is currently highlighting in or out, is static, if highlightingInfo is not null.",
+		"jp": "Event fired to allow you to override the style of markers for the items in a category or financial series. Only fires if you set allowCustomCategoryMarkerStyle to true for a series.<br>   Function takes arguments evt and ui.<br>   Use ui.chart to get reference to chart object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.startIndex to get the start index for the current items.<br>   Use ui.endIndex to get the end index for the current items.<br>   Use ui.hasDateRange to tell if you should use the startDate and endDate to know the current items instead of startIndex/endIndex.<br>   Use ui.startDate if ui.hasDateRange is true.<br>   Use ui.endDate if ui.hasDateRange is true.<br>   Use ui.getItems to get all the items associated with the event (only if necessary).<br>   Use ui.fill to get or set the fill to use for the current item.<br>   Use ui.stroke to get or set the stroke to use for the current item.<br>   Use ui.opacity to get or set the opacity to use for the current item.<br>   Use ui.highlightingHandled to set if the default highlighting behavior should not run, given that you are handling it in this event.<br>   Use ui.maxAllSeriesHighlightingProgress to get the maximum highlighted progress across all series.<br>   Use ui.sumAllSeriesHighlightingProgress to get the sum of highlighting progtess across all series.<br>   Use ui.highlightingInfo.progress to tell what the highlighting progress is for the current item, if highlightingInfo is not null.<br>   Use ui.highlightingInfo.state to tell whether the current item is currently highlighting in or out, is static, if highlightingInfo is not null."
 	}
     },
     "assigningCategoryStyle": {
@@ -38,8 +38,8 @@
         }
       ],
       "description": {
-		"en": "Event fired to allow you to override the style of items in a category or financial series. Only fires if you set allowCustomCategoryStyle to true for a series.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.startIndex to get the start index for the current items.<br>&nbsp;&nbsp;&nbsp;Use ui.endIndex to get the end index for the current items.<br>&nbsp;&nbsp;&nbsp;Use ui.hasDateRange to tell if you should use the startDate and endDate to know the current items instead of startIndex/endIndex.<br>&nbsp;&nbsp;&nbsp;Use ui.startDate if ui.hasDateRange is true.<br>&nbsp;&nbsp;&nbsp;Use ui.endDate if ui.hasDateRange is true.<br>&nbsp;&nbsp;&nbsp;Use ui.getItems to get all the items associated with the event (only if necessary).<br>&nbsp;&nbsp;&nbsp;Use ui.fill to get or set the fill to use for the current item.<br>&nbsp;&nbsp;&nbsp;Use ui.stroke to get or set the stroke to use for the current item.<br>&nbsp;&nbsp;&nbsp;Use ui.opacity to get or set the opacity to use for the current item.<br>&nbsp;&nbsp;&nbsp;Use ui.highlightingHandled to set if the default highlighting behavior should not run, given that you are handling it in this event.<br>&nbsp;&nbsp;&nbsp;Use ui.maxAllSeriesHighlightingProgress to get the maximum highlighted progress across all series.<br>&nbsp;&nbsp;&nbsp;Use ui.sumAllSeriesHighlightingProgress to get the sum of highlighting progtess across all series.<br>&nbsp;&nbsp;&nbsp;Use ui.highlightingInfo.progress to tell what the highlighting progress is for the current item, if highlightingInfo is not null.<br>&nbsp;&nbsp;&nbsp;Use ui.highlightingInfo.state to tell whether the current item is currently highlighting in or out, is static, if highlightingInfo is not null.",
-		"jp": "Event fired to allow you to override the style of items in a category or financial series. Only fires if you set allowCustomCategoryStyle to true for a series.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.startIndex to get the start index for the current items.<br>&nbsp;&nbsp;&nbsp;Use ui.endIndex to get the end index for the current items.<br>&nbsp;&nbsp;&nbsp;Use ui.hasDateRange to tell if you should use the startDate and endDate to know the current items instead of startIndex/endIndex.<br>&nbsp;&nbsp;&nbsp;Use ui.startDate if ui.hasDateRange is true.<br>&nbsp;&nbsp;&nbsp;Use ui.endDate if ui.hasDateRange is true.<br>&nbsp;&nbsp;&nbsp;Use ui.getItems to get all the items associated with the event (only if necessary).<br>&nbsp;&nbsp;&nbsp;Use ui.fill to get or set the fill to use for the current item.<br>&nbsp;&nbsp;&nbsp;Use ui.stroke to get or set the stroke to use for the current item.<br>&nbsp;&nbsp;&nbsp;Use ui.opacity to get or set the opacity to use for the current item.<br>&nbsp;&nbsp;&nbsp;Use ui.highlightingHandled to set if the default highlighting behavior should not run, given that you are handling it in this event.<br>&nbsp;&nbsp;&nbsp;Use ui.maxAllSeriesHighlightingProgress to get the maximum highlighted progress across all series.<br>&nbsp;&nbsp;&nbsp;Use ui.sumAllSeriesHighlightingProgress to get the sum of highlighting progtess across all series.<br>&nbsp;&nbsp;&nbsp;Use ui.highlightingInfo.progress to tell what the highlighting progress is for the current item, if highlightingInfo is not null.<br>&nbsp;&nbsp;&nbsp;Use ui.highlightingInfo.state to tell whether the current item is currently highlighting in or out, is static, if highlightingInfo is not null."
+		"en": "Event fired to allow you to override the style of items in a category or financial series. Only fires if you set allowCustomCategoryStyle to true for a series.<br>   Function takes arguments evt and ui.<br>   Use ui.chart to get reference to chart object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.startIndex to get the start index for the current items.<br>   Use ui.endIndex to get the end index for the current items.<br>   Use ui.hasDateRange to tell if you should use the startDate and endDate to know the current items instead of startIndex/endIndex.<br>   Use ui.startDate if ui.hasDateRange is true.<br>   Use ui.endDate if ui.hasDateRange is true.<br>   Use ui.getItems to get all the items associated with the event (only if necessary).<br>   Use ui.fill to get or set the fill to use for the current item.<br>   Use ui.stroke to get or set the stroke to use for the current item.<br>   Use ui.opacity to get or set the opacity to use for the current item.<br>   Use ui.highlightingHandled to set if the default highlighting behavior should not run, given that you are handling it in this event.<br>   Use ui.maxAllSeriesHighlightingProgress to get the maximum highlighted progress across all series.<br>   Use ui.sumAllSeriesHighlightingProgress to get the sum of highlighting progtess across all series.<br>   Use ui.highlightingInfo.progress to tell what the highlighting progress is for the current item, if highlightingInfo is not null.<br>   Use ui.highlightingInfo.state to tell whether the current item is currently highlighting in or out, is static, if highlightingInfo is not null.",
+		"jp": "Event fired to allow you to override the style of items in a category or financial series. Only fires if you set allowCustomCategoryStyle to true for a series.<br>   Function takes arguments evt and ui.<br>   Use ui.chart to get reference to chart object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.startIndex to get the start index for the current items.<br>   Use ui.endIndex to get the end index for the current items.<br>   Use ui.hasDateRange to tell if you should use the startDate and endDate to know the current items instead of startIndex/endIndex.<br>   Use ui.startDate if ui.hasDateRange is true.<br>   Use ui.endDate if ui.hasDateRange is true.<br>   Use ui.getItems to get all the items associated with the event (only if necessary).<br>   Use ui.fill to get or set the fill to use for the current item.<br>   Use ui.stroke to get or set the stroke to use for the current item.<br>   Use ui.opacity to get or set the opacity to use for the current item.<br>   Use ui.highlightingHandled to set if the default highlighting behavior should not run, given that you are handling it in this event.<br>   Use ui.maxAllSeriesHighlightingProgress to get the maximum highlighted progress across all series.<br>   Use ui.sumAllSeriesHighlightingProgress to get the sum of highlighting progtess across all series.<br>   Use ui.highlightingInfo.progress to tell what the highlighting progress is for the current item, if highlightingInfo is not null.<br>   Use ui.highlightingInfo.state to tell whether the current item is currently highlighting in or out, is static, if highlightingInfo is not null."
 	}
     },
     "axisRangeChanged": {
@@ -57,8 +57,8 @@
         }
       ],
       "description": {
-		"en": "Event fired when the range of and axis on the chart changes.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.axis to get reference to current chart axis object.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.newMaximumValue to get new maximum value.<br>&nbsp;&nbsp;&nbsp;Use ui.newMinimumValue to get new minimum value.<br>&nbsp;&nbsp;&nbsp;Use ui.oldMaximumValue to get old maximum value.<br>&nbsp;&nbsp;&nbsp;Use ui.oldMinimumValue to get old minimum value.",
-		"jp": "Event fired when the range of and axis on the chart changes.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.axis to get reference to current chart axis object.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.newMaximumValue to get new maximum value.<br>&nbsp;&nbsp;&nbsp;Use ui.newMinimumValue to get new minimum value.<br>&nbsp;&nbsp;&nbsp;Use ui.oldMaximumValue to get old maximum value.<br>&nbsp;&nbsp;&nbsp;Use ui.oldMinimumValue to get old minimum value."
+		"en": "Event fired when the range of and axis on the chart changes.<br>   Function takes arguments evt and ui.<br>   Use ui.axis to get reference to current chart axis object.<br>   Use ui.chart to get reference to chart object.<br>   Use ui.newMaximumValue to get new maximum value.<br>   Use ui.newMinimumValue to get new minimum value.<br>   Use ui.oldMaximumValue to get old maximum value.<br>   Use ui.oldMinimumValue to get old minimum value.",
+		"jp": "Event fired when the range of and axis on the chart changes.<br>   Function takes arguments evt and ui.<br>   Use ui.axis to get reference to current chart axis object.<br>   Use ui.chart to get reference to chart object.<br>   Use ui.newMaximumValue to get new maximum value.<br>   Use ui.newMinimumValue to get new minimum value.<br>   Use ui.oldMaximumValue to get old maximum value.<br>   Use ui.oldMinimumValue to get old minimum value."
 	}
     },
     "browserNotSupported": {
@@ -95,8 +95,8 @@
         }
       ],
       "description": {
-		"en": "Occurs just after the current Chart's grid area rectangle is changed.<br>&nbsp;&nbsp;&nbsp;The grid area may change as the result of the Chart being resized, or<br>&nbsp;&nbsp;&nbsp;of an axis being added or changing size, possibly in another Chart.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.newHeight to get new height value.<br>&nbsp;&nbsp;&nbsp;Use ui.newLeft to get new left value.<br>&nbsp;&nbsp;&nbsp;Use ui.newTop to get new top value.<br>&nbsp;&nbsp;&nbsp;Use ui.newWidth to get new top value.<br>&nbsp;&nbsp;&nbsp;Use ui.oldHeight to get old height value.<br>&nbsp;&nbsp;&nbsp;Use ui.oldLeft to get old left value.<br>&nbsp;&nbsp;&nbsp;Use ui.oldTop to get old top value.<br>&nbsp;&nbsp;&nbsp;Use ui.oldWidth to get old top value.",
-		"jp": "Occurs just after the current Chart's grid area rectangle is changed.<br>&nbsp;&nbsp;&nbsp;The grid area may change as the result of the Chart being resized, or<br>&nbsp;&nbsp;&nbsp;of an axis being added or changing size, possibly in another Chart.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.newHeight to get new height value.<br>&nbsp;&nbsp;&nbsp;Use ui.newLeft to get new left value.<br>&nbsp;&nbsp;&nbsp;Use ui.newTop to get new top value.<br>&nbsp;&nbsp;&nbsp;Use ui.newWidth to get new top value.<br>&nbsp;&nbsp;&nbsp;Use ui.oldHeight to get old height value.<br>&nbsp;&nbsp;&nbsp;Use ui.oldLeft to get old left value.<br>&nbsp;&nbsp;&nbsp;Use ui.oldTop to get old top value.<br>&nbsp;&nbsp;&nbsp;Use ui.oldWidth to get old top value."
+		"en": "Occurs just after the current Chart's grid area rectangle is changed.<br>   The grid area may change as the result of the Chart being resized, or<br>   of an axis being added or changing size, possibly in another Chart.<br>   Function takes arguments evt and ui.<br>   Use ui.chart to get reference to chart object.<br>   Use ui.newHeight to get new height value.<br>   Use ui.newLeft to get new left value.<br>   Use ui.newTop to get new top value.<br>   Use ui.newWidth to get new top value.<br>   Use ui.oldHeight to get old height value.<br>   Use ui.oldLeft to get old left value.<br>   Use ui.oldTop to get old top value.<br>   Use ui.oldWidth to get old top value.",
+		"jp": "Occurs just after the current Chart's grid area rectangle is changed.<br>   The grid area may change as the result of the Chart being resized, or<br>   of an axis being added or changing size, possibly in another Chart.<br>   Function takes arguments evt and ui.<br>   Use ui.chart to get reference to chart object.<br>   Use ui.newHeight to get new height value.<br>   Use ui.newLeft to get new left value.<br>   Use ui.newTop to get new top value.<br>   Use ui.newWidth to get new top value.<br>   Use ui.oldHeight to get old height value.<br>   Use ui.oldLeft to get old left value.<br>   Use ui.oldTop to get old top value.<br>   Use ui.oldWidth to get old top value."
 	}
     },
     "progressiveLoadStatusChanged": {
@@ -114,8 +114,8 @@
         }
       ],
       "description": {
-		"en": "Event fired when the progressive loading state of the series has changed.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.currentStatus to get current status.",
-		"jp": "Event fired when the progressive loading state of the series has changed.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.currentStatus to get current status."
+		"en": "Event fired when the progressive loading state of the series has changed.<br>   Function takes arguments evt and ui.<br>   Use ui.chart to get reference to chart object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.currentStatus to get current status.",
+		"jp": "Event fired when the progressive loading state of the series has changed.<br>   Function takes arguments evt and ui.<br>   Use ui.chart to get reference to chart object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.currentStatus to get current status."
 	}
     },
     "refreshCompleted": {
@@ -133,8 +133,8 @@
         }
       ],
       "description": {
-		"en": "Raised when the chart's processing for an update has completed.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.",
-		"jp": "Raised when the chart's processing for an update has completed.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object."
+		"en": "Raised when the chart's processing for an update has completed.<br>   Function takes arguments evt and ui.<br>   Use ui.chart to get reference to chart object.",
+		"jp": "Raised when the chart's processing for an update has completed.<br>   Function takes arguments evt and ui.<br>   Use ui.chart to get reference to chart object."
 	}
     },
     "seriesCursorMouseMove": {
@@ -152,8 +152,8 @@
         }
       ],
       "description": {
-		"en": "Occurs when the cursors are moved over a series in this chart.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush.<br>&nbsp;&nbsp;&nbsp;Use ui.positionX to get mouse X position.<br>&nbsp;&nbsp;&nbsp;Use ui.positionY to get mouse Y position.",
-		"jp": "Occurs when the cursors are moved over a series in this chart.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush.<br>&nbsp;&nbsp;&nbsp;Use ui.positionX to get mouse X position.<br>&nbsp;&nbsp;&nbsp;Use ui.positionY to get mouse Y position."
+		"en": "Occurs when the cursors are moved over a series in this chart.<br>   Function takes arguments evt and ui.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.chart to get reference to chart object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush.<br>   Use ui.positionX to get mouse X position.<br>   Use ui.positionY to get mouse Y position.",
+		"jp": "Occurs when the cursors are moved over a series in this chart.<br>   Function takes arguments evt and ui.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.chart to get reference to chart object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush.<br>   Use ui.positionX to get mouse X position.<br>   Use ui.positionY to get mouse Y position."
 	}
     },
     "seriesMouseEnter": {
@@ -171,8 +171,8 @@
         }
       ],
       "description": {
-		"en": "Occurs when the left mouse pointer enters an element of this chart.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush.<br>&nbsp;&nbsp;&nbsp;Use ui.positionX to get mouse X position.<br>&nbsp;&nbsp;&nbsp;Use ui.positionY to get mouse Y position.",
-		"jp": "Occurs when the left mouse pointer enters an element of this chart.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush.<br>&nbsp;&nbsp;&nbsp;Use ui.positionX to get mouse X position.<br>&nbsp;&nbsp;&nbsp;Use ui.positionY to get mouse Y position."
+		"en": "Occurs when the left mouse pointer enters an element of this chart.<br>   Function takes arguments evt and ui.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.chart to get reference to chart object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush.<br>   Use ui.positionX to get mouse X position.<br>   Use ui.positionY to get mouse Y position.",
+		"jp": "Occurs when the left mouse pointer enters an element of this chart.<br>   Function takes arguments evt and ui.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.chart to get reference to chart object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush.<br>   Use ui.positionX to get mouse X position.<br>   Use ui.positionY to get mouse Y position."
 	}
     },
     "seriesMouseLeave": {
@@ -190,8 +190,8 @@
         }
       ],
       "description": {
-		"en": "Occurs when the left mouse pointer leaves an element of this chart.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush.<br>&nbsp;&nbsp;&nbsp;Use ui.positionX to get mouse X position.<br>&nbsp;&nbsp;&nbsp;Use ui.positionY to get mouse Y position.",
-		"jp": "Occurs when the left mouse pointer leaves an element of this chart.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush.<br>&nbsp;&nbsp;&nbsp;Use ui.positionX to get mouse X position.<br>&nbsp;&nbsp;&nbsp;Use ui.positionY to get mouse Y position."
+		"en": "Occurs when the left mouse pointer leaves an element of this chart.<br>   Function takes arguments evt and ui.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.chart to get reference to chart object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush.<br>   Use ui.positionX to get mouse X position.<br>   Use ui.positionY to get mouse Y position.",
+		"jp": "Occurs when the left mouse pointer leaves an element of this chart.<br>   Function takes arguments evt and ui.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.chart to get reference to chart object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush.<br>   Use ui.positionX to get mouse X position.<br>   Use ui.positionY to get mouse Y position."
 	}
     },
     "seriesMouseLeftButtonDown": {
@@ -209,8 +209,8 @@
         }
       ],
       "description": {
-		"en": "Occurs when the left mouse button is pressed while the mouse pointer is over an element of this chart.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush.<br>&nbsp;&nbsp;&nbsp;Use ui.positionX to get mouse X position.<br>&nbsp;&nbsp;&nbsp;Use ui.positionY to get mouse Y position.",
-		"jp": "Occurs when the left mouse button is pressed while the mouse pointer is over an element of this chart.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush.<br>&nbsp;&nbsp;&nbsp;Use ui.positionX to get mouse X position.<br>&nbsp;&nbsp;&nbsp;Use ui.positionY to get mouse Y position."
+		"en": "Occurs when the left mouse button is pressed while the mouse pointer is over an element of this chart.<br>   Function takes arguments evt and ui.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.chart to get reference to chart object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush.<br>   Use ui.positionX to get mouse X position.<br>   Use ui.positionY to get mouse Y position.",
+		"jp": "Occurs when the left mouse button is pressed while the mouse pointer is over an element of this chart.<br>   Function takes arguments evt and ui.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.chart to get reference to chart object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush.<br>   Use ui.positionX to get mouse X position.<br>   Use ui.positionY to get mouse Y position."
 	}
     },
     "seriesMouseLeftButtonUp": {
@@ -228,8 +228,8 @@
         }
       ],
       "description": {
-		"en": "Occurs when the left mouse button is released while the mouse pointer is over an element of this chart.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush.<br>&nbsp;&nbsp;&nbsp;Use ui.positionX to get mouse X position.<br>&nbsp;&nbsp;&nbsp;Use ui.positionY to get mouse Y position.",
-		"jp": "Occurs when the left mouse button is released while the mouse pointer is over an element of this chart.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush.<br>&nbsp;&nbsp;&nbsp;Use ui.positionX to get mouse X position.<br>&nbsp;&nbsp;&nbsp;Use ui.positionY to get mouse Y position."
+		"en": "Occurs when the left mouse button is released while the mouse pointer is over an element of this chart.<br>   Function takes arguments evt and ui.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.chart to get reference to chart object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush.<br>   Use ui.positionX to get mouse X position.<br>   Use ui.positionY to get mouse Y position.",
+		"jp": "Occurs when the left mouse button is released while the mouse pointer is over an element of this chart.<br>   Function takes arguments evt and ui.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.chart to get reference to chart object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush.<br>   Use ui.positionX to get mouse X position.<br>   Use ui.positionY to get mouse Y position."
 	}
     },
     "seriesMouseMove": {
@@ -247,8 +247,8 @@
         }
       ],
       "description": {
-		"en": "Occurs when the left mouse pointer moves while over an element of this chart.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush.<br>&nbsp;&nbsp;&nbsp;Use ui.positionX to get mouse X position.<br>&nbsp;&nbsp;&nbsp;Use ui.positionY to get mouse Y position.",
-		"jp": "Occurs when the left mouse pointer moves while over an element of this chart.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush.<br>&nbsp;&nbsp;&nbsp;Use ui.positionX to get mouse X position.<br>&nbsp;&nbsp;&nbsp;Use ui.positionY to get mouse Y position."
+		"en": "Occurs when the left mouse pointer moves while over an element of this chart.<br>   Function takes arguments evt and ui.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.chart to get reference to chart object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush.<br>   Use ui.positionX to get mouse X position.<br>   Use ui.positionY to get mouse Y position.",
+		"jp": "Occurs when the left mouse pointer moves while over an element of this chart.<br>   Function takes arguments evt and ui.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.chart to get reference to chart object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush.<br>   Use ui.positionX to get mouse X position.<br>   Use ui.positionY to get mouse Y position."
 	}
     },
     "tooltipHidden": {
@@ -266,8 +266,8 @@
         }
       ],
       "description": {
-		"en": "event fired after a tooltip is hidden <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush.",
-		"jp": "event fired after a tooltip is hidden <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush."
+		"en": "event fired after a tooltip is hidden <br>   Function takes arguments evt and ui.<br>   Use ui.element to get reference to tooltip DOM element.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.chart to get reference to chart object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush.",
+		"jp": "event fired after a tooltip is hidden <br>   Function takes arguments evt and ui.<br>   Use ui.element to get reference to tooltip DOM element.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.chart to get reference to chart object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush."
 	}
     },
     "tooltipHiding": {
@@ -285,8 +285,8 @@
         }
       ],
       "description": {
-		"en": "event fired when the mouse has left a series and the tooltip is about to hide<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush.",
-		"jp": "event fired when the mouse has left a series and the tooltip is about to hide<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush."
+		"en": "event fired when the mouse has left a series and the tooltip is about to hide<br>   Function takes arguments evt and ui.<br>   Use ui.element to get reference to tooltip DOM element.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.chart to get reference to chart object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush.",
+		"jp": "event fired when the mouse has left a series and the tooltip is about to hide<br>   Function takes arguments evt and ui.<br>   Use ui.element to get reference to tooltip DOM element.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.chart to get reference to chart object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush."
 	}
     },
     "tooltipShowing": {
@@ -304,8 +304,8 @@
         }
       ],
       "description": {
-		"en": "event fired when the mouse has hovered on a series and the tooltip is about to show <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush.",
-		"jp": "event fired when the mouse has hovered on a series and the tooltip is about to show <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush."
+		"en": "event fired when the mouse has hovered on a series and the tooltip is about to show <br>   Function takes arguments evt and ui.<br>   Use ui.element to get reference to tooltip DOM element.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.chart to get reference to chart object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush.",
+		"jp": "event fired when the mouse has hovered on a series and the tooltip is about to show <br>   Function takes arguments evt and ui.<br>   Use ui.element to get reference to tooltip DOM element.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.chart to get reference to chart object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush."
 	}
     },
     "tooltipShown": {
@@ -323,8 +323,8 @@
         }
       ],
       "description": {
-		"en": "event fired after a tooltip is shown<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush.",
-		"jp": "event fired after a tooltip is shown<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current series item object.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.actualItemBrush to get item brush.<br>&nbsp;&nbsp;&nbsp;Use ui.actualSeriesBrush to get series brush."
+		"en": "event fired after a tooltip is shown<br>   Function takes arguments evt and ui.<br>   Use ui.element to get reference to tooltip DOM element.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.chart to get reference to chart object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush.",
+		"jp": "event fired after a tooltip is shown<br>   Function takes arguments evt and ui.<br>   Use ui.element to get reference to tooltip DOM element.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.chart to get reference to chart object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush."
 	}
     },
     "typicalBasedOn": {
@@ -342,8 +342,8 @@
         }
       ],
       "description": {
-		"en": "Handle this event in order to specify which columns the Typical price calculation is based on. <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.count to get the number of positions that should be calculated from the start.<br>&nbsp;&nbsp;&nbsp;Use ui.position to get the beginning position that should be calculated from.<br>&nbsp;&nbsp;&nbsp;Use ui.supportingCalculations to get the supporting calculations to use in the calculation.<br>&nbsp;&nbsp;&nbsp;Use ui.dataSource to get the data to use for the calculation.<br>&nbsp;&nbsp;&nbsp;Use ui.basedOn to specify which columns changing will invalidate the series and cause it to be recalculated.",
-		"jp": "Handle this event in order to specify which columns the Typical price calculation is based on. <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.series to get reference to current series object.<br>&nbsp;&nbsp;&nbsp;Use ui.count to get the number of positions that should be calculated from the start.<br>&nbsp;&nbsp;&nbsp;Use ui.position to get the beginning position that should be calculated from.<br>&nbsp;&nbsp;&nbsp;Use ui.supportingCalculations to get the supporting calculations to use in the calculation.<br>&nbsp;&nbsp;&nbsp;Use ui.dataSource to get the data to use for the calculation.<br>&nbsp;&nbsp;&nbsp;Use ui.basedOn to specify which columns changing will invalidate the series and cause it to be recalculated."
+		"en": "Handle this event in order to specify which columns the Typical price calculation is based on. <br>   Function takes arguments evt and ui.<br>   Use ui.chart to get reference to chart object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.count to get the number of positions that should be calculated from the start.<br>   Use ui.position to get the beginning position that should be calculated from.<br>   Use ui.supportingCalculations to get the supporting calculations to use in the calculation.<br>   Use ui.dataSource to get the data to use for the calculation.<br>   Use ui.basedOn to specify which columns changing will invalidate the series and cause it to be recalculated.",
+		"jp": "Handle this event in order to specify which columns the Typical price calculation is based on. <br>   Function takes arguments evt and ui.<br>   Use ui.chart to get reference to chart object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.count to get the number of positions that should be calculated from the start.<br>   Use ui.position to get the beginning position that should be calculated from.<br>   Use ui.supportingCalculations to get the supporting calculations to use in the calculation.<br>   Use ui.dataSource to get the data to use for the calculation.<br>   Use ui.basedOn to specify which columns changing will invalidate the series and cause it to be recalculated."
 	}
     },
     "windowRectChanged": {
@@ -361,8 +361,8 @@
         }
       ],
       "description": {
-		"en": "Occurs just after the current Chart's window rectangle is changed.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.newHeight to get new height value.<br>&nbsp;&nbsp;&nbsp;Use ui.newLeft to get new left value.<br>&nbsp;&nbsp;&nbsp;Use ui.newTop to get new top value.<br>&nbsp;&nbsp;&nbsp;Use ui.newWidth to get new top value.<br>&nbsp;&nbsp;&nbsp;Use ui.oldHeight to get old height value.<br>&nbsp;&nbsp;&nbsp;Use ui.oldLeft to get old left value.<br>&nbsp;&nbsp;&nbsp;Use ui.oldTop to get old top value.<br>&nbsp;&nbsp;&nbsp;Use ui.oldWidth to get old top value.",
-		"jp": "Occurs just after the current Chart's window rectangle is changed.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.newHeight to get new height value.<br>&nbsp;&nbsp;&nbsp;Use ui.newLeft to get new left value.<br>&nbsp;&nbsp;&nbsp;Use ui.newTop to get new top value.<br>&nbsp;&nbsp;&nbsp;Use ui.newWidth to get new top value.<br>&nbsp;&nbsp;&nbsp;Use ui.oldHeight to get old height value.<br>&nbsp;&nbsp;&nbsp;Use ui.oldLeft to get old left value.<br>&nbsp;&nbsp;&nbsp;Use ui.oldTop to get old top value.<br>&nbsp;&nbsp;&nbsp;Use ui.oldWidth to get old top value."
+		"en": "Occurs just after the current Chart's window rectangle is changed.<br>   Function takes arguments evt and ui.<br>   Use ui.chart to get reference to chart object.<br>   Use ui.newHeight to get new height value.<br>   Use ui.newLeft to get new left value.<br>   Use ui.newTop to get new top value.<br>   Use ui.newWidth to get new top value.<br>   Use ui.oldHeight to get old height value.<br>   Use ui.oldLeft to get old left value.<br>   Use ui.oldTop to get old top value.<br>   Use ui.oldWidth to get old top value.",
+		"jp": "Occurs just after the current Chart's window rectangle is changed.<br>   Function takes arguments evt and ui.<br>   Use ui.chart to get reference to chart object.<br>   Use ui.newHeight to get new height value.<br>   Use ui.newLeft to get new left value.<br>   Use ui.newTop to get new top value.<br>   Use ui.newWidth to get new top value.<br>   Use ui.oldHeight to get old height value.<br>   Use ui.oldLeft to get old left value.<br>   Use ui.oldTop to get old top value.<br>   Use ui.oldWidth to get old top value."
 	}
     }
   },
@@ -1231,8 +1231,8 @@
       "type": "array",
       "defaultValue": null,
       "description": {
-		"en": "Gets or sets the Brushes property.<br>&nbsp;&nbsp;&nbsp;The brushes property defines the palette from which automatically assigned series brushes are selected.<br>&nbsp;&nbsp;&nbsp;The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
-		"jp": "Gets or sets the Brushes property.<br>&nbsp;&nbsp;&nbsp;The brushes property defines the palette from which automatically assigned series brushes are selected.<br>&nbsp;&nbsp;&nbsp;The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
+		"en": "Gets or sets the Brushes property.<br>   The brushes property defines the palette from which automatically assigned series brushes are selected.<br>   The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
+		"jp": "Gets or sets the Brushes property.<br>   The brushes property defines the palette from which automatically assigned series brushes are selected.<br>   The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
 	},
       "arrayMemberType": "string",
 	   "schema": {
@@ -1253,8 +1253,8 @@
       "type": "object",
       "defaultValue": null,
       "description": {
-		"en": "Gets or sets the template to use for circle markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of circle.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure.",
-		"jp": "Gets or sets the template to use for circle markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of circle.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure."
+		"en": "Gets or sets the template to use for circle markers on the chart.<br>   Defines the marker template used for<br>   series with a marker type of circle.<br>   The provided object should have properties called render and optionally measure.",
+		"jp": "Gets or sets the template to use for circle markers on the chart.<br>   Defines the marker template used for<br>   series with a marker type of circle.<br>   The provided object should have properties called render and optionally measure."
 	},
       "schema": {
         "measure": {
@@ -1393,8 +1393,8 @@
       "type": "object",
       "defaultValue": null,
       "description": {
-		"en": "Gets or sets the cross hair point (in world coordinates)<br>&nbsp;&nbsp;&nbsp;Either or both of the crosshair point's X and Y may be set to double.NaN, in which<br>&nbsp;&nbsp;&nbsp;case the relevant crosshair line is hidden.",
-		"jp": "Gets or sets the cross hair point (in world coordinates)<br>&nbsp;&nbsp;&nbsp;Either or both of the crosshair point's X and Y may be set to double.NaN, in which<br>&nbsp;&nbsp;&nbsp;case the relevant crosshair line is hidden."
+		"en": "Gets or sets the cross hair point (in world coordinates)<br>   Either or both of the crosshair point's X and Y may be set to double.NaN, in which<br>   case the relevant crosshair line is hidden.",
+		"jp": "Gets or sets the cross hair point (in world coordinates)<br>   Either or both of the crosshair point's X and Y may be set to double.NaN, in which<br>   case the relevant crosshair line is hidden."
 	},
       "schema": {
         "x": {
@@ -1503,8 +1503,8 @@
       "type": "object",
       "defaultValue": null,
       "description": {
-		"en": "Gets or sets the template to use for diamond markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of diamond.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-		"jp": "Gets or sets the template to use for diamond markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of diamond.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
+		"en": "Gets or sets the template to use for diamond markers on the chart.<br>   Defines the marker template used for<br>   series with a marker type of diamond.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
+		"jp": "Gets or sets the template to use for diamond markers on the chart.<br>   Defines the marker template used for<br>   series with a marker type of diamond.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
 	},
       "schemaRef": "dataChart.circleMarkerTemplate"
     },
@@ -1596,8 +1596,8 @@
       "type": "object",
       "defaultValue": null,
       "description": {
-		"en": "Gets or sets the template to use for hexagon markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of hexagon.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-		"jp": "Gets or sets the template to use for hexagon markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of hexagon.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
+		"en": "Gets or sets the template to use for hexagon markers on the chart.<br>   Defines the marker template used for<br>   series with a marker type of hexagon.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
+		"jp": "Gets or sets the template to use for hexagon markers on the chart.<br>   Defines the marker template used for<br>   series with a marker type of hexagon.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
 	},
       "schemaRef": "dataChart.circleMarkerTemplate"
     },
@@ -1605,8 +1605,8 @@
       "type": "object",
       "defaultValue": null,
       "description": {
-		"en": "Gets or sets the template to use for hexagram markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of hexagram.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-		"jp": "Gets or sets the template to use for hexagram markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of hexagram.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
+		"en": "Gets or sets the template to use for hexagram markers on the chart.<br>   Defines the marker template used for<br>   series with a marker type of hexagram.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
+		"jp": "Gets or sets the template to use for hexagram markers on the chart.<br>   Defines the marker template used for<br>   series with a marker type of hexagram.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
 	},
       "schemaRef": "dataChart.circleMarkerTemplate"
     },
@@ -1714,8 +1714,8 @@
       "type": "array",
       "defaultValue": null,
       "description": {
-		"en": "Gets or sets the MarkerBrushes property.<br>&nbsp;&nbsp;&nbsp;The marker brushes property defines the palette from which automatically assigned marker brushes are selected.<br>&nbsp;&nbsp;&nbsp;The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
-		"jp": "Gets or sets the MarkerBrushes property.<br>&nbsp;&nbsp;&nbsp;The marker brushes property defines the palette from which automatically assigned marker brushes are selected.<br>&nbsp;&nbsp;&nbsp;The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
+		"en": "Gets or sets the MarkerBrushes property.<br>   The marker brushes property defines the palette from which automatically assigned marker brushes are selected.<br>   The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
+		"jp": "Gets or sets the MarkerBrushes property.<br>   The marker brushes property defines the palette from which automatically assigned marker brushes are selected.<br>   The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
 	},
       "arrayMemberType": "string",
 	   "schema": {
@@ -1736,8 +1736,8 @@
       "type": "array",
       "defaultValue": null,
       "description": {
-		"en": "Gets or sets the MarkerOutlines property.<br>&nbsp;&nbsp;&nbsp;The marker outlines property defines the palette from which automatically assigned marker outlines are selected.<br>&nbsp;&nbsp;&nbsp;The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
-		"jp": "Gets or sets the MarkerOutlines property.<br>&nbsp;&nbsp;&nbsp;The marker outlines property defines the palette from which automatically assigned marker outlines are selected.<br>&nbsp;&nbsp;&nbsp;The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
+		"en": "Gets or sets the MarkerOutlines property.<br>   The marker outlines property defines the palette from which automatically assigned marker outlines are selected.<br>   The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
+		"jp": "Gets or sets the MarkerOutlines property.<br>   The marker outlines property defines the palette from which automatically assigned marker outlines are selected.<br>   The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
 	},
       "arrayMemberType": "string",
 	   "schema": {
@@ -1758,8 +1758,8 @@
       "type": "array",
       "defaultValue": null,
       "description": {
-		"en": "Gets or sets the Outlines property.<br>&nbsp;&nbsp;&nbsp;The outlines property defines the palette from which automatically assigned series outlines are selected.<br>&nbsp;&nbsp;&nbsp;The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
-		"jp": "Gets or sets the Outlines property.<br>&nbsp;&nbsp;&nbsp;The outlines property defines the palette from which automatically assigned series outlines are selected.<br>&nbsp;&nbsp;&nbsp;The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
+		"en": "Gets or sets the Outlines property.<br>   The outlines property defines the palette from which automatically assigned series outlines are selected.<br>   The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
+		"jp": "Gets or sets the Outlines property.<br>   The outlines property defines the palette from which automatically assigned series outlines are selected.<br>   The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
 	},
       "arrayMemberType": "string",
 	   "schema": {
@@ -1848,8 +1848,8 @@
       "type": "object",
       "defaultValue": null,
       "description": {
-		"en": "Gets or sets the template to use for pentagon markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of pentagon.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-		"jp": "Gets or sets the template to use for pentagon markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of pentagon.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
+		"en": "Gets or sets the template to use for pentagon markers on the chart.<br>   Defines the marker template used for<br>   series with a marker type of pentagon.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
+		"jp": "Gets or sets the template to use for pentagon markers on the chart.<br>   Defines the marker template used for<br>   series with a marker type of pentagon.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
 	},
       "schemaRef": "dataChart.circleMarkerTemplate"
     },
@@ -1857,8 +1857,8 @@
       "type": "object",
       "defaultValue": null,
       "description": {
-		"en": "Gets or sets the template to use for pentragram markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of pentagram.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-		"jp": "Gets or sets the template to use for pentragram markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of pentagram.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
+		"en": "Gets or sets the template to use for pentragram markers on the chart.<br>   Defines the marker template used for<br>   series with a marker type of pentagram.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
+		"jp": "Gets or sets the template to use for pentragram markers on the chart.<br>   Defines the marker template used for<br>   series with a marker type of pentagram.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
 	},
       "schemaRef": "dataChart.circleMarkerTemplate"
     },
@@ -1874,8 +1874,8 @@
       "type": "object",
       "defaultValue": null,
       "description": {
-		"en": "Gets or sets the preview rectangle.<br>&nbsp;&nbsp;&nbsp;The preview rectangle may be set to Rect.Empty, in which case the visible preview<br>&nbsp;&nbsp;&nbsp;strokePath is hidden.<br>&nbsp;&nbsp;&nbsp;The provided object should have numeric properties called left, top, width and height.",
-		"jp": "Gets or sets the preview rectangle.<br>&nbsp;&nbsp;&nbsp;The preview rectangle may be set to Rect.Empty, in which case the visible preview<br>&nbsp;&nbsp;&nbsp;strokePath is hidden.<br>&nbsp;&nbsp;&nbsp;The provided object should have numeric properties called left, top, width and height."
+		"en": "Gets or sets the preview rectangle.<br>   The preview rectangle may be set to Rect.Empty, in which case the visible preview<br>   strokePath is hidden.<br>   The provided object should have numeric properties called left, top, width and height.",
+		"jp": "Gets or sets the preview rectangle.<br>   The preview rectangle may be set to Rect.Empty, in which case the visible preview<br>   strokePath is hidden.<br>   The provided object should have numeric properties called left, top, width and height."
 	},
       "schema": {
         "left": {
@@ -1916,8 +1916,8 @@
       "type": "object",
       "defaultValue": null,
       "description": {
-		"en": "Gets or sets the template to use for pyramid markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of pyramid.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-		"jp": "Gets or sets the template to use for pyramid markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of pyramid.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
+		"en": "Gets or sets the template to use for pyramid markers on the chart.<br>   Defines the marker template used for<br>   series with a marker type of pyramid.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
+		"jp": "Gets or sets the template to use for pyramid markers on the chart.<br>   Defines the marker template used for<br>   series with a marker type of pyramid.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
 	},
       "schemaRef": "dataChart.circleMarkerTemplate"
     },
@@ -4131,8 +4131,8 @@
       "type": "object",
       "defaultValue": null,
       "description": {
-		"en": "Gets or sets the template to use for square markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of square.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-		"jp": "Gets or sets the template to use for square markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of square.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
+		"en": "Gets or sets the template to use for square markers on the chart.<br>   Defines the marker template used for<br>   series with a marker type of square.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
+		"jp": "Gets or sets the template to use for square markers on the chart.<br>   Defines the marker template used for<br>   series with a marker type of square.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
 	},
       "schemaRef": "dataChart.circleMarkerTemplate"
     },
@@ -4254,8 +4254,8 @@
       "type": "object",
       "defaultValue": null,
       "description": {
-		"en": "Gets or sets the template to use for tetragram markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of tetragram.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-		"jp": "Gets or sets the template to use for tetragram markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of tetragram.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
+		"en": "Gets or sets the template to use for tetragram markers on the chart.<br>   Defines the marker template used for<br>   series with a marker type of tetragram.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
+		"jp": "Gets or sets the template to use for tetragram markers on the chart.<br>   Defines the marker template used for<br>   series with a marker type of tetragram.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
 	},
       "schemaRef": "dataChart.circleMarkerTemplate"
     },
@@ -4369,8 +4369,8 @@
       "type": "object",
       "defaultValue": null,
       "description": {
-		"en": "Gets or sets the template to use for triangle markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of triangle.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-		"jp": "Gets or sets the template to use for triangle markers on the chart.<br>&nbsp;&nbsp;&nbsp;Defines the marker template used for<br>&nbsp;&nbsp;&nbsp;series with a marker type of triangle.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
+		"en": "Gets or sets the template to use for triangle markers on the chart.<br>   Defines the marker template used for<br>   series with a marker type of triangle.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
+		"jp": "Gets or sets the template to use for triangle markers on the chart.<br>   Defines the marker template used for<br>   series with a marker type of triangle.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
 	},
       "schemaRef": "dataChart.circleMarkerTemplate"
     },
@@ -4394,24 +4394,24 @@
       "type": "number",
       "defaultValue": 0.0,
       "description": {
-		"en": "A number between 0 and 1 determining the position of the horizontal scroll.<br>&nbsp;&nbsp;&nbsp;This property is effectively a shortcut to the X position of the WindowRect property.",
-		"jp": "A number between 0 and 1 determining the position of the horizontal scroll.<br>&nbsp;&nbsp;&nbsp;This property is effectively a shortcut to the X position of the WindowRect property."
+		"en": "A number between 0 and 1 determining the position of the horizontal scroll.<br>   This property is effectively a shortcut to the X position of the WindowRect property.",
+		"jp": "A number between 0 and 1 determining the position of the horizontal scroll.<br>   This property is effectively a shortcut to the X position of the WindowRect property."
 	}
     },
     "windowPositionVertical": {
       "type": "number",
       "defaultValue": 0.0,
       "description": {
-		"en": "A number between 0 and 1 determining the position of the vertical scroll.<br>&nbsp;&nbsp;&nbsp;This property is effectively a shortcut to the Y position of the WindowRect property.",
-		"jp": "A number between 0 and 1 determining the position of the vertical scroll.<br>&nbsp;&nbsp;&nbsp;This property is effectively a shortcut to the Y position of the WindowRect property."
+		"en": "A number between 0 and 1 determining the position of the vertical scroll.<br>   This property is effectively a shortcut to the Y position of the WindowRect property.",
+		"jp": "A number between 0 and 1 determining the position of the vertical scroll.<br>   This property is effectively a shortcut to the Y position of the WindowRect property."
 	}
     },
     "windowRect": {
       "type": "object",
       "defaultValue": null,
       "description": {
-		"en": "A rectangle representing the portion of the chart currently in view.<br>&nbsp;&nbsp;&nbsp;A rectangle at X=0, Y=0 with a Height and Width of 1 implies the entire plotting area is in view.  A Height and Width of .5 would imply that the view is halfway zoomed in.<br>&nbsp;&nbsp;&nbsp;The provided object should have numeric properties called left, top, width and height.",
-		"jp": "A rectangle representing the portion of the chart currently in view.<br>&nbsp;&nbsp;&nbsp;A rectangle at X=0, Y=0 with a Height and Width of 1 implies the entire plotting area is in view.  A Height and Width of .5 would imply that the view is halfway zoomed in.<br>&nbsp;&nbsp;&nbsp;The provided object should have numeric properties called left, top, width and height."
+		"en": "A rectangle representing the portion of the chart currently in view.<br>   A rectangle at X=0, Y=0 with a Height and Width of 1 implies the entire plotting area is in view.  A Height and Width of .5 would imply that the view is halfway zoomed in.<br>   The provided object should have numeric properties called left, top, width and height.",
+		"jp": "A rectangle representing the portion of the chart currently in view.<br>   A rectangle at X=0, Y=0 with a Height and Width of 1 implies the entire plotting area is in view.  A Height and Width of .5 would imply that the view is halfway zoomed in.<br>   The provided object should have numeric properties called left, top, width and height."
 	},
       "schema": {
         "left": {
@@ -4452,8 +4452,8 @@
       "type": "number",
       "defaultValue": 0.0,
       "description": {
-		"en": "Sets or gets the minimum width that the window rect is allowed to reach before being clamped.<br>&nbsp;&nbsp;&nbsp;Decrease this value if you want to allow for further zooming into the viewer.<br>&nbsp;&nbsp;&nbsp;If this value is lowered too much it can cause graphical corruption due to floating point arithmetic inaccuracy.",
-		"jp": "Sets or gets the minimum width that the window rect is allowed to reach before being clamped.<br>&nbsp;&nbsp;&nbsp;Decrease this value if you want to allow for further zooming into the viewer.<br>&nbsp;&nbsp;&nbsp;If this value is lowered too much it can cause graphical corruption due to floating point arithmetic inaccuracy."
+		"en": "Sets or gets the minimum width that the window rect is allowed to reach before being clamped.<br>   Decrease this value if you want to allow for further zooming into the viewer.<br>   If this value is lowered too much it can cause graphical corruption due to floating point arithmetic inaccuracy.",
+		"jp": "Sets or gets the minimum width that the window rect is allowed to reach before being clamped.<br>   Decrease this value if you want to allow for further zooming into the viewer.<br>   If this value is lowered too much it can cause graphical corruption due to floating point arithmetic inaccuracy."
 	}
     },
     "windowResponse": {
@@ -4486,16 +4486,16 @@
       "type": "number",
       "defaultValue": 1.0,
       "description": {
-		"en": "A number between 0 and 1 determining the scale of the horizontal zoom.<br>&nbsp;&nbsp;&nbsp;This property is effectively a shortcut to the Width of the WindowRect property.",
-		"jp": "A number between 0 and 1 determining the scale of the horizontal zoom.<br>&nbsp;&nbsp;&nbsp;This property is effectively a shortcut to the Width of the WindowRect property."
+		"en": "A number between 0 and 1 determining the scale of the horizontal zoom.<br>   This property is effectively a shortcut to the Width of the WindowRect property.",
+		"jp": "A number between 0 and 1 determining the scale of the horizontal zoom.<br>   This property is effectively a shortcut to the Width of the WindowRect property."
 	}
     },
     "windowScaleVertical": {
       "type": "number",
       "defaultValue": 1.0,
       "description": {
-		"en": "A number between 0 and 1 determining the scale of the vertical zoom.<br>&nbsp;&nbsp;&nbsp;This property is effectively a shortcut to the Height of the WindowRect property.",
-		"jp": "A number between 0 and 1 determining the scale of the vertical zoom.<br>&nbsp;&nbsp;&nbsp;This property is effectively a shortcut to the Height of the WindowRect property."
+		"en": "A number between 0 and 1 determining the scale of the vertical zoom.<br>   This property is effectively a shortcut to the Height of the WindowRect property.",
+		"jp": "A number between 0 and 1 determining the scale of the vertical zoom.<br>   This property is effectively a shortcut to the Height of the WindowRect property."
 	}
     }
   }

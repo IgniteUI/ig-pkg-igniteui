@@ -20,8 +20,8 @@
         }
       ],
       "description": {
-		"en": "Event fired after a cell becomes active (focus style applied).<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridSelection.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.element to get reference to cell DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.columnKey to get column key.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.index to get column index.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.row to get reference to row DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.rowIndex to get row index.",
-		"jp": "Event fired after a cell becomes active (focus style applied).<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridSelection.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.element to get reference to cell DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.columnKey to get column key.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.index to get column index.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.row to get reference to row DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.rowIndex to get row index."
+		"en": "Event fired after a cell becomes active (focus style applied).<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridSelection.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.cell.element to get reference to cell DOM element.<br>   Use ui.cell.columnKey to get column key.<br>   Use ui.cell.index to get column index.<br>   Use ui.cell.row to get reference to row DOM element.<br>   Use ui.cell.rowIndex to get row index.",
+		"jp": "Event fired after a cell becomes active (focus style applied).<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridSelection.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.cell.element to get reference to cell DOM element.<br>   Use ui.cell.columnKey to get column key.<br>   Use ui.cell.index to get column index.<br>   Use ui.cell.row to get reference to row DOM element.<br>   Use ui.cell.rowIndex to get row index."
 	}
     },
     "activeCellChanging": {
@@ -39,8 +39,8 @@
         }
       ],
       "description": {
-		"en": "Event fired before a cell becomes active (focus style applied) (cancellable).<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel active cell changing.&nbsp;<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridSelection.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.element to get reference to cell DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.columnKey to get column key.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.index to get column index.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.row to get reference to row DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.rowIndex to get row index.",
-		"jp": "Event fired before a cell becomes active (focus style applied) (cancellable).<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel active cell changing.&nbsp;<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridSelection.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.element to get reference to cell DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.columnKey to get column key.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.index to get column index.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.row to get reference to row DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.rowIndex to get row index."
+		"en": "Event fired before a cell becomes active (focus style applied) (cancellable).<br>   Return false in order to cancel active cell changing. <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridSelection.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.cell.element to get reference to cell DOM element.<br>   Use ui.cell.columnKey to get column key.<br>   Use ui.cell.index to get column index.<br>   Use ui.cell.row to get reference to row DOM element.<br>   Use ui.cell.rowIndex to get row index.",
+		"jp": "Event fired before a cell becomes active (focus style applied) (cancellable).<br>   Return false in order to cancel active cell changing. <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridSelection.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.cell.element to get reference to cell DOM element.<br>   Use ui.cell.columnKey to get column key.<br>   Use ui.cell.index to get column index.<br>   Use ui.cell.row to get reference to row DOM element.<br>   Use ui.cell.rowIndex to get row index."
 	}
     },
     "activeRowChanged": {
@@ -58,8 +58,8 @@
         }
       ],
       "description": {
-		"en": "Event fired after a row becomes active (focus style applied). <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridSelection.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.row.element to get reference to active row DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.row.index to get row index.",
-		"jp": "Event fired after a row becomes active (focus style applied). <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridSelection.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.row.element to get reference to active row DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.row.index to get row index."
+		"en": "Event fired after a row becomes active (focus style applied). <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridSelection.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.row.element to get reference to active row DOM element.<br>   Use ui.row.index to get row index.",
+		"jp": "Event fired after a row becomes active (focus style applied). <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridSelection.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.row.element to get reference to active row DOM element.<br>   Use ui.row.index to get row index."
 	}
     },
     "activeRowChanging": {
@@ -77,8 +77,8 @@
         }
       ],
       "description": {
-		"en": "Event fired before a row becomes active (focus style applied) (cancellable).<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel active row changing.&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridSelection.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.row.element to get reference to active row DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.row.index to get active row index.",
-		"jp": "Event fired before a row becomes active (focus style applied) (cancellable).<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel active row changing.&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridSelection.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.row.element to get reference to active row DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.row.index to get active row index."
+		"en": "Event fired before a row becomes active (focus style applied) (cancellable).<br>   Return false in order to cancel active row changing.   <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridSelection.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.row.element to get reference to active row DOM element.<br>   Use ui.row.index to get active row index.",
+		"jp": "Event fired before a row becomes active (focus style applied) (cancellable).<br>   Return false in order to cancel active row changing.   <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridSelection.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.row.element to get reference to active row DOM element.<br>   Use ui.row.index to get active row index."
 	}
     },
     "cellSelectionChanged": {
@@ -96,8 +96,8 @@
         }
       ],
       "description": {
-		"en": "Event fired after cell(s) are selected.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridSelection.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.element to get reference to cell DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.columnKey to get reference to column key.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.index to get column index.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.row to get reference to row DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.rowIndex to get row index.<br>&nbsp;&nbsp;&nbsp;Use ui.selectedCells to get reference to selected cells object array.<br>&nbsp;&nbsp;&nbsp;ui.manual - returns true if internal trigger.",
-		"jp": "Event fired after cell(s) are selected.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridSelection.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.element to get reference to cell DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.columnKey to get reference to column key.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.index to get column index.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.row to get reference to row DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.rowIndex to get row index.<br>&nbsp;&nbsp;&nbsp;Use ui.selectedCells to get reference to selected cells object array.<br>&nbsp;&nbsp;&nbsp;ui.manual - returns true if internal trigger."
+		"en": "Event fired after cell(s) are selected.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridSelection.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.cell.element to get reference to cell DOM element.<br>   Use ui.cell.columnKey to get reference to column key.<br>   Use ui.cell.index to get column index.<br>   Use ui.cell.row to get reference to row DOM element.<br>   Use ui.cell.rowIndex to get row index.<br>   Use ui.selectedCells to get reference to selected cells object array.<br>   ui.manual - returns true if internal trigger.",
+		"jp": "Event fired after cell(s) are selected.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridSelection.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.cell.element to get reference to cell DOM element.<br>   Use ui.cell.columnKey to get reference to column key.<br>   Use ui.cell.index to get column index.<br>   Use ui.cell.row to get reference to row DOM element.<br>   Use ui.cell.rowIndex to get row index.<br>   Use ui.selectedCells to get reference to selected cells object array.<br>   ui.manual - returns true if internal trigger."
 	}
     },
     "cellSelectionChanging": {
@@ -115,8 +115,8 @@
         }
       ],
       "description": {
-		"en": "Event fired before cell(s) are about to be selected (cancellable).<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel cell selection changing.&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridSelection.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.element to get reference to cell DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.columnKey to get reference to column key.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.index to get column index.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.row to get reference to row DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.rowIndex to get row index.<br>&nbsp;&nbsp;&nbsp;Use ui.selectedCells to get reference to selected cells object array.<br>&nbsp;&nbsp;&nbsp;ui.manual - returns true if internal trigger.",
-		"jp": "Event fired before cell(s) are about to be selected (cancellable).<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel cell selection changing.&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridSelection.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.element to get reference to cell DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.columnKey to get reference to column key.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.index to get column index.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.row to get reference to row DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.cell.rowIndex to get row index.<br>&nbsp;&nbsp;&nbsp;Use ui.selectedCells to get reference to selected cells object array.<br>&nbsp;&nbsp;&nbsp;ui.manual - returns true if internal trigger."
+		"en": "Event fired before cell(s) are about to be selected (cancellable).<br>   Return false in order to cancel cell selection changing.   <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridSelection.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.cell.element to get reference to cell DOM element.<br>   Use ui.cell.columnKey to get reference to column key.<br>   Use ui.cell.index to get column index.<br>   Use ui.cell.row to get reference to row DOM element.<br>   Use ui.cell.rowIndex to get row index.<br>   Use ui.selectedCells to get reference to selected cells object array.<br>   ui.manual - returns true if internal trigger.",
+		"jp": "Event fired before cell(s) are about to be selected (cancellable).<br>   Return false in order to cancel cell selection changing.   <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridSelection.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.cell.element to get reference to cell DOM element.<br>   Use ui.cell.columnKey to get reference to column key.<br>   Use ui.cell.index to get column index.<br>   Use ui.cell.row to get reference to row DOM element.<br>   Use ui.cell.rowIndex to get row index.<br>   Use ui.selectedCells to get reference to selected cells object array.<br>   ui.manual - returns true if internal trigger."
 	}
     },
     "rowSelectionChanged": {
@@ -134,8 +134,8 @@
         }
       ],
       "description": {
-		"en": "Event fired after row(s) are selected.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridSelection.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.row.element to get reference to row DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.row.index to get row index.<br>&nbsp;&nbsp;&nbsp;Use ui.selectedRows to get reference to rows object array.<br>            Use ui.selectedFixedRows to get reference to fixed rows object array if any.<br>&nbsp;&nbsp;&nbsp;ui.manual - returns true if internal trigger.",
-		"jp": "Event fired after row(s) are selected.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridSelection.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.row.element to get reference to row DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.row.index to get row index.<br>&nbsp;&nbsp;&nbsp;Use ui.selectedRows to get reference to rows object array.<br>            Use ui.selectedFixedRows to get reference to fixed rows object array if any.<br>&nbsp;&nbsp;&nbsp;ui.manual - returns true if internal trigger."
+		"en": "Event fired after row(s) are selected.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridSelection.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.row.element to get reference to row DOM element.<br>   Use ui.row.index to get row index.<br>   Use ui.selectedRows to get reference to rows object array.<br>            Use ui.selectedFixedRows to get reference to fixed rows object array if any.<br>   ui.manual - returns true if internal trigger.",
+		"jp": "Event fired after row(s) are selected.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridSelection.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.row.element to get reference to row DOM element.<br>   Use ui.row.index to get row index.<br>   Use ui.selectedRows to get reference to rows object array.<br>            Use ui.selectedFixedRows to get reference to fixed rows object array if any.<br>   ui.manual - returns true if internal trigger."
 	}
     },
     "rowSelectionChanging": {
@@ -153,8 +153,8 @@
         }
       ],
       "description": {
-		"en": "Event fired before row(s) are about to be selected (cancellable).<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel selection changing.&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridSelection.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.row.element to get reference to row DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.row.index to get row index.<br>&nbsp;&nbsp;&nbsp;Use ui.selectedRows to get reference to rows object array.<br>            Use ui.selectedFixedRows to get reference to fixed rows object array if any.<br>&nbsp;&nbsp;&nbsp;ui.manual - returns true if internal trigger.",
-		"jp": "Event fired before row(s) are about to be selected (cancellable).<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel selection changing.&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to igGridSelection.<br>&nbsp;&nbsp;&nbsp;Use ui.owner.grid to get reference to igGrid.<br>&nbsp;&nbsp;&nbsp;Use ui.row.element to get reference to row DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.row.index to get row index.<br>&nbsp;&nbsp;&nbsp;Use ui.selectedRows to get reference to rows object array.<br>            Use ui.selectedFixedRows to get reference to fixed rows object array if any.<br>&nbsp;&nbsp;&nbsp;ui.manual - returns true if internal trigger."
+		"en": "Event fired before row(s) are about to be selected (cancellable).<br>   Return false in order to cancel selection changing.   <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridSelection.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.row.element to get reference to row DOM element.<br>   Use ui.row.index to get row index.<br>   Use ui.selectedRows to get reference to rows object array.<br>            Use ui.selectedFixedRows to get reference to fixed rows object array if any.<br>   ui.manual - returns true if internal trigger.",
+		"jp": "Event fired before row(s) are about to be selected (cancellable).<br>   Return false in order to cancel selection changing.   <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridSelection.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.row.element to get reference to row DOM element.<br>   Use ui.row.index to get row index.<br>   Use ui.selectedRows to get reference to rows object array.<br>            Use ui.selectedFixedRows to get reference to fixed rows object array if any.<br>   ui.manual - returns true if internal trigger."
 	}
     }
   },
@@ -209,8 +209,8 @@
       "type": "bool",
       "defaultValue": false,
       "description": {
-		"en": "if true multiple selection of cells is done as if CTRL is being held. the option is disregarded if mode is set<br>&nbsp;&nbsp;&nbsp;to row. this option is useful for enabling multiple discountinued selection on touch environments.",
-		"jp": "if true multiple selection of cells is done as if CTRL is being held. the option is disregarded if mode is set<br>&nbsp;&nbsp;&nbsp;to row. this option is useful for enabling multiple discountinued selection on touch environments."
+		"en": "if true multiple selection of cells is done as if CTRL is being held. the option is disregarded if mode is set<br>   to row. this option is useful for enabling multiple discountinued selection on touch environments.",
+		"jp": "if true multiple selection of cells is done as if CTRL is being held. the option is disregarded if mode is set<br>   to row. this option is useful for enabling multiple discountinued selection on touch environments."
 	}
     },
     "multipleSelection": {
@@ -233,8 +233,8 @@
       "type": "bool",
       "defaultValue": true,
       "description": {
-		"en": "Enables / disables selection via continuous touch event - only applicable for cell selection and<br>&nbsp;&nbsp;&nbsp;touch-supported environments",
-		"jp": "Enables / disables selection via continuous touch event - only applicable for cell selection and<br>&nbsp;&nbsp;&nbsp;touch-supported environments"
+		"en": "Enables / disables selection via continuous touch event - only applicable for cell selection and<br>   touch-supported environments",
+		"jp": "Enables / disables selection via continuous touch event - only applicable for cell selection and<br>   touch-supported environments"
 	}
     },
     "wrapAround": {

@@ -20,8 +20,8 @@
         }
       ],
       "description": {
-		"en": "Event is fired when Cancel button is clicked in drop down.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key for which Cancel button is clicked.<br>&nbsp;&nbsp;&nbsp;Use ui.owner in order to access the igGridSummaries widget object.",
-		"jp": "Event is fired when Cancel button is clicked in drop down.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key for which Cancel button is clicked.<br>&nbsp;&nbsp;&nbsp;Use ui.owner in order to access the igGridSummaries widget object."
+		"en": "Event is fired when Cancel button is clicked in drop down.<br>   Function takes arguments evt and ui.<br>   Use ui.columnKey to get column key for which Cancel button is clicked.<br>   Use ui.owner in order to access the igGridSummaries widget object.",
+		"jp": "Event is fired when Cancel button is clicked in drop down.<br>   Function takes arguments evt and ui.<br>   Use ui.columnKey to get column key for which Cancel button is clicked.<br>   Use ui.owner in order to access the igGridSummaries widget object."
 	}
     },
     "dropDownClosed": {
@@ -39,8 +39,8 @@
         }
       ],
       "description": {
-		"en": "Event fired after the dropdown for a summary column is closed <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key of the column where drop down is closing.<br>&nbsp;&nbsp;&nbsp;Use ui.owner in order to access the igGridSummaries widget object.",
-		"jp": "Event fired after the dropdown for a summary column is closed <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key of the column where drop down is closing.<br>&nbsp;&nbsp;&nbsp;Use ui.owner in order to access the igGridSummaries widget object."
+		"en": "Event fired after the dropdown for a summary column is closed <br>   Function takes arguments evt and ui.<br>   Use ui.columnKey to get column key of the column where drop down is closing.<br>   Use ui.owner in order to access the igGridSummaries widget object.",
+		"jp": "Event fired after the dropdown for a summary column is closed <br>   Function takes arguments evt and ui.<br>   Use ui.columnKey to get column key of the column where drop down is closing.<br>   Use ui.owner in order to access the igGridSummaries widget object."
 	}
     },
     "dropDownClosing": {
@@ -58,8 +58,8 @@
         }
       ],
       "description": {
-		"en": "Event fired before the dropdown for a summary column starts closing <br>&nbsp;&nbsp;&nbsp;Return false in order to cancel closing the drop down.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key of the column where drop down is closing.<br>&nbsp;&nbsp;&nbsp;Use ui.owner in order to access the igGridSummaries widget object.",
-		"jp": "Event fired before the dropdown for a summary column starts closing <br>&nbsp;&nbsp;&nbsp;Return false in order to cancel closing the drop down.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key of the column where drop down is closing.<br>&nbsp;&nbsp;&nbsp;Use ui.owner in order to access the igGridSummaries widget object."
+		"en": "Event fired before the dropdown for a summary column starts closing <br>   Return false in order to cancel closing the drop down.<br>   Function takes arguments evt and ui.<br>   Use ui.columnKey to get column key of the column where drop down is closing.<br>   Use ui.owner in order to access the igGridSummaries widget object.",
+		"jp": "Event fired before the dropdown for a summary column starts closing <br>   Return false in order to cancel closing the drop down.<br>   Function takes arguments evt and ui.<br>   Use ui.columnKey to get column key of the column where drop down is closing.<br>   Use ui.owner in order to access the igGridSummaries widget object."
 	}
     },
     "dropDownOKClicked": {
@@ -77,8 +77,8 @@
         }
       ],
       "description": {
-		"en": "Event is fired when OK button is clicked in drop down<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key for which OK button is clicked.<br>&nbsp;&nbsp;&nbsp;Use ui.eventData to get data about which summary methods are(not) selected. Format of event data is {type: 'min', active: false};<br>&nbsp;&nbsp;&nbsp;Use ui.owner in order to access the igGridSummaries widget object.",
-		"jp": "Event is fired when OK button is clicked in drop down<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key for which OK button is clicked.<br>&nbsp;&nbsp;&nbsp;Use ui.eventData to get data about which summary methods are(not) selected. Format of event data is {type: 'min', active: false};<br>&nbsp;&nbsp;&nbsp;Use ui.owner in order to access the igGridSummaries widget object."
+		"en": "Event is fired when OK button is clicked in drop down<br>   Function takes arguments evt and ui.<br>   Use ui.columnKey to get column key for which OK button is clicked.<br>   Use ui.eventData to get data about which summary methods are(not) selected. Format of event data is {type: 'min', active: false};<br>   Use ui.owner in order to access the igGridSummaries widget object.",
+		"jp": "Event is fired when OK button is clicked in drop down<br>   Function takes arguments evt and ui.<br>   Use ui.columnKey to get column key for which OK button is clicked.<br>   Use ui.eventData to get data about which summary methods are(not) selected. Format of event data is {type: 'min', active: false};<br>   Use ui.owner in order to access the igGridSummaries widget object."
 	}
     },
     "dropDownOpened": {
@@ -96,8 +96,8 @@
         }
       ],
       "description": {
-		"en": "Event fired after the summaries dropdown is opened for a specific column<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key of the column where drop down is shown.<br>&nbsp;&nbsp;&nbsp;Use ui.owner in order to access the igGridSummaries widget object.",
-		"jp": "Event fired after the summaries dropdown is opened for a specific column<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key of the column where drop down is shown.<br>&nbsp;&nbsp;&nbsp;Use ui.owner in order to access the igGridSummaries widget object."
+		"en": "Event fired after the summaries dropdown is opened for a specific column<br>   Function takes arguments evt and ui.<br>   Use ui.columnKey to get column key of the column where drop down is shown.<br>   Use ui.owner in order to access the igGridSummaries widget object.",
+		"jp": "Event fired after the summaries dropdown is opened for a specific column<br>   Function takes arguments evt and ui.<br>   Use ui.columnKey to get column key of the column where drop down is shown.<br>   Use ui.owner in order to access the igGridSummaries widget object."
 	}
     },
     "dropDownOpening": {
@@ -115,8 +115,8 @@
         }
       ],
       "description": {
-		"en": "Event fired before drop down is opened for a specific column summary <br>&nbsp;&nbsp;&nbsp;Return false in order to cancel opening the drop down.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key of the column where drop down is opening.<br>&nbsp;&nbsp;&nbsp;Use ui.owner in order to access the igGridSummaries widget object.",
-		"jp": "Event fired before drop down is opened for a specific column summary <br>&nbsp;&nbsp;&nbsp;Return false in order to cancel opening the drop down.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key of the column where drop down is opening.<br>&nbsp;&nbsp;&nbsp;Use ui.owner in order to access the igGridSummaries widget object."
+		"en": "Event fired before drop down is opened for a specific column summary <br>   Return false in order to cancel opening the drop down.<br>   Function takes arguments evt and ui.<br>   Use ui.columnKey to get column key of the column where drop down is opening.<br>   Use ui.owner in order to access the igGridSummaries widget object.",
+		"jp": "Event fired before drop down is opened for a specific column summary <br>   Return false in order to cancel opening the drop down.<br>   Function takes arguments evt and ui.<br>   Use ui.columnKey to get column key of the column where drop down is opening.<br>   Use ui.owner in order to access the igGridSummaries widget object."
 	}
     },
     "summariesCalculated": {
@@ -134,8 +134,8 @@
         }
       ],
       "description": {
-		"en": "Event fired after summaries calculation are completely made<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.data to get data for calculated summaries<br>&nbsp;&nbsp;&nbsp;Use ui.owner in order to access the igGridSummaries widget object.",
-		"jp": "Event fired after summaries calculation are completely made<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.data to get data for calculated summaries<br>&nbsp;&nbsp;&nbsp;Use ui.owner in order to access the igGridSummaries widget object."
+		"en": "Event fired after summaries calculation are completely made<br>   Function takes arguments evt and ui.<br>   Use ui.data to get data for calculated summaries<br>   Use ui.owner in order to access the igGridSummaries widget object.",
+		"jp": "Event fired after summaries calculation are completely made<br>   Function takes arguments evt and ui.<br>   Use ui.data to get data for calculated summaries<br>   Use ui.owner in order to access the igGridSummaries widget object."
 	}
     },
     "summariesCalculating": {
@@ -153,8 +153,8 @@
         }
       ],
       "description": {
-		"en": "Event fired before summaries calculations are made<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel calculation of summaries.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner in order to access the igGridSummaries widget object.",
-		"jp": "Event fired before summaries calculations are made<br>&nbsp;&nbsp;&nbsp;Return false in order to cancel calculation of summaries.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.owner in order to access the igGridSummaries widget object."
+		"en": "Event fired before summaries calculations are made<br>   Return false in order to cancel calculation of summaries.<br>   Function takes arguments evt and ui.<br>   Use ui.owner in order to access the igGridSummaries widget object.",
+		"jp": "Event fired before summaries calculations are made<br>   Return false in order to cancel calculation of summaries.<br>   Function takes arguments evt and ui.<br>   Use ui.owner in order to access the igGridSummaries widget object."
 	}
     },
     "summariesMethodSelectionChanged": {
@@ -172,8 +172,8 @@
         }
       ],
       "description": {
-		"en": "Event fired when user selects/deselects summary method from checkbox <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key of the column where it is changed selection of summary method<br>&nbsp;&nbsp;&nbsp;Use ui.isSelected to get whether method is selected or not<br>&nbsp;&nbsp;&nbsp;Use ui.methodName to get summary method name<br>&nbsp;&nbsp;&nbsp;Use ui.owner in order to access the igGridSummaries widget object.",
-		"jp": "Event fired when user selects/deselects summary method from checkbox <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.columnKey to get column key of the column where it is changed selection of summary method<br>&nbsp;&nbsp;&nbsp;Use ui.isSelected to get whether method is selected or not<br>&nbsp;&nbsp;&nbsp;Use ui.methodName to get summary method name<br>&nbsp;&nbsp;&nbsp;Use ui.owner in order to access the igGridSummaries widget object."
+		"en": "Event fired when user selects/deselects summary method from checkbox <br>   Function takes arguments evt and ui.<br>   Use ui.columnKey to get column key of the column where it is changed selection of summary method<br>   Use ui.isSelected to get whether method is selected or not<br>   Use ui.methodName to get summary method name<br>   Use ui.owner in order to access the igGridSummaries widget object.",
+		"jp": "Event fired when user selects/deselects summary method from checkbox <br>   Function takes arguments evt and ui.<br>   Use ui.columnKey to get column key of the column where it is changed selection of summary method<br>   Use ui.isSelected to get whether method is selected or not<br>   Use ui.methodName to get summary method name<br>   Use ui.owner in order to access the igGridSummaries widget object."
 	}
     },
     "summariesToggled": {
@@ -191,8 +191,8 @@
         }
       ],
       "description": {
-		"en": "Event is fired after summary rows are toggled<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.isToShow to get whether summaries are shown or not.<br>&nbsp;&nbsp;&nbsp;Use ui.owner in order to access the igGridSummaries widget object.",
-		"jp": "Event is fired after summary rows are toggled<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.isToShow to get whether summaries are shown or not.<br>&nbsp;&nbsp;&nbsp;Use ui.owner in order to access the igGridSummaries widget object."
+		"en": "Event is fired after summary rows are toggled<br>   Function takes arguments evt and ui.<br>   Use ui.isToShow to get whether summaries are shown or not.<br>   Use ui.owner in order to access the igGridSummaries widget object.",
+		"jp": "Event is fired after summary rows are toggled<br>   Function takes arguments evt and ui.<br>   Use ui.isToShow to get whether summaries are shown or not.<br>   Use ui.owner in order to access the igGridSummaries widget object."
 	}
     },
     "summariesToggling": {
@@ -210,8 +210,8 @@
         }
       ],
       "description": {
-		"en": "Event is fired bofore summary rows start toggling <br>&nbsp;&nbsp;&nbsp;Return false in order to cancel showing/hiding of summaries.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.isToShow to get whether summaries are shown or not.<br>&nbsp;&nbsp;&nbsp;Use ui.owner in order to access the igGridSummaries widget object.",
-		"jp": "Event is fired bofore summary rows start toggling <br>&nbsp;&nbsp;&nbsp;Return false in order to cancel showing/hiding of summaries.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.isToShow to get whether summaries are shown or not.<br>&nbsp;&nbsp;&nbsp;Use ui.owner in order to access the igGridSummaries widget object."
+		"en": "Event is fired bofore summary rows start toggling <br>   Return false in order to cancel showing/hiding of summaries.<br>   Function takes arguments evt and ui.<br>   Use ui.isToShow to get whether summaries are shown or not.<br>   Use ui.owner in order to access the igGridSummaries widget object.",
+		"jp": "Event is fired bofore summary rows start toggling <br>   Return false in order to cancel showing/hiding of summaries.<br>   Function takes arguments evt and ui.<br>   Use ui.isToShow to get whether summaries are shown or not.<br>   Use ui.owner in order to access the igGridSummaries widget object."
 	}
     }
   },

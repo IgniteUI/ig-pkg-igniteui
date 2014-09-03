@@ -38,8 +38,8 @@
         }
       ],
       "description": {
-		"en": "Raised when the slice is clicked.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.slice to get reference to slice object.<br>&nbsp;&nbsp;&nbsp;Use ui.slice.item to get reference to current pie chart item.<br>&nbsp;&nbsp;&nbsp;Use ui.slice.isExploded to get is the slice exploded.<br>&nbsp;&nbsp;&nbsp;Use ui.slice.isSelected to get is the slice selected.",
-		"jp": "Raised when the slice is clicked.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.<br>&nbsp;&nbsp;&nbsp;Use ui.slice to get reference to slice object.<br>&nbsp;&nbsp;&nbsp;Use ui.slice.item to get reference to current pie chart item.<br>&nbsp;&nbsp;&nbsp;Use ui.slice.isExploded to get is the slice exploded.<br>&nbsp;&nbsp;&nbsp;Use ui.slice.isSelected to get is the slice selected."
+		"en": "Raised when the slice is clicked.<br>   Function takes arguments evt and ui.<br>   Use ui.chart to get reference to chart object.<br>   Use ui.slice to get reference to slice object.<br>   Use ui.slice.item to get reference to current pie chart item.<br>   Use ui.slice.isExploded to get is the slice exploded.<br>   Use ui.slice.isSelected to get is the slice selected.",
+		"jp": "Raised when the slice is clicked.<br>   Function takes arguments evt and ui.<br>   Use ui.chart to get reference to chart object.<br>   Use ui.slice to get reference to slice object.<br>   Use ui.slice.item to get reference to current pie chart item.<br>   Use ui.slice.isExploded to get is the slice exploded.<br>   Use ui.slice.isSelected to get is the slice selected."
 	}
     },
     "tooltipHidden": {
@@ -57,8 +57,8 @@
         }
       ],
       "description": {
-		"en": "event fired after a tooltip is hidden<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current pie chart item.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.",
-		"jp": "event fired after a tooltip is hidden<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current pie chart item.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object."
+		"en": "event fired after a tooltip is hidden<br>   Function takes arguments evt and ui.<br>   Use ui.element to get reference to tooltip DOM element.<br>   Use ui.item to get reference to current pie chart item.<br>   Use ui.chart to get reference to chart object.",
+		"jp": "event fired after a tooltip is hidden<br>   Function takes arguments evt and ui.<br>   Use ui.element to get reference to tooltip DOM element.<br>   Use ui.item to get reference to current pie chart item.<br>   Use ui.chart to get reference to chart object."
 	}
     },
     "tooltipHiding": {
@@ -76,8 +76,8 @@
         }
       ],
       "description": {
-		"en": "event fired when the mouse has left an element and the tooltip is about to hide <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current pie chart item.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.",
-		"jp": "event fired when the mouse has left an element and the tooltip is about to hide <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current pie chart item.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object."
+		"en": "event fired when the mouse has left an element and the tooltip is about to hide <br>   Function takes arguments evt and ui.<br>   Use ui.element to get reference to tooltip DOM element.<br>   Use ui.item to get reference to current pie chart item.<br>   Use ui.chart to get reference to chart object.",
+		"jp": "event fired when the mouse has left an element and the tooltip is about to hide <br>   Function takes arguments evt and ui.<br>   Use ui.element to get reference to tooltip DOM element.<br>   Use ui.item to get reference to current pie chart item.<br>   Use ui.chart to get reference to chart object."
 	}
     },
     "tooltipShowing": {
@@ -95,8 +95,8 @@
         }
       ],
       "description": {
-		"en": "event fired when the mouse has hovered on an element long enough to display a tooltip <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current pie chart item.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.",
-		"jp": "event fired when the mouse has hovered on an element long enough to display a tooltip <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current pie chart item.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object."
+		"en": "event fired when the mouse has hovered on an element long enough to display a tooltip <br>   Function takes arguments evt and ui.<br>   Use ui.element to get reference to tooltip DOM element.<br>   Use ui.item to get reference to current pie chart item.<br>   Use ui.chart to get reference to chart object.",
+		"jp": "event fired when the mouse has hovered on an element long enough to display a tooltip <br>   Function takes arguments evt and ui.<br>   Use ui.element to get reference to tooltip DOM element.<br>   Use ui.item to get reference to current pie chart item.<br>   Use ui.chart to get reference to chart object."
 	}
     },
     "tooltipShown": {
@@ -114,8 +114,8 @@
         }
       ],
       "description": {
-		"en": "event fired after a tooltip is shown <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current pie chart item.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object.",
-		"jp": "event fired after a tooltip is shown <br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get reference to tooltip DOM element.<br>&nbsp;&nbsp;&nbsp;Use ui.item to get reference to current pie chart item.<br>&nbsp;&nbsp;&nbsp;Use ui.chart to get reference to chart object."
+		"en": "event fired after a tooltip is shown <br>   Function takes arguments evt and ui.<br>   Use ui.element to get reference to tooltip DOM element.<br>   Use ui.item to get reference to current pie chart item.<br>   Use ui.chart to get reference to chart object.",
+		"jp": "event fired after a tooltip is shown <br>   Function takes arguments evt and ui.<br>   Use ui.element to get reference to tooltip DOM element.<br>   Use ui.item to get reference to current pie chart item.<br>   Use ui.chart to get reference to chart object."
 	}
     }
   },
@@ -140,8 +140,8 @@
       "type": "array",
       "defaultValue": null,
       "description": {
-		"en": "Gets or sets the Brushes property.<br>&nbsp;&nbsp;&nbsp;The brushes property defines the palette from which automatically assigned slice brushes are selected.<br>&nbsp;&nbsp;&nbsp;The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
-		"jp": "Gets or sets the Brushes property.<br>&nbsp;&nbsp;&nbsp;The brushes property defines the palette from which automatically assigned slice brushes are selected.<br>&nbsp;&nbsp;&nbsp;The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
+		"en": "Gets or sets the Brushes property.<br>   The brushes property defines the palette from which automatically assigned slice brushes are selected.<br>   The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
+		"jp": "Gets or sets the Brushes property.<br>   The brushes property defines the palette from which automatically assigned slice brushes are selected.<br>   The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
 	},
       "arrayMemberType": "string",
        "schema": {
@@ -216,8 +216,8 @@
       "type": "function",
       "defaultValue": null,
       "description": {
-		"en": "Gets or sets the function to use to transform a pie slice data context into a label for the slice. Function takes one argument of type object.<br>&nbsp;&nbsp;&nbsp;Use context.item to get the item associated with the slice, if any.<br>&nbsp;&nbsp;&nbsp;Use context.actualItemBrush to get the brush used to paint the slice.<br>&nbsp;&nbsp;&nbsp;Use context.outline to get the outline brush used to paint the slice.<br>&nbsp;&nbsp;&nbsp;Use context.itemLabel to get the label object that would be used for the slice.<br>&nbsp;&nbsp;&nbsp;Use context.percentValue to see the percentage value that is associated with the slice.<br>&nbsp;&nbsp;&nbsp;Use context.isOthersSlice to tell if the associated slice is the others slice.<br>&nbsp;&nbsp;&nbsp;Should return a string value that should be used for the label.",
-		"jp": "Gets or sets the function to use to transform a pie slice data context into a label for the slice. Function takes one argument of type object.<br>&nbsp;&nbsp;&nbsp;Use context.item to get the item associated with the slice, if any.<br>&nbsp;&nbsp;&nbsp;Use context.actualItemBrush to get the brush used to paint the slice.<br>&nbsp;&nbsp;&nbsp;Use context.outline to get the outline brush used to paint the slice.<br>&nbsp;&nbsp;&nbsp;Use context.itemLabel to get the label object that would be used for the slice.<br>&nbsp;&nbsp;&nbsp;Use context.percentValue to see the percentage value that is associated with the slice.<br>&nbsp;&nbsp;&nbsp;Use context.isOthersSlice to tell if the associated slice is the others slice.<br>&nbsp;&nbsp;&nbsp;Should return a string value that should be used for the label."
+		"en": "Gets or sets the function to use to transform a pie slice data context into a label for the slice. Function takes one argument of type object.<br>   Use context.item to get the item associated with the slice, if any.<br>   Use context.actualItemBrush to get the brush used to paint the slice.<br>   Use context.outline to get the outline brush used to paint the slice.<br>   Use context.itemLabel to get the label object that would be used for the slice.<br>   Use context.percentValue to see the percentage value that is associated with the slice.<br>   Use context.isOthersSlice to tell if the associated slice is the others slice.<br>   Should return a string value that should be used for the label.",
+		"jp": "Gets or sets the function to use to transform a pie slice data context into a label for the slice. Function takes one argument of type object.<br>   Use context.item to get the item associated with the slice, if any.<br>   Use context.actualItemBrush to get the brush used to paint the slice.<br>   Use context.outline to get the outline brush used to paint the slice.<br>   Use context.itemLabel to get the label object that would be used for the slice.<br>   Use context.percentValue to see the percentage value that is associated with the slice.<br>   Use context.isOthersSlice to tell if the associated slice is the others slice.<br>   Should return a string value that should be used for the label."
 	}
     },
     "height": {
@@ -426,8 +426,8 @@
       "type": "object",
       "defaultValue": null,
       "description": {
-		"en": "Gets or sets the LegendItemBadgeTemplate property.<br>&nbsp;&nbsp;&nbsp;The legend item badge is created according to the LegendItemBadgeTemplate on-demand by<br>&nbsp;&nbsp;&nbsp;the chart object itself.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-		"jp": "Gets or sets the LegendItemBadgeTemplate property.<br>&nbsp;&nbsp;&nbsp;The legend item badge is created according to the LegendItemBadgeTemplate on-demand by<br>&nbsp;&nbsp;&nbsp;the chart object itself.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
+		"en": "Gets or sets the LegendItemBadgeTemplate property.<br>   The legend item badge is created according to the LegendItemBadgeTemplate on-demand by<br>   the chart object itself.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
+		"jp": "Gets or sets the LegendItemBadgeTemplate property.<br>   The legend item badge is created according to the LegendItemBadgeTemplate on-demand by<br>   the chart object itself.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
 	},
       "schemaRef": "dataChart.circleMarkerTemplate"
     },
@@ -435,8 +435,8 @@
       "type": "object",
       "defaultValue": null,
       "description": {
-		"en": "Gets or sets the LegendItemTemplate property.<br>&nbsp;&nbsp;&nbsp;The legend item control content is created according to the LegendItemTemplate on-demand by<br>&nbsp;&nbsp;&nbsp;the chart object itself.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-		"jp": "Gets or sets the LegendItemTemplate property.<br>&nbsp;&nbsp;&nbsp;The legend item control content is created according to the LegendItemTemplate on-demand by<br>&nbsp;&nbsp;&nbsp;the chart object itself.<br>&nbsp;&nbsp;&nbsp;The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
+		"en": "Gets or sets the LegendItemTemplate property.<br>   The legend item control content is created according to the LegendItemTemplate on-demand by<br>   the chart object itself.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
+		"jp": "Gets or sets the LegendItemTemplate property.<br>   The legend item control content is created according to the LegendItemTemplate on-demand by<br>   the chart object itself.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
 	},
       "schemaRef": "dataChart.circleMarkerTemplate"
     },
@@ -494,8 +494,8 @@
       "type": "object",
       "defaultValue": null,
       "description": {
-		"en": "Gets or sets the Outlines property.<br>&nbsp;&nbsp;&nbsp;The Outlines property defines the palette from which automatically assigned slice outlines are selected.<br>&nbsp;&nbsp;&nbsp;The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
-		"jp": "Gets or sets the Outlines property.<br>&nbsp;&nbsp;&nbsp;The Outlines property defines the palette from which automatically assigned slice outlines are selected.<br>&nbsp;&nbsp;&nbsp;The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
+		"en": "Gets or sets the Outlines property.<br>   The Outlines property defines the palette from which automatically assigned slice outlines are selected.<br>   The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
+		"jp": "Gets or sets the Outlines property.<br>   The Outlines property defines the palette from which automatically assigned slice outlines are selected.<br>   The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
 	},
       "arrayMemberType": "string"
     },
@@ -535,8 +535,8 @@
       "type": "number",
       "defaultValue": 0.0,
       "description": {
-		"en": "Gets or sets the starting angle of the chart.<br>&nbsp;&nbsp;&nbsp;The default zero value is equivalent to 3 o'clock.",
-		"jp": "Gets or sets the starting angle of the chart.<br>&nbsp;&nbsp;&nbsp;The default zero value is equivalent to 3 o'clock."
+		"en": "Gets or sets the starting angle of the chart.<br>   The default zero value is equivalent to 3 o'clock.",
+		"jp": "Gets or sets the starting angle of the chart.<br>   The default zero value is equivalent to 3 o'clock."
 	}
     },
     "sweepDirection": {

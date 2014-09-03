@@ -128,16 +128,16 @@
       "type": "bool",
       "defaultValue": false,
       "description": {
-		"en": "Gets or sets a value indicating whether the scale is inverted.<br>&nbsp;When the scale is inverted the direction in which the scale values increase is right to left.",
-		"jp": "Gets or sets a value indicating whether the scale is inverted.<br>&nbsp;When the scale is inverted the direction in which the scale values increase is right to left."
+		"en": "Gets or sets a value indicating whether the scale is inverted.<br> When the scale is inverted the direction in which the scale values increase is right to left.",
+		"jp": "Gets or sets a value indicating whether the scale is inverted.<br> When the scale is inverted the direction in which the scale values increase is right to left."
 	}
     },
     "labelExtent": {
       "type": "number",
       "defaultValue": 0.0,
       "description": {
-		"en": "Gets or sets the position at which to put the labels as a value from 0 to 1, measured from the bottom of the scale.<br>&nbsp;Values further from zero than 1 can be used to hide the labels of the bullet graph.",
-		"jp": "Gets or sets the position at which to put the labels as a value from 0 to 1, measured from the bottom of the scale.<br>&nbsp;Values further from zero than 1 can be used to hide the labels of the bullet graph."
+		"en": "Gets or sets the position at which to put the labels as a value from 0 to 1, measured from the bottom of the scale.<br> Values further from zero than 1 can be used to hide the labels of the bullet graph.",
+		"jp": "Gets or sets the position at which to put the labels as a value from 0 to 1, measured from the bottom of the scale.<br> Values further from zero than 1 can be used to hide the labels of the bullet graph."
 	}
     },
     "labelInterval": {
@@ -200,16 +200,16 @@
       "type": "number",
       "defaultValue": 0.2,
       "description": {
-		"en": "Gets or sets the position at which to stop rendering the minor tickmarks as a value from 0 to 1, measured from the front/bottom of the bullet graph.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.",
-		"jp": "Gets or sets the position at which to stop rendering the minor tickmarks as a value from 0 to 1, measured from the front/bottom of the bullet graph.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph."
+		"en": "Gets or sets the position at which to stop rendering the minor tickmarks as a value from 0 to 1, measured from the front/bottom of the bullet graph.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.",
+		"jp": "Gets or sets the position at which to stop rendering the minor tickmarks as a value from 0 to 1, measured from the front/bottom of the bullet graph.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph."
 	}
     },
     "minorTickStartExtent": {
       "type": "number",
       "defaultValue": 0.06,
       "description": {
-		"en": "Gets or sets the position at which to start rendering the minor tickmarks as a value from 0 to 1, measured from the front/bottom of the bullet graph.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.",
-		"jp": "Gets or sets the position at which to start rendering the minor tickmarks as a value from 0 to 1, measured from the front/bottom of the bullet graph.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph."
+		"en": "Gets or sets the position at which to start rendering the minor tickmarks as a value from 0 to 1, measured from the front/bottom of the bullet graph.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.",
+		"jp": "Gets or sets the position at which to start rendering the minor tickmarks as a value from 0 to 1, measured from the front/bottom of the bullet graph.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph."
 	}
     },
     "minorTickStrokeThickness": {
@@ -250,8 +250,8 @@
       "type": "array",
       "defaultValue": null,
       "description": {
-		"en": "Gets or sets a collection of brushes to be used as the palette for bullet graph ranges.<br>&nbsp;The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
-		"jp": "Gets or sets a collection of brushes to be used as the palette for bullet graph ranges.<br>&nbsp;The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
+		"en": "Gets or sets a collection of brushes to be used as the palette for bullet graph ranges.<br> The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
+		"jp": "Gets or sets a collection of brushes to be used as the palette for bullet graph ranges.<br> The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
 	},
       "arrayMemberType": "string",
 	   "schema": {
@@ -272,24 +272,24 @@
       "type": "number",
       "defaultValue": 0.2,
       "description": {
-		"en": "Gets or sets the position at which to start rendering the ranges, measured from the front/bottom of the control as a value from 0 to 1.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.",
-		"jp": "Gets or sets the position at which to start rendering the ranges, measured from the front/bottom of the control as a value from 0 to 1.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph."
+		"en": "Gets or sets the position at which to start rendering the ranges, measured from the front/bottom of the control as a value from 0 to 1.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.",
+		"jp": "Gets or sets the position at which to start rendering the ranges, measured from the front/bottom of the control as a value from 0 to 1.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph."
 	}
     },
     "rangeOuterExtent": {
       "type": "number",
       "defaultValue": 0.95,
       "description": {
-		"en": "Gets or sets the position at which to stop rendering the range as a value from 0 to 1 measured from the front/bottom of the bullet graph.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.",
-		"jp": "Gets or sets the position at which to stop rendering the range as a value from 0 to 1 measured from the front/bottom of the bullet graph.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph."
+		"en": "Gets or sets the position at which to stop rendering the range as a value from 0 to 1 measured from the front/bottom of the bullet graph.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.",
+		"jp": "Gets or sets the position at which to stop rendering the range as a value from 0 to 1 measured from the front/bottom of the bullet graph.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph."
 	}
     },
     "rangeOutlines": {
       "type": "array",
       "defaultValue": null,
       "description": {
-		"en": "Gets or sets a collection of brushes to be used as the palette for bullet graph outlines.<br>&nbsp;The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
-		"jp": "Gets or sets a collection of brushes to be used as the palette for bullet graph outlines.<br>&nbsp;The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
+		"en": "Gets or sets a collection of brushes to be used as the palette for bullet graph outlines.<br> The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
+		"jp": "Gets or sets a collection of brushes to be used as the palette for bullet graph outlines.<br> The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
 	},
       "arrayMemberType": "string",
 	  "schema": {
@@ -401,16 +401,16 @@
       "type": "number",
       "defaultValue": 0.95,
       "description": {
-		"en": "Gets or sets the position at which to stop rendering the scale as a value from 0 to 1, measured from the front/bottom of the bullet graph.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.",
-		"jp": "Gets or sets the position at which to stop rendering the scale as a value from 0 to 1, measured from the front/bottom of the bullet graph.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph."
+		"en": "Gets or sets the position at which to stop rendering the scale as a value from 0 to 1, measured from the front/bottom of the bullet graph.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.",
+		"jp": "Gets or sets the position at which to stop rendering the scale as a value from 0 to 1, measured from the front/bottom of the bullet graph.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph."
 	}
     },
     "scaleStartExtent": {
       "type": "number",
       "defaultValue": 0.05,
       "description": {
-		"en": "Gets or sets the position at which to start rendering the scale, measured from the front/bottom of the bullet graph as a value from 0 to 1.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.",
-		"jp": "Gets or sets the position at which to start rendering the scale, measured from the front/bottom of the bullet graph as a value from 0 to 1.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph."
+		"en": "Gets or sets the position at which to start rendering the scale, measured from the front/bottom of the bullet graph as a value from 0 to 1.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.",
+		"jp": "Gets or sets the position at which to start rendering the scale, measured from the front/bottom of the bullet graph as a value from 0 to 1.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph."
 	}
     },
     "showToolTip": {
@@ -457,8 +457,8 @@
       "type": "number",
       "defaultValue": 0.3,
       "description": {
-		"en": "Gets or sets the position at which to start rendering the target value, measured from the front/bottom of the control as a value from 0 to 1.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.",
-		"jp": "Gets or sets the position at which to start rendering the target value, measured from the front/bottom of the control as a value from 0 to 1.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph."
+		"en": "Gets or sets the position at which to start rendering the target value, measured from the front/bottom of the control as a value from 0 to 1.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.",
+		"jp": "Gets or sets the position at which to start rendering the target value, measured from the front/bottom of the control as a value from 0 to 1.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph."
 	}
     },
     "targetValueName": {
@@ -473,8 +473,8 @@
       "type": "number",
       "defaultValue": 0.85,
       "description": {
-		"en": "Gets or sets the position at which to start rendering the target value, measured from the front/bottom of the control as a value from 0 to 1.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.",
-		"jp": "Gets or sets the position at which to start rendering the target value, measured from the front/bottom of the control as a value from 0 to 1.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph."
+		"en": "Gets or sets the position at which to start rendering the target value, measured from the front/bottom of the control as a value from 0 to 1.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.",
+		"jp": "Gets or sets the position at which to start rendering the target value, measured from the front/bottom of the control as a value from 0 to 1.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph."
 	}
     },
     "targetValueOutline": {
@@ -513,8 +513,8 @@
       "type": "number",
       "defaultValue": 0.2,
       "description": {
-		"en": "Gets or sets the position at which to stop rendering the major tickmarks as a value from 0 to 1, measured from the front/bottom of the bullet graph.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.",
-		"jp": "Gets or sets the position at which to stop rendering the major tickmarks as a value from 0 to 1, measured from the front/bottom of the bullet graph.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph."
+		"en": "Gets or sets the position at which to stop rendering the major tickmarks as a value from 0 to 1, measured from the front/bottom of the bullet graph.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.",
+		"jp": "Gets or sets the position at which to stop rendering the major tickmarks as a value from 0 to 1, measured from the front/bottom of the bullet graph.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph."
 	}
     },
     "ticksPostInitial": {
@@ -537,8 +537,8 @@
       "type": "number",
       "defaultValue": 0.1,
       "description": {
-		"en": "Gets or sets the position at which to start rendering the major tickmarks as a value from 0 to 1, measured from the front/bottom of the bullet graph.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.",
-		"jp": "Gets or sets the position at which to start rendering the major tickmarks as a value from 0 to 1, measured from the front/bottom of the bullet graph.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph."
+		"en": "Gets or sets the position at which to start rendering the major tickmarks as a value from 0 to 1, measured from the front/bottom of the bullet graph.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.",
+		"jp": "Gets or sets the position at which to start rendering the major tickmarks as a value from 0 to 1, measured from the front/bottom of the bullet graph.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph."
 	}
     },
     "tickStrokeThickness": {
@@ -577,8 +577,8 @@
       "type": "number",
       "defaultValue": 0.5,
       "description": {
-		"en": "Gets or sets the position at which to start rendering the actual value geometries, measured from the front/bottom of the bullet graph as a value from 0 to 1.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.",
-		"jp": "Gets or sets the position at which to start rendering the actual value geometries, measured from the front/bottom of the bullet graph as a value from 0 to 1.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph."
+		"en": "Gets or sets the position at which to start rendering the actual value geometries, measured from the front/bottom of the bullet graph as a value from 0 to 1.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.",
+		"jp": "Gets or sets the position at which to start rendering the actual value geometries, measured from the front/bottom of the bullet graph as a value from 0 to 1.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph."
 	}
     },
     "valueName": {
@@ -593,8 +593,8 @@
       "type": "number",
       "defaultValue": 0.65,
       "description": {
-		"en": "Gets or sets the position at which to stop rendering the actual value geometries as a value from 0 to 1 measured from the front/bottom of the bullet graph.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.",
-		"jp": "Gets or sets the position at which to stop rendering the actual value geometries as a value from 0 to 1 measured from the front/bottom of the bullet graph.<br>&nbsp;Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph."
+		"en": "Gets or sets the position at which to stop rendering the actual value geometries as a value from 0 to 1 measured from the front/bottom of the bullet graph.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.",
+		"jp": "Gets or sets the position at which to stop rendering the actual value geometries as a value from 0 to 1 measured from the front/bottom of the bullet graph.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph."
 	}
     },
     "valueOutline": {

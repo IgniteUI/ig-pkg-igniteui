@@ -19,8 +19,8 @@
         }
       ],
       "description": {
-		"en": "fired before databinding is performed <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tile manager performing databinding.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.dataSource to get a reference to the $.ig.DataSource the tile manager is to be databound to.",
-		"jp": "fired before databinding is performed <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tile manager performing databinding.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.dataSource to get a reference to the $.ig.DataSource the tile manager is to be databound to."
+		"en": "fired before databinding is performed <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tile manager performing databinding.<br>    Use ui.dataSource to get a reference to the $.ig.DataSource the tile manager is to be databound to.",
+		"jp": "fired before databinding is performed <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tile manager performing databinding.<br>    Use ui.dataSource to get a reference to the $.ig.DataSource the tile manager is to be databound to."
 	}
     },
     "dataBound": {
@@ -38,8 +38,8 @@
         }
       ],
       "description": {
-		"en": "fired after databinding is complete <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tile manager performing databinding.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.dataView to get a reference to the data the tile manager is databound to.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.success to get see if the databinding was performed correctly.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.errorMessage to get the error message if the databinding failed.",
-		"jp": "fired after databinding is complete <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tile manager performing databinding.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.dataView to get a reference to the data the tile manager is databound to.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.success to get see if the databinding was performed correctly.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.errorMessage to get the error message if the databinding failed."
+		"en": "fired after databinding is complete <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tile manager performing databinding.<br>    Use ui.dataView to get a reference to the data the tile manager is databound to.<br>    Use ui.success to get see if the databinding was performed correctly.<br>    Use ui.errorMessage to get the error message if the databinding failed.",
+		"jp": "fired after databinding is complete <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tile manager performing databinding.<br>    Use ui.dataView to get a reference to the data the tile manager is databound to.<br>    Use ui.success to get see if the databinding was performed correctly.<br>    Use ui.errorMessage to get the error message if the databinding failed."
 	}
     },
     "rendered": {
@@ -57,8 +57,8 @@
         }
       ],
       "description": {
-		"en": "fired after rendering of the tile manager completes. <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tile manager performing rendering.",
-		"jp": "fired after rendering of the tile manager completes. <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tile manager performing rendering."
+		"en": "fired after rendering of the tile manager completes. <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tile manager performing rendering.",
+		"jp": "fired after rendering of the tile manager completes. <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tile manager performing rendering."
 	}
     },
     "rendering": {
@@ -76,8 +76,8 @@
         }
       ],
       "description": {
-		"en": "fired before rendering of the tile manager begins.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tile manager performing rendering.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.tiles to get a reference to the tiles the tile manager is going to render. If using data source this referes to the data provided.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.items to get a reference to the item configurations the tile manager has.",
-		"jp": "fired before rendering of the tile manager begins.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tile manager performing rendering.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.tiles to get a reference to the tiles the tile manager is going to render. If using data source this referes to the data provided.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.items to get a reference to the item configurations the tile manager has."
+		"en": "fired before rendering of the tile manager begins.<br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tile manager performing rendering.<br>    Use ui.tiles to get a reference to the tiles the tile manager is going to render. If using data source this referes to the data provided.<br>    Use ui.items to get a reference to the item configurations the tile manager has.",
+		"jp": "fired before rendering of the tile manager begins.<br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tile manager performing rendering.<br>    Use ui.tiles to get a reference to the tiles the tile manager is going to render. If using data source this referes to the data provided.<br>    Use ui.items to get a reference to the item configurations the tile manager has."
 	}
     },
     "tileMaximized": {
@@ -95,8 +95,8 @@
         }
       ],
       "description": {
-		"en": "fired after a tile in the tile manager is maximized. <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tile manager the maximized tile belongs to.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.tile to get the jQuery element of the maximized tile",
-		"jp": "fired after a tile in the tile manager is maximized. <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tile manager the maximized tile belongs to.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.tile to get the jQuery element of the maximized tile"
+		"en": "fired after a tile in the tile manager is maximized. <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tile manager the maximized tile belongs to.<br>    Use ui.tile to get the jQuery element of the maximized tile",
+		"jp": "fired after a tile in the tile manager is maximized. <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tile manager the maximized tile belongs to.<br>    Use ui.tile to get the jQuery element of the maximized tile"
 	}
     },
     "tileMaximizing": {
@@ -114,8 +114,8 @@
         }
       ],
       "description": {
-		"en": "fired before a tile in the tile manager is maximized.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tile manager performing the maximizing the tile belongs to.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.tile to get the jQuery element of the tile being maximized<br>                Use ui.minimizingTile to get reference to the tile that is minimizing simultaneously or null if no tile is minimizing.",
-		"jp": "fired before a tile in the tile manager is maximized.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tile manager performing the maximizing the tile belongs to.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.tile to get the jQuery element of the tile being maximized<br>                Use ui.minimizingTile to get reference to the tile that is minimizing simultaneously or null if no tile is minimizing."
+		"en": "fired before a tile in the tile manager is maximized.<br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tile manager performing the maximizing the tile belongs to.<br>    Use ui.tile to get the jQuery element of the tile being maximized<br>                Use ui.minimizingTile to get reference to the tile that is minimizing simultaneously or null if no tile is minimizing.",
+		"jp": "fired before a tile in the tile manager is maximized.<br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tile manager performing the maximizing the tile belongs to.<br>    Use ui.tile to get the jQuery element of the tile being maximized<br>                Use ui.minimizingTile to get reference to the tile that is minimizing simultaneously or null if no tile is minimizing."
 	}
     },
     "tileMinimized": {
@@ -133,8 +133,8 @@
         }
       ],
       "description": {
-		"en": "fired after a tile in the tile manager is minimized.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tile manager the minimized tile belongs to.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.tile to get the jQuery element of the minimized tile",
-		"jp": "fired after a tile in the tile manager is minimized.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tile manager the minimized tile belongs to.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.tile to get the jQuery element of the minimized tile"
+		"en": "fired after a tile in the tile manager is minimized.<br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tile manager the minimized tile belongs to.<br>    Use ui.tile to get the jQuery element of the minimized tile",
+		"jp": "fired after a tile in the tile manager is minimized.<br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tile manager the minimized tile belongs to.<br>    Use ui.tile to get the jQuery element of the minimized tile"
 	}
     },
     "tileMinimizing": {
@@ -171,8 +171,8 @@
         }
       ],
       "description": {
-		"en": "Event fired after a tile has been rendered in the container<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tile manager performing rendering.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.tile to get a reference to the rendered tile",
-		"jp": "Event fired after a tile has been rendered in the container<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the tile manager performing rendering.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.tile to get a reference to the rendered tile"
+		"en": "Event fired after a tile has been rendered in the container<br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tile manager performing rendering.<br>    Use ui.tile to get a reference to the rendered tile",
+		"jp": "Event fired after a tile has been rendered in the container<br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tile manager performing rendering.<br>    Use ui.tile to get a reference to the rendered tile"
 	}
     },
     "tileRendering": {
@@ -396,8 +396,8 @@
       "type": "string",
       "defaultValue": null,
       "description": {
-		"en": "string Explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property.<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored.",
-		"jp": "string Explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property.<br>&nbsp;&nbsp;&nbsp;&nbsp;null Option is ignored."
+		"en": "string Explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property.<br>    null Option is ignored.",
+		"jp": "string Explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property.<br>    null Option is ignored."
 	}
     },
     "rightPanelCols": {

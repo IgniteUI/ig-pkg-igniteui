@@ -20,8 +20,8 @@
         }
       ],
       "description": {
-		"en": "Event which is fired when column fixing operation is finished<br>&nbsp;&nbsp;&nbsp;use args.columnKey to get the column key of the fixed column<br>&nbsp;&nbsp;&nbsp;use args.columnIndex to get the column index of the fixed column<br>&nbsp;&nbsp;&nbsp;use args.owner to get a reference to the widget",
-		"jp": "Event which is fired when column fixing operation is finished<br>&nbsp;&nbsp;&nbsp;use args.columnKey to get the column key of the fixed column<br>&nbsp;&nbsp;&nbsp;use args.columnIndex to get the column index of the fixed column<br>&nbsp;&nbsp;&nbsp;use args.owner to get a reference to the widget"
+		"en": "Event which is fired when column fixing operation is finished<br>   use args.columnKey to get the column key of the fixed column<br>   use args.columnIndex to get the column index of the fixed column<br>   use args.owner to get a reference to the widget",
+		"jp": "Event which is fired when column fixing operation is finished<br>   use args.columnKey to get the column key of the fixed column<br>   use args.columnIndex to get the column index of the fixed column<br>   use args.owner to get a reference to the widget"
 	}
     },
     "columnFixing": {
@@ -39,8 +39,8 @@
         }
       ],
       "description": {
-		"en": "Event which is fired when column fixing operation is initiated<br>&nbsp;&nbsp;&nbsp;use args.columnKey to get the column key of the column to be fixed<br>&nbsp;&nbsp;&nbsp;use args.columnIndex to get the column index of the column to be fixed<br>&nbsp;&nbsp;&nbsp;use args.owner to get a reference to the widget",
-		"jp": "Event which is fired when column fixing operation is initiated<br>&nbsp;&nbsp;&nbsp;use args.columnKey to get the column key of the column to be fixed<br>&nbsp;&nbsp;&nbsp;use args.columnIndex to get the column index of the column to be fixed<br>&nbsp;&nbsp;&nbsp;use args.owner to get a reference to the widget"
+		"en": "Event which is fired when column fixing operation is initiated<br>   use args.columnKey to get the column key of the column to be fixed<br>   use args.columnIndex to get the column index of the column to be fixed<br>   use args.owner to get a reference to the widget",
+		"jp": "Event which is fired when column fixing operation is initiated<br>   use args.columnKey to get the column key of the column to be fixed<br>   use args.columnIndex to get the column index of the column to be fixed<br>   use args.owner to get a reference to the widget"
 	}
     },
     "columnFixingRefused": {
@@ -58,8 +58,8 @@
         }
       ],
       "description": {
-		"en": "Event which is fired when column fixing operation is initiated but sum of the width of the fixed columns container and width of the column to be fixed exceeds the grid width<br>&nbsp;&nbsp;&nbsp;use args.columnKey to get the column key of the column to be fixed<br>&nbsp;&nbsp;&nbsp;use args.isGroupHeader to get whether header cell is of type multicolumn (when multicolumn headers are defined)<br>&nbsp;&nbsp;&nbsp;use args.owner to get a reference to the widget",
-		"jp": "Event which is fired when column fixing operation is initiated but sum of the width of the fixed columns container and width of the column to be fixed exceeds the grid width<br>&nbsp;&nbsp;&nbsp;use args.columnKey to get the column key of the column to be fixed<br>&nbsp;&nbsp;&nbsp;use args.isGroupHeader to get whether header cell is of type multicolumn (when multicolumn headers are defined)<br>&nbsp;&nbsp;&nbsp;use args.owner to get a reference to the widget"
+		"en": "Event which is fired when column fixing operation is initiated but sum of the width of the fixed columns container and width of the column to be fixed exceeds the grid width<br>   use args.columnKey to get the column key of the column to be fixed<br>   use args.isGroupHeader to get whether header cell is of type multicolumn (when multicolumn headers are defined)<br>   use args.owner to get a reference to the widget",
+		"jp": "Event which is fired when column fixing operation is initiated but sum of the width of the fixed columns container and width of the column to be fixed exceeds the grid width<br>   use args.columnKey to get the column key of the column to be fixed<br>   use args.isGroupHeader to get whether header cell is of type multicolumn (when multicolumn headers are defined)<br>   use args.owner to get a reference to the widget"
 	}
     },
     "columnUnfixed": {
@@ -77,8 +77,8 @@
         }
       ],
       "description": {
-		"en": "Event which is fired when column unfixing operation is done<br>&nbsp;&nbsp;&nbsp;use args.columnKey to get the column key of the unfixed column<br>&nbsp;&nbsp;&nbsp;use args.columnIndex to get the column index of the unfixed column<br>&nbsp;&nbsp;&nbsp;use args.owner to get a reference to the widget",
-		"jp": "Event which is fired when column unfixing operation is done<br>&nbsp;&nbsp;&nbsp;use args.columnKey to get the column key of the unfixed column<br>&nbsp;&nbsp;&nbsp;use args.columnIndex to get the column index of the unfixed column<br>&nbsp;&nbsp;&nbsp;use args.owner to get a reference to the widget"
+		"en": "Event which is fired when column unfixing operation is done<br>   use args.columnKey to get the column key of the unfixed column<br>   use args.columnIndex to get the column index of the unfixed column<br>   use args.owner to get a reference to the widget",
+		"jp": "Event which is fired when column unfixing operation is done<br>   use args.columnKey to get the column key of the unfixed column<br>   use args.columnIndex to get the column index of the unfixed column<br>   use args.owner to get a reference to the widget"
 	}
     },
     "columnUnfixing": {
@@ -96,8 +96,8 @@
         }
       ],
       "description": {
-		"en": "Event which is fired when column unfixing operation is initiated<br>&nbsp;&nbsp;&nbsp;use args.columnKey to get the column key of the column to be unfixed<br>&nbsp;&nbsp;&nbsp;use args.columnIndex to get the column index of the column to be unfixed<br>&nbsp;&nbsp;&nbsp;use args.owner to get a reference to the widget",
-		"jp": "Event which is fired when column unfixing operation is initiated<br>&nbsp;&nbsp;&nbsp;use args.columnKey to get the column key of the column to be unfixed<br>&nbsp;&nbsp;&nbsp;use args.columnIndex to get the column index of the column to be unfixed<br>&nbsp;&nbsp;&nbsp;use args.owner to get a reference to the widget"
+		"en": "Event which is fired when column unfixing operation is initiated<br>   use args.columnKey to get the column key of the column to be unfixed<br>   use args.columnIndex to get the column index of the column to be unfixed<br>   use args.owner to get a reference to the widget",
+		"jp": "Event which is fired when column unfixing operation is initiated<br>   use args.columnKey to get the column key of the column to be unfixed<br>   use args.columnIndex to get the column index of the column to be unfixed<br>   use args.owner to get a reference to the widget"
 	}
     }
   },

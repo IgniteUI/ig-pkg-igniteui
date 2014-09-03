@@ -19,8 +19,8 @@
         }
       ],
       "description": {
-		"en": "Occurs when the banner is clicked.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.bannerElement to get the banner html element in the DOM.",
-		"jp": "Occurs when the banner is clicked.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.bannerElement to get the banner html element in the DOM."
+		"en": "Occurs when the banner is clicked.<br>   Function takes arguments evt and ui.<br>   Use ui.bannerElement to get the banner html element in the DOM.",
+		"jp": "Occurs when the banner is clicked.<br>   Function takes arguments evt and ui.<br>   Use ui.bannerElement to get the banner html element in the DOM."
 	}
     },
     "bannerHidden": {
@@ -38,8 +38,8 @@
         }
       ],
       "description": {
-		"en": "Occurs when the banner is hidden.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.index to get the banner index in the banners array.<br>&nbsp;&nbsp;&nbsp;Use ui.banner to get the banner object from the banners array.<br>&nbsp;&nbsp;&nbsp;Use ui.bannerElement to get the banner html element in the DOM.",
-		"jp": "Occurs when the banner is hidden.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.index to get the banner index in the banners array.<br>&nbsp;&nbsp;&nbsp;Use ui.banner to get the banner object from the banners array.<br>&nbsp;&nbsp;&nbsp;Use ui.bannerElement to get the banner html element in the DOM."
+		"en": "Occurs when the banner is hidden.<br>   Function takes arguments evt and ui.<br>   Use ui.index to get the banner index in the banners array.<br>   Use ui.banner to get the banner object from the banners array.<br>   Use ui.bannerElement to get the banner html element in the DOM.",
+		"jp": "Occurs when the banner is hidden.<br>   Function takes arguments evt and ui.<br>   Use ui.index to get the banner index in the banners array.<br>   Use ui.banner to get the banner object from the banners array.<br>   Use ui.bannerElement to get the banner html element in the DOM."
 	}
     },
     "bannerVisible": {
@@ -57,8 +57,8 @@
         }
       ],
       "description": {
-		"en": "Defines the name of the player banner visible event. Fired when the banner has been displayed.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.index to get the banner index in the banners array.<br>&nbsp;&nbsp;&nbsp;Use ui.banner to get the banner object from the banners array.<br>&nbsp;&nbsp;&nbsp;Use ui.bannerElement to get the banner html element in the DOM.",
-		"jp": "Defines the name of the player banner visible event. Fired when the banner has been displayed.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.index to get the banner index in the banners array.<br>&nbsp;&nbsp;&nbsp;Use ui.banner to get the banner object from the banners array.<br>&nbsp;&nbsp;&nbsp;Use ui.bannerElement to get the banner html element in the DOM."
+		"en": "Defines the name of the player banner visible event. Fired when the banner has been displayed.<br>   Function takes arguments evt and ui.<br>   Use ui.index to get the banner index in the banners array.<br>   Use ui.banner to get the banner object from the banners array.<br>   Use ui.bannerElement to get the banner html element in the DOM.",
+		"jp": "Defines the name of the player banner visible event. Fired when the banner has been displayed.<br>   Function takes arguments evt and ui.<br>   Use ui.index to get the banner index in the banners array.<br>   Use ui.banner to get the banner object from the banners array.<br>   Use ui.bannerElement to get the banner html element in the DOM."
 	}
     },
     "bookmarkClick": {
@@ -76,8 +76,8 @@
         }
       ],
       "description": {
-		"en": "Occurs when the bookmark is clicked.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.bookmark to get the bookmark object from the bookmarks array.<br>&nbsp;&nbsp;&nbsp;Use ui.bookmarkElement to get the html element in the DOM.",
-		"jp": "Occurs when the bookmark is clicked.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.bookmark to get the bookmark object from the bookmarks array.<br>&nbsp;&nbsp;&nbsp;Use ui.bookmarkElement to get the html element in the DOM."
+		"en": "Occurs when the bookmark is clicked.<br>   Function takes arguments evt and ui.<br>   Use ui.bookmark to get the bookmark object from the bookmarks array.<br>   Use ui.bookmarkElement to get the html element in the DOM.",
+		"jp": "Occurs when the bookmark is clicked.<br>   Function takes arguments evt and ui.<br>   Use ui.bookmark to get the bookmark object from the bookmarks array.<br>   Use ui.bookmarkElement to get the html element in the DOM."
 	}
     },
     "bookmarkHit": {
@@ -95,8 +95,8 @@
         }
       ],
       "description": {
-		"en": "Occurs when the bookmark is hit.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.source to get the url of the playing video.<br>&nbsp;&nbsp;&nbsp;Use ui.bookmark to get the bookmark object from the bookmarks array.<br>&nbsp;&nbsp;&nbsp;Use ui.bookmarkElement to get the html element in the DOM.",
-		"jp": "Occurs when the bookmark is hit.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.source to get the url of the playing video.<br>&nbsp;&nbsp;&nbsp;Use ui.bookmark to get the bookmark object from the bookmarks array.<br>&nbsp;&nbsp;&nbsp;Use ui.bookmarkElement to get the html element in the DOM."
+		"en": "Occurs when the bookmark is hit.<br>   Function takes arguments evt and ui.<br>   Use ui.source to get the url of the playing video.<br>   Use ui.bookmark to get the bookmark object from the bookmarks array.<br>   Use ui.bookmarkElement to get the html element in the DOM.",
+		"jp": "Occurs when the bookmark is hit.<br>   Function takes arguments evt and ui.<br>   Use ui.source to get the url of the playing video.<br>   Use ui.bookmark to get the bookmark object from the bookmarks array.<br>   Use ui.bookmarkElement to get the html element in the DOM."
 	}
     },
     "browserNotSupported": {
@@ -133,8 +133,8 @@
         }
       ],
       "description": {
-		"en": "Occurs when a chunk of data is buffered.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.source to get the url of the playing video.<br>&nbsp;&nbsp;&nbsp;Use ui.buffered to get buffered percentage.",
-		"jp": "Occurs when a chunk of data is buffered.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.source to get the url of the playing video.<br>&nbsp;&nbsp;&nbsp;Use ui.buffered to get buffered percentage."
+		"en": "Occurs when a chunk of data is buffered.<br>   Function takes arguments evt and ui.<br>   Use ui.source to get the url of the playing video.<br>   Use ui.buffered to get buffered percentage.",
+		"jp": "Occurs when a chunk of data is buffered.<br>   Function takes arguments evt and ui.<br>   Use ui.source to get the url of the playing video.<br>   Use ui.buffered to get buffered percentage."
 	}
     },
     "ended": {
@@ -152,8 +152,8 @@
         }
       ],
       "description": {
-		"en": "Occurs when video has ended.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.source to get the url of the playing video.<br>&nbsp;&nbsp;&nbsp;Use ui.duration to get the video duration in seconds.",
-		"jp": "Occurs when video has ended.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.source to get the url of the playing video.<br>&nbsp;&nbsp;&nbsp;Use ui.duration to get the video duration in seconds."
+		"en": "Occurs when video has ended.<br>   Function takes arguments evt and ui.<br>   Use ui.source to get the url of the playing video.<br>   Use ui.duration to get the video duration in seconds.",
+		"jp": "Occurs when video has ended.<br>   Function takes arguments evt and ui.<br>   Use ui.source to get the url of the playing video.<br>   Use ui.duration to get the video duration in seconds."
 	}
     },
     "enterFullScreen": {
@@ -171,8 +171,8 @@
         }
       ],
       "description": {
-		"en": "Occurs when igVideoPlayer enters full screen mode.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.source to get the url of the playing video.",
-		"jp": "Occurs when igVideoPlayer enters full screen mode.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.source to get the url of the playing video."
+		"en": "Occurs when igVideoPlayer enters full screen mode.<br>   Function takes arguments evt and ui.<br>   Use ui.source to get the url of the playing video.",
+		"jp": "Occurs when igVideoPlayer enters full screen mode.<br>   Function takes arguments evt and ui.<br>   Use ui.source to get the url of the playing video."
 	}
     },
     "exitFullScreen": {
@@ -190,8 +190,8 @@
         }
       ],
       "description": {
-		"en": "Occurs when igVideoPlayer exits full screen mode.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.source to get the url of the playing video.",
-		"jp": "Occurs when igVideoPlayer exits full screen mode.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.source to get the url of the playing video."
+		"en": "Occurs when igVideoPlayer exits full screen mode.<br>   Function takes arguments evt and ui.<br>   Use ui.source to get the url of the playing video.",
+		"jp": "Occurs when igVideoPlayer exits full screen mode.<br>   Function takes arguments evt and ui.<br>   Use ui.source to get the url of the playing video."
 	}
     },
     "paused": {
@@ -209,8 +209,8 @@
         }
       ],
       "description": {
-		"en": "Occurs when video is paused.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.source to get the url of the playing video.<br>&nbsp;&nbsp;&nbsp;Use ui.duration to get the video duration in seconds.",
-		"jp": "Occurs when video is paused.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.source to get the url of the playing video.<br>&nbsp;&nbsp;&nbsp;Use ui.duration to get the video duration in seconds."
+		"en": "Occurs when video is paused.<br>   Function takes arguments evt and ui.<br>   Use ui.source to get the url of the playing video.<br>   Use ui.duration to get the video duration in seconds.",
+		"jp": "Occurs when video is paused.<br>   Function takes arguments evt and ui.<br>   Use ui.source to get the url of the playing video.<br>   Use ui.duration to get the video duration in seconds."
 	}
     },
     "playing": {
@@ -228,8 +228,8 @@
         }
       ],
       "description": {
-		"en": "Occurs when video gets playing.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.source to get the url of the playing video.<br>&nbsp;&nbsp;&nbsp;Use ui.duration to get the video duration in seconds.",
-		"jp": "Occurs when video gets playing.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.source to get the url of the playing video.<br>&nbsp;&nbsp;&nbsp;Use ui.duration to get the video duration in seconds."
+		"en": "Occurs when video gets playing.<br>   Function takes arguments evt and ui.<br>   Use ui.source to get the url of the playing video.<br>   Use ui.duration to get the video duration in seconds.",
+		"jp": "Occurs when video gets playing.<br>   Function takes arguments evt and ui.<br>   Use ui.source to get the url of the playing video.<br>   Use ui.duration to get the video duration in seconds."
 	}
     },
     "progress": {
@@ -247,8 +247,8 @@
         }
       ],
       "description": {
-		"en": "Occurs when video has advanced the playback position.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.source to get the url of the playing video.<br>&nbsp;&nbsp;&nbsp;Use ui.currentTime to get current position in the video at which the event was fired.<br>&nbsp;&nbsp;&nbsp;Use ui.duration to get the video duration in seconds.",
-		"jp": "Occurs when video has advanced the playback position.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.source to get the url of the playing video.<br>&nbsp;&nbsp;&nbsp;Use ui.currentTime to get current position in the video at which the event was fired.<br>&nbsp;&nbsp;&nbsp;Use ui.duration to get the video duration in seconds."
+		"en": "Occurs when video has advanced the playback position.<br>   Function takes arguments evt and ui.<br>   Use ui.source to get the url of the playing video.<br>   Use ui.currentTime to get current position in the video at which the event was fired.<br>   Use ui.duration to get the video duration in seconds.",
+		"jp": "Occurs when video has advanced the playback position.<br>   Function takes arguments evt and ui.<br>   Use ui.source to get the url of the playing video.<br>   Use ui.currentTime to get current position in the video at which the event was fired.<br>   Use ui.duration to get the video duration in seconds."
 	}
     },
     "relatedVideoClick": {
@@ -266,8 +266,8 @@
         }
       ],
       "description": {
-		"en": "Occurs when related video is clicked.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.relatedVideo to get the relatedVideo object from the relatedVideos array.<br>&nbsp;&nbsp;&nbsp;Use ui.relatedVideoElement to get the relatedVideo html element in the DOM.",
-		"jp": "Occurs when related video is clicked.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.relatedVideo to get the relatedVideo object from the relatedVideos array.<br>&nbsp;&nbsp;&nbsp;Use ui.relatedVideoElement to get the relatedVideo html element in the DOM."
+		"en": "Occurs when related video is clicked.<br>   Function takes arguments evt and ui.<br>   Use ui.relatedVideo to get the relatedVideo object from the relatedVideos array.<br>   Use ui.relatedVideoElement to get the relatedVideo html element in the DOM.",
+		"jp": "Occurs when related video is clicked.<br>   Function takes arguments evt and ui.<br>   Use ui.relatedVideo to get the relatedVideo object from the relatedVideos array.<br>   Use ui.relatedVideoElement to get the relatedVideo html element in the DOM."
 	}
     },
     "waiting": {
@@ -285,8 +285,8 @@
         }
       ],
       "description": {
-		"en": "Occurs when igVideoPlayer is waiting for data from the server.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.source to get the url of the playing video.<br>&nbsp;&nbsp;&nbsp;Use ui.currentTime to get current position in the video at which the event was fired.<br>&nbsp;&nbsp;&nbsp;Use ui.duration to get the video duration in seconds.",
-		"jp": "Occurs when igVideoPlayer is waiting for data from the server.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.source to get the url of the playing video.<br>&nbsp;&nbsp;&nbsp;Use ui.currentTime to get current position in the video at which the event was fired.<br>&nbsp;&nbsp;&nbsp;Use ui.duration to get the video duration in seconds."
+		"en": "Occurs when igVideoPlayer is waiting for data from the server.<br>   Function takes arguments evt and ui.<br>   Use ui.source to get the url of the playing video.<br>   Use ui.currentTime to get current position in the video at which the event was fired.<br>   Use ui.duration to get the video duration in seconds.",
+		"jp": "Occurs when igVideoPlayer is waiting for data from the server.<br>   Function takes arguments evt and ui.<br>   Use ui.source to get the url of the playing video.<br>   Use ui.currentTime to get current position in the video at which the event was fired.<br>   Use ui.duration to get the video duration in seconds."
 	}
     }
   },
