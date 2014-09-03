@@ -517,8 +517,8 @@
       "type": "bool",
       "defaultValue": false,
       "description": {
-		"en": "A boolean value indicating wheter the column headers should be arranged for compact header layout – each hieararchy is in a single row.",
-		"jp": "A boolean value indicating wheter the column headers should be arranged for compact header layout – each hieararchy is in a single row."
+		"en": "A boolean value indicating wheter the column headers should be arranged for compact header layout - each hieararchy is in a single row.",
+		"jp": "A boolean value indicating wheter the column headers should be arranged for compact header layout - each hieararchy is in a single row."
 	}
     },
     "compactRowHeaderIndentation": {
@@ -533,8 +533,8 @@
       "type": "bool",
       "defaultValue": true,
       "description": {
-		"en": "A boolean value indicating wheter the row headers should be arranged for compact header layout – each hieararchy is in a single column.",
-		"jp": "A boolean value indicating wheter the row headers should be arranged for compact header layout – each hieararchy is in a single column."
+		"en": "A boolean value indicating wheter the row headers should be arranged for compact header layout - each hieararchy is in a single column.",
+		"jp": "A boolean value indicating wheter the row headers should be arranged for compact header layout - each hieararchy is in a single column."
 	}
     },
     "customMoveValidation": {
@@ -622,8 +622,8 @@
                   "type": "function",
                   "defaultValue": null,
                   "description": {
-		"en": "A callback to be invoked right before the request is send to the server. Extends beforeSend callback of jQuery.ajax’s options object.",
-		"jp": "A callback to be invoked right before the request is send to the server. Extends beforeSend callback of jQuery.ajax’s options object."
+		"en": "A callback to be invoked right before the request is send to the server. Extends beforeSend callback of jQuery.ajax's options object.",
+		"jp": "A callback to be invoked right before the request is send to the server. Extends beforeSend callback of jQuery.ajax's options object."
 	}
                 }
               }
@@ -957,8 +957,8 @@
                                   "type": "function",
                                   "defaultValue": null,
                                   "description": {
-		"en": "A function called for each item of the data source array when level members are created. Based on the item parameter the function should return a value that will form the $.ig.Member’s name and caption.",
-		"jp": "A function called for each item of the data source array when level members are created. Based on the item parameter the function should return a value that will form the $.ig.Member’s name and caption."
+		"en": "A function called for each item of the data source array when level members are created. Based on the item parameter the function should return a value that will form the $.ig.Member's name and caption.",
+		"jp": "A function called for each item of the data source array when level members are created. Based on the item parameter the function should return a value that will form the $.ig.Member's name and caption."
 	}
                                 }
                               }

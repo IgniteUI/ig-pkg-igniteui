@@ -676,24 +676,24 @@
           "name": "fill",
           "type": "string",
           "description": {
-		"en": "The content is resized to fill the destination’s dimensions.",
-		"jp": "The content is resized to fill the destination’s dimensions."
+		"en": "The content is resized to fill the destination's dimensions.",
+		"jp": "The content is resized to fill the destination's dimensions."
 	}
         },
         {
           "name": "uniform",
           "type": "string",
           "description": {
-		"en": "The content is resized to fit the destination’s dimensions while its native aspect ratio is preserved.",
-		"jp": "The content is resized to fit the destination’s dimensions while its native aspect ratio is preserved."
+		"en": "The content is resized to fit the destination's dimensions while its native aspect ratio is preserved.",
+		"jp": "The content is resized to fit the destination's dimensions while its native aspect ratio is preserved."
 	}
         },
         {
           "name": "uniformToFill",
           "type": "string",
           "description": {
-		"en": "The content is resized to fill the destination’s dimensions completely while it preserves its native aspect ratio. If the aspect ratio of the destination rectangle differs from that of the source, the excessive source content will be cut off.",
-		"jp": "The content is resized to fill the destination’s dimensions completely while it preserves its native aspect ratio. If the aspect ratio of the destination rectangle differs from that of the source, the excessive source content will be cut off."
+		"en": "The content is resized to fill the destination's dimensions completely while it preserves its native aspect ratio. If the aspect ratio of the destination rectangle differs from that of the source, the excessive source content will be cut off.",
+		"jp": "The content is resized to fill the destination's dimensions completely while it preserves its native aspect ratio. If the aspect ratio of the destination rectangle differs from that of the source, the excessive source content will be cut off."
 	}
         }
       ]
