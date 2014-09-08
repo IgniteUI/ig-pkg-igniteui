@@ -1,4 +1,4 @@
-{
+﻿{
   "overview": null,
   "name": "ui.igDoughnutChart",
   "category": null,
@@ -20,7 +20,7 @@
       ],
       "description": {
 		"en": "event fired when the control is displayed on a non HTML5 compliant browser",
-		"jp": "event fired when the control is displayed on a non HTML5 compliant browser"
+		"jp": "HTML5 非互換のブラウザでコントロールを表示したときに発生するイベント。"
 	}
     },
     "holeDimensionsChanged": {
@@ -39,7 +39,7 @@
       ],
       "description": {
 		"en": "Raised when the dimensions (center point or radius) of the doughnut hole change.",
-		"jp": "Raised when the dimensions (center point or radius) of the doughnut hole change."
+		"jp": "ドーナッツ ホールのディメンション (中央のポイントまたは半径) が変更されるときに発生します。"
 	}
     },
     "sliceClick": {
@@ -58,7 +58,7 @@
       ],
       "description": {
 		"en": "Raised when the slice is clicked.",
-		"jp": "Raised when the slice is clicked."
+		"jp": "スライスがクリックされたときに発生します。"
 	}
     },
     "tooltipHidden": {
@@ -77,7 +77,7 @@
       ],
       "description": {
 		"en": "event fired after a tooltip is hidden <br>   Function takes arguments evt and ui.<br>   Use ui.element to get reference to tooltip DOM element.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.chart to get reference to chart object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush.",
-		"jp": "event fired after a tooltip is hidden <br>   Function takes arguments evt and ui.<br>   Use ui.element to get reference to tooltip DOM element.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.chart to get reference to chart object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush."
+		"jp": "ツールチップが非表示になった後に発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ツールチップの DOM 要素への参照を取得するには ui.element を使用します。<br>   現在のシリーズ項目オブジェクトへの参照を取得するには ui.item を使用します。<br>   チャート オブジェクトへの参照を取得するには ui.chart を使用します。<br>   現在のシリーズ オブジェクトへの参照を取得するには ui.series を使用します。<br>   項目ブラシを取得するには ui.actualItemBrush を使用します。<br>   シリーズ ブラシを取得するには ui.actualSeriesBrush を使用します。"
 	}
     },
     "tooltipHiding": {
@@ -96,7 +96,7 @@
       ],
       "description": {
 		"en": "event fired when the mouse has left a series and the tooltip is about to hide<br>   Function takes arguments evt and ui.<br>   Use ui.element to get reference to tooltip DOM element.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.chart to get reference to chart object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush.",
-		"jp": "event fired when the mouse has left a series and the tooltip is about to hide<br>   Function takes arguments evt and ui.<br>   Use ui.element to get reference to tooltip DOM element.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.chart to get reference to chart object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush."
+		"jp": "マウスがシリーズから離れ、ツールチップが非表示になるときに発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ツールチップの DOM 要素への参照を取得するには ui.element を使用します。<br>   現在のシリーズ項目オブジェクトへの参照を取得するには ui.item を使用します。<br>   チャート オブジェクトへの参照を取得するには ui.chart を使用します。<br>   現在のシリーズ オブジェクトへの参照を取得するには ui.series を使用します。<br>   項目ブラシを取得するには ui.actualItemBrush を使用します。<br>   シリーズ ブラシを取得するには ui.actualSeriesBrush を使用します。"
 	}
     },
     "tooltipShowing": {
@@ -115,7 +115,7 @@
       ],
       "description": {
 		"en": "event fired when the mouse has hovered on a series and the tooltip is about to show <br>   Function takes arguments evt and ui.<br>   Use ui.element to get reference to tooltip DOM element.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.chart to get reference to chart object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush.",
-		"jp": "event fired when the mouse has hovered on a series and the tooltip is about to show <br>   Function takes arguments evt and ui.<br>   Use ui.element to get reference to tooltip DOM element.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.chart to get reference to chart object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush."
+		"jp": "マウスがシリーズの上にホバーして、ツールチップが表示するときに発生するイベント。<br>    関数は evt および ui 引数を取得します。<br>   ツールチップの DOM 要素への参照を取得するには ui.element を使用します。<br>   現在のシリーズ項目オブジェクトへの参照を取得するには ui.item を使用します。<br>   チャート オブジェクトへの参照を取得するには ui.chart を使用します。<br>   現在のシリーズ オブジェクトへの参照を取得するには ui.series を使用します。<br>   項目ブラシを取得するには ui.actualItemBrush を使用します。<br>   シリーズ ブラシを取得するには ui.actualSeriesBrush を使用します。"
 	}
     },
     "tooltipShown": {
@@ -134,7 +134,7 @@
       ],
       "description": {
 		"en": "event fired after a tooltip is shown<br>   Function takes arguments evt and ui.<br>   Use ui.element to get reference to tooltip DOM element.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.chart to get reference to chart object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush.",
-		"jp": "event fired after a tooltip is shown<br>   Function takes arguments evt and ui.<br>   Use ui.element to get reference to tooltip DOM element.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.chart to get reference to chart object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush."
+		"jp": "ツールチップが表示された後に発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ツールチップの DOM 要素への参照を取得するには ui.element を使用します。<br>   現在のシリーズ項目オブジェクトへの参照を取得するには ui.item を使用します。<br>   チャート オブジェクトへの参照を取得するには ui.chart を使用します。<br>   現在のシリーズ オブジェクトへの参照を取得するには ui.series を使用します。<br>   項目ブラシを取得するには ui.actualItemBrush を使用します。<br>   シリーズ ブラシを取得するには ui.actualSeriesBrush を使用します。"
 	}
     }
   },
@@ -144,7 +144,7 @@
       "defaultValue": false,
       "description": {
 		"en": "Gets or sets whether the slices can be exploded.",
-		"jp": "Gets or sets whether the slices can be exploded."
+		"jp": "スライスを展開できるかどうかを取得または設定します。"
 	}
     },
     "allowSliceSelection": {
@@ -152,7 +152,7 @@
       "defaultValue": false,
       "description": {
 		"en": "Gets or sets whether the slices can be selected.",
-		"jp": "Gets or sets whether the slices can be selected."
+		"jp": "スライスを選択できるかどうかを取得または設定します。"
 	}
     },
 	"width": {
@@ -160,7 +160,7 @@
       "defaultValue": null,
       "description": {
 		"en": "The width of the chart. It can be set as a number in pixels, string (px) or percentage (%).",
-		"jp": "The width of the chart. It can be set as a number in pixels, string (px) or percentage (%)."
+		"jp": "チャートの幅。ピクセル、文字列 (px)、またはパーセンテージ (%) で数字として設定できます。"
 	}
     },
 	"height": {
@@ -168,7 +168,7 @@
       "defaultValue": null,
       "description": {
 		"en": "The height of the chart. It can be set as a number in pixels, string (px) or percentage (%).",
-		"jp": "The height of the chart. It can be set as a number in pixels, string (px) or percentage (%)."
+		"jp": "チャートの高さ。ピクセル、文字列 (px)、またはパーセンテージ (%) で数字として設定できます。"
 	}
     },
     "innerExtent": {
@@ -176,7 +176,7 @@
       "defaultValue": 40.0,
       "description": {
 		"en": "Gets or sets the inner extent of the doughnut chart. It is percent from the outer ring's radius.",
-		"jp": "Gets or sets the inner extent of the doughnut chart. It is percent from the outer ring's radius."
+		"jp": "ドーナツ型チャートの内部範囲を取得または設定します。外側リングの半径からのパーセンテージです。"
 	}
     },
     "isSurfaceInteractionDisabled": {
@@ -184,7 +184,7 @@
       "defaultValue": false,
       "description": {
 		"en": "Gets or sets whether all surface interactions with the plot area should be disabled.",
-		"jp": "Gets or sets whether all surface interactions with the plot area should be disabled."
+		"jp": "プロット領域でのすべての画面操作を無効にするかどうかを取得または設定します。"
 	}
     },
     "selectedStyle": {
@@ -192,7 +192,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the style used when a slice is selected.",
-		"jp": "Gets or sets the style used when a slice is selected."
+		"jp": "スライスを選択するときに使用するスタイルを取得または設定します。"
 	},
       "schema": {
         "fill": {
@@ -200,7 +200,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Defines the fill color of the selected slice",
-		"jp": "Defines the fill color of the selected slice"
+		"jp": "選択されたスライスの塗りつぶし色を定義します。"
 	}
         },
         "stroke": {
@@ -208,7 +208,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Defines the stroke color of the selected slice",
-		"jp": "Defines the stroke color of the selected slice"
+		"jp": "選択されたスライスのストローク色を定義します。"
 	}
         },
         "strokeThickness": {
@@ -216,7 +216,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Defines the fill stroke thickness of the selected slice",
-		"jp": "Defines the fill stroke thickness of the selected slice"
+		"jp": "選択されたスライスの塗りつぶしストローク太さを定義します。"
 	}
         }, 
         "opacity": {
@@ -224,7 +224,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Defines the opacity of the selected slice",
-		"jp": "Defines the opacity of the selected slice"
+		"jp": "選択されたスライスの不透明度を定義します。"
 	}
         }
       }
@@ -234,7 +234,7 @@
       "defaultValue": null,
       "description": {
 		"en": "An array of series objects.",
-		"jp": "An array of series objects."
+		"jp": "シリーズ オブジェクトの配列。"
 	},
 	  "designerDisplayProperty": "name",
       "schema": {
@@ -243,7 +243,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Gets or sets the Brushes property.<br>   The brushes property defines the palette from which automatically assigned series brushes are selected.<br>   The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
-		"jp": "Gets or sets the Brushes property.<br>   The brushes property defines the palette from which automatically assigned series brushes are selected.<br>   The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
+		"jp": "Brushes プロパティを取得または設定します。<br>   自動的に割り当てられるシリーズ ブラシを選択するパレットは、ブラシ プロパティで定義します。<br>   提供された値は、css 色文字列の配列である必要があります。最初の要素は、コレクションの補間モードを指定する RGB または HSV の文字列に設定するオプションがあります。"
 	},
           "arrayMemberType": "string",
 		  "schema": {
@@ -254,7 +254,7 @@
 			  "processValueOnly" : true,
 			  "description": {
 		"en": "Css color string",
-		"jp": "Css color string"
+		"jp": "CSS 色文字列"
 	}
 			}
 		  },
@@ -265,7 +265,7 @@
           "defaultValue": null,
           "description": {
 		"en": "The unique identifier of the series.",
-		"jp": "The unique identifier of the series."
+		"jp": "シリーズの一意の識別子。"
 	}
         },
 		"dataSource": {
@@ -273,7 +273,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself ",
-		"jp": "Can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself "
+		"jp": "$.ig.DataSource が受け入れる有効なデータ ソースまたは $.ig.DataSource 自体のインスタンスが可能です。 "
 	}
         },
         "formatLabel": {
@@ -281,7 +281,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Sets or gets a function which takes an object that produces a formatted label for displaying in the chart.",
-		"jp": "Sets or gets a function which takes an object that produces a formatted label for displaying in the chart."
+		"jp": "オブジェクトを取得して、チャートの表示のために書式設定されるラベルを作成する関数を取得または設定します。"
 	}
         },
         "isSurfaceInteractionDisabled": {
@@ -289,7 +289,7 @@
           "defaultValue": false,
           "description": {
 		"en": "Gets or sets whether all surface interactions with the plot area should be disabled.",
-		"jp": "Gets or sets whether all surface interactions with the plot area should be disabled."
+		"jp": "プロット領域でのすべての画面操作を無効にするかどうかを取得または設定します。"
 	}
         },
         "labelExtent": {
@@ -297,7 +297,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Gets or sets the pixel amount, by which the labels are offset from the edge of the slices.",
-		"jp": "Gets or sets the pixel amount, by which the labels are offset from the edge of the slices."
+		"jp": "スライスの端からラベルをオフセットするピクセル量を取得または設定します。"
 	}
         },
         "labelMemberPath": {
@@ -305,7 +305,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Gets or sets the property name that contains the labels.",
-		"jp": "Gets or sets the property name that contains the labels."
+		"jp": "ラベルを含むプロパティ名を取得または設定します。"
 	}
         },
         "labelsPosition": {
@@ -313,7 +313,7 @@
           "defaultValue": "center",
           "description": {
 		"en": "Gets or sets the position of chart labels.",
-		"jp": "Gets or sets the position of chart labels."
+		"jp": "チャート ラベルの位置を取得または設定します。"
 	},
           "valueOptions": [
             {
@@ -321,7 +321,7 @@
               "type": "string",
               "description": {
 		"en": "No labels will be displayed.",
-		"jp": "No labels will be displayed."
+		"jp": "ラベルは表示されません。"
 	}
             },
             {
@@ -329,7 +329,7 @@
               "type": "string",
               "description": {
 		"en": "Labels will be displayed in the center.",
-		"jp": "Labels will be displayed in the center."
+		"jp": "ラベルは中央に表示されます。"
 	}
             },
             {
@@ -337,7 +337,7 @@
               "type": "string",
               "description": {
 		"en": "Labels will be displayed inside and by the edge of the container.",
-		"jp": "Labels will be displayed inside and by the edge of the container."
+		"jp": "ラベルはコンテナーの内側と端の近くに表示されます。"
 	}
             },
             {
@@ -345,7 +345,7 @@
               "type": "string",
               "description": {
 		"en": "Labels will be displayed outside the container.",
-		"jp": "Labels will be displayed outside the container."
+		"jp": "ラベルはコンテナーの外に表示されます。"
 	}
             },
             {
@@ -353,7 +353,7 @@
               "type": "string",
               "description": {
 		"en": "Labels will automatically decide their location.",
-		"jp": "Labels will automatically decide their location."
+		"jp": "ラベルの場所は自動的に決まります。"
 	}
             }
           ]
@@ -363,7 +363,7 @@
           "defaultValue": 6,
           "description": {
 		"en": "Gets or sets the margin between a label and its leader line. The default is 6 pixels.",
-		"jp": "Gets or sets the margin between a label and its leader line. The default is 6 pixels."
+		"jp": "ラベルとリーダー線の間のマージンを取得または設定します。デフォルトは 6 ピクセルです。"
 	}
         },
         "labelsPosition": {
@@ -371,7 +371,7 @@
           "defaultValue": "straight",
           "description": {
 		"en": "Gets or sets what type of leader lines will be used for the outside end labels.",
-		"jp": "Gets or sets what type of leader lines will be used for the outside end labels."
+		"jp": "外側の終了ラベルに使用されるリーダー線のタイプを取得または設定します。"
 	},
           "valueOptions": [
             {
@@ -379,7 +379,7 @@
               "type": "string",
               "description": {
 		"en": "A straight line is drawn between the slice and its label.",
-		"jp": "A straight line is drawn between the slice and its label."
+		"jp": "スライスおよびそのラベルの間に直線が描画されます。"
 	}
             },
             {
@@ -387,7 +387,7 @@
               "type": "string",
               "description": {
 		"en": "A curved line is drawn between the slice and its label. The line follows makes a natural turn from the slice to the label.",
-		"jp": "A curved line is drawn between the slice and its label. The line follows makes a natural turn from the slice to the label."
+		"jp": "スライスおよびそのラベルの間に曲線が描画されます。線がスライスからラベルへ自然なターンで描画します。"
 	}
             },
             {
@@ -395,7 +395,7 @@
               "type": "string",
               "description": {
 		"en": "A curved line is drawn between the slice and its label. The line starts radially from the slice and then turns to the label.",
-		"jp": "A curved line is drawn between the slice and its label. The line starts radially from the slice and then turns to the label."
+		"jp": "スライスおよびそのラベルの間に曲線が描画されます。線がスライスからラジアルに出て、ラベルに回転します。"
 	}
             }
           ]
@@ -405,7 +405,7 @@
           "defaultValue": "straight",
           "description": {
 		"en": "Gets or sets whether the leader lines are visible.",
-		"jp": "Gets or sets whether the leader lines are visible."
+		"jp": "引き出し線が表示されるかどうかを取得または設定します。"
 	},
           "valueOptions": [
             {
@@ -413,7 +413,7 @@
               "type": "string",
               "description": {
 		"en": "Leader lines are visible.",
-		"jp": "Leader lines are visible."
+		"jp": "引き出し線は表示されます。"
 	}
             },
             {
@@ -421,7 +421,7 @@
               "type": "string",
               "description": {
 		"en": "Leader lines are collapsed.",
-		"jp": "Leader lines are collapsed."
+		"jp": "引き出し線は縮小されます。"
 	}
             }
           ]
@@ -431,7 +431,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Gets or sets the legend used for the current chart. You need to supply a dom element to use for the legend (preferably a div element)",
-		"jp": "Gets or sets the legend used for the current chart. You need to supply a dom element to use for the legend (preferably a div element)"
+		"jp": "現在のチャートで使用する凡例を取得または設定します。凡例に使用する DOM 要素 (div 要素) を提供する必要があります。"
 	}
         },
         "othersCategoryThreshold": {
@@ -439,7 +439,7 @@
           "defaultValue": 3,
           "description": {
 		"en": "Gets or sets the threshold value that determines if slices are grouped into the Others slice.",
-		"jp": "Gets or sets the threshold value that determines if slices are grouped into the Others slice."
+		"jp": "スライスがその他のスライスにグループ化されるかを決定するしきい値を取得または設定します。"
 	}
         },
         "othersCategoryType": {
@@ -447,7 +447,7 @@
           "defaultValue": "percent",
           "description": {
 		"en": "Gets or sets whether to use numeric or percent-based threshold value.",
-		"jp": "Gets or sets whether to use numeric or percent-based threshold value."
+		"jp": "数値ベースのしきい値を使用するかパーセンテージ ベースのしきい値を使用するかを取得または設定します。"
 	},
           "valueOptions": [
             {
@@ -455,7 +455,7 @@
               "type": "string",
               "description": {
 		"en": "Data value is compared directly to the value of OthersCategoryThreshold.",
-		"jp": "Data value is compared directly to the value of OthersCategoryThreshold."
+		"jp": "データ値は OthersCategoryThreshold の値と直接比較されます。"
 	}
             },
             {
@@ -463,7 +463,7 @@
               "type": "string",
               "description": {
 		"en": "Data value is compared to OthersCategoryThreshold as a percentage of the total.",
-		"jp": "Data value is compared to OthersCategoryThreshold as a percentage of the total."
+		"jp": "データ値は合計のパーセンテージとして OthersCategoryThreshold と比較されます。"
 	}
             }
           ]
@@ -473,7 +473,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Gets or sets the Outlines property. The Outlines property defines the palette from which automatically assigned slice outlines are selected. The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
-		"jp": "Gets or sets the Outlines property. The Outlines property defines the palette from which automatically assigned slice outlines are selected. The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
+		"jp": "Outlines プロパティを取得または設定します。Outline プロパティは自動的に割り当てられるスライス アウトラインを選択するパレットを定義します。提供された値は、css 色文字列またはグラデーションを定義する JavaScript オブジェクトの配列である必要があります。最初の要素は、コレクションの補間モードを指定する RGB または HSV の文字列に設定するオプションがあります。"
 	},
           "arrayMemberType": "string"
         },
@@ -482,7 +482,7 @@
           "defaultValue": 0.9,
           "description": {
 		"en": "Gets or sets the scaling factor of the chart's radius. Value between 0 and 1.",
-		"jp": "Gets or sets the scaling factor of the chart's radius. Value between 0 and 1."
+		"jp": "チャートの半径のスケール率を取得または設定します。0 と 1 の間の値。"
 	}
         },
         "selectedStyle": {
@@ -490,7 +490,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Gets or sets the style used when a slice is selected.",
-		"jp": "Gets or sets the style used when a slice is selected."
+		"jp": "スライスを選択するときに使用するスタイルを取得または設定します。"
 	},
           "schemaRef": "doughnutchart.selectedStyle"
         },
@@ -499,7 +499,7 @@
           "defaultValue": 0,
           "description": {
 		"en": "Gets or sets the starting angle of the chart. The default zero value is equivalent to 3 o'clock.",
-		"jp": "Gets or sets the starting angle of the chart. The default zero value is equivalent to 3 o'clock."
+		"jp": "チャートの開始角度を取得または設定します。デフォルト値 0 は、時計の 3 時に相当します。"
 	}
         },
         "toolTip": {
@@ -507,7 +507,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Gets or sets the ToolTip for the pie chart.",
-		"jp": "Gets or sets the ToolTip for the pie chart."
+		"jp": "円チャートにツールチップを設定または取得します。"
 	}
         },
         "toolTip": {
@@ -515,7 +515,7 @@
           "defaultValue": "flat",
           "description": {
 		"en": "Gets or sets the current series type.",
-		"jp": "Gets or sets the current series type."
+		"jp": "現在のシリーズ タイプを取得または設定します。"
 	},
           "valueOptions": [
             {
@@ -523,7 +523,7 @@
               "type": "string",
               "description": {
 		"en": "Series has flat 1-dimensional data.",
-		"jp": "Series has flat 1-dimensional data."
+		"jp": "シリーズは、フラットな -1 ディメンション データを持ちます。"
 	}
             }
           ]
@@ -533,7 +533,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Gets or Sets the property name that contains the values.",
-		"jp": "Gets or Sets the property name that contains the values."
+		"jp": "値を含むプロパティ名を取得または設定します。"
 	}
         }
       }

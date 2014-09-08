@@ -1,4 +1,4 @@
-{
+﻿{
   "overview": null,
   "name": "ui.igTileManager",
   "category": null,
@@ -20,7 +20,7 @@
       ],
       "description": {
 		"en": "fired before databinding is performed <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tile manager performing databinding.<br>    Use ui.dataSource to get a reference to the $.ig.DataSource the tile manager is to be databound to.",
-		"jp": "fired before databinding is performed <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tile manager performing databinding.<br>    Use ui.dataSource to get a reference to the $.ig.DataSource the tile manager is to be databound to."
+		"jp": "データバインドの実行前に発生します。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して、データ バインディングを実行するタイル マネージャーへの参照を取得します。<br>    ui.dataSource を使用して、タイル マネージャーにデータ バインドする $.ig.DataSource への参照を取得します。"
 	}
     },
     "dataBound": {
@@ -39,7 +39,7 @@
       ],
       "description": {
 		"en": "fired after databinding is complete <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tile manager performing databinding.<br>    Use ui.dataView to get a reference to the data the tile manager is databound to.<br>    Use ui.success to get see if the databinding was performed correctly.<br>    Use ui.errorMessage to get the error message if the databinding failed.",
-		"jp": "fired after databinding is complete <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tile manager performing databinding.<br>    Use ui.dataView to get a reference to the data the tile manager is databound to.<br>    Use ui.success to get see if the databinding was performed correctly.<br>    Use ui.errorMessage to get the error message if the databinding failed."
+		"jp": "データ バインディングが完了された後に発生します。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して、データ バインディングを実行するタイル マネージャーへの参照を取得します。<br>    ui.dataView を使用して、タイル マネージャーにデータ バインドしているデータへの参照を取得します。<br>    ui.success を使用して、データ バインディングが正しく実行されたかどうかを取得します。<br>    ui.errorMessage を使用して、データ バインディングが失敗した場合のエラー メッセージを取得します。"
 	}
     },
     "rendered": {
@@ -58,7 +58,7 @@
       ],
       "description": {
 		"en": "fired after rendering of the tile manager completes. <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tile manager performing rendering.",
-		"jp": "fired after rendering of the tile manager completes. <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tile manager performing rendering."
+		"jp": "タイル マネージャーの描画が完了された後に発生します。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して、描画を実行するタイル マネージャーへの参照を取得します。"
 	}
     },
     "rendering": {
@@ -77,7 +77,7 @@
       ],
       "description": {
 		"en": "fired before rendering of the tile manager begins.<br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tile manager performing rendering.<br>    Use ui.tiles to get a reference to the tiles the tile manager is going to render. If using data source this referes to the data provided.<br>    Use ui.items to get a reference to the item configurations the tile manager has.",
-		"jp": "fired before rendering of the tile manager begins.<br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tile manager performing rendering.<br>    Use ui.tiles to get a reference to the tiles the tile manager is going to render. If using data source this referes to the data provided.<br>    Use ui.items to get a reference to the item configurations the tile manager has."
+		"jp": "タイル マネージャーの描画が開始される前に発生します。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して、描画を実行するタイル マネージャーへの参照を取得します。<br>    ui.tiles を使用して、タイル マネージャーが描画するタイルへの参照を取得します。データ ソースを使用する場合、これは提供されたデータに参照します。<br>    ui.items を使用して、タイル マネージャーの項目構成への参照を取得します。"
 	}
     },
     "tileMaximized": {
@@ -96,7 +96,7 @@
       ],
       "description": {
 		"en": "fired after a tile in the tile manager is maximized. <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tile manager the maximized tile belongs to.<br>    Use ui.tile to get the jQuery element of the maximized tile",
-		"jp": "fired after a tile in the tile manager is maximized. <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tile manager the maximized tile belongs to.<br>    Use ui.tile to get the jQuery element of the maximized tile"
+		"jp": "タイル マネージャーのタイルが最大化された後に発生します。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して、最大化されたタイルに属するタイル マネージャーへの参照を取得します。<br>    ui.tile を使用して、最大化されたタイルの jQuery 要素を取得します。"
 	}
     },
     "tileMaximizing": {
@@ -115,7 +115,7 @@
       ],
       "description": {
 		"en": "fired before a tile in the tile manager is maximized.<br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tile manager performing the maximizing the tile belongs to.<br>    Use ui.tile to get the jQuery element of the tile being maximized<br>                Use ui.minimizingTile to get reference to the tile that is minimizing simultaneously or null if no tile is minimizing.",
-		"jp": "fired before a tile in the tile manager is maximized.<br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tile manager performing the maximizing the tile belongs to.<br>    Use ui.tile to get the jQuery element of the tile being maximized<br>                Use ui.minimizingTile to get reference to the tile that is minimizing simultaneously or null if no tile is minimizing."
+		"jp": "タイル マネージャーのタイルが最大化される前に発生します。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して、タイルの最大化を実行するタイル マネージャーへの参照を取得します。<br>    ui.tile を使用して、最大化されているタイルの jQuery 要素を取得します。<br>                ui.minimizingTile を使用して、同期に最小化されているタイルへの参照を取得します。タイルが最小化されていない場合、null。"
 	}
     },
     "tileMinimized": {
@@ -134,7 +134,7 @@
       ],
       "description": {
 		"en": "fired after a tile in the tile manager is minimized.<br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tile manager the minimized tile belongs to.<br>    Use ui.tile to get the jQuery element of the minimized tile",
-		"jp": "fired after a tile in the tile manager is minimized.<br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tile manager the minimized tile belongs to.<br>    Use ui.tile to get the jQuery element of the minimized tile"
+		"jp": "タイル マネージャーのタイルが最小化された後に発生します。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して、最小化されたタイルに属するタイル マネージャーへの参照を取得します。<br>    ui.tile を使用して、最小化されたタイルの jQuery 要素を取得します。"
 	}
     },
     "tileMinimizing": {
@@ -153,7 +153,7 @@
       ],
       "description": {
 		"en": "fired before a tile in the tile manager is minimized.<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get a reference to the tile manager performing the minimizing the tile belongs to.<br>                Use ui.tile to get the jQuery element of the tile being minimized<br>                Use ui.maximizingTile to get reference to the tile that is maximizing simultaneously or null if no tile is maximizing.",
-		"jp": "fired before a tile in the tile manager is minimized.<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get a reference to the tile manager performing the minimizing the tile belongs to.<br>                Use ui.tile to get the jQuery element of the tile being minimized<br>                Use ui.maximizingTile to get reference to the tile that is maximizing simultaneously or null if no tile is maximizing."
+		"jp": "タイル マネージャーのタイルが最小化される前に発生します。<br>                関数は引数 evt および ui を取得します。<br>                ui.owner を使用して、タイルの最小化を実行するタイル マネージャーへの参照を取得します。<br>                ui.tile を使用して、最小化されているタイルの jQuery 要素を取得します。<br>                ui.maximizingTile を使用して、同期に最大化されているタイルへの参照を取得します。タイルが最大化されていない場合、null。"
 	}
     },
     "tileRendered": {
@@ -172,7 +172,7 @@
       ],
       "description": {
 		"en": "Event fired after a tile has been rendered in the container<br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tile manager performing rendering.<br>    Use ui.tile to get a reference to the rendered tile",
-		"jp": "Event fired after a tile has been rendered in the container<br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tile manager performing rendering.<br>    Use ui.tile to get a reference to the rendered tile"
+		"jp": "タイルがコンテナーに描画された後に発生したイベント。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して、描画を実行するタイル マネージャーへの参照を取得します。<br>    ui.tile を使用して、描画されたタイルへの参照を取得します。"
 	}
     },
     "tileRendering": {
@@ -191,7 +191,7 @@
       ],
       "description": {
 		"en": "Event fired before a tile is rendered in the container<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get a reference to the tile manager performing rendering.<br>                Use ui.tile to get a reference to the tile being rendered",
-		"jp": "Event fired before a tile is rendered in the container<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get a reference to the tile manager performing rendering.<br>                Use ui.tile to get a reference to the tile being rendered"
+		"jp": "タイルがコンテナーに描画される前に発生したイベント。<br>                関数は引数 evt および ui を取得します。<br>                ui.owner を使用して、描画を実行するタイル マネージャーへの参照を取得します。<br>                ui.tile を使用して、描画されているタイルへの参照を取得します。"
 	}
     }
   },
@@ -201,7 +201,7 @@
       "defaultValue": 500.0,
       "description": {
 		"en": "Gets sets the duration of the animations in the tile manager.",
-		"jp": "Gets sets the duration of the animations in the tile manager."
+		"jp": "タイル マネージャーのアニメーションの期間を取得または設定します。"
 	}
     },
     "cols": {
@@ -209,7 +209,7 @@
       "defaultValue": null,
       "description": {
 		"en": " Gets sets the columns count in the container.",
-		"jp": " Gets sets the columns count in the container."
+		"jp": " コンテナーの列数を取得または設定します。"
 	}
     },
     "columnHeight": {
@@ -217,7 +217,7 @@
       "defaultValue": null,
       "description": {
 		"en": " The height of each column in the container. The container height can be set as a number in pixels or as a string in pixels (px) or percentage (%).",
-		"jp": " The height of each column in the container. The container height can be set as a number in pixels or as a string in pixels (px) or percentage (%)."
+		"jp": " コンテナーの各列の高さ。コンテナーの高さをピクセルの数値、ピクセルの文字列 (px)、またはパーセンテージ (%) として設定できます。"
 	}
     },
     "columnWidth": {
@@ -225,7 +225,7 @@
       "defaultValue": null,
       "description": {
 		"en": " Gets sets the width of each column in the container. The container width can be set as a number in pixels or as a string in pixels (px) or percentage (%).",
-		"jp": " Gets sets the width of each column in the container. The container width can be set as a number in pixels or as a string in pixels (px) or percentage (%)."
+		"jp": " コンテナーの各列の幅を取得または設定します。コンテナーの幅をピクセルの数値、ピクセルの文字列 (px)、またはパーセンテージ (%) として設定できます。"
 	}
     },
     "dataSource": {
@@ -233,7 +233,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Specifies any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself.",
-		"jp": "Specifies any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself."
+		"jp": "$.ig.DataSource が受け入れる有効なデータ ソース、または $.ig.DataSource 自体のインスタンスを指定します。"
 	}
     },
     "dataSourceType": {
@@ -241,7 +241,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property.",
-		"jp": "Explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property."
+		"jp": "データ ソースのタイプ (\"json\" など) を明示的に設定します。$.ig.DataSource とそのタイプ プロパティのドキュメントを参照してください。"
 	}
     },
     "height": {
@@ -249,7 +249,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets sets the height of igTileManager. The height can be set as a number in pixels or as a string in pixels (px) or percentage (%).",
-		"jp": "Gets sets the height of igTileManager. The height can be set as a number in pixels or as a string in pixels (px) or percentage (%)."
+		"jp": "igTileManager の高さを取得または設定します。高さをピクセルの数値、ピクセルの文字列 (px)、またはパーセンテージ (%) として設定できます。"
 	}
     },
     "items": {
@@ -257,7 +257,7 @@
       "defaultValue": null,
       "description": {
 		"en": " Gets sets the tiles configurations. Every tile is described by rowSpan, colSpan, rowIndex and colIndex.",
-		"jp": " Gets sets the tiles configurations. Every tile is described by rowSpan, colSpan, rowIndex and colIndex."
+		"jp": " タイルの構成を取得または設定します。各タイルは rowSpan、colSpan、rowIndex、および colIndex によって説明されます。"
 	},
       "schema": {
         "colSpan": {
@@ -265,7 +265,7 @@
           "defaultValue": 1,
           "description": {
 		"en": "Defines the column span of the item",
-		"jp": "Defines the column span of the item"
+		"jp": "項目の列スパンを定義します"
 	}
         },
         "rowSpan": {
@@ -273,7 +273,7 @@
           "defaultValue": 1,
           "description": {
 		"en": "Defines the row span of the item",
-		"jp": "Defines the row span of the item"
+		"jp": "項目の行スパンを定義します"
 	}
         },
         "colIndex": {
@@ -281,7 +281,7 @@
           "defaultValue": 0,
           "description": {
 		"en": "Defines the column index of the item",
-		"jp": "Defines the column index of the item"
+		"jp": "項目の列インデックスを定義します"
 	}
         },
         "rowIndex": {
@@ -289,7 +289,7 @@
           "defaultValue": 0,
           "description": {
 		"en": "Defines the row index of the item",
-		"jp": "Defines the row index of the item"
+		"jp": "項目の行インデックスを定義します"
 	}
         }
       }
@@ -299,7 +299,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets sets the horizontal spacing between tiles.<br>                number The horizontal spacing between tiles can be set as a number.",
-		"jp": "Gets sets the horizontal spacing between tiles.<br>                number The horizontal spacing between tiles can be set as a number."
+		"jp": "タイル間の水平スペースを取得または設定します。<br>                number - タイル間の水平スペースを数値として設定できます。"
 	}
     },
     "marginTop": {
@@ -307,7 +307,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets sets the vertical spacing between tiles.<br>                number The vertical spacing between tiles can be set as a number.",
-		"jp": "Gets sets the vertical spacing between tiles.<br>                number The vertical spacing between tiles can be set as a number."
+		"jp": "タイル間の垂直スペースを取得または設定します。<br>                number - タイル間の垂直スペースを数値として設定できます。"
 	}
     },
     "maximizedState": {
@@ -315,7 +315,7 @@
       "defaultValue": null,
       "description": {
 		"en": " Gets sets the content of the tiles in maximized state. When initializing on html markup provide jQuery selector specifying which elements of the tile to be shown in maximized state. When initializing on data source provide igTemplate that will be rendered for the maximized state.",
-		"jp": " Gets sets the content of the tiles in maximized state. When initializing on html markup provide jQuery selector specifying which elements of the tile to be shown in maximized state. When initializing on data source provide igTemplate that will be rendered for the maximized state."
+		"jp": " 最大状態にタイルのコンテンツを取得または設定します。HTML マークアップで初期化する場合、最大状態で表示するタイルの要素を指定する jQuery セレクターを提供する必要があります。データ ソースで初期化する場合、最大状態のために描画される igTemplate を提供する必要があります。"
 	}
     },
     "maximizedTileIndex": {
@@ -323,7 +323,7 @@
       "defaultValue": null,
       "description": {
 		"en": " Gets sets the index of which items configuration will be used for positioning and sizing of the maximized tile.",
-		"jp": " Gets sets the index of which items configuration will be used for positioning and sizing of the maximized tile."
+		"jp": " 最大タイルの配置とサイズ変更のために使用する項目構成のインデックスを取得または設定します。"
 	}
     },
     "minimizedState": {
@@ -331,7 +331,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets sets the content of the tiles in minimized state. When initializing on html markup provide jQuery selector specifying what content of the tile to be shown in minimized state. When initializing on data source provide igTemplate that will be rendered for the minimized state.",
-		"jp": "Gets sets the content of the tiles in minimized state. When initializing on html markup provide jQuery selector specifying what content of the tile to be shown in minimized state. When initializing on data source provide igTemplate that will be rendered for the minimized state."
+		"jp": "最小状態にタイルのコンテンツを取得または設定します。HTML マークアップで初期化する場合、最小状態で表示するタイルのコンテンツを指定する jQuery セレクターを提供する必要があります。データ ソースで初期化する場合、最小状態のために描画される igTemplate を提供する必要があります。"
 	}
     },
     "preventMaximizingSelector": {
@@ -339,7 +339,7 @@
       "defaultValue": "a, input",
       "description": {
 		"en": "Gets sets JQuery selector that specifies which elements will not trigger maximizing when clicked on.",
-		"jp": "Gets sets JQuery selector that specifies which elements will not trigger maximizing when clicked on."
+		"jp": "クリックしたときに最大化をトリガーしない要素を指定する jQuery セレクターを取得または設定します。"
 	}
     },
     "rearrangeItems": {
@@ -347,7 +347,7 @@
       "defaultValue": true,
       "description": {
 		"en": "Gets sets whether the items will rearrange when the container is resized.",
-		"jp": "Gets sets whether the items will rearrange when the container is resized."
+		"jp": "コンテナーがサイズ変更されたときに項目を再配置するかどうかを取得または設定します。"
 	}
     },
     "requestType": {
@@ -355,7 +355,7 @@
       "defaultValue": "GET",
       "description": {
 		"en": "specifies the HTTP verb to be used to issue the request.",
-		"jp": "specifies the HTTP verb to be used to issue the request."
+		"jp": "要求を送信する HTTP 動詞を指定します。"
 	},
 	  "valueOptions": [
         {
@@ -363,7 +363,7 @@
           "type": "string",
           "description": {
 		"en": "Initiates GET requests",
-		"jp": "Initiates GET requests"
+		"jp": "GET 要求を起動します"
 	}
         },
         {
@@ -371,7 +371,7 @@
           "type": "string",
           "description": {
 		"en": "Initiates POST requests",
-		"jp": "Initiates POST requests"
+		"jp": "POST 要求を起動します"
 	}
         }
       ]
@@ -381,7 +381,7 @@
       "defaultValue": null,
       "description": {
 		"en": "content type of the response. See http://api.jquery.com/jQuery.ajax/ => contentType.",
-		"jp": "content type of the response. See http://api.jquery.com/jQuery.ajax/ => contentType."
+		"jp": "応答のコンテンツ タイプ。http://api.jquery.com/jQuery.ajax/ の contentType を参照してください。"
 	}
     },
     "responseDataKey": {
@@ -389,7 +389,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Specifies the name of the property in which data records are held if the response is wrapped.",
-		"jp": "Specifies the name of the property in which data records are held if the response is wrapped."
+		"jp": "応答がラップされる場合に、データ レコードが保持されるプロパティの名前を指定します。"
 	}
     },
     "responseDataType": {
@@ -397,7 +397,7 @@
       "defaultValue": null,
       "description": {
 		"en": "string Explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property.<br>    null Option is ignored.",
-		"jp": "string Explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property.<br>    null Option is ignored."
+		"jp": "この文字列でデータ ソースのデータ型 (JSON など) を明示的に設定します。$.ig.DataSource とそのタイプ プロパティのドキュメントを参照してください。<br>    null 値の Option は無視されます。"
 	}
     },
     "rightPanelCols": {
@@ -405,7 +405,7 @@
       "defaultValue": null,
       "description": {
 		"en": " Gets sets how many columns to be displayed in the right panel when the tiles are minimized. he minimum value is 1.",
-		"jp": " Gets sets how many columns to be displayed in the right panel when the tiles are minimized. he minimum value is 1."
+		"jp": " タイルが最小化された場合、右パネルに表示される列の数を取得または設定します。最小値は 1 です。"
 	}
     },
     "rightPanelTilesHeight": {
@@ -413,7 +413,7 @@
       "defaultValue": null,
       "description": {
 		"en": " Gets sets the height of the minimized tiles in the right panel.",
-		"jp": " Gets sets the height of the minimized tiles in the right panel."
+		"jp": " 右パネルの最小化されたタイルの高さを取得または設定します。"
 	}
     },
     "rightPanelTilesWidth": {
@@ -421,7 +421,7 @@
       "defaultValue": null,
       "description": {
 		"en": " Gets sets the width of the minimized tiles in the right panel.",
-		"jp": " Gets sets the width of the minimized tiles in the right panel."
+		"jp": " 右パネルの最小化されたタイルの幅を取得または設定します。"
 	}
     },
     "rows": {
@@ -429,7 +429,7 @@
       "defaultValue": null,
       "description": {
 		"en": " Gets sets the rows count in the container.",
-		"jp": " Gets sets the rows count in the container."
+		"jp": " コンテナーの行数を取得または設定します。"
 	}
     },
     "showRightPanelScroll": {
@@ -437,7 +437,7 @@
       "defaultValue": true,
       "description": {
 		"en": "Gets sets whether the right panel should show scrollbar when tiles are overflowing.",
-		"jp": "Gets sets whether the right panel should show scrollbar when tiles are overflowing."
+		"jp": "タイルがオーバーフローされる場合、右パネルにスクロールバーを表示するかどうかを取得または設定します。"
 	}
     },
     "showSplitter": {
@@ -445,7 +445,7 @@
       "defaultValue": true,
       "description": {
 		"en": "Gets sets whether the splitter should be shown.",
-		"jp": "Gets sets whether the splitter should be shown."
+		"jp": "スプリッターを表示するかどうかを取得または設定します。"
 	}
     },
     "width": {
@@ -453,7 +453,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets sets the width of igTileManager. The width can be set as a number in pixels or as a string in pixels (px) or percentage (%).",
-		"jp": "Gets sets the width of igTileManager. The width can be set as a number in pixels or as a string in pixels (px) or percentage (%)."
+		"jp": "igTileManager の幅を取得または設定します。幅をピクセルの数値、ピクセルの文字列 (px)、またはパーセンテージ (%) として設定できます。"
 	}
     }
   }

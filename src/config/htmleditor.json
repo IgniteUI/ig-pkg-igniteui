@@ -1,4 +1,4 @@
-{
+﻿{
   "overview": null,
   "name": "ui.igHtmlEditor",
   "category": null,
@@ -20,7 +20,7 @@
       ],
       "description": {
 		"en": "Event fired after a toolbar item is clicked.",
-		"jp": "Event fired after a toolbar item is clicked."
+		"jp": "ツールバー項目がクリックされた後に発生するイベント。"
 	}
     },
     "actionExecuting": {
@@ -39,7 +39,7 @@
       ],
       "description": {
 		"en": "Event fired before a toolbar item is clicked.",
-		"jp": "Event fired before a toolbar item is clicked."
+		"jp": "ツールバー項目がクリックされる前に発生するイベント。"
 	}
     },
     "copy": {
@@ -58,7 +58,7 @@
       ],
       "description": {
 		"en": "Event is fired on keyboard copy action.",
-		"jp": "Event is fired on keyboard copy action."
+		"jp": "キーボードのコピー アクションで発生するイベント。"
 	}
     },
     "cut": {
@@ -77,7 +77,7 @@
       ],
       "description": {
 		"en": "Event is fired on keyboard cut action.",
-		"jp": "Event is fired on keyboard cut action."
+		"jp": "キーボードの切り取りアクションで発生するイベント。"
 	}
     },
     "paste": {
@@ -96,7 +96,7 @@
       ],
       "description": {
 		"en": "Event is fired on keyboard paste action.",
-		"jp": "Event is fired on keyboard paste action."
+		"jp": "キーボードの貼り付けアクションで発生するイベント。"
 	}
     },
     "redo": {
@@ -115,7 +115,7 @@
       ],
       "description": {
 		"en": "Event is fired on keyboard redo action.",
-		"jp": "Event is fired on keyboard redo action."
+		"jp": "キーボードのやり直しアクションで発生するイベント。"
 	}
     },
     "rendered": {
@@ -134,7 +134,7 @@
       ],
       "description": {
 		"en": "Event fired after the whole html editor widget has been rendered.",
-		"jp": "Event fired after the whole html editor widget has been rendered."
+		"jp": "HTML エディター ウィジェット全体がレンダリングされた後に発生するイベント。"
 	}
     },
     "rendering": {
@@ -153,7 +153,7 @@
       ],
       "description": {
 		"en": "Event fired before the html editor widget has been rendered.",
-		"jp": "Event fired before the html editor widget has been rendered."
+		"jp": "HTML エディター ウィジェットのレンダリングが完了する前に発生するイベント。"
 	}
     },
     "toolbarCollapsed": {
@@ -172,7 +172,7 @@
       ],
       "description": {
 		"en": "Event fired after a toolbar is collapsed.",
-		"jp": "Event fired after a toolbar is collapsed."
+		"jp": "ツールバーが縮小された後に発生するイベント。"
 	}
     },
     "toolbarCollapsing": {
@@ -191,7 +191,7 @@
       ],
       "description": {
 		"en": "Event fired before a toolbar is collapsed.",
-		"jp": "Event fired before a toolbar is collapsed."
+		"jp": "ツールバーが縮小される前に発生するイベント。"
 	}
     },
     "toolbarExpanded": {
@@ -210,7 +210,7 @@
       ],
       "description": {
 		"en": "Event fired after a toolbar is expanded.",
-		"jp": "Event fired after a toolbar is expanded."
+		"jp": "ツールバーが展開された後に発生するイベント。"
 	}
     },
     "toolbarExpanding": {
@@ -229,7 +229,7 @@
       ],
       "description": {
 		"en": "Event fired before a toolbar is expanded.",
-		"jp": "Event fired before a toolbar is expanded."
+		"jp": "ツールバーが展開される前に発生するイベント。"
 	}
     },
     "undo": {
@@ -248,7 +248,7 @@
       ],
       "description": {
 		"en": "Event is fired on keyboard undo action.",
-		"jp": "Event is fired on keyboard undo action."
+		"jp": "キーボードの取り消しアクションで発生するイベント。"
 	}
     }
   },
@@ -258,7 +258,7 @@
       "defaultValue": 350.0,
       "description": {
 		"en": "Set or get the widget height.",
-		"jp": "Set or get the widget height."
+		"jp": "ウィジェットの高さを設定するか、取得します。"
 	}
     },
     "inputName": {
@@ -266,7 +266,7 @@
       "defaultValue": "source",
       "description": {
 		"en": "The name attribute of the html editor source view.",
-		"jp": "The name attribute of the html editor source view."
+		"jp": "HTML エディターのソース ビューの name 属性。"
 	}
     },
     "showCopyPasteToolbar": {
@@ -274,7 +274,7 @@
       "defaultValue": true,
       "description": {
 		"en": "Shows/hides the \"Copy Paste\" toolbar.",
-		"jp": "Shows/hides the \"Copy Paste\" toolbar."
+		"jp": "「コピー貼り付け」ツールバーを表示/非表示にします。"
 	}
     },
     "showFormattingToolbar": {
@@ -282,7 +282,7 @@
       "defaultValue": true,
       "description": {
 		"en": "Shows/hides the \"Formating\" toolbar.",
-		"jp": "Shows/hides the \"Formating\" toolbar."
+		"jp": "「書式設定」ツールバーを表示/非表示にします。"
 	}
     },
     "showInsertObjectToolbar": {
@@ -290,7 +290,7 @@
       "defaultValue": true,
       "description": {
 		"en": "Shows/hides the \"Insert Object\" toolbar.",
-		"jp": "Shows/hides the \"Insert Object\" toolbar."
+		"jp": "「オブジェクト挿入」ツールバーを表示/非表示にします。"
 	}
     },
     "showTextToolbar": {
@@ -298,7 +298,7 @@
       "defaultValue": true,
       "description": {
 		"en": "Shows/hides the \"Text\" toolbar.",
-		"jp": "Shows/hides the \"Text\" toolbar."
+		"jp": "「テキスト」ツールバーを表示/非表示にします。"
 	}
     },
     "toolbarSettings": {
@@ -306,7 +306,7 @@
       "defaultValue": null,
       "description": {
 		"en": "The html editor toolbars list.",
-		"jp": "The html editor toolbars list."
+		"jp": "HTML エディター ツールバー リスト。"
 	}
     },
     "value": {
@@ -314,7 +314,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Used to render inside the html editor as initial content",
-		"jp": "Used to render inside the html editor as initial content"
+		"jp": "HTML エディター内に最初コンテンツとして描画するために使用されます。"
 	}
     },
     "width": {
@@ -322,7 +322,7 @@
       "defaultValue": 725.0,
       "description": {
 		"en": "Set or get the widget width.",
-		"jp": "Set or get the widget width."
+		"jp": "ウィジェットの幅を設定するか、取得します。"
 	}
     }
   }

@@ -1,4 +1,4 @@
-{
+﻿{
   "overview": null,
   "name": "ui.igGridRowSelectors",
   "title": "Row Selectors",
@@ -21,7 +21,7 @@
       ],
       "description": {
 		"en": "Event fired after a row selector checkbox had changed state.<br>   Function takes arguments evt and ui.<br>   Use ui.row to get reference to the row the clicked row selector resides in.<br>   Use ui.rowIndex to get the index of the row the clicked row selector resides in.<br>   Use ui.rowKey to get the key of the row the clicked row selector resides in.<br>   Use ui.rowSelector to get reference to the row selector cell.<br>   Use ui.owner to get reference to igRowSelectors.<br>   Use ui.grid to get reference to the igGrid the igRowSelectors are initialized for.<br>   Use ui.state to get the state of the checkbox (\"on\",\"off\").<br>   Use ui.isHeader to check if the header check box is the one being clicked. In this case no row related args are passed.",
-		"jp": "Event fired after a row selector checkbox had changed state.<br>   Function takes arguments evt and ui.<br>   Use ui.row to get reference to the row the clicked row selector resides in.<br>   Use ui.rowIndex to get the index of the row the clicked row selector resides in.<br>   Use ui.rowKey to get the key of the row the clicked row selector resides in.<br>   Use ui.rowSelector to get reference to the row selector cell.<br>   Use ui.owner to get reference to igRowSelectors.<br>   Use ui.grid to get reference to the igGrid the igRowSelectors are initialized for.<br>   Use ui.state to get the state of the checkbox (\"on\",\"off\").<br>   Use ui.isHeader to check if the header check box is the one being clicked. In this case no row related args are passed."
+		"jp": "行セレクター チェックボックスの状態が変更した後に発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ui.row を使用して、クリックされた行セレクターが置かれている行への参照を取得します。<br>   ui.rowIndex を使用して、クリックされた行セレクターが置かれている行インデックスを取得します。<br>   ui.rowKey を使用して、クリックされた行セレクターが置かれている行キーを取得します。<br>   ui.rowSelector を使用して、行セレクターのセルへの参照を取得します。<br>   ui.owner を使用して、igRowSelectors への参照を取得します。<br>   ui.grid を使用して igGridRowSelectors が初期化される igGrid への参照を取得します。<br>   ui.state を使用して、チェックボックスの状態 (「on」、「off」) を取得します。<br>   ui.isHeader を使用して、ヘッダーのチェック ボックスがクリックされているかどうかを確認します。この場合、行に関連する引数は渡されません。"
 	}
     },
     "checkBoxStateChanging": {
@@ -40,7 +40,7 @@
       ],
       "description": {
 		"en": "Event fired when a row selector checkbox is changing.<br>   Function takes arguments evt and ui.<br>   Use ui.row to get reference to the row the clicked row selector resides in.<br>   Use ui.rowIndex to get the index of the row the clicked row selector resides in.<br>   Use ui.rowKey to get the key of the row the clicked row selector resides in.<br>   Use ui.rowSelector to get reference to the row selector cell.<br>   Use ui.owner to get reference to igRowSelectors.<br>   Use ui.grid to get reference to the igGrid the igRowSelectors are initialized for.<br>   Use ui.currentState to get the current state of the checkbox (\"on\",\"off\").<br>   Use ui.newState to get the new state of the checkbox (\"on\",\"off\").<br>   Use ui.isHeader to check if the header check box is the one being clicked. In this case no row related args are passed.",
-		"jp": "Event fired when a row selector checkbox is changing.<br>   Function takes arguments evt and ui.<br>   Use ui.row to get reference to the row the clicked row selector resides in.<br>   Use ui.rowIndex to get the index of the row the clicked row selector resides in.<br>   Use ui.rowKey to get the key of the row the clicked row selector resides in.<br>   Use ui.rowSelector to get reference to the row selector cell.<br>   Use ui.owner to get reference to igRowSelectors.<br>   Use ui.grid to get reference to the igGrid the igRowSelectors are initialized for.<br>   Use ui.currentState to get the current state of the checkbox (\"on\",\"off\").<br>   Use ui.newState to get the new state of the checkbox (\"on\",\"off\").<br>   Use ui.isHeader to check if the header check box is the one being clicked. In this case no row related args are passed."
+		"jp": "行セレクターのチェックボックスが変更しているときに発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ui.row を使用して、クリックされた行セレクターが置かれている行への参照を取得します。<br>   ui.rowIndex を使用して、クリックされた行セレクターが置かれている行インデックスを取得します。<br>   ui.rowKey を使用して、クリックされた行セレクターが置かれている行キーを取得します。<br>   ui.rowSelector を使用して、行セレクターのセルへの参照を取得します。<br>   ui.owner を使用して、igRowSelectors への参照を取得します。<br>   ui.grid を使用して igGridRowSelectors が初期化される igGrid への参照を取得します。<br>   ui.currentState を使用して、チェックボックスの現在状態 (「on」、「off」) を取得します。<br>   ui.newState を使用して、チェックボックスの新しい状態 (「on」、「off」) を取得します。<br>   ui.isHeader を使用して、ヘッダーのチェック ボックスがクリックされているかどうかを確認します。この場合、行に関連する引数は渡されません。"
 	}
     },
     "rowSelectorClicked": {
@@ -59,7 +59,7 @@
       ],
       "description": {
 		"en": "Event fired after a row selector is clicked. <br>   Function takes arguments evt and ui.<br>   Use ui.row to get reference to the row the clicked row selector resides in.<br>            Use ui.fixedRow to get reference to the fixed row the clicked row selector resides in(if there are fixed columns).<br>   Use ui.rowIndex to get the index of the row the clicked row selector resides in.<br>   Use ui.rowKey to get the key of the row the clicked row selector resides in.<br>   Use ui.rowSelector to get reference to the row selector cell.<br>   Use ui.owner to get reference to igRowSelectors.<br>   Use ui.grid to get reference to the igGrid the igRowSelectors are initialized for.",
-		"jp": "Event fired after a row selector is clicked. <br>   Function takes arguments evt and ui.<br>   Use ui.row to get reference to the row the clicked row selector resides in.<br>            Use ui.fixedRow to get reference to the fixed row the clicked row selector resides in(if there are fixed columns).<br>   Use ui.rowIndex to get the index of the row the clicked row selector resides in.<br>   Use ui.rowKey to get the key of the row the clicked row selector resides in.<br>   Use ui.rowSelector to get reference to the row selector cell.<br>   Use ui.owner to get reference to igRowSelectors.<br>   Use ui.grid to get reference to the igGrid the igRowSelectors are initialized for."
+		"jp": "行セレクターがクリックされた後に発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>   ui.row を使用して、クリックされた行セレクターが置かれている行への参照を取得します。<br>            ui.fixedRow を使用して、クリックした行セレクターの固定行 (固定行がある場合) への参照を取得します。<br>   ui.rowIndex を使用して、クリックされた行セレクターが置かれている行インデックスを取得します。<br>   ui.rowKey を使用して、クリックされた行セレクターが置かれている行キーを取得します。<br>   ui.rowSelector を使用して、行セレクターのセルへの参照を取得します。<br>   ui.owner を使用して、igRowSelectors への参照を取得します。<br>   ui.grid を使用して igGridRowSelectors が初期化される igGrid への参照を取得します。"
 	}
     }
   },
@@ -73,7 +73,7 @@
       "defaultValue": false,
       "description": {
 		"en": "determines whether the row selectors column should contain checkboxes",
-		"jp": "determines whether the row selectors column should contain checkboxes"
+		"jp": "行セレクター列にチェックボックスを含むかどうかを決定します。"
 	}
     },
     "enableRowNumbering": {
@@ -81,7 +81,7 @@
       "defaultValue": true,
       "description": {
 		"en": "determines whether the row selectors column should contain row numbering",
-		"jp": "determines whether the row selectors column should contain row numbering"
+		"jp": "行セレクター列に行番号を含めるかどうかを決定します。"
 	}
     },
     "requireSelection": {
@@ -89,7 +89,7 @@
       "defaultValue": true,
       "description": {
 		"en": "determines whether the selection feature is required for the row selectors. If set to \"false\" <br>   the widget will not check for Selection availability. If set to \"true\" an exception will be thrown if Selection is<br>   not available.",
-		"jp": "determines whether the selection feature is required for the row selectors. If set to \"false\" <br>   the widget will not check for Selection availability. If set to \"true\" an exception will be thrown if Selection is<br>   not available."
+		"jp": "選択機能が行セレクターに必要かどうかを決定します。「false」に設定する場合、<br>   ウィジェットは Selection の可用性をチェックしません。「true」に設定する場合、Selection が使用できないと、<br>   例外をスローします。"
 	}
     },
     "rowNumberingSeed": {
@@ -97,7 +97,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "the seed to be added to the default numbering",
-		"jp": "the seed to be added to the default numbering"
+		"jp": "デフォルト ナンバリングに追加するシード。"
 	}
     },
     "rowSelectorColumnWidth": {
@@ -105,7 +105,7 @@
       "defaultValue": 0,
       "description": {
 		"en": "Gets or sets the width of th row selector column",
-		"jp": "Gets or sets the width of th row selector column"
+		"jp": "行セレクター列の幅を取得または設定します"
 	},
       "valueOptions": [
         {
@@ -113,7 +113,7 @@
           "type": "string",
           "description": {
 		"en": "The row selector column width can be set in pixels (px) and percentage (%)",
-		"jp": "The row selector column width can be set in pixels (px) and percentage (%)"
+		"jp": "行セレクターの列幅はピクセル (px) およびパーセント (%) で設定できます。"
 	}
         },
         {
@@ -121,7 +121,7 @@
           "type": "number",
           "description": {
 		"en": "The row selector width can be set as a number",
-		"jp": "The row selector width can be set as a number"
+		"jp": "行セレクターの幅は数値として設定できます。"
 	}
         },
         {
@@ -129,7 +129,7 @@
           "type": "object",
           "description": {
 		"en": "Will let the feature decide the best width depending on enabled contents",
-		"jp": "Will let the feature decide the best width depending on enabled contents"
+		"jp": "機能が、有効なコンテンツに応じて最適な幅を決定します。"
 	}
         }
       ]
@@ -139,7 +139,7 @@
       "defaultValue": false,
       "description": {
 		"en": "determines whether checkboxes will be shown only if row selectors are on focus/selected.",
-		"jp": "determines whether checkboxes will be shown only if row selectors are on focus/selected."
+		"jp": "行セレクターにフォーカスが置かれている/選択されている場合に限ってチェックボックスを表示するかどうかを決定します。"
 	}
     }
   }

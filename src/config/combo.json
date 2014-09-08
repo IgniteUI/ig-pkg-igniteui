@@ -1,4 +1,4 @@
-{
+﻿{
   "overview": null,
   "name": "ui.igCombo",
   "category": null,
@@ -20,7 +20,7 @@
       ],
       "description": {
 		"en": "Event which is raised after change of active item in list.<br>    Function takes arguments evt and ui.<br>    Use evt.originalEvent to obtain reference to event of browser. That can be null.<br>    Use ui.owner to obtain reference to igCombo.<br>    Use ui.index to obtain index of new active item.<br>    Use ui.oldIndex to obtain index of old active item.",
-		"jp": "Event which is raised after change of active item in list.<br>    Function takes arguments evt and ui.<br>    Use evt.originalEvent to obtain reference to event of browser. That can be null.<br>    Use ui.owner to obtain reference to igCombo.<br>    Use ui.index to obtain index of new active item.<br>    Use ui.oldIndex to obtain index of old active item."
+		"jp": "リスト内のアクティブな項目の変更後に発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>    evt.originalEvent を使用して、ブラウザーのイベントへの参照を取得します。null にできます。<br>    ui.owner を使用して、igCombo への参照を取得します。<br>    ui.index を使用して、新しいアクティブな項目のインデックスを取得します。<br>    ui.oldIndex を使用して、古いアクティブな項目のインデックスを取得します。"
 	}
     },
     "activeItemChanging": {
@@ -39,7 +39,7 @@
       ],
       "description": {
 		"en": "Event which is raised before change of active item in list.<br>    Return false in order to cancel change.<br>    Function takes arguments evt and ui.<br>    Use evt.originalEvent to obtain reference to event of browser. That can be null.<br>    Use ui.owner to obtain reference to igCombo.<br>    Use ui.index to obtain index of new active item.<br>    Use ui.oldIndex to obtain index of old active item.",
-		"jp": "Event which is raised before change of active item in list.<br>    Return false in order to cancel change.<br>    Function takes arguments evt and ui.<br>    Use evt.originalEvent to obtain reference to event of browser. That can be null.<br>    Use ui.owner to obtain reference to igCombo.<br>    Use ui.index to obtain index of new active item.<br>    Use ui.oldIndex to obtain index of old active item."
+		"jp": "リスト内のアクティブな項目の変更前に発生するイベント。<br>    変更をキャンセルするには、False を返します。<br>    関数は引数 evt および ui を取得します。<br>    evt.originalEvent を使用して、ブラウザーのイベントへの参照を取得します。null にできます。<br>    ui.owner を使用して、igCombo への参照を取得します。<br>    ui.index を使用して、新しいアクティブな項目のインデックスを取得します。<br>    ui.oldIndex を使用して、古いアクティブな項目のインデックスを取得します。"
 	}
     },
     "dataBinding": {
@@ -58,7 +58,7 @@
       ],
       "description": {
 		"en": "Event which is raised before data binding.<br>    Function takes first argument null and second argument ui.<br>    Use ui.owner to obtain reference to igCombo.<br>    Use ui.dataSource to obtain reference to instance of $.ig.DataSource used by combo.",
-		"jp": "Event which is raised before data binding.<br>    Function takes first argument null and second argument ui.<br>    Use ui.owner to obtain reference to igCombo.<br>    Use ui.dataSource to obtain reference to instance of $.ig.DataSource used by combo."
+		"jp": "データ バインド前に発生するイベント。<br>    関数は最初の引数に null を、2 番目の引数に ui を取得します。<br>    ui.owner を使用して、igCombo への参照を取得します。<br>    ui.dataSource を使用して、コンボが使用する $.ig.DataSource のインスタンスへの参照を取得します。"
 	}
     },
     "dataBound": {
@@ -77,7 +77,7 @@
       ],
       "description": {
 		"en": "Event which is raised after data binding.<br>    Function takes first argument null and second argument ui.<br>    Use ui.owner to obtain reference to igCombo.<br>    Use ui.dataSource to obtain reference to instance of $.ig.DataSource used by combo.",
-		"jp": "Event which is raised after data binding.<br>    Function takes first argument null and second argument ui.<br>    Use ui.owner to obtain reference to igCombo.<br>    Use ui.dataSource to obtain reference to instance of $.ig.DataSource used by combo."
+		"jp": "データ バインド後に発生するイベント。<br>    関数は最初の引数に null を、2 番目の引数に ui を取得します。<br>    ui.owner を使用して、igCombo への参照を取得します。<br>    ui.dataSource を使用して、コンボが使用する $.ig.DataSource のインスタンスへの参照を取得します。"
 	}
     },
     "dropDownClosed": {
@@ -96,7 +96,7 @@
       ],
       "description": {
 		"en": "Event which is raised after drop-down list was closed.<br>    Function takes arguments evt and ui.<br>    Use evt.originalEvent to obtain reference to event of browser.<br>    Use ui.owner to obtain reference to igCombo.<br>    Use ui.element to obtain reference to jquery DOM element which represents container of list.",
-		"jp": "Event which is raised after drop-down list was closed.<br>    Function takes arguments evt and ui.<br>    Use evt.originalEvent to obtain reference to event of browser.<br>    Use ui.owner to obtain reference to igCombo.<br>    Use ui.element to obtain reference to jquery DOM element which represents container of list."
+		"jp": "ドロップダウン リストが閉じた後に発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>    evt.originalEvent を使用して、ブラウザーのイベントへの参照を取得します。<br>    ui.owner を使用して、igCombo への参照を取得します。<br>    UI 要素を使用して、リストのコンテナーを表す jquery DOM 要素への参照を取得します。"
 	}
     },
     "dropDownClosing": {
@@ -115,7 +115,7 @@
       ],
       "description": {
 		"en": "Event which is raised before drop-down list is closed.<br>    Return false in order to cancel hide action.<br>    Function takes arguments evt and ui.<br>    Use evt.originalEvent to obtain reference to event of browser.<br>    Use ui.owner to obtain reference to igCombo.<br>    Use ui.element to obtain reference to jquery DOM element which represents container of list.",
-		"jp": "Event which is raised before drop-down list is closed.<br>    Return false in order to cancel hide action.<br>    Function takes arguments evt and ui.<br>    Use evt.originalEvent to obtain reference to event of browser.<br>    Use ui.owner to obtain reference to igCombo.<br>    Use ui.element to obtain reference to jquery DOM element which represents container of list."
+		"jp": "ドロップダウン リストが閉じる前に発生するイベント。<br>    非表示のアクションをキャンセルするには、false を返します。<br>    関数は引数 evt および ui を取得します。<br>    evt.originalEvent を使用して、ブラウザーのイベントへの参照を取得します。<br>    ui.owner を使用して、igCombo への参照を取得します。<br>    UI 要素を使用して、リストのコンテナーを表す jquery DOM 要素への参照を取得します。"
 	}
     },
     "dropDownOpened": {
@@ -134,7 +134,7 @@
       ],
       "description": {
 		"en": "Event which is raised after drop-down list was opened.<br>    Function takes arguments evt and ui.<br>    Use evt.originalEvent to obtain reference to event of browser.<br>    Use ui.owner to obtain reference to igCombo.<br>    Use ui.element to obtain reference to jquery DOM element which represents container of list.",
-		"jp": "Event which is raised after drop-down list was opened.<br>    Function takes arguments evt and ui.<br>    Use evt.originalEvent to obtain reference to event of browser.<br>    Use ui.owner to obtain reference to igCombo.<br>    Use ui.element to obtain reference to jquery DOM element which represents container of list."
+		"jp": "ドロップダウン リストが開いた後に発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>    evt.originalEvent を使用して、ブラウザーのイベントへの参照を取得します。<br>    ui.owner を使用して、igCombo への参照を取得します。<br>    UI 要素を使用して、リストのコンテナーを表す jquery DOM 要素への参照を取得します。"
 	}
     },
     "dropDownOpening": {
@@ -153,7 +153,7 @@
       ],
       "description": {
 		"en": "Event which is raised before drop-down list is opened.<br>    Return false in order to cancel drop-down action.<br>    Function takes arguments evt and ui.<br>    Use evt.originalEvent to obtain reference to event of browser.<br>    Use ui.owner to obtain reference to igCombo.<br>    Use ui.element to obtain reference to jquery DOM element which represents container of list.<br>    Note: on the very first opening or option-change that member is null and application should<br>    check that before using that member.",
-		"jp": "Event which is raised before drop-down list is opened.<br>    Return false in order to cancel drop-down action.<br>    Function takes arguments evt and ui.<br>    Use evt.originalEvent to obtain reference to event of browser.<br>    Use ui.owner to obtain reference to igCombo.<br>    Use ui.element to obtain reference to jquery DOM element which represents container of list.<br>    Note: on the very first opening or option-change that member is null and application should<br>    check that before using that member."
+		"jp": "ドロップダウン リストが開く前に発生するイベント。<br>    ドロップダウン操作をキャンセルするには、False を返します。<br>    関数は引数 evt および ui を取得します。<br>    evt.originalEvent を使用して、ブラウザーのイベントへの参照を取得します。<br>    ui.owner を使用して、igCombo への参照を取得します。<br>    UI 要素を使用して、リストのコンテナーを表す jquery DOM 要素への参照を取得します。<br>    注: 最初にオープン、またはオプションを変更する際に、そのメンバーは null 値であり、アプリケーションは<br>    そのメンバーを使用する前に、その点をチェックする必要があります。"
 	}
     },
     "filtered": {
@@ -172,7 +172,7 @@
       ],
       "description": {
 		"en": "Event which is raised after filtering.<br>    Function takes arguments evt and ui.<br>    Use evt.originalEvent to obtain reference to event of browser. That can be null.<br>    Use ui.owner to obtain reference to igCombo.<br>    Use ui.expression to obtain reference to array which contains expressions supported by $.ig.DataSource.<br>    Each expression-item contains following members: fieldName (textKey), cond (filteringCondition), expr (value/string to filter).",
-		"jp": "Event which is raised after filtering.<br>    Function takes arguments evt and ui.<br>    Use evt.originalEvent to obtain reference to event of browser. That can be null.<br>    Use ui.owner to obtain reference to igCombo.<br>    Use ui.expression to obtain reference to array which contains expressions supported by $.ig.DataSource.<br>    Each expression-item contains following members: fieldName (textKey), cond (filteringCondition), expr (value/string to filter)."
+		"jp": "フィルタリング後に発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>    evt.originalEvent を使用して、ブラウザーのイベントへの参照を取得します。null にできます。<br>    ui.owner を使用して、igCombo への参照を取得します。<br>    ui.expression を使って、$.ig.DataSource がサポートする式を含む配列への参照を取得します。<br>    各式-項目には、次のメンバーが含まれます: fieldName (textKey)、cond (filteringCondition)、expr (フィルターする値/文字列)。"
 	}
     },
     "filtering": {
@@ -191,7 +191,7 @@
       ],
       "description": {
 		"en": "Event which is raised before filtering.<br>    Return false in order to cancel filtering.<br>    Function takes arguments evt and ui.<br>    Use evt.originalEvent to obtain reference to event of browser. That can be null.<br>    Use ui.owner to obtain reference to igCombo.<br>    Use ui.expression to obtain reference to array which contains expressions supported by $.ig.DataSource.<br>    Each expression-item contains following members: fieldName (textKey), cond (filteringCondition), expr (value/string to filter).",
-		"jp": "Event which is raised before filtering.<br>    Return false in order to cancel filtering.<br>    Function takes arguments evt and ui.<br>    Use evt.originalEvent to obtain reference to event of browser. That can be null.<br>    Use ui.owner to obtain reference to igCombo.<br>    Use ui.expression to obtain reference to array which contains expressions supported by $.ig.DataSource.<br>    Each expression-item contains following members: fieldName (textKey), cond (filteringCondition), expr (value/string to filter)."
+		"jp": "フィルタリング前に発生するイベント。<br>    フィルタリングをキャンセルするには、false を返します。<br>    関数は引数 evt および ui を取得します。<br>    evt.originalEvent を使用して、ブラウザーのイベントへの参照を取得します。null にできます。<br>    ui.owner を使用して、igCombo への参照を取得します。<br>    ui.expression を使って、$.ig.DataSource がサポートする式を含む配列への参照を取得します。<br>    各式-項目には、次のメンバーが含まれます: fieldName (textKey)、cond (filteringCondition)、expr (フィルターする値/文字列)。"
 	}
     },
     "noMatchFound": {
@@ -210,7 +210,7 @@
       ],
       "description": {
 		"en": "Event which is raised after field was modified by end user and autoComplete was not able to find matching item in list.<br>    Function takes arguments evt and ui.<br>    Use evt.originalEvent to obtain reference to event of browser. That can be null.<br>    Use ui.owner to obtain reference to igCombo.<br>    Use ui.text to obtain text in field.",
-		"jp": "Event which is raised after field was modified by end user and autoComplete was not able to find matching item in list.<br>    Function takes arguments evt and ui.<br>    Use evt.originalEvent to obtain reference to event of browser. That can be null.<br>    Use ui.owner to obtain reference to igCombo.<br>    Use ui.text to obtain text in field."
+		"jp": "フィールドがエンド ユーザーによって変更され、autoComplete がリスト内に一致項目を見つけることができなかった後に発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>    evt.originalEvent を使用して、ブラウザーのイベントへの参照を取得します。null にできます。<br>    ui.owner を使用して、igCombo への参照を取得します。<br>    ui.text を使用して、フィールド内のテキストを取得します。"
 	}
     },
     "selectionChanged": {
@@ -229,7 +229,7 @@
       ],
       "description": {
 		"en": "Event which is raised after selection change.<br>    Function takes arguments evt and ui.<br>    Use evt.originalEvent to obtain reference to event of browser. That can be null.<br>    Use ui.owner to obtain reference to igCombo.<br>    Use ui.items to obtain reference to array of new selected items. That can be null.<br>    Use ui.oldItems to obtain reference to array of old selected items. That can be null.",
-		"jp": "Event which is raised after selection change.<br>    Function takes arguments evt and ui.<br>    Use evt.originalEvent to obtain reference to event of browser. That can be null.<br>    Use ui.owner to obtain reference to igCombo.<br>    Use ui.items to obtain reference to array of new selected items. That can be null.<br>    Use ui.oldItems to obtain reference to array of old selected items. That can be null."
+		"jp": "選択の変更後に発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>    evt.originalEvent を使用して、ブラウザーのイベントへの参照を取得します。null にできます。<br>    ui.owner を使用して、igCombo への参照を取得します。<br>    ui.items を使用して、新しい選択項目の配列への参照を取得します。null にできます。<br>    ui.oldItems を使用して、古い選択項目の配列への参照を取得します。null にできます。"
 	}
     },
     "selectionChanging": {
@@ -248,7 +248,7 @@
       ],
       "description": {
 		"en": "Event which is raised before selection change.<br>    Return false in order to cancel change.<br>    Function takes arguments evt and ui.<br>    Use evt.originalEvent to obtain reference to event of browser. That can be null.<br>    Use ui.owner to obtain reference to igCombo.<br>    Use ui.items to obtain reference to array of new selected items. That can be null.<br>    Use ui.oldItems to obtain reference to array of old selected items. That can be null.",
-		"jp": "Event which is raised before selection change.<br>    Return false in order to cancel change.<br>    Function takes arguments evt and ui.<br>    Use evt.originalEvent to obtain reference to event of browser. That can be null.<br>    Use ui.owner to obtain reference to igCombo.<br>    Use ui.items to obtain reference to array of new selected items. That can be null.<br>    Use ui.oldItems to obtain reference to array of old selected items. That can be null."
+		"jp": "選択の変更前に発生するイベント。<br>    変更をキャンセルするには、False を返します。<br>    関数は引数 evt および ui を取得します。<br>    evt.originalEvent を使用して、ブラウザーのイベントへの参照を取得します。null にできます。<br>    ui.owner を使用して、igCombo への参照を取得します。<br>    ui.items を使用して、新しい選択項目の配列への参照を取得します。null にできます。<br>    ui.oldItems を使用して、古い選択項目の配列への参照を取得します。null にできます。"
 	}
     },
     "textChanged": {
@@ -267,7 +267,7 @@
       ],
       "description": {
 		"en": "Event which is raised after value in field was modified by user.<br>    It is not raised when value of field was modified internally, for example, after filling-up from matching item while autoComplete.<br>    Function takes arguments evt and ui.<br>    Use evt.originalEvent to obtain reference to event of browser.<br>    Use ui.owner to obtain reference to igCombo.<br>    Use ui.text to obtain new text in field.<br>    Use ui.oldText to obtain old text in field.",
-		"jp": "Event which is raised after value in field was modified by user.<br>    It is not raised when value of field was modified internally, for example, after filling-up from matching item while autoComplete.<br>    Function takes arguments evt and ui.<br>    Use evt.originalEvent to obtain reference to event of browser.<br>    Use ui.owner to obtain reference to igCombo.<br>    Use ui.text to obtain new text in field.<br>    Use ui.oldText to obtain old text in field."
+		"jp": "フィールド内の値がユーザーによって変更された後に発生するイベント。<br>    フィールドの値が内部的に変更された場合は発生しません。たとえば、autoComplete 中の一致項目からの補充後など。<br>    関数は引数 evt および ui を取得します。<br>    evt.originalEvent を使用して、ブラウザーのイベントへの参照を取得します。<br>    ui.owner を使用して、igCombo への参照を取得します。<br>    ui.text を使用して、フィールド内の新しいテキストを取得します。<br>    ui.oldText を使用して、フィールド内の古いテキストを取得します。"
 	}
     }
   },
@@ -277,7 +277,7 @@
       "defaultValue": false,
       "description": {
 		"en": "Gets sets ability to enter and keep custom value in field.<br>    Notes for enabled:<br>    1. The matching item in list becomes active, but not selected.<br>    2. If load on demand or dataBindOnOpen is enabled, then after the load, the matching item can be selected.<br>    3. If text option was not set, the selectedItems contain only one item and that item was not found in dataSource, then the \"value\" member of that selected item will be used as the custom text.",
-		"jp": "Gets sets ability to enter and keep custom value in field.<br>    Notes for enabled:<br>    1. The matching item in list becomes active, but not selected.<br>    2. If load on demand or dataBindOnOpen is enabled, then after the load, the matching item can be selected.<br>    3. If text option was not set, the selectedItems contain only one item and that item was not found in dataSource, then the \"value\" member of that selected item will be used as the custom text."
+		"jp": "フィールドにカスタム値を入力して保持する機能を取得または設定します。<br>    注 (有効な場合):<br>    1.リストの一致する項目をアクティブになりますが、選択されていません。<br>    2.ロードオンデマンドまたは dataBindOnOpen が有効な場合、読み込んだ後に、一致する項目を選択できます。<br>    3.text オプションが設定されなくて、selectedItems は項目を 1 つのみ含み、その項目が dataSource で見つからない場合、選択した項目の value メンバーはカスタム テキストとして使用されます。"
 	}
     },
     "animationHideDuration": {
@@ -285,7 +285,7 @@
       "defaultValue": 50.0,
       "description": {
 		"en": "Gets sets duration of hide drop-down list animation in milliseconds.",
-		"jp": "Gets sets duration of hide drop-down list animation in milliseconds."
+		"jp": "ドロップダウン リストのアニメーションを非表示にする期間 (ミリ秒) を取得または設定します。"
 	}
     },
     "animationShowDuration": {
@@ -293,7 +293,7 @@
       "defaultValue": 100.0,
       "description": {
 		"en": "Gets sets duration of show drop-down list animation in milliseconds.",
-		"jp": "Gets sets duration of show drop-down list animation in milliseconds."
+		"jp": "ドロップダウン リストのアニメーションを表示する期間 (ミリ秒) を取得または設定します。"
 	}
     },
     "autoComplete": {
@@ -301,7 +301,7 @@
       "defaultValue": false,
       "description": {
 		"en": "Gets sets ability to autocomplete field from matching item in list.<br>    Note: if \"autoComplete\" option is enabled, then the \"startsWith\" is used for \"filteringCondition\" option",
-		"jp": "Gets sets ability to autocomplete field from matching item in list.<br>    Note: if \"autoComplete\" option is enabled, then the \"startsWith\" is used for \"filteringCondition\" option"
+		"jp": "リスト内の一致項目のフィールドをオートコンプリートする機能を取得または設定します。<br>    注: 「autoComplete」オプションが有効な場合、「filteringCondition」オプションには「startsWith」が使用されます。<br>"
 	}
     },
     "cascadingDataSources": {
@@ -309,7 +309,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets sets collection (array or dictonary) of javascript objects which allows to configure dataSource and other properties of this igCombo.<br>    The key in dictionary should represent selected value in parent igCombo. If value in parent igCombo is integer, then array can be used instead of dictionary.<br>    Each item in collection may contain dataSource, or an object, which should have following members.<br>     dataSource: reference to dataSource,<br>     valueKey: optional override for valueKey of this igCombo,<br>     textKey: optional override for textKey of this igCombo,<br>     dataSourceUrl: optional dataSourceUrl when dataSource is not set.<br>    Note: that option has effect only when \"parentCombo\" option is set and it has priority over \"parentComboKey\".",
-		"jp": "Gets sets collection (array or dictonary) of javascript objects which allows to configure dataSource and other properties of this igCombo.<br>    The key in dictionary should represent selected value in parent igCombo. If value in parent igCombo is integer, then array can be used instead of dictionary.<br>    Each item in collection may contain dataSource, or an object, which should have following members.<br>     dataSource: reference to dataSource,<br>     valueKey: optional override for valueKey of this igCombo,<br>     textKey: optional override for textKey of this igCombo,<br>     dataSourceUrl: optional dataSourceUrl when dataSource is not set.<br>    Note: that option has effect only when \"parentCombo\" option is set and it has priority over \"parentComboKey\"."
+		"jp": "igCombo の dataSource およびその他のプロパティを構成する javascript オブジェクトのコレクション (配列またはディクショナリ) を取得または設定します。<br>    ディクショナリのキーは親の igCombo の選択した値を表します。親の igCombo の値は整数の場合、ディクショナリの代わりに配列を使用できます。<br>    コレクションの項目は、以下のメンバーを含む dataSource またはオブジェクトを含みます。<br>     dataSource: dataSource への参照<br>     valueKey: igCombo の valueKey のオーバーライド (オプション)<br>     textKey: igCombo の textKey のオーバーライド (オプション)<br>     dataSourceUrl: dataSource が設定されない場合の dataSourceUrl (オプション)<br>    注: parentCombo オプションが設定し、parentComboKey より優先がある場合のみに、そのオプションが影響します。"
 	},
       "schema": {
         "dataSource": {
@@ -317,7 +317,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Reference to dataSource",
-		"jp": "Reference to dataSource"
+		"jp": "dataSource への参照"
 	}
         },
         "dataSourceUrl": {
@@ -325,7 +325,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Reference to dataSource URL, if dataSource property is not set",
-		"jp": "Reference to dataSource URL, if dataSource property is not set"
+		"jp": "dataSource プロパティが設定されない場合、dataSource URL への参照"
 	}
         },
         "valueKey": {
@@ -333,7 +333,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Override for valueKey of this igCombo",
-		"jp": "Override for valueKey of this igCombo"
+		"jp": "この igCombo の valueKey のオーバーライド"
 	}
         },
         "textKey": {
@@ -341,7 +341,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Override for textKey of this igCombo",
-		"jp": "Override for textKey of this igCombo"
+		"jp": "この igCombo の textKey のオーバーライド"
 	}
         }
       }
@@ -351,7 +351,7 @@
       "defaultValue": false,
       "description": {
 		"en": "Gets sets ability to use case sensitive or ignore case searching for matches defined by \"renderMatchItems\" and \"filteringCondition\" options",
-		"jp": "Gets sets ability to use case sensitive or ignore case searching for matches defined by \"renderMatchItems\" and \"filteringCondition\" options"
+		"jp": "「renderMatchItems」および「filteringCondition」オプションによって定義された一致に関して、「大文字小文字を区別する」または「大文字小文字を区別しない」検索を使用する機能を取得または設定します。"
 	}
     },
     "clearButtonTitle": {
@@ -359,7 +359,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets sets title for html element which represend clear button. That is an override for the $.ig.Combo.locale.clearButtonTitle.",
-		"jp": "Gets sets title for html element which represend clear button. That is an override for the $.ig.Combo.locale.clearButtonTitle."
+		"jp": "クリア ボタンを表す HTML 要素のタイトルを取得または設定します。$ig.Combo.locale.clearButtonTitle のオーバーライドです。"
 	}
     },
     "closeDropDownOnBlur": {
@@ -367,7 +367,7 @@
       "defaultValue": true,
       "description": {
 		"en": "Sets gets ability to close drop-down list when control loses focus. Note: if application disables that option, then it is responsible for closing drop-down list.",
-		"jp": "Sets gets ability to close drop-down list when control loses focus. Note: if application disables that option, then it is responsible for closing drop-down list."
+		"jp": "コントロールがフォーカスを失うときに、ドロップダウン リストを閉じる機能を設定または取得します。注: アプリケーションがそのオプションを無効にする場合、アプリケーションはドロップダウン リストを閉じる必要があります。"
 	}
     },
     "closeDropDownOnSelect": {
@@ -375,7 +375,7 @@
       "defaultValue": true,
       "description": {
 		"en": "Sets gets ability to close drop-down list when item is the list is selected.",
-		"jp": "Sets gets ability to close drop-down list when item is the list is selected."
+		"jp": "リストの項目が選択した場合、ドロップダウン リストを閉じる可能性を取得または設定します。"
 	}
     },
     "dataBindOnOpen": {
@@ -383,7 +383,7 @@
       "defaultValue": false,
       "description": {
 		"en": "Gets sets ability to load data (bind dataSource) at the time when drop-down list is opened.<br>    Notes:<br>    1. Before data is loaded the selectedItems, value, text and other options/methods will fail.<br>    2. Initial selection, text and value will have no effect.<br>    3. If on first drop-down the dataSource does not contain selectedItems (for example, enabled load on demand), then selection will be destroyed.<br>    4. To get around with values, an application may enable \"allowCustomValue\" option and use the \"text\" option instead of \"selectedItems\".",
-		"jp": "Gets sets ability to load data (bind dataSource) at the time when drop-down list is opened.<br>    Notes:<br>    1. Before data is loaded the selectedItems, value, text and other options/methods will fail.<br>    2. Initial selection, text and value will have no effect.<br>    3. If on first drop-down the dataSource does not contain selectedItems (for example, enabled load on demand), then selection will be destroyed.<br>    4. To get around with values, an application may enable \"allowCustomValue\" option and use the \"text\" option instead of \"selectedItems\"."
+		"jp": "ドロップダウン リストが開いている場合にデータを読み込む (dataSource をバインドする) 可能性を取得または設定します。<br>    注:<br>    1.データが読み込まれる前に、selectedItems、value、text、および他のオプション/メソッドは失敗します。<br>    2.初期選択、テキスト、および値は効果がありません。<br>    3.dataSource の最初のドロップダウンに selectedItems (ロードオンデマンドの有効化など) を含まない場合、選択が破棄されます。<br>    4.カスタム値を有効にするために、アプリケーションが allowCustomValue オプションを有効にし、selectedItems オプションの代わりに text オプションを使用できます。"
 	}
     },
     "dataSource": {
@@ -391,7 +391,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets sets a valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself.<br>    Note: if it is set to string and \"dataSourceType\" option is not set, then $.ig.JSONPDataSource is used.",
-		"jp": "Gets sets a valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself.<br>    Note: if it is set to string and \"dataSourceType\" option is not set, then $.ig.JSONPDataSource is used."
+		"jp": "$.ig.DataSource が受け入れる有効なデータ ソース、または $.ig.DataSource 自体のインスタンスを取得または設定します。<br>    注: これが文字列に設定され、「dataSourceType」オプションが設定されていない場合、$.ig.JSONPDataSource が使用されます。"
 	}
     },
     "dataSourceType": {
@@ -399,7 +399,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets sets data source type (such as \"json\", \"xml\", etc). Please refer to the documentation of $.ig.DataSource and its type property",
-		"jp": "Gets sets data source type (such as \"json\", \"xml\", etc). Please refer to the documentation of $.ig.DataSource and its type property"
+		"jp": "データ ソースのタイプ (「json」、「xml」など) を取得または設定します。$.ig.DataSource とそのタイプ プロパティのドキュメントを参照してください。"
 	}
     },
     "dataSourceUrl": {
@@ -407,7 +407,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets sets url which is used for sending JSON on request for remote filtering (MVC for example). That option is required when load on demand is enabled and its type is remote.",
-		"jp": "Gets sets url which is used for sending JSON on request for remote filtering (MVC for example). That option is required when load on demand is enabled and its type is remote."
+		"jp": "MVC など、リモート フィルタリングの要求に対して JSON を送信するのに使用する URL を取得または設定します。ロードオンデマンドが有効にし、タイプは remote の場合、このオプションは必須です。"
 	}
     },
     "dropDownAsChild": {
@@ -415,7 +415,7 @@
       "defaultValue": false,
       "description": {
 		"en": "Gets sets ability to append container of drop-down list to the body or to the parent of combo.",
-		"jp": "Gets sets ability to append container of drop-down list to the body or to the parent of combo."
+		"jp": "ドロップダウン リストのコンテナーを、コンボの本体または親に追加する機能を取得または設定します。"
 	}
     },
     "dropDownButtonTitle": {
@@ -423,7 +423,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets sets title for html element which represend drop-down button. That is an override for the $.ig.Combo.locale.dropDownButtonTitle.",
-		"jp": "Gets sets title for html element which represend drop-down button. That is an override for the $.ig.Combo.locale.dropDownButtonTitle."
+		"jp": "ドロップダウン ボタンを表す HTML 要素のタイトルを取得または設定します。$ig.Combo.locale.dropDownButtonTitle のオーバーライドです。"
 	}
     },
     "dropDownMaxHeight": {
@@ -431,7 +431,7 @@
       "defaultValue": 300.0,
       "description": {
 		"en": "Gets sets maximum height of drop-down list in pixels.",
-		"jp": "Gets sets maximum height of drop-down list in pixels."
+		"jp": "ドロップダウン リストの最大の高さ (ピクセル単位) を取得または設定します。"
 	}
     },
     "dropDownMinHeight": {
@@ -439,7 +439,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets sets minimum height of drop-down list in pixels.",
-		"jp": "Gets sets minimum height of drop-down list in pixels."
+		"jp": "ドロップダウン リストの最小の高さ (ピクセル単位) を取得または設定します。"
 	}
     },
     "dropDownOnFocus": {
@@ -447,7 +447,7 @@
       "defaultValue": false,
       "description": {
 		"en": "Sets gets ability to show drop-down list when combo gets focus.",
-		"jp": "Sets gets ability to show drop-down list when combo gets focus."
+		"jp": "コンボがフォーカスを取得するときに、ドロップダウン リストを表示する機能を設定・取得します。"
 	}
     },
     "dropDownWidth": {
@@ -455,7 +455,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets sets width of drop-down list in pixels. If it is 0, then width of combo is used.",
-		"jp": "Gets sets width of drop-down list in pixels. If it is 0, then width of combo is used."
+		"jp": "ドロップダウン リストの幅 (ピクセル単位) を取得または設定します。それが 0 の場合、コンボの幅が使用されます。"
 	}
     },
     "enableActiveItem": {
@@ -463,7 +463,7 @@
       "defaultValue": true,
       "description": {
 		"en": "Gets sets ability to render focus/active item in drop-down list.<br>    Notes: If list had active item and it was closed and opened again, then active item is reset to the first selected item.<br>    It there is no selected items, then active item is not reset.<br>    If that option is disabled, then functionality becomes similar to the SELECT html element.<br>    For example, if list is opened then action keys like up/down arrows/page, home and end will change selected item instead of active item.<br>    If list is closed, then up/down arrow keys will change selected item and update text field for it.<br>    If list is opened, then text-changes in field will select matching item in list instead of activating it.",
-		"jp": "Gets sets ability to render focus/active item in drop-down list.<br>    Notes: If list had active item and it was closed and opened again, then active item is reset to the first selected item.<br>    It there is no selected items, then active item is not reset.<br>    If that option is disabled, then functionality becomes similar to the SELECT html element.<br>    For example, if list is opened then action keys like up/down arrows/page, home and end will change selected item instead of active item.<br>    If list is closed, then up/down arrow keys will change selected item and update text field for it.<br>    If list is opened, then text-changes in field will select matching item in list instead of activating it."
+		"jp": "ドロップダウン リスト内のフォーカス/アクティブ項目を描画する機能を取得または設定します。<br>    注: リストにアクティブな項目があり、それが閉じてから再度開いた場合、アクティブな項目は最初に選択された項目にリセットされます。<br>    選択された項目がない場合、アクティブな項目はリセットされません。<br>    そのオプションが無効な場合、機能は SELECT HTML 要素に似てきます。<br>    たとえば、リストがオープンしている場合、up/down 方向キー、または page、home および end などのアクション キーはアクティブ項目ではなく、選択された項目を変更します。<br>    リストが閉じている場合、up/down 方向キーは選択された項目を変更し、そのテキスト フィールドを更新します。<br>    リストがオープンしている場合、フィールド内のテキスト変更は、それを有効にする代わりにリスト内の一致する項目を選択します。"
 	}
     },
     "enableClearButton": {
@@ -471,7 +471,7 @@
       "defaultValue": true,
       "description": {
 		"en": "Gets sets ability to show a button which allows to clear field.<br>    Button is automatically hidden when field is empty and it automatically appears when field is not empty.",
-		"jp": "Gets sets ability to show a button which allows to clear field.<br>    Button is automatically hidden when field is empty and it automatically appears when field is not empty."
+		"jp": "フィールドをクリアできるボタンを表示する機能を取得または設定します。<br>    フィールドが空の場合はボタンは自動的に非表示になり、フィールドが空ではない場合、ボタンは自動的に現れます。"
 	}
     },
     "enableDisplayBlock": {
@@ -479,7 +479,7 @@
       "defaultValue": false,
       "description": {
 		"en": "Gets sets style.display \"block\" or \"inline-block\" applied to main/outer html element.",
-		"jp": "Gets sets style.display \"block\" or \"inline-block\" applied to main/outer html element."
+		"jp": "メイン/外側 HTML 要素に適用される style.display の「block」または「inline-block」を取得または設定します。"
 	}
     },
     "filterExprUrlKey": {
@@ -487,7 +487,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets sets url key name that specifies how the remote filtering expressions will be encoded for remote requests, e.g. &filter('col') = startsWith. Default is OData",
-		"jp": "Gets sets url key name that specifies how the remote filtering expressions will be encoded for remote requests, e.g. &filter('col') = startsWith. Default is OData"
+		"jp": "&filter('col') = startsWith など、リモート要求に対してリモート フィルタリングの式をエンコードする方法を指定する URL キー名を取得または設定します。デフォルトは OData です。"
 	}
     },
     "filteringCondition": {
@@ -495,7 +495,7 @@
       "defaultValue": "contains",
       "description": {
 		"en": "Gets sets condition used for filtering.<br>    Notes:<br>    If the \"autoComplete\" option is enabled, then the \"startsWith\" is used regardless of value for this option.<br>    If \"parentComboKey\" option is set, then data is filtered internally, therefore, filtering while changing text in editor is not available.",
-		"jp": "Gets sets condition used for filtering.<br>    Notes:<br>    If the \"autoComplete\" option is enabled, then the \"startsWith\" is used regardless of value for this option.<br>    If \"parentComboKey\" option is set, then data is filtered internally, therefore, filtering while changing text in editor is not available."
+		"jp": "フィルタリングに使用する条件を取得または設定します。<br>    注:<br>    「autoComplete」オプションが有効な場合、このオプションの値に関係なく「startsWith」が使用されます。<br>    parentComboKey オプションが設定された場合、データが内部でフィルターされます。エディターでテキストを変更する場合、フィルタリングは利用できません。"
 	}
     },
     "filteringType": {
@@ -503,7 +503,7 @@
       "defaultValue": null,
       "description": {
 		"en": " Gets sets type of filtering.",
-		"jp": " Gets sets type of filtering."
+		"jp": " フィルタリングのタイプを取得または設定します。"
 	},
       "valueOptions": [
         {
@@ -511,7 +511,7 @@
           "type": "string",
           "description": {
 		"en": " filtering is performed by server",
-		"jp": " filtering is performed by server"
+		"jp": " フィルタリングはサーバーによって実行されます。"
 	}
         },
         {
@@ -519,7 +519,7 @@
           "type": "string",
           "description": {
 		"en": " filtering is performed by $.ig.DataSource",
-		"jp": " filtering is performed by $.ig.DataSource"
+		"jp": " フィルタリングは $.ig.DataSource によって実行されます。"
 	}
         },
         {
@@ -527,7 +527,7 @@
           "type": "string",
           "description": {
 		"en": " filtering is disabled",
-		"jp": " filtering is disabled"
+		"jp": " フィルタリングは無効です。"
 	}
         }
       ]
@@ -537,7 +537,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets sets template used to render footer in drop-down list. Note: template is rendered inside of DIV html element.",
-		"jp": "Gets sets template used to render footer in drop-down list. Note: template is rendered inside of DIV html element."
+		"jp": "ドロップダウン リスト内のフッターの描画に使用されるテンプレートを取得または設定します。注: テンプレートは DIV HTML 要素内で描画されます。"
 	}
     },
     "format": {
@@ -545,7 +545,7 @@
       "defaultValue": true,
       "description": {
 		"en": "Gets sets format which is applied to items in list. Values null or false will disable format.<br>    Value \"auto\" or true will use automatic format for Date and number objects.<br>    Value null or false will disable automatic format.<br>    Custom values can be something like \"currency\", \"percent\", \"dateLong\", \"time\", \"MMM-dd-yyyy H:mm tt\", etc.<br>    However, custom format should be valid for a specific data type in \"textKey\" column.",
-		"jp": "Gets sets format which is applied to items in list. Values null or false will disable format.<br>    Value \"auto\" or true will use automatic format for Date and number objects.<br>    Value null or false will disable automatic format.<br>    Custom values can be something like \"currency\", \"percent\", \"dateLong\", \"time\", \"MMM-dd-yyyy H:mm tt\", etc.<br>    However, custom format should be valid for a specific data type in \"textKey\" column."
+		"jp": "リスト内の項目に適用される書式を取得または設定します。値が null または false の場合は書式が無効になります。<br>    値が「auto」または true の場合は、Date および number オブジェクトには自動書式が使用されます。<br>    値が null または false の場合は自動書式が無効になります。<br>    カスタム値としては、「currency」、「percent」、「dateLong」、「time」、「MMM-dd-yyyy H:mm tt」などが可能です。<br>    ただし、カスタム書式は、textKey 列内の特定のデータ型に有効です。"
 	}
     },
     "headerTemplate": {
@@ -553,7 +553,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets sets template used to render header in drop-down list. Template is rendered inside of DIV html element.",
-		"jp": "Gets sets template used to render header in drop-down list. Template is rendered inside of DIV html element."
+		"jp": "ドロップダウン リスト内のヘッダーの描画に使用されるテンプレートを取得または設定します。テンプレートは DIV HTML 要素内で描画されます。"
 	}
     },
     "height": {
@@ -561,7 +561,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets sets height of combo. The numeric and string values (valid html units for size) are supported. It includes %, px, em and other units.",
-		"jp": "Gets sets height of combo. The numeric and string values (valid html units for size) are supported. It includes %, px, em and other units."
+		"jp": "コンボの高さを取得または設定します。数値および文字列値 (サイズについては有効な HTML 単位) がサポートされています。これには %、px、em およびその他の単位が含まれます。"
 	}
     },
     "inputName": {
@@ -569,7 +569,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets sets name of (hidden) INPUT element, which value will be set to values of selected items separated by \",\" character on any change in igCombo.",
-		"jp": "Gets sets name of (hidden) INPUT element, which value will be set to values of selected items separated by \",\" character on any change in igCombo."
+		"jp": "igCombo に値が変更したときに、「,」によって分割して選択した項目の値に設定される非表示の INPUT 要素の名前を取得または設定します。"
 	}
     },
     "itemSeparator": {
@@ -577,7 +577,7 @@
       "defaultValue": ", ",
       "description": {
 		"en": "Gets sets separator between items in field. Note: that option has effect only when \"multiSelection\" option is enabled",
-		"jp": "Gets sets separator between items in field. Note: that option has effect only when \"multiSelection\" option is enabled"
+		"jp": "フィールド内の項目間のセパレーターを取得または設定します。注: このオプションは、「multiSelection」オプションが有効な場合にのみ効果があります。"
 	}
     },
     "itemTemplate": {
@@ -585,7 +585,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets sets template used to render an item in list. Notes:<br>    1. The jquery.tmpl.js of Microsoft is used and application should provide supported syntax for content.<br>    2. Template is rendered inside of LI html element.<br>    So, application should consider restriction for layout: do not use \"block\" html elements and in case of absolutely positioned elements,<br>    they should not overlap with checkbox icons.",
-		"jp": "Gets sets template used to render an item in list. Notes:<br>    1. The jquery.tmpl.js of Microsoft is used and application should provide supported syntax for content.<br>    2. Template is rendered inside of LI html element.<br>    So, application should consider restriction for layout: do not use \"block\" html elements and in case of absolutely positioned elements,<br>    they should not overlap with checkbox icons."
+		"jp": "リスト内の項目の描画に使用されるテンプレートを取得または設定します。注:<br>    1.Microsoft の jquery.tmpl.js を使用し、アプリケーションはコンテンツのサポートされる構文を提供する必要があります。<br>    2.テンプレートは LI HTML 要素内で描画されます。<br>    そのため、アプリケーションはレイアウトの制限を考慮する必要があります。「block」HTML 要素を使用してはいけません。また、絶対値で配置された要素の場合、<br>    それらはチェックボックス アイコンと重なってはいけません。"
 	}
     },
     "loadOnDemandSettings": {
@@ -593,7 +593,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets sets container of variables which define load on demand functionality.<br>    Notes:<br>    That option has effect only when data is loaded remotely using dataSourceUrl.<br>    If the parentComboKey is set, then that option is not supported.<br>    Selection is supported only for already loaded items.",
-		"jp": "Gets sets container of variables which define load on demand functionality.<br>    Notes:<br>    That option has effect only when data is loaded remotely using dataSourceUrl.<br>    If the parentComboKey is set, then that option is not supported.<br>    Selection is supported only for already loaded items."
+		"jp": "ロードオンデマンド機能を定義する変数のコンテナーを取得または設定します。<br>    注:<br>    このオプションは、データが dataSourceUrl によってリモートに読み込んだ場合のみに影響します。<br>    parentComboKey を設定する場合、このオプションはサポートされません。<br>    選択は読み込んだ項目のみでサポートされます。"
 	},
       "schema": {
         "enabled": {
@@ -601,7 +601,7 @@
           "defaultValue": false,
           "description": {
 		"en": "Gets sets option to enable load on demand.",
-		"jp": "Gets sets option to enable load on demand."
+		"jp": "ロードオンデマンドを有効にするオプションを取得または設定します。"
 	},
           "required": true
         },
@@ -610,7 +610,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Gets sets number of records loaded on each request.",
-		"jp": "Gets sets number of records loaded on each request."
+		"jp": "各要求に読み込むレコードの数を取得または設定します。"
 	}
         }
       }
@@ -620,7 +620,7 @@
       "defaultValue": "editable",
       "description": {
 		"en": " Sets gets functionality mode.",
-		"jp": " Sets gets functionality mode."
+		"jp": " 機能モードを設定・取得します。"
 	},
       "valueOptions": [
         {
@@ -628,7 +628,7 @@
           "type": "string",
           "description": {
 		"en": " Allows to modify value by edit field and drop-down list.",
-		"jp": " Allows to modify value by edit field and drop-down list."
+		"jp": " 編集フィールドとドロップダウン リストによる値の変更を許可します。"
 	}
         },
         {
@@ -636,7 +636,7 @@
           "type": "string",
           "description": {
 		"en": " Allows to modify value by drop-down list only.",
-		"jp": " Allows to modify value by drop-down list only."
+		"jp": " ドロップダウン リストよる値の変更のみ許可します。"
 	}
         },
         {
@@ -644,7 +644,7 @@
           "type": "string",
           "description": {
 		"en": " Allows to open list, but does not allow any changes in field or selection in drop-down list. If selection is not set, then first item in dataSource is automatically selected.",
-		"jp": " Allows to open list, but does not allow any changes in field or selection in drop-down list. If selection is not set, then first item in dataSource is automatically selected."
+		"jp": " リストのオープンは許可しますが、フィールド内の変更、またはドロップダウン リスト内での選択は許可しません。選択が設定されない場合、dataSource の最初の項目が自動的に選択されます。"
 	}
         },
         {
@@ -652,7 +652,7 @@
           "type": "string",
           "description": {
 		"en": " Does not allow to open list or change value in field. If selection is not set, then first item in dataSource is automatically selected.",
-		"jp": " Does not allow to open list or change value in field. If selection is not set, then first item in dataSource is automatically selected."
+		"jp": " リストのオープン、またはフィールド内の値の変更を許可しません。選択が設定されない場合、dataSource の最初の項目が自動的に選択されます。"
 	}
         }
       ]
@@ -662,7 +662,7 @@
       "defaultValue": "false",
       "description": {
 		"en": " Gets sets ability to select multiple items in list and enter multiple items in field which are separated by the 'itemSeparator'.",
-		"jp": " Gets sets ability to select multiple items in list and enter multiple items in field which are separated by the 'itemSeparator'."
+		"jp": " リスト内の複数項目を選択し、「itemSeparator」で区切られたフィールドに複数項目を入力する機能を取得または設定します。"
 	},
       "valueOptions": [
         {
@@ -670,7 +670,7 @@
           "type": "string",
           "description": {
 		"en": " multiselection is disabled",
-		"jp": " multiselection is disabled"
+		"jp": " 複数選択は無効です。"
 	}
         },
         {
@@ -678,7 +678,7 @@
           "type": "string",
           "description": {
 		"en": " multiselection is enabled",
-		"jp": " multiselection is enabled"
+		"jp": " 複数選択は有効です。"
 	}
         },
         {
@@ -686,7 +686,7 @@
           "type": "string",
           "description": {
 		"en": " multiselection is enabled and checkboxes are used for list items. Those checkboxes allow to add/remove selection without pressing Ctrl key on mouse click.",
-		"jp": " multiselection is enabled and checkboxes are used for list items. Those checkboxes allow to add/remove selection without pressing Ctrl key on mouse click."
+		"jp": " Multiselection が有効であり、checkboxes がリスト項目に使用されます。これらのチェックボックスによって、Ctrl キーの押下やマウス クリックなしに、選択の追加/削除が可能になります。"
 	}
         }
       ]
@@ -696,7 +696,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets sets text of list item for condition when \"filteringType\" option is enabled and no match was found. That is an override for the $.ig.Combo.locale.noMatchFoundText.",
-		"jp": "Gets sets text of list item for condition when \"filteringType\" option is enabled and no match was found. That is an override for the $.ig.Combo.locale.noMatchFoundText."
+		"jp": "「filteringType」オプションが有効であり、一致が見つからなかった場合に、条件のリスト項目のテキストを取得または設定します。$ig.Combo.locale.noMatchFoundText のオーバーライドです。"
 	}
     },
     "nullText": {
@@ -704,7 +704,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Sets gets text which appears in field in no-focus state and there is no value.",
-		"jp": "Sets gets text which appears in field in no-focus state and there is no value."
+		"jp": "フォーカスなし状態で、値がないフィールドに表示されるテキストを設定または取得します。"
 	}
     },
     "parentCombo": {
@@ -712,7 +712,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets sets selector/id of parent igCombo or reference to parent igCombo object, which is used for cascading functionality.",
-		"jp": "Gets sets selector/id of parent igCombo or reference to parent igCombo object, which is used for cascading functionality."
+		"jp": "カスケード機能のために使用される親 igCombo または親 igCombo オブジェクトへの参照のセレクターまたは ID を取得または設定します。"
 	}
     },
     "parentComboKey": {
@@ -720,7 +720,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets sets column key in dataSource, which will be used by cascading functionality in order to get records matching with selected value in parent igCombo.<br>    Notes:<br>    That option has effect only when \"parentCombo\" option is set and it has no effect if \"cascadingDataSources\" is set.<br>    If that option is set, then data is filtered internally, therefore, filtering while changing text in editor is not available.<br>    If that option is set, then loadOnDemand is not supported.",
-		"jp": "Gets sets column key in dataSource, which will be used by cascading functionality in order to get records matching with selected value in parent igCombo.<br>    Notes:<br>    That option has effect only when \"parentCombo\" option is set and it has no effect if \"cascadingDataSources\" is set.<br>    If that option is set, then data is filtered internally, therefore, filtering while changing text in editor is not available.<br>    If that option is set, then loadOnDemand is not supported."
+		"jp": "親 igCombo の選択した値と一致するレコードを取得するためにカスケード機能で使用される dataSource の列キーを取得または設定します。<br>    注:<br>    注: parentCombo オプションが設定する場合のみに影響されます。cascadingDataSources が設定される場合、影響がありません。<br>    このオプションが設定された場合、データが内部でフィルターされます。エディターでテキストを変更する場合、フィルタリングは利用できません。<br>    そのオプションを設定する場合、loadOnDemand はサポートされません。"
 	}
     },
     "renderMatchItems": {
@@ -728,7 +728,7 @@
       "defaultValue": "multi",
       "description": {
 		"en": " Gets sets condition used for rendering of matching parts in items of drop-down list.",
-		"jp": " Gets sets condition used for rendering of matching parts in items of drop-down list."
+		"jp": " ドロップダウン リストの項目内の一致部分の描画に使用される条件を取得または設定します。"
 	},
       "valueOptions": [
         {
@@ -736,7 +736,7 @@
           "type": "string",
           "description": {
 		"en": " multiple matches in a single item are rendered",
-		"jp": " multiple matches in a single item are rendered"
+		"jp": " 単一項目内の複数の一致が描画されます。"
 	}
         },
         {
@@ -744,7 +744,7 @@
           "type": "string",
           "description": {
 		"en": " match at any position in item is rendered",
-		"jp": " match at any position in item is rendered"
+		"jp": " 項目内のあらゆる位置での一致が描画されます。"
 	}
         },
         {
@@ -752,7 +752,7 @@
           "type": "string",
           "description": {
 		"en": " only match which starts from the beginning of text is rendered",
-		"jp": " only match which starts from the beginning of text is rendered"
+		"jp": " テキストの開始から始まる一致のみが描画されます。"
 	}
         },
         {
@@ -760,7 +760,7 @@
           "type": "string",
           "description": {
 		"en": " only fully matched items are rendered",
-		"jp": " only fully matched items are rendered"
+		"jp": " 完全一致項目のみが描画されます。"
 	}
         },
         {
@@ -768,7 +768,7 @@
           "type": "string",
           "description": {
 		"en": " matches are not rendered",
-		"jp": " matches are not rendered"
+		"jp": " 一致は描画されません。"
 	}
         }
       ]
@@ -778,7 +778,7 @@
       "defaultValue": "GET",
       "description": {
 		"en": "specifies the HTTP verb to be used to issue the request",
-		"jp": "specifies the HTTP verb to be used to issue the request"
+		"jp": "要求を送信する HTTP 動詞を指定します。"
 	},
         "valueOptions": [
             {
@@ -786,7 +786,7 @@
               "type": "string",
               "description": {
 		"en": "initiates GET requests",
-		"jp": "initiates GET requests"
+		"jp": "GET 要求を起動します"
 	}
             },
             {
@@ -794,7 +794,7 @@
               "type": "string",
               "description": {
 		"en": "initiates POST requests",
-		"jp": "initiates POST requests"
+		"jp": "POST 要求を起動します"
 	}
             }
         ]
@@ -804,7 +804,7 @@
       "defaultValue": null,
       "description": {
 		"en": "content type of the response. See http://api.jquery.com/jQuery.ajax/ => contentType",
-		"jp": "content type of the response. See http://api.jquery.com/jQuery.ajax/ => contentType"
+		"jp": "応答のコンテンツ タイプ。http://api.jquery.com/jQuery.ajax/ の contentType を参照してください。"
 	}
     },
     "responseDataKey": {
@@ -812,7 +812,7 @@
       "defaultValue": null,
       "description": {
 		"en": "see $.ig.DataSource. This is basically the property in the responses where data records are held, if the response is wrapped.",
-		"jp": "see $.ig.DataSource. This is basically the property in the responses where data records are held, if the response is wrapped."
+		"jp": "$.ig.DataSource を参照してください。応答がラップされる場合、これは基本的に、データ レコードが保持される応答内のプロパティです。"
 	}
     },
     "responseTotalRecCountKey": {
@@ -820,7 +820,7 @@
       "defaultValue": null,
       "description": {
 		"en": "see $.ig.DataSource. property in the response specifying the total number of records on the server.",
-		"jp": "see $.ig.DataSource. property in the response specifying the total number of records on the server."
+		"jp": "$.ig.DataSource を参照してください。サーバー上のレコードの総数を指定する応答内のプロパティ。"
 	}
     },
     "selectedItems": {
@@ -828,7 +828,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets sets list of selected items. It should contain array of objects.<br>    Each object should contain the member \"index\" equals to the index of selected item or the member \"value\" equals to value of item in dataSource in \"valueKey\" column.<br>    The member \"text\" contains value of item in \"textKey\" column.<br>    Missing values are filled automatically while rendering list items and on other actions. If application set more than one member, then it is responsible for match.<br>    Note: that option is supported only for currently available list of items. When load-on-demand or filtering is enabled, then attempt to select not loaded item will fail.",
-		"jp": "Gets sets list of selected items. It should contain array of objects.<br>    Each object should contain the member \"index\" equals to the index of selected item or the member \"value\" equals to value of item in dataSource in \"valueKey\" column.<br>    The member \"text\" contains value of item in \"textKey\" column.<br>    Missing values are filled automatically while rendering list items and on other actions. If application set more than one member, then it is responsible for match.<br>    Note: that option is supported only for currently available list of items. When load-on-demand or filtering is enabled, then attempt to select not loaded item will fail."
+		"jp": "選択された項目のリストを取得または設定します。これにはオブジェクトの配列が含まれます。<br>    各オブジェクトには、選択した項目のインデックスに等しい「index」メンバー、または「valueKey」列の dataSource 内の項目の値に等しい「値」メンバーが含まれます。<br>    「text」メンバーには「textKey」列の項目の値が含まれます。<br>    見つからない値は、リスト項目の描画中、およびその他のアクション中に自動的に埋められます。アプリケーションが 複数のメンバーを設定する場合、一致に対して責任があります。<br>    注: このオプションは、現在の利用可能な項目のリストのみでサポートされます。ロードオンデマンドまたはフィルタリングが有効な場合、読み込んでいない項目を選択する操作は失敗します。"
 	},
       "designerDisplayProperty": "text",
       "schema": {
@@ -837,7 +837,7 @@
           "defaultValue": -1,
           "description": {
 		"en": "Index of item in list. Value should be larger than -1 and less than number of items in list (rows in  dataSource)",
-		"jp": "Index of item in list. Value should be larger than -1 and less than number of items in list (rows in  dataSource)"
+		"jp": "リスト内の項目のインデックス。値は -1 よりも大きく、リスト内の項目 (dataSource 内の行) 数未満である必要があります。"
 	},
           "required": true
         },
@@ -846,7 +846,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Value of cell in valueKey column for index",
-		"jp": "Value of cell in valueKey column for index"
+		"jp": "インデックスの valueKey 列内のセルの値。"
 	}
         },
         "text": {
@@ -854,7 +854,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Value of cell in textKey column for index",
-		"jp": "Value of cell in textKey column for index"
+		"jp": "インデックスの textKey 列内のセルの値。"
 	}
         }
       }
@@ -864,7 +864,7 @@
       "defaultValue": false,
       "description": {
 		"en": "Gets sets ability to select active item in list by Space key.<br>    Note: if that options is enabled, then it will be not possible to type-in the Space character when list is opened.",
-		"jp": "Gets sets ability to select active item in list by Space key.<br>    Note: if that options is enabled, then it will be not possible to type-in the Space character when list is opened."
+		"jp": "Space キーを使ってリスト内のアクティブな項目を選択する機能を取得または設定します。<br>    注: このオプションを有効にすると、リストをオープンしている場合、Space 文字を入力することはできません。"
 	}
     },
     "showDropDownButton": {
@@ -872,7 +872,7 @@
       "defaultValue": true,
       "description": {
 		"en": "Gets sets visibility of drop-down button.",
-		"jp": "Gets sets visibility of drop-down button."
+		"jp": "ドロップダウン ボタンの表示/非表示を取得または設定します。"
 	}
     },
     "tabIndex": {
@@ -880,7 +880,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets sets tabIndex for field of combo.",
-		"jp": "Gets sets tabIndex for field of combo."
+		"jp": "コンボのフィールドの tabIndex を取得または設定します。"
 	}
     },
     "text": {
@@ -888,7 +888,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets sets text which appears in combo on initialization. If it is not set, then the value from target html element is used automatically.<br>    If selectedItems option is not set and allowCustomValue option is enabled, then first matching item in list will be selected.<br>    Notes: After initialization that option is reset to null. To get text in field, the text() method can be used.",
-		"jp": "Gets sets text which appears in combo on initialization. If it is not set, then the value from target html element is used automatically.<br>    If selectedItems option is not set and allowCustomValue option is enabled, then first matching item in list will be selected.<br>    Notes: After initialization that option is reset to null. To get text in field, the text() method can be used."
+		"jp": "初期化中にコンボに表示されるテキストを取得または設定します。設定されていない場合は、ターゲットの HTML 要素の値が自動的に使用されます。<br>    selectedItems オプションが設定されておらず、allowCustomValue オプションが有効な場合、リスト内の最初の一致項目が選択されます。<br>    注: 初期化の後にこのオプションは null にリセットされます。フィールド内のテキストを取得するには、text() メソッドを使うことができます。"
 	}
     },
     "textKey": {
@@ -896,7 +896,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets sets name of column which contains the displayed text. If it is missing, then \"valueKey\" option will be used.",
-		"jp": "Gets sets name of column which contains the displayed text. If it is missing, then \"valueKey\" option will be used."
+		"jp": "表示されたテキストが含まれる列の名前を取得または設定します。見つからない場合は、「valueKey」オプションが使用されます。"
 	}
     },
     "textKeyType": {
@@ -904,7 +904,7 @@
       "defaultValue": null,
       "description": {
 		"en": " Gets sets type of values used for data cells/items with textKey. That value is assign to schema of $.ig.DataSource.",
-		"jp": " Gets sets type of values used for data cells/items with textKey. That value is assign to schema of $.ig.DataSource."
+		"jp": " textKey を含むデータ セル/項目に使用される値のタイプを取得または設定します。その値は $.ig.DataSource のスキーマに割り当てられます。"
 	},
       "valueOptions": [
         {
@@ -912,7 +912,7 @@
           "type": "string",
           "description": {
 		"en": " data source uses strings objects",
-		"jp": " data source uses strings objects"
+		"jp": " データ ソースは文字列オブジェクトを使用します。"
 	}
         },
         {
@@ -920,7 +920,7 @@
           "type": "string",
           "description": {
 		"en": " data source uses numbers objects",
-		"jp": " data source uses numbers objects"
+		"jp": " データ ソースは数字オブジェクトを使用します。"
 	}
         },
         {
@@ -928,7 +928,7 @@
           "type": "string",
           "description": {
 		"en": " data source uses booleans objects",
-		"jp": " data source uses booleans objects"
+		"jp": " データ ソースはブール オブジェクトを使用します。"
 	}
         },
         {
@@ -936,7 +936,7 @@
           "type": "string",
           "description": {
 		"en": " data source uses Date objects",
-		"jp": " data source uses Date objects"
+		"jp": " データ ソースは日付オブジェクトを使用します。"
 	}
         },
         {
@@ -944,7 +944,7 @@
           "type": "string",
           "description": {
 		"en": " data source uses type defined by cell/items located in first row",
-		"jp": " data source uses type defined by cell/items located in first row"
+		"jp": " データ ソースは最初の行にあるセル/項目が定義するタイプを使用します。"
 	}
         },
         {
@@ -952,7 +952,7 @@
           "type": "string",
           "description": {
 		"en": " data source uses type defined by cell/items located in first row",
-		"jp": " data source uses type defined by cell/items located in first row"
+		"jp": " データ ソースは最初の行にあるセル/項目が定義するタイプを使用します。"
 	}
         }
       ]
@@ -962,7 +962,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets object which contains options supported by igValidator.<br>    Notes: in order for validator to work, application should ensure that igValidator is loaded (ig.ui.validator.js/css files).<br>    Example:<br>    $('#combo1').igCombo({ validatorOptions: { required: true } });",
-		"jp": "Gets or sets object which contains options supported by igValidator.<br>    Notes: in order for validator to work, application should ensure that igValidator is loaded (ig.ui.validator.js/css files).<br>    Example:<br>    $('#combo1').igCombo({ validatorOptions: { required: true } });"
+		"jp": "igValidator でサポートされるオプションを含むオブジェクトを取得または設定します。<br>    注: バリデーターを動作させるには、アプリケーションで igValidator が確実に読み込まれている必要があります (ig.ui.validator.js/css ファイル)。<br>    例:<br>    $('#combo1').igCombo({ validatorOptions: { required: true } });"
 	},
       "schemaRef": "validator"
     },
@@ -971,7 +971,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets sets name of column which contains the \"value\". If it is missing, then name of first column will be used.",
-		"jp": "Gets sets name of column which contains the \"value\". If it is missing, then name of first column will be used."
+		"jp": "「value」を含む列の名前を取得または設定します。見つからない場合は、最初の列の名前が使用されます。"
 	}
     },
     "valueKeyType": {
@@ -979,7 +979,7 @@
       "defaultValue": "string",
       "description": {
 		"en": " Gets sets type of values used for data cell/items with valueKey. That value is assign to schema of $.ig.DataSource.",
-		"jp": " Gets sets type of values used for data cell/items with valueKey. That value is assign to schema of $.ig.DataSource."
+		"jp": " valueKey を含むデータ セル/項目に使用される値のタイプを取得または設定します。その値は $.ig.DataSource のスキーマに割り当てられます。"
 	},
       "valueOptions": [
         {
@@ -987,7 +987,7 @@
           "type": "string",
           "description": {
 		"en": " data source uses strings objects",
-		"jp": " data source uses strings objects"
+		"jp": " データ ソースは文字列オブジェクトを使用します。"
 	}
         },
         {
@@ -995,7 +995,7 @@
           "type": "string",
           "description": {
 		"en": " data source uses numbers objects",
-		"jp": " data source uses numbers objects"
+		"jp": " データ ソースは数字オブジェクトを使用します。"
 	}
         },
         {
@@ -1003,7 +1003,7 @@
           "type": "string",
           "description": {
 		"en": " data source uses booleans objects",
-		"jp": " data source uses booleans objects"
+		"jp": " データ ソースはブール オブジェクトを使用します。"
 	}
         },
         {
@@ -1011,7 +1011,7 @@
           "type": "string",
           "description": {
 		"en": " data source uses Date objects",
-		"jp": " data source uses Date objects"
+		"jp": " データ ソースは日付オブジェクトを使用します。"
 	}
         },
         {
@@ -1019,7 +1019,7 @@
           "type": "string",
           "description": {
 		"en": " data source uses type defined by cell/items located in first row",
-		"jp": " data source uses type defined by cell/items located in first row"
+		"jp": " データ ソースは最初の行にあるセル/項目が定義するタイプを使用します。"
 	}
         },
         {
@@ -1027,7 +1027,7 @@
           "type": "string",
           "description": {
 		"en": " data source uses type defined by cell/items located in first row",
-		"jp": " data source uses type defined by cell/items located in first row"
+		"jp": " データ ソースは最初の行にあるセル/項目が定義するタイプを使用します。"
 	}
         }
       ]
@@ -1037,7 +1037,7 @@
       "defaultValue": false,
       "description": {
 		"en": "Gets sets ability to use virtual rendering for drop-down list.<br>    If that option is enabled, then only visible items are created and top edge of first visible item in list is alligned to the top edge of list.",
-		"jp": "Gets sets ability to use virtual rendering for drop-down list.<br>    If that option is enabled, then only visible items are created and top edge of first visible item in list is alligned to the top edge of list."
+		"jp": "ドロップダウン リストの仮想描画を使用する機能を取得または設定します。<br>    このオプションが有効な場合、可視項目のみが作成され、リスト内の最初の可視項目の上端がリストの上端に合わせられます。"
 	}
     },
     "width": {
@@ -1045,7 +1045,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets sets width of combo. The numeric and string values (valid html units for size) are supported. It includes %, px, em and other units.",
-		"jp": "Gets sets width of combo. The numeric and string values (valid html units for size) are supported. It includes %, px, em and other units."
+		"jp": "コンボの幅を取得または設定します。数値および文字列値 (サイズについては有効な HTML 単位) がサポートされています。これには %、px、em およびその他の単位が含まれます。"
 	}
     }
   }

@@ -1,4 +1,4 @@
-{
+﻿{
   "overview": null,
   "name": "ui.igMap",
   "category": null,
@@ -20,7 +20,7 @@
       ],
       "description": {
 		"en": "event fired when the control is displayed on a non HTML5 compliant browser",
-		"jp": "event fired when the control is displayed on a non HTML5 compliant browser"
+		"jp": "HTML5 非互換のブラウザでコントロールを表示したときに発生するイベント。"
 	}
     },
     "gridAreaRectChanged": {
@@ -39,7 +39,7 @@
       ],
       "description": {
 		"en": "Occurs just after the current Map's grid area rectangle is changed.<br>   The grid area may change as the result of the Map being resized.<br>   Function takes arguments evt and ui.<br>   Use ui.map to get reference to map object.<br>   Use ui.newHeight to get new height value.<br>   Use ui.newLeft to get new left value.<br>   Use ui.newTop to get new top value.<br>   Use ui.newWidth to get new top value.<br>   Use ui.oldHeight to get old height value.<br>   Use ui.oldLeft to get old left value.<br>   Use ui.oldTop to get old top value.<br>   Use ui.oldWidth to get old top value.",
-		"jp": "Occurs just after the current Map's grid area rectangle is changed.<br>   The grid area may change as the result of the Map being resized.<br>   Function takes arguments evt and ui.<br>   Use ui.map to get reference to map object.<br>   Use ui.newHeight to get new height value.<br>   Use ui.newLeft to get new left value.<br>   Use ui.newTop to get new top value.<br>   Use ui.newWidth to get new top value.<br>   Use ui.oldHeight to get old height value.<br>   Use ui.oldLeft to get old left value.<br>   Use ui.oldTop to get old top value.<br>   Use ui.oldWidth to get old top value."
+		"jp": "現在の Map のグリッド領域の長方形が変わった直後に発生します。<br>   マップをサイズ変更すると、グリッドの領域を変更する可能性があります。<br>   関数は引数 evt および ui を取得します。<br>   マップ オブジェクトへの参照を取得するには ui.map を使用します。<br>   新しい高さ値を取得するには ui.newHeight を使用します。<br>   新しい左値を取得するには ui.newLeft を使用します。<br>   新しい上値を取得するには ui.newTop を使用します。<br>   新しい幅値を取得するには ui.newWidth を使用します。<br>   以前の高さ値を取得するには ui.oldHeight を使用します。<br>   以前の左値を取得するには ui.oldLeft を使用します。<br>   以前の上値を取得するには ui.oldTop を使用します。<br>   以前の幅値を取得するには ui.oldWidth を使用します。"
 	}
     },
     "refreshCompleted": {
@@ -58,7 +58,7 @@
       ],
       "description": {
 		"en": "Raised when the map's processing for an update has completed.<br>   Function takes arguments evt and ui.<br>   Use ui.map to get reference to map object.",
-		"jp": "Raised when the map's processing for an update has completed.<br>   Function takes arguments evt and ui.<br>   Use ui.map to get reference to map object."
+		"jp": "マップの更新処理が完了すると発生します。<br>   関数は引数 evt および ui を取得します。<br>   マップ オブジェクトへの参照を取得するには ui.map を使用します。"
 	}
     },
     "seriesCursorMouseMove": {
@@ -77,7 +77,7 @@
       ],
       "description": {
 		"en": "Occurs when the cursors are moved over a series in this map.<br>   Function takes arguments evt and ui.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.map to get reference to map object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush.<br>   Use ui.positionX to get mouse X position.<br>   Use ui.positionY to get mouse Y position.",
-		"jp": "Occurs when the cursors are moved over a series in this map.<br>   Function takes arguments evt and ui.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.map to get reference to map object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush.<br>   Use ui.positionX to get mouse X position.<br>   Use ui.positionY to get mouse Y position."
+		"jp": "カーソルがこのマップのシリーズの上に移動したときに発生します。<br>   関数は引数 evt および ui を取得します。<br>   現在のシリーズ項目オブジェクトへの参照を取得するには ui.item を使用します。<br>   マップ オブジェクトへの参照を取得するには ui.map を使用します。<br>   現在のシリーズ オブジェクトへの参照を取得するには ui.series を使用します。<br>   項目ブラシを取得するには ui.actualItemBrush を使用します。<br>   シリーズ ブラシを取得するには ui.actualSeriesBrush を使用します。<br>   マウス X 位置を取得するには ui.positionX を使用します。<br>   マウス Y 位置を取得するには ui.positionY を使用します。"
 	}
     },
     "seriesMouseEnter": {
@@ -96,7 +96,7 @@
       ],
       "description": {
 		"en": "Occurs when the left mouse pointer enters an element of this map.<br>   Function takes arguments evt and ui.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.map to get reference to map object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush.<br>   Use ui.positionX to get mouse X position.<br>   Use ui.positionY to get mouse Y position.",
-		"jp": "Occurs when the left mouse pointer enters an element of this map.<br>   Function takes arguments evt and ui.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.map to get reference to map object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush.<br>   Use ui.positionX to get mouse X position.<br>   Use ui.positionY to get mouse Y position."
+		"jp": "マウス ポインターがこのマップの要素に入ったときに発生します。<br>   関数は引数 evt および ui を取得します。<br>   現在のシリーズ項目オブジェクトへの参照を取得するには ui.item を使用します。<br>   マップ オブジェクトへの参照を取得するには ui.map を使用します。<br>   現在のシリーズ オブジェクトへの参照を取得するには ui.series を使用します。<br>   項目ブラシを取得するには ui.actualItemBrush を使用します。<br>   シリーズ ブラシを取得するには ui.actualSeriesBrush を使用します。<br>   マウス X 位置を取得するには ui.positionX を使用します。<br>   マウス Y 位置を取得するには ui.positionY を使用します。"
 	}
     },
     "seriesMouseLeave": {
@@ -115,7 +115,7 @@
       ],
       "description": {
 		"en": "Occurs when the left mouse pointer leaves an element of this map.<br>   Function takes arguments evt and ui.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.map to get reference to map object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush.<br>   Use ui.positionX to get mouse X position.<br>   Use ui.positionY to get mouse Y position.",
-		"jp": "Occurs when the left mouse pointer leaves an element of this map.<br>   Function takes arguments evt and ui.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.map to get reference to map object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush.<br>   Use ui.positionX to get mouse X position.<br>   Use ui.positionY to get mouse Y position."
+		"jp": "マウス ポインターがこのマップの要素から離れたときに発生します。<br>   関数は引数 evt および ui を取得します。<br>   現在のシリーズ項目オブジェクトへの参照を取得するには ui.item を使用します。<br>   マップ オブジェクトへの参照を取得するには ui.map を使用します。<br>   現在のシリーズ オブジェクトへの参照を取得するには ui.series を使用します。<br>   項目ブラシを取得するには ui.actualItemBrush を使用します。<br>   シリーズ ブラシを取得するには ui.actualSeriesBrush を使用します。<br>   マウス X 位置を取得するには ui.positionX を使用します。<br>   マウス Y 位置を取得するには ui.positionY を使用します。"
 	}
     },
     "seriesMouseLeftButtonDown": {
@@ -134,7 +134,7 @@
       ],
       "description": {
 		"en": "Occurs when the left mouse button is pressed while the mouse pointer is over an element of this map.<br>   Function takes arguments evt and ui.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.map to get reference to map object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush.<br>   Use ui.positionX to get mouse X position.<br>   Use ui.positionY to get mouse Y position.",
-		"jp": "Occurs when the left mouse button is pressed while the mouse pointer is over an element of this map.<br>   Function takes arguments evt and ui.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.map to get reference to map object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush.<br>   Use ui.positionX to get mouse X position.<br>   Use ui.positionY to get mouse Y position."
+		"jp": "マウス ポインターがこのマップの要素の上にある間に左のマウス ボタンが押されると発生します。<br>   関数は引数 evt および ui を取得します。<br>   現在のシリーズ項目オブジェクトへの参照を取得するには ui.item を使用します。<br>   マップ オブジェクトへの参照を取得するには ui.map を使用します。<br>   現在のシリーズ オブジェクトへの参照を取得するには ui.series を使用します。<br>   項目ブラシを取得するには ui.actualItemBrush を使用します。<br>   シリーズ ブラシを取得するには ui.actualSeriesBrush を使用します。<br>   マウス X 位置を取得するには ui.positionX を使用します。<br>   マウス Y 位置を取得するには ui.positionY を使用します。"
 	}
     },
     "seriesMouseLeftButtonUp": {
@@ -153,7 +153,7 @@
       ],
       "description": {
 		"en": "Occurs when the left mouse button is released while the mouse pointer is over an element of this map.<br>   Function takes arguments evt and ui.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.map to get reference to map object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush.<br>   Use ui.positionX to get mouse X position.<br>   Use ui.positionY to get mouse Y position.",
-		"jp": "Occurs when the left mouse button is released while the mouse pointer is over an element of this map.<br>   Function takes arguments evt and ui.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.map to get reference to map object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush.<br>   Use ui.positionX to get mouse X position.<br>   Use ui.positionY to get mouse Y position."
+		"jp": "マウス ポインターがこのマップの要素の上にある間に左のマウス ボタンが離されたと発生します。<br>   関数は引数 evt および ui を取得します。<br>   現在のシリーズ項目オブジェクトへの参照を取得するには ui.item を使用します。<br>   マップ オブジェクトへの参照を取得するには ui.map を使用します。<br>   現在のシリーズ オブジェクトへの参照を取得するには ui.series を使用します。<br>   項目ブラシを取得するには ui.actualItemBrush を使用します。<br>   シリーズ ブラシを取得するには ui.actualSeriesBrush を使用します。<br>   マウス X 位置を取得するには ui.positionX を使用します。<br>   マウス Y 位置を取得するには ui.positionY を使用します。"
 	}
     },
     "seriesMouseMove": {
@@ -172,7 +172,7 @@
       ],
       "description": {
 		"en": "Occurs when the left mouse pointer moves while over an element of this map.<br>   Function takes arguments evt and ui.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.map to get reference to map object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush.<br>   Use ui.positionX to get mouse X position.<br>   Use ui.positionY to get mouse Y position.",
-		"jp": "Occurs when the left mouse pointer moves while over an element of this map.<br>   Function takes arguments evt and ui.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.map to get reference to map object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush.<br>   Use ui.positionX to get mouse X position.<br>   Use ui.positionY to get mouse Y position."
+		"jp": "マウスのポインターがこのマップの要素の上にある間にマウス ポインターが移動すると発生します。<br>   関数は引数 evt および ui を取得します。<br>   現在のシリーズ項目オブジェクトへの参照を取得するには ui.item を使用します。<br>   マップ オブジェクトへの参照を取得するには ui.map を使用します。<br>   現在のシリーズ オブジェクトへの参照を取得するには ui.series を使用します。<br>   項目ブラシを取得するには ui.actualItemBrush を使用します。<br>   シリーズ ブラシを取得するには ui.actualSeriesBrush を使用します。<br>   マウス X 位置を取得するには ui.positionX を使用します。<br>   マウス Y 位置を取得するには ui.positionY を使用します。"
 	}
     },
     "tooltipHidden": {
@@ -191,7 +191,7 @@
       ],
       "description": {
 		"en": "event fired after a tooltip is hidden <br>   Function takes arguments evt and ui.<br>   Use ui.element to get reference to tooltip DOM element.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.map to get reference to map object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush.",
-		"jp": "event fired after a tooltip is hidden <br>   Function takes arguments evt and ui.<br>   Use ui.element to get reference to tooltip DOM element.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.map to get reference to map object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush."
+		"jp": "ツールチップが非表示になった後に発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ツールチップの DOM 要素への参照を取得するには ui.element を使用します。<br>   現在のシリーズ項目オブジェクトへの参照を取得するには ui.item を使用します。<br>   マップ オブジェクトへの参照を取得するには ui.map を使用します。<br>   現在のシリーズ オブジェクトへの参照を取得するには ui.series を使用します。<br>   項目ブラシを取得するには ui.actualItemBrush を使用します。<br>   シリーズ ブラシを取得するには ui.actualSeriesBrush を使用します。"
 	}
     },
     "tooltipHiding": {
@@ -210,7 +210,7 @@
       ],
       "description": {
 		"en": "event fired when the mouse has left a series and the tooltip is about to hide<br>   Function takes arguments evt and ui.<br>   Use ui.element to get reference to tooltip DOM element.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.map to get reference to map object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush.",
-		"jp": "event fired when the mouse has left a series and the tooltip is about to hide<br>   Function takes arguments evt and ui.<br>   Use ui.element to get reference to tooltip DOM element.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.map to get reference to map object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush."
+		"jp": "マウスがシリーズから離れ、ツールチップが非表示になるときに発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ツールチップの DOM 要素への参照を取得するには ui.element を使用します。<br>   現在のシリーズ項目オブジェクトへの参照を取得するには ui.item を使用します。<br>   マップ オブジェクトへの参照を取得するには ui.map を使用します。<br>   現在のシリーズ オブジェクトへの参照を取得するには ui.series を使用します。<br>   項目ブラシを取得するには ui.actualItemBrush を使用します。<br>   シリーズ ブラシを取得するには ui.actualSeriesBrush を使用します。"
 	}
     },
     "tooltipShowing": {
@@ -229,7 +229,7 @@
       ],
       "description": {
 		"en": "event fired when the mouse has hovered on a series and the tooltip is about to show <br>   Function takes arguments evt and ui.<br>   Use ui.element to get reference to tooltip DOM element.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.map to get reference to map object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush.",
-		"jp": "event fired when the mouse has hovered on a series and the tooltip is about to show <br>   Function takes arguments evt and ui.<br>   Use ui.element to get reference to tooltip DOM element.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.map to get reference to map object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush."
+		"jp": "マウスがシリーズの上にホバーして、ツールチップが表示するときに発生するイベント。<br>    関数は evt および ui 引数を取得します。<br>   ツールチップの DOM 要素への参照を取得するには ui.element を使用します。<br>   現在のシリーズ項目オブジェクトへの参照を取得するには ui.item を使用します。<br>   マップ オブジェクトへの参照を取得するには ui.map を使用します。<br>   現在のシリーズ オブジェクトへの参照を取得するには ui.series を使用します。<br>   項目ブラシを取得するには ui.actualItemBrush を使用します。<br>   シリーズ ブラシを取得するには ui.actualSeriesBrush を使用します。"
 	}
     },
     "tooltipShown": {
@@ -248,7 +248,7 @@
       ],
       "description": {
 		"en": "event fired after a tooltip is shown<br>   Function takes arguments evt and ui.<br>   Use ui.element to get reference to tooltip DOM element.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.map to get reference to map object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush.",
-		"jp": "event fired after a tooltip is shown<br>   Function takes arguments evt and ui.<br>   Use ui.element to get reference to tooltip DOM element.<br>   Use ui.item to get reference to current series item object.<br>   Use ui.map to get reference to map object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.actualItemBrush to get item brush.<br>   Use ui.actualSeriesBrush to get series brush."
+		"jp": "ツールチップが表示された後に発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ツールチップの DOM 要素への参照を取得するには ui.element を使用します。<br>   現在のシリーズ項目オブジェクトへの参照を取得するには ui.item を使用します。<br>   マップ オブジェクトへの参照を取得するには ui.map を使用します。<br>   現在のシリーズ オブジェクトへの参照を取得するには ui.series を使用します。<br>   項目ブラシを取得するには ui.actualItemBrush を使用します。<br>   シリーズ ブラシを取得するには ui.actualSeriesBrush を使用します。"
 	}
     },
     "triangulationStatusChanged": {
@@ -267,7 +267,7 @@
       ],
       "description": {
 		"en": "Event fired when the status of an ongoing Triangulation has changed.<br>   Function takes arguments evt and ui.<br>   Use ui.map to get reference to map object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.currentStatus to get current status.",
-		"jp": "Event fired when the status of an ongoing Triangulation has changed.<br>   Function takes arguments evt and ui.<br>   Use ui.map to get reference to map object.<br>   Use ui.series to get reference to current series object.<br>   Use ui.currentStatus to get current status."
+		"jp": "実行している Triangulation の状態が変更されたときに発生されるイベント。<br>   関数は引数 evt および ui を取得します。<br>   マップ オブジェクトへの参照を取得するには ui.map を使用します。<br>   現在のシリーズ オブジェクトへの参照を取得するには ui.series を使用します。<br>   現在の状態を取得するには ui.currentStatus を使用します。"
 	}
     },
     "windowRectChanged": {
@@ -286,7 +286,7 @@
       ],
       "description": {
 		"en": "Occurs just after the current Map's window rectangle is changed.<br>   Function takes arguments evt and ui.<br>   Use ui.map to get reference to map object.<br>   Use ui.newHeight to get new height value.<br>   Use ui.newLeft to get new left value.<br>   Use ui.newTop to get new top value.<br>   Use ui.newWidth to get new top value.<br>   Use ui.oldHeight to get old height value.<br>   Use ui.oldLeft to get old left value.<br>   Use ui.oldTop to get old top value.<br>   Use ui.oldWidth to get old top value.",
-		"jp": "Occurs just after the current Map's window rectangle is changed.<br>   Function takes arguments evt and ui.<br>   Use ui.map to get reference to map object.<br>   Use ui.newHeight to get new height value.<br>   Use ui.newLeft to get new left value.<br>   Use ui.newTop to get new top value.<br>   Use ui.newWidth to get new top value.<br>   Use ui.oldHeight to get old height value.<br>   Use ui.oldLeft to get old left value.<br>   Use ui.oldTop to get old top value.<br>   Use ui.oldWidth to get old top value."
+		"jp": "現在の Map のウィンドウ長方形が変わった直後に発生します。<br>   関数は引数 evt および ui を取得します。<br>   マップ オブジェクトへの参照を取得するには ui.map を使用します。<br>   新しい高さ値を取得するには ui.newHeight を使用します。<br>   新しい左値を取得するには ui.newLeft を使用します。<br>   新しい上値を取得するには ui.newTop を使用します。<br>   新しい幅値を取得するには ui.newWidth を使用します。<br>   以前の高さ値を取得するには ui.oldHeight を使用します。<br>   以前の左値を取得するには ui.oldLeft を使用します。<br>   以前の上値を取得するには ui.oldTop を使用します。<br>   以前の幅値を取得するには ui.oldWidth を使用します。"
 	}
     }
   },
@@ -296,7 +296,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Sets or gets the automatic height to add when automatically adding margins to the map.",
-		"jp": "Sets or gets the automatic height to add when automatically adding margins to the map."
+		"jp": "自動的にマップにマージンを追加するときに追加する自動高さを取得または設定します。"
 	}
     },
     "autoMarginWidth": {
@@ -304,7 +304,7 @@
       "defaultValue": 20.0,
       "description": {
 		"en": "Sets or gets the automatic width to add when automatically adding margins to the map.",
-		"jp": "Sets or gets the automatic width to add when automatically adding margins to the map."
+		"jp": "自動的にマップにマージンを追加するときに追加する自動幅を取得または設定します。"
 	}
     },
     "backgroundContent": {
@@ -312,7 +312,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Background content object",
-		"jp": "Background content object"
+		"jp": "背景コンテンツ オブジェクト。"
 	},
       "schema": {
         "bingUrl": {
@@ -320,7 +320,7 @@
           "defaultValue": "http://dev.virtualearth.net/rest/v1/imagery/metadata/",
           "description": {
 		"en": "Gets or sets the bing maps url.",
-		"jp": "Gets or sets the bing maps url."
+		"jp": "bing maps url を取得または設定します。"
 	}
         },
         "imagerySet": {
@@ -328,7 +328,7 @@
           "defaultValue": "aerialwithlabels",
           "description": {
 		"en": "Gets or sets the type of the imagery.",
-		"jp": "Gets or sets the type of the imagery."
+		"jp": "画像のタイプを取得または設定します。"
 	}
         },
         "key": {
@@ -336,7 +336,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Gets or sets the key.",
-		"jp": "Gets or sets the key."
+		"jp": "キーを取得または設定します。"
 	}
         },
         "parameter": {
@@ -344,7 +344,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Gets or sets the parameter.",
-		"jp": "Gets or sets the parameter."
+		"jp": "パラメーターを取得または設定します。"
 	}
         },
         "tilePath": {
@@ -352,7 +352,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Gets or sets the map tile image uri.",
-		"jp": "Gets or sets the map tile image uri."
+		"jp": "マップ タイル イメージの URI を取得または設定します。"
 	}
         },
         "type": {
@@ -360,7 +360,7 @@
           "defaultValue": "openstreet",
           "description": {
 		"en": "Type of the background content for the map.",
-		"jp": "Type of the background content for the map."
+		"jp": "マップの背景コンテンツのタイプ。"
 	},
           "valueOptions": [
             {
@@ -368,7 +368,7 @@
               "type": "string",
               "description": {
 		"en": "Specify the background content to display OpenStreetMap geographic data. Set as default.",
-		"jp": "Specify the background content to display OpenStreetMap geographic data. Set as default."
+		"jp": "OpenStreetMap 地理的データを表示するために背景コンテンツを指定します。デフォルトとして設定します。"
 	}
             },
             {
@@ -376,7 +376,7 @@
               "type": "string",
               "description": {
 		"en": "Specify the background content to display CloudMade geographic data.",
-		"jp": "Specify the background content to display CloudMade geographic data."
+		"jp": "CloudMade 地理的データを表示するために背景コンテンツを指定します。"
 	}
             },
             {
@@ -384,7 +384,7 @@
               "type": "string",
               "description": {
 		"en": "Specify the background content to BingMaps geographic data.",
-		"jp": "Specify the background content to BingMaps geographic data."
+		"jp": "BingMaps 地理的データを表示するために背景コンテンツを指定します。"
 	}
             }
           ]
@@ -396,7 +396,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the template to use for circle markers on the map.<br>   Defines the marker template used for<br>   series with a marker type of circle.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-		"jp": "Gets or sets the template to use for circle markers on the map.<br>   Defines the marker template used for<br>   series with a marker type of circle.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
+		"jp": "マップに円マーカーを使用するためのテンプレートを取得または設定します。<br>   マーカー タイプが<br>   circle のシリーズで使用されるマーカー テンプレートを定義します。<br>   提供されるオブジェクトには、描画とオプションでメジャーと呼ばれるプロパティがあります。option: legendItemBadgeTemplate の定義を参照してください。"
 	},
       "schemaRef": "dataChart.circleMarkerTemplate"
     },
@@ -405,7 +405,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the cross hair point (in world coordinates)<br>   Either or both of the crosshair point's X and Y may be set to double.NaN, in which<br>   case the relevant crosshair line is hidden.",
-		"jp": "Gets or sets the cross hair point (in world coordinates)<br>   Either or both of the crosshair point's X and Y may be set to double.NaN, in which<br>   case the relevant crosshair line is hidden."
+		"jp": "十字線の位置 (ワールド座標値) を取得または設定します<br>   十字線の X または Y のいずれかまたは両方を double.NaN に設定することができます。<br>   その場合、該当する十字線は非表示になります。"
 	},
       "schema": {
         "x": {
@@ -413,7 +413,7 @@
           "defaultValue": 0,
           "description": {
 		"en": "The x coordinate.",
-		"jp": "The x coordinate."
+		"jp": "x 座標"
 	}
         },
         "y": {
@@ -421,7 +421,7 @@
           "defaultValue": 0,
           "description": {
 		"en": "The y coordinate.",
-		"jp": "The y coordinate."
+		"jp": "y 座標"
 	}
         }
       }
@@ -431,7 +431,7 @@
       "defaultValue": "collapsed",
       "description": {
 		"en": "Gets or sets the current Map's crosshair visibility override.",
-		"jp": "Gets or sets the current Map's crosshair visibility override."
+		"jp": "現在の Map の十字線の表示/非表示のオーバーライドを取得または設定します。"
 	},
       "valueOptions": [
         {
@@ -439,7 +439,7 @@
           "type": "string",
           "description": {
 		"en": "Crosshair should be visible.",
-		"jp": "Crosshair should be visible."
+		"jp": "十字線を表示します。"
 	}
         },
         {
@@ -447,7 +447,7 @@
           "type": "string",
           "description": {
 		"en": "Crosshair should not be visible.",
-		"jp": "Crosshair should not be visible."
+		"jp": "十字線を表示しません。"
 	}
         }
       ]
@@ -457,7 +457,7 @@
       "defaultValue": null,
       "description": {
 		"en": "can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself",
-		"jp": "can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself"
+		"jp": "$.ig.DataSource が受け入れる有効なデータ ソースまたは $.ig.DataSource 自体のインスタンスが可能です。"
 	}
     },
     "dataSourceType": {
@@ -465,7 +465,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property.",
-		"jp": "Explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property."
+		"jp": "データ ソースのタイプ (\"json\" など) を明示的に設定します。$.ig.DataSource とそのタイプ プロパティのドキュメントを参照してください。"
 	}
     },
     "dataSourceUrl": {
@@ -473,7 +473,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Specifies a remote URL accepted by $.ig.DataSource in order to request data from it",
-		"jp": "Specifies a remote URL accepted by $.ig.DataSource in order to request data from it"
+		"jp": "$.ig.DataSource からデータを要求するには、$.ig.DataSource により承諾されたリモート URL を指定します。"
 	}
     },
     "defaultInteraction": {
@@ -481,7 +481,7 @@
       "defaultValue": "dragPan",
       "description": {
 		"en": " Gets or sets the DefaultInteraction property. The default interaction state defines the map's response to mouse events.",
-		"jp": " Gets or sets the DefaultInteraction property. The default interaction state defines the map's response to mouse events."
+		"jp": " DefaultInteraction プロパティを取得または設定します。デフォルトの操作状態により、マウス イベントに対するマップの応答が定義されます。"
 	},
       "valueOptions": [
         {
@@ -489,7 +489,7 @@
           "type": "string",
           "description": {
 		"en": "User gesture will not change the state of the map.",
-		"jp": "User gesture will not change the state of the map."
+		"jp": "ユーザー動作はマップの状態を変更しません。"
 	}
         },
         {
@@ -497,7 +497,7 @@
           "type": "string",
           "description": {
 		"en": "User gesture will start a drag rectangle to zoom the map.",
-		"jp": "User gesture will start a drag rectangle to zoom the map."
+		"jp": "ユーザー動作はマップをズームするために矩形のドラッグを開始します。"
 	}
         },
         {
@@ -505,7 +505,7 @@
           "type": "string",
           "description": {
 		"en": "User gesture will start a pan action to move the map's window.",
-		"jp": "User gesture will start a pan action to move the map's window."
+		"jp": "マップのウインドウを移動するためにユーザー操作でパン操作を開始します。"
 	}
         }
       ]
@@ -515,7 +515,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the template to use for diamond markers on the map.<br>   Defines the marker template used for<br>   series with a marker type of diamond.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-		"jp": "Gets or sets the template to use for diamond markers on the map.<br>   Defines the marker template used for<br>   series with a marker type of diamond.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
+		"jp": "マップにひし形マーカーを使用するためのテンプレートを取得または設定します。<br>   マーカー タイプが<br>   diamond のシリーズで使用されるマーカー テンプレートを定義します。<br>   提供されるオブジェクトには、描画とオプションでメジャーと呼ばれるプロパティがあります。option: legendItemBadgeTemplate の定義を参照してください。"
 	},
       "schemaRef": "dataChart.circleMarkerTemplate"
     },
@@ -524,7 +524,7 @@
       "defaultValue": "none",
       "description": {
 		"en": " Gets or sets the current Map's DragModifier property.",
-		"jp": " Gets or sets the current Map's DragModifier property."
+		"jp": " 現在の Map の DragModifier プロパティを取得または設定します。"
 	},
       "valueOptions": [
         {
@@ -532,7 +532,7 @@
           "type": "string",
           "description": {
 		"en": "No modifier key is set.",
-		"jp": "No modifier key is set."
+		"jp": "修飾キーが設定されません。"
 	}
         },
         {
@@ -540,7 +540,7 @@
           "type": "string",
           "description": {
 		"en": "The modifier is set to alt key.",
-		"jp": "The modifier is set to alt key."
+		"jp": "修飾キーは alt キーに設定されます。"
 	}
         },
         {
@@ -548,7 +548,7 @@
           "type": "string",
           "description": {
 		"en": "The modifier is set to control key.",
-		"jp": "The modifier is set to control key."
+		"jp": "修飾キーは control キーに設定されます。"
 	}
         },
         {
@@ -556,7 +556,7 @@
           "type": "string",
           "description": {
 		"en": "The modifier is set to shift key.",
-		"jp": "The modifier is set to shift key."
+		"jp": "修飾キーは shift キーに設定されます。"
 	}
         }
       ]
@@ -566,7 +566,7 @@
       "defaultValue": null,
       "description": {
 		"en": "The height of the map. It can be set as a number in pixels, string (px) or percentage (%).",
-		"jp": "The height of the map. It can be set as a number in pixels, string (px) or percentage (%)."
+		"jp": "マップの高さ。ピクセル、文字列 (px)、またはパーセンテージ (%) で数字として設定できます。"
 	}
     },
     "hexagonMarkerTemplate": {
@@ -574,7 +574,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the template to use for hxagon markers on the map.<br>   Defines the marker template used for<br>   series with a marker type of hexagon.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-		"jp": "Gets or sets the template to use for hxagon markers on the map.<br>   Defines the marker template used for<br>   series with a marker type of hexagon.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
+		"jp": "マップに六角形マーカーを使用するためのテンプレートを取得または設定します。<br>   マーカー タイプが<br>   hexagon のシリーズで使用されるマーカー テンプレートを定義します。<br>   提供されるオブジェクトには、描画とオプションでメジャーと呼ばれるプロパティがあります。option: legendItemBadgeTemplate の定義を参照してください。"
 	},
       "schemaRef": "dataChart.circleMarkerTemplate"
     },
@@ -583,7 +583,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the template to use for hexagram markers on the map.<br>   Defines the marker template used for<br>   series with a marker type of hexagram.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-		"jp": "Gets or sets the template to use for hexagram markers on the map.<br>   Defines the marker template used for<br>   series with a marker type of hexagram.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
+		"jp": "マップに六線星形マーカーを使用するためのテンプレートを取得または設定します。<br>   マーカー タイプが<br>   hexagram のシリーズで使用されるマーカー テンプレートを定義します。<br>   提供されるオブジェクトには、描画とオプションでメジャーと呼ばれるプロパティがあります。option: legendItemBadgeTemplate の定義を参照してください。"
 	},
       "schemaRef": "dataChart.circleMarkerTemplate"
     },
@@ -592,7 +592,7 @@
       "defaultValue": null,
       "description": {
 		"en": "The background image uri use in the overview detail pane.",
-		"jp": "The background image uri use in the overview detail pane."
+		"jp": "概要詳細ペインで使用する背景画像 uri。"
 	}
     },
     "panModifier": {
@@ -600,7 +600,7 @@
       "defaultValue": "shift",
       "description": {
 		"en": " Gets or sets the current Map's PanModifier property.",
-		"jp": " Gets or sets the current Map's PanModifier property."
+		"jp": " 現在の Map の PanModifier プロパティを取得または設定します。"
 	},
       "valueOptions": [
         {
@@ -608,7 +608,7 @@
           "type": "string",
           "description": {
 		"en": "No modifier key is set.",
-		"jp": "No modifier key is set."
+		"jp": "修飾キーが設定されません。"
 	}
         },
         {
@@ -616,7 +616,7 @@
           "type": "string",
           "description": {
 		"en": "The modifier is set to alt key.",
-		"jp": "The modifier is set to alt key."
+		"jp": "修飾キーは alt キーに設定されます。"
 	}
         },
         {
@@ -624,7 +624,7 @@
           "type": "string",
           "description": {
 		"en": "The modifier is set to control key.",
-		"jp": "The modifier is set to control key."
+		"jp": "修飾キーは control キーに設定されます。"
 	}
         },
         {
@@ -632,7 +632,7 @@
           "type": "string",
           "description": {
 		"en": "The modifier is set to shift key.",
-		"jp": "The modifier is set to shift key."
+		"jp": "修飾キーは shift キーに設定されます。"
 	}
         }
       ]
@@ -642,7 +642,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the template to use for pentagon markers on the map.<br>   Defines the marker template used for<br>   series with a marker type of pentagon.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-		"jp": "Gets or sets the template to use for pentagon markers on the map.<br>   Defines the marker template used for<br>   series with a marker type of pentagon.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
+		"jp": "マップに五角形マーカーを使用するためのテンプレートを取得または設定します。<br>   マーカー タイプが<br>   pentagon のシリーズで使用されるマーカー テンプレートを定義します。<br>   提供されるオブジェクトには、描画とオプションでメジャーと呼ばれるプロパティがあります。option: legendItemBadgeTemplate の定義を参照してください。"
 	},
       "schemaRef": "dataChart.circleMarkerTemplate"
     },
@@ -651,7 +651,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the template to use for pentragram markers on the map.<br>   Defines the marker template used for<br>   series with a marker type of pentagram.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-		"jp": "Gets or sets the template to use for pentragram markers on the map.<br>   Defines the marker template used for<br>   series with a marker type of pentagram.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
+		"jp": "マップに星形五角形マーカーを使用するためのテンプレートを取得または設定します。<br>   マーカー タイプが<br>   pentagram のシリーズで使用されるマーカー テンプレートを定義します。<br>   提供されるオブジェクトには、描画とオプションでメジャーと呼ばれるプロパティがあります。option: legendItemBadgeTemplate の定義を参照してください。"
 	},
       "schemaRef": "dataChart.circleMarkerTemplate"
     },
@@ -660,7 +660,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the brush used as the background for the current Map object's plot area.",
-		"jp": "Gets or sets the brush used as the background for the current Map object's plot area."
+		"jp": "現在の Map オブジェクトのプロット領域の背景として使用するブラシを取得または設定します。"
 	}
     },
     "previewRect": {
@@ -668,7 +668,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the preview rectangle.<br>   The preview rectangle may be set to Rect.Empty, in which case the visible preview<br>   strokePath is hidden.<br>   The provided object should have numeric properties called left, top, width and height.",
-		"jp": "Gets or sets the preview rectangle.<br>   The preview rectangle may be set to Rect.Empty, in which case the visible preview<br>   strokePath is hidden.<br>   The provided object should have numeric properties called left, top, width and height."
+		"jp": "プレビュー長方形を設定または取得します。<br>   プレビュー矩形は Rect.Empty に設定することができます。その場合、表示されているプレビューの<br>   strokePath は非表示になります。<br>   提供されたオブジェクトは、left、top、width および height と呼ばれる数値プロパティを持っている必要があります。"
 	},
       "schema": {
         "left": {
@@ -676,7 +676,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Gets sets left position of the rectangle",
-		"jp": "Gets sets left position of the rectangle"
+		"jp": "矩形の左位置を取得または設定します。"
 	}
         },
         "top": {
@@ -684,7 +684,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Gets sets top position of the rectangle",
-		"jp": "Gets sets top position of the rectangle"
+		"jp": "矩形の上位置を取得または設定します。"
 	}
         },
         "width": {
@@ -692,7 +692,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Gets sets width position of the rectangle",
-		"jp": "Gets sets width position of the rectangle"
+		"jp": "矩形の幅位置を取得または設定します。"
 	}
         },
         "height": {
@@ -700,7 +700,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Gets sets height position of the rectangle",
-		"jp": "Gets sets height position of the rectangle"
+		"jp": "矩形の高さ位置を取得または設定します。"
 	}
         }
       }
@@ -710,7 +710,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the template to use for pyramid markers on the map.<br>   Defines the marker template used for<br>   series with a marker type of pyramid.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-		"jp": "Gets or sets the template to use for pyramid markers on the map.<br>   Defines the marker template used for<br>   series with a marker type of pyramid.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
+		"jp": "マップにピラミッド マーカーを使用するためのテンプレートを取得または設定します。<br>   マーカー タイプが<br>   pyramid のシリーズで使用されるマーカー テンプレートを定義します。<br>   提供されるオブジェクトには、描画とオプションでメジャーと呼ばれるプロパティがあります。option: legendItemBadgeTemplate の定義を参照してください。"
 	},
       "schemaRef": "dataChart.circleMarkerTemplate"
     },
@@ -719,7 +719,7 @@
       "defaultValue": null,
       "description": {
 		"en": "see $.ig.DataSource. Specifies the name of the property in which data records are held if the response is wrapped.",
-		"jp": "see $.ig.DataSource. Specifies the name of the property in which data records are held if the response is wrapped."
+		"jp": "$.ig.DataSource を参照してください。応答がラップされる場合に、データ レコードが保持されるプロパティの名前を指定します。"
 	}
     },
     "series": {
@@ -727,7 +727,7 @@
       "defaultValue": null,
       "description": {
 		"en": "an array of series objects",
-		"jp": "an array of series objects"
+		"jp": "シリーズ オブジェクトの配列。"
 	},
       "schema": {
         "angleMemberPath": {
@@ -735,7 +735,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Gets or sets the x-radius of the ellipse that is used to round the corners of the column.",
-		"jp": "Gets or sets the x-radius of the ellipse that is used to round the corners of the column."
+		"jp": "列の角に使用される楕円の X 半径を取得または設定します。"
 	}
         },
         "brush": {
@@ -743,7 +743,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Gets or sets the brush to use for the series.",
-		"jp": "Gets or sets the brush to use for the series."
+		"jp": "シリーズに使用するブラシを取得または設定します。"
 	}
         },
         "clipSeriesToBounds": {
@@ -751,7 +751,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Gets or sets whether to clip the series to the bounds. Setting this to true can affect performance.",
-		"jp": "Gets or sets whether to clip the series to the bounds. Setting this to true can affect performance."
+		"jp": "シリーズを境界線でクリップするかどうかを設定または取得します。これを true に設定するとパフォーマンスに影響を及ぼします。"
 	}
         },
         "closeMemberPath": {
@@ -759,7 +759,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Gets or sets the close mapping property for the current series object.",
-		"jp": "Gets or sets the close mapping property for the current series object."
+		"jp": "現在のシリーズ オブジェクトの終値マッピング プロパティを取得または設定します。"
 	}
         },
         "colorMemberPath": {
@@ -767,7 +767,7 @@
           "defaultValue": null,
           "description": {
 		"en": "The name of the property on each data item containing a numeric value which can be converted to a color by the ColorScale.",
-		"jp": "The name of the property on each data item containing a numeric value which can be converted to a color by the ColorScale."
+		"jp": "ColorScale によって色に変換できる数値を含むを各データ項目のプロパティの名前。"
 	}
         },
         "colorScale": {
@@ -775,7 +775,7 @@
           "defaultValue": null,
           "description": {
 		"en": "The ColorScale used to resolve the color values of points in the series.",
-		"jp": "The ColorScale used to resolve the color values of points in the series."
+		"jp": "シリーズのポイントの色値の解決に使用される ColorScale。"
 	},
           "schema": {
             "type": {
@@ -810,7 +810,7 @@
           "defaultValue": null,
           "description": {
 		"en": "String The database source URI.",
-		"jp": "String The database source URI."
+		"jp": "文字列、データベース ソース URI"
 	}
         },
         "dataSource": {
@@ -818,7 +818,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself.",
-		"jp": "Can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself."
+		"jp": "$.ig.DataSource が受け入れる有効なデータ ソースまたは $.ig.DataSource 自体のインスタンスが可能です。"
 	}
         },
         "dataSourceType": {
@@ -826,7 +826,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property.",
-		"jp": "Explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property."
+		"jp": "データ ソースのタイプ (\"json\" など) を明示的に設定します。$.ig.DataSource とそのタイプ プロパティのドキュメントを参照してください。"
 	}
         },
         "dataSourceUrl": {
@@ -834,7 +834,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Specifies a remote URL accepted by $.ig.DataSource in order to request data from it.",
-		"jp": "Specifies a remote URL accepted by $.ig.DataSource in order to request data from it."
+		"jp": "$.ig.DataSource からデータを要求するには、$.ig.DataSource により承諾されたリモート URL を指定します。"
 	}
         },
         "discreteLegendItemTemplate": {
@@ -842,7 +842,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Gets or sets the DiscreteLegendItemTemplate property. The legend item control content is created according to the DiscreteLegendItemTemplate on-demand by the series object itself.",
-		"jp": "Gets or sets the DiscreteLegendItemTemplate property. The legend item control content is created according to the DiscreteLegendItemTemplate on-demand by the series object itself."
+		"jp": "DiscreteLegendItemTemplate プロパティを取得または設定します。凡例項目コントロール コンテンツは、DiscreteLegendItemTemplate に従って Series オブジェクト自身がオンデマンドで作成します。"
 	},
           "schemaRef": "dataChart.circleMarkerTemplate"
         },
@@ -851,7 +851,7 @@
           "defaultValue": null,
           "description": {
 		"en": "The name of the property on data source items which contains a numeric value to convert to a Brush using the FillScale.",
-		"jp": "The name of the property on data source items which contains a numeric value to convert to a Brush using the FillScale."
+		"jp": "FillScale を使用するブラシに変換される数値を含む、データ ソース項目のプロパティ名。"
 	}
         },
         "fillScale": {
@@ -859,7 +859,7 @@
           "defaultValue": null,
           "description": {
 		"en": "The ValueBrushScale to use when determining Brushes for each Shape, based on the values found in FillMemberPath.",
-		"jp": "The ValueBrushScale to use when determining Brushes for each Shape, based on the values found in FillMemberPath."
+		"jp": "FillMemberPath にある値に基づいて各 Shape のブラシを決定するときに使用する ValueBrushScale。"
 	},
           "arrayMemberType": "string"
         },
@@ -868,7 +868,7 @@
           "defaultValue": 50,
           "description": {
 		"en": "Gets or sets the value that maps to the maximum heat color.",
-		"jp": "Gets or sets the value that maps to the maximum heat color."
+		"jp": "最高熱色にマップする値を取得または設定します。"
 	}
         },
         "heatMinimum": {
@@ -876,7 +876,7 @@
           "defaultValue": 0,
           "description": {
 		"en": "Gets or sets the density value that maps to the minimum heat color.",
-		"jp": "Gets or sets the density value that maps to the minimum heat color."
+		"jp": "最低熱色にマップする密度値を取得または設定します。"
 	}
         },
         "highMemberPath": {
@@ -884,7 +884,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Gets or sets the value mapping property for the current series object.",
-		"jp": "Gets or sets the value mapping property for the current series object."
+		"jp": "現在のシリーズ オブジェクトの値マッピング プロパティを取得または設定します。"
 	}
         },
         "ignoreFirst": {
@@ -892,7 +892,7 @@
           "defaultValue": 0,
           "description": {
 		"en": "Gets or sets the number of values to hide at the beginning of the indicator.",
-		"jp": "Gets or sets the number of values to hide at the beginning of the indicator."
+		"jp": "インジケータの開始を非表示にするための値の数を取得または設定します。"
 	}
         },
         "labelMemberPath": {
@@ -900,7 +900,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Gets or sets the Label mapping property for the current series object.",
-		"jp": "Gets or sets the Label mapping property for the current series object."
+		"jp": "現在のシリーズ オブジェクトのラベル マッピング プロパティを取得または設定します。"
 	}
         },
         "latitudeMemberPath": {
@@ -908,7 +908,7 @@
           "defaultValue": null,
           "description": {
 		"en": "The name of the property of data source items which contains the latitude coordinate of the symbol.",
-		"jp": "The name of the property of data source items which contains the latitude coordinate of the symbol."
+		"jp": "シンボルの緯度座標を含む、データ ソース項目のプロパティ名。"
 	}
         },
         "legendItemBadgeTemplate": {
@@ -916,7 +916,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Gets or sets the LegendItemBadgeTemplate property. The legend item badge is created according to the LegendItemBadgeTemplate on-demand by the series object itself.",
-		"jp": "Gets or sets the LegendItemBadgeTemplate property. The legend item badge is created according to the LegendItemBadgeTemplate on-demand by the series object itself."
+		"jp": "LegendItemBadgeTemplate プロパティを取得または設定します。凡例項目バッジは、LegendItemBadgeTemplate に従って、Series オブジェクト自身がオンデマンドで作成します。"
 	},
           "schemaRef": "dataChart.circleMarkerTemplate"
         },
@@ -925,7 +925,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Gets or sets the LegendItemTemplate property..",
-		"jp": "Gets or sets the LegendItemTemplate property.."
+		"jp": "LegendItemTemplate プロパティを取得または設定します。"
 	},
           "schemaRef": "dataChart.circleMarkerTemplate"
         },
@@ -934,7 +934,7 @@
           "defaultValue": null,
           "description": {
 		"en": "The name of the property of data source items which contains the longitude coordinate of the symbol.",
-		"jp": "The name of the property of data source items which contains the longitude coordinate of the symbol."
+		"jp": "シンボルの経度座標を含む、データ ソース項目のプロパティ名。"
 	}
         },
         "longPeriod": {
@@ -942,7 +942,7 @@
           "defaultValue": 0,
           "description": {
 		"en": "Gets or sets the short moving average period for the current AbsoluteVolumeOscillatorIndicator object. The typical, and initial, value for long AVO periods is 30.",
-		"jp": "Gets or sets the short moving average period for the current AbsoluteVolumeOscillatorIndicator object. The typical, and initial, value for long AVO periods is 30."
+		"jp": "現在の AbsoluteVolumeOscillatorIndicator オブジェクトの短い移動平均期間を取得または設定します。長い AVO 期間の一般的な値かつ初期値は 30 です。"
 	}
         },
         "lowMemberPath": {
@@ -950,7 +950,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Gets or sets the value mapping property for the current series object.",
-		"jp": "Gets or sets the value mapping property for the current series object."
+		"jp": "現在のシリーズ オブジェクトの値マッピング プロパティを取得または設定します。"
 	}
         },
         "markerBrush": {
@@ -958,7 +958,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Gets or sets the brush that specifies how the current series object's marker interiors are painted.",
-		"jp": "Gets or sets the brush that specifies how the current series object's marker interiors are painted."
+		"jp": "現在のシリーズ オブジェクトのマーカーの内部をペイントする方法を指定するブラシを取得または設定します。"
 	}
         },
         "markerCollisionAvoidance": {
@@ -966,7 +966,7 @@
           "defaultValue": "none",
           "description": {
 		"en": "Gets or sets the MarkerCollisionAvoidance .",
-		"jp": "Gets or sets the MarkerCollisionAvoidance ."
+		"jp": "MarkerCollisionAvoidance を取得または設定します。"
 	},
           "valueOptions": [
             {
@@ -974,7 +974,7 @@
               "type": "string",
               "description": {
 		"en": "No collision avoidance is attempted.",
-		"jp": "No collision avoidance is attempted."
+		"jp": "競合回避がありません。"
 	}
             },
             {
@@ -982,7 +982,7 @@
               "type": "string",
               "description": {
 		"en": "Markers that collide will be omitted.",
-		"jp": "Markers that collide will be omitted."
+		"jp": "競合するマーカーを表示しません。"
 	}
             },
             {
@@ -990,7 +990,7 @@
               "type": "string",
               "description": {
 		"en": "Markers that collide will be faded in opacity.",
-		"jp": "Markers that collide will be faded in opacity."
+		"jp": "競合するマーカーの不透明度をフォードします。"
 	}
             },
             {
@@ -998,7 +998,7 @@
               "type": "string",
               "description": {
 		"en": "Markers that collide may be shifted or omitted.",
-		"jp": "Markers that collide may be shifted or omitted."
+		"jp": "競合するマーカーを移動するか、表示しません。"
 	}
             }
           ]
@@ -1008,7 +1008,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Gets or sets the brush that specifies how the current series object's marker outlines are painted.",
-		"jp": "Gets or sets the brush that specifies how the current series object's marker outlines are painted."
+		"jp": "現在のシリーズ オブジェクトのマーカーのアウトラインを塗りつぶす方法を指定するブラシを取得または設定します。"
 	}
         },
         "markerTemplate": {
@@ -1016,7 +1016,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Gets or sets the MarkerTemplate for the current series object.",
-		"jp": "Gets or sets the MarkerTemplate for the current series object."
+		"jp": "現在のシリーズ オブジェクトの MarkerTemplate を取得または設定します。"
 	},
           "schemaRef": "dataChart.circleMarkerTemplate"
         },
@@ -1025,7 +1025,7 @@
           "defaultValue": "none",
           "description": {
 		"en": "Gets or sets the Marker Type .",
-		"jp": "Gets or sets the Marker Type ."
+		"jp": "マーカー タイプを取得または設定します。"
 	},
           "valueOptions": [
             {
@@ -1033,7 +1033,7 @@
               "type": "string",
               "description": {
 		"en": "The type is unset",
-		"jp": "The type is unset"
+		"jp": "タイプは設定されていません。"
 	}
             },
             {
@@ -1041,7 +1041,7 @@
               "type": "string",
               "description": {
 		"en": "There isn't a type",
-		"jp": "There isn't a type"
+		"jp": "タイプがありません。"
 	}
             },
             {
@@ -1049,7 +1049,7 @@
               "type": "string",
               "description": {
 		"en": "The type is set to a automatic",
-		"jp": "The type is set to a automatic"
+		"jp": "タイプは automatic に設定されます"
 	}
             },
             {
@@ -1057,7 +1057,7 @@
               "type": "string",
               "description": {
 		"en": "The type is set to a circle",
-		"jp": "The type is set to a circle"
+		"jp": "タイプは circle に設定されます"
 	}
             },
             {
@@ -1065,7 +1065,7 @@
               "type": "string",
               "description": {
 		"en": "The type is set to a triangle",
-		"jp": "The type is set to a triangle"
+		"jp": "タイプは triangle に設定されます"
 	}
             },
             {
@@ -1073,7 +1073,7 @@
               "type": "string",
               "description": {
 		"en": "The type is set to a pyramid",
-		"jp": "The type is set to a pyramid"
+		"jp": "タイプは pyramid に設定されます"
 	}
             },
             {
@@ -1081,7 +1081,7 @@
               "type": "string",
               "description": {
 		"en": "The type is set to a square",
-		"jp": "The type is set to a square"
+		"jp": "タイプは square に設定されます"
 	}
             },
             {
@@ -1089,7 +1089,7 @@
               "type": "string",
               "description": {
 		"en": "The type is set to a diamond",
-		"jp": "The type is set to a diamond"
+		"jp": "タイプは diamond に設定されます"
 	}
             },
             {
@@ -1097,7 +1097,7 @@
               "type": "string",
               "description": {
 		"en": "The type is set to a pentagon",
-		"jp": "The type is set to a pentagon"
+		"jp": "タイプは pentagon に設定されます"
 	}
             },
             {
@@ -1105,7 +1105,7 @@
               "type": "string",
               "description": {
 		"en": "The type is set to a hexagon",
-		"jp": "The type is set to a hexagon"
+		"jp": "タイプは hexagon に設定されます"
 	}
             },
             {
@@ -1113,7 +1113,7 @@
               "type": "string",
               "description": {
 		"en": "The type is set to a tetragram",
-		"jp": "The type is set to a tetragram"
+		"jp": "タイプは tetragram に設定されます"
 	}
             },
             {
@@ -1121,7 +1121,7 @@
               "type": "string",
               "description": {
 		"en": "The type is set to a pentagram",
-		"jp": "The type is set to a pentagram"
+		"jp": "タイプは pentagram に設定されます"
 	}
             },
             {
@@ -1129,7 +1129,7 @@
               "type": "string",
               "description": {
 		"en": "The type is set to a hexagram",
-		"jp": "The type is set to a hexagram"
+		"jp": "タイプは hexagram に設定されます"
 	}
             }
           ]
@@ -1139,7 +1139,7 @@
           "defaultValue": 400,
           "description": {
 		"en": "Gets or sets the maximum number of markerItems displayed by the current series. If more than the specified number of markerItems are visible, the series will automatically choose a representative set.",
-		"jp": "Gets or sets the maximum number of markerItems displayed by the current series. If more than the specified number of markerItems are visible, the series will automatically choose a representative set."
+		"jp": "現在のシリーズによって表示される markerItems の最大数を取得または設定します。指定した数を超える markerItems が表示されている場合、シリーズは代表的なセットを自動的に選択します。"
 	}
         },
         "mouseOverEnabled": {
@@ -1147,7 +1147,7 @@
           "defaultValue": false,
           "description": {
 		"en": "Gets or sets the whether the map reacts to mouse move events.",
-		"jp": "Gets or sets the whether the map reacts to mouse move events."
+		"jp": "マップがマウス移動イベントに反応するかどうかを取得または設定します。"
 	}
         },
         "name": {
@@ -1155,7 +1155,7 @@
           "defaultValue": null,
           "description": {
 		"en": "The unique identifier of the series.",
-		"jp": "The unique identifier of the series."
+		"jp": "シリーズの一意の識別子。"
 	}
         },
         "negativeBrush": {
@@ -1163,7 +1163,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Gets or sets the brush to use for negative portions of the series.",
-		"jp": "Gets or sets the brush to use for negative portions of the series."
+		"jp": "シリーズの負の領域を描画するブラシを取得または設定します。"
 	}
         },
         "openMemberPath": {
@@ -1171,7 +1171,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Gets or sets the value mapping property for the current series object.",
-		"jp": "Gets or sets the value mapping property for the current series object."
+		"jp": "現在のシリーズ オブジェクトの値マッピング プロパティを取得または設定します。"
 	}
         },
         "outline": {
@@ -1179,7 +1179,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Gets or sets the brush to use for the outline of the series. Some series types, such as LineSeries, do not display outlines.",
-		"jp": "Gets or sets the brush to use for the outline of the series. Some series types, such as LineSeries, do not display outlines."
+		"jp": "シリーズのアウトラインを描画するブラシを取得または設定します。LineSeries など、一部の Series タイプでは、輪郭が表示されません。"
 	}
         },
         "period": {
@@ -1187,7 +1187,7 @@
           "defaultValue": 0,
           "description": {
 		"en": "Gets or sets the moving average period for the current AverageDirectionalIndexIndicator object. The typical, and initial, value for AverageDirectionalIndexIndicator periods is 14.",
-		"jp": "Gets or sets the moving average period for the current AverageDirectionalIndexIndicator object. The typical, and initial, value for AverageDirectionalIndexIndicator periods is 14."
+		"jp": "現在の AverageDirectionalIndexIndicator オブジェクトの移動平均期間を取得または設定します。AverageDirectionalIndexIndicator 期間の一般的な値かつ初期値は 14 です。"
 	}
         },
         "progressiveLoad": {
@@ -1195,7 +1195,7 @@
           "defaultValue": true,
           "description": {
 		"en": "Gets or sets the whether to progressively load the data into the map.",
-		"jp": "Gets or sets the whether to progressively load the data into the map."
+		"jp": "マップへデータを徐々に読み込むかどうかを取得または設定します。"
 	}
         },
         "radiusMemberPath": {
@@ -1203,7 +1203,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Gets or sets the radius mapping property for the current series object.",
-		"jp": "Gets or sets the radius mapping property for the current series object."
+		"jp": "現在のシリーズ オブジェクトの半径マッピング プロパティを取得または設定します。"
 	}
         },
         "radiusScale": {
@@ -1211,7 +1211,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Gets or sets the radius size scale for the bubbles.",
-		"jp": "Gets or sets the radius size scale for the bubbles."
+		"jp": "バブルの半径サイズ スケールを取得または設定します。"
 	}
         },
         "remove": {
@@ -1219,7 +1219,7 @@
           "defaultValue": false,
           "description": {
 		"en": "Set to true in order to have an existing series removed from the map, by name.",
-		"jp": "Set to true in order to have an existing series removed from the map, by name."
+		"jp": "マップから依存のシリーズを名前によって削除するには、true に設定します。"
 	}
         },
         "resolution": {
@@ -1227,7 +1227,7 @@
           "defaultValue": 1,
           "description": {
 		"en": "Gets or sets the current series object's rendering resolution.",
-		"jp": "Gets or sets the current series object's rendering resolution."
+		"jp": "現在のシリーズ オブジェクトのレンダリング解像度を取得または設定します。"
 	}
         },
         "responseDataKey": {
@@ -1235,7 +1235,7 @@
           "defaultValue": null,
           "description": {
 		"en": "See $.ig.DataSource. Specifies the name of the property in which data records are held if the response is wrapped.",
-		"jp": "See $.ig.DataSource. Specifies the name of the property in which data records are held if the response is wrapped."
+		"jp": "$.ig.DataSource を参照してください。応答がラップされる場合に、データ レコードが保持されるプロパティの名前を指定します。"
 	}
         },
         "shapeDataSource": {
@@ -1243,7 +1243,7 @@
           "defaultValue": null,
           "description": {
 		"en": "The triangulated file source URI or an instance of $.ig.ShapeDataSource.",
-		"jp": "The triangulated file source URI or an instance of $.ig.ShapeDataSource."
+		"jp": "三通貨換算されたファイル ソース URI または $.ig.ShapeDataSource のインスタンス。"
 	}
         },
         "shapeFilterResolution": {
@@ -1251,7 +1251,7 @@
           "defaultValue": 2,
           "description": {
 		"en": "Gets or sets the resolution at which to filter out shapes in the series. For example, if the shapeFilterResolution is set to 3, then elements with a bounding rectangle smaller than 3 X 3 pixels will be filtered out.",
-		"jp": "Gets or sets the resolution at which to filter out shapes in the series. For example, if the shapeFilterResolution is set to 3, then elements with a bounding rectangle smaller than 3 X 3 pixels will be filtered out."
+		"jp": "シリーズの図形をフィルターする解像度を取得または設定します。たとえば、shapeFilterResolution を 3 に設定すると、 3 X 3 ピクセルより小さい境界四角形の要素がフィルターされます。"
 	}
         },
         "shapeMemberPath": {
@@ -1259,7 +1259,7 @@
           "defaultValue": null,
           "description": {
 		"en": "The name of the property on data source items which, for each shape, contains a list of points to be converted to a polygon. To be consistent with the Shapefile technical description, it is expected that each list of points is defined as an IEnumerable of IEnumerable of Point, or in other words, a list of lists of points.",
-		"jp": "The name of the property on data source items which, for each shape, contains a list of points to be converted to a polygon. To be consistent with the Shapefile technical description, it is expected that each list of points is defined as an IEnumerable of IEnumerable of Point, or in other words, a list of lists of points."
+		"jp": "各形状に対して、多角形に変換されるポイントのリストを含むデータ ソース項目のプロパティ名。シェイプ ファイルに関する詳細説明に一致するように、ポイントの各リストを Point の IEnumerable の IEnumerable、つまり、ポイント リストのリストとして定義します。"
 	}
         },
         "shapeStyle": {
@@ -1267,7 +1267,7 @@
           "defaultValue": null,
           "description": {
 		"en": "The default style to apply to all Shapes in the series.",
-		"jp": "The default style to apply to all Shapes in the series."
+		"jp": "シリーズのすべての図形に適用するデフォルト スタイル。"
 	},
           "schema": {
             "type": {
@@ -1293,7 +1293,7 @@
           "defaultValue": null,
           "description": {
 		"en": "The StyleSelector which is used to select a style for each Shape.",
-		"jp": "The StyleSelector which is used to select a style for each Shape."
+		"jp": "各図形のスタイルを選択するために使用される StyleSelector。"
 	},
           "schema": {
             "fill": {
@@ -1319,7 +1319,7 @@
           "defaultValue": 0,
           "description": {
 		"en": "Gets or sets the short moving average period for the current AbsoluteVolumeOscillatorIndicator object. The typical, and initial, value for short AVO periods is 10.",
-		"jp": "Gets or sets the short moving average period for the current AbsoluteVolumeOscillatorIndicator object. The typical, and initial, value for short AVO periods is 10."
+		"jp": "現在の AbsoluteVolumeOscillatorIndicator オブジェクトの短い移動平均期間を取得または設定します。短い AVO 期間の一般的な値かつ初期値は 10 です。"
 	}
         },
         "showTooltip": {
@@ -1327,7 +1327,7 @@
           "defaultValue": false,
           "description": {
 		"en": "Whether the map should render a tooltip.",
-		"jp": "Whether the map should render a tooltip."
+		"jp": "マップがツールチップを描画するかどうか。"
 	}
         },
         "splineType": {
@@ -1335,7 +1335,7 @@
           "defaultValue": "natural",
           "description": {
 		"en": "Defines the spline type",
-		"jp": "Defines the spline type"
+		"jp": "スプライン タイプを定義します"
 	},
           "valueOptions": [
             {
@@ -1343,7 +1343,7 @@
               "type": "string",
               "description": {
 		"en": "Calculates the spline using a natural spline calculation formula. ",
-		"jp": "Calculates the spline using a natural spline calculation formula. "
+		"jp": "自然スプライン計算数式を使用することによってスプラインを計算します。 "
 	}
             },
             {
@@ -1351,7 +1351,7 @@
               "type": "string",
               "description": {
 		"en": "Calculated the spline using a clamped spline calculation formula.",
-		"jp": "Calculated the spline using a clamped spline calculation formula."
+		"jp": "固定スプライン計算数式を使用することによってスプラインを計算します。"
 	}
             }
           ]
@@ -1361,7 +1361,7 @@
           "defaultValue": 0.5,
           "description": {
 		"en": "Gets or sets the Stiffness property.",
-		"jp": "Gets or sets the Stiffness property."
+		"jp": "Stiffness プロパティを取得または設定します。"
 	}
         },
         "thickness": {
@@ -1369,7 +1369,7 @@
           "defaultValue": 0,
           "description": {
 		"en": "Gets or sets the width of the current series object's line thickness.",
-		"jp": "Gets or sets the width of the current series object's line thickness."
+		"jp": "現在のシリーズ オブジェクトの線の太さの幅を取得または設定します。"
 	}
         },
         "title": {
@@ -1377,7 +1377,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Gets or sets the Title property. The legend item control is created according to the Title on-demand by the series object itself.",
-		"jp": "Gets or sets the Title property. The legend item control is created according to the Title on-demand by the series object itself."
+		"jp": "Title プロパティを取得または設定します。凡例項目コントロールは、Tile に従って、シリーズ オブジェクト自身がオンデマンドに作成します。"
 	}
         },
         "transitionDuration": {
@@ -1385,7 +1385,7 @@
           "defaultValue": 0,
           "description": {
 		"en": "Gets or sets the duration of the current series's morph.",
-		"jp": "Gets or sets the duration of the current series's morph."
+		"jp": "現在のシリーズのモーフィングの期間を取得または設定します。"
 	}
         },
         "trendLineBrush": {
@@ -1393,7 +1393,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Gets or sets the brush to use to draw the trend line.",
-		"jp": "Gets or sets the brush to use to draw the trend line."
+		"jp": "トレンドラインを描画するブラシを取得または設定します。"
 	}
         },
         "trendLinePeriod": {
@@ -1401,7 +1401,7 @@
           "defaultValue": 7,
           "description": {
 		"en": "Gets or sets the moving average period for the current scatter series object. The typical, and initial, value for trend line period is 7.",
-		"jp": "Gets or sets the moving average period for the current scatter series object. The typical, and initial, value for trend line period is 7."
+		"jp": "現在の散布シリーズ オブジェクトの移動平均期間を取得または設定します。一般的な近似曲線期間の初期値は 7 です。"
 	}
         },
         "trendLineThickness": {
@@ -1409,7 +1409,7 @@
           "defaultValue": 1.5,
           "description": {
 		"en": "Gets or sets the thickness of the current scatter series object's trend line.",
-		"jp": "Gets or sets the thickness of the current scatter series object's trend line."
+		"jp": "現在の散布シリーズ オブジェクトのトレンド ラインの太さを取得または設定します。"
 	}
         },
         "trendLineType": {
@@ -1417,7 +1417,7 @@
           "defaultValue": "none",
           "description": {
 		"en": "Gets or sets the trend line type.",
-		"jp": "Gets or sets the trend line type."
+		"jp": "トレンドライン タイプを取得または設定します。"
 	},
           "valueOptions": [
             {
@@ -1425,7 +1425,7 @@
               "type": "string",
               "description": {
 		"en": "There isn't a type",
-		"jp": "There isn't a type"
+		"jp": "タイプがありません。"
 	}
             },
             {
@@ -1433,7 +1433,7 @@
               "type": "string",
               "description": {
 		"en": "The type is set to a linearFit",
-		"jp": "The type is set to a linearFit"
+		"jp": "タイプは linearFit に設定されます"
 	}
             },
             {
@@ -1441,7 +1441,7 @@
               "type": "string",
               "description": {
 		"en": "The type is set to a quadraticFit",
-		"jp": "The type is set to a quadraticFit"
+		"jp": "タイプは quadraticFit に設定されます"
 	}
             },
             {
@@ -1449,7 +1449,7 @@
               "type": "string",
               "description": {
 		"en": "The type is set to a cubicFit",
-		"jp": "The type is set to a cubicFit"
+		"jp": "タイプは cubicFit に設定されます"
 	}
             },
             {
@@ -1457,7 +1457,7 @@
               "type": "string",
               "description": {
 		"en": "The type is set to a quarticFit",
-		"jp": "The type is set to a quarticFit"
+		"jp": "タイプは quarticFit に設定されます"
 	}
             },
             {
@@ -1465,7 +1465,7 @@
               "type": "string",
               "description": {
 		"en": "The type is set to a quinticFit",
-		"jp": "The type is set to a quinticFit"
+		"jp": "タイプは quinticFit に設定されます"
 	}
             },
             {
@@ -1473,7 +1473,7 @@
               "type": "string",
               "description": {
 		"en": "The type is set to a logarithmicFit",
-		"jp": "The type is set to a logarithmicFit"
+		"jp": "タイプは logarithmicFit に設定されます"
 	}
             },
             {
@@ -1481,7 +1481,7 @@
               "type": "string",
               "description": {
 		"en": "The type is set to a exponentialFit",
-		"jp": "The type is set to a exponentialFit"
+		"jp": "タイプは exponentialFit に設定されます"
 	}
             },
             {
@@ -1489,7 +1489,7 @@
               "type": "string",
               "description": {
 		"en": "The type is set to a powerLawFit",
-		"jp": "The type is set to a powerLawFit"
+		"jp": "タイプは powerLawFit に設定されます"
 	}
             },
             {
@@ -1497,7 +1497,7 @@
               "type": "string",
               "description": {
 		"en": "The type is set to a simpleAverage",
-		"jp": "The type is set to a simpleAverage"
+		"jp": "タイプは simpleAverage に設定されます"
 	}
             },
             {
@@ -1505,7 +1505,7 @@
               "type": "string",
               "description": {
 		"en": "The type is set to a exponentialAverage",
-		"jp": "The type is set to a exponentialAverage"
+		"jp": "タイプは exponentialAverage に設定されます"
 	}
             },
             {
@@ -1513,7 +1513,7 @@
               "type": "string",
               "description": {
 		"en": "The type is set to a modifiedAverage",
-		"jp": "The type is set to a modifiedAverage"
+		"jp": "タイプは modifiedAverage に設定されます"
 	}
             },
             {
@@ -1521,7 +1521,7 @@
               "type": "string",
               "description": {
 		"en": "The type is set to a cumulativeAverage",
-		"jp": "The type is set to a cumulativeAverage"
+		"jp": "タイプは cumulativeAverage に設定されます"
 	}
             },
             {
@@ -1529,7 +1529,7 @@
               "type": "string",
               "description": {
 		"en": "The type is set to a weightedAverage",
-		"jp": "The type is set to a weightedAverage"
+		"jp": "タイプは weightedAverage に設定されます"
 	}
             }
           ]
@@ -1539,7 +1539,7 @@
           "defaultValue": null,
           "description": {
 		"en": "The source of triangulation data. This property is optional. If it is left as null, the triangulation will be created based on the items in the data source. Triangulation is a demanding operation, so the runtime performance will be better when specifying a TriangulationSource, especially when a large number of data items are present.",
-		"jp": "The source of triangulation data. This property is optional. If it is left as null, the triangulation will be created based on the items in the data source. Triangulation is a demanding operation, so the runtime performance will be better when specifying a TriangulationSource, especially when a large number of data items are present."
+		"jp": "三角測量データのソース。このプロパティはオプションです。これが null として残された場合、三角形分割はデータ ソースの項目に基づいて作成されます。三角形分割は要求の厳しい操作であるため、特に多数のデータ項目が存在する場合に TriangulationSource を指定するとランタイムの実行が改善されます。"
 	}
         },
         "triangleVertexMemberPath1": {
@@ -1547,7 +1547,7 @@
           "defaultValue": null,
           "description": {
 		"en": "The name of the property of the TrianglesSource items which, for each triangle, contains the index of the first vertex point in the data source.",
-		"jp": "The name of the property of the TrianglesSource items which, for each triangle, contains the index of the first vertex point in the data source."
+		"jp": "各三角形に対してデータ ソースの最初の頂点のインデックスを含む、TrianglesSource 項目のプロパティ名。"
 	}
         },
         "triangleVertexMemberPath2": {
@@ -1555,7 +1555,7 @@
           "defaultValue": null,
           "description": {
 		"en": "The name of the property of the TrianglesSource items which, for each triangle, contains the index of the second vertex point in the data source.",
-		"jp": "The name of the property of the TrianglesSource items which, for each triangle, contains the index of the second vertex point in the data source."
+		"jp": "各三角形に対してデータ ソースの 2 番目の頂点のインデックスを含む、TrianglesSource 項目のプロパティ名。"
 	}
         },
         "triangleVertexMemberPath3": {
@@ -1563,7 +1563,7 @@
           "defaultValue": null,
           "description": {
 		"en": "The name of the property of the TrianglesSource items which, for each triangle, contains the index of the third vertex point in the data source.",
-		"jp": "The name of the property of the TrianglesSource items which, for each triangle, contains the index of the third vertex point in the data source."
+		"jp": "各三角形に対してデータ ソースの 3 番目の頂点のインデックスを含む、TrianglesSource 項目のプロパティ名。"
 	}
         },
         "triangulationDataSource": {
@@ -1571,7 +1571,7 @@
           "defaultValue": null,
           "description": {
 		"en": "The triangulated file source URI or an instance of $.ig.TriangulationDataSource.",
-		"jp": "The triangulated file source URI or an instance of $.ig.TriangulationDataSource."
+		"jp": "三通貨換算されたファイル ソース URI または $.ig.TriangulationDataSource のインスタンス。"
 	}
         },
         "type": {
@@ -1579,7 +1579,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Type of the series.",
-		"jp": "Type of the series."
+		"jp": "シリーズのタイプ。"
 	},
           "valueOptions": [
             {
@@ -1587,7 +1587,7 @@
               "type": "string",
               "description": {
 		"en": "Specify the series as geographic Symbol Series series.",
-		"jp": "Specify the series as geographic Symbol Series series."
+		"jp": "地理的シンボル シリーズとしてシリーズを指定します。"
 	}
             },
             {
@@ -1595,7 +1595,7 @@
               "type": "string",
               "description": {
 		"en": "Specify the series as geographic Poly Line series.",
-		"jp": "Specify the series as geographic Poly Line series."
+		"jp": "地理的ポリライン シリーズとしてシリーズを指定します。"
 	}
             },
             {
@@ -1603,7 +1603,7 @@
               "type": "string",
               "description": {
 		"en": "Specify the series as geographic Scatter Area series.",
-		"jp": "Specify the series as geographic Scatter Area series."
+		"jp": "地理的スキャッター エリア シリーズとしてシリーズを指定します。"
 	}
             },
             {
@@ -1611,7 +1611,7 @@
               "type": "string",
               "description": {
 		"en": "Specify the series as geographic Shape series.",
-		"jp": "Specify the series as geographic Shape series."
+		"jp": "地理的図形シリーズとしてシリーズを指定します。"
 	}
             },
             {
@@ -1619,7 +1619,7 @@
               "type": "string",
               "description": {
 		"en": "Specify the series as geographic Contour Line series.",
-		"jp": "Specify the series as geographic Contour Line series."
+		"jp": "地理的等高線シリーズとしてシリーズを指定します。"
 	}
             },
             {
@@ -1627,7 +1627,7 @@
               "type": "string",
               "description": {
 		"en": "Specify the series as geographic High Density Scatter series.",
-		"jp": "Specify the series as geographic High Density Scatter series."
+		"jp": "地理的高密度散布シリーズとしてシリーズを指定します。"
 	}
             },
             {
@@ -1635,7 +1635,7 @@
               "type": "string",
               "description": {
 		"en": "Specify the series as geographic Proportional Size series.",
-		"jp": "Specify the series as geographic Proportional Size series."
+		"jp": "地理的比例サイズ シリーズとしてシリーズを指定します。"
 	}
             }
           ]
@@ -1645,7 +1645,7 @@
           "defaultValue": "dontPlot",
           "description": {
 		"en": "Determines how unknown values will be plotted on the map. Null and Double.NaN are two examples of unknown values.",
-		"jp": "Determines how unknown values will be plotted on the map. Null and Double.NaN are two examples of unknown values."
+		"jp": "不明な値をマップでプロットする方法を決定します。null および Double.NaN は不明な値の例です。"
 	},
           "valueOptions": [
             {
@@ -1653,7 +1653,7 @@
               "type": "string",
               "description": {
 		"en": "Plot the unknown value as the midpoint between surrounding known values using linear interpolation.",
-		"jp": "Plot the unknown value as the midpoint between surrounding known values using linear interpolation."
+		"jp": "線形補間を使用すると、不明な値を囲む定義した値の中にプロットします。"
 	}
             },
             {
@@ -1661,7 +1661,7 @@
               "type": "string",
               "description": {
 		"en": "Do not plot the unknown value on the map.",
-		"jp": "Do not plot the unknown value on the map."
+		"jp": "不明な値はマップにプロットしません。"
 	}
             }
           ]
@@ -1671,7 +1671,7 @@
           "defaultValue": false,
           "description": {
 		"en": "Gets or sets the whether to use use brute force mode.",
-		"jp": "Gets or sets the whether to use use brute force mode."
+		"jp": "ブルート フォース モードを使用するかどうかを取得または設定します。"
 	}
         },
         "useCartesianInterpolation": {
@@ -1679,7 +1679,7 @@
           "defaultValue": true,
           "description": {
 		"en": "Gets or sets whether Cartesian Interpolation should be used rather than Archimedian spiral based interpolation.",
-		"jp": "Gets or sets whether Cartesian Interpolation should be used rather than Archimedian spiral based interpolation."
+		"jp": "Archimedian スパイラルに基づく補間の代わりに Cartesian 補間を使用するかどうかを取得または設定します。"
 	}
         },
         "useSquareCutoffStyle": {
@@ -1687,7 +1687,7 @@
           "defaultValue": false,
           "description": {
 		"en": "Gets or sets the whether to use squares when halting a render traversal rather than the shape of the coalesced area.",
-		"jp": "Gets or sets the whether to use squares when halting a render traversal rather than the shape of the coalesced area."
+		"jp": "描画トラバーサルを中止する際に、結合領域の図形の代わりに四角を使用するかどうかを取得または設定します。"
 	}
         },
         "valueMemberPath": {
@@ -1695,7 +1695,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Gets or sets the item path that provides the values for the current series.",
-		"jp": "Gets or sets the item path that provides the values for the current series."
+		"jp": "現在のシリーズの値を提供する項目パスを取得または設定します。"
 	}
         },
         "valueResolver": {
@@ -1703,7 +1703,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Gets or sets the ContourValueResolver used to determine the numeric values of contours.",
-		"jp": "Gets or sets the ContourValueResolver used to determine the numeric values of contours."
+		"jp": "等高線の数値を決定するために使用される ContourValueResolver を取得または設定します。"
 	},
           "schema": {
             "type": {
@@ -1729,7 +1729,7 @@
           "defaultValue": 0,
           "description": {
 		"en": "The minimum scale at which this series becomes visible. The default value for this property is 1.0, which means the series will always be visible. At a VisibleFromScale setting of 0.0, the series will never be visible. At a VisibleFromScale setting of 0.5, the series will be visible as long as the map is zoomed in to at least 200%.",
-		"jp": "The minimum scale at which this series becomes visible. The default value for this property is 1.0, which means the series will always be visible. At a VisibleFromScale setting of 0.0, the series will never be visible. At a VisibleFromScale setting of 0.5, the series will be visible as long as the map is zoomed in to at least 200%."
+		"jp": "このシリーズが表示される最小スケール。このプロパティのデフォルト値は 1.0 で、シリーズが常に表示されることを示します。VisibleFromScale の設定が 0.0 の場合、シリーズは決して表示されません。VisibleFromScale の設定が 0.5 の場合、マップが少なくとも 200% まで拡大表示されている限りシリーズは表示されます。"
 	}
         },
         "volumeMemberPath": {
@@ -1737,7 +1737,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Gets or sets the volume mapping property for the current series object.",
-		"jp": "Gets or sets the volume mapping property for the current series object."
+		"jp": "現在のシリーズ オブジェクトの出来高マッピング プロパティを取得または設定します。"
 	}
         }
       }
@@ -1747,7 +1747,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the template to use for square markers on the map.<br>   Defines the marker template used for<br>   series with a marker type of square.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-		"jp": "Gets or sets the template to use for square markers on the map.<br>   Defines the marker template used for<br>   series with a marker type of square.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
+		"jp": "マップに四角マーカーを使用するためのテンプレートを取得または設定します。<br>   マーカー タイプが<br>   square のシリーズで使用されるマーカー テンプレートを定義します。<br>   提供されるオブジェクトには、描画とオプションでメジャーと呼ばれるプロパティがあります。option: legendItemBadgeTemplate の定義を参照してください。"
 	},
       "schemaRef": "dataChart.circleMarkerTemplate"
     },
@@ -1756,7 +1756,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the template to use for tetragram markers on the map.<br>   Defines the marker template used for<br>   series with a marker type of tetragram.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-		"jp": "Gets or sets the template to use for tetragram markers on the map.<br>   Defines the marker template used for<br>   series with a marker type of tetragram.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
+		"jp": "マップにテトラグラム マーカーを使用するためのテンプレートを取得または設定します。<br>   マーカー タイプが<br>   tetragram のシリーズで使用されるマーカー テンプレートを定義します。<br>   提供されるオブジェクトには、描画とオプションでメジャーと呼ばれるプロパティがあります。option: legendItemBadgeTemplate の定義を参照してください。"
 	},
       "schemaRef": "dataChart.circleMarkerTemplate"
     },
@@ -1765,7 +1765,7 @@
       "defaultValue": "c",
       "description": {
 		"en": "The swatch used to style this widget",
-		"jp": "The swatch used to style this widget"
+		"jp": "このウィジェットをスタイルするために使用される見本。"
 	}
     },
     "triangleMarkerTemplate": {
@@ -1773,7 +1773,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the template to use for triangle markers on the map.<br>   Defines the marker template used for<br>   series with a marker type of triangle.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-		"jp": "Gets or sets the template to use for triangle markers on the map.<br>   Defines the marker template used for<br>   series with a marker type of triangle.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate"
+		"jp": "マップに三角形マーカーを使用するためのテンプレートを取得または設定します。<br>   マーカー タイプが<br>   triangle のシリーズで使用されるマーカー テンプレートを定義します。<br>   提供されるオブジェクトには、描画とオプションでメジャーと呼ばれるプロパティがあります。option: legendItemBadgeTemplate の定義を参照してください。"
 	},
       "schemaRef": "dataChart.circleMarkerTemplate"
     },
@@ -1782,7 +1782,7 @@
       "defaultValue": null,
       "description": {
 		"en": "The width of the map. It can be set as a number in pixels, string (px) or percentage (%).",
-		"jp": "The width of the map. It can be set as a number in pixels, string (px) or percentage (%)."
+		"jp": "マップの幅。ピクセル、文字列 (px)、またはパーセンテージ (%) で数字として設定できます。"
 	}
     },
     "windowPositionHorizontal": {
@@ -1790,7 +1790,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "A number between 0 and 1 determining the position of the horizontal scroll.<br>   This property is effectively a shortcut to the X position of the WindowRect property.",
-		"jp": "A number between 0 and 1 determining the position of the horizontal scroll.<br>   This property is effectively a shortcut to the X position of the WindowRect property."
+		"jp": "水平スクロールの位置を決定する 0 ～ 1 の数。<br>   このプロパティは WindowRect プロパティの X 位置へのショートカットと同じです。"
 	}
     },
     "windowPositionVertical": {
@@ -1798,7 +1798,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "A number between 0 and 1 determining the position of the vertical scroll.<br>   This property is effectively a shortcut to the Y position of the WindowRect property.",
-		"jp": "A number between 0 and 1 determining the position of the vertical scroll.<br>   This property is effectively a shortcut to the Y position of the WindowRect property."
+		"jp": "垂直スクロールの位置を決定する 0 ～ 1 の数。<br>   このプロパティは WindowRect プロパティの Y 位置へのショートカットと同じです。"
 	}
     },
     "windowRect": {
@@ -1806,7 +1806,7 @@
       "defaultValue": null,
       "description": {
 		"en": "A rectangle representing the portion of the map currently in view.<br>   A rectangle at X=0, Y=0 with a Height and Width of 1 implies the entire plotting area is in view.  A Height and Width of .5 would imply that the view is halfway zoomed in.<br>   The provided object should have numeric properties called left, top, width and height.",
-		"jp": "A rectangle representing the portion of the map currently in view.<br>   A rectangle at X=0, Y=0 with a Height and Width of 1 implies the entire plotting area is in view.  A Height and Width of .5 would imply that the view is halfway zoomed in.<br>   The provided object should have numeric properties called left, top, width and height."
+		"jp": "現在表示されているマップ部分を表す長方形。<br>   X = 0、Y = 0、Height および Width が 1 に設定される長方形の場合、プロット可能な領域はすべて表示されていることを意味します。Height および Width は .5 に設定される場合、表示は半分ズームしています。<br>   提供されたオブジェクトは、left、top、width および height と呼ばれる数値プロパティを持っている必要があります。"
 	},
       "schema": {
         "left": {
@@ -1814,7 +1814,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Gets sets left position of the rectangle",
-		"jp": "Gets sets left position of the rectangle"
+		"jp": "矩形の左位置を取得または設定します。"
 	}
         },
         "top": {
@@ -1822,7 +1822,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Gets sets top position of the rectangle",
-		"jp": "Gets sets top position of the rectangle"
+		"jp": "矩形の上位置を取得または設定します。"
 	}
         },
         "width": {
@@ -1830,7 +1830,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Gets sets width position of the rectangle",
-		"jp": "Gets sets width position of the rectangle"
+		"jp": "矩形の幅位置を取得または設定します。"
 	}
         },
         "height": {
@@ -1838,7 +1838,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Gets sets height position of the rectangle",
-		"jp": "Gets sets height position of the rectangle"
+		"jp": "矩形の高さ位置を取得または設定します。"
 	}
         }
       }
@@ -1848,7 +1848,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Sets or gets the minimum width that the window rect is allowed to reach before being clamped.<br>   Decrease this value if you want to allow for further zooming into the viewer.<br>   If this value is lowered too much it can cause graphical corruption due to floating point arithmetic inaccuracy.",
-		"jp": "Sets or gets the minimum width that the window rect is allowed to reach before being clamped.<br>   Decrease this value if you want to allow for further zooming into the viewer.<br>   If this value is lowered too much it can cause graphical corruption due to floating point arithmetic inaccuracy."
+		"jp": "ウィンドウ長方形が固定される前に到達できる最低幅を設定または取得します。<br>   ビューアーにさらにズームできるようにする場合はこの値を減らします。<br>   この値が低すぎると、浮動小数点演算が正確でなくなるため、グラフィックが破損する場合があります。"
 	}
     },
     "windowResponse": {
@@ -1864,7 +1864,7 @@
           "type": "string",
           "description": {
 		"en": "Defer the view update until after the user action is complete.             ",
-		"jp": "Defer the view update until after the user action is complete.             "
+		"jp": "ユーザー アクションが完了してからビューの更新を開始します。             "
 	}
         },
         {
@@ -1872,7 +1872,7 @@
           "type": "string",
           "description": {
 		"en": "Update the view immediately while the user action is happening.",
-		"jp": "Update the view immediately while the user action is happening."
+		"jp": "ユーザー アクションの発生と同時にビューを更新します。"
 	}
         }
       ]

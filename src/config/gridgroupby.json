@@ -1,4 +1,4 @@
-{
+﻿{
   "overview": null,
   "name": "ui.igGridGroupBy",
   "title": "Grouping",
@@ -21,7 +21,7 @@
       ],
       "description": {
 		"en": "event which is fired when the groupedColumns collection has changed. This event is fired also when group/ungroup from groupby modal dialog but key, layout and grid are not set<br>            use args.owner in order to access the groupby widget object<br>            use args.owner.grid to access the grid widget option<br>            use args.groupedColumns to get a reference to the current groupedColumns<br>            use args.key to get a reference to the current column's key that's being grouped<br>            use args.layout to get a reference to the current layout object, if any<br>            use args.grid to get a reference to the current child grid element, in case it's an hierarchical grid",
-		"jp": "event which is fired when the groupedColumns collection has changed. This event is fired also when group/ungroup from groupby modal dialog but key, layout and grid are not set<br>            use args.owner in order to access the groupby widget object<br>            use args.owner.grid to access the grid widget option<br>            use args.groupedColumns to get a reference to the current groupedColumns<br>            use args.key to get a reference to the current column's key that's being grouped<br>            use args.layout to get a reference to the current layout object, if any<br>            use args.grid to get a reference to the current child grid element, in case it's an hierarchical grid"
+		"jp": "groupedColumns コレクションが変更されたときに発生するイベント。GroupBy モーダル ダイアログでキー、レイアウト、およびグリッドが設定されなくて、グループ化またはグループ化の解除操作が発生される場合、このイベントが発生されます。<br>            groupby ウィジェット オブジェクトにアクセスするには args.owner を使用します。<br>            args.owner.grid を使用して、グリッド ウィジェット オプションにアクセスします。<br>            args.groupedColumns を使用して、現在の groupedColumns への参照を取得します。<br>            args.key を使用して、グループ化されている現在の列のキーへの参照を取得します。<br>            存在する場合、args.layout を使用して、現在のレイアウト オブジェクトへの参照を取得します。<br>            階層型グリッドの場合、args.grid を使用して、現在の子グリッド要素への参照を取得します。"
 	}
     },
     "groupedColumnsChanging": {
@@ -40,7 +40,7 @@
       ],
       "description": {
 		"en": "Event which is fired when the grouped columns collection is about to change. This event is not fired when group/ungroup from groupby modal dialog<br>            use args.owner in order to access the groupby widget object<br>            use args.owner.grid to access the grid widget option<br>            use args.groupedColumns to get a reference to the current groupedColumns<br>            use args.key to get a reference to the current column's key that's being grouped<br>            use args.layout to get a reference to the current layout object, if any<br>            use args.grid to get a reference to the current child grid element, in case it's an hierarchical grid",
-		"jp": "Event which is fired when the grouped columns collection is about to change. This event is not fired when group/ungroup from groupby modal dialog<br>            use args.owner in order to access the groupby widget object<br>            use args.owner.grid to access the grid widget option<br>            use args.groupedColumns to get a reference to the current groupedColumns<br>            use args.key to get a reference to the current column's key that's being grouped<br>            use args.layout to get a reference to the current layout object, if any<br>            use args.grid to get a reference to the current child grid element, in case it's an hierarchical grid"
+		"jp": "グループ化される列のコレクションが変更される前に発生されるイベント。このイベントは、GroupBy モーダル ダイアログでグループ化/グループ化の解除を行った際にも発生されません。<br>            groupby ウィジェット オブジェクトにアクセスするには args.owner を使用します。<br>            args.owner.grid を使用して、グリッド ウィジェット オプションにアクセスします。<br>            args.groupedColumns を使用して、現在の groupedColumns への参照を取得します。<br>            args.key を使用して、グループ化されている現在の列のキーへの参照を取得します。<br>            存在する場合、args.layout を使用して、現在のレイアウト オブジェクトへの参照を取得します。<br>            階層型グリッドの場合、args.grid を使用して、現在の子グリッド要素への参照を取得します。"
 	}
     },
     "modalDialogButtonApplyClick": {
@@ -59,7 +59,7 @@
       ],
       "description": {
 		"en": "event fired when the button is Apply is clicked.<br>            The handler function takes arguments evt and ui.<br>            Use ui.owner to get the reference to the igGridGroupby widget.<br>            Use ui.owner.grid to get the reference to the igGrid widget.<br>            Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.<br>            Use ui.groupedColumns to get the array of grouped columns<br>            Use ui.groupedColumnLayouts to get array of column layouts<br>            Use ui.sortingExpr to get array of sorted columns",
-		"jp": "event fired when the button is Apply is clicked.<br>            The handler function takes arguments evt and ui.<br>            Use ui.owner to get the reference to the igGridGroupby widget.<br>            Use ui.owner.grid to get the reference to the igGrid widget.<br>            Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.<br>            Use ui.groupedColumns to get the array of grouped columns<br>            Use ui.groupedColumnLayouts to get array of column layouts<br>            Use ui.sortingExpr to get array of sorted columns"
+		"jp": "[適用] ボタンをクリックしたときに発生するイベント。<br>            ハンドラー関数は引数 evt および ui を取得します。<br>            igGridGroupby ウィジェットへの参照を取得するには ui.owner を使用します。<br>            ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>            モーダル ダイアログ要素への参照を取得するには ui.modalDialogElement を使用します。これは jQuery オブジェクトです。<br>            グループ化される列の配列を取得するには ui.groupedColumns を使用します。<br>            列レイアウトの配列を取得するには ui.groupedColumnLayouts を使用します。<br>            並べ替えた列の配列を取得するには ui.sortingExpr を使用します。"
 	}
     },
     "modalDialogButtonResetClick": {
@@ -78,7 +78,7 @@
       ],
       "description": {
 		"en": "event fired when reset button is clicked.<br>            The handler function takes arguments evt and ui.<br>            Use ui.owner to get the reference to the igGridGroupby widget.<br>            Use ui.owner.grid to get the reference to the igGrid widget.<br>            Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.",
-		"jp": "event fired when reset button is clicked.<br>            The handler function takes arguments evt and ui.<br>            Use ui.owner to get the reference to the igGridGroupby widget.<br>            Use ui.owner.grid to get the reference to the igGrid widget.<br>            Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object."
+		"jp": "[リセット] ボタンがクリックされたときに発生されるイベント。<br>            ハンドラー関数は引数 evt および ui を取得します。<br>            igGridGroupby ウィジェットへの参照を取得するには ui.owner を使用します。<br>            ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>            モーダル ダイアログ要素への参照を取得するには ui.modalDialogElement を使用します。これは jQuery オブジェクトです。"
 	}
     },
     "modalDialogClosed": {
@@ -97,7 +97,7 @@
       ],
       "description": {
 		"en": "event fired after the modal dialog has been closed.<br>            The handler function takes arguments evt and ui.<br>            Use ui.owner to get the reference to the igGridGroupBy widget.<br>            Use ui.owner.grid to get the reference to the igGrid widget.<br>            Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.",
-		"jp": "event fired after the modal dialog has been closed.<br>            The handler function takes arguments evt and ui.<br>            Use ui.owner to get the reference to the igGridGroupBy widget.<br>            Use ui.owner.grid to get the reference to the igGrid widget.<br>            Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object."
+		"jp": "モーダル ダイアログが閉じた後に発生するイベント。<br>            ハンドラー関数は引数 evt および ui を取得します。<br>            igGridGroupBy ウィジェットへの参照を取得するには ui.owner を使用します。<br>            ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>            モーダル ダイアログ要素への参照を取得するには ui.modalDialogElement を使用します。これは jQuery オブジェクトです。"
 	}
     },
     "modalDialogClosing": {
@@ -116,7 +116,7 @@
       ],
       "description": {
 		"en": "event fired before the modal dialog is closed.<br>            The handler function takes arguments evt and ui.<br>            Use ui.owner to get the reference to the igGridGroupBy widget.<br>            Use ui.owner.grid to get the reference to the igGrid widget.<br>            Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.",
-		"jp": "event fired before the modal dialog is closed.<br>            The handler function takes arguments evt and ui.<br>            Use ui.owner to get the reference to the igGridGroupBy widget.<br>            Use ui.owner.grid to get the reference to the igGrid widget.<br>            Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object."
+		"jp": "モーダル ダイアログが閉じる前に発生するイベント。<br>            ハンドラー関数は引数 evt および ui を取得します。<br>            igGridGroupBy ウィジェットへの参照を取得するには ui.owner を使用します。<br>            ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>            モーダル ダイアログ要素への参照を取得するには ui.modalDialogElement を使用します。これは jQuery オブジェクトです。"
 	}
     },
     "modalDialogContentsRendered": {
@@ -135,7 +135,7 @@
       ],
       "description": {
 		"en": "event fired after the contents of the modal dialog are rendered.<br>            The handler function takes arguments evt and ui.<br>            Use ui.owner to get the reference to the igGridGroupBy widget.<br>            Use ui.owner.grid to get the reference to the igGrid widget.<br>            Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.",
-		"jp": "event fired after the contents of the modal dialog are rendered.<br>            The handler function takes arguments evt and ui.<br>            Use ui.owner to get the reference to the igGridGroupBy widget.<br>            Use ui.owner.grid to get the reference to the igGrid widget.<br>            Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object."
+		"jp": "モーダル ダイアログのコンテンツが描画された後に発生するイベント。<br>            ハンドラー関数は引数 evt および ui を取得します。<br>            igGridGroupBy ウィジェットへの参照を取得するには ui.owner を使用します。<br>            ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>            モーダル ダイアログ要素への参照を取得するには ui.modalDialogElement を使用します。これは jQuery オブジェクトです。"
 	}
     },
     "modalDialogContentsRendering": {
@@ -154,7 +154,7 @@
       ],
       "description": {
 		"en": "event fired before the contents of the modal dialog are rendered.<br>            The handler function takes arguments evt and ui.<br>            Use ui.owner to get the reference to the igGridGroupby widget.<br>            Use ui.owner.grid to get the reference to the igGrid widget.<br>            Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.",
-		"jp": "event fired before the contents of the modal dialog are rendered.<br>            The handler function takes arguments evt and ui.<br>            Use ui.owner to get the reference to the igGridGroupby widget.<br>            Use ui.owner.grid to get the reference to the igGrid widget.<br>            Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object."
+		"jp": "モーダル ダイアログのコンテンツが描画される前に発生するイベント。<br>            ハンドラー関数は引数 evt および ui を取得します。<br>            igGridGroupby ウィジェットへの参照を取得するには ui.owner を使用します。<br>            ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>            モーダル ダイアログ要素への参照を取得するには ui.modalDialogElement を使用します。これは jQuery オブジェクトです。"
 	}
     },
     "modalDialogGroupColumn": {
@@ -173,7 +173,7 @@
       ],
       "description": {
 		"en": "event fired when column in modal dialog is clicked to be grouped.<br>            The handler function takes arguments evt and ui.<br>            Use ui.owner to get the reference to the igGridGroupby widget.<br>            Use ui.owner.grid to get the reference to the igGrid widget.<br>            Use ui.key to get the key of the column to be grouped.<br>            Use args.groupedColumns to get a reference to the current groupedColumns<br>            Use ui.layout to get the layout of the columns",
-		"jp": "event fired when column in modal dialog is clicked to be grouped.<br>            The handler function takes arguments evt and ui.<br>            Use ui.owner to get the reference to the igGridGroupby widget.<br>            Use ui.owner.grid to get the reference to the igGrid widget.<br>            Use ui.key to get the key of the column to be grouped.<br>            Use args.groupedColumns to get a reference to the current groupedColumns<br>            Use ui.layout to get the layout of the columns"
+		"jp": "モーダル ダイアログ内のグループ化される列がクリックされたときに発生するイベント。<br>            ハンドラー関数は引数 evt および ui を取得します。<br>            igGridGroupby ウィジェットへの参照を取得するには ui.owner を使用します。<br>            ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>            グループ化される列のキーを取得するには ui.key を使用します。<br>            args.groupedColumns を使用して、現在の groupedColumns への参照を取得します。<br>            列のレイアウトを取得するには ui.layout を使用します。"
 	}
     },
     "modalDialogGroupingColumn": {
@@ -192,7 +192,7 @@
       ],
       "description": {
 		"en": "event fired when column in modal dialog is clicked to be grouped.<br>            The handler function takes arguments evt and ui.<br>            Use ui.owner to get the reference to the igGridGroupby widget.<br>            Use ui.owner.grid to get the reference to the igGrid widget.<br>            Use ui.key to get the key of the column to be grouped.<br>            Use ui.layout to get the layout of the columns",
-		"jp": "event fired when column in modal dialog is clicked to be grouped.<br>            The handler function takes arguments evt and ui.<br>            Use ui.owner to get the reference to the igGridGroupby widget.<br>            Use ui.owner.grid to get the reference to the igGrid widget.<br>            Use ui.key to get the key of the column to be grouped.<br>            Use ui.layout to get the layout of the columns"
+		"jp": "モーダル ダイアログ内のグループ化される列がクリックされたときに発生するイベント。<br>            ハンドラー関数は引数 evt および ui を取得します。<br>            igGridGroupby ウィジェットへの参照を取得するには ui.owner を使用します。<br>            ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>            グループ化される列のキーを取得するには ui.key を使用します。<br>            列のレイアウトを取得するには ui.layout を使用します。"
 	}
     },
     "modalDialogMoving": {
@@ -211,7 +211,7 @@
       ],
       "description": {
 		"en": "Event fired every time the groupby dialog changes its position.<br>            The handler function takes arguments evt and ui.<br>            Use ui.owner to get the reference to the igGridGroupBy widget.<br>            Use ui.owner.grid to get the reference to the igGrid widget.<br>            Use ui.modalDialogElement to get a reference to the Column Chooser element. This is a jQuery object.<br>            Use ui.originalPosition to get the original position of the groupby dialog div as { top, left } object, relative to the page.<br>            Use ui.position to get the current position of the groupby dialog div as { top, left } object, relative to the page.",
-		"jp": "Event fired every time the groupby dialog changes its position.<br>            The handler function takes arguments evt and ui.<br>            Use ui.owner to get the reference to the igGridGroupBy widget.<br>            Use ui.owner.grid to get the reference to the igGrid widget.<br>            Use ui.modalDialogElement to get a reference to the Column Chooser element. This is a jQuery object.<br>            Use ui.originalPosition to get the original position of the groupby dialog div as { top, left } object, relative to the page.<br>            Use ui.position to get the current position of the groupby dialog div as { top, left } object, relative to the page."
+		"jp": "グループ化ダイアログの位置が変わるたびに発生するイベント。<br>            ハンドラー関数は引数 evt および ui を取得します。<br>            igGridGroupBy ウィジェットへの参照を取得するには ui.owner を使用します。<br>            ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>            列選択要素への参照を取得するには ui.modalDialogElement を使用します。これは jQuery オブジェクトです。<br>            グループ化ダイアログ div の元の位置をページに相対して { top, left } オブジェクトとして取得するには ui.originalPosition を使用します。<br>            グループ化ダイアログ div の現在の位置をページに相対して { top, left } オブジェクトとして取得するには ui.position を使用します。"
 	}
     },
     "modalDialogOpened": {
@@ -230,7 +230,7 @@
       ],
       "description": {
 		"en": "event fired after the modal dialog is already opened.<br>            The handler function takes arguments evt and ui.<br>            Use ui.owner to get the reference to the igGridGroupBy widget.<br>            Use ui.owner.grid to get the reference to the igGrid widget.<br>            Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.",
-		"jp": "event fired after the modal dialog is already opened.<br>            The handler function takes arguments evt and ui.<br>            Use ui.owner to get the reference to the igGridGroupBy widget.<br>            Use ui.owner.grid to get the reference to the igGrid widget.<br>            Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object."
+		"jp": "モーダル ダイアログがすでに開いた後に発生するイベント。<br>            ハンドラー関数は引数 evt および ui を取得します。<br>            igGridGroupBy ウィジェットへの参照を取得するには ui.owner を使用します。<br>            ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>            モーダル ダイアログ要素への参照を取得するには ui.modalDialogElement を使用します。これは jQuery オブジェクトです。"
 	}
     },
     "modalDialogOpening": {
@@ -249,7 +249,7 @@
       ],
       "description": {
 		"en": "event fired before the modal dialog is opened.<br>            The handler function takes arguments evt and ui.<br>            Use ui.owner to get the reference to the igGridGroupBy widget.<br>            Use ui.owner.grid to get the reference to the igGrid widget.<br>            Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.",
-		"jp": "event fired before the modal dialog is opened.<br>            The handler function takes arguments evt and ui.<br>            Use ui.owner to get the reference to the igGridGroupBy widget.<br>            Use ui.owner.grid to get the reference to the igGrid widget.<br>            Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object."
+		"jp": "モーダル ダイアログが開く前に発生するイベント。<br>            ハンドラー関数は引数 evt および ui を取得します。<br>            igGridGroupBy ウィジェットへの参照を取得するには ui.owner を使用します。<br>            ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>            モーダル ダイアログ要素への参照を取得するには ui.modalDialogElement を使用します。これは jQuery オブジェクトです。"
 	}
     },
     "modalDialogSortGroupedColumn": {
@@ -268,7 +268,7 @@
       ],
       "description": {
 		"en": "event fired when column in modal dialog is clicked to be ungrouped.<br>            The handler function takes arguments evt and ui.<br>            Use ui.owner to get the reference to the igGridGroupby widget.<br>            Use ui.owner.grid to get the reference to the igGrid widget.<br>            Use ui.key to get the key of the column to be grouped.<br>            Use ui.layout to get the layout of the columns<br>            Use ui.isAsc to get whether column should be sorted ascending or descending",
-		"jp": "event fired when column in modal dialog is clicked to be ungrouped.<br>            The handler function takes arguments evt and ui.<br>            Use ui.owner to get the reference to the igGridGroupby widget.<br>            Use ui.owner.grid to get the reference to the igGrid widget.<br>            Use ui.key to get the key of the column to be grouped.<br>            Use ui.layout to get the layout of the columns<br>            Use ui.isAsc to get whether column should be sorted ascending or descending"
+		"jp": "モーダル ダイアログ内のグループ化解除される列がクリックされたときに発生するイベント。<br>            ハンドラー関数は引数 evt および ui を取得します。<br>            igGridGroupby ウィジェットへの参照を取得するには ui.owner を使用します。<br>            ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>            グループ化される列のキーを取得するには ui.key を使用します。<br>            列のレイアウトを取得するには ui.layout を使用します。<br>            列を昇順または降順に並べ替えるかどうかを決定するには ui.isAsc を使用します。"
 	}
     },
     "modalDialogUngroupColumn": {
@@ -287,7 +287,7 @@
       ],
       "description": {
 		"en": "event fired when column in modal dialog is clicked to be ungrouped.<br>            The handler function takes arguments evt and ui.<br>            Use ui.owner to get the reference to the igGridGroupby widget.<br>            Use ui.owner.grid to get the reference to the igGrid widget.<br>            Use args.groupedColumns to get a reference to the current groupedColumns<br>            Use ui.key to get the key of the column to be grouped.<br>            Use ui.layout to get the layout of the columns",
-		"jp": "event fired when column in modal dialog is clicked to be ungrouped.<br>            The handler function takes arguments evt and ui.<br>            Use ui.owner to get the reference to the igGridGroupby widget.<br>            Use ui.owner.grid to get the reference to the igGrid widget.<br>            Use args.groupedColumns to get a reference to the current groupedColumns<br>            Use ui.key to get the key of the column to be grouped.<br>            Use ui.layout to get the layout of the columns"
+		"jp": "モーダル ダイアログ内のグループ化解除される列がクリックされたときに発生するイベント。<br>            ハンドラー関数は引数 evt および ui を取得します。<br>            igGridGroupby ウィジェットへの参照を取得するには ui.owner を使用します。<br>            ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>            args.groupedColumns を使用して、現在の groupedColumns への参照を取得します。<br>            グループ化される列のキーを取得するには ui.key を使用します。<br>            列のレイアウトを取得するには ui.layout を使用します。"
 	}
     },
     "modalDialogUngroupingColumn": {
@@ -306,7 +306,7 @@
       ],
       "description": {
 		"en": "event fired when column in modal dialog is clicked to be ungrouped.<br>            The handler function takes arguments evt and ui.<br>            Use ui.owner to get the reference to the igGridGroupby widget.<br>            Use ui.owner.grid to get the reference to the igGrid widget.<br>            Use ui.key to get the key of the column to be grouped.<br>            Use ui.layout to get the layout of the columns",
-		"jp": "event fired when column in modal dialog is clicked to be ungrouped.<br>            The handler function takes arguments evt and ui.<br>            Use ui.owner to get the reference to the igGridGroupby widget.<br>            Use ui.owner.grid to get the reference to the igGrid widget.<br>            Use ui.key to get the key of the column to be grouped.<br>            Use ui.layout to get the layout of the columns"
+		"jp": "モーダル ダイアログ内のグループ化解除される列がクリックされたときに発生するイベント。<br>            ハンドラー関数は引数 evt および ui を取得します。<br>            igGridGroupby ウィジェットへの参照を取得するには ui.owner を使用します。<br>            ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>            グループ化される列のキーを取得するには ui.key を使用します。<br>            列のレイアウトを取得するには ui.layout を使用します。"
 	}
     }
   },
@@ -320,7 +320,7 @@
       "defaultValue": "",
       "description": {
 		"en": "specifies the collapse indicator tooltip for grouped rows",
-		"jp": "specifies the collapse indicator tooltip for grouped rows"
+		"jp": "グループ化された行に、折り畳みインジケーター ツールチップを指定します。"
 	}
     },
     "columnSettings": {
@@ -328,7 +328,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Get sets settings for individual columns such as whether the grid is grouped by that column or grouping is allowed for that column.",
-		"jp": "Get sets settings for individual columns such as whether the grid is grouped by that column or grouping is allowed for that column."
+		"jp": "グリッドが列でグループ化されるかどうか、グループ化を列で許可するかなど、各列の設定を取得または設定します。"
 	},
       "schema": {
         "allowGrouping": {
@@ -336,7 +336,7 @@
           "defaultValue": true,
           "description": {
 		"en": "Enables/disables a column to participate in grouping. By default all columns can be grouped",
-		"jp": "Enables/disables a column to participate in grouping. By default all columns can be grouped"
+		"jp": "グループ化に参加する列を有効/無効にします。デフォルトでは、すべての列をグループ化できます。"
 	}
         },
         "isGroupBy": {
@@ -344,7 +344,7 @@
           "defaultValue": true,
           "description": {
 		"en": "Specifies if a column should be grouped by default",
-		"jp": "Specifies if a column should be grouped by default"
+		"jp": "デフォルトで列をグループ化するかどうかを指定します。"
 	}
         },
         "groupComparerFunction": {
@@ -352,7 +352,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Specifies a custom group by function, which accepts the column setting, the first and the second value to compare and returns bool",
-		"jp": "Specifies a custom group by function, which accepts the column setting, the first and the second value to compare and returns bool"
+		"jp": "関数ごとにカスタム グループを指定します。これは列設定、比較する最初と 2 番目の値を受け入れ、ブールを返します。"
 	}
         },
         "groupLabelFormatter": {
@@ -360,7 +360,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Reference to a function which will be used for formatting the cell values. The function should accept a value from the grouped column and return the new formatted value in the label of the row.",
-		"jp": "Reference to a function which will be used for formatting the cell values. The function should accept a value from the grouped column and return the new formatted value in the label of the row."
+		"jp": "セル値を書式設定するために使用される関数への参照。この関数は、グループ化された列値を許可し、行ラベルの新しい書式設定値を返します。"
 	}
         },
         "summaries": {
@@ -368,7 +368,7 @@
           "defaultValue": true,
           "description": {
 		"en": "Enables/disables a column to participate in grouping. By default all columns can be grouped",
-		"jp": "Enables/disables a column to participate in grouping. By default all columns can be grouped"
+		"jp": "グループ化に参加する列を有効/無効にします。デフォルトでは、すべての列をグループ化できます。"
 	},
           "schema": {
             "summaryFunction": {
@@ -376,7 +376,7 @@
               "defaultValue": "avg",
               "description": {
 		"en": "Specifies summary function",
-		"jp": "Specifies summary function"
+		"jp": "集計関数を指定します"
 	},
               "valueOptions": [
                 {
@@ -384,7 +384,7 @@
                   "type": "string",
                   "description": {
 		"en": "Summary function calculates the avarege of the values in the column",
-		"jp": "Summary function calculates the avarege of the values in the column"
+		"jp": "集計関数は列の値の平均を計算します。"
 	}
                 },
                 {
@@ -392,7 +392,7 @@
                   "type": "string",
                   "description": {
 		"en": "Summary function calculates the minimum of the values in the column",
-		"jp": "Summary function calculates the minimum of the values in the column"
+		"jp": "集計関数は列の値の最小値を計算します。"
 	}
                 },
                 {
@@ -400,7 +400,7 @@
                   "type": "string",
                   "description": {
 		"en": "Summary function calculates the maximum of the values in the column",
-		"jp": "Summary function calculates the maximum of the values in the column"
+		"jp": "集計関数は列の値の最大値を計算します。"
 	}
                 },
                 {
@@ -408,7 +408,7 @@
                   "type": "string",
                   "description": {
 		"en": "Summary function calculates the sum of the values in the column",
-		"jp": "Summary function calculates the sum of the values in the column"
+		"jp": "集計関数は列の値の合計値を計算します。"
 	}
                 },
                 {
@@ -416,7 +416,7 @@
                   "type": "string",
                   "description": {
 		"en": "Summary function calculates the count of the values in the column",
-		"jp": "Summary function calculates the count of the values in the column"
+		"jp": "集計関数は列の値の数を計算します。"
 	}
                 },
                 {
@@ -424,7 +424,7 @@
                   "type": "string",
                   "description": {
 		"en": "Custom summary function is used to manipulate the values in the column",
-		"jp": "Custom summary function is used to manipulate the values in the column"
+		"jp": "カスタム集計関数は列の値を変更します。"
 	}
                 }
               ]
@@ -434,7 +434,7 @@
               "defaultValue": null,
               "description": {
 		"en": "Summary text that will be shown before the value",
-		"jp": "Summary text that will be shown before the value"
+		"jp": "値の前に表示される集計テキスト。"
 	}
             },
             "customSummary": {
@@ -442,7 +442,7 @@
               "defaultValue": null,
               "description": {
 		"en": "Specifies a custom summary function, which is called for each group, accepts an array of cell values for the specific column and returns the custom summary result",
-		"jp": "Specifies a custom summary function, which is called for each group, accepts an array of cell values for the specific column and returns the custom summary result"
+		"jp": "各グループで呼び出されるカスタム サマリー機能を指定し、特定の列のセル値の配列を受け取り、カスタムのサマリー結果を返します。"
 	}
             }
           }
@@ -454,7 +454,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Text that will be shown in the GroupBy area when there are no grouped columns",
-		"jp": "Text that will be shown in the GroupBy area when there are no grouped columns"
+		"jp": "グループ化された列がない場合に GroupBy 領域に表示されるテキスト。"
 	}
     },
     "emptyGroupByAreaContentSelectColumns": {
@@ -462,7 +462,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Text of link(on click shows modal dialog with columns which could be group/ungroup by) that will be shown in the GroupBy area when there are no grouped columns",
-		"jp": "Text of link(on click shows modal dialog with columns which could be group/ungroup by) that will be shown in the GroupBy area when there are no grouped columns"
+		"jp": "グループ化された列がない場合に GroupBy 領域に表示されるリンク (クリックするとグループ化/グループ化解除可能な列でモーダル ダイアログを表示) のテキスト。"
 	}
     },
     "emptyGroupByAreaContentSelectColumnsCaption": {
@@ -470,7 +470,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Specifies caption for button which opens groupby dialog",
-		"jp": "Specifies caption for button which opens groupby dialog"
+		"jp": "グループ化ダイアログを開くボタンのキャプションを指定します。"
 	}
     },
     "expandTooltip": {
@@ -478,7 +478,7 @@
       "defaultValue": "",
       "description": {
 		"en": "specifies the expand indicator tooltip for grouped rows",
-		"jp": "specifies the expand indicator tooltip for grouped rows"
+		"jp": "グループ化された行に対する拡張インジケーター ツールチップを指定します。"
 	}
     },
     "expansionIndicatorVisibility": {
@@ -486,7 +486,7 @@
       "defaultValue": true,
       "description": {
 		"en": "Specifies if grouped rows will have an expander image that will allow end users to expand and collapse them. This option can be set only at initialization.",
-		"jp": "Specifies if grouped rows will have an expander image that will allow end users to expand and collapse them. This option can be set only at initialization."
+		"jp": "グループ化された行に、エンド ユーザーが展開・折り畳むことができる展開画像が含まれるかどうかを指定します。このオプションは初期化のみに設定できます。"
 	}
     },
     "featureChooserText": {
@@ -494,7 +494,7 @@
       "defaultValue": "",
       "description": {
 		"en": "specifies the text in feature chooser",
-		"jp": "specifies the text in feature chooser"
+		"jp": "機能セレクターでテキストを指定します。"
 	}
     },
     "featureChooserTextHide": {
@@ -502,7 +502,7 @@
       "defaultValue": "",
       "description": {
 		"en": "specifies hide text in feature chooser",
-		"jp": "specifies hide text in feature chooser"
+		"jp": "機能セレクターでテキストの非表示を指定します。"
 	}
     },
     "groupByAreaVisibility": {
@@ -510,7 +510,7 @@
       "defaultValue": "top",
       "description": {
 		"en": " Sets the place in the grid where the groupBy area will be ",
-		"jp": " Sets the place in the grid where the groupBy area will be "
+		"jp": " groupBy 領域が置かれるグリッドの場所を設定します。 "
 	},
       "valueOptions": [
         {
@@ -518,7 +518,7 @@
           "type": "string",
           "description": {
 		"en": "The GroupBy area will be rendered above the grid headers ",
-		"jp": "The GroupBy area will be rendered above the grid headers "
+		"jp": "GroupBy 領域はグリッド ヘッダーの上に描画されます。 "
 	}
         },
         {
@@ -526,7 +526,7 @@
           "type": "string",
           "description": {
 		"en": " The GroupBy area will not be rendered",
-		"jp": " The GroupBy area will not be rendered"
+		"jp": " GroupBy 領域は描画されません。"
 	}
         },
         {
@@ -534,7 +534,7 @@
           "type": "string",
           "description": {
 		"en": "The GroupBy area will be rendered below the grid footer (and above the pager, if any)",
-		"jp": "The GroupBy area will be rendered below the grid footer (and above the pager, if any)"
+		"jp": "GroupBy 領域はグリッド フッターの下 (および、ある場合はページャーの上) に描画されます。"
 	}
         }
       ]
@@ -544,7 +544,7 @@
       "defaultValue": null,
       "description": {
 		"en": "By default, the column width for the header is taken. If this is specified it's used for all headers.",
-		"jp": "By default, the column width for the header is taken. If this is specified it's used for all headers."
+		"jp": "デフォルトでは、ヘッダーの列幅を使用します。指定される場合、すべてのヘッダーのために使用されます。"
 	}
     },
     "groupByUrlKey": {
@@ -552,7 +552,7 @@
       "defaultValue": null,
       "description": {
 		"en": "URL param name which specifies how groupBy expressions will be encoded in the URL. The OData conventions for sorting params are used if the grid is bound to an OData service. ex: ?groupby(col1)=asc",
-		"jp": "URL param name which specifies how groupBy expressions will be encoded in the URL. The OData conventions for sorting params are used if the grid is bound to an OData service. ex: ?groupby(col1)=asc"
+		"jp": "groupBy 式が URL 中でどのようにエンコードされるかを指定する URL パラメーター名。グリッドが OData サービスにバインドされる場合、並べ替えパレメーターの OData ルールが使用されます。たとえば、?groupby(col1)=asc。"
 	}
     },
     "groupByUrlKeyAscValue": {
@@ -560,7 +560,7 @@
       "defaultValue": null,
       "description": {
 		"en": "URL param value for ascending type of grouping. The OData conventions for sorting params are used if the grid is bound to an OData service. Example: ?groupBy(col1)=asc",
-		"jp": "URL param value for ascending type of grouping. The OData conventions for sorting params are used if the grid is bound to an OData service. Example: ?groupBy(col1)=asc"
+		"jp": "昇順のグループ化用の URL パラメーター値です。グリッドが OData サービスにバインドされる場合、並べ替えパレメーターの OData ルールが使用されます。たとえば、?groupBy(col1)=asc。"
 	}
     },
     "groupByUrlKeyDescValue": {
@@ -568,7 +568,7 @@
       "defaultValue": null,
       "description": {
 		"en": "URL param value for descending type of grouping. The OData conventions for sorting params are used if the grid is bound to an OData service. Example: ?groupBy(col1)=desc",
-		"jp": "URL param value for descending type of grouping. The OData conventions for sorting params are used if the grid is bound to an OData service. Example: ?groupBy(col1)=desc"
+		"jp": "降順のグループ化用の URL パラメーター値です。グリッドが OData サービスにバインドされる場合、並べ替えパレメーターの OData ルールが使用されます。例: ?groupBy(col1)=desc。"
 	}
     },
     "groupedColumns": {
@@ -576,7 +576,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Returns the list of currently grouped columns. The option is read-only and cannot be set at initialization or at runtime.",
-		"jp": "Returns the list of currently grouped columns. The option is read-only and cannot be set at initialization or at runtime."
+		"jp": "現在のグループ化される列のリストを返します。このオプションは読み取り専用で、初期化またはランタイムに設定できません。"
 	},
       "schema": {
         "key": {
@@ -584,7 +584,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Defines the key of the column that's grouped",
-		"jp": "Defines the key of the column that's grouped"
+		"jp": "グループ化された列のキーを定義します。"
 	}
         },
         "dir": {
@@ -592,7 +592,7 @@
           "defaultValue": "asc",
           "description": {
 		"en": "Defines sorting order",
-		"jp": "Defines sorting order"
+		"jp": "並べ替え順序を定義します"
 	},
           "valueOptions": [
             {
@@ -600,7 +600,7 @@
               "type": "string",
               "description": {
 		"en": "Sorting order is ascending",
-		"jp": "Sorting order is ascending"
+		"jp": "並べ替え順序は昇順です。"
 	}
             },
             {
@@ -608,7 +608,7 @@
               "type": "string",
               "description": {
 		"en": "Sorting order is descending",
-		"jp": "Sorting order is descending"
+		"jp": "並べ替え順序は降順です。"
 	}
             }
           ]
@@ -618,7 +618,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Defines th key of the column layout, if the grid is hierarchical",
-		"jp": "Defines th key of the column layout, if the grid is hierarchical"
+		"jp": "グリッドが階層型の場合、列レイアウトのキーを定義します。"
 	}
         },
         "col": {
@@ -626,7 +626,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Gets or sets column object for the column that is grouped",
-		"jp": "Gets or sets column object for the column that is grouped"
+		"jp": "グループ化された列の列オブジェクトを取得または設定します。"
 	}
         }
       }
@@ -636,7 +636,7 @@
       "defaultValue": "${key}: ${val} (${count})",
       "description": {
 		"en": "Template for the grouped row's text, follows jQuery's templating guidelines. Variables available for the template are ${key}, ${val} and ${count}.",
-		"jp": "Template for the grouped row's text, follows jQuery's templating guidelines. Variables available for the template are ${key}, ${val} and ${count}."
+		"jp": "jQuery のテンプレート 作成ガイドラインに付随する、グループ化された行のテキストのテンプレート。テンプレートの利用可能な変数は ${key}、${val}、および ${count} です。"
 	}
     },
     "indentation": {
@@ -644,7 +644,7 @@
       "defaultValue": 30.0,
       "description": {
 		"en": "specifies the indentation for a grouped row. If several columns are grouped, the total indentation will grow",
-		"jp": "specifies the indentation for a grouped row. If several columns are grouped, the total indentation will grow"
+		"jp": "グループ化された行の字下げを指定します。複数の列がグループ化された場合、全体の字下げは大きくなります。"
 	}
     },
     "initialExpand": {
@@ -652,7 +652,7 @@
       "defaultValue": true,
       "description": {
 		"en": "Specifies if after grouping, the grouped rows will be initially expanded or collapsed. This option can be set only at initialization.",
-		"jp": "Specifies if after grouping, the grouped rows will be initially expanded or collapsed. This option can be set only at initialization."
+		"jp": "グループ化の後に、グループ化された行を最初に展開または折り畳むかどうかを指定します。このオプションは初期化のみに設定できます。"
 	}
     },
     "labelDragHelperOpacity": {
@@ -660,7 +660,7 @@
       "defaultValue": 0.5,
       "description": {
 		"en": "Specifies the opacity of the drag markup, while a column header is being dragged. The value must be between 0 and 1.",
-		"jp": "Specifies the opacity of the drag markup, while a column header is being dragged. The value must be between 0 and 1."
+		"jp": "列ヘッダーがドラッグされている間の、ドラッグ マークアップの不透明性を指定します。値は 0 と 1 の間である必要があります。"
 	}
     },
     "modalDialogAnimationDuration": {
@@ -668,7 +668,7 @@
       "defaultValue": 200.0,
       "description": {
 		"en": "Specifies time in milliseconds for animation duration to show/hide modal dialog",
-		"jp": "Specifies time in milliseconds for animation duration to show/hide modal dialog"
+		"jp": "モーダル ダイアログを表示または非表示にするアニメーション時間をミリ秒で指定します。"
 	}
     },
     "modalDialogButtonApplyText": {
@@ -676,7 +676,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Specifies text of button which apply changes in modal dialog",
-		"jp": "Specifies text of button which apply changes in modal dialog"
+		"jp": "モーダル ダイアログで変更を適用するボタンのテキストを指定します。"
 	}
     },
     "modalDialogButtonCancelText": {
@@ -684,7 +684,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Specifies text of button which cancel changes in modal dialog",
-		"jp": "Specifies text of button which cancel changes in modal dialog"
+		"jp": "モーダル ダイアログで変更をキャンセルするボタンのテキストを指定します。"
 	}
     },
     "modalDialogCaptionButtonAsc": {
@@ -692,7 +692,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Specifies caption for each ascending sorted column in groupby dialog",
-		"jp": "Specifies caption for each ascending sorted column in groupby dialog"
+		"jp": "グループ化ダイアログで昇順に並べ替えられた各列のキャプションを指定します。"
 	}
     },
     "modalDialogCaptionButtonDesc": {
@@ -700,7 +700,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Specifies caption for each descending sorted column in groupby dialog",
-		"jp": "Specifies caption for each descending sorted column in groupby dialog"
+		"jp": "グループ化ダイアログで降順に並べ替えられた各列のキャプションを指定します。"
 	}
     },
     "modalDialogCaptionButtonUngroup": {
@@ -708,7 +708,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Specifies caption button ungroup in groupby dialog",
-		"jp": "Specifies caption button ungroup in groupby dialog"
+		"jp": "グループ化ダイアログでキャプション ボタン グループ化解除を指定します。"
 	}
     },
     "modalDialogCaptionText": {
@@ -716,7 +716,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Specifies caption text for groupby dialog",
-		"jp": "Specifies caption text for groupby dialog"
+		"jp": "グループ化ダイアログでキャプション テキストを指定します。"
 	}
     },
     "modalDialogClearAllButtonLabel": {
@@ -724,7 +724,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Specifies label for clear all button in groupby dialog",
-		"jp": "Specifies label for clear all button in groupby dialog"
+		"jp": "グループ化ダイアログですべてをクリア ボタンのラベルを指定します。"
 	}
     },
     "modalDialogDropDownAreaWidth": {
@@ -732,7 +732,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Specifies height of layouts dropdown in groupby dialog",
-		"jp": "Specifies height of layouts dropdown in groupby dialog"
+		"jp": "グループ化ダイアログでレイアウト ドロップダウンの高さを指定します。"
 	}
     },
     "modalDialogDropDownButtonCaption": {
@@ -740,7 +740,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Specifies caption of layouts dropdown button in groupby dialog",
-		"jp": "Specifies caption of layouts dropdown button in groupby dialog"
+		"jp": "グループ化ダイアログでレイアウト ドロップダウン ボタンのキャプションを指定します。"
 	}
     },
     "modalDialogDropDownLabel": {
@@ -748,7 +748,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Specifies label for layouts dropdown in groupby dialog",
-		"jp": "Specifies label for layouts dropdown in groupby dialog"
+		"jp": "グループ化ダイアログでレイアウト ドロップダウンのラベルを指定します。"
 	}
     },
     "modalDialogDropDownWidth": {
@@ -756,7 +756,7 @@
       "defaultValue": 200.0,
       "description": {
 		"en": "Specifies width of layouts dropdown in groupby dialog",
-		"jp": "Specifies width of layouts dropdown in groupby dialog"
+		"jp": "グループ化ダイアログでレイアウト ドロップダウンの幅を指定します。"
 	}
     },
     "modalDialogGroupByButtonText": {
@@ -764,7 +764,7 @@
       "defaultValue": "",
       "description": {
 		"en": "specifies the text of GroupBy button in the groupby dialog",
-		"jp": "specifies the text of GroupBy button in the groupby dialog"
+		"jp": "グループ化ダイアログでグループ化ボタンのテキストを指定します。"
 	}
     },
     "modalDialogGroupByOnClick": {
@@ -772,7 +772,7 @@
       "defaultValue": false,
       "description": {
 		"en": "specifies whether on click in groupby dialog to be immediately grouped/ungrouped columns. When it is false then it is shown Apply button in the groupby dialog",
-		"jp": "specifies whether on click in groupby dialog to be immediately grouped/ungrouped columns. When it is false then it is shown Apply button in the groupby dialog"
+		"jp": "グループ化ダイアログでクリックして列を直ちにグループ化するか、それともグループ化解除するかを指定します。false の場合、グループ化ダイアログに適用ボタンが表示されます。"
 	}
     },
     "modalDialogHeight": {
@@ -780,7 +780,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Specifies height of groupby dialog",
-		"jp": "Specifies height of groupby dialog"
+		"jp": "グループ化ダイアログの高さを指定します。"
 	}
     },
     "modalDialogRootLevelHierarchicalGrid": {
@@ -788,7 +788,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Specifies name of the root layout which is shown layouts tree dialog",
-		"jp": "Specifies name of the root layout which is shown layouts tree dialog"
+		"jp": "レイアウト ツリー ダイアログに表示されるルート レイアウトの名前を指定します。"
 	}
     },
     "modalDialogWidth": {
@@ -796,7 +796,7 @@
       "defaultValue": 400.0,
       "description": {
 		"en": "Specifies width of groupby dialog",
-		"jp": "Specifies width of groupby dialog"
+		"jp": "グループ化ダイアログの幅を指定します。"
 	}
     },
     "removeButtonTooltip": {
@@ -804,7 +804,7 @@
       "defaultValue": "",
       "description": {
 		"en": "specifies the tooltip for the remove button",
-		"jp": "specifies the tooltip for the remove button"
+		"jp": "削除ボタンのツールチップを指定します。"
 	}
     },
     "resultResponseKey": {
@@ -812,7 +812,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Specifies a key to get group by data from the response. This option can be set only at initialization.",
-		"jp": "Specifies a key to get group by data from the response. This option can be set only at initialization."
+		"jp": "group by データを応答から取得するためのキーを指定します。このオプションは初期化のみに設定できます。"
 	}
     },
     "summarySettings": {
@@ -820,7 +820,7 @@
       "defaultValue": null,
       "description": {
 		"en": "specifies the settings for GroupBy summaries",
-		"jp": "specifies the settings for GroupBy summaries"
+		"jp": "GroupBy 集計の設定を指定します。"
 	},
       "schema": {
         "multiSummaryDelimiter": {
@@ -828,7 +828,7 @@
           "defaultValue": ",",
           "description": {
 		"en": "Specifies the delimiter for multiple summaries, in case they are rendered inline in the grouped row",
-		"jp": "Specifies the delimiter for multiple summaries, in case they are rendered inline in the grouped row"
+		"jp": "集計をグループ化された行内にインラインで描画する場合、複数集計に対する区切り文字を指定します。"
 	}
         },
         "summaryFormat": {
@@ -836,7 +836,7 @@
           "defaultValue": "#.00",
           "description": {
 		"en": "Specifies the decimal format of the summary value",
-		"jp": "Specifies the decimal format of the summary value"
+		"jp": "集計値の10 進書式設定を指定します。"
 	}
         }
 
@@ -847,7 +847,7 @@
       "defaultValue": null,
       "description": {
 		"en": " Specifies whether the groupBy operation takes place locally on client-side or remotely on server-side.",
-		"jp": " Specifies whether the groupBy operation takes place locally on client-side or remotely on server-side."
+		"jp": " groupBy 操作がクライアント側に実行するか、サーバー側に実行するかどうかを指定します。"
 	},
       "valueOptions": [
         {
@@ -855,7 +855,7 @@
           "type": "string",
           "description": {
 		"en": " Execute the groupBy operation locally on client-side.",
-		"jp": " Execute the groupBy operation locally on client-side."
+		"jp": " groupBy 操作をクライアント側に実行します。"
 	}
         },
         {
@@ -863,7 +863,7 @@
           "type": "string",
           "description": {
 		"en": " Execute the groupBy operation by a request to the server.",
-		"jp": " Execute the groupBy operation by a request to the server."
+		"jp": " サーバーへの要求によって groupBy 操作を実行します。"
 	}
         }
       ]
@@ -873,7 +873,7 @@
       "defaultValue": true,
       "description": {
 		"en": "Format grouped column using the formatter set in igGrid.columns[i].formatter or igGrid format.",
-		"jp": "Format grouped column using the formatter set in igGrid.columns[i].formatter or igGrid format."
+		"jp": "グループ化される列を書式設定するには、igGrid.columns[i].formatter に設定される書式を使用するか、igGrid 書式を使用します。"
 	}
     }
   }

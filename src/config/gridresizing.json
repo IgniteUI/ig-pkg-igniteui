@@ -1,4 +1,4 @@
-{
+﻿{
   "overview": null,
   "name": "ui.igGridResizing",
   "title": "Column Resizing",
@@ -21,7 +21,7 @@
       ],
       "description": {
 		"en": "event fired after the resizing has been executed and results are rendered <br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridResizing widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnIndex to get the resized column index.<br>   Use ui.columnKey to get the resized column key.<br>   Use ui.originalWidth to get the original column width.<br>   Use ui.newWidth to get the final column width after resizing.",
-		"jp": "event fired after the resizing has been executed and results are rendered <br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridResizing widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnIndex to get the resized column index.<br>   Use ui.columnKey to get the resized column key.<br>   Use ui.originalWidth to get the original column width.<br>   Use ui.newWidth to get the final column width after resizing."
+		"jp": "サイズ変更が実行され結果が描画された後に発生するイベント。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridResizing ウィジェットへの参照を取得します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   ui.columnIndex を使用してサイズ変更されている列インデックスを取得します。<br>   ui.columnKey を使用してサイズ変更されている列キーを取得します。<br>   ui.originalWidth を使用して元の列幅を取得します。<br>   ui.newWidth を使用して、サイズ変更後の最終的な列幅を取得します。"
 	}
     },
     "columnResizing": {
@@ -40,7 +40,7 @@
       ],
       "description": {
 		"en": "event fired before a resizing operation is executed.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridResizing widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnIndex to get the resized column index.<br>   Use ui.columnKey to get the resized column key.<br>   Use ui.desiredWidth to get the desired width(before min/max coercion) for the resized column.",
-		"jp": "event fired before a resizing operation is executed.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridResizing widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnIndex to get the resized column index.<br>   Use ui.columnKey to get the resized column key.<br>   Use ui.desiredWidth to get the desired width(before min/max coercion) for the resized column."
+		"jp": "サイズ変更操作が実行される前に発生するイベント。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridResizing ウィジェットへの参照を取得します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   ui.columnIndex を使用してサイズ変更されている列インデックスを取得します。<br>   ui.columnKey を使用してサイズ変更されている列キーを取得します。<br>   ui.desiredWidth を使用して、サイズ変更された列の必要な幅 (最小/最大を強制する前の) を取得します。"
 	}
     },
     "columnResizingRefused": {
@@ -59,7 +59,7 @@
       ],
       "description": {
 		"en": "event fired(only when columnFixing is enabled) when trying to resize column in fixed area so total width of unfixed area to be less than minimalVisibleAreaWidth(option defined in columnFixing)<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridResizing widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnIndex to get the resized column index.<br>   Use ui.columnKey to get the resized column key.<br>   Use ui.desiredWidth to get the desired width(before min/max coercion) for the resized column.",
-		"jp": "event fired(only when columnFixing is enabled) when trying to resize column in fixed area so total width of unfixed area to be less than minimalVisibleAreaWidth(option defined in columnFixing)<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridResizing widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnIndex to get the resized column index.<br>   Use ui.columnKey to get the resized column key.<br>   Use ui.desiredWidth to get the desired width(before min/max coercion) for the resized column."
+		"jp": "columnFixing が有効な場合、固定されていない領域の幅が minimalVisibleAreaWidth (columnFixing で定義されるオプション) より小さくなるために固定領域で列をサイズ変更するときに発生するイベント。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridResizing ウィジェットへの参照を取得します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   ui.columnIndex を使用してサイズ変更されている列インデックスを取得します。<br>   ui.columnKey を使用してサイズ変更されている列キーを取得します。<br>   ui.desiredWidth を使用して、サイズ変更された列の必要な幅 (最小/最大を強制する前の) を取得します。"
 	}
     }
   },
@@ -73,7 +73,7 @@
       "defaultValue": true,
       "description": {
 		"en": "Resize the column to the size of the longest currently visible cell value.",
-		"jp": "Resize the column to the size of the longest currently visible cell value."
+		"jp": "列のサイズを、現在可視の最長セル値のサイズに変更します。"
 	}
     },
     "columnSettings": {
@@ -81,7 +81,7 @@
       "defaultValue": null,
       "description": {
 		"en": "A list of column settings that specifies resizing options on a per column basis.",
-		"jp": "A list of column settings that specifies resizing options on a per column basis."
+		"jp": "サイズ変更オプションを列ごとに指定する列設定のリスト。"
 	},
       "schema": {
         "columnKey": {
@@ -89,7 +89,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Specifies the column key of the resized column",
-		"jp": "Specifies the column key of the resized column"
+		"jp": "サイズ変更された列の列キーを指定します。"
 	},
           "required": true
         },
@@ -98,7 +98,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Column index can be used in place of column key. The preferred way of populating a column setting is to always use the column keys as identifiers.",
-		"jp": "Column index can be used in place of column key. The preferred way of populating a column setting is to always use the column keys as identifiers."
+		"jp": "列インデックスは列キーの代わりに使用できます。列設定の生成には列を常に識別子として使用することを推奨します。"
 	}
         },
         "allowResizing": {
@@ -106,7 +106,7 @@
           "defaultValue": true,
           "description": {
 		"en": "Enables disables resizing for the column.",
-		"jp": "Enables disables resizing for the column."
+		"jp": "列のサイズ変更を有効/有効にします。"
 	}
         },
         "minimumWidth": {
@@ -114,7 +114,7 @@
           "defaultValue": 20,
           "description": {
 		"en": "Minimum column width in pixels.",
-		"jp": "Minimum column width in pixels."
+		"jp": "最小列幅 (ピクセル単位)。"
 	}
         },
         "maximumWidth": {
@@ -122,7 +122,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Maximum column width in pixels.",
-		"jp": "Maximum column width in pixels."
+		"jp": "最大列幅 (ピクセル単位)。"
 	}
         }
       }
@@ -132,7 +132,7 @@
       "defaultValue": false,
       "description": {
 		"en": "Specifies whether the resizing should be deferred until the user finishes resizing or applied immediately.",
-		"jp": "Specifies whether the resizing should be deferred until the user finishes resizing or applied immediately."
+		"jp": "ユーザーがサイズ変更を終了するか、または直ちに適用するまでサイズ変更を保留するかどうかを指定します。"
 	}
     },
     "handleTreshold": {
@@ -140,7 +140,7 @@
       "defaultValue": 5.0,
       "description": {
 		"en": "The width in pixels of the resizing handle which is position at the right side of each resizeable column header.",
-		"jp": "The width in pixels of the resizing handle which is position at the right side of each resizeable column header."
+		"jp": "サイズ変更可能な列ヘッダーそれぞれの右側に配置される、サイズ変更ハンドルの幅 (ピクセル単位)。"
 	}
     }
   }

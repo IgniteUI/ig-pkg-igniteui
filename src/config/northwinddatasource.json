@@ -1,4 +1,4 @@
-{
+﻿{
 	"overview": null,
 	"name": "ig.DataSource",
 	"category": null,
@@ -13,7 +13,7 @@
 					"optional": false,
 					"description": {
 		"en": "Reference to the data source object",
-		"jp": "Reference to the data source object"
+		"jp": "データ ソース オブジェクトへの参照。"
 	}
 				},
 				{
@@ -22,7 +22,7 @@
 					"optional": false,
 					"description": {
 		"en": "Arguments of the current control context",
-		"jp": "Arguments of the current control context"
+		"jp": "現在のコントロール コンテキストの引数。"
 	},
 					"schema": {
 						"cancel": {
@@ -30,7 +30,7 @@
 							"defaultValue": false,
 							"description": {
 		"en": "Argument that cancels the event",
-		"jp": "Argument that cancels the event"
+		"jp": "イベントをキャンセルする引数。"
 	}
 						}
 					}
@@ -38,7 +38,7 @@
 			],
 			"description": {
 		"en": "Client-side dataBinding event. Can be a string pointing to a function name, or an object pointing to a function",
-		"jp": "Client-side dataBinding event. Can be a string pointing to a function name, or an object pointing to a function"
+		"jp": "クライアント側の dataBinding イベント。関数名を指す文字列または関数を指すオブジェクトが可能です。"
 	}
 		},
 		"dataBound": {
@@ -50,13 +50,13 @@
 					"optional": false,
 					"description": {
 		"en": "Reference to the data source object",
-		"jp": "Reference to the data source object"
+		"jp": "データ ソース オブジェクトへの参照。"
 	}
 				}
 			],
 			"description": {
 		"en": "Can be a string pointing to a function name, or an object pointing to a function",
-		"jp": "Can be a string pointing to a function name, or an object pointing to a function"
+		"jp": "関数名を指す文字列または関数を指すオブジェクトが可能です。"
 	}
 		},
 		"urlParamsEncoding": {
@@ -68,7 +68,7 @@
 					"optional": false,
 					"description": {
 		"en": "Reference to the data source object",
-		"jp": "Reference to the data source object"
+		"jp": "データ ソース オブジェクトへの参照。"
 	}
 				},
 				{
@@ -77,7 +77,7 @@
 					"optional": false,
 					"description": {
 		"en": "Arguments of the current control context",
-		"jp": "Arguments of the current control context"
+		"jp": "現在のコントロール コンテキストの引数。"
 	},
 					"schema": {
 						"sortingParams": {
@@ -85,7 +85,7 @@
 							"defaultValue": {},
 							"description": {
 		"en": "Sorting parameters",
-		"jp": "Sorting parameters"
+		"jp": "並べ替えパラメーター"
 	}
 						},
 						"filteringParams": {
@@ -93,7 +93,7 @@
 							"defaultValue": {},
 							"description": {
 		"en": "Filtering parameters",
-		"jp": "Filtering parameters"
+		"jp": "フィルター パラメーター"
 	}
 						},
 						"pagingParams": {
@@ -101,7 +101,7 @@
 							"defaultValue": {},
 							"description": {
 		"en": "Paging parameters",
-		"jp": "Paging parameters"
+		"jp": "ページング パラメーター"
 	}
 						},
 						"selectParams": {
@@ -109,7 +109,7 @@
 							"defaultValue": {},
 							"description": {
 		"en": "Select parameters",
-		"jp": "Select parameters"
+		"jp": "選択パラメーター"
 	}
 						},
 						"summariesParams": {
@@ -117,7 +117,7 @@
 							"defaultValue": {},
 							"description": {
 		"en": "Summaries parameters",
-		"jp": "Summaries parameters"
+		"jp": "集計パラメーター"
 	}
 						},
 						"extraParams": {
@@ -125,7 +125,7 @@
 							"defaultValue": {},
 							"description": {
 		"en": "Additional parameters",
-		"jp": "Additional parameters"
+		"jp": "追加のパラメーター"
 	}
 						},
 						"pkParams": {
@@ -141,7 +141,7 @@
 			],
 			"description": {
 		"en": "Event that is fired before URL parameters are encoded. Can point to a function name or the function object itself.",
-		"jp": "Event that is fired before URL parameters are encoded. Can point to a function name or the function object itself."
+		"jp": "URL パラメーターがエンコードされる前に発生するイベント。関数名または関数オブジェクト自体を指すことができます。"
 	}
 		},
 		"urlParamsEncoded": {
@@ -153,7 +153,7 @@
 					"optional": false,
 					"description": {
 		"en": "Reference to the data source object",
-		"jp": "Reference to the data source object"
+		"jp": "データ ソース オブジェクトへの参照。"
 	}
 				},
 				{
@@ -162,7 +162,7 @@
 					"optional": false,
 					"description": {
 		"en": "Arguments of the current control context",
-		"jp": "Arguments of the current control context"
+		"jp": "現在のコントロール コンテキストの引数。"
 	},
 					"schema": {
 						"sortingParams": {
@@ -170,7 +170,7 @@
 							"defaultValue": {},
 							"description": {
 		"en": "Sorting parameters",
-		"jp": "Sorting parameters"
+		"jp": "並べ替えパラメーター"
 	}
 						},
 						"filteringParams": {
@@ -178,7 +178,7 @@
 							"defaultValue": {},
 							"description": {
 		"en": "Filtering parameters",
-		"jp": "Filtering parameters"
+		"jp": "フィルター パラメーター"
 	}
 						},
 						"pagingParams": {
@@ -186,7 +186,7 @@
 							"defaultValue": {},
 							"description": {
 		"en": "Paging parameters",
-		"jp": "Paging parameters"
+		"jp": "ページング パラメーター"
 	}
 						},
 						"selectParams": {
@@ -194,7 +194,7 @@
 							"defaultValue": {},
 							"description": {
 		"en": "Select parameters",
-		"jp": "Select parameters"
+		"jp": "選択パラメーター"
 	}
 						},
 						"summariesParams": {
@@ -202,7 +202,7 @@
 							"defaultValue": {},
 							"description": {
 		"en": "Summaries parameters",
-		"jp": "Summaries parameters"
+		"jp": "集計パラメーター"
 	}
 						},
 						"extraParams": {
@@ -210,7 +210,7 @@
 							"defaultValue": {},
 							"description": {
 		"en": "Additional parameters",
-		"jp": "Additional parameters"
+		"jp": "追加のパラメーター"
 	}
 						},
 						"pkParams": {
@@ -226,7 +226,7 @@
 			],
 			"description": {
 		"en": "Event that is fired after URL parameters are encoded (When a remote request is done). Can point to a function name or the function object itself.",
-		"jp": "Event that is fired after URL parameters are encoded (When a remote request is done). Can point to a function name or the function object itself."
+		"jp": "URL パラメーターがエンコードされた後に発生するイベント (リモート要求が実行されたとき)。関数名または関数オブジェクト自体を指すことができます。"
 	}
 		},
 		"rowAdded": {
@@ -238,7 +238,7 @@
 					"optional": false,
 					"description": {
 		"en": "Arguments of the current row context",
-		"jp": "Arguments of the current row context"
+		"jp": "現在の行コンテキストの引数。"
 	},
 					"schema": {
 						"row": {
@@ -246,7 +246,7 @@
 							"defaultValue": null,
 							"description": {
 		"en": "Obtain reference to the added row",
-		"jp": "Obtain reference to the added row"
+		"jp": "追加された行への参照を取得します。"
 	}
 						},
 						"rowId": {
@@ -254,7 +254,7 @@
 							"defaultValue": null,
 							"description": {
 		"en": "Get the row ID",
-		"jp": "Get the row ID"
+		"jp": "行 ID を取得します。"
 	}
 						}
 					}
@@ -265,13 +265,13 @@
 					"optional": false,
 					"description": {
 		"en": "Reference to the data source object",
-		"jp": "Reference to the data source object"
+		"jp": "データ ソース オブジェクトへの参照。"
 	}
 				}
 			],
 			"description": {
 		"en": "A function to call when row is updated (edited).",
-		"jp": "A function to call when row is updated (edited)."
+		"jp": "行が更新 (編集) されたときに呼び出される関数。"
 	}
 		},
 		"rowUpdated": {
@@ -283,7 +283,7 @@
 					"optional": false,
 					"description": {
 		"en": "Arguments of the current row context.",
-		"jp": "Arguments of the current row context."
+		"jp": "現在の行コンテキストの引数。"
 	},
 					"schema": {
 						"rowIndex": {
@@ -291,7 +291,7 @@
 							"defaultValue": null,
 							"description": {
 		"en": "Get the row index.",
-		"jp": "Get the row index."
+		"jp": "行インデックスを取得します。"
 	}
 						},
 						"newRow": {
@@ -299,7 +299,7 @@
 							"defaultValue": null,
 							"description": {
 		"en": "Obtain reference to the updated row.",
-		"jp": "Obtain reference to the updated row."
+		"jp": "更新された行への参照を取得します。"
 	}
 						},
 						"oldRow": {
@@ -307,7 +307,7 @@
 							"defaultValue": null,
 							"description": {
 		"en": "Obtain reference to the row that was updated.",
-		"jp": "Obtain reference to the row that was updated."
+		"jp": "更新された行への参照を取得します。"
 	}
 						}
 					}
@@ -318,13 +318,13 @@
 					"optional": false,
 					"description": {
 		"en": "Reference to the data source object",
-		"jp": "Reference to the data source object"
+		"jp": "データ ソース オブジェクトへの参照。"
 	}
 				}
 			],
 			"description": {
 		"en": "A function to call when row is added.",
-		"jp": "A function to call when row is added."
+		"jp": "行が追加されたときに呼び出される関数。"
 	}
 		},
 		"rowInserted": {
@@ -336,7 +336,7 @@
 					"optional": false,
 					"description": {
 		"en": "Arguments of the current row context",
-		"jp": "Arguments of the current row context"
+		"jp": "現在の行コンテキストの引数。"
 	},
 					"schema": {
 						"row": {
@@ -344,7 +344,7 @@
 							"defaultValue": null,
 							"description": {
 		"en": "Obtain reference to the inserted row",
-		"jp": "Obtain reference to the inserted row"
+		"jp": "挿入された行への参照を取得します。"
 	}
 						},
 						"rowId": {
@@ -352,7 +352,7 @@
 							"defaultValue": null,
 							"description": {
 		"en": "Get the row ID",
-		"jp": "Get the row ID"
+		"jp": "行 ID を取得します。"
 	}
 						},
 						"rowIndex": {
@@ -360,7 +360,7 @@
 							"defaultValue": null,
 							"description": {
 		"en": "Get the row index.",
-		"jp": "Get the row index."
+		"jp": "行インデックスを取得します。"
 	}
 						}
 					}
@@ -371,13 +371,13 @@
 					"optional": false,
 					"description": {
 		"en": "Reference to the data source object",
-		"jp": "Reference to the data source object"
+		"jp": "データ ソース オブジェクトへの参照。"
 	}
 				}
 			],
 			"description": {
 		"en": "A function to call when row is inserted.",
-		"jp": "A function to call when row is inserted."
+		"jp": "行が挿入されたときに呼び出される関数。"
 	}
 		},
 		"rowDeleted": {
@@ -389,7 +389,7 @@
 					"optional": false,
 					"description": {
 		"en": "Arguments of the current row context",
-		"jp": "Arguments of the current row context"
+		"jp": "現在の行コンテキストの引数。"
 	},
 					"schema": {
 						"row": {
@@ -397,7 +397,7 @@
 							"defaultValue": null,
 							"description": {
 		"en": "Obtain reference to the deleted row",
-		"jp": "Obtain reference to the deleted row"
+		"jp": "削除された行への参照を取得します。"
 	}
 						},
 						"rowId": {
@@ -405,7 +405,7 @@
 							"defaultValue": null,
 							"description": {
 		"en": "Get the row ID",
-		"jp": "Get the row ID"
+		"jp": "行 ID を取得します。"
 	}
 						},
 						"rowIndex": {
@@ -413,7 +413,7 @@
 							"defaultValue": null,
 							"description": {
 		"en": "Get the row index.",
-		"jp": "Get the row index."
+		"jp": "行インデックスを取得します。"
 	}
 						}
 					}
@@ -424,13 +424,13 @@
 					"optional": false,
 					"description": {
 		"en": "Reference to the data source object",
-		"jp": "Reference to the data source object"
+		"jp": "データ ソース オブジェクトへの参照。"
 	}
 				}
 			],
 			"description": {
 		"en": "A function to call when row is deleted.",
-		"jp": "A function to call when row is deleted."
+		"jp": "行が削除されたときに呼び出される関数。"
 	}
 		}
 	},
@@ -440,7 +440,7 @@
 			"defaultValue": "ds",
 			"description": {
 		"en": "Setting this is only necessary when the data source is set to a table in string format. We need to create an invisible dummy data container in the body and append the table data to it.",
-		"jp": "Setting this is only necessary when the data source is set to a table in string format. We need to create an invisible dummy data container in the body and append the table data to it."
+		"jp": "データ ソースが文字列形式でテーブルに設定される場合のみに設定する必要があります。本体に表示されていないダミー データ コンテナーを作成し、テーブル データをコンテナーに追加します。"
 	}
 		},
 		"outputResultsName": {
@@ -448,7 +448,7 @@
 			"defaultValue": null,
 			"description": {
 		"en": "This is the property in the dataView where actual resulting records will be put. (So the dataView will not be array but an object if this is defined), after the potential data source transformation.",
-		"jp": "This is the property in the dataView where actual resulting records will be put. (So the dataView will not be array but an object if this is defined), after the potential data source transformation."
+		"jp": "これは、実際の結果レコードが配置される dataView 内のプロパティです。(つまり、これが定義される場合、dataView は配列ではなくオブジェクトです)、潜在的なデータ ソース変換の後。"
 	}
 		},
 		"callback": {
@@ -456,7 +456,7 @@
 			"defaultValue": null,
 			"description": {
 		"en": "Callback function to call when data binding is complete.",
-		"jp": "Callback function to call when data binding is complete."
+		"jp": "データ バインドの完了時に呼び出すコールバック関数。"
 	}
 		},
 		"callee": {
@@ -464,7 +464,7 @@
 			"defaultValue": null,
 			"description": {
 		"en": "Object on which to invoke the callback function.",
-		"jp": "Object on which to invoke the callback function."
+		"jp": "コールバック関数を呼び出す対象となるオブジェクト。"
 	},
 			"hidden": true
 		},
@@ -473,7 +473,7 @@
 			"defaultValue": null,
 			"description": {
 		"en": "Object on which to invoke the callback function.",
-		"jp": "Object on which to invoke the callback function."
+		"jp": "コールバック関数を呼び出す対象となるオブジェクト。"
 	},
 			"arrayMemberType": "object"
 		},
@@ -482,7 +482,7 @@
 			"defaultValue": null,
 			"description": {
 		"en": "This is the source of data - non normalized. Can be an array, can be reference to some JSON object, can be a DOM element for a HTML TABLE, or a function.",
-		"jp": "This is the source of data - non normalized. Can be an array, can be reference to some JSON object, can be a DOM element for a HTML TABLE, or a function."
+		"jp": "これはデータのソースです。正規化されていません。配列、JSON オブジェクトへの参照、HTML テーブルの DOM 要素、または関数が可能です。"
 	}
 		},
 		"requestType": {
@@ -490,7 +490,7 @@
 			"defaultValue": "GET",
 			"description": {
 		"en": "Specifies the HTTP verb to be used to issue the request.",
-		"jp": "Specifies the HTTP verb to be used to issue the request."
+		"jp": "要求を送信する HTTP 動詞を指定します。"
 	}
 		},
 		"type": {
@@ -498,7 +498,7 @@
 			"defaultValue": "unknown",
 			"description": {
 		"en": "Type of the data source.",
-		"jp": "Type of the data source."
+		"jp": "データ ソースのタイプ。"
 	},
 			"valueOptions": [
 				{
@@ -506,7 +506,7 @@
 					"type": "string",
 					"description": {
 		"en": "Specifies that the data source is an already evaluated JSON (JavaScript object/array) or a string that can be evaluated to JSON.",
-		"jp": "Specifies that the data source is an already evaluated JSON (JavaScript object/array) or a string that can be evaluated to JSON."
+		"jp": "データソースが、既に評価済みの JSON (JavaScript オブジェクト/配列) であるか、または JSON に対して評価できる文字列であるかを指定します。"
 	}
 				},
 				{
@@ -514,7 +514,7 @@
 					"type": "string",
 					"description": {
 		"en": "Specifies that the data source is a XML Document object or a string that can be evaluated to XML.",
-		"jp": "Specifies that the data source is a XML Document object or a string that can be evaluated to XML."
+		"jp": "データソースが、XML Document オブジェクト、または XML に対して評価できる文字列であるかを指定します。"
 	}
 				},
 				{
@@ -522,7 +522,7 @@
 					"type": "string",
 					"description": {
 		"en": "Specifies that the data source is of unknown type. In that case it will be analyzed and automatically detected if possible.",
-		"jp": "Specifies that the data source is of unknown type. In that case it will be analyzed and automatically detected if possible."
+		"jp": "データ ソースが不明なタイプであることを指定します。その場合、それは分析され、可能な場合は自動的に検出されます。"
 	}
 				},
 				{
@@ -530,7 +530,7 @@
 					"type": "string",
 					"description": {
 		"en": "Specifies that the data source is a simple array of objects.",
-		"jp": "Specifies that the data source is a simple array of objects."
+		"jp": "データ ソースがオブジェクトのシンプルな配列であることを指定します。"
 	}
 				},
 				{
@@ -538,7 +538,7 @@
 					"type": "string",
 					"description": {
 		"en": "Specifies that the data source points to a function. During data binding the function will be called and the result will be assumed to be an array of objects.",
-		"jp": "Specifies that the data source points to a function. During data binding the function will be called and the result will be assumed to be an array of objects."
+		"jp": "データ ソースが関数を指していることを指定します。データ バインド中、関数が呼び出され、結果はオブジェクトの配列であると見なされます。"
 	}
 				},
 				{
@@ -546,7 +546,7 @@
 					"type": "string",
 					"description": {
 		"en": "Specifies that the data source points to a string that represents a HTML table.",
-		"jp": "Specifies that the data source points to a string that represents a HTML table."
+		"jp": "データ ソースが HTML テーブルを表す文字列を指していることを指定します。"
 	}
 				},
 				{
@@ -554,7 +554,7 @@
 					"type": "string",
 					"description": {
 		"en": "Specifies that the data source points to an ID of a HTML Table element that's loaded on the page.",
-		"jp": "Specifies that the data source points to an ID of a HTML Table element that's loaded on the page."
+		"jp": "データ ソースが、ページに読み込まれた HTML Table 要素の ID を指していることを指定します。"
 	}
 				},
 				{
@@ -562,7 +562,7 @@
 					"type": "string",
 					"description": {
 		"en": "The data source points to a DOM object that is of TABLE type.",
-		"jp": "The data source points to a DOM object that is of TABLE type."
+		"jp": "データ ソースは TABLE タイプの DOM オブジェクトを指しています。"
 	}
 				},
 				{
@@ -570,7 +570,7 @@
 					"type": "string",
 					"description": {
 		"en": "Set whenever data source is analyzed (in case its type is unknown) and the type cannot be detected.",
-		"jp": "Set whenever data source is analyzed (in case its type is unknown) and the type cannot be detected."
+		"jp": "データ ソースが分析され (タイプが不明な場合)、タイプを検出できない場合は常に設定します。"
 	}
 				},
 				{
@@ -578,7 +578,7 @@
 					"type": "string",
 					"description": {
 		"en": "Specifies that the data source points to a remote URL, from which data will be retrieved using an AJAX call ($.ajax).",
-		"jp": "Specifies that the data source points to a remote URL, from which data will be retrieved using an AJAX call ($.ajax)."
+		"jp": "データ ソースが、そこから AJAX コール ($.ajax) を使ってデータが検索される、リモート URL を指していることを指定します。"
 	}
 				},
 				{
@@ -586,7 +586,7 @@
 					"type": "string",
 					"description": {
 		"en": "The data source points to a DOM object that is of UL/OL type.",
-		"jp": "The data source points to a DOM object that is of UL/OL type."
+		"jp": "データ ソースは UL/OL タイプの DOM オブジェクトを指しています。"
 	}
 				},
 				{
@@ -594,7 +594,7 @@
 					"type": "string",
 					"description": {
 		"en": "There isn't any data source .",
-		"jp": "There isn't any data source ."
+		"jp": "データ ソースがありません。"
 	}
 				}
 			]
@@ -604,7 +604,7 @@
 			"defaultValue": null,
 			"description": {
 		"en": "The unique field identifier.",
-		"jp": "The unique field identifier."
+		"jp": "一意のフィールド識別子。"
 	}
 		},
 		"responseTotalRecCountKey": {
@@ -612,7 +612,7 @@
 			"defaultValue": null,
 			"description": {
 		"en": "Property in the response which specifies the total number of records in the back end (this is needed for paging).",
-		"jp": "Property in the response which specifies the total number of records in the back end (this is needed for paging)."
+		"jp": "バックエンド内のレコードの総数を指定する応答内のプロパティ (ページングに必要です)。"
 	}
 		},
 		"responseDataKey": {
@@ -620,7 +620,7 @@
 			"defaultValue": null,
 			"description": {
 		"en": "Property in the response which specifies where the data records array will be held (if the response is wrapped).",
-		"jp": "Property in the response which specifies where the data records array will be held (if the response is wrapped)."
+		"jp": "データ レコード配列を保持する場所を指定する応答内のプロパティ (応答がラップされる場合)。"
 	}
 		},
 		"responseDataType": {
@@ -628,7 +628,7 @@
 			"defaultValue": null,
 			"description": {
 		"en": "Response type when a URL is set as the data source. See http://api.jquery.com/jQuery.ajax/ => dataType.",
-		"jp": "Response type when a URL is set as the data source. See http://api.jquery.com/jQuery.ajax/ => dataType."
+		"jp": "URL がデータ ソースとして設定された場合の応答タイプ。http://api.jquery.com/jQuery.ajax/ の dataType を参照してください。"
 	},
 			"valueOptions": [
 				{
@@ -636,7 +636,7 @@
 					"type": "string",
 					"description": {
 		"en": "The type of the response data is json.",
-		"jp": "The type of the response data is json."
+		"jp": "応答データの型は json です。"
 	}
 				},
 				{
@@ -644,7 +644,7 @@
 					"type": "string",
 					"description": {
 		"en": "The type of the response data is xml.",
-		"jp": "The type of the response data is xml."
+		"jp": "応答データの型は xml です。"
 	}
 				},
 				{
@@ -652,7 +652,7 @@
 					"type": "string",
 					"description": {
 		"en": "The type of the response data is html.",
-		"jp": "The type of the response data is html."
+		"jp": "応答データの型は html です。"
 	}
 				},
 				{
@@ -660,7 +660,7 @@
 					"type": "string",
 					"description": {
 		"en": "The type of the response data is script.",
-		"jp": "The type of the response data is script."
+		"jp": "応答データの型は script です。"
 	}
 				},
 				{
@@ -668,7 +668,7 @@
 					"type": "string",
 					"description": {
 		"en": "The type of the response data is jsonp.",
-		"jp": "The type of the response data is jsonp."
+		"jp": "応答データの型は jsonp です。"
 	}
 				},
 				{
@@ -676,7 +676,7 @@
 					"type": "string",
 					"description": {
 		"en": "The type of the response data is text.",
-		"jp": "The type of the response data is text."
+		"jp": "応答データの型は text です。"
 	}
 				}
 			]
@@ -686,7 +686,7 @@
 			"defaultValue": null,
 			"description": {
 		"en": "Content type of the response. See http://api.jquery.com/jQuery.ajax/ => contentType.",
-		"jp": "Content type of the response. See http://api.jquery.com/jQuery.ajax/ => contentType."
+		"jp": "応答のコンテンツ タイプ。http://api.jquery.com/jQuery.ajax/ の contentType を参照してください。"
 	}
 		},
 		"localSchemaTransform": {
@@ -694,7 +694,7 @@
 			"defaultValue": true,
 			"description": {
 		"en": "If set to false will disable transformations on schema, even if it is defined locally in the javascript code.",
-		"jp": "If set to false will disable transformations on schema, even if it is defined locally in the javascript code."
+		"jp": "False に設定すると、JavaScript コード内でローカルに定義されている場合でもスキーマの変換が無効になります。"
 	}
 		},
 		"paging": {
@@ -702,7 +702,7 @@
 			"defaultValue": null,
 			"description": {
 		"en": "Settings related to built-in paging functionality.",
-		"jp": "Settings related to built-in paging functionality."
+		"jp": "組み込みのページング機能に関連する設定。"
 	},
 			"schema": {
 				"enabled": {
@@ -710,7 +710,7 @@
 					"defaultValue": false,
 					"description": {
 		"en": "Paging is not enabled by default.",
-		"jp": "Paging is not enabled by default."
+		"jp": "ページングはデフォルトで有効ではありません。"
 	}
 				},
 				"type": {
@@ -718,7 +718,7 @@
 					"defaultValue": "remote",
 					"description": {
 		"en": "Type for the paging operation.",
-		"jp": "Type for the paging operation."
+		"jp": "ページング操作のタイプ。"
 	},
 					"valueOptions": [
 						{
@@ -726,7 +726,7 @@
 							"type": "string",
 							"description": {
 		"en": "Data is paged client-side.",
-		"jp": "Data is paged client-side."
+		"jp": "データはクライアント側でページングされます。"
 	}
 						},
 						{
@@ -734,7 +734,7 @@
 							"type": "string",
 							"description": {
 		"en": "A remote request is done and URL params encoded.",
-		"jp": "A remote request is done and URL params encoded."
+		"jp": "リモート要求が完了し、URL パラメーターがエンコードされました。"
 	}
 						}
 					]
@@ -744,7 +744,7 @@
 					"defaultValue": 5,
 					"description": {
 		"en": "Number of records on each page.",
-		"jp": "Number of records on each page."
+		"jp": "各ページのレコード数。"
 	}
 				},
 				"pageSizeUrlKey": {
@@ -752,7 +752,7 @@
 					"defaultValue": null,
 					"description": {
 		"en": "Denotes the name of the encoded URL parameter that will state what is the currently requested page size.",
-		"jp": "Denotes the name of the encoded URL parameter that will state what is the currently requested page size."
+		"jp": "現在要求されているページ サイズを説明するエンコードされた URL パラメーターの名前を示します。"
 	}
 				},
 				"pageIndexUrlKey": {
@@ -760,7 +760,7 @@
 					"defaultValue": null,
 					"description": {
 		"en": "Denotes the name of the encoded URL parameter that will state what is the currently requested page index.",
-		"jp": "Denotes the name of the encoded URL parameter that will state what is the currently requested page index."
+		"jp": "現在要求されているページ インデックスを説明するエンコードされた URL パラメーターの名前を示します。"
 	}
 				},
 				"pageIndex": {
@@ -768,7 +768,7 @@
 					"defaultValue": 0,
 					"description": {
 		"en": "Current page index.",
-		"jp": "Current page index."
+		"jp": "現在のページのインデックスです。"
 	}
 				},
 				"appendPage": {
@@ -776,7 +776,7 @@
 					"defaultValue": false,
 					"description": {
 		"en": "Current page index.",
-		"jp": "Current page index."
+		"jp": "現在のページのインデックスです。"
 	}
 				}
 			}
@@ -786,7 +786,7 @@
 			"defaultValue": null,
 			"description": {
 		"en": "Settings related to built-in filtering functionality",
-		"jp": "Settings related to built-in filtering functionality"
+		"jp": "組み込みのフィルタリング機能に関連する設定。"
 	},
 			"schema": {
 				"type": {
@@ -794,7 +794,7 @@
 					"defaultValue": "remote",
 					"description": {
 		"en": "Filtering type.",
-		"jp": "Filtering type."
+		"jp": "フィルタリング タイプ。"
 	},
 					"valueOptions": [
 						{
@@ -802,7 +802,7 @@
 							"type": "string",
 							"description": {
 		"en": "The data will be filtered automatically client-side.",
-		"jp": "The data will be filtered automatically client-side."
+		"jp": "データは自動的にクライアント側でフィルターされます。"
 	}
 						},
 						{
@@ -810,7 +810,7 @@
 							"type": "string",
 							"description": {
 		"en": "Parameters will be encoded and it's up to the backend to interpred them from the response.",
-		"jp": "Parameters will be encoded and it's up to the backend to interpred them from the response."
+		"jp": "パラメーターはエンコードされ、バックエンド次第で応答から解釈されます。"
 	}
 						}
 					]
@@ -820,7 +820,7 @@
 					"defaultValue": false,
 					"description": {
 		"en": "Enables or disables case sensitive filtering on the data. Works only for local filtering.",
-		"jp": "Enables or disables case sensitive filtering on the data. Works only for local filtering."
+		"jp": "データの大文字と小文字を区別するフィルタリングを有効または無効にします。ローカルのフィルタリングでのみ機能します。"
 	}
 				},
 				"applyToAllData": {
@@ -828,7 +828,7 @@
 					"defaultValue": true,
 					"description": {
 		"en": "If the type of paging/sorting/filtering is local and applyToAllData is true, filtering will be performed on the whole data source that's present locally, otherwise only on the current dataView. if type is remote, this setting doesn't have any effect.",
-		"jp": "If the type of paging/sorting/filtering is local and applyToAllData is true, filtering will be performed on the whole data source that's present locally, otherwise only on the current dataView. if type is remote, this setting doesn't have any effect."
+		"jp": "ページング、並べ替え、またはフィルタリングのタイプがローカルの場合、applyToAllData が True であると、ローカルに存在するデータ ソース全体に対してフィルタリングが実行されます。そうでない場合は、現在の dataView に対してのみ実行されます。タイプがリモートの場合、この設定は効果がありません。"
 	}
 				},
 				"customFunc": {
@@ -836,7 +836,7 @@
 					"defaultValue": null,
 					"description": {
 		"en": "Can point to either a string or a function object. The parameters that are passed are 1) the data array to be filtered, 2) the filtering expression definitions. Should return an array of the filtered data.",
-		"jp": "Can point to either a string or a function object. The parameters that are passed are 1) the data array to be filtered, 2) the filtering expression definitions. Should return an array of the filtered data."
+		"jp": "文字列または関数オブジェクトを指すことができます。渡されるパラメーターは、1) フィルタリングされるデータ配列、2) フィルタリングの式定義です。フィルターされたデータの配列を返します。"
 	}
 				},
 				"filterExprUrlKey": {
@@ -844,7 +844,7 @@
 					"defaultValue": null,
 					"description": {
 		"en": "Url key that will be encoded in the request if remote filtering is performed. Default value of null implies OData-style URL encoding. Please see http://www.odata.org/developers/protocols/uri-conventions for details.",
-		"jp": "Url key that will be encoded in the request if remote filtering is performed. Default value of null implies OData-style URL encoding. Please see http://www.odata.org/developers/protocols/uri-conventions for details."
+		"jp": "リモート フィルタリングが実行される場合に、要求の中でエンコードされる URL キー。デフォルト null は OData スタイルの URL エンコードを意味します。詳しくは、http://www.odata.org/developers/protocols/uri-conventions を参照してください。"
 	}
 				},
 				"filterLogicUrlKey": {
@@ -852,7 +852,7 @@
 					"defaultValue": "filterLogic",
 					"description": {
 		"en": "Url key that will be encoded in the request, specifying if the filtering logic will be AND or OR",
-		"jp": "Url key that will be encoded in the request, specifying if the filtering logic will be AND or OR"
+		"jp": "フィルタリング ロジックが AND か OR かどうかを示す、要求の中でエンコードされる URL キー。"
 	}
 				},
 				"defaultFields": {
@@ -860,7 +860,7 @@
 					"defaultValue": [],
 					"description": {
 		"en": "Can point to either a string or a function object. The parameters that are passed are 1) the data array to be filtered, 2) the filtering expression definitions. Should return an array of the filtered data.",
-		"jp": "Can point to either a string or a function object. The parameters that are passed are 1) the data array to be filtered, 2) the filtering expression definitions. Should return an array of the filtered data."
+		"jp": "文字列または関数オブジェクトを指すことができます。渡されるパラメーターは、1) フィルタリングされるデータ配列、2) フィルタリングの式定義です。フィルターされたデータの配列を返します。"
 	}
 				},
 				"expressions": {
@@ -868,7 +868,7 @@
 					"defaultValue": [],
 					"description": {
 		"en": "A list of expression objects, containing the following key-value pairs: fieldName, expression (search string), condition , and logic (AND/OR)",
-		"jp": "A list of expression objects, containing the following key-value pairs: fieldName, expression (search string), condition , and logic (AND/OR)"
+		"jp": "式オブジェクトのリスト。以下のキーと値のペアが含まれます: fieldName、式 (検索文字列)、条件、ロジック (AND/OR)。"
 	},
 					"schema": {
 						"fieldName": {
@@ -876,7 +876,7 @@
 							"defaultValue": null,
 							"description": {
 		"en": "The name of the field to filter.",
-		"jp": "The name of the field to filter."
+		"jp": "フィルターするフィールドの名前。"
 	}
 						},
 						"expression": {
@@ -884,7 +884,7 @@
 							"defaultValue": null,
 							"description": {
 		"en": "The expression string used for filtering",
-		"jp": "The expression string used for filtering"
+		"jp": "フィルタリングで使用される式文字列。"
 	}
 						},
 						"condition": {
@@ -892,7 +892,7 @@
 							"defaultValue": null,
 							"description": {
 		"en": "The condition used for filtering",
-		"jp": "The condition used for filtering"
+		"jp": "フィルタリングに使用する条件。"
 	}
 						},
 						"logic": {
@@ -900,7 +900,7 @@
 							"defaultValue": null,
 							"description": {
 		"en": "The logic used for filtering",
-		"jp": "The logic used for filtering"
+		"jp": "フィルタリングに使用するロジック。"
 	},
 							"valueOptions": [
 								{
@@ -908,7 +908,7 @@
 									"type": "string",
 									"description": {
 		"en": "The logic used for filtering is AND",
-		"jp": "The logic used for filtering is AND"
+		"jp": "フィルタリングに使用するロジックは AND です。"
 	}
 								},
 								{
@@ -916,7 +916,7 @@
 									"type": "string",
 									"description": {
 		"en": "The logic used for filtering is OR",
-		"jp": "The logic used for filtering is OR"
+		"jp": "フィルタリングに使用するロジックは OR です。"
 	}
 								}
 							]
@@ -928,7 +928,7 @@
 					"defaultValue": "",
 					"description": {
 		"en": "an \"SQL-like\" encoded expressions string. Takes precedence over \"expressions\". Example: col2 > 100; col2 LIKE %test%",
-		"jp": "an \"SQL-like\" encoded expressions string. Takes precedence over \"expressions\". Example: col2 > 100; col2 LIKE %test%"
+		"jp": "SQL のようなエンコードされた式文字列。「expressions」より優先があります。例: col2 > 100; col2 LIKE %test%"
 	}
 				}
 			}
@@ -938,7 +938,7 @@
 			"defaultValue": null,
 			"description": {
 		"en": "Settings related to built-in paging functionality.",
-		"jp": "Settings related to built-in paging functionality."
+		"jp": "組み込みのページング機能に関連する設定。"
 	},
 			"schema": {
 				"defaultDirection": {
@@ -946,7 +946,7 @@
 					"defaultValue": "none",
 					"description": {
 		"en": "Defines the sorting direction.",
-		"jp": "Defines the sorting direction."
+		"jp": "並べ替えの方向を定義します。"
 	},
 					"valueOptions": [
 						{
@@ -954,7 +954,7 @@
 							"type": "string",
 							"description": {
 		"en": "The sorting direction is not defined.",
-		"jp": "The sorting direction is not defined."
+		"jp": "並べ替えの方向は定義されていません。"
 	}
 						},
 						{
@@ -962,7 +962,7 @@
 							"type": "string",
 							"description": {
 		"en": "Sorting direction is ascending.",
-		"jp": "Sorting direction is ascending."
+		"jp": "並べ替えの方向は昇順です。"
 	}
 						},
 						{
@@ -970,7 +970,7 @@
 							"type": "string",
 							"description": {
 		"en": "Sorting direction is descending.",
-		"jp": "Sorting direction is descending."
+		"jp": "並べ替えの方向は降順です。"
 	}
 						}
 					]
@@ -980,7 +980,7 @@
 					"defaultValue": [],
 					"description": {
 		"en": "When defaultDirection is different than \"none\", and defaultFields is specified, data will be initially sorted accordingly, directly after dataBind().",
-		"jp": "When defaultDirection is different than \"none\", and defaultFields is specified, data will be initially sorted accordingly, directly after dataBind()."
+		"jp": "defaultDirection が「none」でなく、defaultFields が指定されている場合、dataBind() のすぐ後に、データは最初に適宜並べ替えられます。"
 	}
 				},
 				"applyToAllData": {
@@ -988,7 +988,7 @@
 					"defaultValue": true,
 					"description": {
 		"en": "If the sorting type is local and applyToAllData is true, sorting will be performed on the whole data source that's present locally, otherwise only on the current dataView. If sorting type is remote, this setting doesn't have any effect.",
-		"jp": "If the sorting type is local and applyToAllData is true, sorting will be performed on the whole data source that's present locally, otherwise only on the current dataView. If sorting type is remote, this setting doesn't have any effect."
+		"jp": "並べ替えタイプがローカルの場合、applyToAllData が True であると、並べ替えは、ローカルに存在するデータ ソース全体に対して実行されます。そうでない場合は、現在の dataView に対して実行されます。並べ替えのタイプがリモートの場合、この設定は効果がありません。"
 	}
 				},
 				"customFunc": {
@@ -996,7 +996,7 @@
 					"defaultValue": null,
 					"description": {
 		"en": "Custom sorting function that can point to either a string or a function object. When the function is called, the following arguments are passed: data array, fields (array of field definitions) , direction (\"asc\" or \"desc\"). The function should return a sorted data array.",
-		"jp": "Custom sorting function that can point to either a string or a function object. When the function is called, the following arguments are passed: data array, fields (array of field definitions) , direction (\"asc\" or \"desc\"). The function should return a sorted data array."
+		"jp": "文字列または関数オブジェクトを指すことができるカスタムの並べ替え関数。関数が呼び出されると、次の引数が渡されます: データ配列、フィールド (フィールド定義の配列)、方向 (\"asc\" または \"desc\")。関数は並べ替えられたデータ配列を返す必要があります。"
 	}
 				},
 				"compareFunc": {
@@ -1004,7 +1004,7 @@
 					"defaultValue": null,
 					"description": {
 		"en": "Custom comparison sorting function. Accepts two values and returns a value 0 indicating that values are equal, 1 indicating that val1 > val2 and -1 indicating that val1 < val2.",
-		"jp": "Custom comparison sorting function. Accepts two values and returns a value 0 indicating that values are equal, 1 indicating that val1 > val2 and -1 indicating that val1 < val2."
+		"jp": "カスタムの比較並べ替え関数。2 つの値を受け取り、値が等しい場合は 0、val1 > val2 の場合は 1、val1 < val2 の場合は -1 を返します。"
 	}
 				},
 				"customConvertFunc": {
@@ -1012,7 +1012,7 @@
 					"defaultValue": null,
 					"description": {
 		"en": "Custom data value conversion function. Accepts a value and should return the converted value.",
-		"jp": "Custom data value conversion function. Accepts a value and should return the converted value."
+		"jp": "カスタムのデータ値変換関数。値を 1 つ受け取り、変換された値を返す必要があります。"
 	}
 				},
 				"type": {
@@ -1020,7 +1020,7 @@
 					"defaultValue": "remote",
 					"description": {
 		"en": "Type for the paging operation.",
-		"jp": "Type for the paging operation."
+		"jp": "ページング操作のタイプ。"
 	},
 					"valueOptions": [
 						{
@@ -1028,7 +1028,7 @@
 							"type": "string",
 							"description": {
 		"en": "Data is paged client-side.",
-		"jp": "Data is paged client-side."
+		"jp": "データはクライアント側でページングされます。"
 	}
 						},
 						{
@@ -1036,7 +1036,7 @@
 							"type": "string",
 							"description": {
 		"en": "A remote request is done and URL params encoded.",
-		"jp": "A remote request is done and URL params encoded."
+		"jp": "リモート要求が完了し、URL パラメーターがエンコードされました。"
 	}
 						}
 					]
@@ -1046,7 +1046,7 @@
 					"defaultValue": false,
 					"description": {
 		"en": "Specifies if sorting will be case sensitive or not. Works only for local sorting.",
-		"jp": "Specifies if sorting will be case sensitive or not. Works only for local sorting."
+		"jp": "並べ替えが大文字と小文字を区別するかどうかを指定します。ローカルの並べ替えでのみ操作します。"
 	}
 				},
 				"sortUrlKey": {
@@ -1054,7 +1054,7 @@
 					"defaultValue": null,
 					"description": {
 		"en": "URL param name which specifies how sorting expressions will be encoded in the URL. Default is null and uses OData conventions.",
-		"jp": "URL param name which specifies how sorting expressions will be encoded in the URL. Default is null and uses OData conventions."
+		"jp": "並べ替えの式を URL 内でエンコードする方法を指定する URL パラメーター名。デフォルトは null で、OData 規則を使用します。"
 	}
 				},
 				"sortUrlAscValueKey": {
@@ -1062,7 +1062,7 @@
 					"defaultValue": null,
 					"description": {
 		"en": "URL param value for ascending type of sorting. Default is null and uses OData conventions.",
-		"jp": "URL param value for ascending type of sorting. Default is null and uses OData conventions."
+		"jp": "昇順の並べ替えの URL パラメーター値。デフォルトは null で、OData 規則を使用します。"
 	}
 				},
 				"sortUrlDescValueKey": {
@@ -1070,7 +1070,7 @@
 					"defaultValue": "number",
 					"description": {
 		"en": "URL param value for descending type of sorting. Default is null and uses OData conventions.",
-		"jp": "URL param value for descending type of sorting. Default is null and uses OData conventions."
+		"jp": "降順の並べ替えの URL パラメーター値。デフォルトは null で、OData 規則を使用します。"
 	}
 				},
 				"expressions": {
@@ -1078,7 +1078,7 @@
 					"defaultValue": [],
 					"description": {
 		"en": "A list of sorting expressions , consisting of the following keys (and their respective values): fieldName and direction.",
-		"jp": "A list of sorting expressions , consisting of the following keys (and their respective values): fieldName and direction."
+		"jp": "並べ替えの式のリスト。次のキー (およびそれぞれの値) で構成されます: fieldName と方向。"
 	},
 					"schema": {
 						"fieldName": {
@@ -1086,7 +1086,7 @@
 							"defaultValue": null,
 							"description": {
 		"en": "The name of the field to filter.",
-		"jp": "The name of the field to filter."
+		"jp": "フィルターするフィールドの名前。"
 	}
 						},
 						"direction": {
@@ -1094,7 +1094,7 @@
 							"defaultValue": null,
 							"description": {
 		"en": "The direction of the sorting",
-		"jp": "The direction of the sorting"
+		"jp": "並べ替えの方向。"
 	},
 							"valueOptions": [
 								{
@@ -1102,7 +1102,7 @@
 									"type": "string",
 									"description": {
 		"en": "Direction is ascending.",
-		"jp": "Direction is ascending."
+		"jp": "方向は昇順です。"
 	}
 								},
 								{
@@ -1110,7 +1110,7 @@
 									"type": "string",
 									"description": {
 		"en": "Direction is descending.",
-		"jp": "Direction is descending."
+		"jp": "方向は降順です。"
 	}
 								}
 							]
@@ -1122,7 +1122,7 @@
 					"defaultValue": "",
 					"description": {
 		"en": "takes precedence over experssions, an \"SQL-like\" encoded expressions string  : see sort(). Example col2 > 100 ORDER BY asc.",
-		"jp": "takes precedence over experssions, an \"SQL-like\" encoded expressions string  : see sort(). Example col2 > 100 ORDER BY asc."
+		"jp": "式よりも優先される「SQL ライクな」エンコードされた式の文字列です。sort() を参照してください。例: col2 > 100 ORDER BY asc。"
 	}
 				}
 			}
@@ -1132,7 +1132,7 @@
 			"defaultValue": null,
 			"description": {
 		"en": "Settings related to built-in paging functionality.",
-		"jp": "Settings related to built-in paging functionality."
+		"jp": "組み込みのページング機能に関連する設定。"
 	},
 			"schema": {
 				"type": {
@@ -1140,7 +1140,7 @@
 					"defaultValue": "remote",
 					"description": {
 		"en": "Specifies whether summaries will be applied locally or remotely (via a remote request).",
-		"jp": "Specifies whether summaries will be applied locally or remotely (via a remote request)."
+		"jp": "サマリーをローカルまたはリモートで (リモート要求によって) 適用するかを指定します。"
 	},
 					"valueOptions": [
 						{
@@ -1148,7 +1148,7 @@
 							"type": "string",
 							"description": {
 		"en": "Data is paged client-side.",
-		"jp": "Data is paged client-side."
+		"jp": "データはクライアント側でページングされます。"
 	}
 						},
 						{
@@ -1156,7 +1156,7 @@
 							"type": "string",
 							"description": {
 		"en": "A remote request is done and URL params encoded.",
-		"jp": "A remote request is done and URL params encoded."
+		"jp": "リモート要求が完了し、URL パラメーターがエンコードされました。"
 	}
 						}
 					]
@@ -1166,7 +1166,7 @@
 					"defaultValue": "summaries",
 					"description": {
 		"en": "Url key for retrieving data from response - used only when summaries are remote.",
-		"jp": "Url key for retrieving data from response - used only when summaries are remote."
+		"jp": "応答からデータを取得する URL キー。集計がリモートの場合のみに使用されます。"
 	}
 				},
 				"summariesResponseKey": {
@@ -1174,7 +1174,7 @@
 					"defaultValue": "summaries",
 					"description": {
 		"en": "Key for retrieving data from the summaries response - used only when summaries are remote.",
-		"jp": "Key for retrieving data from the summaries response - used only when summaries are remote."
+		"jp": "集計の応答からデータを取得するキー。集計がリモートの場合のみに使用されます。"
 	}
 				},
 				"summaryExecution": {
@@ -1182,7 +1182,7 @@
 					"defaultValue": "afterfilteringandpaging",
 					"description": {
 		"en": "Determines when the summary values are calculated.",
-		"jp": "Determines when the summary values are calculated."
+		"jp": "サマリー値が計算される時を決定します。"
 	},
 					"valueOptions": [
 						{
@@ -1190,7 +1190,7 @@
 							"type": "string",
 							"description": {
 		"en": "Summary execution happens before filtering and paging",
-		"jp": "Summary execution happens before filtering and paging"
+		"jp": "集計の実行は、フィルタリングとページングの前に発生されます。"
 	}
 						},
 						{
@@ -1198,7 +1198,7 @@
 							"type": "string",
 							"description": {
 		"en": "Summary execution happens after filtering and before paging",
-		"jp": "Summary execution happens after filtering and before paging"
+		"jp": "集計の実行は、フィルタリングの後、ページングの前に発生されます。"
 	}
 						},
 						{
@@ -1206,7 +1206,7 @@
 							"type": "string",
 							"description": {
 		"en": "Summary execution happens after filtering and paging",
-		"jp": "Summary execution happens after filtering and paging"
+		"jp": "集計の実行は、フィルタリングとページングの後に発生されます。"
 	}
 						}
 					]
@@ -1216,7 +1216,7 @@
 					"defaultValue": null,
 					"description": {
 		"en": "A list of column settings that specifies custom summaries options per column basis.",
-		"jp": "A list of column settings that specifies custom summaries options per column basis."
+		"jp": "カスタム集計オプションを列ごとに指定する列設定のリスト。"
 	},
 					"designerDisplayProperty": "key",
 					"schema": {
@@ -1225,7 +1225,7 @@
 							"defaultValue": null,
 							"description": {
 		"en": "Key of the column",
-		"jp": "Key of the column"
+		"jp": "列のキー。"
 	}
 						},
 						"summaryOperands": {
@@ -1233,7 +1233,7 @@
 							"defaultValue": null,
 							"description": {
 		"en": "List of summary operands",
-		"jp": "List of summary operands"
+		"jp": "集計オペランドのリスト"
 	},
 							"designerDisplayProperty": "type",
 							"schema": {
@@ -1242,7 +1242,7 @@
 									"defaultValue": true,
 									"description": {
 		"en": "If it is false the summary operand will be shown in dropdown but it will not be made calculation.",
-		"jp": "If it is false the summary operand will be shown in dropdown but it will not be made calculation."
+		"jp": "false の場合、集計オペランドがドロップダウンに表示されますが計算は実行されません。"
 	}
 								},
 								"decimalDisplay": {
@@ -1250,7 +1250,7 @@
 									"defaultValue": 2,
 									"description": {
 		"en": "Specifies the number of digits after the decimal point for result of the current summary operand. This property will be ignored when isGridFormatter is true.",
-		"jp": "Specifies the number of digits after the decimal point for result of the current summary operand. This property will be ignored when isGridFormatter is true."
+		"jp": "現在の集計オペランドの結果に対して小数点以降の桁数を指定します。isGridFormatter が true のとき、このプロパティは無視されます。"
 	}
 								},
 								"isGridFormatter": {
@@ -1258,7 +1258,7 @@
 									"defaultValue": false,
 									"description": {
 		"en": "Specifies whether to be used grid formatter for result for the current summary operand.",
-		"jp": "Specifies whether to be used grid formatter for result for the current summary operand."
+		"jp": "現在の集計オペランドの結果に対してグリッド フォーマッターを使用するかどうかを指定します。"
 	}
 								},
 								"order": {
@@ -1266,7 +1266,7 @@
 									"defaultValue": 5,
 									"description": {
 		"en": "Specifies the order of elements in dropdown. It is recommended to set order of custom operands and to be greater or equal to 5.",
-		"jp": "Specifies the order of elements in dropdown. It is recommended to set order of custom operands and to be greater or equal to 5."
+		"jp": "ドロップダウン内の要素の順序を指定します。カスタム オペランドの順序を設定し、5 以上にすることを推奨します。"
 	}
 								},
 								"rowDisplayLabel": {
@@ -1274,7 +1274,7 @@
 									"defaultValue": "",
 									"description": {
 		"en": "Text of the summary method which is shown in summary cell.",
-		"jp": "Text of the summary method which is shown in summary cell."
+		"jp": "集計セルに表示される集計メソッドのテキスト。"
 	}
 								},
 								"summaryCalculator": {
@@ -1282,7 +1282,7 @@
 									"defaultValue": null,
 									"description": {
 		"en": "Name of the custom summary function which should be executed when type is custom.",
-		"jp": "Name of the custom summary function which should be executed when type is custom."
+		"jp": "タイプがカスタムのときに実行されるカスタム集計関数の名前。"
 	}
 								},
 								"type": {
@@ -1290,7 +1290,7 @@
 									"defaultValue": "custom",
 									"description": {
 		"en": "Set type of summary operand.",
-		"jp": "Set type of summary operand."
+		"jp": "サマリー オペランドを設定します。"
 	},
 									"valueOptions": [
 										{
@@ -1298,7 +1298,7 @@
 											"type": "string",
 											"description": {
 		"en": "Calculate count of result rows for the specified column.",
-		"jp": "Calculate count of result rows for the specified column."
+		"jp": "指定された列の結果行の数を計算します。"
 	}
 										},
 										{
@@ -1306,7 +1306,7 @@
 											"type": "string",
 											"description": {
 		"en": "Calculate min of result rows for the specified column.",
-		"jp": "Calculate min of result rows for the specified column."
+		"jp": "指定された列の結果行の最小値を計算します。"
 	}
 										},
 										{
@@ -1314,7 +1314,7 @@
 											"type": "string",
 											"description": {
 		"en": "Calculate max of result rows for the specified column.",
-		"jp": "Calculate max of result rows for the specified column."
+		"jp": "指定された列の結果行の最大値を計算します。"
 	}
 										},
 										{
@@ -1322,7 +1322,7 @@
 											"type": "string",
 											"description": {
 		"en": "Calculate sum of result rows for the specified column.",
-		"jp": "Calculate sum of result rows for the specified column."
+		"jp": "指定された列の結果行の合計値を計算します。"
 	}
 										},
 										{
@@ -1330,7 +1330,7 @@
 											"type": "string",
 											"description": {
 		"en": "Calculate average of result rows for the specified column.",
-		"jp": "Calculate average of result rows for the specified column."
+		"jp": "指定された列の結果行の平均値を計算します。"
 	}
 										},
 										{
@@ -1338,7 +1338,7 @@
 											"type": "string",
 											"description": {
 		"en": "Calculate custom function (specified by summaryCalculator property) of result rows for the specified column.",
-		"jp": "Calculate custom function (specified by summaryCalculator property) of result rows for the specified column."
+		"jp": "指定された列の結果行の (summaryCalculator プロパティで指定された) カスタム関数を計算します。"
 	}
 										}
 									]
@@ -1354,7 +1354,7 @@
 			"defaultValue": null,
 			"description": {
 		"en": "A list of field definitions specifying the schema of the data source.",
-		"jp": "A list of field definitions specifying the schema of the data source."
+		"jp": "データ ソースのスキーマを指定するフィールド定義のリスト。"
 	},
 			"designerDisplayProperty": "fieldName",
 			"schema": {
@@ -1363,7 +1363,7 @@
 					"defaultValue": null,
 					"description": {
 		"en": "Name of the field.",
-		"jp": "Name of the field."
+		"jp": "フィールドの名前。"
 	}
 				}
 			}
@@ -1373,7 +1373,7 @@
 			"defaultValue": true,
 			"description": {
 		"en": "If true, will serialize the transaction log of updated values - if any - whenever commit is performed via a remote request.",
-		"jp": "If true, will serialize the transaction log of updated values - if any - whenever commit is performed via a remote request."
+		"jp": "True の場合、リモート要求によってコミットが実行されると、更新された値のトランザクション ログ (もしあれば) を必ずシリアル化します。"
 	}
 		},
 		"aggregateTransactions": {
@@ -1381,7 +1381,7 @@
 			"defaultValue": false,
 			"description": {
 		"en": "If set to true, the following behaviour will take place: if a new row is added, and then deleted, there will be no transaction added to the log if an edit is made to a row or cell, then the value is brought back to its original value, the transaction should be removed Note: This option takes effect only when autoCommit is set to false.",
-		"jp": "If set to true, the following behaviour will take place: if a new row is added, and then deleted, there will be no transaction added to the log if an edit is made to a row or cell, then the value is brought back to its original value, the transaction should be removed Note: This option takes effect only when autoCommit is set to false."
+		"jp": "true に設定した場合、次の動作を実行します:新しい行が追加された後に削除された場合、トランザクションはログに追加されません。行またはセルが編集された場合、値は元の値に戻され、トランザクションも削除されます。注: このオプションは、autoCommit が false に設定される場合のみに適用されます。"
 	}
 		},
 		"autoCommit": {
@@ -1389,7 +1389,7 @@
 			"defaultValue": false,
 			"description": {
 		"en": "If auto commit is true, data will be automatically committed to the data source, once a value or a batch of values are updated via saveChanges().",
-		"jp": "If auto commit is true, data will be automatically committed to the data source, once a value or a batch of values are updated via saveChanges()."
+		"jp": "自動コミットが True の場合、saveChanges() によって値または値の組が更新されると、データは自動的にデータ ソースにコミットされます。"
 	}
 		},
 		"updateUrl": {
@@ -1397,7 +1397,7 @@
 			"defaultValue": null,
 			"description": {
 		"en": "Specifies an update remote URL, to which an AJAX request will be made as soon as saveChages() is called.",
-		"jp": "Specifies an update remote URL, to which an AJAX request will be made as soon as saveChages() is called."
+		"jp": "更新するリモート URL を指定します。saveChages() が呼び出されると、これに対してすぐにAJAX リクエストが実行されます。"
 	}
 		}
 	}

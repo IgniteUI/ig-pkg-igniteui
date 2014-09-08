@@ -1,4 +1,4 @@
-{
+﻿{
   "overview": null,
   "name": "ui.igGridColumnFixing",
    "title": "Column Fixing",
@@ -21,7 +21,7 @@
       ],
       "description": {
 		"en": "Event which is fired when column fixing operation is finished<br>   use args.columnKey to get the column key of the fixed column<br>   use args.columnIndex to get the column index of the fixed column<br>   use args.owner to get a reference to the widget",
-		"jp": "Event which is fired when column fixing operation is finished<br>   use args.columnKey to get the column key of the fixed column<br>   use args.columnIndex to get the column index of the fixed column<br>   use args.owner to get a reference to the widget"
+		"jp": "列固定操作の終了時に発生されるイベント。<br>   args.columnKey を使用して固定列の列キーを取得します。<br>   args.columnIndex を使用して固定列の列インデックスを取得します。<br>   ウィジェットへの参照を取得するには args.owner を使用します。"
 	}
     },
     "columnFixing": {
@@ -40,7 +40,7 @@
       ],
       "description": {
 		"en": "Event which is fired when column fixing operation is initiated<br>   use args.columnKey to get the column key of the column to be fixed<br>   use args.columnIndex to get the column index of the column to be fixed<br>   use args.owner to get a reference to the widget",
-		"jp": "Event which is fired when column fixing operation is initiated<br>   use args.columnKey to get the column key of the column to be fixed<br>   use args.columnIndex to get the column index of the column to be fixed<br>   use args.owner to get a reference to the widget"
+		"jp": "列固定操作の開始時に発生されるイベント。<br>   args.columnKey を使用して固定列の列キーを取得します。<br>   args.columnIndex を使用して固定列の列インデックスを取得します。<br>   ウィジェットへの参照を取得するには args.owner を使用します。"
 	}
     },
     "columnFixingRefused": {
@@ -59,7 +59,7 @@
       ],
       "description": {
 		"en": "Event which is fired when column fixing operation is initiated but sum of the width of the fixed columns container and width of the column to be fixed exceeds the grid width<br>   use args.columnKey to get the column key of the column to be fixed<br>   use args.isGroupHeader to get whether header cell is of type multicolumn (when multicolumn headers are defined)<br>   use args.owner to get a reference to the widget",
-		"jp": "Event which is fired when column fixing operation is initiated but sum of the width of the fixed columns container and width of the column to be fixed exceeds the grid width<br>   use args.columnKey to get the column key of the column to be fixed<br>   use args.isGroupHeader to get whether header cell is of type multicolumn (when multicolumn headers are defined)<br>   use args.owner to get a reference to the widget"
+		"jp": "列が固定操作を開始する際に発生されるイベント。ただし、固定列コンテナーと固定列の幅の合計はグリッド幅を超過します。<br>   args.columnKey を使用して固定列の列キーを取得します。<br>   args.isGroupHeader を使用して、(複数列ヘッダーが定義されている場合) ヘッダー セルが複数列であるかどうかを取得します。<br>   ウィジェットへの参照を取得するには args.owner を使用します。"
 	}
     },
     "columnUnfixed": {
@@ -78,7 +78,7 @@
       ],
       "description": {
 		"en": "Event which is fired when column unfixing operation is done<br>   use args.columnKey to get the column key of the unfixed column<br>   use args.columnIndex to get the column index of the unfixed column<br>   use args.owner to get a reference to the widget",
-		"jp": "Event which is fired when column unfixing operation is done<br>   use args.columnKey to get the column key of the unfixed column<br>   use args.columnIndex to get the column index of the unfixed column<br>   use args.owner to get a reference to the widget"
+		"jp": "列固定解除操作の終了時に発生されるイベント。<br>   args.columnKey を使用して非固定列の列キーを取得します。<br>   args.columnIndex を使用して非固定列の列インデックスを取得します。<br>   ウィジェットへの参照を取得するには args.owner を使用します。"
 	}
     },
     "columnUnfixing": {
@@ -97,7 +97,7 @@
       ],
       "description": {
 		"en": "Event which is fired when column unfixing operation is initiated<br>   use args.columnKey to get the column key of the column to be unfixed<br>   use args.columnIndex to get the column index of the column to be unfixed<br>   use args.owner to get a reference to the widget",
-		"jp": "Event which is fired when column unfixing operation is initiated<br>   use args.columnKey to get the column key of the column to be unfixed<br>   use args.columnIndex to get the column index of the column to be unfixed<br>   use args.owner to get a reference to the widget"
+		"jp": "列固定解除操作の終了時に発生されるイベント。<br>   args.columnKey を使用して非固定列の列キーを取得します。<br>   args.columnIndex を使用して非固定列の列インデックスを取得します。<br>   ウィジェットへの参照を取得するには args.owner を使用します。"
 	}
     }
   },
@@ -107,7 +107,7 @@
       "defaultValue": null,
       "description": {
 		"en": "A list of column settings that specifies custom column fixing options on a per column basis",
-		"jp": "A list of column settings that specifies custom column fixing options on a per column basis"
+		"jp": "列固定毎にカスタム列固定オプションを指定する列設定のリスト。"
 	},
      "schema": {
 		"allowFixing": {
@@ -115,7 +115,7 @@
           "defaultValue": true,
           "description": {
 		"en": "Defines if the column is allowed to be fixed",
-		"jp": "Defines if the column is allowed to be fixed"
+		"jp": "列は固定可能かどうかを定義します"
 	}
         },
         "columnIndex": {
@@ -123,7 +123,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Defines the index of the column for fixing",
-		"jp": "Defines the index of the column for fixing"
+		"jp": "固定する列のインデックスを定義します"
 	}
         },
         "columnKey": {
@@ -131,7 +131,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Defines the key of the column for fixing",
-		"jp": "Defines the key of the column for fixing"
+		"jp": "固定する列のキーを定義します"
 	}
         },
 		"isFixed": {
@@ -139,7 +139,7 @@
           "defaultValue": false,
           "description": {
 		"en": "Defines if the column is fixed",
-		"jp": "Defines if the column is fixed"
+		"jp": "列は固定されるかどうかを定義します"
 	}
         }
       }
@@ -149,7 +149,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Feature chooser text of the fixed column",
-		"jp": "Feature chooser text of the fixed column"
+		"jp": "固定列の機能セレクター テキスト。"
 	},
       "valueOptions": null
     },
@@ -158,7 +158,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Feature chooser text of the unfixed column",
-		"jp": "Feature chooser text of the unfixed column"
+		"jp": "固定されていない列の機能セレクター テキスト。"
 	},
       "valueOptions": null
     },
@@ -167,7 +167,7 @@
       "defaultValue": null,
       "description": {
 		"en": " configure on which side to render fixed area",
-		"jp": " configure on which side to render fixed area"
+		"jp": " 固定領域をどちら側に描画するかを構成します。"
 	},
       "valueOptions": [
         {
@@ -175,7 +175,7 @@
           "type": "string",
           "description": {
 		"en": " fixed column are rendered on the left side of the main grid.",
-		"jp": " fixed column are rendered on the left side of the main grid."
+		"jp": " 固定列は主グリッドの左端に描画されます。"
 	}
         },
         {
@@ -183,7 +183,7 @@
           "type": "string",
           "description": {
 		"en": " fixed column are rendered on the right side of the main grid.",
-		"jp": " fixed column are rendered on the right side of the main grid."
+		"jp": " 固定列は主グリッドの右端に描画されます。"
 	}
         }
       ]
@@ -193,7 +193,7 @@
       "defaultValue": true,
       "description": {
 		"en": "Specify initial fixing of non data columns(like specific rowSelectors columns on the left side of the grid) when fixingDirection is left",
-		"jp": "Specify initial fixing of non data columns(like specific rowSelectors columns on the left side of the grid) when fixingDirection is left"
+		"jp": "fixingDirection が left の場合、(グリッドの左側で特定の rowSelectors 列などの) 非データ列の最初固定を指定します。"
 	},
       "valueOptions": null
     },
@@ -202,7 +202,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Specifies altering text on column fixing header icon when column is not fixed",
-		"jp": "Specifies altering text on column fixing header icon when column is not fixed"
+		"jp": "列が固定されていないときに列固定ヘッダー アイコンに表示する代替テキストを指定します。"
 	},
       "valueOptions": null
     },
@@ -211,7 +211,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Specifies altering text on column fixing header icon when column is fixed",
-		"jp": "Specifies altering text on column fixing header icon when column is fixed"
+		"jp": "列が固定されているときに列固定ヘッダー アイコンに表示する代替テキストを指定します。"
 	},
       "valueOptions": null
     },
@@ -220,7 +220,7 @@
       "defaultValue": 30,
       "description": {
 		"en": " minimal visible area for unfixed columns. For instance if you fix a column(or columns) and the width of the fixed columns is such that the width of visible are of unfixed columns is less than this option then fixing will be canceled",
-		"jp": " minimal visible area for unfixed columns. For instance if you fix a column(or columns) and the width of the fixed columns is such that the width of visible are of unfixed columns is less than this option then fixing will be canceled"
+		"jp": " 固定されていない列の最小表示領域。たとえば、列を固定し、固定されていない列の表示領域の幅がこのオプションの値より小さい場合、固定操作をキャンセルします。"
 	}     
     },
     "scrollDelta": {
@@ -228,7 +228,7 @@
       "defaultValue": 40.0,
       "description": {
 		"en": "option to configure scroll delta when scrolling with mouse wheel or keyboard in fixed columns area",
-		"jp": "option to configure scroll delta when scrolling with mouse wheel or keyboard in fixed columns area"
+		"jp": "固定列領域でマウス ホイールまたはキーボードを使用してスクロールする際のスクロール デルタを構成するためのオプション"
 	},
       "valueOptions": null
     },
@@ -237,7 +237,7 @@
       "defaultValue": true,
       "description": {
 		"en": "option to show column fixing buttons in header cells",
-		"jp": "option to show column fixing buttons in header cells"
+		"jp": "ヘッダー セルに列固定ボタンを表示するためのオプション"
 	},
       "valueOptions": null
     },
@@ -246,7 +246,7 @@
       "defaultValue": true,
       "description": {
 		"en": "option enable syncing heights of rows between fixed/unfixed rows",
-		"jp": "option enable syncing heights of rows between fixed/unfixed rows"
+		"jp": "固定/固定解除された行の間での行の高さの同期を有効にするためのオプション"
 	},
       "valueOptions": null
     }

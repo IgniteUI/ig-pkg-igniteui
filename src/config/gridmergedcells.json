@@ -1,4 +1,4 @@
-{
+﻿{
   "overview": null,
   "name": "ui.igGridCellMerging",
   "title": "Cell Merging",
@@ -21,7 +21,7 @@
       ],
       "description": {
 		"en": "Use ui.row to get reference to the row the merged group starts in.<br>   Use ui.rowIndex to get the index of the row the merged group starts in.<br>   Use ui.rowKey to get the key of the row the merged group starts in.<br>   Use ui.owner to get reference to igGridCellMerging.<br>   Use ui.grid to get reference to the igGrid the igGridCellMerging are initialized for.<br>   Use ui.value to get the cells value which is repeated and caused the merged group to be created.<br>   Use ui.count to get the total count of cells that were merged.",
-		"jp": "Use ui.row to get reference to the row the merged group starts in.<br>   Use ui.rowIndex to get the index of the row the merged group starts in.<br>   Use ui.rowKey to get the key of the row the merged group starts in.<br>   Use ui.owner to get reference to igGridCellMerging.<br>   Use ui.grid to get reference to the igGrid the igGridCellMerging are initialized for.<br>   Use ui.value to get the cells value which is repeated and caused the merged group to be created.<br>   Use ui.count to get the total count of cells that were merged."
+		"jp": "ui.row を使用して、結合されたグループが開始する行への参照を取得します。<br>   ui.rowIndex を使用して、結合されたグループが開始する行のインデックスを取得します。<br>   ui.rowKey を使用して、結合されたグループが開始する行のキーを取得します。<br>   ui.owner を使用して igGridCellMerging へを取得します。<br>   ui.grid を使用して igGridCellMerging が初期化される igGrid への参照を取得します。<br>   ui.value を使用し、繰り返されるセル値を取得して結合グループを作成します。<br>   ui.count を使用して結像されたセルの合計数を取得します。"
 	}
     },
     "cellsMerging": {
@@ -40,7 +40,7 @@
       ],
       "description": {
 		"en": "Event fired before a new merged cells group is created.<br>   Function takes arguments evt and ui.<br>   Use ui.row to get reference to the row the merged group starts in.<br>   Use ui.rowIndex to get the index of the row the merged group starts in.<br>   Use ui.rowKey to get the key of the row the merged group starts in.<br>   Use ui.owner to get reference to igGridCellMerging.<br>   Use ui.grid to get reference to the igGrid the igGridCellMerging are initialized for.<br>   Use ui.value to get the cells value which is repeated and caused the merged group to be created.",
-		"jp": "Event fired before a new merged cells group is created.<br>   Function takes arguments evt and ui.<br>   Use ui.row to get reference to the row the merged group starts in.<br>   Use ui.rowIndex to get the index of the row the merged group starts in.<br>   Use ui.rowKey to get the key of the row the merged group starts in.<br>   Use ui.owner to get reference to igGridCellMerging.<br>   Use ui.grid to get reference to the igGrid the igGridCellMerging are initialized for.<br>   Use ui.value to get the cells value which is repeated and caused the merged group to be created."
+		"jp": "新しく結合されたセル グループが作成される前に発生します。<br>   関数は引数 evt および ui を取得します。<br>   ui.row を使用して、結合されたグループが開始する行への参照を取得します。<br>   ui.rowIndex を使用して、結合されたグループが開始する行のインデックスを取得します。<br>   ui.rowKey を使用して、結合されたグループが開始する行のキーを取得します。<br>   ui.owner を使用して igGridCellMerging へを取得します。<br>   ui.grid を使用して igGridCellMerging が初期化される igGrid への参照を取得します。<br>   ui.value を使用し、繰り返されるセル値を取得して結合グループを作成します。"
 	}
     }
   },
@@ -54,7 +54,7 @@
       "defaultValue": "regular",
       "description": {
 		"en": "Controls the initial state ",
-		"jp": "Controls the initial state "
+		"jp": "初期状態を制御します。 "
 	},
       "valueOptions": [
         {
@@ -62,7 +62,7 @@
           "type": "string",
           "description": {
 		"en": "The grid won't be initialized with cells merged",
-		"jp": "The grid won't be initialized with cells merged"
+		"jp": "グリッドはセルの結合で初期化されません。"
 	}
         },
         {
@@ -70,7 +70,7 @@
           "type": "string",
           "description": {
 		"en": "The grid will be initialized with cells merged",
-		"jp": "The grid will be initialized with cells merged"
+		"jp": "グリッドはセルの結合で初期化されます。"
 	}
         }
       ]

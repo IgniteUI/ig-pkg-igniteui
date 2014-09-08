@@ -1,4 +1,4 @@
-{
+﻿{
   "overview": null,
   "name": "ui.igRadialGauge",
   "category": null,
@@ -20,7 +20,7 @@
       ],
       "description": {
 		"en": "Event which is raised when a label of the gauge is aligned along the scale.<br> Function takes first argument null and second argument ui.<br> Use ui.owner to obtain reference to gauge widget.<br> Use ui.actualMinimumValue to obtain the mimimum value of gauge scale.<br> Use ui.actualMaximumValue to obtain the maximum value of gauge scale.<br> Use ui.startAngle to obtain the starting angle of gauge scale.<br> Use ui.endAngle to obtain the ending angle of gauge scale.<br> Use ui.angle to obtain the angle on the gauge scale at which the label will be located.<br> Use ui.value to obtain the value on the gauge scale associated with the label.<br> Use ui.label to obtain the string value of the label.<br> Use ui.width to obtain the width of the label.<br> Use ui.height to obtain the height of the label.<br> Use ui.offsetX to obtain the X offset of the label on the gauge scale.<br> Use ui.offsetY to obtain the Y offset of the label on the gauge scale.",
-		"jp": "Event which is raised when a label of the gauge is aligned along the scale.<br> Function takes first argument null and second argument ui.<br> Use ui.owner to obtain reference to gauge widget.<br> Use ui.actualMinimumValue to obtain the mimimum value of gauge scale.<br> Use ui.actualMaximumValue to obtain the maximum value of gauge scale.<br> Use ui.startAngle to obtain the starting angle of gauge scale.<br> Use ui.endAngle to obtain the ending angle of gauge scale.<br> Use ui.angle to obtain the angle on the gauge scale at which the label will be located.<br> Use ui.value to obtain the value on the gauge scale associated with the label.<br> Use ui.label to obtain the string value of the label.<br> Use ui.width to obtain the width of the label.<br> Use ui.height to obtain the height of the label.<br> Use ui.offsetX to obtain the X offset of the label on the gauge scale.<br> Use ui.offsetY to obtain the Y offset of the label on the gauge scale."
+		"jp": "ゲージ ラベルがスケールに沿って配置されると発生するイベント。<br>関数は最初の引数に null を、2 番目の引数に ui を取得します。<br>ui.owner を使用して、ゲージ ウィジェットへの参照を取得します。<br>ui.actualMinimumValue を使用して、ゲージ スケールの最小値を取得します。<br>ui.actualMaximumValue を使用して、ゲージ スケールの最大値を取得します。<br>ui.startAngle を使用して、ゲージ スケールの開始角度を取得します。<br>ui.endAngle を使用して、ゲージ スケールの終了角度を取得します。<br>ui.angle を使用して、ゲージ スケール上でラベルを配置する角度を取得します。<br>ui.value を使用して、ラベルに関連付けられたゲージ スケール上の値を取得します。<br>ui.label を使用して、ラベルの文字列値を取得します。<br>ui.width を使用して、ラベルの幅を取得します。<br>ui.height を使用して、ラベルの高さを取得します。<br>ui.offsetX を使用して、ゲージ スケール上でのラベルの X オフセットを取得します。<br>ui.offsetY を使用して、ゲージ スケール上でのラベルの Y オフセットを取得します。"
 	}
     },
     "formatLabel": {
@@ -39,7 +39,7 @@
       ],
       "description": {
 		"en": "Event which is raised when a label of the gauge is formatted.<br> Function takes first argument null and second argument ui.<br> Use ui.owner to obtain reference to gauge widget.<br> Use ui.actualMinimumValue to obtain the mimimum value of gauge scale.<br> Use ui.actualMaximumValue to obtain the maximum value of gauge scale.<br> Use ui.startAngle to obtain the starting angle of gauge scale.<br> Use ui.endAngle to obtain the ending angle of gauge scale.<br> Use ui.angle to obtain the angle on the gauge scale at which the label will be located.<br> Use ui.value to obtain the value on the gauge scale associated with the label.<br> Use ui.label to obtain the string value of the label.",
-		"jp": "Event which is raised when a label of the gauge is formatted.<br> Function takes first argument null and second argument ui.<br> Use ui.owner to obtain reference to gauge widget.<br> Use ui.actualMinimumValue to obtain the mimimum value of gauge scale.<br> Use ui.actualMaximumValue to obtain the maximum value of gauge scale.<br> Use ui.startAngle to obtain the starting angle of gauge scale.<br> Use ui.endAngle to obtain the ending angle of gauge scale.<br> Use ui.angle to obtain the angle on the gauge scale at which the label will be located.<br> Use ui.value to obtain the value on the gauge scale associated with the label.<br> Use ui.label to obtain the string value of the label."
+		"jp": "ゲージ ラベルの書式設定時に発生するイベント。<br>関数は最初の引数に null を、2 番目の引数に ui を取得します。<br>ui.owner を使用して、ゲージ ウィジェットへの参照を取得します。<br>ui.actualMinimumValue を使用して、ゲージ スケールの最小値を取得します。<br>ui.actualMaximumValue を使用して、ゲージ スケールの最大値を取得します。<br>ui.startAngle を使用して、ゲージ スケールの開始角度を取得します。<br>ui.endAngle を使用して、ゲージ スケールの終了角度を取得します。<br>ui.angle を使用して、ゲージ スケール上でラベルを配置する角度を取得します。<br>ui.value を使用して、ラベルに関連付けられたゲージ スケール上の値を取得します。<br>ui.label を使用して、ラベルの文字列値を取得します。"
 	}
     }
   },
@@ -49,7 +49,7 @@
       "defaultValue": null,
       "description": {
 		"en": "The width of the gauge. It can be set as a number in pixels, string (px) or percentage (%).",
-		"jp": "The width of the gauge. It can be set as a number in pixels, string (px) or percentage (%)."
+		"jp": "ゲージの幅。ピクセル、文字列 (px)、またはパーセンテージ (%) で数字として設定できます。"
 	}
     },
 	"height": {
@@ -57,7 +57,7 @@
       "defaultValue": null,
       "description": {
 		"en": "The height of the gauge. It can be set as a number in pixels, string (px) or percentage (%).",
-		"jp": "The height of the gauge. It can be set as a number in pixels, string (px) or percentage (%)."
+		"jp": "ゲージの高さ。ピクセル、文字列 (px)、またはパーセンテージ (%) で数字として設定できます。"
 	}
     },
     "backingBrush": {
@@ -65,7 +65,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the brush to use to fill the backing of the gauge.",
-		"jp": "Gets or sets the brush to use to fill the backing of the gauge."
+		"jp": "ゲージのバッキングを塗りつぶすために使用するブラシを取得または設定します。"
 	}
     },
     "backingCornerRadius": {
@@ -73,7 +73,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets the corner rounding radius to use for the fitted scale backings.",
-		"jp": "Gets or sets the corner rounding radius to use for the fitted scale backings."
+		"jp": "フィット スケール バッキングに使用する角丸の半径を取得または設定します。"
 	}
     },
     "backingInnerExtent": {
@@ -81,7 +81,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets the inner extent of the gauge backing.",
-		"jp": "Gets or sets the inner extent of the gauge backing."
+		"jp": "ゲージ バッキングの内部範囲を取得または設定します。"
 	}
     },
     "backingOuterExtent": {
@@ -89,7 +89,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets the outer extent of the gauge backing.",
-		"jp": "Gets or sets the outer extent of the gauge backing."
+		"jp": "ゲージ バッキングの外側の範囲を取得または設定します。"
 	}
     },
     "backingOutline": {
@@ -97,7 +97,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the brush to use for the outline of the backing.",
-		"jp": "Gets or sets the brush to use for the outline of the backing."
+		"jp": "バッキングのアウトラインを使用するブラシを取得または設定します。"
 	}
     },
     "backingOversweep": {
@@ -105,7 +105,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets the oversweep degrees to apply to the backing if it is displaying fitted (in degrees). Must be greater or equal to 0.",
-		"jp": "Gets or sets the oversweep degrees to apply to the backing if it is displaying fitted (in degrees). Must be greater or equal to 0."
+		"jp": "フィットで表示する場合にバッキングに適用するオーバースイープ角度 (度数) を取得または設定します。0 以上の値でなければなりません。"
 	}
     },
     "backingShape": {
@@ -113,7 +113,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the type of shape to use for the backing of the gauge.",
-		"jp": "Gets or sets the type of shape to use for the backing of the gauge."
+		"jp": "ゲージのバッキングに使用する図形のタイプを取得または設定します。"
 	},
       "valueOptions": [
         {
@@ -121,7 +121,7 @@
           "type": "string",
           "description": {
 		"en": "Circular shape is used for the backing of the gauge",
-		"jp": "Circular shape is used for the backing of the gauge"
+		"jp": "ゲージのバッキングに使用する円形。"
 	}
         },
         {
@@ -129,7 +129,7 @@
           "type": "string",
           "description": {
 		"en": "Fitted shape is used for the backing of the gauge",
-		"jp": "Fitted shape is used for the backing of the gauge"
+		"jp": "ゲージのバッキングに使用するフィット図形。"
 	}
         }
       ]
@@ -139,7 +139,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets the stroke thickness of the backing outline.",
-		"jp": "Gets or sets the stroke thickness of the backing outline."
+		"jp": "バッキング アウトラインのストロークの太さを取得または設定します。"
 	}
     },
     "centerX": {
@@ -147,7 +147,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets the x position of the center of the gauge with the value ranging from 0 to 1.",
-		"jp": "Gets or sets the x position of the center of the gauge with the value ranging from 0 to 1."
+		"jp": "値範囲 0 から 1 でゲージの中心の x 位置を取得または設定します。"
 	}
     },
     "centerY": {
@@ -155,7 +155,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets the y position of the center of the gauge with the value ranging from 0 to 1.",
-		"jp": "Gets or sets the y position of the center of the gauge with the value ranging from 0 to 1."
+		"jp": "値範囲 0 から 1 でゲージの中心の y 位置を取得または設定します。"
 	}
     },
     "duplicateLabelOmissionStrategy": {
@@ -163,7 +163,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the strategy to use for ommitting labels if the first and last label have the same value.",
-		"jp": "Gets or sets the strategy to use for ommitting labels if the first and last label have the same value."
+		"jp": "最初と最後のラベルが同じ値の場合、ラベルを省く使用する方法を取得または設定します。"
 	},
       "valueOptions": [
         {
@@ -171,7 +171,7 @@
           "type": "string",
           "description": {
 		"en": "If the first and last labels have the same value, the last is omitted",
-		"jp": "If the first and last labels have the same value, the last is omitted"
+		"jp": "最初および最後のラベルに同じ値がある場合、最後のラベルは削除されます。"
 	}
         },
         {
@@ -179,7 +179,7 @@
           "type": "string",
           "description": {
 		"en": "If the first and last labels have the same value, the first is omitted",
-		"jp": "If the first and last labels have the same value, the first is omitted"
+		"jp": "最初および最後のラベルに同じ値がある場合、最初のラベルは削除されます。"
 	}
         },
         {
@@ -187,7 +187,7 @@
           "type": "string",
           "description": {
 		"en": "If the first and last labels have the same value, the both are kept",
-		"jp": "If the first and last labels have the same value, the both are kept"
+		"jp": "最初および最後のラベルに同じ値がある場合、両方は使用されます。"
 	}
         },
         {
@@ -195,7 +195,7 @@
           "type": "string",
           "description": {
 		"en": "If the first and last labels have the same value, the both are ommitted",
-		"jp": "If the first and last labels have the same value, the both are ommitted"
+		"jp": "最初および最後のラベルに同じ値がある場合、両方は削除されます。"
 	}
         }
       ]
@@ -213,7 +213,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the brush to use for the label font.",
-		"jp": "Gets or sets the brush to use for the label font."
+		"jp": "ラベル フォントを使用するためのブラシを取得または設定します。"
 	}
     },
     "interval": {
@@ -221,7 +221,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets the interval to use for the scale.",
-		"jp": "Gets or sets the interval to use for the scale."
+		"jp": "スケールに使用する間隔を取得または設定します。"
 	}
     },
     "labelExtent": {
@@ -229,7 +229,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets the position at which to put the labels as a value from 0 to 1, measured form the center of the gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
-		"jp": "Gets or sets the position at which to put the labels as a value from 0 to 1, measured form the center of the gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge."
+		"jp": "ゲージの中央から計測される、0 から 1 の値でラベルを配置する位置を取得または設定します。<br>0.5 から 1 の間の値を使用し、標準のゲージの半径より拡張できます。"
 	}
     },
     "labelInterval": {
@@ -237,7 +237,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets the interval to use for rendering labels. This defaults to be the same interval as the tickmarks on the scale.",
-		"jp": "Gets or sets the interval to use for rendering labels. This defaults to be the same interval as the tickmarks on the scale."
+		"jp": "ラベルの描画に使用する間隔を取得または設定します。このデフォルトは、スケールの目盛と同じ間隔です。"
 	}
     },
     "maximumValue": {
@@ -245,7 +245,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets the maximum value of the scale.",
-		"jp": "Gets or sets the maximum value of the scale."
+		"jp": "スケールの最大値を取得または設定します。"
 	}
     },
     "minimumValue": {
@@ -253,7 +253,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets the minimum value of the scale.",
-		"jp": "Gets or sets the minimum value of the scale."
+		"jp": "スケールの最小値を取得または設定します。"
 	}
     },
     "minorTickBrush": {
@@ -261,7 +261,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the brush to use for the minor tickmarks.",
-		"jp": "Gets or sets the brush to use for the minor tickmarks."
+		"jp": "副目盛に使用するブラシを取得または設定します。"
 	}
     },
     "minorTickCount": {
@@ -269,7 +269,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets the number of minor tickmarks to place between major tickmarks.",
-		"jp": "Gets or sets the number of minor tickmarks to place between major tickmarks."
+		"jp": "2 つの主要目盛間の補助目盛の数を取得または設定します。"
 	}
     },
     "minorTickEndExtent": {
@@ -277,7 +277,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets the position at which to stop rendering the minor tickmarks as a value from 0 to 1, measured from the center of the gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
-		"jp": "Gets or sets the position at which to stop rendering the minor tickmarks as a value from 0 to 1, measured from the center of the gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge."
+		"jp": "ゲージの中心から計測される、0 から 1 の値で副目盛の描画を終了する位置を取得または設定します。<br>0.5 から 1 の間の値を使用し、標準のゲージの半径より拡張できます。"
 	}
     },
     "minorTickStartExtent": {
@@ -285,7 +285,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets the position at which to start rendering the minor tickmarks as a value from 0 to 1, measured from the center of the gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
-		"jp": "Gets or sets the position at which to start rendering the minor tickmarks as a value from 0 to 1, measured from the center of the gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge."
+		"jp": "ゲージの中心から計測される、0 から 1 の値で副目盛の描画を開始する位置を取得または設定します。<br>0.5 から 1 の間の値を使用し、標準のゲージの半径より拡張できます。"
 	}
     },
     "minorTickStrokeThickness": {
@@ -293,7 +293,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets the stroke thickness to use when rendering minor ticks.",
-		"jp": "Gets or sets the stroke thickness to use when rendering minor ticks."
+		"jp": "副メモリを描画がする際に使用するストロークの太さを取得または設定します。"
 	}
     },
     "needleBaseFeatureExtent": {
@@ -301,7 +301,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets the extent of the feature which is closest to the base (e.g. a bulb) with a value from -1 to 1. Note: Only some needle shapes respect this property.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
-		"jp": "Gets or sets the extent of the feature which is closest to the base (e.g. a bulb) with a value from -1 to 1. Note: Only some needle shapes respect this property.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge."
+		"jp": "0 から 1 の値でベース (bulb など) に最も近い機能の範囲を取得または設定します。注: このプロパティでは、一部の針の形のみ優先されます。<br>0.5 から 1 の間の値を使用し、標準のゲージの半径より拡張できます。"
 	}
     },
     "needleBaseFeatureWidthRatio": {
@@ -309,7 +309,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets the width of the needle at its feature which is closest to the base (e.g. a bulb) with a value from 0 to 1. Note: Only some needle shapes respect this property.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
-		"jp": "Gets or sets the width of the needle at its feature which is closest to the base (e.g. a bulb) with a value from 0 to 1. Note: Only some needle shapes respect this property.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge."
+		"jp": "0 から 1 の値でベース (bulb など) に最も近い機能で針の幅を取得または設定します。注: このプロパティでは、一部の針の形のみ優先されます。<br>0.5 から 1 の間の値を使用し、標準のゲージの半径より拡張できます。"
 	}
     },
     "needleBrush": {
@@ -317,7 +317,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the brush to use when rendering the fill of the needle.",
-		"jp": "Gets or sets the brush to use when rendering the fill of the needle."
+		"jp": "針の塗りつぶしを描画する際に使用するブラシを取得または設定します。"
 	}
     },
     "needleEndExtent": {
@@ -325,7 +325,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets the extent (from -1 to 1) at which to end rendering the needle, measured from the center of the gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
-		"jp": "Gets or sets the extent (from -1 to 1) at which to end rendering the needle, measured from the center of the gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge."
+		"jp": "ゲージの中心から測定される、針の描画を終了する範囲 ( -1 から 1) を取得または設定します。<br>0.5 から 1 の間の値を使用し、標準のゲージの半径より拡張できます。"
 	}
     },
     "needleEndWidthRatio": {
@@ -333,7 +333,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets the width of the needle at its point using a value from (0 to 1). Note: Only some needle shapes respect this property.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
-		"jp": "Gets or sets the width of the needle at its point using a value from (0 to 1). Note: Only some needle shapes respect this property.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge."
+		"jp": "(0 から 1) 値を使用するそのポイントの針の幅を取得または設定します。注: このプロパティでは、一部の針の形のみ優先されます。<br>0.5 から 1 の間の値を使用し、標準のゲージの半径より拡張できます。"
 	}
     },
     "needleOutline": {
@@ -341,7 +341,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the brush to use when rendering the outline of the needle.",
-		"jp": "Gets or sets the brush to use when rendering the outline of the needle."
+		"jp": "針のアウトラインを描画する際に使用するブラシを取得または設定します。"
 	}
     },
     "needlePivotBrush": {
@@ -349,7 +349,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the brush to use for filling the needle cap. Note: this only applies to certain cap shapes.",
-		"jp": "Gets or sets the brush to use for filling the needle cap. Note: this only applies to certain cap shapes."
+		"jp": "針キャップを塗りつぶすために使用するブラシを取得または設定します。注: 特定のキャップの形のみに適用されます。"
 	}
     },
     "needlePivotInnerWidthRatio": {
@@ -357,7 +357,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets the width of the inner cutout section of the needle cap with a value from 0 to 1. Note: Will only take effect if you have a cap set on the needle that has a cutout section.",
-		"jp": "Gets or sets the width of the inner cutout section of the needle cap with a value from 0 to 1. Note: Will only take effect if you have a cap set on the needle that has a cutout section."
+		"jp": "0 から 1 の値で針キャップ内側の切り抜きセクションの幅を取得または設定します。注: 切抜きセクションのある針にキャップを設定した場合のみ効果があります。"
 	}
     },
     "needlePivotOutline": {
@@ -365,7 +365,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the brush to use for the outlines of the needle cap.",
-		"jp": "Gets or sets the brush to use for the outlines of the needle cap."
+		"jp": "針キャップのアウトラインに使用するブラシを取得または設定します。"
 	}
     },
     "needlePivotShape": {
@@ -373,7 +373,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the shape to use for the needle cap.",
-		"jp": "Gets or sets the shape to use for the needle cap."
+		"jp": "針キャップに使用する図形を取得または設定します。"
 	},
       "valueOptions": [
         {
@@ -381,7 +381,7 @@
           "type": "string",
           "description": {
 		"en": "No shape is used for the needle cap",
-		"jp": "No shape is used for the needle cap"
+		"jp": "針キャップに図形は使用されません。"
 	}
         },
         {
@@ -389,7 +389,7 @@
           "type": "string",
           "description": {
 		"en": "Circle shape is used for the needle cap",
-		"jp": "Circle shape is used for the needle cap"
+		"jp": "針キャップに円図形は使用されます。"
 	}
         },
         {
@@ -397,7 +397,7 @@
           "type": "string",
           "description": {
 		"en": "Circle with a hole is used for the needle cap",
-		"jp": "Circle with a hole is used for the needle cap"
+		"jp": "針キャップに穴のある円は使用されます。"
 	}
         },
         {
@@ -405,7 +405,7 @@
           "type": "string",
           "description": {
 		"en": "Circle overlay is used for the needle cap",
-		"jp": "Circle overlay is used for the needle cap"
+		"jp": "針キャップに円オーバーレイは使用されます。"
 	}
         },
         {
@@ -413,7 +413,7 @@
           "type": "string",
           "description": {
 		"en": "Circle overlay with a hole is used for the needle cap",
-		"jp": "Circle overlay with a hole is used for the needle cap"
+		"jp": "針キャップに穴のある円オーバーレイは使用されます。"
 	}
         },
         {
@@ -421,7 +421,7 @@
           "type": "string",
           "description": {
 		"en": "Circle underlay shape is used for the needle cap",
-		"jp": "Circle underlay shape is used for the needle cap"
+		"jp": "針キャップに円アンダーレーは使用されます。"
 	}
         },
         {
@@ -429,7 +429,7 @@
           "type": "string",
           "description": {
 		"en": "Circle underlay with a hole is used for the needle cap",
-		"jp": "Circle underlay with a hole is used for the needle cap"
+		"jp": "針キャップに穴のある円アンダーレーは使用されます。"
 	}
         }
       ]
@@ -439,7 +439,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "GEts or sets the stroke thickness to use for the outline of the needle cap.",
-		"jp": "GEts or sets the stroke thickness to use for the outline of the needle cap."
+		"jp": "針キャップのアウトラインに使用するストロークの太さを取得または設定します。"
 	}
     },
     "needlePivotWidthRatio": {
@@ -447,7 +447,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets hte width of the cap of the needle with a value from 0 to 1. Note: Will only take effect if you have a cap set on the needle.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
-		"jp": "Gets or sets hte width of the cap of the needle with a value from 0 to 1. Note: Will only take effect if you have a cap set on the needle.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge."
+		"jp": "0 から 1 の値を使用する針のキャップ幅を取得または設定します。注: 針にキャップを設定する場合のみ効果があります。<br>0.5 から 1 の間の値を使用し、標準のゲージの半径より拡張できます。"
 	}
     },
     "needlePointFeatureExtent": {
@@ -455,7 +455,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets the extent of the feature which is closest to the point (e.g. the tapering point of a needle) with a value from -1 to 1. Note: Only some needle shapes respect this property.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
-		"jp": "Gets or sets the extent of the feature which is closest to the point (e.g. the tapering point of a needle) with a value from -1 to 1. Note: Only some needle shapes respect this property.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge."
+		"jp": "-1 から 1 の値でポイント (針のテーパリング ポイントなど) に最も近い機能の範囲を取得または設定します。注: このプロパティでは、一部の針の形のみ優先されます。<br>0.5 から 1 の間の値を使用し、標準のゲージの半径より拡張できます。"
 	}
     },
     "needlePointFeatureWidthRatio": {
@@ -463,7 +463,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets the width of the needle at its feature which is closest to the point (e.g. the tapering point of a needle) with a value from 0 to 1. Note: Only some needle shapes respect this property.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
-		"jp": "Gets or sets the width of the needle at its feature which is closest to the point (e.g. the tapering point of a needle) with a value from 0 to 1. Note: Only some needle shapes respect this property.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge."
+		"jp": "0 から 1 の値でポイント (針のテーパリング ポイントなど) に最も近い機能で針の幅を取得または設定します。注: このプロパティでは、一部の針の形のみ優先されます。<br>0.5 から 1 の間の値を使用し、標準のゲージの半径より拡張できます。"
 	}
     },
     "needleShape": {
@@ -471,7 +471,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the shape to use when rendering the needle from a number of options.",
-		"jp": "Gets or sets the shape to use when rendering the needle from a number of options."
+		"jp": "オプション数から針を描画する際に使用するための図形を取得または設定します。"
 	},
       "valueOptions": [
         {
@@ -479,7 +479,7 @@
           "type": "string",
           "description": {
 		"en": "No shape is used when rendering the needle from a number of options.",
-		"jp": "No shape is used when rendering the needle from a number of options."
+		"jp": "複数のオプションから、針を描画する際に図形は使用されません。"
 	}
         },
         {
@@ -487,7 +487,7 @@
           "type": "string",
           "description": {
 		"en": "Rectangle shape is used when rendering the needle from a number of options.",
-		"jp": "Rectangle shape is used when rendering the needle from a number of options."
+		"jp": "複数のオプションから、針を描画する際に矩形図形は使用されます。"
 	}
         },
         {
@@ -495,7 +495,7 @@
           "type": "string",
           "description": {
 		"en": "Triangle shape is used when rendering the needle from a number of options.",
-		"jp": "Triangle shape is used when rendering the needle from a number of options."
+		"jp": "複数のオプションから、針を描画する際に三角図形は使用されます。"
 	}
         },
         {
@@ -503,7 +503,7 @@
           "type": "string",
           "description": {
 		"en": "Needle shape is used when rendering the needle from a number of options.",
-		"jp": "Needle shape is used when rendering the needle from a number of options."
+		"jp": "複数のオプションから、針を描画する際に針図形は使用されます。"
 	}
         },
         {
@@ -511,7 +511,7 @@
           "type": "string",
           "description": {
 		"en": "Trapezoid shape is used when rendering the needle from a number of options.",
-		"jp": "Trapezoid shape is used when rendering the needle from a number of options."
+		"jp": "複数のオプションから、針を描画する際に台形図形は使用されます。"
 	}
         },
         {
@@ -519,7 +519,7 @@
           "type": "string",
           "description": {
 		"en": "Rectangle with bulb shape is used when rendering the needle from a number of options.",
-		"jp": "Rectangle with bulb shape is used when rendering the needle from a number of options."
+		"jp": "複数のオプションから、針を描画する際にバルブ付き矩形図形は使用されます。"
 	}
         },
         {
@@ -527,7 +527,7 @@
           "type": "string",
           "description": {
 		"en": "Triangle with bulb shape is used when rendering the needle from a number of options.",
-		"jp": "Triangle with bulb shape is used when rendering the needle from a number of options."
+		"jp": "複数のオプションから、針を描画する際にバルブ付き三角図形は使用されます。"
 	}
         },
         {
@@ -535,7 +535,7 @@
           "type": "string",
           "description": {
 		"en": "Needle with bulb shape is used when rendering the needle from a number of options.",
-		"jp": "Needle with bulb shape is used when rendering the needle from a number of options."
+		"jp": "複数のオプションから、針を描画する際にバルブ付き針図形は使用されます。"
 	}
         },
         {
@@ -543,7 +543,7 @@
           "type": "string",
           "description": {
 		"en": "Trapezoid with buld shape is used when rendering the needle from a number of options.",
-		"jp": "Trapezoid with buld shape is used when rendering the needle from a number of options."
+		"jp": "複数のオプションから、針を描画する際にバルブ付き台形図形は使用されます。"
 	}
         }
       ]
@@ -553,7 +553,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets the extent (from -1 to 1) at which to start rendering the needle, measured from the center of the gauge. <br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
-		"jp": "Gets or sets the extent (from -1 to 1) at which to start rendering the needle, measured from the center of the gauge. <br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge."
+		"jp": "ゲージの中心から測定される、針の描画を開始する範囲 ( -1 から 1) を取得または設定します。<br>  0.5 から 1 の間の値を使用し、標準のゲージの半径より拡張できます。"
 	}
     },
     "needleStartWidthRatio": {
@@ -561,7 +561,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets the width of the needle at its point using a value from (0 to 1). Note: Only some needle shapes respect this property.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
-		"jp": "Gets or sets the width of the needle at its point using a value from (0 to 1). Note: Only some needle shapes respect this property.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge."
+		"jp": "(0 から 1) 値を使用するそのポイントの針の幅を取得または設定します。注: このプロパティでは、一部の針の形のみ優先されます。<br>0.5 から 1 の間の値を使用し、標準のゲージの半径より拡張できます。"
 	}
     },
     "needleStrokeThickness": {
@@ -569,7 +569,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets the stroke thickness of the needle outline.",
-		"jp": "Gets or sets the stroke thickness of the needle outline."
+		"jp": "針のアウトラインのストロークの太さを取得または設定します。"
 	}
     },
     "radiusMultiplier": {
@@ -577,7 +577,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets the multiplying factor to apply to the normal radius of the gauge. <br> The radius of the gauge is defined by the minimum of the width and height of the control divided by 2.0. <br> This introduces a multiplicative factor to that value.",
-		"jp": "Gets or sets the multiplying factor to apply to the normal radius of the gauge. <br> The radius of the gauge is defined by the minimum of the width and height of the control divided by 2.0. <br> This introduces a multiplicative factor to that value."
+		"jp": "ゲージの標準範囲に適用する倍数因子を取得または設定します。<br>  このゲージの半径は、コントロールの最小の幅と高さを 2.0 で割った値によって定義されます。<br>  値に倍数因子を取り入れます。"
 	}
     },
     "rangeBrushes": {
@@ -585,7 +585,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets a collection of brushes to be used as the palette for gauge ranges.<br> The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
-		"jp": "Gets or sets a collection of brushes to be used as the palette for gauge ranges.<br> The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
+		"jp": "ゲージ範囲のパレットとして使用されるブラシのコレクションを取得または設定します。<br>提供された値は、css 色文字列またはグラデーションを定義する JavaScript オブジェクトの配列である必要があります。最初の要素は、コレクションの補間モードを指定する RGB または HSV の文字列に設定するオプションがあります。"
 	},
       "arrayMemberType": "string",
 	  "schema": {
@@ -596,7 +596,7 @@
 			"processValueOnly" : true,
 			"description": {
 		"en": "Name of the range brush",
-		"jp": "Name of the range brush"
+		"jp": "範囲ブラシの名前"
 	}
 		}
 		},
@@ -607,7 +607,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets a collection of brushes to be used as the palette for gauge outlines.<br> The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
-		"jp": "Gets or sets a collection of brushes to be used as the palette for gauge outlines.<br> The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
+		"jp": "ゲージ アウトラインのパレットとして使用されるブラシのコレクションを取得または設定します。<br>提供された値は、css 色文字列またはグラデーションを定義する JavaScript オブジェクトの配列である必要があります。最初の要素は、コレクションの補間モードを指定する RGB または HSV の文字列に設定するオプションがあります。"
 	},
       "arrayMemberType": "string",
 	  	  "schema": {
@@ -618,7 +618,7 @@
 			  "processValueOnly" : true,
 			  "description": {
 		"en": "The value provided should be css color string or JavaScript object defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
-		"jp": "The value provided should be css color string or JavaScript object defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
+		"jp": "提供された値は、css 色文字列またはグラデーションを定義する JavaScript オブジェクトである必要があります。最初の要素は、コレクションの補間モードを指定する RGB または HSV の文字列に設定するオプションがあります。"
 	}
 			}
 		},
@@ -629,7 +629,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the scale ranges to render on the linear gauge.",
-		"jp": "Gets or sets the scale ranges to render on the linear gauge."
+		"jp": "リニア ゲージで描画するためのスケールの範囲を取得または設定します。"
 	},
       "schema": {
         "name": {
@@ -637,7 +637,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Name of the range",
-		"jp": "Name of the range"
+		"jp": "範囲の名前"
 	}
         },
         "startValue": {
@@ -645,7 +645,7 @@
           "defaultValue": null,
           "description": {
 		"en": "The start value of the range",
-		"jp": "The start value of the range"
+		"jp": "範囲の開始値。"
 	}
         },
         "endValue": {
@@ -653,7 +653,7 @@
           "defaultValue": null,
           "description": {
 		"en": "The end value of the range",
-		"jp": "The end value of the range"
+		"jp": "範囲の終値。"
 	}
         },
         "brush": {
@@ -661,7 +661,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Gets or sets the brush for the entire range.",
-		"jp": "Gets or sets the brush for the entire range."
+		"jp": "範囲の全体のブラシを取得または設定します。"
 	}
         },
         "innerStartExtent": {
@@ -669,7 +669,7 @@
           "defaultValue": 0,
           "description": {
 		"en": "Gets or sets the starting value of the inner extent of the range.",
-		"jp": "Gets or sets the starting value of the inner extent of the range."
+		"jp": "範囲の内部範囲の開始値を取得または設定します。"
 	}
         },
         "innerEndExtent": {
@@ -677,7 +677,7 @@
           "defaultValue": 0,
           "description": {
 		"en": "Gets or sets the ending value of the inner extent of the range.",
-		"jp": "Gets or sets the ending value of the inner extent of the range."
+		"jp": "範囲の内部範囲の終了値を取得または設定します。"
 	}
         },
         "outline": {
@@ -685,7 +685,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Gets or sets the brush for the outline of the range.",
-		"jp": "Gets or sets the brush for the outline of the range."
+		"jp": "範囲のアウトラインのブラシを取得または設定します。"
 	}
         },
         "remove": {
@@ -693,7 +693,7 @@
           "defaultValue": false,
           "description": {
 		"en": "Gets or sets the flag used to determine if the range should be removed. If set to true, the range (if existing) is removed.",
-		"jp": "Gets or sets the flag used to determine if the range should be removed. If set to true, the range (if existing) is removed."
+		"jp": "範囲を削除するかどうかを決定するフラッグを取得または設定します。true の場合、依存の範囲を削除します。"
 	}
         },
         "strokeThickness": {
@@ -701,7 +701,7 @@
           "defaultValue": 0,
           "description": {
 		"en": "Gets or sets the thickness of the range outline.",
-		"jp": "Gets or sets the thickness of the range outline."
+		"jp": "範囲のアウトラインの太さを取得または設定します。"
 	}
         }
       }
@@ -711,7 +711,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the brush to use to fill the brackground of the scale.",
-		"jp": "Gets or sets the brush to use to fill the brackground of the scale."
+		"jp": "スケールの背景を塗りつぶすために使用するブラシを取得または設定します。"
 	}
     },
     "scaleEndAngle": {
@@ -719,7 +719,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets the end angle for the scale in degrees.",
-		"jp": "Gets or sets the end angle for the scale in degrees."
+		"jp": "スケールの終了角度を度数で取得または設定します。"
 	}
     },
     "scaleEndExtent": {
@@ -727,7 +727,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets the position at which to stop rendering the scale as a value from 0 to 1 measured from the center of the gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
-		"jp": "Gets or sets the position at which to stop rendering the scale as a value from 0 to 1 measured from the center of the gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge."
+		"jp": "ゲージの中心から計測される、0 から 1 の値でスケールの描画を停止する位置を取得または設定します。<br>0.5 から 1 の間の値を使用し、標準のゲージの半径より拡張できます。"
 	}
     },
     "scaleOversweep": {
@@ -735,7 +735,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets the extra degrees of sweep to apply to the scale background. Must be greater or equal to 0.",
-		"jp": "Gets or sets the extra degrees of sweep to apply to the scale background. Must be greater or equal to 0."
+		"jp": "スケール背景に適用するスイープの追加角度を取得または設定します。0 以上の値でなければなりません。"
 	}
     },
     "scaleOversweepShape": {
@@ -743,7 +743,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the over or shape to use for the excess fill area for the scale.",
-		"jp": "Gets or sets the over or shape to use for the excess fill area for the scale."
+		"jp": "スケールの超過塗りつぶし領域に使用する図形を取得または設定します。"
 	},
       "valueOptions": [
         {
@@ -751,7 +751,7 @@
           "type": "string",
           "description": {
 		"en": "The excess fill area shape is set dynamically",
-		"jp": "The excess fill area shape is set dynamically"
+		"jp": "追加の塗りつぶし領域の図形は動的に設定されます。"
 	}
         },
         {
@@ -759,7 +759,7 @@
           "type": "string",
           "description": {
 		"en": "Circular shape is used for the excess fill area",
-		"jp": "Circular shape is used for the excess fill area"
+		"jp": "追加の塗りつぶし領域に円図形は使用されます。"
 	}
         },
         {
@@ -767,7 +767,7 @@
           "type": "string",
           "description": {
 		"en": "Fitted shape is used for the excess fill area",
-		"jp": "Fitted shape is used for the excess fill area"
+		"jp": "追加の塗りつぶし領域にフィット図形は使用されます。"
 	}
         }
       ]
@@ -777,7 +777,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets the start angle for the scale in degrees.",
-		"jp": "Gets or sets the start angle for the scale in degrees."
+		"jp": "スケールの開始角度を度数で取得または設定します。"
 	}
     },
     "scaleStartExtent": {
@@ -785,7 +785,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets the position at which to start rendering the scale, measured from the center of the gauge as a value from 0 to 1.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
-		"jp": "Gets or sets the position at which to start rendering the scale, measured from the center of the gauge as a value from 0 to 1.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge."
+		"jp": "0 から 1 の値でゲージの中心から計測される、スケールの描画を開始する位置を取得または設定します。<br>0.5 から 1 の間の値を使用し、標準のゲージの半径より拡張できます。"
 	}
     },
     "scaleSweepDirection": {
@@ -793,7 +793,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the direction in which the scale sweeps around the center from the start angle to end angle.",
-		"jp": "Gets or sets the direction in which the scale sweeps around the center from the start angle to end angle."
+		"jp": "スケールが開始角度から終了角度へ軸周辺を移動する方向を取得または設定します。"
 	},
       "valueOptions": [
         {
@@ -801,7 +801,7 @@
           "type": "string",
           "description": {
 		"en": "Gets or sets anticlockwise direction",
-		"jp": "Gets or sets anticlockwise direction"
+		"jp": "反時計回り方向を取得または設定します。"
 	}
         },
         {
@@ -809,7 +809,7 @@
           "type": "string",
           "description": {
 		"en": "Gets or sets clockwise direction",
-		"jp": "Gets or sets clockwise direction"
+		"jp": "時計回り方向を取得または設定します。"
 	}
         }
       ]
@@ -819,7 +819,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the brush to use for the major tickmarks.",
-		"jp": "Gets or sets the brush to use for the major tickmarks."
+		"jp": "主目盛に使用するブラシを取得または設定します。"
 	}
     },
     "tickEndExtent": {
@@ -827,7 +827,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets the position at which to stop rendering the major tickmarks as a value from 0 to 1, measured from the center of the gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
-		"jp": "Gets or sets the position at which to stop rendering the major tickmarks as a value from 0 to 1, measured from the center of the gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge."
+		"jp": "ゲージの中心から計測される、0 から 1 の値で主目盛の描画を停止する位置を取得または設定します。<br>0.5 から 1 の間の値を使用し、標準のゲージの半径より拡張できます。"
 	}
     },
     "tickStartExtent": {
@@ -835,7 +835,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets the position at which to start rendering the major tickmarks as a value from 0 to 1, measured from the center of the gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge.",
-		"jp": "Gets or sets the position at which to start rendering the major tickmarks as a value from 0 to 1, measured from the center of the gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal radius of the gauge."
+		"jp": "ゲージの中心から計測される、0 から 1 の値で主目盛の描画を開始する位置を取得または設定します。<br>0.5 から 1 の間の値を使用し、標準のゲージの半径より拡張できます。"
 	}
     },
     "tickStrokeThickness": {
@@ -843,7 +843,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets the stroke thickness to use when rendering ticks.",
-		"jp": "Gets or sets the stroke thickness to use when rendering ticks."
+		"jp": "メモリを描画する際に使用するストロークの太さを取得または設定します。"
 	}
     },
     "transitionDuration": {
@@ -851,7 +851,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets the number of milliseconds over which changes to the gauge should be animated.",
-		"jp": "Gets or sets the number of milliseconds over which changes to the gauge should be animated."
+		"jp": "ゲージがアニメーション化する変更をミリ秒数を取得または設定します。"
 	}
     },
     "transitionEasingFunction": {
@@ -859,7 +859,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the easing function used to morph the current series.",
-		"jp": "Gets or sets the easing function used to morph the current series."
+		"jp": "現在のシリーズをモーフィングするために使用するイージング関数を取得または設定します。"
 	}
     },
     "transitionProgress": {
@@ -875,7 +875,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets the value at which to point the needle of the gauge.",
-		"jp": "Gets or sets the value at which to point the needle of the gauge."
+		"jp": "ゲージの針がポイントする値を取得または設定します。"
 	}
     }
   }

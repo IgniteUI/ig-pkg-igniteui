@@ -1,4 +1,4 @@
-{
+﻿{
   "overview": null,
   "name": "ui.igLinearGauge",
   "category": null,
@@ -49,7 +49,7 @@
       "defaultValue": null,
       "description": {
 		"en": "The width of the gauge. It can be set as a number in pixels, string (px) or percentage (%).",
-		"jp": "The width of the gauge. It can be set as a number in pixels, string (px) or percentage (%)."
+		"jp": "ゲージの幅。ピクセル、文字列 (px)、またはパーセンテージ (%) で数字として設定できます。"
 	}
     },
 	"height": {
@@ -57,7 +57,7 @@
       "defaultValue": null,
       "description": {
 		"en": "The height of the gauge. It can be set as a number in pixels, string (px) or percentage (%).",
-		"jp": "The height of the gauge. It can be set as a number in pixels, string (px) or percentage (%)."
+		"jp": "ゲージの高さ。ピクセル、文字列 (px)、またはパーセンテージ (%) で数字として設定できます。"
 	}
     },
     "backingBrush": {
@@ -65,7 +65,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the brush to use to fill the backing of the linear gauge.",
-		"jp": "Gets or sets the brush to use to fill the backing of the linear gauge."
+		"jp": "リニア ゲージのバッキングを塗りつぶすために使用するブラシを取得または設定します。"
 	}
     },
     "backingInnerExtent": {
@@ -73,7 +73,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets the inner extent of the linear gauge backing.",
-		"jp": "Gets or sets the inner extent of the linear gauge backing."
+		"jp": "リニア ゲージ バッキングの内部範囲を取得または設定します。"
 	}
     },
     "backingOuterExtent": {
@@ -81,7 +81,7 @@
       "defaultValue": 1.0,
       "description": {
 		"en": "Gets or sets the outer extent of the linear gauge backing.",
-		"jp": "Gets or sets the outer extent of the linear gauge backing."
+		"jp": "リニア ゲージ バッキングの外部範囲を取得または設定します。"
 	}
     },
     "backingOutline": {
@@ -89,7 +89,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the brush to use for the outline of the backing.",
-		"jp": "Gets or sets the brush to use for the outline of the backing."
+		"jp": "バッキングのアウトラインを使用するブラシを取得または設定します。"
 	}
     },
     "backingStrokeThickness": {
@@ -97,7 +97,7 @@
       "defaultValue": 2.0,
       "description": {
 		"en": "Gets or sets the stroke thickness of the backing outline.",
-		"jp": "Gets or sets the stroke thickness of the backing outline."
+		"jp": "バッキング アウトラインのストロークの太さを取得または設定します。"
 	}
     },
     "font": {
@@ -105,7 +105,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the font.",
-		"jp": "Gets or sets the font."
+		"jp": "フォントを取得または設定します。"
 	}
     },
     "fontBrush": {
@@ -113,7 +113,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the brush to use for the label font.",
-		"jp": "Gets or sets the brush to use for the label font."
+		"jp": "ラベル フォントを使用するためのブラシを取得または設定します。"
 	}
     },
     "interval": {
@@ -121,7 +121,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets the interval to use for the scale.",
-		"jp": "Gets or sets the interval to use for the scale."
+		"jp": "スケールに使用する間隔を取得または設定します。"
 	}
     },
     "isScaleInverted": {
@@ -129,7 +129,7 @@
       "defaultValue": false,
       "description": {
 		"en": "Gets or sets a value indicating whether the scale is inverted.<br> When the scale is inverted the direction in which the scale values increase is right to left.",
-		"jp": "Gets or sets a value indicating whether the scale is inverted.<br> When the scale is inverted the direction in which the scale values increase is right to left."
+		"jp": "スケールが反転されるかどうかを示す値を取得または設定します。<br>スケールが反転された場合、スケール値が右から左へ増加します。"
 	}
     },
     "labelExtent": {
@@ -137,7 +137,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets the position at which to put the labels as a value from 0 to 1, measured from the bottom of the scale.<br> Values further from zero than 1 can be used to hide the labels of the linear gauge.",
-		"jp": "Gets or sets the position at which to put the labels as a value from 0 to 1, measured from the bottom of the scale.<br> Values further from zero than 1 can be used to hide the labels of the linear gauge."
+		"jp": "スケールの下から計測される、0 から 1 の値でラベルを配置する位置を取得または設定します。<br>0.5 から 1 の間の値を使用し、リニア ゲージのラベルを非表示できます。"
 	}
     },
     "labelInterval": {
@@ -145,7 +145,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets the interval to use for rendering labels. This defaults to be the same interval as the tickmarks on the scale.",
-		"jp": "Gets or sets the interval to use for rendering labels. This defaults to be the same interval as the tickmarks on the scale."
+		"jp": "ラベルの描画に使用する間隔を取得または設定します。このデフォルトは、スケールの目盛と同じ間隔です。"
 	}
     },
     "labelsPostInitial": {
@@ -153,7 +153,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "A value to start adding labels, added to the scale's MinimumValue.",
-		"jp": "A value to start adding labels, added to the scale's MinimumValue."
+		"jp": "ラベルの追加を開始するための値で、スケールの MinimumValue に追加されます。"
 	}
     },
     "labelsPreTerminal": {
@@ -161,7 +161,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "A value to stop adding labels, subtracted from the scale's MaximumValue.",
-		"jp": "A value to stop adding labels, subtracted from the scale's MaximumValue."
+		"jp": "スケールの MaximumValue から差し引かれた、ラベルの追加を停止する値。"
 	}
     },
     "maximumValue": {
@@ -169,7 +169,7 @@
       "defaultValue": 100.0,
       "description": {
 		"en": "Gets or sets the maximum value of the scale.",
-		"jp": "Gets or sets the maximum value of the scale."
+		"jp": "スケールの最大値を取得または設定します。"
 	}
     },
     "minimumValue": {
@@ -177,7 +177,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets the minimum value of the scale.",
-		"jp": "Gets or sets the minimum value of the scale."
+		"jp": "スケールの最小値を取得または設定します。"
 	}
     },
     "minorTickBrush": {
@@ -185,7 +185,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the brush to use for the minor tickmarks.",
-		"jp": "Gets or sets the brush to use for the minor tickmarks."
+		"jp": "副目盛に使用するブラシを取得または設定します。"
 	}
     },
     "minorTickCount": {
@@ -193,7 +193,7 @@
       "defaultValue": 3.0,
       "description": {
 		"en": "Gets or sets the number of minor tickmarks to place between major tickmarks.",
-		"jp": "Gets or sets the number of minor tickmarks to place between major tickmarks."
+		"jp": "2 つの主要目盛間の補助目盛の数を取得または設定します。"
 	}
     },
     "minorTickEndExtent": {
@@ -201,7 +201,7 @@
       "defaultValue": 0.35,
       "description": {
 		"en": "Gets or sets the position at which to stop rendering the minor tickmarks as a value from 0 to 1, measured from the front/bottom of the linear gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.",
-		"jp": "Gets or sets the position at which to stop rendering the minor tickmarks as a value from 0 to 1, measured from the front/bottom of the linear gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge."
+		"jp": "リニア ゲージの前/下から計測される、0 から 1 の値で副目盛の描画を停止する位置を取得または設定します。<br>0.5 から 1 の間の値を使用し、リニア ゲージの標準サイズを超えて拡張できます。"
 	}
     },
     "minorTickStartExtent": {
@@ -209,7 +209,7 @@
       "defaultValue": 0.05,
       "description": {
 		"en": "Gets or sets the position at which to start rendering the minor tickmarks as a value from 0 to 1, measured from the front/bottom of the linear gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.",
-		"jp": "Gets or sets the position at which to start rendering the minor tickmarks as a value from 0 to 1, measured from the front/bottom of the linear gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge."
+		"jp": "リニア ゲージの前/下から計測される、0 から 1 の値で副目盛の描画を開始する位置を取得または設定します。<br>0.5 から 1 の間の値を使用し、リニア ゲージの標準サイズを超えて拡張できます。"
 	}
     },
     "minorTickStrokeThickness": {
@@ -217,7 +217,7 @@
       "defaultValue": 1.0,
       "description": {
 		"en": "Gets or sets the stroke thickness to use when rendering minor ticks.",
-		"jp": "Gets or sets the stroke thickness to use when rendering minor ticks."
+		"jp": "副メモリを描画がする際に使用するストロークの太さを取得または設定します。"
 	}
     },
     "needleBreadth": {
@@ -225,7 +225,7 @@
       "defaultValue": 6.0,
       "description": {
 		"en": "Gets or sets the needle breadth.",
-		"jp": "Gets or sets the needle breadth."
+		"jp": "針の幅を取得または設定します。"
 	}
     },
     "needleBrush": {
@@ -233,7 +233,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the brush to use for needle element.",
-		"jp": "Gets or sets the brush to use for needle element."
+		"jp": "針要素のブラシを取得または設定します。"
 	}
     },
     "needleInnerBaseWidth": {
@@ -241,7 +241,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets the width of the needle's inner base.",
-		"jp": "Gets or sets the width of the needle's inner base."
+		"jp": "針の内部ベースの幅を取得または設定します。"
 	}
     },
     "needleInnerExtent": {
@@ -249,7 +249,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets the position at which to start rendering the needle geometry, measured from the front/bottom of the linear gauge as a value from 0 to 1.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.",
-		"jp": "Gets or sets the position at which to start rendering the needle geometry, measured from the front/bottom of the linear gauge as a value from 0 to 1.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge."
+		"jp": "0 から 1 の値でリニア ゲージの前/下から計測される、針ジオメトリの描画を開始する位置を取得または設定します。<br>0.5 から 1 の間の値を使用し、リニア ゲージの標準サイズを超えて拡張できます。"
 	}
     },
     "needleInnerPointExtent": {
@@ -257,7 +257,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets the extent of the needle's inner point.",
-		"jp": "Gets or sets the extent of the needle's inner point."
+		"jp": "針の内部ポイントの範囲を取得または設定します。"
 	}
     },
     "needleInnerPointWidth": {
@@ -265,7 +265,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets the width of the needle's inner point.",
-		"jp": "Gets or sets the width of the needle's inner point."
+		"jp": "針の内部ポイントの幅を取得または設定します。"
 	}
     },
     "needleName": {
@@ -273,7 +273,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the name used for needle.",
-		"jp": "Gets or sets the name used for needle."
+		"jp": "針に使用される名前を取得または設定します。"
 	}
     },
     "needleOuterBaseWidth": {
@@ -281,7 +281,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets the width of the needle's outer base.",
-		"jp": "Gets or sets the width of the needle's outer base."
+		"jp": "針の外部ベースの幅を取得または設定します。"
 	}
     },
     "needleOuterExtent": {
@@ -289,7 +289,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets the position at which to stop rendering the needle geometry as a value from 0 to 1 measured from the front/bottom of the linear gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.",
-		"jp": "Gets or sets the position at which to stop rendering the needle geometry as a value from 0 to 1 measured from the front/bottom of the linear gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge."
+		"jp": "リニア ゲージの前/下から計測される、0 から 1 の値で針ジオメトリの描画を停止する位置を取得または設定します。<br>0.5 から 1 の間の値を使用し、リニア ゲージの標準サイズを超えて拡張できます。"
 	}
     },
     "needleOuterPointExtent": {
@@ -297,7 +297,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets the extent of the needle's outer point.",
-		"jp": "Gets or sets the extent of the needle's outer point."
+		"jp": "針の外部ポイントの範囲を取得または設定します。"
 	}
     },
     "needleOuterPointWidth": {
@@ -305,7 +305,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets the width of the needle's outer point.",
-		"jp": "Gets or sets the width of the needle's outer point."
+		"jp": "針の外部ポイントの幅を取得または設定します。"
 	}
     },
     "needleOutline": {
@@ -313,7 +313,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the brush to use for the outline of needle element.",
-		"jp": "Gets or sets the brush to use for the outline of needle element."
+		"jp": "針要素のアウトラインを描画するブラシを取得または設定します。"
 	}
     },
     "needleShape": {
@@ -321,7 +321,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the shape to use when rendering the needle from a number of options.",
-		"jp": "Gets or sets the shape to use when rendering the needle from a number of options."
+		"jp": "オプション数から針を描画する際に使用するための図形を取得または設定します。"
 	},
       "valueOptions": [
         {
@@ -329,7 +329,7 @@
           "type": "string",
           "description": {
 		"en": "Custom shape is used when rendering the needle",
-		"jp": "Custom shape is used when rendering the needle"
+		"jp": "針を描画するときにカスタム図形は使用されます。"
 	}
         },
         {
@@ -337,7 +337,7 @@
           "type": "string",
           "description": {
 		"en": "Rectangle shape is used when rendering the needle",
-		"jp": "Rectangle shape is used when rendering the needle"
+		"jp": "針を描画するときに矩形図形は使用されます。"
 	}
         },
         {
@@ -345,7 +345,7 @@
           "type": "string",
           "description": {
 		"en": "Trianle shape is used when rendering the needle",
-		"jp": "Trianle shape is used when rendering the needle"
+		"jp": "針を描画するときに三角図形は使用されます。"
 	}
         },
         {
@@ -353,7 +353,7 @@
           "type": "string",
           "description": {
 		"en": "Needle shape is used when rendering the needle",
-		"jp": "Needle shape is used when rendering the needle"
+		"jp": "針を描画するときに針図形は使用されます。"
 	}
         },
         {
@@ -361,7 +361,7 @@
           "type": "string",
           "description": {
 		"en": "Trapezoid shape is used when rendering the needle",
-		"jp": "Trapezoid shape is used when rendering the needle"
+		"jp": "針を描画するときに台形図形は使用されます。"
 	}
         }
       ]
@@ -371,7 +371,7 @@
       "defaultValue": 1.0,
       "description": {
 		"en": "Gets or sets the stroke thickness to use when rendering single actual value element.",
-		"jp": "Gets or sets the stroke thickness to use when rendering single actual value element."
+		"jp": "実際の値要素を描画する際に使用するストロークの太さを取得または設定します。"
 	}
     },
     "needleToolTipTemplate": {
@@ -379,7 +379,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the needle's tooltip template.",
-		"jp": "Gets or sets the needle's tooltip template."
+		"jp": "針のツールチップ テンプレートを取得または設定します。"
 	}
     },
     "orientation": {
@@ -387,7 +387,7 @@
       "defaultValue": "horizontal",
       "description": {
 		"en": "Gets or sets the orientation of the scale.",
-		"jp": "Gets or sets the orientation of the scale."
+		"jp": "スケールの向きを取得または設定します。"
 	},
       "valueOptions": [
         {
@@ -395,7 +395,7 @@
           "type": "string",
           "description": {
 		"en": "The orientation of the scale is horizontal",
-		"jp": "The orientation of the scale is horizontal"
+		"jp": "スケールの方向は水平です。"
 	}
         },
         {
@@ -403,7 +403,7 @@
           "type": "string",
           "description": {
 		"en": "The orientation of the scale is vertical",
-		"jp": "The orientation of the scale is vertical"
+		"jp": "スケールの方向は垂直です。"
 	}
         }
       ]
@@ -413,7 +413,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets a collection of brushes to be used as the palette for linear gauge ranges.<br> The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
-		"jp": "Gets or sets a collection of brushes to be used as the palette for linear gauge ranges.<br> The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
+		"jp": "リニア ゲージ範囲のパレットとして使用されるブラシのコレクションを取得または設定します。<br>提供された値は、css 色文字列またはグラデーションを定義する JavaScript オブジェクトの配列である必要があります。最初の要素は、コレクションの補間モードを指定する RGB または HSV の文字列に設定するオプションがあります。"
 	},
       "arrayMemberType": "string",
 	  "schema": {
@@ -424,7 +424,7 @@
 			"processValueOnly" : true,
 			"description": {
 		"en": "Name of the range brush",
-		"jp": "Name of the range brush"
+		"jp": "範囲ブラシの名前"
 	}
 		}
 		},
@@ -435,7 +435,7 @@
       "defaultValue": 0.05,
       "description": {
 		"en": "Gets or sets the position at which to start rendering the ranges, measured from the front/bottom of the control as a value from 0 to 1.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.",
-		"jp": "Gets or sets the position at which to start rendering the ranges, measured from the front/bottom of the control as a value from 0 to 1.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge."
+		"jp": "0 から 1 の値でコントロールの前と下から計測された、描画を開始する位置を取得または設定します。<br>0.5 から 1 の間の値を使用し、リニア ゲージの標準サイズを超えて拡張できます。"
 	}
     },
     "rangeOuterExtent": {
@@ -443,7 +443,7 @@
       "defaultValue": 0.65,
       "description": {
 		"en": "Gets or sets the position at which to stop rendering the range as a value from 0 to 1 measured from the front/bottom of the linear gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.",
-		"jp": "Gets or sets the position at which to stop rendering the range as a value from 0 to 1 measured from the front/bottom of the linear gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge."
+		"jp": "リニア ゲージの前/下から計測される、0 から 1 の値で範囲の描画を停止する位置を取得または設定します。<br>0.5 から 1 の間の値を使用し、リニア ゲージの標準サイズを超えて拡張できます。"
 	}
     },
     "rangeOutlines": {
@@ -451,7 +451,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets a collection of brushes to be used as the palette for linear gauge outlines.<br> The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
-		"jp": "Gets or sets a collection of brushes to be used as the palette for linear gauge outlines.<br> The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
+		"jp": "リニア ゲージ アウトラインのパレットとして使用されるブラシのコレクションを取得または設定します。<br>提供された値は、css 色文字列またはグラデーションを定義する JavaScript オブジェクトの配列である必要があります。最初の要素は、コレクションの補間モードを指定する RGB または HSV の文字列に設定するオプションがあります。"
 	},
       "arrayMemberType": "string",
 	  	  "schema": {
@@ -462,7 +462,7 @@
 			  "processValueOnly" : true,
 			  "description": {
 		"en": "The value provided should be css color string or JavaScript object defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
-		"jp": "The value provided should be css color string or JavaScript object defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection."
+		"jp": "提供された値は、css 色文字列またはグラデーションを定義する JavaScript オブジェクトである必要があります。最初の要素は、コレクションの補間モードを指定する RGB または HSV の文字列に設定するオプションがあります。"
 	}
 			}
 		},
@@ -473,7 +473,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the scale ranges to render on the linear gauge.",
-		"jp": "Gets or sets the scale ranges to render on the linear gauge."
+		"jp": "リニア ゲージで描画するためのスケールの範囲を取得または設定します。"
 	},
       "schema": {
         "name": {
@@ -481,7 +481,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Name of the range",
-		"jp": "Name of the range"
+		"jp": "範囲の名前"
 	}
         },
         "startValue": {
@@ -489,7 +489,7 @@
           "defaultValue": null,
           "description": {
 		"en": "The start value of the range",
-		"jp": "The start value of the range"
+		"jp": "範囲の開始値。"
 	}
         },
         "endValue": {
@@ -497,7 +497,7 @@
           "defaultValue": null,
           "description": {
 		"en": "The end value of the range",
-		"jp": "The end value of the range"
+		"jp": "範囲の終値。"
 	}
         },
         "brush": {
@@ -505,7 +505,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Gets or sets the brush for the entire range.",
-		"jp": "Gets or sets the brush for the entire range."
+		"jp": "範囲の全体のブラシを取得または設定します。"
 	}
         },
         "startExtent": {
@@ -513,7 +513,7 @@
           "defaultValue": 0,
           "description": {
 		"en": "Gets or sets the starting value of the extent of the range.",
-		"jp": "Gets or sets the starting value of the extent of the range."
+		"jp": "範囲のエクステントの開始値を取得または設定します。"
 	}
         },
         "endExtent": {
@@ -521,7 +521,7 @@
           "defaultValue": 0,
           "description": {
 		"en": "Gets or sets the ending value of the extent of the range.",
-		"jp": "Gets or sets the ending value of the extent of the range."
+		"jp": "範囲のエクステントの終了値を取得または設定します。"
 	}
         },
         "outline": {
@@ -529,7 +529,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Gets or sets the brush for the outline of the range.",
-		"jp": "Gets or sets the brush for the outline of the range."
+		"jp": "範囲のアウトラインのブラシを取得または設定します。"
 	}
         },
         "remove": {
@@ -537,7 +537,7 @@
           "defaultValue": false,
           "description": {
 		"en": "Gets or sets the flag used to determine if the range should be removed. If set to true, the range (if existing) is removed.",
-		"jp": "Gets or sets the flag used to determine if the range should be removed. If set to true, the range (if existing) is removed."
+		"jp": "範囲を削除するかどうかを決定するフラッグを取得または設定します。true の場合、依存の範囲を削除します。"
 	}
         },
         "strokeThickness": {
@@ -545,7 +545,7 @@
           "defaultValue": 0,
           "description": {
 		"en": "Gets or sets the thickness of the range outline.",
-		"jp": "Gets or sets the thickness of the range outline."
+		"jp": "範囲のアウトラインの太さを取得または設定します。"
 	}
         }
       }
@@ -555,7 +555,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the ranges' tooltip template.",
-		"jp": "Gets or sets the ranges' tooltip template."
+		"jp": "範囲のツールチップ テンプレートを取得または設定します。"
 	}
     },
     "scaleBrush": {
@@ -563,7 +563,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the brush to use to fill the scale of the linear gauge.",
-		"jp": "Gets or sets the brush to use to fill the scale of the linear gauge."
+		"jp": "リニア ゲージのスケールを塗りつぶすために使用するブラシを取得または設定します。"
 	}
     },
     "scaleEndExtent": {
@@ -571,7 +571,7 @@
       "defaultValue": 0.95,
       "description": {
 		"en": "Gets or sets the position at which to stop rendering the scale as a value from 0 to 1, measured from the front/bottom of the linear gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.",
-		"jp": "Gets or sets the position at which to stop rendering the scale as a value from 0 to 1, measured from the front/bottom of the linear gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge."
+		"jp": "リニア ゲージの前/下から計測される、0 から 1 の値でスケールの描画を停止する位置を取得または設定します。<br>0.5 から 1 の間の値を使用し、リニア ゲージの標準サイズを超えて拡張できます。"
 	}
     },
     "scaleInnerExtent": {
@@ -579,7 +579,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets the position at which to start rendering the scale, measured from the bottom/front (when orientation is horizontal/vertical) of the control as a value from 0 to 1.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.",
-		"jp": "Gets or sets the position at which to start rendering the scale, measured from the bottom/front (when orientation is horizontal/vertical) of the control as a value from 0 to 1.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge."
+		"jp": "0 から 1 の値で (方向が水平/垂直の場合に) コントロールの下/前から計測された、スケールの描画を開始する位置を取得または設定します。<br>0.5 から 1 の間の値を使用し、リニア ゲージの標準サイズを超えて拡張できます。"
 	}
     },
     "scaleOuterExtent": {
@@ -587,7 +587,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets the position at which to stop rendering the scale as a value from 0 to 1 measured from the bottom/front (when orientation is horizontal/vertical) of the linear gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.",
-		"jp": "Gets or sets the position at which to stop rendering the scale as a value from 0 to 1 measured from the bottom/front (when orientation is horizontal/vertical) of the linear gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge."
+		"jp": "(方向が水平/垂直の場合に) リニア ゲージの下/前から計測された、0 から 1 の値でスケールの描画を停止する位置を取得または設定します。<br>0.5 から 1 の間の値を使用し、リニア ゲージの標準サイズを超えて拡張できます。"
 	}
     },
     "scaleOutline": {
@@ -595,7 +595,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the brush to use for the outline of the scale.",
-		"jp": "Gets or sets the brush to use for the outline of the scale."
+		"jp": "スケールのアウトラインを描画するブラシを取得または設定します。"
 	}
     },
     "scaleStartExtent": {
@@ -603,7 +603,7 @@
       "defaultValue": 0.05,
       "description": {
 		"en": "Gets or sets the position at which to start rendering the scale, measured from the front/bottom of the linear gauge as a value from 0 to 1.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.",
-		"jp": "Gets or sets the position at which to start rendering the scale, measured from the front/bottom of the linear gauge as a value from 0 to 1.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge."
+		"jp": "0 から 1 の値でリニア ゲージの前/下から計測される、スケールの描画を開始する位置を取得または設定します。<br>0.5 から 1 の間の値を使用し、リニア ゲージの標準サイズを超えて拡張できます。"
 	}
     },
     "scaleStrokeThickness": {
@@ -611,7 +611,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets the stroke thickness of the scale outline.",
-		"jp": "Gets or sets the stroke thickness of the scale outline."
+		"jp": "スケールのアウトラインのストロークの太さを取得または設定します。"
 	}
     },
     "showToolTip": {
@@ -619,7 +619,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets a value indicating whether tooltips are enabled.",
-		"jp": "Gets or sets a value indicating whether tooltips are enabled."
+		"jp": "ツールチップが有効されるかどうかを示す値を取得または設定します。"
 	}
     },
     "showToolTipTimeout": {
@@ -627,7 +627,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets the time in milliseconds that tooltip appearance is delayed with.",
-		"jp": "Gets or sets the time in milliseconds that tooltip appearance is delayed with."
+		"jp": "ツールチップの表示を遅延するミリ秒を取得または設定します。"
 	}
     },
     "tickBrush": {
@@ -635,7 +635,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the brush to use for the major tickmarks.",
-		"jp": "Gets or sets the brush to use for the major tickmarks."
+		"jp": "主目盛に使用するブラシを取得または設定します。"
 	}
     },
     "tickEndExtent": {
@@ -643,7 +643,7 @@
       "defaultValue": 0.65,
       "description": {
 		"en": "Gets or sets the position at which to stop rendering the major tickmarks as a value from 0 to 1, measured from the front/bottom of the linear gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.",
-		"jp": "Gets or sets the position at which to stop rendering the major tickmarks as a value from 0 to 1, measured from the front/bottom of the linear gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge."
+		"jp": "リニア ゲージの前/下から計測される、0 から 1 の値で主目盛の描画を停止する位置を取得または設定します。<br>0.5 から 1 の間の値を使用し、リニア ゲージの標準サイズを超えて拡張できます。"
 	}
     },
     "ticksPostInitial": {
@@ -651,7 +651,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "A value to start adding tickmarks, added to the scale's MinimumValue.",
-		"jp": "A value to start adding tickmarks, added to the scale's MinimumValue."
+		"jp": "スケールの MinimumValue に追加された、メモリの追加を開始する値。"
 	}
     },
     "ticksPreTerminal": {
@@ -659,7 +659,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "A value to stop adding tickmarks, subtracted from the scale's MaximumValue.",
-		"jp": "A value to stop adding tickmarks, subtracted from the scale's MaximumValue."
+		"jp": "スケールの MinimumValue から差し引かれた、メモリの追加を停止する値。"
 	}
     },
     "tickStartExtent": {
@@ -667,7 +667,7 @@
       "defaultValue": 0.05,
       "description": {
 		"en": "Gets or sets the position at which to start rendering the major tickmarks as a value from 0 to 1, measured from the front/bottom of the linear gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge.",
-		"jp": "Gets or sets the position at which to start rendering the major tickmarks as a value from 0 to 1, measured from the front/bottom of the linear gauge.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the linear gauge."
+		"jp": "リニア ゲージの前/下から計測される、0 から 1 の値で主目盛の描画を開始する位置を取得または設定します。<br>0.5 から 1 の間の値を使用し、リニア ゲージの標準サイズを超えて拡張できます。"
 	}
     },
     "tickStrokeThickness": {
@@ -675,7 +675,7 @@
       "defaultValue": 2.0,
       "description": {
 		"en": "Gets or sets the stroke thickness to use when rendering ticks.",
-		"jp": "Gets or sets the stroke thickness to use when rendering ticks."
+		"jp": "メモリを描画する際に使用するストロークの太さを取得または設定します。"
 	}
     },
     "transitionDuration": {
@@ -683,7 +683,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets the number of milliseconds over which changes to the linear gauge should be animated.",
-		"jp": "Gets or sets the number of milliseconds over which changes to the linear gauge should be animated."
+		"jp": "リニア ゲージがアニメーション化する変更をミリ秒数を取得または設定します。"
 	}
     },
     "value": {
@@ -691,7 +691,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets the value at which the needle is positioned.",
-		"jp": "Gets or sets the value at which the needle is positioned."
+		"jp": "針が配置する値を取得または設定します。"
 	}
     }
   }

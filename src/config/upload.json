@@ -1,4 +1,4 @@
-{
+﻿{
   "overview": null,
   "name": "ui.igUpload",
   "category": null,
@@ -20,7 +20,7 @@
       ],
       "description": {
 		"en": "Defines the name of the cancel all button event click. Fired when cancel all button in summary is clicked. Fired only in multiple upload mode. <br>            Function takes argument evt",
-		"jp": "Defines the name of the cancel all button event click. Fired when cancel all button in summary is clicked. Fired only in multiple upload mode. <br>            Function takes argument evt"
+		"jp": "すべてをキャンセル ボタン クリック イベントの名前を定義します。サマリーですべてをキャンセルするボタンがクリックされたときに発生します。複数アップロード モードでのみ発生します。<br>            関数は引数 evt を取得します。"
 	}
     },
     "fileSelected": {
@@ -39,7 +39,7 @@
       ],
       "description": {
 		"en": "Defines the name of the file upload selected event. Fired when file is selected from browse dialog. <br>            Return false in order to cancel uploading file.<br>            Function takes arguments evt and ui.<br>            Use ui.fileId to get unique identifier of the file<br>            Use ui.filePath to get the name of the uploaded file",
-		"jp": "Defines the name of the file upload selected event. Fired when file is selected from browse dialog. <br>            Return false in order to cancel uploading file.<br>            Function takes arguments evt and ui.<br>            Use ui.fileId to get unique identifier of the file<br>            Use ui.filePath to get the name of the uploaded file"
+		"jp": "ファイル アップロード選択イベントの名前を定義します。ブラウザのダイアログからファイルを選択したときに発生します。<br>            ファイルのアップロードをキャンセルするには、false を返します。<br>            関数は引数 evt および ui を取得します。<br>            ファイルの一意識別子を取得するには ui.fileId を使用します。<br>            アップロードされたファイルの名前を取得するには ui.filePath を使用します。"
 	}
     },
     "fileSelecting": {
@@ -58,7 +58,7 @@
       ],
       "description": {
 		"en": "Defines the name of the file upload selecting event. Fired when browse button is pressed. <br>            Return false in order to cancel selecting file.<br>            Function takes argument evt.",
-		"jp": "Defines the name of the file upload selecting event. Fired when browse button is pressed. <br>            Return false in order to cancel selecting file.<br>            Function takes argument evt."
+		"jp": "ファイル アップロード選択中イベントの名前を定義します。参照ボタンが押されたときに発生します。<br>            ファイルの選択をキャンセルするには、false を返します。<br>            関数は引数 evt を取得します。"
 	}
     },
     "fileUploadAborted": {
@@ -77,7 +77,7 @@
       ],
       "description": {
 		"en": "Defines the name of the file upload cancel event. Fired when the server responses that the file is canceled.<br>            Function takes arguments evt and ui.<br>            Use ui.fileId to get unique identifier of the file<br>            Use ui.filePath to get the name of the uploaded file<br>            Use ui.totalSize to get the file size of the uploaded file<br>            Use ui.uploadedBytes to get uploaded bytes<br>            Use ui.fileStatus to get current file status",
-		"jp": "Defines the name of the file upload cancel event. Fired when the server responses that the file is canceled.<br>            Function takes arguments evt and ui.<br>            Use ui.fileId to get unique identifier of the file<br>            Use ui.filePath to get the name of the uploaded file<br>            Use ui.totalSize to get the file size of the uploaded file<br>            Use ui.uploadedBytes to get uploaded bytes<br>            Use ui.fileStatus to get current file status"
+		"jp": "ファイル アップロード キャンセル イベントの名前を定義します。ファイルがキャンセルされたというサーバー応答があったときに発生します。<br>            関数は引数 evt および ui を取得します。<br>            ファイルの一意識別子を取得するには ui.fileId を使用します。<br>            アップロードされたファイルの名前を取得するには ui.filePath を使用します。<br>            アップロードされたファイルのファイル サイズを取得するには ui.totalSize を使用します。<br>            アップロードされたバイトを取得するには ui.uploadedBytes を使用します。<br>            現在のファイル状態を取得するには ui.fileStatus を使用します。"
 	}
     },
     "fileUploaded": {
@@ -96,7 +96,7 @@
       ],
       "description": {
 		"en": "Defines the name of the uploaded event. Fired when the file is uploaded <br>            Function takes arguments evt and ui.<br>            Use ui.fileId to get unique identifier of the file<br>            Use ui.filePath to get the name of the uploaded file<br>            Use ui.totalSize to get the file size of the uploaded file",
-		"jp": "Defines the name of the uploaded event. Fired when the file is uploaded <br>            Function takes arguments evt and ui.<br>            Use ui.fileId to get unique identifier of the file<br>            Use ui.filePath to get the name of the uploaded file<br>            Use ui.totalSize to get the file size of the uploaded file"
+		"jp": "アップロード イベントの名前を定義します。ファイルをアップロードするときに発生します。<br>            関数は引数 evt および ui を取得します。<br>            ファイルの一意識別子を取得するには ui.fileId を使用します。<br>            アップロードされたファイルの名前を取得するには ui.filePath を使用します。<br>            アップロードされたファイルのファイル サイズを取得するには ui.totalSize を使用します。"
 	}
     },
     "fileUploading": {
@@ -115,7 +115,7 @@
       ],
       "description": {
 		"en": "Defines the name of the file uploading event. Fired every time when fileuploader get status for the upload. <br>            Return false in order to cancel uploading file.<br>            Function takes arguments evt and ui.<br>            Use ui.fileId to get unique identifier of the file<br>            Use ui.filePath to get the name of the uploaded file<br>            Use ui.totalSize to get the file size of the uploaded file<br>            Use ui.uploadedBytes to get uploaded bytes<br>            Use ui.fileStatus to get current file status",
-		"jp": "Defines the name of the file uploading event. Fired every time when fileuploader get status for the upload. <br>            Return false in order to cancel uploading file.<br>            Function takes arguments evt and ui.<br>            Use ui.fileId to get unique identifier of the file<br>            Use ui.filePath to get the name of the uploaded file<br>            Use ui.totalSize to get the file size of the uploaded file<br>            Use ui.uploadedBytes to get uploaded bytes<br>            Use ui.fileStatus to get current file status"
+		"jp": "ファイル アップロード中イベントの名前を定義します。ファイル アップローダーがアップロードの状態を取得するたびに発生します。<br>            ファイルのアップロードをキャンセルするには、false を返します。<br>            関数は引数 evt および ui を取得します。<br>            ファイルの一意識別子を取得するには ui.fileId を使用します。<br>            アップロードされたファイルの名前を取得するには ui.filePath を使用します。<br>            アップロードされたファイルのファイル サイズを取得するには ui.totalSize を使用します。<br>            アップロードされたバイトを取得するには ui.uploadedBytes を使用します。<br>            現在のファイル状態を取得するには ui.fileStatus を使用します。"
 	}
     },
     "onError": {
@@ -134,7 +134,7 @@
       ],
       "description": {
 		"en": "Defines the name of the file upload error event. Fired when error is occurred. <br>            Function takes arguments evt and ui.<br>            Use ui.errorCode to get current errorCode<br>            Use ui.errorMessage to get detailed error description<br>            Use ui.errorType to get error type - it could be clientside or serverside<br>            Use ui.serverMessage to get specific server message returned by server - if errorType is serverside",
-		"jp": "Defines the name of the file upload error event. Fired when error is occurred. <br>            Function takes arguments evt and ui.<br>            Use ui.errorCode to get current errorCode<br>            Use ui.errorMessage to get detailed error description<br>            Use ui.errorType to get error type - it could be clientside or serverside<br>            Use ui.serverMessage to get specific server message returned by server - if errorType is serverside"
+		"jp": "ファイル アップロード エラー イベントの名前を定義します。エラーが発生したときに発生します。<br>        関数は引数 evt および ui を取得します。<br>            現在の errorCode を取得するには ui.errorCode を使用します。<br>            詳細なエラー説明を取得するには ui.errorMessage を使用します。<br>            clientside または serverside のエラー タイプを取得するには ui.errorType を使用します。<br>            errorType が serverside の場合、サーバーから返された特定のサーバー メッセージを取得するには ui.serverMessage を使用します。"
 	}
     }
   },
@@ -144,7 +144,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Get or set file allowed file extensions. When this array is empty - it is not made such validation. Example [\"gif\", \"jpg\", \"bmp\"].",
-		"jp": "Get or set file allowed file extensions. When this array is empty - it is not made such validation. Example [\"gif\", \"jpg\", \"bmp\"]."
+		"jp": "ファイルに許されるファイル拡張子を取得または設定します。この配列が空の場合、この検証は実行されません。たとえば、[\"gif\", \"jpg\", \"bmp\"]。"
 	},
       "arrayMemberType": "string",
             "schema": {
@@ -155,7 +155,7 @@
 			  "processValueOnly" : true,
 			  "description": {
 		"en": "File extension. In exapmple: gif",
-		"jp": "File extension. In exapmple: gif"
+		"jp": "ファイルの拡張子。たとえば、gif。"
 	}
 			}
 		},
@@ -166,7 +166,7 @@
       "defaultValue": false,
       "description": {
 		"en": "Get or set whether the file start upload automatically when it is selected. Default is false.",
-		"jp": "Get or set whether the file start upload automatically when it is selected. Default is false."
+		"jp": "選択したときに自動的にファイルのアップロードを開始するかどうかを取得または設定します。デフォルトは False です。"
 	}
     },
     "css": {
@@ -174,7 +174,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Get or set control specific CSS options. For example you can override specific control classes with custom ones.",
-		"jp": "Get or set control specific CSS options. For example you can override specific control classes with custom ones."
+		"jp": "コントロール固有の CSS オプションを取得または設定します。たとえば、特定のコントロール クラスをカスタムのものでオーバーライドできます。"
 	}
     },
     "errorMessageAJAXRequestFileSize": {
@@ -182,7 +182,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Get or set error message when AJAX Request to get file size throws error.",
-		"jp": "Get or set error message when AJAX Request to get file size throws error."
+		"jp": "ファイルサイズを取得する AJAX リクエストでエラーがスローされたときのエラー メッセージを取得または設定します。"
 	}
     },
     "errorMessageCancelUpload": {
@@ -190,7 +190,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Get or set error message when ajax call to send cancel upload command.",
-		"jp": "Get or set error message when ajax call to send cancel upload command."
+		"jp": "アップロードをキャンセルするコマンドを送信する AJAX 呼び出しでのエラー メッセージを取得または設定します。"
 	}
     },
     "errorMessageGetFileStatus": {
@@ -198,7 +198,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Get or set error message when ajax call to get file status throws error.",
-		"jp": "Get or set error message when ajax call to get file status throws error."
+		"jp": "ファイル状態を取得する AJAX 呼び出しでエラーが発生したときに表示されるエラー メッセージを取得または設定します。"
 	}
     },
     "errorMessageMaxFileSizeExceeded": {
@@ -206,7 +206,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Get or set message shown when max file size of the uploaded file exceeds the limit.",
-		"jp": "Get or set message shown when max file size of the uploaded file exceeds the limit."
+		"jp": "アップロードするファイルの最大ファイル サイズが上限を超えたときに表示されるメッセージを取得または設定します。"
 	}
     },
     "errorMessageMaxSimultaneousFiles": {
@@ -214,7 +214,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Get or set error message when maximum simultaneous files is less or equal to 0.",
-		"jp": "Get or set error message when maximum simultaneous files is less or equal to 0."
+		"jp": "同時ファイル アップロードの最大数を 0 以下に設定したときに表示されるエラー メッセージを取得または設定します。"
 	}
     },
     "errorMessageMaxUploadedFiles": {
@@ -222,7 +222,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Get or set error message when maximum allowed files exceeded.",
-		"jp": "Get or set error message when maximum allowed files exceeded."
+		"jp": "ファイルの最大数を越えたときに表示されるエラー メッセージを取得または設定します。"
 	}
     },
     "errorMessageNoSuchFile": {
@@ -230,7 +230,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Get or set error message when file is not found.",
-		"jp": "Get or set error message when file is not found."
+		"jp": "ファイルが見つからないときに表示されるエラー メッセージを取得または設定します。"
 	}
     },
     "errorMessageOther": {
@@ -238,7 +238,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Get or set error message different from the other messages.",
-		"jp": "Get or set error message different from the other messages."
+		"jp": "他のメッセージと異なるエラー メッセージを取得または設定します。"
 	}
     },
     "errorMessageTryToRemoveNonExistingFile": {
@@ -246,7 +246,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Get or set error message when trying to remove non existing file.",
-		"jp": "Get or set error message when trying to remove non existing file."
+		"jp": "存在しないファイルを削除しようとしたときに表示されるエラー メッセージを取得または設定します。"
 	}
     },
     "errorMessageTryToStartNonExistingFile": {
@@ -254,7 +254,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Get or set error message when trying to start non existing file.",
-		"jp": "Get or set error message when trying to start non existing file."
+		"jp": "存在しないファイルを開始しようとしたときに表示されるエラー メッセージを取得または設定します。"
 	}
     },
     "errorMessageValidatingFileExtension": {
@@ -262,7 +262,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Get or set error message when file extension validation failed.",
-		"jp": "Get or set error message when file extension validation failed."
+		"jp": "ファイル拡張子の検証に失敗したときに表示されるエラー メッセージを取得または設定します。"
 	}
     },
     "fileSizeDecimalDisplay": {
@@ -270,7 +270,7 @@
       "defaultValue": 2.0,
       "description": {
 		"en": "The number of digits after the decimal point.",
-		"jp": "The number of digits after the decimal point."
+		"jp": "小数点の後の桁数。"
 	}
     },
     "fileSizeMetric": {
@@ -278,7 +278,7 @@
       "defaultValue": "auto",
       "description": {
 		"en": " Get or set file size metrics how to be shown files size.",
-		"jp": " Get or set file size metrics how to be shown files size."
+		"jp": " ファイル サイズを表示するためのファイル サイズ メトリックスを取得または設定します。"
 	},
       "valueOptions": [
         {
@@ -286,7 +286,7 @@
           "type": "string",
           "description": {
 		"en": "Displays size according to the size of the uploaded file.",
-		"jp": "Displays size according to the size of the uploaded file."
+		"jp": "アップロードしたファイルのサイズを表示します。"
 	}
         },
         {
@@ -294,7 +294,7 @@
           "type": "string",
           "description": {
 		"en": "Displays file size in bytes.",
-		"jp": "Displays file size in bytes."
+		"jp": "byte 単位でファイル サイズを表示します。"
 	}
         },
         {
@@ -302,7 +302,7 @@
           "type": "string",
           "description": {
 		"en": "Displays file size in kbytes.",
-		"jp": "Displays file size in kbytes."
+		"jp": "kilobyte 単位でファイル サイズを表示します。"
 	}
         },
         {
@@ -310,7 +310,7 @@
           "type": "string",
           "description": {
 		"en": "Displays file size in mbytes.",
-		"jp": "Displays file size in mbytes."
+		"jp": "megabyte 単位でファイル サイズを表示します。"
 	}
         },
         {
@@ -318,7 +318,7 @@
           "type": "string",
           "description": {
 		"en": "Displays file size in gbytes.",
-		"jp": "Displays file size in gbytes."
+		"jp": "gigabyte 単位でファイル サイズを表示します。"
 	}
         }
       ]
@@ -328,7 +328,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Get or set height of the main container of the file upload control. Main container contains all buttons, progressbar, etc.",
-		"jp": "Get or set height of the main container of the file upload control. Main container contains all buttons, progressbar, etc."
+		"jp": "ファイル アップロード コントロールのメイン コンテナーの高さを取得または設定します。メイン コンテナーはすべてのボタン、プログレス バーなどを含みます。"
 	}
     },
     "labelAddButton": {
@@ -336,7 +336,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Get or set label for browse button in main container.",
-		"jp": "Get or set label for browse button in main container."
+		"jp": "メイン コンテナーの参照ボタンのラベルを取得または設定します。"
 	}
     },
     "labelClearAllButton": {
@@ -344,7 +344,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Get or set label for summary Clear all button. It will be shown only in multiple upload mode.",
-		"jp": "Get or set label for summary Clear all button. It will be shown only in multiple upload mode."
+		"jp": "サマリーのすべてをクリアするボタンのラベルを取得または設定します。複数アップロード モードのときのみ表示されます。"
 	}
     },
     "labelHideDetails": {
@@ -352,7 +352,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Get or set label for show/hide details button when main container is shown.",
-		"jp": "Get or set label for show/hide details button when main container is shown."
+		"jp": "メイン コンテナーが表示されるときの詳細の表示/非表示ボタンのラベルを取得または設定します。"
 	}
     },
     "labelProgressBarFileNameContinue": {
@@ -360,7 +360,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Get or set filename when it could not be shown the whole file name and should be shorten.",
-		"jp": "Get or set filename when it could not be shown the whole file name and should be shorten."
+		"jp": "ファイル名全体を表示できないため短縮する必要があるときのファイル名を取得または設定します。"
 	}
     },
     "labelShowDetails": {
@@ -368,7 +368,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Get or set label for show/hide details button when main container is hidden.",
-		"jp": "Get or set label for show/hide details button when main container is hidden."
+		"jp": "メイン コンテナーが非表示のときの詳細の表示/非表示ボタンのラベルを取得または設定します。"
 	}
     },
     "labelSummaryProgressBarTemplate": {
@@ -376,7 +376,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Get or set template for showing uploading information in summary progress bar. It will be shown only in multiple upload mode. {0} uploaded filesize. {1} - total file size.",
-		"jp": "Get or set template for showing uploading information in summary progress bar. It will be shown only in multiple upload mode. {0} uploaded filesize. {1} - total file size."
+		"jp": "サマリー プログレス バーでアップロード情報を表示するテンプレートを取得または設定します。複数アップロード モードのときのみ表示されます。{0} はアップロード済みのファイル サイズです。{1} - は合計ファイル サイズです。"
 	}
     },
     "labelSummaryProgressButtonCancel": {
@@ -384,7 +384,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Get or set label for button cancelling all files. Shown only in multiple upload mode.",
-		"jp": "Get or set label for button cancelling all files. Shown only in multiple upload mode."
+		"jp": "すべてのファイルをキャンセルするボタンのラベルを取得または設定します。複数アップロード モードでのみ表示されます。"
 	}
     },
     "labelSummaryProgressButtonContinue": {
@@ -392,7 +392,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Get or set label for start upload batch files. Shown only in multiple upload mode and autostartupload is false.",
-		"jp": "Get or set label for start upload batch files. Shown only in multiple upload mode and autostartupload is false."
+		"jp": "複数ファイルのアップロードを開始するラベルを取得または設定します。複数アップロード モードでのみ表示され、autostartupload は False です。"
 	}
     },
     "labelSummaryProgressButtonDone": {
@@ -400,7 +400,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Get or set label when upload is finished. Shown only in multiple upload mode.",
-		"jp": "Get or set label when upload is finished. Shown only in multiple upload mode."
+		"jp": "アップロードが完了するときのラベルを取得または設定します。複数アップロード モードでのみ表示されます。"
 	}
     },
     "labelSummaryTemplate": {
@@ -408,7 +408,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Get or set template for showing summary template. {0} is count of uploaded files. {1} is total count of file to be uploaded.",
-		"jp": "Get or set template for showing summary template. {0} is count of uploaded files. {1} is total count of file to be uploaded."
+		"jp": "サマリー テンプレートを表示するテンプレートを取得または設定します。{0} は、アップロード済みファイルの数です。{1} は、アップロードするファイルの合計数です。"
 	}
     },
     "labelUploadButton": {
@@ -416,7 +416,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Get or set label for the first shown browse button. When file is selected for the first time this button is hidden.",
-		"jp": "Get or set label for the first shown browse button. When file is selected for the first time this button is hidden."
+		"jp": "最初に表示される参照ボタンのラベルを取得または設定します。ファイルが初めて選択されると、このボタンは非表示になります。"
 	}
     },
     "maxSimultaneousFilesUploads": {
@@ -424,7 +424,7 @@
       "defaultValue": 1.0,
       "description": {
 		"en": "Get or set count of files that could be uploaded at the same time.",
-		"jp": "Get or set count of files that could be uploaded at the same time."
+		"jp": "一度にアップロード可能なファイル数を取得または設定します。"
 	}
     },
     "maxUploadedFiles": {
@@ -432,7 +432,7 @@
       "defaultValue": -1.0,
       "description": {
 		"en": "Get or set the maximum number of allowed files to upload.",
-		"jp": "Get or set the maximum number of allowed files to upload."
+		"jp": "アップロード可能な最大ファイル数を取得または設定します。"
 	}
     },
     "mode": {
@@ -440,7 +440,7 @@
       "defaultValue": "single",
       "description": {
 		"en": " Get or set multiple or single file upload.",
-		"jp": " Get or set multiple or single file upload."
+		"jp": " 複数ファイルのアップロードか 1 つのファイルのアップロードかを取得または設定します。"
 	},
       "valueOptions": [
         {
@@ -448,7 +448,7 @@
           "type": "string",
           "description": {
 		"en": "In single upload it is possible to upload only one file at the same time.",
-		"jp": "In single upload it is possible to upload only one file at the same time."
+		"jp": "1 つのファイルのアップロードの場合、一度にファイルを 1 つだけアップロードできます。"
 	}
         },
         {
@@ -456,7 +456,7 @@
           "type": "string",
           "description": {
 		"en": "In multiple upload it is possible to upload more than one file at the same time.",
-		"jp": "In multiple upload it is possible to upload more than one file at the same time."
+		"jp": "複数のファイルのアップロードの場合、一度にファイルを 1 つ以上アップロードできます。"
 	}
         }
       ]
@@ -466,7 +466,7 @@
       "defaultValue": false,
       "description": {
 		"en": "Get or set a bool setting that allows user to select(for upload) more than 1 file from the browse dialog at once. HTML 5+ - it is supported by Chrome, MOzilla FF, Safar, Opera latest versions and IE10+",
-		"jp": "Get or set a bool setting that allows user to select(for upload) more than 1 file from the browse dialog at once. HTML 5+ - it is supported by Chrome, MOzilla FF, Safar, Opera latest versions and IE10+"
+		"jp": "ユーザーが参照ダイアログから同時に複数の (アップロード対象の) ファイルを選択できるようにするブール値設定を取得または設定します。HTML 5+。これは、Chrome、Mozilla FF、Safari、Opera の最新バージョンおよび IE10+ でサポートされています。"
 	}
     },
     "progressUrl": {
@@ -474,7 +474,7 @@
       "defaultValue": "IGUploadStatusHandler.ashx",
       "description": {
 		"en": "Get or set URL of HTTPHandler to get information about file upload, current size and also to get commands",
-		"jp": "Get or set URL of HTTPHandler to get information about file upload, current size and also to get commands"
+		"jp": "ファイル アップロードの情報、現在のサイズ、およびコマンドを取得するために HTTPHandler の URL を取得または設定します。"
 	}
     },
     "showFileExtensionIcon": {
@@ -482,7 +482,7 @@
       "defaultValue": true,
       "description": {
 		"en": "Get or set whether to show File Extension icon",
-		"jp": "Get or set whether to show File Extension icon"
+		"jp": "ファイル拡張子アイコンを表示するかどうかを取得または設定します。"
 	}
     },
     "uploadUrl": {
@@ -490,7 +490,7 @@
       "defaultValue": "ig_fua34sf345sdf13sdf3454erdsf2345asd3425df5235d54df345.aspx",
       "description": {
 		"en": "Get or set URL for uploading.",
-		"jp": "Get or set URL for uploading."
+		"jp": "アップロード用の URL を取得または設定します。"
 	}
     },
     "width": {
@@ -498,7 +498,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Get or set width of the main container of the file upload control. Main container contains all buttons, progressbar, etc.",
-		"jp": "Get or set width of the main container of the file upload control. Main container contains all buttons, progressbar, etc."
+		"jp": "ファイル アップロード コントロールのメイン コンテナーの幅を取得または設定します。メイン コンテナーはすべてのボタン、プログレス バーなどを含みます。"
 	}
     }
   }

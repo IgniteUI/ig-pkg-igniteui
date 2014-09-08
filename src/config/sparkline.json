@@ -1,4 +1,4 @@
-{
+﻿{
   "overview": null,
   "name": "ui.igSparkline",
   "category": null,
@@ -20,7 +20,7 @@
       ],
       "description": {
 		"en": "Event which is raised before data binding.<br>    Function takes first argument null and second argument ui.<br>    Use ui.owner to obtain reference to igSparkline.<br>    Use ui.dataSource to obtain reference to instance of $.ig.DataSource.",
-		"jp": "Event which is raised before data binding.<br>    Function takes first argument null and second argument ui.<br>    Use ui.owner to obtain reference to igSparkline.<br>    Use ui.dataSource to obtain reference to instance of $.ig.DataSource."
+		"jp": "データ バインド前に発生するイベント。<br>    関数は最初の引数に null を、2 番目の引数に ui を取得します。<br>    ui.owner を使用して igSparkline への参照を取得します。<br>    $.ig.DataSource のインスタンスへの参照を取得するために ui.dataSource を使用します。"
 	}
     },
     "dataBound": {
@@ -39,7 +39,7 @@
       ],
       "description": {
 		"en": "Event which is raised after data binding.<br>    Function takes first argument null and second argument ui.<br>    Use ui.owner to obtain reference to igSparkline.<br>    Use ui.data to obtain reference to array actual data which is displayed by chart.<br>    Use ui.dataSource to obtain reference to instance of $.ig.DataSource.",
-		"jp": "Event which is raised after data binding.<br>    Function takes first argument null and second argument ui.<br>    Use ui.owner to obtain reference to igSparkline.<br>    Use ui.data to obtain reference to array actual data which is displayed by chart.<br>    Use ui.dataSource to obtain reference to instance of $.ig.DataSource."
+		"jp": "データ バインド後に発生するイベント。<br>    関数は最初の引数に null を、2 番目の引数に ui を取得します。<br>    ui.owner を使用して igSparkline への参照を取得します。<br>    チャートで表示される実際のデータを配列するために参照を取得します。<br>    $.ig.DataSource のインスタンスへの参照を取得するために ui.dataSource を使用します。"
 	}
     }
   },
@@ -49,7 +49,7 @@
       "defaultValue": null,
       "description": {
 		"en": "The width of the chart. It can be set as a number in pixels, string (px) or percentage (%).",
-		"jp": "The width of the chart. It can be set as a number in pixels, string (px) or percentage (%)."
+		"jp": "チャートの幅。ピクセル、文字列 (px)、またはパーセンテージ (%) で数字として設定できます。"
 	}
     },
 	"height": {
@@ -57,7 +57,7 @@
       "defaultValue": null,
       "description": {
 		"en": "The height of the chart. It can be set as a number in pixels, string (px) or percentage (%).",
-		"jp": "The height of the chart. It can be set as a number in pixels, string (px) or percentage (%)."
+		"jp": "チャートの高さ。ピクセル、文字列 (px)、またはパーセンテージ (%) で数字として設定できます。"
 	}
     },
     "brush": {
@@ -65,7 +65,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the sparkline brush.",
-		"jp": "Gets or sets the sparkline brush."
+		"jp": "スパークライン ブラシを取得または設定します。"
 	}
     },
     "dataSource": {
@@ -73,7 +73,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself.",
-		"jp": "Can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself."
+		"jp": "$.ig.DataSource が受け入れる有効なデータ ソースまたは $.ig.DataSource 自体のインスタンスが可能です。"
 	}
     },
     "displayNormalRangeInFront": {
@@ -81,7 +81,7 @@
       "defaultValue": false,
       "description": {
 		"en": "Gets or sets the position of the normal range on the sparkline.",
-		"jp": "Gets or sets the position of the normal range on the sparkline."
+		"jp": "スパークラインの標準範囲の位置を取得または設定します。"
 	}
     },
     "displayType": {
@@ -89,7 +89,7 @@
       "defaultValue": "line",
       "description": {
 		"en": "Gets or sets the display type of the sparkline.",
-		"jp": "Gets or sets the display type of the sparkline."
+		"jp": "スパークラインの表示タイプを取得または設定します。"
 	},
       "valueOptions": [
         {
@@ -97,7 +97,7 @@
           "type": "string",
           "description": {
 		"en": "Display the sparkline as a line.",
-		"jp": "Display the sparkline as a line."
+		"jp": "スパークラインを線として表示します。"
 	}
         },
         {
@@ -105,7 +105,7 @@
           "type": "string",
           "description": {
 		"en": "Display the sparkline as a filled polygon.",
-		"jp": "Display the sparkline as a filled polygon."
+		"jp": "スパークラインを塗りつぶされた多角形として表示します。"
 	}
         },
         {
@@ -113,7 +113,7 @@
           "type": "string",
           "description": {
 		"en": "Display the sparkline as a set of columns.",
-		"jp": "Display the sparkline as a set of columns."
+		"jp": "スパークラインをワンセットの柱状チャートとして表示します。"
 	}
         },
         {
@@ -121,7 +121,7 @@
           "type": "string",
           "description": {
 		"en": "Display the sparkline as a set of columns on a boolean scale.",
-		"jp": "Display the sparkline as a set of columns on a boolean scale."
+		"jp": "スパークラインをワンセットの柱状チャートとしてブール値単位で表示します。"
 	}
         }
       ]
@@ -131,7 +131,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the first marker brush of the sparkline.",
-		"jp": "Gets or sets the first marker brush of the sparkline."
+		"jp": "スパークラインの始値マーカー ブラシを取得または設定します。"
 	}
     },
     "firstMarkerSize": {
@@ -139,7 +139,7 @@
       "defaultValue": -1.0,
       "description": {
 		"en": "Gets or sets the first marker size of the sparkline.",
-		"jp": "Gets or sets the first marker size of the sparkline."
+		"jp": "スパークラインの始値マーカーのサイズを取得または設定します。"
 	}
     },
     "firstMarkerVisibility": {
@@ -147,7 +147,7 @@
       "defaultValue": "collapsed",
       "description": {
 		"en": "Gets or sets the first marker visibility of the sparkline.",
-		"jp": "Gets or sets the first marker visibility of the sparkline."
+		"jp": "スパークラインの始値マーカーの表示状態を取得または設定します。"
 	},
       "valueOptions": [
         {
@@ -155,7 +155,7 @@
           "type": "string",
           "description": {
 		"en": "Visualize the first igSparkline marker",
-		"jp": "Visualize the first igSparkline marker"
+		"jp": "最初の igSparkline マーカーを表示します"
 	}
         },
         {
@@ -163,7 +163,7 @@
           "type": "string",
           "description": {
 		"en": "Collapse the first igSparkline marker",
-		"jp": "Collapse the first igSparkline marker"
+		"jp": "最初の igSparkline マーカーを縮小します"
 	}
         }
       ]
@@ -173,7 +173,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Sets or gets a function which takes an object that produces a formatted label for displaying in the chart.",
-		"jp": "Sets or gets a function which takes an object that produces a formatted label for displaying in the chart."
+		"jp": "オブジェクトを取得して、チャートの表示のために書式設定されるラベルを作成する関数を取得または設定します。"
 	}
     },
     "highMarkerBrush": {
@@ -181,7 +181,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the high marker brush of the sparkline.",
-		"jp": "Gets or sets the high marker brush of the sparkline."
+		"jp": "スパークラインの最大値マーカー ブラシを取得または設定します。"
 	}
     },
     "highMarkerSize": {
@@ -189,7 +189,7 @@
       "defaultValue": -1.0,
       "description": {
 		"en": "Gets or sets the high marker size of the sparkline.",
-		"jp": "Gets or sets the high marker size of the sparkline."
+		"jp": "スパークラインの最大値マーカーのサイズを取得または設定します。"
 	}
     },
     "highMarkerVisibility": {
@@ -197,7 +197,7 @@
       "defaultValue": "collapsed",
       "description": {
 		"en": " Gets or sets the high marker visibility of the sparkline.",
-		"jp": " Gets or sets the high marker visibility of the sparkline."
+		"jp": " スパークラインの最大値マーカーの表示状態を取得または設定します。"
 	},
       "valueOptions": [
         {
@@ -205,7 +205,7 @@
           "type": "string",
           "description": {
 		"en": "Visualize the high igSparkline marker",
-		"jp": "Visualize the high igSparkline marker"
+		"jp": "高値の igSparkline マーカーを表示します"
 	}
         },
         {
@@ -213,7 +213,7 @@
           "type": "string",
           "description": {
 		"en": "Collapse the high igSparkline marker",
-		"jp": "Collapse the high igSparkline marker"
+		"jp": "高値の igSparkline マーカーを縮小します"
 	}
         }
       ]
@@ -223,7 +223,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the horizontal axis line brush of the sparkline.",
-		"jp": "Gets or sets the horizontal axis line brush of the sparkline."
+		"jp": "スパークラインの横軸線ブラシを取得または設定します。"
 	}
     },
     "horizontalAxisLabel": {
@@ -231,7 +231,7 @@
       "defaultValue": null,
       "description": {
 		"en": "The value or content to display on the horizontal axis.<br> This can be set to a formatted string, such as \"{0}\", or it can be set to a DataTemplate.",
-		"jp": "The value or content to display on the horizontal axis.<br> This can be set to a formatted string, such as \"{0}\", or it can be set to a DataTemplate."
+		"jp": "横軸で表示する値またはコンテンツ。<br>「{0}」などの書式付き文字列または DataTemplate に設定できます。"
 	}
     },
     "horizontalAxisVisibility": {
@@ -239,7 +239,7 @@
       "defaultValue": "collapsed",
       "description": {
 		"en": "Gets or sets the display state of the horizontal axis.",
-		"jp": "Gets or sets the display state of the horizontal axis."
+		"jp": "水平軸の表示状態を取得または設定します。"
 	},
       "valueOptions": [
         {
@@ -247,7 +247,7 @@
           "type": "string",
           "description": {
 		"en": "Visualize the igSparkline horizontal axis",
-		"jp": "Visualize the igSparkline horizontal axis"
+		"jp": "igSparkline の横軸を表示します"
 	}
         },
         {
@@ -255,7 +255,7 @@
           "type": "string",
           "description": {
 		"en": "Collapse the igSparkline horizontal axis",
-		"jp": "Collapse the igSparkline horizontal axis"
+		"jp": "igSparkline の横軸を縮小します"
 	}
         }
       ]
@@ -265,7 +265,7 @@
       "defaultValue": null,
       "description": {
 		"en": "String identifier of a column or property name to get labels from on each item in the data source.  These labels will be retrieved from the first and last item, and displayed by the horizontal axis.",
-		"jp": "String identifier of a column or property name to get labels from on each item in the data source.  These labels will be retrieved from the first and last item, and displayed by the horizontal axis."
+		"jp": "データ ソースの各項目からラベルを取得するための列またはプロパティ名の文字列識別子。これらのラベルは最初の項目と最後の項目から取得され、水平軸によって表示されます。"
 	}
     },
     "lastMarkerBrush": {
@@ -273,7 +273,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the last marker brush of the sparkline.",
-		"jp": "Gets or sets the last marker brush of the sparkline."
+		"jp": "スパークラインの終値マーカー ブラシを取得または設定します。"
 	}
     },
     "lastMarkerSize": {
@@ -281,7 +281,7 @@
       "defaultValue": -1.0,
       "description": {
 		"en": "Gets or sets the last marker size of the sparkline.",
-		"jp": "Gets or sets the last marker size of the sparkline."
+		"jp": "スパークラインの終値マーカーのサイズを取得または設定します。"
 	}
     },
     "lastMarkerVisibility": {
@@ -289,7 +289,7 @@
       "defaultValue": "collapsed",
       "description": {
 		"en": "Gets or sets the last marker visibility of the sparkline.",
-		"jp": "Gets or sets the last marker visibility of the sparkline."
+		"jp": "スパークラインの終値マーカーの表示状態を取得または設定します。"
 	},
       "valueOptions": [
         {
@@ -297,7 +297,7 @@
           "type": "string",
           "description": {
 		"en": "Visualize the last igSparkline marker",
-		"jp": "Visualize the last igSparkline marker"
+		"jp": "最後の igSparkline マーカーを表示します"
 	}
         },
         {
@@ -305,7 +305,7 @@
           "type": "string",
           "description": {
 		"en": "Collapse the last igSparkline marker",
-		"jp": "Collapse the last igSparkline marker"
+		"jp": "最後の igSparkline マーカーを縮小します"
 	}
         }
       ]
@@ -315,7 +315,7 @@
       "defaultValue": -1.0,
       "description": {
 		"en": "Gets or sets the line thickness of the sparkline.",
-		"jp": "Gets or sets the line thickness of the sparkline."
+		"jp": "スパークラインの線の太さを取得または設定します。"
 	}
     },
     "lowMarkerBrush": {
@@ -323,7 +323,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the low marker brush of the sparkline.",
-		"jp": "Gets or sets the low marker brush of the sparkline."
+		"jp": "スパークラインの最小値マーカー ブラシを取得または設定します。"
 	}
     },
     "lowMarkerSize": {
@@ -331,7 +331,7 @@
       "defaultValue": -1.0,
       "description": {
 		"en": "Gets or sets the low marker size of the sparkline.",
-		"jp": "Gets or sets the low marker size of the sparkline."
+		"jp": "スパークラインの最大値マーカーのサイズを取得または設定します。"
 	}
     },
     "lowMarkerVisibility": {
@@ -339,7 +339,7 @@
       "defaultValue": "collapsed",
       "description": {
 		"en": " Gets or sets the low marker visibility of the sparkline.",
-		"jp": " Gets or sets the low marker visibility of the sparkline."
+		"jp": " スパークラインの最小値マーカーの表示状態を取得または設定します。"
 	},
       "valueOptions": [
         {
@@ -347,7 +347,7 @@
           "type": "string",
           "description": {
 		"en": "Visualize the low igSparkline marker",
-		"jp": "Visualize the low igSparkline marker"
+		"jp": "低値の igSparkline マーカーを表示します"
 	}
         },
         {
@@ -355,7 +355,7 @@
           "type": "string",
           "description": {
 		"en": "Collapse the low igSparkline marker",
-		"jp": "Collapse the low igSparkline marker"
+		"jp": "低値の igSparkline マーカーを縮小します"
 	}
         }
       ]
@@ -365,7 +365,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the marker brush of the sparkline.",
-		"jp": "Gets or sets the marker brush of the sparkline."
+		"jp": "スパークラインのマーカー ブラシを取得または設定します。"
 	}
     },
     "markerSize": {
@@ -373,7 +373,7 @@
       "defaultValue": -1.0,
       "description": {
 		"en": "Gets or sets the marker size of the sparkline.",
-		"jp": "Gets or sets the marker size of the sparkline."
+		"jp": "スパークラインのマーカー サイズを取得または設定します。"
 	}
     },
     "markerVisibility": {
@@ -381,7 +381,7 @@
       "defaultValue": "collapsed",
       "description": {
 		"en": "Gets or sets the marker visibility of the sparkline.",
-		"jp": "Gets or sets the marker visibility of the sparkline."
+		"jp": "スパークラインのマーカーの表示状態を取得または設定します。"
 	},
       "valueOptions": [
         {
@@ -389,7 +389,7 @@
           "type": "string",
           "description": {
 		"en": "Visualize the igSparkline marker",
-		"jp": "Visualize the igSparkline marker"
+		"jp": "igSparkline マーカーを表示します"
 	}
         },
         {
@@ -397,7 +397,7 @@
           "type": "string",
           "description": {
 		"en": "Collapse the low igSparkline marker",
-		"jp": "Collapse the low igSparkline marker"
+		"jp": "低値の igSparkline マーカーを縮小します"
 	}
         }
       ]
@@ -407,7 +407,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the negative brush of the sparkline.",
-		"jp": "Gets or sets the negative brush of the sparkline."
+		"jp": "スパークラインの負値のブラシを取得または設定します。"
 	}
     },
     "negativeMarkerBrush": {
@@ -415,7 +415,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the negative marker brush of the sparkline.",
-		"jp": "Gets or sets the negative marker brush of the sparkline."
+		"jp": "スパークラインの負値マーカー ブラシを取得または設定します。"
 	}
     },
     "negativeMarkerSize": {
@@ -423,7 +423,7 @@
       "defaultValue": -1.0,
       "description": {
 		"en": "Gets or sets the negative marker size of the sparkline.",
-		"jp": "Gets or sets the negative marker size of the sparkline."
+		"jp": "スパークラインの負値マーカーのサイズを取得または設定します。"
 	}
     },
     "negativeMarkerVisibility": {
@@ -431,7 +431,7 @@
       "defaultValue": "collapsed",
       "description": {
 		"en": " Gets or sets the negative marker visibility of the sparkline.",
-		"jp": " Gets or sets the negative marker visibility of the sparkline."
+		"jp": " スパークラインの負値マーカーの表示状態を取得または設定します。"
 	},
       "valueOptions": [
         {
@@ -439,7 +439,7 @@
           "type": "string",
           "description": {
 		"en": "Visualize the negative igSparkline marker",
-		"jp": "Visualize the negative igSparkline marker"
+		"jp": "負の値の igSparkline マーカーを表示します"
 	}
         },
         {
@@ -447,7 +447,7 @@
           "type": "string",
           "description": {
 		"en": "Collapse the negative igSparkline marker",
-		"jp": "Collapse the negative igSparkline marker"
+		"jp": "負の値の igSparkline マーカーを縮小します"
 	}
         }
       ]
@@ -457,7 +457,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the normal range brush of the sparkline.",
-		"jp": "Gets or sets the normal range brush of the sparkline."
+		"jp": "スパークラインの標準範囲ブラシを取得または設定します。"
 	}
     },
     "normalRangeMaximum": {
@@ -465,7 +465,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets the maximum value of the normal range.",
-		"jp": "Gets or sets the maximum value of the normal range."
+		"jp": "標準範囲の最大値を取得または設定します。"
 	}
     },
     "normalRangeMinimum": {
@@ -473,7 +473,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Gets or sets the minimum value of the normal range.",
-		"jp": "Gets or sets the minimum value of the normal range."
+		"jp": "標準範囲の最小値を取得または設定します。"
 	}
     },
     "normalRangeVisibility": {
@@ -481,7 +481,7 @@
       "defaultValue": "collapsed",
       "description": {
 		"en": "Gets or sets the normal range visibility of the sparkline.",
-		"jp": "Gets or sets the normal range visibility of the sparkline."
+		"jp": "スパークラインの標準範囲の表示状態を取得または設定します。"
 	},
       "valueOptions": [
         {
@@ -489,7 +489,7 @@
           "type": "string",
           "description": {
 		"en": "Enable the normal range visibility of the sparkline",
-		"jp": "Enable the normal range visibility of the sparkline"
+		"jp": "スパークラインの標準範囲の表示を有効にします。"
 	}
         },
         {
@@ -497,7 +497,7 @@
           "type": "string",
           "description": {
 		"en": "Disable the normal range visibility of the sparkline",
-		"jp": "Disable the normal range visibility of the sparkline"
+		"jp": "スパークラインの標準範囲の表示を無効にします。"
 	}
         }
       ]
@@ -507,7 +507,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the trendline brush of the sparkline.",
-		"jp": "Gets or sets the trendline brush of the sparkline."
+		"jp": "スパークラインのトレンドライン ブラシを取得または設定します。"
 	}
     },
     "trendLinePeriod": {
@@ -515,7 +515,7 @@
       "defaultValue": 7.0,
       "description": {
 		"en": "Gets or sets the trendline period used by the sparkline.",
-		"jp": "Gets or sets the trendline period used by the sparkline."
+		"jp": "スパークラインで使用するトレンドラインの範囲を取得または設定します。"
 	}
     },
     "trendLineThickness": {
@@ -523,7 +523,7 @@
       "defaultValue": -1.0,
       "description": {
 		"en": "Gets or sets the thickness of the sparkline's trendline.",
-		"jp": "Gets or sets the thickness of the sparkline's trendline."
+		"jp": "スパークライン トレンドラインの太さを取得または設定します。"
 	}
     },
     "trendLineType": {
@@ -531,7 +531,7 @@
       "defaultValue": "none",
       "description": {
 		"en": "Gets or sets the type of trendline used by the sparkline.",
-		"jp": "Gets or sets the type of trendline used by the sparkline."
+		"jp": "スパークラインで使用するトレンドラインのタイプを取得または設定します。"
 	},
       "valueOptions": [
         {
@@ -539,7 +539,7 @@
           "type": "string",
           "description": {
 		"en": "Trendline is not going to be used by the sparkline",
-		"jp": "Trendline is not going to be used by the sparkline"
+		"jp": "トレンドラインはスパークラインに使用されません。"
 	}
         },
         {
@@ -547,7 +547,7 @@
           "type": "string",
           "description": {
 		"en": "Linear trendline is used in the sparkline",
-		"jp": "Linear trendline is used in the sparkline"
+		"jp": "リニア トレンドラインはスパークラインに使用されます。"
 	}
         },
         {
@@ -555,7 +555,7 @@
           "type": "string",
           "description": {
 		"en": "Quadratic trendline is used in the sparkline",
-		"jp": "Quadratic trendline is used in the sparkline"
+		"jp": "二次トレンドラインはスパークラインに使用されます。"
 	}
         },
         {
@@ -563,7 +563,7 @@
           "type": "string",
           "description": {
 		"en": "Cubic trendline is used in the sparkline",
-		"jp": "Cubic trendline is used in the sparkline"
+		"jp": "三次トレンドラインはスパークラインに使用されます。"
 	}
         },
         {
@@ -571,7 +571,7 @@
           "type": "string",
           "description": {
 		"en": "Quartic trendline is used in the sparkline",
-		"jp": "Quartic trendline is used in the sparkline"
+		"jp": "四次トレンドラインはスパークラインに使用されます。"
 	}
         },
         {
@@ -579,7 +579,7 @@
           "type": "string",
           "description": {
 		"en": "Quintic trendline is used in the sparkline",
-		"jp": "Quintic trendline is used in the sparkline"
+		"jp": "五次トレンドラインはスパークラインに使用されます。"
 	}
         },
         {
@@ -587,7 +587,7 @@
           "type": "string",
           "description": {
 		"en": "Logarithmic trendline is used in the sparkline",
-		"jp": "Logarithmic trendline is used in the sparkline"
+		"jp": "対数近似曲線はスパークラインに使用されます。"
 	}
         },
         {
@@ -595,7 +595,7 @@
           "type": "string",
           "description": {
 		"en": "Exponential trendline is used in the sparkline",
-		"jp": "Exponential trendline is used in the sparkline"
+		"jp": "指数近似曲線はスパークラインに使用されます。"
 	}
         },
         {
@@ -603,7 +603,7 @@
           "type": "string",
           "description": {
 		"en": "Power law trendline is used in the sparkline",
-		"jp": "Power law trendline is used in the sparkline"
+		"jp": "べき乗近似曲線はスパークラインに使用されます。"
 	}
         },
         {
@@ -611,7 +611,7 @@
           "type": "string",
           "description": {
 		"en": "Simple average trendline is used in the sparkline",
-		"jp": "Simple average trendline is used in the sparkline"
+		"jp": "簡易平均トレンドラインはスパークラインに使用されます。"
 	}
         },
         {
@@ -619,7 +619,7 @@
           "type": "string",
           "description": {
 		"en": "Exponential average trendline is used in the sparkline",
-		"jp": "Exponential average trendline is used in the sparkline"
+		"jp": "指数平均トレンドラインはスパークラインに使用されます。"
 	}
         },
         {
@@ -635,7 +635,7 @@
           "type": "string",
           "description": {
 		"en": "Modified average average trendline is used in the sparkline",
-		"jp": "Modified average average trendline is used in the sparkline"
+		"jp": "修正平均トレンドラインはスパークラインに使用されます。"
 	}
         },
         {
@@ -643,7 +643,7 @@
           "type": "string",
           "description": {
 		"en": "Weighted average average trendline is used in the sparkline",
-		"jp": "Weighted average average trendline is used in the sparkline"
+		"jp": "加重平均トレンドラインはスパークラインに使用されます。"
 	}
         }
       ]
@@ -653,7 +653,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the way null values are interpreted.",
-		"jp": "Gets or sets the way null values are interpreted."
+		"jp": "null 値の処理方法を取得または設定します。"
 	},
       "valueOptions": [
         {
@@ -661,7 +661,7 @@
           "type": "string",
           "description": {
 		"en": "The null values are interpreted linearly",
-		"jp": "The null values are interpreted linearly"
+		"jp": "null 値はリニアに描画されます"
 	}
         },
         {
@@ -669,7 +669,7 @@
           "type": "string",
           "description": {
 		"en": "The null values are not plotted",
-		"jp": "The null values are not plotted"
+		"jp": "null 値は描画されません"
 	}
         }
       ]
@@ -679,7 +679,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the string path to the value column.",
-		"jp": "Gets or sets the string path to the value column."
+		"jp": "値列への文字列パスを取得または設定します。"
 	}
     },
     "verticalAxisBrush": {
@@ -687,7 +687,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets the vertical axis line brush of the sparkline.",
-		"jp": "Gets or sets the vertical axis line brush of the sparkline."
+		"jp": "スパークラインの縦軸線ブラシを取得または設定します。"
 	}
     },
     "verticalAxisLabel": {
@@ -695,7 +695,7 @@
       "defaultValue": null,
       "description": {
 		"en": "The value or content to display on the vertical axis.<br> This can be set to a formatted string, such as \"{0:n}\", or it can be set to a DataTemplate.",
-		"jp": "The value or content to display on the vertical axis.<br> This can be set to a formatted string, such as \"{0:n}\", or it can be set to a DataTemplate."
+		"jp": "縦軸で表示する値またはコンテンツ。<br>「{0:n}」などの書式付き文字列または DataTemplate に設定できます。"
 	}
     },
     "verticalAxisVisibility": {
@@ -703,7 +703,7 @@
       "defaultValue": "collapsed",
       "description": {
 		"en": " Gets or sets the display state of the vertical axis.",
-		"jp": " Gets or sets the display state of the vertical axis."
+		"jp": " 垂直軸の表示状態を取得または設定します。"
 	},
       "valueOptions": [
         {
@@ -711,7 +711,7 @@
           "type": "string",
           "description": {
 		"en": "Visualize the igSparkline vertical axis",
-		"jp": "Visualize the igSparkline vertical axis"
+		"jp": "igSparkline の縦軸を表示します"
 	}
         },
         {
@@ -719,7 +719,7 @@
           "type": "string",
           "description": {
 		"en": "Collapse the igSparkline vertical axis",
-		"jp": "Collapse the igSparkline vertical axis"
+		"jp": "igSparkline の縦軸を縮小します"
 	}
         }
       ]

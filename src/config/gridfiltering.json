@@ -1,4 +1,4 @@
-{
+﻿{
   "overview": null,
   "name": "ui.igGridFiltering",
   "title": "Filtering",
@@ -21,7 +21,7 @@
       ],
       "description": {
 		"en": "Event fired after the filtering has been executed and results are rendered.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.columnIndex to get column index.<br>   Use ui.columnKey to get column key.",
-		"jp": "Event fired after the filtering has been executed and results are rendered.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.columnIndex to get column index.<br>   Use ui.columnKey to get column key."
+		"jp": "フィルタリングが実行され結果が描画された後に発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridFiltering への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.columnIndex を使用して、列のインデックスを取得します。<br>   ui.columnKey を使用して、列のキーを取得します。"
 	}
     },
     "dataFiltering": {
@@ -40,7 +40,7 @@
       ],
       "description": {
 		"en": "Event fired before a filtering operation is executed (remote request or local). <br>   Return false in order to cancel filtering operation.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.columnIndex to get column index.<br>   Use ui.columnKey to get column key.",
-		"jp": "Event fired before a filtering operation is executed (remote request or local). <br>   Return false in order to cancel filtering operation.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.columnIndex to get column index.<br>   Use ui.columnKey to get column key."
+		"jp": "フィルタリング操作 (リモートまたはローカル要求) が実行される前に発生するイベント。<br>    フィルタリング操作をキャンセルするには、false を返します。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridFiltering への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.columnIndex を使用して、列のインデックスを取得します。<br>   ui.columnKey を使用して、列のキーを取得します。"
 	}
     },
     "dropDownClosed": {
@@ -59,7 +59,7 @@
       ],
       "description": {
 		"en": "Event fired after a filter column dropdown is completely closed. <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.dropDown to get reference to dropdown DOM element.",
-		"jp": "Event fired after a filter column dropdown is completely closed. <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.dropDown to get reference to dropdown DOM element."
+		"jp": "フィルター列ドロップダウンが完全に閉じた後に発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridFiltering への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.dropDown を使用して、ドロップダウン DOM 要素への参照を取得します。"
 	}
     },
     "dropDownClosing": {
@@ -78,7 +78,7 @@
       ],
       "description": {
 		"en": "Event fired before the filter dropdown starts closing. <br>            Return false in order to cancel dropdown closing.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.dropDown to get reference to dropdown DOM element.",
-		"jp": "Event fired before the filter dropdown starts closing. <br>            Return false in order to cancel dropdown closing.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.dropDown to get reference to dropdown DOM element."
+		"jp": "フィルター ドロップダウンが閉じる前に発生するイベント。<br>    ドロップダウンのクローズをキャンセルするには、false を返します。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridFiltering への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.dropDown を使用して、ドロップダウン DOM 要素への参照を取得します。"
 	}
     },
     "dropDownOpened": {
@@ -97,7 +97,7 @@
       ],
       "description": {
 		"en": "Event fired after the filter dropdown is opened for a specific column. <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.dropDown to get reference to dropdown DOM element.",
-		"jp": "Event fired after the filter dropdown is opened for a specific column. <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.dropDown to get reference to dropdown DOM element."
+		"jp": "特定の列のフィルター ドロップダウンが開いた後に発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridFiltering への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.dropDown を使用して、ドロップダウン DOM 要素への参照を取得します。"
 	}
     },
     "dropDownOpening": {
@@ -116,7 +116,7 @@
       ],
       "description": {
 		"en": "Event fired before the filter dropdown is opened for a specific column. <br>   Return false in order to cancel dropdown opening.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.dropDown to get reference to dropdown DOM element.",
-		"jp": "Event fired before the filter dropdown is opened for a specific column. <br>   Return false in order to cancel dropdown opening.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.dropDown to get reference to dropdown DOM element."
+		"jp": "フィルター ドロップダウンが特定の列に開く前に発生するイベント。<br>    ドロップダウンのオープンをキャンセルするには、false を返します。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridFiltering への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.dropDown を使用して、ドロップダウン DOM 要素への参照を取得します。"
 	}
     },
     "filterDialogClosed": {
@@ -135,7 +135,7 @@
       ],
       "description": {
 		"en": "Event fired after the advanced filter dialog has been closed.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.",
-		"jp": "Event fired after the advanced filter dialog has been closed.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid."
+		"jp": "詳細フィルター ダイアログが閉じた後に発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridFiltering への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。"
 	}
     },
     "filterDialogClosing": {
@@ -154,7 +154,7 @@
       ],
       "description": {
 		"en": "Event fired before the advanced filter dialog is closed. <br>   Return false in order to cancel filtering dialog closing.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.",
-		"jp": "Event fired before the advanced filter dialog is closed. <br>   Return false in order to cancel filtering dialog closing.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid."
+		"jp": "詳細フィルター ダイアログが閉じる前に発生するイベント。<br>    フィルタリング ダイアログのクローズをキャンセルするには、false を返します。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridFiltering への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。"
 	}
     },
     "filterDialogContentsRendered": {
@@ -173,7 +173,7 @@
       ],
       "description": {
 		"en": "Event fired after the contents of the advanced filter dialog are rendered.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.dialogElement to get reference to filtering dialog DOM element.",
-		"jp": "Event fired after the contents of the advanced filter dialog are rendered.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.dialogElement to get reference to filtering dialog DOM element."
+		"jp": "詳細フィルター ダイアログのコンテンツが描画された後に発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridFiltering への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.dialogElement を使用して、フィルタリング ダイアログの DOM 要素への参照を取得します。"
 	}
     },
     "filterDialogContentsRendering": {
@@ -192,7 +192,7 @@
       ],
       "description": {
 		"en": "Event fired before the contents of the advanced filter dialog are rendered. <br>   Return false in order to cancel filtering dialog rendering.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.dialogElement to get reference to filtering dialog DOM element.",
-		"jp": "Event fired before the contents of the advanced filter dialog are rendered. <br>   Return false in order to cancel filtering dialog rendering.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.dialogElement to get reference to filtering dialog DOM element."
+		"jp": "詳細フィルター ダイアログのコンテンツが描画される前に発生するイベント。<br>    フィルタリング ダイアログの描画をキャンセルするには、false を返します。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridFiltering への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.dialogElement を使用して、フィルタリング ダイアログの DOM 要素への参照を取得します。"
 	}
     },
     "filterDialogFilterAdded": {
@@ -211,7 +211,7 @@
       ],
       "description": {
 		"en": "Event fired after a filter row is added to the advanced filter dialog.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.filter to get reference to filters table row DOM element.",
-		"jp": "Event fired after a filter row is added to the advanced filter dialog.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.filter to get reference to filters table row DOM element."
+		"jp": "フィルター行が詳細フィルター ダイアログに追加された後に発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridFiltering への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.filter を使用して、フィルター テーブルの DOM 要素への参照を取得します。"
 	}
     },
     "filterDialogFilterAdding": {
@@ -230,7 +230,7 @@
       ],
       "description": {
 		"en": "Event fired before a filter row is added to the advanced filter dialog.<br>   Return false in order to cancel filter adding to the advanced filtering dialog.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.filtersTableBody to get reference to filters table body DOM element.",
-		"jp": "Event fired before a filter row is added to the advanced filter dialog.<br>   Return false in order to cancel filter adding to the advanced filtering dialog.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.filtersTableBody to get reference to filters table body DOM element."
+		"jp": "フィルター行が詳細フィルター ダイアログに追加される前に発生するイベント。<br>   フィルターが詳細フィルタリング ダイアログへ追加するのをキャンセルするには、false を返します。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridFiltering への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.filtersTableBody を使用して、フィルター テーブル本体の DOM 要素への参照を取得します。"
 	}
     },
     "filterDialogFiltering": {
@@ -249,7 +249,7 @@
       ],
       "description": {
 		"en": "Event fired when the OK button in the advanced filter dialog is pressed. <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.dialog to get reference to filtering dialog DOM element.",
-		"jp": "Event fired when the OK button in the advanced filter dialog is pressed. <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.dialog to get reference to filtering dialog DOM element."
+		"jp": "詳細フィルター ダイアログの [OK] ボタンをクリックしたときに発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridFiltering への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.dialog を使用して、フィルタリング ダイアログの DOM 要素への参照を取得します。"
 	}
     },
     "filterDialogMoving": {
@@ -268,7 +268,7 @@
       ],
       "description": {
 		"en": "Event fired every time the advanced filter dialog changes its position.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.dialog to get reference to filtering dialog DOM element.",
-		"jp": "Event fired every time the advanced filter dialog changes its position.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.dialog to get reference to filtering dialog DOM element."
+		"jp": "詳細フィルター ダイアログの位置が変わるたびに発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridFiltering への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.dialog を使用して、フィルタリング ダイアログの DOM 要素への参照を取得します。"
 	}
     },
     "filterDialogOpened": {
@@ -287,7 +287,7 @@
       ],
       "description": {
 		"en": "Event fired after the advanced filter dialog is already opened.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.dialog to get reference to filtering dialog DOM element.",
-		"jp": "Event fired after the advanced filter dialog is already opened.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.dialog to get reference to filtering dialog DOM element."
+		"jp": "詳細フィルター ダイアログがすでに開いた後に発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridFiltering への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.dialog を使用して、フィルタリング ダイアログの DOM 要素への参照を取得します。"
 	}
     },
     "filterDialogOpening": {
@@ -306,7 +306,7 @@
       ],
       "description": {
 		"en": "Event fired before the advanced filtering dialog is opened.<br>   Return false in order to cancel filter dialog opening.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.dialog to get reference to filtering dialog DOM element.",
-		"jp": "Event fired before the advanced filtering dialog is opened.<br>   Return false in order to cancel filter dialog opening.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridFiltering.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.dialog to get reference to filtering dialog DOM element."
+		"jp": "詳細フィルタリング ダイアログが開く前に発生するイベント。<br>   フィルター ダイアログの開くをキャンセルするには、false を返します。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridFiltering への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.dialog を使用して、フィルタリング ダイアログの DOM 要素への参照を取得します。"
 	}
     }
   },
@@ -320,7 +320,7 @@
       "defaultValue": false,
       "description": {
 		"en": "defines whether to show/hide editors in advanced mode. If false, no editors will be rendered in the advanced mode",
-		"jp": "defines whether to show/hide editors in advanced mode. If false, no editors will be rendered in the advanced mode"
+		"jp": "詳細モードでエディターを表示/非表示にするかを定義します。false の場合、詳細モードではエディターは描画されません。"
 	}
     },
     "advancedModeHeaderButtonLocation": {
@@ -328,7 +328,7 @@
       "defaultValue": null,
       "description": {
 		"en": " location of the advanced filtering button when advancedModeEditorsVisible is false (i.e. when the button is rendered in the header) ",
-		"jp": " location of the advanced filtering button when advancedModeEditorsVisible is false (i.e. when the button is rendered in the header) "
+		"jp": " advancedModeEditorsVisible が False のとき (つまり、ボタンがヘッダーに描画されるとき) の詳細フィルタリング ボタンの場所。 "
 	},
       "valueOptions": [
         {
@@ -354,7 +354,7 @@
       "defaultValue": false,
       "description": {
 		"en": "Enables or disables the filtering case sensitivity. Works only for local filtering.If true, it enables filtering case sensitivity. If false, it disables filtering case sensitivity.",
-		"jp": "Enables or disables the filtering case sensitivity. Works only for local filtering.If true, it enables filtering case sensitivity. If false, it disables filtering case sensitivity."
+		"jp": "フィルタリングで大文字小文字の区別を有効化または無効化します。ローカルのフィルタリングでのみ使用できます。True の場合、フィルタリングで大文字小文字の区別を有効にします。False の場合、フィルタリングで大文字小文字の区別を無効にします。"
 	}
     },
     "columnSettings": {
@@ -362,7 +362,7 @@
       "defaultValue": null,
       "description": {
 		"en": "a list of column settings that specifies custom filtering options on a per column basis",
-		"jp": "a list of column settings that specifies custom filtering options on a per column basis"
+		"jp": "カスタム フィルタリング オプションを列ごとに指定する列設定のリスト。"
 	},
       "schema": {
         "columnKey": {
@@ -370,7 +370,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Specifies column key. Either key or index must be set in every column setting.",
-		"jp": "Specifies column key. Either key or index must be set in every column setting."
+		"jp": "列キーを指定します。すべての列設定にキーまたはインデックスのどちらかを設定する必要があります。"
 	}
         },
         "columnIndex": {
@@ -378,7 +378,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Specifies column index. Either key or index must be set in every column setting.",
-		"jp": "Specifies column index. Either key or index must be set in every column setting."
+		"jp": "列インデックスを指定します。すべての列設定にキーまたはインデックスのどちらかを設定する必要があります。"
 	}
         },
         "allowFiltering": {
@@ -386,7 +386,7 @@
           "defaultValue": true,
           "description": {
 		"en": "Enables/disables filtering for the column.",
-		"jp": "Enables/disables filtering for the column."
+		"jp": "列のフィルタリングを有効/無効にします。"
 	}
         },
         "condition": {
@@ -394,7 +394,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Specifies filtering condition for the column",
-		"jp": "Specifies filtering condition for the column"
+		"jp": "列のフィルタリング条件を指定します。"
 	},
           "valueOptions": [
             {
@@ -628,7 +628,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Initial filtering expressions - if set they will be applied on initialization",
-		"jp": "Initial filtering expressions - if set they will be applied on initialization"
+		"jp": "最初のフィルタリング式。設定された場合、初期化で適用されます。"
 	},
 		  "schema": {
 			"expr": {
@@ -636,7 +636,7 @@
 			  "defaultValue": "",
 			  "description": {
 		"en": "Expression",
-		"jp": "Expression"
+		"jp": "式"
 	}
 			},
 			"cond": {
@@ -644,7 +644,7 @@
 			  "defaultValue": "",
 			  "description": {
 		"en": "Condition",
-		"jp": "Condition"
+		"jp": "条件"
 	}
 			}
 		  }         
@@ -656,7 +656,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Feature chooser text when filter is shown and filter mode is simple",
-		"jp": "Feature chooser text when filter is shown and filter mode is simple"
+		"jp": "フィルターが表示されフィルター モードがシンプルの時の機能セレクターのテキスト"
 	}
     },
     "featureChooserTextAdvancedFilter": {
@@ -664,7 +664,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Feature chooser text when filter mode is advanced",
-		"jp": "Feature chooser text when filter mode is advanced"
+		"jp": "フィルター モードが詳細の時の機能セレクターのテキスト"
 	}
     },
     "featureChooserTextHide": {
@@ -672,7 +672,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Feature chooser text when filter is hidden and filter mode is simple",
-		"jp": "Feature chooser text when filter is hidden and filter mode is simple"
+		"jp": "フィルターが非表示でフィルター モードがシンプルの時の機能セレクターのテキスト"
 	}
     },
     "filterButtonLocation": {
@@ -680,7 +680,7 @@
       "defaultValue": "left",
       "description": {
 		"en": " the filtering button for filter dropdowns can be rendered either on the left of the filter editor or on the right ",
-		"jp": " the filtering button for filter dropdowns can be rendered either on the left of the filter editor or on the right "
+		"jp": " フィルター ドロップダウンのフィルタリング ボタンは、フィルター エディターの左側または右側に描画できます。 "
 	},
       "valueOptions": [
         {
@@ -706,7 +706,7 @@
       "defaultValue": 500.0,
       "description": {
 		"en": "Time in milliseconds for which widget will wait for keystrokes before sending filtering request.",
-		"jp": "Time in milliseconds for which widget will wait for keystrokes before sending filtering request."
+		"jp": "フィルタリング要求を送信する前に、キー入力までのウィジェットの待機時間 (ミリ秒)。"
 	}
     },
     "filterDialogAddButtonWidth": {
@@ -714,7 +714,7 @@
       "defaultValue": 100,
       "description": {
 		"en": " add button width - in the advanced filter dialog ",
-		"jp": " add button width - in the advanced filter dialog "
+		"jp": " 詳細フィルター ダイアログ内の [追加] ボタンの幅。 "
 	},
       "valueOptions": [
         {
@@ -722,7 +722,7 @@
           "type": "string",
           "description": {
 		"en": " The dialog Add button width in pixels (100px).",
-		"jp": " The dialog Add button width in pixels (100px)."
+		"jp": " ピクセルのダイアログ追加ボタン幅 (100px)"
 	}
         },
         {
@@ -730,7 +730,7 @@
           "type": "number",
           "description": {
 		"en": " The dialog Add button width as a number (100).",
-		"jp": " The dialog Add button width as a number (100)."
+		"jp": " 数値のダイアログ追加ボタン幅 (100)"
 	}
         }
       ]
@@ -740,7 +740,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Custom template for options in dropdown in add condition area in the filter dialog.",
-		"jp": "Custom template for options in dropdown in add condition area in the filter dialog."
+		"jp": "フィルター ダイアログの追加条件領域のドロップダウンのオプションのカスタム テンプレート。"
 	}
     },
     "filterDialogAddConditionTemplate": {
@@ -748,7 +748,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Custom template for add condition area in the filter dialog.",
-		"jp": "Custom template for add condition area in the filter dialog."
+		"jp": "フィルター ダイアログの追加条件領域のカスタム テンプレート。"
 	}
     },
     "filterDialogColumnDropDownDefaultWidth": {
@@ -756,7 +756,7 @@
       "defaultValue": null,
       "description": {
 		"en": " Width of the column chooser dropdowns in the advanced filter dialog ",
-		"jp": " Width of the column chooser dropdowns in the advanced filter dialog "
+		"jp": " 詳細フィルター ダイアログ内の列選択ドロップダウンの幅。 "
 	},
       "valueOptions": [
         {
@@ -764,7 +764,7 @@
           "type": "string",
           "description": {
 		"en": " The column chooser dropdowns width in pixels (80px).",
-		"jp": " The column chooser dropdowns width in pixels (80px)."
+		"jp": " ピクセルの列選択ドロップダウンの幅 (80px)。"
 	}
         },
         {
@@ -772,7 +772,7 @@
           "type": "number",
           "description": {
 		"en": " The column chooser dropdowns width as a number (80).",
-		"jp": " The column chooser dropdowns width as a number (80)."
+		"jp": " 数値の列選択ドロップダウンの幅 (80)"
 	}
         }
       ]
@@ -782,7 +782,7 @@
       "defaultValue": "owner",
       "description": {
 		"en": "Controls containment behavior. <br>                owner  The filter dialog will be draggable only in the grid area<br>                window  The filter dialog will be draggable in the whole window area",
-		"jp": "Controls containment behavior. <br>                owner  The filter dialog will be draggable only in the grid area<br>                window  The filter dialog will be draggable in the whole window area"
+		"jp": "コンテインメント動作を制御します。<br>    owner - フィルター ダイアログはグリッド領域でのみドラッグ可能です。<br>                window - フィルター ダイアログはウィンドウ領域全体でドラッグ可能です。"
 	}
     },
     "filterDialogExprInputDefaultWidth": {
@@ -790,7 +790,7 @@
       "defaultValue": 80,
       "description": {
 		"en": " width of the filtering expression input boxes in the advanced filter dialog ",
-		"jp": " width of the filtering expression input boxes in the advanced filter dialog "
+		"jp": " 詳細フィルター ダイアログ内のフィルタリングの式の入力ボックスの幅。 "
 	},
       "valueOptions": [
         {
@@ -798,7 +798,7 @@
           "type": "string",
           "description": {
 		"en": " The filtering expression input boxes width in pixels (80px).",
-		"jp": " The filtering expression input boxes width in pixels (80px)."
+		"jp": " ピクセルのフィルター式入力ボックスの幅 (80px)。"
 	}
         },
         {
@@ -806,7 +806,7 @@
           "type": "number",
           "description": {
 		"en": " The filtering expression input boxes width as a number (80).",
-		"jp": " The filtering expression input boxes width as a number (80)."
+		"jp": " 数値のフィルター式入力ボックスの幅 (80)"
 	}
         }
       ]
@@ -816,7 +816,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Custom template for options in condition list in filter dialog",
-		"jp": "Custom template for options in condition list in filter dialog"
+		"jp": "フィルター ダイアログにある条件リストのオプションのカスタム テンプレート。"
 	}
     },
     "filterDialogFilterDropDownDefaultWidth": {
@@ -824,7 +824,7 @@
       "defaultValue": 80,
       "description": {
 		"en": " Width of the filtering condition dropdowns in the advanced filter dialog ",
-		"jp": " Width of the filtering condition dropdowns in the advanced filter dialog "
+		"jp": " 詳細フィルター ダイアログ内のフィルタリング条件ドロップダウンの幅。 "
 	},
       "valueOptions": [
         {
@@ -832,7 +832,7 @@
           "type": "string",
           "description": {
 		"en": " The filtering condition dropdowns width in pixels (80px).",
-		"jp": " The filtering condition dropdowns width in pixels (80px)."
+		"jp": " ピクセルのフィルター条件ドロップダウンの幅 (80px)。"
 	}
         },
         {
@@ -840,7 +840,7 @@
           "type": "number",
           "description": {
 		"en": " The filtering condition dropdowns width as a number (80).",
-		"jp": " The filtering condition dropdowns width as a number (80)."
+		"jp": " 数値のフィルター条件ドロップダウンの幅 (80)"
 	}
         }
       ]
@@ -850,7 +850,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Custom template for filter dialog",
-		"jp": "Custom template for filter dialog"
+		"jp": "フィルター ダイアログのカスタム テンプレート。"
 	}
     },
     "filterDialogHeight": {
@@ -858,7 +858,7 @@
       "defaultValue": "",
       "description": {
 		"en": " default filter dialog height (used for Advanced filtering)  ",
-		"jp": " default filter dialog height (used for Advanced filtering)  "
+		"jp": " デフォルト フィルター ダイアログの高さ (詳細フィルターで使用)。  "
 	},
       "valueOptions": [
         {
@@ -866,7 +866,7 @@
           "type": "string",
           "description": {
 		"en": " The dialog window height in pixels (350px).",
-		"jp": " The dialog window height in pixels (350px)."
+		"jp": " ピクセルでのダイアログ ウィンドウの高さ (350px)。"
 	}
         },
         {
@@ -874,7 +874,7 @@
           "type": "number",
           "description": {
 		"en": " The dialog window height as a number (350).",
-		"jp": " The dialog window height as a number (350)."
+		"jp": " 数値のダイアログ ウィンドウの高さ (350)。"
 	}
         }
       ]
@@ -884,7 +884,7 @@
       "defaultValue": 5.0,
       "description": {
 		"en": "Maximum number of filter rows in the advanced filtering dialog. if this number is exceeded, an error message will be rendered",
-		"jp": "Maximum number of filter rows in the advanced filtering dialog. if this number is exceeded, an error message will be rendered"
+		"jp": "詳細フィルタリング ダイアログ内のフィルター行の最大数。この数を超えると、エラー メッセージが描画されます。"
 	}
     },
     "filterDialogMaxHeight": {
@@ -892,7 +892,7 @@
       "defaultValue": "",
       "description": {
 		"en": " maximum filter dialog height (used for Advanced filtering)  ",
-		"jp": " maximum filter dialog height (used for Advanced filtering)  "
+		"jp": " フィルター ダイアログの最大の高さ (詳細フィルターに使用されます)。  "
 	},
       "valueOptions": [
         {
@@ -900,7 +900,7 @@
           "type": "string",
           "description": {
 		"en": " The dialog window height in pixels (350px).",
-		"jp": " The dialog window height in pixels (350px)."
+		"jp": " ピクセルでのダイアログ ウィンドウの高さ (350px)。"
 	}
         },
         {
@@ -908,7 +908,7 @@
           "type": "number",
           "description": {
 		"en": " The dialog window height as a number (350).",
-		"jp": " The dialog window height as a number (350)."
+		"jp": " 数値のダイアログ ウィンドウの高さ (350)。"
 	}
         }
       ]
@@ -918,7 +918,7 @@
       "defaultValue": 120,
       "description": {
 		"en": " Width of the Ok and Cancel buttons in the advanced filtering dialogs ",
-		"jp": " Width of the Ok and Cancel buttons in the advanced filtering dialogs "
+		"jp": " 詳細フィルタリング ダイアログ内の [OK] および [キャンセル] ボタンの幅。 "
 	},
       "valueOptions": [
         {
@@ -926,7 +926,7 @@
           "type": "string",
           "description": {
 		"en": " The advanced filter dialog Ok and Cancel buttons width in pixels (120px).",
-		"jp": " The advanced filter dialog Ok and Cancel buttons width in pixels (120px)."
+		"jp": " ピクセルの詳細フィルターダイアログ OK およびキャンセル ボタンの幅 (120 px)。"
 	}
         },
         {
@@ -934,7 +934,7 @@
           "type": "number",
           "description": {
 		"en": " The advanced filter dialog Ok and Cancel buttons width as a number (120).",
-		"jp": " The advanced filter dialog Ok and Cancel buttons width as a number (120)."
+		"jp": " 数値の詳細フィルターダイアログ OK およびキャンセル ボタンの幅 (120)。"
 	}
         }
       ]
@@ -944,7 +944,7 @@
       "defaultValue": 370,
       "description": {
 		"en": " default filter dialog width (used for Advanced filtering) ",
-		"jp": " default filter dialog width (used for Advanced filtering) "
+		"jp": " デフォルト フィルター ダイアログの幅 (詳細フィルターで使用)。 "
 	},
       "valueOptions": [
         {
@@ -952,7 +952,7 @@
           "type": "string",
           "description": {
 		"en": " The dialog window width in pixels (370px).",
-		"jp": " The dialog window width in pixels (370px)."
+		"jp": " ピクセルでのダイアログ ウィンドウ幅 (370 px)。"
 	}
         },
         {
@@ -960,7 +960,7 @@
           "type": "number",
           "description": {
 		"en": " The dialog window width as a number (370).",
-		"jp": " The dialog window width as a number (370)."
+		"jp": " 数値のダイアログ ウィンドウの幅 (370)。"
 	}
         }
       ]
@@ -970,7 +970,7 @@
       "defaultValue": 500.0,
       "description": {
 		"en": "animation duration in milliseconds for the filter dropdown animations",
-		"jp": "animation duration in milliseconds for the filter dropdown animations"
+		"jp": "フィルター ドロップダウンのアニメーションの期間 (ミリ秒単位)。"
 	}
     },
     "filterDropDownAnimations": {
@@ -978,7 +978,7 @@
       "defaultValue": "linear",
       "description": {
 		"en": " type of animations for the column filter dropdowns",
-		"jp": " type of animations for the column filter dropdowns"
+		"jp": " 列フィルター ドロップダウンのアニメーションのタイプ。"
 	},
       "valueOptions": [
         {
@@ -1004,7 +1004,7 @@
       "defaultValue": 0.0,
       "description": {
 		"en": "Height of the column filter dropdowns<br>                string The height of the column filter dropdowns in pixels (0px).<br>                number The height of the column filter dropdowns as a number (0).",
-		"jp": "Height of the column filter dropdowns<br>                string The height of the column filter dropdowns in pixels (0px).<br>                number The height of the column filter dropdowns as a number (0)."
+		"jp": "列フィルター ドロップダウンの高さ。<br>                ピクセルの列フィルター ドロップダウンの高さ (0px)。<br>                数値のフィルター ドロップダウンの高さ (0)。"
 	}
     },
     "filterDropDownItemIcons": {
@@ -1012,7 +1012,7 @@
       "defaultValue": true,
       "description": {
 		"en": " Enable/disable filter icons visibility.",
-		"jp": " Enable/disable filter icons visibility."
+		"jp": " フィルター アイコンの表示状態を有効/無効にします。"
 	}
     },
     "filterDropDownWidth": {
@@ -1020,7 +1020,7 @@
       "defaultValue": 0,
       "description": {
 		"en": " width of the column filter dropdowns",
-		"jp": " width of the column filter dropdowns"
+		"jp": " 列フィルター ドロップダウンの幅。"
 	},
       "valueOptions": [
         {
@@ -1028,7 +1028,7 @@
           "type": "string",
           "description": {
 		"en": " The width in pixels (0px)",
-		"jp": " The width in pixels (0px)"
+		"jp": " ピクセルの幅 (0 px)"
 	}
         },
         {
@@ -1036,7 +1036,7 @@
           "type": "number",
           "description": {
 		"en": " The width as a number (0)",
-		"jp": " The width as a number (0)"
+		"jp": " 数値の幅 (0)。"
 	}
         }
       ]
@@ -1046,7 +1046,7 @@
       "defaultValue": null,
       "description": {
 		"en": "URL key name that specifies how the filtering expressions will be encoded for remote requests, e.g. &filter('col') = startsWith. Default is OData",
-		"jp": "URL key name that specifies how the filtering expressions will be encoded for remote requests, e.g. &filter('col') = startsWith. Default is OData"
+		"jp": "リモート要求に対してフィルタリングの式をエンコードする方法を指定する URL キー名。たとえば、&filter('col') = startsWith。デフォルトは OData です。"
 	}
     },
     "filterSummaryAlwaysVisible": {
@@ -1054,7 +1054,7 @@
       "defaultValue": true,
       "description": {
 		"en": "Enable/disable footer visibility with summary info about the filter.If false, the filter summary row (in the footer) will only be visible when paging is enabled (or some other feature that renders a footer)",
-		"jp": "Enable/disable footer visibility with summary info about the filter.If false, the filter summary row (in the footer) will only be visible when paging is enabled (or some other feature that renders a footer)"
+		"jp": "フィルターの概要情報でフッターの表示を有効または無効にします。False の場合、(フッター内の) フィルター サマリー行はページング (または、フッターを描画する他の機能) が有効なときのみ表示されます。"
 	}
     },
     "filterSummaryTemplate": {
@@ -1062,7 +1062,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Summary template that will appear in the bottom left corner of the footer. Has the format '${matches} matching records'",
-		"jp": "Summary template that will appear in the bottom left corner of the footer. Has the format '${matches} matching records'"
+		"jp": "フッターの左下隅に表示されるサマリー テンプレート。「${matches}」の形式の一致レコードを持っています。"
 	}
     },
     "labels": {
@@ -1070,7 +1070,7 @@
       "defaultValue": null,
       "description": {
 		"en": "A list of configurable and localized labels that will be used for teh predefnied filtering conditions in the filter dropdowns.",
-		"jp": "A list of configurable and localized labels that will be used for teh predefnied filtering conditions in the filter dropdowns."
+		"jp": "フィルター ドロップダウン内の定義済みのフィルタリング条件で使用する設定可能なローカライズ済みのラベルのリスト。"
 	}
     },
     "mode": {
@@ -1078,7 +1078,7 @@
       "defaultValue": null,
       "description": {
 		"en": " Default is 'simple' for non-virtualized grids, and 'advanced' when virtualization is enabled ",
-		"jp": " Default is 'simple' for non-virtualized grids, and 'advanced' when virtualization is enabled "
+		"jp": " デフォルトは、非仮想化グリッド用の「簡易」で、仮想化が有効になると「詳細」になります。 "
 	},
       "valueOptions": [
         {
@@ -1086,7 +1086,7 @@
           "type": "string",
           "description": {
 		"en": " renders just a filter row",
-		"jp": " renders just a filter row"
+		"jp": " フィルター行のみを描画します。"
 	}
         },
         {
@@ -1094,7 +1094,7 @@
           "type": "string",
           "description": {
 		"en": " allows to configure multiple filters from a dialog - Excel style",
-		"jp": " allows to configure multiple filters from a dialog - Excel style"
+		"jp": " ダイアログで複数のフィルターの設定を許可 - Excel スタイル。"
 	}
         }
       ]
@@ -1104,7 +1104,7 @@
       "defaultValue": null,
       "description": {
 		"en": "list of configurable and localized null texts that will be used for the filter editors",
-		"jp": "list of configurable and localized null texts that will be used for the filter editors"
+		"jp": "フィルター エディターで使用する設定可能なローカライズ済みの null テキストのリスト。"
 	}
     },
     "renderFC": {
@@ -1112,7 +1112,7 @@
       "defaultValue": true,
       "description": {
 		"en": "Render in feature chooser. Feature chooser is dialog which lists all the enabled features (like Sorting, Filtering, Hiding etc.) of igGrid.",
-		"jp": "Render in feature chooser. Feature chooser is dialog which lists all the enabled features (like Sorting, Filtering, Hiding etc.) of igGrid."
+		"jp": "機能チューザーで描画します。機能セレクターは、igGrid ですべての有効な機能 (並べ替え、フィルタリング、非表示など) をリストするダイアログです。"
 	}
     },
     "renderFilterButton": {
@@ -1120,7 +1120,7 @@
       "defaultValue": true,
       "description": {
 		"en": "Enable/disable filter button visibility. If false,no filter dropdown buttons will be rendered and predefined list of filters will not be rendered for the columns",
-		"jp": "Enable/disable filter button visibility. If false,no filter dropdown buttons will be rendered and predefined list of filters will not be rendered for the columns"
+		"jp": "フィルター ボタンの表示状態を有効/無効にします。False の場合、フィルター ドロップダウン ボタンを描画し、フィルターの定義済みリストは列に描画されません。"
 	}
     },
     "showEmptyConditions": {
@@ -1128,7 +1128,7 @@
       "defaultValue": false,
       "description": {
 		"en": "Enable/disable empty condition visibility in the filter. If true, shows empty and not empty filtering conditions in the dropdowns",
-		"jp": "Enable/disable empty condition visibility in the filter. If true, shows empty and not empty filtering conditions in the dropdowns"
+		"jp": "フィルターで空条件の表示状態を有効/無効にします。True の場合、空と空以外のフィルター条件をドロップダウンで表示します。"
 	}
     },
     "showNullConditions": {
@@ -1136,7 +1136,7 @@
       "defaultValue": false,
       "description": {
 		"en": "Enable/disable visibility of null and not null filtering conditions in the dropdowns. If true, shows null and not null filtering conditions in the dropdowns",
-		"jp": "Enable/disable visibility of null and not null filtering conditions in the dropdowns. If true, shows null and not null filtering conditions in the dropdowns"
+		"jp": "null 値 とnull 以外の値のフィルター条件をドロップダウンでの表示状態を有効/無効にします。True の場合、null 値と null 以外の値のフィルター条件をドロップダウンで表示します。"
 	}
     },
     "tooltipTemplate": {
@@ -1144,7 +1144,7 @@
       "defaultValue": "",
       "description": {
 		"en": "custom tooltip template for the filter button, when a filter is applied",
-		"jp": "custom tooltip template for the filter button, when a filter is applied"
+		"jp": "フィルターが適用されるときのフィルター ボタンのカスタム ツールチップ テンプレート。"
 	}
     },
     "type": {
@@ -1152,7 +1152,7 @@
       "defaultValue": null,
       "description": {
 		"en": " Type of filtering. Delegates all filtering functionality to the $.ig.DataSource.",
-		"jp": " Type of filtering. Delegates all filtering functionality to the $.ig.DataSource."
+		"jp": " フィルタリングのタイプ。すべてのフィルタリング機能を $.ig.DataSource にデリゲートします。"
 	},
       "valueOptions": [
         {

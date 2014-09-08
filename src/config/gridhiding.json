@@ -1,4 +1,4 @@
-{
+﻿{
   "overview": null,
   "name": "ui.igGridHiding",
   "title": "Column Hiding",
@@ -21,7 +21,7 @@
       ],
       "description": {
 		"en": "event fired when button Apply in column chooser is clicked<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridHiding widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object.<br>   Use ui.columnsToShow to get array of columns identifiers which should be shown<br>   Use ui.columnsToHide to get array of columns identifiers which should be hidden",
-		"jp": "event fired when button Apply in column chooser is clicked<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridHiding widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object.<br>   Use ui.columnsToShow to get array of columns identifiers which should be shown<br>   Use ui.columnsToHide to get array of columns identifiers which should be hidden"
+		"jp": "列選択の [適用] ボタンがクリックされたときに発生するイベント。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   igGridHiding ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   ui.columnChooserElement を使用して、列の選択要素への参照を取得します。これは jQuery オブジェクトです。<br>   ui.columnsToShow を使用して表示する列識別子の配列を取得します。<br>   ui.columnsToHide を使用して非表示にする列識別子の配列を取得します。"
 	}
     },
     "columnChooserButtonResetClick": {
@@ -40,7 +40,7 @@
       ],
       "description": {
 		"en": "event fired when button Reset in column chooser is clicked<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridHiding widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object.",
-		"jp": "event fired when button Reset in column chooser is clicked<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridHiding widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object."
+		"jp": "列セレクターの Reset ボタンをクリックすると、イベントが開始します<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   igGridHiding ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   ui.columnChooserElement を使用して、列の選択要素への参照を取得します。これは jQuery オブジェクトです。"
 	}
     },
     "columnChooserClosed": {
@@ -59,7 +59,7 @@
       ],
       "description": {
 		"en": "event fired after the column chooser has been closed.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridHiding widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object.",
-		"jp": "event fired after the column chooser has been closed.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridHiding widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object."
+		"jp": "列選択が閉じた後に発生するイベント。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   igGridHiding ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   ui.columnChooserElement を使用して、列の選択要素への参照を取得します。これは jQuery オブジェクトです。"
 	}
     },
     "columnChooserClosing": {
@@ -78,7 +78,7 @@
       ],
       "description": {
 		"en": "event fired before the column chooser is closed.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridHiding widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object.",
-		"jp": "event fired before the column chooser is closed.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridHiding widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object."
+		"jp": "列選択が閉じる前に発生するイベント。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   igGridHiding ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   ui.columnChooserElement を使用して、列の選択要素への参照を取得します。これは jQuery オブジェクトです。"
 	}
     },
     "columnChooserContentsRendered": {
@@ -97,7 +97,7 @@
       ],
       "description": {
 		"en": "event fired after the contents of the column chooser are rendered.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridHiding widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object.",
-		"jp": "event fired after the contents of the column chooser are rendered.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridHiding widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object."
+		"jp": "列選択のコンテンツが描画された後に発生するイベント。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   igGridHiding ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   ui.columnChooserElement を使用して、列の選択要素への参照を取得します。これは jQuery オブジェクトです。"
 	}
     },
     "columnChooserContentsRendering": {
@@ -116,7 +116,7 @@
       ],
       "description": {
 		"en": "event fired before the contents of the column chooser are rendered.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridHiding widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object.",
-		"jp": "event fired before the contents of the column chooser are rendered.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridHiding widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object."
+		"jp": "列選択のコンテンツが描画される前に発生するイベント。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   igGridHiding ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   ui.columnChooserElement を使用して、列の選択要素への参照を取得します。これは jQuery オブジェクトです。"
 	}
     },
     "columnChooserMoving": {
@@ -135,7 +135,7 @@
       ],
       "description": {
 		"en": "event fired every time the column chooser changes its position.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridHiding widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object.<br>   Use ui.originalPosition to get the original position of the column chooser div as { top, left } object, relative to the page.<br>   Use ui.position to get the current position of the column chooser div as { top, left } object, relative to the page.",
-		"jp": "event fired every time the column chooser changes its position.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridHiding widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object.<br>   Use ui.originalPosition to get the original position of the column chooser div as { top, left } object, relative to the page.<br>   Use ui.position to get the current position of the column chooser div as { top, left } object, relative to the page."
+		"jp": "列選択の位置が変わるたびに発生するイベント。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   igGridHiding ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   ui.columnChooserElement を使用して、列の選択要素への参照を取得します。これは jQuery オブジェクトです。<br>   ui.originalPosition を使用して、ページを基準とした列の選択 DIV の元の位置を { top, left } として取得します。<br>   ui.position を使用して、ページを基準とした列の選択 DIV の現在の位置を { top, left } として取得します。"
 	}
     },
     "columnChooserOpened": {
@@ -154,7 +154,7 @@
       ],
       "description": {
 		"en": "event fired after the column chooser is already opened.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridHiding widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object.",
-		"jp": "event fired after the column chooser is already opened.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridHiding widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object."
+		"jp": "列選択が既に開いた後に発生するイベント。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   igGridHiding ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   ui.columnChooserElement を使用して、列の選択要素への参照を取得します。これは jQuery オブジェクトです。"
 	}
     },
     "columnChooserOpening": {
@@ -173,7 +173,7 @@
       ],
       "description": {
 		"en": "event fired before the column chooser is opened.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridHiding widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object.",
-		"jp": "event fired before the column chooser is opened.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridHiding widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnChooserElement to get a reference to the Column Chooser element. This is a jQuery object."
+		"jp": "列チューザーが開く前に発生するイベント。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   igGridHiding ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   ui.columnChooserElement を使用して、列の選択要素への参照を取得します。これは jQuery オブジェクトです。"
 	}
     },
     "columnHidden": {
@@ -192,7 +192,7 @@
       ],
       "description": {
 		"en": "event fired after the hiding has been executed and results are rendered.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridHiding widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnIndex to get the hidden column index. Has a value only if the column's key is a number.<br>   Use ui.columnKey to get the hidden column key. Has a value only if the column's key is a string.",
-		"jp": "event fired after the hiding has been executed and results are rendered.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridHiding widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnIndex to get the hidden column index. Has a value only if the column's key is a number.<br>   Use ui.columnKey to get the hidden column key. Has a value only if the column's key is a string."
+		"jp": "非表示が実行され結果が描画された後に発生するイベント。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   igGridHiding ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   ui.columnIndex を使用して非表示の列インデックスを取得します。列のキーは数字の場合のみに値があります。<br>   ui.columnKey を使用して非表示の列キーを取得します。列のキーは文字列の場合のみに値があります。"
 	}
     },
     "columnHiding": {
@@ -211,7 +211,7 @@
       ],
       "description": {
 		"en": "event fired before a hiding operation is executed.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridHiding widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnIndex to get the hidden column index. Has a value only if the column's key is a number.<br>   Use ui.columnKey to get the hidden column key. Has a value only if the column's key is a string.",
-		"jp": "event fired before a hiding operation is executed.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridHiding widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnIndex to get the hidden column index. Has a value only if the column's key is a number.<br>   Use ui.columnKey to get the hidden column key. Has a value only if the column's key is a string."
+		"jp": "非表示操作が実行される前に発生するイベント。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   igGridHiding ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   ui.columnIndex を使用して非表示の列インデックスを取得します。列のキーは数字の場合のみに値があります。<br>   ui.columnKey を使用して非表示の列キーを取得します。列のキーは文字列の場合のみに値があります。"
 	}
     },
     "columnShowing": {
@@ -230,7 +230,7 @@
       ],
       "description": {
 		"en": "event fired before a showing operation is executed.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridHiding widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnIndex to get the shown column index.<br>   Use ui.columnKey to get the shown column key.",
-		"jp": "event fired before a showing operation is executed.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridHiding widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnIndex to get the shown column index.<br>   Use ui.columnKey to get the shown column key."
+		"jp": "表示操作が実行される前に発生するイベント。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   igGridHiding ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   ui.columnIndex を使用して表示されている列インデックスを取得します。<br>   ui.columnKey を使用して表示されている列キーを取得します。"
 	}
     },
     "columnShown": {
@@ -249,7 +249,7 @@
       ],
       "description": {
 		"en": "event fired after the showing has been executed and results are rendered.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridHiding widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnIndex to get the shown column index.<br>   Use ui.columnKey to get the shown column key.",
-		"jp": "event fired after the showing has been executed and results are rendered.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridHiding widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnIndex to get the shown column index.<br>   Use ui.columnKey to get the shown column key."
+		"jp": "表示が実行され結果が描画された後に発生するイベント。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   igGridHiding ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   ui.columnIndex を使用して表示されている列インデックスを取得します。<br>   ui.columnKey を使用して表示されている列キーを取得します。"
 	}
     },
     "multiColumnHiding": {
@@ -268,7 +268,7 @@
       ],
       "description": {
 		"en": "event fired before a hiding operation is executed.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridHiding widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnKeys to get array of the hidden column keys.",
-		"jp": "event fired before a hiding operation is executed.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridHiding widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnKeys to get array of the hidden column keys."
+		"jp": "非表示操作が実行される前に発生するイベント。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   igGridHiding ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   非表示される列キーの配列を取得するには ui.columnKeys を使用します。"
 	}
     }
   },
@@ -282,7 +282,7 @@
       "defaultValue": 200.0,
       "description": {
 		"en": "Specifies time of milliseconds for animation duration to show/hide modal dialog",
-		"jp": "Specifies time of milliseconds for animation duration to show/hide modal dialog"
+		"jp": "モーダル ダイアログを表示/非表示にするためにアニメーション期間のミリ秒の時間を指定します。"
 	}
     },
     "columnChooserButtonApplyText": {
@@ -290,7 +290,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Specifies text of button which apply changes in modal dialog",
-		"jp": "Specifies text of button which apply changes in modal dialog"
+		"jp": "モーダル ダイアログで変更を適用するボタンのテキストを指定します。"
 	}
     },
     "columnChooserButtonCancelText": {
@@ -298,7 +298,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Specifies text of button which cancel changes in modal dialog",
-		"jp": "Specifies text of button which cancel changes in modal dialog"
+		"jp": "モーダル ダイアログで変更をキャンセルするボタンのテキストを指定します。"
 	}
     },
     "columnChooserCaptionText": {
@@ -306,7 +306,7 @@
       "defaultValue": "",
       "description": {
 		"en": "The caption of the column chooser dialog.",
-		"jp": "The caption of the column chooser dialog."
+		"jp": "列チューザー ダイアログのキャプション。"
 	}
     },
     "columnChooserContainment": {
@@ -314,7 +314,7 @@
       "defaultValue": "owner",
       "description": {
 		"en": "Controls containment behavior. <br>                owner  The column chooser dialog will be draggable only in the grid area<br>                window  The column chooser dialog will be draggable in the whole window area",
-		"jp": "Controls containment behavior. <br>                owner  The column chooser dialog will be draggable only in the grid area<br>                window  The column chooser dialog will be draggable in the whole window area"
+		"jp": "コンテインメント動作を制御します。<br>    owner  列選択ダイアログはグリッド領域のみにドラッグ可能です。<br>                列選択ダイアログはウィンドウ領域の全体にドラッグ可能です。"
 	},
       "valueOptions": [
         {
@@ -322,7 +322,7 @@
           "type": "string",
           "description": {
 		"en": "The column chooser dialog will be draggable only in the grid area",
-		"jp": "The column chooser dialog will be draggable only in the grid area"
+		"jp": "列選択ダイアログはグリッド領域のみにドラッグ可能です。"
 	}
         },
         {
@@ -330,7 +330,7 @@
           "type": "string",
           "description": {
 		"en": "The column chooser dialog will be draggable in the whole window area",
-		"jp": "The column chooser dialog will be draggable in the whole window area"
+		"jp": "列選択ダイアログはウィンドウ領域の全体にドラッグ可能です。"
 	}
         }
       ]
@@ -340,7 +340,7 @@
       "defaultValue": "",
       "description": {
 		"en": "The text used in the drop down tools menu(Feature Chooser) to launch the column chooser dialog.",
-		"jp": "The text used in the drop down tools menu(Feature Chooser) to launch the column chooser dialog."
+		"jp": "列チューザー ダイアログを開始するために、ドロップ ダウンのツール メニュー (機能選択) で使用されるテキスト。"
 	}
     },
     "columnChooserHeight": {
@@ -348,7 +348,7 @@
       "defaultValue": "",
       "description": {
 		"en": "The default column chooser height in pixels.",
-		"jp": "The default column chooser height in pixels."
+		"jp": "デフォルトの列セレクターの高さ (ピクセル)。"
 	}
     },
     "columnChooserHideOnClick": {
@@ -356,7 +356,7 @@
       "defaultValue": false,
       "description": {
 		"en": "Specifies on click show/hide directly to be shown/hidden columns. If columnChooserHideOnClick is false then Apply and Cancel Buttons are shown on the bottom of modal dialog. Columns are Shown/Hidden after the Apply button is clicked",
-		"jp": "Specifies on click show/hide directly to be shown/hidden columns. If columnChooserHideOnClick is false then Apply and Cancel Buttons are shown on the bottom of modal dialog. Columns are Shown/Hidden after the Apply button is clicked"
+		"jp": "列を表示/非表示にするためにクリックして直接表示するか、それとも非表示にするかを指定します。columnChooserHideOnClick が false の場合、適用ボタンとキャンセルボタンがモーダル ダイアログの下側に表示されます。適用ボタンがクリックされた後で列が表示/非表示になります。"
 	}
     },
     "columnChooserHideText": {
@@ -364,7 +364,7 @@
       "defaultValue": "",
       "description": {
 		"en": "The text used in the column chooser to hide column",
-		"jp": "The text used in the column chooser to hide column"
+		"jp": "列を非表示にするために列チューザーで使用されるテキスト"
 	}
     },
     "columnChooserResetButtonLabel": {
@@ -372,7 +372,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Text label for reset button.",
-		"jp": "Text label for reset button."
+		"jp": "リセット ボタン用のテキストラベル。"
 	}
     },
     "columnChooserShowText": {
@@ -380,7 +380,7 @@
       "defaultValue": "",
       "description": {
 		"en": "The text used in the column chooser to show column",
-		"jp": "The text used in the column chooser to show column"
+		"jp": "列を表示するために列チューザーで使用されるテキスト"
 	}
     },
     "columnChooserWidth": {
@@ -388,7 +388,7 @@
       "defaultValue": 350.0,
       "description": {
 		"en": "The default column chooser width in pixels.",
-		"jp": "The default column chooser width in pixels."
+		"jp": "デフォルトの列セレクターの幅 (ピクセル)。"
 	}
     },
     "columnHideText": {
@@ -396,7 +396,7 @@
       "defaultValue": "",
       "description": {
 		"en": "The text used in the drop down tools menu(Feature Chooser) to hide a column.",
-		"jp": "The text used in the drop down tools menu(Feature Chooser) to hide a column."
+		"jp": "列を非表示にするために、ドロップ ダウンのツール メニュー (機能選択) で使用されるテキスト。"
 	}
     },
     "columnSettings": {
@@ -404,7 +404,7 @@
       "defaultValue": null,
       "description": {
 		"en": "A list of column settings that specifies hiding options on a per column basis.",
-		"jp": "A list of column settings that specifies hiding options on a per column basis."
+		"jp": "非表示オプションを列ごとに指定する列設定のリスト。"
 	},
       "schema": {
         "columnKey": {
@@ -412,7 +412,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Specifies the column key of the hidden column",
-		"jp": "Specifies the column key of the hidden column"
+		"jp": "非表示された列の列キーを指定します。"
 	},
           "required": true
         },
@@ -421,7 +421,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Column index can be used in place of column key. The preferred way of populating a column setting is to always use the column keys as identifiers.",
-		"jp": "Column index can be used in place of column key. The preferred way of populating a column setting is to always use the column keys as identifiers."
+		"jp": "列インデックスは列キーの代わりに使用できます。列設定の生成には列を常に識別子として使用することを推奨します。"
 	}
         },
         "allowHiding": {
@@ -429,7 +429,7 @@
           "defaultValue": true,
           "description": {
 		"en": "Allows the column to be hidden.",
-		"jp": "Allows the column to be hidden."
+		"jp": "列の非表示を許可します。"
 	}
         },
         "hidden": {
@@ -437,7 +437,7 @@
           "defaultValue": false,
           "description": {
 		"en": "Sets the initial visibility of the column.",
-		"jp": "Sets the initial visibility of the column."
+		"jp": "列の初期表示状態 (表示/非表示) を設定します。"
 	}
         }
       }
@@ -447,7 +447,7 @@
       "defaultValue": 500.0,
       "description": {
 		"en": "The duration of the dropdown animation in milliseconds.",
-		"jp": "The duration of the dropdown animation in milliseconds."
+		"jp": "ドロップダウン アニメーションの時間 (ミリ秒)。"
 	}
     },
     "hiddenColumnIndicatorHeaderWidth": {
@@ -455,7 +455,7 @@
       "defaultValue": 7.0,
       "description": {
 		"en": "The width in pixels of the hidden column indicator in the header.",
-		"jp": "The width in pixels of the hidden column indicator in the header."
+		"jp": "ヘッダー内の非表示の列インジケーターの幅 (ピクセル)。"
 	}
     },
     "hiddenColumnIndicatorTooltipText": {
@@ -463,7 +463,7 @@
       "defaultValue": "",
       "description": {
 		"en": "The text displayed in the tooltip of the hidden column indicator.",
-		"jp": "The text displayed in the tooltip of the hidden column indicator."
+		"jp": "非表示の列インジケーターのツールチップに表示されるテキスト。"
 	}
     }
   }

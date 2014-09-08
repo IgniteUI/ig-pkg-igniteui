@@ -1,4 +1,4 @@
-{
+﻿{
   "overview": null,
   "name": "ui.igLayoutManager",
   "category": null,
@@ -20,7 +20,7 @@
       ],
       "description": {
 		"en": "Event fired after items are resized.<br>                Use ui.owner to get a reference to the layout manager performing resizing.",
-		"jp": "Event fired after items are resized.<br>                Use ui.owner to get a reference to the layout manager performing resizing."
+		"jp": "項目がサイズ変更された後に発生するイベント。<br>                ui.owner を使用して、サイズ変更を実行するレイアウト マネージャーへの参照を取得します。"
 	}
     },
     "internalResizing": {
@@ -39,7 +39,7 @@
       ],
       "description": {
 		"en": "Event fired before items are resized.<br>                Use ui.owner to get a reference to the layout manager performing resizing.",
-		"jp": "Event fired before items are resized.<br>                Use ui.owner to get a reference to the layout manager performing resizing."
+		"jp": "項目がサイズ変更される前に発生するイベント。<br>                ui.owner を使用して、サイズ変更を実行するレイアウト マネージャーへの参照を取得します。"
 	}
     },
     "itemRendered": {
@@ -58,7 +58,7 @@
       ],
       "description": {
 		"en": "Event fired after an item has been rendered in the container<br>    Function takes arguments evt and ui.<br>    Use ui.owner to get reference to the igLayoutManager.<br>    Use ui.itemData to get a reference of item's settings, such as colspan ,rowspan, etc. <br>    use ui.index to get a reference of the item's index, if the layout is flow or vertical",
-		"jp": "Event fired after an item has been rendered in the container<br>    Function takes arguments evt and ui.<br>    Use ui.owner to get reference to the igLayoutManager.<br>    Use ui.itemData to get a reference of item's settings, such as colspan ,rowspan, etc. <br>    use ui.index to get a reference of the item's index, if the layout is flow or vertical"
+		"jp": "項目がコンテナーに描画された後に発生したイベント。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して、igLayoutManager への参照を取得します。<br>    ui.itemData を使用して、colspan、rowspan などの項目の設定への参照を取得します。<br>    ui.index を使用して、レイアウトがフローまたは垂直の場合、項目のインデックスへの参照を取得します。"
 	}
     },
     "itemRendering": {
@@ -77,7 +77,7 @@
       ],
       "description": {
 		"en": "Event fired before an item is rendered in the container<br>    Function takes arguments evt and ui.<br>    Use ui.owner to get reference to the igLayoutManager.<br>    Use ui.itemData to get a reference of item's settings, such as colspan ,rowspan, etc. <br>    use ui.index to get a reference of the item's index, if the layout is flow or vertical",
-		"jp": "Event fired before an item is rendered in the container<br>    Function takes arguments evt and ui.<br>    Use ui.owner to get reference to the igLayoutManager.<br>    Use ui.itemData to get a reference of item's settings, such as colspan ,rowspan, etc. <br>    use ui.index to get a reference of the item's index, if the layout is flow or vertical"
+		"jp": "項目がコンテナーに描画される前に発生したイベント。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して、igLayoutManager への参照を取得します。<br>    ui.itemData を使用して、colspan、rowspan などの項目の設定への参照を取得します。<br>    ui.index を使用して、レイアウトがフローまたは垂直の場合、項目のインデックスへの参照を取得します。"
 	}
     },
     "rendered": {
@@ -96,7 +96,7 @@
       ],
       "description": {
 		"en": "Event fired after all items are rendered.<br>                Function takes arguments evt and ui.<br>    Use ui.owner to get reference to the igLayoutManager.",
-		"jp": "Event fired after all items are rendered.<br>                Function takes arguments evt and ui.<br>    Use ui.owner to get reference to the igLayoutManager."
+		"jp": "すべての項目が描画された後に発生するイベント。<br>                関数は引数 evt および ui を取得します。<br>    ui.owner を使用して、igLayoutManager への参照を取得します。"
 	}
     }
   },
@@ -106,7 +106,7 @@
       "defaultValue": null,
       "description": {
 		"en": "options specific to a border layout",
-		"jp": "options specific to a border layout"
+		"jp": "境界線レイアウトのオプション。"
 	},
       "schema": {
         "leftWidth": {
@@ -114,7 +114,7 @@
           "defaultValue": null,
           "description": {
 		"en": "width of the left area",
-		"jp": "width of the left area"
+		"jp": "左の領域の幅。"
 	}
         },
         "rightWidth": {
@@ -122,7 +122,7 @@
           "defaultValue": null,
           "description": {
 		"en": "width of the right area",
-		"jp": "width of the right area"
+		"jp": "右の領域の幅。"
 	}
         },
         "showHeader": {
@@ -130,7 +130,7 @@
           "defaultValue": true,
           "description": {
 		"en": "specifies header visibility",
-		"jp": "specifies header visibility"
+		"jp": "ヘッダーの表示状態を指定します"
 	}
         },
         "showFooter": {
@@ -138,7 +138,7 @@
           "defaultValue": true,
           "description": {
 		"en": "specifies footer visibility",
-		"jp": "specifies footer visibility"
+		"jp": "フッターの表示状態を指定します"
 	}
         },
         "showLeft": {
@@ -146,7 +146,7 @@
           "defaultValue": true,
           "description": {
 		"en": "specifies left area visibility",
-		"jp": "specifies left area visibility"
+		"jp": "左の領域の表示状態を指定します"
 	}
         },
         "showRight": {
@@ -154,7 +154,7 @@
           "defaultValue": true,
           "description": {
 		"en": "specifies right area visibility",
-		"jp": "specifies right area visibility"
+		"jp": "右の領域の表示状態を指定します"
 	}
         }
       }
@@ -164,7 +164,7 @@
       "defaultValue": null,
       "description": {
 		"en": "options specific to grid layout mode",
-		"jp": "options specific to grid layout mode"
+		"jp": "グリッド レイアウト モードのオプション。"
 	},
       "schema": {
         "cols": {
@@ -172,7 +172,7 @@
           "defaultValue": 3,
           "description": {
 		"en": "number of columns in the grid layout",
-		"jp": "number of columns in the grid layout"
+		"jp": "グリッド レイアウトの列の数。"
 	},
           "required": true
         },
@@ -181,7 +181,7 @@
           "defaultValue": 3,
           "description": {
 		"en": "number of rows in the grid layout",
-		"jp": "number of rows in the grid layout"
+		"jp": "グリッド レイアウトの行の数。"
 	},
           "required": true
         },
@@ -190,7 +190,7 @@
           "defaultValue": 300,
           "description": {
 		"en": "width for a single item",
-		"jp": "width for a single item"
+		"jp": "単一の項目の幅"
 	}
         },
         "columnHeight": {
@@ -198,7 +198,7 @@
           "defaultValue": 200,
           "description": {
 		"en": "height for a single item",
-		"jp": "height for a single item"
+		"jp": "単一の項目の高さ"
 	}
         },
         "animationDuration": {
@@ -230,7 +230,7 @@
           "defaultValue": true,
           "description": {
 		"en": "rearrange items automatically on layout change",
-		"jp": "rearrange items automatically on layout change"
+		"jp": "レイアウト変更で項目を自動的に配置します"
 	}
         }
       }
@@ -240,7 +240,7 @@
       "defaultValue": null,
       "description": {
 		"en": "height of the layout container",
-		"jp": "height of the layout container"
+		"jp": "レイアウト コンテナーの高さ"
 	}
     },
     "itemCount": {
@@ -248,7 +248,7 @@
       "defaultValue": null,
       "description": {
 		"en": "number of items to render, this is only applicable to layouts: vertical and flow",
-		"jp": "number of items to render, this is only applicable to layouts: vertical and flow"
+		"jp": "描画する項目の数。これは垂直レイアウトおよびフロー レイアウトのみに適用します。"
 	}
     },
     "items": {
@@ -256,7 +256,7 @@
       "defaultValue": null,
       "description": {
 		"en": "an array of item descriptions <br>    this assumes the container is empty, and every item<br>    is described by rowspan,colspan, etc. - otherwise values of<br>    1 are assumed<br>    items can have various properties some of which may not be applicable<br>    depending on the layoutMode.<br>    for example rowSpan/colSpan/colIndex/rowIndex are only applicable to gridlayout",
-		"jp": "an array of item descriptions <br>    this assumes the container is empty, and every item<br>    is described by rowspan,colspan, etc. - otherwise values of<br>    1 are assumed<br>    items can have various properties some of which may not be applicable<br>    depending on the layoutMode.<br>    for example rowSpan/colSpan/colIndex/rowIndex are only applicable to gridlayout"
+		"jp": "項目説明の配列。<br>    コンテナーが空で、各項目は<br>    rowspan、colspan などによって説明される前提条件があります。それ以外の場合、<br>    1 の値を設定します。<br>    layoutMode に基づいて、項目のプロパティを適用しない<br>    可能性があります。<br>    たとえば、rowSpan/colSpan/colIndex/rowIndex は gridlayout のみに適用されます。"
 	},
       "schema": {
         "width": {
@@ -265,7 +265,7 @@
           "defaultValue": null,
           "description": {
 		"en": "item width",
-		"jp": "item width"
+		"jp": "項目の幅"
 	}
         },
         "height": {
@@ -274,7 +274,7 @@
           "defaultValue": null,
           "description": {
 		"en": "item height",
-		"jp": "item height"
+		"jp": "項目の高さ"
 	}
         },
         "rowSpan": {
@@ -282,7 +282,7 @@
           "defaultValue": 1,
           "description": {
 		"en": "item row span - number of rows in a grid layout to span",
-		"jp": "item row span - number of rows in a grid layout to span"
+		"jp": "項目の行スパン - グリッド レイアウトでスパンする行の数"
 	}
         },
         "colSpan": {
@@ -290,7 +290,7 @@
           "defaultValue": 1,
           "description": {
 		"en": "item column span - number of columns in a grid layout to span",
-		"jp": "item column span - number of columns in a grid layout to span"
+		"jp": "項目の列スパン - グリッド レイアウトでスパンする列の数"
 	}
         },
         "rowIndex": {
@@ -298,7 +298,7 @@
           "defaultValue": 0,
           "description": {
 		"en": "row position",
-		"jp": "row position"
+		"jp": "行の位置"
 	}
         },
         "colIndex": {
@@ -306,7 +306,7 @@
           "defaultValue": 0,
           "description": {
 		"en": "column position",
-		"jp": "column position"
+		"jp": "列の位置"
 	}
         }
       }
@@ -316,7 +316,7 @@
       "defaultValue": "column",
       "description": {
 		"en": " defines the layout type",
-		"jp": " defines the layout type"
+		"jp": " レイアウト タイプを定義します"
 	},
       "valueOptions": [
         {
@@ -324,7 +324,7 @@
           "type": "string",
           "description": {
 		"en": "Defines grid layout",
-		"jp": "Defines grid layout"
+		"jp": "グリッド レイアウトを定義します"
 	}
         },
         {
@@ -332,7 +332,7 @@
           "type": "string",
           "description": {
 		"en": "Defines border layout",
-		"jp": "Defines border layout"
+		"jp": "境界線のレイアウトを定義します"
 	}
         },
         {
@@ -340,7 +340,7 @@
           "type": "string",
           "description": {
 		"en": "Defines flow layout",
-		"jp": "Defines flow layout"
+		"jp": "フロー レイアウトを定義します"
 	}
         },
         {
@@ -348,7 +348,7 @@
           "type": "string",
           "description": {
 		"en": "Defines column layout. CSS only is used instead of initializing the igLayoutManager widget.",
-		"jp": "Defines column layout. CSS only is used instead of initializing the igLayoutManager widget."
+		"jp": "列のレイアウトを定義します。igLayoutManager ウィジェットを初期化する代わりに CSS のみは使用されます。"
 	}
         },
         {
@@ -356,7 +356,7 @@
           "type": "string",
           "description": {
 		"en": "Defines vertical layout. CSS only is used instead of initializing the igLayoutManager widget",
-		"jp": "Defines vertical layout. CSS only is used instead of initializing the igLayoutManager widget"
+		"jp": "垂直レイアウトを定義します。igLayoutManager ウィジェットを初期化する代わりに CSS のみは使用されます。"
 	}
         }
       ]
@@ -366,7 +366,7 @@
       "defaultValue": null,
       "description": {
 		"en": "width of the layout container",
-		"jp": "width of the layout container"
+		"jp": "レイアウト コンテナーの幅"
 	}
     }
   }

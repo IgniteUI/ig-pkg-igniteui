@@ -1,11 +1,11 @@
-{
+﻿{
   "properties": {
     "showIcon": {
       "type": "bool",
       "defaultValue": true,
       "description": {
 		"en": "Gets or sets visibility of icon on error message.",
-		"jp": "Gets or sets visibility of icon on error message."
+		"jp": "エラー メッセージ上のアイコンの可視性を取得または設定します。"
 	}
     },
     "animationShow": {
@@ -13,7 +13,7 @@
       "defaultValue": 300,
       "description": {
 		"en": "Gets or sets duration of show animation in milliseconds.",
-		"jp": "Gets or sets duration of show animation in milliseconds."
+		"jp": "アニメーションを表示する期間 (ミリ秒) を取得または設定します。"
 	}
     },
     "animationHide": {
@@ -21,7 +21,7 @@
       "defaultValue": 300,
       "description": {
 		"en": "Gets or sets duration of hide animation in milliseconds.",
-		"jp": "Gets or sets duration of hide animation in milliseconds."
+		"jp": "アニメーションを非表示にする期間 (ミリ秒) を取得または設定します。"
 	}
     },
     "enableTargetErrorCss": {
@@ -29,7 +29,7 @@
       "defaultValue": true,
       "description": {
 		"en": "Gets or sets ability to apply error css to target element.",
-		"jp": "Gets or sets ability to apply error css to target element."
+		"jp": "ターゲット要素にエラー CSS を適用する機能を取得または設定します。"
 	}
     },
     "alignment": {
@@ -37,7 +37,7 @@
       "defaultValue": "bottom",
       "description": {
 		"en": "Gets or sets location of error label relative to target element.",
-		"jp": "Gets or sets location of error label relative to target element."
+		"jp": "ターゲット要素に相対的なエラー ラベルの場所を取得または設定します。"
 	}
     },
     "keepFocus": {
@@ -45,7 +45,7 @@
       "defaultValue": "never",
       "description": {
 		"en": "Gets or sets option to set focus back to editor when validation failed. Default value comes from corresponding member in $.ui.igValidator.defaults object, which is undefined.",
-		"jp": "Gets or sets option to set focus back to editor when validation failed. Default value comes from corresponding member in $.ui.igValidator.defaults object, which is undefined."
+		"jp": "検証が失敗したときにフォーカスをエディターに戻すオプションを取得または設定します。デフォルトは、$.ui.igValidator.defaults 内の対応するメンバーに基づき、未定義です。"
 	},
       "valueOptions": [
           {
@@ -53,7 +53,7 @@
             "type": "string",
             "description": {
 		"en": "Don't keep focus",
-		"jp": "Don't keep focus"
+		"jp": "フォーカスを保持しません"
 	}
           },
           {
@@ -61,7 +61,7 @@
             "type": "string",
             "description": {
 		"en": "Keep the focus only once",
-		"jp": "Keep the focus only once"
+		"jp": "フォーカスを一度に保持します"
 	}
           },
           {
@@ -69,7 +69,7 @@
             "type": "string",
             "description": {
 		"en": " Always keep the focus",
-		"jp": " Always keep the focus"
+		"jp": " 常にフォーカスを保持します"
 	}
           }
         ]
@@ -79,7 +79,7 @@
       "defaultValue": true,
       "description": {
 		"en": "Gets or sets triggering validation when value in editor was changed.",
-		"jp": "Gets or sets triggering validation when value in editor was changed."
+		"jp": "エディターの値が変更されたときのトリガー検証を取得または設定します。"
 	}
     },
     "onblur": {
@@ -87,7 +87,7 @@
       "defaultValue": true,
       "description": {
 		"en": "Gets or sets triggering validation when editor lost focus.",
-		"jp": "Gets or sets triggering validation when editor lost focus."
+		"jp": "エディターがフォーカスを失ったときのトリガー検証を取得または設定します。"
 	}
     },
     "formSubmit": {
@@ -95,7 +95,7 @@
       "defaultValue": false,
       "description": {
 		"en": "Gets or sets triggering validation when application called form.submit().",
-		"jp": "Gets or sets triggering validation when application called form.submit()."
+		"jp": "アプリケーションが form.submit() 呼び出したときのトリガー検証を取得または設定します。"
 	}
     },
     "onsubmit": {
@@ -103,7 +103,7 @@
       "defaultValue": true,
       "description": {
 		"en": "Gets or sets triggering validation when form gets onsubmit event.",
-		"jp": "Gets or sets triggering validation when form gets onsubmit event."
+		"jp": "フォームが onsubmit イベントを取得したときのトリガー検証を取得または設定します。"
 	}
     },
     "bodyAsParent": {
@@ -111,7 +111,7 @@
       "defaultValue": true,
       "description": {
 		"en": "Gets or sets parent/location of error message.",
-		"jp": "Gets or sets parent/location of error message."
+		"jp": "エラー メッセージの親/場所を取得または設定します。"
 	}
     },
     "required": {
@@ -119,7 +119,7 @@
       "defaultValue": false,
       "description": {
 		"en": "Gets or sets option to validate if value was entered (not empty text, selected item, etc.)",
-		"jp": "Gets or sets option to validate if value was entered (not empty text, selected item, etc.)"
+		"jp": "値 (空でないテキスト、選択項目など) が入力されたかどうかを検証するオプションを取得または設定します。"
 	}
     },
     "minLength": {
@@ -127,7 +127,7 @@
       "defaultValue": -1,
       "description": {
 		"en": "Gets or sets minimum length of text or minimum number of selected items.",
-		"jp": "Gets or sets minimum length of text or minimum number of selected items."
+		"jp": "テキストの最小長または選択した項目の最小数を取得または設定します。"
 	}
     },
     "maxLength": {
@@ -135,7 +135,7 @@
       "defaultValue": -1,
       "description": {
 		"en": "Gets or sets maximum length of text or maximum number of selected items.",
-		"jp": "Gets or sets maximum length of text or maximum number of selected items."
+		"jp": "テキストの最大長または選択した項目の最大数を取得または設定します。"
 	}
     },
     "min": {
@@ -143,7 +143,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets validation for minimum number.",
-		"jp": "Gets or sets validation for minimum number."
+		"jp": "最小数の検証を取得または設定します。"
 	}
     },
     "max": {
@@ -151,7 +151,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets validation for maximum number.",
-		"jp": "Gets or sets validation for maximum number."
+		"jp": "最大数の検証を取得または設定します。"
 	}
     },
     "regExp": {
@@ -159,7 +159,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets regular expression which is used to validate value in text editor.",
-		"jp": "Gets or sets regular expression which is used to validate value in text editor."
+		"jp": "テキスト エディター内の値を検証するために使用する正規表現を取得または設定します。"
 	}
     },
     "checkboxesName": {
@@ -167,7 +167,7 @@
       "defaultValue": false,
       "description": {
 		"en": "Gets or sets option to use the name attribute of checkboxes in order to validate ranges.",
-		"jp": "Gets or sets option to use the name attribute of checkboxes in order to validate ranges."
+		"jp": "範囲を検証するためにチェックボックスの名前属性を使用するためのオプションを取得または設定します。"
 	}
     },
     "theme": {
@@ -175,7 +175,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets selector for css classes.",
-		"jp": "Gets or sets selector for css classes."
+		"jp": "CSS クラスのセレクターを取得または設定します。"
 	}
     },
     "errorMessage": {
@@ -183,7 +183,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Gets or sets text for error-message which overrides all possible specific error-messages.",
-		"jp": "Gets or sets text for error-message which overrides all possible specific error-messages."
+		"jp": "すべての可能な固有のエラー メッセージをオーバーライドするエラー メッセージのテキストを取得または設定します。"
 	}
     }
   }

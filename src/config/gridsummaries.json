@@ -1,4 +1,4 @@
-{
+﻿{
   "overview": null,
   "name": "ui.igGridSummaries",
   "title": "Column Summaries",
@@ -21,7 +21,7 @@
       ],
       "description": {
 		"en": "Event is fired when Cancel button is clicked in drop down.<br>   Function takes arguments evt and ui.<br>   Use ui.columnKey to get column key for which Cancel button is clicked.<br>   Use ui.owner in order to access the igGridSummaries widget object.",
-		"jp": "Event is fired when Cancel button is clicked in drop down.<br>   Function takes arguments evt and ui.<br>   Use ui.columnKey to get column key for which Cancel button is clicked.<br>   Use ui.owner in order to access the igGridSummaries widget object."
+		"jp": "ドロップダウンで [キャンセル] ボタンがクリックされたときに発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ui.columnKey を使用して、[キャンセル] ボタンがクリックされた列キーを取得します。<br>   ui.owner を使用して、igGridSummaries ウィジェット オブジェクトにアクセスします。"
 	}
     },
     "dropDownClosed": {
@@ -40,7 +40,7 @@
       ],
       "description": {
 		"en": "Event fired after the dropdown for a summary column is closed <br>   Function takes arguments evt and ui.<br>   Use ui.columnKey to get column key of the column where drop down is closing.<br>   Use ui.owner in order to access the igGridSummaries widget object.",
-		"jp": "Event fired after the dropdown for a summary column is closed <br>   Function takes arguments evt and ui.<br>   Use ui.columnKey to get column key of the column where drop down is closing.<br>   Use ui.owner in order to access the igGridSummaries widget object."
+		"jp": "集計列のドロップダウンを閉じた後に発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ui.columnKey を使用して、ドロップダウンを閉じる列の列キーを取得します。<br>   ui.owner を使用して、igGridSummaries ウィジェット オブジェクトにアクセスします。"
 	}
     },
     "dropDownClosing": {
@@ -59,7 +59,7 @@
       ],
       "description": {
 		"en": "Event fired before the dropdown for a summary column starts closing <br>   Return false in order to cancel closing the drop down.<br>   Function takes arguments evt and ui.<br>   Use ui.columnKey to get column key of the column where drop down is closing.<br>   Use ui.owner in order to access the igGridSummaries widget object.",
-		"jp": "Event fired before the dropdown for a summary column starts closing <br>   Return false in order to cancel closing the drop down.<br>   Function takes arguments evt and ui.<br>   Use ui.columnKey to get column key of the column where drop down is closing.<br>   Use ui.owner in order to access the igGridSummaries widget object."
+		"jp": "集計列のドロップダウンが閉じ始める前に発生するイベント。<br>   ドロップダウンを閉じるのをキャンセルするには、false を返します。<br>   関数は引数 evt および ui を取得します。<br>   ui.columnKey を使用して、ドロップダウンを閉じる列の列キーを取得します。<br>   ui.owner を使用して、igGridSummaries ウィジェット オブジェクトにアクセスします。"
 	}
     },
     "dropDownOKClicked": {
@@ -78,7 +78,7 @@
       ],
       "description": {
 		"en": "Event is fired when OK button is clicked in drop down<br>   Function takes arguments evt and ui.<br>   Use ui.columnKey to get column key for which OK button is clicked.<br>   Use ui.eventData to get data about which summary methods are(not) selected. Format of event data is {type: 'min', active: false};<br>   Use ui.owner in order to access the igGridSummaries widget object.",
-		"jp": "Event is fired when OK button is clicked in drop down<br>   Function takes arguments evt and ui.<br>   Use ui.columnKey to get column key for which OK button is clicked.<br>   Use ui.eventData to get data about which summary methods are(not) selected. Format of event data is {type: 'min', active: false};<br>   Use ui.owner in order to access the igGridSummaries widget object."
+		"jp": "ドロップダウンで OK ボタンがクリックされたときに発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ui.columnKey を使用して、[OK] ボタンがクリックされた列キーを取得します。<br>   ui.eventData を使用して、どの集計メソッドが選択されているか (いないか) のデータを取得します。イベント データの書式は {type = "min"; active: false}; です。<br>   ui.owner を使用して、igGridSummaries ウィジェット オブジェクトにアクセスします。"
 	}
     },
     "dropDownOpened": {
@@ -97,7 +97,7 @@
       ],
       "description": {
 		"en": "Event fired after the summaries dropdown is opened for a specific column<br>   Function takes arguments evt and ui.<br>   Use ui.columnKey to get column key of the column where drop down is shown.<br>   Use ui.owner in order to access the igGridSummaries widget object.",
-		"jp": "Event fired after the summaries dropdown is opened for a specific column<br>   Function takes arguments evt and ui.<br>   Use ui.columnKey to get column key of the column where drop down is shown.<br>   Use ui.owner in order to access the igGridSummaries widget object."
+		"jp": "特定の列の集計ドロップダウンが開いた後に発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ui.columnKey を使用して、ドロップダウンを表示する列の列キーを取得します。<br>   ui.owner を使用して、igGridSummaries ウィジェット オブジェクトにアクセスします。"
 	}
     },
     "dropDownOpening": {
@@ -116,7 +116,7 @@
       ],
       "description": {
 		"en": "Event fired before drop down is opened for a specific column summary <br>   Return false in order to cancel opening the drop down.<br>   Function takes arguments evt and ui.<br>   Use ui.columnKey to get column key of the column where drop down is opening.<br>   Use ui.owner in order to access the igGridSummaries widget object.",
-		"jp": "Event fired before drop down is opened for a specific column summary <br>   Return false in order to cancel opening the drop down.<br>   Function takes arguments evt and ui.<br>   Use ui.columnKey to get column key of the column where drop down is opening.<br>   Use ui.owner in order to access the igGridSummaries widget object."
+		"jp": "特定の列の集計に対してドロップダウンが開く前に発生するイベント。<br>   ドロップダウンを開くのをキャンセルするには、false を返します。<br>   関数は引数 evt および ui を取得します。<br>   ui.columnKey を使用して、ドロップダウンを閉じる列の列キーを取得します。<br>   ui.owner を使用して、igGridSummaries ウィジェット オブジェクトにアクセスします。"
 	}
     },
     "summariesCalculated": {
@@ -135,7 +135,7 @@
       ],
       "description": {
 		"en": "Event fired after summaries calculation are completely made<br>   Function takes arguments evt and ui.<br>   Use ui.data to get data for calculated summaries<br>   Use ui.owner in order to access the igGridSummaries widget object.",
-		"jp": "Event fired after summaries calculation are completely made<br>   Function takes arguments evt and ui.<br>   Use ui.data to get data for calculated summaries<br>   Use ui.owner in order to access the igGridSummaries widget object."
+		"jp": "集計の計算が完了した後に発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ui.data を使用して、計算された集計値のデータを取得します。<br>   ui.owner を使用して、igGridSummaries ウィジェット オブジェクトにアクセスします。"
 	}
     },
     "summariesCalculating": {
@@ -154,7 +154,7 @@
       ],
       "description": {
 		"en": "Event fired before summaries calculations are made<br>   Return false in order to cancel calculation of summaries.<br>   Function takes arguments evt and ui.<br>   Use ui.owner in order to access the igGridSummaries widget object.",
-		"jp": "Event fired before summaries calculations are made<br>   Return false in order to cancel calculation of summaries.<br>   Function takes arguments evt and ui.<br>   Use ui.owner in order to access the igGridSummaries widget object."
+		"jp": "集計の計算が行われる前に発生するイベント。<br>   集計の計算をキャンセルするには、false を返します。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridSummaries ウィジェット オブジェクトにアクセスします。"
 	}
     },
     "summariesMethodSelectionChanged": {
@@ -173,7 +173,7 @@
       ],
       "description": {
 		"en": "Event fired when user selects/deselects summary method from checkbox <br>   Function takes arguments evt and ui.<br>   Use ui.columnKey to get column key of the column where it is changed selection of summary method<br>   Use ui.isSelected to get whether method is selected or not<br>   Use ui.methodName to get summary method name<br>   Use ui.owner in order to access the igGridSummaries widget object.",
-		"jp": "Event fired when user selects/deselects summary method from checkbox <br>   Function takes arguments evt and ui.<br>   Use ui.columnKey to get column key of the column where it is changed selection of summary method<br>   Use ui.isSelected to get whether method is selected or not<br>   Use ui.methodName to get summary method name<br>   Use ui.owner in order to access the igGridSummaries widget object."
+		"jp": "ユーザーがチェックボックスから集計メソッドを選択/選択解除するときに発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ui.columnKey を使用して、集計メソッドの選択を変更した列の列キーを取得します。<br>   ui.isSelected を使用して、メソッドを選択したかどうかを取得します。<br>   ui.methodName を使用して、集計メソッドの名前を取得します。<br>   ui.owner を使用して、igGridSummaries ウィジェット オブジェクトにアクセスします。"
 	}
     },
     "summariesToggled": {
@@ -192,7 +192,7 @@
       ],
       "description": {
 		"en": "Event is fired after summary rows are toggled<br>   Function takes arguments evt and ui.<br>   Use ui.isToShow to get whether summaries are shown or not.<br>   Use ui.owner in order to access the igGridSummaries widget object.",
-		"jp": "Event is fired after summary rows are toggled<br>   Function takes arguments evt and ui.<br>   Use ui.isToShow to get whether summaries are shown or not.<br>   Use ui.owner in order to access the igGridSummaries widget object."
+		"jp": "集計行が切り替えられた後に発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ui.isToShow を使用して、集計を表示したかどうかを取得します。<br>   ui.owner を使用して、igGridSummaries ウィジェット オブジェクトにアクセスします。"
 	}
     },
     "summariesToggling": {
@@ -211,7 +211,7 @@
       ],
       "description": {
 		"en": "Event is fired bofore summary rows start toggling <br>   Return false in order to cancel showing/hiding of summaries.<br>   Function takes arguments evt and ui.<br>   Use ui.isToShow to get whether summaries are shown or not.<br>   Use ui.owner in order to access the igGridSummaries widget object.",
-		"jp": "Event is fired bofore summary rows start toggling <br>   Return false in order to cancel showing/hiding of summaries.<br>   Function takes arguments evt and ui.<br>   Use ui.isToShow to get whether summaries are shown or not.<br>   Use ui.owner in order to access the igGridSummaries widget object."
+		"jp": "集計行の切り替えが開始する前に発生するイベント。<br>   集計の表示/非表示をキャンセルするには、false を返します。<br>   関数は引数 evt および ui を取得します。<br>   ui.isToShow を使用して、集計を表示したかどうかを取得します。<br>   ui.owner を使用して、igGridSummaries ウィジェット オブジェクトにアクセスします。"
 	}
     }
   },
@@ -225,7 +225,7 @@
       "defaultValue": null,
       "description": {
 		"en": " Specifies when calculations are made. ",
-		"jp": " Specifies when calculations are made. "
+		"jp": " 計算が行われる時を指定します。 "
 	},
       "valueOptions": [
         {
@@ -233,7 +233,7 @@
           "type": "string",
           "description": {
 		"en": " summaries are updated when checkbox is checked/unchecked ",
-		"jp": " summaries are updated when checkbox is checked/unchecked "
+		"jp": " チェックボックスが選択または選択解除されると、集計は更新されます。 "
 	}
         },
         {
@@ -241,7 +241,7 @@
           "type": "string",
           "description": {
 		"en": " summaries are updated only when OK button is clicked",
-		"jp": " summaries are updated only when OK button is clicked"
+		"jp": " [OK] ボタンをクリックしたときのみ集計は更新されます。"
 	}
         }
       ]
@@ -251,7 +251,7 @@
       "defaultValue": null,
       "description": {
 		"en": "Function reference - it is called when data is retrieved from the data source",
-		"jp": "Function reference - it is called when data is retrieved from the data source"
+		"jp": "機能の参照 - データがデータ ソースから検索されるときに呼び出されます。"
 	}
     },
     "columnSettings": {
@@ -259,7 +259,7 @@
       "defaultValue": null,
       "description": {
 		"en": "List of column settings that specifies custom summaries options per column basis",
-		"jp": "List of column settings that specifies custom summaries options per column basis"
+		"jp": "カスタム集計オプションを列ごとに指定する列設定のリスト。"
 	},
 	  "designerDisplayProperty": "columnKey",
       "schema": {
@@ -268,7 +268,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Specifies the column key of the column with summary",
-		"jp": "Specifies the column key of the column with summary"
+		"jp": "集計済み列の列キーを指定します。"
 	},
           "required": true
         },
@@ -277,7 +277,7 @@
           "defaultValue": -1,
           "description": {
 		"en": "Column index can be used in place of column key. The preferred way of populating a column setting is to always use the column keys as identifiers",
-		"jp": "Column index can be used in place of column key. The preferred way of populating a column setting is to always use the column keys as identifiers"
+		"jp": "列インデックスは列キーの代わりに使用できます。列設定の生成には列を常に識別子として使用することを推奨します。"
 	}
         },
         "allowSummaries": {
@@ -285,7 +285,7 @@
           "defaultValue": true,
           "description": {
 		"en": "Enables disables summaries for the column",
-		"jp": "Enables disables summaries for the column"
+		"jp": "列の集計を有効または無効にします。"
 	}
         },
         "summaryOperands": {
@@ -293,7 +293,7 @@
           "defaultValue": null,
           "description": {
 		"en": "Defines the summary operands",
-		"jp": "Defines the summary operands"
+		"jp": "集計オペランドを定義します"
 	},
           "schema": {
             "rowDisplayLabel": {
@@ -301,7 +301,7 @@
               "defaultValue": "",
               "description": {
 		"en": "Text of the summary method which is shown in summary cell",
-		"jp": "Text of the summary method which is shown in summary cell"
+		"jp": "集計セルに表示される集計メソッドのテキスト。"
 	}
             },
             "type": {
@@ -309,7 +309,7 @@
               "defaultValue": "custom",
               "description": {
 		"en": "Set type of summary operand",
-		"jp": "Set type of summary operand"
+		"jp": "集計オペランドのタイプを設定します。"
 	},
               "valueOptions": [
                 {
@@ -317,7 +317,7 @@
                   "type": "string",
                   "description": {
 		"en": "The summaries are calculated using count function",
-		"jp": "The summaries are calculated using count function"
+		"jp": "集計はカウント関数で計算されます。"
 	}
                 },
                 {
@@ -325,7 +325,7 @@
                   "type": "string",
                   "description": {
 		"en": "The summaries are calculated using min function",
-		"jp": "The summaries are calculated using min function"
+		"jp": "集計は最小値関数で計算されます。"
 	}
                 },
                 {
@@ -333,7 +333,7 @@
                   "type": "string",
                   "description": {
 		"en": "The summaries are calculated using max function",
-		"jp": "The summaries are calculated using max function"
+		"jp": "集計は最大値関数で計算されます。"
 	}
                 },
                 {
@@ -341,7 +341,7 @@
                   "type": "string",
                   "description": {
 		"en": "The summaries are calculated using sum function",
-		"jp": "The summaries are calculated using sum function"
+		"jp": "集計は合計関数で計算されます。"
 	}
                 },
                 {
@@ -349,7 +349,7 @@
                   "type": "string",
                   "description": {
 		"en": "The summaries are calculated using average function",
-		"jp": "The summaries are calculated using average function"
+		"jp": "集計は平均関数で計算されます。"
 	}
                 },
                 {
@@ -357,7 +357,7 @@
                   "type": "string",
                   "description": {
 		"en": "The summaries are calculated using custom function",
-		"jp": "The summaries are calculated using custom function"
+		"jp": "集計はカスタム関数で計算されます。"
 	}
                 }
               ]
@@ -367,7 +367,7 @@
               "defaultValue": true,
               "description": {
 		"en": "If it is false the summary operand will be shown in dropdown but it will not be made calculation",
-		"jp": "If it is false the summary operand will be shown in dropdown but it will not be made calculation"
+		"jp": "false の場合、集計オペランドがドロップダウンに表示されますが計算は実行されません。"
 	}
             },
             "summaryCalculator": {
@@ -375,7 +375,7 @@
               "defaultValue": null,
               "description": {
 		"en": "Name of the custom summary function which should be executed when type is custom",
-		"jp": "Name of the custom summary function which should be executed when type is custom"
+		"jp": "タイプがカスタムのときに実行されるカスタム集計関数の名前。"
 	},
               "required": true
             },
@@ -384,7 +384,7 @@
               "defaultValue": 5,
               "description": {
 		"en": "Specifies the order of elements in dropdown. It is recommended to set order of custom operands and to be greater or equal to 5",
-		"jp": "Specifies the order of elements in dropdown. It is recommended to set order of custom operands and to be greater or equal to 5"
+		"jp": "ドロップダウン内の要素の順序を指定します。カスタム オペランドの順序を設定し、5 以上にすることを推奨します。"
 	}
             },
             "decimalDisplay": {
@@ -392,7 +392,7 @@
               "defaultValue": 2,
               "description": {
 		"en": "Specifies the number of digits after the decimal point for result of the current summary operand. This property will be ignored when isGridFormatter is true",
-		"jp": "Specifies the number of digits after the decimal point for result of the current summary operand. This property will be ignored when isGridFormatter is true"
+		"jp": "現在の集計オペランドの結果に対して小数点以降の桁数を指定します。isGridFormatter が true のとき、このプロパティは無視されます。"
 	}
             },
             "isGridFormatter": {
@@ -400,7 +400,7 @@
               "defaultValue": false,
               "description": {
 		"en": "Specifies whether to be used grid formatter for result for the current summary operand",
-		"jp": "Specifies whether to be used grid formatter for result for the current summary operand"
+		"jp": "現在の集計オペランドの結果に対してグリッド フォーマッターを使用するかどうかを指定します。"
 	}
             }
           }
@@ -412,7 +412,7 @@
       "defaultValue": "true",
       "description": {
 		"en": "Specifies how compact the summaries are rendered.",
-		"jp": "Specifies how compact the summaries are rendered."
+		"jp": "集計を描画する際のサイズを指定します。"
 	},
       "valueOptions": [
 		{
@@ -420,7 +420,7 @@
           "type": "string",
           "description": {
 		"en": "Will use True if the maximum number of visible summaries is one or less and False otherwise",
-		"jp": "Will use True if the maximum number of visible summaries is one or less and False otherwise"
+		"jp": "表示可能な集計の最大数が 1 以下の場合 True を使用します。そうでない場合、False を使用します。"
 	}
         },
         {
@@ -428,7 +428,7 @@
           "type": "string",
           "description": {
 		"en": "Indicates that the summaries may be rendered compactly, even mixing different summaries on the same line.",
-		"jp": "Indicates that the summaries may be rendered compactly, even mixing different summaries on the same line."
+		"jp": "集計表示の最小化が有効になり、複数の集計を 1 行に表示します。"
 	}
 		},
 		{
@@ -436,7 +436,7 @@
           "type": "string",
           "description": {
 		"en": "Ensures that each summary type is occupying a separate line.",
-		"jp": "Ensures that each summary type is occupying a separate line."
+		"jp": "各集計タイプが別の行に表示されます。"
 	}
 		}
 	  ]
@@ -446,7 +446,7 @@
       "defaultValue": 2.0,
       "description": {
 		"en": "The number of digits after the decimal point. If gridFormatter is True then this option is ignored.",
-		"jp": "The number of digits after the decimal point. If gridFormatter is True then this option is ignored."
+		"jp": "小数点の後の桁数。gridFormatter が True の場合、このオプションは無視されます。"
 	}
     },
     "dialogButtonCancelText": {
@@ -454,7 +454,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Text of the button Cancel in the summaries dropdown",
-		"jp": "Text of the button Cancel in the summaries dropdown"
+		"jp": "集計ドロップダウンの [キャンセル] ボタンのテキスト。"
 	}
     },
     "dialogButtonOKText": {
@@ -462,7 +462,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Text of the button OK in the summaries dropdown",
-		"jp": "Text of the button OK in the summaries dropdown"
+		"jp": "集計ドロップダウンの [OK] ボタンのテキスト。"
 	}
     },
     "dropDownDialogAnimationDuration": {
@@ -470,7 +470,7 @@
       "defaultValue": 400.0,
       "description": {
 		"en": "Dropdown animation duration",
-		"jp": "Dropdown animation duration"
+		"jp": "ドロップダウンのアニメーションの時間。"
 	}
     },
     "dropDownHeight": {
@@ -478,7 +478,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Height of the dropdown in pixels",
-		"jp": "Height of the dropdown in pixels"
+		"jp": "ドロップダウンの高さ (ピクセル)。"
 	}
     },
     "dropDownWidth": {
@@ -486,7 +486,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Width of the dropdown in pixels",
-		"jp": "Width of the dropdown in pixels"
+		"jp": "ドロップダウンの幅 (ピクセル)。"
 	}
     },
     "emptyCellText": {
@@ -494,7 +494,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Empty text template to be shown for empty cells",
-		"jp": "Empty text template to be shown for empty cells"
+		"jp": "空のセルに表示される空のテキスト テンプレート。"
 	}
     },
     "featureChooserText": {
@@ -502,7 +502,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Get or set text that is shown in the feature chooser dropdown when summaries are hidden",
-		"jp": "Get or set text that is shown in the feature chooser dropdown when summaries are hidden"
+		"jp": "集計が非表示される場合、機能セレクターのドロップダウンで表示されるテキストを取得または設定します。"
 	}
     },
     "featureChooserTextHide": {
@@ -510,7 +510,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Get or set text that is shown in the feauture chooser dropdown when summaries are shown",
-		"jp": "Get or set text that is shown in the feauture chooser dropdown when summaries are shown"
+		"jp": "集計が表示される場合、機能セレクターのドロップダウンで表示されるテキストを取得または設定します。"
 	}
     },
     "isGridFormatter": {
@@ -518,7 +518,7 @@
       "defaultValue": true,
       "description": {
 		"en": "if this property is enabled and in summaryOperand isGridFormatter  is undefined then use grid formatting for cells",
-		"jp": "if this property is enabled and in summaryOperand isGridFormatter  is undefined then use grid formatting for cells"
+		"jp": "このプロパティが有効であり、summaryOperand isGridFormatter が未定義の場合、セルのグリッドの書式設定を使用します。"
 	}
     },
     "resultTemplate": {
@@ -526,7 +526,7 @@
       "defaultValue": "{0} = {1}",
       "description": {
 		"en": "Result template for summary result(shown in table cell)",
-		"jp": "Result template for summary result(shown in table cell)"
+		"jp": "集計結果の結果テンプレート (テーブル セル内に表示される)。"
 	}
     },
     "showDropDownButton": {
@@ -534,7 +534,7 @@
       "defaultValue": true,
       "description": {
 		"en": "Show/hide footer button(on click show/hide dropdown)",
-		"jp": "Show/hide footer button(on click show/hide dropdown)"
+		"jp": "フッター ボタンの表示/非表示 (表示/非表示ドロップダウンのクリック時)。"
 	}
     },
     "showSummariesButton": {
@@ -542,7 +542,7 @@
       "defaultValue": true,
       "description": {
 		"en": "Show header button icon in the header cell. On click - shows/hides summaries",
-		"jp": "Show header button icon in the header cell. On click - shows/hides summaries"
+		"jp": "ヘッダーのセルにヘッダー ボタン アイコンを表示します。クリック時 - 集計を表示/非表示します。"
 	}
     },
     "summariesHeaderButtonTooltip": {
@@ -550,7 +550,7 @@
       "defaultValue": "",
       "description": {
 		"en": "Tooltip text for header cell button",
-		"jp": "Tooltip text for header cell button"
+		"jp": "ヘッダー セル ボタンのツールチップ テキスト。"
 	}
     },
     "summariesResponseKey": {
@@ -558,7 +558,7 @@
       "defaultValue": "summaries",
       "description": {
 		"en": "Result key by which we get data from the result returned by remote data source.",
-		"jp": "Result key by which we get data from the result returned by remote data source."
+		"jp": "リモート データ ソースによって返された結果からデータを取得する結果キー。"
 	}
     },
     "summaryExecution": {
@@ -566,7 +566,7 @@
       "defaultValue": null,
       "description": {
 		"en": " Determines when the summary values are calculated when type is local",
-		"jp": " Determines when the summary values are calculated when type is local"
+		"jp": " タイプがローカルのとき集計値をいつ計算するかを決定します。"
 	},
       "valueOptions": [
         {
@@ -574,7 +574,7 @@
           "type": "string",
           "description": {
 		"en": "Summaries are calculated prior to filtering and paging",
-		"jp": "Summaries are calculated prior to filtering and paging"
+		"jp": "集計は、フィルタリングとページングの前に計算されます。"
 	}
         },
         {
@@ -582,7 +582,7 @@
           "type": "string",
           "description": {
 		"en": "Summaries are calculated after filtering and before paging",
-		"jp": "Summaries are calculated after filtering and before paging"
+		"jp": "集計は、フィルタリングの後、ページングの前に計算されます。"
 	}
         },
         {
@@ -590,7 +590,7 @@
           "type": "string",
           "description": {
 		"en": "Summaries are calculated after filtering and paging",
-		"jp": "Summaries are calculated after filtering and paging"
+		"jp": "集計は、フィルタリングとページングの後に計算されます。"
 	}
         }
       ]
@@ -600,7 +600,7 @@
       "defaultValue": "summaries",
       "description": {
 		"en": "Set key in GET Request for summaries - used only when type is remote",
-		"jp": "Set key in GET Request for summaries - used only when type is remote"
+		"jp": "集計の GET 要求にキーを設定します (タイプがリモートの場合にのみ使用)。"
 	}
     },
     "type": {
@@ -608,7 +608,7 @@
       "defaultValue": null,
       "description": {
 		"en": " type of summaries calculating.",
-		"jp": " type of summaries calculating."
+		"jp": " 集計計算のタイプ。"
 	},
       "valueOptions": [
         {
@@ -616,7 +616,7 @@
           "type": "string",
           "description": {
 		"en": " when it is remote summaries calculations are made on the server",
-		"jp": " when it is remote summaries calculations are made on the server"
+		"jp": " リモートのときは、集計計算はサーバーで実行されます。"
 	}
         },
         {
@@ -624,7 +624,7 @@
           "type": "string",
           "description": {
 		"en": "When it is local calculations are made on the client",
-		"jp": "When it is local calculations are made on the client"
+		"jp": "ローカルのときは、計算はクライアントで実行されます。"
 	}
         }
       ]
