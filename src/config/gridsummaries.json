@@ -78,7 +78,7 @@
       ],
       "description": {
 		"en": "Event is fired when OK button is clicked in drop down<br>   Function takes arguments evt and ui.<br>   Use ui.columnKey to get column key for which OK button is clicked.<br>   Use ui.eventData to get data about which summary methods are(not) selected. Format of event data is {type: 'min', active: false};<br>   Use ui.owner in order to access the igGridSummaries widget object.",
-		"jp": "ドロップダウンで OK ボタンがクリックされたときに発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ui.columnKey を使用して、[OK] ボタンがクリックされた列キーを取得します。<br>   ui.eventData を使用して、どの集計メソッドが選択されているか (いないか) のデータを取得します。イベント データの書式は {type = "min"; active: false}; です。<br>   ui.owner を使用して、igGridSummaries ウィジェット オブジェクトにアクセスします。"
+		"jp": "ドロップダウンで OK ボタンがクリックされたときに発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ui.columnKey を使用して、[OK] ボタンがクリックされた列キーを取得します。<br>   ui.eventData を使用して、どの集計メソッドが選択されているか (いないか) のデータを取得します。イベント データの書式は {type = \"min\"; active: false}; です。<br>   ui.owner を使用して、igGridSummaries ウィジェット オブジェクトにアクセスします。"
 	}
     },
     "dropDownOpened": {
