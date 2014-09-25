@@ -1,4 +1,4 @@
-﻿.ui-igedit,.ui-widget .ui-igedit{background:#fff;font-size:1em}
+﻿.ui-igedit,.ui-widget .ui-igedit{background:#fff;font-size:1em;-webkit-background-clip:padding-box;-moz-background-clip:padding;background-clip:padding-box}
 .ui-igedit-container{overflow:hidden;padding:0!important}
 .ui-igedit .ui-icon{float:none!important}
 .ui-igedit-field,.ui-widget .ui-igedit-field{outline:0;padding:1px 2px 1px 2px;font-size:1em;background-color:#fff;color:#333;text-shadow:none}

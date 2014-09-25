@@ -1,4 +1,6 @@
 ﻿.ui-ightmleditor,.ui-widget .ui-ightmleditor{font-size:13px}
+.ui-ightmleditor .ui-igbutton.ui-state-hover.ui-state-default .ui-icon{background-image:url(images/igHtmlEditor/html-editor-sprite.png)}
+.ui-ightmleditor .ui-igbutton.ui-state-hover.ui-state-focus .ui-icon{background-image:url(images/igHtmlEditor/html-editor-sprite.png)}
 .ui-ightmleditor-content{padding:0 7px 0 5px;position:relative}
 .ui-ightmleditor-content iframe{background-color:white;background-image:none;border-width:1px;display:block;width:100%;position:relative;margin:0}
 .ui-ightmleditor-content textarea{resize:none;border-width:1px;display:block;width:100%;padding:0;margin:0;overflow:auto;overflow-x:auto;overflow-y:auto}

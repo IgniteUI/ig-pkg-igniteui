@@ -1,6 +1,6 @@
 ﻿.ui-igcombo{padding:0!important}
 .ui-igcombo .ui-icon{float:none}
-.ui-igcombo-field,.ui-igcombo .ui-igcombo-field{left:auto!important;top:auto!important;margin:0!important;border:0;outline:0;padding:1px 2px 1px 2px}
+.ui-igcombo-field,.ui-igcombo .ui-igcombo-field{left:auto!important;top:auto!important;margin:0!important;border:0;outline:0;color:initial;padding:1px 2px 1px 2px}
 .ui-igcombo-field::-ms-clear{display:none}
 .ui-igcombo-nulltext{color:#999}
 .ui-igcombo-button{display:inline-block;cursor:pointer;overflow:hidden}

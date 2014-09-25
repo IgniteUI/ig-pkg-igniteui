@@ -43,4 +43,5 @@
 .ui-igbutton .ui-igbutton-forecolor{border-bottom:3px solid #000}
 .ui-igbutton .ui-igbutton-backcolor{border-bottom:3px solid transparent}
 .ui-igbutton .ui-igbutton-collapse{background-image:url(../images/igHtmlEditor/html-editor-sprite.png);background-position:0 0}
-.touch .ui-button{height:44px;width:44px}
+.touch .ui-button{min-height:44px;min-width:44px}
+.touch .ui-button .ui-button-text{line-height:2.6em}
