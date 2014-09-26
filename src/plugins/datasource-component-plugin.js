@@ -142,7 +142,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			// edit schema button
 			$("<span>" + locale.editSchema + "</span>").addClass("btn btn-default ds-diag-editschema").appendTo(remoteContainer);
 			$("<br><label>" + locale.urlEndpoint + "</label>").addClass("ds-diag-urllabel").appendTo(remoteContainer);
-			$("<div><input type=\"text\" class=\"form-control\"/><span class=\"btn btn-default\">" + locale.test + "</span></div>").addClass("ds-diag-url").appendTo(remoteContainer);
+			$("<div><input type=\"text\" class=\"form-control\"/><span id=\"testButton\" class=\"btn btn-default\">" + locale.test + "</span><span id=\"setButton\" class=\"btn btn-default\">" + locale.setDataSource + "</span></div>").addClass("ds-diag-url").appendTo(remoteContainer);
 
 			var localContainer = $("<div></div>").addClass("ds-diag-localcontainer").css("display", "none").appendTo(dscontainer);
 			// for local
@@ -169,16 +169,27 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			remoteContainer.find(".ds-diag-url > input").val(dsval).keyup(function (event) {
 				// update the dataSource's url property
 				//ds.settings.dataSource = event.target.value; // validate?
-				//also update the code view
-				descriptor.propName = "dataSource";
-				descriptor.oldPropValue = event.target.value.substring(0, event.target.value.length - 1);
-				descriptor.propType = "string";
-				descriptor.propValue = event.target.value.trim();
-				that.update(descriptor);
+			    //also update the code view
+			    if (event.keyCode === 13) {
+			        descriptor.propName = "dataSource";
+			        descriptor.oldPropValue = event.target.value ? event.target.value.substring(0, event.target.value.length - 1) : "";
+			        descriptor.propType = "string";
+			        descriptor.propValue = event.target.value.trim();
+			        that.update(descriptor);
+			    }
+			    event.preventDefault();
+			    event.stopPropagation();
 			});
-			remoteContainer.find(".ds-diag-url > .btn").click(function (event) {
+			remoteContainer.find(".ds-diag-url > #setButton").click(function (event) {
+			    descriptor.propName = "dataSource";
+			    descriptor.oldPropValue = event.target.value ? event.target.value.substring(0, event.target.value.length - 1) : "";
+			    descriptor.propType = "string";
+			    descriptor.propValue = remoteContainer.find(".ds-diag-url > input").val().trim();
+			    that.update(descriptor);
+			});
+			remoteContainer.find(".ds-diag-url > #testButton").click(function (event) {
 				// test datasource by doing a query to it
-			    var url = ds.settings.dataSource, testLabel = remoteContainer.find(".test-label"), locale = $.plugin.dataSource.locale;
+			    var url = remoteContainer.find(".ds-diag-url > input").val(), testLabel = remoteContainer.find(".test-label"), locale = $.plugin.dataSource.locale;
 				if (testLabel.length === 0) {
 					testLabel = $("<div class=\"test-label\"></div>").insertAfter(remoteContainer.find("input"));
 				}
