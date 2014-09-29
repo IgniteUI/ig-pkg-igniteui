@@ -118,6 +118,10 @@ define (function (require, exports, module) {
 	                        formattedStr = descriptor.ide.getArrayCodeString(opts[key], 0, props[key].schema);
 	                    } else {
 	                        formattedStr = beautify(JSON.stringify(opts[key]).replace(/\"([^(\")"]+)\":/g, "$1:"));
+	                        formattedStr = formattedStr.replace(/\n\s\s\s\s/g,"\n\t\t");
+	                        formattedStr = formattedStr.replace(/\[\{/g, '[\n\t{');
+	                        formattedStr = formattedStr.replace(/\}\]/g, '\t}\n]');
+	                        formattedStr = formattedStr.replace(/\},\s\{/g, '\t},\n\t{');
 	                    }
 	                    for (var p = 0; p < opts[key].length; p ++) {
 	                        if(opts[key][p].hasOwnProperty("dataSource")){
@@ -397,7 +401,7 @@ define (function (require, exports, module) {
 	        //reattach the marker
 	        ide.session.removeMarker(marker.id);
 	        var newMarker = options[descriptor.propName].marker = ide.createAndAddMarker(startRow, startCol, endRow, endColumn);
-	        this._addHierarchicalMarkers(descriptor, newMarker, codeMarker.baseIndent);
+	        this._addHierarchicalMarkers(descriptor, options[descriptor.propName], newMarker, codeMarker.baseIndent);
 	        return { row: startRow, column: propStr.length };
 	    },
 	    addPropCode: function (descriptor, insertInCode, lastProp) {
@@ -477,80 +481,103 @@ define (function (require, exports, module) {
 	                options[descriptor.propName].marker = omarker;
 	                pos.row = omarker.start.row;
 	                pos.column = omarker.start.column;
-	                this._addHierarchicalMarkers(descriptor, omarker, codeMarker.baseIndent);
+	                this._addHierarchicalMarkers(descriptor, options[descriptor.propName], omarker, codeMarker.baseIndent);
 	            }
 	        }
 	        meta.optionsCount++;
 	        //pos.row++;
 	        return pos;
 	    },
-	    _addHierarchicalMarkers: function (descriptor, parentMarker, parentIndent) {
+	    _addHierarchicalMarkers: function (descriptor, parent, parentMarker, parentIndent) {
 	        if (descriptor.propType === "object") {
-	            this._addObjectMarkers(descriptor, parentMarker, parentIndent);
+	            this._addObjectMarkers(descriptor, parent, parentMarker, parentIndent);
 	        } else if (descriptor.propType === "array") {
-	            this._addArrayMarkers(descriptor, parentMarker, parentIndent);
+	            this._addArrayMarkers(descriptor, parent, parentMarker, parentIndent);
 	        }
 	    },
-	    _addArrayMarkers: function (descriptor, parentMarker, parentIndent) {
+	    _addArrayMarkers: function (descriptor, parent, parentMarker, parentIndent) {
 	        var ide = this.settings.ide,
 		        name = descriptor.propName,
 		        type = descriptor.propType,
                 index, currProperty;
 
 	        if (!descriptor.arrayMemberType) {
-	            this._addObjectMarkers(descriptor, parentMarker, parentIndent);
+	            this._addObjectMarkers(descriptor, parent, parentMarker, parentIndent);
 	        }
 		},
-		_addObjectMarkers: function (descriptor, parentMarker, parentIndent) {
+	    _addObjectMarkers: function (descriptor, parent, parentMarker, parentIndent) {
 		    var ide = this.settings.ide,
-                options = descriptor.component.codeMarker.extraMarkers.options,
+                // options = descriptor.component.codeMarker.extraMarkers.options,
                 type = descriptor.propType,
                 name = descriptor.propName,
-                currMarker,
-                index, currObject,
-		        objString, objRange, objMarker;
+                // config = ide._packages.igniteui.components[descriptor.component.type].properties[name],
+                // schema = config.schema,
+                schema = descriptor.schema,
+                currMarker, index, currObject,
+		        objString, objRange, objMarker, config;
 
+		    
 		    for (index = 0; index < descriptor.propValue.length; index++) {
+		        currMarker = { };
 		        currObject = descriptor.propValue[index];
-		        objString = ide.getObjectCodeString(currObject, parentIndent + 2, descriptor.schema);
+		        objString = ide.getObjectCodeString(currObject, parentIndent + 2, schema);
 		        objRange = ide.editor.find({
 		            needle: objString,
 		            start: parentMarker.start
 		        });
 		        if (objRange) {
-		            objMarker = ide.createAndAddMarker(objRange.start.row, objRange.start.column, objRange.end.row, objRange.end.column);
-		            if (!options[name].extraMarkers) {
-		                options[name].extraMarkers = [];
-		            }
-		            if (!options[name].extraMarkers[index]) {
-		                options[name].extraMarkers[index] = {};
-		            }
-		            currMarker = options[name].extraMarkers[index];
+		            objMarker = ide.createAndAddMarker(objRange.start.row, objRange.start.column, objRange.end.row + 1, 0);
 		            currMarker.marker = objMarker;
-		            currMarker.indent = parentIndent + 2;
-		            this._addPrimitiveMarkers(descriptor, currMarker, parentIndent + 2, currObject);
+		            currMarker.schema = ide.loadSchemaList(currObject, schema);
+		            currMarker.baseIndent = parentIndent + 2;
+		            if (!parent.extraMarkers) {
+		                parent.extraMarkers = [];
+		            }
+		            if (!parent.extraMarkers[index]) {
+		                parent.extraMarkers[index] = {};
+		            }
+		            parent.extraMarkers[index] = currMarker;
+		            this._addPrimitiveMarkers(descriptor, currMarker, parentIndent + 1, currObject);
 		        }
 		    }
         },
 		_addPrimitiveMarkers: function (descriptor, parent, parentIndent, obj) {
 		    var ide = this.settings.ide,
                 schema = descriptor.schema,
+                type = descriptor.propType,
+                name = descriptor.propName,
                 index, currentProperty,
-                propName, currentProp, propString, propRange;
+                propName, currentProp, propString, propRange, newDescriptor;
 
+		   
 		    for (propName in obj) {
-		        currentProp = obj[propName];
-		        if (typeof currentProp === "string") {
-		            propString = propName + ": \"" + currentProp + "\"";
+		        prop = obj[propName];
+		        propSchema = parent.schema[propName];
+		        propType = propSchema.type;
+		        /*if (descriptor.schema.hasOwnProperty(propName)) {
+		            schema = descriptor.schema[propName].schema;
+		            if (descriptor.schema[propName].schemaRef) {
+		                schemaRef = descriptor.schema[propName].schemaRef.split(".");
+		                schema = descriptor.ide._packages.igniteui.components[schemaRef[0]].properties;
+		                for (i = 1; i < schemaRef.length; i++) {
+		                    schema = schema[schemaRef[i]].schema;
+		                }
+		                if (descriptor.schema[propName].schema) {
+		                    schema = $.extend(schema, descriptor.schema[propName].schema);
+		                }
+		            }
+		        }*/
+		        if (propType === "string") {
+		            propString = propName + ": \"" + prop + "\"";
 		        } else {
-		            propString = propName + ": " + currentProp;
+		            propString = propName + ": " + prop;
 		        }
 		        propRange = ide.editor.find({
 		            needle: propString,
 		            start: parent.marker.start
 		        });
 		        if (propRange) {
-		            propMarker = ide.createAndAddMarker(propRange.start.row, propRange.start.column, propRange.end.row, propRange.end.column);
+		            propMarker = ide.createAndAddMarker(propRange.start.row, propRange.start.column, propRange.end.row + 1, 0);
 		            if (!parent.extraMarkers) {
 		                parent.extraMarkers = {};
 		            }
@@ -558,8 +585,24 @@ define (function (require, exports, module) {
 		                parent.extraMarkers[propName] = {};
 		            }
 		            parent.extraMarkers[propName].marker = propMarker;
-		            if (typeof currentProp === "object") {
-		                this._addObjectMarkers(descriptor, objMarker, parentIndent + 2);
+		            parent.extraMarkers[propName].schema = propSchema.schema;
+		            parent.extraMarkers[propName].baseIndent = parentIndent + 1;
+		            if (propType === "object") {
+		                newDescriptor = {
+		                    component: descriptor.component,
+		                    type: propType,
+		                    name: propName,
+		                    schema: schema
+		                }
+		                this._addObjectMarkers(newDescriptor, propMarker, parentIndent + 1);
+		            } else if (propType === "array") {
+		                newDescriptor = {
+		                    component: descriptor.component,
+		                    type: propType,
+		                    name: propName,
+		                    schema: schema
+		                }
+		                this._addArrayMarkers(newDescriptor, propMarker, parentIndent + 1);
 		            }
 		        }
 		    }
@@ -618,7 +661,7 @@ define (function (require, exports, module) {
 					var options = meta.options;
 					if (!options[descriptor.propName]) {
 						this.addPropCode({
-							component: descriptor.comp,
+						    component: descriptor.comp,
 							propName: descriptor.propName,
 							propValue: descriptor.propValue,
 							oldPropValue: descriptor.oldPropValue,
@@ -629,7 +672,7 @@ define (function (require, exports, module) {
 						}, true, false);
 					} else {
 						this.updatePropCode({
-							component: descriptor.comp,
+						    component: descriptor.comp,
 							propName: descriptor.propName,
 							propValue: descriptor.propValue,
 							oldPropValue: descriptor.oldPropValue,
@@ -838,8 +881,11 @@ define (function (require, exports, module) {
 			}
 			// add all existing options
 			for (var i = 0; i < props.length; i++) {
+			    if (props[i].name === "features") {
+			        props[i].schema.heterogeneous = true;
+			    }
 				this.addPropCode({
-				    component: { codeMarker: descriptor.marker },
+				    component: { codeMarker: descriptor.marker, type: descriptor.type },
 					propName: props[i].name,
 					propValue: props[i].value,
 					defaultValue: props[i].value, //same
