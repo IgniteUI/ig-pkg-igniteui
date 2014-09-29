@@ -428,7 +428,7 @@ define (function (require, exports, module) {
 	        //TODO: Ensure those are markerized as well -  hierarchical support
 	        if (descriptor.propType === "object") {
 	            val = ide.getObjectCodeString(descriptor.propValue, codeMarker.baseIndent + 1, descriptor.schema);
-	        } else if (descriptor.propType === "array") {
+	        } else if (descriptor.propType === "array" || descriptor.propType === "custom") {
 	            val = ide.getArrayCodeString(descriptor.propValue, codeMarker.baseIndent + 1, descriptor.schema);
 	        } else {
 	            val = ide._propCodeDefaultVal(type, descriptor.defaultValue);
@@ -479,6 +479,7 @@ define (function (require, exports, module) {
 	            if (r) {
 	                omarker = ide.createAndAddMarker(r.start.row, r.start.column, r.end.row, r.end.column);
 	                options[descriptor.propName].marker = omarker;
+	                options[descriptor.propName].schema = descriptor.schema;
 	                pos.row = omarker.start.row;
 	                pos.column = omarker.start.column;
 	                this._addHierarchicalMarkers(descriptor, options[descriptor.propName], omarker, codeMarker.baseIndent);
@@ -526,7 +527,7 @@ define (function (require, exports, module) {
 		            start: parentMarker.start
 		        });
 		        if (objRange) {
-		            objMarker = ide.createAndAddMarker(objRange.start.row, objRange.start.column, objRange.end.row + 1, 0);
+		            objMarker = ide.createAndAddMarker(objRange.start.row, objRange.start.column, objRange.end.row, objRange.end.column);
 		            currMarker.marker = objMarker;
 		            currMarker.schema = ide.loadSchemaList(currObject, schema);
 		            currMarker.baseIndent = parentIndent + 2;
@@ -554,19 +555,6 @@ define (function (require, exports, module) {
 		        prop = obj[propName];
 		        propSchema = parent.schema[propName];
 		        propType = propSchema.type;
-		        /*if (descriptor.schema.hasOwnProperty(propName)) {
-		            schema = descriptor.schema[propName].schema;
-		            if (descriptor.schema[propName].schemaRef) {
-		                schemaRef = descriptor.schema[propName].schemaRef.split(".");
-		                schema = descriptor.ide._packages.igniteui.components[schemaRef[0]].properties;
-		                for (i = 1; i < schemaRef.length; i++) {
-		                    schema = schema[schemaRef[i]].schema;
-		                }
-		                if (descriptor.schema[propName].schema) {
-		                    schema = $.extend(schema, descriptor.schema[propName].schema);
-		                }
-		            }
-		        }*/
 		        if (propType === "string") {
 		            propString = propName + ": \"" + prop + "\"";
 		        } else {
@@ -577,7 +565,7 @@ define (function (require, exports, module) {
 		            start: parent.marker.start
 		        });
 		        if (propRange) {
-		            propMarker = ide.createAndAddMarker(propRange.start.row, propRange.start.column, propRange.end.row + 1, 0);
+		            propMarker = ide.createAndAddMarker(propRange.start.row, propRange.start.column, propRange.end.row, propRange.end.column);
 		            if (!parent.extraMarkers) {
 		                parent.extraMarkers = {};
 		            }
@@ -1164,7 +1152,7 @@ define (function (require, exports, module) {
 			$("<input type=\"radio\" name=\"dsproptype\" id=\"dsproptype2\" value=\"" + locale.local + "\"/>").addClass("ds-diag-dt-local").appendTo(localRemoteArea);
 			$("<label for=\"dsproptype2\">" + locale.local + "</label>").appendTo(localRemoteArea).addClass("ds-diag-dt-locallabel");
 			$("<br><label>" + locale.urlEndpoint + "</label>").addClass("ds-diag-urllabel").appendTo(remoteContainer);
-			$("<div><input type=\"text\" class=\"form-control\"/><span id=\"testButton\" class=\"btn btn-default\">" + locale.test + "</span><span id=\"setButton\" class=\"btn btn-default\">" + locale.setDataSource + "</span></div>").addClass("ds-diag-url").appendTo(remoteContainer);
+			$("<div><input type=\"text\" class=\"form-control\"/><span class=\"btn btn-default\">" + locale.test + "</span></div>").addClass("ds-diag-url").appendTo(remoteContainer);
 			var localContainer = $("<div></div>").addClass("ds-diag-localcontainer").css("display", "none").appendTo(container);
 			$("<label>" + locale.typeVarName + ":</label>").appendTo(localContainer);
 			$("<input type=\"text\" class=\"form-control\"/>").appendTo(localContainer);
@@ -1184,40 +1172,23 @@ define (function (require, exports, module) {
 				inputUrl.val(dsval);
 			}
 			inputUrl.keyup(function (event) {
-			    if (event.keyCode === 13) {
-			        var descr = {};
-			        descr.propName = "dataSource";
-			        descr.placeholder = descriptor.element;
-			        descr.comp = descriptor.comp;
-			        descr.oldPropValue = event.target.value ? event.target.value.substring(0, event.target.value.length - 1) : "";
-			        descr.propType = "string";
-			        descr.propValue = event.target.value;
-			        that.update(descr);
-			    }
-			    event.preventDefault();
-			    event.stopPropagation();
+				var descr = {};
+				descr.propName = "dataSource";
+				descr.placeholder = descriptor.element;
+				descr.comp = descriptor.comp;
+				descr.oldPropValue = event.target.value.substring(0, event.target.value.length - 1);
+				descr.propType = "string";
+				descr.propValue = event.target.value;
+				that.update(descr);
 			});
-			remoteContainer.find(".ds-diag-url > #setButton").click(function (event) {
-			    var descr = {};
-			    descr.propName = "dataSource";
-			    descr.placeholder = descriptor.element;
-			    descr.comp = descriptor.comp;
-			    descr.oldPropValue = event.target.value ? event.target.value.substring(0, event.target.value.length - 1) : "";
-			    descr.propType = "string";
-			    descr.propValue = remoteContainer.find(".ds-diag-url > input").val().trim();
-			    that.update(descr);
-			});
-
-			remoteContainer.find(".ds-diag-url > #testButton").click(function (event) {
+			remoteContainer.find(".ds-diag-url > .btn").click(function (event) {
 				// test datasource by doing a query to it
-				//var url = that.getPropValue({
-				//	type: descriptor.type,
-				//	propName: descriptor.propName,
-				//	placeholder: descriptor.element
-			    //});
-
-			    var testLabel = remoteContainer.find(".test-label"),
-			        url = remoteContainer.find(".ds-diag-url > input").val();
+				var url = that.getPropValue({
+					type: descriptor.type,
+					propName: descriptor.propName,
+					placeholder: descriptor.element
+				});
+				var testLabel = remoteContainer.find(".test-label");
 				if (testLabel.length === 0) {
 					testLabel = $("<div class=\"test-label\"></div>").insertAfter(remoteContainer.find("input"));
 				}

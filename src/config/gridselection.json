@@ -244,6 +244,14 @@
 		"en": "if wrapAround is enabled and selection is on the first or last row or cell, then when the end user tries to go beyond that, the first/last row or cell will be selected",
 		"jp": "wrapAround が有効で、選択が最初または最後の行またはセルの場合、エンドユーザーがさらに進もうとすると、最初または最後の行またはセルが選択されます。"
 	}
+    },
+	"inherit": {
+      "type": "bool",
+      "defaultValue": false,
+      "description": {
+		"en": "",
+		"jp": ""
+	  }
     }
   }
 }
