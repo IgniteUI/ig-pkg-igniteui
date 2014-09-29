@@ -1164,7 +1164,7 @@ define (function (require, exports, module) {
 			$("<input type=\"radio\" name=\"dsproptype\" id=\"dsproptype2\" value=\"" + locale.local + "\"/>").addClass("ds-diag-dt-local").appendTo(localRemoteArea);
 			$("<label for=\"dsproptype2\">" + locale.local + "</label>").appendTo(localRemoteArea).addClass("ds-diag-dt-locallabel");
 			$("<br><label>" + locale.urlEndpoint + "</label>").addClass("ds-diag-urllabel").appendTo(remoteContainer);
-			$("<div><input type=\"text\" class=\"form-control\"/><span class=\"btn btn-default\">" + locale.test + "</span></div>").addClass("ds-diag-url").appendTo(remoteContainer);
+			$("<div><input type=\"text\" class=\"form-control\"/><span id=\"testButton\" class=\"btn btn-default\">" + locale.test + "</span><span id=\"setButton\" class=\"btn btn-default\">" + locale.setDataSource + "</span></div>").addClass("ds-diag-url").appendTo(remoteContainer);
 			var localContainer = $("<div></div>").addClass("ds-diag-localcontainer").css("display", "none").appendTo(container);
 			$("<label>" + locale.typeVarName + ":</label>").appendTo(localContainer);
 			$("<input type=\"text\" class=\"form-control\"/>").appendTo(localContainer);
@@ -1184,23 +1184,40 @@ define (function (require, exports, module) {
 				inputUrl.val(dsval);
 			}
 			inputUrl.keyup(function (event) {
-				var descr = {};
-				descr.propName = "dataSource";
-				descr.placeholder = descriptor.element;
-				descr.comp = descriptor.comp;
-				descr.oldPropValue = event.target.value.substring(0, event.target.value.length - 1);
-				descr.propType = "string";
-				descr.propValue = event.target.value;
-				that.update(descr);
+			    if (event.keyCode === 13) {
+			        var descr = {};
+			        descr.propName = "dataSource";
+			        descr.placeholder = descriptor.element;
+			        descr.comp = descriptor.comp;
+			        descr.oldPropValue = event.target.value ? event.target.value.substring(0, event.target.value.length - 1) : "";
+			        descr.propType = "string";
+			        descr.propValue = event.target.value;
+			        that.update(descr);
+			    }
+			    event.preventDefault();
+			    event.stopPropagation();
 			});
-			remoteContainer.find(".ds-diag-url > .btn").click(function (event) {
+			remoteContainer.find(".ds-diag-url > #setButton").click(function (event) {
+			    var descr = {};
+			    descr.propName = "dataSource";
+			    descr.placeholder = descriptor.element;
+			    descr.comp = descriptor.comp;
+			    descr.oldPropValue = event.target.value ? event.target.value.substring(0, event.target.value.length - 1) : "";
+			    descr.propType = "string";
+			    descr.propValue = remoteContainer.find(".ds-diag-url > input").val().trim();
+			    that.update(descr);
+			});
+
+			remoteContainer.find(".ds-diag-url > #testButton").click(function (event) {
 				// test datasource by doing a query to it
-				var url = that.getPropValue({
-					type: descriptor.type,
-					propName: descriptor.propName,
-					placeholder: descriptor.element
-				});
-				var testLabel = remoteContainer.find(".test-label");
+				//var url = that.getPropValue({
+				//	type: descriptor.type,
+				//	propName: descriptor.propName,
+				//	placeholder: descriptor.element
+			    //});
+
+			    var testLabel = remoteContainer.find(".test-label"),
+			        url = remoteContainer.find(".ds-diag-url > input").val();
 				if (testLabel.length === 0) {
 					testLabel = $("<div class=\"test-label\"></div>").insertAfter(remoteContainer.find("input"));
 				}
