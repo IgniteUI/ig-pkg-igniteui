@@ -46,6 +46,88 @@
         "/css/themes/infragistics/infragistics.theme.css",
         "/css/structure/infragistics.css"
     ],
+	"themes": {
+		"bootstrap": {
+			"displayName": "Bootstrap Default",
+			"stylesheets": [
+				"/css/themes/bootstrap/infragistics.theme.css",
+				"/css/structure/infragistics.css"
+			],
+			"imgPath": "/css/images/help-icon.png",
+			"bootstrapCompatible": true,
+			"default": false
+		},
+		"flatly": {
+			"displayName": "Bootstrap Flatly",
+			"stylesheets": [
+				"/css/themes/flatly/infragistics.theme.css",
+				"/css/structure/infragistics.css"
+			],
+			"imgPath": "/css/images/help-icon.png",
+			"bootstrapCompatible": true,
+			"default": false
+		},
+		"infragistics": {
+			"displayName": "Infragistics Default",
+			"stylesheets": [
+				"/css/themes/infragistics/infragistics.theme.css",
+				"/css/structure/infragistics.css"
+			],
+			"imgPath": "/css/images/help-icon.png",
+			"bootstrapCompatible": false,
+			"default": true
+		},
+		"infragistics2012": {
+			"displayName": "Infragistics 2012",
+			"stylesheets": [
+				"/css/themes/infragistics2012/infragistics.theme.css",
+				"/css/structure/infragistics.css"
+			],
+			"imgPath": "/css/images/help-icon.png",
+			"bootstrapCompatible": false,
+			"default": false
+		},
+		"ios": {
+			"displayName": "Infragistics iOS",
+			"stylesheets": [
+				"/css/themes/ios/infragistics.theme.css",
+				"/css/structure/infragistics.css"
+			],
+			"imgPath": "/css/images/help-icon.png",
+			"bootstrapCompatible": false,
+			"default": false
+		},
+		"metro": {
+			"displayName": "Infragistics Metro",
+			"stylesheets": [
+				"/css/themes/metro/infragistics.theme.css",
+				"/css/structure/infragistics.css"
+			],
+			"imgPath": "/css/images/help-icon.png",
+			"bootstrapCompatible": false,
+			"default": false
+		},
+		"superhero": {
+			"displayName": "Bootstrap Superhero",
+			"stylesheets": [
+				"/css/themes/superhero/infragistics.theme.css",
+				"/css/structure/infragistics.css"
+			],
+			"imgPath": "/css/images/help-icon.png",
+			"bootstrapCompatible": true,
+			"default": false
+		},
+		"yeti": {
+			"displayName": "Bootstrap Yeti",
+			"stylesheets": [
+				"/css/themes/yeti/infragistics.theme.css",
+				"/css/structure/infragistics.css"
+			],
+			"imgPath": "/css/images/help-icon.png",
+			"bootstrapCompatible": true,
+			"default": false
+		}
+	},
     "iconsPath": "icons",
     "iconSpriteCssFile": "ignite-icons.css",
     "iconSpriteCssPrefix": "ignite-icons", 
