@@ -315,7 +315,7 @@
     	"dataSource": {
     		"id": "dataSource",
             "componentPlugin": "datasource-component-plugin", 
-    		"toolboxTitle": "Data Source",
+    		"toolboxTitle": "Local Data Source",
     		"icon": "datasource.png",
             "dragDropIcon": "datasource-dragdrop.png",
     		"classId": "$.ig.IgDataSource",
@@ -330,6 +330,17 @@
             "icon": "datasource.png",
             "dragDropIcon": "datasource-dragdrop.png",
             "classId": "$.ig.IgDataSource",
+            "category": "datasources",
+            "visual": false,
+            "framework": true
+        },
+		 "JSONPDataSource": {
+            "id": "JSONPDataSource",
+            "componentPlugin": "datasource-jsonp-component-plugin", 
+            "toolboxTitle": "JSONP Data Source",
+            "icon": "datasource.png",
+            "dragDropIcon": "datasource-dragdrop.png",
+            "classId": "$.ig.JSONPDataSource",
             "category": "datasources",
             "visual": false,
             "framework": true
