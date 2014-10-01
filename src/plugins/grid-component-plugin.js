@@ -90,7 +90,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 				// TODO: Refactor drop down logic into ide-ui
 				var Mustache = require("mustache");
 				for (var i in rec.schema) {
-					if (rec.schema.hasOwnProperty(i)) {
+				    if (rec.schema.hasOwnProperty(i) && i !== "heterogeneous") {
 						exists = false;
 						for (var j = 0; j < currentValue.length; j++) {
 							if (currentValue[j].name === i) {
@@ -214,7 +214,8 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			}
 			var descr = {
 				oldPropValue: value,
-				schema: schema.properties
+				schema: schema.properties,
+				descriptor: descriptor
 			};
 			if (!value) {
 				value = [];

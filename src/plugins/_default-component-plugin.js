@@ -517,7 +517,7 @@ define (function (require, exports, module) {
                 currMarker, index, currObject,
 		        objString, objRange, objMarker, config;
 
-		    
+		    parent.extraMarkers = [];
 		    for (index = 0; index < descriptor.propValue.length; index++) {
 		        currMarker = { };
 		        currObject = descriptor.propValue[index];
@@ -531,9 +531,6 @@ define (function (require, exports, module) {
 		            currMarker.marker = objMarker;
 		            currMarker.schema = ide.loadSchemaList(currObject, schema);
 		            currMarker.baseIndent = parentIndent + 2;
-		            if (!parent.extraMarkers) {
-		                parent.extraMarkers = [];
-		            }
 		            if (!parent.extraMarkers[index]) {
 		                parent.extraMarkers[index] = {};
 		            }
