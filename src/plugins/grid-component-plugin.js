@@ -214,7 +214,8 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			}
 			var descr = {
 				oldPropValue: value,
-				schema: schema.properties
+				schema: schema.properties,
+				descriptor: descriptor
 			};
 			if (!value) {
 				value = [];
