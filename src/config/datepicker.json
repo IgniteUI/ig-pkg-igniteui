@@ -386,6 +386,30 @@
     }
   },
   "properties": {
+    "animationHideDuration": {
+      "type": "number",
+      "defaultValue": 200.0,
+      "description": {
+		"en": "Sets gets duration of animation in milliseconds when drop-down list is hidden. That option is not supported when \"type\" is set to \"datepicker\", because the jquery.ui.datepicker does not have similar feature. Default is 200. If value is less than 5, then animation is disabled.",
+		"jp": "ドロップダウン リストが非表示になるときのアニメーションの期間 (ミリ秒単位) を取得または設定します。type を datepicker に設定した場合、jquery.ui.datepicker にその機能がないため、オプションはサポートされません。デフォルトは 200 です。値が 5 より小さい場合、アニメーションは無効になります。"
+	  }
+    },
+    "animationShowDuration": {
+      "type": "number",
+      "defaultValue": 200.0,
+      "description": {
+		"en": "Sets gets duration of animation in milliseconds when drop-down list or calendar is displayed. Default is 200. If value is less than 5, then animation is disabled.",
+		"jp": "ドロップダウン リストまたはカレンダーが表示される場合に、アニメーションの時間 (ミリ秒単位) を設定または取得します。デフォルトは 200 です。値が 5 より小さい場合、アニメーションは無効になります。"
+	  }
+    },
+	"button": {
+      "type": "string",
+      "defaultValue": "none",
+      "description": {
+		"en": " Sets gets visibility of spin and drop-down button. That option can be set only on initialization. Combinations like 'dropdown,spin' or 'spinclear' are supported too.",
+		"jp": " スピンおよびドロップダウン ボタンの可視性を取得または設定します。このオプションは、初期化時にのみ設定できます。「dropdown,spin」または「spinclear」などの組み合わせもサポートされています。"
+	}
+	},
     "centuryThreshold": {
       "type": "number",
       "defaultValue": 29.0,
@@ -442,6 +466,14 @@
       "description": {
 		"en": "Sets gets format of date while editor has focus.<br>    Value of that option can be set to explicit date pattern or to a flag defined by regional settings.<br>    If value is set to explicit date pattern and pattern besides date-flags has explicit characters which match with date-flags or mask-flags, then the \"escape\" character should be used in front of them.<br>    If option is not set, then the \"date\" is used automatically.<br>    List of predefined regional flags:<br>    \"date\": the datePattern member of regional option is used<br>    \"dateLong\": the dateLongPattern member of regional option is used<br>    \"time\": the timePattern member of regional option is used<br>    \"timeLong\": the timeLongPattern member of regional option is used<br>    \"dateTime\": the dateTimePattern member of regional option is used<br>    List of explicit characters, which should have escape \\\\ character in front of them: C, &, a, A, ?, L, 9, 0, #, >, <, y, M, d, h, H, m, s, t, f.<br>    List of date-flags when explicit date pattern is used:<br>    \"y\": year field without century and without leading zero<br>    \"yy\": year field without century and with leading zero<br>    \"yyyy\": year field with leading zeros<br>    \"M\": month field as digit without leading zero<br>    \"MM\": month field as digit with leading zero<br>    \"MMM\": month field as short month name. Note: in focused state the MM is used.<br>    \"MMMM\": month field as long month name. Note: in focused state the MM is used.<br>    \"d\": day of month field without leading zero <br>    \"dd\": day of month field with leading zero<br>    \"ddd\": day of the week as short name. Note: in focused state that field is skipped.<br>    \"dddd\": day of the week as long name. Note: in focused state that field is skipped.<br>    \"t\": first character of string which represents AM/PM field <br>    \"tt\": 2 characters of string which represents AM/PM field<br>    \"h\": hours field in 12-hours format without leading zero<br>    \"hh\": hours field in 12-hours format with leading zero<br>    \"H\": hours field in 24-hours format without leading zero<br>    \"HH\": hours field in 24-hours format with leading zero<br>    \"m\": minutes field without leading zero<br>    \"mm\": minutes field with leading zero<br>    \"s\": seconds field without leading zero<br>    \"ss\": seconds field with leading zero<br>    \"f\": milliseconds field in thousands<br>    \"ff\": milliseconds field in hundreds<br>    \"fff\": milliseconds field",
 		"jp": "エディターがフォーカスを持っているときの日付書式を取得または設定します。<br>    このオプションの値は、明示的な日パターンまたは地域設定で定義されたフラグに設定できます。<br>    値が明示的な日パターンに設定されていて、日フラグ以外のパターンに、日フラグまたはマスクフラグに一致する明示的な文字が含まれている場合は、それらの文字の前にエスケープ文字を使用する必要があります。<br>    値が設定されていない場合は、\"date\" が自動的に使用されます。<br>    定義済みの地域フラグのリスト。<br>    \"date\": 地域オプションの datePattern メンバーを使用します。<br>    \"dateLong\": 地域オプションの dateLongPattern メンバーを使用します。<br>    \"time\": 地域オプションの timePattern メンバーを使用します。<br>    \"timeLong\": 地域オプションの timeLongPattern メンバーを使用します。<br>    \"dateTime\": 地域オプションの dateTimePattern メンバーを使用します。<br>    明示的な文字のリスト。これらの前にエスケープ \\\\ 文字が必要です: C、&、a、A、?、L、9、0、#、>、<、y、M、d、h、H、m、s、t、f。<br>    明示的な日パターンを使用するときの日フラグのリスト。<br>    \"y\": 世紀部分も先行するゼロもない年フィールド。<br>    \"yy\": 世紀部分がなく先行するゼロがある年フィールド。<br>    \"yyyy\": 先行するゼロがある年フィールド。<br>    \"M\": 先行するゼロがない数字で表す月フィールド。<br>    \"MM\": 先行するゼロがある数字で表す月フィールド。<br>    \"MMM\": 短い月名前で表す月フィールド。注: フォーカス状態で MM は使用されます。<br>    \"MMMM\": 長い月名前で表す月フィールド。注: フォーカス状態で MM は使用されます。<br>    \"d\": 先行するゼロがない月の中の日。<br>    \"dd\": 先行するゼロがある月の中の日。<br>    \"ddd\": 短い名前の曜日。注: フォーカス状態で、そのフィールドはスキップされます。<br>    \"dddd\": 長い名前の曜日。注: フォーカス状態で、そのフィールドはスキップされます。<br>    \"t\": AM/PM フィールドを表す文字列の最初の文字。<br>    \"tt\": AM/PM フィールドを表す 2 文字の文字列。<br>    \"h\": 先行するゼロがない 12 時間形式の時フィールド。<br>    \"hh\": 先行するゼロがある 12 時間形式の時フィールド。<br>    \"H\": 先行するゼロがない 24 時間形式の時フィールド。<br>    \"HH\": 先行するゼロがある 24 時間形式の時フィールド。<br>    \"m\": 先行するゼロがない分フィールド。<br>    \"mm\": 先行するゼロがある分フィールド。<br>    \"s\": 先行するゼロがない秒フィールド。<br>    \"ss\": 先行するゼロがある秒フィールド。<br>    \"f\": 1000 分の 1 単位のミリ秒フィールド。<br>    \"ff\": 100 分の 1 単位のミリ秒フィールド。<br>    \"fff\": ミリ秒フィールド。"
+	}
+    },
+	"datepickerOptions": {
+      "type": "object",
+      "defaultValue": null,
+      "description": {
+		"en": "Sets gets options supported by the jquery.ui.datepicker. Only options related to drop-down calendar are supported.",
+		"jp": ""
 	}
     },
     "display": {
@@ -558,6 +590,55 @@
 		"jp": "非表示の INPUT 要素の名前を取得または設定します。変更で値はエディターの現在値に設定されます。"
 	}
     },
+	"listColumns": {
+      "type": "number",
+      "defaultValue": 1.0,
+      "description": {
+		"en": "Sets gets number of columns in drop-down list.",
+		"jp": "ドロップダウン リストの列数を取得または設定します。"
+	}
+    },
+    "listDropDownAsChild": {
+      "type": "bool",
+      "defaultValue": false,
+      "description": {
+		"en": "Sets gets location of drop-down list.<br>    Value true will create html element for list as a child of main html element.<br>    Value false creates list as a child of body.<br>    Notes:<br>    That option has effect only for drop-down defined by listOfItems.<br>    The value of true is supported only when main (outer) html element of editor is container such as SPAN or DIV, or buttons are enabled, or renderInContainer is enabled, the theme is set.<br>    The value of true allows a better positioning and can be useful when editor is located in complex layout and containers with \"position:fixed\".",
+		"jp": "ドロップダウン リストの場所を取得または設定します。<br>    値が True の場合、main HTML 要素の子として、リストの HTML 要素を作成します。<br>    値が False の場合、body の子として、リストを作成します。<br>    注:<br>    このオプションは、listOfItems で定義されたドロップダウンに対してのみ効果があります。<br>    エディターの main (outer) HTML 要素が SPAN または DIV などのコンテナーのとき、ボタンが有効なとき、renderInContainer が有効なとき、またはテーマが設定されているときのみ、True の値がサポートされています。<br>    値が True の場合、より適切な配置が可能であり、エディターが複雑なレイアウトで \"position:fixed\" を持つコンテナーに配置されているときに役に立ちます。"
+	}
+    },
+    "listItems": {
+      "type": "array",
+      "defaultValue": null,
+      "description": {
+		"en": "Sets gets list of items which are used for drop-down list, spin, validation and auto-complete functionality.<br>    Items in list can be strings, numbers, dates or objects in any combination.<br>    If type of editor is date or datepicker and item is string, then igEditor will try to convert it to Date object and show item in display format.<br>    If type of editor is numeric, currency or percent and item is string, then igEditor will try to convert it to number and show item in display format.<br>    If item is object and it has member \"text\", then that member is used.<br>    If item is object and besides \"text\" has function getHtml(), then that function is used to render item in list.<br>    The item or item.text is used to set \"value\" of particular editor when list-item is selected.",
+		"jp": "ドロップダウン リスト、スピン、検証およびオートコンプリートの機能で使用する項目のリストを取得または設定します。<br>    リスト内の項目には、文字列、数、日付またはオブジェクトが任意の組み合わせで可能です。<br>    エディターのタイプが日付または datepicker で、項目が文字列の場合、igEditor はそれを日付オブジェクトへ変換して、その項目を表示形式で表示します。<br>    エディターのタイプが数値、通貨、またはパーセントで、項目が文字列の場合、igEditor はそれを数へ変換して、その項目を表示形式で表示します。<br>    項目がオブジェクトで、メンバー text を含んでいる場合、そのメンバーが使用されます。<br>    項目がオブジェクトで、さらに、text が関数 getHtml() の場合、その関数がリスト内の項目の描画に使用されます。<br>    リスト項目が選択されると、項目または item.text を使用して、特定のエディターの value を設定します。"
+	}, 
+	  "arrayMemberType" : "string,number,date"
+    },
+    "listMaxHeight": {
+      "type": "number",
+      "defaultValue": 300.0,
+      "description": {
+		"en": "Sets gets maximum height of drop-down list in pixels. If value is equal to 0 or negative, then the height of list is defined by number of items in list.",
+		"jp": "ドロップダウン リストの最大の高さ (ピクセル単位) を取得または設定します。値がゼロまたは負の場合、リストの高さはリスト内の項目数によって定義されます。"
+	}
+    },
+    "listWidth": {
+      "type": "number",
+      "defaultValue": 0.0,
+      "description": {
+		"en": "Sets gets custom width of drop-down list in pixels. If value is equal to 0 or negative, then the width of editor is used.",
+		"jp": "ドロップダウン リストのカスタムの幅 (ピクセル単位) を取得または設定します。値がゼロまたは負の場合、エディターの幅が使用されます。"
+	}
+    },
+	"locale": {
+      "type": "object",
+      "defaultValue": null,
+      "description": {
+		"en": "Sets gets strings used for title of buttons. Value of object should contain pairs or key:value members. Note: any sub-option of locale can appear within the main option of igEditor. In this case those values within main options will have highest priority and override corresponding value in locale.",
+		"jp": "ボタンのタイトルに使用する文字列を取得または設定します。オブジェクトの値は一組の値またはキーの値メンバーを含む必要があります。注:ロケールのサブオプションは igEditor のメイン オプションに表示されますこのケースではメインオプションの中の値は最優先でロケールに対応する値をオーバーライドします。"
+	}
+	},
     "maxValue": {
       "type": "date",
       "defaultValue": null,
@@ -628,6 +709,14 @@
       "description": {
 		"en": "Sets gets option to wrap input field into SPAN..<br>    That option can be set only on initialization and it is available only when base element is INPUT or TEXTAREA.<br>    If drop-down button or spin-buttons are enabled or the theme is set, then that option has no effect.<br>    The reason for that property is to allow vertical alignment of several igEditor controls when they are located in html inline and some of them have enabled buttons.<br>    If all editors are created within SPAN wrapper, then they will appear on the same line. Otherwise, editors in SPANs will be shifted 3-6 pixels above INPUT editors.",
 		"jp": "入力フィールドを SPAN 内で折り返すオプションを取得または設定します。<br>    このオプションは初期化時にのみ設定でき、base 要素が INPUT または TEXTAREA のときのみ使用可能です。<br>    ドロップダウン ボタンまたはスピン ボタンが有効かテーマが設定されている場合、このオプションは効果がありません。<br>    このプロパティの理由は、様々な igEditor コントロールが HTML インライン内にあり、その一部でボタンを有効になっているときに、それらのコントロールを垂直方向に配置可能にするためです。<br>    すべてのエディターが SPAN ラッパー内で作成される場合、それらは同じ行に表示されます。そうでない場合、SPAN 内のエディターは INPUT エディターより 3 から 6 ピクセル上にずれます。"
+	}
+    },
+	"regional": {
+      "type": "string",
+      "defaultValue": null,
+      "description": {
+		"en": "Sets gets custom regional settings for editor. If it is string, then $.ig.regional[stringValue] is assumed.",
+		"jp": ""
 	}
     },
     "required": {
@@ -761,6 +850,72 @@
 		"en": "Sets gets selector for css classes used by editor.<br>    That option allows replacing all default css styles of editor by custom values.<br>    Application should provide css classes for all members defined in the css options with \"theme\" selector.<br>    For example, if that property is set to \"mytheme\", then application should provide following css classes:<br>    .mytheme .ui-igedit-field{...};<br>    .mytheme .ui-igedit-focus{...};<br>    etc.<br>    Note: changing theme is not supported when base element is INPUT or TEXTAREA and renderInContainer or button are not enabled.",
 		"jp": "エディターが使用する CSS クラスのセレクターを取得または設定します。<br>    このオプションは、エディターのすべてのデフォルト CSS スタイルをカスタム値に置き換えることを可能にします。<br>    アプリケーションは、theme セレクターを持つ CSS オプションで定義されるすべてのメンバーの CSS クラスを提供する必要があります。<br>    たとえば、このプロパティが「mytheme」に設定されている場合、アプリケーションは以下の CSS クラスを提供する必要があります。<br>    .mytheme .ui-igedit-field{...};<br>    .mytheme .ui-igedit-focus{...};<br>    など。<br>    注: ベース要素が INPUT または TEXTAREA で renderInContainer またはボタンが有効でないとき、テーマの変更はサポートされていません。"
 	}
+    },
+	"type": {
+      "type": "string",
+      "defaultValue": null,
+      "description": {
+		"en": " Sets type of editor. If that option is not set, but the 'value' option is defined, then if type of 'value' is Number, then the 'numeric' type is used, if type of 'value' is Date, then the 'date' type is used. For all other types of 'value' the 'text' type is used. Note: if that option is set to 'datepicker', then application should ensure that css and js files used by jquery.ui.datepicker are available.",
+		"jp": " エディターのタイプを設定します。このオプションを設定されずに 'value' オプションが定義されていいて、'value' が Number 型に設定されている場合、 'numeric' 型が使用されます。'value' 型が Date の場合、'date' が使用されます。'value' の他のすべての型には 'text' が使用されます。注：オプションが 'datepicker' に設定されている場合、アプリケーションで jquery.ui.datepicker によって使用される css および js ファイルが使用可能であることを確認してください。"
+	},
+      "valueOptions": [
+        {
+          "name": "text",
+          "type": "string",
+          "description": {
+		"en": " Text editor is created",
+		"jp": " テキスト エディターが作成されます。"
+	}
+        },
+        {
+          "name": "mask",
+          "type": "string",
+          "description": {
+		"en": " Mask editor is created",
+		"jp": " マスク エディターが作成されます。"
+	}
+        },
+        {
+          "name": "date",
+          "type": "string",
+          "description": {
+		"en": " Date-time editor is created",
+		"jp": " 日付エディターが作成されます。"
+	}
+        },
+        {
+          "name": "datepicker",
+          "type": "string",
+          "description": {
+		"en": " Date-picker is created",
+		"jp": " 日付ピッカーが作成されます。"
+	}
+        },
+        {
+          "name": "numeric",
+          "type": "string",
+          "description": {
+		"en": " Numeric editor is created",
+		"jp": " 数値エディターが作成されます。"
+	}
+        },
+        {
+          "name": "currency",
+          "type": "string",
+          "description": {
+		"en": " Currency editor is created",
+		"jp": " 通貨エディターが作成されます。"
+	}
+        },
+        {
+          "name": "percent",
+          "type": "string",
+          "description": {
+		"en": " Percent editor is created",
+		"jp": " パーセント エディターが作成されます。"
+	}
+        }
+      ]
     },
     "useLastGoodDate": {
       "type": "bool",
