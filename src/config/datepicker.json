@@ -508,14 +508,7 @@
 		"jp": " 下矢印でドロップダウンを表示し、上矢印でドロップダウンを非表示にします。"
 	}
         },
-        {
-          "name": "button",
-          "type": "string",
-          "description": {
-		"en": " Shows and hides drop-down;",
-		"jp": " ドロップダウンの表示と非表示。"
-	}
-        },
+     
         {
           "name": "focus",
           "type": "string",
@@ -590,55 +583,6 @@
 		"jp": "非表示の INPUT 要素の名前を取得または設定します。変更で値はエディターの現在値に設定されます。"
 	}
     },
-	"listColumns": {
-      "type": "number",
-      "defaultValue": 1.0,
-      "description": {
-		"en": "Sets gets number of columns in drop-down list.",
-		"jp": "ドロップダウン リストの列数を取得または設定します。"
-	}
-    },
-    "listDropDownAsChild": {
-      "type": "bool",
-      "defaultValue": false,
-      "description": {
-		"en": "Sets gets location of drop-down list.<br>    Value true will create html element for list as a child of main html element.<br>    Value false creates list as a child of body.<br>    Notes:<br>    That option has effect only for drop-down defined by listOfItems.<br>    The value of true is supported only when main (outer) html element of editor is container such as SPAN or DIV, or buttons are enabled, or renderInContainer is enabled, the theme is set.<br>    The value of true allows a better positioning and can be useful when editor is located in complex layout and containers with \"position:fixed\".",
-		"jp": "ドロップダウン リストの場所を取得または設定します。<br>    値が True の場合、main HTML 要素の子として、リストの HTML 要素を作成します。<br>    値が False の場合、body の子として、リストを作成します。<br>    注:<br>    このオプションは、listOfItems で定義されたドロップダウンに対してのみ効果があります。<br>    エディターの main (outer) HTML 要素が SPAN または DIV などのコンテナーのとき、ボタンが有効なとき、renderInContainer が有効なとき、またはテーマが設定されているときのみ、True の値がサポートされています。<br>    値が True の場合、より適切な配置が可能であり、エディターが複雑なレイアウトで \"position:fixed\" を持つコンテナーに配置されているときに役に立ちます。"
-	}
-    },
-    "listItems": {
-      "type": "array",
-      "defaultValue": null,
-      "description": {
-		"en": "Sets gets list of items which are used for drop-down list, spin, validation and auto-complete functionality.<br>    Items in list can be strings, numbers, dates or objects in any combination.<br>    If type of editor is date or datepicker and item is string, then igEditor will try to convert it to Date object and show item in display format.<br>    If type of editor is numeric, currency or percent and item is string, then igEditor will try to convert it to number and show item in display format.<br>    If item is object and it has member \"text\", then that member is used.<br>    If item is object and besides \"text\" has function getHtml(), then that function is used to render item in list.<br>    The item or item.text is used to set \"value\" of particular editor when list-item is selected.",
-		"jp": "ドロップダウン リスト、スピン、検証およびオートコンプリートの機能で使用する項目のリストを取得または設定します。<br>    リスト内の項目には、文字列、数、日付またはオブジェクトが任意の組み合わせで可能です。<br>    エディターのタイプが日付または datepicker で、項目が文字列の場合、igEditor はそれを日付オブジェクトへ変換して、その項目を表示形式で表示します。<br>    エディターのタイプが数値、通貨、またはパーセントで、項目が文字列の場合、igEditor はそれを数へ変換して、その項目を表示形式で表示します。<br>    項目がオブジェクトで、メンバー text を含んでいる場合、そのメンバーが使用されます。<br>    項目がオブジェクトで、さらに、text が関数 getHtml() の場合、その関数がリスト内の項目の描画に使用されます。<br>    リスト項目が選択されると、項目または item.text を使用して、特定のエディターの value を設定します。"
-	}, 
-	  "arrayMemberType" : "string,number,date"
-    },
-    "listMaxHeight": {
-      "type": "number",
-      "defaultValue": 300.0,
-      "description": {
-		"en": "Sets gets maximum height of drop-down list in pixels. If value is equal to 0 or negative, then the height of list is defined by number of items in list.",
-		"jp": "ドロップダウン リストの最大の高さ (ピクセル単位) を取得または設定します。値がゼロまたは負の場合、リストの高さはリスト内の項目数によって定義されます。"
-	}
-    },
-    "listWidth": {
-      "type": "number",
-      "defaultValue": 0.0,
-      "description": {
-		"en": "Sets gets custom width of drop-down list in pixels. If value is equal to 0 or negative, then the width of editor is used.",
-		"jp": "ドロップダウン リストのカスタムの幅 (ピクセル単位) を取得または設定します。値がゼロまたは負の場合、エディターの幅が使用されます。"
-	}
-    },
-	"locale": {
-      "type": "object",
-      "defaultValue": null,
-      "description": {
-		"en": "Sets gets strings used for title of buttons. Value of object should contain pairs or key:value members. Note: any sub-option of locale can appear within the main option of igEditor. In this case those values within main options will have highest priority and override corresponding value in locale.",
-		"jp": "ボタンのタイトルに使用する文字列を取得または設定します。オブジェクトの値は一組の値またはキーの値メンバーを含む必要があります。注:ロケールのサブオプションは igEditor のメイン オプションに表示されますこのケースではメインオプションの中の値は最優先でロケールに対応する値をオーバーライドします。"
-	}
-	},
     "maxValue": {
       "type": "date",
       "defaultValue": null,
@@ -709,14 +653,6 @@
       "description": {
 		"en": "Sets gets option to wrap input field into SPAN..<br>    That option can be set only on initialization and it is available only when base element is INPUT or TEXTAREA.<br>    If drop-down button or spin-buttons are enabled or the theme is set, then that option has no effect.<br>    The reason for that property is to allow vertical alignment of several igEditor controls when they are located in html inline and some of them have enabled buttons.<br>    If all editors are created within SPAN wrapper, then they will appear on the same line. Otherwise, editors in SPANs will be shifted 3-6 pixels above INPUT editors.",
 		"jp": "入力フィールドを SPAN 内で折り返すオプションを取得または設定します。<br>    このオプションは初期化時にのみ設定でき、base 要素が INPUT または TEXTAREA のときのみ使用可能です。<br>    ドロップダウン ボタンまたはスピン ボタンが有効かテーマが設定されている場合、このオプションは効果がありません。<br>    このプロパティの理由は、様々な igEditor コントロールが HTML インライン内にあり、その一部でボタンを有効になっているときに、それらのコントロールを垂直方向に配置可能にするためです。<br>    すべてのエディターが SPAN ラッパー内で作成される場合、それらは同じ行に表示されます。そうでない場合、SPAN 内のエディターは INPUT エディターより 3 から 6 ピクセル上にずれます。"
-	}
-    },
-	"regional": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "Sets gets custom regional settings for editor. If it is string, then $.ig.regional[stringValue] is assumed.",
-		"jp": ""
 	}
     },
     "required": {
@@ -850,72 +786,6 @@
 		"en": "Sets gets selector for css classes used by editor.<br>    That option allows replacing all default css styles of editor by custom values.<br>    Application should provide css classes for all members defined in the css options with \"theme\" selector.<br>    For example, if that property is set to \"mytheme\", then application should provide following css classes:<br>    .mytheme .ui-igedit-field{...};<br>    .mytheme .ui-igedit-focus{...};<br>    etc.<br>    Note: changing theme is not supported when base element is INPUT or TEXTAREA and renderInContainer or button are not enabled.",
 		"jp": "エディターが使用する CSS クラスのセレクターを取得または設定します。<br>    このオプションは、エディターのすべてのデフォルト CSS スタイルをカスタム値に置き換えることを可能にします。<br>    アプリケーションは、theme セレクターを持つ CSS オプションで定義されるすべてのメンバーの CSS クラスを提供する必要があります。<br>    たとえば、このプロパティが「mytheme」に設定されている場合、アプリケーションは以下の CSS クラスを提供する必要があります。<br>    .mytheme .ui-igedit-field{...};<br>    .mytheme .ui-igedit-focus{...};<br>    など。<br>    注: ベース要素が INPUT または TEXTAREA で renderInContainer またはボタンが有効でないとき、テーマの変更はサポートされていません。"
 	}
-    },
-	"type": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": " Sets type of editor. If that option is not set, but the 'value' option is defined, then if type of 'value' is Number, then the 'numeric' type is used, if type of 'value' is Date, then the 'date' type is used. For all other types of 'value' the 'text' type is used. Note: if that option is set to 'datepicker', then application should ensure that css and js files used by jquery.ui.datepicker are available.",
-		"jp": " エディターのタイプを設定します。このオプションを設定されずに 'value' オプションが定義されていいて、'value' が Number 型に設定されている場合、 'numeric' 型が使用されます。'value' 型が Date の場合、'date' が使用されます。'value' の他のすべての型には 'text' が使用されます。注：オプションが 'datepicker' に設定されている場合、アプリケーションで jquery.ui.datepicker によって使用される css および js ファイルが使用可能であることを確認してください。"
-	},
-      "valueOptions": [
-        {
-          "name": "text",
-          "type": "string",
-          "description": {
-		"en": " Text editor is created",
-		"jp": " テキスト エディターが作成されます。"
-	}
-        },
-        {
-          "name": "mask",
-          "type": "string",
-          "description": {
-		"en": " Mask editor is created",
-		"jp": " マスク エディターが作成されます。"
-	}
-        },
-        {
-          "name": "date",
-          "type": "string",
-          "description": {
-		"en": " Date-time editor is created",
-		"jp": " 日付エディターが作成されます。"
-	}
-        },
-        {
-          "name": "datepicker",
-          "type": "string",
-          "description": {
-		"en": " Date-picker is created",
-		"jp": " 日付ピッカーが作成されます。"
-	}
-        },
-        {
-          "name": "numeric",
-          "type": "string",
-          "description": {
-		"en": " Numeric editor is created",
-		"jp": " 数値エディターが作成されます。"
-	}
-        },
-        {
-          "name": "currency",
-          "type": "string",
-          "description": {
-		"en": " Currency editor is created",
-		"jp": " 通貨エディターが作成されます。"
-	}
-        },
-        {
-          "name": "percent",
-          "type": "string",
-          "description": {
-		"en": " Percent editor is created",
-		"jp": " パーセント エディターが作成されます。"
-	}
-        }
-      ]
     },
     "useLastGoodDate": {
       "type": "bool",
