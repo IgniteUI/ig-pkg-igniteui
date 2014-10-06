@@ -394,8 +394,8 @@
     		"defaultOptions": {"dropDownAsChild": true},
     		"dataSource": "sampleListData1"
     	},
-    	"dataSource": {
-    		"id": "dataSource",
+    	"localDataSource": {
+    		"id": "localDataSource",
             "componentPlugin": "datasource-component-plugin", 
     		"toolboxTitle": "Local Data Source",
     		"icon": "datasource.png",

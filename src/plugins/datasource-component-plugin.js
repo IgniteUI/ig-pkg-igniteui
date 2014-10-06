@@ -140,11 +140,12 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			//$("<input type=\"radio\" name=\"dstype\" id=\"dstype2\" value=\"" + locale.local + "\"/>").addClass("ds-diag-dt-local").appendTo(localRemoteArea);
 			//$("<label for=\"dstype2\">" + locale.local + "</label>").appendTo(localRemoteArea).addClass("ds-diag-dt-locallabel");
 			// edit schema button
-			$("<span>" + locale.editSchema + "</span>").addClass("btn btn-default ds-diag-editschema").appendTo(remoteContainer);
-			$("<br><label>" + locale.urlEndpoint + "</label>").addClass("ds-diag-urllabel").appendTo(remoteContainer);
+			var localContainer = $("<div></div>").addClass("ds-diag-localcontainer").css("display", "none").appendTo(dscontainer);
+			$("<span>" + locale.editSchema + "</span>").addClass("btn btn-default ds-diag-editschema").wrap("<div class=\"ds-diag-editschema-wrapper\"/>").parent().prependTo($(".adorner-custom-footer"));
+			//$("<br><label>" + locale.urlEndpoint + "</label>").addClass("ds-diag-urllabel").appendTo(remoteContainer);
 			$("<div><input type=\"text\" class=\"form-control\"/><span id=\"testButton\" class=\"btn btn-default\">" + locale.test + "</span><span id=\"setButton\" class=\"btn btn-default\">" + locale.setDataSource + "</span></div>").addClass("ds-diag-url").appendTo(remoteContainer);
 
-			var localContainer = $("<div></div>").addClass("ds-diag-localcontainer").css("display", "none").appendTo(dscontainer);
+			
 			// for local
 			//$("<input type=\"radio\" name=\"localdstype\" checked value=\"variable\"/><label>Type var name containing data:</label>").appendTo(localContainer);
 			$("<label>" + locale.typeVarName + ":</label>").appendTo(localContainer);
@@ -153,7 +154,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			$("<input type=\"radio\" name=\"localdstype\" value=\"inline\"/><label>Or use inline data:</label>").appendTo(localContainer);
 			$("<span class=\"btn btn-default ds-diag-editdatainline\">Edit Data</span>").appendTo(localContainer);
 			*/
-			dscontainer.find(".ds-diag-editschema").clone().appendTo(localContainer);
+			//dscontainer.find(".ds-diag-editschema-wrapper").clone().appendTo($(".adorner-custom-footer"));
 
 			remoteContainer.css("display", "none");
 			localContainer.css("display", "block");

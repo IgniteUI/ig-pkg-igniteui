@@ -50,16 +50,17 @@ define (["./datasource-component-plugin"], function (DataSourcePlugin) {
 			remoteContainer = $("<div></div>").appendTo(dscontainer).addClass("ds-diag-remotecontainer");
 			localRemoteArea = $("<div></div>").addClass("ds-diag-dt").prependTo(dscontainer);
 			// edit schema button
-			$("<span>" + locale.editSchema + "</span>").addClass("btn btn-default ds-diag-editschema").appendTo(remoteContainer);
-			$("<br><label>responseDataKey</label>").addClass("ds-diag-urllabel").appendTo(remoteContainer);
-			$("<div><input id=\"responseDataKeyInput\" type=\"text\" class=\"form-control\"/></div>").addClass("ds-diag-url").appendTo(remoteContainer);
-			$("<label>responseTotalRecCountKey</label>").addClass("ds-diag-urllabel").appendTo(remoteContainer);
-			$("<div><input id=\"responseTotalRecCountKeyInput\" type=\"text\" class=\"form-control\"/></div>").addClass("ds-diag-url").appendTo(remoteContainer);
-
-
+			$("<span>" + locale.editSchema + "</span>").addClass("btn btn-default ds-diag-editschema").wrap("<div class=\"ds-diag-editschema-wrapper\"/>").parent().prependTo($(".adorner-custom-footer"));
 			$("<label>" + locale.urlEndpoint + "</label>").addClass("ds-diag-urllabel").appendTo(remoteContainer);
-			$("<div><input type=\"text\" id=\"urlInput\" class=\"form-control\"/>" +
-				"<span id=\"setButton\" class=\"btn btn-default\">" + locale.setDataSource + "</span></div>").addClass("ds-diag-url").appendTo(remoteContainer);
+			$("<div><input type=\"text\" id=\"urlInput\" class=\"form-control\"/>").addClass("ds-diag-url").appendTo(remoteContainer);
+				
+			$("<label>" + locale.responseDataKey + "</label>").addClass("ds-diag-urllabel").appendTo(remoteContainer);
+			$("<div><input id=\"responseDataKeyInput\" type=\"text\" class=\"form-control\"/></div>").addClass("ds-diag-url").appendTo(remoteContainer);
+			$("<label>" + locale.responseTotalRecCountKey + "</label>").addClass("ds-diag-urllabel").appendTo(remoteContainer);
+			$("<div><input id=\"responseTotalRecCountKeyInput\" type=\"text\" class=\"form-control\"/></div>").addClass("ds-diag-url").appendTo(remoteContainer);
+			$("<span id=\"setButton\" class=\"btn btn-default\">" + locale.setDataSource + "</span></div>").addClass("ds-diag-url").appendTo(remoteContainer);
+
+
 			remoteContainer.find(".ds-diag-url > #urlInput").val(dsval).keyup(function (event) {
 
 				if (event.keyCode === 13) {
