@@ -551,44 +551,46 @@ define (function (require, exports, module) {
 		    for (propName in obj) {
 		        prop = obj[propName];
 		        propSchema = parent.schema[propName];
-		        propType = propSchema.type;
-		        if (propType === "string") {
-		            propString = propName + ": \"" + prop + "\"";
-		        } else {
-		            propString = propName + ": " + prop;
-		        }
-		        propRange = ide.editor.find({
-		            needle: propString,
-		            start: parent.marker.start
-		        });
-		        if (propRange) {
-		            propMarker = ide.createAndAddMarker(propRange.start.row, propRange.start.column, propRange.end.row, propRange.end.column);
-		            if (!parent.extraMarkers) {
-		                parent.extraMarkers = {};
-		            }
-		            if (!parent.extraMarkers[propName]) {
-		                parent.extraMarkers[propName] = {};
-		            }
-		            parent.extraMarkers[propName].marker = propMarker;
-		            parent.extraMarkers[propName].schema = propSchema.schema;
-		            parent.extraMarkers[propName].baseIndent = parentIndent + 1;
-		            if (propType === "object") {
-		                newDescriptor = {
-		                    component: descriptor.component,
-		                    type: propType,
-		                    name: propName,
-		                    schema: schema
-		                }
-		                this._addObjectMarkers(newDescriptor, propMarker, parentIndent + 1);
-		            } else if (propType === "array") {
-		                newDescriptor = {
-		                    component: descriptor.component,
-		                    type: propType,
-		                    name: propName,
-		                    schema: schema
-		                }
-		                this._addArrayMarkers(newDescriptor, propMarker, parentIndent + 1);
-		            }
+		        if (propSchema) {
+		        	propType = propSchema.type;
+		        	if (propType === "string") {
+		        		propString = propName + ": \"" + prop + "\"";
+		        	} else {
+		        		propString = propName + ": " + prop;
+		        	}
+		        	propRange = ide.editor.find({
+		        		needle: propString,
+		        		start: parent.marker.start
+		        	});
+		        	if (propRange) {
+		        		propMarker = ide.createAndAddMarker(propRange.start.row, propRange.start.column, propRange.end.row, propRange.end.column);
+		        		if (!parent.extraMarkers) {
+		        			parent.extraMarkers = {};
+		        		}
+		        		if (!parent.extraMarkers[propName]) {
+		        			parent.extraMarkers[propName] = {};
+		        		}
+		        		parent.extraMarkers[propName].marker = propMarker;
+		        		parent.extraMarkers[propName].schema = propSchema.schema;
+		        		parent.extraMarkers[propName].baseIndent = parentIndent + 1;
+		        		if (propType === "object") {
+		        			newDescriptor = {
+		        				component: descriptor.component,
+		        				type: propType,
+		        				name: propName,
+		        				schema: schema
+		        			}
+		        			this._addObjectMarkers(newDescriptor, propMarker, parentIndent + 1);
+		        		} else if (propType === "array") {
+		        			newDescriptor = {
+		        				component: descriptor.component,
+		        				type: propType,
+		        				name: propName,
+		        				schema: schema
+		        			}
+		        			this._addArrayMarkers(newDescriptor, propMarker, parentIndent + 1);
+		        		}
+		        	}
 		        }
 		    }
 		},
