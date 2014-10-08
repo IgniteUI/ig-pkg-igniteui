@@ -45,6 +45,7 @@ define (["./datasource-component-plugin"], function (DataSourcePlugin) {
 			if (responseTotalRecCountKey === null) {
 				responseTotalRecCountKey = "";
 			}
+			$(".adorner-summary-sheet").addClass("data-source-summary-sheet");
 			container.children(".ds-diag-container").remove();
 			dscontainer = $("<div></div>").prependTo(container).addClass("ds-diag-container");
 			remoteContainer = $("<div></div>").appendTo(dscontainer).addClass("ds-diag-remotecontainer");

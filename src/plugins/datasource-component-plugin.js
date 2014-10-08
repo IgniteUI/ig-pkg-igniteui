@@ -130,6 +130,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			if (dsval === null) {
 				dsval = "";
 			}
+			$(".adorner-summary-sheet").addClass("data-source-summary-sheet");
 			container.children(".ds-diag-container").remove();
 			var dscontainer = $("<div></div>").prependTo(container).addClass("ds-diag-container");
 			var remoteContainer = $("<div></div>").appendTo(dscontainer).addClass("ds-diag-remotecontainer");
