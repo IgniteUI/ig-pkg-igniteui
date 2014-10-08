@@ -1095,7 +1095,12 @@ define (function (require, exports, module) {
 						ide._toggleDropDown(dd, ddlist);
 						if (key !== "addNew") {
 							// we are selecting from a list of available data sources
-							that.update(propDescriptor);
+							//T.P. #170697 Adding support for dataSource on the series level of the DV components
+							if (descriptor.updateFunction) {
+								descriptor.updateFunction(propDescriptor);
+							} else {
+								that.update(propDescriptor);
+							}
 							// if the data source is defined below the component which is using it, then the data source needs to be put on top
 							// find the data source component and compare markers
 							var dsComp = ide.componentById(key);

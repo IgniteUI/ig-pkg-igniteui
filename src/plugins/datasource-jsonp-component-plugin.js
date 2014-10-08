@@ -61,7 +61,7 @@ define (["./datasource-component-plugin"], function (DataSourcePlugin) {
 			$("<span id=\"setButton\" class=\"btn btn-default\">" + locale.setDataSource + "</span></div>").addClass("ds-diag-url").appendTo(remoteContainer);
 
 
-			remoteContainer.find(".ds-diag-url > #urlInput").val(dsval).keyup(function (event) {
+			remoteContainer.find("#urlInput").val(dsval).keyup(function (event) {
 
 				if (event.keyCode === 13) {
 					descriptor.propName = "dataSource";
@@ -73,7 +73,7 @@ define (["./datasource-component-plugin"], function (DataSourcePlugin) {
 				event.preventDefault();
 				event.stopPropagation();
 			});
-			remoteContainer.find(".ds-diag-url > #responseDataKeyInput").val(responseDataKey).keyup(function (event) {
+			remoteContainer.find("#responseDataKeyInput").val(responseDataKey).keyup(function (event) {
 				// update the dataSource's url property
 				//ds.settings.dataSource = event.target.value; // validate?
 				//also update the code view
@@ -87,7 +87,7 @@ define (["./datasource-component-plugin"], function (DataSourcePlugin) {
 				event.preventDefault();
 				event.stopPropagation();
 			});
-			remoteContainer.find(".ds-diag-url > #responseTotalRecCountKeyInput").val(responseTotalRecCountKey).keyup(function (event) {
+			remoteContainer.find("#responseTotalRecCountKeyInput").val(responseTotalRecCountKey).keyup(function (event) {
 				// update the dataSource's url property
 				//ds.settings.dataSource = event.target.value; // validate?
 				//also update the code view
@@ -101,7 +101,7 @@ define (["./datasource-component-plugin"], function (DataSourcePlugin) {
 				event.preventDefault();
 				event.stopPropagation();
 			});
-			remoteContainer.find(".ds-diag-url > #setButton").click(function (event) {
+			remoteContainer.find("#setButton").click(function (event) {
 				var url = remoteContainer.find(".ds-diag-url > #urlInput").val(), testLabel = remoteContainer.find(".test-label"), locale = $.plugin.dataSource.locale;
 				if (testLabel.length === 0) {
 					testLabel = $("<div class=\"test-label\"></div>").insertAfter(remoteContainer.find("#urlInput"));
