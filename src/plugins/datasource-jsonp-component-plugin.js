@@ -52,7 +52,7 @@ define (["./datasource-component-plugin"], function (DataSourcePlugin) {
 			localRemoteArea = $("<div></div>").addClass("ds-diag-dt").prependTo(dscontainer);
 			// edit schema button
 			$("<span>" + locale.editSchema + "</span>").addClass("btn btn-default ds-diag-editschema").wrap("<div class=\"ds-diag-editschema-wrapper\"/>").parent().prependTo($(".adorner-custom-footer"));
-			$("<label>" + locale.urlEndpoint + "</label>").addClass("ds-diag-urllabel").appendTo(remoteContainer);
+			$("<label>" + locale.urlEndpoint + "(<a id=\"openTestUrl\">" + locale.openTest + "</a>" + ")" + "</label>").addClass("ds-diag-urllabel").appendTo(remoteContainer);
 			$("<div><input type=\"text\" id=\"urlInput\" class=\"form-control\"/>").addClass("ds-diag-url").appendTo(remoteContainer);
 				
 			$("<label>" + locale.responseDataKey + "</label>").addClass("ds-diag-urllabel").appendTo(remoteContainer);
@@ -136,6 +136,15 @@ define (["./datasource-component-plugin"], function (DataSourcePlugin) {
 					});
 				} else {
 					testLabel.removeClass("test-fail").removeClass("test-success").text(locale.setValidUrl);
+				}
+			});
+			remoteContainer.find("#openTestUrl").click(function () {
+				var url = remoteContainer.find("#urlInput").val().trim();
+				if (url && url !== "") {
+					var win = window.open(url, "_blank");
+					if (win) {
+						win.focus();
+					}
 				}
 			});
 			// edit schema
