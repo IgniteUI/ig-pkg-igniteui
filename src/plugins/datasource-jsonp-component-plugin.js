@@ -111,8 +111,7 @@ define (["./datasource-component-plugin"], function (DataSourcePlugin) {
 					$.ajax({
 						url: url,
 						crossDomain: true,
-						dataType: "jsonp",
-						async: false
+						dataType: "jsonp"
 					}).fail(function (jqXHR, textStatus, errorThrown) {
 						var message;
 						$("#modalDSError #errorDetails").css("display", "none");
