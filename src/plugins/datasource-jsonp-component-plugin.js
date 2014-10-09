@@ -111,9 +111,31 @@ define (["./datasource-component-plugin"], function (DataSourcePlugin) {
 					$.ajax({
 						url: url,
 						crossDomain: true,
-						dataType: "jsonp"
-					}).fail(function () {
-						testLabel.addClass("test-fail").removeClass("test-success").text(locale.reqestFailed);
+						dataType: "jsonp",
+						async: false
+					}).fail(function (jqXHR, textStatus, errorThrown) {
+						var message;
+						$("#modalDSError #errorDetails").css("display", "none");
+						if (textStatus === "timeout") {
+							message = locale.requestTimeout;
+						} else if (textStatus === "parsererror") {
+							message = locale.requestParserError;
+							message = message.replace("{0}", "<a href='" + locale.responseDataTypeURL + "' target='_blank'>");
+							message = message.replace("{1}", "</a>");
+						} else {
+							message = locale.requestError;
+							message = message.replace("{0}", jqXHR.status);
+							message = message.replace("{1}", jqXHR.statusText);
+							$("#modalDSError #responseerror").text(jqXHR.status);
+							$("#modalDSError #responsestatus").text(jqXHR.statusText);
+							$("#modalDSError #responsedatatype").text(jqXHR.responseXML ? "XML" : "Text");
+							$("#modalDSError #responsecontent").text(jqXHR.responseXML ? jqXHR.responseXML : jqXHR.responseText);
+							$("#modalDSError #errorDetails").css("display", "block");
+						}
+						$("#modalDSError #errorText").html(message);
+						$("#modalDSError").dialog("open");
+						$("[aria-describedby='modalDSError'").css("z-index", 20000);
+						testLabel.addClass("test-fail").removeClass("test-success").text(locale.requestFailed);
 					}).done(function () {
 						descriptor.propName = "responseDataKey";
 						descriptor.oldPropValue = "";
