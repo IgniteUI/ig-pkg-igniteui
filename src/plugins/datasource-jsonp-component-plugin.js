@@ -5,7 +5,7 @@ define (["./datasource-component-plugin"], function (DataSourcePlugin) {
 		},
 		getCodeEditorScriptSnippet: function (descriptor) {
 			var code = "\t\t\t\twindow." + descriptor.id + " = new $.ig.JSONPDataSource({\n";
-			code += "\t\t\t\t\ttype: \"json\",\n";
+			code += "\t\t\t\t\ttype: \"json\"\n";
 			var orderedReturnProps = [];
 			// now write options / settings
 			code += "\t\t\t\t});\n";
@@ -67,7 +67,7 @@ define (["./datasource-component-plugin"], function (DataSourcePlugin) {
 				if (event.keyCode === 13) {
 					descriptor.propName = "dataSource";
 					descriptor.oldPropValue = event.target.value ? event.target.value.substring(0, event.target.value.length - 1) : "";
-					descriptor.propType = "literal";
+					descriptor.propType = "string";
 					descriptor.propValue = event.target.value.trim();
 					that.update(descriptor);
 				}
@@ -151,7 +151,7 @@ define (["./datasource-component-plugin"], function (DataSourcePlugin) {
 
 						descriptor.propName = "dataSource";
 						descriptor.oldPropValue = "";
-						descriptor.propType = "litearal";
+						descriptor.propType = "string";
 						descriptor.propValue = remoteContainer.find(".ds-diag-url > #urlInput").val().trim();
 						that.update(descriptor);
 					});
