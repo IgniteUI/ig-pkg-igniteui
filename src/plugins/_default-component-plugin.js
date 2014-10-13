@@ -253,6 +253,9 @@ define (function (require, exports, module) {
 	        }
 	    },
 	    getPropPosition: function (descriptor) {
+	    	if (!descriptor.isRoot) {
+	    		return;
+	    	}
 	        var pos = {row: 0, column: 0};
 	        // if the property doesn't exist, add it to the code view and return the newly added prop position
 	        // note: this logic *must* happen in the module plugin logic, not in the ide's property explorer logic ! 
