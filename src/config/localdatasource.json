@@ -842,10 +842,16 @@
 					"type": "array",
 					"defaultValue": [],
 					"description": {
-		"en": "Can point to either a string or a function object. The parameters that are passed are 1) the data array to be filtered, 2) the filtering expression definitions. Should return an array of the filtered data.",
-		"jp": "文字列または関数オブジェクトを指すことができます。渡されるパラメーターは、1) フィルタリングされるデータ配列、2) フィルタリングの式定義です。フィルターされたデータの配列を返します。"
-	},
-					"arrayMemberType": "string"
+						"en": "Can point to either a string or a function object. The parameters that are passed are 1) the data array to be filtered, 2) the filtering expression definitions. Should return an array of the filtered data.",
+						"jp": "文字列または関数オブジェクトを指すことができます。渡されるパラメーターは、1) フィルタリングされるデータ配列、2) フィルタリングの式定義です。フィルターされたデータの配列を返します。"
+					},
+					"designerDisplayProperty": "name",
+					"schema": {
+						"name": {
+							"type": "string",
+							"defaultValue": ""
+						}
+					}
 				},
 				"expressions": {
 					"type": "array",
@@ -1130,17 +1136,17 @@
 			"type": "object",
 			"defaultValue": null,
 			"description": {
-		"en": "Settings related to built-in paging functionality.",
-		"jp": "組み込みのページング機能に関連する設定。"
-	},
+				"en": "Settings related to built-in paging functionality.",
+				"jp": "組み込みのページング機能に関連する設定。"
+			},
 			"schema": {
 				"type": {
 					"type": "string",
 					"defaultValue": "remote",
 					"description": {
-		"en": "Specifies whether summaries will be applied locally or remotely (via a remote request).",
-		"jp": "サマリーをローカルまたはリモートで (リモート要求によって) 適用するかを指定します。"
-	},
+						"en": "Specifies whether summaries will be applied locally or remotely (via a remote request).",
+						"jp": "サマリーをローカルまたはリモートで (リモート要求によって) 適用するかを指定します。"
+					},
 					"valueOptions": [
 						{
 							"name": "local",
@@ -1214,18 +1220,18 @@
 					"type": "array",
 					"defaultValue": null,
 					"description": {
-		"en": "A list of column settings that specifies custom summaries options per column basis.",
-		"jp": "カスタム集計オプションを列ごとに指定する列設定のリスト。"
-	},
+						"en": "A list of column settings that specifies custom summaries options per column basis.",
+						"jp": "カスタム集計オプションを列ごとに指定する列設定のリスト。"
+					},
 					"designerDisplayProperty": "key",
 					"schema": {
 						"key": {
 							"type": "string",
 							"defaultValue": null,
 							"description": {
-		"en": "Key of the column",
-		"jp": "列のキー。"
-	}
+								"en": "Key of the column",
+								"jp": "列のキー。"
+							}
 						},
 						"summaryOperands": {
 							"type": "array",

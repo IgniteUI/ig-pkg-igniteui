@@ -5,7 +5,7 @@ define (["./datasource-component-plugin"], function (DataSourcePlugin) {
 		},
 		getCodeEditorScriptSnippet: function (descriptor) {
 			var code = "\t\t\t\twindow." + descriptor.id + " = new $.ig.JSONPDataSource({\n";
-			code += "\t\t\t\t\ttype: \"json\",\n";
+			code += "\t\t\t\t\ttype: \"json\"\n";
 			var orderedReturnProps = [];
 			// now write options / settings
 			code += "\t\t\t\t});\n";
@@ -52,7 +52,7 @@ define (["./datasource-component-plugin"], function (DataSourcePlugin) {
 			localRemoteArea = $("<div></div>").addClass("ds-diag-dt").prependTo(dscontainer);
 			// edit schema button
 			$("<span>" + locale.editSchema + "</span>").addClass("btn btn-default ds-diag-editschema").wrap("<div class=\"ds-diag-editschema-wrapper\"/>").parent().prependTo($(".adorner-custom-footer"));
-			$("<label>" + locale.urlEndpoint + "</label>").addClass("ds-diag-urllabel").appendTo(remoteContainer);
+			$("<label>" + locale.urlEndpoint + "(<a id=\"openTestUrl\">" + locale.openTest + "</a>" + ")" + "</label>").addClass("ds-diag-urllabel").appendTo(remoteContainer);
 			$("<div><input type=\"text\" id=\"urlInput\" class=\"form-control\"/>").addClass("ds-diag-url").appendTo(remoteContainer);
 				
 			$("<label>" + locale.responseDataKey + "</label>").addClass("ds-diag-urllabel").appendTo(remoteContainer);
@@ -67,7 +67,7 @@ define (["./datasource-component-plugin"], function (DataSourcePlugin) {
 				if (event.keyCode === 13) {
 					descriptor.propName = "dataSource";
 					descriptor.oldPropValue = event.target.value ? event.target.value.substring(0, event.target.value.length - 1) : "";
-					descriptor.propType = "literal";
+					descriptor.propType = "string";
 					descriptor.propValue = event.target.value.trim();
 					that.update(descriptor);
 				}
@@ -112,8 +112,29 @@ define (["./datasource-component-plugin"], function (DataSourcePlugin) {
 						url: url,
 						crossDomain: true,
 						dataType: "jsonp"
-					}).fail(function () {
-						testLabel.addClass("test-fail").removeClass("test-success").text(locale.reqestFailed);
+					}).fail(function (jqXHR, textStatus, errorThrown) {
+						var message;
+						$("#modalDSError #errorDetails").css("display", "none");
+						if (textStatus === "timeout") {
+							message = locale.requestTimeout;
+						} else if (textStatus === "parsererror") {
+							message = locale.requestParserError;
+							message = message.replace("{0}", "<a href='" + locale.responseDataTypeURL + "' target='_blank'>");
+							message = message.replace("{1}", "</a>");
+						} else {
+							message = locale.requestError;
+							message = message.replace("{0}", jqXHR.status);
+							message = message.replace("{1}", jqXHR.statusText);
+							$("#modalDSError #responseerror").text(jqXHR.status);
+							$("#modalDSError #responsestatus").text(jqXHR.statusText);
+							$("#modalDSError #responsedatatype").text(jqXHR.responseXML ? "XML" : "Text");
+							$("#modalDSError #responsecontent").text(jqXHR.responseXML ? jqXHR.responseXML : jqXHR.responseText);
+							$("#modalDSError #errorDetails").css("display", "block");
+						}
+						$("#modalDSError #errorText").html(message);
+						$("#modalDSError").dialog("open");
+						$("[aria-describedby='modalDSError'").css("z-index", 20000);
+						testLabel.addClass("test-fail").removeClass("test-success").text(locale.requestFailed);
 					}).done(function () {
 						descriptor.propName = "responseDataKey";
 						descriptor.oldPropValue = "";
@@ -130,12 +151,21 @@ define (["./datasource-component-plugin"], function (DataSourcePlugin) {
 
 						descriptor.propName = "dataSource";
 						descriptor.oldPropValue = "";
-						descriptor.propType = "litearal";
+						descriptor.propType = "string";
 						descriptor.propValue = remoteContainer.find(".ds-diag-url > #urlInput").val().trim();
 						that.update(descriptor);
 					});
 				} else {
 					testLabel.removeClass("test-fail").removeClass("test-success").text(locale.setValidUrl);
+				}
+			});
+			remoteContainer.find("#openTestUrl").click(function () {
+				var url = remoteContainer.find("#urlInput").val().trim();
+				if (url && url !== "") {
+					var win = window.open(url, "_blank");
+					if (win) {
+						win.focus();
+					}
 				}
 			});
 			// edit schema

@@ -437,7 +437,10 @@
     		"visual": true,
     		"framework": false,
     		"width": 400,
-    		"height": 400
+    		"height": 400,
+			"defaultOptions": {
+				"draggable" : false
+			}
     	},
     	"editor": {
     		"id": "editor",

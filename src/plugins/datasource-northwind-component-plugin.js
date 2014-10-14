@@ -7,10 +7,11 @@ define(["./datasource-jsonp-component-plugin"], function (IgniteUIJSONPDataSourc
 			var code = "\t\t\t\twindow." + descriptor.id + " = new $.ig.JSONPDataSource({\n";
 			code += "\t\t\t\t\tdataSource: \"http://services.odata.org/Northwind/Northwind.svc/Customers?$format=json&$select=CustomerID,CompanyName,ContactName&$callback=?\",\n";
 			code += "\t\t\t\t\tresponseDataKey: \"value\",\n";
-			code += "\t\t\t\t\tresponseTotalRecCountKey: \"odata.count\"\n";
+			code += "\t\t\t\t\tresponseTotalRecCountKey: \"odata.count\",\n";
+			code += "\t\t\t\t\ttype: \"json\"\n";
 			var orderedReturnProps = [];
 			// now write options / settings
-			code += "\t\t\t\t});\n";
+			code += "\t\t\t\t});";
 			orderedReturnProps.push({
 				name: "dataSource",
 				value: "http://services.odata.org/Northwind/Northwind.svc/Customers?$format=json&$select=CustomerID,CompanyName,ContactName&$callback=?",
@@ -26,9 +27,14 @@ define(["./datasource-jsonp-component-plugin"], function (IgniteUIJSONPDataSourc
 				value: "odata.count",
 				type: "string"
 			});
+			orderedReturnProps.push({
+				name: "type",
+				value: "json",
+				type: "string"
+			});
 			return {
 				codeString: code,
-				lineCount: 5,
+				lineCount: 6,
 				orderedProps: orderedReturnProps
 			};
 		},
