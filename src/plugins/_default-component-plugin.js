@@ -1159,7 +1159,7 @@ define (function (require, exports, module) {
 			$("<input type=\"radio\" name=\"dsproptype\" id=\"dsproptype2\" value=\"" + locale.local + "\"/>").addClass("ds-diag-dt-local").appendTo(localRemoteArea);
 			$("<label for=\"dsproptype2\">" + locale.local + "</label>").appendTo(localRemoteArea).addClass("ds-diag-dt-locallabel");
 			$("<br><label>" + locale.urlEndpoint + "</label>").addClass("ds-diag-urllabel").appendTo(remoteContainer);
-			$("<div><input type=\"text\" class=\"form-control\"/><span class=\"btn btn-default\">" + locale.test + "</span></div>").addClass("ds-diag-url").appendTo(remoteContainer);
+			$("<div><input id=\"urlInput\" type=\"text\" class=\"form-control\"/><span class=\"btn btn-default\">" + locale.test + "</span></div>").addClass("ds-diag-url").appendTo(remoteContainer);
 			var localContainer = $("<div></div>").addClass("ds-diag-localcontainer").css("display", "none").appendTo(container);
 			$("<label>" + locale.typeVarName + ":</label>").appendTo(localContainer);
 			$("<input type=\"text\" class=\"form-control\"/>").appendTo(localContainer);
@@ -1180,21 +1180,23 @@ define (function (require, exports, module) {
 			}
 			inputUrl.keyup(function (event) {
 				var descr = {};
-				descr.propName = "dataSource";
-				descr.placeholder = descriptor.element;
-				descr.comp = descriptor.comp;
-				descr.oldPropValue = event.target.value.substring(0, event.target.value.length - 1);
-				descr.propType = "string";
-				descr.propValue = event.target.value;
-				that.update(descr);
+				if (event.keyCode === 13) {
+					descr.propName = "dataSource";
+					descr.placeholder = descriptor.element;
+					descr.comp = descriptor.comp;
+					descr.oldPropValue = event.target.value.substring(0, event.target.value.length - 1);
+					descr.propType = "string";
+					descr.propValue = event.target.value.trim();
+					if (descriptor.updateFunction) {
+						descriptor.updateFunction(descr);
+					} else {
+						that.update(descr);
+					}
+				}
 			});
 			remoteContainer.find(".ds-diag-url > .btn").click(function (event) {
 				// test datasource by doing a query to it
-				var url = that.getPropValue({
-					type: descriptor.type,
-					propName: descriptor.propName,
-					placeholder: descriptor.element
-				});
+				var url = remoteContainer.find(".ds-diag-url > #urlInput").val()
 				var testLabel = remoteContainer.find(".test-label");
 				if (testLabel.length === 0) {
 					testLabel = $("<div class=\"test-label\"></div>").insertAfter(remoteContainer.find("input"));
@@ -1204,8 +1206,29 @@ define (function (require, exports, module) {
 						url: url,
 						crossDomain: true,
 						dataType : "jsonp"
-					}).fail(function () {
-					    testLabel.addClass("test-fail").removeClass("test-success").text(locale.requestFailed);
+					}).fail(function (jqXHR, textStatus, errorThrown) {
+						var message;
+						$("#modalDSError #errorDetails").css("display", "none");
+						if (textStatus === "timeout") {
+							message = locale.requestTimeout;
+						} else if (textStatus === "parsererror") {
+							message = locale.requestParserError;
+							message = message.replace("{0}", "<a href='" + locale.responseDataTypeURL + "' target='_blank'>");
+							message = message.replace("{1}", "</a>");
+						} else {
+							message = locale.requestError;
+							message = message.replace("{0}", jqXHR.status);
+							message = message.replace("{1}", jqXHR.statusText);
+							$("#modalDSError #responseerror").text(jqXHR.status);
+							$("#modalDSError #responsestatus").text(jqXHR.statusText);
+							$("#modalDSError #responsedatatype").text(jqXHR.responseXML ? "XML" : "Text");
+							$("#modalDSError #responsecontent").text(jqXHR.responseXML ? jqXHR.responseXML : jqXHR.responseText);
+							$("#modalDSError #errorDetails").css("display", "block");
+						}
+						$("#modalDSError #errorText").html(message);
+						$("#modalDSError").dialog("open");
+						$("[aria-describedby='modalDSError'").css("z-index", 20000);
+						testLabel.addClass("test-fail").removeClass("test-success").text(locale.requestFailed);
 					}).done(function () {
 					    testLabel.removeClass("test-fail").addClass("test-success").text(locale.success);
 					});
@@ -1215,13 +1238,19 @@ define (function (require, exports, module) {
 			});
 			localContainer.find("input").val(localdsval ? localdsval : dsval).keyup(function (event) {
 				var descr = {};
-				descr.propName = "dataSource";
-				descr.placeholder = descriptor.element;
-				descr.comp = descriptor.comp;
-				descr.oldPropValue = event.target.value.substring(0, event.target.value.length - 1);
-				descr.propType = "literal";
-				descr.propValue = event.target.value;
-				that.update(descr);
+				if (event.keyCode === 13) {
+					descr.propName = "dataSource";
+					descr.placeholder = descriptor.element;
+					descr.comp = descriptor.comp;
+					descr.oldPropValue = event.target.value.substring(0, event.target.value.length - 1);
+					descr.propType = "literal";
+					descr.propValue = event.target.value;
+					if (descriptor.updateFunction) {
+						descriptor.updateFunction(descr);
+					} else {
+						that.update(descr);
+					}
+				}
 			});
 		},
 		customPropertyEditor: function (descriptor) {

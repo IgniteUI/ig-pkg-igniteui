@@ -11,7 +11,7 @@ define(["./datasource-jsonp-component-plugin"], function (IgniteUIJSONPDataSourc
 			code += "\t\t\t\t\ttype: \"json\"\n";
 			var orderedReturnProps = [];
 			// now write options / settings
-			code += "\t\t\t\t});";
+			code += "\t\t\t\t});\n";
 			orderedReturnProps.push({
 				name: "dataSource",
 				value: "http://services.odata.org/Northwind/Northwind.svc/Customers?$format=json&$select=CustomerID,CompanyName,ContactName&$callback=?",
