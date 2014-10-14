@@ -53,7 +53,7 @@
 				"/css/themes/bootstrap/infragistics.theme.css",
 				"/css/structure/infragistics.css"
 			],
-			"imgPath": "/css/images/help-icon.png",
+			"imgPath": "/css/images/bootstrap-default-palette.png",
 			"bootstrapCompatible": true,
 			"default": false
 		},
@@ -63,7 +63,7 @@
 				"/css/themes/flatly/infragistics.theme.css",
 				"/css/structure/infragistics.css"
 			],
-			"imgPath": "/css/images/help-icon.png",
+			"imgPath": "/css/images/bootstrap-flatly-palette.png",
 			"bootstrapCompatible": true,
 			"default": false
 		},
@@ -73,7 +73,7 @@
 				"/css/themes/infragistics/infragistics.theme.css",
 				"/css/structure/infragistics.css"
 			],
-			"imgPath": "/css/images/help-icon.png",
+			"imgPath": "/css/images/infragistics-default-palette.png",
 			"bootstrapCompatible": false,
 			"default": true
 		},
@@ -83,7 +83,7 @@
 				"/css/themes/infragistics2012/infragistics.theme.css",
 				"/css/structure/infragistics.css"
 			],
-			"imgPath": "/css/images/help-icon.png",
+			"imgPath": "/css/images/infragistics-2012-palette.png",
 			"bootstrapCompatible": false,
 			"default": false
 		},
@@ -93,7 +93,7 @@
 				"/css/themes/ios/infragistics.theme.css",
 				"/css/structure/infragistics.css"
 			],
-			"imgPath": "/css/images/help-icon.png",
+			"imgPath": "/css/images/infragistics-ios-palette.png",
 			"bootstrapCompatible": false,
 			"default": false
 		},
@@ -103,7 +103,7 @@
 				"/css/themes/metro/infragistics.theme.css",
 				"/css/structure/infragistics.css"
 			],
-			"imgPath": "/css/images/help-icon.png",
+			"imgPath": "/css/images/infragistics-metro-palette.png",
 			"bootstrapCompatible": false,
 			"default": false
 		},
@@ -113,7 +113,7 @@
 				"/css/themes/superhero/infragistics.theme.css",
 				"/css/structure/infragistics.css"
 			],
-			"imgPath": "/css/images/help-icon.png",
+			"imgPath": "/css/images/bootstrap-superhero-palette.png",
 			"bootstrapCompatible": true,
 			"default": false
 		},
@@ -123,7 +123,7 @@
 				"/css/themes/yeti/infragistics.theme.css",
 				"/css/structure/infragistics.css"
 			],
-			"imgPath": "/css/images/help-icon.png",
+			"imgPath": "/css/images/bootstrap-yeti-palette.png",
 			"bootstrapCompatible": true,
 			"default": false
 		}
