@@ -241,11 +241,13 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 				// editing local data source
 				//ds.settings.dataSource = event.target.value; // validate?
 				// also update the code view
-				descriptor.propName = "dataSource";
-				descriptor.oldPropValue = event.target.value.substring(0, event.target.value.length - 1);
-				descriptor.propType = "literal";
-				descriptor.propValue = event.target.value.trim();
-				that.update(descriptor);
+				if (event.keyCode === 13) {
+					descriptor.propName = "dataSource";
+					descriptor.oldPropValue = event.target.value.substring(0, event.target.value.length - 1);
+					descriptor.propType = "literal";
+					descriptor.propValue = event.target.value.trim();
+					that.update(descriptor);
+				}
 			});
 		}
 	});
