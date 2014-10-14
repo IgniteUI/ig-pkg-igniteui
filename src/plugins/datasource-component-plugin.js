@@ -68,6 +68,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 				if (descriptor.propType === "literal") {
 					//We're binding to objects in the window scope
 					obj.settings[descriptor.propName] = window.frames[0][val];
+					obj.settings.dataSourceVal = val;
 					obj._runtimeType = null;
 				} else {
 					obj.settings[descriptor.propName] = val;
@@ -114,10 +115,8 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			}
 		},
 		render: function (container, descriptor) {
-			var ds = window.frames[0][descriptor.id];
-			var ide = this.settings.ide, locale = $.plugin.dataSource.locale;
-			var that = this;
-			var ide = this.settings.ide;
+			var ds = window.frames[0][descriptor.id], ide = this.settings.ide, locale = $.plugin.dataSource.locale, dsval,
+			that = this, ide = this.settings.ide, dscontainer, remoteContainer, localRemoteArea, localContainer;
 			//if (!(ds instanceof $.ig.DataSource)) {
 			if (!(ds && ds._accumulatedTransactionLog)) {
 				throw new Error("Object with ID " + descriptor.id + " is not an instance of IG Data Source");
@@ -125,23 +124,26 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			descriptor.delayBind = 1000; // 1000 ms before the data source rebinds after a property has been changed
 
 			container.empty(); // fix for 168980
-
-			var dsval = ds.settings.dataSource;
+			if (ds.settings.dataSourceVal) {
+				dsval = ds.settings.dataSourceVal;
+			} else {
+				dsval = ds.settings.dataSource;
+			}
 			if (dsval === null) {
 				dsval = "";
 			}
 			$(".adorner-summary-sheet").addClass("data-source-summary-sheet");
 			container.children(".ds-diag-container").remove();
-			var dscontainer = $("<div></div>").prependTo(container).addClass("ds-diag-container");
-			var remoteContainer = $("<div></div>").appendTo(dscontainer).addClass("ds-diag-remotecontainer");
-			var localRemoteArea = $("<div></div>").addClass("ds-diag-dt").prependTo(dscontainer);
+			dscontainer = $("<div></div>").prependTo(container).addClass("ds-diag-container");
+			remoteContainer = $("<div></div>").appendTo(dscontainer).addClass("ds-diag-remotecontainer");
+			localRemoteArea = $("<div></div>").addClass("ds-diag-dt").prependTo(dscontainer);
 			//$("<span>" + locale.isYourData + ": </span>").appendTo(localRemoteArea).addClass("ds-diag-dt-label");
 			//$("<input type=\"radio\" name=\"dstype\" id=\"dstype1\" checked value=\"" + locale.remote + "\"/>").addClass("ds-diag-dt-remote").appendTo(localRemoteArea);
 			//$("<label for=\"dstype1\">" + locale.remote + "</label>").appendTo(localRemoteArea).addClass("ds-diag-dt-remotelabel");
 			//$("<input type=\"radio\" name=\"dstype\" id=\"dstype2\" value=\"" + locale.local + "\"/>").addClass("ds-diag-dt-local").appendTo(localRemoteArea);
 			//$("<label for=\"dstype2\">" + locale.local + "</label>").appendTo(localRemoteArea).addClass("ds-diag-dt-locallabel");
 			// edit schema button
-			var localContainer = $("<div></div>").addClass("ds-diag-localcontainer").css("display", "none").appendTo(dscontainer);
+			localContainer = $("<div></div>").addClass("ds-diag-localcontainer").css("display", "none").appendTo(dscontainer);
 			$("<span>" + locale.editSchema + "</span>").addClass("btn btn-default ds-diag-editschema").wrap("<div class=\"ds-diag-editschema-wrapper\"/>").parent().prependTo($(".adorner-custom-footer"));
 			//$("<br><label>" + locale.urlEndpoint + "</label>").addClass("ds-diag-urllabel").appendTo(remoteContainer);
 			$("<div><input type=\"text\" class=\"form-control\"/><span id=\"testButton\" class=\"btn btn-default\">" + locale.test + "</span><span id=\"setButton\" class=\"btn btn-default\">" + locale.setDataSource + "</span></div>").addClass("ds-diag-url").appendTo(remoteContainer);
