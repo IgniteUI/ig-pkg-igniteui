@@ -797,32 +797,6 @@
 		"jp": "表示ラベルの間隔を取得または設定します。非表示になるラベルを決定する設定値は係数です。たとえば、間隔が 2 の場合は 1 つおきのラベルを表示します。"
 	}
         },
-        "displayType": {
-          "type": "string",
-          "defaultValue": null,
-          "description": {
-		"en": "Gets or sets the axis display type. Continuous display type divides the axis into even intervals, where labels will not necessarily be aligned with data points. Discrete display type will not use a constant interval, but will align each label with its data point.",
-		"jp": "軸表示タイプを取得または設定します。連続表示タイプは軸を均等な間隔に分割します。ラベルがデータ ポイントと整列する必要はありません。Discrete 表示タイプでは均等間隔を使用しませんが、各ラベルはデータ ポイントに合わせます。"
-	},
-          "valueOptions": [
-            {
-              "name": "continuous",
-              "type": "string",
-              "description": {
-		"en": "Points occur at even intervals, even where data is not present at a given point.",
-		"jp": "特定の点にデータが存在しない場合でも、各点は均等な間隔で表示されます。"
-	}
-            },
-            {
-              "name": "discrete",
-              "type": "string",
-              "description": {
-		"en": "Points occur when data is present, possibly at uneven intervals.",
-		"jp": "データが存在する場合、点は均等でない間隔で表示される可能性があります。"
-	}
-            }
-          ]
-        },
         "minimumValue": {
           "type": "number",
           "defaultValue": 0,
