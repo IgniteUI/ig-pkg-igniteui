@@ -46,6 +46,14 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 		    if (window.frames[0].$(descriptor.placeholder)[name]) {
 		        window.frames[0].$(descriptor.placeholder)[name](descriptor.options);
 		    }
+		},
+		repaintWidget: function (descriptor) {
+			try {
+				window.frames[0].$("#" + descriptor.id)[descriptor.providerType]("styleUpdated");
+			}
+			catch(ex) {
+				console.log(descriptor.providerType + " doesn't support runtime theme switching");
+			}
 		}
 	});
 	return IgniteUIChartsPlugin;
