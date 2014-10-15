@@ -871,7 +871,7 @@ define (function (require, exports, module) {
 			}
 			// add all existing options
 			for (var i = 0; i < props.length; i++) {
-			    if (props[i].name === "features") {
+				if (props[i].name === "features" && props[i].schema) {
 			        props[i].schema.heterogeneous = true;
 			    }
 				this.addPropCode({
