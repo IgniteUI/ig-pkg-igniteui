@@ -1154,15 +1154,17 @@ define (function (require, exports, module) {
 			var localRemoteArea = $("<div></div>").addClass("ds-diag-dt").prependTo(container);
 			var remoteContainer = $("<div></div>").appendTo(container).addClass("ds-diag-remotecontainer");
 			$("<span>Is Your Data: </span>").appendTo(localRemoteArea).addClass("ds-diag-dt-label");
-			$("<input type=\"radio\" name=\"dsproptype\" id=\"dsproptype1\" checked value=\"" + locale.remote + "\"/>").addClass("ds-diag-dt-remote").appendTo(localRemoteArea);
+			$("<input type=\"radio\" name=\"dsproptype\" id=\"dsproptype1\" value=\"" + locale.remote + "\"/>").addClass("ds-diag-dt-remote").appendTo(localRemoteArea);
 			$("<label for=\"dsproptype1\">" + locale.remote + "</label>").appendTo(localRemoteArea).addClass("ds-diag-dt-remotelabel");
-			$("<input type=\"radio\" name=\"dsproptype\" id=\"dsproptype2\" value=\"" + locale.local + "\"/>").addClass("ds-diag-dt-local").appendTo(localRemoteArea);
+			$("<input type=\"radio\" name=\"dsproptype\" id=\"dsproptype2\" checked value=\"" + locale.local + "\"/>").addClass("ds-diag-dt-local").appendTo(localRemoteArea);
 			$("<label for=\"dsproptype2\">" + locale.local + "</label>").appendTo(localRemoteArea).addClass("ds-diag-dt-locallabel");
 			$("<br><label>" + locale.urlEndpoint + "</label>").addClass("ds-diag-urllabel").appendTo(remoteContainer);
 			$("<div><input id=\"urlInput\" type=\"text\" class=\"form-control\"/><span class=\"btn btn-default\">" + locale.test + "</span></div>").addClass("ds-diag-url").appendTo(remoteContainer);
 			var localContainer = $("<div></div>").addClass("ds-diag-localcontainer").css("display", "none").appendTo(container);
 			$("<label>" + locale.typeVarName + ":</label>").appendTo(localContainer);
 			$("<input type=\"text\" class=\"form-control\"/>").appendTo(localContainer);
+			remoteContainer.css("display", "none");
+			localContainer.css("display", "block");
 			localRemoteArea.children("input[name=dsproptype]").on("change", function (event) {
 				if ($(event.target).hasClass("ds-diag-dt-local")) {
 					// hide remote, show local
