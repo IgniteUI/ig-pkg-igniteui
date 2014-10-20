@@ -55,7 +55,7 @@
 			],
 			"imgPath": "/css/images/bootstrap-default-palette.png",
 			"bootstrapCompatible": true,
-			"default": false
+			"isDefault": false
 		},
 		"flatly": {
 			"displayName": "Bootstrap Flatly",
@@ -65,7 +65,7 @@
 			],
 			"imgPath": "/css/images/bootstrap-flatly-palette.png",
 			"bootstrapCompatible": true,
-			"default": false
+			"isDefault": false
 		},
 		"infragistics": {
 			"displayName": "Infragistics Default",
@@ -75,7 +75,7 @@
 			],
 			"imgPath": "/css/images/infragistics-default-palette.png",
 			"bootstrapCompatible": false,
-			"default": true
+			"isDefault": true
 		},
 		"infragistics2012": {
 			"displayName": "Infragistics 2012",
@@ -85,7 +85,7 @@
 			],
 			"imgPath": "/css/images/infragistics-2012-palette.png",
 			"bootstrapCompatible": false,
-			"default": false
+			"isDefault": false
 		},
 		"ios": {
 			"displayName": "Infragistics iOS",
@@ -95,7 +95,7 @@
 			],
 			"imgPath": "/css/images/infragistics-ios-palette.png",
 			"bootstrapCompatible": false,
-			"default": false
+			"isDefault": false
 		},
 		"metro": {
 			"displayName": "Infragistics Metro",
@@ -105,7 +105,7 @@
 			],
 			"imgPath": "/css/images/infragistics-metro-palette.png",
 			"bootstrapCompatible": false,
-			"default": false
+			"isDefault": false
 		},
 		"superhero": {
 			"displayName": "Bootstrap Superhero",
@@ -115,7 +115,7 @@
 			],
 			"imgPath": "/css/images/bootstrap-superhero-palette.png",
 			"bootstrapCompatible": true,
-			"default": false
+			"isDefault": false
 		},
 		"yeti": {
 			"displayName": "Bootstrap Yeti",
@@ -125,7 +125,7 @@
 			],
 			"imgPath": "/css/images/bootstrap-yeti-palette.png",
 			"bootstrapCompatible": true,
-			"default": false
+			"isDefault": false
 		}
 	},
     "iconsPath": "icons",
