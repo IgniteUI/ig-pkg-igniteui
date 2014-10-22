@@ -1055,7 +1055,7 @@ define (function (require, exports, module) {
 					var label = td.find(".ig-dropdown-label");
 					label.css({
 						display: "inline-block",
-						width: td.width() - td.find(".input-group-btn").outerWidth()
+						width: td.innerWidth() - td.find(".input-group-btn > button").outerWidth()
 					});
 					td.find(".layout-menu").css({
 						"min-height": 0
