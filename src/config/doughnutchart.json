@@ -242,9 +242,9 @@
           "type": "array",
           "defaultValue": null,
           "description": {
-		"en": "Gets or sets the Brushes property.<br>   The brushes property defines the palette from which automatically assigned series brushes are selected.<br>   The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
-		"jp": "Brushes プロパティを取得または設定します。<br>   自動的に割り当てられるシリーズ ブラシを選択するパレットは、ブラシ プロパティで定義します。<br>   提供された値は、css 色文字列の配列である必要があります。最初の要素は、コレクションの補間モードを指定する RGB または HSV の文字列に設定するオプションがあります。"
-	},
+			"en": "Gets or sets the Brushes property.<br>   The brushes property defines the palette from which automatically assigned series brushes are selected.<br>   The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
+			"jp": "Brushes プロパティを取得または設定します。<br>   自動的に割り当てられるシリーズ ブラシを選択するパレットは、ブラシ プロパティで定義します。<br>   提供された値は、css 色文字列の配列である必要があります。最初の要素は、コレクションの補間モードを指定する RGB または HSV の文字列に設定するオプションがあります。"
+		},
           "arrayMemberType": "string",
 		  "schema": {
 			"name": {
@@ -472,10 +472,23 @@
           "type": "array",
           "defaultValue": null,
           "description": {
-		"en": "Gets or sets the Outlines property. The Outlines property defines the palette from which automatically assigned slice outlines are selected. The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
-		"jp": "Outlines プロパティを取得または設定します。Outline プロパティは自動的に割り当てられるスライス アウトラインを選択するパレットを定義します。提供された値は、css 色文字列またはグラデーションを定義する JavaScript オブジェクトの配列である必要があります。最初の要素は、コレクションの補間モードを指定する RGB または HSV の文字列に設定するオプションがあります。"
-	},
-          "arrayMemberType": "string"
+				"en": "Gets or sets the Outlines property. The Outlines property defines the palette from which automatically assigned slice outlines are selected. The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
+				"jp": "Outlines プロパティを取得または設定します。Outline プロパティは自動的に割り当てられるスライス アウトラインを選択するパレットを定義します。提供された値は、css 色文字列またはグラデーションを定義する JavaScript オブジェクトの配列である必要があります。最初の要素は、コレクションの補間モードを指定する RGB または HSV の文字列に設定するオプションがあります。"
+			},
+          "arrayMemberType": "string",
+		   "schema": {
+			  "name": {
+				  "type": "string",
+				  "required": true,
+				  "defaultValue": null,
+				  "processValueOnly" : true,
+				  "description": {
+						"en": "Css color string",
+						"jp": "CSS 色文字列"
+					}
+				}	
+			},	
+		  "designerDisplayProperty": "name"
         },
         "radiusFactor": {
           "type": "number",
