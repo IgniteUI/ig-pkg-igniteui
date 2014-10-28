@@ -1,956 +1,956 @@
 ﻿{
-  "overview": null,
-  "name": "ui.igTree",
-  "category": null,
-  "visual": true,
-  "events": {
-    "dataBinding": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+    "overview": null,
+    "name": "ui.igTree",
+    "category": null,
+    "visual": true,
+    "events": {
+        "dataBinding": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "fired before databinding is performed <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tree performing databinding.",
+                "jp": "データバインドの実行前に発生します。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して、データバインドを実行するツリーへの参照を取得します。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
+        "dataBound": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "fired after databinding is finished <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tree performing databinding.<br>    Use ui.dataView to get a reference to the data the tree has been databound to.",
+                "jp": "データ バインディングが完了された後に発生します。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して、データバインドを実行するツリーへの参照を取得します。<br>    ui.dataView を使用して、ツリーにバインドされたデータへの参照を取得します。"
+            }
+        },
+        "drag": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "fired on node drag<br>    Use ui.binding to gets a reference to the binding.<br>    Use ui.data to get a reference to the data.<br>    Use ui.element to get a reference to the element.<br>    Use ui.helper to get a reference to the helper.<br>    Use ui.offset to get a reference to the offset.<br>    Use ui.orginalPosition to get a reference to the original position of the draggable element (the node).<br>    Use ui.path to get a reference to the node path.<br>    Use ui.position to get a reference to the current position of the draggable element.",
+                "jp": "ノードをドラッグすると発生します。<br>    ui.binding を使用してバインディングへの参照を取得します。<br>    ui.data を使用して、データへの参照を取得します。<br>    ui.element を使用して、要素への参照を取得します。<br>    ui.helper を使用して、ヘルパーへの参照を取得します。<br>    ui.offset を使用して、オフセットへの参照を取得します。<br>    ui.originalPosition を使用して、ドラッグ可能な要素 (ノード) の元の位置への参照を取得します。<br>    ui.path を使用して、ノード パスへの参照を取得します。<br>    ui.position を使用して、ドラッグ可能な要素の現在の位置への参照を取得します。"
+            }
+        },
+        "dragStart": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "fired on node drag start<br>    Use ui.binding to gets a reference to the binding.<br>    Use ui.data to get a reference to the data.<br>    Use ui.element to get a reference to the element.<br>    Use ui.helper to get a reference to the helper.<br>    Use ui.offset to get a reference to the offset.<br>    Use ui.orginalPosition to get a reference to the original position of the draggable element (the node).<br>    Use ui.path to get a reference to the node path.<br>    Use ui.position to get a reference to the current position of the draggable element.",
+                "jp": "ノードのドラッグ開始で発生します。<br>    ui.binding を使用してバインディングへの参照を取得します。<br>    ui.data を使用して、データへの参照を取得します。<br>    ui.element を使用して、要素への参照を取得します。<br>    ui.helper を使用して、ヘルパーへの参照を取得します。<br>    ui.offset を使用して、オフセットへの参照を取得します。<br>    ui.originalPosition を使用して、ドラッグ可能な要素 (ノード) の元の位置への参照を取得します。<br>    ui.path を使用して、ノード パスへの参照を取得します。<br>    ui.position を使用して、ドラッグ可能な要素の現在の位置への参照を取得します。"
+            }
+        },
+        "dragStop": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "fired after a drag operation has completed<br>    Use ui.helper to get a reference to the helper.<br>    Use ui.offset to get a reference to the offset.<br>    Use ui.orginalPosition to get a reference to the original position of the draggable element (the node).<br>    Use ui.position to get a reference to the current position of the draggable element.",
+                "jp": "ドラッグ操作が完了した後に発生します。<br>    ui.helper を使用して、ヘルパーへの参照を取得します。<br>    ui.offset を使用して、オフセットへの参照を取得します。<br>    ui.originalPosition を使用して、ドラッグ可能な要素 (ノード) の元の位置への参照を取得します。<br>    ui.position を使用して、ドラッグ可能な要素の現在の位置への参照を取得します。"
+            }
+        },
+        "nodeCheckstateChanged": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "fired after the checkstate of a node is changed <br>    Use ui.owner to get a reference to the tree.<br>    Use ui.node to get a reference to the node object the checkbox of which is being interacted with.<br>    Use ui.newState to get the new current state of the checkbox.<br>    Use ui.newCheckedNodes to get the collection of all checked nodes.<br>    Use ui.newPartiallyCheckedNodes to get the collection of all partially checked nodes.",
+                "jp": "ノードのチェック状態が変更されたときと発生します。<br>    ui.owner を使用して、ツリーへの参照を取得します。<br>    ui.node を使用して、チェックボックスの操作が行われているノード オブジェクトへの参照を取得します。<br>    ui.newState を使用して、変更後のチェックボックスの状態を取得します。<br>    ui.newCheckedNodes を使用して、すべてのチェック ノードのコレクションを取得します。<br>    ui.newPartiallyCheckedNodes を使用して、部分チェック ノードのコレクションを取得します。"
+            }
+        },
+        "nodeCheckstateChanging": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "fired before the checkstate of a node is changed <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tree.<br>    Use ui.node to get a reference to the node object the checkbox of which is being interacted with.<br>    Use ui.currentState to get the current state of the checkbox.<br>    Use ui.newState to get the new future state of the checkbox.<br>    Use ui.currentCheckedNodes to get the collection of all checked nodes before the new state is applied.",
+                "jp": "ノードのチェック状態が変更される前に発生します。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して、ツリーへの参照を取得します。<br>    ui.node を使用して、チェックボックスの操作が行われているノード オブジェクトへの参照を取得します。<br>    ui.currentState を使用して、チェックボックスの現在の状態を取得します。<br>    ui.newState を使用して、変更後のチェックボックスの状態を取得します。<br>    ui.currentCheckedNodes を使用して、新しい状態が適用される前に完全チェック ノードのコレクションを取得します。"
+            }
+        },
+        "nodeClick": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "fired on node click <br>    Use ui.owner to get a reference to the tree.<br>    Use ui.node to get a reference to the node object being clicked.",
+                "jp": "ノードをクリックすると発生します。<br>    ui.owner を使用して、ツリーへの参照を取得します。<br>    ui.node を使用して、クリックされるノード オブジェクトへの参照を取得します。"
+            }
+        },
+        "nodeCollapsed": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "fired after a node is collapsed <br>    Use ui.owner to get a reference to the tree.<br>    Use ui.node to get a reference to the collapsed node object.",
+                "jp": "ノードが縮小された後に発生します。<br>    ui.owner を使用して、ツリーへの参照を取得します。<br>    ui.node を使用して、折りたたまれたノード オブジェクトへの参照を取得します。"
+            }
+        },
+        "nodeCollapsing": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "fired before a node is collapsed <br>    Use ui.owner to get a reference to the tree.<br>    Use ui.node to get a reference to the node object about to collapse.",
+                "jp": "ノードが縮小される前に発生します。<br>    ui.owner を使用して、ツリーへの参照を取得します。<br>    ui.node を使用して、折りたたまれるノード オブジェクトへの参照を取得します。"
+            }
+        },
+        "nodeDoubleClick": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "fired on node double click<br>    Use ui.path to get a reference to the path of the double clicked node.<br>    Use ui.element to get a reference to the jQuery element of the double clicked node.<br>    Use ui.data to get the node data.<br>    Use ui.binding to get a reference to the bindings object for the level at which the double clicked node is located.",
+                "jp": "ノードをダブルクリックすると発生します。<br>    ui.path を使用して、ダブルクリックしたノードのパスへの参照を取得します。<br>    ui.element を使用して、ダブルクリックしたノードの jQuery 要素への参照を取得します。<br>    ui.data を使用して、ノード データを取得します。<br>    ui.binding を使用して、ダブルクリックしたノードのレベルにあるバインド オブジェクトへの参照を取得します。"
+            }
+        },
+        "nodeDropped": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "fired after a node drop<br>    Use ui.binding to gets a reference to the binding.<br>    Use ui.data to get a reference to the data.<br>    Use ui.draggable to get a reference to the draggable element (the node).<br>    Use ui.element to get a reference to the element.<br>    Use ui.helper to get a reference to the helper.<br>    Use ui.offset to get a reference to the offset.<br>    Use ui.path to get a reference to the node path.<br>    Use ui.position to get a reference to the current position of the draggable element.",
+                "jp": "ノード ドロップの後に発生します。<br>    ui.binding を使用してバインディングへの参照を取得します。<br>    ui.data を使用して、データへの参照を取得します。<br>    ui.draggable を使用して、ドラッグ可能な要素 (ノード) への参照を取得します。<br>    ui.element を使用して、要素への参照を取得します。<br>    ui.helper を使用して、ヘルパーへの参照を取得します。<br>    ui.offset を使用して、オフセットへの参照を取得します。<br>    ui.path を使用して、ノード パスへの参照を取得します。<br>    ui.position を使用して、ドラッグ可能な要素の現在の位置への参照を取得します。"
+            }
+        },
+        "nodeDropping": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "fired before a node drop<br>    Use ui.binding to gets a reference to the binding.<br>    Use ui.data to get a reference to the data.<br>    Use ui.draggable to get a reference to the draggable element (the node).<br>    Use ui.element to get a reference to the element.<br>    Use ui.helper to get a reference to the helper.<br>    Use ui.offset to get a reference to the offset.<br>    Use ui.path to get a reference to the node path.<br>    Use ui.position to get a reference to the current position of the draggable element.",
+                "jp": "ノード ドロップの前に発生します。<br>    ui.binding を使用してバインディングへの参照を取得します。<br>    ui.data を使用して、データへの参照を取得します。<br>    ui.draggable を使用して、ドラッグ可能な要素 (ノード) への参照を取得します。<br>    ui.element を使用して、要素への参照を取得します。<br>    ui.helper を使用して、ヘルパーへの参照を取得します。<br>    ui.offset を使用して、オフセットへの参照を取得します。<br>    ui.path を使用して、ノード パスへの参照を取得します。<br>    ui.position を使用して、ドラッグ可能な要素の現在の位置への参照を取得します。"
+            }
+        },
+        "nodeExpanded": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "fired after a node is expanded <br>    Use ui.owner to get a reference to the tree.<br>    Use ui.node to get a reference to the expanded node object.",
+                "jp": "ノードが展開された後に発生します。<br>    ui.owner を使用して、ツリーへの参照を取得します。<br>    ui.node を使用して、展開されたノード オブジェクトへの参照を取得します。"
+            }
+        },
+        "nodeExpanding": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "fired before a node is expanded <br>    Use ui.owner to get a reference to the tree.<br>    Use ui.node to get a reference to the node object about to expand.",
+                "jp": "ノードが展開される前に発生します。<br>    ui.owner を使用して、ツリーへの参照を取得します。<br>    ui.node を使用して、展開されるノード オブジェクトへの参照を取得します。"
+            }
+        },
+        "nodePopulated": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "fired after the children of a node are populated in the case of load on demand <br>    Use ui.path to get a reference to the path of the populated node.<br>    Use ui.element to get a reference to the jQuery element of the populated node.<br>    Use ui.data to get the node data.<br>    Use ui.binding to get a reference to the bindings object for the level at which the populated node is located.",
+                "jp": "ロードオンデマンドの場合にノードの子にデータが取り込まれた後に発生します。<br>    ui.path を使用して、データが取り込まれたノードのパスへの参照を取得します。<br>    ui.element を使用して、読み込まれたノードの jQuery 要素への参照を取得します。<br>    ui.data を使用して、ノード データを取得します。<br>    ui.binding を使用して、ノードの読み込み先のレベルにあるバインド オブジェクトへの参照を取得します。"
+            }
+        },
+        "nodePopulating": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "fired before the children of a node are populated in the case of load on demand <br>    Use ui.path to get a reference to the path of the node being populated.<br>    Use ui.element to get a reference to the jQuery element of the node being populated.<br>    Use ui.data to get the node data.<br>    Use ui.binding to get a reference to the bindings object for the level at which the populating node is located.",
+                "jp": "ロードオンデマンドの場合にノードの子にデータが取り込まれる前に発生します。<br>    ui.path を使用して、データが取り込まれるノードのパスへの参照を取得します。<br>    ui.element を使用して、読み込まれるノードの jQuery 要素への参照を取得します。<br>    ui.data を使用して、ノード データを取得します。<br>    ui.binding を使用して、ノードの読み込み先のレベルにあるバインド オブジェクトへの参照を取得します。"
+            }
+        },
+        "rendered": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "fired after rendering of the tree has finished <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tree.",
+                "jp": "ツリーのレンダリングが完了すると発生します。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して、ツリーへの参照を取得します。"
+            }
+        },
+        "rendering": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "fired before rendering of the tree begins <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tree performing rendering.<br>    Use ui.dataView to get a reference to the data the tree is going to render.",
+                "jp": "ツリーのレンダリングが開始される前に発生します。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して、レンダリングを実行するツリーへの参照を取得します。<br>    ui.dataView を使用して、ツリーにレンダリングされるデータへの参照を取得します。"
+            }
+        },
+        "selectionChanged": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "fired after a new node is selected <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tree.<br>    Use ui.selectedNodes to get a reference to the selected nodes.<br>    Use ui.newNodes to get a reference to the newly added nodes to the selection.",
+                "jp": "新しいノードが選択されると発生します。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して、ツリーへの参照を取得します。<br>    ui.selectedNodes を使用して、選択されたノードへの参照を取得します。<br>    ui.newNodes を使用して、新たに選択されたノードへの参照を取得します。"
+            }
+        },
+        "selectionChanging": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "fired before a new node is selected <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tree.<br>    Use ui.selectedNodes to get a reference to currently selected nodes.<br>    Use ui.newNodes to get a reference to the new nodes getting selected.",
+                "jp": "新しいノードが選択される前に発生します。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して、ツリーへの参照を取得します。<br>    ui.selectedNodes を使用して、現在選択されているノードへの参照を取得します。<br>    ui.newNodes を使用して、新たに選択されたノードへの参照を取得します。"
+            }
         }
-      ],
-      "description": {
-		"en": "fired before databinding is performed <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tree performing databinding.",
-		"jp": "データバインドの実行前に発生します。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して、データバインドを実行するツリーへの参照を取得します。"
-	}
     },
-    "dataBound": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "fired after databinding is finished <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tree performing databinding.<br>    Use ui.dataView to get a reference to the data the tree has been databound to.",
-		"jp": "データ バインディングが完了された後に発生します。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して、データバインドを実行するツリーへの参照を取得します。<br>    ui.dataView を使用して、ツリーにバインドされたデータへの参照を取得します。"
-	}
-    },
-    "drag": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "fired on node drag<br>    Use ui.binding to gets a reference to the binding.<br>    Use ui.data to get a reference to the data.<br>    Use ui.element to get a reference to the element.<br>    Use ui.helper to get a reference to the helper.<br>    Use ui.offset to get a reference to the offset.<br>    Use ui.orginalPosition to get a reference to the original position of the draggable element (the node).<br>    Use ui.path to get a reference to the node path.<br>    Use ui.position to get a reference to the current position of the draggable element.",
-		"jp": "ノードをドラッグすると発生します。<br>    ui.binding を使用してバインディングへの参照を取得します。<br>    ui.data を使用して、データへの参照を取得します。<br>    ui.element を使用して、要素への参照を取得します。<br>    ui.helper を使用して、ヘルパーへの参照を取得します。<br>    ui.offset を使用して、オフセットへの参照を取得します。<br>    ui.originalPosition を使用して、ドラッグ可能な要素 (ノード) の元の位置への参照を取得します。<br>    ui.path を使用して、ノード パスへの参照を取得します。<br>    ui.position を使用して、ドラッグ可能な要素の現在の位置への参照を取得します。"
-	}
-    },
-    "dragStart": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "fired on node drag start<br>    Use ui.binding to gets a reference to the binding.<br>    Use ui.data to get a reference to the data.<br>    Use ui.element to get a reference to the element.<br>    Use ui.helper to get a reference to the helper.<br>    Use ui.offset to get a reference to the offset.<br>    Use ui.orginalPosition to get a reference to the original position of the draggable element (the node).<br>    Use ui.path to get a reference to the node path.<br>    Use ui.position to get a reference to the current position of the draggable element.",
-		"jp": "ノードのドラッグ開始で発生します。<br>    ui.binding を使用してバインディングへの参照を取得します。<br>    ui.data を使用して、データへの参照を取得します。<br>    ui.element を使用して、要素への参照を取得します。<br>    ui.helper を使用して、ヘルパーへの参照を取得します。<br>    ui.offset を使用して、オフセットへの参照を取得します。<br>    ui.originalPosition を使用して、ドラッグ可能な要素 (ノード) の元の位置への参照を取得します。<br>    ui.path を使用して、ノード パスへの参照を取得します。<br>    ui.position を使用して、ドラッグ可能な要素の現在の位置への参照を取得します。"
-	}
-    },
-    "dragStop": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "fired after a drag operation has completed<br>    Use ui.helper to get a reference to the helper.<br>    Use ui.offset to get a reference to the offset.<br>    Use ui.orginalPosition to get a reference to the original position of the draggable element (the node).<br>    Use ui.position to get a reference to the current position of the draggable element.",
-		"jp": "ドラッグ操作が完了した後に発生します。<br>    ui.helper を使用して、ヘルパーへの参照を取得します。<br>    ui.offset を使用して、オフセットへの参照を取得します。<br>    ui.originalPosition を使用して、ドラッグ可能な要素 (ノード) の元の位置への参照を取得します。<br>    ui.position を使用して、ドラッグ可能な要素の現在の位置への参照を取得します。"
-	}
-    },
-    "nodeCheckstateChanged": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "fired after the checkstate of a node is changed <br>    Use ui.owner to get a reference to the tree.<br>    Use ui.node to get a reference to the node object the checkbox of which is being interacted with.<br>    Use ui.newState to get the new current state of the checkbox.<br>    Use ui.newCheckedNodes to get the collection of all checked nodes.<br>    Use ui.newPartiallyCheckedNodes to get the collection of all partially checked nodes.",
-		"jp": "ノードのチェック状態が変更されたときと発生します。<br>    ui.owner を使用して、ツリーへの参照を取得します。<br>    ui.node を使用して、チェックボックスの操作が行われているノード オブジェクトへの参照を取得します。<br>    ui.newState を使用して、変更後のチェックボックスの状態を取得します。<br>    ui.newCheckedNodes を使用して、すべてのチェック ノードのコレクションを取得します。<br>    ui.newPartiallyCheckedNodes を使用して、部分チェック ノードのコレクションを取得します。"
-	}
-    },
-    "nodeCheckstateChanging": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "fired before the checkstate of a node is changed <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tree.<br>    Use ui.node to get a reference to the node object the checkbox of which is being interacted with.<br>    Use ui.currentState to get the current state of the checkbox.<br>    Use ui.newState to get the new future state of the checkbox.<br>    Use ui.currentCheckedNodes to get the collection of all checked nodes before the new state is applied.",
-		"jp": "ノードのチェック状態が変更される前に発生します。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して、ツリーへの参照を取得します。<br>    ui.node を使用して、チェックボックスの操作が行われているノード オブジェクトへの参照を取得します。<br>    ui.currentState を使用して、チェックボックスの現在の状態を取得します。<br>    ui.newState を使用して、変更後のチェックボックスの状態を取得します。<br>    ui.currentCheckedNodes を使用して、新しい状態が適用される前に完全チェック ノードのコレクションを取得します。"
-	}
-    },
-    "nodeClick": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "fired on node click <br>    Use ui.owner to get a reference to the tree.<br>    Use ui.node to get a reference to the node object being clicked.",
-		"jp": "ノードをクリックすると発生します。<br>    ui.owner を使用して、ツリーへの参照を取得します。<br>    ui.node を使用して、クリックされるノード オブジェクトへの参照を取得します。"
-	}
-    },
-    "nodeCollapsed": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "fired after a node is collapsed <br>    Use ui.owner to get a reference to the tree.<br>    Use ui.node to get a reference to the collapsed node object.",
-		"jp": "ノードが縮小された後に発生します。<br>    ui.owner を使用して、ツリーへの参照を取得します。<br>    ui.node を使用して、折りたたまれたノード オブジェクトへの参照を取得します。"
-	}
-    },
-    "nodeCollapsing": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "fired before a node is collapsed <br>    Use ui.owner to get a reference to the tree.<br>    Use ui.node to get a reference to the node object about to collapse.",
-		"jp": "ノードが縮小される前に発生します。<br>    ui.owner を使用して、ツリーへの参照を取得します。<br>    ui.node を使用して、折りたたまれるノード オブジェクトへの参照を取得します。"
-	}
-    },
-    "nodeDoubleClick": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "fired on node double click<br>    Use ui.path to get a reference to the path of the double clicked node.<br>    Use ui.element to get a reference to the jQuery element of the double clicked node.<br>    Use ui.data to get the node data.<br>    Use ui.binding to get a reference to the bindings object for the level at which the double clicked node is located.",
-		"jp": "ノードをダブルクリックすると発生します。<br>    ui.path を使用して、ダブルクリックしたノードのパスへの参照を取得します。<br>    ui.element を使用して、ダブルクリックしたノードの jQuery 要素への参照を取得します。<br>    ui.data を使用して、ノード データを取得します。<br>    ui.binding を使用して、ダブルクリックしたノードのレベルにあるバインド オブジェクトへの参照を取得します。"
-	}
-    },
-    "nodeDropped": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "fired after a node drop<br>    Use ui.binding to gets a reference to the binding.<br>    Use ui.data to get a reference to the data.<br>    Use ui.draggable to get a reference to the draggable element (the node).<br>    Use ui.element to get a reference to the element.<br>    Use ui.helper to get a reference to the helper.<br>    Use ui.offset to get a reference to the offset.<br>    Use ui.path to get a reference to the node path.<br>    Use ui.position to get a reference to the current position of the draggable element.",
-		"jp": "ノード ドロップの後に発生します。<br>    ui.binding を使用してバインディングへの参照を取得します。<br>    ui.data を使用して、データへの参照を取得します。<br>    ui.draggable を使用して、ドラッグ可能な要素 (ノード) への参照を取得します。<br>    ui.element を使用して、要素への参照を取得します。<br>    ui.helper を使用して、ヘルパーへの参照を取得します。<br>    ui.offset を使用して、オフセットへの参照を取得します。<br>    ui.path を使用して、ノード パスへの参照を取得します。<br>    ui.position を使用して、ドラッグ可能な要素の現在の位置への参照を取得します。"
-	}
-    },
-    "nodeDropping": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "fired before a node drop<br>    Use ui.binding to gets a reference to the binding.<br>    Use ui.data to get a reference to the data.<br>    Use ui.draggable to get a reference to the draggable element (the node).<br>    Use ui.element to get a reference to the element.<br>    Use ui.helper to get a reference to the helper.<br>    Use ui.offset to get a reference to the offset.<br>    Use ui.path to get a reference to the node path.<br>    Use ui.position to get a reference to the current position of the draggable element.",
-		"jp": "ノード ドロップの前に発生します。<br>    ui.binding を使用してバインディングへの参照を取得します。<br>    ui.data を使用して、データへの参照を取得します。<br>    ui.draggable を使用して、ドラッグ可能な要素 (ノード) への参照を取得します。<br>    ui.element を使用して、要素への参照を取得します。<br>    ui.helper を使用して、ヘルパーへの参照を取得します。<br>    ui.offset を使用して、オフセットへの参照を取得します。<br>    ui.path を使用して、ノード パスへの参照を取得します。<br>    ui.position を使用して、ドラッグ可能な要素の現在の位置への参照を取得します。"
-	}
-    },
-    "nodeExpanded": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "fired after a node is expanded <br>    Use ui.owner to get a reference to the tree.<br>    Use ui.node to get a reference to the expanded node object.",
-		"jp": "ノードが展開された後に発生します。<br>    ui.owner を使用して、ツリーへの参照を取得します。<br>    ui.node を使用して、展開されたノード オブジェクトへの参照を取得します。"
-	}
-    },
-    "nodeExpanding": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "fired before a node is expanded <br>    Use ui.owner to get a reference to the tree.<br>    Use ui.node to get a reference to the node object about to expand.",
-		"jp": "ノードが展開される前に発生します。<br>    ui.owner を使用して、ツリーへの参照を取得します。<br>    ui.node を使用して、展開されるノード オブジェクトへの参照を取得します。"
-	}
-    },
-    "nodePopulated": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "fired after the children of a node are populated in the case of load on demand <br>    Use ui.path to get a reference to the path of the populated node.<br>    Use ui.element to get a reference to the jQuery element of the populated node.<br>    Use ui.data to get the node data.<br>    Use ui.binding to get a reference to the bindings object for the level at which the populated node is located.",
-		"jp": "ロードオンデマンドの場合にノードの子にデータが取り込まれた後に発生します。<br>    ui.path を使用して、データが取り込まれたノードのパスへの参照を取得します。<br>    ui.element を使用して、読み込まれたノードの jQuery 要素への参照を取得します。<br>    ui.data を使用して、ノード データを取得します。<br>    ui.binding を使用して、ノードの読み込み先のレベルにあるバインド オブジェクトへの参照を取得します。"
-	}
-    },
-    "nodePopulating": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "fired before the children of a node are populated in the case of load on demand <br>    Use ui.path to get a reference to the path of the node being populated.<br>    Use ui.element to get a reference to the jQuery element of the node being populated.<br>    Use ui.data to get the node data.<br>    Use ui.binding to get a reference to the bindings object for the level at which the populating node is located.",
-		"jp": "ロードオンデマンドの場合にノードの子にデータが取り込まれる前に発生します。<br>    ui.path を使用して、データが取り込まれるノードのパスへの参照を取得します。<br>    ui.element を使用して、読み込まれるノードの jQuery 要素への参照を取得します。<br>    ui.data を使用して、ノード データを取得します。<br>    ui.binding を使用して、ノードの読み込み先のレベルにあるバインド オブジェクトへの参照を取得します。"
-	}
-    },
-    "rendered": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "fired after rendering of the tree has finished <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tree.",
-		"jp": "ツリーのレンダリングが完了すると発生します。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して、ツリーへの参照を取得します。"
-	}
-    },
-    "rendering": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "fired before rendering of the tree begins <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tree performing rendering.<br>    Use ui.dataView to get a reference to the data the tree is going to render.",
-		"jp": "ツリーのレンダリングが開始される前に発生します。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して、レンダリングを実行するツリーへの参照を取得します。<br>    ui.dataView を使用して、ツリーにレンダリングされるデータへの参照を取得します。"
-	}
-    },
-    "selectionChanged": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "fired after a new node is selected <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tree.<br>    Use ui.selectedNodes to get a reference to the selected nodes.<br>    Use ui.newNodes to get a reference to the newly added nodes to the selection.",
-		"jp": "新しいノードが選択されると発生します。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して、ツリーへの参照を取得します。<br>    ui.selectedNodes を使用して、選択されたノードへの参照を取得します。<br>    ui.newNodes を使用して、新たに選択されたノードへの参照を取得します。"
-	}
-    },
-    "selectionChanging": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "fired before a new node is selected <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the tree.<br>    Use ui.selectedNodes to get a reference to currently selected nodes.<br>    Use ui.newNodes to get a reference to the new nodes getting selected.",
-		"jp": "新しいノードが選択される前に発生します。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して、ツリーへの参照を取得します。<br>    ui.selectedNodes を使用して、現在選択されているノードへの参照を取得します。<br>    ui.newNodes を使用して、新たに選択されたノードへの参照を取得します。"
-	}
-    }
-  },
-  "properties": {
-    "animationDuration": {
-      "type": "number",
-      "defaultValue": 200.0,
-      "description": {
-		"en": "Specifies the duration of each animation such as the expand/collapse.",
-		"jp": "展開/折り畳みなどの、各アニメーションの時間を指定します。"
-	}
-    },
-    "bindings": {
-      "type": "object",
-      "defaultValue": null,
-      "description": {
-		"en": "Specifies the data binding properties and keys.",
-		"jp": "データ バインド プロパティとキーを指定します。"
-	},
-      "schema": {
-        "textKey": {
-          "type": "string",
-          "defaultValue": "",
-          "description": {
-		"en": "Specifies the name of the data source property the value of which would be the node text.",
-		"jp": "その値がノード テキストになる、data source プロパティの名前を指定します。"
-	},
-          "required": true
-        },
-        "valueKey": {
-          "type": "string",
-          "defaultValue": "",
-          "description": {
-		"en": "Specifies the name of the data source property the value of which would be the node value.",
-		"jp": "データ ソース プロパティの名前を指定します。このプロパティの値が当該のノードの値として使用されることになります。"
-	}
-        },
-        "imageUrlKey": {
-          "type": "string",
-          "defaultValue": "",
-          "description": {
-		"en": "Specifies the name of the data source property the value of which would be used as a URL for the node image.",
-		"jp": "その値がノード画像の URL として使用される、data source プロパティの名前を指定します。"
-	}
-        },
-        "navigateUrlKey": {
-          "type": "string",
-          "defaultValue": "",
-          "description": {
-		"en": "Specifies the name of the data source property the value of which would be used as an href attribute for the node anchor.",
-		"jp": "その値がノード アンカーの href 属性として使用される、data source プロパティの名前を指定します。"
-	}
-        },
-        "targetKey": {
-          "type": "string",
-          "defaultValue": "",
-          "description": {
-		"en": "Specifies the name of the data source property the value of which would be used as a target attribute for the node anchor.",
-		"jp": "その値がノード アンカーの target 属性として使用される、data source プロパティの名前を指定します。"
-	}
-        },
-        "expandedKey": {
-          "type": "string",
-          "defaultValue": "",
-          "description": {
-		"en": "Specifies the name of the data source property the value of which would indicate that the node is expanded on initial load.",
-		"jp": "ノードが初期ロードで展開されたことを示す値のデータ ソース プロパティの名前を指定します。"
-	}
-        },
-        "primaryKey": {
-          "type": "string",
-          "defaultValue": null,
-          "description": {
-		"en": "Specifies the name of the data source property the value of which is the primary key attribute for the data. This property is used when load on demand is enabled and if specified the node paths would be generated using primary keys instead of indices.",
-		"jp": "その値がデータのプライマリ キー属性として使用される、data source プロパティの名前を指定します。ロード オン デマンドが有効であり、指定されたノードのパスがインデックスの代わりにプライマリ キーを使用して生成される場合に、このプロパティが使用されます。"
-	}
-        },
-        "nodeContentTemplate": {
-          "type": "string",
-          "defaultValue": null,
-          "description": {
-		"en": "Specifies the node content template for the current layer of bindings. The igTree utilizes jQuery templating for generating node content templates. Please refer to http://api.jquery.com/jquery.tmpl/ for more information.",
-		"jp": "現在のバインド レイヤーに関するノード コンテンツ テンプレートを指定します。igTree はノードのコンテンツ テンプレートを生成するために jQuery テンプレート化を使用します。詳細について、 http://api.jquery.com/jquery.tmpl/ を参照してください。"
-	}
-        },
-        "childDataProperty": {
-          "type": "string",
-          "defaultValue": "",
-          "description": {
-		"en": "Specifies the name of the data source property that holds the child data of the current layer node.",
-		"jp": "現在のレイヤー ノードの子データが格納されているデータ ソース プロパティの名前を指定します。"
-	}
+    "properties": {
+        "animationDuration": {
+            "type": "number",
+            "defaultValue": 200.0,
+            "description": {
+                "en": "Specifies the duration of each animation such as the expand/collapse.",
+                "jp": "展開/折り畳みなどの、各アニメーションの時間を指定します。"
+            }
         },
         "bindings": {
-          "type": "object",
-          "defaultValue": {},
-          "description": {
-		"en": "Specifies the next layer of bindings in a recursive fashion.",
-		"jp": "バインドの次のレイヤーを再帰的に指定します。"
-	},
-          "schemaRef": "tree.bindings"
-        }
-      }
-    },
-    "checkboxMode": {
-      "type": "string",
-      "defaultValue": "off",
-      "description": {
-		"en": " Gets the type of checkboxes rendered before the tree nodes. Can be set only at initialization.",
-		"jp": " ツリー ノードの左に描画されるチェックボックスのタイプを取得します。初期化のみに設定できます。"
-	},
-      "valueOptions": [
-        {
-          "name": "off",
-          "type": "string",
-          "description": {
-		"en": " Checkboxes are turned off and not rendered for the tree.",
-		"jp": " チェックボックスはオフになり、ツリーに対して描画されません。"
-	}
-        },
-        {
-          "name": "biState",
-          "type": "string",
-          "description": {
-		"en": " Checkboxes are rendered and support two states (checked and unchecked). Checkboxes do not cascade down or up in this mode.",
-		"jp": " チェックボックスは描画され、2 つの状態 (チェック付きとチェックなし) をサポートします。このモードでは、チェックボックスは上下にカスケード表示されません。"
-	}
-        },
-        {
-          "name": "triState",
-          "type": "string",
-          "description": {
-		"en": " Checkboxes are rendered and support three states (checked, partial and unchecked). Checkboxes cascade up and down in this mode.",
-		"jp": " チェックボックスは描画され、3 つの状態 (チェック付き、部分チェック付き、チェックなし) をサポートします。このモードではチェックボックスは上下にカスケード表示されます。"
-	}
-        }
-      ]
-    },
-    "dataSource": {
-      "type": "custom",
-      "defaultValue": null,
-      "description": {
-		"en": "Specifies any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself.",
-		"jp": "$.ig.DataSource が受け入れる有効なデータ ソース、または $.ig.DataSource 自体のインスタンスを指定します。"
-	}
-    },
-    "dataSourceType": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "Explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property.",
-		"jp": "データ ソースのタイプ (\"json\" など) を明示的に設定します。$.ig.DataSource とそのタイプ プロパティのドキュメントを参照してください。"
-	}
-    },
-    "dataSourceUrl": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "Specifies a remote URL accepted by $.ig.DataSource in order to request data from it",
-		"jp": "$.ig.DataSource からデータを要求するには、$.ig.DataSource により承諾されたリモート URL を指定します。"
-	}
-    },
-    "defaultNodeTarget": {
-      "type": "string",
-      "defaultValue": "_self",
-      "description": {
-		"en": "Specifies the default target of the node anchor.",
-		"jp": "ノード アンカーのデフォルトのターゲットを指定します。"
-	}
-    },
-    "dragAndDrop": {
-      "type": "bool",
-      "defaultValue": false,
-      "description": {
-		"en": "If set to true it would enable drag and drop functionality.",
-		"jp": "True に設定すると、ドラッグ アンド ドロップ機能を有効にします。"
-	}
-    },
-    "dragAndDropSettings": {
-      "type": "object",
-      "defaultValue": null,
-      "description": {
-		"en": "Specific settings for the drag and drop functionality.",
-		"jp": "ドラッグ アンド ドロップ機能の設定。"
-	},
-      "schema": {
-        "allowDrop": {
-          "type": "bool",
-          "defaultValue": false,
-          "description": {
-		"en": "Specifies whether the widget will accept D&D from other controls. boolean. Default value is false.",
-		"jp": "ウィジェットが別のコントロールからドラッグ アンド ドロップを受け付けるかどうかを指定します。ブール値です。デフォルトは false です。"
-	}
-        },
-        "dragAndDropMode": {
-          "type": "string",
-          "defaultValue": "default",
-          "description": {
-		"en": "Specifies the D&D mode. Accepted values 'default', 'copy', 'move'. None means the tree does not accept this node.",
-		"jp": "ドラッグ アンド ドロップ モードを指定します。有効な値は 'default'、'copy'、および 'move'。設定されない場合、ツリーはこのノードを受けません。"
-	},
-          "valueOptions": [
-            {
-              "name": "default",
-              "type": "string",
-              "description": {
-		"en": "In this mode 'copy' when Ctrl key is hold, else it means 'move'.",
-		"jp": "このモードでは、Ctrl キーが押した場合に 'copy' です。それ以外の場合 'move' です。"
-	}
+            "type": "object",
+            "defaultValue": null,
+            "description": {
+                "en": "Specifies the data binding properties and keys.",
+                "jp": "データ バインド プロパティとキーを指定します。"
             },
-            {
-              "name": "copy",
-              "type": "string",
-              "description": {
-		"en": "Always copy the file when it is dragged",
-		"jp": "ドラッグしたとき、常にファイルをコピーします。"
-	}
+            "schema": {
+                "textKey": {
+                    "type": "string",
+                    "defaultValue": "",
+                    "description": {
+                        "en": "Specifies the name of the data source property the value of which would be the node text.",
+                        "jp": "その値がノード テキストになる、data source プロパティの名前を指定します。"
+                    },
+                    "required": true
+                },
+                "valueKey": {
+                    "type": "string",
+                    "defaultValue": "",
+                    "description": {
+                        "en": "Specifies the name of the data source property the value of which would be the node value.",
+                        "jp": "データ ソース プロパティの名前を指定します。このプロパティの値が当該のノードの値として使用されることになります。"
+                    }
+                },
+                "imageUrlKey": {
+                    "type": "string",
+                    "defaultValue": "",
+                    "description": {
+                        "en": "Specifies the name of the data source property the value of which would be used as a URL for the node image.",
+                        "jp": "その値がノード画像の URL として使用される、data source プロパティの名前を指定します。"
+                    }
+                },
+                "navigateUrlKey": {
+                    "type": "string",
+                    "defaultValue": "",
+                    "description": {
+                        "en": "Specifies the name of the data source property the value of which would be used as an href attribute for the node anchor.",
+                        "jp": "その値がノード アンカーの href 属性として使用される、data source プロパティの名前を指定します。"
+                    }
+                },
+                "targetKey": {
+                    "type": "string",
+                    "defaultValue": "",
+                    "description": {
+                        "en": "Specifies the name of the data source property the value of which would be used as a target attribute for the node anchor.",
+                        "jp": "その値がノード アンカーの target 属性として使用される、data source プロパティの名前を指定します。"
+                    }
+                },
+                "expandedKey": {
+                    "type": "string",
+                    "defaultValue": "",
+                    "description": {
+                        "en": "Specifies the name of the data source property the value of which would indicate that the node is expanded on initial load.",
+                        "jp": "ノードが初期ロードで展開されたことを示す値のデータ ソース プロパティの名前を指定します。"
+                    }
+                },
+                "primaryKey": {
+                    "type": "string",
+                    "defaultValue": null,
+                    "description": {
+                        "en": "Specifies the name of the data source property the value of which is the primary key attribute for the data. This property is used when load on demand is enabled and if specified the node paths would be generated using primary keys instead of indices.",
+                        "jp": "その値がデータのプライマリ キー属性として使用される、data source プロパティの名前を指定します。ロード オン デマンドが有効であり、指定されたノードのパスがインデックスの代わりにプライマリ キーを使用して生成される場合に、このプロパティが使用されます。"
+                    }
+                },
+                "nodeContentTemplate": {
+                    "type": "string",
+                    "defaultValue": null,
+                    "description": {
+                        "en": "Specifies the node content template for the current layer of bindings. The igTree utilizes jQuery templating for generating node content templates. Please refer to http://api.jquery.com/jquery.tmpl/ for more information.",
+                        "jp": "現在のバインド レイヤーに関するノード コンテンツ テンプレートを指定します。igTree はノードのコンテンツ テンプレートを生成するために jQuery テンプレート化を使用します。詳細について、 http://api.jquery.com/jquery.tmpl/ を参照してください。"
+                    }
+                },
+                "childDataProperty": {
+                    "type": "string",
+                    "defaultValue": "",
+                    "description": {
+                        "en": "Specifies the name of the data source property that holds the child data of the current layer node.",
+                        "jp": "現在のレイヤー ノードの子データが格納されているデータ ソース プロパティの名前を指定します。"
+                    }
+                },
+                "bindings": {
+                    "type": "object",
+                    "defaultValue": { },
+                    "description": {
+                        "en": "Specifies the next layer of bindings in a recursive fashion.",
+                        "jp": "バインドの次のレイヤーを再帰的に指定します。"
+                    },
+                    "schemaRef": "tree.bindings"
+                }
+            }
+        },
+        "checkboxMode": {
+            "type": "string",
+            "defaultValue": "off",
+            "description": {
+                "en": " Gets the type of checkboxes rendered before the tree nodes. Can be set only at initialization.",
+                "jp": " ツリー ノードの左に描画されるチェックボックスのタイプを取得します。初期化のみに設定できます。"
             },
-            {
-              "name": "move",
-              "type": "string",
-              "description": {
-		"en": "Always move the file when it is dragged",
-		"jp": "ドラッグしたとき、常にファイルを移動します。"
-	}
+            "valueOptions": [
+                {
+                    "name": "off",
+                    "type": "string",
+                    "description": {
+                        "en": " Checkboxes are turned off and not rendered for the tree.",
+                        "jp": " チェックボックスはオフになり、ツリーに対して描画されません。"
+                    }
+                },
+                {
+                    "name": "biState",
+                    "type": "string",
+                    "description": {
+                        "en": " Checkboxes are rendered and support two states (checked and unchecked). Checkboxes do not cascade down or up in this mode.",
+                        "jp": " チェックボックスは描画され、2 つの状態 (チェック付きとチェックなし) をサポートします。このモードでは、チェックボックスは上下にカスケード表示されません。"
+                    }
+                },
+                {
+                    "name": "triState",
+                    "type": "string",
+                    "description": {
+                        "en": " Checkboxes are rendered and support three states (checked, partial and unchecked). Checkboxes cascade up and down in this mode.",
+                        "jp": " チェックボックスは描画され、3 つの状態 (チェック付き、部分チェック付き、チェックなし) をサポートします。このモードではチェックボックスは上下にカスケード表示されます。"
+                    }
+                }
+            ]
+        },
+        "dataSource": {
+            "type": "custom",
+            "defaultValue": null,
+            "description": {
+                "en": "Specifies any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself.",
+                "jp": "$.ig.DataSource が受け入れる有効なデータ ソース、または $.ig.DataSource 自体のインスタンスを指定します。"
             }
-          ]
         },
-        "dragOpacity": {
-          "type": "number",
-          "defaultValue": 0.75,
-          "description": {
-		"en": "Specifies the opacity of the drag helper: 0 is fully transparent while 1 is fully opaque.",
-		"jp": "ドラッグ ヘルパーの不透明を指定します。0 は完全に透明で、1 は完全に不透です。"
-	}
-        },
-        "revert": {
-          "type": "bool",
-          "defaultValue": true,
-          "description": {
-		"en": "Specifies whether the helper would revert to its original position upon an invalid drop.",
-		"jp": "無効なドロップの場合、ヘルパーを元の位置に戻すかどうかを指定します。"
-	}
-        },
-        "revertDuration": {
-          "type": "number",
-          "defaultValue": 500,
-          "description": {
-		"en": "Specifies the duration of the revert animation.",
-		"jp": "元に戻すアニメーションの期間を指定します。"
-	}
-        },
-        "zIndex": {
-          "type": "number",
-          "defaultValue": "10",
-          "description": {
-		"en": "Specifies z-index that would be set for the drag helper.",
-		"jp": "ドラッグ ヘルパーの z-index を指定します。"
-	}
-        },
-        "dragStartDelay": {
-          "type": "number",
-          "defaultValue": 200,
-          "description": {
-		"en": "Specifies the delay between mousedown and the start of the actual drag. Smaller values make the nodes more sensitive to drag.",
-		"jp": "マウスダウンとドラッグの開始の遅延時間を指定します。小さい値はノードのドラッグ秘密度を増加します。"
-	}
-        },
-        "expandOnDragOver": {
-          "type": "bool",
-          "defaultValue": true,
-          "description": {
-		"en": "Specifies whether when dragging over a collapsed node with children the node will expand after the timeout specified in the expandDelay option.",
-		"jp": "子がある縮小されたノードの上にドラッグすると、expandDelay オプションで指定したタイムアウトの後にノードを展開するかどうかを指定します。"
-	}
-        },
-        "expandDelay": {
-          "type": "number",
-          "defaultValue": 1000,
-          "description": {
-		"en": "Specifies the delay after hovering a parent node before it expands to show its children during drag.",
-		"jp": "ドラッグで親ノードをホバーすると、子を表示するための展開の遅延時間を指定します。"
-	}
-        },
-        "helper": {
-          "type": "string",
-          "defaultValue": "default",
-          "description": {
-		"en": "Specifies the helper for the drag operation. 'default' would render the internal helper, while a function returning a jQuery element can build entirely custom helper.",
-		"jp": "ドラッグ操作のヘルパーを指定します。'default' は内部ヘルパーを描画します。jQuery 要素を返す関数はカスタム ヘルパーを作成します。"
-	}
-        },
-        "customDropValidation": {
-          "type": "function",
-          "defaultValue": null,
-          "description": {
-		"en": "Returning true from this function would render the drop point valid, while false would make it invalid. The function has one parameter which is the current drop point and the context of the function is the drag element.",
-		"jp": "この関数から True を返すと、ドロップ ポイントを有効にします。False を返すと、無効にします。関数のパラメーターは現在のドロップ ポイントです。関数のコンテキストはドラッグ要素です。"
-	},
-          "args": [
-            {
-              "name": "point",
-              "type": "object",
-              "optional": false
+        "dataSourceType": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "Explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property.",
+                "jp": "データ ソースのタイプ (\"json\" など) を明示的に設定します。$.ig.DataSource とそのタイプ プロパティのドキュメントを参照してください。"
             }
-          ]
         },
-        "containment": {
-          "type": "bool",
-          "defaultValue": false,
-          "description": {
-		"en": "Specifies the containment for the drag helper. The area inside of which the helper is contained would be scrollable while dragging.",
-		"jp": "ドラッグ ヘルパーのコンテナーを指定します。ドラッグ操作でスクロール可能なヘルパーに含まれる領域。"
-	}
+        "dataSourceUrl": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "Specifies a remote URL accepted by $.ig.DataSource in order to request data from it",
+                "jp": "$.ig.DataSource からデータを要求するには、$.ig.DataSource により承諾されたリモート URL を指定します。"
+            }
         },
-        "invalidMoveToMarkup": {
-          "type": "string",
-          "defaultValue": "<div><p><span></span><strong>{0}</strong></p></div>",
-          "description": {
-		"en": "Specifies the HTML markup for the invalid helper.",
-		"jp": "無効なヘルパーの HTML マークアップを指定します。"
-	}
+        "defaultNodeTarget": {
+            "type": "string",
+            "defaultValue": "_self",
+            "description": {
+                "en": "Specifies the default target of the node anchor.",
+                "jp": "ノード アンカーのデフォルトのターゲットを指定します。"
+            }
         },
-        "moveToMarkup": {
-          "type": "string",
-          "defaultValue": "<div><p><span></span><strong>Move to</strong> {0}</p></div>",
-          "description": {
-		"en": "Specifies the HTML markup for the 'move to' helper.",
-		"jp": "「次の位置へ移動:」ヘルパーの HTML マークアップを指定します。"
-	}
+        "dragAndDrop": {
+            "type": "bool",
+            "defaultValue": false,
+            "description": {
+                "en": "If set to true it would enable drag and drop functionality.",
+                "jp": "True に設定すると、ドラッグ アンド ドロップ機能を有効にします。"
+            }
         },
-        "moveBetweenMarkup": {
-          "type": "string",
-          "defaultValue": "<div><p><span></span><strong>Move between</strong> {0} and {1}</p></div>",
-          "description": {
-		"en": "Specifies the HTML markup for the 'move between' helper.",
-		"jp": "「次の 2 つの項目の間へ移動:」ヘルパーの HTML マークアップを指定します。"
-	}
+        "dragAndDropSettings": {
+            "type": "object",
+            "defaultValue": null,
+            "description": {
+                "en": "Specific settings for the drag and drop functionality.",
+                "jp": "ドラッグ アンド ドロップ機能の設定。"
+            },
+            "schema": {
+                "allowDrop": {
+                    "type": "bool",
+                    "defaultValue": false,
+                    "description": {
+                        "en": "Specifies whether the widget will accept D&D from other controls. boolean. Default value is false.",
+                        "jp": "ウィジェットが別のコントロールからドラッグ アンド ドロップを受け付けるかどうかを指定します。ブール値です。デフォルトは false です。"
+                    }
+                },
+                "dragAndDropMode": {
+                    "type": "string",
+                    "defaultValue": "default",
+                    "description": {
+                        "en": "Specifies the D&D mode. Accepted values 'default', 'copy', 'move'. None means the tree does not accept this node.",
+                        "jp": "ドラッグ アンド ドロップ モードを指定します。有効な値は 'default'、'copy'、および 'move'。設定されない場合、ツリーはこのノードを受けません。"
+                    },
+                    "valueOptions": [
+                        {
+                            "name": "default",
+                            "type": "string",
+                            "description": {
+                                "en": "In this mode 'copy' when Ctrl key is hold, else it means 'move'.",
+                                "jp": "このモードでは、Ctrl キーが押した場合に 'copy' です。それ以外の場合 'move' です。"
+                            }
+                        },
+                        {
+                            "name": "copy",
+                            "type": "string",
+                            "description": {
+                                "en": "Always copy the file when it is dragged",
+                                "jp": "ドラッグしたとき、常にファイルをコピーします。"
+                            }
+                        },
+                        {
+                            "name": "move",
+                            "type": "string",
+                            "description": {
+                                "en": "Always move the file when it is dragged",
+                                "jp": "ドラッグしたとき、常にファイルを移動します。"
+                            }
+                        }
+                    ]
+                },
+                "dragOpacity": {
+                    "type": "number",
+                    "defaultValue": 0.75,
+                    "description": {
+                        "en": "Specifies the opacity of the drag helper: 0 is fully transparent while 1 is fully opaque.",
+                        "jp": "ドラッグ ヘルパーの不透明を指定します。0 は完全に透明で、1 は完全に不透です。"
+                    }
+                },
+                "revert": {
+                    "type": "bool",
+                    "defaultValue": true,
+                    "description": {
+                        "en": "Specifies whether the helper would revert to its original position upon an invalid drop.",
+                        "jp": "無効なドロップの場合、ヘルパーを元の位置に戻すかどうかを指定します。"
+                    }
+                },
+                "revertDuration": {
+                    "type": "number",
+                    "defaultValue": 500,
+                    "description": {
+                        "en": "Specifies the duration of the revert animation.",
+                        "jp": "元に戻すアニメーションの期間を指定します。"
+                    }
+                },
+                "zIndex": {
+                    "type": "number",
+                    "defaultValue": "10",
+                    "description": {
+                        "en": "Specifies z-index that would be set for the drag helper.",
+                        "jp": "ドラッグ ヘルパーの z-index を指定します。"
+                    }
+                },
+                "dragStartDelay": {
+                    "type": "number",
+                    "defaultValue": 200,
+                    "description": {
+                        "en": "Specifies the delay between mousedown and the start of the actual drag. Smaller values make the nodes more sensitive to drag.",
+                        "jp": "マウスダウンとドラッグの開始の遅延時間を指定します。小さい値はノードのドラッグ秘密度を増加します。"
+                    }
+                },
+                "expandOnDragOver": {
+                    "type": "bool",
+                    "defaultValue": true,
+                    "description": {
+                        "en": "Specifies whether when dragging over a collapsed node with children the node will expand after the timeout specified in the expandDelay option.",
+                        "jp": "子がある縮小されたノードの上にドラッグすると、expandDelay オプションで指定したタイムアウトの後にノードを展開するかどうかを指定します。"
+                    }
+                },
+                "expandDelay": {
+                    "type": "number",
+                    "defaultValue": 1000,
+                    "description": {
+                        "en": "Specifies the delay after hovering a parent node before it expands to show its children during drag.",
+                        "jp": "ドラッグで親ノードをホバーすると、子を表示するための展開の遅延時間を指定します。"
+                    }
+                },
+                "helper": {
+                    "type": "string",
+                    "defaultValue": "default",
+                    "description": {
+                        "en": "Specifies the helper for the drag operation. 'default' would render the internal helper, while a function returning a jQuery element can build entirely custom helper.",
+                        "jp": "ドラッグ操作のヘルパーを指定します。'default' は内部ヘルパーを描画します。jQuery 要素を返す関数はカスタム ヘルパーを作成します。"
+                    }
+                },
+                "customDropValidation": {
+                    "type": "function",
+                    "defaultValue": null,
+                    "description": {
+                        "en": "Returning true from this function would render the drop point valid, while false would make it invalid. The function has one parameter which is the current drop point and the context of the function is the drag element.",
+                        "jp": "この関数から True を返すと、ドロップ ポイントを有効にします。False を返すと、無効にします。関数のパラメーターは現在のドロップ ポイントです。関数のコンテキストはドラッグ要素です。"
+                    },
+                    "args": [
+                        {
+                            "name": "point",
+                            "type": "object",
+                            "optional": false
+                        }
+                    ]
+                },
+                "containment": {
+                    "type": "bool",
+                    "defaultValue": false,
+                    "description": {
+                        "en": "Specifies the containment for the drag helper. The area inside of which the helper is contained would be scrollable while dragging.",
+                        "jp": "ドラッグ ヘルパーのコンテナーを指定します。ドラッグ操作でスクロール可能なヘルパーに含まれる領域。"
+                    }
+                },
+                "invalidMoveToMarkup": {
+                    "type": "string",
+                    "defaultValue": "<div><p><span></span><strong>{0}</strong></p></div>",
+                    "description": {
+                        "en": "Specifies the HTML markup for the invalid helper.",
+                        "jp": "無効なヘルパーの HTML マークアップを指定します。"
+                    }
+                },
+                "moveToMarkup": {
+                    "type": "string",
+                    "defaultValue": "<div><p><span></span><strong>Move to</strong> {0}</p></div>",
+                    "description": {
+                        "en": "Specifies the HTML markup for the 'move to' helper.",
+                        "jp": "「次の位置へ移動:」ヘルパーの HTML マークアップを指定します。"
+                    }
+                },
+                "moveBetweenMarkup": {
+                    "type": "string",
+                    "defaultValue": "<div><p><span></span><strong>Move between</strong> {0} and {1}</p></div>",
+                    "description": {
+                        "en": "Specifies the HTML markup for the 'move between' helper.",
+                        "jp": "「次の 2 つの項目の間へ移動:」ヘルパーの HTML マークアップを指定します。"
+                    }
+                },
+                "moveAfterMarkup": {
+                    "type": "string",
+                    "defaultValue": "<div><p><span></span><strong>Move after</strong> {0}</p></div>",
+                    "description": {
+                        "en": "Specifies the HTML markup for the 'move after' helper",
+                        "jp": "「次の項目の後へ移動:」ヘルパーの HTML マークアップを指定します。"
+                    }
+                },
+                "moveBeforeMarkup": {
+                    "type": "string",
+                    "defaultValue": "<div><p><span></span><strong>Move before</strong> {0}</p></div>",
+                    "description": {
+                        "en": "Specifies the HTML markup for the 'move before' helper.",
+                        "jp": "「次の項目の前へ移動:」ヘルパーの HTML マークアップを指定します。"
+                    }
+                },
+                "copyToMarkup": {
+                    "type": "string",
+                    "defaultValue": "<div><p><span></span><strong>Copy to</strong> {0}</p></div>",
+                    "description": {
+                        "en": "Specifies the HTML markup for the 'copy to' helper.",
+                        "jp": "「次の位置へコピー:」ヘルパーの HTML マークアップを指定します。"
+                    }
+                },
+                "copyBetweenMarkup": {
+                    "type": "string",
+                    "defaultValue": "<div><p><span></span><strong>Copy between</strong> {0} and {1}</p></div>",
+                    "description": {
+                        "en": "Specifies the HTML markup for the 'copy between' helper.",
+                        "jp": "「次の 2 つの項目の間へコピー:」ヘルパーの HTML マークアップを指定します。"
+                    }
+                },
+                "copyAfterMarkup": {
+                    "type": "string",
+                    "defaultValue": "<div><p><span></span><strong>Copy after</strong> {0}</p></div>",
+                    "description": {
+                        "en": "Specifies the HTML markup for the 'copy after' helper.",
+                        "jp": "「次の項目の後へコピー:」ヘルパーの HTML マークアップを指定します。"
+                    }
+                },
+                "copyBeforeMarkup": {
+                    "type": "string",
+                    "defaultValue": "<div><p><span></span><strong>Copy before</strong> {0}</p></div>",
+                    "description": {
+                        "en": "Specifies the HTML markup for the 'copy before' helper.",
+                        "jp": "「次の項目の前へコピー:」ヘルパーの HTML マークアップを指定します。"
+                    }
+                }
+            }
         },
-        "moveAfterMarkup": {
-          "type": "string",
-          "defaultValue": "<div><p><span></span><strong>Move after</strong> {0}</p></div>",
-          "description": {
-		"en": "Specifies the HTML markup for the 'move after' helper",
-		"jp": "「次の項目の後へ移動:」ヘルパーの HTML マークアップを指定します。"
-	}
+        "height": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "",
+                "jp": ""
+            }
         },
-        "moveBeforeMarkup": {
-          "type": "string",
-          "defaultValue": "<div><p><span></span><strong>Move before</strong> {0}</p></div>",
-          "description": {
-		"en": "Specifies the HTML markup for the 'move before' helper.",
-		"jp": "「次の項目の前へ移動:」ヘルパーの HTML マークアップを指定します。"
-	}
+        "hotTracking": {
+            "type": "bool",
+            "defaultValue": true,
+            "description": {
+                "en": "Setting this option to false would make the tree to not apply hover styles on the nodes when they are hovered",
+                "jp": "このオプションを false に設定すると、ツリーはノードがホバーされたときにノードにホバー スタイルを適用しません。"
+            }
         },
-        "copyToMarkup": {
-          "type": "string",
-          "defaultValue": "<div><p><span></span><strong>Copy to</strong> {0}</p></div>",
-          "description": {
-		"en": "Specifies the HTML markup for the 'copy to' helper.",
-		"jp": "「次の位置へコピー:」ヘルパーの HTML マークアップを指定します。"
-	}
+        "initialExpandDepth": {
+            "type": "number",
+            "defaultValue": -1.0,
+            "description": {
+                "en": "Specifies the depth down to which the tree would be expanded upon initial render.",
+                "jp": "初回の描画時にツリーが展開される深さを指定します。"
+            }
         },
-        "copyBetweenMarkup": {
-          "type": "string",
-          "defaultValue": "<div><p><span></span><strong>Copy between</strong> {0} and {1}</p></div>",
-          "description": {
-		"en": "Specifies the HTML markup for the 'copy between' helper.",
-		"jp": "「次の 2 つの項目の間へコピー:」ヘルパーの HTML マークアップを指定します。"
-	}
+        "leafNodeImageClass": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "string Specified class with a CSS sprite would be rendered for each node that has no children (If you define both image URL and class the URL would be rendered).<br>    null Option is ignored",
+                "jp": "この文字列で指定したクラスと CSS スプライトが、子のない各ノードにレンダリングされることになります (画像 URL とクラスの両方が定義されている場合には URL がレンダリングされます)。<br>    null 値の Option は無視されます。"
+            }
         },
-        "copyAfterMarkup": {
-          "type": "string",
-          "defaultValue": "<div><p><span></span><strong>Copy after</strong> {0}</p></div>",
-          "description": {
-		"en": "Specifies the HTML markup for the 'copy after' helper.",
-		"jp": "「次の項目の後へコピー:」ヘルパーの HTML マークアップを指定します。"
-	}
+        "leafNodeImageTooltip": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "string Specified a tooltip that would be rendered for each node that has no children.<br>    null Option is ignored",
+                "jp": "ここで指定した文字列が、子のない各ノードにヒントとしてレンダリングされることになります。<br>    null 値の Option は無視されます。"
+            }
         },
-        "copyBeforeMarkup": {
-          "type": "string",
-          "defaultValue": "<div><p><span></span><strong>Copy before</strong> {0}</p></div>",
-          "description": {
-		"en": "Specifies the HTML markup for the 'copy before' helper.",
-		"jp": "「次の項目の前へコピー:」ヘルパーの HTML マークアップを指定します。"
-	}
+        "leafNodeImageUrl": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "string Image with the specified URL will be rendered for each node that has no children (If you define both image URL and class the URL would be rendered).<br>    null Option is ignored",
+                "jp": "この文字列で指定した画像と所定の URL が、子のない各ノードにレンダリングされることになります (画像 URL とクラスの両方が定義されている場合には URL がレンダリングされます)。<br>    null 値の Option は無視されます。"
+            }
+        },
+        "loadOnDemand": {
+            "type": "bool",
+            "defaultValue": false,
+            "description": {
+                "en": "Specifies all the data would be bound initially or each child collection would be bound upon demand.",
+                "jp": "すべてのデータを最初にバインドするか、または各子コレクションを要求に応じてバインドするかを指定します。"
+            }
+        },
+        "parentNodeImageClass": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "string Specified class with a CSS sprite would be rendered for each node that has children (If you define both image URL and class the URL would be rendered).<br>    null Option is ignored",
+                "jp": "この文字列で指定したクラスと CSS スプライトが、子を持つ各ノードにレンダリングされることになります (画像 URL とクラスの両方が定義されている場合には URL がレンダリングされます)。<br>    null 値の Option は無視されます。"
+            }
+        },
+        "parentNodeImageTooltip": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "string Specified a tooltip that would be rendered for each node that has children.<br>    null Option is ignored",
+                "jp": "ここで指定した文字列が、子を持つ各ノードにヒントとしてレンダリングされることになります。<br>    null 値の Option は無視されます。"
+            }
+        },
+        "parentNodeImageUrl": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "string Image with the specified URL will be rendered for each node that has children (If you define both image URL and class the URL would be rendered).<br>    null Option is ignored",
+                "jp": "この文字列で指定した画像と所定の URL が、子を持つ各ノードにレンダリングされることになります (画像 URL とクラスの両方が定義されている場合には URL がレンダリングされます)。<br>    null 値の Option は無視されます。"
+            }
+        },
+        "pathSeparator": {
+            "type": "string",
+            "defaultValue": "_",
+            "description": {
+                "en": "Specifies the node data-path separator character.",
+                "jp": "ノード データ パス区切り文字を指定します。"
+            }
+        },
+        "requestType": {
+            "type": "string",
+            "defaultValue": "GET",
+            "description": {
+                "en": "specifies the HTTP verb to be used to issue the request",
+                "jp": "要求を送信する HTTP 動詞を指定します。"
+            },
+            "valueOptions": [
+                {
+                    "name": "GET",
+                    "type": "string",
+                    "description": {
+                        "en": "initiates GET requests",
+                        "jp": "GET 要求を起動します"
+                    }
+                },
+                {
+                    "name": "POST",
+                    "type": "string",
+                    "description": {
+                        "en": "initiates POST requests",
+                        "jp": "POST 要求を起動します"
+                    }
+                }
+            ]
+        },
+        "responseContentType": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "content type of the response. See http://api.jquery.com/jQuery.ajax/ => contentType",
+                "jp": "応答のコンテンツ タイプ。http://api.jquery.com/jQuery.ajax/ の contentType を参照してください。"
+            }
+        },
+        "responseDataKey": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "see $.ig.DataSource. <br>    string Specifies the name of the property in which data records are held if the response is wrapped. <br>    null Option is ignored.",
+                "jp": "$.ig.DataSource を参照してください。<br>    応答がラップされる場合には、この文字列で指定したプロパティにデータ レコードが保持されることになります。<br>    null 値の Option は無視されます。"
+            }
+        },
+        "responseDataType": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "string Explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property.<br>    null Option is ignored.",
+                "jp": "この文字列でデータ ソースのデータ型 (JSON など) を明示的に設定します。$.ig.DataSource とそのタイプ プロパティのドキュメントを参照してください。<br>    null 値の Option は無視されます。"
+            }
+        },
+        "singleBranchExpand": {
+            "type": "bool",
+            "defaultValue": false,
+            "description": {
+                "en": "If set to true then only one branch at each level of the tree can be expanded at a time. Otherwise multiple branches can be expanded at a time.",
+                "jp": "true に設定された場合、ツリーの各レベルでは、一度に展開できるブランチは 1 つのみになります。それ以外の場合、複数のブランチを一度に展開できます。"
+            }
+        },
+        "updateUrl": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "URL to which updating requests will be made.",
+                "jp": "更新リクエスト先の URL。"
+            }
+        },
+        "width": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "",
+                "jp": ""
+            }
         }
-      }
-    },
-    "height": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "",
-		"jp": ""
-	}
-    },
-    "hotTracking": {
-      "type": "bool",
-      "defaultValue": true,
-      "description": {
-		"en": "Setting this option to false would make the tree to not apply hover styles on the nodes when they are hovered",
-		"jp": "このオプションを false に設定すると、ツリーはノードがホバーされたときにノードにホバー スタイルを適用しません。"
-	}
-    },
-    "initialExpandDepth": {
-      "type": "number",
-      "defaultValue": -1.0,
-      "description": {
-		"en": "Specifies the depth down to which the tree would be expanded upon initial render.",
-		"jp": "初回の描画時にツリーが展開される深さを指定します。"
-	}
-    },
-    "leafNodeImageClass": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "string Specified class with a CSS sprite would be rendered for each node that has no children (If you define both image URL and class the URL would be rendered).<br>    null Option is ignored",
-		"jp": "この文字列で指定したクラスと CSS スプライトが、子のない各ノードにレンダリングされることになります (画像 URL とクラスの両方が定義されている場合には URL がレンダリングされます)。<br>    null 値の Option は無視されます。"
-	}
-    },
-    "leafNodeImageTooltip": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "string Specified a tooltip that would be rendered for each node that has no children.<br>    null Option is ignored",
-		"jp": "ここで指定した文字列が、子のない各ノードにヒントとしてレンダリングされることになります。<br>    null 値の Option は無視されます。"
-	}
-    },
-    "leafNodeImageUrl": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "string Image with the specified URL will be rendered for each node that has no children (If you define both image URL and class the URL would be rendered).<br>    null Option is ignored",
-		"jp": "この文字列で指定した画像と所定の URL が、子のない各ノードにレンダリングされることになります (画像 URL とクラスの両方が定義されている場合には URL がレンダリングされます)。<br>    null 値の Option は無視されます。"
-	}
-    },
-    "loadOnDemand": {
-      "type": "bool",
-      "defaultValue": false,
-      "description": {
-		"en": "Specifies all the data would be bound initially or each child collection would be bound upon demand.",
-		"jp": "すべてのデータを最初にバインドするか、または各子コレクションを要求に応じてバインドするかを指定します。"
-	}
-    },
-    "parentNodeImageClass": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "string Specified class with a CSS sprite would be rendered for each node that has children (If you define both image URL and class the URL would be rendered).<br>    null Option is ignored",
-		"jp": "この文字列で指定したクラスと CSS スプライトが、子を持つ各ノードにレンダリングされることになります (画像 URL とクラスの両方が定義されている場合には URL がレンダリングされます)。<br>    null 値の Option は無視されます。"
-	}
-    },
-    "parentNodeImageTooltip": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "string Specified a tooltip that would be rendered for each node that has children.<br>    null Option is ignored",
-		"jp": "ここで指定した文字列が、子を持つ各ノードにヒントとしてレンダリングされることになります。<br>    null 値の Option は無視されます。"
-	}
-    },
-    "parentNodeImageUrl": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "string Image with the specified URL will be rendered for each node that has children (If you define both image URL and class the URL would be rendered).<br>    null Option is ignored",
-		"jp": "この文字列で指定した画像と所定の URL が、子を持つ各ノードにレンダリングされることになります (画像 URL とクラスの両方が定義されている場合には URL がレンダリングされます)。<br>    null 値の Option は無視されます。"
-	}
-    },
-    "pathSeparator": {
-      "type": "string",
-      "defaultValue": "_",
-      "description": {
-		"en": "Specifies the node data-path separator character.",
-		"jp": "ノード データ パス区切り文字を指定します。"
-	}
-    },
-    "requestType": {
-      "type": "string",
-      "defaultValue": "GET",
-      "description": {
-		"en": "specifies the HTTP verb to be used to issue the request",
-		"jp": "要求を送信する HTTP 動詞を指定します。"
-	},
-      "valueOptions": [
-        {
-          "name": "GET",
-          "type": "string",
-          "description": {
-		"en": "initiates GET requests",
-		"jp": "GET 要求を起動します"
-	}
-        },
-        {
-          "name": "POST",
-          "type": "string",
-          "description": {
-		"en": "initiates POST requests",
-		"jp": "POST 要求を起動します"
-	}
-        }
-      ]
-    },
-    "responseContentType": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "content type of the response. See http://api.jquery.com/jQuery.ajax/ => contentType",
-		"jp": "応答のコンテンツ タイプ。http://api.jquery.com/jQuery.ajax/ の contentType を参照してください。"
-	}
-    },
-    "responseDataKey": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "see $.ig.DataSource. <br>    string Specifies the name of the property in which data records are held if the response is wrapped. <br>    null Option is ignored.",
-		"jp": "$.ig.DataSource を参照してください。<br>    応答がラップされる場合には、この文字列で指定したプロパティにデータ レコードが保持されることになります。<br>    null 値の Option は無視されます。"
-	}
-    },
-    "responseDataType": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "string Explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property.<br>    null Option is ignored.",
-		"jp": "この文字列でデータ ソースのデータ型 (JSON など) を明示的に設定します。$.ig.DataSource とそのタイプ プロパティのドキュメントを参照してください。<br>    null 値の Option は無視されます。"
-	}
-    },
-    "singleBranchExpand": {
-      "type": "bool",
-      "defaultValue": false,
-      "description": {
-		"en": "If set to true then only one branch at each level of the tree can be expanded at a time. Otherwise multiple branches can be expanded at a time.",
-		"jp": "true に設定された場合、ツリーの各レベルでは、一度に展開できるブランチは 1 つのみになります。それ以外の場合、複数のブランチを一度に展開できます。"
-	}
-    },
-    "updateUrl": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "URL to which updating requests will be made.",
-		"jp": "更新リクエスト先の URL。"
-	}
-    },
-    "width": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "",
-		"jp": ""
-	}
     }
-  }
 }

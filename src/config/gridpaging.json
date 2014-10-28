@@ -1,430 +1,430 @@
 ﻿{
-  "overview": null,
-  "name": "ui.igGridPaging",
-  "title": "Paging",
-  "category": null,
-  "visual": true,
-  "events": {
-    "pageIndexChanged": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+    "overview": null,
+    "name": "ui.igGridPaging",
+    "title": "Paging",
+    "category": null,
+    "visual": true,
+    "events": {
+        "pageIndexChanged": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event fired after the page index is changed , but before grid data rebinds <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridPaging.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.pageIndex to get current page index.",
+                "jp": "ページ インデックスが変更された後、グリッド データの再バインドの前に発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridPaging への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.pageIndex を使用して、現在のページ インデックスを取得します。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
+        "pageIndexChanging": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event fired before the page index is changed.<br>   Return false in order to cancel page index changing.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridPaging.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.currentPageIndex to get current page index.<br>   Use ui.newPageIndex to get new page index.",
+                "jp": "ページ インデックスが変更される前に発生するイベント。<br>   ページ インデックスの変更をキャンセルするには、false を返します。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridPaging への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.currentPageIndex を使用して、現在のページ インデックスを取得します。<br>   ui.newPageIndex を使用して、新しいページ インデックスを取得します。"
+            }
+        },
+        "pagerRendered": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event fired after the pager footer is rendered <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridPaging.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.dataSource to get reference to grid's data source.",
+                "jp": "ページャーのフッターが描画された後に発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridPaging への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.dataSource を使用して、グリッドのデータ ソースへの参照を取得します。"
+            }
+        },
+        "pagerRendering": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event fired before the pager footer is rendered (the whole area below the grid records). <br>   Return false in order to cancel pager footer rendering.   <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridPaging.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.dataSource to get reference to grid's data source.",
+                "jp": "ページャー フッター (グリッド レコードの下の領域全体) が描画される前に発生するイベント。<br>    ページャーのフッターの描画をキャンセルするには、false を返します。   <br>    関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridPaging への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.dataSource を使用して、グリッドのデータ ソースへの参照を取得します。"
+            }
+        },
+        "pageSizeChanged": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event fired after the page size is changed from the page size dropdown. <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridPaging.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.pageSize to get current page size.",
+                "jp": "ページ サイズ ドロップダウンからページ サイズが変更された後に発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridPaging への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.pageSize を使用して、現在のページ サイズを取得します。"
+            }
+        },
+        "pageSizeChanging": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event fired when the page size is about to be changed from the page size dropdown.<br>   Return false in order to cancel page size changing.   <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridPaging.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.currentPageSize to get current page size.<br>   Use ui.newPageSize to get new page size.",
+                "jp": "ページ サイズ ドロップダウンからページ サイズが変更されようとしているときに発生するイベント。<br>   ページ サイズの変更をキャンセルするには、false を返します。   <br>    関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridPaging への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.currentPageSize を使用して、現在のページ サイズを取得します。<br>   ui.newPageSize を使用して、新しいページ サイズを取得します。"
+            }
         }
-      ],
-      "description": {
-		"en": "Event fired after the page index is changed , but before grid data rebinds <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridPaging.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.pageIndex to get current page index.",
-		"jp": "ページ インデックスが変更された後、グリッド データの再バインドの前に発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridPaging への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.pageIndex を使用して、現在のページ インデックスを取得します。"
-	}
     },
-    "pageIndexChanging": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+    "properties": {
+        "name": {
+            "type": "string",
+            "defaultValue": null
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Event fired before the page index is changed.<br>   Return false in order to cancel page index changing.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridPaging.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.currentPageIndex to get current page index.<br>   Use ui.newPageIndex to get new page index.",
-		"jp": "ページ インデックスが変更される前に発生するイベント。<br>   ページ インデックスの変更をキャンセルするには、false を返します。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridPaging への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.currentPageIndex を使用して、現在のページ インデックスを取得します。<br>   ui.newPageIndex を使用して、新しいページ インデックスを取得します。"
-	}
-    },
-    "pagerRendered": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "currentPageDropDownLeadingLabel": {
+            "type": "string",
+            "defaultValue": "",
+            "description": {
+                "en": "leading label for the dropdown from where the page index can be switched",
+                "jp": "ページ インデックスを切り替えることができる、ドロップダウンの先頭ラベル。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Event fired after the pager footer is rendered <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridPaging.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.dataSource to get reference to grid's data source.",
-		"jp": "ページャーのフッターが描画された後に発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridPaging への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.dataSource を使用して、グリッドのデータ ソースへの参照を取得します。"
-	}
-    },
-    "pagerRendering": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "currentPageDropDownTooltip": {
+            "type": "string",
+            "defaultValue": "",
+            "description": {
+                "en": "custom localized tooltip for the page index dropdown",
+                "jp": "ページ インデックス ドロップダウンのローカライズされたカスタム ツールチップ。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Event fired before the pager footer is rendered (the whole area below the grid records). <br>   Return false in order to cancel pager footer rendering.   <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridPaging.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.dataSource to get reference to grid's data source.",
-		"jp": "ページャー フッター (グリッド レコードの下の領域全体) が描画される前に発生するイベント。<br>    ページャーのフッターの描画をキャンセルするには、false を返します。   <br>    関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridPaging への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.dataSource を使用して、グリッドのデータ ソースへの参照を取得します。"
-	}
-    },
-    "pageSizeChanged": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "currentPageDropDownTrailingLabel": {
+            "type": "string",
+            "defaultValue": "",
+            "description": {
+                "en": "localized trailing label for the dropdown from where the page index can be switched",
+                "jp": "ページ インデックスを切り替えることができる、ドロップダウンのローカライズ済み後続ラベル。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Event fired after the page size is changed from the page size dropdown. <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridPaging.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.pageSize to get current page size.",
-		"jp": "ページ サイズ ドロップダウンからページ サイズが変更された後に発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridPaging への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.pageSize を使用して、現在のページ サイズを取得します。"
-	}
-    },
-    "pageSizeChanging": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "currentPageIndex": {
+            "type": "number",
+            "defaultValue": 0.0,
+            "description": {
+                "en": "current page index that's bound and rendered in the UI",
+                "jp": "バインドされ、UI に描画される現在のページ インデックス。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
+        "defaultDropDownWidth": {
+            "type": "number",
+            "defaultValue": 70.0,
+            "description": {
+                "en": "dropdown width for page size and page index dropdowns",
+                "jp": "ページ サイズおよびページ インデックス ドロップダウン用のドロップダウンの幅。"
+            }
+        },
+        "delayOnPageChanged": {
+            "type": "number",
+            "defaultValue": 350.0,
+            "description": {
+                "en": "Time in milliseconds for which page dropdown will wait for keystrokes before changing the page.",
+                "jp": "ページを変更する前に、キー入力までのページ ドロップダウンの待機時間 (ミリ秒)。"
+            }
+        },
+        "firstPageLabelText": {
+            "type": "string",
+            "defaultValue": "",
+            "description": {
+                "en": "localized text for the first page label",
+                "jp": "最初のページ ラベルのローカライズ済みテキスト。"
+            }
+        },
+        "firstPageTooltip": {
+            "type": "string",
+            "defaultValue": "",
+            "description": {
+                "en": "custom localized tooltip for the first. page button",
+                "jp": "最初のページ ボタン用のカスタムのローカライズ済みツールチップ。"
+            }
+        },
+        "lastPageLabelText": {
+            "type": "string",
+            "defaultValue": "",
+            "description": {
+                "en": "localized text for the last page label",
+                "jp": "最後のページ ラベルのローカライズ済みテキスト。"
+            }
+        },
+        "lastPageTooltip": {
+            "type": "string",
+            "defaultValue": "",
+            "description": {
+                "en": "custom localized tooltip for the last. page button",
+                "jp": "最後のページ ボタン用のカスタムのローカライズ済みツールチップ。"
+            }
+        },
+        "nextPageLabelText": {
+            "type": "string",
+            "defaultValue": "",
+            "description": {
+                "en": "localized text for the next page label",
+                "jp": "次のページ ラベルのローカライズ済みテキスト。"
+            }
+        },
+        "nextPageTooltip": {
+            "type": "string",
+            "defaultValue": "",
+            "description": {
+                "en": "custom localized tooltip for the next. page button",
+                "jp": "次のページ ボタン用のカスタムのローカライズ済みツールチップ。"
+            }
+        },
+        "pageCountLimit": {
+            "type": "number",
+            "defaultValue": 10.0,
+            "description": {
+                "en": "sets gets the number of pages which if exceeded a drop down list of page indices is displayed. If the number of pages is less than or equal to this option then page buttons are displayed.",
+                "jp": "ページ インデックスのドロップダウン リストを表示するためのページの最小数を取得または設定します。このオプション以下の場合、ページの数はページ ボタンが表示されます。"
+            }
+        },
+        "pageIndexUrlKey": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "denotes the name of the encoded URL parameter that will state what is the currently requested page index",
+                "jp": "現在要求されているページ インデックスを説明するエンコードされた URL パラメーターの名前を示します。"
+            }
+        },
+        "pagerRecordsLabelTemplate": {
+            "type": "string",
+            "defaultValue": "",
+            "description": {
+                "en": "custom pager records label template - in jQuery templating style and syntax",
+                "jp": "jQuery テンプレート化のスタイルおよび構文でのカスタム ページャー レコード ラベル テンプレート。"
+            }
+        },
+        "pagerRecordsLabelTooltip": {
+            "type": "string",
+            "defaultValue": "",
+            "description": {
+                "en": "custom localized tooltip for the pager records label",
+                "jp": "ページャー レコード ラベルのローカライズされたカスタム ツールチップ。"
+            }
+        },
+        "pageSize": {
+            "type": "number",
+            "defaultValue": 25.0,
+            "description": {
+                "en": "default number of records per page",
+                "jp": "1 ページあたりのデフォルトのレコード数。"
+            }
+        },
+        "pageSizeDropDownLabel": {
+            "type": "string",
+            "defaultValue": "",
+            "description": {
+                "en": "label rendered in front of the page size dropdown",
+                "jp": "ページ サイズ ドロップダウンの前に描画されるラベル。"
+            }
+        },
+        "pageSizeDropDownLocation": {
+            "type": "string",
+            "defaultValue": "above",
+            "description": {
+                "en": "Gets or sets the location of the drop down for page size",
+                "jp": "ページ サイズのドロップダウンの位置を取得または設定します。"
+            },
+            "valueOptions": [
+                {
+                    "name": "above",
+                    "type": "string",
+                    "description": {
+                        "en": "The drop down will be rendered above the grid header",
+                        "jp": "ドロップダウンはグリッド ヘッダーの上に描画されます。"
+                    }
+                },
+                {
+                    "name": "inpager",
+                    "type": "string",
+                    "description": {
+                        "en": "The drop down will be rendered next to page links",
+                        "jp": "ドロップダウンはページ リンクの隣に描画されます。"
+                    }
+                }
+            ]
+        },
+        "pageSizeDropDownTooltip": {
+            "type": "string",
+            "defaultValue": "",
+            "description": {
+                "en": "custom localized tooltip for the page size dropdown",
+                "jp": "ページ サイズ ドロップダウンのローカライズされたカスタム ツールチップ。"
+            }
+        },
+        "pageSizeDropDownTrailingLabel": {
+            "type": "string",
+            "defaultValue": "",
+            "description": {
+                "en": "Trailing label for the page size dropdown",
+                "jp": "ページ サイズ ドロップダウン用の後続ラベル"
+            }
+        },
+        "pageSizeList": {
+            "type": "array",
+            "defaultValue": null,
+            "description": {
+                "en": "Default: [5, 10, 20, 25, 50, 75, 100]. contents of the page size dropdown indicating what preconfigured page sizes are available to the end user",
+                "jp": "デフォルト: [5, 10, 20, 25, 50, 75, 100]。事前に設定されたどのページ サイズをエンドユーザーが使用可能かを示す、ページ サイズ ドロップダウンのコンテンツ。"
+            },
+            "arrayMemeberType": "number"
+        },
+        "pageSizeUrlKey": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "denotes the name of the encoded URL parameter that will state what is the currently requested page size",
+                "jp": "現在要求されているページ サイズを説明するエンコードされた URL パラメーターの名前を示します。"
+            }
+        },
+        "pageTooltipFormat": {
+            "type": "string",
+            "defaultValue": "",
+            "description": {
+                "en": "custom localized format string for tooltips of buttons that directly jump to a particular page. The format string follows the jQuery templating style and syntax. See also the pageCountLimit option.",
+                "jp": "特定のページに移動するボタンのツールチップのカスタム ローカライズされた書式文字列。書式文字列は以下の jQuery テンプレート スタイルおよび構文が必要です。pageCountLimit オプションも参照してください。"
+            }
+        },
+        "prevPageLabelText": {
+            "type": "string",
+            "defaultValue": "",
+            "description": {
+                "en": "localized text for the prev page label",
+                "jp": "前のページ ラベルのローカライズ済みテキスト。"
+            }
+        },
+        "prevPageTooltip": {
+            "type": "string",
+            "defaultValue": "",
+            "description": {
+                "en": "custom localized tooltip for the prev. page button",
+                "jp": "前のページ ボタン用のカスタムのローカライズ済みツールチップ。"
+            }
+        },
+        "recordCountKey": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "the property in the response that will hold the total number of records in the data source",
+                "jp": "データ ソース中のレコード総数を保持する応答内のプロパティです。"
+            }
+        },
+        "showFirstLastPages": {
+            "type": "bool",
+            "defaultValue": true,
+            "description": {
+                "en": "option specifying whether to render the first and last page buttons",
+                "jp": "最初のページ ボタンと最後のページ ボタンを描画するかどうかを指定するオプション。"
+            }
+        },
+        "showPagerRecordsLabel": {
+            "type": "bool",
+            "defaultValue": true,
+            "description": {
+                "en": "option specifying whether to show summary label for the currently rendered records or not",
+                "jp": "現在描画されているレコードのサマリー ラベルを表示するかどうかを指定するオプション。"
+            }
+        },
+        "showPageSizeDropDown": {
+            "type": "bool",
+            "defaultValue": true,
+            "description": {
+                "en": "if false, a dropdown allowing to change the page size will not be rendered in the UI",
+                "jp": "False の場合、ページ サイズの変更を許すドロップダウンは UI に描画されません。"
+            }
+        },
+        "showPrevNextPages": {
+            "type": "bool",
+            "defaultValue": true,
+            "description": {
+                "en": "option specifying whether to render the previous and next page buttons",
+                "jp": "前のページ ボタンと次のページ ボタンを描画するかどうかを指定するオプション。"
+            }
+        },
+        "type": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "",
+                "jp": ""
+            },
+            "valueOptions": [
+                {
+                    "name": "remote",
+                    "type": "string",
+                    "description": {
+                        "en": " request",
+                        "jp": " 要求。"
+                    }
+                },
+                {
+                    "name": "local",
+                    "type": "string",
+                    "description": {
+                        "en": " paging on the client-side",
+                        "jp": " クライアント側でページング。"
+                    }
+                }
+            ]
+        },
+        "visiblePageCount": {
+            "type": "number",
+            "defaultValue": 5.0,
+            "description": {
+                "en": "number of pages that are constantly visible. For the invisible pages, prev and next buttons are used",
+                "jp": "常に表示されているページ数。非表示のページの場合、前ボタンおよび次ボタンを使用します。"
+            }
         }
-      ],
-      "description": {
-		"en": "Event fired when the page size is about to be changed from the page size dropdown.<br>   Return false in order to cancel page size changing.   <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridPaging.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.currentPageSize to get current page size.<br>   Use ui.newPageSize to get new page size.",
-		"jp": "ページ サイズ ドロップダウンからページ サイズが変更されようとしているときに発生するイベント。<br>   ページ サイズの変更をキャンセルするには、false を返します。   <br>    関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridPaging への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.currentPageSize を使用して、現在のページ サイズを取得します。<br>   ui.newPageSize を使用して、新しいページ サイズを取得します。"
-	}
     }
-  },
-  "properties": {
-	"name": {
-      "type": "string",
-      "defaultValue": null
-    },
-    "currentPageDropDownLeadingLabel": {
-      "type": "string",
-      "defaultValue": "",
-      "description": {
-		"en": "leading label for the dropdown from where the page index can be switched",
-		"jp": "ページ インデックスを切り替えることができる、ドロップダウンの先頭ラベル。"
-	}
-    },
-    "currentPageDropDownTooltip": {
-      "type": "string",
-      "defaultValue": "",
-      "description": {
-		"en": "custom localized tooltip for the page index dropdown",
-		"jp": "ページ インデックス ドロップダウンのローカライズされたカスタム ツールチップ。"
-	}
-    },
-    "currentPageDropDownTrailingLabel": {
-      "type": "string",
-      "defaultValue": "",
-      "description": {
-		"en": "localized trailing label for the dropdown from where the page index can be switched",
-		"jp": "ページ インデックスを切り替えることができる、ドロップダウンのローカライズ済み後続ラベル。"
-	}
-    },
-    "currentPageIndex": {
-      "type": "number",
-      "defaultValue": 0.0,
-      "description": {
-		"en": "current page index that's bound and rendered in the UI",
-		"jp": "バインドされ、UI に描画される現在のページ インデックス。"
-	}
-    },
-    "defaultDropDownWidth": {
-      "type": "number",
-      "defaultValue": 70.0,
-      "description": {
-		"en": "dropdown width for page size and page index dropdowns",
-		"jp": "ページ サイズおよびページ インデックス ドロップダウン用のドロップダウンの幅。"
-	}
-    },
-    "delayOnPageChanged": {
-      "type": "number",
-      "defaultValue": 350.0,
-      "description": {
-		"en": "Time in milliseconds for which page dropdown will wait for keystrokes before changing the page.",
-		"jp": "ページを変更する前に、キー入力までのページ ドロップダウンの待機時間 (ミリ秒)。"
-	}
-    },
-    "firstPageLabelText": {
-      "type": "string",
-      "defaultValue": "",
-      "description": {
-		"en": "localized text for the first page label",
-		"jp": "最初のページ ラベルのローカライズ済みテキスト。"
-	}
-    },
-    "firstPageTooltip": {
-      "type": "string",
-      "defaultValue": "",
-      "description": {
-		"en": "custom localized tooltip for the first. page button",
-		"jp": "最初のページ ボタン用のカスタムのローカライズ済みツールチップ。"
-	}
-    },
-    "lastPageLabelText": {
-      "type": "string",
-      "defaultValue": "",
-      "description": {
-		"en": "localized text for the last page label",
-		"jp": "最後のページ ラベルのローカライズ済みテキスト。"
-	}
-    },
-    "lastPageTooltip": {
-      "type": "string",
-      "defaultValue": "",
-      "description": {
-		"en": "custom localized tooltip for the last. page button",
-		"jp": "最後のページ ボタン用のカスタムのローカライズ済みツールチップ。"
-	}
-    },
-    "nextPageLabelText": {
-      "type": "string",
-      "defaultValue": "",
-      "description": {
-		"en": "localized text for the next page label",
-		"jp": "次のページ ラベルのローカライズ済みテキスト。"
-	}
-    },
-    "nextPageTooltip": {
-      "type": "string",
-      "defaultValue": "",
-      "description": {
-		"en": "custom localized tooltip for the next. page button",
-		"jp": "次のページ ボタン用のカスタムのローカライズ済みツールチップ。"
-	}
-    },
-    "pageCountLimit": {
-      "type": "number",
-      "defaultValue": 10.0,
-      "description": {
-		"en": "sets gets the number of pages which if exceeded a drop down list of page indices is displayed. If the number of pages is less than or equal to this option then page buttons are displayed.",
-		"jp": "ページ インデックスのドロップダウン リストを表示するためのページの最小数を取得または設定します。このオプション以下の場合、ページの数はページ ボタンが表示されます。"
-	}
-    },
-    "pageIndexUrlKey": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "denotes the name of the encoded URL parameter that will state what is the currently requested page index",
-		"jp": "現在要求されているページ インデックスを説明するエンコードされた URL パラメーターの名前を示します。"
-	}
-    },
-    "pagerRecordsLabelTemplate": {
-      "type": "string",
-      "defaultValue": "",
-      "description": {
-		"en": "custom pager records label template - in jQuery templating style and syntax",
-		"jp": "jQuery テンプレート化のスタイルおよび構文でのカスタム ページャー レコード ラベル テンプレート。"
-	}
-    },
-    "pagerRecordsLabelTooltip": {
-      "type": "string",
-      "defaultValue": "",
-      "description": {
-		"en": "custom localized tooltip for the pager records label",
-		"jp": "ページャー レコード ラベルのローカライズされたカスタム ツールチップ。"
-	}
-    },
-    "pageSize": {
-      "type": "number",
-      "defaultValue": 25.0,
-      "description": {
-		"en": "default number of records per page",
-		"jp": "1 ページあたりのデフォルトのレコード数。"
-	}
-    },
-    "pageSizeDropDownLabel": {
-      "type": "string",
-      "defaultValue": "",
-      "description": {
-		"en": "label rendered in front of the page size dropdown",
-		"jp": "ページ サイズ ドロップダウンの前に描画されるラベル。"
-	}
-    },
-    "pageSizeDropDownLocation": {
-      "type": "string",
-      "defaultValue": "above",
-      "description": {
-		"en": "Gets or sets the location of the drop down for page size",
-		"jp": "ページ サイズのドロップダウンの位置を取得または設定します。"
-	},
-      "valueOptions": [
-        {
-          "name": "above",
-          "type": "string",
-          "description": {
-		"en": "The drop down will be rendered above the grid header",
-		"jp": "ドロップダウンはグリッド ヘッダーの上に描画されます。"
-	}
-        },
-        {
-          "name": "inpager",
-          "type": "string",
-          "description": {
-		"en": "The drop down will be rendered next to page links",
-		"jp": "ドロップダウンはページ リンクの隣に描画されます。"
-	}
-        }
-      ]
-    },
-    "pageSizeDropDownTooltip": {
-      "type": "string",
-      "defaultValue": "",
-      "description": {
-		"en": "custom localized tooltip for the page size dropdown",
-		"jp": "ページ サイズ ドロップダウンのローカライズされたカスタム ツールチップ。"
-	}
-    },
-    "pageSizeDropDownTrailingLabel": {
-      "type": "string",
-      "defaultValue": "",
-      "description": {
-		"en": "Trailing label for the page size dropdown",
-		"jp": "ページ サイズ ドロップダウン用の後続ラベル"
-	}
-    },
-    "pageSizeList": {
-      "type": "array",
-      "defaultValue": null,
-      "description": {
-		"en": "Default: [5, 10, 20, 25, 50, 75, 100]. contents of the page size dropdown indicating what preconfigured page sizes are available to the end user",
-		"jp": "デフォルト: [5, 10, 20, 25, 50, 75, 100]。事前に設定されたどのページ サイズをエンドユーザーが使用可能かを示す、ページ サイズ ドロップダウンのコンテンツ。"
-	},
-      "arrayMemeberType": "number"
-    },
-    "pageSizeUrlKey": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "denotes the name of the encoded URL parameter that will state what is the currently requested page size",
-		"jp": "現在要求されているページ サイズを説明するエンコードされた URL パラメーターの名前を示します。"
-	}
-    },
-    "pageTooltipFormat": {
-      "type": "string",
-      "defaultValue": "",
-      "description": {
-		"en": "custom localized format string for tooltips of buttons that directly jump to a particular page. The format string follows the jQuery templating style and syntax. See also the pageCountLimit option.",
-		"jp": "特定のページに移動するボタンのツールチップのカスタム ローカライズされた書式文字列。書式文字列は以下の jQuery テンプレート スタイルおよび構文が必要です。pageCountLimit オプションも参照してください。"
-	}
-    },
-    "prevPageLabelText": {
-      "type": "string",
-      "defaultValue": "",
-      "description": {
-		"en": "localized text for the prev page label",
-		"jp": "前のページ ラベルのローカライズ済みテキスト。"
-	}
-    },
-    "prevPageTooltip": {
-      "type": "string",
-      "defaultValue": "",
-      "description": {
-		"en": "custom localized tooltip for the prev. page button",
-		"jp": "前のページ ボタン用のカスタムのローカライズ済みツールチップ。"
-	}
-    },
-    "recordCountKey": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "the property in the response that will hold the total number of records in the data source",
-		"jp": "データ ソース中のレコード総数を保持する応答内のプロパティです。"
-	}
-    },
-    "showFirstLastPages": {
-      "type": "bool",
-      "defaultValue": true,
-      "description": {
-		"en": "option specifying whether to render the first and last page buttons",
-		"jp": "最初のページ ボタンと最後のページ ボタンを描画するかどうかを指定するオプション。"
-	}
-    },
-    "showPagerRecordsLabel": {
-      "type": "bool",
-      "defaultValue": true,
-      "description": {
-		"en": "option specifying whether to show summary label for the currently rendered records or not",
-		"jp": "現在描画されているレコードのサマリー ラベルを表示するかどうかを指定するオプション。"
-	}
-    },
-    "showPageSizeDropDown": {
-      "type": "bool",
-      "defaultValue": true,
-      "description": {
-		"en": "if false, a dropdown allowing to change the page size will not be rendered in the UI",
-		"jp": "False の場合、ページ サイズの変更を許すドロップダウンは UI に描画されません。"
-	}
-    },
-    "showPrevNextPages": {
-      "type": "bool",
-      "defaultValue": true,
-      "description": {
-		"en": "option specifying whether to render the previous and next page buttons",
-		"jp": "前のページ ボタンと次のページ ボタンを描画するかどうかを指定するオプション。"
-	}
-    },
-    "type": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "",
-		"jp": ""
-	},
-      "valueOptions": [
-        {
-          "name": "remote",
-          "type": "string",
-          "description": {
-		"en": " request",
-		"jp": " 要求。"
-	}
-        },
-        {
-          "name": "local",
-          "type": "string",
-          "description": {
-		"en": " paging on the client-side",
-		"jp": " クライアント側でページング。"
-	}
-        }
-      ]
-    },
-    "visiblePageCount": {
-      "type": "number",
-      "defaultValue": 5.0,
-      "description": {
-		"en": "number of pages that are constantly visible. For the invisible pages, prev and next buttons are used",
-		"jp": "常に表示されているページ数。非表示のページの場合、前ボタンおよび次ボタンを使用します。"
-	}
-    }
-  }
 }

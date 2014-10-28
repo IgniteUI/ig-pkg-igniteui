@@ -1,306 +1,306 @@
 ﻿{
-  "overview": null,
-  "name": "ui.igHierarchicalGrid",
-  "category": null,
-  "visual": true,
-  "propertiesRef": "grid.properties",
-  "events": {
-    "childGridCreated": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+    "overview": null,
+    "name": "ui.igHierarchicalGrid",
+    "category": null,
+    "visual": true,
+    "propertiesRef": "grid.properties",
+    "events": {
+        "childGridCreated": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "event fired after a child grid is created",
+                "jp": "子グリッドが作成された後に発生するイベント。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
+        "childGridCreating": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "event fired before a child grid is going to be created, allows the developer to override the child grid creation",
+                "jp": "子グリッドを作成する前に発生するイベント。開発者が子グリッドの作成をオーバーライドできます。"
+            }
+        },
+        "childrenPopulated": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event which is fired when children have been populated (Load on demand) <br>    use args.owner to access the hierarchical grid object<br>    use args.parentrow to access the row element for the row that was populated<br>    use args.id to get the data ID of the row",
+                "jp": "子が生成されたときに発生するイベント (要求に応じて読み込み)。<br>    args.owner を使用して、階層型グリッド オブジェクトにアクセスします。<br>    args.parentrow を使用して、生成された行の行要素にアクセスします。<br>    args.id を使用して、行のデータ ID を取得します。"
+            }
+        },
+        "childrenPopulating": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event which is fired when children are about to be populated (Load on demand)<br>    use args.owner to access the hierarchical grid object<br>    use args.parentrow to access the row element for the row that's about to be populated<br>    use args.id to get the data ID of the row",
+                "jp": "子が生成されようとしているときに発生するイベント (要求に応じて読み込み)。<br>    args.owner を使用して、階層型グリッド オブジェクトにアクセスします。<br>    args.parentrow を使用して、生成されようとしている行の行要素にアクセスします。<br>    args.id を使用して、行のデータ ID を取得します。"
+            }
+        },
+        "rowCollapsed": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event which is fired when a hierarchical row has been collapsed <br>    use args.owner to access the hierarchical grid object<br>    use args.parentrow to access the row element for the row that was collapsd",
+                "jp": "階層型の行が折りたたまれたときに発生するイベント。<br>    args.owner を使用して、階層型グリッド オブジェクトにアクセスします。<br>    args.parentrow を使用して、折り畳まれた行の行要素にアクセスします。"
+            }
+        },
+        "rowCollapsing": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event which is fired when a hierarchical row is about to be collapsed <br>    use args.owner to access the hierarchical grid object<br>    use args.parentrow to access the row element for the row that's about to be collapsed",
+                "jp": "階層型の行が折りたたまれるときに発生するイベント。<br>    args.owner を使用して、階層型グリッド オブジェクトにアクセスします。<br>    args.parentrow を使用して、折り畳まれようとしている行の行要素にアクセスします。"
+            }
+        },
+        "rowExpanded": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event which is fired after a hierarchical row has been expanded <br>    use args.owner to access the hierarchical grid object<br>    use args.parentrow to access the row element for the row that was expanded",
+                "jp": "階層型の行が展開された後に発生するイベント。<br>    args.owner を使用して、階層型グリッド オブジェクトにアクセスします。<br>    args.parentrow を使用して、展開された行の行要素にアクセスします。"
+            }
+        },
+        "rowExpanding": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event which is fired when a hierarchical row is about to be expanded<br>    use args.owner to access the hierarchical grid object<br>    use args.parentrow to access the row element for the row that's about to be expanded",
+                "jp": "階層型の行が展開されるときに発生するイベント。<br>    args.owner を使用して、階層型グリッド オブジェクトにアクセスします。<br>    args.parentrow を使用して、展開されようとしている行の行要素にアクセスします。"
+            }
         }
-      ],
-      "description": {
-		"en": "event fired after a child grid is created",
-		"jp": "子グリッドが作成された後に発生するイベント。"
-	}
     },
-    "childGridCreating": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+    "properties": {
+        "animationDuration": {
+            "type": "number",
+            "defaultValue": 500.0,
+            "description": {
+                "en": "The row expanding/collapsing animation duration in ms.",
+                "jp": "行の展開/縮小アニメーション期間 (ミリ秒)。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
+        "autoGenerateLayouts": {
+            "type": "bool",
+            "defaultValue": false,
+            "description": {
+                "en": "if true, will autogenerate all layouts assuming default values for \"childrenDataProperty\" <br>    When autoGenerateLayouts is enabled, it will automatically generate all columns recursively. (all columns on all levels)",
+                "jp": "true の場合、「childrenDataProperty」のデフォルト値として見なされるすべてのレイアウトが自動生成されます。<br>    autoGenerateLayouts が有効な場合、すべての列が再帰的に自動生成されます。(すべてのレベルの全列)。"
+            }
+        },
+        "collapseTooltip": {
+            "type": "string",
+            "defaultValue": "",
+            "description": {
+                "en": "Specifies the default tooltip applied to an expand column cell, that is currently expanded",
+                "jp": "現在展開されている、展開列のセルに適用されるデフォルトのツールチップを指定します。"
+            }
+        },
+        "columnLayouts": {
+            "type": "array",
+            "defaultValue": null,
+            "description": {
+                "en": "List of columnLayout objects that specify the structure of the child grids. All options that are applicable to a flat grid are also applicable here",
+                "jp": "子グリッドの構造を指定する columnLayout オブジェクトのリスト。フラット グリッドに適用されるすべてのオプションが、ここでも適用されます。"
+            },
+            "schema": {
+                "key": {
+                    "required": true,
+                    "type": "string",
+                    "defaultValue": null,
+                    "description": {
+                        "en": "Specifies the columnLayout key. This is the property that holds the data records for the current column layout.",
+                        "jp": "columnLayout キーを指定します。これは、現在の列レイアウトのデータ レコードを保持するプロパティです。"
+                    }
+                },
+                "foreignKey": {
+                    "required": false,
+                    "type": "string",
+                    "defaultValue": null,
+                    "description": {
+                        "en": "Specifies the foreignKey of the columnLayout. This is also the column key of the parent grid.",
+                        "jp": "columnLayout の foreignKey を指定します。これは、親グリッドの列キーでもあります。"
+                    }
+                },
+                "childrenDataProperty": {
+                    "required": false,
+                    "type": "string",
+                    "defaultValue": "children",
+                    "description": {
+                        "en": "Specifies the property name in the response where children will be located.",
+                        "jp": "子供が位置する応答内にプロパティ名を指定します。"
+                    }
+                }
+            },
+            "schemaRef": "grid.properties",
+            "designerDisplayProperty": "key"
+        },
+        "defaultChildrenDataProperty": {
+            "type": "string",
+            "defaultValue": "children",
+            "description": {
+                "en": "Specifies the default property in the response where children will be located",
+                "jp": "子供が位置する応答内にデフォルトのプロパティを指定します。"
+            }
+        },
+        "expandCollapseAnimations": {
+            "type": "bool",
+            "defaultValue": true,
+            "description": {
+                "en": "applies a linear animation - either expanding or collapsing depending on the parent row state",
+                "jp": "線形アニメーションを適用します - 親行の状態によって、展開または折り畳みになります。"
+            }
+        },
+        "expandColWidth": {
+            "type": "number",
+            "defaultValue": 30.0,
+            "description": {
+                "en": "Specifies the expand column width",
+                "jp": "展開列の幅を指定します。"
+            }
+        },
+        "expandTooltip": {
+            "type": "string",
+            "defaultValue": "",
+            "description": {
+                "en": "Specifies the default tooltip applied to an expand column cell, that is currently collapsed",
+                "jp": "現在折り畳まれている、展開列のセルに適用されるデフォルトのツールチップを指定します。"
+            }
+        },
+        "initialDataBindDepth": {
+            "type": "number",
+            "defaultValue": -1.0,
+            "description": {
+                "en": "Only the first level will be data-bound initially. Also serves as \"render\" depth, meaning that depending on this prop, the grid will",
+                "jp": "最初のレベルのみが最初はデータ バインドされます。また「描画」の深さとしての機能を果たします。つまり、このプロパティによって、グリッドは機能します。"
+            }
+        },
+        "initialExpandDepth": {
+            "type": "number",
+            "defaultValue": -1.0,
+            "description": {
+                "en": "No levels will be automatically expanded when the widget is instantiated for the first time",
+                "jp": "ウィジェットが初めてインスタンス化したときは、レベルは自動的に展開しません。"
+            }
+        },
+        "maxDataBindDepth": {
+            "type": "number",
+            "defaultValue": -1.0,
+            "description": {
+                "en": "Specifies the limit on the number of levels to bind to",
+                "jp": "バインド先のレベル数の限度を指定します。"
+            }
+        },
+        "odata": {
+            "type": "bool",
+            "defaultValue": false,
+            "description": {
+                "en": "If true, encodes all requests using OData conventions and the $expand syntax",
+                "jp": "true の場合、OData 変換と $expand 構文を使ってすべての要求をエンコードします。"
+            }
+        },
+        "pathSeparator": {
+            "type": "string",
+            "defaultValue": "/",
+            "description": {
+                "en": "Specifies the delimiter for constructing paths , for hierarchical lookup of data",
+                "jp": "データの階層的ルックアップのためのパスを作るために区切り文字を指定します。"
+            }
+        },
+        "rest": {
+            "type": "bool",
+            "defaultValue": false,
+            "description": {
+                "en": "If true, load on demand will be achieved using REST compliant resource access with appropriate url-s for<br>    the ajax GET calls.",
+                "jp": "True の場合、ロードオンデマンドは REST 法令遵守のリソース アクセスを使用して実行されます。<br>    AJAX の GET 呼び出しで適切な URL を使用します。"
+            }
         }
-      ],
-      "description": {
-		"en": "event fired before a child grid is going to be created, allows the developer to override the child grid creation",
-		"jp": "子グリッドを作成する前に発生するイベント。開発者が子グリッドの作成をオーバーライドできます。"
-	}
-    },
-    "childrenPopulated": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Event which is fired when children have been populated (Load on demand) <br>    use args.owner to access the hierarchical grid object<br>    use args.parentrow to access the row element for the row that was populated<br>    use args.id to get the data ID of the row",
-		"jp": "子が生成されたときに発生するイベント (要求に応じて読み込み)。<br>    args.owner を使用して、階層型グリッド オブジェクトにアクセスします。<br>    args.parentrow を使用して、生成された行の行要素にアクセスします。<br>    args.id を使用して、行のデータ ID を取得します。"
-	}
-    },
-    "childrenPopulating": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Event which is fired when children are about to be populated (Load on demand)<br>    use args.owner to access the hierarchical grid object<br>    use args.parentrow to access the row element for the row that's about to be populated<br>    use args.id to get the data ID of the row",
-		"jp": "子が生成されようとしているときに発生するイベント (要求に応じて読み込み)。<br>    args.owner を使用して、階層型グリッド オブジェクトにアクセスします。<br>    args.parentrow を使用して、生成されようとしている行の行要素にアクセスします。<br>    args.id を使用して、行のデータ ID を取得します。"
-	}
-    },
-    "rowCollapsed": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Event which is fired when a hierarchical row has been collapsed <br>    use args.owner to access the hierarchical grid object<br>    use args.parentrow to access the row element for the row that was collapsd",
-		"jp": "階層型の行が折りたたまれたときに発生するイベント。<br>    args.owner を使用して、階層型グリッド オブジェクトにアクセスします。<br>    args.parentrow を使用して、折り畳まれた行の行要素にアクセスします。"
-	}
-    },
-    "rowCollapsing": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Event which is fired when a hierarchical row is about to be collapsed <br>    use args.owner to access the hierarchical grid object<br>    use args.parentrow to access the row element for the row that's about to be collapsed",
-		"jp": "階層型の行が折りたたまれるときに発生するイベント。<br>    args.owner を使用して、階層型グリッド オブジェクトにアクセスします。<br>    args.parentrow を使用して、折り畳まれようとしている行の行要素にアクセスします。"
-	}
-    },
-    "rowExpanded": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Event which is fired after a hierarchical row has been expanded <br>    use args.owner to access the hierarchical grid object<br>    use args.parentrow to access the row element for the row that was expanded",
-		"jp": "階層型の行が展開された後に発生するイベント。<br>    args.owner を使用して、階層型グリッド オブジェクトにアクセスします。<br>    args.parentrow を使用して、展開された行の行要素にアクセスします。"
-	}
-    },
-    "rowExpanding": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Event which is fired when a hierarchical row is about to be expanded<br>    use args.owner to access the hierarchical grid object<br>    use args.parentrow to access the row element for the row that's about to be expanded",
-		"jp": "階層型の行が展開されるときに発生するイベント。<br>    args.owner を使用して、階層型グリッド オブジェクトにアクセスします。<br>    args.parentrow を使用して、展開されようとしている行の行要素にアクセスします。"
-	}
-    }   
-  },
-  "properties": {	
-    "animationDuration": {
-      "type": "number",
-      "defaultValue": 500.0,
-      "description": {
-		"en": "The row expanding/collapsing animation duration in ms.",
-		"jp": "行の展開/縮小アニメーション期間 (ミリ秒)。"
-	}
-    },
-    "autoGenerateLayouts": {
-      "type": "bool",
-      "defaultValue": false,
-      "description": {
-		"en": "if true, will autogenerate all layouts assuming default values for \"childrenDataProperty\" <br>    When autoGenerateLayouts is enabled, it will automatically generate all columns recursively. (all columns on all levels)",
-		"jp": "true の場合、「childrenDataProperty」のデフォルト値として見なされるすべてのレイアウトが自動生成されます。<br>    autoGenerateLayouts が有効な場合、すべての列が再帰的に自動生成されます。(すべてのレベルの全列)。"
-	}
-    },
-    "collapseTooltip": {
-      "type": "string",
-      "defaultValue": "",
-      "description": {
-		"en": "Specifies the default tooltip applied to an expand column cell, that is currently expanded",
-		"jp": "現在展開されている、展開列のセルに適用されるデフォルトのツールチップを指定します。"
-	}
-    },
-    "columnLayouts": {
-      "type": "array",
-      "defaultValue": null,
-      "description": {
-		"en": "List of columnLayout objects that specify the structure of the child grids. All options that are applicable to a flat grid are also applicable here",
-		"jp": "子グリッドの構造を指定する columnLayout オブジェクトのリスト。フラット グリッドに適用されるすべてのオプションが、ここでも適用されます。"
-	},
-	  "schema": {
-		"key": {
-          "required": true,
-          "type": "string",
-          "defaultValue": null,
-          "description": {
-		"en": "Specifies the columnLayout key. This is the property that holds the data records for the current column layout.",
-		"jp": "columnLayout キーを指定します。これは、現在の列レイアウトのデータ レコードを保持するプロパティです。"
-	}
-        },
-		"foreignKey": {
-          "required": false,
-          "type": "string",
-          "defaultValue": null,
-          "description": {
-		"en": "Specifies the foreignKey of the columnLayout. This is also the column key of the parent grid.",
-		"jp": "columnLayout の foreignKey を指定します。これは、親グリッドの列キーでもあります。"
-	}
-        },
-		"childrenDataProperty": {
-		  "required": false,
-          "type": "string",
-          "defaultValue": "children",
-          "description": {
-		"en": "Specifies the property name in the response where children will be located.",
-		"jp": "子供が位置する応答内にプロパティ名を指定します。"
-	}
-		}
-	  },
-      "schemaRef": "grid.properties",
-	  "designerDisplayProperty": "key"
-    },
-    "defaultChildrenDataProperty": {
-      "type": "string",
-      "defaultValue": "children",
-      "description": {
-		"en": "Specifies the default property in the response where children will be located",
-		"jp": "子供が位置する応答内にデフォルトのプロパティを指定します。"
-	}
-    },
-    "expandCollapseAnimations": {
-      "type": "bool",
-      "defaultValue": true,
-      "description": {
-		"en": "applies a linear animation - either expanding or collapsing depending on the parent row state",
-		"jp": "線形アニメーションを適用します - 親行の状態によって、展開または折り畳みになります。"
-	}
-    },
-    "expandColWidth": {
-      "type": "number",
-      "defaultValue": 30.0,
-      "description": {
-		"en": "Specifies the expand column width",
-		"jp": "展開列の幅を指定します。"
-	}
-    },
-    "expandTooltip": {
-      "type": "string",
-      "defaultValue": "",
-      "description": {
-		"en": "Specifies the default tooltip applied to an expand column cell, that is currently collapsed",
-		"jp": "現在折り畳まれている、展開列のセルに適用されるデフォルトのツールチップを指定します。"
-	}
-    },
-    "initialDataBindDepth": {
-      "type": "number",
-      "defaultValue": -1.0,
-      "description": {
-		"en": "Only the first level will be data-bound initially. Also serves as \"render\" depth, meaning that depending on this prop, the grid will",
-		"jp": "最初のレベルのみが最初はデータ バインドされます。また「描画」の深さとしての機能を果たします。つまり、このプロパティによって、グリッドは機能します。"
-	}
-    },
-    "initialExpandDepth": {
-      "type": "number",
-      "defaultValue": -1.0,
-      "description": {
-		"en": "No levels will be automatically expanded when the widget is instantiated for the first time",
-		"jp": "ウィジェットが初めてインスタンス化したときは、レベルは自動的に展開しません。"
-	}
-    },
-    "maxDataBindDepth": {
-      "type": "number",
-      "defaultValue": -1.0,
-      "description": {
-		"en": "Specifies the limit on the number of levels to bind to",
-		"jp": "バインド先のレベル数の限度を指定します。"
-	}
-    },
-    "odata": {
-      "type": "bool",
-      "defaultValue": false,
-      "description": {
-		"en": "If true, encodes all requests using OData conventions and the $expand syntax",
-		"jp": "true の場合、OData 変換と $expand 構文を使ってすべての要求をエンコードします。"
-	}
-    },
-    "pathSeparator": {
-      "type": "string",
-      "defaultValue": "/",
-      "description": {
-		"en": "Specifies the delimiter for constructing paths , for hierarchical lookup of data",
-		"jp": "データの階層的ルックアップのためのパスを作るために区切り文字を指定します。"
-	}
-    },
-    "rest": {
-      "type": "bool",
-      "defaultValue": false,
-      "description": {
-		"en": "If true, load on demand will be achieved using REST compliant resource access with appropriate url-s for<br>    the ajax GET calls.",
-		"jp": "True の場合、ロードオンデマンドは REST 法令遵守のリソース アクセスを使用して実行されます。<br>    AJAX の GET 呼び出しで適切な URL を使用します。"
-	}
     }
-  }
 }

@@ -1,166 +1,166 @@
 ﻿{
-  "overview": null,
-  "name": "ui.igLayoutManager",
-  "category": null,
-  "visual": true,
-  "events": {
-    "internalResized": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+    "overview": null,
+    "name": "ui.igLayoutManager",
+    "category": null,
+    "visual": true,
+    "events": {
+        "internalResized": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event fired after items are resized.<br>                Use ui.owner to get a reference to the layout manager performing resizing.",
+                "jp": "項目がサイズ変更された後に発生するイベント。<br>                ui.owner を使用して、サイズ変更を実行するレイアウト マネージャーへの参照を取得します。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
+        "internalResizing": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event fired before items are resized.<br>                Use ui.owner to get a reference to the layout manager performing resizing.",
+                "jp": "項目がサイズ変更される前に発生するイベント。<br>                ui.owner を使用して、サイズ変更を実行するレイアウト マネージャーへの参照を取得します。"
+            }
+        },
+        "itemRendered": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event fired after an item has been rendered in the container<br>    Function takes arguments evt and ui.<br>    Use ui.owner to get reference to the igLayoutManager.<br>    Use ui.itemData to get a reference of item's settings, such as colspan ,rowspan, etc. <br>    use ui.index to get a reference of the item's index, if the layout is flow or vertical",
+                "jp": "項目がコンテナーに描画された後に発生したイベント。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して、igLayoutManager への参照を取得します。<br>    ui.itemData を使用して、colspan、rowspan などの項目の設定への参照を取得します。<br>    ui.index を使用して、レイアウトがフローまたは垂直の場合、項目のインデックスへの参照を取得します。"
+            }
+        },
+        "itemRendering": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event fired before an item is rendered in the container<br>    Function takes arguments evt and ui.<br>    Use ui.owner to get reference to the igLayoutManager.<br>    Use ui.itemData to get a reference of item's settings, such as colspan ,rowspan, etc. <br>    use ui.index to get a reference of the item's index, if the layout is flow or vertical",
+                "jp": "項目がコンテナーに描画される前に発生したイベント。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して、igLayoutManager への参照を取得します。<br>    ui.itemData を使用して、colspan、rowspan などの項目の設定への参照を取得します。<br>    ui.index を使用して、レイアウトがフローまたは垂直の場合、項目のインデックスへの参照を取得します。"
+            }
+        },
+        "rendered": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event fired after all items are rendered.<br>                Function takes arguments evt and ui.<br>    Use ui.owner to get reference to the igLayoutManager.",
+                "jp": "すべての項目が描画された後に発生するイベント。<br>                関数は引数 evt および ui を取得します。<br>    ui.owner を使用して、igLayoutManager への参照を取得します。"
+            }
         }
-      ],
-      "description": {
-		"en": "Event fired after items are resized.<br>                Use ui.owner to get a reference to the layout manager performing resizing.",
-		"jp": "項目がサイズ変更された後に発生するイベント。<br>                ui.owner を使用して、サイズ変更を実行するレイアウト マネージャーへの参照を取得します。"
-	}
     },
-    "internalResizing": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Event fired before items are resized.<br>                Use ui.owner to get a reference to the layout manager performing resizing.",
-		"jp": "項目がサイズ変更される前に発生するイベント。<br>                ui.owner を使用して、サイズ変更を実行するレイアウト マネージャーへの参照を取得します。"
-	}
-    },
-    "itemRendered": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Event fired after an item has been rendered in the container<br>    Function takes arguments evt and ui.<br>    Use ui.owner to get reference to the igLayoutManager.<br>    Use ui.itemData to get a reference of item's settings, such as colspan ,rowspan, etc. <br>    use ui.index to get a reference of the item's index, if the layout is flow or vertical",
-		"jp": "項目がコンテナーに描画された後に発生したイベント。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して、igLayoutManager への参照を取得します。<br>    ui.itemData を使用して、colspan、rowspan などの項目の設定への参照を取得します。<br>    ui.index を使用して、レイアウトがフローまたは垂直の場合、項目のインデックスへの参照を取得します。"
-	}
-    },
-    "itemRendering": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Event fired before an item is rendered in the container<br>    Function takes arguments evt and ui.<br>    Use ui.owner to get reference to the igLayoutManager.<br>    Use ui.itemData to get a reference of item's settings, such as colspan ,rowspan, etc. <br>    use ui.index to get a reference of the item's index, if the layout is flow or vertical",
-		"jp": "項目がコンテナーに描画される前に発生したイベント。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して、igLayoutManager への参照を取得します。<br>    ui.itemData を使用して、colspan、rowspan などの項目の設定への参照を取得します。<br>    ui.index を使用して、レイアウトがフローまたは垂直の場合、項目のインデックスへの参照を取得します。"
-	}
-    },
-    "rendered": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Event fired after all items are rendered.<br>                Function takes arguments evt and ui.<br>    Use ui.owner to get reference to the igLayoutManager.",
-		"jp": "すべての項目が描画された後に発生するイベント。<br>                関数は引数 evt および ui を取得します。<br>    ui.owner を使用して、igLayoutManager への参照を取得します。"
-	}
-    }
-  },
-  "properties": {
-    "height": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "height of the layout container",
-		"jp": "レイアウト コンテナーの高さ"
-	}
-    },
-    "itemCount": {
-      "type": "number",
-      "defaultValue": null,
-      "description": {
-		"en": "number of items to render, this is only applicable to layouts: vertical and flow",
-		"jp": "描画する項目の数。これは垂直レイアウトおよびフロー レイアウトのみに適用します。"
-	}
-    },
-    "layoutMode": {
-	  "hidden": true,
-      "type": "string",
-      "defaultValue": "flow",
-      "description": {
-		"en": "Defines flow layout",
-		"jp": "フロー レイアウトを定義します"
-	}
-    },
-    "width": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "width of the layout container",
-		"jp": "レイアウト コンテナーの幅"
-	}
-    },
-    "items": {
-      "type": "array",
-      "defaultValue": null,
-      "description": {
-		"en": "an array of item descriptions <br>    this assumes the container is empty, and every item<br>    is described width and height. <br>    itemCount should not be defined in order for items to be taken into account.",
-		"jp": "項目説明の配列。<br>    コンテナーが空で、各項目は<br>    指定した幅および高さに設定されることが必要です。<br>    itemCount を定義しない場合、各項目は使用されます。"
-	},
-      "schema": {
-        "width": {
-          "required": true,
-          "type": "string",
-          "defaultValue": null,
-          "description": {
-		"en": "item width",
-		"jp": "項目の幅"
-	}
-        },
+    "properties": {
         "height": {
-          "required": true,
-          "type": "string",
-          "defaultValue": null,
-          "description": {
-		"en": "item height",
-		"jp": "項目の高さ"
-	}
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "height of the layout container",
+                "jp": "レイアウト コンテナーの高さ"
+            }
+        },
+        "itemCount": {
+            "type": "number",
+            "defaultValue": null,
+            "description": {
+                "en": "number of items to render, this is only applicable to layouts: vertical and flow",
+                "jp": "描画する項目の数。これは垂直レイアウトおよびフロー レイアウトのみに適用します。"
+            }
+        },
+        "layoutMode": {
+            "hidden": true,
+            "type": "string",
+            "defaultValue": "flow",
+            "description": {
+                "en": "Defines flow layout",
+                "jp": "フロー レイアウトを定義します"
+            }
+        },
+        "width": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "width of the layout container",
+                "jp": "レイアウト コンテナーの幅"
+            }
+        },
+        "items": {
+            "type": "array",
+            "defaultValue": null,
+            "description": {
+                "en": "an array of item descriptions <br>    this assumes the container is empty, and every item<br>    is described width and height. <br>    itemCount should not be defined in order for items to be taken into account.",
+                "jp": "項目説明の配列。<br>    コンテナーが空で、各項目は<br>    指定した幅および高さに設定されることが必要です。<br>    itemCount を定義しない場合、各項目は使用されます。"
+            },
+            "schema": {
+                "width": {
+                    "required": true,
+                    "type": "string",
+                    "defaultValue": null,
+                    "description": {
+                        "en": "item width",
+                        "jp": "項目の幅"
+                    }
+                },
+                "height": {
+                    "required": true,
+                    "type": "string",
+                    "defaultValue": null,
+                    "description": {
+                        "en": "item height",
+                        "jp": "項目の高さ"
+                    }
+                }
+            }
         }
-      }
     }
-  }
 }

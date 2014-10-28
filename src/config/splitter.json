@@ -1,243 +1,243 @@
 ﻿{
-  "overview": null,
-  "name": "ui.igSplitter",
-  "category": null,
-  "visual": true,
-  "events": {
-    "collapsed": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+    "overview": null,
+    "name": "ui.igSplitter",
+    "category": null,
+    "visual": true,
+    "events": {
+        "collapsed": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "fired after collapsing is performed <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the splitter instance.<br>    Use ui.index to get an index of collased panel.",
+                "jp": "縮小が実行された後に発生します。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して、スプリッター インスタンスへの参照を取得します。<br>    ui.index を使用して、縮小されたパネルのインデックスを取得します。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
+        "expanded": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "fired after expanding is performed <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the splitter instance.<br>    Use ui.index to get an index of expanded panel.",
+                "jp": "展開が実行された後に発生します。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して、スプリッター インスタンスへの参照を取得します。<br>    ui.index を使用して、展開されたパネルのインデックスを取得します。"
+            }
+        },
+        "layoutRefreshed": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "fired after the panels are refreshed because of browser's resizing.<br>      Function takes arguments evt and ui.<br>      Use ui.owner to get a reference to the splitter instance.",
+                "jp": "ブラウザーのサイズ変更によって、パネルが更新された後に発生します。<br>      関数は引数 evt および ui を取得します。<br>      ui.owner を使用して、スプリッター インスタンスへの参照を取得します。"
+            }
+        },
+        "layoutRefreshing": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Fired before the panels are going to go refreshed because of browser's resizing.<br>      Function takes arguments evt and ui.<br>      Use ui.owner to get a reference to the splitter instance.",
+                "jp": "ブラウザーのサイズ変更によって、パネルが更新される前に発生します。<br>      関数は引数 evt および ui を取得します。<br>      ui.owner を使用して、スプリッター インスタンスへの参照を取得します。"
+            }
+        },
+        "resizeEnded": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "fired after split bar move is performed <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the splitter instance.",
+                "jp": "スプリッター バーの移動が実行された後に発生します。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して、スプリッター インスタンスへの参照を取得します。"
+            }
+        },
+        "resizeStarted": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "fired before split bar move is performed <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the splitter instance.",
+                "jp": "スプリッター バーの移動が実行される前に発生します。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して、スプリッター インスタンスへの参照を取得します。"
+            }
+        },
+        "resizing": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "fired while split bar move is performed <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the splitter instance.",
+                "jp": "スプリッター バーの移動が実行されているときに発生します。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して、スプリッター インスタンスへの参照を取得します。"
+            }
         }
-      ],
-      "description": {
-		"en": "fired after collapsing is performed <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the splitter instance.<br>    Use ui.index to get an index of collased panel.",
-		"jp": "縮小が実行された後に発生します。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して、スプリッター インスタンスへの参照を取得します。<br>    ui.index を使用して、縮小されたパネルのインデックスを取得します。"
-	}
     },
-    "expanded": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+    "properties": {
+        "dragDelta": {
+            "type": "number",
+            "defaultValue": 3.0,
+            "description": {
+                "en": "Specifies drag delta of the split bar. In order to start dragging move, the mouse has to be moved specific distance from original position.",
+                "jp": "スプリッター バーのドラッグ デルタを指定します。ドラッグを開始するには、マウスが元の位置から特定の距離を移動する必要があります。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "fired after expanding is performed <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the splitter instance.<br>    Use ui.index to get an index of expanded panel.",
-		"jp": "展開が実行された後に発生します。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して、スプリッター インスタンスへの参照を取得します。<br>    ui.index を使用して、展開されたパネルのインデックスを取得します。"
-	}
-    },
-    "layoutRefreshed": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "height": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": " Gets sets how the height of the control can be set. Splitter will fit the tree inside its parent container, if no other heights are defined.",
+                "jp": " コントロールの高さを設定する方法を取得または設定します。他の高さが定義されていない場合、スプリッターはツリーを親コンテナーに収まります。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "fired after the panels are refreshed because of browser's resizing.<br>      Function takes arguments evt and ui.<br>      Use ui.owner to get a reference to the splitter instance.",
-		"jp": "ブラウザーのサイズ変更によって、パネルが更新された後に発生します。<br>      関数は引数 evt および ui を取得します。<br>      ui.owner を使用して、スプリッター インスタンスへの参照を取得します。"
-	}
-    },
-    "layoutRefreshing": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "orientation": {
+            "type": "string",
+            "defaultValue": "vertical",
+            "description": {
+                "en": " Specifies the orientation of the splitter.",
+                "jp": " スプリッターの方向を指定します。"
+            },
+            "valueOptions": [
+                {
+                    "name": "vertical",
+                    "type": "string",
+                    "description": {
+                        "en": "Sets the Splitter to have vertical orientation",
+                        "jp": "スプリッターの方向を垂直に設定します。"
+                    }
+                },
+                {
+                    "name": "horizontal",
+                    "type": "string",
+                    "description": {
+                        "en": "Sets the Splitter to have horizontal orientation",
+                        "jp": "スプリッターの方向を水平に設定します。"
+                    }
+                }
+            ]
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Fired before the panels are going to go refreshed because of browser's resizing.<br>      Function takes arguments evt and ui.<br>      Use ui.owner to get a reference to the splitter instance.",
-		"jp": "ブラウザーのサイズ変更によって、パネルが更新される前に発生します。<br>      関数は引数 evt および ui を取得します。<br>      ui.owner を使用して、スプリッター インスタンスへの参照を取得します。"
-	}
-    },
-    "resizeEnded": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "panels": {
+            "type": "array",
+            "defaultValue": null,
+            "description": {
+                "en": "Specifies the panel settings. The panels are no more than two. Settings are specified via enumeration.<br>   size=\"string|int\"<br>   min type=\"string|int\"<br>   max type=\"string|int\"<br>   resizable <br>   collapsed <br>   collapsible",
+                "jp": "パネル設定を指定します。パネルの数は 2 以下です。設定は列挙体によって指定されます。<br>   size=\"string|int\"<br>   min type=\"string|int\"<br>   max type=\"string|int\"<br>   resizable <br>   collapsed <br>   collapsible"
+            },
+            "schema": {
+                "size": {
+                    "type": "string",
+                    "defaultValue": "0",
+                    "description": {
+                        "en": "panel size",
+                        "jp": "パネル サイズ"
+                    }
+                },
+                "min": {
+                    "type": "string",
+                    "defaultValue": "0",
+                    "description": {
+                        "en": "min size",
+                        "jp": "最小サイズ"
+                    }
+                },
+                "max": {
+                    "type": "string",
+                    "defaultValue": "0",
+                    "description": {
+                        "en": "max size",
+                        "jp": "最大サイズ"
+                    }
+                },
+                "resizable": {
+                    "type": "bool",
+                    "defaultValue": true,
+                    "description": {
+                        "en": "whether to render resizing UI",
+                        "jp": "サイズ変更 UI を描画するかどうか"
+                    }
+                },
+                "collapsed": {
+                    "type": "bool",
+                    "defaultValue": false,
+                    "description": {
+                        "en": "",
+                        "jp": ""
+                    }
+                }
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
+        "width": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": " Gets sets how the width of the control can be set. Splitter will fit the tree inside its parent container, if no other widths are defined.",
+                "jp": " コントロールの幅を設定する方法を取得または設定します。他の幅が定義されていない場合、スプリッターはツリーを親コンテナーに収まります。"
+            }
         }
-      ],
-      "description": {
-		"en": "fired after split bar move is performed <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the splitter instance.",
-		"jp": "スプリッター バーの移動が実行された後に発生します。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して、スプリッター インスタンスへの参照を取得します。"
-	}
-    },
-    "resizeStarted": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "fired before split bar move is performed <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the splitter instance.",
-		"jp": "スプリッター バーの移動が実行される前に発生します。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して、スプリッター インスタンスへの参照を取得します。"
-	}
-    },
-    "resizing": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "fired while split bar move is performed <br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the splitter instance.",
-		"jp": "スプリッター バーの移動が実行されているときに発生します。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して、スプリッター インスタンスへの参照を取得します。"
-	}
     }
-  },
-  "properties": {
-    "dragDelta": {
-      "type": "number",
-      "defaultValue": 3.0,
-      "description": {
-		"en": "Specifies drag delta of the split bar. In order to start dragging move, the mouse has to be moved specific distance from original position.",
-		"jp": "スプリッター バーのドラッグ デルタを指定します。ドラッグを開始するには、マウスが元の位置から特定の距離を移動する必要があります。"
-	}
-    },
-    "height": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": " Gets sets how the height of the control can be set. Splitter will fit the tree inside its parent container, if no other heights are defined.",
-		"jp": " コントロールの高さを設定する方法を取得または設定します。他の高さが定義されていない場合、スプリッターはツリーを親コンテナーに収まります。"
-	}
-    },
-    "orientation": {
-      "type": "string",
-      "defaultValue": "vertical",
-      "description": {
-		"en": " Specifies the orientation of the splitter.",
-		"jp": " スプリッターの方向を指定します。"
-	},
-      "valueOptions": [
-        {
-          "name": "vertical",
-          "type": "string",
-          "description": {
-		"en": "Sets the Splitter to have vertical orientation",
-		"jp": "スプリッターの方向を垂直に設定します。"
-	}
-        },
-        {
-          "name": "horizontal",
-          "type": "string",
-          "description": {
-		"en": "Sets the Splitter to have horizontal orientation",
-		"jp": "スプリッターの方向を水平に設定します。"
-	}
-        }
-      ]
-    },
-    "panels": {
-      "type": "array",
-      "defaultValue": null,
-      "description": {
-		"en": "Specifies the panel settings. The panels are no more than two. Settings are specified via enumeration.<br>   size=\"string|int\"<br>   min type=\"string|int\"<br>   max type=\"string|int\"<br>   resizable <br>   collapsed <br>   collapsible",
-		"jp": "パネル設定を指定します。パネルの数は 2 以下です。設定は列挙体によって指定されます。<br>   size=\"string|int\"<br>   min type=\"string|int\"<br>   max type=\"string|int\"<br>   resizable <br>   collapsed <br>   collapsible"
-	},
-      "schema": {
-          "size": {
-              "type": "string",
-              "defaultValue": "0",
-              "description": {
-		"en": "panel size",
-		"jp": "パネル サイズ"
-	}
-          },
-          "min": {
-              "type": "string",
-              "defaultValue": "0",
-              "description": {
-		"en": "min size",
-		"jp": "最小サイズ"
-	}
-          },
-          "max": {
-              "type": "string",
-              "defaultValue": "0",
-              "description": {
-		"en": "max size",
-		"jp": "最大サイズ"
-	}
-          },
-          "resizable": {
-              "type": "bool",
-              "defaultValue": true,
-              "description": {
-		"en": "whether to render resizing UI",
-		"jp": "サイズ変更 UI を描画するかどうか"
-	}
-          },
-          "collapsed": {
-              "type": "bool",
-              "defaultValue": false,
-              "description": {
-		"en": "",
-		"jp": ""
-	}
-          }
-      }
-    },
-    "width": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": " Gets sets how the width of the control can be set. Splitter will fit the tree inside its parent container, if no other widths are defined.",
-		"jp": " コントロールの幅を設定する方法を取得または設定します。他の幅が定義されていない場合、スプリッターはツリーを親コンテナーに収まります。"
-	}
-    }
-  }
 }

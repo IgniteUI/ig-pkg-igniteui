@@ -1,257 +1,257 @@
 ﻿{
-  "overview": null,
-  "name": "ui.igGridSelection",
-  "title": "Selection",
-  "category": null,
-  "visual": true,
-  "events": {
-    "activeCellChanged": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+    "overview": null,
+    "name": "ui.igGridSelection",
+    "title": "Selection",
+    "category": null,
+    "visual": true,
+    "events": {
+        "activeCellChanged": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event fired after a cell becomes active (focus style applied).<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridSelection.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.cell.element to get reference to cell DOM element.<br>   Use ui.cell.columnKey to get column key.<br>   Use ui.cell.index to get column index.<br>   Use ui.cell.row to get reference to row DOM element.<br>   Use ui.cell.rowIndex to get row index.",
+                "jp": "セルがアクティブになった後に発生するイベント (フォーカス スタイルが適用されます)。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridSelection への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.cell.element を使用して、セルの DOM 要素への参照を取得します。<br>   ui.cell.columnKey を使用して列のキーを取得します。<br>   ui.cell.index を使用して、列のインデックスを取得します。<br>   ui.cell.row を使用して、行の DOM 要素への参照を取得します。<br>   ui.cell.rowIndex を使用して、行のインデックスを取得します。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
+        "activeCellChanging": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event fired before a cell becomes active (focus style applied) (cancellable).<br>   Return false in order to cancel active cell changing. <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridSelection.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.cell.element to get reference to cell DOM element.<br>   Use ui.cell.columnKey to get column key.<br>   Use ui.cell.index to get column index.<br>   Use ui.cell.row to get reference to row DOM element.<br>   Use ui.cell.rowIndex to get row index.",
+                "jp": "セルがアクティブになる前に発生するイベント (フォーカス スタイルが適用され、キャンセル可能です)。<br>   アクティブなセルの変更をキャンセルするには、false を返します。<br>    関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridSelection への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.cell.element を使用して、セルの DOM 要素への参照を取得します。<br>   ui.cell.columnKey を使用して列のキーを取得します。<br>   ui.cell.index を使用して、列のインデックスを取得します。<br>   ui.cell.row を使用して、行の DOM 要素への参照を取得します。<br>   ui.cell.rowIndex を使用して、行のインデックスを取得します。"
+            }
+        },
+        "activeRowChanged": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event fired after a row becomes active (focus style applied). <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridSelection.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.row.element to get reference to active row DOM element.<br>   Use ui.row.index to get row index.",
+                "jp": "行がアクティブになった後に発生するイベント (フォーカス スタイルが適用されます)。<br>    関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridSelection への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.row.element を使用して、アクティブな行の DOM 要素への参照を取得します。<br>   ui.row.index を使用して、行のインデックスを取得します。"
+            }
+        },
+        "activeRowChanging": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event fired before a row becomes active (focus style applied) (cancellable).<br>   Return false in order to cancel active row changing.   <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridSelection.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.row.element to get reference to active row DOM element.<br>   Use ui.row.index to get active row index.",
+                "jp": "行がアクティブになる前に発生するイベント (フォーカス スタイルが適用され、キャンセル可能です)。<br>   アクティブな行の変更をキャンセルするには、false を返します。   <br>    関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridSelection への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.row.element を使用して、アクティブな行の DOM 要素への参照を取得します。<br>   ui.row.index を使用して、アクティブな行のインデックスを取得します。"
+            }
+        },
+        "cellSelectionChanged": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event fired after cell(s) are selected.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridSelection.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.cell.element to get reference to cell DOM element.<br>   Use ui.cell.columnKey to get reference to column key.<br>   Use ui.cell.index to get column index.<br>   Use ui.cell.row to get reference to row DOM element.<br>   Use ui.cell.rowIndex to get row index.<br>   Use ui.selectedCells to get reference to selected cells object array.<br>   ui.manual - returns true if internal trigger.",
+                "jp": "セルが選択された後に発生するイベントです。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridSelection への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.cell.element を使用して、セルの DOM 要素への参照を取得します。<br>   ui.cell.columnKey を使用して、列キーへの参照を取得します。<br>   ui.cell.index を使用して、列のインデックスを取得します。<br>   ui.cell.row を使用して、行の DOM 要素への参照を取得します。<br>   ui.cell.rowIndex を使用して、行のインデックスを取得します。<br>   ui.selectedCells を使用して、選択したセルのオブジェクト配列への参照を取得します。<br>   ui.manual - 内部トリガーの場合 true を返します。"
+            }
+        },
+        "cellSelectionChanging": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event fired before cell(s) are about to be selected (cancellable).<br>   Return false in order to cancel cell selection changing.   <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridSelection.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.cell.element to get reference to cell DOM element.<br>   Use ui.cell.columnKey to get reference to column key.<br>   Use ui.cell.index to get column index.<br>   Use ui.cell.row to get reference to row DOM element.<br>   Use ui.cell.rowIndex to get row index.<br>   Use ui.selectedCells to get reference to selected cells object array.<br>   ui.manual - returns true if internal trigger.",
+                "jp": "セルが選択される前に発生するイベント。キャンセル可能です。<br>   セルの選択の変更をキャンセルするには、false を返します。   <br>    関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridSelection への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.cell.element を使用して、セルの DOM 要素への参照を取得します。<br>   ui.cell.columnKey を使用して、列キーへの参照を取得します。<br>   ui.cell.index を使用して、列のインデックスを取得します。<br>   ui.cell.row を使用して、行の DOM 要素への参照を取得します。<br>   ui.cell.rowIndex を使用して、行のインデックスを取得します。<br>   ui.selectedCells を使用して、選択したセルのオブジェクト配列への参照を取得します。<br>   ui.manual - 内部トリガーの場合 true を返します。"
+            }
+        },
+        "rowSelectionChanged": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event fired after row(s) are selected.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridSelection.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.row.element to get reference to row DOM element.<br>   Use ui.row.index to get row index.<br>   Use ui.selectedRows to get reference to rows object array.<br>            Use ui.selectedFixedRows to get reference to fixed rows object array if any.<br>   ui.manual - returns true if internal trigger.",
+                "jp": "行が選択された後に発生するイベントです。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridSelection への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.row.element を使用して、行の DOM 要素への参照を取得します。<br>   ui.row.index を使用して、行のインデックスを取得します。<br>   ui.selectedRows を使用して、行のオブジェクト配列への参照を取得します。<br>            ui.selectedFixedRows を使用して、固定行のオブジェクト配列への参照を取得します。<br>   ui.manual - 内部トリガーの場合 true を返します。"
+            }
+        },
+        "rowSelectionChanging": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event fired before row(s) are about to be selected (cancellable).<br>   Return false in order to cancel selection changing.   <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridSelection.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.row.element to get reference to row DOM element.<br>   Use ui.row.index to get row index.<br>   Use ui.selectedRows to get reference to rows object array.<br>            Use ui.selectedFixedRows to get reference to fixed rows object array if any.<br>   ui.manual - returns true if internal trigger.",
+                "jp": "行が選択される前に発生するイベント。キャンセル可能です。<br>   選択の変更をキャンセルするには、false を返します。   <br>    関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridSelection への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.row.element を使用して、行の DOM 要素への参照を取得します。<br>   ui.row.index を使用して、行のインデックスを取得します。<br>   ui.selectedRows を使用して、行のオブジェクト配列への参照を取得します。<br>            ui.selectedFixedRows を使用して、固定行のオブジェクト配列への参照を取得します。<br>   ui.manual - 内部トリガーの場合 true を返します。"
+            }
         }
-      ],
-      "description": {
-		"en": "Event fired after a cell becomes active (focus style applied).<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridSelection.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.cell.element to get reference to cell DOM element.<br>   Use ui.cell.columnKey to get column key.<br>   Use ui.cell.index to get column index.<br>   Use ui.cell.row to get reference to row DOM element.<br>   Use ui.cell.rowIndex to get row index.",
-		"jp": "セルがアクティブになった後に発生するイベント (フォーカス スタイルが適用されます)。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridSelection への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.cell.element を使用して、セルの DOM 要素への参照を取得します。<br>   ui.cell.columnKey を使用して列のキーを取得します。<br>   ui.cell.index を使用して、列のインデックスを取得します。<br>   ui.cell.row を使用して、行の DOM 要素への参照を取得します。<br>   ui.cell.rowIndex を使用して、行のインデックスを取得します。"
-	}
     },
-    "activeCellChanging": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+    "properties": {
+        "name": {
+            "type": "string",
+            "defaultValue": null
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Event fired before a cell becomes active (focus style applied) (cancellable).<br>   Return false in order to cancel active cell changing. <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridSelection.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.cell.element to get reference to cell DOM element.<br>   Use ui.cell.columnKey to get column key.<br>   Use ui.cell.index to get column index.<br>   Use ui.cell.row to get reference to row DOM element.<br>   Use ui.cell.rowIndex to get row index.",
-		"jp": "セルがアクティブになる前に発生するイベント (フォーカス スタイルが適用され、キャンセル可能です)。<br>   アクティブなセルの変更をキャンセルするには、false を返します。<br>    関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridSelection への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.cell.element を使用して、セルの DOM 要素への参照を取得します。<br>   ui.cell.columnKey を使用して列のキーを取得します。<br>   ui.cell.index を使用して、列のインデックスを取得します。<br>   ui.cell.row を使用して、行の DOM 要素への参照を取得します。<br>   ui.cell.rowIndex を使用して、行のインデックスを取得します。"
-	}
-    },
-    "activeRowChanged": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "activation": {
+            "type": "bool",
+            "defaultValue": true,
+            "description": {
+                "en": "Enables / disables activation of rows and cells. Activation implies ability to perform navigating through cells and rows via the keyboard, and selecting rows and cells using CTRL / SHIFT - in the way cells/rows are selected in Ms Excel",
+                "jp": "行およびセルのアクティブ化を有効または無効にします。アクティブ化は、キーボードによるセルおよび行のナビゲートおよび [CTRL] / [SHIFT] キーを使用した行およびセルの選択を実行する機能を意味します。これは、MS Excel でのセルや行の選択と同様の機能です。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Event fired after a row becomes active (focus style applied). <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridSelection.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.row.element to get reference to active row DOM element.<br>   Use ui.row.index to get row index.",
-		"jp": "行がアクティブになった後に発生するイベント (フォーカス スタイルが適用されます)。<br>    関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridSelection への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.row.element を使用して、アクティブな行の DOM 要素への参照を取得します。<br>   ui.row.index を使用して、行のインデックスを取得します。"
-	}
-    },
-    "activeRowChanging": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "mode": {
+            "type": "string",
+            "defaultValue": "row",
+            "description": {
+                "en": "Defines type of the selection.",
+                "jp": "選択のタイプを定義します。"
+            },
+            "valueOptions": [
+                {
+                    "name": "row",
+                    "type": "string",
+                    "description": {
+                        "en": "Defines row selection mode.",
+                        "jp": "行選択モードを定義します。"
+                    }
+                },
+                {
+                    "name": "cell",
+                    "type": "string",
+                    "description": {
+                        "en": "Defines cell selection mode.",
+                        "jp": "セル選択モードを定義します。"
+                    }
+                }
+            ]
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Event fired before a row becomes active (focus style applied) (cancellable).<br>   Return false in order to cancel active row changing.   <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridSelection.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.row.element to get reference to active row DOM element.<br>   Use ui.row.index to get active row index.",
-		"jp": "行がアクティブになる前に発生するイベント (フォーカス スタイルが適用され、キャンセル可能です)。<br>   アクティブな行の変更をキャンセルするには、false を返します。   <br>    関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridSelection への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.row.element を使用して、アクティブな行の DOM 要素への参照を取得します。<br>   ui.row.index を使用して、アクティブな行のインデックスを取得します。"
-	}
-    },
-    "cellSelectionChanged": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "mouseDragSelect": {
+            "type": "bool",
+            "defaultValue": true,
+            "description": {
+                "en": "Enables / disables selection via dragging with the mouse - only applicable for cell selection",
+                "jp": "マウスでのドラッグによる選択を有効または無効にします。セルの選択にのみ適用可能です。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Event fired after cell(s) are selected.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridSelection.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.cell.element to get reference to cell DOM element.<br>   Use ui.cell.columnKey to get reference to column key.<br>   Use ui.cell.index to get column index.<br>   Use ui.cell.row to get reference to row DOM element.<br>   Use ui.cell.rowIndex to get row index.<br>   Use ui.selectedCells to get reference to selected cells object array.<br>   ui.manual - returns true if internal trigger.",
-		"jp": "セルが選択された後に発生するイベントです。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridSelection への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.cell.element を使用して、セルの DOM 要素への参照を取得します。<br>   ui.cell.columnKey を使用して、列キーへの参照を取得します。<br>   ui.cell.index を使用して、列のインデックスを取得します。<br>   ui.cell.row を使用して、行の DOM 要素への参照を取得します。<br>   ui.cell.rowIndex を使用して、行のインデックスを取得します。<br>   ui.selectedCells を使用して、選択したセルのオブジェクト配列への参照を取得します。<br>   ui.manual - 内部トリガーの場合 true を返します。"
-	}
-    },
-    "cellSelectionChanging": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "multipleCellSelectOnClick": {
+            "type": "bool",
+            "defaultValue": false,
+            "description": {
+                "en": "if true multiple selection of cells is done as if CTRL is being held. the option is disregarded if mode is set<br>   to row. this option is useful for enabling multiple discountinued selection on touch environments.",
+                "jp": "True の場合、Ctrl キーを押し続けているかのようにセルの複数選択が実行されます。モードが行に設定されると、このオプションは無視されます。<br>   このオプションは、タッチパネル環境で断続的に複数の選択をする際に便利です。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Event fired before cell(s) are about to be selected (cancellable).<br>   Return false in order to cancel cell selection changing.   <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridSelection.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.cell.element to get reference to cell DOM element.<br>   Use ui.cell.columnKey to get reference to column key.<br>   Use ui.cell.index to get column index.<br>   Use ui.cell.row to get reference to row DOM element.<br>   Use ui.cell.rowIndex to get row index.<br>   Use ui.selectedCells to get reference to selected cells object array.<br>   ui.manual - returns true if internal trigger.",
-		"jp": "セルが選択される前に発生するイベント。キャンセル可能です。<br>   セルの選択の変更をキャンセルするには、false を返します。   <br>    関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridSelection への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.cell.element を使用して、セルの DOM 要素への参照を取得します。<br>   ui.cell.columnKey を使用して、列キーへの参照を取得します。<br>   ui.cell.index を使用して、列のインデックスを取得します。<br>   ui.cell.row を使用して、行の DOM 要素への参照を取得します。<br>   ui.cell.rowIndex を使用して、行のインデックスを取得します。<br>   ui.selectedCells を使用して、選択したセルのオブジェクト配列への参照を取得します。<br>   ui.manual - 内部トリガーの場合 true を返します。"
-	}
-    },
-    "rowSelectionChanged": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "multipleSelection": {
+            "type": "bool",
+            "defaultValue": false,
+            "description": {
+                "en": "Enables / Disables multiple selection of cells and rows - depending on the mode",
+                "jp": "セルおよび行の複数選択を有効または無効にします。モードに依存します。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Event fired after row(s) are selected.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridSelection.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.row.element to get reference to row DOM element.<br>   Use ui.row.index to get row index.<br>   Use ui.selectedRows to get reference to rows object array.<br>            Use ui.selectedFixedRows to get reference to fixed rows object array if any.<br>   ui.manual - returns true if internal trigger.",
-		"jp": "行が選択された後に発生するイベントです。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridSelection への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.row.element を使用して、行の DOM 要素への参照を取得します。<br>   ui.row.index を使用して、行のインデックスを取得します。<br>   ui.selectedRows を使用して、行のオブジェクト配列への参照を取得します。<br>            ui.selectedFixedRows を使用して、固定行のオブジェクト配列への参照を取得します。<br>   ui.manual - 内部トリガーの場合 true を返します。"
-	}
-    },
-    "rowSelectionChanging": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "skipChildren": {
+            "type": "bool",
+            "defaultValue": true,
+            "description": {
+                "en": "if true will basically skip going into child grids with down / up / right / left arrow keys, when in the context of hierarchical grid",
+                "jp": "true が基本的にスキップする場合、階層型グリッドのコンテキストにおいて、下 / 上 / 右 / 左矢印キーと共に子グリッドの幅に入ります。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
+        "touchDragSelect": {
+            "type": "bool",
+            "defaultValue": true,
+            "description": {
+                "en": "Enables / disables selection via continuous touch event - only applicable for cell selection and<br>   touch-supported environments",
+                "jp": "連続タッチ イベントで有効/無効を選択します。セルの選択および<br>   タッチパネル対応環境でのみ利用できます。"
+            }
+        },
+        "wrapAround": {
+            "type": "bool",
+            "defaultValue": true,
+            "description": {
+                "en": "if wrapAround is enabled and selection is on the first or last row or cell, then when the end user tries to go beyond that, the first/last row or cell will be selected",
+                "jp": "wrapAround が有効で、選択が最初または最後の行またはセルの場合、エンドユーザーがさらに進もうとすると、最初または最後の行またはセルが選択されます。"
+            }
+        },
+        "inherit": {
+            "type": "bool",
+            "defaultValue": false,
+            "description": {
+                "en": "",
+                "jp": ""
+            }
         }
-      ],
-      "description": {
-		"en": "Event fired before row(s) are about to be selected (cancellable).<br>   Return false in order to cancel selection changing.   <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridSelection.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.row.element to get reference to row DOM element.<br>   Use ui.row.index to get row index.<br>   Use ui.selectedRows to get reference to rows object array.<br>            Use ui.selectedFixedRows to get reference to fixed rows object array if any.<br>   ui.manual - returns true if internal trigger.",
-		"jp": "行が選択される前に発生するイベント。キャンセル可能です。<br>   選択の変更をキャンセルするには、false を返します。   <br>    関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridSelection への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.row.element を使用して、行の DOM 要素への参照を取得します。<br>   ui.row.index を使用して、行のインデックスを取得します。<br>   ui.selectedRows を使用して、行のオブジェクト配列への参照を取得します。<br>            ui.selectedFixedRows を使用して、固定行のオブジェクト配列への参照を取得します。<br>   ui.manual - 内部トリガーの場合 true を返します。"
-	}
     }
-  },
-  "properties": {
-	"name": {
-      "type": "string",
-      "defaultValue": null
-    },
-    "activation": {
-      "type": "bool",
-      "defaultValue": true,
-      "description": {
-		"en": "Enables / disables activation of rows and cells. Activation implies ability to perform navigating through cells and rows via the keyboard, and selecting rows and cells using CTRL / SHIFT - in the way cells/rows are selected in Ms Excel",
-		"jp": "行およびセルのアクティブ化を有効または無効にします。アクティブ化は、キーボードによるセルおよび行のナビゲートおよび [CTRL] / [SHIFT] キーを使用した行およびセルの選択を実行する機能を意味します。これは、MS Excel でのセルや行の選択と同様の機能です。"
-	}
-    },
-    "mode": {
-      "type": "string",
-      "defaultValue": "row",
-      "description": {
-		"en": "Defines type of the selection.",
-		"jp": "選択のタイプを定義します。"
-	},
-      "valueOptions": [
-        {
-          "name": "row",
-          "type": "string",
-          "description": {
-		"en": "Defines row selection mode.",
-		"jp": "行選択モードを定義します。"
-	}
-        },
-        {
-          "name": "cell",
-          "type": "string",
-          "description": {
-		"en": "Defines cell selection mode.",
-		"jp": "セル選択モードを定義します。"
-	}
-        }
-      ]
-    },
-    "mouseDragSelect": {
-      "type": "bool",
-      "defaultValue": true,
-      "description": {
-		"en": "Enables / disables selection via dragging with the mouse - only applicable for cell selection",
-		"jp": "マウスでのドラッグによる選択を有効または無効にします。セルの選択にのみ適用可能です。"
-	}
-    },
-    "multipleCellSelectOnClick": {
-      "type": "bool",
-      "defaultValue": false,
-      "description": {
-		"en": "if true multiple selection of cells is done as if CTRL is being held. the option is disregarded if mode is set<br>   to row. this option is useful for enabling multiple discountinued selection on touch environments.",
-		"jp": "True の場合、Ctrl キーを押し続けているかのようにセルの複数選択が実行されます。モードが行に設定されると、このオプションは無視されます。<br>   このオプションは、タッチパネル環境で断続的に複数の選択をする際に便利です。"
-	}
-    },
-    "multipleSelection": {
-      "type": "bool",
-      "defaultValue": false,
-      "description": {
-		"en": "Enables / Disables multiple selection of cells and rows - depending on the mode",
-		"jp": "セルおよび行の複数選択を有効または無効にします。モードに依存します。"
-	}
-    },
-    "skipChildren": {
-      "type": "bool",
-      "defaultValue": true,
-      "description": {
-		"en": "if true will basically skip going into child grids with down / up / right / left arrow keys, when in the context of hierarchical grid",
-		"jp": "true が基本的にスキップする場合、階層型グリッドのコンテキストにおいて、下 / 上 / 右 / 左矢印キーと共に子グリッドの幅に入ります。"
-	}
-    },
-    "touchDragSelect": {
-      "type": "bool",
-      "defaultValue": true,
-      "description": {
-		"en": "Enables / disables selection via continuous touch event - only applicable for cell selection and<br>   touch-supported environments",
-		"jp": "連続タッチ イベントで有効/無効を選択します。セルの選択および<br>   タッチパネル対応環境でのみ利用できます。"
-	}
-    },
-    "wrapAround": {
-      "type": "bool",
-      "defaultValue": true,
-      "description": {
-		"en": "if wrapAround is enabled and selection is on the first or last row or cell, then when the end user tries to go beyond that, the first/last row or cell will be selected",
-		"jp": "wrapAround が有効で、選択が最初または最後の行またはセルの場合、エンドユーザーがさらに進もうとすると、最初または最後の行またはセルが選択されます。"
-	}
-    },
-	"inherit": {
-      "type": "bool",
-      "defaultValue": false,
-      "description": {
-		"en": "",
-		"jp": ""
-	  }
-    }
-  }
 }

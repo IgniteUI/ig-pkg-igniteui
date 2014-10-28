@@ -1,412 +1,412 @@
 ﻿{
-  "overview": null,
-  "name": "ui.igFunnelChart",
-  "category": null,
-  "visual": true,
-  "events": {
-    "sliceClicked": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
+    "overview": null,
+    "name": "ui.igFunnelChart",
+    "category": null,
+    "visual": true,
+    "events": {
+        "sliceClicked": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event which is raised when a slice is clicked.<br> Function takes first argument null and second argument ui.<br> Use ui.owner to obtain reference to igFunnelChart.<br> Use ui.index to obtain index of clicked slice.<br> Use ui.item to obtain reference to clicked slice item.<br> Use ui.selected to check if slice became selected.",
+                "jp": "スライスがクリックされたときに発生されるイベント。<br>関数は最初の引数に null を、2 番目の引数に ui を取得します。<br>ui.owner を使用して igFunnelChart へを取得します。<br>クリックされたスライスを取得するための ui.index を使用します。<br>クリックされたスライス項目への参照を取得するために ui.item を使用します。<br>スライスが選択されたかどうかをチェックするために ui.selected を使用します。"
+            }
         }
-      ],
-      "description": {
-		"en": "Event which is raised when a slice is clicked.<br> Function takes first argument null and second argument ui.<br> Use ui.owner to obtain reference to igFunnelChart.<br> Use ui.index to obtain index of clicked slice.<br> Use ui.item to obtain reference to clicked slice item.<br> Use ui.selected to check if slice became selected.",
-		"jp": "スライスがクリックされたときに発生されるイベント。<br>関数は最初の引数に null を、2 番目の引数に ui を取得します。<br>ui.owner を使用して igFunnelChart へを取得します。<br>クリックされたスライスを取得するための ui.index を使用します。<br>クリックされたスライス項目への参照を取得するために ui.item を使用します。<br>スライスが選択されたかどうかをチェックするために ui.selected を使用します。"
-	}
+    },
+    "properties": {
+        "allowSliceSelection": {
+            "type": "bool",
+            "defaultValue": null,
+            "description": {
+                "en": "Gets or sets whether to allow slices to be selected.",
+                "jp": "スライスの選択を許可するかどうかを取得または設定します。"
+            }
+        },
+        "bezierPoints": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "Gets or sets values for upper and lower bezier points. That option has effect only when useBezierCurve is enabled.<br>    Value should provide 4 numeric values in range from 0 to 1 separated by space character.<br>    The first number defines upper-x position, second: upper-y, third: lower-x, fourth: lower-y.<br>    The null or invalid value will reset internal default, which is \"0.5 0 0.5 1\".<br>    Example:<br>    bezierPoints: \"0.4 0.1 0.6 1\"",
+                "jp": "ベジエ ポイントの上または下の値を取得または設定します。オプションは、useBezierCurve が有効な場合のみ効果があります。<br>    値は、空白文字で区切られた 0 から 1 の範囲の 4 つの数値を提供します。<br>    最初の数字は、x の上の位置、 2 番目は y の上の位置、3 番目は x の下の位置、4 番目は y の下の位置を定義します。<br>    null または無効な値が内部デフォト (\"0.5 0 0.5 1\") をリセットします。<br>    例:<br>    bezierPoints: \"0.4 0.1 0.6 1\"。"
+            }
+        },
+        "bottomEdgeWidth": {
+            "type": "number",
+            "defaultValue": 0.35,
+            "description": {
+                "en": "Gets or sets the percentage (from near 0 to 1) of space the bottom edge of the funnel should take.",
+                "jp": "ファンネルに必要な下端のスペースの割合 (0 から 1) を取得または設定します。"
+            }
+        },
+        "brushes": {
+            "type": "array",
+            "defaultValue": null,
+            "description": {
+                "en": "Gets or sets the Brushes property.<br> The brushes property defines the palette from which automatically assigned brushes are selected.<br> The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
+                "jp": "Brushes プロパティを取得または設定します。<br>自動的に割り当てられるブラシを選択するパレットは、ブラシ プロパティで定義します。<br>提供された値は、css 色文字列またはグラデーションを定義する JavaScript オブジェクトの配列である必要があります。最初の要素は、コレクションの補間モードを指定する RGB または HSV の文字列に設定するオプションがあります。"
+            },
+            "arrayMemberType": "string",
+            "schema": {
+                "name": {
+                    "type": "string",
+                    "required": true,
+                    "defaultValue": null,
+                    "processValueOnly": true
+                }
+            },
+            "designerDisplayProperty": "name"
+        },
+        "dataSource": {
+            "type": "custom",
+            "defaultValue": null,
+            "description": {
+                "en": "Can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself.",
+                "jp": "$.ig.DataSource が受け入れる有効なデータ ソースまたは $.ig.DataSource 自体のインスタンスが可能です。"
+            }
+        },
+        "formatInnerLabel": {
+            "type": "function",
+            "defaultValue": null,
+            "description": {
+                "en": "Gets or sets the formatter function for inner labels. Function should return string and it takes 3 parameters: 1st-value of item to format, 2nd-index of item within data, 3rd-reference to igFunnelChart.",
+                "jp": "インナー ラベルのフォーマッタ関数を取得または設定します。関数は文字列を返す必要があるため、3 つのパラメーターを取得します。最初のパラメーターは書式設定する項目の値、2 番目のパラメーターはデータ内の項目のインデックス、3 番目のパラメーターは igFunnelChart への参照です。"
+            }
+        },
+        "formatOuterLabel": {
+            "type": "function",
+            "defaultValue": null,
+            "description": {
+                "en": "Gets or sets the formatter function for outer labels. Function should return string and it takes 3 parameters: 1st-value of item to format, 2nd-index of item within data, 3rd-reference to igFunnelChart.",
+                "jp": "アウター ラベルのフォーマッタ関数を取得または設定します。関数は文字列を返す必要があるため、3 つのパラメーターを取得します。最初のパラメーターは書式設定する項目の値、2 番目のパラメーターはデータ内の項目のインデックス、3 番目のパラメーターは igFunnelChart への参照です。"
+            }
+        },
+        "funnelSliceDisplay": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "Gets or sets the how the heights of the funnel slices should be configured.",
+                "jp": "ファンネル スライスの高さを設定する方法を取得または設定します。"
+            },
+            "valueOptions": [
+                {
+                    "name": "uniform",
+                    "type": "string",
+                    "description": {
+                        "en": "The slice heights should be uniform.",
+                        "jp": "スライスの高さは均一である必要があります。"
+                    }
+                },
+                {
+                    "name": "weighted",
+                    "type": "string",
+                    "description": {
+                        "en": "The slice heights should be weighted by value.",
+                        "jp": "スライスの高さは値によって重み付けする必要があります。"
+                    }
+                }
+            ]
+        },
+        "innerLabelMemberPath": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "Gets or sets the InnerLabel mapping property for the current series object.",
+                "jp": "現在のシリーズ オブジェクトの InnerLabel マッピング プロパティを取得または設定します。"
+            }
+        },
+        "innerLabelVisibility": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "Gets or sets whether the inner labels are visible.",
+                "jp": "インナー ラベルが表示されるかどうかを取得または設定します。"
+            },
+            "valueOptions": [
+                {
+                    "name": "visible",
+                    "type": "string",
+                    "description": {
+                        "en": " ",
+                        "jp": " "
+                    }
+                },
+                {
+                    "name": "collapsed",
+                    "type": "string",
+                    "description": {
+                        "en": "",
+                        "jp": ""
+                    }
+                }
+            ]
+        },
+        "isInverted": {
+            "type": "bool",
+            "defaultValue": false,
+            "description": {
+                "en": "Gets or sets if the funnel should be rendered inverted.",
+                "jp": "ファンネルが反転して描画されるかどうかを取得または設定します。"
+            }
+        },
+        "legend": {
+            "type": "object",
+            "defaultValue": null,
+            "description": {
+                "en": "Gets or sets the Legend for the chart.<br>    The value of that option can be a string with the id of existing html element. That element should be empty and it will be used to create igChartLegend widget.<br>    If element was not found, then new DIV element is created and inserted into parent after chart element.<br>    Value of that option can be an object with member \"element\", which contains the id of legend-element.<br>    In this case, that object also may contain options supported by the igChartLegend widget, such as \"width\", \"height\" and events, such as \"legendItemMouseLeftButtonDown\", \"legendItemMouseEnter\", etc.<br>    Examples:<br>    legend: {}<br>    legend: \"idOfDiv\"<br>    legend: { element: \"idOfDiv\", width: 300 }<br>    legend: { legendItemMouseLeftButtonDown: function (evt, ui) { ui.chart.toggleSelection(ui.item); } }",
+                "jp": "チャートの凡例を取得または設定します。<br>    既存の html 要素の id のある文字列にできるオプションの値。要素は空で igChartLegend ウィジェットを作成するために使用されます。<br>    要素が見つからない場合、新しい DIV 要素が作成され、チャート要素の後の親に挿入されます。<br>    凡例要素の id を含む、メンバー要素のあるオブジェクトにできるオプションの値。<br>    この場合、オブジェクトは、幅、高さ、イベントなど igChartLegend ウィジェットでサポートされるオプションを含みます (legendItemMouseLeftButtonDown、legendItemMouseEnter など)。<br>    例:<br>    legend: {}<br>    legend: \"idOfDiv\"<br>    legend: { element: \"idOfDiv\", width: 300 }<br>    legend: { legendItemMouseLeftButtonDown: function (evt, ui) { ui.chart.toggleSelection(ui.item); } }"
+            },
+            "schema": {
+                "legend": {
+                    "type": "string",
+                    "required": true,
+                    "defaultValue": null,
+                    "description": {
+                        "en": "The value of that option can be a string with the id of existing html element. That element should be empty and it will be used to create igChartLegend widget.<br>    If element was not found, then new DIV element is created and inserted into parent after chart element.<br>    Value of that option can be an object with member \"element\", which contains the id of legend-element.<br>    In this case, that object also may contain options supported by the igChartLegend widget, such as \"width\", \"height\" and events, such as \"legendItemMouseLeftButtonDown\", \"legendItemMouseEnter\", etc.<br>    Examples:<br>    legend: {}<br>    legend: \"idOfDiv\"<br>    legend: { element: \"idOfDiv\", width: 300 }<br>    legend: { legendItemMouseLeftButtonDown: function (evt, ui) { ui.chart.toggleSelection(ui.item); } }",
+                        "jp": "既存の html 要素の id のある文字列にできるオプションの値。要素は空で igChartLegend ウィジェットを作成するために使用されます。<br>    要素が見つからない場合、新しい DIV 要素が作成され、チャート要素の後の親に挿入されます。<br>    凡例要素の id を含む、メンバー要素のあるオブジェクトにできるオプションの値。<br>    この場合、オブジェクトは、幅、高さ、イベントなど igChartLegend ウィジェットでサポートされるオプションを含みます (legendItemMouseLeftButtonDown、legendItemMouseEnter など)。<br>    例:<br>    legend: {}<br>    legend: \"idOfDiv\"<br>    legend: { element: \"idOfDiv\", width: 300 }<br>    legend: { legendItemMouseLeftButtonDown: function (evt, ui) { ui.chart.toggleSelection(ui.item); } }"
+                    }
+                }
+            }
+        },
+        "outerLabelAlignment": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "Gets or sets which side of the chart the outer labels should appear.",
+                "jp": "アウター ラベルを表示するチャートの端を取得または設定します。"
+            },
+            "valueOptions": [
+                {
+                    "name": "left",
+                    "type": "string",
+                    "description": {
+                        "en": "The labels will be displayed to the left of the chart.",
+                        "jp": "ラベルはチャートの左側に表示されます。"
+                    }
+                },
+                {
+                    "name": "right",
+                    "type": "string",
+                    "description": {
+                        "en": "The labels will be displayed to the right of the chart.",
+                        "jp": "ラベルはチャートの右側に表示されます。"
+                    }
+                }
+            ]
+        },
+        "outerLabelMemberPath": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "Gets or sets the OuterLabel mapping property for the current series object.",
+                "jp": "現在のシリーズ オブジェクトの OuterLabel マッピング プロパティを取得または設定します。"
+            }
+        },
+        "outerLabelVisibility": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "Gets or sets whether the outer labels are visible.",
+                "jp": "アウター ラベルが表示されるかどうかを設定または取得します。"
+            },
+            "valueOptions": [
+                {
+                    "name": "visible",
+                    "type": "string",
+                    "description": {
+                        "en": " ",
+                        "jp": " "
+                    }
+                },
+                {
+                    "name": "collapsed",
+                    "type": "string",
+                    "description": {
+                        "en": "",
+                        "jp": ""
+                    }
+                }
+            ]
+        },
+        "outlines": {
+            "type": "array",
+            "defaultValue": null,
+            "description": {
+                "en": "Gets or sets the Outlines property.<br> The Outlines property defines the palette from which automatically assigned Outlines are selected.<br> The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
+                "jp": "Outlines プロパティを取得または設定します。<br>Outlines プロパティは、選択される自動的に割り当てられる Outlines のパレットを定義されます。<br>提供された値は、css 色文字列またはグラデーションを定義する JavaScript オブジェクトの配列である必要があります。最初の要素は、コレクションの補間モードを指定する RGB または HSV の文字列に設定するオプションがあります。"
+            },
+            "arrayMemberType": "string",
+            "schema": {
+                "name": {
+                    "type": "string",
+                    "required": true,
+                    "defaultValue": null,
+                    "processValueOnly": true,
+                    "description": {
+                        "en": "Name of the range brush",
+                        "jp": "範囲ブラシの名前"
+                    }
+                }
+            },
+            "designerDisplayProperty": "name"
+        },
+        "outlineThickness": {
+            "type": "number",
+            "defaultValue": -1.0,
+            "description": {
+                "en": "Gets or sets the thickness of outline around slices.",
+                "jp": "スライスの周りのアウトラインの太さを取得または設定します。"
+            }
+        },
+        "selectedSliceStyle": {
+            "type": "object",
+            "defaultValue": null,
+            "description": {
+                "en": "Gets or sets the style to use for selected slices.<br> That can be used to set stroke (outline color), fill (background color) and opacity.",
+                "jp": "選択されているスライスに使用するスタイルを設定または取得します。<br>ストローク (アウトラインの色)、塗りつぶし (背景色)、不透明度を設定するために使用できます。"
+            },
+            "schema": {
+                "fill": {
+                    "type": "string",
+                    "defaultValue": null,
+                    "description": {
+                        "en": "Defines the fill color of the selected slice",
+                        "jp": "選択されたスライスの塗りつぶし色を定義します。"
+                    }
+                },
+                "stroke": {
+                    "type": "string",
+                    "defaultValue": null,
+                    "description": {
+                        "en": "Defines the stroke color of the selected slice",
+                        "jp": "選択されたスライスのストローク色を定義します。"
+                    }
+                },
+                "strokeThickness": {
+                    "type": "number",
+                    "defaultValue": null,
+                    "description": {
+                        "en": "Defines the fill stroke thickness of the selected slice",
+                        "jp": "選択されたスライスの塗りつぶしストローク太さを定義します。"
+                    }
+                },
+                "opacity": {
+                    "type": "number",
+                    "defaultValue": null,
+                    "description": {
+                        "en": "Defines the opacity of the selected slice",
+                        "jp": "選択されたスライスの不透明度を定義します。"
+                    }
+                }
+            }
+        },
+        "transitionDuration": {
+            "type": "number",
+            "defaultValue": 0.0,
+            "description": {
+                "en": "Gets or sets how long the animations should take to run.",
+                "jp": "アニメーションが実行される期間を取得または設定します。"
+            }
+        },
+        "unselectedSliceStyle": {
+            "type": "object",
+            "defaultValue": null,
+            "description": {
+                "en": "Gets or sets the style to use for unselected slices.<br> That can be used to set stroke (outline color), fill (background color) and opacity.",
+                "jp": "選択されていないスライスに使用するスタイルを設定または取得します。<br>ストローク (アウトラインの色)、塗りつぶし (背景色)、不透明度を設定するために使用できます。"
+            },
+            "schema": {
+                "fill": {
+                    "type": "string",
+                    "defaultValue": null,
+                    "description": {
+                        "en": "Defines the fill color of the selected slice",
+                        "jp": "選択されたスライスの塗りつぶし色を定義します。"
+                    }
+                },
+                "stroke": {
+                    "type": "string",
+                    "defaultValue": null,
+                    "description": {
+                        "en": "Defines the stroke color of the selected slice",
+                        "jp": "選択されたスライスのストローク色を定義します。"
+                    }
+                },
+                "strokeThickness": {
+                    "type": "number",
+                    "defaultValue": null,
+                    "description": {
+                        "en": "Defines the fill stroke thickness of the selected slice",
+                        "jp": "選択されたスライスの塗りつぶしストローク太さを定義します。"
+                    }
+                },
+                "opacity": {
+                    "type": "number",
+                    "defaultValue": null,
+                    "description": {
+                        "en": "Defines the opacity of the selected slice",
+                        "jp": "選択されたスライスの不透明度を定義します。"
+                    }
+                }
+            }
+        },
+        "useBezierCurve": {
+            "type": "bool",
+            "defaultValue": null,
+            "description": {
+                "en": "Gets or sets whether to use a bezier curve to define the funnel.",
+                "jp": "ファンネルを定義するためにベジエ曲線を使用するかどうかを取得または設定します。"
+            }
+        },
+        "useOuterLabelsForLegend": {
+            "type": "bool",
+            "defaultValue": null,
+            "description": {
+                "en": "Gets or sets whether to use the outer labels to identify the legend items.",
+                "jp": "アウター ラベルを使用して凡例項目を識別するかどうかを取得または設定します。"
+            }
+        },
+        "useUnselectedStyle": {
+            "type": "bool",
+            "defaultValue": false,
+            "description": {
+                "en": "Gets or sets whether to use the unselected style on unselected slices.",
+                "jp": "未選択のスライスに未選択のスライスを使用するかどうかを取得または設定します。"
+            }
+        },
+        "valueMemberPath": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "Gets or sets the value member path for the funnel chart.",
+                "jp": "ファンネル チャートの値メンバー パスを取得または設定します。"
+            }
+        },
+        "width": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "Width of the Funnel Chart",
+                "jp": "ファンネル チャートの幅"
+            }
+        },
+        "height": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "Height of the Funnel Chart",
+                "jp": "ファンネル チャートの高さ"
+            }
+        }
     }
-  },
-  "properties": {
-    "allowSliceSelection": {
-      "type": "bool",
-      "defaultValue": null,
-      "description": {
-		"en": "Gets or sets whether to allow slices to be selected.",
-		"jp": "スライスの選択を許可するかどうかを取得または設定します。"
-	}
-    },
-    "bezierPoints": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "Gets or sets values for upper and lower bezier points. That option has effect only when useBezierCurve is enabled.<br>    Value should provide 4 numeric values in range from 0 to 1 separated by space character.<br>    The first number defines upper-x position, second: upper-y, third: lower-x, fourth: lower-y.<br>    The null or invalid value will reset internal default, which is \"0.5 0 0.5 1\".<br>    Example:<br>    bezierPoints: \"0.4 0.1 0.6 1\"",
-		"jp": "ベジエ ポイントの上または下の値を取得または設定します。オプションは、useBezierCurve が有効な場合のみ効果があります。<br>    値は、空白文字で区切られた 0 から 1 の範囲の 4 つの数値を提供します。<br>    最初の数字は、x の上の位置、 2 番目は y の上の位置、3 番目は x の下の位置、4 番目は y の下の位置を定義します。<br>    null または無効な値が内部デフォト (\"0.5 0 0.5 1\") をリセットします。<br>    例:<br>    bezierPoints: \"0.4 0.1 0.6 1\"。"
-	}
-    },
-    "bottomEdgeWidth": {
-      "type": "number",
-      "defaultValue": 0.35,
-      "description": {
-		"en": "Gets or sets the percentage (from near 0 to 1) of space the bottom edge of the funnel should take.",
-		"jp": "ファンネルに必要な下端のスペースの割合 (0 から 1) を取得または設定します。"
-	}
-    },
-    "brushes": {
-      "type": "array",
-      "defaultValue": null,
-      "description": {
-		"en": "Gets or sets the Brushes property.<br> The brushes property defines the palette from which automatically assigned brushes are selected.<br> The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
-		"jp": "Brushes プロパティを取得または設定します。<br>自動的に割り当てられるブラシを選択するパレットは、ブラシ プロパティで定義します。<br>提供された値は、css 色文字列またはグラデーションを定義する JavaScript オブジェクトの配列である必要があります。最初の要素は、コレクションの補間モードを指定する RGB または HSV の文字列に設定するオプションがあります。"
-	},
-      "arrayMemberType": "string",
-	  "schema": {
-		"name": {
-			"type": "string",
-			"required": true,
-			"defaultValue": null,
-			"processValueOnly" : true			
-		}
-		},
-		"designerDisplayProperty": "name"
-    },
-    "dataSource": {
-        "type": "custom",
-        "defaultValue": null,
-        "description": {
-		"en": "Can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself.",
-		"jp": "$.ig.DataSource が受け入れる有効なデータ ソースまたは $.ig.DataSource 自体のインスタンスが可能です。"
-	}
-    },
-    "formatInnerLabel": {
-      "type": "function",
-      "defaultValue": null,
-      "description": {
-		"en": "Gets or sets the formatter function for inner labels. Function should return string and it takes 3 parameters: 1st-value of item to format, 2nd-index of item within data, 3rd-reference to igFunnelChart.",
-		"jp": "インナー ラベルのフォーマッタ関数を取得または設定します。関数は文字列を返す必要があるため、3 つのパラメーターを取得します。最初のパラメーターは書式設定する項目の値、2 番目のパラメーターはデータ内の項目のインデックス、3 番目のパラメーターは igFunnelChart への参照です。"
-	}
-    },
-    "formatOuterLabel": {
-      "type": "function",
-      "defaultValue": null,
-      "description": {
-		"en": "Gets or sets the formatter function for outer labels. Function should return string and it takes 3 parameters: 1st-value of item to format, 2nd-index of item within data, 3rd-reference to igFunnelChart.",
-		"jp": "アウター ラベルのフォーマッタ関数を取得または設定します。関数は文字列を返す必要があるため、3 つのパラメーターを取得します。最初のパラメーターは書式設定する項目の値、2 番目のパラメーターはデータ内の項目のインデックス、3 番目のパラメーターは igFunnelChart への参照です。"
-	}
-    },
-    "funnelSliceDisplay": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "Gets or sets the how the heights of the funnel slices should be configured.",
-		"jp": "ファンネル スライスの高さを設定する方法を取得または設定します。"
-	},
-      "valueOptions": [
-        {
-          "name": "uniform",
-          "type": "string",
-          "description": {
-		"en": "The slice heights should be uniform.",
-		"jp": "スライスの高さは均一である必要があります。"
-	}
-        },
-        {
-          "name": "weighted",
-          "type": "string",
-          "description": {
-		"en": "The slice heights should be weighted by value.",
-		"jp": "スライスの高さは値によって重み付けする必要があります。"
-	}
-        }
-      ]
-    },
-    "innerLabelMemberPath": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "Gets or sets the InnerLabel mapping property for the current series object.",
-		"jp": "現在のシリーズ オブジェクトの InnerLabel マッピング プロパティを取得または設定します。"
-	}
-    },
-    "innerLabelVisibility": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "Gets or sets whether the inner labels are visible.",
-		"jp": "インナー ラベルが表示されるかどうかを取得または設定します。"
-	},
-      "valueOptions": [
-        {
-          "name": "visible",
-          "type": "string",
-          "description": {
-		"en": " ",
-		"jp": " "
-	}
-        },
-        {
-          "name": "collapsed",
-          "type": "string",
-          "description": {
-		"en": "",
-		"jp": ""
-	}
-        }
-      ]
-    },
-    "isInverted": {
-      "type": "bool",
-      "defaultValue": false,
-      "description": {
-		"en": "Gets or sets if the funnel should be rendered inverted.",
-		"jp": "ファンネルが反転して描画されるかどうかを取得または設定します。"
-	}
-    },
-    "legend": {
-      "type": "object",
-      "defaultValue": null,
-      "description": {
-		"en": "Gets or sets the Legend for the chart.<br>    The value of that option can be a string with the id of existing html element. That element should be empty and it will be used to create igChartLegend widget.<br>    If element was not found, then new DIV element is created and inserted into parent after chart element.<br>    Value of that option can be an object with member \"element\", which contains the id of legend-element.<br>    In this case, that object also may contain options supported by the igChartLegend widget, such as \"width\", \"height\" and events, such as \"legendItemMouseLeftButtonDown\", \"legendItemMouseEnter\", etc.<br>    Examples:<br>    legend: {}<br>    legend: \"idOfDiv\"<br>    legend: { element: \"idOfDiv\", width: 300 }<br>    legend: { legendItemMouseLeftButtonDown: function (evt, ui) { ui.chart.toggleSelection(ui.item); } }",
-		"jp": "チャートの凡例を取得または設定します。<br>    既存の html 要素の id のある文字列にできるオプションの値。要素は空で igChartLegend ウィジェットを作成するために使用されます。<br>    要素が見つからない場合、新しい DIV 要素が作成され、チャート要素の後の親に挿入されます。<br>    凡例要素の id を含む、メンバー要素のあるオブジェクトにできるオプションの値。<br>    この場合、オブジェクトは、幅、高さ、イベントなど igChartLegend ウィジェットでサポートされるオプションを含みます (legendItemMouseLeftButtonDown、legendItemMouseEnter など)。<br>    例:<br>    legend: {}<br>    legend: \"idOfDiv\"<br>    legend: { element: \"idOfDiv\", width: 300 }<br>    legend: { legendItemMouseLeftButtonDown: function (evt, ui) { ui.chart.toggleSelection(ui.item); } }"
-	},
-	   "schema": {
-			"legend": {
-			  "type": "string",
-			  "required": true,
-			  "defaultValue": null,
-			  "description": {
-		"en": "The value of that option can be a string with the id of existing html element. That element should be empty and it will be used to create igChartLegend widget.<br>    If element was not found, then new DIV element is created and inserted into parent after chart element.<br>    Value of that option can be an object with member \"element\", which contains the id of legend-element.<br>    In this case, that object also may contain options supported by the igChartLegend widget, such as \"width\", \"height\" and events, such as \"legendItemMouseLeftButtonDown\", \"legendItemMouseEnter\", etc.<br>    Examples:<br>    legend: {}<br>    legend: \"idOfDiv\"<br>    legend: { element: \"idOfDiv\", width: 300 }<br>    legend: { legendItemMouseLeftButtonDown: function (evt, ui) { ui.chart.toggleSelection(ui.item); } }",
-		"jp": "既存の html 要素の id のある文字列にできるオプションの値。要素は空で igChartLegend ウィジェットを作成するために使用されます。<br>    要素が見つからない場合、新しい DIV 要素が作成され、チャート要素の後の親に挿入されます。<br>    凡例要素の id を含む、メンバー要素のあるオブジェクトにできるオプションの値。<br>    この場合、オブジェクトは、幅、高さ、イベントなど igChartLegend ウィジェットでサポートされるオプションを含みます (legendItemMouseLeftButtonDown、legendItemMouseEnter など)。<br>    例:<br>    legend: {}<br>    legend: \"idOfDiv\"<br>    legend: { element: \"idOfDiv\", width: 300 }<br>    legend: { legendItemMouseLeftButtonDown: function (evt, ui) { ui.chart.toggleSelection(ui.item); } }"
-	}
-			}
-		}
-    },
-    "outerLabelAlignment": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "Gets or sets which side of the chart the outer labels should appear.",
-		"jp": "アウター ラベルを表示するチャートの端を取得または設定します。"
-	},
-      "valueOptions": [
-        {
-          "name": "left",
-          "type": "string",
-          "description": {
-		"en": "The labels will be displayed to the left of the chart.",
-		"jp": "ラベルはチャートの左側に表示されます。"
-	}
-        },
-        {
-          "name": "right",
-          "type": "string",
-          "description": {
-		"en": "The labels will be displayed to the right of the chart.",
-		"jp": "ラベルはチャートの右側に表示されます。"
-	}
-        }
-      ]
-    },
-    "outerLabelMemberPath": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "Gets or sets the OuterLabel mapping property for the current series object.",
-		"jp": "現在のシリーズ オブジェクトの OuterLabel マッピング プロパティを取得または設定します。"
-	}
-    },
-    "outerLabelVisibility": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "Gets or sets whether the outer labels are visible.",
-		"jp": "アウター ラベルが表示されるかどうかを設定または取得します。"
-	},
-      "valueOptions": [
-        {
-          "name": "visible",
-          "type": "string",
-          "description": {
-		"en": " ",
-		"jp": " "
-	}
-        },
-        {
-          "name": "collapsed",
-          "type": "string",
-          "description": {
-		"en": "",
-		"jp": ""
-	}
-        }
-      ]
-    },
-    "outlines": {
-      "type": "array",
-      "defaultValue": null,
-      "description": {
-		"en": "Gets or sets the Outlines property.<br> The Outlines property defines the palette from which automatically assigned Outlines are selected.<br> The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
-		"jp": "Outlines プロパティを取得または設定します。<br>Outlines プロパティは、選択される自動的に割り当てられる Outlines のパレットを定義されます。<br>提供された値は、css 色文字列またはグラデーションを定義する JavaScript オブジェクトの配列である必要があります。最初の要素は、コレクションの補間モードを指定する RGB または HSV の文字列に設定するオプションがあります。"
-	},
-      "arrayMemberType": "string",
-	  "schema": {
-		"name": {
-			"type": "string",
-			"required": true,
-			"defaultValue": null,
-			"processValueOnly" : true,
-			"description": {
-		"en": "Name of the range brush",
-		"jp": "範囲ブラシの名前"
-	}
-		}
-		},
-		"designerDisplayProperty": "name"
-    },
-    "outlineThickness": {
-      "type": "number",
-      "defaultValue": -1.0,
-      "description": {
-		"en": "Gets or sets the thickness of outline around slices.",
-		"jp": "スライスの周りのアウトラインの太さを取得または設定します。"
-	}
-    },
-    "selectedSliceStyle": {
-      "type": "object",
-      "defaultValue": null,
-      "description": {
-		"en": "Gets or sets the style to use for selected slices.<br> That can be used to set stroke (outline color), fill (background color) and opacity.",
-		"jp": "選択されているスライスに使用するスタイルを設定または取得します。<br>ストローク (アウトラインの色)、塗りつぶし (背景色)、不透明度を設定するために使用できます。"
-	},
-      "schema": {
-        "fill": {
-          "type": "string",
-          "defaultValue": null,
-          "description": {
-		"en": "Defines the fill color of the selected slice",
-		"jp": "選択されたスライスの塗りつぶし色を定義します。"
-	}
-        },
-        "stroke": {
-          "type": "string",
-          "defaultValue": null,
-          "description": {
-		"en": "Defines the stroke color of the selected slice",
-		"jp": "選択されたスライスのストローク色を定義します。"
-	}
-        },
-        "strokeThickness": {
-          "type": "number",
-          "defaultValue": null,
-          "description": {
-		"en": "Defines the fill stroke thickness of the selected slice",
-		"jp": "選択されたスライスの塗りつぶしストローク太さを定義します。"
-	}
-        }, 
-        "opacity": {
-          "type": "number",
-          "defaultValue": null,
-          "description": {
-		"en": "Defines the opacity of the selected slice",
-		"jp": "選択されたスライスの不透明度を定義します。"
-	}
-        }
-      }
-    },
-    "transitionDuration": {
-      "type": "number",
-      "defaultValue": 0.0,
-      "description": {
-		"en": "Gets or sets how long the animations should take to run.",
-		"jp": "アニメーションが実行される期間を取得または設定します。"
-	}
-    },
-    "unselectedSliceStyle": {
-      "type": "object",
-      "defaultValue": null,
-      "description": {
-		"en": "Gets or sets the style to use for unselected slices.<br> That can be used to set stroke (outline color), fill (background color) and opacity.",
-		"jp": "選択されていないスライスに使用するスタイルを設定または取得します。<br>ストローク (アウトラインの色)、塗りつぶし (背景色)、不透明度を設定するために使用できます。"
-	},
-	   "schema": {
-        "fill": {
-          "type": "string",
-          "defaultValue": null,
-          "description": {
-		"en": "Defines the fill color of the selected slice",
-		"jp": "選択されたスライスの塗りつぶし色を定義します。"
-	}
-        },
-        "stroke": {
-          "type": "string",
-          "defaultValue": null,
-          "description": {
-		"en": "Defines the stroke color of the selected slice",
-		"jp": "選択されたスライスのストローク色を定義します。"
-	}
-        },
-        "strokeThickness": {
-          "type": "number",
-          "defaultValue": null,
-          "description": {
-		"en": "Defines the fill stroke thickness of the selected slice",
-		"jp": "選択されたスライスの塗りつぶしストローク太さを定義します。"
-	}
-        }, 
-        "opacity": {
-          "type": "number",
-          "defaultValue": null,
-          "description": {
-		"en": "Defines the opacity of the selected slice",
-		"jp": "選択されたスライスの不透明度を定義します。"
-	}
-        }
-      }
-    },
-    "useBezierCurve": {
-      "type": "bool",
-      "defaultValue": null,
-      "description": {
-		"en": "Gets or sets whether to use a bezier curve to define the funnel.",
-		"jp": "ファンネルを定義するためにベジエ曲線を使用するかどうかを取得または設定します。"
-	}
-    },
-    "useOuterLabelsForLegend": {
-      "type": "bool",
-      "defaultValue": null,
-      "description": {
-		"en": "Gets or sets whether to use the outer labels to identify the legend items.",
-		"jp": "アウター ラベルを使用して凡例項目を識別するかどうかを取得または設定します。"
-	}
-    },
-    "useUnselectedStyle": {
-      "type": "bool",
-      "defaultValue": false,
-      "description": {
-		"en": "Gets or sets whether to use the unselected style on unselected slices.",
-		"jp": "未選択のスライスに未選択のスライスを使用するかどうかを取得または設定します。"
-	}
-    },
-    "valueMemberPath": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "Gets or sets the value member path for the funnel chart.",
-		"jp": "ファンネル チャートの値メンバー パスを取得または設定します。"
-	}
-    },
-    "width": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "Width of the Funnel Chart",
-		"jp": "ファンネル チャートの幅"
-	}
-    },
-    "height": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "Height of the Funnel Chart",
-		"jp": "ファンネル チャートの高さ"
-	}
-    }
-  }
 }

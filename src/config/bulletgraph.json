@@ -1,625 +1,625 @@
 ﻿{
-  "overview": null,
-  "name": "ui.igBulletGraph",
-  "category": null,
-  "visual": true,
-  "events": {
-    "alignLabel": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+    "overview": null,
+    "name": "ui.igBulletGraph",
+    "category": null,
+    "visual": true,
+    "events": {
+        "alignLabel": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "",
+                "jp": ""
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
+        "formatLabel": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "",
+                "jp": ""
+            }
         }
-      ],
-      "description": {
-		"en": "",
-		"jp": ""
-	}
     },
-    "formatLabel": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+    "properties": {
+        "backingBrush": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "Gets or sets the brush to use to fill the backing of the bullet graph.",
+                "jp": "ブレット グラフのバッキングを塗りつぶすために使用するブラシを取得または設定します。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
+        "width": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "The width of the BulletGraph. It can be set as a number in pixels, string (px) or percentage (%).",
+                "jp": "BulletGraph の幅。ピクセル、文字列 (px)、またはパーセンテージ (%) で数字として設定できます。"
+            }
+        },
+        "height": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "The height of the BulletGraph. It can be set as a number in pixels, string (px) or percentage (%).",
+                "jp": "BulletGraph の高さ。ピクセル、文字列 (px)、またはパーセンテージ (%) で数字として設定できます。"
+            }
+        },
+        "backingInnerExtent": {
+            "type": "number",
+            "defaultValue": 0.0,
+            "description": {
+                "en": "Gets or sets the inner extent of the bullet graph backing.",
+                "jp": "ブレット グラフ バッキングの内側範囲を取得または設定します。"
+            }
+        },
+        "backingOuterExtent": {
+            "type": "number",
+            "defaultValue": 1.0,
+            "description": {
+                "en": "Gets or sets the outer extent of the bullet graph backing.",
+                "jp": "ブレット グラフ バッキングの外側範囲を取得または設定します。"
+            }
+        },
+        "backingOutline": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "Gets or sets the brush to use for the outline of the backing.",
+                "jp": "バッキングのアウトラインを使用するブラシを取得または設定します。"
+            }
+        },
+        "backingStrokeThickness": {
+            "type": "number",
+            "defaultValue": 2.0,
+            "description": {
+                "en": "Gets or sets the stroke thickness of the backing outline.",
+                "jp": "バッキング アウトラインのストロークの太さを取得または設定します。"
+            }
+        },
+        "font": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "Gets or sets the font.",
+                "jp": "フォントを取得または設定します。"
+            }
+        },
+        "fontBrush": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "Gets or sets the brush to use for the label font.",
+                "jp": "ラベル フォントを使用するためのブラシを取得または設定します。"
+            }
+        },
+        "interval": {
+            "type": "number",
+            "defaultValue": 0.0,
+            "description": {
+                "en": "Gets or sets the interval to use for the scale.",
+                "jp": "スケールに使用する間隔を取得または設定します。"
+            }
+        },
+        "isScaleInverted": {
+            "type": "bool",
+            "defaultValue": false,
+            "description": {
+                "en": "Gets or sets a value indicating whether the scale is inverted.<br> When the scale is inverted the direction in which the scale values increase is right to left.",
+                "jp": "スケールが反転されるかどうかを示す値を取得または設定します。<br>スケールが反転された場合、スケール値が右から左へ増加します。"
+            }
+        },
+        "labelExtent": {
+            "type": "number",
+            "defaultValue": 0.0,
+            "description": {
+                "en": "Gets or sets the position at which to put the labels as a value from 0 to 1, measured from the bottom of the scale.<br> Values further from zero than 1 can be used to hide the labels of the bullet graph.",
+                "jp": "スケールの下から計測される、0 から 1 の値でラベルを配置する位置を取得または設定します。<br>0.5 から 1 の間の値を使用し、ブレット グラフのラベルを非表示できます。"
+            }
+        },
+        "labelInterval": {
+            "type": "number",
+            "defaultValue": 0.0,
+            "description": {
+                "en": "Gets or sets the interval to use for rendering labels. This defaults to be the same interval as the tickmarks on the scale.",
+                "jp": "ラベルの描画に使用する間隔を取得または設定します。このデフォルトは、スケールの目盛と同じ間隔です。"
+            }
+        },
+        "labelsPostInitial": {
+            "type": "number",
+            "defaultValue": 0.0,
+            "description": {
+                "en": "A value to start adding labels, added to the scale's MinimumValue.",
+                "jp": "ラベルの追加を開始するための値で、スケールの MinimumValue に追加されます。"
+            }
+        },
+        "labelsPreTerminal": {
+            "type": "number",
+            "defaultValue": 0.0,
+            "description": {
+                "en": "A value to stop adding labels, subtracted from the scale's MaximumValue.",
+                "jp": "スケールの MaximumValue から差し引かれた、ラベルの追加を停止する値。"
+            }
+        },
+        "maximumValue": {
+            "type": "number",
+            "defaultValue": 100.0,
+            "description": {
+                "en": "Gets or sets the maximum value of the scale.",
+                "jp": "スケールの最大値を取得または設定します。"
+            }
+        },
+        "minimumValue": {
+            "type": "number",
+            "defaultValue": 0.0,
+            "description": {
+                "en": "Gets or sets the minimum value of the scale.",
+                "jp": "スケールの最小値を取得または設定します。"
+            }
+        },
+        "minorTickBrush": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "Gets or sets the brush to use for the minor tickmarks.",
+                "jp": "副目盛に使用するブラシを取得または設定します。"
+            }
+        },
+        "minorTickCount": {
+            "type": "number",
+            "defaultValue": 3.0,
+            "description": {
+                "en": "Gets or sets the number of minor tickmarks to place between major tickmarks.",
+                "jp": "2 つの主要目盛間の補助目盛の数を取得または設定します。"
+            }
+        },
+        "minorTickEndExtent": {
+            "type": "number",
+            "defaultValue": 0.2,
+            "description": {
+                "en": "Gets or sets the position at which to stop rendering the minor tickmarks as a value from 0 to 1, measured from the front/bottom of the bullet graph.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.",
+                "jp": "ブレットグラフの前/下から計測される、0 から 1 の値で副目盛の描画を停止する位置を取得または設定します。<br>0.5 から 1 の間の値を使用し、ブレットグラフの標準サイズを超えて拡張できます。"
+            }
+        },
+        "minorTickStartExtent": {
+            "type": "number",
+            "defaultValue": 0.06,
+            "description": {
+                "en": "Gets or sets the position at which to start rendering the minor tickmarks as a value from 0 to 1, measured from the front/bottom of the bullet graph.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.",
+                "jp": "ブレットグラフの前/下から計測された、0 から 1 の値で副目盛の描画を開始する位置を取得または設定します。<br>0.5 から 1 の間の値を使用し、ブレットグラフの標準サイズを超えて拡張できます。"
+            }
+        },
+        "minorTickStrokeThickness": {
+            "type": "number",
+            "defaultValue": 1.0,
+            "description": {
+                "en": "Gets or sets the stroke thickness to use when rendering minor ticks.",
+                "jp": "副メモリを描画がする際に使用するストロークの太さを取得または設定します。"
+            }
+        },
+        "orientation": {
+            "type": "string",
+            "defaultValue": "horizontal",
+            "description": {
+                "en": "Gets or sets the orientation of the scale.",
+                "jp": "スケールの向きを取得または設定します。"
+            },
+            "valueOptions": [
+                {
+                    "name": "horizontal",
+                    "type": "string",
+                    "description": {
+                        "en": "Gets or sets the orientation of the scale to horizontal",
+                        "jp": "スケールの向きを水平方向に設定します。"
+                    }
+                },
+                {
+                    "name": "vertical",
+                    "type": "string",
+                    "description": {
+                        "en": "Get or sets the orientation of the scale to vertical",
+                        "jp": "スケールの向きを垂直方向に設定します。"
+                    }
+                }
+            ]
+        },
+        "rangeBrushes": {
+            "type": "array",
+            "defaultValue": null,
+            "description": {
+                "en": "Gets or sets a collection of brushes to be used as the palette for bullet graph ranges.<br> The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
+                "jp": "ブレット グラフ範囲のパレットとして使用されるブラシのコレクションを取得または設定します。<br>提供された値は、css 色文字列またはグラデーションを定義する JavaScript オブジェクトの配列である必要があります。最初の要素は、コレクションの補間モードを指定する RGB または HSV の文字列に設定するオプションがあります。"
+            },
+            "arrayMemberType": "string",
+            "schema": {
+                "value": {
+                    "type": "string",
+                    "required": true,
+                    "defaultValue": null,
+                    "processValueOnly": true,
+                    "description": {
+                        "en": "Name of the range brush",
+                        "jp": "範囲ブラシの名前"
+                    }
+                }
+            },
+            "designerDisplayProperty": "value"
+        },
+        "rangeInnerExtent": {
+            "type": "number",
+            "defaultValue": 0.2,
+            "description": {
+                "en": "Gets or sets the position at which to start rendering the ranges, measured from the front/bottom of the control as a value from 0 to 1.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.",
+                "jp": "0 から 1 の値でコントロールの前と下から計測された、描画を開始する位置を取得または設定します。<br>0.5 から 1 の間の値を使用し、ブレットグラフの標準サイズを超えて拡張できます。"
+            }
+        },
+        "rangeOuterExtent": {
+            "type": "number",
+            "defaultValue": 0.95,
+            "description": {
+                "en": "Gets or sets the position at which to stop rendering the range as a value from 0 to 1 measured from the front/bottom of the bullet graph.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.",
+                "jp": "ブレットグラフの前/下から計測された、0 から 1 の値で範囲の描画を停止する位置を取得または設定します。<br>0.5 から 1 の間の値を使用し、ブレットグラフの標準サイズを超えて拡張できます。"
+            }
+        },
+        "rangeOutlines": {
+            "type": "array",
+            "defaultValue": null,
+            "description": {
+                "en": "Gets or sets a collection of brushes to be used as the palette for bullet graph outlines.<br> The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
+                "jp": "ブレット グラフ アウトラインのパレットとして使用されるブラシのコレクションを取得または設定します。<br>提供された値は、css 色文字列またはグラデーションを定義する JavaScript オブジェクトの配列である必要があります。最初の要素は、コレクションの補間モードを指定する RGB または HSV の文字列に設定するオプションがあります。"
+            },
+            "arrayMemberType": "string",
+            "schema": {
+                "value": {
+                    "type": "string",
+                    "required": true,
+                    "defaultValue": null,
+                    "processValueOnly": true,
+                    "description": {
+                        "en": "The value provided should be css color string or JavaScript object defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
+                        "jp": "提供された値は、css 色文字列またはグラデーションを定義する JavaScript オブジェクトである必要があります。最初の要素は、コレクションの補間モードを指定する RGB または HSV の文字列に設定するオプションがあります。"
+                    }
+                }
+            },
+            "designerDisplayProperty": "value"
+        },
+        "ranges": {
+            "type": "array",
+            "defaultValue": null,
+            "description": {
+                "en": "Gets or sets the scale ranges to render on the bullet graph.",
+                "jp": "ブレット グラフで描画するためのスケールの範囲を取得または設定します。"
+            },
+            "designerDisplayProperty": "name",
+            "schema": {
+                "name": {
+                    "type": "string",
+                    "defaultValue": null,
+                    "description": {
+                        "en": "Name of the range",
+                        "jp": "範囲の名前"
+                    }
+                },
+                "startValue": {
+                    "type": "number",
+                    "defaultValue": null,
+                    "description": {
+                        "en": "The start value of the range",
+                        "jp": "範囲の開始値。"
+                    }
+                },
+                "endValue": {
+                    "type": "number",
+                    "defaultValue": null,
+                    "description": {
+                        "en": "The end value of the range",
+                        "jp": "範囲の終値。"
+                    }
+                },
+                "brush": {
+                    "type": "string",
+                    "defaultValue": null,
+                    "description": {
+                        "en": "Gets or sets the brush for the entire range.",
+                        "jp": "範囲の全体のブラシを取得または設定します。"
+                    }
+                },
+                "startExtent": {
+                    "type": "number",
+                    "defaultValue": 0,
+                    "description": {
+                        "en": "Gets or sets the starting value of the extent of the range.",
+                        "jp": "範囲のエクステントの開始値を取得または設定します。"
+                    }
+                },
+                "endExtent": {
+                    "type": "number",
+                    "defaultValue": 0,
+                    "description": {
+                        "en": "Gets or sets the ending value of the extent of the range.",
+                        "jp": "範囲のエクステントの終了値を取得または設定します。"
+                    }
+                },
+                "outline": {
+                    "type": "string",
+                    "defaultValue": null,
+                    "description": {
+                        "en": "Gets or sets the brush for the outline of the range.",
+                        "jp": "範囲のアウトラインのブラシを取得または設定します。"
+                    }
+                },
+                "remove": {
+                    "type": "bool",
+                    "defaultValue": false,
+                    "description": {
+                        "en": "Gets or sets the flag used to determine if the range should be removed. If set to true, the range (if existing) is removed.",
+                        "jp": "範囲を削除するかどうかを決定するフラッグを取得または設定します。true の場合、依存の範囲を削除します。"
+                    }
+                },
+                "strokeThickness": {
+                    "type": "number",
+                    "defaultValue": 0,
+                    "description": {
+                        "en": "Gets or sets the thickness of the range outline.",
+                        "jp": "範囲のアウトラインの太さを取得または設定します。"
+                    }
+                }
+            }
+        },
+        "rangeToolTipTemplate": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "Gets or sets the ranges' tooltip template.",
+                "jp": "範囲のツールチップ テンプレートを取得または設定します。"
+            }
+        },
+        "scaleEndExtent": {
+            "type": "number",
+            "defaultValue": 0.95,
+            "description": {
+                "en": "Gets or sets the position at which to stop rendering the scale as a value from 0 to 1, measured from the front/bottom of the bullet graph.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.",
+                "jp": "ブレットグラフの前/下から計測された、0 から 1 の値でスケールの描画を停止する位置を取得または設定します。<br>0.5 から 1 の間の値を使用し、ブレットグラフの標準サイズを超えて拡張できます。"
+            }
+        },
+        "scaleStartExtent": {
+            "type": "number",
+            "defaultValue": 0.05,
+            "description": {
+                "en": "Gets or sets the position at which to start rendering the scale, measured from the front/bottom of the bullet graph as a value from 0 to 1.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.",
+                "jp": "0 から 1 の値で ブレットグラフの前/下から計測される、実際値の形状の描画を開始する位置を取得または設定します。<br>0.5 から 1 の間の値を使用し、ブレットグラフの標準サイズを超えて拡張できます。"
+            }
+        },
+        "showToolTip": {
+            "type": "bool",
+            "defaultValue": null,
+            "description": {
+                "en": "Gets or sets a value indicating whether tooltips are enabled.",
+                "jp": "ツールチップが有効されるかどうかを示す値を取得または設定します。"
+            }
+        },
+        "showToolTipTimeout": {
+            "type": "number",
+            "defaultValue": 0.0,
+            "description": {
+                "en": "Gets or sets the time in milliseconds that tooltip appearance is delayed with.",
+                "jp": "ツールチップの表示を遅延するミリ秒を取得または設定します。"
+            }
+        },
+        "targetValue": {
+            "type": "number",
+            "defaultValue": 0.0,
+            "description": {
+                "en": "Gets or sets the value indicated by the target value bar.",
+                "jp": "ターゲット値バーで示された値を取得または設定します。"
+            }
+        },
+        "targetValueBreadth": {
+            "type": "number",
+            "defaultValue": 3.0,
+            "description": {
+                "en": "Get or sets the breadth of the target value element.",
+                "jp": "ターゲット値要素の幅を取得または設定します。"
+            }
+        },
+        "targetValueBrush": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "Gets or sets the brush to use when rendering the fill of the comparative marker.",
+                "jp": "比較マーカーの塗りつぶしを描画する際に使用するブラシを取得または設定します。"
+            }
+        },
+        "targetValueInnerExtent": {
+            "type": "number",
+            "defaultValue": 0.3,
+            "description": {
+                "en": "Gets or sets the position at which to start rendering the target value, measured from the front/bottom of the control as a value from 0 to 1.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.",
+                "jp": "0 から 1 の値でコントロールの前/下から計測される、ターゲット値の描画を開始する位置を取得または設定します。<br>0.5 から 1 の間の値を使用し、ブレットグラフの標準サイズを超えて拡張できます。"
+            }
+        },
+        "targetValueName": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "Gets or sets the name used for the target value. The name is displayed in the default target value tooltip.",
+                "jp": "ターゲット値に使用される名前を取得または設定します。名前はデフォルトのターゲット値ツールチップで表示されます。"
+            }
+        },
+        "targetValueOuterExtent": {
+            "type": "number",
+            "defaultValue": 0.85,
+            "description": {
+                "en": "Gets or sets the position at which to start rendering the target value, measured from the front/bottom of the control as a value from 0 to 1.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.",
+                "jp": "0 から 1 の値でコントロールの前/下から計測される、ターゲット値の描画を開始する位置を取得または設定します。<br>0.5 から 1 の間の値を使用し、ブレットグラフの標準サイズを超えて拡張できます。"
+            }
+        },
+        "targetValueOutline": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "Gets or sets the brush to use when rendering the outline of the target value.",
+                "jp": "ターゲット値のアウトラインを描画する際に使用するブラシを取得または設定します。"
+            }
+        },
+        "targetValueStrokeThickness": {
+            "type": "number",
+            "defaultValue": 1.0,
+            "description": {
+                "en": "Gets or sets the stroke thickness of the outline of the target value bar.",
+                "jp": "ターゲット値バーのアウトラインのストローク幅を取得または設定します。"
+            }
+        },
+        "targetValueToolTipTemplate": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "Gets or sets the target value's tooltip template.",
+                "jp": "ターゲット値のツールチップ テンプレートを取得または設定します。"
+            }
+        },
+        "tickBrush": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "Gets or sets the brush to use for the major tickmarks.",
+                "jp": "主目盛に使用するブラシを取得または設定します。"
+            }
+        },
+        "tickEndExtent": {
+            "type": "number",
+            "defaultValue": 0.2,
+            "description": {
+                "en": "Gets or sets the position at which to stop rendering the major tickmarks as a value from 0 to 1, measured from the front/bottom of the bullet graph.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.",
+                "jp": "ブレットグラフの前/下から計測される、0 から 1 の値で主目盛の描画を停止する位置を取得または設定します。<br>0.5 から 1 の間の値を使用し、ブレットグラフの標準サイズを超えて拡張できます。"
+            }
+        },
+        "ticksPostInitial": {
+            "type": "number",
+            "defaultValue": 0.0,
+            "description": {
+                "en": "A value to start adding tickmarks, added to the scale's MinimumValue.",
+                "jp": "スケールの MinimumValue に追加された、メモリの追加を開始する値。"
+            }
+        },
+        "ticksPreTerminal": {
+            "type": "number",
+            "defaultValue": 0.0,
+            "description": {
+                "en": "A value to stop adding tickmarks, subtracted from the scale's MaximumValue.",
+                "jp": "スケールの MinimumValue から差し引かれた、メモリの追加を停止する値。"
+            }
+        },
+        "tickStartExtent": {
+            "type": "number",
+            "defaultValue": 0.1,
+            "description": {
+                "en": "Gets or sets the position at which to start rendering the major tickmarks as a value from 0 to 1, measured from the front/bottom of the bullet graph.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.",
+                "jp": "ブレットグラフの前/下から計測された、0 から 1 の値で主目盛の描画を開始する位置を取得または設定します。<br>0.5 から 1 の間の値を使用し、ブレットグラフの標準サイズを超えて拡張できます。"
+            }
+        },
+        "tickStrokeThickness": {
+            "type": "number",
+            "defaultValue": 2.0,
+            "description": {
+                "en": "Gets or sets the stroke thickness to use when rendering ticks.",
+                "jp": "メモリを描画する際に使用するストロークの太さを取得または設定します。"
+            }
+        },
+        "transitionDuration": {
+            "type": "number",
+            "defaultValue": 0.0,
+            "description": {
+                "en": "Gets or sets the number of milliseconds over which changes to the bullet graph should be animated.",
+                "jp": "ブレットグラフで変更をアニメーション化するミリ秒を数値で取得または設定します。"
+            }
+        },
+        "value": {
+            "type": "number",
+            "defaultValue": 0.0,
+            "description": {
+                "en": "Gets or sets the value at which the bar ends.",
+                "jp": "バーが終了する値を取得または設定します。"
+            }
+        },
+        "valueBrush": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "Gets or sets the brush to use for the actual value element.",
+                "jp": "実際の値要素に使用するブラシを取得または設定します。"
+            }
+        },
+        "valueInnerExtent": {
+            "type": "number",
+            "defaultValue": 0.5,
+            "description": {
+                "en": "Gets or sets the position at which to start rendering the actual value geometries, measured from the front/bottom of the bullet graph as a value from 0 to 1.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.",
+                "jp": "0 から 1 の値でブレット グラフの前/下から計測された、実際の値の形状を描画を開始する位置を取得または設定します。<br>0.5 から 1 の間の値を使用し、ブレットグラフの標準サイズを超えて拡張できます。"
+            }
+        },
+        "valueName": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "Gets or sets the name used for actual value.",
+                "jp": "実際値に使用される名前を取得または設定します。"
+            }
+        },
+        "valueOuterExtent": {
+            "type": "number",
+            "defaultValue": 0.65,
+            "description": {
+                "en": "Gets or sets the position at which to stop rendering the actual value geometries as a value from 0 to 1 measured from the front/bottom of the bullet graph.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.",
+                "jp": "ブレットグラフの前/下から計測される、0 から 1 の値で実際値の形状の描画を停止する位置を取得または設定します。<br>0.5 から 1 の間の値を使用し、ブレットグラフの標準サイズを超えて拡張できます。"
+            }
+        },
+        "valueOutline": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "Gets or sets the brush to use for the outline of actual value element.",
+                "jp": "実際の値要素のアウトラインに使用するブラシを取得または設定します。"
+            }
+        },
+        "valueStrokeThickness": {
+            "type": "number",
+            "defaultValue": 1.0,
+            "description": {
+                "en": "Gets or sets the stroke thickness to use when rendering single actual value element.",
+                "jp": "実際の値要素を描画する際に使用するストロークの太さを取得または設定します。"
+            }
+        },
+        "valueToolTipTemplate": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "Gets or sets the value's tooltip template.",
+                "jp": "値のツールチップ テンプレートを取得または設定します。"
+            }
         }
-      ],
-      "description": {
-		"en": "",
-		"jp": ""
-	}
     }
-  },
-  "properties": {
-    "backingBrush": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "Gets or sets the brush to use to fill the backing of the bullet graph.",
-		"jp": "ブレット グラフのバッキングを塗りつぶすために使用するブラシを取得または設定します。"
-	}
-    },
-	"width": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "The width of the BulletGraph. It can be set as a number in pixels, string (px) or percentage (%).",
-		"jp": "BulletGraph の幅。ピクセル、文字列 (px)、またはパーセンテージ (%) で数字として設定できます。"
-	}
-    },
-	"height": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "The height of the BulletGraph. It can be set as a number in pixels, string (px) or percentage (%).",
-		"jp": "BulletGraph の高さ。ピクセル、文字列 (px)、またはパーセンテージ (%) で数字として設定できます。"
-	}
-    },
-    "backingInnerExtent": {
-      "type": "number",
-      "defaultValue": 0.0,
-      "description": {
-		"en": "Gets or sets the inner extent of the bullet graph backing.",
-		"jp": "ブレット グラフ バッキングの内側範囲を取得または設定します。"
-	}
-    },
-    "backingOuterExtent": {
-      "type": "number",
-      "defaultValue": 1.0,
-      "description": {
-		"en": "Gets or sets the outer extent of the bullet graph backing.",
-		"jp": "ブレット グラフ バッキングの外側範囲を取得または設定します。"
-	}
-    },
-    "backingOutline": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "Gets or sets the brush to use for the outline of the backing.",
-		"jp": "バッキングのアウトラインを使用するブラシを取得または設定します。"
-	}
-    },
-    "backingStrokeThickness": {
-      "type": "number",
-      "defaultValue": 2.0,
-      "description": {
-		"en": "Gets or sets the stroke thickness of the backing outline.",
-		"jp": "バッキング アウトラインのストロークの太さを取得または設定します。"
-	}
-    },
-    "font": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "Gets or sets the font.",
-		"jp": "フォントを取得または設定します。"
-	}
-    },
-    "fontBrush": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "Gets or sets the brush to use for the label font.",
-		"jp": "ラベル フォントを使用するためのブラシを取得または設定します。"
-	}
-    },
-    "interval": {
-      "type": "number",
-      "defaultValue": 0.0,
-      "description": {
-		"en": "Gets or sets the interval to use for the scale.",
-		"jp": "スケールに使用する間隔を取得または設定します。"
-	}
-    },
-    "isScaleInverted": {
-      "type": "bool",
-      "defaultValue": false,
-      "description": {
-		"en": "Gets or sets a value indicating whether the scale is inverted.<br> When the scale is inverted the direction in which the scale values increase is right to left.",
-		"jp": "スケールが反転されるかどうかを示す値を取得または設定します。<br>スケールが反転された場合、スケール値が右から左へ増加します。"
-	}
-    },
-    "labelExtent": {
-      "type": "number",
-      "defaultValue": 0.0,
-      "description": {
-		"en": "Gets or sets the position at which to put the labels as a value from 0 to 1, measured from the bottom of the scale.<br> Values further from zero than 1 can be used to hide the labels of the bullet graph.",
-		"jp": "スケールの下から計測される、0 から 1 の値でラベルを配置する位置を取得または設定します。<br>0.5 から 1 の間の値を使用し、ブレット グラフのラベルを非表示できます。"
-	}
-    },
-    "labelInterval": {
-      "type": "number",
-      "defaultValue": 0.0,
-      "description": {
-		"en": "Gets or sets the interval to use for rendering labels. This defaults to be the same interval as the tickmarks on the scale.",
-		"jp": "ラベルの描画に使用する間隔を取得または設定します。このデフォルトは、スケールの目盛と同じ間隔です。"
-	}
-    },
-    "labelsPostInitial": {
-      "type": "number",
-      "defaultValue": 0.0,
-      "description": {
-		"en": "A value to start adding labels, added to the scale's MinimumValue.",
-		"jp": "ラベルの追加を開始するための値で、スケールの MinimumValue に追加されます。"
-	}
-    },
-    "labelsPreTerminal": {
-      "type": "number",
-      "defaultValue": 0.0,
-      "description": {
-		"en": "A value to stop adding labels, subtracted from the scale's MaximumValue.",
-		"jp": "スケールの MaximumValue から差し引かれた、ラベルの追加を停止する値。"
-	}
-    },
-    "maximumValue": {
-      "type": "number",
-      "defaultValue": 100.0,
-      "description": {
-		"en": "Gets or sets the maximum value of the scale.",
-		"jp": "スケールの最大値を取得または設定します。"
-	}
-    },
-    "minimumValue": {
-      "type": "number",
-      "defaultValue": 0.0,
-      "description": {
-		"en": "Gets or sets the minimum value of the scale.",
-		"jp": "スケールの最小値を取得または設定します。"
-	}
-    },
-    "minorTickBrush": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "Gets or sets the brush to use for the minor tickmarks.",
-		"jp": "副目盛に使用するブラシを取得または設定します。"
-	}
-    },
-    "minorTickCount": {
-      "type": "number",
-      "defaultValue": 3.0,
-      "description": {
-		"en": "Gets or sets the number of minor tickmarks to place between major tickmarks.",
-		"jp": "2 つの主要目盛間の補助目盛の数を取得または設定します。"
-	}
-    },
-    "minorTickEndExtent": {
-      "type": "number",
-      "defaultValue": 0.2,
-      "description": {
-		"en": "Gets or sets the position at which to stop rendering the minor tickmarks as a value from 0 to 1, measured from the front/bottom of the bullet graph.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.",
-		"jp": "ブレットグラフの前/下から計測される、0 から 1 の値で副目盛の描画を停止する位置を取得または設定します。<br>0.5 から 1 の間の値を使用し、ブレットグラフの標準サイズを超えて拡張できます。"
-	}
-    },
-    "minorTickStartExtent": {
-      "type": "number",
-      "defaultValue": 0.06,
-      "description": {
-		"en": "Gets or sets the position at which to start rendering the minor tickmarks as a value from 0 to 1, measured from the front/bottom of the bullet graph.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.",
-		"jp": "ブレットグラフの前/下から計測された、0 から 1 の値で副目盛の描画を開始する位置を取得または設定します。<br>0.5 から 1 の間の値を使用し、ブレットグラフの標準サイズを超えて拡張できます。"
-	}
-    },
-    "minorTickStrokeThickness": {
-      "type": "number",
-      "defaultValue": 1.0,
-      "description": {
-		"en": "Gets or sets the stroke thickness to use when rendering minor ticks.",
-		"jp": "副メモリを描画がする際に使用するストロークの太さを取得または設定します。"
-	}
-    },
-    "orientation": {
-      "type": "string",
-      "defaultValue": "horizontal",
-      "description": {
-		"en": "Gets or sets the orientation of the scale.",
-		"jp": "スケールの向きを取得または設定します。"
-	},
-      "valueOptions": [
-        {
-          "name": "horizontal",
-          "type": "string",
-          "description": {
-		"en": "Gets or sets the orientation of the scale to horizontal",
-		"jp": "スケールの向きを水平方向に設定します。"
-	}
-        },
-        {
-          "name": "vertical",
-          "type": "string",
-          "description": {
-		"en": "Get or sets the orientation of the scale to vertical",
-		"jp": "スケールの向きを垂直方向に設定します。"
-	}
-        }
-      ]
-    },
-    "rangeBrushes": {
-      "type": "array",
-      "defaultValue": null,
-      "description": {
-		"en": "Gets or sets a collection of brushes to be used as the palette for bullet graph ranges.<br> The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
-		"jp": "ブレット グラフ範囲のパレットとして使用されるブラシのコレクションを取得または設定します。<br>提供された値は、css 色文字列またはグラデーションを定義する JavaScript オブジェクトの配列である必要があります。最初の要素は、コレクションの補間モードを指定する RGB または HSV の文字列に設定するオプションがあります。"
-	},
-      "arrayMemberType": "string",
-	   "schema": {
-			"value": {
-			  "type": "string",
-			  "required": true,
-			  "defaultValue": null,
-			  "processValueOnly" : true,
-			  "description": {
-		"en": "Name of the range brush",
-		"jp": "範囲ブラシの名前"
-	}
-			}
-		},
-		"designerDisplayProperty": "value"
-    },
-    "rangeInnerExtent": {
-      "type": "number",
-      "defaultValue": 0.2,
-      "description": {
-		"en": "Gets or sets the position at which to start rendering the ranges, measured from the front/bottom of the control as a value from 0 to 1.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.",
-		"jp": "0 から 1 の値でコントロールの前と下から計測された、描画を開始する位置を取得または設定します。<br>0.5 から 1 の間の値を使用し、ブレットグラフの標準サイズを超えて拡張できます。"
-	}
-    },
-    "rangeOuterExtent": {
-      "type": "number",
-      "defaultValue": 0.95,
-      "description": {
-		"en": "Gets or sets the position at which to stop rendering the range as a value from 0 to 1 measured from the front/bottom of the bullet graph.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.",
-		"jp": "ブレットグラフの前/下から計測された、0 から 1 の値で範囲の描画を停止する位置を取得または設定します。<br>0.5 から 1 の間の値を使用し、ブレットグラフの標準サイズを超えて拡張できます。"
-	}
-    },
-    "rangeOutlines": {
-      "type": "array",
-      "defaultValue": null,
-      "description": {
-		"en": "Gets or sets a collection of brushes to be used as the palette for bullet graph outlines.<br> The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
-		"jp": "ブレット グラフ アウトラインのパレットとして使用されるブラシのコレクションを取得または設定します。<br>提供された値は、css 色文字列またはグラデーションを定義する JavaScript オブジェクトの配列である必要があります。最初の要素は、コレクションの補間モードを指定する RGB または HSV の文字列に設定するオプションがあります。"
-	},
-      "arrayMemberType": "string",
-	  "schema": {
-			"value": {
-			  "type": "string",
-			  "required": true,
-			  "defaultValue": null,
-			  "processValueOnly" : true,
-			  "description": {
-		"en": "The value provided should be css color string or JavaScript object defining gradients. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
-		"jp": "提供された値は、css 色文字列またはグラデーションを定義する JavaScript オブジェクトである必要があります。最初の要素は、コレクションの補間モードを指定する RGB または HSV の文字列に設定するオプションがあります。"
-	}
-			}
-		},
-		"designerDisplayProperty": "value"
-    },
-    "ranges": {
-      "type": "array",
-      "defaultValue": null,
-      "description": {
-		"en": "Gets or sets the scale ranges to render on the bullet graph.",
-		"jp": "ブレット グラフで描画するためのスケールの範囲を取得または設定します。"
-	},
-	  "designerDisplayProperty": "name",
-      "schema": {
-        "name": {
-          "type": "string",
-          "defaultValue": null,
-          "description": {
-		"en": "Name of the range",
-		"jp": "範囲の名前"
-	}
-        },
-        "startValue": {
-          "type": "number",
-          "defaultValue": null,
-          "description": {
-		"en": "The start value of the range",
-		"jp": "範囲の開始値。"
-	}
-        },
-        "endValue": {
-          "type": "number",
-          "defaultValue": null,
-          "description": {
-		"en": "The end value of the range",
-		"jp": "範囲の終値。"
-	}
-        },
-        "brush": {
-          "type": "string",
-          "defaultValue": null,
-          "description": {
-		"en": "Gets or sets the brush for the entire range.",
-		"jp": "範囲の全体のブラシを取得または設定します。"
-	}
-        },
-        "startExtent": {
-          "type": "number",
-          "defaultValue": 0,
-          "description": {
-		"en": "Gets or sets the starting value of the extent of the range.",
-		"jp": "範囲のエクステントの開始値を取得または設定します。"
-	}
-        },
-        "endExtent": {
-          "type": "number",
-          "defaultValue": 0,
-          "description": {
-		"en": "Gets or sets the ending value of the extent of the range.",
-		"jp": "範囲のエクステントの終了値を取得または設定します。"
-	}
-        },
-        "outline": {
-          "type": "string",
-          "defaultValue": null,
-          "description": {
-		"en": "Gets or sets the brush for the outline of the range.",
-		"jp": "範囲のアウトラインのブラシを取得または設定します。"
-	}
-        },
-        "remove": {
-          "type": "bool",
-          "defaultValue": false,
-          "description": {
-		"en": "Gets or sets the flag used to determine if the range should be removed. If set to true, the range (if existing) is removed.",
-		"jp": "範囲を削除するかどうかを決定するフラッグを取得または設定します。true の場合、依存の範囲を削除します。"
-	}
-        },
-        "strokeThickness": {
-          "type": "number",
-          "defaultValue": 0,
-          "description": {
-		"en": "Gets or sets the thickness of the range outline.",
-		"jp": "範囲のアウトラインの太さを取得または設定します。"
-	}
-        }
-      }
-    },
-    "rangeToolTipTemplate": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "Gets or sets the ranges' tooltip template.",
-		"jp": "範囲のツールチップ テンプレートを取得または設定します。"
-	}
-    },
-    "scaleEndExtent": {
-      "type": "number",
-      "defaultValue": 0.95,
-      "description": {
-		"en": "Gets or sets the position at which to stop rendering the scale as a value from 0 to 1, measured from the front/bottom of the bullet graph.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.",
-		"jp": "ブレットグラフの前/下から計測された、0 から 1 の値でスケールの描画を停止する位置を取得または設定します。<br>0.5 から 1 の間の値を使用し、ブレットグラフの標準サイズを超えて拡張できます。"
-	}
-    },
-    "scaleStartExtent": {
-      "type": "number",
-      "defaultValue": 0.05,
-      "description": {
-		"en": "Gets or sets the position at which to start rendering the scale, measured from the front/bottom of the bullet graph as a value from 0 to 1.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.",
-		"jp": "0 から 1 の値で ブレットグラフの前/下から計測される、実際値の形状の描画を開始する位置を取得または設定します。<br>0.5 から 1 の間の値を使用し、ブレットグラフの標準サイズを超えて拡張できます。"
-	}
-    },
-    "showToolTip": {
-      "type": "bool",
-      "defaultValue": null,
-      "description": {
-		"en": "Gets or sets a value indicating whether tooltips are enabled.",
-		"jp": "ツールチップが有効されるかどうかを示す値を取得または設定します。"
-	}
-    },
-    "showToolTipTimeout": {
-      "type": "number",
-      "defaultValue": 0.0,
-      "description": {
-		"en": "Gets or sets the time in milliseconds that tooltip appearance is delayed with.",
-		"jp": "ツールチップの表示を遅延するミリ秒を取得または設定します。"
-	}
-    },
-    "targetValue": {
-      "type": "number",
-      "defaultValue": 0.0,
-      "description": {
-		"en": "Gets or sets the value indicated by the target value bar.",
-		"jp": "ターゲット値バーで示された値を取得または設定します。"
-	}
-    },
-    "targetValueBreadth": {
-      "type": "number",
-      "defaultValue": 3.0,
-      "description": {
-		"en": "Get or sets the breadth of the target value element.",
-		"jp": "ターゲット値要素の幅を取得または設定します。"
-	}
-    },
-    "targetValueBrush": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "Gets or sets the brush to use when rendering the fill of the comparative marker.",
-		"jp": "比較マーカーの塗りつぶしを描画する際に使用するブラシを取得または設定します。"
-	}
-    },
-    "targetValueInnerExtent": {
-      "type": "number",
-      "defaultValue": 0.3,
-      "description": {
-		"en": "Gets or sets the position at which to start rendering the target value, measured from the front/bottom of the control as a value from 0 to 1.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.",
-		"jp": "0 から 1 の値でコントロールの前/下から計測される、ターゲット値の描画を開始する位置を取得または設定します。<br>0.5 から 1 の間の値を使用し、ブレットグラフの標準サイズを超えて拡張できます。"
-	}
-    },
-    "targetValueName": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "Gets or sets the name used for the target value. The name is displayed in the default target value tooltip.",
-		"jp": "ターゲット値に使用される名前を取得または設定します。名前はデフォルトのターゲット値ツールチップで表示されます。"
-	}
-    },
-    "targetValueOuterExtent": {
-      "type": "number",
-      "defaultValue": 0.85,
-      "description": {
-		"en": "Gets or sets the position at which to start rendering the target value, measured from the front/bottom of the control as a value from 0 to 1.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.",
-		"jp": "0 から 1 の値でコントロールの前/下から計測される、ターゲット値の描画を開始する位置を取得または設定します。<br>0.5 から 1 の間の値を使用し、ブレットグラフの標準サイズを超えて拡張できます。"
-	}
-    },
-    "targetValueOutline": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "Gets or sets the brush to use when rendering the outline of the target value.",
-		"jp": "ターゲット値のアウトラインを描画する際に使用するブラシを取得または設定します。"
-	}
-    },
-    "targetValueStrokeThickness": {
-      "type": "number",
-      "defaultValue": 1.0,
-      "description": {
-		"en": "Gets or sets the stroke thickness of the outline of the target value bar.",
-		"jp": "ターゲット値バーのアウトラインのストローク幅を取得または設定します。"
-	}
-    },
-    "targetValueToolTipTemplate": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "Gets or sets the target value's tooltip template.",
-		"jp": "ターゲット値のツールチップ テンプレートを取得または設定します。"
-	}
-    },
-    "tickBrush": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "Gets or sets the brush to use for the major tickmarks.",
-		"jp": "主目盛に使用するブラシを取得または設定します。"
-	}
-    },
-    "tickEndExtent": {
-      "type": "number",
-      "defaultValue": 0.2,
-      "description": {
-		"en": "Gets or sets the position at which to stop rendering the major tickmarks as a value from 0 to 1, measured from the front/bottom of the bullet graph.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.",
-		"jp": "ブレットグラフの前/下から計測される、0 から 1 の値で主目盛の描画を停止する位置を取得または設定します。<br>0.5 から 1 の間の値を使用し、ブレットグラフの標準サイズを超えて拡張できます。"
-	}
-    },
-    "ticksPostInitial": {
-      "type": "number",
-      "defaultValue": 0.0,
-      "description": {
-		"en": "A value to start adding tickmarks, added to the scale's MinimumValue.",
-		"jp": "スケールの MinimumValue に追加された、メモリの追加を開始する値。"
-	}
-    },
-    "ticksPreTerminal": {
-      "type": "number",
-      "defaultValue": 0.0,
-      "description": {
-		"en": "A value to stop adding tickmarks, subtracted from the scale's MaximumValue.",
-		"jp": "スケールの MinimumValue から差し引かれた、メモリの追加を停止する値。"
-	}
-    },
-    "tickStartExtent": {
-      "type": "number",
-      "defaultValue": 0.1,
-      "description": {
-		"en": "Gets or sets the position at which to start rendering the major tickmarks as a value from 0 to 1, measured from the front/bottom of the bullet graph.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.",
-		"jp": "ブレットグラフの前/下から計測された、0 から 1 の値で主目盛の描画を開始する位置を取得または設定します。<br>0.5 から 1 の間の値を使用し、ブレットグラフの標準サイズを超えて拡張できます。"
-	}
-    },
-    "tickStrokeThickness": {
-      "type": "number",
-      "defaultValue": 2.0,
-      "description": {
-		"en": "Gets or sets the stroke thickness to use when rendering ticks.",
-		"jp": "メモリを描画する際に使用するストロークの太さを取得または設定します。"
-	}
-    },
-    "transitionDuration": {
-      "type": "number",
-      "defaultValue": 0.0,
-      "description": {
-		"en": "Gets or sets the number of milliseconds over which changes to the bullet graph should be animated.",
-		"jp": "ブレットグラフで変更をアニメーション化するミリ秒を数値で取得または設定します。"
-	}
-    },
-    "value": {
-      "type": "number",
-      "defaultValue": 0.0,
-      "description": {
-		"en": "Gets or sets the value at which the bar ends.",
-		"jp": "バーが終了する値を取得または設定します。"
-	}
-    },
-    "valueBrush": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "Gets or sets the brush to use for the actual value element.",
-		"jp": "実際の値要素に使用するブラシを取得または設定します。"
-	}
-    },
-    "valueInnerExtent": {
-      "type": "number",
-      "defaultValue": 0.5,
-      "description": {
-		"en": "Gets or sets the position at which to start rendering the actual value geometries, measured from the front/bottom of the bullet graph as a value from 0 to 1.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.",
-		"jp": "0 から 1 の値でブレット グラフの前/下から計測された、実際の値の形状を描画を開始する位置を取得または設定します。<br>0.5 から 1 の間の値を使用し、ブレットグラフの標準サイズを超えて拡張できます。"
-	}
-    },
-    "valueName": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "Gets or sets the name used for actual value.",
-		"jp": "実際値に使用される名前を取得または設定します。"
-	}
-    },
-    "valueOuterExtent": {
-      "type": "number",
-      "defaultValue": 0.65,
-      "description": {
-		"en": "Gets or sets the position at which to stop rendering the actual value geometries as a value from 0 to 1 measured from the front/bottom of the bullet graph.<br> Values further from zero than 1 can be used to make this extend further than the normal size of the bullet graph.",
-		"jp": "ブレットグラフの前/下から計測される、0 から 1 の値で実際値の形状の描画を停止する位置を取得または設定します。<br>0.5 から 1 の間の値を使用し、ブレットグラフの標準サイズを超えて拡張できます。"
-	}
-    },
-    "valueOutline": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "Gets or sets the brush to use for the outline of actual value element.",
-		"jp": "実際の値要素のアウトラインに使用するブラシを取得または設定します。"
-	}
-    },
-    "valueStrokeThickness": {
-      "type": "number",
-      "defaultValue": 1.0,
-      "description": {
-		"en": "Gets or sets the stroke thickness to use when rendering single actual value element.",
-		"jp": "実際の値要素を描画する際に使用するストロークの太さを取得または設定します。"
-	}
-    },
-    "valueToolTipTemplate": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "Gets or sets the value's tooltip template.",
-		"jp": "値のツールチップ テンプレートを取得または設定します。"
-	}
-    }
-  }
 }

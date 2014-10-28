@@ -1,431 +1,431 @@
 ﻿{
-  "overview": null,
-  "name": "ui.igVideoPlayer",
-  "category": null,
-  "visual": true,
-  "events": {
-    "bannerClick": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+    "overview": null,
+    "name": "ui.igVideoPlayer",
+    "category": null,
+    "visual": true,
+    "events": {
+        "bannerClick": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Occurs when the banner is clicked.<br>   Function takes arguments evt and ui.<br>   Use ui.bannerElement to get the banner html element in the DOM.",
+                "jp": "バナーがクリックされると発生します。<br>   関数は引数 evt および ui を取得します。<br>   ui.bannerElement を使用して、DOM から banner HTML 要素を取得します。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
+        "bannerHidden": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Occurs when the banner is hidden.<br>   Function takes arguments evt and ui.<br>   Use ui.index to get the banner index in the banners array.<br>   Use ui.banner to get the banner object from the banners array.<br>   Use ui.bannerElement to get the banner html element in the DOM.",
+                "jp": "バナーが非表示にされると発生します。<br>   関数は引数 evt および ui を取得します。<br>   ui.index を使用して、banners 配列からバナー インデックスを取得します。<br>   ui.banner を使用して、banners 配列からバナー オブジェクトを取得します。<br>   ui.bannerElement を使用して、DOM から banner HTML 要素を取得します。"
+            }
+        },
+        "bannerVisible": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Defines the name of the player banner visible event. Fired when the banner has been displayed.<br>   Function takes arguments evt and ui.<br>   Use ui.index to get the banner index in the banners array.<br>   Use ui.banner to get the banner object from the banners array.<br>   Use ui.bannerElement to get the banner html element in the DOM.",
+                "jp": "再生バナー表示イベントの名前を定義します。バナーが表示されるときに発生します。<br>   関数は引数 evt および ui を取得します。<br>   ui.index を使用して、banners 配列からバナー インデックスを取得します。<br>   ui.banner を使用して、banners 配列からバナー オブジェクトを取得します。<br>   ui.bannerElement を使用して、DOM から banner HTML 要素を取得します。"
+            }
+        },
+        "bookmarkClick": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Occurs when the bookmark is clicked.<br>   Function takes arguments evt and ui.<br>   Use ui.bookmark to get the bookmark object from the bookmarks array.<br>   Use ui.bookmarkElement to get the html element in the DOM.",
+                "jp": "ブックマークがクリックされると発生します。<br>   関数は引数 evt および ui を取得します。<br>   ui.bookmark を使用して、bookmarks 配列からブックマーク オブジェクトを取得します。<br>   ui.bookmarkElement を使用して、DOM から HTML 要素を取得します。"
+            }
+        },
+        "bookmarkHit": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Occurs when the bookmark is hit.<br>   Function takes arguments evt and ui.<br>   Use ui.source to get the url of the playing video.<br>   Use ui.bookmark to get the bookmark object from the bookmarks array.<br>   Use ui.bookmarkElement to get the html element in the DOM.",
+                "jp": "ブックマークがクリックされると発生します。<br>   関数は引数 evt および ui を取得します。<br>   ui.source を使用して、再生ビデオの URL を取得します。<br>   ui.bookmark を使用して、bookmarks 配列からブックマーク オブジェクトを取得します。<br>   ui.bookmarkElement を使用して、DOM から HTML 要素を取得します。"
+            }
+        },
+        "browserNotSupported": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Occurs when browser does not support HTML 5 video.",
+                "jp": "ブラウザーが HTML 5 ビデオをサポートしていない場合に発生します。"
+            }
+        },
+        "buffering": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Occurs when a chunk of data is buffered.<br>   Function takes arguments evt and ui.<br>   Use ui.source to get the url of the playing video.<br>   Use ui.buffered to get buffered percentage.",
+                "jp": "データのチャンクがバッファーされたときに発生します。<br>   関数は引数 evt および ui を取得します。<br>   ui.source を使用して、再生ビデオの URL を取得します。<br>   ui.buffered を使用して、バファリングのパーセンテージを取得します。"
+            }
+        },
+        "ended": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Occurs when video has ended.<br>   Function takes arguments evt and ui.<br>   Use ui.source to get the url of the playing video.<br>   Use ui.duration to get the video duration in seconds.",
+                "jp": "ビデオの終了時に発生します。<br>   関数は引数 evt および ui を取得します。<br>   ui.source を使用して、再生ビデオの URL を取得します。<br>   ui.duration を使用して、ビデオの期間 (秒) を取得します。"
+            }
+        },
+        "enterFullScreen": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Occurs when igVideoPlayer enters full screen mode.<br>   Function takes arguments evt and ui.<br>   Use ui.source to get the url of the playing video.",
+                "jp": "igVideoPlayer が全画面表示モードに入るときに発生します。<br>   関数は引数 evt および ui を取得します。<br>   ui.source を使用して、再生ビデオの URL を取得します。"
+            }
+        },
+        "exitFullScreen": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Occurs when igVideoPlayer exits full screen mode.<br>   Function takes arguments evt and ui.<br>   Use ui.source to get the url of the playing video.",
+                "jp": "igVideoPlayer が全画面表示モードから終了するときに発生します。<br>   関数は引数 evt および ui を取得します。<br>   ui.source を使用して、再生ビデオの URL を取得します。"
+            }
+        },
+        "paused": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Occurs when video is paused.<br>   Function takes arguments evt and ui.<br>   Use ui.source to get the url of the playing video.<br>   Use ui.duration to get the video duration in seconds.",
+                "jp": "ビデオが一時停止されると発生します。<br>   関数は引数 evt および ui を取得します。<br>   ui.source を使用して、再生ビデオの URL を取得します。<br>   ui.duration を使用して、ビデオの期間 (秒) を取得します。"
+            }
+        },
+        "playing": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Occurs when video gets playing.<br>   Function takes arguments evt and ui.<br>   Use ui.source to get the url of the playing video.<br>   Use ui.duration to get the video duration in seconds.",
+                "jp": "ビデオが再生するときに発生します。<br>   関数は引数 evt および ui を取得します。<br>   ui.source を使用して、再生ビデオの URL を取得します。<br>   ui.duration を使用して、ビデオの期間 (秒) を取得します。"
+            }
+        },
+        "progress": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Occurs when video has advanced the playback position.<br>   Function takes arguments evt and ui.<br>   Use ui.source to get the url of the playing video.<br>   Use ui.currentTime to get current position in the video at which the event was fired.<br>   Use ui.duration to get the video duration in seconds.",
+                "jp": "ビデオが再生位置に進むと発生します。<br>   関数は引数 evt および ui を取得します。<br>   ui.source を使用して、再生ビデオの URL を取得します。<br>   ui.currentTime を使用して、イベントが発生したビデオの現在の位置を取得します。<br>   ui.duration を使用して、ビデオの期間 (秒) を取得します。"
+            }
+        },
+        "relatedVideoClick": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Occurs when related video is clicked.<br>   Function takes arguments evt and ui.<br>   Use ui.relatedVideo to get the relatedVideo object from the relatedVideos array.<br>   Use ui.relatedVideoElement to get the relatedVideo html element in the DOM.",
+                "jp": "関連ビデオがクリックされたときに発生します。<br>   関数は引数 evt および ui を取得します。<br>   ui.relatedVideo  を使用して、relatedVideos 配列から relatedVideo オブジェクトを取得します。<br>   ui.relatedVideoElement を使用して、DOM から relatedVideo HTML 要素を取得します。"
+            }
+        },
+        "waiting": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Occurs when igVideoPlayer is waiting for data from the server.<br>   Function takes arguments evt and ui.<br>   Use ui.source to get the url of the playing video.<br>   Use ui.currentTime to get current position in the video at which the event was fired.<br>   Use ui.duration to get the video duration in seconds.",
+                "jp": "igVideoPlayer がサーバーからのデータを待っているときに発生します。<br>   関数は引数 evt および ui を取得します。<br>   ui.source を使用して、再生ビデオの URL を取得します。<br>   ui.currentTime を使用して、イベントが発生したビデオの現在の位置を取得します。<br>   ui.duration を使用して、ビデオの期間 (秒) を取得します。"
+            }
         }
-      ],
-      "description": {
-		"en": "Occurs when the banner is clicked.<br>   Function takes arguments evt and ui.<br>   Use ui.bannerElement to get the banner html element in the DOM.",
-		"jp": "バナーがクリックされると発生します。<br>   関数は引数 evt および ui を取得します。<br>   ui.bannerElement を使用して、DOM から banner HTML 要素を取得します。"
-	}
     },
-    "bannerHidden": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+    "properties": {
+        "autohide": {
+            "type": "bool",
+            "defaultValue": true,
+            "description": {
+                "en": "Get or set whether player controls will auto hide when video is not hovered. This is applicable only when Infragistics playback controls are used.",
+                "jp": "ビデオの上でマウスをホバーしていないときに、プレーヤー コントロールを自動的に隠すかどうかを取得または設定します。Infragistics 再生コントロールを使用する場合のみの設定です。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Occurs when the banner is hidden.<br>   Function takes arguments evt and ui.<br>   Use ui.index to get the banner index in the banners array.<br>   Use ui.banner to get the banner object from the banners array.<br>   Use ui.bannerElement to get the banner html element in the DOM.",
-		"jp": "バナーが非表示にされると発生します。<br>   関数は引数 evt および ui を取得します。<br>   ui.index を使用して、banners 配列からバナー インデックスを取得します。<br>   ui.banner を使用して、banners 配列からバナー オブジェクトを取得します。<br>   ui.bannerElement を使用して、DOM から banner HTML 要素を取得します。"
-	}
-    },
-    "bannerVisible": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "autoplay": {
+            "type": "bool",
+            "defaultValue": false,
+            "description": {
+                "en": "Get or set whether the video should start playing immediately after the control is loaded.",
+                "jp": "コントロールを読み込んだ後にビデオをすぐに再生するかどうかを取得または設定します。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Defines the name of the player banner visible event. Fired when the banner has been displayed.<br>   Function takes arguments evt and ui.<br>   Use ui.index to get the banner index in the banners array.<br>   Use ui.banner to get the banner object from the banners array.<br>   Use ui.bannerElement to get the banner html element in the DOM.",
-		"jp": "再生バナー表示イベントの名前を定義します。バナーが表示されるときに発生します。<br>   関数は引数 evt および ui を取得します。<br>   ui.index を使用して、banners 配列からバナー インデックスを取得します。<br>   ui.banner を使用して、banners 配列からバナー オブジェクトを取得します。<br>   ui.bannerElement を使用して、DOM から banner HTML 要素を取得します。"
-	}
-    },
-    "bookmarkClick": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "browserControls": {
+            "type": "bool",
+            "defaultValue": false,
+            "description": {
+                "en": "Get or set whether if you want to use the built in browser controls. By default player uses Infragistics playback controls. Note that you may have different look and feel across different browsers if you use the built in browser controls.",
+                "jp": "組み込みブラウザー コントロールを使用するかどうかを取得または設定します。デフォルトで、プレーヤーは Infragistics の再生コントロールを使用します。ただし、組み込みブラウザー コントロールを使用する場合、ブラウザーによってルック アンド フィールが異なることがあります。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Occurs when the bookmark is clicked.<br>   Function takes arguments evt and ui.<br>   Use ui.bookmark to get the bookmark object from the bookmarks array.<br>   Use ui.bookmarkElement to get the html element in the DOM.",
-		"jp": "ブックマークがクリックされると発生します。<br>   関数は引数 evt および ui を取得します。<br>   ui.bookmark を使用して、bookmarks 配列からブックマーク オブジェクトを取得します。<br>   ui.bookmarkElement を使用して、DOM から HTML 要素を取得します。"
-	}
-    },
-    "bookmarkHit": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "centerButtonHideDelay": {
+            "type": "number",
+            "defaultValue": 1200.0,
+            "description": {
+                "en": "Get or set the center big button hide delay.",
+                "jp": "大きなボタンを非表示にするまでの遅延時間を取得または設定します。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Occurs when the bookmark is hit.<br>   Function takes arguments evt and ui.<br>   Use ui.source to get the url of the playing video.<br>   Use ui.bookmark to get the bookmark object from the bookmarks array.<br>   Use ui.bookmarkElement to get the html element in the DOM.",
-		"jp": "ブックマークがクリックされると発生します。<br>   関数は引数 evt および ui を取得します。<br>   ui.source を使用して、再生ビデオの URL を取得します。<br>   ui.bookmark を使用して、bookmarks 配列からブックマーク オブジェクトを取得します。<br>   ui.bookmarkElement を使用して、DOM から HTML 要素を取得します。"
-	}
-    },
-    "browserNotSupported": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "fullscreen": {
+            "type": "bool",
+            "defaultValue": false,
+            "description": {
+                "en": "Get or set whether the video player to be in full screen or not. This is not a pure full screen, because browsers do not allow that. It just sets 100% width and height to the control.",
+                "jp": "ビデオ プレーヤーを全画面表示にするかどうかを取得または設定します。これは純粋な全画面表示ではありません。ブラウザーがそれを許可しないためです。コントロールの幅と高さを 100% に設定するだけです。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Occurs when browser does not support HTML 5 video.",
-		"jp": "ブラウザーが HTML 5 ビデオをサポートしていない場合に発生します。"
-	}
-    },
-    "buffering": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "height": {
+            "type": "number",
+            "defaultValue": null,
+            "description": {
+                "en": "Get or set the height of the control. By default null will stretch the control to fit data, if no other heights are defined.",
+                "jp": "コントロールの高さを取得または設定します。null の場合、他の高さが定義されていない場合 (デフォルト)、データがフィットするよう伸縮します。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Occurs when a chunk of data is buffered.<br>   Function takes arguments evt and ui.<br>   Use ui.source to get the url of the playing video.<br>   Use ui.buffered to get buffered percentage.",
-		"jp": "データのチャンクがバッファーされたときに発生します。<br>   関数は引数 evt および ui を取得します。<br>   ui.source を使用して、再生ビデオの URL を取得します。<br>   ui.buffered を使用して、バファリングのパーセンテージを取得します。"
-	}
-    },
-    "ended": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "loop": {
+            "type": "bool",
+            "defaultValue": false,
+            "description": {
+                "en": "Get or set whether the video to start again after it has ended.",
+                "jp": "ビデオの終了後、ビデオを再度開始するかどうかを取得または設定します。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Occurs when video has ended.<br>   Function takes arguments evt and ui.<br>   Use ui.source to get the url of the playing video.<br>   Use ui.duration to get the video duration in seconds.",
-		"jp": "ビデオの終了時に発生します。<br>   関数は引数 evt および ui を取得します。<br>   ui.source を使用して、再生ビデオの URL を取得します。<br>   ui.duration を使用して、ビデオの期間 (秒) を取得します。"
-	}
-    },
-    "enterFullScreen": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "muted": {
+            "type": "bool",
+            "defaultValue": false,
+            "description": {
+                "en": "Get or set whether the video volume is muted.",
+                "jp": "ビデオの音量をミュートにするかどうかを取得または設定します。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Occurs when igVideoPlayer enters full screen mode.<br>   Function takes arguments evt and ui.<br>   Use ui.source to get the url of the playing video.",
-		"jp": "igVideoPlayer が全画面表示モードに入るときに発生します。<br>   関数は引数 evt および ui を取得します。<br>   ui.source を使用して、再生ビデオの URL を取得します。"
-	}
-    },
-    "exitFullScreen": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "posterUrl": {
+            "type": "string",
+            "defaultValue": "",
+            "description": {
+                "en": "Get or set a URL to an image to show, when no video data is available.",
+                "jp": "ビデオ データがない場合、表示する画像への URL を取得または設定します。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Occurs when igVideoPlayer exits full screen mode.<br>   Function takes arguments evt and ui.<br>   Use ui.source to get the url of the playing video.",
-		"jp": "igVideoPlayer が全画面表示モードから終了するときに発生します。<br>   関数は引数 evt および ui を取得します。<br>   ui.source を使用して、再生ビデオの URL を取得します。"
-	}
-    },
-    "paused": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "preload": {
+            "type": "bool",
+            "defaultValue": false,
+            "description": {
+                "en": "Get or set whether to preload load initial data for duration of video. If true it may start buffering the video, but this highly depends on the specific browser implementation.",
+                "jp": "ビデオ期間の読み込み初期データをプリロードするかどうかを取得または設定します。True の場合、ビデオのバッファリングを開始する場合もありますが、特定のブラウザーの実装によって異なります。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Occurs when video is paused.<br>   Function takes arguments evt and ui.<br>   Use ui.source to get the url of the playing video.<br>   Use ui.duration to get the video duration in seconds.",
-		"jp": "ビデオが一時停止されると発生します。<br>   関数は引数 evt および ui を取得します。<br>   ui.source を使用して、再生ビデオの URL を取得します。<br>   ui.duration を使用して、ビデオの期間 (秒) を取得します。"
-	}
-    },
-    "playing": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "progressLabelFormat": {
+            "type": "string",
+            "defaultValue": "${currentTime} / ${duration}",
+            "description": {
+                "en": "Get or set the format of the video progress label. You should use ${currentTime} to represent current playback position and ${duration} to represent video duration.",
+                "jp": "ビデオの進行状況ラベルの形式を取得または設定します。${currentTime} で現在の再生位置を表し、${duration} でビデオの期間を表す必要があります。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Occurs when video gets playing.<br>   Function takes arguments evt and ui.<br>   Use ui.source to get the url of the playing video.<br>   Use ui.duration to get the video duration in seconds.",
-		"jp": "ビデオが再生するときに発生します。<br>   関数は引数 evt および ui を取得します。<br>   ui.source を使用して、再生ビデオの URL を取得します。<br>   ui.duration を使用して、ビデオの期間 (秒) を取得します。"
-	}
-    },
-    "progress": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "showSeekTime": {
+            "type": "bool",
+            "defaultValue": true,
+            "description": {
+                "en": "Get or set whether the control seek tool tip will be shown when hovering the video progress bar.",
+                "jp": "ビデオのプログレス バー上でマウスをホバーするときに、コントロール シーク ツール チップを表示するかどうかを取得または設定します。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Occurs when video has advanced the playback position.<br>   Function takes arguments evt and ui.<br>   Use ui.source to get the url of the playing video.<br>   Use ui.currentTime to get current position in the video at which the event was fired.<br>   Use ui.duration to get the video duration in seconds.",
-		"jp": "ビデオが再生位置に進むと発生します。<br>   関数は引数 evt および ui を取得します。<br>   ui.source を使用して、再生ビデオの URL を取得します。<br>   ui.currentTime を使用して、イベントが発生したビデオの現在の位置を取得します。<br>   ui.duration を使用して、ビデオの期間 (秒) を取得します。"
-	}
-    },
-    "relatedVideoClick": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "sources": {
+            "type": "array",
+            "defaultValue": null,
+            "description": {
+                "en": "Get or set a list of video sources to choose from. Best coded/format is automatically detected by the control. Supported types are depending on the browser and could be one of the following mov, mp4, webm, ogg.",
+                "jp": "選択するビデオ ソースのリストを取得または設定します。コントロールによって、最適なコーデック/フォーマットが自動的に検出されます。サポートされるタイプは、ブラウザーによって異なり、mov、mp4、webm、ogg のいずれかです。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Occurs when related video is clicked.<br>   Function takes arguments evt and ui.<br>   Use ui.relatedVideo to get the relatedVideo object from the relatedVideos array.<br>   Use ui.relatedVideoElement to get the relatedVideo html element in the DOM.",
-		"jp": "関連ビデオがクリックされたときに発生します。<br>   関数は引数 evt および ui を取得します。<br>   ui.relatedVideo  を使用して、relatedVideos 配列から relatedVideo オブジェクトを取得します。<br>   ui.relatedVideoElement を使用して、DOM から relatedVideo HTML 要素を取得します。"
-	}
-    },
-    "waiting": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "title": {
+            "type": "string",
+            "defaultValue": "",
+            "description": {
+                "en": "Get or set video title.",
+                "jp": "ビデオのタイトルを取得または設定します。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
+        "volume": {
+            "type": "number",
+            "defaultValue": 0.5,
+            "description": {
+                "en": "Get or set the video volume. It can be between 0.0 and 1.0.",
+                "jp": "ビデオの音量を取得または設定します。0.0 から 1.0 の間で設定できます。"
+            }
+        },
+        "volumeAutohideDelay": {
+            "type": "number",
+            "defaultValue": 1000.0,
+            "description": {
+                "en": "Get or set volume slider auto hide delay. This is applicable only when Infragistics playback controls are used.",
+                "jp": "音量スライダーの自動非表示の遅延時間を取得または設定します。Infragistics 再生コントロールを使用する場合のみの設定です。"
+            }
+        },
+        "width": {
+            "type": "number",
+            "defaultValue": null,
+            "description": {
+                "en": "Get or set the width of the control. By default null will stretch the control to fit data, if no other widths are defined.",
+                "jp": "コントロールの幅を取得または設定します。null の場合、他の高さが定義されていない場合 (デフォルト)、データがフィットするよう伸縮します。"
+            }
         }
-      ],
-      "description": {
-		"en": "Occurs when igVideoPlayer is waiting for data from the server.<br>   Function takes arguments evt and ui.<br>   Use ui.source to get the url of the playing video.<br>   Use ui.currentTime to get current position in the video at which the event was fired.<br>   Use ui.duration to get the video duration in seconds.",
-		"jp": "igVideoPlayer がサーバーからのデータを待っているときに発生します。<br>   関数は引数 evt および ui を取得します。<br>   ui.source を使用して、再生ビデオの URL を取得します。<br>   ui.currentTime を使用して、イベントが発生したビデオの現在の位置を取得します。<br>   ui.duration を使用して、ビデオの期間 (秒) を取得します。"
-	}
     }
-  },
-  "properties": {
-    "autohide": {
-      "type": "bool",
-      "defaultValue": true,
-      "description": {
-		"en": "Get or set whether player controls will auto hide when video is not hovered. This is applicable only when Infragistics playback controls are used.",
-		"jp": "ビデオの上でマウスをホバーしていないときに、プレーヤー コントロールを自動的に隠すかどうかを取得または設定します。Infragistics 再生コントロールを使用する場合のみの設定です。"
-	}
-    },
-    "autoplay": {
-      "type": "bool",
-      "defaultValue": false,
-      "description": {
-		"en": "Get or set whether the video should start playing immediately after the control is loaded.",
-		"jp": "コントロールを読み込んだ後にビデオをすぐに再生するかどうかを取得または設定します。"
-	}
-    },
-    "browserControls": {
-      "type": "bool",
-      "defaultValue": false,
-      "description": {
-		"en": "Get or set whether if you want to use the built in browser controls. By default player uses Infragistics playback controls. Note that you may have different look and feel across different browsers if you use the built in browser controls.",
-		"jp": "組み込みブラウザー コントロールを使用するかどうかを取得または設定します。デフォルトで、プレーヤーは Infragistics の再生コントロールを使用します。ただし、組み込みブラウザー コントロールを使用する場合、ブラウザーによってルック アンド フィールが異なることがあります。"
-	}
-    },
-    "centerButtonHideDelay": {
-      "type": "number",
-      "defaultValue": 1200.0,
-      "description": {
-		"en": "Get or set the center big button hide delay.",
-		"jp": "大きなボタンを非表示にするまでの遅延時間を取得または設定します。"
-	}
-    },
-    "fullscreen": {
-      "type": "bool",
-      "defaultValue": false,
-      "description": {
-		"en": "Get or set whether the video player to be in full screen or not. This is not a pure full screen, because browsers do not allow that. It just sets 100% width and height to the control.",
-		"jp": "ビデオ プレーヤーを全画面表示にするかどうかを取得または設定します。これは純粋な全画面表示ではありません。ブラウザーがそれを許可しないためです。コントロールの幅と高さを 100% に設定するだけです。"
-	}
-    },
-    "height": {
-      "type": "number",
-      "defaultValue": null,
-      "description": {
-		"en": "Get or set the height of the control. By default null will stretch the control to fit data, if no other heights are defined.",
-		"jp": "コントロールの高さを取得または設定します。null の場合、他の高さが定義されていない場合 (デフォルト)、データがフィットするよう伸縮します。"
-	}
-    },
-    "loop": {
-      "type": "bool",
-      "defaultValue": false,
-      "description": {
-		"en": "Get or set whether the video to start again after it has ended.",
-		"jp": "ビデオの終了後、ビデオを再度開始するかどうかを取得または設定します。"
-	}
-    },
-    "muted": {
-      "type": "bool",
-      "defaultValue": false,
-      "description": {
-		"en": "Get or set whether the video volume is muted.",
-		"jp": "ビデオの音量をミュートにするかどうかを取得または設定します。"
-	}
-    },
-    "posterUrl": {
-      "type": "string",
-      "defaultValue": "",
-      "description": {
-		"en": "Get or set a URL to an image to show, when no video data is available.",
-		"jp": "ビデオ データがない場合、表示する画像への URL を取得または設定します。"
-	}
-    },
-    "preload": {
-      "type": "bool",
-      "defaultValue": false,
-      "description": {
-		"en": "Get or set whether to preload load initial data for duration of video. If true it may start buffering the video, but this highly depends on the specific browser implementation.",
-		"jp": "ビデオ期間の読み込み初期データをプリロードするかどうかを取得または設定します。True の場合、ビデオのバッファリングを開始する場合もありますが、特定のブラウザーの実装によって異なります。"
-	}
-    },
-    "progressLabelFormat": {
-      "type": "string",
-      "defaultValue": "${currentTime} / ${duration}",
-      "description": {
-		"en": "Get or set the format of the video progress label. You should use ${currentTime} to represent current playback position and ${duration} to represent video duration.",
-		"jp": "ビデオの進行状況ラベルの形式を取得または設定します。${currentTime} で現在の再生位置を表し、${duration} でビデオの期間を表す必要があります。"
-	}
-    },
-    "showSeekTime": {
-      "type": "bool",
-      "defaultValue": true,
-      "description": {
-		"en": "Get or set whether the control seek tool tip will be shown when hovering the video progress bar.",
-		"jp": "ビデオのプログレス バー上でマウスをホバーするときに、コントロール シーク ツール チップを表示するかどうかを取得または設定します。"
-	}
-    },
-    "sources": {
-      "type": "array",
-      "defaultValue": null,
-      "description": {
-		"en": "Get or set a list of video sources to choose from. Best coded/format is automatically detected by the control. Supported types are depending on the browser and could be one of the following mov, mp4, webm, ogg.",
-		"jp": "選択するビデオ ソースのリストを取得または設定します。コントロールによって、最適なコーデック/フォーマットが自動的に検出されます。サポートされるタイプは、ブラウザーによって異なり、mov、mp4、webm、ogg のいずれかです。"
-	}
-    },
-    "title": {
-      "type": "string",
-      "defaultValue": "",
-      "description": {
-		"en": "Get or set video title.",
-		"jp": "ビデオのタイトルを取得または設定します。"
-	}
-    },
-    "volume": {
-      "type": "number",
-      "defaultValue": 0.5,
-      "description": {
-		"en": "Get or set the video volume. It can be between 0.0 and 1.0.",
-		"jp": "ビデオの音量を取得または設定します。0.0 から 1.0 の間で設定できます。"
-	}
-    },
-    "volumeAutohideDelay": {
-      "type": "number",
-      "defaultValue": 1000.0,
-      "description": {
-		"en": "Get or set volume slider auto hide delay. This is applicable only when Infragistics playback controls are used.",
-		"jp": "音量スライダーの自動非表示の遅延時間を取得または設定します。Infragistics 再生コントロールを使用する場合のみの設定です。"
-	}
-    },
-    "width": {
-      "type": "number",
-      "defaultValue": null,
-      "description": {
-		"en": "Get or set the width of the control. By default null will stretch the control to fit data, if no other widths are defined.",
-		"jp": "コントロールの幅を取得または設定します。null の場合、他の高さが定義されていない場合 (デフォルト)、データがフィットするよう伸縮します。"
-	}
-    }
-  }
 }

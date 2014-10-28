@@ -1,225 +1,225 @@
 ﻿{
-  "overview": null,
-  "name": "ui.igGridTooltips",
-  "title": "Tooltips",
-  "category": null,
-  "visual": true,
-  "events": {
-    "tooltipHidden": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+    "overview": null,
+    "name": "ui.igGridTooltips",
+    "title": "Tooltips",
+    "category": null,
+    "visual": true,
+    "events": {
+        "tooltipHidden": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "event fired after a tooltip is hidden<br>   use args.owner to get a reference to the widget<br>   use args.tooltip to get the string displayed in the tooltip<br>   use args.value to get the value of the cell the tooltip was displayed for<br>   use args.element to get a reference to the cell the tooltip was displayed for<br>   use args.index to get the row index of the cell the tooltip was displayed for<br>   use args.columnKey to get the column key of the cell the tooltip was displayed for<br>   use args.columnIndex to get the column index of the cell the tooltip was displayed for",
+                "jp": "ツールチップが非表示になった後に発生するイベント。<br>   ウィジェットへの参照を取得するには args.owner を使用します。<br>   ツールチップに表示される文字列を取得するには args.tooltip を使用します。<br>   ツールチップに表示されたセルの値を取得するには args.value を使用します。<br>   ツールチップに表示されたセルへの参照を取得するには args.element を使用します。<br>   ツールチップに表示されたセルの行インデックスを取得するには args.index を使用します。<br>   ツールチップに表示されたセルの列キーを取得するには args.columnKey を使用します。<br>   ツールチップに表示されたセルの列インデックスを取得するには args.columnIndex を使用します。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
+        "tooltipHiding": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "event fired when the mouse has left an element and the tooltip is about to hide<br>   use args.owner to get a reference to the widget<br>   use args.tooltip to get the string displayed in the tooltip<br>   use args.value to get the value of the cell the tooltip is displayed for<br>   use args.element to get a reference to the cell the tooltip is displayed for<br>   use args.index to get the row index of the cell the tooltip is displayed for<br>   use args.columnKey to get the column key of the cell the tooltip is displayed for<br>   use args.columnIndex to get the column index of the cell the tooltip is displayed for",
+                "jp": "マウスが要素から離れ、ツールチップが非表示になるときに発生するイベント。<br>   ウィジェットへの参照を取得するには args.owner を使用します。<br>   ツールチップに表示される文字列を取得するには args.tooltip を使用します。<br>   ツールチップに表示されるセルの値を取得するには args.value を使用します。<br>   ツールチップに表示されるセルへの参照を取得するには args.element を使用します。<br>   ツールチップに表示されるセルの行インデックスを取得するには args.index を使用します。<br>   ツールチップに表示されるセルの列キーを取得するには args.columnKey を使用します。<br>   ツールチップに表示されるセルの列インデックスを取得するには args.columnIndex を使用します。"
+            }
+        },
+        "tooltipShowing": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "event fired when the mouse has hovered on an element long enough to display a tooltip<br>   use args.owner to get a reference to the widget<br>   use args.tooltip to get or set the string to be displayed<br>   use args.value to get the value of the cell the tooltip is displayed for<br>   use args.element to get a reference to the cell the tooltip is displayed for<br>   use args.index to get the row index of the cell the tooltip is displayed for<br>   use args.columnKey to get the column key of the cell the tooltip is displayed for<br>   use args.columnIndex to get the column index of the cell the tooltip is displayed for",
+                "jp": "ツールチップを表示するためにマウスが十分な期間要素上をホバーしたときに発生するイベント。<br>   ウィジェットへの参照を取得するには args.owner を使用します。<br>   表示する文字列を取得または設定するには args.tooltip を使用します。<br>   ツールチップに表示されるセルの値を取得するには args.value を使用します。<br>   ツールチップに表示されるセルへの参照を取得するには args.element を使用します。<br>   ツールチップに表示されるセルの行インデックスを取得するには args.index を使用します。<br>   ツールチップに表示されるセルの列キーを取得するには args.columnKey を使用します。<br>   ツールチップに表示されるセルの列インデックスを取得するには args.columnIndex を使用します。"
+            }
+        },
+        "tooltipShown": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "event fired after a tooltip is shown<br>   use args.owner to get a reference to the widget<br>   use args.tooltip to get the string displayed in the tooltip<br>   use args.value to get the value of the cell the tooltip is displayed for<br>   use args.element to get a reference to the cell the tooltip is displayed for<br>   use args.index to get the row index of the cell the tooltip is displayed for<br>   use args.columnKey to get the column key of the cell the tooltip is displayed for<br>   use args.columnIndex to get the column index of the cell the tooltip is displayed for",
+                "jp": "ツールチップが表示された後に発生するイベント。<br>   ウィジェットへの参照を取得するには args.owner を使用します。<br>   ツールチップに表示される文字列を取得するには args.tooltip を使用します。<br>   ツールチップに表示されるセルの値を取得するには args.value を使用します。<br>   ツールチップに表示されるセルへの参照を取得するには args.element を使用します。<br>   ツールチップに表示されるセルの行インデックスを取得するには args.index を使用します。<br>   ツールチップに表示されるセルの列キーを取得するには args.columnKey を使用します。<br>   ツールチップに表示されるセルの列インデックスを取得するには args.columnIndex を使用します。"
+            }
         }
-      ],
-      "description": {
-		"en": "event fired after a tooltip is hidden<br>   use args.owner to get a reference to the widget<br>   use args.tooltip to get the string displayed in the tooltip<br>   use args.value to get the value of the cell the tooltip was displayed for<br>   use args.element to get a reference to the cell the tooltip was displayed for<br>   use args.index to get the row index of the cell the tooltip was displayed for<br>   use args.columnKey to get the column key of the cell the tooltip was displayed for<br>   use args.columnIndex to get the column index of the cell the tooltip was displayed for",
-		"jp": "ツールチップが非表示になった後に発生するイベント。<br>   ウィジェットへの参照を取得するには args.owner を使用します。<br>   ツールチップに表示される文字列を取得するには args.tooltip を使用します。<br>   ツールチップに表示されたセルの値を取得するには args.value を使用します。<br>   ツールチップに表示されたセルへの参照を取得するには args.element を使用します。<br>   ツールチップに表示されたセルの行インデックスを取得するには args.index を使用します。<br>   ツールチップに表示されたセルの列キーを取得するには args.columnKey を使用します。<br>   ツールチップに表示されたセルの列インデックスを取得するには args.columnIndex を使用します。"
-	}
     },
-    "tooltipHiding": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+    "properties": {
+        "name": {
+            "type": "string",
+            "defaultValue": null
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "event fired when the mouse has left an element and the tooltip is about to hide<br>   use args.owner to get a reference to the widget<br>   use args.tooltip to get the string displayed in the tooltip<br>   use args.value to get the value of the cell the tooltip is displayed for<br>   use args.element to get a reference to the cell the tooltip is displayed for<br>   use args.index to get the row index of the cell the tooltip is displayed for<br>   use args.columnKey to get the column key of the cell the tooltip is displayed for<br>   use args.columnIndex to get the column index of the cell the tooltip is displayed for",
-		"jp": "マウスが要素から離れ、ツールチップが非表示になるときに発生するイベント。<br>   ウィジェットへの参照を取得するには args.owner を使用します。<br>   ツールチップに表示される文字列を取得するには args.tooltip を使用します。<br>   ツールチップに表示されるセルの値を取得するには args.value を使用します。<br>   ツールチップに表示されるセルへの参照を取得するには args.element を使用します。<br>   ツールチップに表示されるセルの行インデックスを取得するには args.index を使用します。<br>   ツールチップに表示されるセルの列キーを取得するには args.columnKey を使用します。<br>   ツールチップに表示されるセルの列インデックスを取得するには args.columnIndex を使用します。"
-	}
-    },
-    "tooltipShowing": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "columnSettings": {
+            "type": "unknown",
+            "defaultValue": null,
+            "description": {
+                "en": "a list of custom column settings that specify custom tooltip settings for a specific column (whether tooltips are enabled / disabled)",
+                "jp": "特定の列のカスタム ツールチップ設定 (ツールチップが有効か無効か) を指定するカスタム列設定のリスト。"
+            },
+            "schema": {
+                "columnKey": {
+                    "type": "string",
+                    "defaultValue": null,
+                    "description": {
+                        "en": "Specifies the column key of the column with tooltip",
+                        "jp": "ツールチップ済み列の列キーを指定します。"
+                    }
+                },
+                "columnIndex": {
+                    "type": "number",
+                    "defaultValue": -1,
+                    "description": {
+                        "en": "Specifies the column index of the column with tooltip",
+                        "jp": "ツールチップ済み列の列インデックスを指定します。"
+                    }
+                },
+                "allowTooltips": {
+                    "type": "bool",
+                    "defaultValue": true,
+                    "description": {
+                        "en": "Enables / disables tooltips on the specified column. By default tooltips are displayed for each column. Note: This option is mandatory.",
+                        "jp": "指定された列でのツールチップを有効または無効にします。デフォルトでは、ツールチップは各列に表示されます。注: このオプションは必須です。"
+                    }
+                }
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "event fired when the mouse has hovered on an element long enough to display a tooltip<br>   use args.owner to get a reference to the widget<br>   use args.tooltip to get or set the string to be displayed<br>   use args.value to get the value of the cell the tooltip is displayed for<br>   use args.element to get a reference to the cell the tooltip is displayed for<br>   use args.index to get the row index of the cell the tooltip is displayed for<br>   use args.columnKey to get the column key of the cell the tooltip is displayed for<br>   use args.columnIndex to get the column index of the cell the tooltip is displayed for",
-		"jp": "ツールチップを表示するためにマウスが十分な期間要素上をホバーしたときに発生するイベント。<br>   ウィジェットへの参照を取得するには args.owner を使用します。<br>   表示する文字列を取得または設定するには args.tooltip を使用します。<br>   ツールチップに表示されるセルの値を取得するには args.value を使用します。<br>   ツールチップに表示されるセルへの参照を取得するには args.element を使用します。<br>   ツールチップに表示されるセルの行インデックスを取得するには args.index を使用します。<br>   ツールチップに表示されるセルの列キーを取得するには args.columnKey を使用します。<br>   ツールチップに表示されるセルの列インデックスを取得するには args.columnIndex を使用します。"
-	}
-    },
-    "tooltipShown": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "cursorLeftOffset": {
+            "type": "number",
+            "defaultValue": 10.0,
+            "description": {
+                "en": "sets the left position of the tooltip relative to the mouse cursor",
+                "jp": "マウス カーソルに対してツールチップの左の位置を設定します。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
+        "cursorTopOffset": {
+            "type": "number",
+            "defaultValue": 15.0,
+            "description": {
+                "en": "sets the top position of the tooltip relative to the mouse cursor",
+                "jp": "マウス カーソルに対してツールチップの上の位置を設定します。"
+            }
+        },
+        "fadeTimespan": {
+            "type": "number",
+            "defaultValue": 150.0,
+            "description": {
+                "en": "sets the time tooltip fades in and out when showing/hiding",
+                "jp": "表示/非表示のときの、ツールチップのフェードインとフェードアウト時間を設定します。"
+            }
+        },
+        "hideDelay": {
+            "type": "number",
+            "defaultValue": 300.0,
+            "description": {
+                "en": "Type=\"integer\" The time in milliseconds after which tooltip hides when mouse <br>   cursor gets outside of the cell.",
+                "jp": "Type=\"integer\" マウス カーソルがセル以外に移動した後にツールチップが<br>   非表示するまでの時間 (ミリ秒)。"
+            }
+        },
+        "showDelay": {
+            "type": "number",
+            "defaultValue": 500.0,
+            "description": {
+                "en": "The time in milliseconds after which tooltip will show when <br>   mouse cursor is hovered over a cell.",
+                "jp": "マウス カーソルがセルの上にホバーした後にツールチップを<br>   表示するまでの時間 (ミリ秒)。"
+            }
+        },
+        "style": {
+            "type": "string",
+            "defaultValue": "tooltip",
+            "description": {
+                "en": "Controls the tooltip's style ",
+                "jp": "ツールチップのスタイルを設定します。 "
+            },
+            "valueOptions": [
+                {
+                    "name": "tooltip",
+                    "type": "string",
+                    "description": {
+                        "en": "The tooltip will be positioned according to the mouse cursor",
+                        "jp": "ツールチップはマウス カーソルに基づいて配置されます。"
+                    }
+                },
+                {
+                    "name": "popover",
+                    "type": "string",
+                    "description": {
+                        "en": "The tooltip will be positioned according to the target element",
+                        "jp": "ツールチップはターゲット要素に基づいて配置されます。"
+                    }
+                }
+            ]
+        },
+        "visibility": {
+            "type": "string",
+            "defaultValue": "overflow",
+            "description": {
+                "en": "Determines the tooltip visibility option",
+                "jp": "ツールチップの表示状態オプションを決定します。"
+            },
+            "valueOptions": [
+                {
+                    "name": "always",
+                    "type": "string",
+                    "description": {
+                        "en": "Tooltips always show for hovered elements",
+                        "jp": "ツールチップはホバーされる要素で常に表示します。"
+                    }
+                },
+                {
+                    "name": "never",
+                    "type": "string",
+                    "description": {
+                        "en": "TooltipsDo not show automatically",
+                        "jp": "ツールチップは自動的に表示しません。"
+                    }
+                },
+                {
+                    "name": "overflow",
+                    "type": "string",
+                    "description": {
+                        "en": "Tooltips show only when the underlying data overflows its container",
+                        "jp": "ツールチップは基データがそのコンテナーをオーバーフローしたときのみ表示します。"
+                    }
+                }
+            ]
         }
-      ],
-      "description": {
-		"en": "event fired after a tooltip is shown<br>   use args.owner to get a reference to the widget<br>   use args.tooltip to get the string displayed in the tooltip<br>   use args.value to get the value of the cell the tooltip is displayed for<br>   use args.element to get a reference to the cell the tooltip is displayed for<br>   use args.index to get the row index of the cell the tooltip is displayed for<br>   use args.columnKey to get the column key of the cell the tooltip is displayed for<br>   use args.columnIndex to get the column index of the cell the tooltip is displayed for",
-		"jp": "ツールチップが表示された後に発生するイベント。<br>   ウィジェットへの参照を取得するには args.owner を使用します。<br>   ツールチップに表示される文字列を取得するには args.tooltip を使用します。<br>   ツールチップに表示されるセルの値を取得するには args.value を使用します。<br>   ツールチップに表示されるセルへの参照を取得するには args.element を使用します。<br>   ツールチップに表示されるセルの行インデックスを取得するには args.index を使用します。<br>   ツールチップに表示されるセルの列キーを取得するには args.columnKey を使用します。<br>   ツールチップに表示されるセルの列インデックスを取得するには args.columnIndex を使用します。"
-	}
     }
-  },
-  "properties": {
-	"name": {
-      "type": "string",
-      "defaultValue": null
-    },
-    "columnSettings": {
-      "type": "unknown",
-      "defaultValue": null,
-      "description": {
-		"en": "a list of custom column settings that specify custom tooltip settings for a specific column (whether tooltips are enabled / disabled)",
-		"jp": "特定の列のカスタム ツールチップ設定 (ツールチップが有効か無効か) を指定するカスタム列設定のリスト。"
-	},
-      "schema": {
-        "columnKey": {
-          "type": "string",
-          "defaultValue": null,
-          "description": {
-		"en": "Specifies the column key of the column with tooltip",
-		"jp": "ツールチップ済み列の列キーを指定します。"
-	}
-        },
-        "columnIndex": {
-          "type": "number",
-          "defaultValue": -1,
-          "description": {
-		"en": "Specifies the column index of the column with tooltip",
-		"jp": "ツールチップ済み列の列インデックスを指定します。"
-	}
-        },
-        "allowTooltips": {
-          "type": "bool",
-          "defaultValue": true,
-          "description": {
-		"en": "Enables / disables tooltips on the specified column. By default tooltips are displayed for each column. Note: This option is mandatory.",
-		"jp": "指定された列でのツールチップを有効または無効にします。デフォルトでは、ツールチップは各列に表示されます。注: このオプションは必須です。"
-	}
-        }
-      }
-    },
-    "cursorLeftOffset": {
-      "type": "number",
-      "defaultValue": 10.0,
-      "description": {
-		"en": "sets the left position of the tooltip relative to the mouse cursor",
-		"jp": "マウス カーソルに対してツールチップの左の位置を設定します。"
-	}
-    },
-    "cursorTopOffset": {
-      "type": "number",
-      "defaultValue": 15.0,
-      "description": {
-		"en": "sets the top position of the tooltip relative to the mouse cursor",
-		"jp": "マウス カーソルに対してツールチップの上の位置を設定します。"
-	}
-    },
-    "fadeTimespan": {
-      "type": "number",
-      "defaultValue": 150.0,
-      "description": {
-		"en": "sets the time tooltip fades in and out when showing/hiding",
-		"jp": "表示/非表示のときの、ツールチップのフェードインとフェードアウト時間を設定します。"
-	}
-    },
-    "hideDelay": {
-      "type": "number",
-      "defaultValue": 300.0,
-      "description": {
-		"en": "Type=\"integer\" The time in milliseconds after which tooltip hides when mouse <br>   cursor gets outside of the cell.",
-		"jp": "Type=\"integer\" マウス カーソルがセル以外に移動した後にツールチップが<br>   非表示するまでの時間 (ミリ秒)。"
-	}
-    },
-    "showDelay": {
-      "type": "number",
-      "defaultValue": 500.0,
-      "description": {
-		"en": "The time in milliseconds after which tooltip will show when <br>   mouse cursor is hovered over a cell.",
-		"jp": "マウス カーソルがセルの上にホバーした後にツールチップを<br>   表示するまでの時間 (ミリ秒)。"
-	}
-    },
-    "style": {
-      "type": "string",
-      "defaultValue": "tooltip",
-      "description": {
-		"en": "Controls the tooltip's style ",
-		"jp": "ツールチップのスタイルを設定します。 "
-	},
-      "valueOptions": [
-        {
-          "name": "tooltip",
-          "type": "string",
-          "description": {
-		"en": "The tooltip will be positioned according to the mouse cursor",
-		"jp": "ツールチップはマウス カーソルに基づいて配置されます。"
-	}
-        },
-        {
-          "name": "popover",
-          "type": "string",
-          "description": {
-		"en": "The tooltip will be positioned according to the target element",
-		"jp": "ツールチップはターゲット要素に基づいて配置されます。"
-	}
-        }
-      ]
-    },
-    "visibility": {
-      "type": "string",
-      "defaultValue": "overflow",
-      "description": {
-		"en": "Determines the tooltip visibility option",
-		"jp": "ツールチップの表示状態オプションを決定します。"
-	},
-      "valueOptions": [
-        {
-          "name": "always",
-          "type": "string",
-          "description": {
-		"en": "Tooltips always show for hovered elements",
-		"jp": "ツールチップはホバーされる要素で常に表示します。"
-	}
-        },
-        {
-          "name": "never",
-          "type": "string",
-          "description": {
-		"en": "TooltipsDo not show automatically",
-		"jp": "ツールチップは自動的に表示しません。"
-	}
-        },
-        {
-          "name": "overflow",
-          "type": "string",
-          "description": {
-		"en": "Tooltips show only when the underlying data overflows its container",
-		"jp": "ツールチップは基データがそのコンテナーをオーバーフローしたときのみ表示します。"
-	}
-        }
-      ]
-    }
-  }
 }

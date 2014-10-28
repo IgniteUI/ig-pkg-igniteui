@@ -1,609 +1,609 @@
 ﻿{
-  "overview": null,
-  "name": "ui.igPieChart",
-  "category": null,
-  "visual": true,
-  "events": {
-    "browserNotSupported": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "event fired when the control is displayed on a non HTML5 compliant browser",
-		"jp": "HTML5 非互換のブラウザでコントロールを表示したときに発生するイベント。"
-	}
-    },
-    "sliceClick": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Raised when the slice is clicked.<br>   Function takes arguments evt and ui.<br>   Use ui.chart to get reference to chart object.<br>   Use ui.slice to get reference to slice object.<br>   Use ui.slice.item to get reference to current pie chart item.<br>   Use ui.slice.isExploded to get is the slice exploded.<br>   Use ui.slice.isSelected to get is the slice selected.",
-		"jp": "スライスがクリックされたときに発生します。<br>   関数は引数 evt および ui を取得します。<br>   チャート オブジェクトへの参照を取得するには ui.chart を使用します。<br>   スライス オブジェクトへの参照を取得するには ui.slice を使用します。<br>   現在の円チャート項目への参照を取得するには ui.slice.item を使用します。<br>   スライスが展開されるかどうかを決定するには ui.slice.isExploded を使用します。<br>   スライスが選択されるかどうかを決定するには ui.slice.isSelected を使用します。"
-	}
-    },
-    "tooltipHidden": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "event fired after a tooltip is hidden<br>   Function takes arguments evt and ui.<br>   Use ui.element to get reference to tooltip DOM element.<br>   Use ui.item to get reference to current pie chart item.<br>   Use ui.chart to get reference to chart object.",
-		"jp": "ツールチップが非表示になった後に発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ツールチップの DOM 要素への参照を取得するには ui.element を使用します。<br>   現在の円チャート項目への参照を取得するには ui.item を使用します。<br>   チャート オブジェクトへの参照を取得するには ui.chart を使用します。"
-	}
-    },
-    "tooltipHiding": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "event fired when the mouse has left an element and the tooltip is about to hide <br>   Function takes arguments evt and ui.<br>   Use ui.element to get reference to tooltip DOM element.<br>   Use ui.item to get reference to current pie chart item.<br>   Use ui.chart to get reference to chart object.",
-		"jp": "マウスが要素から出って、ツールチップが非表示するときに発生するイベント。<br>    関数は evt および ui 引数を取得します。<br>   ツールチップの DOM 要素への参照を取得するには ui.element を使用します。<br>   現在の円チャート項目への参照を取得するには ui.item を使用します。<br>   チャート オブジェクトへの参照を取得するには ui.chart を使用します。"
-	}
-    },
-    "tooltipShowing": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "event fired when the mouse has hovered on an element long enough to display a tooltip <br>   Function takes arguments evt and ui.<br>   Use ui.element to get reference to tooltip DOM element.<br>   Use ui.item to get reference to current pie chart item.<br>   Use ui.chart to get reference to chart object.",
-		"jp": "ツールチップを表示するためにマウスが十分な期間要素上をホバーしたときに発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ツールチップの DOM 要素への参照を取得するには ui.element を使用します。<br>   現在の円チャート項目への参照を取得するには ui.item を使用します。<br>   チャート オブジェクトへの参照を取得するには ui.chart を使用します。"
-	}
-    },
-    "tooltipShown": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "event fired after a tooltip is shown <br>   Function takes arguments evt and ui.<br>   Use ui.element to get reference to tooltip DOM element.<br>   Use ui.item to get reference to current pie chart item.<br>   Use ui.chart to get reference to chart object.",
-		"jp": "ツールチップが表示された後に発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ツールチップの DOM 要素への参照を取得するには ui.element を使用します。<br>   現在の円チャート項目への参照を取得するには ui.item を使用します。<br>   チャート オブジェクトへの参照を取得するには ui.chart を使用します。"
-	}
-    }
-  },
-  "properties": {
-    "allowSliceExplosion": {
-      "type": "bool",
-      "defaultValue": false,
-      "description": {
-		"en": "Gets or sets whether the slices can be exploded.",
-		"jp": "スライスを展開できるかどうかを取得または設定します。"
-	}
-    },
-    "allowSliceSelection": {
-      "type": "bool",
-      "defaultValue": false,
-      "description": {
-		"en": "Gets or sets whether the slices can be selected.",
-		"jp": "スライスを選択できるかどうかを取得または設定します。"
-	}
-    },
-    "brushes": {
-      "type": "array",
-      "defaultValue": null,
-      "description": {
-		"en": "Gets or sets the Brushes property.<br>   The brushes property defines the palette from which automatically assigned slice brushes are selected.<br>   The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
-		"jp": "Brushes プロパティを取得または設定します。<br>   ブラシ プロパティは自動的に割り当てられるブラシを選択するパレットを定義します。<br>   提供された値は、css 色文字列の配列である必要があります。最初の要素は、コレクションの補間モードを指定する RGB または HSV の文字列に設定するオプションがあります。"
-	},
-      "arrayMemberType": "string",
-       "schema": {
-		"name": {
-			"type": "string",
-			"required": true,
-			"defaultValue": null,
-			"processValueOnly" : true,
-			"description": {
-		"en": "Plette from which automatically assigned slice brushes are selected.",
-		"jp": "自動的に割り当てられたスライス ブラシが選択されるからのパレット。"
-	}
-			}
-		},
-	    "designerDisplayProperty": "name"
-    },
-    "dataSource": {
-      "type": "custom",
-      "defaultValue": null,
-      "description": {
-		"en": "can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself",
-		"jp": "$.ig.DataSource が受け入れる有効なデータ ソースまたは $.ig.DataSource 自体のインスタンスが可能です。"
-	}
-    },
-    "dataSourceType": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "Explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property.",
-		"jp": "データ ソースのタイプ (\"json\" など) を明示的に設定します。$.ig.DataSource とそのタイプ プロパティのドキュメントを参照してください。"
-	}
-    },
-    "dataSourceUrl": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "Specifies a remote URL accepted by $.ig.DataSource in order to request data from it",
-		"jp": "$.ig.DataSource からデータを要求するには、$.ig.DataSource により承諾されたリモート URL を指定します。"
-	}
-    },
-    "explodedRadius": {
-      "type": "number",
-      "defaultValue": 0.2,
-      "description": {
-		"en": "Determines how much the exploded slice is offset from the center. Value between 0 and 1.",
-		"jp": "展開されたスライスが中央からオフセットされる量を決定します。0 と 1 の間の値。"
-	}
-    },
-    "explodedSlices": {
-      "type": "array",
-      "defaultValue": null,
-      "description": {
-		"en": "Gets or sets the collection of exploded slice indices.<br>            Should be an array of integers that indicate the indexes of the slices to explode.",
-		"jp": "展開したスライスのインデックスのコレクションを取得または設定します。<br>            展開するスライスのインデックスを示す整数の配列です。"
-	},
-      "arrayMemberType": "number",
-       "schema": {
-		"Slice Index": {
-			"type": "number",
-			"required": true,
-			"defaultValue": null,
-			"processValueOnly" : true,
-			"description": {
-		"en": "The index of the slices to explode",
-		"jp": "展開するスライスのインデックス。"
-	}
-			}
-		},
-	    "designerDisplayProperty": "Slice Index"
-    },
-    "formatLabel": {
-      "type": "function",
-      "defaultValue": null,
-      "description": {
-		"en": "Gets or sets the function to use to transform a pie slice data context into a label for the slice. Function takes one argument of type object.<br>   Use context.item to get the item associated with the slice, if any.<br>   Use context.actualItemBrush to get the brush used to paint the slice.<br>   Use context.outline to get the outline brush used to paint the slice.<br>   Use context.itemLabel to get the label object that would be used for the slice.<br>   Use context.percentValue to see the percentage value that is associated with the slice.<br>   Use context.isOthersSlice to tell if the associated slice is the others slice.<br>   Should return a string value that should be used for the label.",
-		"jp": "円スライスのデータ コンテキストをスライスのラベルに変換するために使用される関数を取得または設定します。関数は object 型の 1 つの引数を受けます。<br>   context.item を使用して、スライスと関連する項目を取得します。<br>   context.actualItemBrush を使用して、スライスを描画するために使用されたブラシを取得します。<br>   context.outline を使用して、スライスを描画するために使用されたアウトライン ブラシを取得します。<br>   context.itemLabel を使用して、スライスで使用されるラベル オブジェクトを取得します。<br>   context.percentValue を使用して、スライスと関連するパーセント値を取得します。<br>   context.isOthersSlice を使用して、関連するスライスは「その他」のスライスかどうかを取得します。<br>   ラベルで使用する文字列値を返します。"
-	}
-    },
-    "height": {
-      "type": "number",
-      "defaultValue": null,
-      "description": {
-		"en": "The height of the chart. It can be set as a number in pixels, string (px) or percentage (%).",
-		"jp": "チャートの高さ。ピクセル、文字列 (px)、またはパーセンテージ (%) で数字として設定できます。"
-	}
-    },
-    "labelExtent": {
-      "type": "number",
-      "defaultValue": 10.0,
-      "description": {
-		"en": "Gets or sets the pixel amount, by which the labels are offset from the edge of the slices.",
-		"jp": "スライスの端からラベルをオフセットするピクセル量を取得または設定します。"
-	}
-    },
-    "labelMemberPath": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "Gets or sets the property name that contains the labels.",
-		"jp": "ラベルを含むプロパティ名を取得または設定します。"
-	}
-    },
-    "labelsPosition": {
-      "type": "string",
-      "defaultValue": "center",
-      "description": {
-		"en": "Specifies the chart label position",
-		"jp": "チャートのラベル位置を指定します。"
-	},
-      "valueOptions": [
-        {
-          "name": "none",
-          "type": "string",
-          "description": {
-		"en": "No labels will be displayed.",
-		"jp": "ラベルは表示されません。"
-	}
-        },
-        {
-          "name": "center",
-          "type": "string",
-          "description": {
-		"en": "Labels will be displayed in the center.",
-		"jp": "ラベルは中央に表示されます。"
-	}
-        },
-        {
-          "name": "insideEnd",
-          "type": "string",
-          "description": {
-		"en": "Labels will be displayed inside and by the edge of the container.",
-		"jp": "ラベルはコンテナーの内側と端の近くに表示されます。"
-	}
-        },
-        {
-          "name": "outsideEnd",
-          "type": "string",
-          "description": {
-		"en": "Labels will be displayed outside the container.",
-		"jp": "ラベルはコンテナーの外に表示されます。"
-	}
-        },
-        {
-          "name": "bestFit",
-          "type": "string",
-          "description": {
-		"en": "Labels will automatically decide their location.",
-		"jp": "ラベルの場所は自動的に決まります。"
-	}
-        }
-      ]
-    },
-    "leaderLineMargin": {
-      "type": "number",
-      "defaultValue": 6.0,
-      "description": {
-		"en": "Gets or sets the margin between a label and the end of its leader line.",
-		"jp": "ラベルおよびその引き出し線の終了の間のマージンを取得または設定します。"
-	}
-    },
-    "leaderLineType": {
-      "type": "string",
-      "defaultValue": "straightLine",
-      "description": {
-		"en": "Specifies the type of the igPieChart leader line",
-		"jp": "igPieChart の引き出し線のタイプを指定します。"
-	},
-      "valueOptions": [
-        {
-          "name": "straightLine",
-          "type": "string",
-          "description": {
-		"en": "Defines a stright leader line of the igPieChart",
-		"jp": "igPieChart の直線引き出し線を定義します。"
-	}
-        },
-        {
-          "name": "simpleCurve",
-          "type": "string",
-          "description": {
-		"en": "Defines a simple curve to be the igPieChart leader line",
-		"jp": "igPieChart の簡易曲線引き出し線を定義します。"
-	}
-        },
-        {
-          "name": "radialCurve",
-          "type": "string",
-          "description": {
-		"en": "Defines a radial curve to be the igPieChart leader line",
-		"jp": "igPieChart のラジアル曲線引き出し線を定義します。"
-	}
-        }
-      ]
-    },
-    "leaderLineVisibility": {
-      "type": "string",
-      "defaultValue": "visible",
-      "description": {
-		"en": "Specifies the visibility of the igPieChart leader line",
-		"jp": "igPieChart の引き出し線の表示状態を指定します。"
-	},
-      "valueOptions": [
-        {
-          "name": "visible",
-          "type": "string",
-          "description": {
-		"en": "The igPieChart leader line is visible",
-		"jp": "igPieChart の引き出し線は表示されています。"
-	}
-        },
-        {
-          "name": "collapsed",
-          "type": "string",
-          "description": {
-		"en": "The igPieChart leader line is collapsed",
-		"jp": "igPieChart の引き出し線は縮小されています。"
-	}
-        }
-      ]
-    },
-    "legend": {
-      "type": "object",
-      "defaultValue": null,
-      "description": {
-		"en": "can be any valid options accepted by $.ig.ChartLegend, or an instance of an $.ig.ChartLegend itself.",
-		"jp": "$.ig.ChartLegend が受け入れる有効なオプションまたは $.ig.ChartLegend 自体のインスタンスが可能です。"
-	},
-      "schema": {
-        "element": {
-          "type": "string",
-          "defaultValue": null,
-          "description": {
-		"en": "The name of the element to turn into a legend.",
-		"jp": "凡例に変更する要素の名前。"
-	}
-        },
-        "type": {
-          "type": "string",
-          "defaultValue": "legend",
-          "description": {
-		"en": "Type of the legend.",
-		"jp": "凡例のタイプ。"
-	},
-          "valueOptions": [
-            {
-              "name": "item",
-              "type": "string",
-              "description": {
-		"en": "Specify the legend as item legend. It displays a legend item for each pie in the igPieChart control.",
-		"jp": "凡例を項目の凡例として指定します。igPieChart コントロール内の各パイに対して凡例の項目を表示します。"
-	}
-            },
-            {
-              "name": "legend",
-              "type": "string",
-              "description": {
-		"en": "Specify the legend as legend. It is supported by all types of series in the igDataChart control.",
-		"jp": "凡例を凡例として指定します。これは、igDataChart コントロールのすべてのタイプのシリーズによってサポートされます。"
-	}
+    "overview": null,
+    "name": "ui.igPieChart",
+    "category": null,
+    "visual": true,
+    "events": {
+        "browserNotSupported": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "event fired when the control is displayed on a non HTML5 compliant browser",
+                "jp": "HTML5 非互換のブラウザでコントロールを表示したときに発生するイベント。"
             }
-          ]
         },
-        "width": {
-          "type": "number",
-          "defaultValue": null,
-          "description": {
-		"en": "The width of the legend.",
-		"jp": "凡例の幅。"
-	}
+        "sliceClick": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Raised when the slice is clicked.<br>   Function takes arguments evt and ui.<br>   Use ui.chart to get reference to chart object.<br>   Use ui.slice to get reference to slice object.<br>   Use ui.slice.item to get reference to current pie chart item.<br>   Use ui.slice.isExploded to get is the slice exploded.<br>   Use ui.slice.isSelected to get is the slice selected.",
+                "jp": "スライスがクリックされたときに発生します。<br>   関数は引数 evt および ui を取得します。<br>   チャート オブジェクトへの参照を取得するには ui.chart を使用します。<br>   スライス オブジェクトへの参照を取得するには ui.slice を使用します。<br>   現在の円チャート項目への参照を取得するには ui.slice.item を使用します。<br>   スライスが展開されるかどうかを決定するには ui.slice.isExploded を使用します。<br>   スライスが選択されるかどうかを決定するには ui.slice.isSelected を使用します。"
+            }
+        },
+        "tooltipHidden": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "event fired after a tooltip is hidden<br>   Function takes arguments evt and ui.<br>   Use ui.element to get reference to tooltip DOM element.<br>   Use ui.item to get reference to current pie chart item.<br>   Use ui.chart to get reference to chart object.",
+                "jp": "ツールチップが非表示になった後に発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ツールチップの DOM 要素への参照を取得するには ui.element を使用します。<br>   現在の円チャート項目への参照を取得するには ui.item を使用します。<br>   チャート オブジェクトへの参照を取得するには ui.chart を使用します。"
+            }
+        },
+        "tooltipHiding": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "event fired when the mouse has left an element and the tooltip is about to hide <br>   Function takes arguments evt and ui.<br>   Use ui.element to get reference to tooltip DOM element.<br>   Use ui.item to get reference to current pie chart item.<br>   Use ui.chart to get reference to chart object.",
+                "jp": "マウスが要素から出って、ツールチップが非表示するときに発生するイベント。<br>    関数は evt および ui 引数を取得します。<br>   ツールチップの DOM 要素への参照を取得するには ui.element を使用します。<br>   現在の円チャート項目への参照を取得するには ui.item を使用します。<br>   チャート オブジェクトへの参照を取得するには ui.chart を使用します。"
+            }
+        },
+        "tooltipShowing": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "event fired when the mouse has hovered on an element long enough to display a tooltip <br>   Function takes arguments evt and ui.<br>   Use ui.element to get reference to tooltip DOM element.<br>   Use ui.item to get reference to current pie chart item.<br>   Use ui.chart to get reference to chart object.",
+                "jp": "ツールチップを表示するためにマウスが十分な期間要素上をホバーしたときに発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ツールチップの DOM 要素への参照を取得するには ui.element を使用します。<br>   現在の円チャート項目への参照を取得するには ui.item を使用します。<br>   チャート オブジェクトへの参照を取得するには ui.chart を使用します。"
+            }
+        },
+        "tooltipShown": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "event fired after a tooltip is shown <br>   Function takes arguments evt and ui.<br>   Use ui.element to get reference to tooltip DOM element.<br>   Use ui.item to get reference to current pie chart item.<br>   Use ui.chart to get reference to chart object.",
+                "jp": "ツールチップが表示された後に発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ツールチップの DOM 要素への参照を取得するには ui.element を使用します。<br>   現在の円チャート項目への参照を取得するには ui.item を使用します。<br>   チャート オブジェクトへの参照を取得するには ui.chart を使用します。"
+            }
+        }
+    },
+    "properties": {
+        "allowSliceExplosion": {
+            "type": "bool",
+            "defaultValue": false,
+            "description": {
+                "en": "Gets or sets whether the slices can be exploded.",
+                "jp": "スライスを展開できるかどうかを取得または設定します。"
+            }
+        },
+        "allowSliceSelection": {
+            "type": "bool",
+            "defaultValue": false,
+            "description": {
+                "en": "Gets or sets whether the slices can be selected.",
+                "jp": "スライスを選択できるかどうかを取得または設定します。"
+            }
+        },
+        "brushes": {
+            "type": "array",
+            "defaultValue": null,
+            "description": {
+                "en": "Gets or sets the Brushes property.<br>   The brushes property defines the palette from which automatically assigned slice brushes are selected.<br>   The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
+                "jp": "Brushes プロパティを取得または設定します。<br>   ブラシ プロパティは自動的に割り当てられるブラシを選択するパレットを定義します。<br>   提供された値は、css 色文字列の配列である必要があります。最初の要素は、コレクションの補間モードを指定する RGB または HSV の文字列に設定するオプションがあります。"
+            },
+            "arrayMemberType": "string",
+            "schema": {
+                "name": {
+                    "type": "string",
+                    "required": true,
+                    "defaultValue": null,
+                    "processValueOnly": true,
+                    "description": {
+                        "en": "Plette from which automatically assigned slice brushes are selected.",
+                        "jp": "自動的に割り当てられたスライス ブラシが選択されるからのパレット。"
+                    }
+                }
+            },
+            "designerDisplayProperty": "name"
+        },
+        "dataSource": {
+            "type": "custom",
+            "defaultValue": null,
+            "description": {
+                "en": "can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself",
+                "jp": "$.ig.DataSource が受け入れる有効なデータ ソースまたは $.ig.DataSource 自体のインスタンスが可能です。"
+            }
+        },
+        "dataSourceType": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "Explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property.",
+                "jp": "データ ソースのタイプ (\"json\" など) を明示的に設定します。$.ig.DataSource とそのタイプ プロパティのドキュメントを参照してください。"
+            }
+        },
+        "dataSourceUrl": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "Specifies a remote URL accepted by $.ig.DataSource in order to request data from it",
+                "jp": "$.ig.DataSource からデータを要求するには、$.ig.DataSource により承諾されたリモート URL を指定します。"
+            }
+        },
+        "explodedRadius": {
+            "type": "number",
+            "defaultValue": 0.2,
+            "description": {
+                "en": "Determines how much the exploded slice is offset from the center. Value between 0 and 1.",
+                "jp": "展開されたスライスが中央からオフセットされる量を決定します。0 と 1 の間の値。"
+            }
+        },
+        "explodedSlices": {
+            "type": "array",
+            "defaultValue": null,
+            "description": {
+                "en": "Gets or sets the collection of exploded slice indices.<br>            Should be an array of integers that indicate the indexes of the slices to explode.",
+                "jp": "展開したスライスのインデックスのコレクションを取得または設定します。<br>            展開するスライスのインデックスを示す整数の配列です。"
+            },
+            "arrayMemberType": "number",
+            "schema": {
+                "Slice Index": {
+                    "type": "number",
+                    "required": true,
+                    "defaultValue": null,
+                    "processValueOnly": true,
+                    "description": {
+                        "en": "The index of the slices to explode",
+                        "jp": "展開するスライスのインデックス。"
+                    }
+                }
+            },
+            "designerDisplayProperty": "Slice Index"
+        },
+        "formatLabel": {
+            "type": "function",
+            "defaultValue": null,
+            "description": {
+                "en": "Gets or sets the function to use to transform a pie slice data context into a label for the slice. Function takes one argument of type object.<br>   Use context.item to get the item associated with the slice, if any.<br>   Use context.actualItemBrush to get the brush used to paint the slice.<br>   Use context.outline to get the outline brush used to paint the slice.<br>   Use context.itemLabel to get the label object that would be used for the slice.<br>   Use context.percentValue to see the percentage value that is associated with the slice.<br>   Use context.isOthersSlice to tell if the associated slice is the others slice.<br>   Should return a string value that should be used for the label.",
+                "jp": "円スライスのデータ コンテキストをスライスのラベルに変換するために使用される関数を取得または設定します。関数は object 型の 1 つの引数を受けます。<br>   context.item を使用して、スライスと関連する項目を取得します。<br>   context.actualItemBrush を使用して、スライスを描画するために使用されたブラシを取得します。<br>   context.outline を使用して、スライスを描画するために使用されたアウトライン ブラシを取得します。<br>   context.itemLabel を使用して、スライスで使用されるラベル オブジェクトを取得します。<br>   context.percentValue を使用して、スライスと関連するパーセント値を取得します。<br>   context.isOthersSlice を使用して、関連するスライスは「その他」のスライスかどうかを取得します。<br>   ラベルで使用する文字列値を返します。"
+            }
         },
         "height": {
-          "type": "number",
-          "defaultValue": null,
-          "description": {
-		"en": "The height of the legend.",
-		"jp": "凡例の高さ。"
-	}
-        }
-      }
-    },
-    "legendItemBadgeTemplate": {
-      "type": "object",
-      "defaultValue": null,
-      "description": {
-		"en": "Gets or sets the LegendItemBadgeTemplate property.<br>   The legend item badge is created according to the LegendItemBadgeTemplate on-demand by<br>   the chart object itself.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-		"jp": "LegendItemBadgeTemplate プロパティを取得または設定します。<br>   凡例項目バッジは、LegendItemBadgeTemplate に従って、チャート オブジェクト自身によって<br>   オンデマンドで作成されます。<br>   提供されるオブジェクトには、描画とオプションでメジャーと呼ばれるプロパティがあります。option: legendItemBadgeTemplate の定義を参照してください。"
-	},
-      "schemaRef": "dataChart.circleMarkerTemplate"
-    },
-    "legendItemTemplate": {
-      "type": "object",
-      "defaultValue": null,
-      "description": {
-		"en": "Gets or sets the LegendItemTemplate property.<br>   The legend item control content is created according to the LegendItemTemplate on-demand by<br>   the chart object itself.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
-		"jp": "LegendItemTemplate プロパティを取得または設定します。<br>   凡例項目コントロール コンテンツは、LegendItemTemplate に従って、チャート オブジェクト自身によって<br>   オンデマンドで作成されます。<br>   提供されるオブジェクトには、描画とオプションでメジャーと呼ばれるプロパティがあります。option: legendItemBadgeTemplate の定義を参照してください。"
-	},
-      "schemaRef": "dataChart.circleMarkerTemplate"
-    },
-    "othersCategoryStyle": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "Gets or sets a style object that can be used to override the style settings on the others category slice.",
-		"jp": "「その他」のカテゴリ スライスでスタイル設定をオーバーライドするために使用されるスタイル オブジェクトを取得または設定します。"
-	}
-    },
-    "othersCategoryText": {
-      "type": "string",
-      "defaultValue": "Others",
-      "description": {
-		"en": "Gets or sets the label of the Others slice.",
-		"jp": "その他のスライスのラベルを取得または設定します。"
-	}
-    },
-    "othersCategoryThreshold": {
-      "type": "number",
-      "defaultValue": 3.0,
-      "description": {
-		"en": "Gets or sets the threshold value that determines if slices are grouped into the Others slice.",
-		"jp": "スライスがその他のスライスにグループ化されるかを決定するしきい値を取得または設定します。"
-	}
-    },
-    "othersCategoryType": {
-      "type": "string",
-      "defaultValue": "percent",
-      "description": {
-		"en": "Gets or sets whether to use numeric or percent-based threshold value.",
-		"jp": "数値ベースのしきい値を使用するかパーセンテージ ベースのしきい値を使用するかを取得または設定します。"
-	},
-      "valueOptions": [
-        {
-          "name": "number",
-          "type": "string",
-          "description": {
-		"en": "Data value is compared directly to the value of OthersCategoryThreshold.",
-		"jp": "データ値は OthersCategoryThreshold の値と直接比較されます。"
-	}
+            "type": "number",
+            "defaultValue": null,
+            "description": {
+                "en": "The height of the chart. It can be set as a number in pixels, string (px) or percentage (%).",
+                "jp": "チャートの高さ。ピクセル、文字列 (px)、またはパーセンテージ (%) で数字として設定できます。"
+            }
         },
-        {
-          "name": "percent",
-          "type": "string",
-          "description": {
-		"en": "Data value is compared to OthersCategoryThreshold as a percentage of the total.",
-		"jp": "データ値は合計のパーセンテージとして OthersCategoryThreshold と比較されます。"
-	}
-        }
-      ]
-    },
-    "outlines": {
-      "type": "object",
-      "defaultValue": null,
-      "description": {
-		"en": "Gets or sets the Outlines property.<br>   The Outlines property defines the palette from which automatically assigned slice outlines are selected.<br>   The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
-		"jp": "Outlines プロパティを取得または設定します。<br>   Outline プロパティは自動的に割り当てられるスライス アウトラインを選択するパレットを定義します。<br>   提供された値は、css 色文字列の配列である必要があります。最初の要素は、コレクションの補間モードを指定する RGB または HSV の文字列に設定するオプションがあります。"
-	},
-      "arrayMemberType": "string"
-    },
-    "radiusFactor": {
-      "type": "number",
-      "defaultValue": 0.9,
-      "description": {
-		"en": "Gets or sets the scaling factor of the chart's radius. Value between 0 and 1.",
-		"jp": "チャートの半径のスケール率を取得または設定します。0 と 1 の間の値。"
-	}
-    },
-    "responseDataKey": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "see $.ig.DataSource. Specifies the name of the property in which data records are held if the response is wrapped.",
-		"jp": "$.ig.DataSource を参照してください。応答がラップされる場合に、データ レコードが保持されるプロパティの名前を指定します。"
-	}
-    },
-    "selectedStyle": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "Gets or sets the style used when a slice is selected.",
-		"jp": "スライスを選択するときに使用するスタイルを取得または設定します。"
-	}
-    },
-    "showTooltip": {
-      "type": "bool",
-      "defaultValue": false,
-      "description": {
-		"en": "Whether the chart should render a tooltip.",
-		"jp": "チャートがツールチップを描画すべきかどうか。"
-	}
-    },
-    "startAngle": {
-      "type": "number",
-      "defaultValue": 0.0,
-      "description": {
-		"en": "Gets or sets the starting angle of the chart.<br>   The default zero value is equivalent to 3 o'clock.",
-		"jp": "チャートの開始角度を取得または設定します。<br>   デフォルト値 0 は、時計の 3 時に相当します。"
-	}
-    },
-    "sweepDirection": {
-      "type": "string",
-      "defaultValue": "clockwise",
-      "description": {
-		"en": "Specifies the igPieChart sweep direction",
-		"jp": "igPieChart のスイープ方向を指定します。"
-	},
-      "valueOptions": [
-        {
-          "name": "counterclockwise",
-          "type": "string",
-          "description": {
-		"en": "Defines the igPieChart sweep direction to be anticlockwise",
-		"jp": "igPieChart のスイープ方向を反時計回りに定義します。"
-	}
+        "labelExtent": {
+            "type": "number",
+            "defaultValue": 10.0,
+            "description": {
+                "en": "Gets or sets the pixel amount, by which the labels are offset from the edge of the slices.",
+                "jp": "スライスの端からラベルをオフセットするピクセル量を取得または設定します。"
+            }
         },
-        {
-          "name": "clockwise",
-          "type": "string",
-          "description": {
-		"en": "Defines the igPieChart sweep direction to follow the clock arrow",
-		"jp": "igPieChart のスイープ方向を時計回りに定義します。"
-	}
+        "labelMemberPath": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "Gets or sets the property name that contains the labels.",
+                "jp": "ラベルを含むプロパティ名を取得または設定します。"
+            }
+        },
+        "labelsPosition": {
+            "type": "string",
+            "defaultValue": "center",
+            "description": {
+                "en": "Specifies the chart label position",
+                "jp": "チャートのラベル位置を指定します。"
+            },
+            "valueOptions": [
+                {
+                    "name": "none",
+                    "type": "string",
+                    "description": {
+                        "en": "No labels will be displayed.",
+                        "jp": "ラベルは表示されません。"
+                    }
+                },
+                {
+                    "name": "center",
+                    "type": "string",
+                    "description": {
+                        "en": "Labels will be displayed in the center.",
+                        "jp": "ラベルは中央に表示されます。"
+                    }
+                },
+                {
+                    "name": "insideEnd",
+                    "type": "string",
+                    "description": {
+                        "en": "Labels will be displayed inside and by the edge of the container.",
+                        "jp": "ラベルはコンテナーの内側と端の近くに表示されます。"
+                    }
+                },
+                {
+                    "name": "outsideEnd",
+                    "type": "string",
+                    "description": {
+                        "en": "Labels will be displayed outside the container.",
+                        "jp": "ラベルはコンテナーの外に表示されます。"
+                    }
+                },
+                {
+                    "name": "bestFit",
+                    "type": "string",
+                    "description": {
+                        "en": "Labels will automatically decide their location.",
+                        "jp": "ラベルの場所は自動的に決まります。"
+                    }
+                }
+            ]
+        },
+        "leaderLineMargin": {
+            "type": "number",
+            "defaultValue": 6.0,
+            "description": {
+                "en": "Gets or sets the margin between a label and the end of its leader line.",
+                "jp": "ラベルおよびその引き出し線の終了の間のマージンを取得または設定します。"
+            }
+        },
+        "leaderLineType": {
+            "type": "string",
+            "defaultValue": "straightLine",
+            "description": {
+                "en": "Specifies the type of the igPieChart leader line",
+                "jp": "igPieChart の引き出し線のタイプを指定します。"
+            },
+            "valueOptions": [
+                {
+                    "name": "straightLine",
+                    "type": "string",
+                    "description": {
+                        "en": "Defines a stright leader line of the igPieChart",
+                        "jp": "igPieChart の直線引き出し線を定義します。"
+                    }
+                },
+                {
+                    "name": "simpleCurve",
+                    "type": "string",
+                    "description": {
+                        "en": "Defines a simple curve to be the igPieChart leader line",
+                        "jp": "igPieChart の簡易曲線引き出し線を定義します。"
+                    }
+                },
+                {
+                    "name": "radialCurve",
+                    "type": "string",
+                    "description": {
+                        "en": "Defines a radial curve to be the igPieChart leader line",
+                        "jp": "igPieChart のラジアル曲線引き出し線を定義します。"
+                    }
+                }
+            ]
+        },
+        "leaderLineVisibility": {
+            "type": "string",
+            "defaultValue": "visible",
+            "description": {
+                "en": "Specifies the visibility of the igPieChart leader line",
+                "jp": "igPieChart の引き出し線の表示状態を指定します。"
+            },
+            "valueOptions": [
+                {
+                    "name": "visible",
+                    "type": "string",
+                    "description": {
+                        "en": "The igPieChart leader line is visible",
+                        "jp": "igPieChart の引き出し線は表示されています。"
+                    }
+                },
+                {
+                    "name": "collapsed",
+                    "type": "string",
+                    "description": {
+                        "en": "The igPieChart leader line is collapsed",
+                        "jp": "igPieChart の引き出し線は縮小されています。"
+                    }
+                }
+            ]
+        },
+        "legend": {
+            "type": "object",
+            "defaultValue": null,
+            "description": {
+                "en": "can be any valid options accepted by $.ig.ChartLegend, or an instance of an $.ig.ChartLegend itself.",
+                "jp": "$.ig.ChartLegend が受け入れる有効なオプションまたは $.ig.ChartLegend 自体のインスタンスが可能です。"
+            },
+            "schema": {
+                "element": {
+                    "type": "string",
+                    "defaultValue": null,
+                    "description": {
+                        "en": "The name of the element to turn into a legend.",
+                        "jp": "凡例に変更する要素の名前。"
+                    }
+                },
+                "type": {
+                    "type": "string",
+                    "defaultValue": "legend",
+                    "description": {
+                        "en": "Type of the legend.",
+                        "jp": "凡例のタイプ。"
+                    },
+                    "valueOptions": [
+                        {
+                            "name": "item",
+                            "type": "string",
+                            "description": {
+                                "en": "Specify the legend as item legend. It displays a legend item for each pie in the igPieChart control.",
+                                "jp": "凡例を項目の凡例として指定します。igPieChart コントロール内の各パイに対して凡例の項目を表示します。"
+                            }
+                        },
+                        {
+                            "name": "legend",
+                            "type": "string",
+                            "description": {
+                                "en": "Specify the legend as legend. It is supported by all types of series in the igDataChart control.",
+                                "jp": "凡例を凡例として指定します。これは、igDataChart コントロールのすべてのタイプのシリーズによってサポートされます。"
+                            }
+                        }
+                    ]
+                },
+                "width": {
+                    "type": "number",
+                    "defaultValue": null,
+                    "description": {
+                        "en": "The width of the legend.",
+                        "jp": "凡例の幅。"
+                    }
+                },
+                "height": {
+                    "type": "number",
+                    "defaultValue": null,
+                    "description": {
+                        "en": "The height of the legend.",
+                        "jp": "凡例の高さ。"
+                    }
+                }
+            }
+        },
+        "legendItemBadgeTemplate": {
+            "type": "object",
+            "defaultValue": null,
+            "description": {
+                "en": "Gets or sets the LegendItemBadgeTemplate property.<br>   The legend item badge is created according to the LegendItemBadgeTemplate on-demand by<br>   the chart object itself.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
+                "jp": "LegendItemBadgeTemplate プロパティを取得または設定します。<br>   凡例項目バッジは、LegendItemBadgeTemplate に従って、チャート オブジェクト自身によって<br>   オンデマンドで作成されます。<br>   提供されるオブジェクトには、描画とオプションでメジャーと呼ばれるプロパティがあります。option: legendItemBadgeTemplate の定義を参照してください。"
+            },
+            "schemaRef": "dataChart.circleMarkerTemplate"
+        },
+        "legendItemTemplate": {
+            "type": "object",
+            "defaultValue": null,
+            "description": {
+                "en": "Gets or sets the LegendItemTemplate property.<br>   The legend item control content is created according to the LegendItemTemplate on-demand by<br>   the chart object itself.<br>   The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate",
+                "jp": "LegendItemTemplate プロパティを取得または設定します。<br>   凡例項目コントロール コンテンツは、LegendItemTemplate に従って、チャート オブジェクト自身によって<br>   オンデマンドで作成されます。<br>   提供されるオブジェクトには、描画とオプションでメジャーと呼ばれるプロパティがあります。option: legendItemBadgeTemplate の定義を参照してください。"
+            },
+            "schemaRef": "dataChart.circleMarkerTemplate"
+        },
+        "othersCategoryStyle": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "Gets or sets a style object that can be used to override the style settings on the others category slice.",
+                "jp": "「その他」のカテゴリ スライスでスタイル設定をオーバーライドするために使用されるスタイル オブジェクトを取得または設定します。"
+            }
+        },
+        "othersCategoryText": {
+            "type": "string",
+            "defaultValue": "Others",
+            "description": {
+                "en": "Gets or sets the label of the Others slice.",
+                "jp": "その他のスライスのラベルを取得または設定します。"
+            }
+        },
+        "othersCategoryThreshold": {
+            "type": "number",
+            "defaultValue": 3.0,
+            "description": {
+                "en": "Gets or sets the threshold value that determines if slices are grouped into the Others slice.",
+                "jp": "スライスがその他のスライスにグループ化されるかを決定するしきい値を取得または設定します。"
+            }
+        },
+        "othersCategoryType": {
+            "type": "string",
+            "defaultValue": "percent",
+            "description": {
+                "en": "Gets or sets whether to use numeric or percent-based threshold value.",
+                "jp": "数値ベースのしきい値を使用するかパーセンテージ ベースのしきい値を使用するかを取得または設定します。"
+            },
+            "valueOptions": [
+                {
+                    "name": "number",
+                    "type": "string",
+                    "description": {
+                        "en": "Data value is compared directly to the value of OthersCategoryThreshold.",
+                        "jp": "データ値は OthersCategoryThreshold の値と直接比較されます。"
+                    }
+                },
+                {
+                    "name": "percent",
+                    "type": "string",
+                    "description": {
+                        "en": "Data value is compared to OthersCategoryThreshold as a percentage of the total.",
+                        "jp": "データ値は合計のパーセンテージとして OthersCategoryThreshold と比較されます。"
+                    }
+                }
+            ]
+        },
+        "outlines": {
+            "type": "object",
+            "defaultValue": null,
+            "description": {
+                "en": "Gets or sets the Outlines property.<br>   The Outlines property defines the palette from which automatically assigned slice outlines are selected.<br>   The value provided should be an array of css color strings. Optionally the first element can be a string reading \"RGB\" or \"HSV\" to specify the interpolation mode of the collection.",
+                "jp": "Outlines プロパティを取得または設定します。<br>   Outline プロパティは自動的に割り当てられるスライス アウトラインを選択するパレットを定義します。<br>   提供された値は、css 色文字列の配列である必要があります。最初の要素は、コレクションの補間モードを指定する RGB または HSV の文字列に設定するオプションがあります。"
+            },
+            "arrayMemberType": "string"
+        },
+        "radiusFactor": {
+            "type": "number",
+            "defaultValue": 0.9,
+            "description": {
+                "en": "Gets or sets the scaling factor of the chart's radius. Value between 0 and 1.",
+                "jp": "チャートの半径のスケール率を取得または設定します。0 と 1 の間の値。"
+            }
+        },
+        "responseDataKey": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "see $.ig.DataSource. Specifies the name of the property in which data records are held if the response is wrapped.",
+                "jp": "$.ig.DataSource を参照してください。応答がラップされる場合に、データ レコードが保持されるプロパティの名前を指定します。"
+            }
+        },
+        "selectedStyle": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "Gets or sets the style used when a slice is selected.",
+                "jp": "スライスを選択するときに使用するスタイルを取得または設定します。"
+            }
+        },
+        "showTooltip": {
+            "type": "bool",
+            "defaultValue": false,
+            "description": {
+                "en": "Whether the chart should render a tooltip.",
+                "jp": "チャートがツールチップを描画すべきかどうか。"
+            }
+        },
+        "startAngle": {
+            "type": "number",
+            "defaultValue": 0.0,
+            "description": {
+                "en": "Gets or sets the starting angle of the chart.<br>   The default zero value is equivalent to 3 o'clock.",
+                "jp": "チャートの開始角度を取得または設定します。<br>   デフォルト値 0 は、時計の 3 時に相当します。"
+            }
+        },
+        "sweepDirection": {
+            "type": "string",
+            "defaultValue": "clockwise",
+            "description": {
+                "en": "Specifies the igPieChart sweep direction",
+                "jp": "igPieChart のスイープ方向を指定します。"
+            },
+            "valueOptions": [
+                {
+                    "name": "counterclockwise",
+                    "type": "string",
+                    "description": {
+                        "en": "Defines the igPieChart sweep direction to be anticlockwise",
+                        "jp": "igPieChart のスイープ方向を反時計回りに定義します。"
+                    }
+                },
+                {
+                    "name": "clockwise",
+                    "type": "string",
+                    "description": {
+                        "en": "Defines the igPieChart sweep direction to follow the clock arrow",
+                        "jp": "igPieChart のスイープ方向を時計回りに定義します。"
+                    }
+                }
+            ]
+        },
+        "textStyle": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "Overrides the style used for text in the pie chart.",
+                "jp": "円チャートのテキストのスタイル設定をオーバーライドします。"
+            }
+        },
+        "theme": {
+            "type": "string",
+            "defaultValue": "c",
+            "description": {
+                "en": "The swatch used to style this widget",
+                "jp": "このウィジェットをスタイルするために使用される見本。"
+            }
+        },
+        "tooltipTemplate": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "The name of template or the template itself that chart tooltip will use to render.",
+                "jp": "チャート ツールチップが描画するために使用するテンプレートの名前またはテンプレート。"
+            }
+        },
+        "valueMemberPath": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "Gets or Sets the property name that contains the values.",
+                "jp": "値を含むプロパティ名を取得または設定します。"
+            }
+        },
+        "width": {
+            "type": "number",
+            "defaultValue": null,
+            "description": {
+                "en": "The width of the chart. It can be set as a number in pixels, string (px) or percentage (%).",
+                "jp": "チャートの幅。ピクセル、文字列 (px)、またはパーセンテージ (%) で数字として設定できます。"
+            }
         }
-      ]
-    },
-    "textStyle": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "Overrides the style used for text in the pie chart.",
-		"jp": "円チャートのテキストのスタイル設定をオーバーライドします。"
-	}
-    },
-    "theme": {
-      "type": "string",
-      "defaultValue": "c",
-      "description": {
-		"en": "The swatch used to style this widget",
-		"jp": "このウィジェットをスタイルするために使用される見本。"
-	}
-    },
-    "tooltipTemplate": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "The name of template or the template itself that chart tooltip will use to render.",
-		"jp": "チャート ツールチップが描画するために使用するテンプレートの名前またはテンプレート。"
-	}
-    },
-    "valueMemberPath": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "Gets or Sets the property name that contains the values.",
-		"jp": "値を含むプロパティ名を取得または設定します。"
-	}
-    },
-    "width": {
-      "type": "number",
-      "defaultValue": null,
-      "description": {
-		"en": "The width of the chart. It can be set as a number in pixels, string (px) or percentage (%).",
-		"jp": "チャートの幅。ピクセル、文字列 (px)、またはパーセンテージ (%) で数字として設定できます。"
-	}
     }
-  }
 }

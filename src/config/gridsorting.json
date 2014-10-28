@@ -1,631 +1,631 @@
 ﻿{
-  "overview": null,
-  "name": "ui.igGridSorting",
-  "title": "Sorting",
-  "category": null,
-  "visual": true,
-  "events": {
-    "columnSorted": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+    "overview": null,
+    "name": "ui.igGridSorting",
+    "title": "Sorting",
+    "category": null,
+    "visual": true,
+    "events": {
+        "columnSorted": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event fired after the column has already been sorted and data - re-rendered.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridSorting.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.columnKey to get column key.<br>   Use ui.direction to get sorting direction.",
+                "jp": "列が並べ替えられ、データが再描画された後に発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridSorting への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.columnKey を使用して、列のキーを取得します。<br>   ui.direction を使用して、並べ替えの方向を取得します。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
+        "columnSorting": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event fired before sorting is invoked for a certain column.<br>   Return false in order to cancel column sorting.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridSorting.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.columnKey to get column key.<br>   Use ui.direction to get sorting direction.",
+                "jp": "ある列に対して並べ替えを呼び出す前に発生するイベント。<br>   行の並べ替えをキャンセルするには、false を返します。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridSorting への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.columnKey を使用して、列のキーを取得します。<br>   ui.direction を使用して、並べ替えの方向を取得します。"
+            }
+        },
+        "modalDialogButtonApplyClick": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "event fired when button Apply in modal dialog is clicked<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridSorting widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.<br>   Use ui.columnsToSort to get array of columns which should be sorted - array of objects of sort order - Asc/Desc and columnIdentifier",
+                "jp": "モーダル ダイアログの [適用] ボタンをクリックしたときに発生するイベント。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   igGridSorting ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   モーダル ダイアログ要素への参照を取得するには ui.modalDialogElement を使用します。これは jQuery オブジェクトです。<br>   並べ替える列の配列を取得するには ui.columnsToSort を使用します。配列はオブジェクトおよび並べ替えの順序を含みます。順序は Asc または Desc です。オブジェクトは columnIdentifier です。"
+            }
+        },
+        "modalDialogButtonResetClick": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "event fired when the button to reset sorting is clicked. <br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridSorting widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.",
+                "jp": "並べ替えをリセットするボタンをクリックしたときに発生するイベント。<br>    ハンドラー関数は引数 evt および ui を取得します。<br>   igGridSorting ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   モーダル ダイアログ要素への参照を取得するには ui.modalDialogElement を使用します。これは jQuery オブジェクトです。"
+            }
+        },
+        "modalDialogButtonUnsortClick": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "event fired when button to unsort column is clicked in modal dialog<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridSorting widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.<br>   Use ui.columnKey to get the column key",
+                "jp": "列の並べ替えをしないボタンをモーダル ダイアログでクリックした場合に発生するイベント。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   igGridSorting ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   モーダル ダイアログ要素への参照を取得するには ui.modalDialogElement を使用します。これは jQuery オブジェクトです。<br>   ui.columnKey を使用して列キーを取得します。"
+            }
+        },
+        "modalDialogClosed": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "event fired after the modal dialog has been closed.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridSorting widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.",
+                "jp": "モーダル ダイアログが閉じた後に発生するイベント。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   igGridSorting ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   モーダル ダイアログ要素への参照を取得するには ui.modalDialogElement を使用します。これは jQuery オブジェクトです。"
+            }
+        },
+        "modalDialogClosing": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "event fired before the modal dialog is closed.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridSorting widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.",
+                "jp": "モーダル ダイアログが閉じる前に発生するイベント。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   igGridSorting ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   モーダル ダイアログ要素への参照を取得するには ui.modalDialogElement を使用します。これは jQuery オブジェクトです。"
+            }
+        },
+        "modalDialogContentsRendered": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "event fired after the contents of the modal dialog are rendered.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridSorting widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.",
+                "jp": "モーダル ダイアログのコンテンツが描画された後に発生するイベント。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   igGridSorting ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   モーダル ダイアログ要素への参照を取得するには ui.modalDialogElement を使用します。これは jQuery オブジェクトです。"
+            }
+        },
+        "modalDialogContentsRendering": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "event fired before the contents of the modal dialog are rendered.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridSorting widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.",
+                "jp": "モーダル ダイアログのコンテンツが描画される前に発生するイベント。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   igGridSorting ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   モーダル ダイアログ要素への参照を取得するには ui.modalDialogElement を使用します。これは jQuery オブジェクトです。"
+            }
+        },
+        "modalDialogMoving": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "event fired every time the modal dialog changes its position.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridSorting widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.<br>   Use ui.originalPosition to get the original position of the modal dialog div as { top, left } object, relative to the page.<br>   Use ui.position to get the current position of the modal dialog div as { top, left } object, relative to the page.",
+                "jp": "モーダル ダイアログの位置が変更するたびに発生するイベント。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   igGridSorting ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   モーダル ダイアログ要素への参照を取得するには ui.modalDialogElement を使用します。これは jQuery オブジェクトです。<br>   モーダル ダイアログ div の元の位置をページに相対して { top, left } オブジェクトとして取得するには ui.originalPosition を使用します。<br>   モーダル ダイアログ div の現在の位置をページに相対して { top, left } オブジェクトとして取得するには ui.position を使用します。"
+            }
+        },
+        "modalDialogOpened": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "event fired after the modal dialog is already opened.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridSorting widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.",
+                "jp": "モーダル ダイアログがすでに開いた後に発生するイベント。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   igGridSorting ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   モーダル ダイアログ要素への参照を取得するには ui.modalDialogElement を使用します。これは jQuery オブジェクトです。"
+            }
+        },
+        "modalDialogOpening": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "event fired before the modal dialog is opened.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridSorting widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnChooserElement to get a reference to the modal dialog element. This is a jQuery object.",
+                "jp": "モーダル ダイアログが開く前に発生するイベント。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   igGridSorting ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   モーダル ダイアログ要素への参照を取得するには ui.columnChooserElement を使用します。これは jQuery オブジェクトです。"
+            }
+        },
+        "modalDialogSortClick": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "event fired when column(which is not sorted) is clicked to be sorted in modal dialog<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridSorting widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.<br>   Use ui.columnKey to get the column key",
+                "jp": "並べ替えられていない列をクリックして、モーダル ダイアログで並べ替える場合に発生するイベント。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   igGridSorting ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   モーダル ダイアログ要素への参照を取得するには ui.modalDialogElement を使用します。これは jQuery オブジェクトです。<br>   ui.columnKey を使用して列キーを取得します。"
+            }
+        },
+        "modalDialogSortingChanged": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "event fired when sorting of column is changed in modal dialog. Column should be sorted<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridSorting widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.<br>   Use ui.columnKey to get the column key<br>   Use ui.isAsc to get whether column should be ascending or not. If true it should be ascending",
+                "jp": "列の並べ替えがモーダル ダイアログで変更された場合に発生するイベント。列を並べ替える必要があります。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   igGridSorting ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   モーダル ダイアログ要素への参照を取得するには ui.modalDialogElement を使用します。これは jQuery オブジェクトです。<br>   ui.columnKey を使用して列キーを取得します。<br>   列を昇順または降順に並べ替えるかどうかを決定するには ui.isAsc を使用します。True の場合は昇順順序です。"
+            }
         }
-      ],
-      "description": {
-		"en": "Event fired after the column has already been sorted and data - re-rendered.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridSorting.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.columnKey to get column key.<br>   Use ui.direction to get sorting direction.",
-		"jp": "列が並べ替えられ、データが再描画された後に発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridSorting への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.columnKey を使用して、列のキーを取得します。<br>   ui.direction を使用して、並べ替えの方向を取得します。"
-	}
     },
-    "columnSorting": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+    "properties": {
+        "name": {
+            "type": "string",
+            "defaultValue": null
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Event fired before sorting is invoked for a certain column.<br>   Return false in order to cancel column sorting.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridSorting.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.columnKey to get column key.<br>   Use ui.direction to get sorting direction.",
-		"jp": "ある列に対して並べ替えを呼び出す前に発生するイベント。<br>   行の並べ替えをキャンセルするには、false を返します。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridSorting への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.columnKey を使用して、列のキーを取得します。<br>   ui.direction を使用して、並べ替えの方向を取得します。"
-	}
-    },
-    "modalDialogButtonApplyClick": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "applySortedColumnCss": {
+            "type": "bool",
+            "defaultValue": true,
+            "description": {
+                "en": "Enables/disables special styling for sorted columns. If false, sorted column cells will not have any special sort-related styling",
+                "jp": "並べ替えた列の特別なスタイル設定を有効/無効にします。False の場合、並べ替えられた列のセルで並べ替えに関連する特別なスタイルは適用されません。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "event fired when button Apply in modal dialog is clicked<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridSorting widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.<br>   Use ui.columnsToSort to get array of columns which should be sorted - array of objects of sort order - Asc/Desc and columnIdentifier",
-		"jp": "モーダル ダイアログの [適用] ボタンをクリックしたときに発生するイベント。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   igGridSorting ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   モーダル ダイアログ要素への参照を取得するには ui.modalDialogElement を使用します。これは jQuery オブジェクトです。<br>   並べ替える列の配列を取得するには ui.columnsToSort を使用します。配列はオブジェクトおよび並べ替えの順序を含みます。順序は Asc または Desc です。オブジェクトは columnIdentifier です。"
-	}
-    },
-    "modalDialogButtonResetClick": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "caseSensitive": {
+            "type": "bool",
+            "defaultValue": false,
+            "description": {
+                "en": "Enables or disables the case sensitivity of the sorting. Works only for local sorting",
+                "jp": "並べ替えの大文字と小文字の区別を有効または無効にします。ローカルの並べ替えでのみ操作します。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "event fired when the button to reset sorting is clicked. <br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridSorting widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.",
-		"jp": "並べ替えをリセットするボタンをクリックしたときに発生するイベント。<br>    ハンドラー関数は引数 evt および ui を取得します。<br>   igGridSorting ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   モーダル ダイアログ要素への参照を取得するには ui.modalDialogElement を使用します。これは jQuery オブジェクトです。"
-	}
-    },
-    "modalDialogButtonUnsortClick": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "columnSettings": {
+            "type": "array",
+            "defaultValue": null,
+            "description": {
+                "en": "List of custom column settings that specify custom sorting settings for a specific column (whether sorting is enabled / disabled, default sort direction, first sort direction, etc.)",
+                "jp": "特定の列のカスタムの並べ替え設定 (並べ替えが有効か無効か、デフォルトの並べ替え方向、最初の並べ替え方向など) を指定するカスタム列設定のリスト。"
+            },
+            "designerDisplayProperty": "columnKey",
+            "schema": {
+                "columnKey": {
+                    "type": "string",
+                    "defaultValue": null,
+                    "description": {
+                        "en": "Specifies the column key of the sorted column",
+                        "jp": "並べ替えた列の列キーを指定します。"
+                    },
+                    "required": true
+                },
+                "columnIndex": {
+                    "type": "number",
+                    "defaultValue": null,
+                    "description": {
+                        "en": "Column index can be used in place of column key. The preferred way of populating a column setting is to always use the column keys as identifiers.",
+                        "jp": "列インデックスは列キーの代わりに使用できます。列設定の生成には列を常に識別子として使用することを推奨します。"
+                    }
+                },
+                "firstSortDirection": {
+                    "type": "string",
+                    "defaultValue": true,
+                    "description": {
+                        "en": "This will be the first sort direction when the column hasn't been sorted before",
+                        "jp": "それまでその列で並べ替えをしていない場合、これは最初の並べ替え方向になります。"
+                    },
+                    "valueOptions": [
+                        {
+                            "name": "asc",
+                            "type": "string",
+                            "description": {
+                                "en": "The sort direction will be ascending",
+                                "jp": "並べ替え方向は昇順です"
+                            }
+                        },
+                        {
+                            "name": "desc",
+                            "type": "string",
+                            "description": {
+                                "en": "The sort direction will be descending",
+                                "jp": "並べ替え方向は降順です"
+                            }
+                        }
+                    ]
+                },
+                "currentSortDirection": {
+                    "type": "string",
+                    "defaultValue": null,
+                    "description": {
+                        "en": "The current (or default) sort direction. If this setting is specified, the column will be rendered sorted according to this option.",
+                        "jp": "現在の (またはデフォルトの) 並べ替え方向。この設定が指定されていない場合、このオプションに基づいて列が描画および並べ替えされます。"
+                    },
+                    "valueOptions": [
+                        {
+                            "name": "asc",
+                            "type": "string",
+                            "description": {
+                                "en": "The sort direction will be ascending",
+                                "jp": "並べ替え方向は昇順です"
+                            }
+                        },
+                        {
+                            "name": "desc",
+                            "type": "string",
+                            "description": {
+                                "en": "The sort direction will be descending",
+                                "jp": "並べ替え方向は降順です"
+                            }
+                        }
+                    ]
+                },
+                "allowSorting": {
+                    "type": "bool",
+                    "defaultValue": true,
+                    "description": {
+                        "en": "Enables / disables sorting on the specified column. By default all columns are sortable",
+                        "jp": "指定された列での並べ替えを有効または無効にします。デフォルトでは、すべての列が並べ替え可能です。"
+                    }
+                }
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "event fired when button to unsort column is clicked in modal dialog<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridSorting widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.<br>   Use ui.columnKey to get the column key",
-		"jp": "列の並べ替えをしないボタンをモーダル ダイアログでクリックした場合に発生するイベント。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   igGridSorting ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   モーダル ダイアログ要素への参照を取得するには ui.modalDialogElement を使用します。これは jQuery オブジェクトです。<br>   ui.columnKey を使用して列キーを取得します。"
-	}
-    },
-    "modalDialogClosed": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "customSortFunction": {
+            "type": "function",
+            "defaultValue": null,
+            "description": {
+                "en": "custom sort function accepting three parameters - the data to be sorted, an array of data source field definitions, and the direction to sort with (optional). The function should return the sorted data array",
+                "jp": "並べ替えられるデータ、データ ソース フィールド定義の配列、および使用する並べ替え方向 (オプション) の 3 つのパラメーターを使用するカスタムの並べ替え関数。関数は並べ替えられたデータ配列を返す必要があります。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "event fired after the modal dialog has been closed.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridSorting widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.",
-		"jp": "モーダル ダイアログが閉じた後に発生するイベント。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   igGridSorting ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   モーダル ダイアログ要素への参照を取得するには ui.modalDialogElement を使用します。これは jQuery オブジェクトです。"
-	}
-    },
-    "modalDialogClosing": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "featureChooserSortAsc": {
+            "type": "string",
+            "defaultValue": "",
+            "description": {
+                "en": "Specifies text for sorting ascending",
+                "jp": "「昇順で並べ替え済み」のテキストを指定します"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "event fired before the modal dialog is closed.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridSorting widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.",
-		"jp": "モーダル ダイアログが閉じる前に発生するイベント。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   igGridSorting ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   モーダル ダイアログ要素への参照を取得するには ui.modalDialogElement を使用します。これは jQuery オブジェクトです。"
-	}
-    },
-    "modalDialogContentsRendered": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "featureChooserSortDesc": {
+            "type": "string",
+            "defaultValue": "",
+            "description": {
+                "en": "Specifies text for sorting descending",
+                "jp": "「降順で並べ替え済み」のテキストを指定します"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "event fired after the contents of the modal dialog are rendered.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridSorting widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.",
-		"jp": "モーダル ダイアログのコンテンツが描画された後に発生するイベント。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   igGridSorting ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   モーダル ダイアログ要素への参照を取得するには ui.modalDialogElement を使用します。これは jQuery オブジェクトです。"
-	}
-    },
-    "modalDialogContentsRendering": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "event fired before the contents of the modal dialog are rendered.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridSorting widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.",
-		"jp": "モーダル ダイアログのコンテンツが描画される前に発生するイベント。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   igGridSorting ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   モーダル ダイアログ要素への参照を取得するには ui.modalDialogElement を使用します。これは jQuery オブジェクトです。"
-	}
-    },
-    "modalDialogMoving": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "event fired every time the modal dialog changes its position.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridSorting widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.<br>   Use ui.originalPosition to get the original position of the modal dialog div as { top, left } object, relative to the page.<br>   Use ui.position to get the current position of the modal dialog div as { top, left } object, relative to the page.",
-		"jp": "モーダル ダイアログの位置が変更するたびに発生するイベント。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   igGridSorting ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   モーダル ダイアログ要素への参照を取得するには ui.modalDialogElement を使用します。これは jQuery オブジェクトです。<br>   モーダル ダイアログ div の元の位置をページに相対して { top, left } オブジェクトとして取得するには ui.originalPosition を使用します。<br>   モーダル ダイアログ div の現在の位置をページに相対して { top, left } オブジェクトとして取得するには ui.position を使用します。"
-	}
-    },
-    "modalDialogOpened": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "event fired after the modal dialog is already opened.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridSorting widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.",
-		"jp": "モーダル ダイアログがすでに開いた後に発生するイベント。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   igGridSorting ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   モーダル ダイアログ要素への参照を取得するには ui.modalDialogElement を使用します。これは jQuery オブジェクトです。"
-	}
-    },
-    "modalDialogOpening": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "event fired before the modal dialog is opened.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridSorting widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.columnChooserElement to get a reference to the modal dialog element. This is a jQuery object.",
-		"jp": "モーダル ダイアログが開く前に発生するイベント。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   igGridSorting ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   モーダル ダイアログ要素への参照を取得するには ui.columnChooserElement を使用します。これは jQuery オブジェクトです。"
-	}
-    },
-    "modalDialogSortClick": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "event fired when column(which is not sorted) is clicked to be sorted in modal dialog<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridSorting widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.<br>   Use ui.columnKey to get the column key",
-		"jp": "並べ替えられていない列をクリックして、モーダル ダイアログで並べ替える場合に発生するイベント。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   igGridSorting ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   モーダル ダイアログ要素への参照を取得するには ui.modalDialogElement を使用します。これは jQuery オブジェクトです。<br>   ui.columnKey を使用して列キーを取得します。"
-	}
-    },
-    "modalDialogSortingChanged": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "event fired when sorting of column is changed in modal dialog. Column should be sorted<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridSorting widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.modalDialogElement to get a reference to the modal dialog element. This is a jQuery object.<br>   Use ui.columnKey to get the column key<br>   Use ui.isAsc to get whether column should be ascending or not. If true it should be ascending",
-		"jp": "列の並べ替えがモーダル ダイアログで変更された場合に発生するイベント。列を並べ替える必要があります。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   igGridSorting ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   モーダル ダイアログ要素への参照を取得するには ui.modalDialogElement を使用します。これは jQuery オブジェクトです。<br>   ui.columnKey を使用して列キーを取得します。<br>   列を昇順または降順に並べ替えるかどうかを決定するには ui.isAsc を使用します。True の場合は昇順順序です。"
-	}
-    }
-  },
-  "properties": {
-	"name": {
-      "type": "string",
-      "defaultValue": null
-    },
-    "applySortedColumnCss": {
-      "type": "bool",
-      "defaultValue": true,
-      "description": {
-		"en": "Enables/disables special styling for sorted columns. If false, sorted column cells will not have any special sort-related styling",
-		"jp": "並べ替えた列の特別なスタイル設定を有効/無効にします。False の場合、並べ替えられた列のセルで並べ替えに関連する特別なスタイルは適用されません。"
-	}
-    },
-    "caseSensitive": {
-      "type": "bool",
-      "defaultValue": false,
-      "description": {
-		"en": "Enables or disables the case sensitivity of the sorting. Works only for local sorting",
-		"jp": "並べ替えの大文字と小文字の区別を有効または無効にします。ローカルの並べ替えでのみ操作します。"
-	}
-    },
-    "columnSettings": {
-      "type": "array",
-      "defaultValue": null,
-      "description": {
-		"en": "List of custom column settings that specify custom sorting settings for a specific column (whether sorting is enabled / disabled, default sort direction, first sort direction, etc.)",
-		"jp": "特定の列のカスタムの並べ替え設定 (並べ替えが有効か無効か、デフォルトの並べ替え方向、最初の並べ替え方向など) を指定するカスタム列設定のリスト。"
-	},
-	  "designerDisplayProperty": "columnKey",
-      "schema": {
-        "columnKey": {
-          "type": "string",
-          "defaultValue": null,
-          "description": {
-		"en": "Specifies the column key of the sorted column",
-		"jp": "並べ替えた列の列キーを指定します。"
-	},
-          "required": true
-        },
-        "columnIndex": {
-          "type": "number",
-          "defaultValue": null,
-          "description": {
-		"en": "Column index can be used in place of column key. The preferred way of populating a column setting is to always use the column keys as identifiers.",
-		"jp": "列インデックスは列キーの代わりに使用できます。列設定の生成には列を常に識別子として使用することを推奨します。"
-	}
+        "featureChooserText": {
+            "type": "string",
+            "defaultValue": "",
+            "description": {
+                "en": "Specifies text in feature chooser",
+                "jp": "機能セレクターでテキストを指定します。"
+            }
         },
         "firstSortDirection": {
-          "type": "string",
-          "defaultValue": true,
-          "description": {
-		"en": "This will be the first sort direction when the column hasn't been sorted before",
-		"jp": "それまでその列で並べ替えをしていない場合、これは最初の並べ替え方向になります。"
-	},
-          "valueOptions": [
-            {
-              "name": "asc",
-              "type": "string",
-              "description": {
-		"en": "The sort direction will be ascending",
-		"jp": "並べ替え方向は昇順です"
-	}
+            "type": "string",
+            "defaultValue": "ascending",
+            "description": {
+                "en": "Specifies which direction to use on the first click / keydown, if the column hasn't been sorted before ",
+                "jp": "それまでその列で並べ替えをしていない場合、最初のクリックまたはキーの押下で使用する並べ替え方向を指定します。 "
             },
-            {
-              "name": "desc",
-              "type": "string",
-              "description": {
-		"en": "The sort direction will be descending",
-		"jp": "並べ替え方向は降順です"
-	}
-            }
-          ]
+            "valueOptions": [
+                {
+                    "name": "ascending",
+                    "type": "string",
+                    "description": {
+                        "en": "Direction is ascending",
+                        "jp": "方向は昇順です。"
+                    }
+                },
+                {
+                    "name": "descending",
+                    "type": "string",
+                    "description": {
+                        "en": "Direction is descending",
+                        "jp": "方向は降順です。"
+                    }
+                }
+            ]
         },
-        "currentSortDirection": {
-          "type": "string",
-          "defaultValue": null,
-          "description": {
-		"en": "The current (or default) sort direction. If this setting is specified, the column will be rendered sorted according to this option.",
-		"jp": "現在の (またはデフォルトの) 並べ替え方向。この設定が指定されていない場合、このオプションに基づいて列が描画および並べ替えされます。"
-	},
-          "valueOptions": [
-            {
-              "name": "asc",
-              "type": "string",
-              "description": {
-		"en": "The sort direction will be ascending",
-		"jp": "並べ替え方向は昇順です"
-	}
+        "modalDialogAnimationDuration": {
+            "type": "number",
+            "defaultValue": 200.0,
+            "description": {
+                "en": "Specifies time of milliseconds for animation duration to show/hide modal dialog",
+                "jp": "モーダル ダイアログを表示/非表示にするためにアニメーション期間のミリ秒の時間を指定します。"
+            }
+        },
+        "modalDialogButtonApplyText": {
+            "type": "string",
+            "defaultValue": "",
+            "description": {
+                "en": "Specifies text of button which apply changes in modal dialog",
+                "jp": "モーダル ダイアログで変更を適用するボタンのテキストを指定します。"
+            }
+        },
+        "modalDialogButtonCancelText": {
+            "type": "string",
+            "defaultValue": "",
+            "description": {
+                "en": "Specifies text of button which cancel changes in modal dialog",
+                "jp": "モーダル ダイアログで変更をキャンセルするボタンのテキストを指定します。"
+            }
+        },
+        "modalDialogCaptionButtonAsc": {
+            "type": "string",
+            "defaultValue": "",
+            "description": {
+                "en": "Specifies caption for each ascending sorted column in multiple sorting dialog",
+                "jp": "複数の並べ替えダイアログで昇順に並べ替えられた各列のキャプションを指定します。"
+            }
+        },
+        "modalDialogCaptionButtonDesc": {
+            "type": "string",
+            "defaultValue": "",
+            "description": {
+                "en": "Specifies caption for each descending sorted column in multiple sorting dialog",
+                "jp": "複数の並べ替えダイアログで降順に並べ替えられた各列のキャプションを指定します。"
+            }
+        },
+        "modalDialogCaptionButtonUnsort": {
+            "type": "string",
+            "defaultValue": "",
+            "description": {
+                "en": "Specifies caption for unsort button in multiple sorting dialog",
+                "jp": "複数の並べ替えダイアログで並べ替え解除ボタンのキャプションを指定します。"
+            }
+        },
+        "modalDialogCaptionText": {
+            "type": "string",
+            "defaultValue": "",
+            "description": {
+                "en": "Specifies caption text for multiple sorting dialog",
+                "jp": "[複数並べ替え] ダイアログのキャプションのテキストを指定します。"
+            }
+        },
+        "modalDialogHeight": {
+            "type": "number",
+            "defaultValue": "",
+            "description": {
+                "en": "Specifies height of multiple sorting dialog",
+                "jp": "複数の並べ替えダイアログの高さを指定します。"
+            }
+        },
+        "modalDialogResetButtonLabel": {
+            "type": "string",
+            "defaultValue": "",
+            "description": {
+                "en": "Specifies sortby button label for each unsorted column in multiple sorting dialog",
+                "jp": "複数の並べ替えダイアログで並べ替えが解除された列ごとに並べ替えボタンのラベルを指定します。"
+            }
+        },
+        "modalDialogSortByButtonText": {
+            "type": "string",
+            "defaultValue": "",
+            "description": {
+                "en": "Specifies sortby button text for each unsorted column in multiple sorting dialog",
+                "jp": "複数の並べ替えダイアログで並べ替えが解除された列ごとに並べ替えボタンのテキストを指定します。"
+            }
+        },
+        "modalDialogSortOnClick": {
+            "type": "bool",
+            "defaultValue": false,
+            "description": {
+                "en": "Specifies whether sorting to be applied immediately when click sort/unsort columns in multiple sorting dialog. When it is false Apply button shows and sorting is applied when the button is clicked",
+                "jp": "複数の並べ替えダイアログで列を並べ替える/並べ替えを解除するをクリックした時に直ちに並べ替えが適用されるかどうかを指定します。false の時、適用ボタンが表示して、ボタンをクリックすると並べ替えが適用されます。"
+            }
+        },
+        "modalDialogWidth": {
+            "type": "number",
+            "defaultValue": 350.0,
+            "description": {
+                "en": "Specifies width of multiple sorting dialog",
+                "jp": "複数の並べ替えダイアログの幅を指定します。"
+            }
+        },
+        "mode": {
+            "type": "string",
+            "defaultValue": "single",
+            "description": {
+                "en": "Defines single column sorting or multiple column sorting.",
+                "jp": "単一列の並べ替えまたは複数列の並べ替えを定義します。"
             },
-            {
-              "name": "desc",
-              "type": "string",
-              "description": {
-		"en": "The sort direction will be descending",
-		"jp": "並べ替え方向は降順です"
-	}
+            "valueOptions": [
+                {
+                    "name": "single",
+                    "type": "string",
+                    "description": {
+                        "en": "Defines single column sorting",
+                        "jp": "単一列の並べ替えを定義します。"
+                    }
+                },
+                {
+                    "name": "multi",
+                    "type": "string",
+                    "description": {
+                        "en": "Defines multiple column sorting. If enabled, previous sorted state for columns won't be cleared",
+                        "jp": "複数列の並べ替えを定義します。有効な場合、前に列の並べ替えを行った状態はクリアされません。"
+                    }
+                }
+            ]
+        },
+        "sortedColumnTooltip": {
+            "type": "string",
+            "defaultValue": "",
+            "description": {
+                "en": "custom sorted column tooltip in jQuery templating format",
+                "jp": "並べ替えられた列の jQuery テンプレート化形式のカスタム ツールチップ。"
             }
-          ]
         },
-        "allowSorting": {
-          "type": "bool",
-          "defaultValue": true,
-          "description": {
-		"en": "Enables / disables sorting on the specified column. By default all columns are sortable",
-		"jp": "指定された列での並べ替えを有効または無効にします。デフォルトでは、すべての列が並べ替え可能です。"
-	}
-        }
-      }
-    },
-    "customSortFunction": {
-      "type": "function",
-      "defaultValue": null,
-      "description": {
-		"en": "custom sort function accepting three parameters - the data to be sorted, an array of data source field definitions, and the direction to sort with (optional). The function should return the sorted data array",
-		"jp": "並べ替えられるデータ、データ ソース フィールド定義の配列、および使用する並べ替え方向 (オプション) の 3 つのパラメーターを使用するカスタムの並べ替え関数。関数は並べ替えられたデータ配列を返す必要があります。"
-	}
-    },
-    "featureChooserSortAsc": {
-      "type": "string",
-      "defaultValue": "",
-      "description": {
-		"en": "Specifies text for sorting ascending",
-		"jp": "「昇順で並べ替え済み」のテキストを指定します"
-	}
-    },
-    "featureChooserSortDesc": {
-      "type": "string",
-      "defaultValue": "",
-      "description": {
-		"en": "Specifies text for sorting descending",
-		"jp": "「降順で並べ替え済み」のテキストを指定します"
-	}
-    },
-    "featureChooserText": {
-      "type": "string",
-      "defaultValue": "",
-      "description": {
-		"en": "Specifies text in feature chooser",
-		"jp": "機能セレクターでテキストを指定します。"
-	}
-    },
-    "firstSortDirection": {
-      "type": "string",
-      "defaultValue": "ascending",
-      "description": {
-		"en": "Specifies which direction to use on the first click / keydown, if the column hasn't been sorted before ",
-		"jp": "それまでその列で並べ替えをしていない場合、最初のクリックまたはキーの押下で使用する並べ替え方向を指定します。 "
-	},
-      "valueOptions": [
-        {
-          "name": "ascending",
-          "type": "string",
-          "description": {
-		"en": "Direction is ascending",
-		"jp": "方向は昇順です。"
-	}
+        "sortUrlKey": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "URL param name which specifies how sorting expressions will be encoded in the URL. Uses OData conventions. ex: ?sort(col1)=asc",
+                "jp": "並べ替えの式を URL 内でエンコードする方法を指定する URL パラメーター名。OData conventions. ex: ?sort(col1)=asc を使用します。"
+            }
         },
-        {
-          "name": "descending",
-          "type": "string",
-          "description": {
-		"en": "Direction is descending",
-		"jp": "方向は降順です。"
-	}
-        }
-      ]
-    },
-    "modalDialogAnimationDuration": {
-      "type": "number",
-      "defaultValue": 200.0,
-      "description": {
-		"en": "Specifies time of milliseconds for animation duration to show/hide modal dialog",
-		"jp": "モーダル ダイアログを表示/非表示にするためにアニメーション期間のミリ秒の時間を指定します。"
-	}
-    },
-    "modalDialogButtonApplyText": {
-      "type": "string",
-      "defaultValue": "",
-      "description": {
-		"en": "Specifies text of button which apply changes in modal dialog",
-		"jp": "モーダル ダイアログで変更を適用するボタンのテキストを指定します。"
-	}
-    },
-    "modalDialogButtonCancelText": {
-      "type": "string",
-      "defaultValue": "",
-      "description": {
-		"en": "Specifies text of button which cancel changes in modal dialog",
-		"jp": "モーダル ダイアログで変更をキャンセルするボタンのテキストを指定します。"
-	}
-    },
-    "modalDialogCaptionButtonAsc": {
-      "type": "string",
-      "defaultValue": "",
-      "description": {
-		"en": "Specifies caption for each ascending sorted column in multiple sorting dialog",
-		"jp": "複数の並べ替えダイアログで昇順に並べ替えられた各列のキャプションを指定します。"
-	}
-    },
-    "modalDialogCaptionButtonDesc": {
-      "type": "string",
-      "defaultValue": "",
-      "description": {
-		"en": "Specifies caption for each descending sorted column in multiple sorting dialog",
-		"jp": "複数の並べ替えダイアログで降順に並べ替えられた各列のキャプションを指定します。"
-	}
-    },
-    "modalDialogCaptionButtonUnsort": {
-      "type": "string",
-      "defaultValue": "",
-      "description": {
-		"en": "Specifies caption for unsort button in multiple sorting dialog",
-		"jp": "複数の並べ替えダイアログで並べ替え解除ボタンのキャプションを指定します。"
-	}
-    },
-    "modalDialogCaptionText": {
-      "type": "string",
-      "defaultValue": "",
-      "description": {
-		"en": "Specifies caption text for multiple sorting dialog",
-		"jp": "[複数並べ替え] ダイアログのキャプションのテキストを指定します。"
-	}
-    },
-    "modalDialogHeight": {
-      "type": "number",
-      "defaultValue": "",
-      "description": {
-		"en": "Specifies height of multiple sorting dialog",
-		"jp": "複数の並べ替えダイアログの高さを指定します。"
-	}
-    },
-    "modalDialogResetButtonLabel": {
-      "type": "string",
-      "defaultValue": "",
-      "description": {
-		"en": "Specifies sortby button label for each unsorted column in multiple sorting dialog",
-		"jp": "複数の並べ替えダイアログで並べ替えが解除された列ごとに並べ替えボタンのラベルを指定します。"
-	}
-    },
-    "modalDialogSortByButtonText": {
-      "type": "string",
-      "defaultValue": "",
-      "description": {
-		"en": "Specifies sortby button text for each unsorted column in multiple sorting dialog",
-		"jp": "複数の並べ替えダイアログで並べ替えが解除された列ごとに並べ替えボタンのテキストを指定します。"
-	}
-    },
-    "modalDialogSortOnClick": {
-      "type": "bool",
-      "defaultValue": false,
-      "description": {
-		"en": "Specifies whether sorting to be applied immediately when click sort/unsort columns in multiple sorting dialog. When it is false Apply button shows and sorting is applied when the button is clicked",
-		"jp": "複数の並べ替えダイアログで列を並べ替える/並べ替えを解除するをクリックした時に直ちに並べ替えが適用されるかどうかを指定します。false の時、適用ボタンが表示して、ボタンをクリックすると並べ替えが適用されます。"
-	}
-    },
-    "modalDialogWidth": {
-      "type": "number",
-      "defaultValue": 350.0,
-      "description": {
-		"en": "Specifies width of multiple sorting dialog",
-		"jp": "複数の並べ替えダイアログの幅を指定します。"
-	}
-    },
-    "mode": {
-      "type": "string",
-      "defaultValue": "single",
-      "description": {
-		"en": "Defines single column sorting or multiple column sorting.",
-		"jp": "単一列の並べ替えまたは複数列の並べ替えを定義します。"
-	},
-      "valueOptions": [
-        {
-          "name": "single",
-          "type": "string",
-          "description": {
-		"en": "Defines single column sorting",
-		"jp": "単一列の並べ替えを定義します。"
-	}
+        "sortUrlKeyAscValue": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "URL param value for ascending type of sorting. Uses OData conventions. Example: ?sort(col1)=asc",
+                "jp": "昇順の並べ替えの URL パラメーター値。OData 規約を使用します。例: ?sort(col1)=asc。"
+            }
         },
-        {
-          "name": "multi",
-          "type": "string",
-          "description": {
-		"en": "Defines multiple column sorting. If enabled, previous sorted state for columns won't be cleared",
-		"jp": "複数列の並べ替えを定義します。有効な場合、前に列の並べ替えを行った状態はクリアされません。"
-	}
-        }
-      ]
-    },
-    "sortedColumnTooltip": {
-      "type": "string",
-      "defaultValue": "",
-      "description": {
-		"en": "custom sorted column tooltip in jQuery templating format",
-		"jp": "並べ替えられた列の jQuery テンプレート化形式のカスタム ツールチップ。"
-	}
-    },
-    "sortUrlKey": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "URL param name which specifies how sorting expressions will be encoded in the URL. Uses OData conventions. ex: ?sort(col1)=asc",
-		"jp": "並べ替えの式を URL 内でエンコードする方法を指定する URL パラメーター名。OData conventions. ex: ?sort(col1)=asc を使用します。"
-	}
-    },
-    "sortUrlKeyAscValue": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "URL param value for ascending type of sorting. Uses OData conventions. Example: ?sort(col1)=asc",
-		"jp": "昇順の並べ替えの URL パラメーター値。OData 規約を使用します。例: ?sort(col1)=asc。"
-	}
-    },
-    "sortUrlKeyDescValue": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "URL param value for descending type of sorting. Uses OData conventions",
-		"jp": "降順の並べ替えの URL パラメーター値。OData 規則を使用します。"
-	}
-    },
-    "type": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "Defines local or remote sorting.",
-		"jp": "ローカルまたはリモート並べ替えを定義します。"
-	},
-      "valueOptions": [
-        {
-          "name": "remote",
-          "type": "string",
-          "description": {
-		"en": "Defines remote sorting.",
-		"jp": "リモート並べ替えを定義します。"
-	}
+        "sortUrlKeyDescValue": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "URL param value for descending type of sorting. Uses OData conventions",
+                "jp": "降順の並べ替えの URL パラメーター値。OData 規則を使用します。"
+            }
         },
-        {
-          "name": "local",
-          "type": "string",
-          "description": {
-		"en": "Defines local sorting.",
-		"jp": "ローカル並べ替えを定義します。"
-	}
+        "type": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "Defines local or remote sorting.",
+                "jp": "ローカルまたはリモート並べ替えを定義します。"
+            },
+            "valueOptions": [
+                {
+                    "name": "remote",
+                    "type": "string",
+                    "description": {
+                        "en": "Defines remote sorting.",
+                        "jp": "リモート並べ替えを定義します。"
+                    }
+                },
+                {
+                    "name": "local",
+                    "type": "string",
+                    "description": {
+                        "en": "Defines local sorting.",
+                        "jp": "ローカル並べ替えを定義します。"
+                    }
+                }
+            ]
+        },
+        "unsortedColumnTooltip": {
+            "type": "string",
+            "defaultValue": "",
+            "description": {
+                "en": "Custom unsorted column tooltip in jQuery templating format",
+                "jp": "並べ替えされていない列の jQuery テンプレート化形式のカスタム ツールチップ。"
+            }
         }
-      ]
-    },
-    "unsortedColumnTooltip": {
-      "type": "string",
-      "defaultValue": "",
-      "description": {
-		"en": "Custom unsorted column tooltip in jQuery templating format",
-		"jp": "並べ替えされていない列の jQuery テンプレート化形式のカスタム ツールチップ。"
-	}
     }
-  }
 }

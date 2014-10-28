@@ -1,329 +1,329 @@
 ﻿{
-  "overview": null,
-  "name": "ui.igHtmlEditor",
-  "category": null,
-  "visual": true,
-  "events": {
-    "actionExecuted": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+    "overview": null,
+    "name": "ui.igHtmlEditor",
+    "category": null,
+    "visual": true,
+    "events": {
+        "actionExecuted": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event fired after a toolbar item is clicked.",
+                "jp": "ツールバー項目がクリックされた後に発生するイベント。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
+        "actionExecuting": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event fired before a toolbar item is clicked.",
+                "jp": "ツールバー項目がクリックされる前に発生するイベント。"
+            }
+        },
+        "copy": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event is fired on keyboard copy action.",
+                "jp": "キーボードのコピー アクションで発生するイベント。"
+            }
+        },
+        "cut": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event is fired on keyboard cut action.",
+                "jp": "キーボードの切り取りアクションで発生するイベント。"
+            }
+        },
+        "paste": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event is fired on keyboard paste action.",
+                "jp": "キーボードの貼り付けアクションで発生するイベント。"
+            }
+        },
+        "redo": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event is fired on keyboard redo action.",
+                "jp": "キーボードのやり直しアクションで発生するイベント。"
+            }
+        },
+        "rendered": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event fired after the whole html editor widget has been rendered.",
+                "jp": "HTML エディター ウィジェット全体がレンダリングされた後に発生するイベント。"
+            }
+        },
+        "rendering": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event fired before the html editor widget has been rendered.",
+                "jp": "HTML エディター ウィジェットのレンダリングが完了する前に発生するイベント。"
+            }
+        },
+        "toolbarCollapsed": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event fired after a toolbar is collapsed.",
+                "jp": "ツールバーが縮小された後に発生するイベント。"
+            }
+        },
+        "toolbarCollapsing": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event fired before a toolbar is collapsed.",
+                "jp": "ツールバーが縮小される前に発生するイベント。"
+            }
+        },
+        "toolbarExpanded": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event fired after a toolbar is expanded.",
+                "jp": "ツールバーが展開された後に発生するイベント。"
+            }
+        },
+        "toolbarExpanding": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event fired before a toolbar is expanded.",
+                "jp": "ツールバーが展開される前に発生するイベント。"
+            }
+        },
+        "undo": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event is fired on keyboard undo action.",
+                "jp": "キーボードの取り消しアクションで発生するイベント。"
+            }
         }
-      ],
-      "description": {
-		"en": "Event fired after a toolbar item is clicked.",
-		"jp": "ツールバー項目がクリックされた後に発生するイベント。"
-	}
     },
-    "actionExecuting": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+    "properties": {
+        "height": {
+            "type": "number",
+            "defaultValue": 350.0,
+            "description": {
+                "en": "Set or get the widget height.",
+                "jp": "ウィジェットの高さを設定するか、取得します。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Event fired before a toolbar item is clicked.",
-		"jp": "ツールバー項目がクリックされる前に発生するイベント。"
-	}
-    },
-    "copy": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "inputName": {
+            "type": "string",
+            "defaultValue": "source",
+            "description": {
+                "en": "The name attribute of the html editor source view.",
+                "jp": "HTML エディターのソース ビューの name 属性。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Event is fired on keyboard copy action.",
-		"jp": "キーボードのコピー アクションで発生するイベント。"
-	}
-    },
-    "cut": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "showCopyPasteToolbar": {
+            "type": "bool",
+            "defaultValue": true,
+            "description": {
+                "en": "Shows/hides the \"Copy Paste\" toolbar.",
+                "jp": "「コピー貼り付け」ツールバーを表示/非表示にします。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Event is fired on keyboard cut action.",
-		"jp": "キーボードの切り取りアクションで発生するイベント。"
-	}
-    },
-    "paste": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "showFormattingToolbar": {
+            "type": "bool",
+            "defaultValue": true,
+            "description": {
+                "en": "Shows/hides the \"Formating\" toolbar.",
+                "jp": "「書式設定」ツールバーを表示/非表示にします。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Event is fired on keyboard paste action.",
-		"jp": "キーボードの貼り付けアクションで発生するイベント。"
-	}
-    },
-    "redo": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "showInsertObjectToolbar": {
+            "type": "bool",
+            "defaultValue": true,
+            "description": {
+                "en": "Shows/hides the \"Insert Object\" toolbar.",
+                "jp": "「オブジェクト挿入」ツールバーを表示/非表示にします。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Event is fired on keyboard redo action.",
-		"jp": "キーボードのやり直しアクションで発生するイベント。"
-	}
-    },
-    "rendered": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "showTextToolbar": {
+            "type": "bool",
+            "defaultValue": true,
+            "description": {
+                "en": "Shows/hides the \"Text\" toolbar.",
+                "jp": "「テキスト」ツールバーを表示/非表示にします。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Event fired after the whole html editor widget has been rendered.",
-		"jp": "HTML エディター ウィジェット全体がレンダリングされた後に発生するイベント。"
-	}
-    },
-    "rendering": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "toolbarSettings": {
+            "type": "array",
+            "defaultValue": null,
+            "description": {
+                "en": "The html editor toolbars list.",
+                "jp": "HTML エディター ツールバー リスト。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Event fired before the html editor widget has been rendered.",
-		"jp": "HTML エディター ウィジェットのレンダリングが完了する前に発生するイベント。"
-	}
-    },
-    "toolbarCollapsed": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "value": {
+            "type": "string",
+            "defaultValue": "",
+            "description": {
+                "en": "Used to render inside the html editor as initial content",
+                "jp": "HTML エディター内に最初コンテンツとして描画するために使用されます。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
+        "width": {
+            "type": "number",
+            "defaultValue": 725.0,
+            "description": {
+                "en": "Set or get the widget width.",
+                "jp": "ウィジェットの幅を設定するか、取得します。"
+            }
         }
-      ],
-      "description": {
-		"en": "Event fired after a toolbar is collapsed.",
-		"jp": "ツールバーが縮小された後に発生するイベント。"
-	}
-    },
-    "toolbarCollapsing": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Event fired before a toolbar is collapsed.",
-		"jp": "ツールバーが縮小される前に発生するイベント。"
-	}
-    },
-    "toolbarExpanded": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Event fired after a toolbar is expanded.",
-		"jp": "ツールバーが展開された後に発生するイベント。"
-	}
-    },
-    "toolbarExpanding": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Event fired before a toolbar is expanded.",
-		"jp": "ツールバーが展開される前に発生するイベント。"
-	}
-    },
-    "undo": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Event is fired on keyboard undo action.",
-		"jp": "キーボードの取り消しアクションで発生するイベント。"
-	}
     }
-  },
-  "properties": {
-    "height": {
-      "type": "number",
-      "defaultValue": 350.0,
-      "description": {
-		"en": "Set or get the widget height.",
-		"jp": "ウィジェットの高さを設定するか、取得します。"
-	}
-    },
-    "inputName": {
-      "type": "string",
-      "defaultValue": "source",
-      "description": {
-		"en": "The name attribute of the html editor source view.",
-		"jp": "HTML エディターのソース ビューの name 属性。"
-	}
-    },
-    "showCopyPasteToolbar": {
-      "type": "bool",
-      "defaultValue": true,
-      "description": {
-		"en": "Shows/hides the \"Copy Paste\" toolbar.",
-		"jp": "「コピー貼り付け」ツールバーを表示/非表示にします。"
-	}
-    },
-    "showFormattingToolbar": {
-      "type": "bool",
-      "defaultValue": true,
-      "description": {
-		"en": "Shows/hides the \"Formating\" toolbar.",
-		"jp": "「書式設定」ツールバーを表示/非表示にします。"
-	}
-    },
-    "showInsertObjectToolbar": {
-      "type": "bool",
-      "defaultValue": true,
-      "description": {
-		"en": "Shows/hides the \"Insert Object\" toolbar.",
-		"jp": "「オブジェクト挿入」ツールバーを表示/非表示にします。"
-	}
-    },
-    "showTextToolbar": {
-      "type": "bool",
-      "defaultValue": true,
-      "description": {
-		"en": "Shows/hides the \"Text\" toolbar.",
-		"jp": "「テキスト」ツールバーを表示/非表示にします。"
-	}
-    },
-    "toolbarSettings": {
-      "type": "array",
-      "defaultValue": null,
-      "description": {
-		"en": "The html editor toolbars list.",
-		"jp": "HTML エディター ツールバー リスト。"
-	}
-    },
-    "value": {
-      "type": "string",
-      "defaultValue": "",
-      "description": {
-		"en": "Used to render inside the html editor as initial content",
-		"jp": "HTML エディター内に最初コンテンツとして描画するために使用されます。"
-	}
-    },
-    "width": {
-      "type": "number",
-      "defaultValue": 725.0,
-      "description": {
-		"en": "Set or get the widget width.",
-		"jp": "ウィジェットの幅を設定するか、取得します。"
-	}
-    }
-  }
 }

@@ -1,819 +1,819 @@
 ﻿{
-  "overview": null,
-  "name": "ui.igGridUpdating",
-  "title": "Updating",
-  "category": null,
-  "visual": true,
-  "events": {
-    "dataDirty": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+    "overview": null,
+    "name": "ui.igGridUpdating",
+    "title": "Updating",
+    "category": null,
+    "visual": true,
+    "events": {
+        "dataDirty": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event which is raised when autoCommit of grid is not enabled and grid has pending transaction which may fail to be correctly rendered.<br>   Application should process that event and it may trigger commit of grid.<br>   Return false in order to prevent exception.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridUpdating.<br>   Use ui.owner.grid to get reference to igGrid.",
+                "jp": "グリッドの autoCommit が有効でなく、グリッドに正しく描画できない可能性がある保留中のトランザクションがある場合に発生するイベント。<br>   アプリケーションはそのイベントを処理するはずで、グリッドのコミットをトリガーできます。<br>   例外を防ぐには false を返します。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridUpdating への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
+        "editCellEnded": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event which is raised after end cell editing.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridUpdating.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.rowID to get key or index of row.<br>   Use ui.columnIndex to get index of column.<br>   Use ui.columnKey to get key of column.<br>   Use ui.editor to get reference to igEditor.<br>   Use ui.value to get value of cell.<br>   Use ui.oldValue to get old value.<br>   Use ui.update to check if cell was modified and data source will be updated.<br>   Use ui.rowAdding to check if that event is raised while new-row-adding.",
+                "jp": "セルの編集が終了した後に発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridUpdating への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.row ID を使用して、行のキーまたはインデックスを取得します。<br>   ui.columnIndex を使用して、列のインデックスを取得します。<br>   ui.columnKey を使用して、列のキーを取得します。<br>   ui.editor を使用して、igEditor への参照を取得します。<br>   ui.value を使用して、セルの値を取得します。<br>   ui.oldValue を使用して、古い値を取得します。<br>   ui.update を使用して、セルが変更されて、データ ソースが更新されるかどうかをチェックします。<br>   ui.rowAdding を使用して、new-row-adding の間にそのイベントが発生するかどうかをチェックします。"
+            }
+        },
+        "editCellEnding": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event which is raised before end cell editing.<br>   Return false in order to cancel update of data source.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridUpdating.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.rowID to get key or index of row.<br>   Use ui.columnIndex to get index of column.<br>   Use ui.columnKey to get key of column.<br>   Use ui.keepEditing=true in order to keep editing. It has effect only when evt.originalEvent is defined and only when editMode is \"cell\".<br>   Use ui.editor to get reference to igEditor.<br>   Use ui.value to get value of cell/editor. That value can be modified and it will be used to update data source.<br>   Use ui.oldValue to get old value.<br>   Use ui.update to check if value was modified and data source will be updated.<br>   Use ui.rowAdding to check if that event is raised while new-row-adding.",
+                "jp": "セルの編集が終了する前に発生するイベント。<br>   データ ソースの更新をキャンセルするには、False を返します。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridUpdating への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.row ID を使用して、行のキーまたはインデックスを取得します。<br>   ui.columnIndex を使用して、列のインデックスを取得します。<br>   ui.columnKey を使用して、列のキーを取得します。<br>   ui.keepEditing=true を使用して、編集を続けます。evt.originalEvent が定義されていて editMode が \"cell\" の場合のみ効果があります。<br>   ui.editor を使用して、igEditor への参照を取得します。<br>   ui.value を使用して、セルまたはエディターの値を取得します。この値は変更できます。これを使用してデータ ソースを更新します。<br>   ui.oldValue を使用して、古い値を取得します。<br>   ui.update を使用して、値が変更されて、データ ソースが更新されるかどうかをチェックします。<br>   ui.rowAdding を使用して、new-row-adding の間にそのイベントが発生するかどうかをチェックします。"
+            }
+        },
+        "editCellStarted": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event which is raised after start cell editing.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridUpdating.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.rowID to get key or index of row.<br>   Use ui.columnIndex to get index of column.<br>   Use ui.columnKey to get key of column.<br>   Use ui.editor to get reference to igEditor.<br>   Use ui.value to get value of editor.<br>   Use ui.rowAdding to check if that event is raised while new-row-adding.",
+                "jp": "セルの編集を開始した後に発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridUpdating への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.row ID を使用して、行のキーまたはインデックスを取得します。<br>   ui.columnIndex を使用して、列のインデックスを取得します。<br>   ui.columnKey を使用して、列のキーを取得します。<br>   ui.editor を使用して、igEditor への参照を取得します。<br>   ui.value を使用して、エディターの値を取得します。<br>   ui.rowAdding を使用して、new-row-adding の間にそのイベントが発生するかどうかをチェックします。"
+            }
+        },
+        "editCellStarting": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event which is raised before start cell editing.<br>   Return false in order to cancel start editing and do not show editors.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridUpdating.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.rowID to get key or index of row.<br>   Use ui.columnIndex to get index of column.<br>   Use ui.columnKey to get key of column.<br>   Use ui.editor to get reference to igEditor.<br>   Use ui.value to get or set value of editor.<br>   Use ui.rowAdding to check if that event is raised while new-row-adding.",
+                "jp": "セルの編集を開始する前に発生するイベント。<br>   編集の開始をキャンセルし、エディターを表示しないようにするために、False を返します。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridUpdating への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.row ID を使用して、行のキーまたはインデックスを取得します。<br>   ui.columnIndex を使用して、列のインデックスを取得します。<br>   ui.columnKey を使用して、列のキーを取得します。<br>   ui.editor を使用して、igEditor への参照を取得します。<br>   ui.value を使用して、エディターの値を取得または設定します。<br>   ui.rowAdding を使用して、new-row-adding の間にそのイベントが発生するかどうかをチェックします。"
+            }
+        },
+        "editRowEnded": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event which is raised after end row editing.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridUpdating.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.rowID to get key or index of row.<br>   Use ui.update to check if value of any cell was modified and data source will be updated.<br>   Use ui.rowAdding to check if that event is raised while new-row-adding.<br>   Use ui.values[key] to get value of cell in column with the key. That is available only when ui.update is true.<br>   Use ui.oldValues[key] to get old value of cell in column with the key. That is available only when ui.update is true.",
+                "jp": "行の編集が終了した後に発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridUpdating への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.row ID を使用して、行のキーまたはインデックスを取得します。<br>   ui.update を使用して、値が変更されたセルがあり、データ ソースが更新されるかどうかをチェックします。<br>   ui.rowAdding を使用して、new-row-adding の間にそのイベントが発生するかどうかをチェックします。<br>   ui.values[key] を使用して、キーを含む列のセルの値を取得します。ui.update が true の場合のみ使用できます。<br>   ui.oldValues[key] を使用して、キーを含む列のセルの古い値を取得します。ui.update が true の場合のみ使用できます。"
+            }
+        },
+        "editRowEnding": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event which is raised before end row editing.<br>   Return false in order to cancel update of data source.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridUpdating.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.rowID to get key or index of row.<br>   Use ui.keepEditing=true in order to keep editing. It has effect only when evt.originalEvent is defined.<br>   Use ui.update to check if value of any cell was modified and data source will be updated.<br>   Use ui.rowAdding to check if that event is raised while new-row-adding.<br>   Use ui.values[key] to get value of cell in column with the key. That is available only when ui.update is true.<br>   Use ui.oldValues[key] to get old value of cell in column with the key. That is available only when ui.update is true.",
+                "jp": "行の編集が終了する前に発生するイベント。<br>   データ ソースの更新をキャンセルするには、False を返します。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridUpdating への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.row ID を使用して、行のキーまたはインデックスを取得します。<br>   ui.keepEditing=true を使用して、編集を続けます。evt.originalEvent が定義されている場合のみ効果があります。<br>   ui.update を使用して、値が変更されたセルがあり、データ ソースが更新されるかどうかをチェックします。<br>   ui.rowAdding を使用して、new-row-adding の間にそのイベントが発生するかどうかをチェックします。<br>   ui.values[key] を使用して、キーを含む列のセルの値を取得します。ui.update が true の場合のみ使用できます。<br>   ui.oldValues[key] を使用して、キーを含む列のセルの古い値を取得します。ui.update が true の場合のみ使用できます。"
+            }
+        },
+        "editRowStarted": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event which is raised after start row editing.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridUpdating.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.rowID to get key or index of row.<br>   Use ui.rowAdding to check if that event is raised while new-row-adding.",
+                "jp": "行の編集を開始した後に発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridUpdating への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.row ID を使用して、行のキーまたはインデックスを取得します。<br>   ui.rowAdding を使用して、new-row-adding の間にそのイベントが発生するかどうかをチェックします。"
+            }
+        },
+        "editRowStarting": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event which is raised before start row editing.<br>   Return false in order to cancel editing and do not show editors in row.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridUpdating.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.rowID to get key or index of row.<br>   Use ui.rowAdding to check if that event is raised while new-row-adding.",
+                "jp": "行の編集を開始する前に発生するイベント。<br>   編集をキャンセルし、行にエディターを表示しないようにするために、False を返します。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridUpdating への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.row ID を使用して、行のキーまたはインデックスを取得します。<br>   ui.rowAdding を使用して、new-row-adding の間にそのイベントが発生するかどうかをチェックします。"
+            }
+        },
+        "generatePrimaryKeyValue": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event which is raised before adding new row to get value of cell for primaryKey column.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridUpdating.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.value to set unique record-key-identifier for new row. It is prefilled with suggested value (defaultValue of column or number of rows in data source)",
+                "jp": "primaryKey 列のセルの値を取得するため、新しい行を追加する前に発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridUpdating への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.value を使用して、新しい行の一意のレコード キー ID を設定します。提案された値があらかじめ入力されています (データ ソースの列または行数の defaultValue)。"
+            }
+        },
+        "rowAdded": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event which is raised after adding new row.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridUpdating.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.values[key] to get new value of cell in column with the key.<br>   Use ui.oldValues[key] to get default value (before editing) of cell in column with the key.",
+                "jp": "新しい行を追加した後に発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridUpdating への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.values[key] を使用して、キーを含む列のセルの新しい値を取得します。<br>   ui.oldValues[key] を使用して、キーを含む列のセルのデフォルト値 (編集前) を取得します。"
+            }
+        },
+        "rowAdding": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event which is raised before adding new row.<br>   Return false in order to cancel adding new row to data source.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridUpdating.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.values[key] to get new value of cell in column with the key.<br>   Use ui.oldValues[key] to get default value (before editing) of cell in column with the key.",
+                "jp": "新しい行を追加する前に発生するイベント。<br>   データ ソースに新しい行を追加するのをキャンセルするには、False を返します。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridUpdating への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.values[key] を使用して、キーを含む列のセルの新しい値を取得します。<br>   ui.oldValues[key] を使用して、キーを含む列のセルのデフォルト値 (編集前) を取得します。"
+            }
+        },
+        "rowDeleted": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event which is raised after row deleting.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridUpdating.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.element to get reference to jquery object which represents TR of row to delete.<br>   Use ui.rowID to get key or index of row to delete.",
+                "jp": "行を削除した後に発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridUpdating への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.element を使用して、削除する行の TR を表す jquery オブジェクトへの参照を取得します。<br>   ui.rowID を使用して、削除する行のキーまたはインデックスを取得します。"
+            }
+        },
+        "rowDeleting": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event which is raised before row deleting.<br>   Return false in order to cancel.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridUpdating.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.element to get reference to jquery object which represents TR of row to delete.<br>   Use ui.rowID to get key or index of row to delete.",
+                "jp": "行を削除する前に発生するイベント。<br>   キャンセルするには、False を返します。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridUpdating への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.element を使用して、削除する行の TR を表す jquery オブジェクトへの参照を取得します。<br>   ui.rowID を使用して、削除する行のキーまたはインデックスを取得します。"
+            }
+        },
+        "rowEditDialogClosed": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event fired after the row edit dialog is closed. <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridUpdating.<br>   Use ui.dialogElement to get reference to row edit dialog DOM element.",
+                "jp": "行編集ダイアログが閉じた後に発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridUpdating への参照を取得します。<br>   行編集ダイアログ DOM 要素への参照を取得するには ui.dialogElement を使用します。"
+            }
+        },
+        "rowEditDialogClosing": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event fired before the row edit dialog is closed. <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridUpdating.<br>   Use ui.dialogElement to get reference to row edit dialog DOM element.",
+                "jp": "行編集ダイアログが閉じる前に発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridUpdating への参照を取得します。<br>   行編集ダイアログ DOM 要素への参照を取得するには ui.dialogElement を使用します。"
+            }
+        },
+        "rowEditDialogContentsRendered": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event fired after the contents of the row edit dialog are rendered. <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridUpdating.<br>   Use ui.dialogElement to get reference to row edit dialog DOM element.",
+                "jp": "行編集ダイアログのコンテンツが描画された後に発生するイベント<br>    関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridUpdating への参照を取得します。<br>   行編集ダイアログ DOM 要素への参照を取得するには ui.dialogElement を使用します。"
+            }
+        },
+        "rowEditDialogContentsRendering": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event fired before the contents of the row edit dialog are rendered. <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridUpdating.<br>   Use ui.dialogElement to get reference to row edit dialog DOM element.",
+                "jp": "行編集ダイアログのコンテンツが描画される前に発生するイベント<br>    関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridUpdating への参照を取得します。<br>   行編集ダイアログ DOM 要素への参照を取得するには ui.dialogElement を使用します。"
+            }
+        },
+        "rowEditDialogOpened": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event fired after the row edit dialog is opened. <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridUpdating.<br>   Use ui.dialogElement to get reference to row edit dialog DOM element.",
+                "jp": "行編集ダイアログが開く前に発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridUpdating への参照を取得します。<br>   行編集ダイアログ DOM 要素への参照を取得するには ui.dialogElement を使用します。"
+            }
+        },
+        "rowEditDialogOpening": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event fired before the row edit dialog is opened. <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridUpdating.<br>   Use ui.dialogElement to get reference to row edit dialog DOM element.",
+                "jp": "行編集ダイアログが開く前に発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridUpdating への参照を取得します。<br>   行編集ダイアログ DOM 要素への参照を取得するには ui.dialogElement を使用します。"
+            }
         }
-      ],
-      "description": {
-		"en": "Event which is raised when autoCommit of grid is not enabled and grid has pending transaction which may fail to be correctly rendered.<br>   Application should process that event and it may trigger commit of grid.<br>   Return false in order to prevent exception.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridUpdating.<br>   Use ui.owner.grid to get reference to igGrid.",
-		"jp": "グリッドの autoCommit が有効でなく、グリッドに正しく描画できない可能性がある保留中のトランザクションがある場合に発生するイベント。<br>   アプリケーションはそのイベントを処理するはずで、グリッドのコミットをトリガーできます。<br>   例外を防ぐには false を返します。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridUpdating への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。"
-	}
     },
-    "editCellEnded": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+    "properties": {
+        "name": {
+            "type": "string",
+            "defaultValue": null
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Event which is raised after end cell editing.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridUpdating.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.rowID to get key or index of row.<br>   Use ui.columnIndex to get index of column.<br>   Use ui.columnKey to get key of column.<br>   Use ui.editor to get reference to igEditor.<br>   Use ui.value to get value of cell.<br>   Use ui.oldValue to get old value.<br>   Use ui.update to check if cell was modified and data source will be updated.<br>   Use ui.rowAdding to check if that event is raised while new-row-adding.",
-		"jp": "セルの編集が終了した後に発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridUpdating への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.row ID を使用して、行のキーまたはインデックスを取得します。<br>   ui.columnIndex を使用して、列のインデックスを取得します。<br>   ui.columnKey を使用して、列のキーを取得します。<br>   ui.editor を使用して、igEditor への参照を取得します。<br>   ui.value を使用して、セルの値を取得します。<br>   ui.oldValue を使用して、古い値を取得します。<br>   ui.update を使用して、セルが変更されて、データ ソースが更新されるかどうかをチェックします。<br>   ui.rowAdding を使用して、new-row-adding の間にそのイベントが発生するかどうかをチェックします。"
-	}
-    },
-    "editCellEnding": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "addRowLabel": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "Sets gets text for add-new-row button. If that is not set, then $.ig.GridUpdating.locale.addRowLabel is used.",
+                "jp": "新規行追加ボタンのテキストを設定または取得します。設定されていない場合は、$ig.GridUpdating.locale.addRowLabel が使用されます。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Event which is raised before end cell editing.<br>   Return false in order to cancel update of data source.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridUpdating.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.rowID to get key or index of row.<br>   Use ui.columnIndex to get index of column.<br>   Use ui.columnKey to get key of column.<br>   Use ui.keepEditing=true in order to keep editing. It has effect only when evt.originalEvent is defined and only when editMode is \"cell\".<br>   Use ui.editor to get reference to igEditor.<br>   Use ui.value to get value of cell/editor. That value can be modified and it will be used to update data source.<br>   Use ui.oldValue to get old value.<br>   Use ui.update to check if value was modified and data source will be updated.<br>   Use ui.rowAdding to check if that event is raised while new-row-adding.",
-		"jp": "セルの編集が終了する前に発生するイベント。<br>   データ ソースの更新をキャンセルするには、False を返します。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridUpdating への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.row ID を使用して、行のキーまたはインデックスを取得します。<br>   ui.columnIndex を使用して、列のインデックスを取得します。<br>   ui.columnKey を使用して、列のキーを取得します。<br>   ui.keepEditing=true を使用して、編集を続けます。evt.originalEvent が定義されていて editMode が \"cell\" の場合のみ効果があります。<br>   ui.editor を使用して、igEditor への参照を取得します。<br>   ui.value を使用して、セルまたはエディターの値を取得します。この値は変更できます。これを使用してデータ ソースを更新します。<br>   ui.oldValue を使用して、古い値を取得します。<br>   ui.update を使用して、値が変更されて、データ ソースが更新されるかどうかをチェックします。<br>   ui.rowAdding を使用して、new-row-adding の間にそのイベントが発生するかどうかをチェックします。"
-	}
-    },
-    "editCellStarted": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "addRowTooltip": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "Sets gets text for title of add-new-row button. If that is not set, then $.ig.GridUpdating.locale.addRowTooltip is used.",
+                "jp": "新規行追加ボタンのタイトルのテキストを設定または取得します。設定されていない場合は、$ig.GridUpdating.locale.addRowTooltip が使用されます。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Event which is raised after start cell editing.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridUpdating.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.rowID to get key or index of row.<br>   Use ui.columnIndex to get index of column.<br>   Use ui.columnKey to get key of column.<br>   Use ui.editor to get reference to igEditor.<br>   Use ui.value to get value of editor.<br>   Use ui.rowAdding to check if that event is raised while new-row-adding.",
-		"jp": "セルの編集を開始した後に発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridUpdating への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.row ID を使用して、行のキーまたはインデックスを取得します。<br>   ui.columnIndex を使用して、列のインデックスを取得します。<br>   ui.columnKey を使用して、列のキーを取得します。<br>   ui.editor を使用して、igEditor への参照を取得します。<br>   ui.value を使用して、エディターの値を取得します。<br>   ui.rowAdding を使用して、new-row-adding の間にそのイベントが発生するかどうかをチェックします。"
-	}
-    },
-    "editCellStarting": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "cancelLabel": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "Sets gets text for Cancel editing button. If that is not set, then $.ig.GridUpdating.locale.cancelLabel is used.",
+                "jp": "編集のキャンセルボタンのテキストを設定または取得します。設定されていない場合は、$ig.GridUpdating.locale.cancelLabel が使用されます。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Event which is raised before start cell editing.<br>   Return false in order to cancel start editing and do not show editors.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridUpdating.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.rowID to get key or index of row.<br>   Use ui.columnIndex to get index of column.<br>   Use ui.columnKey to get key of column.<br>   Use ui.editor to get reference to igEditor.<br>   Use ui.value to get or set value of editor.<br>   Use ui.rowAdding to check if that event is raised while new-row-adding.",
-		"jp": "セルの編集を開始する前に発生するイベント。<br>   編集の開始をキャンセルし、エディターを表示しないようにするために、False を返します。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridUpdating への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.row ID を使用して、行のキーまたはインデックスを取得します。<br>   ui.columnIndex を使用して、列のインデックスを取得します。<br>   ui.columnKey を使用して、列のキーを取得します。<br>   ui.editor を使用して、igEditor への参照を取得します。<br>   ui.value を使用して、エディターの値を取得または設定します。<br>   ui.rowAdding を使用して、new-row-adding の間にそのイベントが発生するかどうかをチェックします。"
-	}
-    },
-    "editRowEnded": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "cancelTooltip": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "Sets gets text for title of Cancel editing button. If that is not set, then $.ig.GridUpdating.locale.cancelTooltip is used.",
+                "jp": "編集のキャンセルボタンのタイトルのテキストを設定または取得します。設定されていない場合は、$ig.GridUpdating.locale.cancelTooltip が使用されます。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Event which is raised after end row editing.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridUpdating.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.rowID to get key or index of row.<br>   Use ui.update to check if value of any cell was modified and data source will be updated.<br>   Use ui.rowAdding to check if that event is raised while new-row-adding.<br>   Use ui.values[key] to get value of cell in column with the key. That is available only when ui.update is true.<br>   Use ui.oldValues[key] to get old value of cell in column with the key. That is available only when ui.update is true.",
-		"jp": "行の編集が終了した後に発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridUpdating への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.row ID を使用して、行のキーまたはインデックスを取得します。<br>   ui.update を使用して、値が変更されたセルがあり、データ ソースが更新されるかどうかをチェックします。<br>   ui.rowAdding を使用して、new-row-adding の間にそのイベントが発生するかどうかをチェックします。<br>   ui.values[key] を使用して、キーを含む列のセルの値を取得します。ui.update が true の場合のみ使用できます。<br>   ui.oldValues[key] を使用して、キーを含む列のセルの古い値を取得します。ui.update が true の場合のみ使用できます。"
-	}
-    },
-    "editRowEnding": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "columnSettings": {
+            "type": "array",
+            "defaultValue": null,
+            "description": {
+                "en": "Sets gets array of settings for each column.",
+                "jp": "各列の設定の配列を取得または設定します。"
+            },
+            "schema": {
+                "columnKey": {
+                    "type": "string",
+                    "defaultValue": null,
+                    "description": {
+                        "en": "Specifies the column key of the column with tooltip",
+                        "jp": "ツールチップ済み列の列キーを指定します。"
+                    }
+                },
+                "editorType": {
+                    "type": "number",
+                    "defaultValue": -1,
+                    "description": {
+                        "en": "Specifies the column index of the column with tooltip",
+                        "jp": "ツールチップ済み列の列インデックスを指定します。"
+                    }
+                },
+                "editorProvider": {
+                    "type": "bool",
+                    "defaultValue": true,
+                    "description": {
+                        "en": "Enables / disables tooltips on the specified column. By default tooltips are displayed for each column. Note: This option is mandatory.",
+                        "jp": "指定された列でのツールチップを有効または無効にします。デフォルトでは、ツールチップは各列に表示されます。注: このオプションは必須です。"
+                    }
+                },
+                "editorOptions": {
+                    "type": "string",
+                    "defaultValue": null,
+                    "description": {
+                        "en": "Specifies the column key of the column with tooltip",
+                        "jp": "ツールチップ済み列の列キーを指定します。"
+                    }
+                },
+                "required": {
+                    "type": "number",
+                    "defaultValue": -1,
+                    "description": {
+                        "en": "Specifies the column index of the column with tooltip",
+                        "jp": "ツールチップ済み列の列インデックスを指定します。"
+                    }
+                },
+                "readOnly": {
+                    "type": "bool",
+                    "defaultValue": true,
+                    "description": {
+                        "en": "Enables / disables tooltips on the specified column. By default tooltips are displayed for each column. Note: This option is mandatory.",
+                        "jp": "指定された列でのツールチップを有効または無効にします。デフォルトでは、ツールチップは各列に表示されます。注: このオプションは必須です。"
+                    }
+                },
+                "validation": {
+                    "type": "string",
+                    "defaultValue": null,
+                    "description": {
+                        "en": "Specifies the column key of the column with tooltip",
+                        "jp": "ツールチップ済み列の列キーを指定します。"
+                    }
+                },
+                "defaultValue": {
+                    "type": "number",
+                    "defaultValue": -1,
+                    "description": {
+                        "en": "Specifies the column index of the column with tooltip",
+                        "jp": "ツールチップ済み列の列インデックスを指定します。"
+                    }
+                }
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Event which is raised before end row editing.<br>   Return false in order to cancel update of data source.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridUpdating.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.rowID to get key or index of row.<br>   Use ui.keepEditing=true in order to keep editing. It has effect only when evt.originalEvent is defined.<br>   Use ui.update to check if value of any cell was modified and data source will be updated.<br>   Use ui.rowAdding to check if that event is raised while new-row-adding.<br>   Use ui.values[key] to get value of cell in column with the key. That is available only when ui.update is true.<br>   Use ui.oldValues[key] to get old value of cell in column with the key. That is available only when ui.update is true.",
-		"jp": "行の編集が終了する前に発生するイベント。<br>   データ ソースの更新をキャンセルするには、False を返します。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridUpdating への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.row ID を使用して、行のキーまたはインデックスを取得します。<br>   ui.keepEditing=true を使用して、編集を続けます。evt.originalEvent が定義されている場合のみ効果があります。<br>   ui.update を使用して、値が変更されたセルがあり、データ ソースが更新されるかどうかをチェックします。<br>   ui.rowAdding を使用して、new-row-adding の間にそのイベントが発生するかどうかをチェックします。<br>   ui.values[key] を使用して、キーを含む列のセルの値を取得します。ui.update が true の場合のみ使用できます。<br>   ui.oldValues[key] を使用して、キーを含む列のセルの古い値を取得します。ui.update が true の場合のみ使用できます。"
-	}
-    },
-    "editRowStarted": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "deleteRowLabel": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "Sets gets text for Delete row button. If that is not set, then $.ig.GridUpdating.locale.deleteRowLabel is used.",
+                "jp": "行の削除ボタンのテキストを設定または取得します。設定されていない場合は、$ig.GridUpdating.locale.deleteRowLabel が使用されます。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Event which is raised after start row editing.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridUpdating.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.rowID to get key or index of row.<br>   Use ui.rowAdding to check if that event is raised while new-row-adding.",
-		"jp": "行の編集を開始した後に発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridUpdating への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.row ID を使用して、行のキーまたはインデックスを取得します。<br>   ui.rowAdding を使用して、new-row-adding の間にそのイベントが発生するかどうかをチェックします。"
-	}
-    },
-    "editRowStarting": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "deleteRowTooltip": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "Sets gets text for title of Delete row button. If that is not set, then $.ig.GridUpdating.locale.deleteRowTooltip is used.",
+                "jp": "行の削除ボタンのタイトルのテキストを設定または取得します。設定されていない場合は、$ig.GridUpdating.locale.deleteRowTooltip が使用されます。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Event which is raised before start row editing.<br>   Return false in order to cancel editing and do not show editors in row.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridUpdating.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.rowID to get key or index of row.<br>   Use ui.rowAdding to check if that event is raised while new-row-adding.",
-		"jp": "行の編集を開始する前に発生するイベント。<br>   編集をキャンセルし、行にエディターを表示しないようにするために、False を返します。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridUpdating への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.row ID を使用して、行のキーまたはインデックスを取得します。<br>   ui.rowAdding を使用して、new-row-adding の間にそのイベントが発生するかどうかをチェックします。"
-	}
-    },
-    "generatePrimaryKeyValue": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "doneLabel": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "Sets gets text for Done editing button. If that is not set, then $.ig.GridUpdating.locale.doneLabel is used.",
+                "jp": "編集の完了ボタンのテキストを設定または取得します。設定されていない場合は、$ig.GridUpdating.locale.doneLabel が使用されます。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Event which is raised before adding new row to get value of cell for primaryKey column.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridUpdating.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.value to set unique record-key-identifier for new row. It is prefilled with suggested value (defaultValue of column or number of rows in data source)",
-		"jp": "primaryKey 列のセルの値を取得するため、新しい行を追加する前に発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridUpdating への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.value を使用して、新しい行の一意のレコード キー ID を設定します。提案された値があらかじめ入力されています (データ ソースの列または行数の defaultValue)。"
-	}
-    },
-    "rowAdded": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "doneTooltip": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "Sets gets text for title of Done editing button. If that is not set, then $.ig.GridUpdating.locale.doneTooltip is used.",
+                "jp": "編集の完了ボタンのタイトルのテキストを設定または取得します。設定されていない場合は、$ig.GridUpdating.locale.doneTooltip が使用されます。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Event which is raised after adding new row.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridUpdating.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.values[key] to get new value of cell in column with the key.<br>   Use ui.oldValues[key] to get default value (before editing) of cell in column with the key.",
-		"jp": "新しい行を追加した後に発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridUpdating への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.values[key] を使用して、キーを含む列のセルの新しい値を取得します。<br>   ui.oldValues[key] を使用して、キーを含む列のセルのデフォルト値 (編集前) を取得します。"
-	}
-    },
-    "rowAdding": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "editMode": {
+            "type": "string",
+            "defaultValue": "row",
+            "description": {
+                "en": "Sets gets edit mode.",
+                "jp": "編集モードを取得または設定します。"
+            },
+            "valueOptions": [
+                {
+                    "name": "row",
+                    "type": "string",
+                    "description": {
+                        "en": "Editors in all cells in a row are displayed. Editor under clicked cell should get input focus. Optional Done/Cancel buttons can be displayed.",
+                        "jp": "行内のすべてのセルでエディターを表示します。クリックしたセルにあるエディターは入力フォーカスを取得しなければなりません。オプションの [完了]/[キャンセル] ボタンを表示できます。"
+                    }
+                },
+                {
+                    "name": "cell",
+                    "type": "string",
+                    "description": {
+                        "en": "Editor only for clicked cell is displayed. The Done/Cancel buttons are not supported.",
+                        "jp": "クリックしたセルのみのエディターが表示されます。[完了] ボタンと [キャンセル] ボタンはサポートされていません。"
+                    }
+                },
+                {
+                    "name": "rowedittemplate",
+                    "type": "string",
+                    "description": {
+                        "en": "Editor for all cells will be rendered as popup dialog",
+                        "jp": "すべてのセルのエディターはポップアップ ダイアログとして描画されます。"
+                    }
+                },
+                {
+                    "name": "none",
+                    "type": "string",
+                    "description": {
+                        "en": "Editing of grid-cells is disabled",
+                        "jp": "グリッド セルの編集は無効です。"
+                    }
+                },
+                {
+                    "name": "null",
+                    "type": "object",
+                    "description": {
+                        "en": "Editing of grid-cells is disabled",
+                        "jp": "グリッド セルの編集は無効です。"
+                    }
+                }
+            ]
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Event which is raised before adding new row.<br>   Return false in order to cancel adding new row to data source.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridUpdating.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.values[key] to get new value of cell in column with the key.<br>   Use ui.oldValues[key] to get default value (before editing) of cell in column with the key.",
-		"jp": "新しい行を追加する前に発生するイベント。<br>   データ ソースに新しい行を追加するのをキャンセルするには、False を返します。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridUpdating への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.values[key] を使用して、キーを含む列のセルの新しい値を取得します。<br>   ui.oldValues[key] を使用して、キーを含む列のセルのデフォルト値 (編集前) を取得します。"
-	}
-    },
-    "rowDeleted": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "enableAddRow": {
+            "type": "bool",
+            "defaultValue": true,
+            "description": {
+                "en": "Sets gets add-new-row functionality.<br>   Notes: If igGrid has primaryKey, then application should process generatePrimaryKeyValue event and provide value for a cell.<br>   It is also recommended to set readOnly:true for the column (within columnSettings) with the primaryKey or to use editorOptions:{readOnly:true}.<br>   By default the value of a cell with primary key is generated automatically and its value is equal to number of rows in grid plus 1.<br>   Value true: the \"Add Row\" button is displayed on header, click on that button shows editors in all columns and new row inserted at the end of editing.<br>   Value false: add-row functionality is disabled.",
+                "jp": "新しい行を追加する機能を取得または設定します。<br>   注: igGrid に primaryKey がある場合、アプリケーションは generatePrimaryKeyValue イベントを処理し、セルの値を指定する必要があります。<br>   また、readOnly:true を (columnSettings 内の) primaryKey を指定した列に設定するか、editorOptions:{readOnly:true} を使用することをお勧めします。<br>   デフォルトでは、プライマリ キーのあるセルの値は自動的に生成され、その値はグリッドの行数プラス 1 に等しくなります。<br>   値 true: ヘッダーに [行の追加] ボタンが表示され、そのボタンをクリックするとすべての列にエディターが表示され、新しい行が編集の最後に挿入されます。<br>   値 false: 行の追加機能は無効です。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Event which is raised after row deleting.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridUpdating.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.element to get reference to jquery object which represents TR of row to delete.<br>   Use ui.rowID to get key or index of row to delete.",
-		"jp": "行を削除した後に発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridUpdating への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.element を使用して、削除する行の TR を表す jquery オブジェクトへの参照を取得します。<br>   ui.rowID を使用して、削除する行のキーまたはインデックスを取得します。"
-	}
-    },
-    "rowDeleting": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "enableDataDirtyException": {
+            "type": "bool",
+            "defaultValue": true,
+            "description": {
+                "en": "Sets gets ability to enable or disable exception, which is raised when grid has pending transaction and may fail to render data correctly.",
+                "jp": "例外を有効または無効にする機能を設定または取得します。例外は、グリッドに保留中のトランザクションがあり、データを正しく描画できない可能性がある場合に発生します。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Event which is raised before row deleting.<br>   Return false in order to cancel.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridUpdating.<br>   Use ui.owner.grid to get reference to igGrid.<br>   Use ui.element to get reference to jquery object which represents TR of row to delete.<br>   Use ui.rowID to get key or index of row to delete.",
-		"jp": "行を削除する前に発生するイベント。<br>   キャンセルするには、False を返します。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridUpdating への参照を取得します。<br>   ui.owner.grid を使用して、igGrid への参照を取得します。<br>   ui.element を使用して、削除する行の TR を表す jquery オブジェクトへの参照を取得します。<br>   ui.rowID を使用して、削除する行のキーまたはインデックスを取得します。"
-	}
-    },
-    "rowEditDialogClosed": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "enableDeleteRow": {
+            "type": "bool",
+            "defaultValue": true,
+            "description": {
+                "en": "Sets gets delete-row functionality.<br>   Value true: the \"Delete\" button is displayed on mouse-over a row and all selected rows are deleted by Delete-key.<br>   Value false: delete-row is disabled.",
+                "jp": "行を削除する機能を取得または設定します。<br>   値 true: マウスを上に置いた行に [削除] ボタンが表示されます。[Delete] キーですべての選択行が削除されます。<br>   値 false: 行の削除は無効です。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Event fired after the row edit dialog is closed. <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridUpdating.<br>   Use ui.dialogElement to get reference to row edit dialog DOM element.",
-		"jp": "行編集ダイアログが閉じた後に発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridUpdating への参照を取得します。<br>   行編集ダイアログ DOM 要素への参照を取得するには ui.dialogElement を使用します。"
-	}
-    },
-    "rowEditDialogClosing": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "excelNavigationMode": {
+            "type": "bool",
+            "defaultValue": false,
+            "description": {
+                "en": "Enables excel navigating style while editing a cell<br>   Value true: Arrows will not navigate inside the edited cell, but will exit the edit mode<br>   and move the focus to the nearest cell.<br>   Value false: Arrows will navigate the cursor inside the edited cell",
+                "jp": "セルの編集時にエクセルのナビゲーション スタイルを有効にします。<br>   値 true: 矢印を編集セル内に移動できません。ただし、編集モードおよを終了して、<br>   一番近いセルにフォーカスを移動できます。<br>   値 false: 矢印は編集セル内のカーソルを移動できます。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Event fired before the row edit dialog is closed. <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridUpdating.<br>   Use ui.dialogElement to get reference to row edit dialog DOM element.",
-		"jp": "行編集ダイアログが閉じる前に発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridUpdating への参照を取得します。<br>   行編集ダイアログ DOM 要素への参照を取得するには ui.dialogElement を使用します。"
-	}
-    },
-    "rowEditDialogContentsRendered": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "horizontalMoveOnEnter": {
+            "type": "bool",
+            "defaultValue": false,
+            "description": {
+                "en": "Enables horizontal move to the right on Enter while editing a cell.<br>   Value true: Pressing Enter will move the focus to the next edited cell on the right<br>   Value false: Pressing Enter will move the focus to the next edited cell on the row below",
+                "jp": "セルの編集中に Enter で右への水平移動を有効にします。<br>   値 true: Enter を押すと右隣の編集済みのセルへフォーカスを移動します。<br>   値 false: Enter を押すと下行の次の編集済みのセルへフォーカスを移動します。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Event fired after the contents of the row edit dialog are rendered. <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridUpdating.<br>   Use ui.dialogElement to get reference to row edit dialog DOM element.",
-		"jp": "行編集ダイアログのコンテンツが描画された後に発生するイベント<br>    関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridUpdating への参照を取得します。<br>   行編集ダイアログ DOM 要素への参照を取得するには ui.dialogElement を使用します。"
-	}
-    },
-    "rowEditDialogContentsRendering": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "labels": {
+            "type": "unknown",
+            "defaultValue": null,
+            "description": {
+                "en": "A list of configurable and localized labels that will be used for the row edit dialog.",
+                "jp": "行編集ダイアログに使用される設定可能でローカライズ済みのラベルのリスト。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Event fired before the contents of the row edit dialog are rendered. <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridUpdating.<br>   Use ui.dialogElement to get reference to row edit dialog DOM element.",
-		"jp": "行編集ダイアログのコンテンツが描画される前に発生するイベント<br>    関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridUpdating への参照を取得します。<br>   行編集ダイアログ DOM 要素への参照を取得するには ui.dialogElement を使用します。"
-	}
-    },
-    "rowEditDialogOpened": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "rowEditDialogContainment": {
+            "type": "string",
+            "defaultValue": "owner",
+            "description": {
+                "en": "Controls containment behavior. <br>    owner  The row edit dialog will be draggable only in the grid area<br>    window  The row edit dialog will be draggable in the whole window area",
+                "jp": "コンテインメント動作を制御します。<br>    owner  行編集ダイアログはグリッド領域のみにドラッグ可能です。<br>    window  行編集ダイアログはウィンドウ領域の全体にドラッグ可能です。"
+            },
+            "valueOptions": [
+                {
+                    "name": "owner",
+                    "type": "string",
+                    "description": {
+                        "en": "The row edit dialog will be draggable only in the grid area",
+                        "jp": "行編集ダイアログはグリッド領域のみにドラッグ可能です。"
+                    }
+                },
+                {
+                    "name": "window",
+                    "type": "string",
+                    "description": {
+                        "en": "The row edit dialog will be draggable in the whole window area",
+                        "jp": "行編集ダイアログはウィンドウ領域の全体にドラッグ可能です。"
+                    }
+                }
+            ]
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Event fired after the row edit dialog is opened. <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridUpdating.<br>   Use ui.dialogElement to get reference to row edit dialog DOM element.",
-		"jp": "行編集ダイアログが開く前に発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridUpdating への参照を取得します。<br>   行編集ダイアログ DOM 要素への参照を取得するには ui.dialogElement を使用します。"
-	}
-    },
-    "rowEditDialogOpening": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "rowEditDialogContentHeight": {
+            "type": "number",
+            "defaultValue": 150,
+            "description": {
+                "en": " the height of the row edit dialog content",
+                "jp": " 行編集ダイアログ コンテンツの高さ"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Event fired before the row edit dialog is opened. <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGridUpdating.<br>   Use ui.dialogElement to get reference to row edit dialog DOM element.",
-		"jp": "行編集ダイアログが開く前に発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGridUpdating への参照を取得します。<br>   行編集ダイアログ DOM 要素への参照を取得するには ui.dialogElement を使用します。"
-	}
-    }
-  },
-  "properties": {
-	"name": {
-      "type": "string",
-      "defaultValue": null
-    },
-    "addRowLabel": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "Sets gets text for add-new-row button. If that is not set, then $.ig.GridUpdating.locale.addRowLabel is used.",
-		"jp": "新規行追加ボタンのテキストを設定または取得します。設定されていない場合は、$ig.GridUpdating.locale.addRowLabel が使用されます。"
-	}
-    },
-    "addRowTooltip": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "Sets gets text for title of add-new-row button. If that is not set, then $.ig.GridUpdating.locale.addRowTooltip is used.",
-		"jp": "新規行追加ボタンのタイトルのテキストを設定または取得します。設定されていない場合は、$ig.GridUpdating.locale.addRowTooltip が使用されます。"
-	}
-    },
-    "cancelLabel": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "Sets gets text for Cancel editing button. If that is not set, then $.ig.GridUpdating.locale.cancelLabel is used.",
-		"jp": "編集のキャンセルボタンのテキストを設定または取得します。設定されていない場合は、$ig.GridUpdating.locale.cancelLabel が使用されます。"
-	}
-    },
-    "cancelTooltip": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "Sets gets text for title of Cancel editing button. If that is not set, then $.ig.GridUpdating.locale.cancelTooltip is used.",
-		"jp": "編集のキャンセルボタンのタイトルのテキストを設定または取得します。設定されていない場合は、$ig.GridUpdating.locale.cancelTooltip が使用されます。"
-	}
-    },
-    "columnSettings": {
-      "type": "array",
-      "defaultValue": null,
-      "description": {
-		"en": "Sets gets array of settings for each column.",
-		"jp": "各列の設定の配列を取得または設定します。"
-	},
-      "schema": {
-        "columnKey": {
-          "type": "string",
-          "defaultValue": null,
-          "description": {
-		"en": "Specifies the column key of the column with tooltip",
-		"jp": "ツールチップ済み列の列キーを指定します。"
-	}
+        "rowEditDialogFieldWidth": {
+            "type": "number",
+            "defaultValue": 140.0,
+            "description": {
+                "en": "width of the row edit dialog fields<br>    number The width as a number (0)",
+                "jp": "行編集ダイアログ フィールドの幅<br>    数値 (0) としての幅。"
+            }
         },
-        "editorType": {
-          "type": "number",
-          "defaultValue": -1,
-          "description": {
-		"en": "Specifies the column index of the column with tooltip",
-		"jp": "ツールチップ済み列の列インデックスを指定します。"
-	}
+        "rowEditDialogHeight": {
+            "type": "number",
+            "defaultValue": 350,
+            "description": {
+                "en": "Default row edit dialog height",
+                "jp": "デフォルト行編集ダイアログの高さ"
+            }
         },
-        "editorProvider": {
-          "type": "bool",
-          "defaultValue": true,
-          "description": {
-		"en": "Enables / disables tooltips on the specified column. By default tooltips are displayed for each column. Note: This option is mandatory.",
-		"jp": "指定された列でのツールチップを有効または無効にします。デフォルトでは、ツールチップは各列に表示されます。注: このオプションは必須です。"
-	}
+        "rowEditDialogOkCancelButtonWidth": {
+            "type": "number",
+            "defaultValue": 120,
+            "description": {
+                "en": "Width of the Ok and Cancel buttons in the row edit dialogs ",
+                "jp": "行編集ダイアログの OK とキャンセルボタンの幅。 "
+            }
         },
-        "editorOptions": {
-          "type": "string",
-          "defaultValue": null,
-          "description": {
-		"en": "Specifies the column key of the column with tooltip",
-		"jp": "ツールチップ済み列の列キーを指定します。"
-	}
+        "rowEditDialogRowTemplate": {
+            "type": "string",
+            "defaultValue": "<tr><td>${headerText}</td><td data-key=${dataKey}><input /></td></tr>",
+            "description": {
+                "en": "Custom template for rows in row edit dialog",
+                "jp": "行編集ダイアログの行のカスタム テンプレート。"
+            }
         },
-        "required": {
-          "type": "number",
-          "defaultValue": -1,
-          "description": {
-		"en": "Specifies the column index of the column with tooltip",
-		"jp": "ツールチップ済み列の列インデックスを指定します。"
-	}
+        "rowEditDialogRowTemplateID": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "ID to x-jquery-tmpl template. If both rowEditDialogRowTemplate and rowEditDialogRowTemplateID are<br>    specified, then rowEditDialogRowTemplateID will be used",
+                "jp": "x-jquery-tmpl テンプレートの ID。rowEditDialogRowTemplate および rowEditDialogRowTemplateID の両方が指定された場合、<br>    rowEditDialogRowTemplateID が使用されます。"
+            }
         },
-        "readOnly": {
-          "type": "bool",
-          "defaultValue": true,
-          "description": {
-		"en": "Enables / disables tooltips on the specified column. By default tooltips are displayed for each column. Note: This option is mandatory.",
-		"jp": "指定された列でのツールチップを有効または無効にします。デフォルトでは、ツールチップは各列に表示されます。注: このオプションは必須です。"
-	}
+        "rowEditDialogWidth": {
+            "type": "number",
+            "defaultValue": 370,
+            "description": {
+                "en": "Default row edit dialog width",
+                "jp": "デフォルト行編集ダイアログ幅"
+            }
+        },
+        "saveChangesErrorHandler": {
+            "type": "function",
+            "defaultValue": null,
+            "description": {
+                "en": "Specifies a custom function to be called when AJAX request to the updateUrl option fails. Receives three arguments - the jqXHR, string describing the type of error and an optional exception object",
+                "jp": "updateUrl オプションへの AJAX リクエストに失敗したときに呼び出すカスタム関数を指定します。3 つの引数を受けます - jqXHR、エラーのタイプを説明する文字列、およびオプションの例外オブジェクト。"
+            }
+        },
+        "saveChangesSuccessHandler": {
+            "type": "function",
+            "defaultValue": null,
+            "description": {
+                "en": "Specifies a custom function to be called when AJAX request to the updateUrl option succeeds. Receives as argument the data returned by the server",
+                "jp": "updateUrl オプションへの AJAX リクエストに成功したときに呼び出すカスタム関数を指定します。サーバーから返されたデータを引数として受けます。"
+            }
+        },
+        "showDoneCancelButtons": {
+            "type": "bool",
+            "defaultValue": true,
+            "description": {
+                "en": "Sets gets visibility of the end-edit pop-up dialog with Done/Cancel buttons.",
+                "jp": "[完了] ボタンと [キャンセル] ボタンがある編集終了ポップアップ ダイアログの可視性を取得または設定します。"
+            }
+        },
+        "showReadonlyEditors": {
+            "type": "bool",
+            "defaultValue": true,
+            "description": {
+                "en": "Used in row edit template when editing is disabled for a particular column<br>   Value true: disabled columns are rendered as disabled<br>   Value false: disabled columns are not rendered in the editors",
+                "jp": "行編集テンプレートで特定の列の編集が無効な場合に使用されます。<br>   値 true: 無効な列は無効として描画されます<br>   値 false: 無効な列はエディターで描画されません。"
+            }
+        },
+        "startEditTriggers": {
+            "type": "string",
+            "defaultValue": "click,F2,enter",
+            "description": {
+                "en": "Sets gets triggers for start edit mode.<br>   Possible values: \"click\", \"dblclick\", \"F2\", \"enter\" and their combinations separated by coma.<br>   Notes:<br>   The array of strings similar to ['dblclick', 'f2'] is also supported.<br>   The keyboard triggers have effect only when \"Selection\" feature of grid is enabled.<br>   If the 'dblclick' is included, then 'click' has no effect.",
+                "jp": "編集モードを開始するトリガーを取得または設定します。<br>   利用可能な値: \"click\"、\"dblclick\"、\"F2\"、\"enter\"、およびコンマで区切ったこれらの組み合わせ。<br>   注:<br>   ['dblclick', 'f2'] に似た文字列の配列もサポートされています。<br>   キーボードのトリガーは、グリッドの「Selection」機能が有効な場合のみ有効です。<br>   'dblclick' が含まれる場合、'click' の効果はありません。"
+            },
+            "valueOptions": [
+                {
+                    "name": "click",
+                    "type": "string",
+                    "description": {
+                        "en": "Editing can be started using 'click'",
+                        "jp": "'click' を使用して編集を開始できます"
+                    }
+                },
+                {
+                    "name": "F2",
+                    "type": "string",
+                    "description": {
+                        "en": "Editing can be started using 'F2'",
+                        "jp": "'F2' を使用して編集を開始できます"
+                    }
+                },
+                {
+                    "name": "enter",
+                    "type": "string",
+                    "description": {
+                        "en": "Editing can be started using 'enter'",
+                        "jp": "'enter' を使用して編集を開始できます"
+                    }
+                },
+                {
+                    "name": "click,F2",
+                    "type": "string",
+                    "description": {
+                        "en": "Editing can be started using 'click,F2'",
+                        "jp": "'click,F2' を使用して編集を開始できます"
+                    }
+                },
+                {
+                    "name": "click,enter",
+                    "type": "string",
+                    "description": {
+                        "en": "Editing can be started using 'click,enter'",
+                        "jp": "'click,enter' を使用して編集を開始できます"
+                    }
+                },
+                {
+                    "name": "F2,enter",
+                    "type": "string",
+                    "description": {
+                        "en": "Editing can be started using 'F2,enter'",
+                        "jp": "'F2,enter' を使用して編集を開始できます"
+                    }
+                },
+                {
+                    "name": "click,F2,enter",
+                    "type": "string",
+                    "description": {
+                        "en": "Editing can be started using 'click,F2,enter'",
+                        "jp": "'click,F2,enter' を使用して編集を開始できます"
+                    }
+                }
+            ]
         },
         "validation": {
-          "type": "string",
-          "defaultValue": null,
-          "description": {
-		"en": "Specifies the column key of the column with tooltip",
-		"jp": "ツールチップ済み列の列キーを指定します。"
-	}
-        },
-        "defaultValue": {
-          "type": "number",
-          "defaultValue": -1,
-          "description": {
-		"en": "Specifies the column index of the column with tooltip",
-		"jp": "ツールチップ済み列の列インデックスを指定します。"
-	}
+            "type": "bool",
+            "defaultValue": false,
+            "description": {
+                "en": "Sets gets option to enable validation for all columns.",
+                "jp": "すべての列の検証を有効にするオプションを設定または取得します。"
+            }
         }
-      }
-    },
-    "deleteRowLabel": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "Sets gets text for Delete row button. If that is not set, then $.ig.GridUpdating.locale.deleteRowLabel is used.",
-		"jp": "行の削除ボタンのテキストを設定または取得します。設定されていない場合は、$ig.GridUpdating.locale.deleteRowLabel が使用されます。"
-	}
-    },
-    "deleteRowTooltip": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "Sets gets text for title of Delete row button. If that is not set, then $.ig.GridUpdating.locale.deleteRowTooltip is used.",
-		"jp": "行の削除ボタンのタイトルのテキストを設定または取得します。設定されていない場合は、$ig.GridUpdating.locale.deleteRowTooltip が使用されます。"
-	}
-    },
-    "doneLabel": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "Sets gets text for Done editing button. If that is not set, then $.ig.GridUpdating.locale.doneLabel is used.",
-		"jp": "編集の完了ボタンのテキストを設定または取得します。設定されていない場合は、$ig.GridUpdating.locale.doneLabel が使用されます。"
-	}
-    },
-    "doneTooltip": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "Sets gets text for title of Done editing button. If that is not set, then $.ig.GridUpdating.locale.doneTooltip is used.",
-		"jp": "編集の完了ボタンのタイトルのテキストを設定または取得します。設定されていない場合は、$ig.GridUpdating.locale.doneTooltip が使用されます。"
-	}
-    },
-    "editMode": {
-      "type": "string",
-      "defaultValue": "row",
-      "description": {
-		"en": "Sets gets edit mode.",
-		"jp": "編集モードを取得または設定します。"
-	},
-      "valueOptions": [
-        {
-          "name": "row",
-          "type": "string",
-          "description": {
-		"en": "Editors in all cells in a row are displayed. Editor under clicked cell should get input focus. Optional Done/Cancel buttons can be displayed.",
-		"jp": "行内のすべてのセルでエディターを表示します。クリックしたセルにあるエディターは入力フォーカスを取得しなければなりません。オプションの [完了]/[キャンセル] ボタンを表示できます。"
-	}
-        },
-        {
-          "name": "cell",
-          "type": "string",
-          "description": {
-		"en": "Editor only for clicked cell is displayed. The Done/Cancel buttons are not supported.",
-		"jp": "クリックしたセルのみのエディターが表示されます。[完了] ボタンと [キャンセル] ボタンはサポートされていません。"
-	}
-        },
-        {
-          "name": "rowedittemplate",
-          "type": "string",
-          "description": {
-		"en": "Editor for all cells will be rendered as popup dialog",
-		"jp": "すべてのセルのエディターはポップアップ ダイアログとして描画されます。"
-	}
-        },
-        {
-          "name": "none",
-          "type": "string",
-          "description": {
-		"en": "Editing of grid-cells is disabled",
-		"jp": "グリッド セルの編集は無効です。"
-	}
-        },
-        {
-          "name": "null",
-          "type": "object",
-          "description": {
-		"en": "Editing of grid-cells is disabled",
-		"jp": "グリッド セルの編集は無効です。"
-	}
-        }
-      ]
-    },
-    "enableAddRow": {
-      "type": "bool",
-      "defaultValue": true,
-      "description": {
-		"en": "Sets gets add-new-row functionality.<br>   Notes: If igGrid has primaryKey, then application should process generatePrimaryKeyValue event and provide value for a cell.<br>   It is also recommended to set readOnly:true for the column (within columnSettings) with the primaryKey or to use editorOptions:{readOnly:true}.<br>   By default the value of a cell with primary key is generated automatically and its value is equal to number of rows in grid plus 1.<br>   Value true: the \"Add Row\" button is displayed on header, click on that button shows editors in all columns and new row inserted at the end of editing.<br>   Value false: add-row functionality is disabled.",
-		"jp": "新しい行を追加する機能を取得または設定します。<br>   注: igGrid に primaryKey がある場合、アプリケーションは generatePrimaryKeyValue イベントを処理し、セルの値を指定する必要があります。<br>   また、readOnly:true を (columnSettings 内の) primaryKey を指定した列に設定するか、editorOptions:{readOnly:true} を使用することをお勧めします。<br>   デフォルトでは、プライマリ キーのあるセルの値は自動的に生成され、その値はグリッドの行数プラス 1 に等しくなります。<br>   値 true: ヘッダーに [行の追加] ボタンが表示され、そのボタンをクリックするとすべての列にエディターが表示され、新しい行が編集の最後に挿入されます。<br>   値 false: 行の追加機能は無効です。"
-	}
-    },
-    "enableDataDirtyException": {
-      "type": "bool",
-      "defaultValue": true,
-      "description": {
-		"en": "Sets gets ability to enable or disable exception, which is raised when grid has pending transaction and may fail to render data correctly.",
-		"jp": "例外を有効または無効にする機能を設定または取得します。例外は、グリッドに保留中のトランザクションがあり、データを正しく描画できない可能性がある場合に発生します。"
-	}
-    },
-    "enableDeleteRow": {
-      "type": "bool",
-      "defaultValue": true,
-      "description": {
-		"en": "Sets gets delete-row functionality.<br>   Value true: the \"Delete\" button is displayed on mouse-over a row and all selected rows are deleted by Delete-key.<br>   Value false: delete-row is disabled.",
-		"jp": "行を削除する機能を取得または設定します。<br>   値 true: マウスを上に置いた行に [削除] ボタンが表示されます。[Delete] キーですべての選択行が削除されます。<br>   値 false: 行の削除は無効です。"
-	}
-    },
-    "excelNavigationMode": {
-      "type": "bool",
-      "defaultValue": false,
-      "description": {
-		"en": "Enables excel navigating style while editing a cell<br>   Value true: Arrows will not navigate inside the edited cell, but will exit the edit mode<br>   and move the focus to the nearest cell.<br>   Value false: Arrows will navigate the cursor inside the edited cell",
-		"jp": "セルの編集時にエクセルのナビゲーション スタイルを有効にします。<br>   値 true: 矢印を編集セル内に移動できません。ただし、編集モードおよを終了して、<br>   一番近いセルにフォーカスを移動できます。<br>   値 false: 矢印は編集セル内のカーソルを移動できます。"
-	}
-    },
-    "horizontalMoveOnEnter": {
-      "type": "bool",
-      "defaultValue": false,
-      "description": {
-		"en": "Enables horizontal move to the right on Enter while editing a cell.<br>   Value true: Pressing Enter will move the focus to the next edited cell on the right<br>   Value false: Pressing Enter will move the focus to the next edited cell on the row below",
-		"jp": "セルの編集中に Enter で右への水平移動を有効にします。<br>   値 true: Enter を押すと右隣の編集済みのセルへフォーカスを移動します。<br>   値 false: Enter を押すと下行の次の編集済みのセルへフォーカスを移動します。"
-	}
-    },
-    "labels": {
-      "type": "unknown",
-      "defaultValue": null,
-      "description": {
-		"en": "A list of configurable and localized labels that will be used for the row edit dialog.",
-		"jp": "行編集ダイアログに使用される設定可能でローカライズ済みのラベルのリスト。"
-	}
-    },
-    "rowEditDialogContainment": {
-      "type": "string",
-      "defaultValue": "owner",
-      "description": {
-		"en": "Controls containment behavior. <br>    owner  The row edit dialog will be draggable only in the grid area<br>    window  The row edit dialog will be draggable in the whole window area",
-		"jp": "コンテインメント動作を制御します。<br>    owner  行編集ダイアログはグリッド領域のみにドラッグ可能です。<br>    window  行編集ダイアログはウィンドウ領域の全体にドラッグ可能です。"
-	},
-      "valueOptions": [
-        {
-          "name": "owner",
-          "type": "string",
-          "description": {
-		"en": "The row edit dialog will be draggable only in the grid area",
-		"jp": "行編集ダイアログはグリッド領域のみにドラッグ可能です。"
-	}
-        },
-        {
-          "name": "window",
-          "type": "string",
-          "description": {
-		"en": "The row edit dialog will be draggable in the whole window area",
-		"jp": "行編集ダイアログはウィンドウ領域の全体にドラッグ可能です。"
-	}
-        }
-      ]
-    },
-    "rowEditDialogContentHeight": {
-      "type": "number",
-      "defaultValue": 150,
-      "description": {
-		"en": " the height of the row edit dialog content",
-		"jp": " 行編集ダイアログ コンテンツの高さ"
-	}
-    },
-    "rowEditDialogFieldWidth": {
-      "type": "number",
-      "defaultValue": 140.0,
-      "description": {
-		"en": "width of the row edit dialog fields<br>    number The width as a number (0)",
-		"jp": "行編集ダイアログ フィールドの幅<br>    数値 (0) としての幅。"
-	}
-    },
-    "rowEditDialogHeight": {
-      "type": "number",
-      "defaultValue": 350,
-      "description": {
-		"en": "Default row edit dialog height",
-		"jp": "デフォルト行編集ダイアログの高さ"
-	}
-    },
-    "rowEditDialogOkCancelButtonWidth": {
-      "type": "number",
-      "defaultValue": 120,
-      "description": {
-		"en": "Width of the Ok and Cancel buttons in the row edit dialogs ",
-		"jp": "行編集ダイアログの OK とキャンセルボタンの幅。 "
-	}
-    },
-    "rowEditDialogRowTemplate": {
-      "type": "string",
-      "defaultValue": "<tr><td>${headerText}</td><td data-key=${dataKey}><input /></td></tr>",
-      "description": {
-		"en": "Custom template for rows in row edit dialog",
-		"jp": "行編集ダイアログの行のカスタム テンプレート。"
-	}
-    },
-    "rowEditDialogRowTemplateID": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "ID to x-jquery-tmpl template. If both rowEditDialogRowTemplate and rowEditDialogRowTemplateID are<br>    specified, then rowEditDialogRowTemplateID will be used",
-		"jp": "x-jquery-tmpl テンプレートの ID。rowEditDialogRowTemplate および rowEditDialogRowTemplateID の両方が指定された場合、<br>    rowEditDialogRowTemplateID が使用されます。"
-	}
-    },
-    "rowEditDialogWidth": {
-      "type": "number",
-      "defaultValue": 370,
-      "description": {
-		"en": "Default row edit dialog width",
-		"jp": "デフォルト行編集ダイアログ幅"
-	}
-    },
-    "saveChangesErrorHandler": {
-      "type": "function",
-      "defaultValue": null,
-      "description": {
-		"en": "Specifies a custom function to be called when AJAX request to the updateUrl option fails. Receives three arguments - the jqXHR, string describing the type of error and an optional exception object",
-		"jp": "updateUrl オプションへの AJAX リクエストに失敗したときに呼び出すカスタム関数を指定します。3 つの引数を受けます - jqXHR、エラーのタイプを説明する文字列、およびオプションの例外オブジェクト。"
-	}
-    },
-    "saveChangesSuccessHandler": {
-      "type": "function",
-      "defaultValue": null,
-      "description": {
-		"en": "Specifies a custom function to be called when AJAX request to the updateUrl option succeeds. Receives as argument the data returned by the server",
-		"jp": "updateUrl オプションへの AJAX リクエストに成功したときに呼び出すカスタム関数を指定します。サーバーから返されたデータを引数として受けます。"
-	}
-    },
-    "showDoneCancelButtons": {
-      "type": "bool",
-      "defaultValue": true,
-      "description": {
-		"en": "Sets gets visibility of the end-edit pop-up dialog with Done/Cancel buttons.",
-		"jp": "[完了] ボタンと [キャンセル] ボタンがある編集終了ポップアップ ダイアログの可視性を取得または設定します。"
-	}
-    },
-    "showReadonlyEditors": {
-      "type": "bool",
-      "defaultValue": true,
-      "description": {
-		"en": "Used in row edit template when editing is disabled for a particular column<br>   Value true: disabled columns are rendered as disabled<br>   Value false: disabled columns are not rendered in the editors",
-		"jp": "行編集テンプレートで特定の列の編集が無効な場合に使用されます。<br>   値 true: 無効な列は無効として描画されます<br>   値 false: 無効な列はエディターで描画されません。"
-	}
-    },
-    "startEditTriggers": {
-      "type": "string",
-      "defaultValue": "click,F2,enter",
-      "description": {
-		"en": "Sets gets triggers for start edit mode.<br>   Possible values: \"click\", \"dblclick\", \"F2\", \"enter\" and their combinations separated by coma.<br>   Notes:<br>   The array of strings similar to ['dblclick', 'f2'] is also supported.<br>   The keyboard triggers have effect only when \"Selection\" feature of grid is enabled.<br>   If the 'dblclick' is included, then 'click' has no effect.",
-		"jp": "編集モードを開始するトリガーを取得または設定します。<br>   利用可能な値: \"click\"、\"dblclick\"、\"F2\"、\"enter\"、およびコンマで区切ったこれらの組み合わせ。<br>   注:<br>   ['dblclick', 'f2'] に似た文字列の配列もサポートされています。<br>   キーボードのトリガーは、グリッドの「Selection」機能が有効な場合のみ有効です。<br>   'dblclick' が含まれる場合、'click' の効果はありません。"
-	},
-      "valueOptions": [
-        {
-          "name": "click",
-          "type": "string",
-          "description": {
-		"en": "Editing can be started using 'click'",
-		"jp": "'click' を使用して編集を開始できます"
-	}
-        },
-        {
-          "name": "F2",
-          "type": "string",
-          "description": {
-		"en": "Editing can be started using 'F2'",
-		"jp": "'F2' を使用して編集を開始できます"
-	}
-        },
-        {
-          "name": "enter",
-          "type": "string",
-          "description": {
-		"en": "Editing can be started using 'enter'",
-		"jp": "'enter' を使用して編集を開始できます"
-	}
-        },
-        {
-          "name": "click,F2",
-          "type": "string",
-          "description": {
-		"en": "Editing can be started using 'click,F2'",
-		"jp": "'click,F2' を使用して編集を開始できます"
-	}
-        },
-        {
-          "name": "click,enter",
-          "type": "string",
-          "description": {
-		"en": "Editing can be started using 'click,enter'",
-		"jp": "'click,enter' を使用して編集を開始できます"
-	}
-        },
-        {
-          "name": "F2,enter",
-          "type": "string",
-          "description": {
-		"en": "Editing can be started using 'F2,enter'",
-		"jp": "'F2,enter' を使用して編集を開始できます"
-	}
-        },
-         {
-          "name": "click,F2,enter",
-          "type": "string",
-          "description": {
-		"en": "Editing can be started using 'click,F2,enter'",
-		"jp": "'click,F2,enter' を使用して編集を開始できます"
-	}
-        }
-      ]
-    },
-    "validation": {
-      "type": "bool",
-      "defaultValue": false,
-      "description": {
-		"en": "Sets gets option to enable validation for all columns.",
-		"jp": "すべての列の検証を有効にするオプションを設定または取得します。"
-	}
     }
-  }
 }

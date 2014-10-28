@@ -1,718 +1,718 @@
 ﻿{
-  "overview": null,
-  "name": "ui.igQRCodeBarcode",
-  "category": null,
-  "visual": true,
-  "events": {
-    "dataChanged": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+    "overview": null,
+    "name": "ui.igQRCodeBarcode",
+    "category": null,
+    "visual": true,
+    "events": {
+        "dataChanged": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Occurs when the data has changed.<br> Function takes first argument evt and second argument ui.<br> Use ui.owner to obtain reference to the barcode widget.<br> Use ui.newData to obtain the new data.",
+                "jp": "データが変更されたときに発生します。<br>関数は最初の引数に evt を、2 番目の引数に ui を取得します。<br>ui.owner を使用して、バーコード ウィジェットへの参照を取得します。<br>ui.newData を使用して、新しいデータを取得します。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
+        "errorMessageDisplaying": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Occurs when an error has happened.<br> Function takes first argument evt and second argument ui.<br> Use ui.owner to obtain reference to the barcode widget.<br> Use ui.errorMessage to get or set the error message that is to be shown.",
+                "jp": "エラーが発生したときに発生します。<br>関数は最初の引数に evt を、2 番目の引数に ui を取得します。<br>ui.owner を使用して、バーコード ウィジェットへの参照を取得します。<br>ui.errorMessage を使用して、表示されるエラー メッセージを取得または設定します。"
+            }
         }
-      ],
-      "description": {
-		"en": "Occurs when the data has changed.<br> Function takes first argument evt and second argument ui.<br> Use ui.owner to obtain reference to the barcode widget.<br> Use ui.newData to obtain the new data.",
-		"jp": "データが変更されたときに発生します。<br>関数は最初の引数に evt を、2 番目の引数に ui を取得します。<br>ui.owner を使用して、バーコード ウィジェットへの参照を取得します。<br>ui.newData を使用して、新しいデータを取得します。"
-	}
     },
-    "errorMessageDisplaying": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+    "properties": {
+        "applicationIndicator": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "Gets or sets the Application Indicator assigned to identify the specification concerned by AIM International.<br> The value is respected only when the Fnc1Mode is set to Industry. Its value may take the form of any single Latin alphabetic character from the set {a - z, A - Z} or a two-digit number.",
+                "jp": "AIM International によって関係する仕様を識別するために割り当てられたアプリケーション インジケーターを取得または設定します。<br>この値は、Fnc1Mode に Industry が設定されている場合にだけ使用されます。その値の形式は、セット {a - z, A - Z} からの単一のラテン アルファベット文字か、2 桁の数値です。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
+        "width": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "The width of the barcode. It can be set as a number in pixels, string (px) or percentage (%).",
+                "jp": "バーコードの幅。ピクセル、文字列 (px)、またはパーセンテージ (%) で数字として設定できます。"
+            }
+        },
+        "height": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "The height of the barcode. It can be set as a number in pixels, string (px) or percentage (%).",
+                "jp": "バーコードの高さ。ピクセル、文字列 (px)、またはパーセンテージ (%) で数字として設定できます。"
+            }
+        },
+        "backingBrush": {
+            "type": "string",
+            "defaultValue": "white",
+            "description": {
+                "en": "Gets or sets the brush to use to fill the backing of the barcode.",
+                "jp": "バーコードのバッキングを塗りつぶすために使用するブラシを取得または設定します。"
+            }
+        },
+        "backingOutline": {
+            "type": "string",
+            "defaultValue": "transparent",
+            "description": {
+                "en": "Gets or sets the brush to use for the outline of the backing.",
+                "jp": "バッキングのアウトラインを使用するブラシを取得または設定します。"
+            }
+        },
+        "backingStrokeThickness": {
+            "type": "number",
+            "defaultValue": 0.0,
+            "description": {
+                "en": "Gets or sets the stroke thickness of the backing outline.",
+                "jp": "バッキング アウトラインのストロークの太さを取得または設定します。"
+            }
+        },
+        "barBrush": {
+            "type": "string",
+            "defaultValue": "black",
+            "description": {
+                "en": "Gets or sets the brush to use to fill the background of the bars.",
+                "jp": "バーの背景を塗りつぶすために使用するブラシを取得または設定します。"
+            }
+        },
+        "barsFillMode": {
+            "type": "string",
+            "defaultValue": "fillSpace",
+            "description": {
+                "en": "Gets or sets a value which specifies how the grid fills within the barcode control dimensions.",
+                "jp": "バーコード コントロールのディメンション内にグリッドが塗りつぶす方法を指定する値を取得または設定します。"
+            },
+            "valueOptions": [
+                {
+                    "name": "fillSpace",
+                    "type": "string",
+                    "description": {
+                        "en": "FillSpace mode ensures that the barcode grid fills the control dimensions.",
+                        "jp": "FillSpace モードでは、バーコード グリッドがコントロールの領域を埋めることを確認します。"
+                    }
+                },
+                {
+                    "name": "ensureEqualSize",
+                    "type": "string",
+                    "description": {
+                        "en": "EnsureEqualSize mode ensures that every grid column/row has the same pixels number width/height. The sum of all columns/rows pixels may be less than the width/height of the control.",
+                        "jp": "EnsureEqualSize モードでは、各グリッドの列または行は (ピクセルで) 同じ幅または高さがあることを確認します。すべての列または行のピクセルの合計はコントロールの幅または高さより小さい可能性があります。"
+                    }
+                }
+            ]
+        },
+        "data": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "Gets or sets the data value.",
+                "jp": "データ値を取得または設定します。"
+            }
+        },
+        "eciHeaderDisplayMode": {
+            "type": "string",
+            "defaultValue": "hide",
+            "description": {
+                "en": "Gets or sets a value indicating whether to show the ECI header.",
+                "jp": "ECI ヘッダーを表示するかどうかを示す値を取得または設定します。"
+            },
+            "valueOptions": [
+                {
+                    "name": "hide",
+                    "type": "string",
+                    "description": {
+                        "en": "Hide the header.",
+                        "jp": "ヘッダーを非表示にします。"
+                    }
+                },
+                {
+                    "name": "show",
+                    "type": "string",
+                    "description": {
+                        "en": "Show the header.",
+                        "jp": "ヘッダーを表示します。"
+                    }
+                }
+            ]
+        },
+        "eciNumber": {
+            "type": "number",
+            "defaultValue": 26.0,
+            "description": {
+                "en": "Each Extended Channel Interpretation (ECI) is designated by a six-digit assignment number: 000000 - 999999. <br> The default value depends on the loaded encodings. The default is ECI 000003 (representing ISO/IEC 8859-1) if the ISO/IEC 8859-1 character set is loaded. Otherwise the default value is 000026 (representing UTF-8).",
+                "jp": "各 Extended Channel Interpretation (ECI) は、6 桁の割当数 (000000 ～ 999999) によって指定されます。<br>  デフォルト値は読み込んだロケールに基づきます。ISO/IEC 8859-1 文字セットが読み込んだ場合、デフォルトは ECI 000003 (ISO/IEC 8859-1 を表す) です。それ以外の場合、デフォルト値は 000026 (UTF-8 を表す) です。"
+            }
+        },
+        "encodingMode": {
+            "type": "string",
+            "defaultValue": "byte",
+            "description": {
+                "en": "Gets or sets the encoding mode for compaction of the QR Code symbol data. The default value is undefined if the Shift_JIS encoding is loaded. Otherwise the default value is byte.",
+                "jp": "QR コード記号データを圧縮するためのエンコーディング モードを取得または設定します。Shift_JIS エンコードが読み込んだ場合、デフォルト値は undefined です。それ以外の場合、デフォルト値は byte です。"
+            },
+            "valueOptions": [
+                {
+                    "name": "undefined",
+                    "type": "string",
+                    "description": {
+                        "en": "When Undefined encoding mode is set, the QR code barcode internally switches between modes as necessary in order to achieve the most efficient conversion of data into a binary string.",
+                        "jp": "Undefined エンコード モードが設定された場合、QR Code バーコードは内部にモードの間に切り替え、データをバイナリ文字列への変換を効率的に実行します。"
+                    }
+                },
+                {
+                    "name": "numeric",
+                    "type": "string",
+                    "description": {
+                        "en": "Numeric mode encodes data from decimal digit set (0-9). Normally 3 data characters are represented by 10 bits.",
+                        "jp": "Numeric モードは、ディジット セット (0～9) のデータをエンコードします。通常、3 文字のデータは 10 ビットで表現されます。"
+                    }
+                },
+                {
+                    "name": "alphanumeric",
+                    "type": "string",
+                    "description": {
+                        "en": "Alphanumerc mode encodes data from a set of 45 characters (digits 0-9, upper case letters A-Z, nine other characters: space, $ % * + _ . / : ). Normally two input characters are represented by 11 bits.",
+                        "jp": "英数字モードでは、45 文字のセット (数字 0～9、大文字 A～Z、その他の 9 個の文字: スペース、$、%、*、+、_、.、/、:) からデータが/ : )。通常、2 個の入力文字は 11 ビットで表現されます。"
+                    }
+                },
+                {
+                    "name": "byte",
+                    "type": "string",
+                    "description": {
+                        "en": "In Byte mode the data is encoded at 8 bits per character. The character set of the Byte encoding mode is byte data (by default it is ISO/IEC 8859-1 character set).",
+                        "jp": "Byte モードでは、データは文字あたり 8 ビットでエンコードされます。Byte エンコーディング モードの文字セットはバイト データです （デフォルトでは ISO/IEC 8859-1 文字セットです)。"
+                    }
+                },
+                {
+                    "name": "kanji",
+                    "type": "string",
+                    "description": {
+                        "en": "The Kanji mode efficiently encodes Kanji characters in accordance with the Shift JIS system based on JIS X 0208. Each two-byte character value is compactedd to a 13-bit binary codeword.",
+                        "jp": "Kanji モードでは、JIS X 0208 に基づくシフト JIS 体型に従って、漢字文字を効率的にエンコードします。各 2 バイト文字は、13 ビットのバイナリ コードワードに圧縮されます。"
+                    }
+                }
+            ]
+        },
+        "errorCorrectionLevel": {
+            "type": "string",
+            "defaultValue": "medium",
+            "description": {
+                "en": "Gets or sets the error correction level of the QR Code symbol.",
+                "jp": "QR コード記号のエラー訂正レベルを取得または設定します。"
+            },
+            "valueOptions": [
+                {
+                    "name": "low",
+                    "type": "string",
+                    "description": {
+                        "en": " Low error correction level allows recovery of 7% of the symbol codewords.",
+                        "jp": " Low エラー訂正レベルでは、記号コードワードの 7% の回復が可能です。"
+                    }
+                },
+                {
+                    "name": "medium",
+                    "type": "string",
+                    "description": {
+                        "en": " Medium error correction level allows recovery of 15% of the symbol codewords.",
+                        "jp": " Medium エラー訂正レベルでは、記号コードワードの 15% の回復が可能です。"
+                    }
+                },
+                {
+                    "name": "quartil",
+                    "type": "string",
+                    "description": {
+                        "en": " Quartil error correction level allows recovery of 25% of the symbol codewords.",
+                        "jp": " Quartil エラー訂正レベルでは、記号コードワードの 25% の回復が可能です。"
+                    }
+                },
+                {
+                    "name": "high",
+                    "type": "string",
+                    "description": {
+                        "en": " High error correction level allows recovery of 30% of the symbol codewords.",
+                        "jp": " High エラー訂正レベルでは、記号コードワードの 30% の回復が可能です。"
+                    }
+                }
+            ]
+        },
+        "errorMessageText": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "Gets or sets the message text displayed when some error occurs.",
+                "jp": "エラーが発生する場合に表示されるメッセージ テキストを取得または設定します。"
+            }
+        },
+        "fnc1Mode": {
+            "type": "string",
+            "defaultValue": "none",
+            "description": {
+                "en": "Gets or sets the FNC1 mode indicator which identifies symbols encoding messages formatted according to specific predefined industry or application specificatoins.",
+                "jp": "指定した定義済みの業界またはアプリケーション仕様に従ってフォーマットされた記号エンコーディング メッセージを識別する FNC1 モード インジケーターを取得または設定します。"
+            },
+            "valueOptions": [
+                {
+                    "name": "none",
+                    "type": "string",
+                    "description": {
+                        "en": "Do not use any Fnc1 symbols, i.e. the data is not identified according to specific predefined industry or application specifications.",
+                        "jp": "Fnc1 記号は使用しないでください。つまり、データは特定の定義済みの業界仕様またはアプリケーション仕様に従って識別されません。"
+                    }
+                },
+                {
+                    "name": "gs1",
+                    "type": "string",
+                    "description": {
+                        "en": "Uses Fnc1 symbol in the first position of the character in Code 128 symbols and designates data formatted in accordance with the GS1 General Specification.",
+                        "jp": "Fnc1 記号は、Code 128 記号内の文字の先頭位置で使用し、データが GS1 一般仕様に従ってフォーマットされていることを示します。"
+                    }
+                },
+                {
+                    "name": "industry",
+                    "type": "string",
+                    "description": {
+                        "en": "Uses Fnc1 symbol in the second position of the character in Code 128 symbols and designates data formatted in accordance with a specific indystry application previously agreed with AIM Inc.",
+                        "jp": "Fnc1 記号は、Code 128 記号内の文字の 2 番目の位置で使用し、データが AIM Inc. によって以前合意された特定の業界アプリケーションに従って書式設定されていることを示します。"
+                    }
+                }
+            ]
+        },
+        "font": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "Gets or sets the font of the text displayed by the control.",
+                "jp": "コントロールが表示するテキスト フォントを取得または設定します。"
+            }
+        },
+        "fontBrush": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "Gets or sets the brush to use for the label font.",
+                "jp": "ラベル フォントを使用するためのブラシを取得または設定します。"
+            }
+        },
+        "sizeVersion": {
+            "type": "string",
+            "defaultValue": "undefined",
+            "description": {
+                "en": "Gets or sets the size version of the QR Code symbol.",
+                "jp": "QR Code 記号のサイズ バージョンを取得または設定します。"
+            },
+            "valueOptions": [
+                {
+                    "name": "undefined",
+                    "type": "string",
+                    "description": {
+                        "en": "If set, the QR code barcode sets internally the smallest version that will accommodate the data.",
+                        "jp": "設定された場合、QR Code バーコードは、データを含む最小バージョンを内部に設定します。"
+                    }
+                },
+                {
+                    "name": "version1",
+                    "type": "string",
+                    "description": {
+                        "en": "Version1 defines size of 21x21 modules for the symbol.",
+                        "jp": "Version1 は、記号に対する 21x21 モジュールのサイズを定義します。"
+                    }
+                },
+                {
+                    "name": "version2",
+                    "type": "string",
+                    "description": {
+                        "en": "Version2 defines size of 25x25 modules for the symbol.",
+                        "jp": "Version2 は、記号に対する 25x25 モジュールのサイズを定義します。"
+                    }
+                },
+                {
+                    "name": "version3",
+                    "type": "string",
+                    "description": {
+                        "en": "Version3 defines size of 29x29 modules for the symbol.",
+                        "jp": "Version3 は、記号に対する 29x29 モジュールのサイズを定義します。"
+                    }
+                },
+                {
+                    "name": "version4",
+                    "type": "string",
+                    "description": {
+                        "en": "Version4 defines size of 33x33 modules for the symbol.",
+                        "jp": "Version4 は、記号に対する 33x33 モジュールのサイズを定義します。"
+                    }
+                },
+                {
+                    "name": "version5",
+                    "type": "string",
+                    "description": {
+                        "en": "Version5 defines size of 37x37 modules for the symbol.",
+                        "jp": "Version5 は、記号に対する 37x37 モジュールのサイズを定義します。"
+                    }
+                },
+                {
+                    "name": "version6",
+                    "type": "string",
+                    "description": {
+                        "en": "Version6 defines size of 41x41 modules for the symbol.",
+                        "jp": "Version6 は、記号に対する 41x41 モジュールのサイズを定義します。"
+                    }
+                },
+                {
+                    "name": "version7",
+                    "type": "string",
+                    "description": {
+                        "en": "Version7 defines size of 45x45 modules for the symbol.",
+                        "jp": "Version7 は、記号に対する 45x45 モジュールのサイズを定義します。"
+                    }
+                },
+                {
+                    "name": "version8",
+                    "type": "string",
+                    "description": {
+                        "en": "Version8 defines size of 49x49 modules for the symbol.",
+                        "jp": "Version8 は、記号に対する 49x49 モジュールのサイズを定義します。"
+                    }
+                },
+                {
+                    "name": "version9",
+                    "type": "string",
+                    "description": {
+                        "en": "Version9 defines size of 53x53 modules for the symbol.",
+                        "jp": "Version9 は、記号に対する 53x53 モジュールのサイズを定義します。"
+                    }
+                },
+                {
+                    "name": "version10",
+                    "type": "string",
+                    "description": {
+                        "en": "Version10 defines size of 57x57 modules for the symbol.",
+                        "jp": "Version10 は、記号に対する 57x57 モジュールのサイズを定義します。"
+                    }
+                },
+                {
+                    "name": "version11",
+                    "type": "string",
+                    "description": {
+                        "en": "Version11 defines size of 61x61 modules for the symbol.",
+                        "jp": "Version11 は、記号に対する 61x61 モジュールのサイズを定義します。"
+                    }
+                },
+                {
+                    "name": "version12",
+                    "type": "string",
+                    "description": {
+                        "en": "Version12 defines size of 65x65 modules for the symbol.",
+                        "jp": "Version12 は、記号に対する 65x65 モジュールのサイズを定義します。"
+                    }
+                },
+                {
+                    "name": "version13",
+                    "type": "string",
+                    "description": {
+                        "en": "Version13 defines size of 69x69 modules for the symbol.",
+                        "jp": "Version13 は、記号に対する 69x69 モジュールのサイズを定義します。"
+                    }
+                },
+                {
+                    "name": "version14",
+                    "type": "string",
+                    "description": {
+                        "en": " Version14 defines size of 73x73 modules for the symbol.",
+                        "jp": " Version14 は、記号に対する 73x73 モジュールのサイズを定義します。"
+                    }
+                },
+                {
+                    "name": "version15",
+                    "type": "string",
+                    "description": {
+                        "en": "Version15 defines size of 77x77 modules for the symbol.",
+                        "jp": "Version15 は、記号に対する 77x77 モジュールのサイズを定義します。"
+                    }
+                },
+                {
+                    "name": "version16",
+                    "type": "string",
+                    "description": {
+                        "en": "Version16 defines size of 81x81 modules for the symbol.",
+                        "jp": "Version16 は、記号に対する 81x81 モジュールのサイズを定義します。"
+                    }
+                },
+                {
+                    "name": "version17",
+                    "type": "string",
+                    "description": {
+                        "en": "Version17 defines size of 85x85 modules for the symbol.",
+                        "jp": "Version17 は、記号に対する 85x85 モジュールのサイズを定義します。"
+                    }
+                },
+                {
+                    "name": "version18",
+                    "type": "string",
+                    "description": {
+                        "en": "Version18 defines size of 89x89 modules for the symbol.",
+                        "jp": "Version18 は、記号に対する 89x89 モジュールのサイズを定義します。"
+                    }
+                },
+                {
+                    "name": "version19",
+                    "type": "string",
+                    "description": {
+                        "en": "Version19 defines size of 93x93 modules for the symbol.",
+                        "jp": "Version19 は、記号に対する 93x93 モジュールのサイズを定義します。"
+                    }
+                },
+                {
+                    "name": "version20",
+                    "type": "string",
+                    "description": {
+                        "en": "Version20 defines size of 97x97 modules for the symbol.",
+                        "jp": "Version20 は、記号に対する 97x97 モジュールのサイズを定義します。"
+                    }
+                },
+                {
+                    "name": "version21",
+                    "type": "string",
+                    "description": {
+                        "en": "Version21 defines size of 101x101 modules for the symbol.",
+                        "jp": "Version21 は、記号に対する 101x101 モジュールのサイズを定義します。"
+                    }
+                },
+                {
+                    "name": "version22",
+                    "type": "string",
+                    "description": {
+                        "en": "Version22 defines size of 105x105 modules for the symbol.",
+                        "jp": "Version22 は、記号に対する 105x105 モジュールのサイズを定義します。"
+                    }
+                },
+                {
+                    "name": "version23",
+                    "type": "string",
+                    "description": {
+                        "en": "Version23 defines size of 109x109 modules for the symbol.",
+                        "jp": "Version23 は、記号に対する 109x109 モジュールのサイズを定義します。"
+                    }
+                },
+                {
+                    "name": "version24",
+                    "type": "string",
+                    "description": {
+                        "en": "Version24 defines size of 113x113 modules for the symbol.",
+                        "jp": "Version24 は、記号に対する 113x113 モジュールのサイズを定義します。"
+                    }
+                },
+                {
+                    "name": "version25",
+                    "type": "string",
+                    "description": {
+                        "en": "Version25 defines size of 117x117 modules for the symbol.",
+                        "jp": "Version25 は、記号に対する 117x117 モジュールのサイズを定義します。"
+                    }
+                },
+                {
+                    "name": "version26",
+                    "type": "string",
+                    "description": {
+                        "en": "Version26 defines size of 121x121 modules for the symbol.",
+                        "jp": "Version26 は、記号に対する 121x121 モジュールのサイズを定義します。"
+                    }
+                },
+                {
+                    "name": "version27",
+                    "type": "string",
+                    "description": {
+                        "en": "Version27 defines size of 125x125 modules for the symbol.",
+                        "jp": "Version27 は、記号に対する 125x125 モジュールのサイズを定義します。"
+                    }
+                },
+                {
+                    "name": "version28",
+                    "type": "string",
+                    "description": {
+                        "en": "Version28 defines size of 129x129 modules for the symbol.",
+                        "jp": "Version28 は、記号に対する 129x129 モジュールのサイズを定義します。"
+                    }
+                },
+                {
+                    "name": "version29",
+                    "type": "string",
+                    "description": {
+                        "en": "Version29 defines size of 133x133 modules for the symbol.",
+                        "jp": "Version29 は、記号に対する 133x133 モジュールのサイズを定義します。"
+                    }
+                },
+                {
+                    "name": "version30",
+                    "type": "string",
+                    "description": {
+                        "en": "Version30 defines size of 137x137 modules for the symbol.",
+                        "jp": "Version30 は、記号に対する 137x137 モジュールのサイズを定義します。"
+                    }
+                },
+                {
+                    "name": "version31",
+                    "type": "string",
+                    "description": {
+                        "en": "Version31 defines size of 141x141 modules for the symbol.",
+                        "jp": "Version31 は、記号に対する 141x141 モジュールのサイズを定義します。"
+                    }
+                },
+                {
+                    "name": "version32",
+                    "type": "string",
+                    "description": {
+                        "en": "Version32 defines size of 145x145 modules for the symbol.",
+                        "jp": "Version32 は、記号に対する 145x145 モジュールのサイズを定義します。"
+                    }
+                },
+                {
+                    "name": "version33",
+                    "type": "string",
+                    "description": {
+                        "en": "Version33 defines size of 149x149 modules for the symbol.",
+                        "jp": "Version33 は、記号に対する 149x149 モジュールのサイズを定義します。"
+                    }
+                },
+                {
+                    "name": "version34",
+                    "type": "string",
+                    "description": {
+                        "en": "Version34 defines size of 153x153 modules for the symbol.",
+                        "jp": "Version34 は、記号に対する 153x153 モジュールのサイズを定義します。"
+                    }
+                },
+                {
+                    "name": "version35",
+                    "type": "string",
+                    "description": {
+                        "en": "Version35 defines size of 157x157 modules for the symbol.",
+                        "jp": "Version35 は、記号に対する 157x157 モジュールのサイズを定義します。"
+                    }
+                },
+                {
+                    "name": "version36",
+                    "type": "string",
+                    "description": {
+                        "en": "Version36 defines size of 161x161 modules for the symbol.",
+                        "jp": "Version36 は、記号に対する 161x161 モジュールのサイズを定義します。"
+                    }
+                },
+                {
+                    "name": "version37",
+                    "type": "string",
+                    "description": {
+                        "en": "Version37 defines size of 165x165 modules for the symbol.",
+                        "jp": "Version37 は、記号に対する 165x165 モジュールのサイズを定義します。"
+                    }
+                },
+                {
+                    "name": "version38",
+                    "type": "string",
+                    "description": {
+                        "en": "Version38 defines size of 169x169 modules for the symbol.",
+                        "jp": "Version38 は、記号に対する 169x169 モジュールのサイズを定義します。"
+                    }
+                },
+                {
+                    "name": "version39",
+                    "type": "string",
+                    "description": {
+                        "en": "Version39 defines size of 173x173 modules for the symbol.",
+                        "jp": "Version39 は、記号に対する 173x173 モジュールのサイズを定義します。"
+                    }
+                },
+                {
+                    "name": "version40",
+                    "type": "string",
+                    "description": {
+                        "en": "Version40 defines size of 177x177 modules for the symbol.",
+                        "jp": "Version40 は、記号に対する 177x177 モジュールのサイズを定義します。"
+                    }
+                }
+            ]
+        },
+        "stretch": {
+            "type": "string",
+            "defaultValue": "uniform",
+            "description": {
+                "en": "Gets or sets the stretch.",
+                "jp": "伸縮を取得または設定します。"
+            },
+            "valueOptions": [
+                {
+                    "name": "none",
+                    "type": "string",
+                    "description": {
+                        "en": "The content preserves its nominal dimensions. When using fill, as the content's height and width are scaled independently, the original aspect ratio of the image is not preserved which is why using this value is not recommended when the barcode is used for reading (for reading, use either none or uniform).",
+                        "jp": "コンテンツは名目上の寸法を保持します。塗りつぶしを使う場合、コンテンツの高さと幅は個別に拡大縮小されるため、元の画像のアスペクト比は保持されません。このため、バーコードが読み取りに使用される場合は、この値を使用しないことをお勧めします (読み取りには、none または uniform を使用します)。"
+                    }
+                },
+                {
+                    "name": "fill",
+                    "type": "string",
+                    "description": {
+                        "en": "The content is resized to fill the destination's dimensions.",
+                        "jp": "コンテンツは、指定先の寸法を満たすためにサイズ変更されます。"
+                    }
+                },
+                {
+                    "name": "uniform",
+                    "type": "string",
+                    "description": {
+                        "en": "The content is resized to fit the destination's dimensions while its native aspect ratio is preserved.",
+                        "jp": "コンテンツは、指定先の寸法に収めるためにサイズ変更され、ネイティブ アスペクト比は保持されます。"
+                    }
+                },
+                {
+                    "name": "uniformToFill",
+                    "type": "string",
+                    "description": {
+                        "en": "The content is resized to fill the destination's dimensions completely while it preserves its native aspect ratio. If the aspect ratio of the destination rectangle differs from that of the source, the excessive source content will be cut off.",
+                        "jp": "コンテンツは、指定先の寸法に完全に収めるためにサイズ変更され、ネイティブ アスペクト比は保持されます。指定先の四角形のアスペクト比がソースと異なる場合、余分なソース コンテンツは切り取られます。"
+                    }
+                }
+            ]
+        },
+        "widthToHeightRatio": {
+            "type": "number",
+            "defaultValue": 3.0,
+            "description": {
+                "en": "Gets or sets the width (XDimension) to height (YDimension) ratio. It accepts only positive values. This property does not apply for the QR barcode.",
+                "jp": "幅 (XDimension) と高さ (YDimension) の比率を取得または設定します。正の値だけを受け付けます。このプロパティは QR バーコードに適用しません。"
+            }
+        },
+        "xDimension": {
+            "type": "number",
+            "defaultValue": 0.25,
+            "description": {
+                "en": "Gets or sets the X-dimension (narrow element width) for a symbol in mm. It accepts values from 0.01 to 100.",
+                "jp": "記号の X 次元 (狭い要素の幅) を mm 単位で取得または設定します。0.01 ～ 100 の値を受け入れます。"
+            }
         }
-      ],
-      "description": {
-		"en": "Occurs when an error has happened.<br> Function takes first argument evt and second argument ui.<br> Use ui.owner to obtain reference to the barcode widget.<br> Use ui.errorMessage to get or set the error message that is to be shown.",
-		"jp": "エラーが発生したときに発生します。<br>関数は最初の引数に evt を、2 番目の引数に ui を取得します。<br>ui.owner を使用して、バーコード ウィジェットへの参照を取得します。<br>ui.errorMessage を使用して、表示されるエラー メッセージを取得または設定します。"
-	}
     }
-  },
-  "properties": {
-    "applicationIndicator": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "Gets or sets the Application Indicator assigned to identify the specification concerned by AIM International.<br> The value is respected only when the Fnc1Mode is set to Industry. Its value may take the form of any single Latin alphabetic character from the set {a - z, A - Z} or a two-digit number.",
-		"jp": "AIM International によって関係する仕様を識別するために割り当てられたアプリケーション インジケーターを取得または設定します。<br>この値は、Fnc1Mode に Industry が設定されている場合にだけ使用されます。その値の形式は、セット {a - z, A - Z} からの単一のラテン アルファベット文字か、2 桁の数値です。"
-	}
-    },
-	"width": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "The width of the barcode. It can be set as a number in pixels, string (px) or percentage (%).",
-		"jp": "バーコードの幅。ピクセル、文字列 (px)、またはパーセンテージ (%) で数字として設定できます。"
-	}
-    },
-	"height": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "The height of the barcode. It can be set as a number in pixels, string (px) or percentage (%).",
-		"jp": "バーコードの高さ。ピクセル、文字列 (px)、またはパーセンテージ (%) で数字として設定できます。"
-	}
-    },
-    "backingBrush": {
-      "type": "string",
-      "defaultValue": "white",
-      "description": {
-		"en": "Gets or sets the brush to use to fill the backing of the barcode.",
-		"jp": "バーコードのバッキングを塗りつぶすために使用するブラシを取得または設定します。"
-	}
-    },
-    "backingOutline": {
-      "type": "string",
-      "defaultValue": "transparent",
-      "description": {
-		"en": "Gets or sets the brush to use for the outline of the backing.",
-		"jp": "バッキングのアウトラインを使用するブラシを取得または設定します。"
-	}
-    },
-    "backingStrokeThickness": {
-      "type": "number",
-      "defaultValue": 0.0,
-      "description": {
-		"en": "Gets or sets the stroke thickness of the backing outline.",
-		"jp": "バッキング アウトラインのストロークの太さを取得または設定します。"
-	}
-    },
-    "barBrush": {
-      "type": "string",
-      "defaultValue": "black",
-      "description": {
-		"en": "Gets or sets the brush to use to fill the background of the bars.",
-		"jp": "バーの背景を塗りつぶすために使用するブラシを取得または設定します。"
-	}
-    },
-    "barsFillMode": {
-      "type": "string",
-      "defaultValue": "fillSpace",
-      "description": {
-		"en": "Gets or sets a value which specifies how the grid fills within the barcode control dimensions.",
-		"jp": "バーコード コントロールのディメンション内にグリッドが塗りつぶす方法を指定する値を取得または設定します。"
-	},
-      "valueOptions": [
-        {
-          "name": "fillSpace",
-          "type": "string",
-          "description": {
-		"en": "FillSpace mode ensures that the barcode grid fills the control dimensions.",
-		"jp": "FillSpace モードでは、バーコード グリッドがコントロールの領域を埋めることを確認します。"
-	}
-        },
-        {
-          "name": "ensureEqualSize",
-          "type": "string",
-          "description": {
-		"en": "EnsureEqualSize mode ensures that every grid column/row has the same pixels number width/height. The sum of all columns/rows pixels may be less than the width/height of the control.",
-		"jp": "EnsureEqualSize モードでは、各グリッドの列または行は (ピクセルで) 同じ幅または高さがあることを確認します。すべての列または行のピクセルの合計はコントロールの幅または高さより小さい可能性があります。"
-	}
-        }
-      ]
-    },
-    "data": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "Gets or sets the data value.",
-		"jp": "データ値を取得または設定します。"
-	}
-    },
-    "eciHeaderDisplayMode": {
-      "type": "string",
-      "defaultValue": "hide",
-      "description": {
-		"en": "Gets or sets a value indicating whether to show the ECI header.",
-		"jp": "ECI ヘッダーを表示するかどうかを示す値を取得または設定します。"
-	},
-      "valueOptions": [
-        {
-          "name": "hide",
-          "type": "string",
-          "description": {
-		"en": "Hide the header.",
-		"jp": "ヘッダーを非表示にします。"
-	}
-        },
-        {
-          "name": "show",
-          "type": "string",
-          "description": {
-		"en": "Show the header.",
-		"jp": "ヘッダーを表示します。"
-	}
-        }
-      ]
-    },
-    "eciNumber": {
-      "type": "number",
-      "defaultValue": 26.0,
-      "description": {
-		"en": "Each Extended Channel Interpretation (ECI) is designated by a six-digit assignment number: 000000 - 999999. <br> The default value depends on the loaded encodings. The default is ECI 000003 (representing ISO/IEC 8859-1) if the ISO/IEC 8859-1 character set is loaded. Otherwise the default value is 000026 (representing UTF-8).",
-		"jp": "各 Extended Channel Interpretation (ECI) は、6 桁の割当数 (000000 ～ 999999) によって指定されます。<br>  デフォルト値は読み込んだロケールに基づきます。ISO/IEC 8859-1 文字セットが読み込んだ場合、デフォルトは ECI 000003 (ISO/IEC 8859-1 を表す) です。それ以外の場合、デフォルト値は 000026 (UTF-8 を表す) です。"
-	}
-    },
-    "encodingMode": {
-      "type": "string",
-      "defaultValue": "byte",
-      "description": {
-		"en": "Gets or sets the encoding mode for compaction of the QR Code symbol data. The default value is undefined if the Shift_JIS encoding is loaded. Otherwise the default value is byte.",
-		"jp": "QR コード記号データを圧縮するためのエンコーディング モードを取得または設定します。Shift_JIS エンコードが読み込んだ場合、デフォルト値は undefined です。それ以外の場合、デフォルト値は byte です。"
-	},
-      "valueOptions": [
-        {
-          "name": "undefined",
-          "type": "string",
-          "description": {
-		"en": "When Undefined encoding mode is set, the QR code barcode internally switches between modes as necessary in order to achieve the most efficient conversion of data into a binary string.",
-		"jp": "Undefined エンコード モードが設定された場合、QR Code バーコードは内部にモードの間に切り替え、データをバイナリ文字列への変換を効率的に実行します。"
-	}
-        },
-        {
-          "name": "numeric",
-          "type": "string",
-          "description": {
-		"en": "Numeric mode encodes data from decimal digit set (0-9). Normally 3 data characters are represented by 10 bits.",
-		"jp": "Numeric モードは、ディジット セット (0～9) のデータをエンコードします。通常、3 文字のデータは 10 ビットで表現されます。"
-	}
-        },
-        {
-          "name": "alphanumeric",
-          "type": "string",
-          "description": {
-		"en": "Alphanumerc mode encodes data from a set of 45 characters (digits 0-9, upper case letters A-Z, nine other characters: space, $ % * + _ . / : ). Normally two input characters are represented by 11 bits.",
-		"jp": "英数字モードでは、45 文字のセット (数字 0～9、大文字 A～Z、その他の 9 個の文字: スペース、$、%、*、+、_、.、/、:) からデータが/ : )。通常、2 個の入力文字は 11 ビットで表現されます。"
-	}
-        },
-        {
-          "name": "byte",
-          "type": "string",
-          "description": {
-		"en": "In Byte mode the data is encoded at 8 bits per character. The character set of the Byte encoding mode is byte data (by default it is ISO/IEC 8859-1 character set).",
-		"jp": "Byte モードでは、データは文字あたり 8 ビットでエンコードされます。Byte エンコーディング モードの文字セットはバイト データです （デフォルトでは ISO/IEC 8859-1 文字セットです)。"
-	}
-        },
-        {
-          "name": "kanji",
-          "type": "string",
-          "description": {
-		"en": "The Kanji mode efficiently encodes Kanji characters in accordance with the Shift JIS system based on JIS X 0208. Each two-byte character value is compactedd to a 13-bit binary codeword.",
-		"jp": "Kanji モードでは、JIS X 0208 に基づくシフト JIS 体型に従って、漢字文字を効率的にエンコードします。各 2 バイト文字は、13 ビットのバイナリ コードワードに圧縮されます。"
-	}
-        }
-      ]
-    },
-    "errorCorrectionLevel": {
-      "type": "string",
-      "defaultValue": "medium",
-      "description": {
-		"en": "Gets or sets the error correction level of the QR Code symbol.",
-		"jp": "QR コード記号のエラー訂正レベルを取得または設定します。"
-	},
-      "valueOptions": [
-        {
-          "name": "low",
-          "type": "string",
-          "description": {
-		"en": " Low error correction level allows recovery of 7% of the symbol codewords.",
-		"jp": " Low エラー訂正レベルでは、記号コードワードの 7% の回復が可能です。"
-	}
-        },
-        {
-          "name": "medium",
-          "type": "string",
-          "description": {
-		"en": " Medium error correction level allows recovery of 15% of the symbol codewords.",
-		"jp": " Medium エラー訂正レベルでは、記号コードワードの 15% の回復が可能です。"
-	}
-        },
-        {
-          "name": "quartil",
-          "type": "string",
-          "description": {
-		"en": " Quartil error correction level allows recovery of 25% of the symbol codewords.",
-		"jp": " Quartil エラー訂正レベルでは、記号コードワードの 25% の回復が可能です。"
-	}
-        },
-        {
-          "name": "high",
-          "type": "string",
-          "description": {
-		"en": " High error correction level allows recovery of 30% of the symbol codewords.",
-		"jp": " High エラー訂正レベルでは、記号コードワードの 30% の回復が可能です。"
-	}
-        }
-      ]
-    },
-    "errorMessageText": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "Gets or sets the message text displayed when some error occurs.",
-		"jp": "エラーが発生する場合に表示されるメッセージ テキストを取得または設定します。"
-	}
-    },
-    "fnc1Mode": {
-      "type": "string",
-      "defaultValue": "none",
-      "description": {
-		"en": "Gets or sets the FNC1 mode indicator which identifies symbols encoding messages formatted according to specific predefined industry or application specificatoins.",
-		"jp": "指定した定義済みの業界またはアプリケーション仕様に従ってフォーマットされた記号エンコーディング メッセージを識別する FNC1 モード インジケーターを取得または設定します。"
-	},
-      "valueOptions": [
-        {
-          "name": "none",
-          "type": "string",
-          "description": {
-		"en": "Do not use any Fnc1 symbols, i.e. the data is not identified according to specific predefined industry or application specifications.",
-		"jp": "Fnc1 記号は使用しないでください。つまり、データは特定の定義済みの業界仕様またはアプリケーション仕様に従って識別されません。"
-	}
-        },
-        {
-          "name": "gs1",
-          "type": "string",
-          "description": {
-		"en": "Uses Fnc1 symbol in the first position of the character in Code 128 symbols and designates data formatted in accordance with the GS1 General Specification.",
-		"jp": "Fnc1 記号は、Code 128 記号内の文字の先頭位置で使用し、データが GS1 一般仕様に従ってフォーマットされていることを示します。"
-	}
-        },
-        {
-          "name": "industry",
-          "type": "string",
-          "description": {
-		"en": "Uses Fnc1 symbol in the second position of the character in Code 128 symbols and designates data formatted in accordance with a specific indystry application previously agreed with AIM Inc.",
-		"jp": "Fnc1 記号は、Code 128 記号内の文字の 2 番目の位置で使用し、データが AIM Inc. によって以前合意された特定の業界アプリケーションに従って書式設定されていることを示します。"
-	}
-        }
-      ]
-    },
-    "font": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "Gets or sets the font of the text displayed by the control.",
-		"jp": "コントロールが表示するテキスト フォントを取得または設定します。"
-	}
-    },
-    "fontBrush": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "Gets or sets the brush to use for the label font.",
-		"jp": "ラベル フォントを使用するためのブラシを取得または設定します。"
-	}
-    },
-    "sizeVersion": {
-      "type": "string",
-      "defaultValue": "undefined",
-      "description": {
-		"en": "Gets or sets the size version of the QR Code symbol.",
-		"jp": "QR Code 記号のサイズ バージョンを取得または設定します。"
-	},
-      "valueOptions": [
-        {
-          "name": "undefined",
-          "type": "string",
-          "description": {
-		"en": "If set, the QR code barcode sets internally the smallest version that will accommodate the data.",
-		"jp": "設定された場合、QR Code バーコードは、データを含む最小バージョンを内部に設定します。"
-	}
-        },
-        {
-          "name": "version1",
-          "type": "string",
-          "description": {
-		"en": "Version1 defines size of 21x21 modules for the symbol.",
-		"jp": "Version1 は、記号に対する 21x21 モジュールのサイズを定義します。"
-	}
-        },
-        {
-          "name": "version2",
-          "type": "string",
-          "description": {
-		"en": "Version2 defines size of 25x25 modules for the symbol.",
-		"jp": "Version2 は、記号に対する 25x25 モジュールのサイズを定義します。"
-	}
-        },
-        {
-          "name": "version3",
-          "type": "string",
-          "description": {
-		"en": "Version3 defines size of 29x29 modules for the symbol.",
-		"jp": "Version3 は、記号に対する 29x29 モジュールのサイズを定義します。"
-	}
-        },
-        {
-          "name": "version4",
-          "type": "string",
-          "description": {
-		"en": "Version4 defines size of 33x33 modules for the symbol.",
-		"jp": "Version4 は、記号に対する 33x33 モジュールのサイズを定義します。"
-	}
-        },
-        {
-          "name": "version5",
-          "type": "string",
-          "description": {
-		"en": "Version5 defines size of 37x37 modules for the symbol.",
-		"jp": "Version5 は、記号に対する 37x37 モジュールのサイズを定義します。"
-	}
-        },
-        {
-          "name": "version6",
-          "type": "string",
-          "description": {
-		"en": "Version6 defines size of 41x41 modules for the symbol.",
-		"jp": "Version6 は、記号に対する 41x41 モジュールのサイズを定義します。"
-	}
-        },
-        {
-          "name": "version7",
-          "type": "string",
-          "description": {
-		"en": "Version7 defines size of 45x45 modules for the symbol.",
-		"jp": "Version7 は、記号に対する 45x45 モジュールのサイズを定義します。"
-	}
-        },
-        {
-          "name": "version8",
-          "type": "string",
-          "description": {
-		"en": "Version8 defines size of 49x49 modules for the symbol.",
-		"jp": "Version8 は、記号に対する 49x49 モジュールのサイズを定義します。"
-	}
-        },
-        {
-          "name": "version9",
-          "type": "string",
-          "description": {
-		"en": "Version9 defines size of 53x53 modules for the symbol.",
-		"jp": "Version9 は、記号に対する 53x53 モジュールのサイズを定義します。"
-	}
-        },
-        {
-          "name": "version10",
-          "type": "string",
-          "description": {
-		"en": "Version10 defines size of 57x57 modules for the symbol.",
-		"jp": "Version10 は、記号に対する 57x57 モジュールのサイズを定義します。"
-	}
-        },
-        {
-          "name": "version11",
-          "type": "string",
-          "description": {
-		"en": "Version11 defines size of 61x61 modules for the symbol.",
-		"jp": "Version11 は、記号に対する 61x61 モジュールのサイズを定義します。"
-	}
-        },
-        {
-          "name": "version12",
-          "type": "string",
-          "description": {
-		"en": "Version12 defines size of 65x65 modules for the symbol.",
-		"jp": "Version12 は、記号に対する 65x65 モジュールのサイズを定義します。"
-	}
-        },
-        {
-          "name": "version13",
-          "type": "string",
-          "description": {
-		"en": "Version13 defines size of 69x69 modules for the symbol.",
-		"jp": "Version13 は、記号に対する 69x69 モジュールのサイズを定義します。"
-	}
-        },
-        {
-          "name": "version14",
-          "type": "string",
-          "description": {
-		"en": " Version14 defines size of 73x73 modules for the symbol.",
-		"jp": " Version14 は、記号に対する 73x73 モジュールのサイズを定義します。"
-	}
-        },
-        {
-          "name": "version15",
-          "type": "string",
-          "description": {
-		"en": "Version15 defines size of 77x77 modules for the symbol.",
-		"jp": "Version15 は、記号に対する 77x77 モジュールのサイズを定義します。"
-	}
-        },
-        {
-          "name": "version16",
-          "type": "string",
-          "description": {
-		"en": "Version16 defines size of 81x81 modules for the symbol.",
-		"jp": "Version16 は、記号に対する 81x81 モジュールのサイズを定義します。"
-	}
-        },
-        {
-          "name": "version17",
-          "type": "string",
-          "description": {
-		"en": "Version17 defines size of 85x85 modules for the symbol.",
-		"jp": "Version17 は、記号に対する 85x85 モジュールのサイズを定義します。"
-	}
-        },
-        {
-          "name": "version18",
-          "type": "string",
-          "description": {
-		"en": "Version18 defines size of 89x89 modules for the symbol.",
-		"jp": "Version18 は、記号に対する 89x89 モジュールのサイズを定義します。"
-	}
-        },
-        {
-          "name": "version19",
-          "type": "string",
-          "description": {
-		"en": "Version19 defines size of 93x93 modules for the symbol.",
-		"jp": "Version19 は、記号に対する 93x93 モジュールのサイズを定義します。"
-	}
-        },
-        {
-          "name": "version20",
-          "type": "string",
-          "description": {
-		"en": "Version20 defines size of 97x97 modules for the symbol.",
-		"jp": "Version20 は、記号に対する 97x97 モジュールのサイズを定義します。"
-	}
-        },
-        {
-          "name": "version21",
-          "type": "string",
-          "description": {
-		"en": "Version21 defines size of 101x101 modules for the symbol.",
-		"jp": "Version21 は、記号に対する 101x101 モジュールのサイズを定義します。"
-	}
-        },
-        {
-          "name": "version22",
-          "type": "string",
-          "description": {
-		"en": "Version22 defines size of 105x105 modules for the symbol.",
-		"jp": "Version22 は、記号に対する 105x105 モジュールのサイズを定義します。"
-	}
-        },
-        {
-          "name": "version23",
-          "type": "string",
-          "description": {
-		"en": "Version23 defines size of 109x109 modules for the symbol.",
-		"jp": "Version23 は、記号に対する 109x109 モジュールのサイズを定義します。"
-	}
-        },
-        {
-          "name": "version24",
-          "type": "string",
-          "description": {
-		"en": "Version24 defines size of 113x113 modules for the symbol.",
-		"jp": "Version24 は、記号に対する 113x113 モジュールのサイズを定義します。"
-	}
-        },
-        {
-          "name": "version25",
-          "type": "string",
-          "description": {
-		"en": "Version25 defines size of 117x117 modules for the symbol.",
-		"jp": "Version25 は、記号に対する 117x117 モジュールのサイズを定義します。"
-	}
-        },
-        {
-          "name": "version26",
-          "type": "string",
-          "description": {
-		"en": "Version26 defines size of 121x121 modules for the symbol.",
-		"jp": "Version26 は、記号に対する 121x121 モジュールのサイズを定義します。"
-	}
-        },
-        {
-          "name": "version27",
-          "type": "string",
-          "description": {
-		"en": "Version27 defines size of 125x125 modules for the symbol.",
-		"jp": "Version27 は、記号に対する 125x125 モジュールのサイズを定義します。"
-	}
-        },
-        {
-          "name": "version28",
-          "type": "string",
-          "description": {
-		"en": "Version28 defines size of 129x129 modules for the symbol.",
-		"jp": "Version28 は、記号に対する 129x129 モジュールのサイズを定義します。"
-	}
-        },
-        {
-          "name": "version29",
-          "type": "string",
-          "description": {
-		"en": "Version29 defines size of 133x133 modules for the symbol.",
-		"jp": "Version29 は、記号に対する 133x133 モジュールのサイズを定義します。"
-	}
-        },
-        {
-          "name": "version30",
-          "type": "string",
-          "description": {
-		"en": "Version30 defines size of 137x137 modules for the symbol.",
-		"jp": "Version30 は、記号に対する 137x137 モジュールのサイズを定義します。"
-	}
-        },
-        {
-          "name": "version31",
-          "type": "string",
-          "description": {
-		"en": "Version31 defines size of 141x141 modules for the symbol.",
-		"jp": "Version31 は、記号に対する 141x141 モジュールのサイズを定義します。"
-	}
-        },
-        {
-          "name": "version32",
-          "type": "string",
-          "description": {
-		"en": "Version32 defines size of 145x145 modules for the symbol.",
-		"jp": "Version32 は、記号に対する 145x145 モジュールのサイズを定義します。"
-	}
-        },
-        {
-          "name": "version33",
-          "type": "string",
-          "description": {
-		"en": "Version33 defines size of 149x149 modules for the symbol.",
-		"jp": "Version33 は、記号に対する 149x149 モジュールのサイズを定義します。"
-	}
-        },
-        {
-          "name": "version34",
-          "type": "string",
-          "description": {
-		"en": "Version34 defines size of 153x153 modules for the symbol.",
-		"jp": "Version34 は、記号に対する 153x153 モジュールのサイズを定義します。"
-	}
-        },
-        {
-          "name": "version35",
-          "type": "string",
-          "description": {
-		"en": "Version35 defines size of 157x157 modules for the symbol.",
-		"jp": "Version35 は、記号に対する 157x157 モジュールのサイズを定義します。"
-	}
-        },
-        {
-          "name": "version36",
-          "type": "string",
-          "description": {
-		"en": "Version36 defines size of 161x161 modules for the symbol.",
-		"jp": "Version36 は、記号に対する 161x161 モジュールのサイズを定義します。"
-	}
-        },
-        {
-          "name": "version37",
-          "type": "string",
-          "description": {
-		"en": "Version37 defines size of 165x165 modules for the symbol.",
-		"jp": "Version37 は、記号に対する 165x165 モジュールのサイズを定義します。"
-	}
-        },
-        {
-          "name": "version38",
-          "type": "string",
-          "description": {
-		"en": "Version38 defines size of 169x169 modules for the symbol.",
-		"jp": "Version38 は、記号に対する 169x169 モジュールのサイズを定義します。"
-	}
-        },
-        {
-          "name": "version39",
-          "type": "string",
-          "description": {
-		"en": "Version39 defines size of 173x173 modules for the symbol.",
-		"jp": "Version39 は、記号に対する 173x173 モジュールのサイズを定義します。"
-	}
-        },
-        {
-          "name": "version40",
-          "type": "string",
-          "description": {
-		"en": "Version40 defines size of 177x177 modules for the symbol.",
-		"jp": "Version40 は、記号に対する 177x177 モジュールのサイズを定義します。"
-	}
-        }
-      ]
-    },
-    "stretch": {
-      "type": "string",
-      "defaultValue": "uniform",
-      "description": {
-		"en": "Gets or sets the stretch.",
-		"jp": "伸縮を取得または設定します。"
-	},
-      "valueOptions": [
-        {
-          "name": "none",
-          "type": "string",
-          "description": {
-		"en": "The content preserves its nominal dimensions. When using fill, as the content's height and width are scaled independently, the original aspect ratio of the image is not preserved which is why using this value is not recommended when the barcode is used for reading (for reading, use either none or uniform).",
-		"jp": "コンテンツは名目上の寸法を保持します。塗りつぶしを使う場合、コンテンツの高さと幅は個別に拡大縮小されるため、元の画像のアスペクト比は保持されません。このため、バーコードが読み取りに使用される場合は、この値を使用しないことをお勧めします (読み取りには、none または uniform を使用します)。"
-	}
-        },
-        {
-          "name": "fill",
-          "type": "string",
-          "description": {
-		"en": "The content is resized to fill the destination's dimensions.",
-		"jp": "コンテンツは、指定先の寸法を満たすためにサイズ変更されます。"
-	}
-        },
-        {
-          "name": "uniform",
-          "type": "string",
-          "description": {
-		"en": "The content is resized to fit the destination's dimensions while its native aspect ratio is preserved.",
-		"jp": "コンテンツは、指定先の寸法に収めるためにサイズ変更され、ネイティブ アスペクト比は保持されます。"
-	}
-        },
-        {
-          "name": "uniformToFill",
-          "type": "string",
-          "description": {
-		"en": "The content is resized to fill the destination's dimensions completely while it preserves its native aspect ratio. If the aspect ratio of the destination rectangle differs from that of the source, the excessive source content will be cut off.",
-		"jp": "コンテンツは、指定先の寸法に完全に収めるためにサイズ変更され、ネイティブ アスペクト比は保持されます。指定先の四角形のアスペクト比がソースと異なる場合、余分なソース コンテンツは切り取られます。"
-	}
-        }
-      ]
-    },
-    "widthToHeightRatio": {
-      "type": "number",
-      "defaultValue": 3.0,
-      "description": {
-		"en": "Gets or sets the width (XDimension) to height (YDimension) ratio. It accepts only positive values. This property does not apply for the QR barcode.",
-		"jp": "幅 (XDimension) と高さ (YDimension) の比率を取得または設定します。正の値だけを受け付けます。このプロパティは QR バーコードに適用しません。"
-	}
-    },
-    "xDimension": {
-      "type": "number",
-      "defaultValue": 0.25,
-      "description": {
-		"en": "Gets or sets the X-dimension (narrow element width) for a symbol in mm. It accepts values from 0.01 to 100.",
-		"jp": "記号の X 次元 (狭い要素の幅) を mm 単位で取得または設定します。0.01 ～ 100 の値を受け入れます。"
-	}
-    }
-  }
 }

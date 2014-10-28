@@ -1,565 +1,565 @@
 ﻿{
-  "overview": null,
-  "name": "ui.igGridColumnMoving",
-  "title": "Column Moving",
-  "category": null,
-  "visual": true,
-  "events": {
-    "columnDragCanceled": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+    "overview": null,
+    "name": "ui.igGridColumnMoving",
+    "title": "Column Moving",
+    "category": null,
+    "visual": true,
+    "events": {
+        "columnDragCanceled": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event which is fired when a drag operation is canceled<br>   use args.columnKey to get the column key of the column that was being dragged<br>   use args.columnIndex to get the column index of the column that was being dragged<br>   use args.owner to get a reference to the widget<br>   use args.header to get a reference to the orginal th that was being dragged<br>   use args.helper to get a reference to cloned DOM element that was actually being dragged",
+                "jp": "ドラッグ操作がキャンセルされるときに、発生されるイベント。<br>   ドラッグされた列の列キーを取得するには args.columnKey を使用します。<br>   ドラッグされた列の列インデックスを取得するには args.columnIndex を使用します。<br>   ウィジェットへの参照を取得するには args.owner を使用します。<br>   ドラッグされた元の th への参照を取得するには args.header を使用します。<br>   実際にドラッグされたクローンされた DOM 要素への参照を取得するには args.helper を使用します。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
+        "columnDragEnd": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event which is fired when a drag operation ends on a column header<br>   use args.columnKey to get the column key of the column that was being dragged<br>   use args.columnIndex to get the column index of the column that was being dragged<br>   use args.owner to get a reference to the widget<br>   use args.header to get a reference to the orginal th that was being dragged<br>   use args.helper to get a reference to cloned DOM element that was actually being dragged",
+                "jp": "ドラッグ操作が列ヘッダーの上で終了したときに発生されるイベント。<br>   ドラッグされた列の列キーを取得するには args.columnKey を使用します。<br>   ドラッグされた列の列インデックスを取得するには args.columnIndex を使用します。<br>   ウィジェットへの参照を取得するには args.owner を使用します。<br>   ドラッグされた元の th への参照を取得するには args.header を使用します。<br>   実際にドラッグされたクローンされた DOM 要素への参照を取得するには args.helper を使用します。"
+            }
+        },
+        "columnDragStart": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event which is fired when a drag operation begins on a column header<br>   use args.columnKey to get the column key of the column being dragged<br>   use args.columnIndex to get the column index of the column being dragged<br>   use args.owner to get a reference to the widget<br>   use args.header to get a reference to the orginal th being dragged<br>   use args.helper to get a reference to cloned DOM element that's actually being dragged",
+                "jp": "ドラッグ操作が列ヘッダーの上に開始するときに発生されるイベント。<br>   ドラッグされている列の列キーを取得するには args.columnKey を使用します。<br>   ドラッグされている列の列インデックスを取得するには args.columnIndex を使用します。<br>   ウィジェットへの参照を取得するには args.owner を使用します。<br>   ドラッグされている元の th への参照を取得するには args.header を使用します。<br>   実際にドラッグされているクローンされた DOM 要素への参照を取得するには args.helper を使用します。"
+            }
+        },
+        "columnMoved": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event which is fired when a column moving operation completes<br>   use args.columnKey to get the column key of the column that was moved<br>   use args.oldIndex to get the previous column index of the column that was moved<br>   use args.newIndex to get the new column index of the column that was being moved<br>   use args.owner to get a reference to the widget",
+                "jp": "列移動操作が完了されるときに発生されるイベント。<br>   移動された列の列キーを取得するには args.columnKey を使用します。<br>   移動された列の以前の列インデックスを取得するには args.oldIndex を使用します。<br>   移動された列の新しい列インデックスを取得するには args.newIndex を使用します。<br>   ウィジェットへの参照を取得するには args.owner を使用します。"
+            }
+        },
+        "columnMoving": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event which is fired when a column moving operation is initiated<br>   use args.columnKey to get the column key of the column that was being moved<br>   use args.columnIndex to get the column index of the column that was being moved<br>   use args.targetIndex to get the new column index of the column that was being moved<br>   use args.owner to get a reference to the widget",
+                "jp": "列移動操作が開始されるときに発生されるイベント。<br>   移動された列の列キーを取得するには args.columnKey を使用します。<br>   移動された列の列インデックスを取得するには args.columnIndex を使用します。<br>   移動された列の新しい列インデックスを取得するには args.targetIndex を使用します。<br>   ウィジェットへの参照を取得するには args.owner を使用します。"
+            }
+        },
+        "movingDialogClosed": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "event fired after the moving dialog has been closed.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridColumnMoving widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.movingDialogElement to get a reference to the moving dialog element. This is a jQuery object.",
+                "jp": "移動ダイアログが閉じた後に発生するイベント。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   igGridColumnMoving ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   移動ダイアログ要素への参照を取得するには ui.movingDialogElement を使用します。これは jQuery オブジェクトです。"
+            }
+        },
+        "movingDialogClosing": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "event fired before the moving dialog is closed.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridColumnMoving widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.movingDialogElement to get a reference to the moving dialog element. This is a jQuery object.",
+                "jp": "移動ダイアログが閉じる前に発生するイベント。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   igGridColumnMoving ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   移動ダイアログ要素への参照を取得するには ui.movingDialogElement を使用します。これは jQuery オブジェクトです。"
+            }
+        },
+        "movingDialogContentsRendered": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "event fired after the contents of the model dialog are rendered.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridColumnMoving widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.movingDialog to get a reference to the Moving Dialog element. This is a jQuery object.",
+                "jp": "モーダル ダイアログのコンテンツが描画された後に発生するイベント。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   igGridColumnMoving ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   移動ダイアログ要素への参照を取得するには ui.movingDialog を使用します。これは jQuery オブジェクトです。"
+            }
+        },
+        "movingDialogContentsRendering": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "event fired before the contents of the model dialog are rendered.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridColumnMoving widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.movingDialog to get a reference to the Moving Dialog element. This is a jQuery object.",
+                "jp": "モーダル ダイアログのコンテンツが描画される前に発生するイベント。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   igGridColumnMoving ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   移動ダイアログ要素への参照を取得するには ui.movingDialog を使用します。これは jQuery オブジェクトです。"
+            }
+        },
+        "movingDialogDragColumnMoved": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "event fired when column moving is completed through dragging it in the moving dialog<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridColumnMoving widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.movingDialog to get a reference to the Moving Dialog element. This is a jQuery object.<br>   Use ui.columnKey to get the column key of the column that was being moved<br>   Use ui.columnIndex to get the column index of the column that was being moved<br>   Use ui.targetIndex to get the new column index of the column that was being moved",
+                "jp": "移動ダイアログのドラッグによって列移動が完了したときに発生されるイベント。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   igGridColumnMoving ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   移動ダイアログ要素への参照を取得するには ui.movingDialog を使用します。これは jQuery オブジェクトです。<br>   移動された列の列キーを取得するには ui.columnKey を使用します。<br>   移動された列の列インデックスを取得するには ui.columnIndex を使用します。<br>   移動された列の新しい列インデックスを取得するには ui.targetIndex を使用します。"
+            }
+        },
+        "movingDialogDragColumnMoving": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "event fired when column moving is initiated through dragging it in the moving dialog<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridColumnMoving widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.movingDialog to get a reference to the Moving Dialog element. This is a jQuery object.<br>   Use ui.columnKey to get the column key of the column that was being moved<br>   Use ui.columnIndex to get the column index of the column that was being moved<br>   Use ui.targetIndex to get the new column index of the column that was being moved",
+                "jp": "移動ダイアログのドラッグによって列移動が開始したときに発生されるイベント。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   igGridColumnMoving ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   移動ダイアログ要素への参照を取得するには ui.movingDialog を使用します。これは jQuery オブジェクトです。<br>   移動された列の列キーを取得するには ui.columnKey を使用します。<br>   移動された列の列インデックスを取得するには ui.columnIndex を使用します。<br>   移動された列の新しい列インデックスを取得するには ui.targetIndex を使用します。"
+            }
+        },
+        "movingDialogDragged": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "event fired every time the moving dialog changes its position.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridMoving widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.movingDialogElement to get a reference to the moving dialog element. This is a jQuery object.<br>   Use ui.originalPosition to get the original position of the moving dialog div as { top, left } object, relative to the page.<br>   Use ui.position to get the current position of the moving dialog div as { top, left } object, relative to the page.",
+                "jp": "移動ダイアログの位置が変わるたびに発生するイベント。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   igGridMoving ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   移動ダイアログ要素への参照を取得するには ui.movingDialogElement を使用します。これは jQuery オブジェクトです。<br>   移動ダイアログ div の元の位置をページに相対して { top, left } オブジェクトとして取得するには ui.originalPosition を使用します。<br>   移動ダイアログ div の現在の位置をページに相対して { top, left } オブジェクトとして取得するには ui.position を使用します。"
+            }
+        },
+        "movingDialogMoveDownButtonPressed": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "event fired when move down button is pressed in the moving dialog<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridColumnMoving widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.movingDialog to get a reference to the Moving Dialog element. This is a jQuery object.<br>   Use ui.columnKey to get the column key of the column that was being moved<br>   Use ui.columnIndex to get the column index of the column that was being moved<br>   Use ui.targetIndex to get the new column index of the column that was being moved",
+                "jp": "移動ダイアログで [下へ移動] ボタンが押したときに発生されるイベント。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   igGridColumnMoving ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   移動ダイアログ要素への参照を取得するには ui.movingDialog を使用します。これは jQuery オブジェクトです。<br>   移動された列の列キーを取得するには ui.columnKey を使用します。<br>   移動された列の列インデックスを取得するには ui.columnIndex を使用します。<br>   移動された列の新しい列インデックスを取得するには ui.targetIndex を使用します。"
+            }
+        },
+        "movingDialogMoveUpButtonPressed": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "event fired when move up button is pressed in the moving dialog<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridColumnMoving widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.movingDialog to get a reference to the Moving Dialog element. This is a jQuery object.<br>   Use ui.columnKey to get the column key of the column that was being moved<br>   Use ui.columnIndex to get the column index of the column that was being moved<br>   Use ui.targetIndex to get the new column index of the column that was being moved",
+                "jp": "移動ダイアログで [上へ移動] ボタンが押したときに発生されるイベント。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   igGridColumnMoving ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   移動ダイアログ要素への参照を取得するには ui.movingDialog を使用します。これは jQuery オブジェクトです。<br>   移動された列の列キーを取得するには ui.columnKey を使用します。<br>   移動された列の列インデックスを取得するには ui.columnIndex を使用します。<br>   移動された列の新しい列インデックスを取得するには ui.targetIndex を使用します。"
+            }
+        },
+        "movingDialogOpened": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "event fired after the column chooser is already opened.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridColumnMoving widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.movingDialogElement to get a reference to the moving dialog element. This is a jQuery object.",
+                "jp": "列選択が既に開いた後に発生するイベント。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   igGridColumnMoving ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   移動ダイアログ要素への参照を取得するには ui.movingDialogElement を使用します。これは jQuery オブジェクトです。"
+            }
+        },
+        "movingDialogOpening": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "event fired before the moving dialog is opened.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridColumnMoving widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.movingDialogElement to get a reference to the moving dialog element. This is a jQuery object.",
+                "jp": "移動ダイアログが開く前に発生するイベント。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   igGridColumnMoving ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   移動ダイアログ要素への参照を取得するには ui.movingDialogElement を使用します。これは jQuery オブジェクトです。"
+            }
         }
-      ],
-      "description": {
-		"en": "Event which is fired when a drag operation is canceled<br>   use args.columnKey to get the column key of the column that was being dragged<br>   use args.columnIndex to get the column index of the column that was being dragged<br>   use args.owner to get a reference to the widget<br>   use args.header to get a reference to the orginal th that was being dragged<br>   use args.helper to get a reference to cloned DOM element that was actually being dragged",
-		"jp": "ドラッグ操作がキャンセルされるときに、発生されるイベント。<br>   ドラッグされた列の列キーを取得するには args.columnKey を使用します。<br>   ドラッグされた列の列インデックスを取得するには args.columnIndex を使用します。<br>   ウィジェットへの参照を取得するには args.owner を使用します。<br>   ドラッグされた元の th への参照を取得するには args.header を使用します。<br>   実際にドラッグされたクローンされた DOM 要素への参照を取得するには args.helper を使用します。"
-	}
     },
-    "columnDragEnd": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+    "properties": {
+        "name": {
+            "type": "string",
+            "defaultValue": null
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Event which is fired when a drag operation ends on a column header<br>   use args.columnKey to get the column key of the column that was being dragged<br>   use args.columnIndex to get the column index of the column that was being dragged<br>   use args.owner to get a reference to the widget<br>   use args.header to get a reference to the orginal th that was being dragged<br>   use args.helper to get a reference to cloned DOM element that was actually being dragged",
-		"jp": "ドラッグ操作が列ヘッダーの上で終了したときに発生されるイベント。<br>   ドラッグされた列の列キーを取得するには args.columnKey を使用します。<br>   ドラッグされた列の列インデックスを取得するには args.columnIndex を使用します。<br>   ウィジェットへの参照を取得するには args.owner を使用します。<br>   ドラッグされた元の th への参照を取得するには args.header を使用します。<br>   実際にドラッグされたクローンされた DOM 要素への参照を取得するには args.helper を使用します。"
-	}
-    },
-    "columnDragStart": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "addMovingDropdown": {
+            "type": "bool",
+            "defaultValue": true,
+            "description": {
+                "en": "Specifies if header cells should include an additional button that opens a moving helper dropdown.",
+                "jp": "ヘッダー セルは、 移動ヘルパー ドロップダウンを開く追加ボタンを含むかどうか指定します。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Event which is fired when a drag operation begins on a column header<br>   use args.columnKey to get the column key of the column being dragged<br>   use args.columnIndex to get the column index of the column being dragged<br>   use args.owner to get a reference to the widget<br>   use args.header to get a reference to the orginal th being dragged<br>   use args.helper to get a reference to cloned DOM element that's actually being dragged",
-		"jp": "ドラッグ操作が列ヘッダーの上に開始するときに発生されるイベント。<br>   ドラッグされている列の列キーを取得するには args.columnKey を使用します。<br>   ドラッグされている列の列インデックスを取得するには args.columnIndex を使用します。<br>   ウィジェットへの参照を取得するには args.owner を使用します。<br>   ドラッグされている元の th への参照を取得するには args.header を使用します。<br>   実際にドラッグされているクローンされた DOM 要素への参照を取得するには args.helper を使用します。"
-	}
-    },
-    "columnMoved": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "columnSettings": {
+            "type": "array",
+            "defaultValue": null,
+            "description": {
+                "en": "A list of column settings that specifies moving options on a per column basis.",
+                "jp": "列の移動オプションを指定する列設定のリスト。"
+            },
+            "schema": {
+                "allowMoving": {
+                    "type": "bool",
+                    "defaultValue": true,
+                    "description": {
+                        "en": "Defines if the column is allowed to be moved",
+                        "jp": "列は移動可能かどうかを定義します"
+                    }
+                },
+                "columnIndex": {
+                    "type": "number",
+                    "defaultValue": null,
+                    "description": {
+                        "en": "Defines the index of the column for moving",
+                        "jp": "移動する列のインデックスを定義します"
+                    }
+                },
+                "columnKey": {
+                    "type": "string",
+                    "defaultValue": null,
+                    "description": {
+                        "en": "Defines the key of the column for moving",
+                        "jp": "移動する列のキーを定義します"
+                    }
+                }
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Event which is fired when a column moving operation completes<br>   use args.columnKey to get the column key of the column that was moved<br>   use args.oldIndex to get the previous column index of the column that was moved<br>   use args.newIndex to get the new column index of the column that was being moved<br>   use args.owner to get a reference to the widget",
-		"jp": "列移動操作が完了されるときに発生されるイベント。<br>   移動された列の列キーを取得するには args.columnKey を使用します。<br>   移動された列の以前の列インデックスを取得するには args.oldIndex を使用します。<br>   移動された列の新しい列インデックスを取得するには args.newIndex を使用します。<br>   ウィジェットへの参照を取得するには args.owner を使用します。"
-	}
-    },
-    "columnMoving": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "dragHelperOpacity": {
+            "type": "number",
+            "defaultValue": 1.0,
+            "description": {
+                "en": "Specifies the opacity of the drag markup, while a column header is being dragged.<br>   The value must be between 0 and 1. When GroupBy is enabled, the corresponding option in the GroupBy configuration <br>   will be used with priority over this one.",
+                "jp": "列ヘッダーがドラッグされている間の、ドラッグ マークアップの不透明性を指定します。<br>   値は 0 と 1 の間である必要があります。GroupBy が有効な場合、GroupBy 構成の対応するオプションが、<br>  このオプションに優先して使用されます。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Event which is fired when a column moving operation is initiated<br>   use args.columnKey to get the column key of the column that was being moved<br>   use args.columnIndex to get the column index of the column that was being moved<br>   use args.targetIndex to get the new column index of the column that was being moved<br>   use args.owner to get a reference to the widget",
-		"jp": "列移動操作が開始されるときに発生されるイベント。<br>   移動された列の列キーを取得するには args.columnKey を使用します。<br>   移動された列の列インデックスを取得するには args.columnIndex を使用します。<br>   移動された列の新しい列インデックスを取得するには args.targetIndex を使用します。<br>   ウィジェットへの参照を取得するには args.owner を使用します。"
-	}
-    },
-    "movingDialogClosed": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "dropDownMoveFirstText": {
+            "type": "string",
+            "defaultValue": "",
+            "description": {
+                "en": "Specifies caption for the move first dropdown button",
+                "jp": "「最初へ移動」ドロップダウン ボタンのキャプションのテキストを指定します。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "event fired after the moving dialog has been closed.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridColumnMoving widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.movingDialogElement to get a reference to the moving dialog element. This is a jQuery object.",
-		"jp": "移動ダイアログが閉じた後に発生するイベント。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   igGridColumnMoving ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   移動ダイアログ要素への参照を取得するには ui.movingDialogElement を使用します。これは jQuery オブジェクトです。"
-	}
-    },
-    "movingDialogClosing": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "dropDownMoveLastText": {
+            "type": "string",
+            "defaultValue": "",
+            "description": {
+                "en": "Specifies caption for the move last dropdown button",
+                "jp": "「最後へ移動」ドロップダウン ボタンのキャプションのテキストを指定します。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "event fired before the moving dialog is closed.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridColumnMoving widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.movingDialogElement to get a reference to the moving dialog element. This is a jQuery object.",
-		"jp": "移動ダイアログが閉じる前に発生するイベント。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   igGridColumnMoving ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   移動ダイアログ要素への参照を取得するには ui.movingDialogElement を使用します。これは jQuery オブジェクトです。"
-	}
-    },
-    "movingDialogContentsRendered": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "dropDownMoveLeftText": {
+            "type": "string",
+            "defaultValue": "",
+            "description": {
+                "en": "Specifies caption for the move left dropdown button",
+                "jp": "「左へ移動」ドロップダウン ボタンのキャプションのテキストを指定します。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "event fired after the contents of the model dialog are rendered.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridColumnMoving widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.movingDialog to get a reference to the Moving Dialog element. This is a jQuery object.",
-		"jp": "モーダル ダイアログのコンテンツが描画された後に発生するイベント。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   igGridColumnMoving ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   移動ダイアログ要素への参照を取得するには ui.movingDialog を使用します。これは jQuery オブジェクトです。"
-	}
-    },
-    "movingDialogContentsRendering": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "dropDownMoveRightText": {
+            "type": "string",
+            "defaultValue": "",
+            "description": {
+                "en": "Specifies caption for the move right dropdown button",
+                "jp": "「右へ移動」ドロップダウン ボタンのキャプションのテキストを指定します。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "event fired before the contents of the model dialog are rendered.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridColumnMoving widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.movingDialog to get a reference to the Moving Dialog element. This is a jQuery object.",
-		"jp": "モーダル ダイアログのコンテンツが描画される前に発生するイベント。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   igGridColumnMoving ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   移動ダイアログ要素への参照を取得するには ui.movingDialog を使用します。これは jQuery オブジェクトです。"
-	}
-    },
-    "movingDialogDragColumnMoved": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "featureChooserSubmenuText": {
+            "type": "string",
+            "defaultValue": "",
+            "description": {
+                "en": "Specifies caption text for the feature chooser submenu button",
+                "jp": "機能セレクターのサブメニュー ボタンのキャプションのテキストを指定します。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "event fired when column moving is completed through dragging it in the moving dialog<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridColumnMoving widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.movingDialog to get a reference to the Moving Dialog element. This is a jQuery object.<br>   Use ui.columnKey to get the column key of the column that was being moved<br>   Use ui.columnIndex to get the column index of the column that was being moved<br>   Use ui.targetIndex to get the new column index of the column that was being moved",
-		"jp": "移動ダイアログのドラッグによって列移動が完了したときに発生されるイベント。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   igGridColumnMoving ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   移動ダイアログ要素への参照を取得するには ui.movingDialog を使用します。これは jQuery オブジェクトです。<br>   移動された列の列キーを取得するには ui.columnKey を使用します。<br>   移動された列の列インデックスを取得するには ui.columnIndex を使用します。<br>   移動された列の新しい列インデックスを取得するには ui.targetIndex を使用します。"
-	}
-    },
-    "movingDialogDragColumnMoving": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "hideHeaderContentsDuringDrag": {
+            "type": "bool",
+            "defaultValue": true,
+            "description": {
+                "en": "Specifies whether the contents of the column being dragged will get hidden. The option is only<br>   relevant in immediate moving mode.",
+                "jp": "ドラッグされている列のコンテンツが非表示になるかどうかを指定します。このオプションは、<br>   移動モードがイミディエイトの場合のみ関係します。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "event fired when column moving is initiated through dragging it in the moving dialog<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridColumnMoving widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.movingDialog to get a reference to the Moving Dialog element. This is a jQuery object.<br>   Use ui.columnKey to get the column key of the column that was being moved<br>   Use ui.columnIndex to get the column index of the column that was being moved<br>   Use ui.targetIndex to get the new column index of the column that was being moved",
-		"jp": "移動ダイアログのドラッグによって列移動が開始したときに発生されるイベント。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   igGridColumnMoving ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   移動ダイアログ要素への参照を取得するには ui.movingDialog を使用します。これは jQuery オブジェクトです。<br>   移動された列の列キーを取得するには ui.columnKey を使用します。<br>   移動された列の列インデックスを取得するには ui.columnIndex を使用します。<br>   移動された列の新しい列インデックスを取得するには ui.targetIndex を使用します。"
-	}
-    },
-    "movingDialogDragged": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "mode": {
+            "type": "string",
+            "defaultValue": "immediate",
+            "description": {
+                "en": " Specify the drag-and-drop mode for the feature",
+                "jp": " 機能のドラッグ アンド ドロップ モードを指定します。"
+            },
+            "valueOptions": [
+                {
+                    "name": "immediate",
+                    "type": "string",
+                    "description": {
+                        "en": " Column headers will rearange as you drag with a space opening under the cursor for the header to be dropped on",
+                        "jp": " ドラッグ操作に合わせて列ヘッダーが並べ替えられ、カーソルの下にヘッダーをドロップするためのスペースが空けられます。"
+                    }
+                },
+                {
+                    "name": "deferred",
+                    "type": "string",
+                    "description": {
+                        "en": " A clone of the header dragged will be created and indicators will be shown between columns to help navigate the drop.",
+                        "jp": " ドラッグされているヘッダーのクローンが作成され、ドロップの手助けとなるインジケーターが列の間に表示されます。"
+                    }
+                }
+            ]
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "event fired every time the moving dialog changes its position.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridMoving widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.movingDialogElement to get a reference to the moving dialog element. This is a jQuery object.<br>   Use ui.originalPosition to get the original position of the moving dialog div as { top, left } object, relative to the page.<br>   Use ui.position to get the current position of the moving dialog div as { top, left } object, relative to the page.",
-		"jp": "移動ダイアログの位置が変わるたびに発生するイベント。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   igGridMoving ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   移動ダイアログ要素への参照を取得するには ui.movingDialogElement を使用します。これは jQuery オブジェクトです。<br>   移動ダイアログ div の元の位置をページに相対して { top, left } オブジェクトとして取得するには ui.originalPosition を使用します。<br>   移動ダイアログ div の現在の位置をページに相対して { top, left } オブジェクトとして取得するには ui.position を使用します。"
-	}
-    },
-    "movingDialogMoveDownButtonPressed": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "moveType": {
+            "type": "string",
+            "defaultValue": "dom",
+            "description": {
+                "en": " Specify the way columns will be rearranged",
+                "jp": " 列の並べ替え方法を指定します。"
+            },
+            "valueOptions": [
+                {
+                    "name": "dom",
+                    "type": "string",
+                    "description": {
+                        "en": " Columns will be rearranged through dom manipulation",
+                        "jp": " 列を DOM 操作により並べ替えます。"
+                    }
+                },
+                {
+                    "name": "render",
+                    "type": "string",
+                    "description": {
+                        "en": " Columns will not be rearranged but the grid will be rendered again with the new column order. Please note this option is incompatible with immediate move mode.",
+                        "jp": " 列を並べ替えず、新しい列の並べでグリッドを描画しなおします。注: このオプションは immediate 移動モードとの互換性はありません。"
+                    }
+                }
+            ]
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "event fired when move down button is pressed in the moving dialog<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridColumnMoving widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.movingDialog to get a reference to the Moving Dialog element. This is a jQuery object.<br>   Use ui.columnKey to get the column key of the column that was being moved<br>   Use ui.columnIndex to get the column index of the column that was being moved<br>   Use ui.targetIndex to get the new column index of the column that was being moved",
-		"jp": "移動ダイアログで [下へ移動] ボタンが押したときに発生されるイベント。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   igGridColumnMoving ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   移動ダイアログ要素への参照を取得するには ui.movingDialog を使用します。これは jQuery オブジェクトです。<br>   移動された列の列キーを取得するには ui.columnKey を使用します。<br>   移動された列の列インデックスを取得するには ui.columnIndex を使用します。<br>   移動された列の新しい列インデックスを取得するには ui.targetIndex を使用します。"
-	}
-    },
-    "movingDialogMoveUpButtonPressed": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "movingAcceptanceTolerance": {
+            "type": "number",
+            "defaultValue": 20.0,
+            "description": {
+                "en": "Specifies the length (in pixels) between the dragged column and the column edges below which the move operation is accepted",
+                "jp": "移動操作が許可されているドラッグされた列と下の列の端の間の長さ (ピクセル) を指定します。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "event fired when move up button is pressed in the moving dialog<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridColumnMoving widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.movingDialog to get a reference to the Moving Dialog element. This is a jQuery object.<br>   Use ui.columnKey to get the column key of the column that was being moved<br>   Use ui.columnIndex to get the column index of the column that was being moved<br>   Use ui.targetIndex to get the new column index of the column that was being moved",
-		"jp": "移動ダイアログで [上へ移動] ボタンが押したときに発生されるイベント。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   igGridColumnMoving ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   移動ダイアログ要素への参照を取得するには ui.movingDialog を使用します。これは jQuery オブジェクトです。<br>   移動された列の列キーを取得するには ui.columnKey を使用します。<br>   移動された列の列インデックスを取得するには ui.columnIndex を使用します。<br>   移動された列の新しい列インデックスを取得するには ui.targetIndex を使用します。"
-	}
-    },
-    "movingDialogOpened": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "movingDialogAnimationDuration": {
+            "type": "number",
+            "defaultValue": 200.0,
+            "description": {
+                "en": "Specifies time in milliseconds for animation duration to show/hide modal dialog",
+                "jp": "モーダル ダイアログを表示または非表示にするアニメーション時間をミリ秒で指定します。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "event fired after the column chooser is already opened.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridColumnMoving widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.movingDialogElement to get a reference to the moving dialog element. This is a jQuery object.",
-		"jp": "列選択が既に開いた後に発生するイベント。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   igGridColumnMoving ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   移動ダイアログ要素への参照を取得するには ui.movingDialogElement を使用します。これは jQuery オブジェクトです。"
-	}
-    },
-    "movingDialogOpening": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
+        "movingDialogCaptionButtonAsc": {
+            "type": "string",
+            "defaultValue": "",
+            "description": {
+                "en": "Specifies caption for each move up button in the column moving dialog",
+                "jp": "列移動ダイアログの各 [上へ移動] ボタンのキャプションを指定します。"
+            }
         },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
+        "movingDialogCaptionButtonDesc": {
+            "type": "string",
+            "defaultValue": "",
+            "description": {
+                "en": "Specifies caption for each move down button in the column moving dialog",
+                "jp": "列移動ダイアログの各 [下へ移動] ボタンのキャプションを指定します。"
+            }
+        },
+        "movingDialogCaptionText": {
+            "type": "string",
+            "defaultValue": "",
+            "description": {
+                "en": "Specifies caption text for the column moving dialog",
+                "jp": "[列移動] ダイアログのキャプションのテキストを指定します。"
+            }
+        },
+        "movingDialogDisplayText": {
+            "type": "string",
+            "defaultValue": "",
+            "description": {
+                "en": "Specifies caption text for the feature chooser entry",
+                "jp": "[機能セレクター] エントリのキャプションのテキストを指定します。"
+            }
+        },
+        "movingDialogHeight": {
+            "type": "number",
+            "defaultValue": "",
+            "description": {
+                "en": "Specifies height of column moving dialog",
+                "jp": "列移動のダイアログの高さを指定します。"
+            }
+        },
+        "movingDialogWidth": {
+            "type": "number",
+            "defaultValue": 400.0,
+            "description": {
+                "en": "Specifies width of column moving dialog",
+                "jp": "列移動ダイアログの幅を指定します。"
+            }
+        },
+        "movingScrollTolerance": {
+            "type": "number",
+            "defaultValue": 20.0,
+            "description": {
+                "en": "Specifies the length (in pixels) between the dragged column and the grid edges below which horizontal scrolling occurs",
+                "jp": "水平スクロールが発生するドラッグされた列と下の列の端の間の長さ (ピクセル) を指定します。"
+            }
+        },
+        "movingToolTipMove": {
+            "type": "string",
+            "defaultValue": "",
+            "description": {
+                "en": "Specifies tooltip text for the move indicator",
+                "jp": "移動インジケーターのツールチップ テキストを指定します。"
+            }
+        },
+        "scrollDelta": {
+            "type": "number",
+            "defaultValue": 2.0,
+            "description": {
+                "en": "Specifies the length (in pixels) of each individual scroll operation",
+                "jp": "個々のスクロール操作の長さ (ピクセル) を指定します。"
+            }
+        },
+        "scrollSpeedMultiplier": {
+            "type": "number",
+            "defaultValue": 2.0,
+            "description": {
+                "en": "Specifies a multiplier for the delay between subsequent scroll operations. The larger this number is, the slower scrolling will appear to be.",
+                "jp": "後続のスクロール操作の間の遅延の乗数を指定します。この数値が大きくなると、スクロールが表示されるまでの時間が長くなります。"
+            }
         }
-      ],
-      "description": {
-		"en": "event fired before the moving dialog is opened.<br>   The handler function takes arguments evt and ui.<br>   Use ui.owner to get the reference to the igGridColumnMoving widget.<br>   Use ui.owner.grid to get the reference to the igGrid widget.<br>   Use ui.movingDialogElement to get a reference to the moving dialog element. This is a jQuery object.",
-		"jp": "移動ダイアログが開く前に発生するイベント。<br>   ハンドラー関数は引数 evt および ui を取得します。<br>   igGridColumnMoving ウィジェットへの参照を取得するには ui.owner を使用します。<br>   ui.owner.grid を使用して、igGrid ウィジェットへの参照を取得します。<br>   移動ダイアログ要素への参照を取得するには ui.movingDialogElement を使用します。これは jQuery オブジェクトです。"
-	}
     }
-  },
-  "properties": {
-	"name": {
-      "type": "string",
-      "defaultValue": null
-    },
-    "addMovingDropdown": {
-      "type": "bool",
-      "defaultValue": true,
-      "description": {
-		"en": "Specifies if header cells should include an additional button that opens a moving helper dropdown.",
-		"jp": "ヘッダー セルは、 移動ヘルパー ドロップダウンを開く追加ボタンを含むかどうか指定します。"
-	}
-    },
-    "columnSettings": {
-      "type": "array",
-      "defaultValue": null,
-      "description": {
-		"en": "A list of column settings that specifies moving options on a per column basis.",
-		"jp": "列の移動オプションを指定する列設定のリスト。"
-	},
-      "schema": {
-        "allowMoving": {
-          "type": "bool",
-          "defaultValue": true,
-          "description": {
-		"en": "Defines if the column is allowed to be moved",
-		"jp": "列は移動可能かどうかを定義します"
-	}
-        },
-        "columnIndex": {
-          "type": "number",
-          "defaultValue": null,
-          "description": {
-		"en": "Defines the index of the column for moving",
-		"jp": "移動する列のインデックスを定義します"
-	}
-        },
-        "columnKey": {
-          "type": "string",
-          "defaultValue": null,
-          "description": {
-		"en": "Defines the key of the column for moving",
-		"jp": "移動する列のキーを定義します"
-	}
-        }
-      }
-    },
-    "dragHelperOpacity": {
-      "type": "number",
-      "defaultValue": 1.0,
-      "description": {
-		"en": "Specifies the opacity of the drag markup, while a column header is being dragged.<br>   The value must be between 0 and 1. When GroupBy is enabled, the corresponding option in the GroupBy configuration <br>   will be used with priority over this one.",
-		"jp": "列ヘッダーがドラッグされている間の、ドラッグ マークアップの不透明性を指定します。<br>   値は 0 と 1 の間である必要があります。GroupBy が有効な場合、GroupBy 構成の対応するオプションが、<br>  このオプションに優先して使用されます。"
-	}
-    },
-    "dropDownMoveFirstText": {
-      "type": "string",
-      "defaultValue": "",
-      "description": {
-		"en": "Specifies caption for the move first dropdown button",
-		"jp": "「最初へ移動」ドロップダウン ボタンのキャプションのテキストを指定します。"
-	}
-    },
-    "dropDownMoveLastText": {
-      "type": "string",
-      "defaultValue": "",
-      "description": {
-		"en": "Specifies caption for the move last dropdown button",
-		"jp": "「最後へ移動」ドロップダウン ボタンのキャプションのテキストを指定します。"
-	}
-    },
-    "dropDownMoveLeftText": {
-      "type": "string",
-      "defaultValue": "",
-      "description": {
-		"en": "Specifies caption for the move left dropdown button",
-		"jp": "「左へ移動」ドロップダウン ボタンのキャプションのテキストを指定します。"
-	}
-    },
-    "dropDownMoveRightText": {
-      "type": "string",
-      "defaultValue": "",
-      "description": {
-		"en": "Specifies caption for the move right dropdown button",
-		"jp": "「右へ移動」ドロップダウン ボタンのキャプションのテキストを指定します。"
-	}
-    },
-    "featureChooserSubmenuText": {
-      "type": "string",
-      "defaultValue": "",
-      "description": {
-		"en": "Specifies caption text for the feature chooser submenu button",
-		"jp": "機能セレクターのサブメニュー ボタンのキャプションのテキストを指定します。"
-	}
-    },
-    "hideHeaderContentsDuringDrag": {
-      "type": "bool",
-      "defaultValue": true,
-      "description": {
-		"en": "Specifies whether the contents of the column being dragged will get hidden. The option is only<br>   relevant in immediate moving mode.",
-		"jp": "ドラッグされている列のコンテンツが非表示になるかどうかを指定します。このオプションは、<br>   移動モードがイミディエイトの場合のみ関係します。"
-	}
-    },
-    "mode": {
-      "type": "string",
-      "defaultValue": "immediate",
-      "description": {
-		"en": " Specify the drag-and-drop mode for the feature",
-		"jp": " 機能のドラッグ アンド ドロップ モードを指定します。"
-	},
-      "valueOptions": [
-        {
-          "name": "immediate",
-          "type": "string",
-          "description": {
-		"en": " Column headers will rearange as you drag with a space opening under the cursor for the header to be dropped on",
-		"jp": " ドラッグ操作に合わせて列ヘッダーが並べ替えられ、カーソルの下にヘッダーをドロップするためのスペースが空けられます。"
-	}
-        },
-        {
-          "name": "deferred",
-          "type": "string",
-          "description": {
-		"en": " A clone of the header dragged will be created and indicators will be shown between columns to help navigate the drop.",
-		"jp": " ドラッグされているヘッダーのクローンが作成され、ドロップの手助けとなるインジケーターが列の間に表示されます。"
-	}
-        }
-      ]
-    },
-    "moveType": {
-      "type": "string",
-      "defaultValue": "dom",
-      "description": {
-		"en": " Specify the way columns will be rearranged",
-		"jp": " 列の並べ替え方法を指定します。"
-	},
-      "valueOptions": [
-        {
-          "name": "dom",
-          "type": "string",
-          "description": {
-		"en": " Columns will be rearranged through dom manipulation",
-		"jp": " 列を DOM 操作により並べ替えます。"
-	}
-        },
-        {
-          "name": "render",
-          "type": "string",
-          "description": {
-		"en": " Columns will not be rearranged but the grid will be rendered again with the new column order. Please note this option is incompatible with immediate move mode.",
-		"jp": " 列を並べ替えず、新しい列の並べでグリッドを描画しなおします。注: このオプションは immediate 移動モードとの互換性はありません。"
-	}
-        }
-      ]
-    },
-    "movingAcceptanceTolerance": {
-      "type": "number",
-      "defaultValue": 20.0,
-      "description": {
-		"en": "Specifies the length (in pixels) between the dragged column and the column edges below which the move operation is accepted",
-		"jp": "移動操作が許可されているドラッグされた列と下の列の端の間の長さ (ピクセル) を指定します。"
-	}
-    },
-    "movingDialogAnimationDuration": {
-      "type": "number",
-      "defaultValue": 200.0,
-      "description": {
-		"en": "Specifies time in milliseconds for animation duration to show/hide modal dialog",
-		"jp": "モーダル ダイアログを表示または非表示にするアニメーション時間をミリ秒で指定します。"
-	}
-    },
-    "movingDialogCaptionButtonAsc": {
-      "type": "string",
-      "defaultValue": "",
-      "description": {
-		"en": "Specifies caption for each move up button in the column moving dialog",
-		"jp": "列移動ダイアログの各 [上へ移動] ボタンのキャプションを指定します。"
-	}
-    },
-    "movingDialogCaptionButtonDesc": {
-      "type": "string",
-      "defaultValue": "",
-      "description": {
-		"en": "Specifies caption for each move down button in the column moving dialog",
-		"jp": "列移動ダイアログの各 [下へ移動] ボタンのキャプションを指定します。"
-	}
-    },
-    "movingDialogCaptionText": {
-      "type": "string",
-      "defaultValue": "",
-      "description": {
-		"en": "Specifies caption text for the column moving dialog",
-		"jp": "[列移動] ダイアログのキャプションのテキストを指定します。"
-	}
-    },
-    "movingDialogDisplayText": {
-      "type": "string",
-      "defaultValue": "",
-      "description": {
-		"en": "Specifies caption text for the feature chooser entry",
-		"jp": "[機能セレクター] エントリのキャプションのテキストを指定します。"
-	}
-    },
-    "movingDialogHeight": {
-      "type": "number",
-      "defaultValue": "",
-      "description": {
-		"en": "Specifies height of column moving dialog",
-		"jp": "列移動のダイアログの高さを指定します。"
-	}
-    },
-    "movingDialogWidth": {
-      "type": "number",
-      "defaultValue": 400.0,
-      "description": {
-		"en": "Specifies width of column moving dialog",
-		"jp": "列移動ダイアログの幅を指定します。"
-	}
-    },
-    "movingScrollTolerance": {
-      "type": "number",
-      "defaultValue": 20.0,
-      "description": {
-		"en": "Specifies the length (in pixels) between the dragged column and the grid edges below which horizontal scrolling occurs",
-		"jp": "水平スクロールが発生するドラッグされた列と下の列の端の間の長さ (ピクセル) を指定します。"
-	}
-    },
-    "movingToolTipMove": {
-      "type": "string",
-      "defaultValue": "",
-      "description": {
-		"en": "Specifies tooltip text for the move indicator",
-		"jp": "移動インジケーターのツールチップ テキストを指定します。"
-	}
-    },
-    "scrollDelta": {
-      "type": "number",
-      "defaultValue": 2.0,
-      "description": {
-		"en": "Specifies the length (in pixels) of each individual scroll operation",
-		"jp": "個々のスクロール操作の長さ (ピクセル) を指定します。"
-	}
-    },
-    "scrollSpeedMultiplier": {
-      "type": "number",
-      "defaultValue": 2.0,
-      "description": {
-		"en": "Specifies a multiplier for the delay between subsequent scroll operations. The larger this number is, the slower scrolling will appear to be.",
-		"jp": "後続のスクロール操作の間の遅延の乗数を指定します。この数値が大きくなると、スクロールが表示されるまでの時間が長くなります。"
-	}
-    }
-  }
 }

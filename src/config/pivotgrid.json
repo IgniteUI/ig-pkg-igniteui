@@ -1,1327 +1,1328 @@
 ﻿{
-  "overview": null,
-  "name": "ui.igPivotGrid",
-  "category": null,
-  "visual": true,
-  "events": {
-    "dataSourceInitialized": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Fired after the data source has initialized.<br>            Function takes arguments evt and ui.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.dataSource to get a reference to the data source.<br>            Use ui.error to see if an error has occured during initialization.<br>            Use ui.metadataTreeRoot to get a reference to the root of the data source metatadata root item.",
-		"jp": "データ ソースが初期化された後に発生します。<br>            関数は引数 evt および ui を取得します。<br>            ui.owner を使用して、ピボット グリッドへの参照を取得します。<br>            ui.dataSource を使用して、データ ソースへの参照を取得します。<br>            ui.error を使用して、初期化中にエラーが発生したかどうかを確認します。<br>            ui.metadataTreeRoot を使用して、データ ソース メタデータのルート項目への参照を取得します。"
-	}
-    },
-    "dataSourceUpdated": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Fired after the data source has updated.<br>            Function takes arguments evt and ui.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.dataSource to get a reference to the data source.<br>            Use ui.error to see if an error has occured during update.<br>            Use ui.result to get the result of the update operation.",
-		"jp": "データ ソースが更新された後に発生します。<br>            関数は引数 evt および ui を取得します。<br>            ui.owner を使用して、ピボット グリッドへの参照を取得します。<br>            ui.dataSource を使用して、データ ソースへの参照を取得します。<br>            ui.error を使用して、更新中にエラーが発生したかどうかを確認します。<br>            ui.result を使用して、更新操作の結果を取得します。"
-	}
-    },
-    "drag": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Fired on drag. Return false to cancel the drag.<br>            Use ui.metadata to get a reference to the data.<br>            Use ui.helper to get a reference to the helper.<br>            Use ui.offset to get a reference to the offset.<br>            Use ui.originalPosition to get a reference to the original position of the draggable element.<br>            Use ui.position to get a reference to the current position of the draggable element.",
-		"jp": "ドラッグ操作で発生されます。false を返すと、ドラッグ操作がキャンセルされます。<br>            ui.metadata を使用して、データへの参照を取得します。<br>            ui.helper を使用して、ヘルパーへの参照を取得します。<br>            ui.offset を使用して、オフセットへの参照を取得します。<br>            ui.originalPosition を使用して、ドラッグ可能な要素の元の位置への参照を取得します。<br>            ui.position を使用して、ドラッグ可能な要素の現在の位置への参照を取得します。"
-	}
-    },
-    "dragStart": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Fired on drag start. Return false to cancel the dragging.<br>            Use ui.metadata to get a reference to the data.<br>            Use ui.helper to get a reference to the helper.<br>            Use ui.offset to get a reference to the offset.<br>            Use ui.originalPosition to get a reference to the original position of the draggable element.<br>            Use ui.position to get a reference to the current position of the draggable element.",
-		"jp": "ドラッグ開始で発生されます。false を返すと、ドラッグ操作がキャンセルされます。<br>            ui.metadata を使用して、データへの参照を取得します。<br>            ui.helper を使用して、ヘルパーへの参照を取得します。<br>            ui.offset を使用して、オフセットへの参照を取得します。<br>            ui.originalPosition を使用して、ドラッグ可能な要素の元の位置への参照を取得します。<br>            ui.position を使用して、ドラッグ可能な要素の現在の位置への参照を取得します。"
-	}
-    },
-    "dragStop": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Fired on drag stop.<br>            Use ui.helper to get a reference to the helper.<br>            Use ui.offset to get a reference to the offset.<br>            Use ui.originalPosition to get a reference to the original position of the draggable element.<br>            Use ui.position to get a reference to the current position of the draggable element.",
-		"jp": "ドラッグ終了で発生されます。<br>            ui.helper を使用して、ヘルパーへの参照を取得します。<br>            ui.offset を使用して、オフセットへの参照を取得します。<br>            ui.originalPosition を使用して、ドラッグ可能な要素の元の位置への参照を取得します。<br>            ui.position を使用して、ドラッグ可能な要素の現在の位置への参照を取得します。"
-	}
-    },
-    "filterDropDownClosed": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Fired after the filter members drop down closes.<br>            Use ui.hierarchy for a reference to the hierarchy.",
-		"jp": "フィルター メンバーのドロップダウンが閉じた後に発生します。<br>            ui.hierarchy を使用して、階層への参照を取得します。"
-	}
-    },
-    "filterDropDownClosing": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Fired before the filter members drop down closes. Return false to cancel the closing.<br>            Use ui.hierarchy for a reference to the hierarchy.<br>            Use ui.dropDownElement for a reference to the drop down.",
-		"jp": "フィルター メンバーのドロップダウンを閉じる前に発生します。false を返すと、閉じる操作がキャンセルされます。<br>            ui.hierarchy を使用して、階層への参照を取得します。<br>            ui.dropDownElement を使用して、ドロップ ダウンへの参照を取得します。"
-	}
-    },
-    "filterDropDownOk": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Fired after the OK button in the filter members drop down is clicked. Return false to cancel the applying of the filters.<br>            Use ui.hierarchy for a reference to the hierarchy.<br>            Use ui.filterMembers for a collection with the selected filter members. If all filter members are selected the collection will be empty.<br>            Use ui.dropDownElement for a reference to the drop down.",
-		"jp": "フィルター メンバーのドロップダウンの OK ボタンをクリックした後に発生します。false を返すと、フィルターの適用がキャンセルされます。<br>            ui.hierarchy を使用して、階層への参照を取得します。<br>            ui.filterMembers を使用して、選択されたフィルター メンバーが含まれるコレクションを取得します。すべてのフィルター メンバーが選択された場合、コレクションは空になります。<br>            ui.dropDownElement を使用して、ドロップ ダウンへの参照を取得します。"
-	}
-    },
-    "filterDropDownOpened": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Fired after the filter members drop down opens.<br>            Use ui.hierarchy for a reference to the hierarchy.<br>            Use ui.dropDownElement for a reference to the drop down.",
-		"jp": "フィルター メンバーのドロップダウンが開いた後に発生します。<br>            ui.hierarchy を使用して、階層への参照を取得します。<br>            ui.dropDownElement を使用して、ドロップ ダウンへの参照を取得します。"
-	}
-    },
-    "filterDropDownOpening": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Fired before the filter members drop down opens. Return false to cancel the opening.<br>            Use ui.hierarchy for a reference to the hierarchy.",
-		"jp": "フィルター メンバーのドロップダウンを開く前に発生します。false を返すと、開く操作がキャンセルされます。<br>            ui.hierarchy を使用して、階層への参照を取得します。"
-	}
-    },
-    "filterMembersLoaded": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Fired after the filter members are loaded.<br>            Use ui.parent to get the parent node or the igTree instance in the initial load.<br>            Use ui.rootFilterMembers for a collection with the root filter members (deprecated).<br>            Use ui.filterMembers for a collection with the newly loaded filter members.",
-		"jp": "フィルター メンバーを読み込んだ後に発生します。<br>            ui.parent を使用して、初期ロードで親ノードまたは igTree インスタンスを取得します。<br>            ui.rootFilterMembers を使用して、ルート フィルター メンバーが含まれるコレクションを取得します (非推奨)。<br>            ui.filterMembers を使用して、新しく読み込んだフィルター メンバーのコレクションを取得します。"
-	}
-    },
-    "headersSorted": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Fired after the sorting of the headers.<br>            Function takes arguments evt and ui.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.levelSortDirections to get an array of the level names and sort directions that were used.<br>            Use ui.appliedLevelSortDirections to get an array of the level names and sort directions that were actually applied to the table view.",
-		"jp": "ヘッダーが並べ替えた後に発生します。<br>            関数は引数 evt および ui を取得します。<br>            ui.owner を使用して、ピボット グリッドへの参照を取得します。<br>            ui.levelSortDirections を使用して、レベル名および使用された並び替え方向の配列を取得します。<br>            ui.appliedLevelSortDirections を使用して、テーブル ビューに実際に適用されたレベル名および並び替え方向の配列を取得します。"
-	}
-    },
-    "headersSorting": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Fired before the sorting of the headers.<br>            Function takes arguments evt and ui. Return false to cancel the sorting.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.levelSortDirections to get an array of the level names and sort directions that will be used.",
-		"jp": "ヘッダーを並べ替える前に発生します。<br>            関数は引数 evt および ui を取得します。false を返すと、並べ替え操作がキャンセルされます。<br>            ui.owner を使用して、ピボット グリッドへの参照を取得します。<br>            ui.levelSortDirections を使用して、レベル名および使用される並び替え方向の配列を取得します。"
-	}
-    },
-    "metadataDropped": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Fired after a metadata item drop.<br>            Use ui.targetElement for a reference to the drop target.<br>            Use ui.draggedElement for a reference to the dragged element.<br>            Use ui.metadata to get a reference to the data.<br>            Use ui.metadataIndex to get the index at which the metadata is inserted.<br>            Use ui.helper to get a reference to the helper.<br>            Use ui.offset to get a reference to the offset.<br>            Use ui.position to get a reference to the current position of the draggable element.",
-		"jp": "メタデータ項目のドロップの後に発生します。<br>            ui.targetElement を使用して、ドロップ ターゲットへの参照を取得します。<br>            ui.draggedElement を使用して、ドラッグされた要素への参照を取得します。<br>            ui.metadata を使用して、データへの参照を取得します。<br>            ui.metadataIndex を使用して、メタデータが挿入したインデックスを取得します。<br>            ui.helper を使用して、ヘルパーへの参照を取得します。<br>            ui.offset を使用して、オフセットへの参照を取得します。<br>            ui.position を使用して、ドラッグ可能な要素の現在の位置への参照を取得します。"
-	}
-    },
-    "metadataDropping": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Fired before a metadata item drop. Return false to cancel the drop.<br>            Use ui.targetElement for a reference to the drop target.<br>            Use ui.draggedElement for a reference to the metadata item element.<br>            Use ui.metadata to get a reference to the data.<br>            Use ui.metadataIndex to get the index at which the metadata will be inserted.<br>            Use ui.helper to get a reference to the helper.<br>            Use ui.offset to get a reference to the offset.<br>            Use ui.position to get a reference to the current position of the draggable element.",
-		"jp": "メタデータ項目のドロップの前に発生します。false を返すと、ドロップ操作がキャンセルされます。<br>            ui.targetElement を使用して、ドロップ ターゲットへの参照を取得します。<br>            ui.draggedElement を使用して、メタデータ項目要素への参照を取得します。<br>            ui.metadata を使用して、データへの参照を取得します。<br>            ui.metadataIndex を使用して、メタデータが挿入される位置のインデックスを取得します。<br>            ui.helper を使用して、ヘルパーへの参照を取得します。<br>            ui.offset を使用して、オフセットへの参照を取得します。<br>            ui.position を使用して、ドラッグ可能な要素の現在の位置への参照を取得します。"
-	}
-    },
-    "metadataRemoved": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Fired after a metadata item is removed when the user clicks the close icon.<br>            Use ui.metadata to get a reference to the data.",
-		"jp": "ユーザーが [閉じる] アイコンをクリックしてメタデータ項目が削除した後に発生します。<br>            ui.metadata を使用して、データへの参照を取得します。"
-	}
-    },
-    "metadataRemoving": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Fired before a metadata item is removed when the user clicks the close icon. Return false to cancel the removing.<br>            Use ui.targetElement for a reference to the dragged element.<br>            Use ui.metadata to get a reference to the data.",
-		"jp": "ユーザーが [閉じる] アイコンをクリックしてメタデータ項目を削除する前に発生します。false を返すと、削除操作がキャンセルされます。<br>            ui.targetElement を使用して、ドラッグされた要素への参照を取得します。<br>            ui.metadata を使用して、データへの参照を取得します。"
-	}
-    },
-    "pivotGridHeadersRendered": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Event fired after the headers have been rendered.<br>            Function takes arguments evt and ui.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.grid to get a reference to the igGrid widget, which holds the headers.<br>            Use ui.table to get a reference to the headers table DOM element.",
-		"jp": "ヘッダーが描画された後に発生するイベント。<br>            関数は引数 evt および ui を取得します。<br>            ui.owner を使用して、ピボット グリッドへの参照を取得します。<br>            ui.grid を使用して、ヘッダーを格納する igGrid ウィジェットへの参照を取得します。<br>            ui.table を使用して、ヘッダー テーブル DOM 要素への参照を取得します。"
-	}
-    },
-    "pivotGridRendered": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Event fired after the whole grid widget has been rendered (including headers, footers, etc.).<br>            Function takes arguments evt and ui.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.grid to get reference to the igGrid widget, which represents the data.",
-		"jp": "グリッド ウィジェット全体 (ヘッダー、フッターなどを含む) が描画された後に発生するイベント。<br>            関数は引数 evt および ui を取得します。<br>            ui.owner を使用して、ピボット グリッドへの参照を取得します。<br>            ui.grid を使用して、データを表す igGrid ウィジェットへの参照を取得します。"
-	}
-    },
-    "sorted": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Fired after the sorting of the columns.<br>            Function takes arguments evt and ui.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.sortDirections to get an array of the tuple indices and sort directions that were passed to the table view.<br>            Use ui.appliedSortDirections to get an array of the tuple indices and sort directions that were actually applied to the table view.",
-		"jp": "列が並べ替えた後に発生します。<br>            関数は引数 evt および ui を取得します。<br>            ui.owner を使用して、ピボット グリッドへの参照を取得します。<br>            ui.sortDirections を使用して、テーブル ビューに渡されたタプル インデックスおよび並び替え方向の配列を取得します。<br>            ui.appliedSortDirections を使用して、テーブル ビューに実際に適用されたタプル インデックスおよび並び替え方向の配列を取得します。"
-	}
-    },
-    "sorting": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Fired before the sorting of the columns.<br>            Function takes arguments evt and ui. Return false to cancel the sorting.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.sortDirections to get an array of the tuple indices and sort directions that will be used.",
-		"jp": "列を並べ替える前に発生します。<br>            関数は引数 evt および ui を取得します。false を返すと、並べ替え操作がキャンセルされます。<br>            ui.owner を使用して、ピボット グリッドへの参照を取得します。<br>            ui.sortDirections を使用して、タプル インデックスおよび使用される並び替え方向の配列を取得します。"
-	}
-    },
-    "tupleMemberCollapsed": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Fired after the collapse of the tuple member.<br>            Function takes arguments evt and ui.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.dataSource to get a reference to the data source.<br>            Use ui.axisName to get the name of axis, which holds the member and the tuple.<br>            Use ui.tupleIndex to get the index of the tuple in the axis.<br>            Use ui.memberIndex to get the index of the member in the tuple.",
-		"jp": "タプル メンバーが縮小した後に発生します。<br>            関数は引数 evt および ui を取得します。<br>            ui.owner を使用して、ピボット グリッドへの参照を取得します。<br>            ui.dataSource を使用して、データ ソースへの参照を取得します。<br>            ui.axisName を使用して、メンバーおよびタプルを格納する保持する軸の名前を取得します。<br>            ui.tupleIndex を使用して、軸に含まれるタプルのインデックスを取得します。<br>            ui.memberIndex を使用して、タプルに含まれるメンバーのインデックスを取得します。"
-	}
-    },
-    "tupleMemberCollapsing": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Fired before the collapse of the tuple member.<br>            Function takes arguments evt and ui. Return false to cancel the collapsing.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.dataSource to get a reference to the data source.<br>            Use ui.axisName to get the name of axis, which holds the member and the tuple.<br>            Use ui.tupleIndex to get the index of the tuple in the axis.<br>            Use ui.memberIndex to get the index of the member in the tuple.",
-		"jp": "タプル メンバーを縮小する前に発生します。<br>            関数は引数 evt および ui を取得します。false を返すと、縮小操作がキャンセルされます。<br>            ui.owner を使用して、ピボット グリッドへの参照を取得します。<br>            ui.dataSource を使用して、データ ソースへの参照を取得します。<br>            ui.axisName を使用して、メンバーおよびタプルを格納する保持する軸の名前を取得します。<br>            ui.tupleIndex を使用して、軸に含まれるタプルのインデックスを取得します。<br>            ui.memberIndex を使用して、タプルに含まれるメンバーのインデックスを取得します。"
-	}
-    },
-    "tupleMemberExpanded": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Fired after the expand of the tuple member.<br>            Function takes arguments evt and ui.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.dataSource to get a reference to the data source.<br>            Use ui.axisName to get the name of axis, which holds the member and the tuple.<br>            Use ui.tupleIndex to get the index of the tuple in the axis.<br>            Use ui.memberIndex to get the index of the member in the tuple.",
-		"jp": "タプル メンバーが展開した後に発生します。<br>            関数は引数 evt および ui を取得します。<br>            ui.owner を使用して、ピボット グリッドへの参照を取得します。<br>            ui.dataSource を使用して、データ ソースへの参照を取得します。<br>            ui.axisName を使用して、メンバーおよびタプルを格納する保持する軸の名前を取得します。<br>            ui.tupleIndex を使用して、軸に含まれるタプルのインデックスを取得します。<br>            ui.memberIndex を使用して、タプルに含まれるメンバーのインデックスを取得します。"
-	}
-    },
-    "tupleMemberExpanding": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-		"en": "Fired before the expand of the tuple member.<br>            Function takes arguments evt and ui. Return false to cancel the expanding.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.dataSource to get a reference to the data source.<br>            Use ui.axisName to get the name of axis, which holds the member and the tuple.<br>            Use ui.tupleIndex to get the index of the tuple in the axis.<br>            Use ui.memberIndex to get the index of the member in the tuple.",
-		"jp": "タプル メンバーを展開する前に発生します。<br>            関数は引数 evt および ui を取得します。false を返すと、展開操作がキャンセルされます。<br>            ui.owner を使用して、ピボット グリッドへの参照を取得します。<br>            ui.dataSource を使用して、データ ソースへの参照を取得します。<br>            ui.axisName を使用して、メンバーおよびタプルを格納する保持する軸の名前を取得します。<br>            ui.tupleIndex を使用して、軸に含まれるタプルのインデックスを取得します。<br>            ui.memberIndex を使用して、タプルに含まれるメンバーのインデックスを取得します。"
-	}
-    }
-  },
-  "properties": {
-    "allowHeaderColumnsSorting": {
-      "type": "bool",
-      "defaultValue": false,
-      "description": {
-		"en": "Enables sorting of the header cells in columns.",
-		"jp": "列にヘッダー セルの並べ替えを有効にします。"
-	}
-    },
-    "allowHeaderRowsSorting": {
-      "type": "bool",
-      "defaultValue": false,
-      "description": {
-		"en": "Enables sorting of the header cells in rows.",
-		"jp": "行にヘッダー セルの並べ替えを有効にします。"
-	}
-    },
-    "allowSorting": {
-      "type": "bool",
-      "defaultValue": false,
-      "description": {
-		"en": "Enables sorting of the value cells in columns.",
-		"jp": "列に値セルの並べ替えを有効にします。"
-	}
-    },
-    "compactColumnHeaderIndentation": {
-      "type": "number",
-      "defaultValue": 30.0,
-      "description": {
-		"en": "The indentation for every level column when the compactColumnHeaders is set to true.",
-		"jp": "compactColumnHeaders が true に設定される場合、各レベル列のインデント。"
-	}
-    },
-    "compactColumnHeaders": {
-      "type": "bool",
-      "defaultValue": false,
-      "description": {
-		"en": "A boolean value indicating wheter the column headers should be arranged for compact header layout - each hieararchy is in a single row.",
-		"jp": "列ヘッダーがコンパクト ヘッダー レイアウト (各階層が単一の行で表示されるレイアウト) で配置するかどうかを示すブール値。"
-	}
-    },
-    "compactRowHeaderIndentation": {
-      "type": "number",
-      "defaultValue": 20.0,
-      "description": {
-		"en": "The indentation for every level row when the compactRowHeaders is set to true.",
-		"jp": "compactRowHeaders が true に設定される場合、各レベル行のインデント。"
-	}
-    },
-    "compactRowHeaders": {
-      "type": "bool",
-      "defaultValue": true,
-      "description": {
-		"en": "A boolean value indicating wheter the row headers should be arranged for compact header layout - each hieararchy is in a single column.",
-		"jp": "行ヘッダーがコンパクト ヘッダー レイアウト (各階層が単一の列で表示されるレイアウト) で配置するかどうかを示すブール値。"
-	}
-    },
-    "customMoveValidation": {
-      "type": "function",
-      "defaultValue": null,
-      "description": {
-		"en": "A function that will be called to determine if an item can be moved in or dropped on an area of the pivot grid.<br>            paramType=\"string\" The location where the item will be moved - igPivotGrid, igPivotDataSelector, filters, rows, columns or measures.<br>            paramType=\"string\" The type of the item - Hierarchy, Measure or MeasureList.<br>            paramType=\"string\" The unique name of the item.<br>            returnType=\"bool\"  The function must return true if the item should be accepted.",
-		"jp": "項目をピボット グリッドの領域に移動するかドロップするかどうかを決定するために呼び出される関数。<br>            paramType=\"string\" 項目に移動する位置 - igPivotGrid、igPivotDataSelector、フィルター、行、列、またはメジャー。<br>            paramType=\"string\" 項目のタイプ - Hierarchy、Measure、または MeasureList。<br>            paramType=\"string\" 項目の一意の名前。<br>            returnType=\"bool\"  項目が有効の場合、関数は True を返します。"
-	}
-    },
-    "dataSource": {
-      "type": "object",
-      "defaultValue": null,
-      "description": {
-		"en": "An instance of $.ig.OlapXmlaDataSource or $.ig.OlapFlatDataSource.",
-		"jp": "$.ig.OlapXmlaDataSource または $.ig.OlapFlatDataSource のインスタンス。"
-	}
-    },
-    "dataSourceOptions": {
-      "type": "object",
-      "defaultValue": null,
-      "description": {
-		"en": "An object that will be used to create an instance of $.ig.OlapXmlaDataSource or $.ig.OlapFlatDataSource.<br>            The provided value must contain an object with settings for one of the data source types - xmlaOptions or flatDataOptions.",
-		"jp": "$.ig.OlapXmlaDataSource または $.ig.OlapFlatDataSource のインスタンスを作成するオブジェクト。<br>            提供される値は xmlaOptions または flatDataOptions のデータ ソース タイプのための設定を含むオブジェクトを含む必要があります。"
-	},
-      "schema": {
-        "xmlaOptions": {
-          "type": "object",
-          "defaultValue": null,
-          "description": {
-		"en": "Settings for creating an instance of $.ig.OlapXmlaDataSource.",
-		"jp": "$.ig.OlapXmlaDataSource のインスタンスを作成するための設定。"
-	},
-          "schema": {
-            "serverUrl": {
-              "type": "string",
-              "defaultValue": null,
-              "description": {
-		"en": "The URL of the XMLA server.",
-		"jp": "XMLA サーバーの URL。"
-	},
-              "reuqired": true
-            },
-            "catalog": {
-              "type": "string",
-              "defaultValue": null,
-              "description": {
-		"en": "The catalog name.",
-		"jp": "カタログ名。"
-	}
-            },
-            "cube": {
-              "type": "string",
-              "defaultValue": null,
-              "description": {
-		"en": "The name of the cube in the data source.",
-		"jp": "データ ソース内のキューブの名前。"
-	}
-            },
-            "measureGroup": {
-              "type": "string",
-              "defaultValue": null,
-              "description": {
-		"en": "The name of the measure group in the data source.",
-		"jp": "データ ソース内のメジャー グループの名前。"
-	}
-            },
-            "requestOptions": {
-              "type": "object",
-              "defaultValue": null,
-              "description": {
-		"en": "An object containing information about how the request to the XMLA server should be processed.",
-		"jp": "XMLA サーバーへの要求を処理する方法についての情報を含むオブジェクト。"
-	},
-              "schema": {
-                "withCredentials": {
-                  "type": "bool",
-                  "defaultValue": false,
-                  "description": {
-		"en": "The value is applied to XmlHttpRequest.withCredentials if supported by the user agent. Setting this property to true will allow IE8/IE9 to make authenticated cross-origin requests to tusted domains through XmlHttpRequest instead of XDomainRequest and will prompt the user for credentials.",
-		"jp": "ユーザー エージェントによってサポートされる場合、値は XmlHttpRequest.withCredentials に適用されます。このプロパティを true に設定すると、IE8/IE9 が、XDomainRequest ではなく XmlHttpRequest を使用して認証済みの同一発信元要求を信頼されるドメインに対して実行できるように、ユーザーに資格情報の入力を求めるプロンプトを表示します。"
-	}
+    "overview": null,
+    "name": "ui.igPivotGrid",
+    "category": null,
+    "visual": true,
+    "events": {
+        "dataSourceInitialized": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
                 },
-                "beforeSend": {
-                  "type": "function",
-                  "defaultValue": null,
-                  "description": {
-		"en": "A callback to be invoked right before the request is send to the server. Extends beforeSend callback of jQuery.ajax's options object.",
-		"jp": "サーバーに要求が送信される直前に呼び出されるコールバック。jQuery.ajax の options オブジェクトの beforeSend コールバックを拡張します。"
-	}
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
                 }
-              }
-            },
-            "enableResultCache": {
-              "type": "bool",
-              "defaultValue": true,
-              "description": {
-		"en": "Enables/disables caching of the XMLA result object.",
-		"jp": "XMLA 結果オブジェクトのキャッシュを有効/無効にします。"
-	}
-            },
-            "discoverProperties": {
-              "type": "object",
-              "defaultValue": null,
-              "description": {
-		"en": "Additional properties sent with every discover request. The object is treated as a key/value store where each property name is used as the key and the property value as the value.",
-		"jp": "追加のプロパティは各ディスカバー要求と送信されます。オブジェクトはキー/値ストアとして保存されます。各プロパティ名はキーで、プロパティ値は値です。"
-	}
-            },
-            "executeProperties": {
-              "type": "object",
-              "defaultValue": null,
-              "description": {
-		"en": "Additional properties sent with every execute request. The object is treated as a key/value store where each property name is used as the key and the property value as the value.",
-		"jp": "追加のプロパティは各実行要求と共に送信されます。オブジェクトはキー/値ストアとして保存されます。各プロパティ名はキーで、プロパティ値は値です。"
-	}
-            },
-            "mdxSettings": {
-              "type": "object",
-              "defaultValue": null,
-              "description": {
-		"en": "Javascript object containing information about how the request to the xmla server should be processed",
-		"jp": "XMLA サーバーへの要求を処理する方法についての情報を含む JavaScript オブジェクト。"
-	},
-              "schema": {
-                "nonEmptyOnRows": {
-                  "type": "bool",
-                  "defaultValue": true,
-                  "description": {
-		"en": "Value indicating whether a NON EMPTY clause is present on ROWS axis. Default value is true",
-		"jp": "NON EMPTY 句が ROWS 軸にあるかどうかを示す値。デフォルト値は true です。"
-	}
-                },
-                "nonEmptyOnColumns": {
-                  "type": "bool",
-                  "defaultValue": true,
-                  "description": {
-		"en": "Value indicating whether a NON EMPTY clause is present on COLUMNS axis. Default value is true",
-		"jp": "NON EMPTY 句が COLUMNS 軸にあるかどうかを示す値。デフォルト値は true です。"
-	}
-                },
-                "addCalculatedMembersOnRows": {
-                  "type": "bool",
-                  "defaultValue": true,
-                  "description": {
-		"en": "Value indicating whether a members' set expressions on ROWS axis should be wrapped with AddCalculatedMembers MDX method. Default value is true ",
-		"jp": "ROWS 軸に対するメンバーのセットの式を AddCalculatedMembers MDX メソッドでラップするどうかを示す値。デフォルト値は true です。 "
-	}
-                },
-                "addCalculatedMembersOnColumns": {
-                  "type": "bool",
-                  "defaultValue": true,
-                  "description": {
-		"en": "Value indicating whether a members' set expressions on COLUMNS axis should be wrapped with AddCalculatedMembers MDX method. Default value is true",
-		"jp": "COLUMNS 軸に対するメンバーのセットの式を AddCalculatedMembers MDX メソッドでラップするどうかを示す値。デフォルト値は true です。"
-	}
-                },
-                "dimensionPropertiesOnRows": {
-                  "type": "array",
-                  "defaultValue": [],
-                  "description": {
-		"en": "String array with the names of intrinsic non-context sensitive member properties applied on ROWS axis. By defult CHILDREN_CARDINALITY and PARENT_UNIQUE_NAME properties are always added to DIMENSION PROPERTIES",
-		"jp": "ROWS 軸に適用される非コンテキスト機密メンバー プロパティの名前を持つ文字列配列。デフォルトでは、CHILDREN_CARDINALITY および PARENT_UNIQUE_NAME プロパティは常に次元プロパティに適用されます。"
-	},
-                  "arrayMemberType": "string"
-                },
-                "dimensionPropertiesOnColumns": {
-                  "type": "array",
-                  "defaultValue": [],
-                  "description": {
-		"en": "String array with the names of intrinsic non-context sensitive member properties applied on COLUMNS axis. By defult CHILDREN_CARDINALITY and PARENT_UNIQUE_NAME properties are always added to DIMENSION PROPERTIES",
-		"jp": "COLUMNS 軸に適用される非コンテキスト機密メンバー プロパティの名前を持つ文字列配列。デフォルトでは、CHILDREN_CARDINALITY および PARENT_UNIQUE_NAME プロパティは常に次元プロパティに適用されます。"
-	},
-                  "arrayMemberType": "string"
-                }
-              }
+            ],
+            "description": {
+                "en": "Fired after the data source has initialized.<br>            Function takes arguments evt and ui.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.dataSource to get a reference to the data source.<br>            Use ui.error to see if an error has occured during initialization.<br>            Use ui.metadataTreeRoot to get a reference to the root of the data source metatadata root item.",
+                "jp": "データ ソースが初期化された後に発生します。<br>            関数は引数 evt および ui を取得します。<br>            ui.owner を使用して、ピボット グリッドへの参照を取得します。<br>            ui.dataSource を使用して、データ ソースへの参照を取得します。<br>            ui.error を使用して、初期化中にエラーが発生したかどうかを確認します。<br>            ui.metadataTreeRoot を使用して、データ ソース メタデータのルート項目への参照を取得します。"
             }
-          }
         },
-        "flatDataOptions": {
-          "type": "object",
-          "defaultValue": null,
-          "description": {
-		"en": "Settings for creating an instance of $.ig.OlapFlatDataSource.",
-		"jp": "$.ig.OlapFlatDataSource のインスタンスを作成するための設定。"
-	},
-          "schema": {
-            "dataSource": {
-              "type": "object",
-              "defaultValue": null,
-              "description": {
-		"en": "Specifies any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself.",
-		"jp": "$.ig.DataSource が受け入れる有効なデータ ソース、または $.ig.DataSource 自体のインスタンスを指定します。"
-	}
+        "dataSourceUpdated": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Fired after the data source has updated.<br>            Function takes arguments evt and ui.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.dataSource to get a reference to the data source.<br>            Use ui.error to see if an error has occured during update.<br>            Use ui.result to get the result of the update operation.",
+                "jp": "データ ソースが更新された後に発生します。<br>            関数は引数 evt および ui を取得します。<br>            ui.owner を使用して、ピボット グリッドへの参照を取得します。<br>            ui.dataSource を使用して、データ ソースへの参照を取得します。<br>            ui.error を使用して、更新中にエラーが発生したかどうかを確認します。<br>            ui.result を使用して、更新操作の結果を取得します。"
+            }
+        },
+        "drag": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Fired on drag. Return false to cancel the drag.<br>            Use ui.metadata to get a reference to the data.<br>            Use ui.helper to get a reference to the helper.<br>            Use ui.offset to get a reference to the offset.<br>            Use ui.originalPosition to get a reference to the original position of the draggable element.<br>            Use ui.position to get a reference to the current position of the draggable element.",
+                "jp": "ドラッグ操作で発生されます。false を返すと、ドラッグ操作がキャンセルされます。<br>            ui.metadata を使用して、データへの参照を取得します。<br>            ui.helper を使用して、ヘルパーへの参照を取得します。<br>            ui.offset を使用して、オフセットへの参照を取得します。<br>            ui.originalPosition を使用して、ドラッグ可能な要素の元の位置への参照を取得します。<br>            ui.position を使用して、ドラッグ可能な要素の現在の位置への参照を取得します。"
+            }
+        },
+        "dragStart": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Fired on drag start. Return false to cancel the dragging.<br>            Use ui.metadata to get a reference to the data.<br>            Use ui.helper to get a reference to the helper.<br>            Use ui.offset to get a reference to the offset.<br>            Use ui.originalPosition to get a reference to the original position of the draggable element.<br>            Use ui.position to get a reference to the current position of the draggable element.",
+                "jp": "ドラッグ開始で発生されます。false を返すと、ドラッグ操作がキャンセルされます。<br>            ui.metadata を使用して、データへの参照を取得します。<br>            ui.helper を使用して、ヘルパーへの参照を取得します。<br>            ui.offset を使用して、オフセットへの参照を取得します。<br>            ui.originalPosition を使用して、ドラッグ可能な要素の元の位置への参照を取得します。<br>            ui.position を使用して、ドラッグ可能な要素の現在の位置への参照を取得します。"
+            }
+        },
+        "dragStop": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Fired on drag stop.<br>            Use ui.helper to get a reference to the helper.<br>            Use ui.offset to get a reference to the offset.<br>            Use ui.originalPosition to get a reference to the original position of the draggable element.<br>            Use ui.position to get a reference to the current position of the draggable element.",
+                "jp": "ドラッグ終了で発生されます。<br>            ui.helper を使用して、ヘルパーへの参照を取得します。<br>            ui.offset を使用して、オフセットへの参照を取得します。<br>            ui.originalPosition を使用して、ドラッグ可能な要素の元の位置への参照を取得します。<br>            ui.position を使用して、ドラッグ可能な要素の現在の位置への参照を取得します。"
+            }
+        },
+        "filterDropDownClosed": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Fired after the filter members drop down closes.<br>            Use ui.hierarchy for a reference to the hierarchy.",
+                "jp": "フィルター メンバーのドロップダウンが閉じた後に発生します。<br>            ui.hierarchy を使用して、階層への参照を取得します。"
+            }
+        },
+        "filterDropDownClosing": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Fired before the filter members drop down closes. Return false to cancel the closing.<br>            Use ui.hierarchy for a reference to the hierarchy.<br>            Use ui.dropDownElement for a reference to the drop down.",
+                "jp": "フィルター メンバーのドロップダウンを閉じる前に発生します。false を返すと、閉じる操作がキャンセルされます。<br>            ui.hierarchy を使用して、階層への参照を取得します。<br>            ui.dropDownElement を使用して、ドロップ ダウンへの参照を取得します。"
+            }
+        },
+        "filterDropDownOk": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Fired after the OK button in the filter members drop down is clicked. Return false to cancel the applying of the filters.<br>            Use ui.hierarchy for a reference to the hierarchy.<br>            Use ui.filterMembers for a collection with the selected filter members. If all filter members are selected the collection will be empty.<br>            Use ui.dropDownElement for a reference to the drop down.",
+                "jp": "フィルター メンバーのドロップダウンの OK ボタンをクリックした後に発生します。false を返すと、フィルターの適用がキャンセルされます。<br>            ui.hierarchy を使用して、階層への参照を取得します。<br>            ui.filterMembers を使用して、選択されたフィルター メンバーが含まれるコレクションを取得します。すべてのフィルター メンバーが選択された場合、コレクションは空になります。<br>            ui.dropDownElement を使用して、ドロップ ダウンへの参照を取得します。"
+            }
+        },
+        "filterDropDownOpened": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Fired after the filter members drop down opens.<br>            Use ui.hierarchy for a reference to the hierarchy.<br>            Use ui.dropDownElement for a reference to the drop down.",
+                "jp": "フィルター メンバーのドロップダウンが開いた後に発生します。<br>            ui.hierarchy を使用して、階層への参照を取得します。<br>            ui.dropDownElement を使用して、ドロップ ダウンへの参照を取得します。"
+            }
+        },
+        "filterDropDownOpening": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Fired before the filter members drop down opens. Return false to cancel the opening.<br>            Use ui.hierarchy for a reference to the hierarchy.",
+                "jp": "フィルター メンバーのドロップダウンを開く前に発生します。false を返すと、開く操作がキャンセルされます。<br>            ui.hierarchy を使用して、階層への参照を取得します。"
+            }
+        },
+        "filterMembersLoaded": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Fired after the filter members are loaded.<br>            Use ui.parent to get the parent node or the igTree instance in the initial load.<br>            Use ui.rootFilterMembers for a collection with the root filter members (deprecated).<br>            Use ui.filterMembers for a collection with the newly loaded filter members.",
+                "jp": "フィルター メンバーを読み込んだ後に発生します。<br>            ui.parent を使用して、初期ロードで親ノードまたは igTree インスタンスを取得します。<br>            ui.rootFilterMembers を使用して、ルート フィルター メンバーが含まれるコレクションを取得します (非推奨)。<br>            ui.filterMembers を使用して、新しく読み込んだフィルター メンバーのコレクションを取得します。"
+            }
+        },
+        "headersSorted": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Fired after the sorting of the headers.<br>            Function takes arguments evt and ui.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.levelSortDirections to get an array of the level names and sort directions that were used.<br>            Use ui.appliedLevelSortDirections to get an array of the level names and sort directions that were actually applied to the table view.",
+                "jp": "ヘッダーが並べ替えた後に発生します。<br>            関数は引数 evt および ui を取得します。<br>            ui.owner を使用して、ピボット グリッドへの参照を取得します。<br>            ui.levelSortDirections を使用して、レベル名および使用された並び替え方向の配列を取得します。<br>            ui.appliedLevelSortDirections を使用して、テーブル ビューに実際に適用されたレベル名および並び替え方向の配列を取得します。"
+            }
+        },
+        "headersSorting": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Fired before the sorting of the headers.<br>            Function takes arguments evt and ui. Return false to cancel the sorting.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.levelSortDirections to get an array of the level names and sort directions that will be used.",
+                "jp": "ヘッダーを並べ替える前に発生します。<br>            関数は引数 evt および ui を取得します。false を返すと、並べ替え操作がキャンセルされます。<br>            ui.owner を使用して、ピボット グリッドへの参照を取得します。<br>            ui.levelSortDirections を使用して、レベル名および使用される並び替え方向の配列を取得します。"
+            }
+        },
+        "metadataDropped": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Fired after a metadata item drop.<br>            Use ui.targetElement for a reference to the drop target.<br>            Use ui.draggedElement for a reference to the dragged element.<br>            Use ui.metadata to get a reference to the data.<br>            Use ui.metadataIndex to get the index at which the metadata is inserted.<br>            Use ui.helper to get a reference to the helper.<br>            Use ui.offset to get a reference to the offset.<br>            Use ui.position to get a reference to the current position of the draggable element.",
+                "jp": "メタデータ項目のドロップの後に発生します。<br>            ui.targetElement を使用して、ドロップ ターゲットへの参照を取得します。<br>            ui.draggedElement を使用して、ドラッグされた要素への参照を取得します。<br>            ui.metadata を使用して、データへの参照を取得します。<br>            ui.metadataIndex を使用して、メタデータが挿入したインデックスを取得します。<br>            ui.helper を使用して、ヘルパーへの参照を取得します。<br>            ui.offset を使用して、オフセットへの参照を取得します。<br>            ui.position を使用して、ドラッグ可能な要素の現在の位置への参照を取得します。"
+            }
+        },
+        "metadataDropping": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Fired before a metadata item drop. Return false to cancel the drop.<br>            Use ui.targetElement for a reference to the drop target.<br>            Use ui.draggedElement for a reference to the metadata item element.<br>            Use ui.metadata to get a reference to the data.<br>            Use ui.metadataIndex to get the index at which the metadata will be inserted.<br>            Use ui.helper to get a reference to the helper.<br>            Use ui.offset to get a reference to the offset.<br>            Use ui.position to get a reference to the current position of the draggable element.",
+                "jp": "メタデータ項目のドロップの前に発生します。false を返すと、ドロップ操作がキャンセルされます。<br>            ui.targetElement を使用して、ドロップ ターゲットへの参照を取得します。<br>            ui.draggedElement を使用して、メタデータ項目要素への参照を取得します。<br>            ui.metadata を使用して、データへの参照を取得します。<br>            ui.metadataIndex を使用して、メタデータが挿入される位置のインデックスを取得します。<br>            ui.helper を使用して、ヘルパーへの参照を取得します。<br>            ui.offset を使用して、オフセットへの参照を取得します。<br>            ui.position を使用して、ドラッグ可能な要素の現在の位置への参照を取得します。"
+            }
+        },
+        "metadataRemoved": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Fired after a metadata item is removed when the user clicks the close icon.<br>            Use ui.metadata to get a reference to the data.",
+                "jp": "ユーザーが [閉じる] アイコンをクリックしてメタデータ項目が削除した後に発生します。<br>            ui.metadata を使用して、データへの参照を取得します。"
+            }
+        },
+        "metadataRemoving": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Fired before a metadata item is removed when the user clicks the close icon. Return false to cancel the removing.<br>            Use ui.targetElement for a reference to the dragged element.<br>            Use ui.metadata to get a reference to the data.",
+                "jp": "ユーザーが [閉じる] アイコンをクリックしてメタデータ項目を削除する前に発生します。false を返すと、削除操作がキャンセルされます。<br>            ui.targetElement を使用して、ドラッグされた要素への参照を取得します。<br>            ui.metadata を使用して、データへの参照を取得します。"
+            }
+        },
+        "pivotGridHeadersRendered": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event fired after the headers have been rendered.<br>            Function takes arguments evt and ui.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.grid to get a reference to the igGrid widget, which holds the headers.<br>            Use ui.table to get a reference to the headers table DOM element.",
+                "jp": "ヘッダーが描画された後に発生するイベント。<br>            関数は引数 evt および ui を取得します。<br>            ui.owner を使用して、ピボット グリッドへの参照を取得します。<br>            ui.grid を使用して、ヘッダーを格納する igGrid ウィジェットへの参照を取得します。<br>            ui.table を使用して、ヘッダー テーブル DOM 要素への参照を取得します。"
+            }
+        },
+        "pivotGridRendered": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Event fired after the whole grid widget has been rendered (including headers, footers, etc.).<br>            Function takes arguments evt and ui.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.grid to get reference to the igGrid widget, which represents the data.",
+                "jp": "グリッド ウィジェット全体 (ヘッダー、フッターなどを含む) が描画された後に発生するイベント。<br>            関数は引数 evt および ui を取得します。<br>            ui.owner を使用して、ピボット グリッドへの参照を取得します。<br>            ui.grid を使用して、データを表す igGrid ウィジェットへの参照を取得します。"
+            }
+        },
+        "sorted": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Fired after the sorting of the columns.<br>            Function takes arguments evt and ui.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.sortDirections to get an array of the tuple indices and sort directions that were passed to the table view.<br>            Use ui.appliedSortDirections to get an array of the tuple indices and sort directions that were actually applied to the table view.",
+                "jp": "列が並べ替えた後に発生します。<br>            関数は引数 evt および ui を取得します。<br>            ui.owner を使用して、ピボット グリッドへの参照を取得します。<br>            ui.sortDirections を使用して、テーブル ビューに渡されたタプル インデックスおよび並び替え方向の配列を取得します。<br>            ui.appliedSortDirections を使用して、テーブル ビューに実際に適用されたタプル インデックスおよび並び替え方向の配列を取得します。"
+            }
+        },
+        "sorting": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Fired before the sorting of the columns.<br>            Function takes arguments evt and ui. Return false to cancel the sorting.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.sortDirections to get an array of the tuple indices and sort directions that will be used.",
+                "jp": "列を並べ替える前に発生します。<br>            関数は引数 evt および ui を取得します。false を返すと、並べ替え操作がキャンセルされます。<br>            ui.owner を使用して、ピボット グリッドへの参照を取得します。<br>            ui.sortDirections を使用して、タプル インデックスおよび使用される並び替え方向の配列を取得します。"
+            }
+        },
+        "tupleMemberCollapsed": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Fired after the collapse of the tuple member.<br>            Function takes arguments evt and ui.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.dataSource to get a reference to the data source.<br>            Use ui.axisName to get the name of axis, which holds the member and the tuple.<br>            Use ui.tupleIndex to get the index of the tuple in the axis.<br>            Use ui.memberIndex to get the index of the member in the tuple.",
+                "jp": "タプル メンバーが縮小した後に発生します。<br>            関数は引数 evt および ui を取得します。<br>            ui.owner を使用して、ピボット グリッドへの参照を取得します。<br>            ui.dataSource を使用して、データ ソースへの参照を取得します。<br>            ui.axisName を使用して、メンバーおよびタプルを格納する保持する軸の名前を取得します。<br>            ui.tupleIndex を使用して、軸に含まれるタプルのインデックスを取得します。<br>            ui.memberIndex を使用して、タプルに含まれるメンバーのインデックスを取得します。"
+            }
+        },
+        "tupleMemberCollapsing": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Fired before the collapse of the tuple member.<br>            Function takes arguments evt and ui. Return false to cancel the collapsing.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.dataSource to get a reference to the data source.<br>            Use ui.axisName to get the name of axis, which holds the member and the tuple.<br>            Use ui.tupleIndex to get the index of the tuple in the axis.<br>            Use ui.memberIndex to get the index of the member in the tuple.",
+                "jp": "タプル メンバーを縮小する前に発生します。<br>            関数は引数 evt および ui を取得します。false を返すと、縮小操作がキャンセルされます。<br>            ui.owner を使用して、ピボット グリッドへの参照を取得します。<br>            ui.dataSource を使用して、データ ソースへの参照を取得します。<br>            ui.axisName を使用して、メンバーおよびタプルを格納する保持する軸の名前を取得します。<br>            ui.tupleIndex を使用して、軸に含まれるタプルのインデックスを取得します。<br>            ui.memberIndex を使用して、タプルに含まれるメンバーのインデックスを取得します。"
+            }
+        },
+        "tupleMemberExpanded": {
+            "cancellable": false,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Fired after the expand of the tuple member.<br>            Function takes arguments evt and ui.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.dataSource to get a reference to the data source.<br>            Use ui.axisName to get the name of axis, which holds the member and the tuple.<br>            Use ui.tupleIndex to get the index of the tuple in the axis.<br>            Use ui.memberIndex to get the index of the member in the tuple.",
+                "jp": "タプル メンバーが展開した後に発生します。<br>            関数は引数 evt および ui を取得します。<br>            ui.owner を使用して、ピボット グリッドへの参照を取得します。<br>            ui.dataSource を使用して、データ ソースへの参照を取得します。<br>            ui.axisName を使用して、メンバーおよびタプルを格納する保持する軸の名前を取得します。<br>            ui.tupleIndex を使用して、軸に含まれるタプルのインデックスを取得します。<br>            ui.memberIndex を使用して、タプルに含まれるメンバーのインデックスを取得します。"
+            }
+        },
+        "tupleMemberExpanding": {
+            "cancellable": true,
+            "args": [
+                {
+                    "name": "evt",
+                    "type": "Event",
+                    "optional": false
+                },
+                {
+                    "name": "ui",
+                    "type": "Object",
+                    "optional": false
+                }
+            ],
+            "description": {
+                "en": "Fired before the expand of the tuple member.<br>            Function takes arguments evt and ui. Return false to cancel the expanding.<br>            Use ui.owner to get a reference to the pivot grid.<br>            Use ui.dataSource to get a reference to the data source.<br>            Use ui.axisName to get the name of axis, which holds the member and the tuple.<br>            Use ui.tupleIndex to get the index of the tuple in the axis.<br>            Use ui.memberIndex to get the index of the member in the tuple.",
+                "jp": "タプル メンバーを展開する前に発生します。<br>            関数は引数 evt および ui を取得します。false を返すと、展開操作がキャンセルされます。<br>            ui.owner を使用して、ピボット グリッドへの参照を取得します。<br>            ui.dataSource を使用して、データ ソースへの参照を取得します。<br>            ui.axisName を使用して、メンバーおよびタプルを格納する保持する軸の名前を取得します。<br>            ui.tupleIndex を使用して、軸に含まれるタプルのインデックスを取得します。<br>            ui.memberIndex を使用して、タプルに含まれるメンバーのインデックスを取得します。"
+            }
+        }
+    },
+    "properties": {
+        "allowHeaderColumnsSorting": {
+            "type": "bool",
+            "defaultValue": false,
+            "description": {
+                "en": "Enables sorting of the header cells in columns.",
+                "jp": "列にヘッダー セルの並べ替えを有効にします。"
+            }
+        },
+        "allowHeaderRowsSorting": {
+            "type": "bool",
+            "defaultValue": false,
+            "description": {
+                "en": "Enables sorting of the header cells in rows.",
+                "jp": "行にヘッダー セルの並べ替えを有効にします。"
+            }
+        },
+        "allowSorting": {
+            "type": "bool",
+            "defaultValue": false,
+            "description": {
+                "en": "Enables sorting of the value cells in columns.",
+                "jp": "列に値セルの並べ替えを有効にします。"
+            }
+        },
+        "compactColumnHeaderIndentation": {
+            "type": "number",
+            "defaultValue": 30.0,
+            "description": {
+                "en": "The indentation for every level column when the compactColumnHeaders is set to true.",
+                "jp": "compactColumnHeaders が true に設定される場合、各レベル列のインデント。"
+            }
+        },
+        "compactColumnHeaders": {
+            "type": "bool",
+            "defaultValue": false,
+            "description": {
+                "en": "A boolean value indicating wheter the column headers should be arranged for compact header layout - each hieararchy is in a single row.",
+                "jp": "列ヘッダーがコンパクト ヘッダー レイアウト (各階層が単一の行で表示されるレイアウト) で配置するかどうかを示すブール値。"
+            }
+        },
+        "compactRowHeaderIndentation": {
+            "type": "number",
+            "defaultValue": 20.0,
+            "description": {
+                "en": "The indentation for every level row when the compactRowHeaders is set to true.",
+                "jp": "compactRowHeaders が true に設定される場合、各レベル行のインデント。"
+            }
+        },
+        "compactRowHeaders": {
+            "type": "bool",
+            "defaultValue": true,
+            "description": {
+                "en": "A boolean value indicating wheter the row headers should be arranged for compact header layout - each hieararchy is in a single column.",
+                "jp": "行ヘッダーがコンパクト ヘッダー レイアウト (各階層が単一の列で表示されるレイアウト) で配置するかどうかを示すブール値。"
+            }
+        },
+        "customMoveValidation": {
+            "type": "function",
+            "defaultValue": null,
+            "description": {
+                "en": "A function that will be called to determine if an item can be moved in or dropped on an area of the pivot grid.<br>            paramType=\"string\" The location where the item will be moved - igPivotGrid, igPivotDataSelector, filters, rows, columns or measures.<br>            paramType=\"string\" The type of the item - Hierarchy, Measure or MeasureList.<br>            paramType=\"string\" The unique name of the item.<br>            returnType=\"bool\"  The function must return true if the item should be accepted.",
+                "jp": "項目をピボット グリッドの領域に移動するかドロップするかどうかを決定するために呼び出される関数。<br>            paramType=\"string\" 項目に移動する位置 - igPivotGrid、igPivotDataSelector、フィルター、行、列、またはメジャー。<br>            paramType=\"string\" 項目のタイプ - Hierarchy、Measure、または MeasureList。<br>            paramType=\"string\" 項目の一意の名前。<br>            returnType=\"bool\"  項目が有効の場合、関数は True を返します。"
+            }
+        },
+        "dataSource": {
+            "type": "object",
+            "defaultValue": null,
+            "description": {
+                "en": "An instance of $.ig.OlapXmlaDataSource or $.ig.OlapFlatDataSource.",
+                "jp": "$.ig.OlapXmlaDataSource または $.ig.OlapFlatDataSource のインスタンス。"
+            }
+        },
+        "dataSourceOptions": {
+            "type": "object",
+            "defaultValue": null,
+            "description": {
+                "en": "An object that will be used to create an instance of $.ig.OlapXmlaDataSource or $.ig.OlapFlatDataSource.<br>            The provided value must contain an object with settings for one of the data source types - xmlaOptions or flatDataOptions.",
+                "jp": "$.ig.OlapXmlaDataSource または $.ig.OlapFlatDataSource のインスタンスを作成するオブジェクト。<br>            提供される値は xmlaOptions または flatDataOptions のデータ ソース タイプのための設定を含むオブジェクトを含む必要があります。"
             },
-            "dataSourceUrl": {
-              "type": "string",
-              "defaultValue": null,
-              "description": {
-		"en": "Specifies a remote URL accepted by $.ig.DataSource in order to request data from it.",
-		"jp": "$.ig.DataSource からデータを要求するには、$.ig.DataSource により承諾されたリモート URL を指定します。"
-	}
-            },
-            "dataSourceType": {
-              "type": "string",
-              "defaultValue": null,
-              "description": {
-		"en": "Explicitly set data source type (such as 'json'). Please refer to the documentation of $.ig.DataSource and its type property.",
-		"jp": "データ ソースのタイプ ('json' など) を明示的に設定します。$.ig.DataSource とそのタイプ プロパティのドキュメントを参照してください。"
-	}
-            },
-            "responseDataKey": {
-              "type": "string",
-              "defaultValue": null,
-              "description": {
-		"en": "Specifies the name of the property in which data records are held if the response is wrapped.",
-		"jp": "応答がラップされる場合に、データ レコードが保持されるプロパティの名前を指定します。"
-	}
-            },
-            "responseDataType": {
-              "type": "string",
-              "defaultValue": null,
-              "description": {
-		"en": "Explicitly set data source type (such as 'json'). Please refer to the documentation of $.ig.DataSource and its type property.",
-		"jp": "データ ソースのタイプ ('json' など) を明示的に設定します。$.ig.DataSource とそのタイプ プロパティのドキュメントを参照してください。"
-	}
-            },
-            "metadata": {
-              "type": "object",
-              "defaultValue": null,
-              "description": {
-		"en": "An object containing processing instructions for the $.ig.DataSource data.",
-		"jp": "$.ig.DataSource データの処理命令を含むオブジェクト。"
-	},
-              "required": true,
-              "schema": {
-                "cube": {
-                  "type": "object",
-                  "defaultValue": null,
-                  "description": {
-		"en": "Metadata used for the creation of the cube.",
-		"jp": "キューブの作成に使用されるメタデータ。"
-	},
-                  "required": true,
-                  "schema": {
-                    "name": {
-                      "type": "string",
-                      "defaultValue": null,
-                      "description": {
-		"en": "A caption for the cube.",
-		"jp": "キューブのキャプション。"
-	},
-                      "required": true
+            "schema": {
+                "xmlaOptions": {
+                    "type": "object",
+                    "defaultValue": null,
+                    "description": {
+                        "en": "Settings for creating an instance of $.ig.OlapXmlaDataSource.",
+                        "jp": "$.ig.OlapXmlaDataSource のインスタンスを作成するための設定。"
                     },
-                    "caption": {
-                      "type": "string",
-                      "defaultValue": null,
-                      "description": {
-		"en": "A caption for the measures dimension.",
-		"jp": "メジャー ディメンションのキャプション。"
-	}
-                    },
-                    "measuresDimension": {
-                      "type": "object",
-                      "defaultValue": null,
-                      "description": {
-		"en": "An object providing information about the measures' root node.",
-		"jp": "メジャーのルート ノードについての情報を提供するオブジェクト。"
-	},
-                      "schema": {
-                        "name": {
-                          "type": "string",
-                          "defaultValue": "Measures",
-                          "description": {
-		"en": "A unique name for the measures dimension.",
-		"jp": "メジャー ディメンションの一意の名前。"
-	},
-                          "required": true
+                    "schema": {
+                        "serverUrl": {
+                            "type": "string",
+                            "defaultValue": null,
+                            "description": {
+                                "en": "The URL of the XMLA server.",
+                                "jp": "XMLA サーバーの URL。"
+                            },
+                            "reuqired": true
                         },
-                        "caption": {
-                          "type": "string",
-                          "defaultValue": "Measures",
-                          "description": {
-		"en": "A caption for the measures dimension.",
-		"jp": "メジャー ディメンションのキャプション。"
-	}
-                        },
-                        "measures": {
-                          "type": "array",
-                          "defaultValue": null,
-                          "description": {
-		"en": "An array of measure metadata objects.",
-		"jp": "メジャー メタデータ オブジェクトの配列。"
-	},
-                          "schema": {
-                            "name": {
-                              "type": "string",
-                              "defaultValue": null,
-                              "description": {
-		"en": "A unique name for the measure.",
-		"jp": "メジャーの一意の名前。"
-	},
-                              "required": true
-                            },
-                            "caption": {
-                              "type": "string",
-                              "defaultValue": null,
-                              "description": {
-		"en": "A caption for the measure.",
-		"jp": "メジャーのキャプション。"
-	}
-                            },
-                            "aggregator": {
-                              "type": "function",
-                              "defaultValue": null,
-                              "description": {
-		"en": "An aggregator function called when each cell is evaluated. Returns a value for the cell. If the returned value is null, no cell will be created in for the data source result.",
-		"jp": "アグリゲーター関数は、各セルが評価されるときに呼び出されます。セルの値を返します。返された値が nul の場合、データ ソースの結果にセルは作成されません。"
-	},
-                              "required": true
-                            },
-                            "displayFolder": {
-                              "type": "string",
-                              "defaultValue": null,
-                              "description": {
-		"en": "The path used when displaying the measure in the user interface. Nested folders are indicated by a backslash (\\).",
-		"jp": "ユーザーインターフェイスで階層を表示する際に使用されるパス。入れ子になったフォルダーはバックスラッシュ (\\) で示されます。"
-	}
+                        "catalog": {
+                            "type": "string",
+                            "defaultValue": null,
+                            "description": {
+                                "en": "The catalog name.",
+                                "jp": "カタログ名。"
                             }
-                          }
-                        }
-                      }
-                    },
-                    "dimensions": {
-                      "type": "array",
-                      "defaultValue": null,
-                      "description": {
-		"en": "An array of dimension metadata objects.",
-		"jp": "ディメンション メタデータ オブジェクトの配列。"
-	},
-                      "required": true,
-                      "schema": {
-                        "name": {
-                          "type": "string",
-                          "defaultValue": null,
-                          "description": {
-		"en": "A unique name for the dimension.",
-		"jp": "ディメンションの一意の名前。"
-	},
-                          "required": true
                         },
-                        "caption": {
-                          "type": "string",
-                          "defaultValue": null,
-                          "description": {
-		"en": "A caption for the dimension.",
-		"jp": "ディメンションのキャプション。"
-	}
+                        "cube": {
+                            "type": "string",
+                            "defaultValue": null,
+                            "description": {
+                                "en": "The name of the cube in the data source.",
+                                "jp": "データ ソース内のキューブの名前。"
+                            }
                         },
-                        "hierarchies": {
-                          "type": "array",
-                          "defaultValue": null,
-                          "description": {
-		"en": "An array of hierarchy metadata objects.",
-		"jp": "階層メタデータ オブジェクトの配列。"
-	},
-                          "required": true,
-                          "schema": {
-                            "name": {
-                              "type": "string",
-                              "defaultValue": null,
-                              "description": {
-		"en": "A name for the hierarchy. The unique name of the hierarchy is formed using the following pattern: [<parentDimension.name>].[<hierarchyMetadata.name>]",
-		"jp": "階層の名前。以下のパターンを使用して形成する階層の一意の名前。[<parentDimension.name>].[<hierarchyMetadata.name>]"
-	},
-                              "required": true
+                        "measureGroup": {
+                            "type": "string",
+                            "defaultValue": null,
+                            "description": {
+                                "en": "The name of the measure group in the data source.",
+                                "jp": "データ ソース内のメジャー グループの名前。"
+                            }
+                        },
+                        "requestOptions": {
+                            "type": "object",
+                            "defaultValue": null,
+                            "description": {
+                                "en": "An object containing information about how the request to the XMLA server should be processed.",
+                                "jp": "XMLA サーバーへの要求を処理する方法についての情報を含むオブジェクト。"
                             },
-                            "caption": {
-                              "type": "string",
-                              "defaultValue": null,
-                              "description": {
-		"en": "A caption for the hierarchy.",
-		"jp": "階層のキャプション。"
-	}
-                            },
-                            "displayFolder": {
-                              "type": "string",
-                              "defaultValue": null,
-                              "description": {
-		"en": "The path to be used when displaying the hierarchy in the user interface. Nested folders are indicated by a backslash (\\). The folder hierarchy will appear under parent dimension node.",
-		"jp": "ユーザーインターフェイスで階層を表示する際に使用されるパス。入れ子になったフォルダーはバックスラッシュ (\\) で示されます。フォルダー階層は親ディメンション ノードの下に表示されます。"
-	}
-                            },
-                            "levels": {
-                              "type": "array",
-                              "defaultValue": null,
-                              "description": {
-		"en": "An array of level metadata objects.",
-		"jp": "レベル メタデータ オブジェクトの配列。"
-	},
-                              "schema": {
-                                "name": {
-                                  "type": "string",
-                                  "defaultValue": null,
-                                  "description": {
-		"en": "A name for the level. The unique name of the level is formed using the following pattern: {<hierarchy.uniqueName>}.[<levelMetadata.name>]",
-		"jp": "レベルの名前。以下のパターンを使用して形成するレベルの一意の名前。{<hierarchy.uniqueName>}.[<levelMetadata.name>]"
-	},
-                                  "required": true
+                            "schema": {
+                                "withCredentials": {
+                                    "type": "bool",
+                                    "defaultValue": false,
+                                    "description": {
+                                        "en": "The value is applied to XmlHttpRequest.withCredentials if supported by the user agent. Setting this property to true will allow IE8/IE9 to make authenticated cross-origin requests to tusted domains through XmlHttpRequest instead of XDomainRequest and will prompt the user for credentials.",
+                                        "jp": "ユーザー エージェントによってサポートされる場合、値は XmlHttpRequest.withCredentials に適用されます。このプロパティを true に設定すると、IE8/IE9 が、XDomainRequest ではなく XmlHttpRequest を使用して認証済みの同一発信元要求を信頼されるドメインに対して実行できるように、ユーザーに資格情報の入力を求めるプロンプトを表示します。"
+                                    }
                                 },
-                                "caption": {
-                                  "type": "string",
-                                  "defaultValue": null,
-                                  "description": {
-		"en": "A caption for the level.",
-		"jp": "レベルのキャプション。"
-	}
-                                },
-                                "memberProvider": {
-                                  "type": "function",
-                                  "defaultValue": null,
-                                  "description": {
-		"en": "A function called for each item of the data source array when level members are created. Based on the item parameter the function should return a value that will form the $.ig.Member's name and caption.",
-		"jp": "レベル メンバーが作成されたときに、データ ソース配列の各項目のために呼び出される関数。項目パラメーターに基づいて、関数は $.ig.Member 名前とキャプションを形成する値を返します。"
-	}
+                                "beforeSend": {
+                                    "type": "function",
+                                    "defaultValue": null,
+                                    "description": {
+                                        "en": "A callback to be invoked right before the request is send to the server. Extends beforeSend callback of jQuery.ajax's options object.",
+                                        "jp": "サーバーに要求が送信される直前に呼び出されるコールバック。jQuery.ajax の options オブジェクトの beforeSend コールバックを拡張します。"
+                                    }
                                 }
-                              }
                             }
-                          }
+                        },
+                        "enableResultCache": {
+                            "type": "bool",
+                            "defaultValue": true,
+                            "description": {
+                                "en": "Enables/disables caching of the XMLA result object.",
+                                "jp": "XMLA 結果オブジェクトのキャッシュを有効/無効にします。"
+                            }
+                        },
+                        "discoverProperties": {
+                            "type": "object",
+                            "defaultValue": null,
+                            "description": {
+                                "en": "Additional properties sent with every discover request. The object is treated as a key/value store where each property name is used as the key and the property value as the value.",
+                                "jp": "追加のプロパティは各ディスカバー要求と送信されます。オブジェクトはキー/値ストアとして保存されます。各プロパティ名はキーで、プロパティ値は値です。"
+                            }
+                        },
+                        "executeProperties": {
+                            "type": "object",
+                            "defaultValue": null,
+                            "description": {
+                                "en": "Additional properties sent with every execute request. The object is treated as a key/value store where each property name is used as the key and the property value as the value.",
+                                "jp": "追加のプロパティは各実行要求と共に送信されます。オブジェクトはキー/値ストアとして保存されます。各プロパティ名はキーで、プロパティ値は値です。"
+                            }
+                        },
+                        "mdxSettings": {
+                            "type": "object",
+                            "defaultValue": null,
+                            "description": {
+                                "en": "Javascript object containing information about how the request to the xmla server should be processed",
+                                "jp": "XMLA サーバーへの要求を処理する方法についての情報を含む JavaScript オブジェクト。"
+                            },
+                            "schema": {
+                                "nonEmptyOnRows": {
+                                    "type": "bool",
+                                    "defaultValue": true,
+                                    "description": {
+                                        "en": "Value indicating whether a NON EMPTY clause is present on ROWS axis. Default value is true",
+                                        "jp": "NON EMPTY 句が ROWS 軸にあるかどうかを示す値。デフォルト値は true です。"
+                                    }
+                                },
+                                "nonEmptyOnColumns": {
+                                    "type": "bool",
+                                    "defaultValue": true,
+                                    "description": {
+                                        "en": "Value indicating whether a NON EMPTY clause is present on COLUMNS axis. Default value is true",
+                                        "jp": "NON EMPTY 句が COLUMNS 軸にあるかどうかを示す値。デフォルト値は true です。"
+                                    }
+                                },
+                                "addCalculatedMembersOnRows": {
+                                    "type": "bool",
+                                    "defaultValue": true,
+                                    "description": {
+                                        "en": "Value indicating whether a members' set expressions on ROWS axis should be wrapped with AddCalculatedMembers MDX method. Default value is true ",
+                                        "jp": "ROWS 軸に対するメンバーのセットの式を AddCalculatedMembers MDX メソッドでラップするどうかを示す値。デフォルト値は true です。 "
+                                    }
+                                },
+                                "addCalculatedMembersOnColumns": {
+                                    "type": "bool",
+                                    "defaultValue": true,
+                                    "description": {
+                                        "en": "Value indicating whether a members' set expressions on COLUMNS axis should be wrapped with AddCalculatedMembers MDX method. Default value is true",
+                                        "jp": "COLUMNS 軸に対するメンバーのセットの式を AddCalculatedMembers MDX メソッドでラップするどうかを示す値。デフォルト値は true です。"
+                                    }
+                                },
+                                "dimensionPropertiesOnRows": {
+                                    "type": "array",
+                                    "defaultValue": [ ],
+                                    "description": {
+                                        "en": "String array with the names of intrinsic non-context sensitive member properties applied on ROWS axis. By defult CHILDREN_CARDINALITY and PARENT_UNIQUE_NAME properties are always added to DIMENSION PROPERTIES",
+                                        "jp": "ROWS 軸に適用される非コンテキスト機密メンバー プロパティの名前を持つ文字列配列。デフォルトでは、CHILDREN_CARDINALITY および PARENT_UNIQUE_NAME プロパティは常に次元プロパティに適用されます。"
+                                    },
+                                    "arrayMemberType": "string"
+                                },
+                                "dimensionPropertiesOnColumns": {
+                                    "type": "array",
+                                    "defaultValue": [ ],
+                                    "description": {
+                                        "en": "String array with the names of intrinsic non-context sensitive member properties applied on COLUMNS axis. By defult CHILDREN_CARDINALITY and PARENT_UNIQUE_NAME properties are always added to DIMENSION PROPERTIES",
+                                        "jp": "COLUMNS 軸に適用される非コンテキスト機密メンバー プロパティの名前を持つ文字列配列。デフォルトでは、CHILDREN_CARDINALITY および PARENT_UNIQUE_NAME プロパティは常に次元プロパティに適用されます。"
+                                    },
+                                    "arrayMemberType": "string"
+                                }
+                            }
                         }
-                      }
                     }
-                  }
+                },
+                "flatDataOptions": {
+                    "type": "object",
+                    "defaultValue": null,
+                    "description": {
+                        "en": "Settings for creating an instance of $.ig.OlapFlatDataSource.",
+                        "jp": "$.ig.OlapFlatDataSource のインスタンスを作成するための設定。"
+                    },
+                    "schema": {
+                        "dataSource": {
+                            "type": "object",
+                            "defaultValue": null,
+                            "description": {
+                                "en": "Specifies any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself.",
+                                "jp": "$.ig.DataSource が受け入れる有効なデータ ソース、または $.ig.DataSource 自体のインスタンスを指定します。"
+                            }
+                        },
+                        "dataSourceUrl": {
+                            "type": "string",
+                            "defaultValue": null,
+                            "description": {
+                                "en": "Specifies a remote URL accepted by $.ig.DataSource in order to request data from it.",
+                                "jp": "$.ig.DataSource からデータを要求するには、$.ig.DataSource により承諾されたリモート URL を指定します。"
+                            }
+                        },
+                        "dataSourceType": {
+                            "type": "string",
+                            "defaultValue": null,
+                            "description": {
+                                "en": "Explicitly set data source type (such as 'json'). Please refer to the documentation of $.ig.DataSource and its type property.",
+                                "jp": "データ ソースのタイプ ('json' など) を明示的に設定します。$.ig.DataSource とそのタイプ プロパティのドキュメントを参照してください。"
+                            }
+                        },
+                        "responseDataKey": {
+                            "type": "string",
+                            "defaultValue": null,
+                            "description": {
+                                "en": "Specifies the name of the property in which data records are held if the response is wrapped.",
+                                "jp": "応答がラップされる場合に、データ レコードが保持されるプロパティの名前を指定します。"
+                            }
+                        },
+                        "responseDataType": {
+                            "type": "string",
+                            "defaultValue": null,
+                            "description": {
+                                "en": "Explicitly set data source type (such as 'json'). Please refer to the documentation of $.ig.DataSource and its type property.",
+                                "jp": "データ ソースのタイプ ('json' など) を明示的に設定します。$.ig.DataSource とそのタイプ プロパティのドキュメントを参照してください。"
+                            }
+                        },
+                        "metadata": {
+                            "type": "object",
+                            "defaultValue": null,
+                            "description": {
+                                "en": "An object containing processing instructions for the $.ig.DataSource data.",
+                                "jp": "$.ig.DataSource データの処理命令を含むオブジェクト。"
+                            },
+                            "required": true,
+                            "schema": {
+                                "cube": {
+                                    "type": "object",
+                                    "defaultValue": null,
+                                    "description": {
+                                        "en": "Metadata used for the creation of the cube.",
+                                        "jp": "キューブの作成に使用されるメタデータ。"
+                                    },
+                                    "required": true,
+                                    "schema": {
+                                        "name": {
+                                            "type": "string",
+                                            "defaultValue": null,
+                                            "description": {
+                                                "en": "A caption for the cube.",
+                                                "jp": "キューブのキャプション。"
+                                            },
+                                            "required": true
+                                        },
+                                        "caption": {
+                                            "type": "string",
+                                            "defaultValue": null,
+                                            "description": {
+                                                "en": "A caption for the measures dimension.",
+                                                "jp": "メジャー ディメンションのキャプション。"
+                                            }
+                                        },
+                                        "measuresDimension": {
+                                            "type": "object",
+                                            "defaultValue": null,
+                                            "description": {
+                                                "en": "An object providing information about the measures' root node.",
+                                                "jp": "メジャーのルート ノードについての情報を提供するオブジェクト。"
+                                            },
+                                            "schema": {
+                                                "name": {
+                                                    "type": "string",
+                                                    "defaultValue": "Measures",
+                                                    "description": {
+                                                        "en": "A unique name for the measures dimension.",
+                                                        "jp": "メジャー ディメンションの一意の名前。"
+                                                    },
+                                                    "required": true
+                                                },
+                                                "caption": {
+                                                    "type": "string",
+                                                    "defaultValue": "Measures",
+                                                    "description": {
+                                                        "en": "A caption for the measures dimension.",
+                                                        "jp": "メジャー ディメンションのキャプション。"
+                                                    }
+                                                },
+                                                "measures": {
+                                                    "type": "array",
+                                                    "defaultValue": null,
+                                                    "description": {
+                                                        "en": "An array of measure metadata objects.",
+                                                        "jp": "メジャー メタデータ オブジェクトの配列。"
+                                                    },
+                                                    "schema": {
+                                                        "name": {
+                                                            "type": "string",
+                                                            "defaultValue": null,
+                                                            "description": {
+                                                                "en": "A unique name for the measure.",
+                                                                "jp": "メジャーの一意の名前。"
+                                                            },
+                                                            "required": true
+                                                        },
+                                                        "caption": {
+                                                            "type": "string",
+                                                            "defaultValue": null,
+                                                            "description": {
+                                                                "en": "A caption for the measure.",
+                                                                "jp": "メジャーのキャプション。"
+                                                            }
+                                                        },
+                                                        "aggregator": {
+                                                            "type": "function",
+                                                            "defaultValue": null,
+                                                            "description": {
+                                                                "en": "An aggregator function called when each cell is evaluated. Returns a value for the cell. If the returned value is null, no cell will be created in for the data source result.",
+                                                                "jp": "アグリゲーター関数は、各セルが評価されるときに呼び出されます。セルの値を返します。返された値が nul の場合、データ ソースの結果にセルは作成されません。"
+                                                            },
+                                                            "required": true
+                                                        },
+                                                        "displayFolder": {
+                                                            "type": "string",
+                                                            "defaultValue": null,
+                                                            "description": {
+                                                                "en": "The path used when displaying the measure in the user interface. Nested folders are indicated by a backslash (\\).",
+                                                                "jp": "ユーザーインターフェイスで階層を表示する際に使用されるパス。入れ子になったフォルダーはバックスラッシュ (\\) で示されます。"
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "dimensions": {
+                                            "type": "array",
+                                            "defaultValue": null,
+                                            "description": {
+                                                "en": "An array of dimension metadata objects.",
+                                                "jp": "ディメンション メタデータ オブジェクトの配列。"
+                                            },
+                                            "required": true,
+                                            "schema": {
+                                                "name": {
+                                                    "type": "string",
+                                                    "defaultValue": null,
+                                                    "description": {
+                                                        "en": "A unique name for the dimension.",
+                                                        "jp": "ディメンションの一意の名前。"
+                                                    },
+                                                    "required": true
+                                                },
+                                                "caption": {
+                                                    "type": "string",
+                                                    "defaultValue": null,
+                                                    "description": {
+                                                        "en": "A caption for the dimension.",
+                                                        "jp": "ディメンションのキャプション。"
+                                                    }
+                                                },
+                                                "hierarchies": {
+                                                    "type": "array",
+                                                    "defaultValue": null,
+                                                    "description": {
+                                                        "en": "An array of hierarchy metadata objects.",
+                                                        "jp": "階層メタデータ オブジェクトの配列。"
+                                                    },
+                                                    "required": true,
+                                                    "schema": {
+                                                        "name": {
+                                                            "type": "string",
+                                                            "defaultValue": null,
+                                                            "description": {
+                                                                "en": "A name for the hierarchy. The unique name of the hierarchy is formed using the following pattern: [<parentDimension.name>].[<hierarchyMetadata.name>]",
+                                                                "jp": "階層の名前。以下のパターンを使用して形成する階層の一意の名前。[<parentDimension.name>].[<hierarchyMetadata.name>]"
+                                                            },
+                                                            "required": true
+                                                        },
+                                                        "caption": {
+                                                            "type": "string",
+                                                            "defaultValue": null,
+                                                            "description": {
+                                                                "en": "A caption for the hierarchy.",
+                                                                "jp": "階層のキャプション。"
+                                                            }
+                                                        },
+                                                        "displayFolder": {
+                                                            "type": "string",
+                                                            "defaultValue": null,
+                                                            "description": {
+                                                                "en": "The path to be used when displaying the hierarchy in the user interface. Nested folders are indicated by a backslash (\\). The folder hierarchy will appear under parent dimension node.",
+                                                                "jp": "ユーザーインターフェイスで階層を表示する際に使用されるパス。入れ子になったフォルダーはバックスラッシュ (\\) で示されます。フォルダー階層は親ディメンション ノードの下に表示されます。"
+                                                            }
+                                                        },
+                                                        "levels": {
+                                                            "type": "array",
+                                                            "defaultValue": null,
+                                                            "description": {
+                                                                "en": "An array of level metadata objects.",
+                                                                "jp": "レベル メタデータ オブジェクトの配列。"
+                                                            },
+                                                            "schema": {
+                                                                "name": {
+                                                                    "type": "string",
+                                                                    "defaultValue": null,
+                                                                    "description": {
+                                                                        "en": "A name for the level. The unique name of the level is formed using the following pattern: {<hierarchy.uniqueName>}.[<levelMetadata.name>]",
+                                                                        "jp": "レベルの名前。以下のパターンを使用して形成するレベルの一意の名前。{<hierarchy.uniqueName>}.[<levelMetadata.name>]"
+                                                                    },
+                                                                    "required": true
+                                                                },
+                                                                "caption": {
+                                                                    "type": "string",
+                                                                    "defaultValue": null,
+                                                                    "description": {
+                                                                        "en": "A caption for the level.",
+                                                                        "jp": "レベルのキャプション。"
+                                                                    }
+                                                                },
+                                                                "memberProvider": {
+                                                                    "type": "function",
+                                                                    "defaultValue": null,
+                                                                    "description": {
+                                                                        "en": "A function called for each item of the data source array when level members are created. Based on the item parameter the function should return a value that will form the $.ig.Member's name and caption.",
+                                                                        "jp": "レベル メンバーが作成されたときに、データ ソース配列の各項目のために呼び出される関数。項目パラメーターに基づいて、関数は $.ig.Member 名前とキャプションを形成する値を返します。"
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "measures": {
+                    "type": "string",
+                    "defaultValue": "null",
+                    "description": {
+                        "en": "A list of measure names separated by comma (,). These will be the measures of the data source.",
+                        "jp": "コンマ (,) で区切られたメジャー名のリスト。データ ソースのメジャーになります。"
+                    }
+                },
+                "filters": {
+                    "type": "string",
+                    "defaultValue": "null",
+                    "description": {
+                        "en": "A list of hierarchy names separated by comma (,). These will be hierarchies in the filters of the data source.",
+                        "jp": "コンマ (,) で区切られた階層名のリスト。データ ソースのフィルターに階層ができます。"
+                    }
+                },
+                "rows": {
+                    "type": "string",
+                    "defaultValue": "null",
+                    "description": {
+                        "en": "A list of hierarchy names separated by comma (,). These will be the hierarchies in the rows of the data source.",
+                        "jp": "コンマ (,) で区切られた階層名のリスト。データ ソースの行に階層ができます。"
+                    }
+                },
+                "columns": {
+                    "type": "string",
+                    "defaultValue": "null",
+                    "description": {
+                        "en": "A list of hierarchy names separated by comma (,). These will be the hierarchies in the columns of the data source.",
+                        "jp": "コンマ (,) で区切られた階層名のリスト。データ ソースの列に階層ができます。"
+                    }
                 }
-              }
             }
-          }
         },
-        "measures": {
-          "type": "string",
-          "defaultValue": "null",
-          "description": {
-		"en": "A list of measure names separated by comma (,). These will be the measures of the data source.",
-		"jp": "コンマ (,) で区切られたメジャー名のリスト。データ ソースのメジャーになります。"
-	}
-        },
-        "filters": {
-          "type": "string",
-          "defaultValue": "null",
-          "description": {
-		"en": "A list of hierarchy names separated by comma (,). These will be hierarchies in the filters of the data source.",
-		"jp": "コンマ (,) で区切られた階層名のリスト。データ ソースのフィルターに階層ができます。"
-	}
-        },
-        "rows": {
-          "type": "string",
-          "defaultValue": "null",
-          "description": {
-		"en": "A list of hierarchy names separated by comma (,). These will be the hierarchies in the rows of the data source.",
-		"jp": "コンマ (,) で区切られた階層名のリスト。データ ソースの行に階層ができます。"
-	}
-        },
-        "columns": {
-          "type": "string",
-          "defaultValue": "null",
-          "description": {
-		"en": "A list of hierarchy names separated by comma (,). These will be the hierarchies in the columns of the data source.",
-		"jp": "コンマ (,) で区切られた階層名のリスト。データ ソースの列に階層ができます。"
-	}
-        }
-      }
-    },
-    "defaultRowHeaderWidth": {
-      "type": "number",
-      "defaultValue": 200.0,
-      "description": {
-		"en": "Specifies the width of the row headers.",
-		"jp": "行ヘッダーの幅を指定します。"
-	}
-    },
-    "deferUpdate": {
-      "type": "bool",
-      "defaultValue": false,
-      "description": {
-		"en": "Setting deferUpdate to true will not apply changes to the data source until the updateGrid method is called.",
-		"jp": "deferUpdate を true に設定すると、updateGrid メソッドが呼び出したまでに変更をデータ ソースに適用しません。"
-	}
-    },
-    "disableColumnsDropArea": {
-      "type": "bool",
-      "defaultValue": false,
-      "description": {
-		"en": "Disable the drag and drop for the columns drop area and the ability to use filtering and remove items from it.",
-		"jp": "列のドロップ領域のドラッグ アンド ドロップ、フィルタリング、および項目の削除を無効にします。"
-	}
-    },
-    "disableFiltersDropArea": {
-      "type": "bool",
-      "defaultValue": false,
-      "description": {
-		"en": "Disable the drag and drop for the filters drop area and the ability to use filtering and remove items from it.",
-		"jp": "フィルターのドロップ領域のドラッグ アンド ドロップ、フィルタリング、および項目の削除を無効にします。"
-	}
-    },
-    "disableMeasuresDropArea": {
-      "type": "bool",
-      "defaultValue": false,
-      "description": {
-		"en": "Disable the drag and drop for the measures drop area and the ability to use filtering and remove items from it.",
-		"jp": "メジャーのドロップ領域のドラッグ アンド ドロップ、フィルタリング、および項目の削除を無効にします。"
-	}
-    },
-    "disableRowsDropArea": {
-      "type": "bool",
-      "defaultValue": false,
-      "description": {
-		"en": "Disable the drag and drop for the rows drop area and the ability to use filtering and remove items from it.",
-		"jp": "行のドロップ領域のドラッグ アンド ドロップ、フィルタリング、および項目の削除を無効にします。"
-	}
-    },
-    "dragAndDropSettings": {
-      "type": "object",
-      "defaultValue": null,
-      "description": {
-		"en": "Settings for the drag and drop functionality of the igPivotGrid.",
-		"jp": "igPivotGrid のドラッグ アンド ドロップ機能の設定。"
-	},
-      "schema": {
-        "appendTo": {
-          "type": "string",
-          "defaultValue": "body",
-          "description": {
-		"en": "Which element the draggable helper should be appended to while dragging.",
-		"jp": "ドラッグ操作でドラッグ可能なヘルパーに追加する要素。"
-	}
-        },
-        "containment": {
-          "type": "bool",
-          "defaultValue": false,
-          "description": {
-		"en": "Specifies the containment for the drag helper. The area inside of which the helper is contained would be scrollable while dragging.",
-		"jp": "ドラッグ ヘルパーのコンテナーを指定します。ドラッグ操作でスクロール可能なヘルパーに含まれる領域。"
-	}
-        },
-        "zIndex": {
-          "type": "number",
-          "defaultValue": 10,
-          "description": {
-		"en": "Specifies z-index that would be set for the drag helper.",
-		"jp": "ドラッグ ヘルパーの z-index を指定します。"
-	}
-        }
-      }
-    },
-    "dropDownParent": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": " Specifies the parent for the drop downs.",
-		"jp": " ドロップダウンの親を指定します。"
-	}
-    },
-    "firstLevelSortDirection": {
-      "type": "string",
-      "defaultValue": "ascending",
-      "description": {
-		"en": "Spefies the default sort direction for the levels if no sort direction is specified in an item from the levelSortDirections option.",
-		"jp": "levelSortDirections オプションの項目に並べ替え方向が指定されていない場合、レベルのデフォルトの並べ替え方向を指定します。"
-	},
-      "valueOptions": [
-        {
-          "name": "ascending",
-          "type": "object",
-          "description": {
-		"en": "Specifies ascending sorting direction",
-		"jp": "昇順の並べ替え方向を指定します。"
-	}
-        },
-        {
-          "name": "descending",
-          "type": "string",
-          "description": {
-		"en": "Specifies descending sorting direction",
-		"jp": "降順の並べ替え方向を指定します。"
-	}
-        }
-      ]
-    },
-    "firstSortDirection": {
-      "type": "string",
-      "defaultValue": "ascending",
-      "description": {
-		"en": "Spefies the default sort direction for the rows.",
-		"jp": "行のデフォルトの並べ替え方向を指定します。"
-	},
-      "valueOptions": [
-        {
-          "name": "ascending",
-          "type": "object",
-          "description": {
-		"en": "Specifies ascending sorting direction",
-		"jp": "昇順の並べ替え方向を指定します。"
-	}
-        },
-        {
-          "name": "descending",
-          "type": "string",
-          "description": {
-		"en": "Specifies descending sorting direction",
-		"jp": "降順の並べ替え方向を指定します。"
-	}
-        }
-      ]
-    },
-    "gridOptions": {
-      "type": "object",
-      "defaultValue": null,
-      "description": {
-		"en": "Options specific to the igGrid that will render the pivot grid view.",
-		"jp": "ピボット グリッド ビューを描画する igGrid のオプション。"
-	},
-      "schema": {
-        "defaultColumnWidth": {
-          "type": "number",
-          "defaultValue": null,
-          "description": {
-		"en": "Default column width that will be set for all columns.",
-		"jp": "すべての列で設定されるデフォルトの列幅。"
-	}
-        },
-        "fixedHeaders": {
-          "type": "bool",
-          "defaultValue": true,
-          "description": {
-		"en": "Headers will be fixed if this option is set to true, and only the grid data will be scrollable.",
-		"jp": "このオプションが True の場合、ヘッダーが固定されるので、グリッド データのみがスクロール可能です。"
-	}
-        },
-        "caption": {
-          "type": "string",
-          "defaultValue": null,
-          "description": {
-		"en": "Caption text that will be shown above the pivot grid header.",
-		"jp": "ピボット グリッド ヘッダーの上に表示されるキャプション テキスト。"
-	}
-        },
-        "features": {
-          "type": "object",
-          "defaultValue": [],
-          "description": {
-		"en": "A list of grid features definitions. The supported features are Resizing and Tooltips. Each feature goes with its separate options that are documented for the feature accordingly.",
-		"jp": "グリッド機能定義のリスト。サポートされる機能はサイズ変更とツールチップです。各機能は別のオプションを含みます。その機能にドキュメントされています。"
-	},
-          "schemaRef": "grid.features"
-        },
-        "tabIndex": {
-          "type": "number",
-          "defaultValue": 0,
-          "description": {
-		"en": "Initial tabIndex attribute that will be set on the container element.",
-		"jp": "コンテナー要素に設定される初期 tabIndex 属性。"
-	}
-        },
-        "alternateRowStyles": {
-          "type": "bool",
-          "defaultValue": true,
-          "description": {
-		"en": "Enables/disables rendering of alternating row styles (odd and even rows receive different styling). Note that if a custom jQuery template is set, this has no effect and CSS for the row should be adjusted manually in the template contents.",
-		"jp": "交互行スタイル (奇数行と偶数行で異なるスタイルになる) のレンダリングを有効または無効にします。カスタムの jQuery テンプレートが設定されている場合、これは効果がなく、テンプレート コンテンツ内で行の CSS を手作業で調整する必要があることに注意してください。"
-	}
-        },
-        "enableHoverStyles": {
-          "type": "bool",
-          "defaultValue": false,
-          "description": {
-		"en": "Enables/disables rendering of ui-state-hover classes when the mouse is over a record. This can be useful in templating scenarios, for example, where we don't want to apply hover styling to templated content.",
-		"jp": "マウスがレコードの上にある場合に ui-state-hover クラスの描画を有効/無効にするします。テンプレートされたコンテンツにホバー スタイル設定を適用しないなどのテンプレート シナリオに便利です。"
-	}
-        }
-      }
-    },
-    "height": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": " This is the total height of the grid. The widget height can be set in pixels (px) and percentage (%). The widget height can be set as a number",
-		"jp": " これはグリッドの合計の高さです。ウィジェットの高さはピクセル (px) およびパーセント (%) で設定できます (%)。幅の高さは数値 (25) として設定できます。"
-	}
-    },
-    "hideColumnsDropArea": {
-      "type": "bool",
-      "defaultValue": false,
-      "description": {
-		"en": "Hide the columns drop area.",
-		"jp": "列のドロップ領域を非表示にします。"
-	}
-    },
-    "hideFiltersDropArea": {
-      "type": "bool",
-      "defaultValue": false,
-      "description": {
-		"en": "Hide the filters drop area.",
-		"jp": "フィルターのドロップ領域を非表示にします。"
-	}
-    },
-    "hideMeasuresDropArea": {
-      "type": "bool",
-      "defaultValue": false,
-      "description": {
-		"en": "Hide the measures drop area.",
-		"jp": "メジャーのドロップ領域を非表示にします。"
-	}
-    },
-    "hideRowsDropArea": {
-      "type": "bool",
-      "defaultValue": false,
-      "description": {
-		"en": "Hide the rows drop area.",
-		"jp": "行のドロップ領域を非表示にします。"
-	}
-    },
-    "isParentInFrontForColumns": {
-      "type": "bool",
-      "defaultValue": false,
-      "description": {
-		"en": "A boolean value indicating whether a parent in the columns is in front of its children.<br>            If set to true, the query set sorts members in a level in their natural order - child members immediately follow their parent members.<br>            If set to false the query set sorts the members in a level using a post-natural order. In other words, child members precede their parents.",
-		"jp": "列の親が子の前にあるかどうかを示すブール値。<br>            True に設定される場合、クエリ セットはレベル中のメンバーをそのナチュラル オーダーに並べ替えます。子メンバーは親メンバーのすぐ後にあります。<br>            False に設定される場合、クエリ セットはレベル中のメンバーをそのポストナチュラル オーダーを使用して並べ替えます。言い換えれば、子メンバーはその親の前に並べ替えられます。"
-	}
-    },
-    "isParentInFrontForRows": {
-      "type": "bool",
-      "defaultValue": true,
-      "description": {
-		"en": "A boolean value indicating whether a parent in the rows is in front of its children.<br>            If set to true, the query set sorts members in a level in their natural order - child members immediately follow their parent members.<br>            If set to false the query set sorts the members in a level using a post-natural order. In other words, child members precede their parents.",
-		"jp": "行の親が子の前にあるかどうかを示すブール値。<br>            True に設定される場合、クエリ セットはレベル中のメンバーをそのナチュラル オーダーに並べ替えます。子メンバーは親メンバーのすぐ後にあります。<br>            False に設定される場合、クエリ セットはレベル中のメンバーをそのポストナチュラル オーダーを使用して並べ替えます。言い換えれば、子メンバーはその親の前に並べ替えられます。"
-	}
-    },
-    "levelSortDirections": {
-      "type": "array",
-      "defaultValue": null,
-      "description": {
-		"en": "An array of level sort direction items, which predefine the sorted header cells.",
-		"jp": "並べ替えたヘッダー セルを事前に定義するレベルの並べ替え方向項目の配列。"
-	},
-      "schema": {
-        "levelUniqueName": {
-          "type": "string",
-          "defaultValue": null,
-          "description": {
-		"en": "Specifies the unique name of the level, which will be sorted.",
-		"jp": "並べ替えるレベルの一意の名を指定します。"
-	}
-        },
-        "sortDirections": {
-          "type": "string",
-          "defaultValue": null,
-          "description": {
-		"en": "Specifies the sort direction. If no direction is specified, the level is going to be sorted in the direction specified by the firstLevelSortDirection option.",
-		"jp": "並べ替え方向を指定します。方向が指定されていない場合、レベルの並べ替え方向は firstLevelSortDirection オプションに設定されます。"
-	},
-          "valueOptions": [
-          {
-            "name": "ascending",
-            "type": "string",
+        "defaultRowHeaderWidth": {
+            "type": "number",
+            "defaultValue": 200.0,
             "description": {
-		"en": "The sort direction is ascending",
-		"jp": "並べ替えの方向は昇順です。"
-	}
-          },
-          {
-            "name": "descending",
-            "type": "string",
+                "en": "Specifies the width of the row headers.",
+                "jp": "行ヘッダーの幅を指定します。"
+            }
+        },
+        "deferUpdate": {
+            "type": "bool",
+            "defaultValue": false,
             "description": {
-		"en": "The sort direction is descending",
-		"jp": "並べ替えの方向は降順です。"
-	}
-          }]
+                "en": "Setting deferUpdate to true will not apply changes to the data source until the updateGrid method is called.",
+                "jp": "deferUpdate を true に設定すると、updateGrid メソッドが呼び出したまでに変更をデータ ソースに適用しません。"
+            }
+        },
+        "disableColumnsDropArea": {
+            "type": "bool",
+            "defaultValue": false,
+            "description": {
+                "en": "Disable the drag and drop for the columns drop area and the ability to use filtering and remove items from it.",
+                "jp": "列のドロップ領域のドラッグ アンド ドロップ、フィルタリング、および項目の削除を無効にします。"
+            }
+        },
+        "disableFiltersDropArea": {
+            "type": "bool",
+            "defaultValue": false,
+            "description": {
+                "en": "Disable the drag and drop for the filters drop area and the ability to use filtering and remove items from it.",
+                "jp": "フィルターのドロップ領域のドラッグ アンド ドロップ、フィルタリング、および項目の削除を無効にします。"
+            }
+        },
+        "disableMeasuresDropArea": {
+            "type": "bool",
+            "defaultValue": false,
+            "description": {
+                "en": "Disable the drag and drop for the measures drop area and the ability to use filtering and remove items from it.",
+                "jp": "メジャーのドロップ領域のドラッグ アンド ドロップ、フィルタリング、および項目の削除を無効にします。"
+            }
+        },
+        "disableRowsDropArea": {
+            "type": "bool",
+            "defaultValue": false,
+            "description": {
+                "en": "Disable the drag and drop for the rows drop area and the ability to use filtering and remove items from it.",
+                "jp": "行のドロップ領域のドラッグ アンド ドロップ、フィルタリング、および項目の削除を無効にします。"
+            }
+        },
+        "dragAndDropSettings": {
+            "type": "object",
+            "defaultValue": null,
+            "description": {
+                "en": "Settings for the drag and drop functionality of the igPivotGrid.",
+                "jp": "igPivotGrid のドラッグ アンド ドロップ機能の設定。"
+            },
+            "schema": {
+                "appendTo": {
+                    "type": "string",
+                    "defaultValue": "body",
+                    "description": {
+                        "en": "Which element the draggable helper should be appended to while dragging.",
+                        "jp": "ドラッグ操作でドラッグ可能なヘルパーに追加する要素。"
+                    }
+                },
+                "containment": {
+                    "type": "bool",
+                    "defaultValue": false,
+                    "description": {
+                        "en": "Specifies the containment for the drag helper. The area inside of which the helper is contained would be scrollable while dragging.",
+                        "jp": "ドラッグ ヘルパーのコンテナーを指定します。ドラッグ操作でスクロール可能なヘルパーに含まれる領域。"
+                    }
+                },
+                "zIndex": {
+                    "type": "number",
+                    "defaultValue": 10,
+                    "description": {
+                        "en": "Specifies z-index that would be set for the drag helper.",
+                        "jp": "ドラッグ ヘルパーの z-index を指定します。"
+                    }
+                }
+            }
+        },
+        "dropDownParent": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": " Specifies the parent for the drop downs.",
+                "jp": " ドロップダウンの親を指定します。"
+            }
+        },
+        "firstLevelSortDirection": {
+            "type": "string",
+            "defaultValue": "ascending",
+            "description": {
+                "en": "Spefies the default sort direction for the levels if no sort direction is specified in an item from the levelSortDirections option.",
+                "jp": "levelSortDirections オプションの項目に並べ替え方向が指定されていない場合、レベルのデフォルトの並べ替え方向を指定します。"
+            },
+            "valueOptions": [
+                {
+                    "name": "ascending",
+                    "type": "object",
+                    "description": {
+                        "en": "Specifies ascending sorting direction",
+                        "jp": "昇順の並べ替え方向を指定します。"
+                    }
+                },
+                {
+                    "name": "descending",
+                    "type": "string",
+                    "description": {
+                        "en": "Specifies descending sorting direction",
+                        "jp": "降順の並べ替え方向を指定します。"
+                    }
+                }
+            ]
+        },
+        "firstSortDirection": {
+            "type": "string",
+            "defaultValue": "ascending",
+            "description": {
+                "en": "Spefies the default sort direction for the rows.",
+                "jp": "行のデフォルトの並べ替え方向を指定します。"
+            },
+            "valueOptions": [
+                {
+                    "name": "ascending",
+                    "type": "object",
+                    "description": {
+                        "en": "Specifies ascending sorting direction",
+                        "jp": "昇順の並べ替え方向を指定します。"
+                    }
+                },
+                {
+                    "name": "descending",
+                    "type": "string",
+                    "description": {
+                        "en": "Specifies descending sorting direction",
+                        "jp": "降順の並べ替え方向を指定します。"
+                    }
+                }
+            ]
+        },
+        "gridOptions": {
+            "type": "object",
+            "defaultValue": null,
+            "description": {
+                "en": "Options specific to the igGrid that will render the pivot grid view.",
+                "jp": "ピボット グリッド ビューを描画する igGrid のオプション。"
+            },
+            "schema": {
+                "defaultColumnWidth": {
+                    "type": "number",
+                    "defaultValue": null,
+                    "description": {
+                        "en": "Default column width that will be set for all columns.",
+                        "jp": "すべての列で設定されるデフォルトの列幅。"
+                    }
+                },
+                "fixedHeaders": {
+                    "type": "bool",
+                    "defaultValue": true,
+                    "description": {
+                        "en": "Headers will be fixed if this option is set to true, and only the grid data will be scrollable.",
+                        "jp": "このオプションが True の場合、ヘッダーが固定されるので、グリッド データのみがスクロール可能です。"
+                    }
+                },
+                "caption": {
+                    "type": "string",
+                    "defaultValue": null,
+                    "description": {
+                        "en": "Caption text that will be shown above the pivot grid header.",
+                        "jp": "ピボット グリッド ヘッダーの上に表示されるキャプション テキスト。"
+                    }
+                },
+                "features": {
+                    "type": "object",
+                    "defaultValue": [ ],
+                    "description": {
+                        "en": "A list of grid features definitions. The supported features are Resizing and Tooltips. Each feature goes with its separate options that are documented for the feature accordingly.",
+                        "jp": "グリッド機能定義のリスト。サポートされる機能はサイズ変更とツールチップです。各機能は別のオプションを含みます。その機能にドキュメントされています。"
+                    },
+                    "schemaRef": "grid.features"
+                },
+                "tabIndex": {
+                    "type": "number",
+                    "defaultValue": 0,
+                    "description": {
+                        "en": "Initial tabIndex attribute that will be set on the container element.",
+                        "jp": "コンテナー要素に設定される初期 tabIndex 属性。"
+                    }
+                },
+                "alternateRowStyles": {
+                    "type": "bool",
+                    "defaultValue": true,
+                    "description": {
+                        "en": "Enables/disables rendering of alternating row styles (odd and even rows receive different styling). Note that if a custom jQuery template is set, this has no effect and CSS for the row should be adjusted manually in the template contents.",
+                        "jp": "交互行スタイル (奇数行と偶数行で異なるスタイルになる) のレンダリングを有効または無効にします。カスタムの jQuery テンプレートが設定されている場合、これは効果がなく、テンプレート コンテンツ内で行の CSS を手作業で調整する必要があることに注意してください。"
+                    }
+                },
+                "enableHoverStyles": {
+                    "type": "bool",
+                    "defaultValue": false,
+                    "description": {
+                        "en": "Enables/disables rendering of ui-state-hover classes when the mouse is over a record. This can be useful in templating scenarios, for example, where we don't want to apply hover styling to templated content.",
+                        "jp": "マウスがレコードの上にある場合に ui-state-hover クラスの描画を有効/無効にするします。テンプレートされたコンテンツにホバー スタイル設定を適用しないなどのテンプレート シナリオに便利です。"
+                    }
+                }
+            }
+        },
+        "height": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": " This is the total height of the grid. The widget height can be set in pixels (px) and percentage (%). The widget height can be set as a number",
+                "jp": " これはグリッドの合計の高さです。ウィジェットの高さはピクセル (px) およびパーセント (%) で設定できます (%)。幅の高さは数値 (25) として設定できます。"
+            }
+        },
+        "hideColumnsDropArea": {
+            "type": "bool",
+            "defaultValue": false,
+            "description": {
+                "en": "Hide the columns drop area.",
+                "jp": "列のドロップ領域を非表示にします。"
+            }
+        },
+        "hideFiltersDropArea": {
+            "type": "bool",
+            "defaultValue": false,
+            "description": {
+                "en": "Hide the filters drop area.",
+                "jp": "フィルターのドロップ領域を非表示にします。"
+            }
+        },
+        "hideMeasuresDropArea": {
+            "type": "bool",
+            "defaultValue": false,
+            "description": {
+                "en": "Hide the measures drop area.",
+                "jp": "メジャーのドロップ領域を非表示にします。"
+            }
+        },
+        "hideRowsDropArea": {
+            "type": "bool",
+            "defaultValue": false,
+            "description": {
+                "en": "Hide the rows drop area.",
+                "jp": "行のドロップ領域を非表示にします。"
+            }
+        },
+        "isParentInFrontForColumns": {
+            "type": "bool",
+            "defaultValue": false,
+            "description": {
+                "en": "A boolean value indicating whether a parent in the columns is in front of its children.<br>            If set to true, the query set sorts members in a level in their natural order - child members immediately follow their parent members.<br>            If set to false the query set sorts the members in a level using a post-natural order. In other words, child members precede their parents.",
+                "jp": "列の親が子の前にあるかどうかを示すブール値。<br>            True に設定される場合、クエリ セットはレベル中のメンバーをそのナチュラル オーダーに並べ替えます。子メンバーは親メンバーのすぐ後にあります。<br>            False に設定される場合、クエリ セットはレベル中のメンバーをそのポストナチュラル オーダーを使用して並べ替えます。言い換えれば、子メンバーはその親の前に並べ替えられます。"
+            }
+        },
+        "isParentInFrontForRows": {
+            "type": "bool",
+            "defaultValue": true,
+            "description": {
+                "en": "A boolean value indicating whether a parent in the rows is in front of its children.<br>            If set to true, the query set sorts members in a level in their natural order - child members immediately follow their parent members.<br>            If set to false the query set sorts the members in a level using a post-natural order. In other words, child members precede their parents.",
+                "jp": "行の親が子の前にあるかどうかを示すブール値。<br>            True に設定される場合、クエリ セットはレベル中のメンバーをそのナチュラル オーダーに並べ替えます。子メンバーは親メンバーのすぐ後にあります。<br>            False に設定される場合、クエリ セットはレベル中のメンバーをそのポストナチュラル オーダーを使用して並べ替えます。言い換えれば、子メンバーはその親の前に並べ替えられます。"
+            }
+        },
+        "levelSortDirections": {
+            "type": "array",
+            "defaultValue": null,
+            "description": {
+                "en": "An array of level sort direction items, which predefine the sorted header cells.",
+                "jp": "並べ替えたヘッダー セルを事前に定義するレベルの並べ替え方向項目の配列。"
+            },
+            "schema": {
+                "levelUniqueName": {
+                    "type": "string",
+                    "defaultValue": null,
+                    "description": {
+                        "en": "Specifies the unique name of the level, which will be sorted.",
+                        "jp": "並べ替えるレベルの一意の名を指定します。"
+                    }
+                },
+                "sortDirections": {
+                    "type": "string",
+                    "defaultValue": null,
+                    "description": {
+                        "en": "Specifies the sort direction. If no direction is specified, the level is going to be sorted in the direction specified by the firstLevelSortDirection option.",
+                        "jp": "並べ替え方向を指定します。方向が指定されていない場合、レベルの並べ替え方向は firstLevelSortDirection オプションに設定されます。"
+                    },
+                    "valueOptions": [
+                        {
+                            "name": "ascending",
+                            "type": "string",
+                            "description": {
+                                "en": "The sort direction is ascending",
+                                "jp": "並べ替えの方向は昇順です。"
+                            }
+                        },
+                        {
+                            "name": "descending",
+                            "type": "string",
+                            "description": {
+                                "en": "The sort direction is descending",
+                                "jp": "並べ替えの方向は降順です。"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "width": {
+            "type": "string",
+            "defaultValue": null,
+            "description": {
+                "en": "The widget width can be set in pixels (px) and percentage (%). \n  The widget width can be set as a number.",
+                "jp": "ウィジェットの幅をピクセル (px) またはパーセンテージ (%) に設定できます。\n    ウィジェット幅は数値として設定できます。"
+            }
         }
-      }
-    },
-    "width": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-		"en": "The widget width can be set in pixels (px) and percentage (%). \n  The widget width can be set as a number.",
-		"jp": "ウィジェットの幅をピクセル (px) またはパーセンテージ (%) に設定できます。\n    ウィジェット幅は数値として設定できます。"
-	}
     }
-  }
 }
