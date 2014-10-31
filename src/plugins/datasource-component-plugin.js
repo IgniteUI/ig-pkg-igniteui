@@ -146,6 +146,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 
 			        ide.editor.gotoLine(funcBodyStart, 5, true);
 			    }
+			    ide._deselectComponent();
 			    ide.element.find(".code-button").click();
 			}
 		},
