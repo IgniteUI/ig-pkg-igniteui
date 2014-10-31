@@ -58,12 +58,13 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			// set it in the ds
 			var obj = window.frames[0][descriptor.id];
 			var val = descriptor.propValue;
+			var isOptionAdded = false;
 			//if (obj && obj instanceof $.ig.DataSource) {
 			if (obj && obj._accumulatedTransactionLog) {
 				// what should happen when a new dataSource option is set - rebind the data source? 
 				if (descriptor.args) {
-					val = "function (event, args) { }";
-					descriptor.propType = "literal";
+				    val = descriptor.id + descriptor.propName;
+				    descriptor.propType = "literal";
 				}
 				if (descriptor.propType === "literal") {
 					//We're binding to objects in the window scope
@@ -87,6 +88,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 					rebind();
 				}
 			}
+
 			if (!options[descriptor.propName]) {
 				this.addPropCode({
 					component: component,
@@ -99,6 +101,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 					schema: descriptor.schema
 				}, true, false);
 			} else {
+			    isOptionAdded = true;
 				this.updatePropCode({
 					component: component,
 					propName: descriptor.propName,
@@ -109,9 +112,41 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 					schema: descriptor.schema
 				});
 			}
-			if (descriptor.args) {
-				ide.element.find(".code-button").click();
 
+			if (descriptor.args) {
+			    if (component && !isOptionAdded) {
+			        if (!component.eventMarkers) {
+			            component.eventMarkers = {};
+			        }
+
+			        var codeRange = ide.editor.find("<script id=\"code\">\n");
+			        var offset = codeRange.start.row + 2;
+			        var handlerMarker, funcMarker, funcBodyStart;
+			        var evtName = name + descriptor.featureName + descriptor.propName;
+			        evtName = evtName.toLowerCase();
+			        if (!component.eventMarkers[descriptor.propName]) {
+			            // build code
+			            var eventString = ide._tabStr(codeMarker.baseIndent) + "window." + val + " = function (event, args) {\n" + ide._tabStr(codeMarker.baseIndent + 1) + "\n" + ide._tabStr(codeMarker.baseIndent) + "};\n";
+				        // new marker => add an empty event handler and marker;
+			            ide.session.insert({row: offset, column: 0}, eventString);
+			            handlerMarker = new ide.RangeClass(offset, 0, offset + 3, 0); // "4" tabs
+			            funcMarker = new ide.RangeClass(offset + 2, 0, offset + 2, 5);
+			            ide.addMarker(handlerMarker);
+			            ide.addMarker(funcMarker);
+			            component.eventMarkers[descriptor.propName] = {
+			                "handlerMarker": handlerMarker,
+			                "functionBodyMarker": funcMarker
+			            };
+			        } 
+			        funcBodyStart = component.eventMarkers[descriptor.propName].functionBodyMarker.start.row;
+                    
+			        if (!funcBodyStart) {
+			            funcBodyStart = codeRange.start.row;
+			        }
+
+			        ide.editor.gotoLine(funcBodyStart, 5, true);
+			    }
+			    ide.element.find(".code-button").click();
 			}
 		},
 		render: function (container, descriptor) {
