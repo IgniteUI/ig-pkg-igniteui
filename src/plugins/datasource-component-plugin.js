@@ -110,7 +110,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 					propType: descriptor.propType,
 					valueOptions: descriptor.valueOptions,
 					schema: descriptor.schema
-				});
+				}, true);
 			}
 
 			if (descriptor.args) {
@@ -138,14 +138,17 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			                "functionBodyMarker": funcMarker
 			            };
 			        } 
-			        funcBodyStart = component.eventMarkers[descriptor.propName].functionBodyMarker.start.row;
-                    
-			        if (!funcBodyStart) {
-			            funcBodyStart = codeRange.start.row;
-			        }
-
-			        ide.editor.gotoLine(funcBodyStart, 5, true);
+			        
 			    }
+
+			    funcBodyStart = component.eventMarkers[descriptor.propName].functionBodyMarker.start.row;
+
+			    if (!funcBodyStart) {
+			        funcBodyStart = codeRange.start.row;
+			    }
+
+			    ide.editor.gotoLine(funcBodyStart, 5, true);
+
 			    ide._deselectComponent();
 			    ide.element.find(".code-button").click();
 			}
