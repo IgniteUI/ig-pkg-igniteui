@@ -47,19 +47,11 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			return descriptor.defaultValue;
 		},
 		update: function (descriptor) {
-			var ide = this.settings.ide;
-			var component = ide.componentById(descriptor.id);
-			var opts = component.options ? component.options : {};
-			var newOpts = $.extend({}, opts);
-			newOpts[descriptor.propName] = descriptor.propValue;
-			var codeMarker = component.codeMarker;
-			var meta = codeMarker.extraMarkers;
-			var options = meta.options;
-			// set it in the ds
-			var obj = window.frames[0][descriptor.id];
-			var val = descriptor.propValue;
-			var isOptionAdded = false;
-			//if (obj && obj instanceof $.ig.DataSource) {
+			var ide = this.settings.ide, component = ide.componentById(descriptor.id), opts = component.options ? component.options : {},
+				newOpts = $.extend({}, opts), codeMarker = component.codeMarker, 
+				meta = codeMarker.extraMarkers, options = meta.options, obj = window.frames[0][descriptor.id], val = descriptor.propValue,
+				isOptionAdded = false;
+			newOpts[descriptor.propName] = descriptor.propValue
 			if (obj && obj._accumulatedTransactionLog) {
 				// what should happen when a new dataSource option is set - rebind the data source? 
 				if (descriptor.args) {
@@ -70,6 +62,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 					//We're binding to objects in the window scope
 					obj.settings[descriptor.propName] = window.frames[0][val];
 					obj.settings.dataSourceVal = val;
+					component.options.dataSourceVal = val;
 					obj._runtimeType = null;
 				} else {
 					obj.settings[descriptor.propName] = val;
@@ -155,8 +148,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 		},
 		render: function (container, descriptor) {
 			var ds = window.frames[0][descriptor.id], ide = this.settings.ide, locale = $.plugin.dataSource.locale, dsval,
-			that = this, ide = this.settings.ide, dscontainer, remoteContainer, localRemoteArea, localContainer;
-			//if (!(ds instanceof $.ig.DataSource)) {
+			that = this, ide = this.settings.ide, dscontainer, remoteContainer, localRemoteArea, localContainer, component = ide.componentById(descriptor.id);
 			if (!(ds && ds._accumulatedTransactionLog)) {
 				throw new Error("Object with ID " + descriptor.id + " is not an instance of IG Data Source");
 			}
@@ -165,6 +157,8 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			container.empty(); // fix for 168980
 			if (ds.settings.dataSourceVal) {
 				dsval = ds.settings.dataSourceVal;
+			} else if (component.options.dataSourceVal) {
+				dsval = component.options.dataSourceVal;
 			} else {
 				dsval = ds.settings.dataSource;
 			}
@@ -271,14 +265,8 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 				}
 				that.openCollectionEditor(descriptor);
 			});
-			/*
-			dscontainer.find(".ds-diag-editdatainline").click(function (event) {
-				//openPropertyEditor
-			});
-			*/
 			localContainer.find("input").val(dsval).keyup(function (event) {
 				// editing local data source
-				//ds.settings.dataSource = event.target.value; // validate?
 				// also update the code view
 				if (event.keyCode === 13) {
 					descriptor.propName = "dataSource";
