@@ -511,14 +511,11 @@ define (function (require, exports, module) {
 		},
 	    _addObjectMarkers: function (descriptor, parent, parentMarker, parentIndent) {
 		    var ide = this.settings.ide,
-                // options = descriptor.component.codeMarker.extraMarkers.options,
                 type = descriptor.propType,
                 name = descriptor.propName,
-                // config = ide._packages.igniteui.components[descriptor.component.type].properties[name],
-                // schema = config.schema,
                 schema = descriptor.schema,
                 currMarker, index, currObject,
-		        objString, objRange, objMarker, config;
+		        objString, objRange, objMarker, markerName, config;
 
 		    parent.extraMarkers = [];
 		    for (index = 0; index < descriptor.propValue.length; index++) {
@@ -534,10 +531,15 @@ define (function (require, exports, module) {
 		            currMarker.marker = objMarker;
 		            currMarker.schema = ide.loadSchemaList(currObject, schema);
 		            currMarker.baseIndent = parentIndent + 2;
-		            if (!parent.extraMarkers[index]) {
-		                parent.extraMarkers[index] = {};
+		            if (name === "features" && currObject.name) {
+		            	markerName = currObject.name;
+		            } else {
+		            	markerName = index;
 		            }
-		            parent.extraMarkers[index] = currMarker;
+		            if (!parent.extraMarkers[markerName]) {
+		            	parent.extraMarkers[markerName] = {};
+		            }
+		            parent.extraMarkers[markerName] = currMarker;
 		            this._addPrimitiveMarkers(descriptor, currMarker, parentIndent + 1, currObject);
 		        }
 		    }

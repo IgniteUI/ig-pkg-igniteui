@@ -426,48 +426,48 @@
             "type": "string",
             "defaultValue": "date",
             "description": {
-                "en": " Sets gets ability to automatically format text in cells for numeric and date columns. The format patterns and rules for numbers and dates are defined in $.ig.regional.defaults object.",
-                "jp": " 数値列および日付列のセルの自動書式設定テキストを取得または設定します。数値および日付の書式パターンおよびルールは $.ig.regional.defaults オブジェクトで定義されます。"
+                "en": "Sets gets ability to automatically format text in cells for numeric and date columns. The format patterns and rules for numbers and dates are defined in $.ig.regional.defaults object.",
+                "jp": "数値列および日付列のセルの自動書式設定テキストを取得または設定します。数値および日付の書式パターンおよびルールは $.ig.regional.defaults オブジェクトで定義されます。"
             },
             "valueOptions": [
                 {
                     "name": "date",
                     "type": "string",
                     "description": {
-                        "en": " formats only Date columns",
-                        "jp": " 日付列のみ書式設定します。"
+                        "en": "Formats only date columns",
+                        "jp": "日付列のみ書式設定します。"
                     }
                 },
                 {
                     "name": "number",
                     "type": "string",
                     "description": {
-                        "en": " formats only number columns",
-                        "jp": " 数値列のみ書式設定します。"
+                        "en": "Formats only number columns",
+                        "jp": "数値列のみ書式設定します。"
                     }
                 },
                 {
                     "name": "dateandnumber",
                     "type": "string",
                     "description": {
-                        "en": "",
-                        "jp": ""
+                        "en": "Formats date and number columns",
+                        "jp": "日付列および数値列を書式設定します。"
                     }
                 },
                 {
                     "name": "true",
                     "type": "bool",
                     "description": {
-                        "en": " formats Date and number columns",
-                        "jp": " 日付列および数値列を書式設定します。"
+                        "en": "Formats date and number columns",
+                        "jp": "日付列および数値列を書式設定します。"
                     }
                 },
                 {
                     "name": "false",
                     "type": "bool",
                     "description": {
-                        "en": " auto formatting is disabled",
-                        "jp": " 自動書式設定を無効にします。"
+                        "en": "Auto formatting is disabled",
+                        "jp": "自動書式設定を無効にします。"
                     }
                 }
             ]
