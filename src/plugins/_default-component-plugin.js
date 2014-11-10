@@ -399,8 +399,8 @@ define (function (require, exports, module) {
 	        }
 	        //var endColumn = marker.end.column;
 	        //var endColumn = propStr.length;
-	        var endColumn = 0;
-	        ide.session.replace(marker, propStr);
+			var endColumn = 0;
+			ide.session.replace(marker, propStr);
 	        //reattach the marker
 	        ide.session.removeMarker(marker.id);
 	        var newMarker = options[descriptor.propName].marker = ide.createAndAddMarker(startRow, startCol, endRow, endColumn);
@@ -456,7 +456,7 @@ define (function (require, exports, module) {
 	            ide.session.insert({row: pos.row, column: 0}, propStr); // column: lastPropEndCol, instead of column: 0
 	            var omarker = null;
 	            //pos.row;
-	            omarker = ide.createAndAddMarker(pos.row, 0, pos.row + propStr.split('\n').length - 2, propStr.replace("\n", "").length);
+	            omarker = ide.createAndAddMarker(pos.row, 0, pos.row + propStr.split('\n').length - 1, 0);
 	            options[descriptor.propName].marker = omarker;
 	            // change selection so that the prop value is selected
 	        } else {
