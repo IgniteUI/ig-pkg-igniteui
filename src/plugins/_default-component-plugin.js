@@ -399,8 +399,8 @@ define (function (require, exports, module) {
 	        }
 	        //var endColumn = marker.end.column;
 	        //var endColumn = propStr.length;
-	        var endColumn = 0;
-	        ide.session.replace(marker, propStr);
+			var endColumn = 0;
+			ide.session.replace(marker, propStr);
 	        //reattach the marker
 	        ide.session.removeMarker(marker.id);
 	        var newMarker = options[descriptor.propName].marker = ide.createAndAddMarker(startRow, startCol, endRow, endColumn);
@@ -456,7 +456,7 @@ define (function (require, exports, module) {
 	            ide.session.insert({row: pos.row, column: 0}, propStr); // column: lastPropEndCol, instead of column: 0
 	            var omarker = null;
 	            //pos.row;
-	            omarker = ide.createAndAddMarker(pos.row, 0, pos.row + propStr.split('\n').length - 2, propStr.replace("\n", "").length);
+	            omarker = ide.createAndAddMarker(pos.row, 0, pos.row + propStr.split('\n').length - 1, 0);
 	            options[descriptor.propName].marker = omarker;
 	            // change selection so that the prop value is selected
 	        } else {
@@ -511,14 +511,11 @@ define (function (require, exports, module) {
 		},
 	    _addObjectMarkers: function (descriptor, parent, parentMarker, parentIndent) {
 		    var ide = this.settings.ide,
-                // options = descriptor.component.codeMarker.extraMarkers.options,
                 type = descriptor.propType,
                 name = descriptor.propName,
-                // config = ide._packages.igniteui.components[descriptor.component.type].properties[name],
-                // schema = config.schema,
                 schema = descriptor.schema,
                 currMarker, index, currObject,
-		        objString, objRange, objMarker, config;
+		        objString, objRange, objMarker, markerName, config;
 
 		    parent.extraMarkers = [];
 		    for (index = 0; index < descriptor.propValue.length; index++) {
@@ -534,10 +531,15 @@ define (function (require, exports, module) {
 		            currMarker.marker = objMarker;
 		            currMarker.schema = ide.loadSchemaList(currObject, schema);
 		            currMarker.baseIndent = parentIndent + 2;
-		            if (!parent.extraMarkers[index]) {
-		                parent.extraMarkers[index] = {};
+		            if (name === "features" && currObject.name) {
+		            	markerName = currObject.name;
+		            } else {
+		            	markerName = index;
 		            }
-		            parent.extraMarkers[index] = currMarker;
+		            if (!parent.extraMarkers[markerName]) {
+		            	parent.extraMarkers[markerName] = {};
+		            }
+		            parent.extraMarkers[markerName] = currMarker;
 		            this._addPrimitiveMarkers(descriptor, currMarker, parentIndent + 1, currObject);
 		        }
 		    }

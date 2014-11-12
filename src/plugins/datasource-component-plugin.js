@@ -103,7 +103,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 					propType: descriptor.propType,
 					valueOptions: descriptor.valueOptions,
 					schema: descriptor.schema
-				}, true);
+				});
 			}
 
 			if (descriptor.args) {
