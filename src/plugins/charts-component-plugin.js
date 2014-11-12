@@ -54,6 +54,37 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 			catch(ex) {
 				console.log(descriptor.providerType + " doesn't support runtime theme switching");
 			}
+		},
+		exportImage: function (descriptor) {
+			var exImage;
+			if (descriptor.type === "dataChart" || descriptor.type === "map") {
+				exImage = window.frames[0].$("#" + descriptor.id)[descriptor.providerType]("exportImage");
+			} else {
+				exImage = this._getImage(null, null, descriptor);
+			}
+			return exImage;
+		},
+		_getImage: function (width, height, descriptor) {
+			var expCanvas, imgElement = document.createElement("img");
+			width = width || window.frames[0].$('#' + descriptor.id).width();
+			height = height || window.frames[0].$('#' + descriptor.id).height();
+			expCanvas = this._drawCanvas(window.frames[0].$('#' + descriptor.id + ' canvas'), width, height);
+			imgElement.src = expCanvas.toDataURL("image/png");
+			return imgElement;
+		},
+		_drawCanvas: function (canvasElemnts, iWidth, iHeight) {
+			var oSaveCanvas = document.createElement("canvas"), oSaveCtx;
+
+			oSaveCanvas.width = iWidth;
+			oSaveCanvas.height = iHeight;
+			oSaveCanvas.style.width = iWidth + "px";
+			oSaveCanvas.style.height = iHeight + "px";
+
+			oSaveCtx = oSaveCanvas.getContext("2d");
+			window.frames[0].$.each(canvasElemnts, function (i, canvas) {
+				oSaveCtx.drawImage(canvas, 0, 0, iWidth, iHeight);
+			});
+			return oSaveCanvas;
 		}
 	});
 	return IgniteUIChartsPlugin;
