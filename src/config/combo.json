@@ -4,26 +4,7 @@
     "category": null,
     "visual": true,
     "events": {
-        "activeItemChanged": {
-            "cancellable": false,
-            "args": [
-                {
-                    "name": "evt",
-                    "type": "Event",
-                    "optional": false
-                },
-                {
-                    "name": "ui",
-                    "type": "Object",
-                    "optional": false
-                }
-            ],
-            "description": {
-                "en": "Event which is raised after change of active item in list.<br>    Function takes arguments evt and ui.<br>    Use evt.originalEvent to obtain reference to event of browser. That can be null.<br>    Use ui.owner to obtain reference to igCombo.<br>    Use ui.index to obtain index of new active item.<br>    Use ui.oldIndex to obtain index of old active item.",
-                "jp": "リスト内のアクティブな項目の変更後に発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>    evt.originalEvent を使用して、ブラウザーのイベントへの参照を取得します。null にできます。<br>    ui.owner を使用して、igCombo への参照を取得します。<br>    ui.index を使用して、新しいアクティブな項目のインデックスを取得します。<br>    ui.oldIndex を使用して、古いアクティブな項目のインデックスを取得します。"
-            }
-        },
-        "activeItemChanging": {
+		"rendered": {
             "cancellable": true,
             "args": [
                 {
@@ -38,8 +19,8 @@
                 }
             ],
             "description": {
-                "en": "Event which is raised before change of active item in list.<br>    Return false in order to cancel change.<br>    Function takes arguments evt and ui.<br>    Use evt.originalEvent to obtain reference to event of browser. That can be null.<br>    Use ui.owner to obtain reference to igCombo.<br>    Use ui.index to obtain index of new active item.<br>    Use ui.oldIndex to obtain index of old active item.",
-                "jp": "リスト内のアクティブな項目の変更前に発生するイベント。<br>    変更をキャンセルするには、False を返します。<br>    関数は引数 evt および ui を取得します。<br>    evt.originalEvent を使用して、ブラウザーのイベントへの参照を取得します。null にできます。<br>    ui.owner を使用して、igCombo への参照を取得します。<br>    ui.index を使用して、新しいアクティブな項目のインデックスを取得します。<br>    ui.oldIndex を使用して、古いアクティブな項目のインデックスを取得します。"
+                "en": "Event which is raised after rendering of the combo completes.<br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the combo performing rendering.<br>    Use ui.element to get a reference to the main/top combo element.",
+                "jp": "Event which is raised after rendering of the combo completes.<br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the combo performing rendering.<br>    Use ui.element to get a reference to the main/top combo element."
             }
         },
         "dataBinding": {

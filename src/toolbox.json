@@ -394,7 +394,7 @@
     		"framework": false,
     		"width": 200,
     		"height":30,
-    		"defaultOptions": {"dropDownAsChild": true},
+    		"defaultOptions": {"dropDownAttachedToBody": false},
     		"dataSource": "sampleListData1"
     	},
     	"localDataSource": {
