@@ -392,9 +392,6 @@
     		"category": "lists",
     		"visual": true,
     		"framework": false,
-    		"width": 200,
-    		"height":30,
-    		"defaultOptions": {"dropDownAttachedToBody": false},
     		"dataSource": "sampleListData1"
     	},
     	"localDataSource": {
