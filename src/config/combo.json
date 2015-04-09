@@ -289,8 +289,8 @@
       "type": "string",
       "defaultValue": null,
       "description": {
-	  "en": Gets sets title for html element which represend clear button. That is an override for the $.ig.Combo.locale.clearButtonTitle.",
-	  "jp": クリア ボタンを表す HTML 要素のタイトルを取得または設定します。$ig.Combo.locale.clearButtonTitle のオーバーライドです。"},
+	  "en": "Gets sets title for html element which represend clear button. That is an override for the $.ig.Combo.locale.clearButtonTitle.",
+	  "jp": "クリア ボタンを表す HTML 要素のタイトルを取得または設定します。$ig.Combo.locale.clearButtonTitle のオーバーライドです。"},
       "valueOptions": null
     },
     "closeDropDownOnBlur": {
