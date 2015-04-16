@@ -19,7 +19,7 @@
         }
       ],
       "description": {
-	  "en": "Event which is raised before data binding is performed.<br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to igCombo performing the databinding.<br>    Use ui.dataSource to get a reference to the $.ig.DataSource combo is to be databound to.",
+	  "en": "Event which is raised before data binding is performed.<br>Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to igCombo performing the databinding.<br>    Use ui.dataSource to get a reference to the $.ig.DataSource combo is to be databound to.",
 	  "jp": "データ バインドが実行される前に発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して、データバインドを実行する igCombo への参照を取得します。<br>    ui.dataSource を使用して、コンボにデータ バインドする $.ig.DataSource への参照を取得します。"
 	  }
     },
@@ -289,7 +289,7 @@
       "type": "string",
       "defaultValue": null,
       "description": {
-	  "en": "Gets sets title for html element which represend clear button. That is an override for the $.ig.Combo.locale.clearButtonTitle.",
+	  "en": "Gets sets title for html element which represents clear button. That is an override for the $.ig.Combo.locale.clearButtonTitle.",
 	  "jp": "クリア ボタンを表す HTML 要素のタイトルを取得または設定します。$ig.Combo.locale.clearButtonTitle のオーバーライドです。"},
       "valueOptions": null
     },
