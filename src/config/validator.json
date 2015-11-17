@@ -1,190 +1,656 @@
-﻿{
-    "properties": {
-        "showIcon": {
-            "type": "bool",
-            "defaultValue": true,
-            "description": {
-                "en": "Gets or sets visibility of icon on error message.",
-                "jp": "エラー メッセージ上のアイコンの可視性を取得または設定します。"
-            }
+{
+  "overview": null,
+  "name": "ui.igValidator",
+  "category": null,
+  "visual": true,
+  "events": {
+    "error": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
         },
-        "animationShow": {
-            "type": "number",
-            "defaultValue": 300,
-            "description": {
-                "en": "Gets or sets duration of show animation in milliseconds.",
-                "jp": "アニメーションを表示する期間 (ミリ秒) を取得または設定します。"
-            }
-        },
-        "animationHide": {
-            "type": "number",
-            "defaultValue": 300,
-            "description": {
-                "en": "Gets or sets duration of hide animation in milliseconds.",
-                "jp": "アニメーションを非表示にする期間 (ミリ秒) を取得または設定します。"
-            }
-        },
-        "enableTargetErrorCss": {
-            "type": "bool",
-            "defaultValue": true,
-            "description": {
-                "en": "Gets or sets ability to apply error css to target element.",
-                "jp": "ターゲット要素にエラー CSS を適用する機能を取得または設定します。"
-            }
-        },
-        "alignment": {
-            "type": "string",
-            "defaultValue": "bottom",
-            "description": {
-                "en": "Gets or sets location of error label relative to target element.",
-                "jp": "ターゲット要素に相対的なエラー ラベルの場所を取得または設定します。"
-            }
-        },
-        "keepFocus": {
-            "type": "string",
-            "defaultValue": "never",
-            "description": {
-                "en": "Gets or sets option to set focus back to editor when validation failed. Default value comes from corresponding member in $.ui.igValidator.defaults object, which is undefined.",
-                "jp": "検証が失敗したときにフォーカスをエディターに戻すオプションを取得または設定します。デフォルトは、$.ui.igValidator.defaults 内の対応するメンバーに基づき、未定義です。"
-            },
-            "valueOptions": [
-                {
-                    "name": "never",
-                    "type": "string",
-                    "description": {
-                        "en": "Don't keep focus",
-                        "jp": "フォーカスを保持しません"
-                    }
-                },
-                {
-                    "name": "once",
-                    "type": "string",
-                    "description": {
-                        "en": "Keep the focus only once",
-                        "jp": "フォーカスを一度に保持します"
-                    }
-                },
-                {
-                    "name": "always",
-                    "type": "string",
-                    "description": {
-                        "en": " Always keep the focus",
-                        "jp": " 常にフォーカスを保持します"
-                    }
-                }
-            ]
-        },
-        "onchange": {
-            "type": "bool",
-            "defaultValue": true,
-            "description": {
-                "en": "Gets or sets triggering validation when value in editor was changed.",
-                "jp": "エディターの値が変更されたときのトリガー検証を取得または設定します。"
-            }
-        },
-        "onblur": {
-            "type": "bool",
-            "defaultValue": true,
-            "description": {
-                "en": "Gets or sets triggering validation when editor lost focus.",
-                "jp": "エディターがフォーカスを失ったときのトリガー検証を取得または設定します。"
-            }
-        },
-        "formSubmit": {
-            "type": "bool",
-            "defaultValue": false,
-            "description": {
-                "en": "Gets or sets triggering validation when application called form.submit().",
-                "jp": "アプリケーションが form.submit() 呼び出したときのトリガー検証を取得または設定します。"
-            }
-        },
-        "onsubmit": {
-            "type": "bool",
-            "defaultValue": true,
-            "description": {
-                "en": "Gets or sets triggering validation when form gets onsubmit event.",
-                "jp": "フォームが onsubmit イベントを取得したときのトリガー検証を取得または設定します。"
-            }
-        },
-        "bodyAsParent": {
-            "type": "bool",
-            "defaultValue": true,
-            "description": {
-                "en": "Gets or sets parent/location of error message.",
-                "jp": "エラー メッセージの親/場所を取得または設定します。"
-            }
-        },
-        "required": {
-            "type": "bool",
-            "defaultValue": false,
-            "description": {
-                "en": "Gets or sets option to validate if value was entered (not empty text, selected item, etc.)",
-                "jp": "値 (空でないテキスト、選択項目など) が入力されたかどうかを検証するオプションを取得または設定します。"
-            }
-        },
-        "minLength": {
-            "type": "number",
-            "defaultValue": -1,
-            "description": {
-                "en": "Gets or sets minimum length of text or minimum number of selected items.",
-                "jp": "テキストの最小長または選択した項目の最小数を取得または設定します。"
-            }
-        },
-        "maxLength": {
-            "type": "number",
-            "defaultValue": -1,
-            "description": {
-                "en": "Gets or sets maximum length of text or maximum number of selected items.",
-                "jp": "テキストの最大長または選択した項目の最大数を取得または設定します。"
-            }
-        },
-        "min": {
-            "type": "number",
-            "defaultValue": null,
-            "description": {
-                "en": "Gets or sets validation for minimum number.",
-                "jp": "最小数の検証を取得または設定します。"
-            }
-        },
-        "max": {
-            "type": "number",
-            "defaultValue": null,
-            "description": {
-                "en": "Gets or sets validation for maximum number.",
-                "jp": "最大数の検証を取得または設定します。"
-            }
-        },
-        "regExp": {
-            "type": "string",
-            "defaultValue": null,
-            "description": {
-                "en": "Gets or sets regular expression which is used to validate value in text editor.",
-                "jp": "テキスト エディター内の値を検証するために使用する正規表現を取得または設定します。"
-            }
-        },
-        "checkboxesName": {
-            "type": "bool",
-            "defaultValue": false,
-            "description": {
-                "en": "Gets or sets option to use the name attribute of checkboxes in order to validate ranges.",
-                "jp": "範囲を検証するためにチェックボックスの名前属性を使用するためのオプションを取得または設定します。"
-            }
-        },
-        "theme": {
-            "type": "string",
-            "defaultValue": null,
-            "description": {
-                "en": "Gets or sets selector for css classes.",
-                "jp": "CSS クラスのセレクターを取得または設定します。"
-            }
-        },
-        "errorMessage": {
-            "type": "string",
-            "defaultValue": null,
-            "description": {
-                "en": "Gets or sets text for error-message which overrides all possible specific error-messages.",
-                "jp": "すべての可能な固有のエラー メッセージをオーバーライドするエラー メッセージのテキストを取得または設定します。"
-            }
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
         }
+      ],
+      "description": {
+        "en": "Event raised for invalid field after value was validated but before any action takes effect.<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.value to get current value in target. <br>                Use ui.valid to determine the outcome of the validation.<br>                ui.rule is populated with the name of the rule that failed validation, if any.<br>                ui.fieldOptions is populated with options for the specific field in the collection or null.",
+        "jp": "Event raised for invalid field after value was validated but before any action takes effect.<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.value to get current value in target. <br>                Use ui.valid to determine the outcome of the validation.<br>                ui.rule is populated with the name of the rule that failed validation, if any.<br>                ui.fieldOptions is populated with options for the specific field in the collection or null."
+      }
+    },
+    "errorHidden": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Event which is raised after error message was hidden.<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.message to get text of message. <br>                Use ui.target to get reference to the target of the message.<br>                ui.fieldOptions is populated with options for the specific field in the collection or null.",
+        "jp": "Event which is raised after error message was hidden.<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.message to get text of message. <br>                Use ui.target to get reference to the target of the message.<br>                ui.fieldOptions is populated with options for the specific field in the collection or null."
+      }
+    },
+    "errorHiding": {
+      "cancellable": true,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Event which is raised before error message is hidden.<br>                Return false in order to keep error message displayed.<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.message to get text of message. <br>                Use ui.target to get reference to the target of the message.<br>                ui.fieldOptions is populated with options for the specific field in the collection or null.",
+        "jp": "Event which is raised before error message is hidden.<br>                Return false in order to keep error message displayed.<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.message to get text of message. <br>                Use ui.target to get reference to the target of the message.<br>                ui.fieldOptions is populated with options for the specific field in the collection or null."
+      }
+    },
+    "errorShowing": {
+      "cancellable": true,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Event which is raised before error message is displayed.<br>                Return false in order to prevent error message display.<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.message to get text of message. <br>                Use ui.target to get reference to the target of the message.<br>                ui.fieldOptions is populated with options for the specific field in the collection or null.",
+        "jp": "Event which is raised before error message is displayed.<br>                Return false in order to prevent error message display.<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.message to get text of message. <br>                Use ui.target to get reference to the target of the message.<br>                ui.fieldOptions is populated with options for the specific field in the collection or null."
+      }
+    },
+    "errorShown": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Event which is raised after error message was displayed.<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.message to get text of message. <br>                Use ui.target to get reference to the target of the message.<br>                ui.fieldOptions is populated with options for the specific field in the collection or null.",
+        "jp": "Event which is raised after error message was displayed.<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.message to get text of message. <br>                Use ui.target to get reference to the target of the message.<br>                ui.fieldOptions is populated with options for the specific field in the collection or null."
+      }
+    },
+    "formError": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Event triggered on Validator instance level after failed validation on form submit event<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.target to get reference of the event target form.",
+        "jp": "Event triggered on Validator instance level after failed validation on form submit event<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.target to get reference of the event target form."
+      }
+    },
+    "formSuccess": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Event triggered on Validator instance level after successful validation on form submit event<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.target to get reference of the event target form.",
+        "jp": "Event triggered on Validator instance level after successful validation on form submit event<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.target to get reference of the event target form."
+      }
+    },
+    "formValidated": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Event triggered on Validator instance level after validation on form submit event<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.target to get reference of the event target form.<br>                Use ui.valid to determine the outcome of the validation.",
+        "jp": "Event triggered on Validator instance level after validation on form submit event<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.target to get reference of the event target form.<br>                Use ui.valid to determine the outcome of the validation."
+      }
+    },
+    "formValidating": {
+      "cancellable": true,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Event triggered on Validator instance level before handling a form submit event. <br>                Return false to cancel to skip validating and potentially allow the submit if no other other validators return erros.<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.target to get reference of the event target form.",
+        "jp": "Event triggered on Validator instance level before handling a form submit event. <br>                Return false to cancel to skip validating and potentially allow the submit if no other other validators return erros.<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.target to get reference of the event target form."
+      }
+    },
+    "success": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Event raised for valid field  after value was validated but before any action takes effect.<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.value to get current value in target. <br>                Use ui.valid to determine the outcome of the validation.<br>                Use ui.fieldOptions is populated with options for the specific field in the collection or null.",
+        "jp": "Event raised for valid field  after value was validated but before any action takes effect.<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.value to get current value in target. <br>                Use ui.valid to determine the outcome of the validation.<br>                Use ui.fieldOptions is populated with options for the specific field in the collection or null."
+      }
+    },
+    "successHidden": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Event which is raised after success message was hidden.<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.message to get text of message. <br>                Use ui.target to get reference to the target of the message.<br>                ui.fieldOptions is populated with options for the specific field in the collection or null.",
+        "jp": "Event which is raised after success message was hidden.<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.message to get text of message. <br>                Use ui.target to get reference to the target of the message.<br>                ui.fieldOptions is populated with options for the specific field in the collection or null."
+      }
+    },
+    "successHiding": {
+      "cancellable": true,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Event which is raised before success message is hidden.<br>                Return false in order to keep success message displayed.<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.message to get text of message. <br>                Use ui.target to get reference to the target of the message.<br>                ui.fieldOptions is populated with options for the specific field in the collection or null.",
+        "jp": "Event which is raised before success message is hidden.<br>                Return false in order to keep success message displayed.<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.message to get text of message. <br>                Use ui.target to get reference to the target of the message.<br>                ui.fieldOptions is populated with options for the specific field in the collection or null."
+      }
+    },
+    "successShowing": {
+      "cancellable": true,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Event which is raised before success message is displayed.<br>                Return false in order to prevent success message display.<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.message to get text of message. <br>                Use ui.target to get reference to the target of the message.<br>                ui.fieldOptions is populated with options for the specific field in the collection or null.",
+        "jp": "Event which is raised before success message is displayed.<br>                Return false in order to prevent success message display.<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.message to get text of message. <br>                Use ui.target to get reference to the target of the message.<br>                ui.fieldOptions is populated with options for the specific field in the collection or null."
+      }
+    },
+    "successShown": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Event which is raised after success message was displayed.<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.message to get text of message. <br>                Use ui.target to get reference to the target of the message.<br>                ui.fieldOptions is populated with options for the specific field in the collection or null.",
+        "jp": "Event which is raised after success message was displayed.<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.message to get text of message. <br>                Use ui.target to get reference to the target of the message.<br>                ui.fieldOptions is populated with options for the specific field in the collection or null."
+      }
+    },
+    "validated": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Event which is raised after value was validated but before any action takes effect.<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.value to get current value in target. <br>                Use ui.valid to determine the outcome of the validation.<br>                ui.rule is populated with the name of the rule that failed validation, if any.<br>                ui.fieldOptions is populated with options for the specific field in the collection or null.",
+        "jp": "Event which is raised after value was validated but before any action takes effect.<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.value to get current value in target. <br>                Use ui.valid to determine the outcome of the validation.<br>                ui.rule is populated with the name of the rule that failed validation, if any.<br>                ui.fieldOptions is populated with options for the specific field in the collection or null."
+      }
+    },
+    "validating": {
+      "cancellable": true,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Event which is raised on validation before default validation logic is applied.<br>                Return false in order to cancel the event and consider the field valid.<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.value to get current value in target. <br>                ui.fieldOptions is populated with options for the specific field in the collection or null.",
+        "jp": "Event which is raised on validation before default validation logic is applied.<br>                Return false in order to cancel the event and consider the field valid.<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.value to get current value in target. <br>                ui.fieldOptions is populated with options for the specific field in the collection or null."
+      }
     }
+  },
+  "properties": {
+    "custom": {
+      "type": "string",
+      "defaultValue": null,
+      "description": {
+        "en": " Gets or sets a custom function to perform validation. Use 'this' to reference the calling validator and the value and optional field settings arguement to determine and return the state of the field.",
+        "jp": " Gets or sets a custom function to perform validation. Use 'this' to reference the calling validator and the value and optional field settings arguement to determine and return the state of the field."
+      },
+      "valueOptions": [
+        {
+          "name": "function",
+          "type": "function",
+          "description": {
+            "en": " The function to call",
+            "jp": " The function to call"
+          }
+        },
+        {
+          "name": "string",
+          "type": "string",
+          "description": {
+            "en": " Function name, must be in global namespace (window[\"name\"])",
+            "jp": " Function name, must be in global namespace (window[\"name\"])"
+          }
+        },
+        {
+          "name": "object",
+          "type": "object",
+          "description": {
+            "en": " A configuration object with method property being the function and optional error message.",
+            "jp": " A configuration object with method property being the function and optional error message."
+          }
+        }
+      ]
+    },
+    "date": {
+      "type": "string",
+      "defaultValue": null,
+      "description": {
+        "en": " Gets or sets option to validate if value is a date. This can help guide the valueRange validation.",
+        "jp": " Gets or sets option to validate if value is a date. This can help guide the valueRange validation."
+      },
+      "valueOptions": [
+        {
+          "name": "bool",
+          "type": "bool",
+          "description": {
+            "en": " A boolean value indicating if the field should be a valid JavaScript Date or can be parsed as one.",
+            "jp": " A boolean value indicating if the field should be a valid JavaScript Date or can be parsed as one."
+          }
+        },
+        {
+          "name": "object",
+          "type": "object",
+          "description": {
+            "en": " A configuration object with optional error message (e.g. date: { errorMessage: \"Enter a valid number\"} )",
+            "jp": " A configuration object with optional error message (e.g. date: { errorMessage: \"Enter a valid number\"} )"
+          }
+        }
+      ]
+    },
+    "email": {
+      "type": "string",
+      "defaultValue": null,
+      "description": {
+        "en": " Gets or sets option to validate if value is an email.",
+        "jp": " Gets or sets option to validate if value is an email."
+      },
+      "valueOptions": [
+        {
+          "name": "bool",
+          "type": "bool",
+          "description": {
+            "en": " A boolean value indicating if the field should be an email.",
+            "jp": " A boolean value indicating if the field should be an email."
+          }
+        },
+        {
+          "name": "object",
+          "type": "object",
+          "description": {
+            "en": " A configuration object with optional error message (e.g. email: { errorMessage: \"Enter a valid email\"} )",
+            "jp": " A configuration object with optional error message (e.g. email: { errorMessage: \"Enter a valid email\"} )"
+          }
+        }
+      ]
+    },
+    "equalTo": {
+      "type": "string",
+      "defaultValue": null,
+      "description": {
+        "en": " Requires the value in this field to be the same as another input element or editor control.",
+        "jp": " Requires the value in this field to be the same as another input element or editor control."
+      },
+      "valueOptions": [
+        {
+          "name": "string",
+          "type": "string",
+          "description": {
+            "en": " A valid jQuery selector for the target element",
+            "jp": " A valid jQuery selector for the target element"
+          }
+        },
+        {
+          "name": "object",
+          "type": "object",
+          "description": {
+            "en": " A reference to the jQuery object for the target or an object with selector property and custom errorMessage.",
+            "jp": " A reference to the jQuery object for the target or an object with selector property and custom errorMessage."
+          }
+        }
+      ]
+    },
+    "errorMessage": {
+      "type": "string",
+      "defaultValue": null,
+      "description": {
+        "en": "Gets or sets text for error-message which overrides all possible specific error-messages.",
+        "jp": "Gets or sets text for error-message which overrides all possible specific error-messages."
+      },
+      "valueOptions": null
+    },
+    "fields": {
+      "type": "array",
+      "defaultValue": null,
+      "description": {
+        "en": "List of field items describing each field with validation options and a required selector. Fields can contain any of the validation rules and triggers but not other fields or event handlers.<br>&nbsp;&nbsp;&nbsp;&nbsp;Accepted options are also inherited from the global control configuration if not set.",
+        "jp": "List of field items describing each field with validation options and a required selector. Fields can contain any of the validation rules and triggers but not other fields or event handlers.<br>&nbsp;&nbsp;&nbsp;&nbsp;Accepted options are also inherited from the global control configuration if not set."
+      },
+      "valueOptions": null
+    },
+    "lengthRange": {
+      "type": "string",
+      "defaultValue": null,
+      "description": {
+        "en": " Gets or sets minimum and maximum length of text or number of selected items. Null or 0 values are ignored.",
+        "jp": " Gets or sets minimum and maximum length of text or number of selected items. Null or 0 values are ignored."
+      },
+      "valueOptions": [
+        {
+          "name": "array",
+          "type": "array",
+          "description": {
+            "en": " An array of two numbers, where the first value is the minimum and the second is the maximum. (e.g. lengthRange: [ 1, 10] )",
+            "jp": " An array of two numbers, where the first value is the minimum and the second is the maximum. (e.g. lengthRange: [ 1, 10] )"
+          }
+        },
+        {
+          "name": "object",
+          "type": "object",
+          "description": {
+            "en": " A configuration object with optional error message. Message strings can contain format items for min and max respecitively (e.g. lengthRange: { min: 6, max: 20, errorMessage: \"Password must be at least {0} long and no more than {1}.\" } )",
+            "jp": " A configuration object with optional error message. Message strings can contain format items for min and max respecitively (e.g. lengthRange: { min: 6, max: 20, errorMessage: \"Password must be at least {0} long and no more than {1}.\" } )"
+          }
+        }
+      ]
+    },
+    "messageTarget": {
+      "type": "domelement",
+      "defaultValue": null,
+      "description": {
+        "en": "Gets or sets custom jQuery element, which innerHTML will be used to show validation messages. That can be SPAN, LABEL or DIV.",
+        "jp": "Gets or sets custom jQuery element, which innerHTML will be used to show validation messages. That can be SPAN, LABEL or DIV."
+      },
+      "valueOptions": null
+    },
+    "notificationOptions": {
+      "type": "object",
+      "defaultValue": null,
+	  "schemaRef": "notifier",
+      "description": {
+        "en": "Options for the igNotifier used to show error messages.",
+        "jp": "Options for the igNotifier used to show error messages."
+      }
+     
+    },
+    "number": {
+      "type": "string",
+      "defaultValue": null,
+      "description": {
+        "en": " Gets or sets option to validate if value is a number. Default separators for decimals and thousands are '.' and ',' respectively.",
+        "jp": " Gets or sets option to validate if value is a number. Default separators for decimals and thousands are '.' and ',' respectively."
+      },
+      "valueOptions": [
+        {
+          "name": "bool",
+          "type": "bool",
+          "description": {
+            "en": " A boolean value indicating if the field should be a number.",
+            "jp": " A boolean value indicating if the field should be a number."
+          }
+        },
+        {
+          "name": "object",
+          "type": "object",
+          "description": {
+            "en": " A configuration object with errorMessage, decimalSeparator and thousandsSeparator. Those properties are all optional.",
+            "jp": " A configuration object with errorMessage, decimalSeparator and thousandsSeparator. Those properties are all optional."
+          }
+        }
+      ]
+    },
+    "onblur": {
+      "type": "bool",
+      "defaultValue": true,
+      "description": {
+        "en": "Gets or sets triggering validation when editor lost focus.",
+        "jp": "Gets or sets triggering validation when editor lost focus."
+      },
+      "valueOptions": null
+    },
+    "onchange": {
+      "type": "bool",
+      "defaultValue": false,
+      "description": {
+        "en": "Gets or sets triggering validation when value in editor was changed.",
+        "jp": "Gets or sets triggering validation when value in editor was changed."
+      },
+      "valueOptions": null
+    },
+    "onsubmit": {
+      "type": "bool",
+      "defaultValue": true,
+      "description": {
+        "en": "Gets or sets triggering validation when form gets onsubmit event.",
+        "jp": "Gets or sets triggering validation when form gets onsubmit event."
+      },
+      "valueOptions": null
+    },
+    "optionalIndication": {
+      "type": "bool",
+      "defaultValue": false,
+      "description": {
+        "en": "Option to show a label indication next to optional fields. <br>&nbsp;&nbsp;&nbsp;    Note: Indicators are not supported on grouped controls such as checkbox or radio button sets and the igRating control.",
+        "jp": "Option to show a label indication next to optional fields. <br>&nbsp;&nbsp;&nbsp;    Note: Indicators are not supported on grouped controls such as checkbox or radio button sets and the igRating control."
+      },
+      "valueOptions": null
+    },
+    "pattern": {
+      "type": "string",
+      "defaultValue": null,
+      "description": {
+        "en": " Gets or sets regular expression which is used to validate value in text editor.",
+        "jp": " Gets or sets regular expression which is used to validate value in text editor."
+      },
+      "valueOptions": [
+        {
+          "name": "string",
+          "type": "string",
+          "description": {
+            "en": " A string containing regular expression",
+            "jp": " A string containing regular expression"
+          }
+        },
+        {
+          "name": "object",
+          "type": "",
+          "description": {
+            "en": " A RegExp object or an object with expression and errorMessage properties.",
+            "jp": " A RegExp object or an object with expression and errorMessage properties."
+          }
+        }
+      ]
+    },
+    "required": {
+      "type": "string",
+      "defaultValue": null,
+      "description": {
+        "en": " Gets or sets option to validate if value was entered (not empty text, selected item, etc.)",
+        "jp": " Gets or sets option to validate if value was entered (not empty text, selected item, etc.)"
+      },
+      "valueOptions": [
+        {
+          "name": "bool",
+          "type": "bool",
+          "description": {
+            "en": " A boolean value indicating if the field is required.",
+            "jp": " A boolean value indicating if the field is required."
+          }
+        },
+        {
+          "name": "object",
+          "type": "object",
+          "description": {
+            "en": " A configuration object with optional error message (e.g. required: { errorMessage: \"Error!\"} )",
+            "jp": " A configuration object with optional error message (e.g. required: { errorMessage: \"Error!\"} )"
+          }
+        }
+      ]
+    },
+    "requiredIndication": {
+      "type": "bool",
+      "defaultValue": false,
+      "description": {
+        "en": "Option to show an asterisks indication next to required fields. <br>&nbsp;&nbsp;&nbsp;    Note: Indicators are not supported on grouped controls such as checkbox or radio button sets and the igRating control.",
+        "jp": "Option to show an asterisks indication next to required fields. <br>&nbsp;&nbsp;&nbsp;    Note: Indicators are not supported on grouped controls such as checkbox or radio button sets and the igRating control."
+      },
+      "valueOptions": null
+    },
+    "successMessage": {
+      "type": "string",
+      "defaultValue": null,
+      "description": {
+        "en": "Gets or sets text for success message. Note there is no default, so setting this message will enable showing success indications.",
+        "jp": "Gets or sets text for success message. Note there is no default, so setting this message will enable showing success indications."
+      },
+      "valueOptions": null
+    },
+    "threshold": {
+      "type": "number",
+      "defaultValue": -1.0,
+      "description": {
+        "en": "Gets or sets validation minimum input length. Validation won't be triggered for input before that value is reached on change and blur. <br>                Note: This will have no effect on required fields on form submit.",
+        "jp": "Gets or sets validation minimum input length. Validation won't be triggered for input before that value is reached on change and blur. <br>                Note: This will have no effect on required fields on form submit."
+      },
+      "valueOptions": null
+    },
+    "valueRange": {
+      "type": "string",
+      "defaultValue": null,
+      "description": {
+        "en": " Gets or sets minimum and maximum values. Null values are ignored.",
+        "jp": " Gets or sets minimum and maximum values. Null values are ignored."
+      },
+      "valueOptions": [
+        {
+          "name": "array",
+          "type": "array",
+          "description": {
+            "en": " An array of two numbers or dates, where the first is the minimum and the second is the maximum. (e.g. valueRange: [ 1, 10] )",
+            "jp": " An array of two numbers or dates, where the first is the minimum and the second is the maximum. (e.g. valueRange: [ 1, 10] )"
+          }
+        },
+        {
+          "name": "object",
+          "type": "object",
+          "description": {
+            "en": " A configuration object with optional error message. Message strings can contain format items for min and max respecitively (e.g. lengthRange: { min: 6, max: 20, errorMessage: \"Value must be between {0} and {1}.\" } )",
+            "jp": " A configuration object with optional error message. Message strings can contain format items for min and max respecitively (e.g. lengthRange: { min: 6, max: 20, errorMessage: \"Value must be between {0} and {1}.\" } )"
+          }
+        }
+      ]
+    }
+  }
 }

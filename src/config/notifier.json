@@ -1,0 +1,577 @@
+{
+  "overview": null,
+  "name": "ui.igNotifier",
+  "category": null,
+  "visual": true,
+  "events": {
+    "hidden": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Event fired after popover is hidden.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get the element the popover is hidden for.<br>&nbsp;&nbsp;&nbsp;Use ui.content to get the content displayed in the popover as a string.<br>&nbsp;&nbsp;&nbsp;Use ui.popover to get the popover element hidden.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to the igPopover widget",
+        "jp": "Event fired after popover is hidden.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get the element the popover is hidden for.<br>&nbsp;&nbsp;&nbsp;Use ui.content to get the content displayed in the popover as a string.<br>&nbsp;&nbsp;&nbsp;Use ui.popover to get the popover element hidden.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to the igPopover widget"
+      }
+    },
+    "hiding": {
+      "cancellable": true,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Event fired before popover is hidden.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get the element the popover will hide for.<br>&nbsp;&nbsp;&nbsp;Use ui.content to get the current content displayed in the popover as a string.<br>&nbsp;&nbsp;&nbsp;Use ui.popover to get the popover element hiding.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to the igPopover widget",
+        "jp": "Event fired before popover is hidden.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get the element the popover will hide for.<br>&nbsp;&nbsp;&nbsp;Use ui.content to get the current content displayed in the popover as a string.<br>&nbsp;&nbsp;&nbsp;Use ui.popover to get the popover element hiding.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to the igPopover widget"
+      }
+    },
+    "showing": {
+      "cancellable": true,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Event fired before popover is shown.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get the element the popover will show for.<br>&nbsp;&nbsp;&nbsp;Use ui.content to get or set the content to be shown as a string.<br>&nbsp;&nbsp;&nbsp;Use ui.popover to get the popover element showing.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to the igPopover widget",
+        "jp": "Event fired before popover is shown.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get the element the popover will show for.<br>&nbsp;&nbsp;&nbsp;Use ui.content to get or set the content to be shown as a string.<br>&nbsp;&nbsp;&nbsp;Use ui.popover to get the popover element showing.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to the igPopover widget"
+      }
+    },
+    "shown": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Event fired after popover is shown.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get the element the popover showed for.<br>&nbsp;&nbsp;&nbsp;Use ui.content to get the content that was shown as a string.<br>&nbsp;&nbsp;&nbsp;Use ui.popover to get the popover element shown.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to the igPopover widget",
+        "jp": "Event fired after popover is shown.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get the element the popover showed for.<br>&nbsp;&nbsp;&nbsp;Use ui.content to get the content that was shown as a string.<br>&nbsp;&nbsp;&nbsp;Use ui.popover to get the popover element shown.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to the igPopover widget"
+      }
+    }
+  },
+  "properties": {
+    "allowCSSOnTarget": {
+      "type": "bool",
+      "defaultValue": true,
+      "description": {
+        "en": "Allows setting the respective state CSS on the target element (used to apply border color by default)",
+        "jp": "Allows setting the respective state CSS on the target element (used to apply border color by default)"
+      },
+      "valueOptions": null
+    },
+    "animationDuration": {
+      "type": "number",
+      "defaultValue": 250.0,
+      "description": {
+        "en": "Gets or sets the time in milliseconds the notification fades in and out when showing/hiding",
+        "jp": "Gets or sets the time in milliseconds the notification fades in and out when showing/hiding"
+      },
+      "valueOptions": null
+    },
+    "animationSlideDistance": {
+      "type": "number",
+      "defaultValue": 5.0,
+      "description": {
+        "en": "Gets or sets the distance in pixels a notification popover slides outwards as it's shown.",
+        "jp": "Gets or sets the distance in pixels a notification popover slides outwards as it's shown."
+      },
+      "valueOptions": null
+    },
+    "appendTo": {
+      "type": "string",
+      "defaultValue": null,
+      "description": {
+        "en": " Controls where the popover DOM should be attached to (only applies to popovers).",
+        "jp": " Controls where the popover DOM should be attached to (only applies to popovers)."
+      },
+      "valueOptions": [
+        {
+          "name": "string",
+          "type": "string",
+          "description": {
+            "en": " A valid jQuery selector for the element",
+            "jp": " A valid jQuery selector for the element"
+          }
+        },
+        {
+          "name": "object",
+          "type": "object",
+          "description": {
+            "en": " A reference to the parent jQuery object",
+            "jp": " A reference to the parent jQuery object"
+          }
+        }
+      ]
+    },
+    "closeOnBlur": {
+      "type": "bool",
+      "defaultValue": true,
+      "description": {
+        "en": "controls whether the popover will close on blur or not",
+        "jp": "controls whether the popover will close on blur or not"
+      },
+      "valueOptions": null
+    },
+    "containment": {
+      "type": "object",
+      "defaultValue": null,
+      "description": {
+        "en": "sets the containment for the popover. Accepts a jQuery object",
+        "jp": "sets the containment for the popover. Accepts a jQuery object"
+      },
+      "valueOptions": null
+    },
+    "contentTemplate": {
+      "type": "string",
+      "defaultValue": null,
+      "description": {
+        "en": " Sets the content for the popover container. Templated with two parameters by default: {0} - the icon class and {1} - message text.",
+        "jp": " Sets the content for the popover container. Templated with two parameters by default: {0} - the icon class and {1} - message text."
+      },
+      "valueOptions": [
+        {
+          "name": null,
+          "type": "string",
+          "description": {
+            "en": "   String content of the popover container",
+            "jp": "   String content of the popover container"
+          }
+        },
+        {
+          "name": null,
+          "type": "function",
+          "description": {
+            "en": " Function which is a callback that can either return the content directly, or call the first argument, passing in the content",
+            "jp": " Function which is a callback that can either return the content directly, or call the first argument, passing in the content"
+          }
+        }
+      ]
+    },
+    "direction": {
+      "type": "string",
+      "defaultValue": null,
+      "description": {
+        "en": " controls the direction in which the control shows relative to the target element",
+        "jp": " controls the direction in which the control shows relative to the target element"
+      },
+      "valueOptions": [
+        {
+          "name": "auto",
+          "type": "string",
+          "description": {
+            "en": " lets the control show on the side where enough space is available with the following priority top > bottom > right > left",
+            "jp": " lets the control show on the side where enough space is available with the following priority top > bottom > right > left"
+          }
+        },
+        {
+          "name": "left",
+          "type": "string",
+          "description": {
+            "en": " shows popover on the left side of the target element",
+            "jp": " shows popover on the left side of the target element"
+          }
+        },
+        {
+          "name": "right",
+          "type": "string",
+          "description": {
+            "en": " shows popover on the right side of the target element",
+            "jp": " shows popover on the right side of the target element"
+          }
+        },
+        {
+          "name": "top",
+          "type": "string",
+          "description": {
+            "en": " shows popover on the top of the target element",
+            "jp": " shows popover on the top of the target element"
+          }
+        },
+        {
+          "name": "bottom",
+          "type": "string",
+          "description": {
+            "en": " shows popover on the bottom of the target element",
+            "jp": " shows popover on the bottom of the target element"
+          }
+        }
+      ]
+    },
+    "headerTemplate": {
+      "type": "object",
+      "defaultValue": null,
+      "description": {
+        "en": "sets the content for the popover header",
+        "jp": "sets the content for the popover header"
+      },
+      "valueOptions": null
+    },
+    "height": {
+      "type": "string",
+      "defaultValue": null,
+      "description": {
+        "en": " defines height for the popover. leave null for auto",
+        "jp": " defines height for the popover. leave null for auto"
+      },
+      "valueOptions": [
+        {
+          "name": null,
+          "type": "number",
+          "description": {
+            "en": " The height can be set as a number.",
+            "jp": " The height can be set as a number."
+          }
+        },
+        {
+          "name": null,
+          "type": "string",
+          "description": {
+            "en": " The height can be set in pixels (px).",
+            "jp": " The height can be set in pixels (px)."
+          }
+        }
+      ]
+    },
+    "maxHeight": {
+      "type": "string",
+      "defaultValue": null,
+      "description": {
+        "en": " defines height the popover won't exceed even if no specific one is set.",
+        "jp": " defines height the popover won't exceed even if no specific one is set."
+      },
+      "valueOptions": [
+        {
+          "name": null,
+          "type": "number",
+          "description": {
+            "en": " The max height can be set as a number.",
+            "jp": " The max height can be set as a number."
+          }
+        },
+        {
+          "name": null,
+          "type": "string",
+          "description": {
+            "en": " The max height can be set in pixels (px).",
+            "jp": " The max height can be set in pixels (px)."
+          }
+        }
+      ]
+    },
+    "maxWidth": {
+      "type": "string",
+      "defaultValue": null,
+      "description": {
+        "en": " defines width the popover won't exceed even if no specific one is set.",
+        "jp": " defines width the popover won't exceed even if no specific one is set."
+      },
+      "valueOptions": [
+        {
+          "name": null,
+          "type": "number",
+          "description": {
+            "en": " The maxWidth can be set as a number.",
+            "jp": " The maxWidth can be set as a number."
+          }
+        },
+        {
+          "name": null,
+          "type": "string",
+          "description": {
+            "en": " The maxWidth can be set in pixels (px).",
+            "jp": " The maxWidth can be set in pixels (px)."
+          }
+        }
+      ]
+    },
+    "messages": {
+      "type": "object",
+      "defaultValue": null,
+      "description": {
+        "en": "A set of default messages for each state",
+        "jp": "A set of default messages for each state"
+      },
+      "valueOptions": null
+    },
+    "minWidth": {
+      "type": "string",
+      "defaultValue": null,
+      "description": {
+        "en": " defines width the popover won't go under the value even if no specific one is set.",
+        "jp": " defines width the popover won't go under the value even if no specific one is set."
+      },
+      "valueOptions": [
+        {
+          "name": null,
+          "type": "number",
+          "description": {
+            "en": " The minWidth can be set as a number.",
+            "jp": " The minWidth can be set as a number."
+          }
+        },
+        {
+          "name": null,
+          "type": "string",
+          "description": {
+            "en": " The minWidth can be set in pixels (px).",
+            "jp": " The minWidth can be set in pixels (px)."
+          }
+        }
+      ]
+    },
+    "mode": {
+      "type": "string",
+      "defaultValue": null,
+      "description": {
+        "en": " Controls the positioning mode of messages. Setting a mode will override the default behavior which is auto.",
+        "jp": " Controls the positioning mode of messages. Setting a mode will override the default behavior which is auto."
+      },
+      "valueOptions": [
+        {
+          "name": "auto",
+          "type": "string",
+          "description": {
+            "en": " Uses popover for info and warning messages and inline for errors and success.",
+            "jp": " Uses popover for info and warning messages and inline for errors and success."
+          }
+        },
+        {
+          "name": "popover",
+          "type": "string",
+          "description": {
+            "en": " Displays messages in a configurable popover. ",
+            "jp": " Displays messages in a configurable popover. "
+          }
+        },
+        {
+          "name": "inline",
+          "type": "string",
+          "description": {
+            "en": " Displays messages in a simplified notification text under the target.",
+            "jp": " Displays messages in a simplified notification text under the target."
+          }
+        }
+      ]
+    },
+    "notifyLevel": {
+      "type": "string",
+      "defaultValue": null,
+      "description": {
+        "en": " Controls the level of notifications shown by automatic and manual messages using the notify() method. Use show() to ignore the level.",
+        "jp": " Controls the level of notifications shown by automatic and manual messages using the notify() method. Use show() to ignore the level."
+      },
+      "valueOptions": [
+        {
+          "name": "success",
+          "type": "string",
+          "description": {
+            "en": " Show all types of messages",
+            "jp": " Show all types of messages"
+          }
+        },
+        {
+          "name": "info",
+          "type": "string",
+          "description": {
+            "en": " Show everything from info level messages up",
+            "jp": " Show everything from info level messages up"
+          }
+        },
+        {
+          "name": "warning",
+          "type": "string",
+          "description": {
+            "en": " Show everything from warning level messages up",
+            "jp": " Show everything from warning level messages up"
+          }
+        },
+        {
+          "name": "error",
+          "type": "string",
+          "description": {
+            "en": " Show only error messages",
+            "jp": " Show only error messages"
+          }
+        }
+      ]
+    },
+    "position": {
+      "type": "string",
+      "defaultValue": null,
+      "description": {
+        "en": " controls the position of the popover according to the target element in case the popover is larger than the target on the side we want to position, if the popover is smaller it should always be in the middle of the visible area",
+        "jp": " controls the position of the popover according to the target element in case the popover is larger than the target on the side we want to position, if the popover is smaller it should always be in the middle of the visible area"
+      },
+      "valueOptions": [
+        {
+          "name": "auto",
+          "type": "string",
+          "description": {
+            "en": " lets the control choose a position depending on available space with the following priority balanced > end > start",
+            "jp": " lets the control choose a position depending on available space with the following priority balanced > end > start"
+          }
+        },
+        {
+          "name": "balanced",
+          "type": "string",
+          "description": {
+            "en": " the popover is positioned at the middle of the target element",
+            "jp": " the popover is positioned at the middle of the target element"
+          }
+        },
+        {
+          "name": "start",
+          "type": "string",
+          "description": {
+            "en": " the popover is positioned at the beginning of the target element",
+            "jp": " the popover is positioned at the beginning of the target element"
+          }
+        },
+        {
+          "name": "end",
+          "type": "string",
+          "description": {
+            "en": " the popover is positioned at the end of the target element",
+            "jp": " the popover is positioned at the end of the target element"
+          }
+        }
+      ]
+    },
+    "selectors": {
+      "type": "string",
+      "defaultValue": null,
+      "description": {
+        "en": "Selectors indicating which items should show popovers. The predefined value is [title]. Customize if you're using something other then the title attribute for the popover content, or if you need a different selector for event delegation. When changing this option, you likely need to also change the contentTemplate option",
+        "jp": "Selectors indicating which items should show popovers. The predefined value is [title]. Customize if you're using something other then the title attribute for the popover content, or if you need a different selector for event delegation. When changing this option, you likely need to also change the contentTemplate option"
+      },
+      "valueOptions": null
+    },
+    "showIcon": {
+      "type": "bool",
+      "defaultValue": false,
+      "description": {
+        "en": "Allows rendering a span with the respective state CSS to display jQuery UI framework icons",
+        "jp": "Allows rendering a span with the respective state CSS to display jQuery UI framework icons"
+      },
+      "valueOptions": null
+    },
+    "showOn": {
+      "type": "string",
+      "defaultValue": null,
+      "description": {
+        "en": "",
+        "jp": ""
+      },
+      "valueOptions": [
+        {
+          "name": "mouseenter",
+          "type": "string",
+          "description": {
+            "en": " the popover is shown on mouse enter in the target element",
+            "jp": " the popover is shown on mouse enter in the target element"
+          }
+        }
+      ]
+    },
+    "state": {
+      "type": "string",
+      "defaultValue": null,
+      "description": {
+        "en": " Gets or sets the current state of the igNotifier messages. State controls what CSS classes are applied to the messages and target and has interactions with other options as well.",
+        "jp": " Gets or sets the current state of the igNotifier messages. State controls what CSS classes are applied to the messages and target and has interactions with other options as well."
+      },
+      "valueOptions": [
+        {
+          "name": "success",
+          "type": "string",
+          "description": {
+            "en": " Messages and target CSS have success styles applied.",
+            "jp": " Messages and target CSS have success styles applied."
+          }
+        },
+        {
+          "name": "info",
+          "type": "string",
+          "description": {
+            "en": " Messages have info applied. Target is unaffected.",
+            "jp": " Messages have info applied. Target is unaffected."
+          }
+        },
+        {
+          "name": "warning",
+          "type": "string",
+          "description": {
+            "en": " Messages and target CSS have warning styles applied.",
+            "jp": " Messages and target CSS have warning styles applied."
+          }
+        },
+        {
+          "name": "error",
+          "type": "string",
+          "description": {
+            "en": " Messages and target CSS have error styles applied.",
+            "jp": " Messages and target CSS have error styles applied."
+          }
+        }
+      ]
+    },
+    "width": {
+      "type": "string",
+      "defaultValue": null,
+      "description": {
+        "en": " defines width for the popover. leave null for auto.",
+        "jp": " defines width for the popover. leave null for auto."
+      },
+      "valueOptions": [
+        {
+          "name": null,
+          "type": "number",
+          "description": {
+            "en": " The width can be set as a number.",
+            "jp": " The width can be set as a number."
+          }
+        },
+        {
+          "name": null,
+          "type": "string",
+          "description": {
+            "en": " The width can be set in pixels (px).",
+            "jp": " The width can be set in pixels (px)."
+          }
+        }
+      ]
+    }
+  }
+}

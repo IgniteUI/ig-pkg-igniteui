@@ -442,17 +442,6 @@
 				"draggable" : false
 			}
     	},
-    	"editor": {
-    		"id": "editor",
-    		"toolboxTitle": "Editor",
-    		"icon": "editor.png",
-    		"dragDropIcon": "editor-dragdrop.png",
-    		"category": "editors",
-    		"visual": true,
-    		"framework": false,
-    		"width": 150,
-    		"height": 30
-    	},
     	"Upload": {
     		"id": "Upload",
     		"toolboxTitle": "File Upload",
@@ -683,6 +672,15 @@
     		"category": "editors",
     		"visual": true,
     		"framework": false
+    	},	
+		"checkboxEditor": {
+    		"id": "checkboxEditor",
+    		"toolboxTitle": "Checkbox Editor",
+    		"icon": "editor.png",
+    		"dragDropIcon": "editor-dragdrop.png",
+    		"category": "editors",
+    		"visual": true,
+    		"framework": false
     	},			
 		"datePicker": {
     		"id": "datePicker",
@@ -736,6 +734,10 @@
     	},
 		"validator": {
 			"id": "validator",
+			"toolboxVisible": false
+		},
+		"notifier" : {
+			"id": "notifier",
 			"toolboxVisible": false
 		}
     }
