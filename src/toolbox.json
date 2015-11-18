@@ -677,10 +677,12 @@
     		"id": "checkboxEditor",
     		"toolboxTitle": "Checkbox Editor",
     		"icon": "editor.png",
-    		"dragDropIcon": "editor-dragdrop.png",
+    		"dragDropIcon": "checkbox-editor-dragdrop.png",
     		"category": "editors",
     		"visual": true,
-    		"framework": false
+    		"framework": false,
+			"width": 25,
+    		"height": 25
     	},			
 		"datePicker": {
     		"id": "datePicker",
