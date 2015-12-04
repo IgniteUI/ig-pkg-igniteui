@@ -1,7 +1,7 @@
 {
     "name": "igniteui",
     "toolboxTitle": "Ignite UI",
-    "baseApiUrl": "http://help.infragistics.com/jQuery/2014.1/",
+    "baseApiUrl": "http://help.infragistics.com/jQuery/2015.2/",
     "scriptsComment": "<!--\n\t\t\tUpdate the Ignite UI script references to your licensed copies before deploying.\n\t\t\tIgnite UI License: http://www.infragistics.com/legal/license/ultimate/\n\t\t-->",
     "scripts": [
         {
