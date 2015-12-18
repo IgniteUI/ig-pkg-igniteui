@@ -416,14 +416,6 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 					descriptor.comp.options.columns = null;
 					descriptor.comp.options.autoGenerateColumns = true;
 					base.apply(self, [descriptor]);
-					descriptor.propName = "columns";
-					descriptor.propValue = null;
-					descriptor.propType = "array";
-					base.apply(self, [descriptor]);
-					descriptor.propName = "autoGenerateColumns";
-					descriptor.propType = "bool";
-					descriptor.propValue = true;
-					base.apply(self, [descriptor]);
 					$("#resetGridColumns").igDialog("destroy");
 				}).one("click", "#resetGridColumnsCancelButton", function () {
 					$("#resetGridColumns").igDialog("close");
