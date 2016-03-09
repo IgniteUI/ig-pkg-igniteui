@@ -1,4 +1,4 @@
-{
+﻿{
   "overview": null,
   "name": "ui.igCurrencyEditor",
   "category": null,
@@ -19,8 +19,8 @@
         }
       ],
       "description": {
-        "en": "Event which is raised when input field of editor loses focus.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes argument evt.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt.originalEvent to obtain reference to event of browser.",
-        "jp": "Event which is raised when input field of editor loses focus.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes argument evt.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt.originalEvent to obtain reference to event of browser."
+        "en": "Event which is raised when input field of editor loses focus.<br>    Function takes argument evt.<br>    Use ui.owner to obtain reference to igEditor.<br>    Use evt.originalEvent to obtain reference to event of browser.",
+        "jp": "エディターの入力フィールドがフォーカスを失ったとき発生するイベント。<br>    関数は引数 evt を取得します。<br>    ui.owner を使用して igEditor への参照を取得します。<br>    evt.originalEvent を使用して、ブラウザーのイベントへの参照を取得します。"
       }
     },
     "dropDownItemSelected": {
@@ -38,8 +38,8 @@
         }
       ],
       "description": {
-        "en": "Event which is raised when the drop down list item is selected. <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.editorInput to obtain reference to the editable input<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.list to obtain reference to the list contaier. <br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.item to obtain reference to the list item which is selected.",
-        "jp": "Event which is raised when the drop down list item is selected. <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.editorInput to obtain reference to the editable input<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.list to obtain reference to the list contaier. <br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.item to obtain reference to the list item which is selected."
+        "en": "Event which is raised when the drop down list item is selected. <br>    Function takes arguments evt and ui.<br>    Use ui.owner to obtain reference to igEditor.<br>    Use ui.editorInput to obtain reference to the editable input<br>    Use ui.list to obtain reference to the list contaier. <br>    Use ui.item to obtain reference to the list item which is selected.",
+        "jp": "ドロップダウン リストが選択されるときに発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して igEditor への参照を取得します。<br>    ui.editorInput を使用して、編集可能な入力への参照を取得します。<br>    ui.list を使用して、リスト コンテナーへの参照を取得します。<br>     ui.items を使用して、選択されたリスト項目への参照を取得します。"
       }
     },
     "dropDownItemSelecting": {
@@ -57,8 +57,8 @@
         }
       ],
       "description": {
-        "en": "Event which is raised when the drop down list item is selecting. <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.editorInput to obtain reference to the editable input<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.list to obtain reference to the list contaier. <br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.item to obtain reference to the list item which is about to be selected.",
-        "jp": "Event which is raised when the drop down list item is selecting. <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.editorInput to obtain reference to the editable input<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.list to obtain reference to the list contaier. <br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.item to obtain reference to the list item which is about to be selected."
+        "en": "Event which is raised when the drop down list item is selecting. <br>    Function takes arguments evt and ui.<br>    Use ui.owner to obtain reference to igEditor.<br>    Use ui.editorInput to obtain reference to the editable input<br>    Use ui.list to obtain reference to the list contaier. <br>    Use ui.item to obtain reference to the list item which is about to be selected.",
+        "jp": "ドロップダウン リストが選択されるときに発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して igEditor への参照を取得します。<br>    ui.editorInput を使用して、編集可能な入力への参照を取得します。<br>    ui.list を使用して、リスト コンテナーへの参照を取得します。<br>     ui.item を使用して、選択されようとしているリスト項目への参照を取得します。"
       }
     },
     "dropDownListClosed": {
@@ -76,8 +76,8 @@
         }
       ],
       "description": {
-        "en": "Event which is raised when the drop down is already closed. <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.editorInput to obtain reference to the editable input<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.list to obtain reference to the list contaier.",
-        "jp": "Event which is raised when the drop down is already closed. <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.editorInput to obtain reference to the editable input<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.list to obtain reference to the list contaier."
+        "en": "Event which is raised when the drop down is already closed. <br>    Function takes arguments evt and ui.<br>    Use ui.owner to obtain reference to igEditor.<br>    Use ui.editorInput to obtain reference to the editable input<br>    Use ui.list to obtain reference to the list contaier.",
+        "jp": "ドロップダウン リストがすでに閉じているときに発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して igEditor への参照を取得します。<br>    ui.editorInput を使用して、編集可能な入力への参照を取得します。<br>    ui.list を使用して、リスト コンテナーへの参照を取得します。"
       }
     },
     "dropDownListClosing": {
@@ -95,8 +95,8 @@
         }
       ],
       "description": {
-        "en": "Event which is raised when the drop down is closing. <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.editorInput to obtain reference to the editable input<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.list to obtain reference to the list contaier.",
-        "jp": "Event which is raised when the drop down is closing. <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.editorInput to obtain reference to the editable input<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.list to obtain reference to the list contaier."
+        "en": "Event which is raised when the drop down is closing. <br>    Function takes arguments evt and ui.<br>    Use ui.owner to obtain reference to igEditor.<br>    Use ui.editorInput to obtain reference to the editable input<br>    Use ui.list to obtain reference to the list contaier.",
+        "jp": "ドロップダウン リストが閉じているときに発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して igEditor への参照を取得します。<br>    ui.editorInput を使用して、編集可能な入力への参照を取得します。<br>    ui.list を使用して、リスト コンテナーへの参照を取得します。"
       }
     },
     "dropDownListOpened": {
@@ -114,8 +114,8 @@
         }
       ],
       "description": {
-        "en": "Event which is raised when the drop down is already opened. <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.editorInput to obtain reference to the editable input<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.list to obtain reference to the list contaier.",
-        "jp": "Event which is raised when the drop down is already opened. <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.editorInput to obtain reference to the editable input<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.list to obtain reference to the list contaier."
+        "en": "Event which is raised when the drop down is already opened. <br>    Function takes arguments evt and ui.<br>    Use ui.owner to obtain reference to igEditor.<br>    Use ui.editorInput to obtain reference to the editable input<br>    Use ui.list to obtain reference to the list contaier.",
+        "jp": "ドロップダウン リストがすでに開いているときに発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して igEditor への参照を取得します。<br>    ui.editorInput を使用して、編集可能な入力への参照を取得します。<br>    ui.list を使用して、リスト コンテナーへの参照を取得します。"
       }
     },
     "dropDownListOpening": {
@@ -133,8 +133,8 @@
         }
       ],
       "description": {
-        "en": "Event which is raised when the drop down is opening. <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.editorInput to obtain reference to the editable input<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.list to obtain reference to the list contaier.",
-        "jp": "Event which is raised when the drop down is opening. <br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.editorInput to obtain reference to the editable input<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.list to obtain reference to the list contaier."
+        "en": "Event which is raised when the drop down is opening. <br>    Function takes arguments evt and ui.<br>    Use ui.owner to obtain reference to igEditor.<br>    Use ui.editorInput to obtain reference to the editable input<br>    Use ui.list to obtain reference to the list contaier.",
+        "jp": "ドロップダウン リストが開いているときに発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して igEditor への参照を取得します。<br>    ui.editorInput を使用して、編集可能な入力への参照を取得します。<br>    ui.list を使用して、リスト コンテナーへの参照を取得します。"
       }
     },
     "focus": {
@@ -152,8 +152,8 @@
         }
       ],
       "description": {
-        "en": "Event which is raised when input field of editor gets focus.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes argument evt.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt.originalEvent to obtain reference to event of browser.",
-        "jp": "Event which is raised when input field of editor gets focus.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes argument evt.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt.originalEvent to obtain reference to event of browser."
+        "en": "Event which is raised when input field of editor gets focus.<br>    Function takes argument evt.<br>    Use ui.owner to obtain reference to igEditor.<br>    Use evt.originalEvent to obtain reference to event of browser.",
+        "jp": "エディターの入力フィールドがフォーカスを取得したとき発生するイベント。<br>    関数は引数 evt を取得します。<br>    ui.owner を使用して igEditor への参照を取得します。<br>    evt.originalEvent を使用して、ブラウザーのイベントへの参照を取得します。"
       }
     },
     "keydown": {
@@ -171,8 +171,8 @@
         }
       ],
       "description": {
-        "en": "Event which is raised on keydown event.<br>&nbsp;&nbsp;&nbsp;&nbsp;Return false in order to cancel key action.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt.originalEvent to obtain reference to event of browser.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.key to obtain value of keyCode.",
-        "jp": "Event which is raised on keydown event.<br>&nbsp;&nbsp;&nbsp;&nbsp;Return false in order to cancel key action.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt.originalEvent to obtain reference to event of browser.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.key to obtain value of keyCode."
+        "en": "Event which is raised on keydown event.<br>    Return false in order to cancel key action.<br>    Function takes arguments evt and ui.<br>    Use evt.originalEvent to obtain reference to event of browser.<br>    Use ui.owner to obtain reference to igEditor.<br>    Use ui.key to obtain value of keyCode.",
+        "jp": "keydown イベントに対して発生するイベント。<br>    キー操作をキャンセルするには、False を返します。<br>    関数は引数 evt および ui を取得します。<br>    evt.originalEvent を使用して、ブラウザーのイベントへの参照を取得します。<br>    ui.owner を使用して igEditor への参照を取得します。<br>    ui.key を使用して keyCode の値を取得します。"
       }
     },
     "keypress": {
@@ -190,8 +190,8 @@
         }
       ],
       "description": {
-        "en": "Event which is raised on keypress event.<br>&nbsp;&nbsp;&nbsp;&nbsp;Return false in order to cancel key action.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt.originalEvent to obtain reference to event of browser.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.key to obtain value of keyCode.<br>&nbsp;&nbsp;&nbsp;&nbsp;Set ui.key to another character which will replace original entry.",
-        "jp": "Event which is raised on keypress event.<br>&nbsp;&nbsp;&nbsp;&nbsp;Return false in order to cancel key action.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt.originalEvent to obtain reference to event of browser.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.key to obtain value of keyCode.<br>&nbsp;&nbsp;&nbsp;&nbsp;Set ui.key to another character which will replace original entry."
+        "en": "Event which is raised on keypress event.<br>    Return false in order to cancel key action.<br>    Function takes arguments evt and ui.<br>    Use evt.originalEvent to obtain reference to event of browser.<br>    Use ui.owner to obtain reference to igEditor.<br>    Use ui.key to obtain value of keyCode.<br>    Set ui.key to another character which will replace original entry.",
+        "jp": "keypress イベントに対して発生するイベント。<br>    キー操作をキャンセルするには、False を返します。<br>    関数は引数 evt および ui を取得します。<br>    evt.originalEvent を使用して、ブラウザーのイベントへの参照を取得します。<br>    ui.owner を使用して igEditor への参照を取得します。<br>    ui.key を使用して keyCode の値を取得します。<br>    ui.key を元のエントリを置き換える別の文字に設定します。"
       }
     },
     "keyup": {
@@ -209,8 +209,8 @@
         }
       ],
       "description": {
-        "en": "Event which is raised on keyup event.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt.originalEvent to obtain reference to event of browser.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.key to obtain value of keyCode.",
-        "jp": "Event which is raised on keyup event.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt.originalEvent to obtain reference to event of browser.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.key to obtain value of keyCode."
+        "en": "Event which is raised on keyup event.<br>    Function takes arguments evt and ui.<br>    Use evt.originalEvent to obtain reference to event of browser.<br>    Use ui.owner to obtain reference to igEditor.<br>    Use ui.key to obtain value of keyCode.",
+        "jp": "keyup イベントに対して発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>    evt.originalEvent を使用して、ブラウザーのイベントへの参照を取得します。<br>    ui.owner を使用して igEditor への参照を取得します。<br>    ui.key を使用して keyCode の値を取得します。"
       }
     },
     "mousedown": {
@@ -228,8 +228,8 @@
         }
       ],
       "description": {
-        "en": "Event which is raised on mousedown at any part of editor including drop-down list.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt.originalEvent to obtain reference to event of browser.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.elementType to obtain type of html element under mouse, such as field, button, spinUpper, spinLower or item#.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.id and ui.elementType to obtain flag which represents html element under mouse.",
-        "jp": "Event which is raised on mousedown at any part of editor including drop-down list.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt.originalEvent to obtain reference to event of browser.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.elementType to obtain type of html element under mouse, such as field, button, spinUpper, spinLower or item#.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.id and ui.elementType to obtain flag which represents html element under mouse."
+        "en": "Event which is raised on mousedown at any part of editor including drop-down list.<br>    Function takes arguments evt and ui.<br>    Use evt.originalEvent to obtain reference to event of browser.<br>    Use ui.owner to obtain reference to igEditor.<br>    Use ui.elementType to obtain type of html element under mouse, such as field, button, spinUpper, spinLower or item#.<br>    Use ui.id and ui.elementType to obtain flag which represents html element under mouse.",
+        "jp": "ドロップダウン リストを含むエディターの任意の部分での mousedown に対して発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>    evt.originalEvent を使用して、ブラウザーのイベントへの参照を取得します。<br>    ui.owner を使用して igEditor への参照を取得します。<br>    ui.elementType を使用して、マウス位置の HTML 要素のタイプ (field、button、spinUpper、spinLower、または item# など) を取得します。<br>    ui.id および ui.elementType を使用して、マウス位置の HTML 要素を表すフラグを取得します。"
       }
     },
     "mousemove": {
@@ -247,8 +247,8 @@
         }
       ],
       "description": {
-        "en": "Event which is raised on mousemove at any part of editor including drop-down list.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt.originalEvent to obtain reference to event of browser.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.elementType to obtain type of html element under mouse, such as field, button, spinUpper, spinLower or item#.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.id and ui.elementType to obtain flag which represents html element under mouse.",
-        "jp": "Event which is raised on mousemove at any part of editor including drop-down list.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt.originalEvent to obtain reference to event of browser.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.elementType to obtain type of html element under mouse, such as field, button, spinUpper, spinLower or item#.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.id and ui.elementType to obtain flag which represents html element under mouse."
+        "en": "Event which is raised on mousemove at any part of editor including drop-down list.<br>    Function takes arguments evt and ui.<br>    Use evt.originalEvent to obtain reference to event of browser.<br>    Use ui.owner to obtain reference to igEditor.<br>    Use ui.elementType to obtain type of html element under mouse, such as field, button, spinUpper, spinLower or item#.<br>    Use ui.id and ui.elementType to obtain flag which represents html element under mouse.",
+        "jp": "ドロップダウン リストを含むエディターの任意の部分での mousemove に対して発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>    evt.originalEvent を使用して、ブラウザーのイベントへの参照を取得します。<br>    ui.owner を使用して igEditor への参照を取得します。<br>    ui.elementType を使用して、マウス位置の HTML 要素のタイプ (field、button、spinUpper、spinLower、または item# など) を取得します。<br>    ui.id および ui.elementType を使用して、マウス位置の HTML 要素を表すフラグを取得します。"
       }
     },
     "mouseout": {
@@ -266,8 +266,8 @@
         }
       ],
       "description": {
-        "en": "Event which is raised on mouseleave at any part of editor including drop-down list.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt.originalEvent to obtain reference to event of browser.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.elementType to obtain type of html element under mouse, such as field, button, spinUpper, spinLower or item#.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.id and ui.elementType to obtain flag which represents html element under mouse.",
-        "jp": "Event which is raised on mouseleave at any part of editor including drop-down list.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt.originalEvent to obtain reference to event of browser.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.elementType to obtain type of html element under mouse, such as field, button, spinUpper, spinLower or item#.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.id and ui.elementType to obtain flag which represents html element under mouse."
+        "en": "Event which is raised on mouseleave at any part of editor including drop-down list.<br>    Function takes arguments evt and ui.<br>    Use evt.originalEvent to obtain reference to event of browser.<br>    Use ui.owner to obtain reference to igEditor.<br>    Use ui.elementType to obtain type of html element under mouse, such as field, button, spinUpper, spinLower or item#.<br>    Use ui.id and ui.elementType to obtain flag which represents html element under mouse.",
+        "jp": "ドロップダウン リストを含むエディターの任意の部分での mouseleave に対して発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>    evt.originalEvent を使用して、ブラウザーのイベントへの参照を取得します。<br>    ui.owner を使用して igEditor への参照を取得します。<br>    ui.elementType を使用して、マウス位置の HTML 要素のタイプ (field、button、spinUpper、spinLower、または item# など) を取得します。<br>    ui.id および ui.elementType を使用して、マウス位置の HTML 要素を表すフラグを取得します。"
       }
     },
     "mouseover": {
@@ -285,8 +285,8 @@
         }
       ],
       "description": {
-        "en": "Event which is raised on mouseover at any part of editor including drop-down list.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt.originalEvent to obtain reference to event of browser.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.elementType to obtain type of html element under mouse, such as field, button, spinUpper, spinLower or item#.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.id and ui.elementType to obtain flag which represents html element under mouse.",
-        "jp": "Event which is raised on mouseover at any part of editor including drop-down list.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt.originalEvent to obtain reference to event of browser.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.elementType to obtain type of html element under mouse, such as field, button, spinUpper, spinLower or item#.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.id and ui.elementType to obtain flag which represents html element under mouse."
+        "en": "Event which is raised on mouseover at any part of editor including drop-down list.<br>    Function takes arguments evt and ui.<br>    Use evt.originalEvent to obtain reference to event of browser.<br>    Use ui.owner to obtain reference to igEditor.<br>    Use ui.elementType to obtain type of html element under mouse, such as field, button, spinUpper, spinLower or item#.<br>    Use ui.id and ui.elementType to obtain flag which represents html element under mouse.",
+        "jp": "ドロップダウン リストを含むエディターの任意の部分での mouseover に対して発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>    evt.originalEvent を使用して、ブラウザーのイベントへの参照を取得します。<br>    ui.owner を使用して igEditor への参照を取得します。<br>    ui.elementType を使用して、マウス位置の HTML 要素のタイプ (field、button、spinUpper、spinLower、または item# など) を取得します。<br>    ui.id および ui.elementType を使用して、マウス位置の HTML 要素を表すフラグを取得します。"
       }
     },
     "mouseup": {
@@ -304,8 +304,8 @@
         }
       ],
       "description": {
-        "en": "Event which is raised on mouseup at any part of editor including drop-down list.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt.originalEvent to obtain reference to event of browser.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.elementType to obtain type of html element under mouse, such as field, button, spinUpper, spinLower or item#.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.id and ui.elementType to obtain flag which represents html element under mouse.",
-        "jp": "Event which is raised on mouseup at any part of editor including drop-down list.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt.originalEvent to obtain reference to event of browser.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.elementType to obtain type of html element under mouse, such as field, button, spinUpper, spinLower or item#.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.id and ui.elementType to obtain flag which represents html element under mouse."
+        "en": "Event which is raised on mouseup at any part of editor including drop-down list.<br>    Function takes arguments evt and ui.<br>    Use evt.originalEvent to obtain reference to event of browser.<br>    Use ui.owner to obtain reference to igEditor.<br>    Use ui.elementType to obtain type of html element under mouse, such as field, button, spinUpper, spinLower or item#.<br>    Use ui.id and ui.elementType to obtain flag which represents html element under mouse.",
+        "jp": "ドロップダウン リストを含むエディターの任意の部分での mouseup に対して発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>    evt.originalEvent を使用して、ブラウザーのイベントへの参照を取得します。<br>    ui.owner を使用して igEditor への参照を取得します。<br>    ui.elementType を使用して、マウス位置の HTML 要素のタイプ (field、button、spinUpper、spinLower、または item# など) を取得します。<br>    ui.id および ui.elementType を使用して、マウス位置の HTML 要素を表すフラグを取得します。"
       }
     },
     "rendered": {
@@ -323,8 +323,8 @@
         }
       ],
       "description": {
-        "en": "Event which is raised after rendering of the editor completes.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the editor performing rendering.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.element to get a reference to the editor element.",
-        "jp": "Event which is raised after rendering of the editor completes.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the editor performing rendering.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.element to get a reference to the editor element."
+        "en": "Event which is raised after rendering of the editor completes.<br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the editor performing rendering.<br>    Use ui.element to get a reference to the editor element.",
+        "jp": "エディターの描画が完了した後に発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して、レンダリングを実行するエディターへの参照を取得します。<br>    ui.element を使用して、エディター要素への参照を取得します。"
       }
     },
     "rendering": {
@@ -342,8 +342,8 @@
         }
       ],
       "description": {
-        "en": "Event which is raised before rendering of the editor completes.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the editor performing rendering.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.element to get a reference to the editor element.",
-        "jp": "Event which is raised before rendering of the editor completes.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the editor performing rendering.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.element to get a reference to the editor element."
+        "en": "Event which is raised before rendering of the editor completes.<br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the editor performing rendering.<br>    Use ui.element to get a reference to the editor element.",
+        "jp": "エディターの描画が完了する前に発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して、レンダリングを実行するエディターへの参照を取得します。<br>    ui.element を使用して、エディター要素への参照を取得します。"
       }
     },
     "textChanged": {
@@ -361,8 +361,8 @@
         }
       ],
       "description": {
-        "en": "Event which is raised after text in editor was changed. It can be raised when keyUp event occurs, <br>&nbsp;&nbsp;&nbsp;&nbsp;or when the clear button is clicked or when an item from a list is selected.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.text to obtain new text<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.oldTExt to obtain the old text.",
-        "jp": "Event which is raised after text in editor was changed. It can be raised when keyUp event occurs, <br>&nbsp;&nbsp;&nbsp;&nbsp;or when the clear button is clicked or when an item from a list is selected.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.text to obtain new text<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.oldTExt to obtain the old text."
+        "en": "Event which is raised after text in editor was changed. It can be raised when keyUp event occurs, <br>    or when the clear button is clicked or when an item from a list is selected.<br>    Function takes arguments evt and ui.<br>    Use ui.owner to obtain reference to igEditor.<br>    Use ui.text to obtain new text<br>    Use ui.oldTExt to obtain the old text.",
+        "jp": "エディター内のテキストが変更された後に発生するイベント。keyUp イベントが発生するときに発生できます。<br>    または、クリアボタンがクリックされたときまたはリストの項目がせんたくされたときに発生できます。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して igEditor への参照を取得します。<br>    ui.text を使用して、新しいテキストを取得します。<br>    古いテキストの取得に ui.oldTExt を使用します。"
       }
     },
     "valueChanged": {
@@ -380,8 +380,8 @@
         }
       ],
       "description": {
-        "en": "Event which is raised after value in editor was changed. It can be raised on lost focus or on spin events.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.value to obtain new value and ui.oldValue to obtain old value.",
-        "jp": "Event which is raised after value in editor was changed. It can be raised on lost focus or on spin events.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.value to obtain new value and ui.oldValue to obtain old value."
+        "en": "Event which is raised after value in editor was changed. It can be raised on lost focus or on spin events.<br>    Function takes arguments evt and ui.<br>    Use ui.owner to obtain reference to igEditor.<br>    Use ui.value to obtain new value and ui.oldValue to obtain old value.",
+        "jp": "エディター内の値が変更された後に発生するイベント。フォーカスの消失またはスピン イベントに対して発生します。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して igEditor への参照を取得します。<br>    ui.value を使用して新しい値を取得し、ui.oldValue を使用して古い値を取得します。"
       }
     },
     "valueChanging": {
@@ -399,8 +399,8 @@
         }
       ],
       "description": {
-        "en": "Event which is raised before value in editor was changed.<br>&nbsp;&nbsp;&nbsp;&nbsp;Return false in order to cancel change.<br>&nbsp;&nbsp;&nbsp;&nbsp;It can be raised on lost focus or on spin events.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.value to obtain new value and ui.oldValue to obtain old value.",
-        "jp": "Event which is raised before value in editor was changed.<br>&nbsp;&nbsp;&nbsp;&nbsp;Return false in order to cancel change.<br>&nbsp;&nbsp;&nbsp;&nbsp;It can be raised on lost focus or on spin events.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.value to obtain new value and ui.oldValue to obtain old value."
+        "en": "Event which is raised before value in editor was changed.<br>    Return false in order to cancel change.<br>    It can be raised on lost focus or on spin events.<br>    Function takes arguments evt and ui.<br>    Use ui.owner to obtain reference to igEditor.<br>    Use ui.value to obtain new value and ui.oldValue to obtain old value.",
+        "jp": "エディター内の値が変更される前に発生するイベント。<br>    変更をキャンセルするには、False を返します。<br>    フォーカスの消失またはスピン イベントに対して発生します。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して igEditor への参照を取得します。<br>    ui.value を使用して新しい値を取得し、ui.oldValue を使用して古い値を取得します。"
       }
     }
   },
@@ -409,8 +409,8 @@
       "type": "bool",
       "defaultValue": false,
       "description": {
-        "en": "Sets gets ability to prevent null value.<br>&nbsp;&nbsp;&nbsp;&nbsp;If that option is disabled, and editor has no value, then value is set to 0 (or minValue/maxValue).",
-        "jp": "Sets gets ability to prevent null value.<br>&nbsp;&nbsp;&nbsp;&nbsp;If that option is disabled, and editor has no value, then value is set to 0 (or minValue/maxValue)."
+        "en": "Sets gets ability to prevent null value.<br>    If that option is disabled, and editor has no value, then value is set to 0 (or minValue/maxValue).",
+        "jp": "null 値を回避する機能を取得または設定します。<br>    このオプションが無効で、エディターに値がない場合、値は 0 (または minValue/maxValue) になります。"
       },
       "valueOptions": null
     },
@@ -419,7 +419,7 @@
       "defaultValue": null,
       "description": {
         "en": " Sets gets visibility of spin and drop-down button. That option can be set only on initialization. Combinations like 'dropdown,spin' or 'spinclear' are supported too.",
-        "jp": " Sets gets visibility of spin and drop-down button. That option can be set only on initialization. Combinations like 'dropdown,spin' or 'spinclear' are supported too."
+        "jp": " スピンおよびドロップダウン ボタンの可視性を取得または設定します。このオプションは、初期化時にのみ設定できます。「dropdown,spin」または「spinclear」などの組み合わせもサポートされています。"
       },
       "valueOptions": [
         {
@@ -427,7 +427,7 @@
           "type": "string",
           "description": {
             "en": " button to open list is located on the right side of input-field (or left side if base html element has direction:rtl);",
-            "jp": " button to open list is located on the right side of input-field (or left side if base html element has direction:rtl);"
+            "jp": " リストを開くボタンが入力フィールドの右側に配置されます (base HTML 要素が direction:rtl を持つ場合は左側)。"
           }
         },
         {
@@ -435,7 +435,7 @@
           "type": "string",
           "description": {
             "en": " button to clear value is located on the right side of input-field (or left side if base html element has direction:rtl);",
-            "jp": " button to clear value is located on the right side of input-field (or left side if base html element has direction:rtl);"
+            "jp": " 値をクリアするボタンが入力フィールドの右側に配置されます (base HTML 要素が direction:rtl を持つ場合は左側)。"
           }
         },
         {
@@ -443,7 +443,7 @@
           "type": "string",
           "description": {
             "en": " spin buttons are located on the right side of input-field (or left side if base html element has direction:rtl).",
-            "jp": " spin buttons are located on the right side of input-field (or left side if base html element has direction:rtl)."
+            "jp": " スピン ボタンが入力フィールドの右側に置かれます (基本 HTML 要素が direction:rtl を持つ場合は左側)。"
           }
         }
       ]
@@ -462,7 +462,7 @@
       "defaultValue": null,
       "description": {
         "en": " Sets gets type of value returned by the get of value() method. That also affects functionality of the set value(val) method and the copy/paste operations of browser.",
-        "jp": " Sets gets type of value returned by the get of value() method. That also affects functionality of the set value(val) method and the copy/paste operations of browser."
+        "jp": " value() メソッドの get によって返された値のタイプを設定・取得します。また、value(val) メソッドの set の機能や、ブラウザーのコピー/貼り付け操作にも影響します。"
       },
       "valueOptions": [
         {
@@ -470,7 +470,7 @@
           "type": "string",
           "description": {
             "en": " the Number object is used with limits of double and if value is not set, then the null or Number.NaN is used depending on the option 'nullable'. Note: that is used as default.",
-            "jp": " the Number object is used with limits of double and if value is not set, then the null or Number.NaN is used depending on the option 'nullable'. Note: that is used as default."
+            "jp": " double の制限を持つ Number オブジェクトが使用されます。値が設定されていない場合は「nullable」オプションによって、null または Number.NaN が使用されます。注: それはデフォルトとして使用されます。"
           }
         },
         {
@@ -478,7 +478,7 @@
           "type": "string",
           "description": {
             "en": " the Number object is used with limits of float and if value is not set, then the null or Number.NaN is used depending on the option 'nullable'.",
-            "jp": " the Number object is used with limits of float and if value is not set, then the null or Number.NaN is used depending on the option 'nullable'."
+            "jp": " float の制限を持つ Number オブジェクトが使用されます。値が設定されていない場合は「nullable」オプションによって、null または Number.NaN が使用されます。"
           }
         },
         {
@@ -486,7 +486,7 @@
           "type": "string",
           "description": {
             "en": " the Number object is used with limits of signed long and if value is not set, then the null or 0 is used depending on the option 'nullable'. ",
-            "jp": " the Number object is used with limits of signed long and if value is not set, then the null or 0 is used depending on the option 'nullable'. "
+            "jp": " 符号付き long の制限を持つ Number オブジェクトが使用されます。値が設定されていない場合は「nullable」オプションによって、null または 0 が使用されます。 "
           }
         },
         {
@@ -494,7 +494,7 @@
           "type": "string",
           "description": {
             "en": " the Number object is used with limits of unsigned long and if value is not set, then the null or 0 is used depending on the option 'nullable'.",
-            "jp": " the Number object is used with limits of unsigned long and if value is not set, then the null or 0 is used depending on the option 'nullable'."
+            "jp": " 符号なし long の制限を持つ Number オブジェクトが使用されます。値が設定されていない場合は「nullable」オプションによって、null または 0 が使用されます。"
           }
         },
         {
@@ -502,7 +502,7 @@
           "type": "string",
           "description": {
             "en": " the Number object is used with limits of signed int and if value is not set, then the null or 0 is used depending on the option 'nullable'.",
-            "jp": " the Number object is used with limits of signed int and if value is not set, then the null or 0 is used depending on the option 'nullable'."
+            "jp": " 符号付き int の制限を持つ Number オブジェクトが使用されます。値が設定されていない場合は「nullable」オプションによって、null または 0 が使用されます。"
           }
         },
         {
@@ -510,7 +510,7 @@
           "type": "string",
           "description": {
             "en": " the Number object is used with limits of unsigned int and if value is not set, then the null or 0 is used depending on the option 'nullable'.",
-            "jp": " the Number object is used with limits of unsigned int and if value is not set, then the null or 0 is used depending on the option 'nullable'."
+            "jp": " 符号なし int の制限を持つ Number オブジェクトが使用されます。値が設定されていない場合は「nullable」オプションによって、null または 0 が使用されます。"
           }
         },
         {
@@ -518,7 +518,7 @@
           "type": "string",
           "description": {
             "en": " the Number object is used with limits of signed short and if value is not set, then the null or 0 is used depending on the option 'nullable'.",
-            "jp": " the Number object is used with limits of signed short and if value is not set, then the null or 0 is used depending on the option 'nullable'."
+            "jp": " 符号付き short の制限を持つ Number オブジェクトが使用されます。値が設定されていない場合は「nullable」オプションによって、null または 0 が使用されます。"
           }
         },
         {
@@ -526,7 +526,7 @@
           "type": "string",
           "description": {
             "en": " the Number object is used with limits of unsigned short and if value is not set, then the null or 0 is used depending on the option 'nullable'.",
-            "jp": " the Number object is used with limits of unsigned short and if value is not set, then the null or 0 is used depending on the option 'nullable'."
+            "jp": " 符号なし short の制限を持つ Number オブジェクトが使用されます。値が設定されていない場合は「nullable」オプションによって、null または 0 が使用されます。"
           }
         },
         {
@@ -534,7 +534,7 @@
           "type": "string",
           "description": {
             "en": " the Number object is used with limits of signed byte and if value is not set, then the null or 0 is used depending on the option 'nullable'.",
-            "jp": " the Number object is used with limits of signed byte and if value is not set, then the null or 0 is used depending on the option 'nullable'."
+            "jp": " 符号付き byte の制限を持つ Number オブジェクトが使用されます。値が設定されていない場合は「nullable」オプションによって、null または 0 が使用されます。"
           }
         },
         {
@@ -542,7 +542,7 @@
           "type": "string",
           "description": {
             "en": " the Number object is used with limits of unsigned byte and if value is not set, then the null or 0 is used depending on the option 'nullable'.",
-            "jp": " the Number object is used with limits of unsigned byte and if value is not set, then the null or 0 is used depending on the option 'nullable'."
+            "jp": " 符号なし byte の制限を持つ Number オブジェクトが使用されます。値が設定されていない場合は「nullable」オプションによって、null または 0 が使用されます。"
           }
         }
       ]
@@ -551,8 +551,8 @@
       "type": "string",
       "defaultValue": null,
       "description": {
-        "en": "Sets gets the character, which is used as decimal separator.<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: this option has priority over possible regional settings. <br>&nbsp;&nbsp;&nbsp;&nbsp;Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.",
-        "jp": "Sets gets the character, which is used as decimal separator.<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: this option has priority over possible regional settings. <br>&nbsp;&nbsp;&nbsp;&nbsp;Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set."
+        "en": "Sets gets the character, which is used as decimal separator.<br>    Note: this option has priority over possible regional settings. <br>    Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.",
+        "jp": "小数点記号として使用する文字を取得または設定します。<br>    注: このオプションは可能な地域の設定よりも優先されます。<br>     注: デフォルト値が null であっても、- 国際化ファイルがあり、そのプロパティのデフォルト値が設定される場合、値は暗示的に設定されます。"
       },
       "valueOptions": null
     },
@@ -561,7 +561,7 @@
       "defaultValue": false,
       "description": {
         "en": "Sets the disabled attribute.Does not allow editing. Disables all the buttons and iteracitons applied. On submit the current value is not sent into the request",
-        "jp": "Sets the disabled attribute.Does not allow editing. Disables all the buttons and iteracitons applied. On submit the current value is not sent into the request"
+        "jp": "disabled 属性を設定します。編集を許可しません。すべてのボタンおよび適用される操作を無効にします。送信において現在の値が要求に送られません。"
       },
       "valueOptions": null
     },
@@ -570,7 +570,7 @@
       "defaultValue": 300.0,
       "description": {
         "en": "Gets sets show/hide drop-down list animation duration in milliseconds.",
-        "jp": "Gets sets show/hide drop-down list animation duration in milliseconds."
+        "jp": "ドロップダウン リストの表示/非表示アニメーションの期間 (ミリ秒) を取得または設定します。"
       },
       "valueOptions": null
     },
@@ -578,8 +578,8 @@
       "type": "bool",
       "defaultValue": false,
       "description": {
-        "en": "Sets gets location of drop-down list.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value false will create html element for list as a child of main html element.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value true creates list as a child of body.",
-        "jp": "Sets gets location of drop-down list.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value false will create html element for list as a child of main html element.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value true creates list as a child of body."
+        "en": "Sets gets location of drop-down list.<br>    Value false will create html element for list as a child of main html element.<br>    Value true creates list as a child of body.",
+        "jp": "ドロップダウン リストの場所を取得または設定します。<br>    値が false の場合、main HTML 要素の子として、リストの HTML 要素を作成します。<br>    値が true の場合、body の子として、リストを作成します。"
       },
       "valueOptions": null
     },
@@ -587,8 +587,8 @@
       "type": "bool",
       "defaultValue": false,
       "description": {
-        "en": "Sets gets ability to limit editor to be used only from the dropdown list. When set to true the editor input is not editable. <br>&nbsp;&nbsp;&nbsp;&nbsp;Note! In case there are no list items - the editor will reamin readonly",
-        "jp": "Sets gets ability to limit editor to be used only from the dropdown list. When set to true the editor input is not editable. <br>&nbsp;&nbsp;&nbsp;&nbsp;Note! In case there are no list items - the editor will reamin readonly"
+        "en": "Sets gets ability to limit editor to be used only from the dropdown list. When set to true the editor input is not editable. <br>    Note! In case there are no list items - the editor will reamin readonly",
+        "jp": "ドロップダウン リストからの項目のみにエディターを制限する機能を設定または取得します。True に設定すると、エディターのテキストは編集できません。<br>     注:リスト項目がない場合もエディターは読み取り専用です。"
       },
       "valueOptions": null
     },
@@ -597,7 +597,7 @@
       "defaultValue": null,
       "description": {
         "en": " Gets sets drop down opening orientation for the dorp down list when open button is clicked. If auto option is set the component calculates if there is enough space at the bottom, if not checks the space above the component and if in both directions there is not enough space it openes the dropdown down way.",
-        "jp": " Gets sets drop down opening orientation for the dorp down list when open button is clicked. If auto option is set the component calculates if there is enough space at the bottom, if not checks the space above the component and if in both directions there is not enough space it openes the dropdown down way."
+        "jp": " 開くボタンがクリックされたとき、ドロップダウン リストを開く方向を取得または設定します。自動オプションを設定した場合、コンポーネントは下に十分なスペースがあるか計算します。もしない場合、コンポーネントの上のスペースを確認し、上下とも十分なスペースがない場合、ドロップダウンを開きます。"
       },
       "valueOptions": []
     },
@@ -606,7 +606,7 @@
       "defaultValue": null,
       "description": {
         "en": "Removed from numeric editor options",
-        "jp": "Removed from numeric editor options"
+        "jp": "数値エディター オプションから削除されました。"
       },
       "valueOptions": null
     },
@@ -614,8 +614,8 @@
       "type": "array",
       "defaultValue": null,
       "description": {
-        "en": "(array of number objects) Sets gets the number of digits in integer part of number, which are divided into groups.<br>&nbsp;&nbsp;&nbsp;&nbsp;The \"groupSeparator\" is inserted between groups.<br>&nbsp;&nbsp;&nbsp;&nbsp;If the sum of all values in array is smaller than the length of integer part, then the last item in array is used for all following groups.<br>&nbsp;&nbsp;&nbsp;&nbsp;Count of groups starts from the decimal point (from right to left).<br>&nbsp;&nbsp;&nbsp;&nbsp;That option has effect only in display mode(no focus).<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: this option has priority over possible regional settings. <br>&nbsp;&nbsp;&nbsp;&nbsp;Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.",
-        "jp": "(array of number objects) Sets gets the number of digits in integer part of number, which are divided into groups.<br>&nbsp;&nbsp;&nbsp;&nbsp;The \"groupSeparator\" is inserted between groups.<br>&nbsp;&nbsp;&nbsp;&nbsp;If the sum of all values in array is smaller than the length of integer part, then the last item in array is used for all following groups.<br>&nbsp;&nbsp;&nbsp;&nbsp;Count of groups starts from the decimal point (from right to left).<br>&nbsp;&nbsp;&nbsp;&nbsp;That option has effect only in display mode(no focus).<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: this option has priority over possible regional settings. <br>&nbsp;&nbsp;&nbsp;&nbsp;Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set."
+        "en": "(array of number objects) Sets gets the number of digits in integer part of number, which are divided into groups.<br>    The \"groupSeparator\" is inserted between groups.<br>    If the sum of all values in array is smaller than the length of integer part, then the last item in array is used for all following groups.<br>    Count of groups starts from the decimal point (from right to left).<br>    That option has effect only in display mode(no focus).<br>    Note: this option has priority over possible regional settings. <br>    Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.",
+        "jp": "(数値オブジェクトの配列) グループに分けられる数の整数部分の桁数を取得または設定します。<br>    グループ間には \"groupSeparator\" が挿入されます。<br>    配列内のすべての値の和が整数部分の長さよりも小さい場合、配列の最後の項目を以降のすべてのグループに使用します。<br>    グループのカウントは、小数点から (右から左へ) 始まります。<br>    このオプションは、表示モード (フォーカスなし) の場合のみ効果があります。<br>    注: このオプションは可能な地域の設定よりも優先されます。<br>     注: デフォルト値が null であっても、- 国際化ファイルがあり、そのプロパティのデフォルト値が設定される場合、値は暗示的に設定されます。"
       },
       "valueOptions": null
     },
@@ -623,8 +623,8 @@
       "type": "string",
       "defaultValue": null,
       "description": {
-        "en": "Sets gets the character, which is used as separator for groups (like thousands).<br>&nbsp;&nbsp;&nbsp;&nbsp;That option has effect only in display mode(no focus).<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: this option has priority over possible regional settings. <br>&nbsp;&nbsp;&nbsp;&nbsp;Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.",
-        "jp": "Sets gets the character, which is used as separator for groups (like thousands).<br>&nbsp;&nbsp;&nbsp;&nbsp;That option has effect only in display mode(no focus).<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: this option has priority over possible regional settings. <br>&nbsp;&nbsp;&nbsp;&nbsp;Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set."
+        "en": "Sets gets the character, which is used as separator for groups (like thousands).<br>    That option has effect only in display mode(no focus).<br>    Note: this option has priority over possible regional settings. <br>    Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.",
+        "jp": "グループ (千の位など) のセパレーターとして使用する文字を取得または設定します。<br>    このオプションは、表示モード (フォーカスなし) の場合のみ効果があります。<br>    注: このオプションは可能な地域の設定よりも優先されます。<br>     注: デフォルト値が null であっても、- 国際化ファイルがあり、そのプロパティのデフォルト値が設定される場合、値は暗示的に設定されます。"
       },
       "valueOptions": null
     },
@@ -641,7 +641,7 @@
           "type": "string",
           "description": {
             "en": " The height can be set in pixels (px) and percentage (%).",
-            "jp": " The height can be set in pixels (px) and percentage (%)."
+            "jp": " 高さをピクセル (px) またはパーセンテージ (%) に設定できます。"
           }
         },
         {
@@ -649,7 +649,7 @@
           "type": "number",
           "description": {
             "en": " The height can be set as a number in pixels.",
-            "jp": " The height can be set as a number in pixels."
+            "jp": " 高さをピクセル単位の数値で設定できます。"
           }
         }
       ]
@@ -659,7 +659,7 @@
       "defaultValue": null,
       "description": {
         "en": "Removed from numeric editor options",
-        "jp": "Removed from numeric editor options"
+        "jp": "数値エディター オプションから削除されました。"
       },
       "valueOptions": null
     },
@@ -668,7 +668,7 @@
       "defaultValue": null,
       "description": {
         "en": "Sets the name attribute of the value input. This input is used to sent the value to the server. In case the target element is input and it has name attribute, but the developer has set the inputName option, so this option overwrites the value input and removes the attribute from the element.",
-        "jp": "Sets the name attribute of the value input. This input is used to sent the value to the server. In case the target element is input and it has name attribute, but the developer has set the inputName option, so this option overwrites the value input and removes the attribute from the element."
+        "jp": "値入力の名前属性を設定します。入力はサーバーへ値を送信するために使用されます。ターゲット要素が入力で名前要素があり、開発者が inputName オプションに設定した場合、このオプションは値入力を上書きし要素の属性を削除します。"
       },
       "valueOptions": null
     },
@@ -677,7 +677,7 @@
       "defaultValue": false,
       "description": {
         "en": "Sets the ability to allow values only set into the list items. This validation is done only when the editor is blured, or enter key is pressed",
-        "jp": "Sets the ability to allow values only set into the list items. This validation is done only when the editor is blured, or enter key is pressed"
+        "jp": "リスト項目に含まれる値のみに許可を設定します。この検証は、エディターがぼかされるか、Enter キーが押されたときに実行されます。"
       },
       "valueOptions": null
     },
@@ -686,7 +686,7 @@
       "defaultValue": 0.0,
       "description": {
         "en": "type=\"number* Sets the hover/unhover animation duration.",
-        "jp": "type=\"number* Sets the hover/unhover animation duration."
+        "jp": "type=\"number\" ホバー/アンホバーアニメーション期間を設定します。"
       },
       "valueOptions": null
     },
@@ -694,8 +694,8 @@
       "type": "array",
       "defaultValue": null,
       "description": {
-        "en": "Sets gets list of items which are used for drop-down list.<br>&nbsp;&nbsp;&nbsp;&nbsp;Items in list can be strings, numbers or objects. The items are directly rendered without casting, or manipulating them.",
-        "jp": "Sets gets list of items which are used for drop-down list.<br>&nbsp;&nbsp;&nbsp;&nbsp;Items in list can be strings, numbers or objects. The items are directly rendered without casting, or manipulating them."
+        "en": "Sets gets list of items which are used for drop-down list.<br>    Items in list can be strings, numbers or objects. The items are directly rendered without casting, or manipulating them.",
+        "jp": "ドロップダウン リストに使用される項目リストを設定または取得します。<br>    リスト内の項目は、文字列、数、オブジェクトが使用可能です。項目は、キャストまたは操作なしに直接描画されます。"
       },
       "valueOptions": null
     },
@@ -704,7 +704,7 @@
       "defaultValue": 0.0,
       "description": {
         "en": "Sets gets custom width of drop-down list in pixels. If value is equal to 0 or negative, then the width of editor is used.",
-        "jp": "Sets gets custom width of drop-down list in pixels. If value is equal to 0 or negative, then the width of editor is used."
+        "jp": "ドロップダウン リストのカスタムの幅 (ピクセル単位) を取得または設定します。値がゼロまたは負の場合、エディターの幅が使用されます。"
       },
       "valueOptions": null
     },
@@ -713,7 +713,7 @@
       "defaultValue": null,
       "description": {
         "en": "Sets gets strings used for title of buttons. Value of object should contain pairs or key:value members. Note: any sub-option of locale can appear within the main option of igEditor. In this case those values within main options will have highest priority and override corresponding value in locale.",
-        "jp": "Sets gets strings used for title of buttons. Value of object should contain pairs or key:value members. Note: any sub-option of locale can appear within the main option of igEditor. In this case those values within main options will have highest priority and override corresponding value in locale."
+        "jp": "ボタンのタイトルに使用する文字列を取得または設定します。オブジェクトの値は一組の値またはキーの値メンバーを含む必要があります。注:ロケールのサブオプションは igEditor のメイン オプションに表示されますこのケースではメインオプションの中の値は最優先でロケールに対応する値をオーバーライドします。"
       },
       "valueOptions": null
     },
@@ -721,8 +721,8 @@
       "type": "number",
       "defaultValue": null,
       "description": {
-        "en": "Sets gets the maximum number of decimal places which are used in display mode(no focus).<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: this option has priority over possible regional settings. <br>&nbsp;&nbsp;&nbsp;&nbsp;Note: In case of min decimals value higher than max decimals - max decimals are equaled to min decimals property. <br>&nbsp;&nbsp;&nbsp;&nbsp;Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.",
-        "jp": "Sets gets the maximum number of decimal places which are used in display mode(no focus).<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: this option has priority over possible regional settings. <br>&nbsp;&nbsp;&nbsp;&nbsp;Note: In case of min decimals value higher than max decimals - max decimals are equaled to min decimals property. <br>&nbsp;&nbsp;&nbsp;&nbsp;Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set."
+        "en": "Sets gets the maximum number of decimal places which are used in display mode(no focus).<br>    Note: this option has priority over possible regional settings. <br>    Note: In case of min decimals value higher than max decimals - max decimals are equaled to min decimals property. <br>    Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.",
+        "jp": "表示モード (フォーカスなし) の場合に使用する小数点以下の最大桁数を取得または設定します。<br>    注: このオプションは可能な地域の設定よりも優先されます。<br>     注: 小数点の最小値は小数点の最大値より大きい場合、最大値は最小値に設定されます。<br>     注: デフォルト値が null であっても、- 国際化ファイルがあり、そのプロパティのデフォルト値が設定される場合、値は暗示的に設定されます。"
       },
       "valueOptions": null
     },
@@ -731,7 +731,7 @@
       "defaultValue": null,
       "description": {
         "en": "Removed from numeric editor options",
-        "jp": "Removed from numeric editor options"
+        "jp": "数値エディター オプションから削除されました。"
       },
       "valueOptions": null
     },
@@ -740,7 +740,7 @@
       "defaultValue": null,
       "description": {
         "en": "Sets gets the maximum value which can be entered in editor by end user.",
-        "jp": "Sets gets the maximum value which can be entered in editor by end user."
+        "jp": "エンドユーザーがエディターに入力できる最大値を取得または設定します。"
       },
       "valueOptions": null
     },
@@ -748,8 +748,8 @@
       "type": "number",
       "defaultValue": null,
       "description": {
-        "en": "Sets gets the minimum number of decimal places which are used in display (no focus) state.<br>&nbsp;&nbsp;&nbsp;&nbsp;If number of digits in fractional part of number is less than the value of this option, then the \"0\" characters are used to fill missing digits.<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: This option has priority over possible regional settings. <br>&nbsp;&nbsp;&nbsp;&nbsp;Note: In case of min decimals value higher than max decimals - max decimals are equaled to min decimals property. <br>&nbsp;&nbsp;&nbsp;&nbsp;Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.",
-        "jp": "Sets gets the minimum number of decimal places which are used in display (no focus) state.<br>&nbsp;&nbsp;&nbsp;&nbsp;If number of digits in fractional part of number is less than the value of this option, then the \"0\" characters are used to fill missing digits.<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: This option has priority over possible regional settings. <br>&nbsp;&nbsp;&nbsp;&nbsp;Note: In case of min decimals value higher than max decimals - max decimals are equaled to min decimals property. <br>&nbsp;&nbsp;&nbsp;&nbsp;Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set."
+        "en": "Sets gets the minimum number of decimal places which are used in display (no focus) state.<br>    If number of digits in fractional part of number is less than the value of this option, then the \"0\" characters are used to fill missing digits.<br>    Note: This option has priority over possible regional settings. <br>    Note: In case of min decimals value higher than max decimals - max decimals are equaled to min decimals property. <br>    Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.",
+        "jp": "表示状態 (フォーカスなし) の場合に使用する小数点以下の最小桁数を取得または設定します。<br>    数の小数部分の桁数がこのオプションの値より小さい場合、足りない桁を文字 0 で埋めます。<br>    注: このオプションは使用可能な地域設定よりも優先されます。<br>     注: 小数点の最小値は小数点の最大値より大きい場合、最大値は最小値に設定されます。<br>     注: デフォルト値が null であっても、- 国際化ファイルがあり、そのプロパティのデフォルト値が設定される場合、値は暗示的に設定されます。"
       },
       "valueOptions": null
     },
@@ -758,7 +758,7 @@
       "defaultValue": null,
       "description": {
         "en": "Sets gets the minimum value which can be entered in editor by end user.",
-        "jp": "Sets gets the minimum value which can be entered in editor by end user."
+        "jp": "エンドユーザーがエディターに入力できる最小値を取得または設定します。"
       },
       "valueOptions": null
     },
@@ -766,8 +766,8 @@
       "type": "string",
       "defaultValue": null,
       "description": {
-        "en": "Sets gets the string, which is used as negative pattern. The \"n\" flag represents the value of number. The \"-\" and \"()\" flags are static part of pattern.<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: This option has priority over possible regional settings. <br>&nbsp;&nbsp;&nbsp;&nbsp;Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.",
-        "jp": "Sets gets the string, which is used as negative pattern. The \"n\" flag represents the value of number. The \"-\" and \"()\" flags are static part of pattern.<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: This option has priority over possible regional settings. <br>&nbsp;&nbsp;&nbsp;&nbsp;Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set."
+        "en": "Sets gets the string, which is used as negative pattern. The \"n\" flag represents the value of number. The \"-\" and \"()\" flags are static part of pattern.<br>    Note: This option has priority over possible regional settings. <br>    Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.",
+        "jp": "負の数パターンとして使用する文字列を取得または設定します。\"n\" フラグは数値を表します。「-」 および 「()」 フラグはパターンの静的な部分です。<br>    注: このオプションは使用可能な地域設定よりも優先されます。<br>     注: デフォルト値が null であっても、- 国際化ファイルがあり、そのプロパティのデフォルト値が設定される場合、値は暗示的に設定されます。"
       },
       "valueOptions": null
     },
@@ -775,8 +775,8 @@
       "type": "string",
       "defaultValue": null,
       "description": {
-        "en": "Sets gets the character, which is used as negative sign.<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: This option has priority over possible regional settings. <br>&nbsp;&nbsp;&nbsp;&nbsp;Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.",
-        "jp": "Sets gets the character, which is used as negative sign.<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: This option has priority over possible regional settings. <br>&nbsp;&nbsp;&nbsp;&nbsp;Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set."
+        "en": "Sets gets the character, which is used as negative sign.<br>    Note: This option has priority over possible regional settings. <br>    Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.",
+        "jp": "負の数記号として使用する文字を取得または設定します。<br>    注: このオプションは使用可能な地域設定よりも優先されます。<br>     注: デフォルト値が null であっても、- 国際化ファイルがあり、そのプロパティのデフォルト値が設定される場合、値は暗示的に設定されます。"
       },
       "valueOptions": null
     },
@@ -785,7 +785,7 @@
       "defaultValue": null,
       "description": {
         "en": " Sets gets the representation of null value. In case of default the value for the input is set to null, which makes the input to hold an empty string",
-        "jp": " Sets gets the representation of null value. In case of default the value for the input is set to null, which makes the input to hold an empty string"
+        "jp": " null 値の表現を取得または設定します。デフォルトの場合、入力の値は null に設定され、入力が空文字列を保持します。"
       },
       "valueOptions": []
     },
@@ -794,7 +794,7 @@
       "defaultValue": null,
       "description": {
         "en": "Sets gets text which appears in editor when editor has no focus and \"value\" in editor is null or empty string.",
-        "jp": "Sets gets text which appears in editor when editor has no focus and \"value\" in editor is null or empty string."
+        "jp": "エディターがフォーカスを持たず、エディター内の value が null または空の文字列ときのエディターに表示されるテキストを取得または設定します。"
       },
       "valueOptions": null
     },
@@ -812,7 +812,7 @@
       "defaultValue": false,
       "description": {
         "en": "Sets the ability of the editor to prevent form submition on enter key pressed.",
-        "jp": "Sets the ability of the editor to prevent form submition on enter key pressed."
+        "jp": "Enter キーの押下でフォーム送信を回避する機能を設定します。"
       },
       "valueOptions": null
     },
@@ -821,7 +821,7 @@
       "defaultValue": false,
       "description": {
         "en": "Sets the readonly attribute.Does not allow editing. Disables all the buttons and iteracitons applied. On submit the current value is sent into the request.",
-        "jp": "Sets the readonly attribute.Does not allow editing. Disables all the buttons and iteracitons applied. On submit the current value is sent into the request."
+        "jp": "読み取り専用 attribute.Does を編集不可に設定します。すべてのボタンおよび適用される操作を無効にします。送信において現在の値が要求に送られます。"
       },
       "valueOptions": null
     },
@@ -830,7 +830,7 @@
       "defaultValue": null,
       "description": {
         "en": "Sets gets custom regional settings for editor. If it is string, then $.ig.regional[stringValue] is assumed.",
-        "jp": "Sets gets custom regional settings for editor. If it is string, then $.ig.regional[stringValue] is assumed."
+        "jp": "エディターのカスタムの地域設定を取得または設定します。文字列の場合、$.ig.regional[stringValue] を仮定します。"
       },
       "valueOptions": null
     },
@@ -839,7 +839,7 @@
       "defaultValue": true,
       "description": {
         "en": "Sets the editor to revert value to previous value in case of not valid value on blur, or enter key. If set to false clear is called.",
-        "jp": "Sets the editor to revert value to previous value in case of not valid value on blur, or enter key. If set to false clear is called."
+        "jp": "ぼかしまたは Enter キーの押しでエディターの値が無効な場合、以前の値に戻すことを設定します。False に設定される場合、clear は呼び出されます。"
       },
       "valueOptions": null
     },
@@ -856,7 +856,7 @@
           "type": "object",
           "description": {
             "en": " scientific format is disabled.",
-            "jp": " scientific format is disabled."
+            "jp": " 科学的表記法は無効です。"
           }
         },
         {
@@ -864,7 +864,7 @@
           "type": "string",
           "description": {
             "en": " scientific format is enabled and the \"E\" character is used.",
-            "jp": " scientific format is enabled and the \"E\" character is used."
+            "jp": " 科学的表記法は有効で、文字「E」を使用します。"
           }
         },
         {
@@ -872,7 +872,7 @@
           "type": "string",
           "description": {
             "en": " scientific format is enabled and the \"e\" character is used.",
-            "jp": " scientific format is enabled and the \"e\" character is used."
+            "jp": " 科学的表記法は有効で、文字「e」を使用します。"
           }
         },
         {
@@ -880,7 +880,7 @@
           "type": "string",
           "description": {
             "en": " scientific format is enabled and the \"E\" character is used. The \"E+\" is used for positive values in display mode.",
-            "jp": " scientific format is enabled and the \"E\" character is used. The \"E+\" is used for positive values in display mode."
+            "jp": " 科学的表記法は有効で、文字「E」を使用します。「E+」 は、編集モードで正の値に使用します。"
           }
         },
         {
@@ -888,7 +888,7 @@
           "type": "string",
           "description": {
             "en": " scientific format is enabled and the \"e\" character is used. The \"e+\" is used for positive values in display mode.",
-            "jp": " scientific format is enabled and the \"e\" character is used. The \"e+\" is used for positive values in display mode."
+            "jp": " 科学的表記法は有効で、文字「e」を使用します。「e+」 は、編集モードで正の値に使用します。"
           }
         }
       ]
@@ -897,8 +897,8 @@
       "type": "string",
       "defaultValue": "selectAll",
       "description": {
-        "en": "type=\"selectAll|atStart|atEnd|browserDefault Set the action when the editor gets focused. The default value is selectAll.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;selectAll type=\"string\" Setting this option will select all the text into the editor when the edit mode gets enetered.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;atStart type=\"string\" Setting this option will move the cursor at the begining the text into the editor when the edit mode gets enetered.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;atEnd type=\"string\" Setting this option will move the cursor at the end the text into the editor when the edit mode gets enetered.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;browserDefault type=\"string\" Setting this option won't do any extra logic, but proceed with browser default behavior.",
-        "jp": "type=\"selectAll|atStart|atEnd|browserDefault Set the action when the editor gets focused. The default value is selectAll.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;selectAll type=\"string\" Setting this option will select all the text into the editor when the edit mode gets enetered.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;atStart type=\"string\" Setting this option will move the cursor at the begining the text into the editor when the edit mode gets enetered.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;atEnd type=\"string\" Setting this option will move the cursor at the end the text into the editor when the edit mode gets enetered.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;browserDefault type=\"string\" Setting this option won't do any extra logic, but proceed with browser default behavior."
+        "en": "type=\"selectAll|atStart|atEnd|browserDefault Set the action when the editor gets focused. The default value is selectAll.<br>     selectAll type=\"string\" Setting this option will select all the text into the editor when the edit mode gets enetered.<br>     atStart type=\"string\" Setting this option will move the cursor at the begining the text into the editor when the edit mode gets enetered.<br>     atEnd type=\"string\" Setting this option will move the cursor at the end the text into the editor when the edit mode gets enetered.<br>     browserDefault type=\"string\" Setting this option won't do any extra logic, but proceed with browser default behavior.",
+        "jp": "type=\"selectAll|atStart|atEnd|browserDefault\" エディターがフォーカスを取得したときの動作を設定します。デフォルト値は selectAll です。<br>     selectAll type=\"string\" このオプションを設定すると、エディター モードに入ったときにエディターのすべてのテキストを選択します。<br>     atStart type=\"string\" このオプションを設定すると、エディター モードに入ったときにエディターのテキストの初めにカーソルを移動します。<br>     atEnd type=\"string\" このオプションを設定すると、エディター モードに入ったときにエディターのテキストの最後にカーソルを移動します。<br>     browserDefault type=\"string\" このオプションの設定に追加のロジックはありませんが、ブラウザーのデフォルトの動作で処理されます。"
       },
       "valueOptions": null
     },
@@ -907,7 +907,7 @@
       "defaultValue": 1.0,
       "description": {
         "en": "Sets gets delta-value which is used to increment or decrement value in editor on spin events. If value is set to negative value an exception is thrown. Non integer value is supported only for dataMode double and float.",
-        "jp": "Sets gets delta-value which is used to increment or decrement value in editor on spin events. If value is set to negative value an exception is thrown. Non integer value is supported only for dataMode double and float."
+        "jp": "スピン イベント発生時にエディター内の値の増減に使用するデルタ値を取得および設定します。値が負の数に設定される場合、例外は発生されます。整数値以外の値は double および float の dataMode のみにサポートされます。"
       },
       "valueOptions": null
     },
@@ -916,7 +916,7 @@
       "defaultValue": false,
       "description": {
         "en": "Sets gets ability to automatically set value in editor to opposite limit, when spin action reached minimum or maximum limit.",
-        "jp": "Sets gets ability to automatically set value in editor to opposite limit, when spin action reached minimum or maximum limit."
+        "jp": "スピン アクションで最小値または最大値に達した場合に、エディターで自動的に値を反対の限度に設定する機能を取得または設定します。"
       },
       "valueOptions": null
     },
@@ -925,7 +925,7 @@
       "defaultValue": false,
       "description": {
         "en": "Disables default notifications for basic validation scenarios built in the editors such as required list selection, value wrapping around or spin limits.",
-        "jp": "Disables default notifications for basic validation scenarios built in the editors such as required list selection, value wrapping around or spin limits."
+        "jp": "エディターのビルトイン基本検証シナリオで、必須リスト選択、値ラッピング、スピン制限などのデフォルトの通知を無効にします。"
       },
       "valueOptions": null
     },
@@ -934,7 +934,7 @@
       "defaultValue": null,
       "description": {
         "en": "Gets sets value in tabIndex for editor.",
-        "jp": "Gets sets value in tabIndex for editor."
+        "jp": "エディターの tabIndex の値を取得または設定します。"
       },
       "valueOptions": null
     },
@@ -943,7 +943,7 @@
       "defaultValue": null,
       "description": {
         "en": " Sets gets horizontal alignment of text in editor. If that option is not set, then 'right' is used for 'numeric', 'currency' and 'percent' editors and the 'left' is used for all other types of editor.",
-        "jp": " Sets gets horizontal alignment of text in editor. If that option is not set, then 'right' is used for 'numeric', 'currency' and 'percent' editors and the 'left' is used for all other types of editor."
+        "jp": " エディター内のテキストの水平配置を取得または設定します。このオプションを設定した場合、'right' は 'numeric、'currency' 、および 'percent' エディターで使用され、'left'  はその他のすべてのタイプのエディターで使用されます。"
       },
       "valueOptions": [
         {
@@ -977,7 +977,7 @@
       "defaultValue": null,
       "description": {
         "en": " Sets gets text mode of editor such as: single-line text editor, password editor or multiline editor. That option has effect only on initialization. If based element (selector) is TEXTAREA, then it is used as input-field.",
-        "jp": " Sets gets text mode of editor such as: single-line text editor, password editor or multiline editor. That option has effect only on initialization. If based element (selector) is TEXTAREA, then it is used as input-field."
+        "jp": " 単一行テキスト エディター、パスワード エディター、複数行エディターなど、エディターのテキスト モードを取得または設定します。このオプションは、初期化時にのみ影響します。ベースとなる要素 (セレクター) が TEXTAREA の場合、それを入力フィールドとして使用します。"
       },
       "valueOptions": [
         {
@@ -985,7 +985,7 @@
           "type": "string",
           "description": {
             "en": " Single line text editor based on INPUT element is created.",
-            "jp": " Single line text editor based on INPUT element is created."
+            "jp": " INPUT 要素に基づく単一行テキスト エディターが作成されます。"
           }
         },
         {
@@ -993,7 +993,7 @@
           "type": "string",
           "description": {
             "en": " Editor based on INPUT element with type password is created.",
-            "jp": " Editor based on INPUT element with type password is created."
+            "jp": " タイプ パスワードで作成される INPUT 要素に基づくエディターが作成されます。"
           }
         },
         {
@@ -1001,7 +1001,7 @@
           "type": "string",
           "description": {
             "en": " multiline editor based on TEXTAREA element is created.",
-            "jp": " multiline editor based on TEXTAREA element is created."
+            "jp": " TEXTAREA 要素に基づく複数行エディターが作成されます。"
           }
         }
       ]
@@ -1011,7 +1011,7 @@
       "defaultValue": false,
       "description": {
         "en": "Sets gets ability to convert input characters to lower case (true) or keeps characters as they are (false). That option has effect only while keyboard entries and paste.",
-        "jp": "Sets gets ability to convert input characters to lower case (true) or keeps characters as they are (false). That option has effect only while keyboard entries and paste."
+        "jp": "True の場合は、入力された文字列を小文字に変換し、False の場合は、文字列をそのままにしておく機能を取得または設定します。このオプションは、キーボード入力と貼り付けを使用する場合のみ効果があります。"
       },
       "valueOptions": null
     },
@@ -1020,7 +1020,7 @@
       "defaultValue": false,
       "description": {
         "en": "Sets gets ability to convert input characters to upper case (true) or keeps characters as they are (false). That option has effect only while keyboard entries and paste.",
-        "jp": "Sets gets ability to convert input characters to upper case (true) or keeps characters as they are (false). That option has effect only while keyboard entries and paste."
+        "jp": "True の場合は、入力された文字列を大文字に変換し、False の場合は、文字列をそのままにしておく機能を取得または設定します。このオプションは、キーボード入力と貼り付けを使用する場合のみ効果があります。"
       },
       "valueOptions": null
     },
@@ -1028,8 +1028,8 @@
       "type": "object",
       "defaultValue": null,
       "description": {
-        "en": "Sets gets options supported by the igValidator widget.<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: Validation rules of igValidator, such as min and max value/length are applied separately triggering errors, <br>                while similar options of the editor work to prevent wrong values from being entered.",
-        "jp": "Sets gets options supported by the igValidator widget.<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: Validation rules of igValidator, such as min and max value/length are applied separately triggering errors, <br>                while similar options of the editor work to prevent wrong values from being entered."
+        "en": "Sets gets options supported by the igValidator widget.<br>    Note: Validation rules of igValidator, such as min and max value/length are applied separately triggering errors, <br>                while similar options of the editor work to prevent wrong values from being entered.",
+        "jp": "igValidator ウィジェットによってサポートされるオプションを設定または取得します。<br>    注: エラーをトリガーした際に igValidator の検証ルールは最小値/長さおよび最大値/長さを別々に適用します。<br>                エディターの同様のオプションは、誤った値が入力されるのを防止します。"
       },
       "schemaRef": "validator"
     },
@@ -1038,7 +1038,7 @@
       "defaultValue": null,
       "description": {
         "en": "Gets sets value in editor. The effect of setting/getting that option depends on type of editor and on dataMode options for every type of editor.",
-        "jp": "Gets sets value in editor. The effect of setting/getting that option depends on type of editor and on dataMode options for every type of editor."
+        "jp": "エディター内の値を取得または設定します。エディターのタイプおよび各エディター タイプの dataMode オプションに基づいたオプションを取得または設定する効果。"
       },
       "valueOptions": null
     },
@@ -1046,8 +1046,8 @@
       "type": "number",
       "defaultValue": 5.0,
       "description": {
-        "en": "Gets sets how many items should be shown at once. <br>&nbsp;&nbsp;&nbsp;   Notes:<br>&nbsp;&nbsp;&nbsp;   That option is overwritten if the number of list items is less than the value. In that case the height of the dropdown is adjusted to the number of items.",
-        "jp": "Gets sets how many items should be shown at once. <br>&nbsp;&nbsp;&nbsp;   Notes:<br>&nbsp;&nbsp;&nbsp;   That option is overwritten if the number of list items is less than the value. In that case the height of the dropdown is adjusted to the number of items."
+        "en": "Gets sets how many items should be shown at once. <br>      Notes:<br>      That option is overwritten if the number of list items is less than the value. In that case the height of the dropdown is adjusted to the number of items.",
+        "jp": "一度に表示される項目の数を取得または設定します。<br>     注:<br>      リスト項目の数が値より小さい場合、このオプションは上書きされます。この場合、ドロップダウンの高さが項目の数に基づいて設定されます。"
       },
       "valueOptions": null
     },
@@ -1064,7 +1064,7 @@
           "type": "string",
           "description": {
             "en": " The widget width can be set in pixels (px) and percentage (%).",
-            "jp": " The widget width can be set in pixels (px) and percentage (%)."
+            "jp": " ウィジェットの幅をピクセル (px) またはパーセンテージ (%) に設定できます。"
           }
         },
         {
@@ -1072,7 +1072,7 @@
           "type": "number",
           "description": {
             "en": " The widget width can be set as a number in pixels.",
-            "jp": " The widget width can be set as a number in pixels."
+            "jp": " ウィジェットの幅は数値としてピクセルで設定できます。"
           }
         }
       ]

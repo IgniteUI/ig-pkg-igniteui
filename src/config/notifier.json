@@ -1,4 +1,4 @@
-{
+﻿{
   "overview": null,
   "name": "ui.igNotifier",
   "category": null,
@@ -19,8 +19,8 @@
         }
       ],
       "description": {
-        "en": "Event fired after popover is hidden.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get the element the popover is hidden for.<br>&nbsp;&nbsp;&nbsp;Use ui.content to get the content displayed in the popover as a string.<br>&nbsp;&nbsp;&nbsp;Use ui.popover to get the popover element hidden.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to the igPopover widget",
-        "jp": "Event fired after popover is hidden.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get the element the popover is hidden for.<br>&nbsp;&nbsp;&nbsp;Use ui.content to get the content displayed in the popover as a string.<br>&nbsp;&nbsp;&nbsp;Use ui.popover to get the popover element hidden.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to the igPopover widget"
+        "en": "Event fired after popover is hidden.<br>   Function takes arguments evt and ui.<br>   Use ui.element to get the element the popover is hidden for.<br>   Use ui.content to get the content displayed in the popover as a string.<br>   Use ui.popover to get the popover element hidden.<br>   Use ui.owner to get reference to the igPopover widget",
+        "jp": "ポップオーバーが非表示にされた後に発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ui.element を使用すると、ポップオーバーで非表示される要素を取得します。<br>   ui.content を使用すると、文字列としてポップオーバーで表示されるコンテンツを取得します。<br>   ui.popover を使用すると、非表示にされたポップオーバー要素を取得します。<br>   igPopover ウィジェットへの参照を取得するには ui.owner を使用します。"
       }
     },
     "hiding": {
@@ -38,8 +38,8 @@
         }
       ],
       "description": {
-        "en": "Event fired before popover is hidden.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get the element the popover will hide for.<br>&nbsp;&nbsp;&nbsp;Use ui.content to get the current content displayed in the popover as a string.<br>&nbsp;&nbsp;&nbsp;Use ui.popover to get the popover element hiding.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to the igPopover widget",
-        "jp": "Event fired before popover is hidden.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get the element the popover will hide for.<br>&nbsp;&nbsp;&nbsp;Use ui.content to get the current content displayed in the popover as a string.<br>&nbsp;&nbsp;&nbsp;Use ui.popover to get the popover element hiding.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to the igPopover widget"
+        "en": "Event fired before popover is hidden.<br>   Function takes arguments evt and ui.<br>   Use ui.element to get the element the popover will hide for.<br>   Use ui.content to get the current content displayed in the popover as a string.<br>   Use ui.popover to get the popover element hiding.<br>   Use ui.owner to get reference to the igPopover widget",
+        "jp": "ポップオーバーが非表示になる前に発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ui.element を使用すると、ポップオーバーで非表示になる要素を取得します。<br>   ui.content を使用すると、文字列としてポップオーバーで表示されているコンテンツを取得します。<br>   ui.popover を使用すると、非表示にされているポップオーバー要素を取得します。<br>   igPopover ウィジェットへの参照を取得するには ui.owner を使用します。"
       }
     },
     "showing": {
@@ -57,8 +57,8 @@
         }
       ],
       "description": {
-        "en": "Event fired before popover is shown.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get the element the popover will show for.<br>&nbsp;&nbsp;&nbsp;Use ui.content to get or set the content to be shown as a string.<br>&nbsp;&nbsp;&nbsp;Use ui.popover to get the popover element showing.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to the igPopover widget",
-        "jp": "Event fired before popover is shown.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get the element the popover will show for.<br>&nbsp;&nbsp;&nbsp;Use ui.content to get or set the content to be shown as a string.<br>&nbsp;&nbsp;&nbsp;Use ui.popover to get the popover element showing.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to the igPopover widget"
+        "en": "Event fired before popover is shown.<br>   Function takes arguments evt and ui.<br>   Use ui.element to get the element the popover will show for.<br>   Use ui.content to get or set the content to be shown as a string.<br>   Use ui.popover to get the popover element showing.<br>   Use ui.owner to get reference to the igPopover widget",
+        "jp": "ポップオーバーが表示する前に発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ui.element を使用すると、ポップオーバーで表示する要素を取得します。<br>   ui.content を使用すると、文字列として表示されるコンテンツを取得または設定します。<br>   ui.popover を使用すると、表示されているポップオーバー要素を取得します。<br>   igPopover ウィジェットへの参照を取得するには ui.owner を使用します。"
       }
     },
     "shown": {
@@ -76,8 +76,8 @@
         }
       ],
       "description": {
-        "en": "Event fired after popover is shown.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get the element the popover showed for.<br>&nbsp;&nbsp;&nbsp;Use ui.content to get the content that was shown as a string.<br>&nbsp;&nbsp;&nbsp;Use ui.popover to get the popover element shown.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to the igPopover widget",
-        "jp": "Event fired after popover is shown.<br>&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;Use ui.element to get the element the popover showed for.<br>&nbsp;&nbsp;&nbsp;Use ui.content to get the content that was shown as a string.<br>&nbsp;&nbsp;&nbsp;Use ui.popover to get the popover element shown.<br>&nbsp;&nbsp;&nbsp;Use ui.owner to get reference to the igPopover widget"
+        "en": "Event fired after popover is shown.<br>   Function takes arguments evt and ui.<br>   Use ui.element to get the element the popover showed for.<br>   Use ui.content to get the content that was shown as a string.<br>   Use ui.popover to get the popover element shown.<br>   Use ui.owner to get reference to the igPopover widget",
+        "jp": "ポップオーバーが表示された後に発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ui.element を使用すると、ポップオーバーで表示した要素を取得します。<br>   ui.content を使用すると、文字列として表示されたコンテンツを取得します。<br>   ui.popover を使用すると、表示されたポップオーバー要素を取得します。<br>   igPopover ウィジェットへの参照を取得するには ui.owner を使用します。"
       }
     }
   },
@@ -87,7 +87,7 @@
       "defaultValue": true,
       "description": {
         "en": "Allows setting the respective state CSS on the target element (used to apply border color by default)",
-        "jp": "Allows setting the respective state CSS on the target element (used to apply border color by default)"
+        "jp": "各状態の CSS をターゲット要素に設定することを許可します (デフォルトで境界線の色を適用するために使用します)。"
       },
       "valueOptions": null
     },
@@ -96,7 +96,7 @@
       "defaultValue": 250.0,
       "description": {
         "en": "Gets or sets the time in milliseconds the notification fades in and out when showing/hiding",
-        "jp": "Gets or sets the time in milliseconds the notification fades in and out when showing/hiding"
+        "jp": "通知が表示/非表示するときのフェード時間をミリ秒で取得または設定します。"
       },
       "valueOptions": null
     },
@@ -105,7 +105,7 @@
       "defaultValue": 5.0,
       "description": {
         "en": "Gets or sets the distance in pixels a notification popover slides outwards as it's shown.",
-        "jp": "Gets or sets the distance in pixels a notification popover slides outwards as it's shown."
+        "jp": "表示するとき、通知ポップオーバーが外部にスライドする距離をピクセルで取得または設定します。"
       },
       "valueOptions": null
     },
@@ -114,7 +114,7 @@
       "defaultValue": null,
       "description": {
         "en": " Controls where the popover DOM should be attached to (only applies to popovers).",
-        "jp": " Controls where the popover DOM should be attached to (only applies to popovers)."
+        "jp": " ポップオーバー DOM に添付する要素を制御します (ポップオーバーのみに適用します)。"
       },
       "valueOptions": [
         {
@@ -122,7 +122,7 @@
           "type": "string",
           "description": {
             "en": " A valid jQuery selector for the element",
-            "jp": " A valid jQuery selector for the element"
+            "jp": " 要素の有効な jQuery セレクター。"
           }
         },
         {
@@ -130,7 +130,7 @@
           "type": "object",
           "description": {
             "en": " A reference to the parent jQuery object",
-            "jp": " A reference to the parent jQuery object"
+            "jp": " 親 jQuery オブジェクトへの参照。"
           }
         }
       ]
@@ -140,7 +140,7 @@
       "defaultValue": true,
       "description": {
         "en": "controls whether the popover will close on blur or not",
-        "jp": "controls whether the popover will close on blur or not"
+        "jp": "ぼかし時にポップオーバーを閉じるかどうかを制御します。"
       },
       "valueOptions": null
     },
@@ -149,7 +149,7 @@
       "defaultValue": null,
       "description": {
         "en": "sets the containment for the popover. Accepts a jQuery object",
-        "jp": "sets the containment for the popover. Accepts a jQuery object"
+        "jp": "ポップオーバーのコンテインメントを設定します。jQuery オブジェクトを受け付けます。"
       },
       "valueOptions": null
     },
@@ -158,7 +158,7 @@
       "defaultValue": null,
       "description": {
         "en": " Sets the content for the popover container. Templated with two parameters by default: {0} - the icon class and {1} - message text.",
-        "jp": " Sets the content for the popover container. Templated with two parameters by default: {0} - the icon class and {1} - message text."
+        "jp": " ポップオーバー コンテナーのコンテンツを設定します。デフォルトでは 2 つのパラメーターでテンプレート化されます。{0} - アイコン クラス、{1} - メッセージのテキスト。"
       },
       "valueOptions": [
         {
@@ -166,7 +166,7 @@
           "type": "string",
           "description": {
             "en": "   String content of the popover container",
-            "jp": "   String content of the popover container"
+            "jp": "   ポップオーバー コンテナーの文字列コンテンツ。"
           }
         },
         {
@@ -174,7 +174,7 @@
           "type": "function",
           "description": {
             "en": " Function which is a callback that can either return the content directly, or call the first argument, passing in the content",
-            "jp": " Function which is a callback that can either return the content directly, or call the first argument, passing in the content"
+            "jp": " コンテンツを直接に返すか、コンテンツを渡して最初の引数を呼び出すコールバックである関数。"
           }
         }
       ]
@@ -184,7 +184,7 @@
       "defaultValue": null,
       "description": {
         "en": " controls the direction in which the control shows relative to the target element",
-        "jp": " controls the direction in which the control shows relative to the target element"
+        "jp": " ターゲット要素に相対してコントロールの表示方向を制御します。"
       },
       "valueOptions": [
         {
@@ -192,7 +192,7 @@
           "type": "string",
           "description": {
             "en": " lets the control show on the side where enough space is available with the following priority top > bottom > right > left",
-            "jp": " lets the control show on the side where enough space is available with the following priority top > bottom > right > left"
+            "jp": " 「上 > 下 > 右 > 左」の優先順序で、利用可能なスペースがある側にコントロールを表示します。"
           }
         },
         {
@@ -200,7 +200,7 @@
           "type": "string",
           "description": {
             "en": " shows popover on the left side of the target element",
-            "jp": " shows popover on the left side of the target element"
+            "jp": " ポップオーバーはターゲットの要素の左側に表示されます。"
           }
         },
         {
@@ -208,7 +208,7 @@
           "type": "string",
           "description": {
             "en": " shows popover on the right side of the target element",
-            "jp": " shows popover on the right side of the target element"
+            "jp": " ポップオーバーはターゲットの要素の右側に表示されます。"
           }
         },
         {
@@ -216,7 +216,7 @@
           "type": "string",
           "description": {
             "en": " shows popover on the top of the target element",
-            "jp": " shows popover on the top of the target element"
+            "jp": " ポップオーバーはターゲットの要素の上側に表示されます。"
           }
         },
         {
@@ -224,7 +224,7 @@
           "type": "string",
           "description": {
             "en": " shows popover on the bottom of the target element",
-            "jp": " shows popover on the bottom of the target element"
+            "jp": " ポップオーバーはターゲットの要素の下側に表示されます。"
           }
         }
       ]
@@ -234,7 +234,7 @@
       "defaultValue": null,
       "description": {
         "en": "sets the content for the popover header",
-        "jp": "sets the content for the popover header"
+        "jp": "ポップオーバー ヘッダーのコンテンツを設定します。"
       },
       "valueOptions": null
     },
@@ -243,7 +243,7 @@
       "defaultValue": null,
       "description": {
         "en": " defines height for the popover. leave null for auto",
-        "jp": " defines height for the popover. leave null for auto"
+        "jp": " ポップオーバーの高さを定義します。null を指定すると、auto に解決します。"
       },
       "valueOptions": [
         {
@@ -251,7 +251,7 @@
           "type": "number",
           "description": {
             "en": " The height can be set as a number.",
-            "jp": " The height can be set as a number."
+            "jp": " 高さを数字に設定できます。"
           }
         },
         {
@@ -259,7 +259,7 @@
           "type": "string",
           "description": {
             "en": " The height can be set in pixels (px).",
-            "jp": " The height can be set in pixels (px)."
+            "jp": " 高さをピクセル (px) に設定できます。"
           }
         }
       ]
@@ -269,7 +269,7 @@
       "defaultValue": null,
       "description": {
         "en": " defines height the popover won't exceed even if no specific one is set.",
-        "jp": " defines height the popover won't exceed even if no specific one is set."
+        "jp": " 高さが設定されなくても、ポップオーバーの最大高さを定義します。"
       },
       "valueOptions": [
         {
@@ -277,7 +277,7 @@
           "type": "number",
           "description": {
             "en": " The max height can be set as a number.",
-            "jp": " The max height can be set as a number."
+            "jp": " 最大の高さは数値として設定できます。"
           }
         },
         {
@@ -285,7 +285,7 @@
           "type": "string",
           "description": {
             "en": " The max height can be set in pixels (px).",
-            "jp": " The max height can be set in pixels (px)."
+            "jp": " 最大の高さはピクセル (px) として設定できます。"
           }
         }
       ]
@@ -295,7 +295,7 @@
       "defaultValue": null,
       "description": {
         "en": " defines width the popover won't exceed even if no specific one is set.",
-        "jp": " defines width the popover won't exceed even if no specific one is set."
+        "jp": " 幅が設定されなくても、ポップオーバーの最大幅を定義します。"
       },
       "valueOptions": [
         {
@@ -303,7 +303,7 @@
           "type": "number",
           "description": {
             "en": " The maxWidth can be set as a number.",
-            "jp": " The maxWidth can be set as a number."
+            "jp": " maxWidth を数字に設定できます。"
           }
         },
         {
@@ -311,7 +311,7 @@
           "type": "string",
           "description": {
             "en": " The maxWidth can be set in pixels (px).",
-            "jp": " The maxWidth can be set in pixels (px)."
+            "jp": " maxWidth をピクセル (px) に設定できます。"
           }
         }
       ]
@@ -321,7 +321,7 @@
       "defaultValue": null,
       "description": {
         "en": "A set of default messages for each state",
-        "jp": "A set of default messages for each state"
+        "jp": "各状態のデフォルト メッセージのセット"
       },
       "valueOptions": null
     },
@@ -330,7 +330,7 @@
       "defaultValue": null,
       "description": {
         "en": " defines width the popover won't go under the value even if no specific one is set.",
-        "jp": " defines width the popover won't go under the value even if no specific one is set."
+        "jp": " 幅が設定されなくても、ポップオーバーの最小幅を定義します。"
       },
       "valueOptions": [
         {
@@ -338,7 +338,7 @@
           "type": "number",
           "description": {
             "en": " The minWidth can be set as a number.",
-            "jp": " The minWidth can be set as a number."
+            "jp": " minWidth を数字に設定できます。"
           }
         },
         {
@@ -346,7 +346,7 @@
           "type": "string",
           "description": {
             "en": " The minWidth can be set in pixels (px).",
-            "jp": " The minWidth can be set in pixels (px)."
+            "jp": " minWidth をピクセル (px) に設定できます。"
           }
         }
       ]
@@ -356,7 +356,7 @@
       "defaultValue": null,
       "description": {
         "en": " Controls the positioning mode of messages. Setting a mode will override the default behavior which is auto.",
-        "jp": " Controls the positioning mode of messages. Setting a mode will override the default behavior which is auto."
+        "jp": " メッセージの配置モードを制御します。モードを設定すると、デフォルトの動作「自動」がオーバーライドされます。"
       },
       "valueOptions": [
         {
@@ -364,7 +364,7 @@
           "type": "string",
           "description": {
             "en": " Uses popover for info and warning messages and inline for errors and success.",
-            "jp": " Uses popover for info and warning messages and inline for errors and success."
+            "jp": " 情報および警告メッセージでポップオーバーを使用し、エラーおよび成功メッセージでインライン スタイルを使用します。"
           }
         },
         {
@@ -372,7 +372,7 @@
           "type": "string",
           "description": {
             "en": " Displays messages in a configurable popover. ",
-            "jp": " Displays messages in a configurable popover. "
+            "jp": " メッセージを構成可能なポップオーバーに表示します。 "
           }
         },
         {
@@ -380,7 +380,7 @@
           "type": "string",
           "description": {
             "en": " Displays messages in a simplified notification text under the target.",
-            "jp": " Displays messages in a simplified notification text under the target."
+            "jp": " メッセージをターゲットの下に簡易通知テキストで表示します。"
           }
         }
       ]
@@ -390,7 +390,7 @@
       "defaultValue": null,
       "description": {
         "en": " Controls the level of notifications shown by automatic and manual messages using the notify() method. Use show() to ignore the level.",
-        "jp": " Controls the level of notifications shown by automatic and manual messages using the notify() method. Use show() to ignore the level."
+        "jp": " notify() メソッドを使用して自動および手動メッセージに表示される通知のレベルを制御します。レベルを無視するには、show() を使用します。"
       },
       "valueOptions": [
         {
@@ -398,7 +398,7 @@
           "type": "string",
           "description": {
             "en": " Show all types of messages",
-            "jp": " Show all types of messages"
+            "jp": " すべてのメッセージ タイプを表示します。"
           }
         },
         {
@@ -406,7 +406,7 @@
           "type": "string",
           "description": {
             "en": " Show everything from info level messages up",
-            "jp": " Show everything from info level messages up"
+            "jp": " 情報レベルのメッセージからすべての表示。"
           }
         },
         {
@@ -414,7 +414,7 @@
           "type": "string",
           "description": {
             "en": " Show everything from warning level messages up",
-            "jp": " Show everything from warning level messages up"
+            "jp": " 警告レベルのメッセージからすべての表示。"
           }
         },
         {
@@ -422,7 +422,7 @@
           "type": "string",
           "description": {
             "en": " Show only error messages",
-            "jp": " Show only error messages"
+            "jp": " エラー メッセージのみの表示。"
           }
         }
       ]
@@ -432,7 +432,7 @@
       "defaultValue": null,
       "description": {
         "en": " controls the position of the popover according to the target element in case the popover is larger than the target on the side we want to position, if the popover is smaller it should always be in the middle of the visible area",
-        "jp": " controls the position of the popover according to the target element in case the popover is larger than the target on the side we want to position, if the popover is smaller it should always be in the middle of the visible area"
+        "jp": " 配置する側でポップオーバーがターゲットの要素より大きいの場合、ターゲット要素に対してポップオーバーの配置を制御します。ポップオーバーがターゲットの要素より小さい場合、表示可能な領域の中央に配置されます。"
       },
       "valueOptions": [
         {
@@ -440,7 +440,7 @@
           "type": "string",
           "description": {
             "en": " lets the control choose a position depending on available space with the following priority balanced > end > start",
-            "jp": " lets the control choose a position depending on available space with the following priority balanced > end > start"
+            "jp": " 「中央 > 終了 > 開始」の優先順序で、利用可能なスペースに基づいて、コントロールは位置を自動的に選択します。"
           }
         },
         {
@@ -448,7 +448,7 @@
           "type": "string",
           "description": {
             "en": " the popover is positioned at the middle of the target element",
-            "jp": " the popover is positioned at the middle of the target element"
+            "jp": " ポップオーバーはターゲットの要素の中央に配置されます。"
           }
         },
         {
@@ -456,7 +456,7 @@
           "type": "string",
           "description": {
             "en": " the popover is positioned at the beginning of the target element",
-            "jp": " the popover is positioned at the beginning of the target element"
+            "jp": " ポップオーバーはターゲットの要素の開始に配置されます。"
           }
         },
         {
@@ -464,7 +464,7 @@
           "type": "string",
           "description": {
             "en": " the popover is positioned at the end of the target element",
-            "jp": " the popover is positioned at the end of the target element"
+            "jp": " ポップオーバーはターゲットの要素の終了に配置されます。"
           }
         }
       ]
@@ -474,7 +474,7 @@
       "defaultValue": null,
       "description": {
         "en": "Selectors indicating which items should show popovers. The predefined value is [title]. Customize if you're using something other then the title attribute for the popover content, or if you need a different selector for event delegation. When changing this option, you likely need to also change the contentTemplate option",
-        "jp": "Selectors indicating which items should show popovers. The predefined value is [title]. Customize if you're using something other then the title attribute for the popover content, or if you need a different selector for event delegation. When changing this option, you likely need to also change the contentTemplate option"
+        "jp": "どの項目がポップオーバーを表示するかを示すセレクター。定義済みの値は [title] です。ポップオーバーのコンテンツとして、タイトル属性以外のものを使用するか、イベント デリゲーションのために別のセレクターが必要な場合にカスタマイズします。このオプションを変更する場合、contentTemplate オプションも変更する必要があります。"
       },
       "valueOptions": null
     },
@@ -483,7 +483,7 @@
       "defaultValue": false,
       "description": {
         "en": "Allows rendering a span with the respective state CSS to display jQuery UI framework icons",
-        "jp": "Allows rendering a span with the respective state CSS to display jQuery UI framework icons"
+        "jp": "jQuery UI フレームワークのアイコンを表示するために相対する状態の CSS を持つスパンの描画を許可します。"
       },
       "valueOptions": null
     },
@@ -500,7 +500,7 @@
           "type": "string",
           "description": {
             "en": " the popover is shown on mouse enter in the target element",
-            "jp": " the popover is shown on mouse enter in the target element"
+            "jp": " ポップオーバーはターゲットの要素のマウス入りで表示されます。"
           }
         }
       ]
@@ -510,7 +510,7 @@
       "defaultValue": null,
       "description": {
         "en": " Gets or sets the current state of the igNotifier messages. State controls what CSS classes are applied to the messages and target and has interactions with other options as well.",
-        "jp": " Gets or sets the current state of the igNotifier messages. State controls what CSS classes are applied to the messages and target and has interactions with other options as well."
+        "jp": " igNotifier メッセージの現在の状態を取得または設定します。状態は、メッセージおよびターゲット要素に適用される CSS クラスを制御し、その他のオプションも影響します。"
       },
       "valueOptions": [
         {
@@ -518,7 +518,7 @@
           "type": "string",
           "description": {
             "en": " Messages and target CSS have success styles applied.",
-            "jp": " Messages and target CSS have success styles applied."
+            "jp": " メッセージおよびターゲット CSS に成功スタイルが適用されます。"
           }
         },
         {
@@ -526,7 +526,7 @@
           "type": "string",
           "description": {
             "en": " Messages have info applied. Target is unaffected.",
-            "jp": " Messages have info applied. Target is unaffected."
+            "jp": " メッセージに情報スタイルが適用されます。ターゲットは影響されません。"
           }
         },
         {
@@ -534,7 +534,7 @@
           "type": "string",
           "description": {
             "en": " Messages and target CSS have warning styles applied.",
-            "jp": " Messages and target CSS have warning styles applied."
+            "jp": " メッセージおよびターゲット CSS に警告スタイルが適用されます。"
           }
         },
         {
@@ -542,7 +542,7 @@
           "type": "string",
           "description": {
             "en": " Messages and target CSS have error styles applied.",
-            "jp": " Messages and target CSS have error styles applied."
+            "jp": " メッセージおよびターゲット CSS にエラー スタイルが適用されます。"
           }
         }
       ]
@@ -552,7 +552,7 @@
       "defaultValue": null,
       "description": {
         "en": " defines width for the popover. leave null for auto.",
-        "jp": " defines width for the popover. leave null for auto."
+        "jp": " ポップオーバーの幅を定義します。null を指定すると、auto に解決します。"
       },
       "valueOptions": [
         {
@@ -560,7 +560,7 @@
           "type": "number",
           "description": {
             "en": " The width can be set as a number.",
-            "jp": " The width can be set as a number."
+            "jp": " 幅を数字で設定できます。"
           }
         },
         {
@@ -568,7 +568,7 @@
           "type": "string",
           "description": {
             "en": " The width can be set in pixels (px).",
-            "jp": " The width can be set in pixels (px)."
+            "jp": " 幅をピクセル (px) で設定できます。"
           }
         }
       ]

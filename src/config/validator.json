@@ -1,4 +1,4 @@
-{
+﻿{
   "overview": null,
   "name": "ui.igValidator",
   "category": null,
@@ -20,7 +20,7 @@
       ],
       "description": {
         "en": "Event raised for invalid field after value was validated but before any action takes effect.<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.value to get current value in target. <br>                Use ui.valid to determine the outcome of the validation.<br>                ui.rule is populated with the name of the rule that failed validation, if any.<br>                ui.fieldOptions is populated with options for the specific field in the collection or null.",
-        "jp": "Event raised for invalid field after value was validated but before any action takes effect.<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.value to get current value in target. <br>                Use ui.valid to determine the outcome of the validation.<br>                ui.rule is populated with the name of the rule that failed validation, if any.<br>                ui.fieldOptions is populated with options for the specific field in the collection or null."
+        "jp": "無効なフィールドの場合、値の検証後、なんらかの操作が有効になる前に発生するイベント。<br>                関数は引数 evt および ui を取得します。<br>                igValidator ウィジェットへの参照を取得するには ui.owner を使用します。<br>                ui.value を使用して、ターゲット内の現在の値を取得します。<br>          検証の結果を決定するために ui.valid を使用します。<br>                ui.rule は (ある場合) 検証を失敗したルールの名前に設定されます。<br>                ui.fieldOptions は、コレクションの指定したフィールドのオプションを含むか、null に設定されます。"
       }
     },
     "errorHidden": {
@@ -39,7 +39,7 @@
       ],
       "description": {
         "en": "Event which is raised after error message was hidden.<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.message to get text of message. <br>                Use ui.target to get reference to the target of the message.<br>                ui.fieldOptions is populated with options for the specific field in the collection or null.",
-        "jp": "Event which is raised after error message was hidden.<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.message to get text of message. <br>                Use ui.target to get reference to the target of the message.<br>                ui.fieldOptions is populated with options for the specific field in the collection or null."
+        "jp": "エラー メッセージが非表示になった後に発生するイベント。<br>                関数は引数 evt および ui を取得します。<br>                igValidator ウィジェットへの参照を取得するには ui.owner を使用します。<br>                ui.message を使用して、メッセージのテキストを取得します。<br>          ui.target を使用して、メッセージの対象要素への参照を取得します。<br>                ui.fieldOptions は、コレクションの指定したフィールドのオプションを含むか、null に設定されます。"
       }
     },
     "errorHiding": {
@@ -58,7 +58,7 @@
       ],
       "description": {
         "en": "Event which is raised before error message is hidden.<br>                Return false in order to keep error message displayed.<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.message to get text of message. <br>                Use ui.target to get reference to the target of the message.<br>                ui.fieldOptions is populated with options for the specific field in the collection or null.",
-        "jp": "Event which is raised before error message is hidden.<br>                Return false in order to keep error message displayed.<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.message to get text of message. <br>                Use ui.target to get reference to the target of the message.<br>                ui.fieldOptions is populated with options for the specific field in the collection or null."
+        "jp": "エラー メッセージが非表示になる前に発生するイベント。<br>                エラー メッセージを表示し続けるには、False を返します。<br>                関数は引数 evt および ui を取得します。<br>                igValidator ウィジェットへの参照を取得するには ui.owner を使用します。<br>                ui.message を使用して、メッセージのテキストを取得します。<br>          ui.target を使用して、メッセージの対象要素への参照を取得します。<br>                ui.fieldOptions は、コレクションの指定したフィールドのオプションを含むか、null に設定されます。"
       }
     },
     "errorShowing": {
@@ -77,7 +77,7 @@
       ],
       "description": {
         "en": "Event which is raised before error message is displayed.<br>                Return false in order to prevent error message display.<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.message to get text of message. <br>                Use ui.target to get reference to the target of the message.<br>                ui.fieldOptions is populated with options for the specific field in the collection or null.",
-        "jp": "Event which is raised before error message is displayed.<br>                Return false in order to prevent error message display.<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.message to get text of message. <br>                Use ui.target to get reference to the target of the message.<br>                ui.fieldOptions is populated with options for the specific field in the collection or null."
+        "jp": "エラー メッセージが表示される前に発生するイベント。<br>                エラー メッセージが表示されないようにするには、False を返します。<br>                関数は引数 evt および ui を取得します。<br>                igValidator ウィジェットへの参照を取得するには ui.owner を使用します。<br>                ui.message を使用して、メッセージのテキストを取得します。<br>          ui.target を使用して、メッセージの対象要素への参照を取得します。<br>                ui.fieldOptions は、コレクションの指定したフィールドのオプションを含むか、null に設定されます。"
       }
     },
     "errorShown": {
@@ -96,7 +96,7 @@
       ],
       "description": {
         "en": "Event which is raised after error message was displayed.<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.message to get text of message. <br>                Use ui.target to get reference to the target of the message.<br>                ui.fieldOptions is populated with options for the specific field in the collection or null.",
-        "jp": "Event which is raised after error message was displayed.<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.message to get text of message. <br>                Use ui.target to get reference to the target of the message.<br>                ui.fieldOptions is populated with options for the specific field in the collection or null."
+        "jp": "エラー メッセージが表示された後に発生するイベント。<br>                関数は引数 evt および ui を取得します。<br>                igValidator ウィジェットへの参照を取得するには ui.owner を使用します。<br>                ui.message を使用して、メッセージのテキストを取得します。<br>          ui.target を使用して、メッセージの対象要素への参照を取得します。<br>                ui.fieldOptions は、コレクションの指定したフィールドのオプションを含むか、null に設定されます。"
       }
     },
     "formError": {
@@ -115,7 +115,7 @@
       ],
       "description": {
         "en": "Event triggered on Validator instance level after failed validation on form submit event<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.target to get reference of the event target form.",
-        "jp": "Event triggered on Validator instance level after failed validation on form submit event<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.target to get reference of the event target form."
+        "jp": "フォームの送信イベントで検証が失敗した後に Validator インスタンス レベルにトリガーされるイベント。<br>                関数は引数 evt および ui を取得します。<br>                igValidator ウィジェットへの参照を取得するには ui.owner を使用します。<br>                ui.target を使用して、イベントのターゲット フォームへの参照を取得します。"
       }
     },
     "formSuccess": {
@@ -134,7 +134,7 @@
       ],
       "description": {
         "en": "Event triggered on Validator instance level after successful validation on form submit event<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.target to get reference of the event target form.",
-        "jp": "Event triggered on Validator instance level after successful validation on form submit event<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.target to get reference of the event target form."
+        "jp": "フォームの送信イベントで検証が成功した後で Validator インスタンス レベルにトリガーされるイベント。<br>                関数は引数 evt および ui を取得します。<br>                igValidator ウィジェットへの参照を取得するには ui.owner を使用します。<br>                ui.target を使用して、イベントのターゲット フォームへの参照を取得します。"
       }
     },
     "formValidated": {
@@ -153,7 +153,7 @@
       ],
       "description": {
         "en": "Event triggered on Validator instance level after validation on form submit event<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.target to get reference of the event target form.<br>                Use ui.valid to determine the outcome of the validation.",
-        "jp": "Event triggered on Validator instance level after validation on form submit event<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.target to get reference of the event target form.<br>                Use ui.valid to determine the outcome of the validation."
+        "jp": "フォームの送信イベントで検証後に Validator インスタンス レベルにトリガーされるイベント。<br>                関数は引数 evt および ui を取得します。<br>                igValidator ウィジェットへの参照を取得するには ui.owner を使用します。<br>                ui.target を使用して、イベントのターゲット フォームへの参照を取得します。<br>                検証の結果を決定するために ui.valid を使用します。"
       }
     },
     "formValidating": {
@@ -172,7 +172,7 @@
       ],
       "description": {
         "en": "Event triggered on Validator instance level before handling a form submit event. <br>                Return false to cancel to skip validating and potentially allow the submit if no other other validators return erros.<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.target to get reference of the event target form.",
-        "jp": "Event triggered on Validator instance level before handling a form submit event. <br>                Return false to cancel to skip validating and potentially allow the submit if no other other validators return erros.<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.target to get reference of the event target form."
+        "jp": "フォームの送信イベントを処理する前に Validator インスタンス レベルにトリガーされるイベント。<br>          検証をスキップし、その他の検証コントロールがエラーを返さない場合、送信を許可することを可能になるために false を返します。<br>                関数は引数 evt および ui を取得します。<br>                igValidator ウィジェットへの参照を取得するには ui.owner を使用します。<br>                ui.target を使用して、イベントのターゲット フォームへの参照を取得します。"
       }
     },
     "success": {
@@ -191,7 +191,7 @@
       ],
       "description": {
         "en": "Event raised for valid field  after value was validated but before any action takes effect.<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.value to get current value in target. <br>                Use ui.valid to determine the outcome of the validation.<br>                Use ui.fieldOptions is populated with options for the specific field in the collection or null.",
-        "jp": "Event raised for valid field  after value was validated but before any action takes effect.<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.value to get current value in target. <br>                Use ui.valid to determine the outcome of the validation.<br>                Use ui.fieldOptions is populated with options for the specific field in the collection or null."
+        "jp": "有効なフィールドの場合、値の検証後、なんらかの操作が有効になる前に発生するイベント。<br>                関数は引数 evt および ui を取得します。<br>                igValidator ウィジェットへの参照を取得するには ui.owner を使用します。<br>                ui.value を使用して、ターゲット内の現在の値を取得します。<br>          検証の結果を決定するために ui.valid を使用します。<br>                ui.fieldOptions は、コレクションの指定したフィールドのオプションを含むか、null に設定されます。"
       }
     },
     "successHidden": {
@@ -210,7 +210,7 @@
       ],
       "description": {
         "en": "Event which is raised after success message was hidden.<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.message to get text of message. <br>                Use ui.target to get reference to the target of the message.<br>                ui.fieldOptions is populated with options for the specific field in the collection or null.",
-        "jp": "Event which is raised after success message was hidden.<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.message to get text of message. <br>                Use ui.target to get reference to the target of the message.<br>                ui.fieldOptions is populated with options for the specific field in the collection or null."
+        "jp": "成功メッセージが非表示になった後に発生するイベント。<br>                関数は引数 evt および ui を取得します。<br>                igValidator ウィジェットへの参照を取得するには ui.owner を使用します。<br>                ui.message を使用して、メッセージのテキストを取得します。<br>          ui.target を使用して、メッセージの対象要素への参照を取得します。<br>                ui.fieldOptions は、コレクションの指定したフィールドのオプションを含むか、null に設定されます。"
       }
     },
     "successHiding": {
@@ -229,7 +229,7 @@
       ],
       "description": {
         "en": "Event which is raised before success message is hidden.<br>                Return false in order to keep success message displayed.<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.message to get text of message. <br>                Use ui.target to get reference to the target of the message.<br>                ui.fieldOptions is populated with options for the specific field in the collection or null.",
-        "jp": "Event which is raised before success message is hidden.<br>                Return false in order to keep success message displayed.<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.message to get text of message. <br>                Use ui.target to get reference to the target of the message.<br>                ui.fieldOptions is populated with options for the specific field in the collection or null."
+        "jp": "成功メッセージが非表示になる前に発生するイベント。<br>                成功メッセージを表示し続けるには、False を返します。<br>                関数は引数 evt および ui を取得します。<br>                igValidator ウィジェットへの参照を取得するには ui.owner を使用します。<br>                ui.message を使用して、メッセージのテキストを取得します。<br>          ui.target を使用して、メッセージの対象要素への参照を取得します。<br>                ui.fieldOptions は、コレクションの指定したフィールドのオプションを含むか、null に設定されます。"
       }
     },
     "successShowing": {
@@ -248,7 +248,7 @@
       ],
       "description": {
         "en": "Event which is raised before success message is displayed.<br>                Return false in order to prevent success message display.<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.message to get text of message. <br>                Use ui.target to get reference to the target of the message.<br>                ui.fieldOptions is populated with options for the specific field in the collection or null.",
-        "jp": "Event which is raised before success message is displayed.<br>                Return false in order to prevent success message display.<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.message to get text of message. <br>                Use ui.target to get reference to the target of the message.<br>                ui.fieldOptions is populated with options for the specific field in the collection or null."
+        "jp": "成功メッセージが表示される前に発生するイベント。<br>                成功メッセージが表示されないようにするには、False を返します。<br>                関数は引数 evt および ui を取得します。<br>                igValidator ウィジェットへの参照を取得するには ui.owner を使用します。<br>                ui.message を使用して、メッセージのテキストを取得します。<br>          ui.target を使用して、メッセージの対象要素への参照を取得します。<br>                ui.fieldOptions は、コレクションの指定したフィールドのオプションを含むか、null に設定されます。"
       }
     },
     "successShown": {
@@ -267,7 +267,7 @@
       ],
       "description": {
         "en": "Event which is raised after success message was displayed.<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.message to get text of message. <br>                Use ui.target to get reference to the target of the message.<br>                ui.fieldOptions is populated with options for the specific field in the collection or null.",
-        "jp": "Event which is raised after success message was displayed.<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.message to get text of message. <br>                Use ui.target to get reference to the target of the message.<br>                ui.fieldOptions is populated with options for the specific field in the collection or null."
+        "jp": "成功メッセージが表示された後に発生するイベント。<br>                関数は引数 evt および ui を取得します。<br>                igValidator ウィジェットへの参照を取得するには ui.owner を使用します。<br>                ui.message を使用して、メッセージのテキストを取得します。<br>          ui.target を使用して、メッセージの対象要素への参照を取得します。<br>                ui.fieldOptions は、コレクションの指定したフィールドのオプションを含むか、null に設定されます。"
       }
     },
     "validated": {
@@ -286,7 +286,7 @@
       ],
       "description": {
         "en": "Event which is raised after value was validated but before any action takes effect.<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.value to get current value in target. <br>                Use ui.valid to determine the outcome of the validation.<br>                ui.rule is populated with the name of the rule that failed validation, if any.<br>                ui.fieldOptions is populated with options for the specific field in the collection or null.",
-        "jp": "Event which is raised after value was validated but before any action takes effect.<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.value to get current value in target. <br>                Use ui.valid to determine the outcome of the validation.<br>                ui.rule is populated with the name of the rule that failed validation, if any.<br>                ui.fieldOptions is populated with options for the specific field in the collection or null."
+        "jp": "値の検証後、なんらかの操作が有効になる前に発生するイベント。<br>                関数は引数 evt および ui を取得します。<br>                igValidator ウィジェットへの参照を取得するには ui.owner を使用します。<br>                ui.value を使用して、ターゲット内の現在の値を取得します。<br>          検証の結果を決定するために ui.valid を使用します。<br>                ui.rule は (ある場合) 検証を失敗したルールの名前に設定されます。<br>                ui.fieldOptions は、コレクションの指定したフィールドのオプションを含むか、null に設定されます。"
       }
     },
     "validating": {
@@ -305,7 +305,7 @@
       ],
       "description": {
         "en": "Event which is raised on validation before default validation logic is applied.<br>                Return false in order to cancel the event and consider the field valid.<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.value to get current value in target. <br>                ui.fieldOptions is populated with options for the specific field in the collection or null.",
-        "jp": "Event which is raised on validation before default validation logic is applied.<br>                Return false in order to cancel the event and consider the field valid.<br>                Function takes arguments evt and ui.<br>                Use ui.owner to get reference to the igValidator widget.<br>                Use ui.value to get current value in target. <br>                ui.fieldOptions is populated with options for the specific field in the collection or null."
+        "jp": "検証時、デフォルトの検証ロジックが適用される前に発生するイベント。<br>                イベントをキャンセルし、フィールドを有効として実行するために false を返します。<br>                関数は引数 evt および ui を取得します。<br>                igValidator ウィジェットへの参照を取得するには ui.owner を使用します。<br>                ui.value を使用して、ターゲット内の現在の値を取得します。<br>          ui.fieldOptions は、コレクションの指定したフィールドのオプションを含むか、null に設定されます。"
       }
     }
   },
@@ -315,7 +315,7 @@
       "defaultValue": null,
       "description": {
         "en": " Gets or sets a custom function to perform validation. Use 'this' to reference the calling validator and the value and optional field settings arguement to determine and return the state of the field.",
-        "jp": " Gets or sets a custom function to perform validation. Use 'this' to reference the calling validator and the value and optional field settings arguement to determine and return the state of the field."
+        "jp": " 検証を実行するためのカスタム関数を取得または設定します。「this」を使用して、呼び出される検証コントロールを参照します。値およびオプションのフィールド設定引数を使用して、フィールドの状態を決定して返します。"
       },
       "valueOptions": [
         {
@@ -323,7 +323,7 @@
           "type": "function",
           "description": {
             "en": " The function to call",
-            "jp": " The function to call"
+            "jp": " 呼び出す関数。"
           }
         },
         {
@@ -331,7 +331,7 @@
           "type": "string",
           "description": {
             "en": " Function name, must be in global namespace (window[\"name\"])",
-            "jp": " Function name, must be in global namespace (window[\"name\"])"
+            "jp": " グローバル名前空間の関数名 (window[\"name\"])。"
           }
         },
         {
@@ -339,7 +339,7 @@
           "type": "object",
           "description": {
             "en": " A configuration object with method property being the function and optional error message.",
-            "jp": " A configuration object with method property being the function and optional error message."
+            "jp": " method プロパティが関数である構成オブジェクト、およびオプションのエラー メッセージ。"
           }
         }
       ]
@@ -349,7 +349,7 @@
       "defaultValue": null,
       "description": {
         "en": " Gets or sets option to validate if value is a date. This can help guide the valueRange validation.",
-        "jp": " Gets or sets option to validate if value is a date. This can help guide the valueRange validation."
+        "jp": " 値が日付の場合、検証のオプションを取得または設定します。valueRange 検証に便利です。"
       },
       "valueOptions": [
         {
@@ -357,7 +357,7 @@
           "type": "bool",
           "description": {
             "en": " A boolean value indicating if the field should be a valid JavaScript Date or can be parsed as one.",
-            "jp": " A boolean value indicating if the field should be a valid JavaScript Date or can be parsed as one."
+            "jp": " フィールドが有効な JavaScript Date であるか、解析可能である必要かどうかを示すブール値。"
           }
         },
         {
@@ -365,7 +365,7 @@
           "type": "object",
           "description": {
             "en": " A configuration object with optional error message (e.g. date: { errorMessage: \"Enter a valid number\"} )",
-            "jp": " A configuration object with optional error message (e.g. date: { errorMessage: \"Enter a valid number\"} )"
+            "jp": " 構成オブジェクトおよびオプションのエラー メッセージ (例: date: { errorMessage: \"有効な数値を入力してください\"} )。"
           }
         }
       ]
@@ -375,7 +375,7 @@
       "defaultValue": null,
       "description": {
         "en": " Gets or sets option to validate if value is an email.",
-        "jp": " Gets or sets option to validate if value is an email."
+        "jp": " 値がメールの場合、検証のオプションを取得または設定します。"
       },
       "valueOptions": [
         {
@@ -383,7 +383,7 @@
           "type": "bool",
           "description": {
             "en": " A boolean value indicating if the field should be an email.",
-            "jp": " A boolean value indicating if the field should be an email."
+            "jp": " フィールドがメール アドレスかどうかを指定するブール値。"
           }
         },
         {
@@ -391,7 +391,7 @@
           "type": "object",
           "description": {
             "en": " A configuration object with optional error message (e.g. email: { errorMessage: \"Enter a valid email\"} )",
-            "jp": " A configuration object with optional error message (e.g. email: { errorMessage: \"Enter a valid email\"} )"
+            "jp": " 構成オブジェクトおよびオプションのエラー メッセージ (例: email: { errorMessage: \"有効なメール アドレスを入力してください\"} )。"
           }
         }
       ]
@@ -401,7 +401,7 @@
       "defaultValue": null,
       "description": {
         "en": " Requires the value in this field to be the same as another input element or editor control.",
-        "jp": " Requires the value in this field to be the same as another input element or editor control."
+        "jp": " このフィールドの値が別の入力要素、またはエディター コントロールと同じである必要があります。"
       },
       "valueOptions": [
         {
@@ -409,7 +409,7 @@
           "type": "string",
           "description": {
             "en": " A valid jQuery selector for the target element",
-            "jp": " A valid jQuery selector for the target element"
+            "jp": " ターゲット要素の有効な jQuery セレクター"
           }
         },
         {
@@ -417,7 +417,7 @@
           "type": "object",
           "description": {
             "en": " A reference to the jQuery object for the target or an object with selector property and custom errorMessage.",
-            "jp": " A reference to the jQuery object for the target or an object with selector property and custom errorMessage."
+            "jp": " ターゲットの jQuery オブジェクトへの参照、または selector プロパティおよびカスタム errorMessage のオブジェクト。"
           }
         }
       ]
@@ -427,7 +427,7 @@
       "defaultValue": null,
       "description": {
         "en": "Gets or sets text for error-message which overrides all possible specific error-messages.",
-        "jp": "Gets or sets text for error-message which overrides all possible specific error-messages."
+        "jp": "すべての可能な固有のエラー メッセージをオーバーライドするエラー メッセージのテキストを取得または設定します。"
       },
       "valueOptions": null
     },
@@ -435,8 +435,8 @@
       "type": "array",
       "defaultValue": null,
       "description": {
-        "en": "List of field items describing each field with validation options and a required selector. Fields can contain any of the validation rules and triggers but not other fields or event handlers.<br>&nbsp;&nbsp;&nbsp;&nbsp;Accepted options are also inherited from the global control configuration if not set.",
-        "jp": "List of field items describing each field with validation options and a required selector. Fields can contain any of the validation rules and triggers but not other fields or event handlers.<br>&nbsp;&nbsp;&nbsp;&nbsp;Accepted options are also inherited from the global control configuration if not set."
+        "en": "List of field items describing each field with validation options and a required selector. Fields can contain any of the validation rules and triggers but not other fields or event handlers.<br>    Accepted options are also inherited from the global control configuration if not set.",
+        "jp": "検証オプションおよび必須なセレクターをもつ各フィールドを説明するフィールド項目のリスト。フィールドが任意の検証ルールおよびトリガーを含みますが、その他のフィールドまたはイベント ハンドラーを含みません。<br>    有効なオプションが設定されない場合、グローバル コントロール構成から継承されます。"
       },
       "valueOptions": null
     },
@@ -445,7 +445,7 @@
       "defaultValue": null,
       "description": {
         "en": " Gets or sets minimum and maximum length of text or number of selected items. Null or 0 values are ignored.",
-        "jp": " Gets or sets minimum and maximum length of text or number of selected items. Null or 0 values are ignored."
+        "jp": " テキストの最小および最大長、または選択した項目の最小数および最大数を取得または設定します。null または 0 値は無視されます。"
       },
       "valueOptions": [
         {
@@ -453,7 +453,7 @@
           "type": "array",
           "description": {
             "en": " An array of two numbers, where the first value is the minimum and the second is the maximum. (e.g. lengthRange: [ 1, 10] )",
-            "jp": " An array of two numbers, where the first value is the minimum and the second is the maximum. (e.g. lengthRange: [ 1, 10] )"
+            "jp": " 2 つの数字の配列。最初の値が最小値、最後の値が最大値です。(例: lengthRange: [ 1, 10] )。"
           }
         },
         {
@@ -461,7 +461,7 @@
           "type": "object",
           "description": {
             "en": " A configuration object with optional error message. Message strings can contain format items for min and max respecitively (e.g. lengthRange: { min: 6, max: 20, errorMessage: \"Password must be at least {0} long and no more than {1}.\" } )",
-            "jp": " A configuration object with optional error message. Message strings can contain format items for min and max respecitively (e.g. lengthRange: { min: 6, max: 20, errorMessage: \"Password must be at least {0} long and no more than {1}.\" } )"
+            "jp": " オプションのエラー メッセージをもつ構成オブジェクト。メッセージ文字列は最小値と最大値の形式を含めます (lengthRange: { min: 6, max: 20, errorMessage: \"パスワードは {0} 以上 {1} 以下でなければなりません\"} など)。} )"
           }
         }
       ]
@@ -471,7 +471,7 @@
       "defaultValue": null,
       "description": {
         "en": "Gets or sets custom jQuery element, which innerHTML will be used to show validation messages. That can be SPAN, LABEL or DIV.",
-        "jp": "Gets or sets custom jQuery element, which innerHTML will be used to show validation messages. That can be SPAN, LABEL or DIV."
+        "jp": "検証メッセージを表示する innerHTML のカスタム jQuery 要素を取得または設定します。SPAN、LABEL、または DIV が可能です。"
       },
       "valueOptions": null
     },
@@ -481,7 +481,7 @@
 	  "schemaRef": "notifier",
       "description": {
         "en": "Options for the igNotifier used to show error messages.",
-        "jp": "Options for the igNotifier used to show error messages."
+        "jp": "エラー メッセージを表示するための igNotifier のオプション。"
       }
      
     },
@@ -490,7 +490,7 @@
       "defaultValue": null,
       "description": {
         "en": " Gets or sets option to validate if value is a number. Default separators for decimals and thousands are '.' and ',' respectively.",
-        "jp": " Gets or sets option to validate if value is a number. Default separators for decimals and thousands are '.' and ',' respectively."
+        "jp": " 値が数値であるかどうかを検証するためのオプションを取得または設定します。デフォルトの 10 進数および 1 千セパレーターは '.' および ',' です。"
       },
       "valueOptions": [
         {
@@ -498,7 +498,7 @@
           "type": "bool",
           "description": {
             "en": " A boolean value indicating if the field should be a number.",
-            "jp": " A boolean value indicating if the field should be a number."
+            "jp": " フィールドが数値かどうかを指定するブール値。"
           }
         },
         {
@@ -506,7 +506,7 @@
           "type": "object",
           "description": {
             "en": " A configuration object with errorMessage, decimalSeparator and thousandsSeparator. Those properties are all optional.",
-            "jp": " A configuration object with errorMessage, decimalSeparator and thousandsSeparator. Those properties are all optional."
+            "jp": " errorMessage、decimalSeparator、および thousandsSeparator を持つ構成オブジェクト。そのプロパティはすべてオプションです。"
           }
         }
       ]
@@ -516,7 +516,7 @@
       "defaultValue": true,
       "description": {
         "en": "Gets or sets triggering validation when editor lost focus.",
-        "jp": "Gets or sets triggering validation when editor lost focus."
+        "jp": "エディターがフォーカスを失ったときのトリガー検証を取得または設定します。"
       },
       "valueOptions": null
     },
@@ -525,7 +525,7 @@
       "defaultValue": false,
       "description": {
         "en": "Gets or sets triggering validation when value in editor was changed.",
-        "jp": "Gets or sets triggering validation when value in editor was changed."
+        "jp": "エディターの値が変更されたときのトリガー検証を取得または設定します。"
       },
       "valueOptions": null
     },
@@ -534,7 +534,7 @@
       "defaultValue": true,
       "description": {
         "en": "Gets or sets triggering validation when form gets onsubmit event.",
-        "jp": "Gets or sets triggering validation when form gets onsubmit event."
+        "jp": "フォームが onsubmit イベントを取得したときのトリガー検証を取得または設定します。"
       },
       "valueOptions": null
     },
@@ -542,8 +542,8 @@
       "type": "bool",
       "defaultValue": false,
       "description": {
-        "en": "Option to show a label indication next to optional fields. <br>&nbsp;&nbsp;&nbsp;    Note: Indicators are not supported on grouped controls such as checkbox or radio button sets and the igRating control.",
-        "jp": "Option to show a label indication next to optional fields. <br>&nbsp;&nbsp;&nbsp;    Note: Indicators are not supported on grouped controls such as checkbox or radio button sets and the igRating control."
+        "en": "Option to show a label indication next to optional fields. <br>       Note: Indicators are not supported on grouped controls such as checkbox or radio button sets and the igRating control.",
+        "jp": "オプションのフィールドの隣にラベル通知を表示するためのオプション。<br>     注: チェック ボックスやオプション ボタンのようなグループ化されたコントロールおよび igRating コントロールの場合はインジケーターがサポートされません。"
       },
       "valueOptions": null
     },
@@ -552,7 +552,7 @@
       "defaultValue": null,
       "description": {
         "en": " Gets or sets regular expression which is used to validate value in text editor.",
-        "jp": " Gets or sets regular expression which is used to validate value in text editor."
+        "jp": " テキスト エディター内の値を検証するために使用する正規表現を取得または設定します。"
       },
       "valueOptions": [
         {
@@ -560,7 +560,7 @@
           "type": "string",
           "description": {
             "en": " A string containing regular expression",
-            "jp": " A string containing regular expression"
+            "jp": " 正規表現を含む文字列。"
           }
         },
         {
@@ -568,7 +568,7 @@
           "type": "",
           "description": {
             "en": " A RegExp object or an object with expression and errorMessage properties.",
-            "jp": " A RegExp object or an object with expression and errorMessage properties."
+            "jp": " RegExp オブジェクトまたは expression および errorMessage プロパティを持つオブジェクト。"
           }
         }
       ]
@@ -578,7 +578,7 @@
       "defaultValue": null,
       "description": {
         "en": " Gets or sets option to validate if value was entered (not empty text, selected item, etc.)",
-        "jp": " Gets or sets option to validate if value was entered (not empty text, selected item, etc.)"
+        "jp": " 値 (空でないテキスト、選択項目など) が入力されたかどうかを検証するオプションを取得または設定します。"
       },
       "valueOptions": [
         {
@@ -586,7 +586,7 @@
           "type": "bool",
           "description": {
             "en": " A boolean value indicating if the field is required.",
-            "jp": " A boolean value indicating if the field is required."
+            "jp": " フィールドが必須であるかどうかを示すブール値。"
           }
         },
         {
@@ -594,7 +594,7 @@
           "type": "object",
           "description": {
             "en": " A configuration object with optional error message (e.g. required: { errorMessage: \"Error!\"} )",
-            "jp": " A configuration object with optional error message (e.g. required: { errorMessage: \"Error!\"} )"
+            "jp": " オプションのエラー メッセージをもつ構成オブジェクト (必須: { errorMessage: \"エラー\"} など))"
           }
         }
       ]
@@ -603,8 +603,8 @@
       "type": "bool",
       "defaultValue": false,
       "description": {
-        "en": "Option to show an asterisks indication next to required fields. <br>&nbsp;&nbsp;&nbsp;    Note: Indicators are not supported on grouped controls such as checkbox or radio button sets and the igRating control.",
-        "jp": "Option to show an asterisks indication next to required fields. <br>&nbsp;&nbsp;&nbsp;    Note: Indicators are not supported on grouped controls such as checkbox or radio button sets and the igRating control."
+        "en": "Option to show an asterisks indication next to required fields. <br>       Note: Indicators are not supported on grouped controls such as checkbox or radio button sets and the igRating control.",
+        "jp": "必須のフィールドの隣にアスタリスク表示を表示するためのオプション。<br>     注: チェック ボックスやオプション ボタンのようなグループ化されたコントロールおよび igRating コントロールの場合はインジケーターがサポートされません。"
       },
       "valueOptions": null
     },
@@ -613,7 +613,7 @@
       "defaultValue": null,
       "description": {
         "en": "Gets or sets text for success message. Note there is no default, so setting this message will enable showing success indications.",
-        "jp": "Gets or sets text for success message. Note there is no default, so setting this message will enable showing success indications."
+        "jp": "成功メッセージのテキストを取得または設定します。デフォルト値がないため、このメッセージを設定すると、成功通知の表示を有効にします。"
       },
       "valueOptions": null
     },
@@ -622,7 +622,7 @@
       "defaultValue": -1.0,
       "description": {
         "en": "Gets or sets validation minimum input length. Validation won't be triggered for input before that value is reached on change and blur. <br>                Note: This will have no effect on required fields on form submit.",
-        "jp": "Gets or sets validation minimum input length. Validation won't be triggered for input before that value is reached on change and blur. <br>                Note: This will have no effect on required fields on form submit."
+        "jp": "最小の長さの入力の検証を取得または設定します。変更やぼかしでこの値にならない限り、入力の検証はトリガーされません。<br>          注: フォームを送信するとき、必須のフィールドに影響しません。"
       },
       "valueOptions": null
     },
@@ -631,7 +631,7 @@
       "defaultValue": null,
       "description": {
         "en": " Gets or sets minimum and maximum values. Null values are ignored.",
-        "jp": " Gets or sets minimum and maximum values. Null values are ignored."
+        "jp": " 最小値および最大値を取得または設定します。null 値は無視されます。"
       },
       "valueOptions": [
         {
@@ -639,7 +639,7 @@
           "type": "array",
           "description": {
             "en": " An array of two numbers or dates, where the first is the minimum and the second is the maximum. (e.g. valueRange: [ 1, 10] )",
-            "jp": " An array of two numbers or dates, where the first is the minimum and the second is the maximum. (e.g. valueRange: [ 1, 10] )"
+            "jp": " 2 つの数値または日付の配列。最初の値が最小値、最後の値が最大値です。(例: valueRange: [ 1, 10] )。"
           }
         },
         {
@@ -647,7 +647,7 @@
           "type": "object",
           "description": {
             "en": " A configuration object with optional error message. Message strings can contain format items for min and max respecitively (e.g. lengthRange: { min: 6, max: 20, errorMessage: \"Value must be between {0} and {1}.\" } )",
-            "jp": " A configuration object with optional error message. Message strings can contain format items for min and max respecitively (e.g. lengthRange: { min: 6, max: 20, errorMessage: \"Value must be between {0} and {1}.\" } )"
+            "jp": " オプションのエラー メッセージをもつ構成オブジェクト。メッセージ文字列は最小値と最大値の形式を含めます (lengthRange: { min: 6, max: 20, errorMessage: \"値は {0} ～ {1} でなければなりません \" } など)。} )"
           }
         }
       ]

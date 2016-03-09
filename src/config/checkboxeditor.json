@@ -1,4 +1,4 @@
-{
+﻿{
   "overview": null,
   "name": "ui.igCheckboxEditor",
   "category": null,
@@ -19,8 +19,8 @@
         }
       ],
       "description": {
-        "en": "Event which is raised when input field of editor loses focus.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes argument evt.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt.originalEvent to obtain reference to event of browser.",
-        "jp": "Event which is raised when input field of editor loses focus.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes argument evt.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt.originalEvent to obtain reference to event of browser."
+        "en": "Event which is raised when input field of editor loses focus.<br>    Function takes argument evt.<br>    Use ui.owner to obtain reference to igEditor.<br>    Use evt.originalEvent to obtain reference to event of browser.",
+        "jp": "エディターの入力フィールドがフォーカスを失ったとき発生するイベント。<br>    関数は引数 evt を取得します。<br>    ui.owner を使用して igEditor への参照を取得します。<br>    evt.originalEvent を使用して、ブラウザーのイベントへの参照を取得します。"
       }
     },
     "focus": {
@@ -38,8 +38,8 @@
         }
       ],
       "description": {
-        "en": "Event which is raised when input field of editor gets focus.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes argument evt.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt.originalEvent to obtain reference to event of browser.",
-        "jp": "Event which is raised when input field of editor gets focus.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes argument evt.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt.originalEvent to obtain reference to event of browser."
+        "en": "Event which is raised when input field of editor gets focus.<br>    Function takes argument evt.<br>    Use ui.owner to obtain reference to igEditor.<br>    Use evt.originalEvent to obtain reference to event of browser.",
+        "jp": "エディターの入力フィールドがフォーカスを取得したとき発生するイベント。<br>    関数は引数 evt を取得します。<br>    ui.owner を使用して igEditor への参照を取得します。<br>    evt.originalEvent を使用して、ブラウザーのイベントへの参照を取得します。"
       }
     },
     "keydown": {
@@ -57,8 +57,8 @@
         }
       ],
       "description": {
-        "en": "Event which is raised on keydown event.<br>&nbsp;&nbsp;&nbsp;&nbsp;Return false in order to cancel key action.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt.originalEvent to obtain reference to event of browser.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.key to obtain value of keyCode.",
-        "jp": "Event which is raised on keydown event.<br>&nbsp;&nbsp;&nbsp;&nbsp;Return false in order to cancel key action.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt.originalEvent to obtain reference to event of browser.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.key to obtain value of keyCode."
+        "en": "Event which is raised on keydown event.<br>    Return false in order to cancel key action.<br>    Function takes arguments evt and ui.<br>    Use evt.originalEvent to obtain reference to event of browser.<br>    Use ui.owner to obtain reference to igEditor.<br>    Use ui.key to obtain value of keyCode.",
+        "jp": "keydown イベントに対して発生するイベント。<br>    キー操作をキャンセルするには、False を返します。<br>    関数は引数 evt および ui を取得します。<br>    evt.originalEvent を使用して、ブラウザーのイベントへの参照を取得します。<br>    ui.owner を使用して igEditor への参照を取得します。<br>    ui.key を使用して keyCode の値を取得します。"
       }
     },
     "keypress": {
@@ -76,8 +76,8 @@
         }
       ],
       "description": {
-        "en": "Event which is raised on keypress event.<br>&nbsp;&nbsp;&nbsp;&nbsp;Return false in order to cancel key action.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt.originalEvent to obtain reference to event of browser.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.key to obtain value of keyCode.<br>&nbsp;&nbsp;&nbsp;&nbsp;Set ui.key to another character which will replace original entry.",
-        "jp": "Event which is raised on keypress event.<br>&nbsp;&nbsp;&nbsp;&nbsp;Return false in order to cancel key action.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt.originalEvent to obtain reference to event of browser.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.key to obtain value of keyCode.<br>&nbsp;&nbsp;&nbsp;&nbsp;Set ui.key to another character which will replace original entry."
+        "en": "Event which is raised on keypress event.<br>    Return false in order to cancel key action.<br>    Function takes arguments evt and ui.<br>    Use evt.originalEvent to obtain reference to event of browser.<br>    Use ui.owner to obtain reference to igEditor.<br>    Use ui.key to obtain value of keyCode.<br>    Set ui.key to another character which will replace original entry.",
+        "jp": "keypress イベントに対して発生するイベント。<br>    キー操作をキャンセルするには、False を返します。<br>    関数は引数 evt および ui を取得します。<br>    evt.originalEvent を使用して、ブラウザーのイベントへの参照を取得します。<br>    ui.owner を使用して igEditor への参照を取得します。<br>    ui.key を使用して keyCode の値を取得します。<br>    ui.key を元のエントリを置き換える別の文字に設定します。"
       }
     },
     "keyup": {
@@ -95,8 +95,8 @@
         }
       ],
       "description": {
-        "en": "Event which is raised on keyup event.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt.originalEvent to obtain reference to event of browser.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.key to obtain value of keyCode.",
-        "jp": "Event which is raised on keyup event.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt.originalEvent to obtain reference to event of browser.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.key to obtain value of keyCode."
+        "en": "Event which is raised on keyup event.<br>    Function takes arguments evt and ui.<br>    Use evt.originalEvent to obtain reference to event of browser.<br>    Use ui.owner to obtain reference to igEditor.<br>    Use ui.key to obtain value of keyCode.",
+        "jp": "keyup イベントに対して発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>    evt.originalEvent を使用して、ブラウザーのイベントへの参照を取得します。<br>    ui.owner を使用して igEditor への参照を取得します。<br>    ui.key を使用して keyCode の値を取得します。"
       }
     },
     "mousedown": {
@@ -114,8 +114,8 @@
         }
       ],
       "description": {
-        "en": "Event which is raised on mousedown at any part of editor including drop-down list.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt.originalEvent to obtain reference to event of browser.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.elementType to obtain type of html element under mouse, such as field, button, spinUpper, spinLower or item#.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.id and ui.elementType to obtain flag which represents html element under mouse.",
-        "jp": "Event which is raised on mousedown at any part of editor including drop-down list.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt.originalEvent to obtain reference to event of browser.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.elementType to obtain type of html element under mouse, such as field, button, spinUpper, spinLower or item#.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.id and ui.elementType to obtain flag which represents html element under mouse."
+        "en": "Event which is raised on mousedown at any part of editor including drop-down list.<br>    Function takes arguments evt and ui.<br>    Use evt.originalEvent to obtain reference to event of browser.<br>    Use ui.owner to obtain reference to igEditor.<br>    Use ui.elementType to obtain type of html element under mouse, such as field, button, spinUpper, spinLower or item#.<br>    Use ui.id and ui.elementType to obtain flag which represents html element under mouse.",
+        "jp": "ドロップダウン リストを含むエディターの任意の部分での mousedown に対して発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>    evt.originalEvent を使用して、ブラウザーのイベントへの参照を取得します。<br>    ui.owner を使用して igEditor への参照を取得します。<br>    ui.elementType を使用して、マウス位置の HTML 要素のタイプ (field、button、spinUpper、spinLower、または item# など) を取得します。<br>    ui.id および ui.elementType を使用して、マウス位置の HTML 要素を表すフラグを取得します。"
       }
     },
     "mousemove": {
@@ -133,8 +133,8 @@
         }
       ],
       "description": {
-        "en": "Event which is raised on mousemove at any part of editor including drop-down list.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt.originalEvent to obtain reference to event of browser.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.elementType to obtain type of html element under mouse, such as field, button, spinUpper, spinLower or item#.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.id and ui.elementType to obtain flag which represents html element under mouse.",
-        "jp": "Event which is raised on mousemove at any part of editor including drop-down list.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt.originalEvent to obtain reference to event of browser.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.elementType to obtain type of html element under mouse, such as field, button, spinUpper, spinLower or item#.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.id and ui.elementType to obtain flag which represents html element under mouse."
+        "en": "Event which is raised on mousemove at any part of editor including drop-down list.<br>    Function takes arguments evt and ui.<br>    Use evt.originalEvent to obtain reference to event of browser.<br>    Use ui.owner to obtain reference to igEditor.<br>    Use ui.elementType to obtain type of html element under mouse, such as field, button, spinUpper, spinLower or item#.<br>    Use ui.id and ui.elementType to obtain flag which represents html element under mouse.",
+        "jp": "ドロップダウン リストを含むエディターの任意の部分での mousemove に対して発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>    evt.originalEvent を使用して、ブラウザーのイベントへの参照を取得します。<br>    ui.owner を使用して igEditor への参照を取得します。<br>    ui.elementType を使用して、マウス位置の HTML 要素のタイプ (field、button、spinUpper、spinLower、または item# など) を取得します。<br>    ui.id および ui.elementType を使用して、マウス位置の HTML 要素を表すフラグを取得します。"
       }
     },
     "mouseout": {
@@ -152,8 +152,8 @@
         }
       ],
       "description": {
-        "en": "Event which is raised on mouseleave at any part of editor including drop-down list.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt.originalEvent to obtain reference to event of browser.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.elementType to obtain type of html element under mouse, such as field, button, spinUpper, spinLower or item#.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.id and ui.elementType to obtain flag which represents html element under mouse.",
-        "jp": "Event which is raised on mouseleave at any part of editor including drop-down list.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt.originalEvent to obtain reference to event of browser.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.elementType to obtain type of html element under mouse, such as field, button, spinUpper, spinLower or item#.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.id and ui.elementType to obtain flag which represents html element under mouse."
+        "en": "Event which is raised on mouseleave at any part of editor including drop-down list.<br>    Function takes arguments evt and ui.<br>    Use evt.originalEvent to obtain reference to event of browser.<br>    Use ui.owner to obtain reference to igEditor.<br>    Use ui.elementType to obtain type of html element under mouse, such as field, button, spinUpper, spinLower or item#.<br>    Use ui.id and ui.elementType to obtain flag which represents html element under mouse.",
+        "jp": "ドロップダウン リストを含むエディターの任意の部分での mouseleave に対して発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>    evt.originalEvent を使用して、ブラウザーのイベントへの参照を取得します。<br>    ui.owner を使用して igEditor への参照を取得します。<br>    ui.elementType を使用して、マウス位置の HTML 要素のタイプ (field、button、spinUpper、spinLower、または item# など) を取得します。<br>    ui.id および ui.elementType を使用して、マウス位置の HTML 要素を表すフラグを取得します。"
       }
     },
     "mouseover": {
@@ -171,8 +171,8 @@
         }
       ],
       "description": {
-        "en": "Event which is raised on mouseover at any part of editor including drop-down list.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt.originalEvent to obtain reference to event of browser.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.elementType to obtain type of html element under mouse, such as field, button, spinUpper, spinLower or item#.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.id and ui.elementType to obtain flag which represents html element under mouse.",
-        "jp": "Event which is raised on mouseover at any part of editor including drop-down list.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt.originalEvent to obtain reference to event of browser.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.elementType to obtain type of html element under mouse, such as field, button, spinUpper, spinLower or item#.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.id and ui.elementType to obtain flag which represents html element under mouse."
+        "en": "Event which is raised on mouseover at any part of editor including drop-down list.<br>    Function takes arguments evt and ui.<br>    Use evt.originalEvent to obtain reference to event of browser.<br>    Use ui.owner to obtain reference to igEditor.<br>    Use ui.elementType to obtain type of html element under mouse, such as field, button, spinUpper, spinLower or item#.<br>    Use ui.id and ui.elementType to obtain flag which represents html element under mouse.",
+        "jp": "ドロップダウン リストを含むエディターの任意の部分での mouseover に対して発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>    evt.originalEvent を使用して、ブラウザーのイベントへの参照を取得します。<br>    ui.owner を使用して igEditor への参照を取得します。<br>    ui.elementType を使用して、マウス位置の HTML 要素のタイプ (field、button、spinUpper、spinLower、または item# など) を取得します。<br>    ui.id および ui.elementType を使用して、マウス位置の HTML 要素を表すフラグを取得します。"
       }
     },
     "mouseup": {
@@ -190,8 +190,8 @@
         }
       ],
       "description": {
-        "en": "Event which is raised on mouseup at any part of editor including drop-down list.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt.originalEvent to obtain reference to event of browser.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.elementType to obtain type of html element under mouse, such as field, button, spinUpper, spinLower or item#.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.id and ui.elementType to obtain flag which represents html element under mouse.",
-        "jp": "Event which is raised on mouseup at any part of editor including drop-down list.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use evt.originalEvent to obtain reference to event of browser.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.elementType to obtain type of html element under mouse, such as field, button, spinUpper, spinLower or item#.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.id and ui.elementType to obtain flag which represents html element under mouse."
+        "en": "Event which is raised on mouseup at any part of editor including drop-down list.<br>    Function takes arguments evt and ui.<br>    Use evt.originalEvent to obtain reference to event of browser.<br>    Use ui.owner to obtain reference to igEditor.<br>    Use ui.elementType to obtain type of html element under mouse, such as field, button, spinUpper, spinLower or item#.<br>    Use ui.id and ui.elementType to obtain flag which represents html element under mouse.",
+        "jp": "ドロップダウン リストを含むエディターの任意の部分での mouseup に対して発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>    evt.originalEvent を使用して、ブラウザーのイベントへの参照を取得します。<br>    ui.owner を使用して igEditor への参照を取得します。<br>    ui.elementType を使用して、マウス位置の HTML 要素のタイプ (field、button、spinUpper、spinLower、または item# など) を取得します。<br>    ui.id および ui.elementType を使用して、マウス位置の HTML 要素を表すフラグを取得します。"
       }
     },
     "rendered": {
@@ -209,8 +209,8 @@
         }
       ],
       "description": {
-        "en": "Event which is raised after rendering of the editor completes.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the editor performing rendering.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.element to get a reference to the editor element.",
-        "jp": "Event which is raised after rendering of the editor completes.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the editor performing rendering.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.element to get a reference to the editor element."
+        "en": "Event which is raised after rendering of the editor completes.<br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the editor performing rendering.<br>    Use ui.element to get a reference to the editor element.",
+        "jp": "エディターの描画が完了した後に発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して、レンダリングを実行するエディターへの参照を取得します。<br>    ui.element を使用して、エディター要素への参照を取得します。"
       }
     },
     "rendering": {
@@ -228,8 +228,8 @@
         }
       ],
       "description": {
-        "en": "Event which is raised before rendering of the editor completes.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the editor performing rendering.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.element to get a reference to the editor element.",
-        "jp": "Event which is raised before rendering of the editor completes.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to get a reference to the editor performing rendering.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.element to get a reference to the editor element."
+        "en": "Event which is raised before rendering of the editor completes.<br>    Function takes arguments evt and ui.<br>    Use ui.owner to get a reference to the editor performing rendering.<br>    Use ui.element to get a reference to the editor element.",
+        "jp": "エディターの描画が完了する前に発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して、レンダリングを実行するエディターへの参照を取得します。<br>    ui.element を使用して、エディター要素への参照を取得します。"
       }
     },
     "valueChanged": {
@@ -247,8 +247,8 @@
         }
       ],
       "description": {
-        "en": "Event which is raised after value in editor was changed. It can be raised on lost focus or on spin events.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.value to obtain new value and ui.oldValue to obtain old value.",
-        "jp": "Event which is raised after value in editor was changed. It can be raised on lost focus or on spin events.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.value to obtain new value and ui.oldValue to obtain old value."
+        "en": "Event which is raised after value in editor was changed. It can be raised on lost focus or on spin events.<br>    Function takes arguments evt and ui.<br>    Use ui.owner to obtain reference to igEditor.<br>    Use ui.value to obtain new value and ui.oldValue to obtain old value.",
+        "jp": "エディター内の値が変更された後に発生するイベント。フォーカスの消失またはスピン イベントに対して発生します。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して igEditor への参照を取得します。<br>    ui.value を使用して新しい値を取得し、ui.oldValue を使用して古い値を取得します。"
       }
     },
     "valueChanging": {
@@ -266,8 +266,8 @@
         }
       ],
       "description": {
-        "en": "Event which is raised before value in editor was changed.<br>&nbsp;&nbsp;&nbsp;&nbsp;Return false in order to cancel change.<br>&nbsp;&nbsp;&nbsp;&nbsp;It can be raised on lost focus or on spin events.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.value to obtain new value and ui.oldValue to obtain old value.",
-        "jp": "Event which is raised before value in editor was changed.<br>&nbsp;&nbsp;&nbsp;&nbsp;Return false in order to cancel change.<br>&nbsp;&nbsp;&nbsp;&nbsp;It can be raised on lost focus or on spin events.<br>&nbsp;&nbsp;&nbsp;&nbsp;Function takes arguments evt and ui.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.owner to obtain reference to igEditor.<br>&nbsp;&nbsp;&nbsp;&nbsp;Use ui.value to obtain new value and ui.oldValue to obtain old value."
+        "en": "Event which is raised before value in editor was changed.<br>    Return false in order to cancel change.<br>    It can be raised on lost focus or on spin events.<br>    Function takes arguments evt and ui.<br>    Use ui.owner to obtain reference to igEditor.<br>    Use ui.value to obtain new value and ui.oldValue to obtain old value.",
+        "jp": "エディター内の値が変更される前に発生するイベント。<br>    変更をキャンセルするには、False を返します。<br>    フォーカスの消失またはスピン イベントに対して発生します。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して igEditor への参照を取得します。<br>    ui.value を使用して新しい値を取得し、ui.oldValue を使用して古い値を取得します。"
       }
     }
   },
@@ -276,8 +276,8 @@
       "type": "bool",
       "defaultValue": false,
       "description": {
-        "en": "Sets gets ability to prevent null value.<br>&nbsp;&nbsp;&nbsp;&nbsp;If that option is false, and editor has no value, then value is set to an empty string.",
-        "jp": "Sets gets ability to prevent null value.<br>&nbsp;&nbsp;&nbsp;&nbsp;If that option is false, and editor has no value, then value is set to an empty string."
+        "en": "Sets gets ability to prevent null value.<br>    If that option is false, and editor has no value, then value is set to an empty string.",
+        "jp": "null 値を回避する機能を取得または設定します。<br>    このオプションが false で、エディターに値がない場合、値は空の文字列になります。"
       },
       "valueOptions": null
     },
@@ -286,7 +286,7 @@
       "defaultValue": false,
       "description": {
         "en": "Gets sets either the editor is checked or not.",
-        "jp": "Gets sets either the editor is checked or not."
+        "jp": "エディターがチェックされるかどうかを取得または設定します。"
       },
       "valueOptions": null
     },
@@ -295,7 +295,7 @@
       "defaultValue": false,
       "description": {
         "en": "Sets the disabled attribute.Does not allow editing. Disables all the buttons and iteracitons applied. On submit the current value is not sent into the request",
-        "jp": "Sets the disabled attribute.Does not allow editing. Disables all the buttons and iteracitons applied. On submit the current value is not sent into the request"
+        "jp": "disabled 属性を設定します。編集を許可しません。すべてのボタンおよび適用される操作を無効にします。送信において現在の値は要求に送られません。"
       },
       "valueOptions": null
     },
@@ -312,7 +312,7 @@
           "type": "string",
           "description": {
             "en": " The height can be set in pixels (px) and percentage (%).",
-            "jp": " The height can be set in pixels (px) and percentage (%)."
+            "jp": " 高さをピクセル (px) またはパーセンテージ (%) に設定できます。"
           }
         },
         {
@@ -320,7 +320,7 @@
           "type": "number",
           "description": {
             "en": " The height can be set as a number in pixels.",
-            "jp": " The height can be set as a number in pixels."
+            "jp": " 高さをピクセル単位の数値で設定できます。"
           }
         }
       ]
@@ -329,8 +329,8 @@
       "type": "string",
       "defaultValue": "ui-icon-check",
       "description": {
-        "en": "Applies custom class on the checkbox, so that custom image can be used.<br>&nbsp;&nbsp;&nbsp;&nbsp;The following jQuery classes can be used in addition http://api.jqueryui.com/theming/icons/",
-        "jp": "Applies custom class on the checkbox, so that custom image can be used.<br>&nbsp;&nbsp;&nbsp;&nbsp;The following jQuery classes can be used in addition http://api.jqueryui.com/theming/icons/"
+        "en": "Applies custom class on the checkbox, so that custom image can be used.<br>    The following jQuery classes can be used in addition http://api.jqueryui.com/theming/icons/",
+        "jp": "カスタム画像を使用するためにチェックボックスでカスタム クラスを適用します。<br>    次の jQuery クラスも使用できます: http://api.jqueryui.com/theming/icons/。"
       },
       "valueOptions": null
     },
@@ -339,7 +339,7 @@
       "defaultValue": null,
       "description": {
         "en": "Sets the name attribute of the value input. This input is used to sent the value to the server. In case the target element is input and it has name attribute, but the developer has set the inputName option, so this option overwrites the value input and removes the attribute from the element.",
-        "jp": "Sets the name attribute of the value input. This input is used to sent the value to the server. In case the target element is input and it has name attribute, but the developer has set the inputName option, so this option overwrites the value input and removes the attribute from the element."
+        "jp": "値入力の名前属性を設定します。入力はサーバーへ値を送信するために使用されます。ターゲット要素が入力で名前要素があり、開発者が inputName オプションに設定した場合、このオプションは値入力を上書きし要素の属性を削除します。"
       },
       "valueOptions": null
     },
@@ -348,7 +348,7 @@
       "defaultValue": null,
       "description": {
         "en": " Sets gets the representation of null value. In case of default the value for the input is set to null, which makes the input to hold an empty string",
-        "jp": " Sets gets the representation of null value. In case of default the value for the input is set to null, which makes the input to hold an empty string"
+        "jp": " null 値の表現を取得または設定します。デフォルトの場合、入力の値は null に設定され、入力が空文字列を保持します。"
       },
       "valueOptions": []
     },
@@ -357,7 +357,7 @@
       "defaultValue": false,
       "description": {
         "en": "Sets the readonly attribute.Does not allow editing. Disables all the buttons and iteracitons applied. On submit the current value is sent into the request.",
-        "jp": "Sets the readonly attribute.Does not allow editing. Disables all the buttons and iteracitons applied. On submit the current value is sent into the request."
+        "jp": "読み取り専用 attribute.Does を編集不可に設定します。すべてのボタンおよび適用される操作を無効にします。送信において現在の値が要求に送られます。"
       },
       "valueOptions": null
     },
@@ -366,7 +366,7 @@
       "defaultValue": null,
       "description": {
         "en": " Gets sets size of the checkbox based on preset styles. ",
-        "jp": " Gets sets size of the checkbox based on preset styles. "
+        "jp": " プリセット スタイルに基づいてチェックボックスのサイズを取得または設定します。 "
       },
       "valueOptions": [
         {
@@ -408,7 +408,7 @@
       "defaultValue": 0.0,
       "description": {
         "en": "Gets sets value in tabIndex for Checkbox Editor.",
-        "jp": "Gets sets value in tabIndex for Checkbox Editor."
+        "jp": "チェックボックス エディターの tabIndex の値を取得または設定します。"
       },
       "valueOptions": null
     },
@@ -416,8 +416,8 @@
       "type": "object",
       "defaultValue": null,
       "description": {
-        "en": "Sets gets options supported by the igValidator widget.<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: Validation rules of igValidator, such as min and max value/length are applied separately triggering errors, <br>                while similar options of the editor work to prevent wrong values from being entered.",
-        "jp": "Sets gets options supported by the igValidator widget.<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: Validation rules of igValidator, such as min and max value/length are applied separately triggering errors, <br>                while similar options of the editor work to prevent wrong values from being entered."
+        "en": "Sets gets options supported by the igValidator widget.<br>    Note: Validation rules of igValidator, such as min and max value/length are applied separately triggering errors, <br>                while similar options of the editor work to prevent wrong values from being entered.",
+        "jp": "igValidator ウィジェットによってサポートされるオプションを設定または取得します。<br>    注: エラーをトリガーした際に igValidator の検証ルールは最小値/長さおよび最大値/長さを別々に適用します。<br>                エディターの同様のオプションは、誤った値が入力されるのを防止します。"
       },
        "schemaRef": "validator"
     },
@@ -426,7 +426,7 @@
       "defaultValue": null,
       "description": {
         "en": "Gets sets value in editor. The effect of setting/getting that option depends on type of editor and on dataMode options for every type of editor.",
-        "jp": "Gets sets value in editor. The effect of setting/getting that option depends on type of editor and on dataMode options for every type of editor."
+        "jp": "エディター内の値を取得または設定します。エディターのタイプおよび各エディター タイプの dataMode オプションに基づいたオプションを取得または設定する効果。"
       },
       "valueOptions": null
     },
@@ -443,7 +443,7 @@
           "type": "string",
           "description": {
             "en": " The widget width can be set in pixels (px) and percentage (%).",
-            "jp": " The widget width can be set in pixels (px) and percentage (%)."
+            "jp": " ウィジェットの幅をピクセル (px) またはパーセンテージ (%) に設定できます。"
           }
         },
         {
@@ -451,7 +451,7 @@
           "type": "number",
           "description": {
             "en": " The widget width can be set as a number in pixels.",
-            "jp": " The widget width can be set as a number in pixels."
+            "jp": " ウィジェットの幅は数値としてピクセルで設定できます。"
           }
         }
       ]
