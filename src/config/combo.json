@@ -285,14 +285,6 @@
 	  "jp": "フィルタリングおよび自動選択が大文字と小文字を区別するかどうかを取得または設定します。"},
       "valueOptions": null
     },
-    "clearButtonTitle": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-	  "en": "Gets sets title for html element which represents clear button. That is an override for the $.ig.Combo.locale.clearButtonTitle.",
-	  "jp": "クリア ボタンを表す HTML 要素のタイトルを取得または設定します。$ig.Combo.locale.clearButtonTitle のオーバーライドです。"},
-      "valueOptions": null
-    },
     "closeDropDownOnBlur": {
       "type": "bool",
       "defaultValue": true,
@@ -317,44 +309,12 @@
 	  "jp": "$.ig.DataSource が受け入れる有効なデータ ソース、または $.ig.DataSource 自体のインスタンスを取得または設定します。<br>    注: これが文字列に設定され、「dataSourceType」オプションが設定されていない場合、$.ig.JSONDataSource が使用されます。"},
       "valueOptions": null
     },
-    "dataSourceType": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-	  "en": "Gets sets data source type (such as \"json\", \"xml\", etc). Please refer to the documentation of $.ig.DataSource and its type property",
-	  "jp": "データ ソースのタイプ (「json」、「xml」など) を取得または設定します。$.ig.DataSource とそのタイプ プロパティのドキュメントを参照してください。"},
-      "valueOptions": null
-    },
     "dataSourceUrl": {
       "type": "string",
       "defaultValue": null,
       "description": {
 	  "en": "Gets sets url which is used for sending JSON on request for remote filtering (MVC for example). That option is required when load on demand is enabled and its type is remote.",
 	  "jp": "MVC など、リモート フィルタリングの要求に対して JSON を送信するのに使用する URL を取得または設定します。ロードオンデマンドが有効で、タイプが remote の場合、このオプションは必須です。"},
-      "valueOptions": null
-    },
-    "delayFilteringOnKeyUp": {
-      "type": "number",
-      "defaultValue": 250.0,
-      "description": {
-	  "en": "Specifies the delay duration before triggering next filtering operation. Useful to boost performance by lowering the filtering operations count.",
-	  "jp": "次のフィルター操作をトリガーする前の遅延時間を指定します。パフォーマンスを向上するには、フィルター操作数を減らすと有用です。"},
-      "valueOptions": null
-    },
-    "dropDownAttachedToBody": {
-      "type": "bool",
-      "defaultValue": true,
-      "description": {
-	  "en": "Gets sets ability to append container of drop-down list to the body or to the parent of combo.",
-	  "jp": "ドロップダウン リストのコンテナーを、コンボの本体または親に追加する機能を取得または設定します。"},
-      "valueOptions": null
-    },
-    "dropDownButtonTitle": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-	  "en": "Gets sets title for html element which represend drop-down button. That is an override for the $.ig.Combo.locale.dropDownButtonTitle.",
-	  "jp": "ドロップダウン ボタンを表す HTML 要素のタイトルを取得または設定します。$ig.Combo.locale.dropDownButtonTitle のオーバーライドです。"},
       "valueOptions": null
     },
     "dropDownOnFocus": {
@@ -365,28 +325,12 @@
 	  "jp": "コンボがフォーカスを取得するときに、ドロップダウン リストを表示する機能を取得または設定します。このオプションは、モードが 'editable' の場合のみ効果があります。"},
       "valueOptions": null
     },
-    "dropDownWidth": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-	  "en": " Gets sets width of drop down list in pixels",
-	  "jp": " ドロップダウン リストの幅 (ピクセル単位) を取得または設定します。"},
-      "valueOptions": []
-    },
     "enableClearButton": {
       "type": "bool",
       "defaultValue": true,
       "description": {
 	  "en": "Specifies whether the clear button should be rendered. When mode is drop down with single selection, readonly or readonlylist this option will default to false. It can still be enabled when it is specifically set to true.",
 	  "jp": "クリア ボタンを描画するかどうかを指定します。モードが単一選択のドロップダウン、readonly、または readonlylist の場合、このオプションのデフォルト値は false です。明示的に true に設定した場合も有効にできます。"},
-      "valueOptions": null
-    },
-    "filterExprUrlKey": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-	  "en": "Gets sets url key name that specifies how the remote filtering expressions will be encoded for remote requests, e.g. &filter('col') = startsWith. Default is OData",
-	  "jp": "&filter('col') = startsWith など、リモート要求に対してリモート フィルタリングの式をエンコードする方法を指定する URL キー名を取得または設定します。デフォルトは OData です。"},
       "valueOptions": null
     },
     "filteringCondition": {
@@ -495,22 +439,6 @@
         }
       ]
     },
-    "initialSelectedItems": {
-      "type": "array",
-      "defaultValue": null,
-      "description": {
-	  "en": "Gets sets list of items to be selected when combo is initialized. It should contain array of objects with index or value property, then on initialization matching items will be selected. When mode is drop down with single selection, readonly, readonlylist or combo is initialized on select element the first item will be selected if this option is not set.<br>    Note: Only items loaded on initialization can be selected. When load-on-demand attempt to select not loaded item will fail.",
-	  "jp": "コンボの初期化時に選択される項目のリストを取得または設定します。インデックスまたは値プロパティのあるオブジェクト配列を含みます。初期化一致項目が選択されます。モードが単一選択のドロップダウン、readonly、readonlylist、あるいはコンボの要素の選択時の初期化において、このオプションを設定しない場合は最初の項目が選択されます。<br>    注: 初期化で読み込まれる項目のみ選択できます。ロードオンデマンドで読み込んでいない項目を選択する操作は失敗します。"},
-      "valueOptions": null
-    },
-    "inputName": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-	  "en": "Gets sets name of the hidden INPUT element, which is used when submiting data. Its value will be set to values of selected items valueKeys separated by \",\" character on any change in igCombo.",
-	  "jp": "データを送信するときに使用される非表示の INPUT 要素の名前を取得または設定します。igCombo の変更時に、その値が \",\" 文字で区切られた選択した項目の valueKeys の値に設定されます。"},
-      "valueOptions": null
-    },
     "itemTemplate": {
       "type": "string",
       "defaultValue": null,
@@ -588,99 +516,12 @@
 	  "jp": "入力フィールドが空の場合に表示される値を取得または設定します。$.ig.Combo.locale.placeHolder のオーバーライドです。"},
       "valueOptions": null
     },
-    "preventSubmitOnEnter": {
-      "type": "bool",
-      "defaultValue": true,
-      "description": {
-	  "en": "Gets sets ability to prevent form submitting on enter key press",
-	  "jp": "[Enter] キーを押すと、フォームの送信を回避する機能を取得または設定します。"},
-      "valueOptions": null
-    },
-    "requestType": {
-      "type": "string",
-      "defaultValue": "GET",
-      "description": {
-	  "en": "specifies the HTTP verb to be used to issue the request",
-	  "jp": "要求を送信する HTTP 動詞を指定します。"},
-      "valueOptions": null
-    },
-    "responseContentType": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-	  "en": "content type of the response. See http://api.jquery.com/jQuery.ajax/ => contentType",
-	  "jp": "応答のコンテンツ タイプ。http://api.jquery.com/jQuery.ajax/ の contentType を参照してください。"},
-      "valueOptions": null
-    },
-    "responseDataKey": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-	  "en": "see $.ig.DataSource. This is basically the property in the responses where data records are held, if the response is wrapped.",
-	  "jp": "$.ig.DataSource を参照してください。応答がラップされる場合、これは基本的にデータ レコードが保持される応答内のプロパティです。"},
-      "valueOptions": null
-    },
-    "responseDataType": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-	  "en": " Response type when a URL is set as the data source. See http://api.jquery.com/jQuery.ajax/ => dataType ",
-	  "jp": " URL がデータ ソースとして設定された場合の応答タイプ。http://api.jquery.com/jQuery.ajax/ の dataType を参照してください。 "},
-      "valueOptions": [
-        {
-          "name": "json",
-          "type": "string",
-          "description": ""
-        },
-        {
-          "name": "xml",
-          "type": "string",
-          "description": ""
-        },
-        {
-          "name": "html",
-          "type": "string",
-          "description": ""
-        },
-        {
-          "name": "script",
-          "type": "string",
-          "description": ""
-        },
-        {
-          "name": "jsonp",
-          "type": "string",
-          "description": ""
-        },
-        {
-          "name": "text",
-          "type": "string",
-          "description": ""
-        }
-      ]
-    },
-    "responseTotalRecCountKey": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-	  "en": "see $.ig.DataSource. property in the response specifying the total number of records on the server.",
-	  "jp": "$.ig.DataSource を参照してください。サーバー上のレコードの総数を指定する応答内のプロパティ。"},
-      "valueOptions": null
-    },
     "selectItemBySpaceKey": {
       "type": "bool",
       "defaultValue": false,
       "description": {
 	  "en": "Gets sets ability to select items by space button press",
 	  "jp": "Space を押して項目を選択する機能を取得または設定します。"},
-      "valueOptions": null
-    },
-    "tabIndex": {
-      "type": "number",
-      "defaultValue": null,
-      "description": {
-	  "en": "Gets sets tabIndex for field of combo.",
-	  "jp": "コンボのフィールドの tabIndex を取得または設定します。"},
       "valueOptions": null
     },
     "textKey": {
