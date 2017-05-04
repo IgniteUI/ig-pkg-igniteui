@@ -4,310 +4,6 @@
   "category": null,
   "visual": true,
   "events": {
-    "blur": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-        "en": "Event which is raised when input field of editor loses focus.<br>    Function takes argument evt.<br>    Use ui.owner to obtain reference to igEditor.<br>    Use evt.originalEvent to obtain reference to event of browser.",
-        "jp": "エディターの入力フィールドがフォーカスを失ったとき発生するイベント。<br>    関数は引数 evt を取得します。<br>    ui.owner を使用して igEditor への参照を取得します。<br>    evt.originalEvent を使用して、ブラウザーのイベントへの参照を取得します。"
-      }
-    },
-    "dropDownItemSelected": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-        "en": "Event which is raised when the drop down list item is selected. <br>    Function takes arguments evt and ui.<br>    Use ui.owner to obtain reference to igEditor.<br>    Use ui.editorInput to obtain reference to the editable input<br>    Use ui.list to obtain reference to the list contaier. <br>    Use ui.item to obtain reference to the list item which is selected.",
-        "jp": "ドロップダウン リストが選択されるときに発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して igEditor への参照を取得します。<br>    ui.editorInput を使用して、編集可能な入力への参照を取得します。<br>    ui.list を使用して、リスト コンテナーへの参照を取得します。<br>     ui.items を使用して、選択されたリスト項目への参照を取得します。"
-      }
-    },
-    "dropDownItemSelecting": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-        "en": "Event which is raised when the drop down list item is selecting. <br>    Function takes arguments evt and ui.<br>    Use ui.owner to obtain reference to igEditor.<br>    Use ui.editorInput to obtain reference to the editable input<br>    Use ui.list to obtain reference to the list contaier. <br>    Use ui.item to obtain reference to the list item which is about to be selected.",
-        "jp": "ドロップダウン リストが選択されるときに発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して igEditor への参照を取得します。<br>    ui.editorInput を使用して、編集可能な入力への参照を取得します。<br>    ui.list を使用して、リスト コンテナーへの参照を取得します。<br>     ui.item を使用して、選択されようとしているリスト項目への参照を取得します。"
-      }
-    },
-    "dropDownListClosed": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-        "en": "Event which is raised when the drop down is already closed. <br>    Function takes arguments evt and ui.<br>    Use ui.owner to obtain reference to igEditor.<br>    Use ui.editorInput to obtain reference to the editable input<br>    Use ui.list to obtain reference to the list contaier.",
-        "jp": "ドロップダウン リストがすでに閉じているときに発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して igEditor への参照を取得します。<br>    ui.editorInput を使用して、編集可能な入力への参照を取得します。<br>    ui.list を使用して、リスト コンテナーへの参照を取得します。"
-      }
-    },
-    "dropDownListClosing": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-        "en": "Event which is raised when the drop down is closing. <br>    Function takes arguments evt and ui.<br>    Use ui.owner to obtain reference to igEditor.<br>    Use ui.editorInput to obtain reference to the editable input<br>    Use ui.list to obtain reference to the list contaier.",
-        "jp": "ドロップダウン リストが閉じているときに発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して igEditor への参照を取得します。<br>    ui.editorInput を使用して、編集可能な入力への参照を取得します。<br>    ui.list を使用して、リスト コンテナーへの参照を取得します。"
-      }
-    },
-    "dropDownListOpened": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-        "en": "Event which is raised when the drop down is already opened. <br>    Function takes arguments evt and ui.<br>    Use ui.owner to obtain reference to igEditor.<br>    Use ui.editorInput to obtain reference to the editable input<br>    Use ui.list to obtain reference to the list contaier.",
-        "jp": "ドロップダウン リストがすでに開いているときに発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して igEditor への参照を取得します。<br>    ui.editorInput を使用して、編集可能な入力への参照を取得します。<br>    ui.list を使用して、リスト コンテナーへの参照を取得します。"
-      }
-    },
-    "dropDownListOpening": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-        "en": "Event which is raised when the drop down is opening. <br>    Function takes arguments evt and ui.<br>    Use ui.owner to obtain reference to igEditor.<br>    Use ui.editorInput to obtain reference to the editable input<br>    Use ui.list to obtain reference to the list contaier.",
-        "jp": "ドロップダウン リストが開いているときに発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して igEditor への参照を取得します。<br>    ui.editorInput を使用して、編集可能な入力への参照を取得します。<br>    ui.list を使用して、リスト コンテナーへの参照を取得します。"
-      }
-    },
-    "focus": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-        "en": "Event which is raised when input field of editor gets focus.<br>    Function takes argument evt.<br>    Use ui.owner to obtain reference to igEditor.<br>    Use evt.originalEvent to obtain reference to event of browser.",
-        "jp": "エディターの入力フィールドがフォーカスを取得したとき発生するイベント。<br>    関数は引数 evt を取得します。<br>    ui.owner を使用して igEditor への参照を取得します。<br>    evt.originalEvent を使用して、ブラウザーのイベントへの参照を取得します。"
-      }
-    },
-    "keydown": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-        "en": "Event which is raised on keydown event.<br>    Return false in order to cancel key action.<br>    Function takes arguments evt and ui.<br>    Use evt.originalEvent to obtain reference to event of browser.<br>    Use ui.owner to obtain reference to igEditor.<br>    Use ui.key to obtain value of keyCode.",
-        "jp": "keydown イベントに対して発生するイベント。<br>    キー操作をキャンセルするには、False を返します。<br>    関数は引数 evt および ui を取得します。<br>    evt.originalEvent を使用して、ブラウザーのイベントへの参照を取得します。<br>    ui.owner を使用して igEditor への参照を取得します。<br>    ui.key を使用して keyCode の値を取得します。"
-      }
-    },
-    "keypress": {
-      "cancellable": true,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-        "en": "Event which is raised on keypress event.<br>    Return false in order to cancel key action.<br>    Function takes arguments evt and ui.<br>    Use evt.originalEvent to obtain reference to event of browser.<br>    Use ui.owner to obtain reference to igEditor.<br>    Use ui.key to obtain value of keyCode.<br>    Set ui.key to another character which will replace original entry.",
-        "jp": "keypress イベントに対して発生するイベント。<br>    キー操作をキャンセルするには、False を返します。<br>    関数は引数 evt および ui を取得します。<br>    evt.originalEvent を使用して、ブラウザーのイベントへの参照を取得します。<br>    ui.owner を使用して igEditor への参照を取得します。<br>    ui.key を使用して keyCode の値を取得します。<br>    ui.key を元のエントリを置き換える別の文字に設定します。"
-      }
-    },
-    "keyup": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-        "en": "Event which is raised on keyup event.<br>    Function takes arguments evt and ui.<br>    Use evt.originalEvent to obtain reference to event of browser.<br>    Use ui.owner to obtain reference to igEditor.<br>    Use ui.key to obtain value of keyCode.",
-        "jp": "keyup イベントに対して発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>    evt.originalEvent を使用して、ブラウザーのイベントへの参照を取得します。<br>    ui.owner を使用して igEditor への参照を取得します。<br>    ui.key を使用して keyCode の値を取得します。"
-      }
-    },
-    "mousedown": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-        "en": "Event which is raised on mousedown at any part of editor including drop-down list.<br>    Function takes arguments evt and ui.<br>    Use evt.originalEvent to obtain reference to event of browser.<br>    Use ui.owner to obtain reference to igEditor.<br>    Use ui.elementType to obtain type of html element under mouse, such as field, button, spinUpper, spinLower or item#.<br>    Use ui.id and ui.elementType to obtain flag which represents html element under mouse.",
-        "jp": "ドロップダウン リストを含むエディターの任意の部分での mousedown に対して発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>    evt.originalEvent を使用して、ブラウザーのイベントへの参照を取得します。<br>    ui.owner を使用して igEditor への参照を取得します。<br>    ui.elementType を使用して、マウス位置の HTML 要素のタイプ (field、button、spinUpper、spinLower、または item# など) を取得します。<br>    ui.id および ui.elementType を使用して、マウス位置の HTML 要素を表すフラグを取得します。"
-      }
-    },
-    "mousemove": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-        "en": "Event which is raised on mousemove at any part of editor including drop-down list.<br>    Function takes arguments evt and ui.<br>    Use evt.originalEvent to obtain reference to event of browser.<br>    Use ui.owner to obtain reference to igEditor.<br>    Use ui.elementType to obtain type of html element under mouse, such as field, button, spinUpper, spinLower or item#.<br>    Use ui.id and ui.elementType to obtain flag which represents html element under mouse.",
-        "jp": "ドロップダウン リストを含むエディターの任意の部分での mousemove に対して発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>    evt.originalEvent を使用して、ブラウザーのイベントへの参照を取得します。<br>    ui.owner を使用して igEditor への参照を取得します。<br>    ui.elementType を使用して、マウス位置の HTML 要素のタイプ (field、button、spinUpper、spinLower、または item# など) を取得します。<br>    ui.id および ui.elementType を使用して、マウス位置の HTML 要素を表すフラグを取得します。"
-      }
-    },
-    "mouseout": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-        "en": "Event which is raised on mouseleave at any part of editor including drop-down list.<br>    Function takes arguments evt and ui.<br>    Use evt.originalEvent to obtain reference to event of browser.<br>    Use ui.owner to obtain reference to igEditor.<br>    Use ui.elementType to obtain type of html element under mouse, such as field, button, spinUpper, spinLower or item#.<br>    Use ui.id and ui.elementType to obtain flag which represents html element under mouse.",
-        "jp": "ドロップダウン リストを含むエディターの任意の部分での mouseleave に対して発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>    evt.originalEvent を使用して、ブラウザーのイベントへの参照を取得します。<br>    ui.owner を使用して igEditor への参照を取得します。<br>    ui.elementType を使用して、マウス位置の HTML 要素のタイプ (field、button、spinUpper、spinLower、または item# など) を取得します。<br>    ui.id および ui.elementType を使用して、マウス位置の HTML 要素を表すフラグを取得します。"
-      }
-    },
-    "mouseover": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-        "en": "Event which is raised on mouseover at any part of editor including drop-down list.<br>    Function takes arguments evt and ui.<br>    Use evt.originalEvent to obtain reference to event of browser.<br>    Use ui.owner to obtain reference to igEditor.<br>    Use ui.elementType to obtain type of html element under mouse, such as field, button, spinUpper, spinLower or item#.<br>    Use ui.id and ui.elementType to obtain flag which represents html element under mouse.",
-        "jp": "ドロップダウン リストを含むエディターの任意の部分での mouseover に対して発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>    evt.originalEvent を使用して、ブラウザーのイベントへの参照を取得します。<br>    ui.owner を使用して igEditor への参照を取得します。<br>    ui.elementType を使用して、マウス位置の HTML 要素のタイプ (field、button、spinUpper、spinLower、または item# など) を取得します。<br>    ui.id および ui.elementType を使用して、マウス位置の HTML 要素を表すフラグを取得します。"
-      }
-    },
-    "mouseup": {
-      "cancellable": false,
-      "args": [
-        {
-          "name": "evt",
-          "type": "Event",
-          "optional": false
-        },
-        {
-          "name": "ui",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "description": {
-        "en": "Event which is raised on mouseup at any part of editor including drop-down list.<br>    Function takes arguments evt and ui.<br>    Use evt.originalEvent to obtain reference to event of browser.<br>    Use ui.owner to obtain reference to igEditor.<br>    Use ui.elementType to obtain type of html element under mouse, such as field, button, spinUpper, spinLower or item#.<br>    Use ui.id and ui.elementType to obtain flag which represents html element under mouse.",
-        "jp": "ドロップダウン リストを含むエディターの任意の部分での mouseup に対して発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>    evt.originalEvent を使用して、ブラウザーのイベントへの参照を取得します。<br>    ui.owner を使用して igEditor への参照を取得します。<br>    ui.elementType を使用して、マウス位置の HTML 要素のタイプ (field、button、spinUpper、spinLower、または item# など) を取得します。<br>    ui.id および ui.elementType を使用して、マウス位置の HTML 要素を表すフラグを取得します。"
-      }
-    },
     "rendered": {
       "cancellable": false,
       "args": [
@@ -405,15 +101,6 @@
     }
   },
   "properties": {
-    "allowNullValue": {
-      "type": "bool",
-      "defaultValue": false,
-      "description": {
-        "en": "Sets gets ability to prevent null value.<br>    If that option is false, and editor has no value, then value is set to an empty string.",
-        "jp": "null 値を回避する機能を取得または設定します。<br>    このオプションが false で、エディターに値がない場合、値は空の文字列になります。"
-      },
-      "valueOptions": null
-    },
     "buttonType": {
       "type": "string",
       "defaultValue": null,
@@ -519,42 +206,6 @@
       },
       "valueOptions": null
     },
-    "dropDownAnimationDuration": {
-      "type": "number",
-      "defaultValue": 300.0,
-      "description": {
-        "en": "Gets sets show/hide drop-down list animation duration in milliseconds.",
-        "jp": "ドロップダウン リストの表示/非表示アニメーションの期間 (ミリ秒) を取得または設定します。"
-      },
-      "valueOptions": null
-    },
-    "dropDownAttachedToBody": {
-      "type": "bool",
-      "defaultValue": false,
-      "description": {
-        "en": "Sets gets location of drop-down list.<br>    Value false will create html element for list as a child of main html element.<br>    Value true creates list as a child of body.",
-        "jp": "ドロップダウン リストの場所を取得または設定します。<br>    値が false の場合、main HTML 要素の子として、リストの HTML 要素を作成します。<br>    値が true の場合、body の子として、リストを作成します。"
-      },
-      "valueOptions": null
-    },
-    "dropDownOnReadOnly": {
-      "type": "bool",
-      "defaultValue": false,
-      "description": {
-        "en": "Sets gets ability to limit editor to be used only from the dropdown list. When set to true the editor input is not editable. <br>    Note! In case there are no list items - the editor will reamin readonly",
-        "jp": "ドロップダウン リストからの項目のみにエディターを制限する機能を設定または取得します。True に設定すると、エディターのテキストは編集できません。<br>     注:リスト項目がない場合もエディターは読み取り専用です。"
-      },
-      "valueOptions": null
-    },
-    "dropDownOrientation": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-        "en": " Gets sets drop down opening orientation for the dorp down list when open button is clicked. If auto option is set the component calculates if there is enough space at the bottom, if not checks the space above the component and if in both directions there is not enough space it openes the dropdown down way.",
-        "jp": " 開くボタンがクリックされたとき、ドロップダウン リストを開く方向を取得または設定します。自動オプションを設定した場合、コンポーネントは下に十分なスペースがあるか計算します。もしない場合、コンポーネントの上のスペースを確認し、上下とも十分なスペースがない場合、ドロップダウンを開きます。"
-      },
-      "valueOptions": []
-    },
     "emptyChar": {
       "type": "string",
       "defaultValue": " ",
@@ -570,15 +221,6 @@
       "description": {
         "en": "Sets gets formatting of the dates as UTC.<br>                That option is supported only when dataMode option is 'date' and Date objects are used to get/set value of editor.<br>                Notes:<br>                That option affects only functionality of get/set value method and the Date-value, which was set on initialization.<br>                When application uses the set-value, then internal Date-value and displayed-text is incremented by TimezoneOffset.<br>                When application uses the get-value, then editor returns internal Date-value decremented by TimezoneOffset.<br>                When that option is modified after initialization, then displayed text and internal Date-value are not affected.<br>                It is not recommended to change that option without resetting Date-value.",
         "jp": "UTC として日付の書式を取得または設定します。<br>                このオプションは、dataMode オプションがエディターの get/set 値に使用されるのが 'date' および Date オブジェクト場合のみサポートされます。<br>                注:<br>                オプションは get/set 値メソッドおよび初期化で設定された Date-value の機能のみに影響します。<br>                アプリケーションが set-value を使用する際に、内部 Date-value および displayed-text が TimezoneOffset によって増加されます。<br>                アプリケーションが get-value を使用する際に、TimezoneOffset によって減らされた内部 Date-value  が返されます。<br>                そのオプションが初期化の後に変更される場合、表示されるテキストおよび内部の Date-value は影響されません。<br>                Date-value をリセットせずにそのオプションを変更しないでください。"
-      },
-      "valueOptions": null
-    },
-    "excludeKeys": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-        "en": "Sets gets ability to prevent entering specific characters from keyboard or on paste.<br>    Notes:<br>    If a character is specified in \"includeKeys\" option also, then \"excludeKeys\" has priority.<br>    Letters should be set in upper case.<br>    Making difference between upper and lower case is not supported.",
-        "jp": "キーボードまたは貼り付けによって特定の文字を入力できないようにする機能を取得または設定します。<br>    注:<br>    文字が includeKeys オプションに指定した場合、excludeKeys は優先があります。<br>    文字は大文字で設定する必要があります。<br>    大文字と小文字を区別することはサポートされていません。"
       },
       "valueOptions": null
     },
@@ -608,96 +250,6 @@
         }
       ]
     },
-    "includeKeys": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-        "en": "Sets gets ability to enter only specific characters in input-field from keyboard and on paste.<br>    Notes:<br>    If \"excludeKeys\" option contains same characters as this option, then \"excludeKeys\" has priority.<br>    Letters should be set in upper case.<br>    Making difference between upper and lower case is not supported.",
-        "jp": "キーボードからおよび貼り付けによって特定の文字だけを入力フィールドに入力できるようにする機能を取得または設定します。<br>    注:<br>    \"excludeKeys\" オプションがこのオプションと同じ文字を含んでいる場合、\"excludeKeys\" が優先されます。<br>    文字は大文字で設定する必要があります。<br>    大文字と小文字を区別することはサポートされていません。"
-      },
-      "valueOptions": null
-    },
-    "inputMask": {
-      "type": "string",
-      "defaultValue": "CCCCCCCCCC",
-      "description": {
-        "en": "Sets gets input mask. Mask may include filter-flags and literal characters.<br>    Literal characters are part of mask which cannot be modified by end user. In order to use a filter-flag as a literal character, the escape \"\\\\\" character should be used.<br>    Default is \"CCCCCCCCCC\"<br>    Note: optional flags/entries affect the value returned by get of the \"value\" and \"text\" methods.<br>    List of filter-flags:<br>    C: any keyboard character. Entry is optional.<br>    &: any keyboard character. Entry is required.<br>    a: letter or digit character. Entry is optional.<br>    A: letter or digit character. Entry is required.<br>    ?: letter character. Entry is optional.<br>    L: letter character. Entry is required.<br>    9: digit character. Entry is optional.<br>    0: digit character. Entry is required.<br>    #: digit character or \"+\" or \"_\". Entry is optional with replacement by \"emptyPositionChar\" or by \"padChar\".<br>    >: all letters to the right are converted to the upper case. In order to disable conversion, the \">\" flag should be used again.<br>    <: all letters to the right are converted to the lower case. In order to disable conversion, the \"<\" flag should be used again.",
-        "jp": "入力マスクを取得または設定します。マスクには、フィルター フラグやリテラル文字が含まれる場合があります。<br>    リテラル文字は、エンドユーザーが変更できないマスクの一部です。フィルター フラグをリテラル文字として使用するには、エスケープ "\\\\" 文字を使用する必要があります。<br>    デフォルトは \"CCCCCCCCCC\" です。<br>    注: オプションのフラグ/エントリは、\"value\" の取得または \"text\" の取得メソッドが返す値に影響します。<br>    フィルター フラグのリスト。<br>    C: 任意のキーボード文字。エントリはオプションです。<br>    &: 任意のキーボード文字。エントリは必須です。<br>    a: 文字または数字。エントリはオプションです。<br>    A: 文字または数字。エントリは必須です。<br>    ?: 通常の文字。エントリはオプションです。<br>    L: 通常の文字。エントリは必須です。<br>    9: 数字。エントリはオプションです。<br>    0: 数字。エントリは必須です。<br>    #: 数字、\"+\"、または \"_\"。エントリはオプションです。\"emptyPositionChar\" または \"padChar\" で代用できます。<br>    >: 右にあるすべての文字が大文字に変換されます。変換を無効にするには、\">\" フラグをもう一度使用します。<br>    <: 右にあるすべての文字が小文字に変換されます。変換を無効にするには、\">\" フラグをもう一度使用します。"
-      },
-      "valueOptions": null
-    },
-    "inputName": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-        "en": "Sets the name attribute of the value input. This input is used to sent the value to the server. In case the target element is input and it has name attribute, but the developer has set the inputName option, so this option overwrites the value input and removes the attribute from the element.",
-        "jp": "値入力の名前属性を設定します。入力はサーバーへ値を送信するために使用されます。ターゲット要素が入力で名前要素があり、開発者が inputName オプションに設定した場合、このオプションは値入力を上書きし要素の属性を削除します。"
-      },
-      "valueOptions": null
-    },
-    "isLimitedToListValues": {
-      "type": "bool",
-      "defaultValue": false,
-      "description": {
-        "en": "Sets the ability to allow values only set into the list items. This validation is done only when the editor is blured, or enter key is pressed",
-        "jp": "リスト項目に含まれる値のみに許可を設定します。この検証は、エディターがぼかされるか、Enter キーが押されたときに実行されます。"
-      },
-      "valueOptions": null
-    },
-    "limitSpinToCurrentField": {
-      "type": "bool",
-      "defaultValue": false,
-      "description": {
-        "en": "Sets gets ability to modify only 1 date field on spin events.<br>                Value false enables changes of other date fields when incremented or decremented date-field reaches its limits.<br>                Value true modifies only value of one field.",
-        "jp": "スピン イベントで日付の 1 フィールドを編集する機能を取得または設定します。<br>                値が False の場合、増加または減少させた日付フィールドが限界に達するとほかの日付フィールドが変化します。<br>                値が True の場合、1 つのフィールドの値のみを変更できます。"
-      },
-      "valueOptions": null
-    },
-    "listItemHoverDuration": {
-      "type": "number",
-      "defaultValue": 0.0,
-      "description": {
-        "en": "type=\"number* Sets the hover/unhover animation duration.",
-        "jp": "type=\"number\" ホバー/アンホバーアニメーション期間を設定します。"
-      },
-      "valueOptions": null
-    },
-    "listItems": {
-      "type": "array",
-      "defaultValue": null,
-      "description": {
-        "en": "Sets gets list of items which are used for drop-down list.<br>    Items in list can be strings, numbers or objects. The items are directly rendered without casting, or manipulating them.",
-        "jp": "ドロップダウン リストに使用される項目リストを設定または取得します。<br>    リスト内の項目は、文字列、数、オブジェクトが使用可能です。項目は、キャストまたは操作なしに直接描画されます。"
-      },
-      "valueOptions": null
-    },
-    "listWidth": {
-      "type": "number",
-      "defaultValue": 0.0,
-      "description": {
-        "en": "Sets gets custom width of drop-down list in pixels. If value is equal to 0 or negative, then the width of editor is used.",
-        "jp": "ドロップダウン リストのカスタムの幅 (ピクセル単位) を取得または設定します。値がゼロまたは負の場合、エディターの幅が使用されます。"
-      },
-      "valueOptions": null
-    },
-    "locale": {
-      "type": "object",
-      "defaultValue": null,
-      "description": {
-        "en": "Sets gets strings used for title of buttons. Value of object should contain pairs or key:value members. Note: any sub-option of locale can appear within the main option of igEditor. In this case those values within main options will have highest priority and override corresponding value in locale.",
-        "jp": "ボタンのタイトルに使用する文字列を取得または設定します。オブジェクトの値は一組の値またはキーの値メンバーを含む必要があります。注:ロケールのサブオプションは igEditor のメイン オプションに表示されますこのケースではメインオプションの中の値は最優先でロケールに対応する値をオーバーライドします。"
-      },
-      "valueOptions": null
-    },
-    "maxLength": {
-      "type": "number",
-      "defaultValue": null,
-      "description": {
-        "en": "Sets gets maximum length of text which can be entered by user.<br>    Negative values or 0 disables that behavior.",
-        "jp": "ユーザーが入力できるテキストの最大長を取得または設定します。<br>    負の値または 0 はこの動作を無効にします。"
-      },
-      "valueOptions": null
-    },
     "maxValue": {
       "type": "date",
       "defaultValue": null,
@@ -715,15 +267,6 @@
         "jp": "ユーザーがエディターに入力できる最小値を取得または設定します。Date オブジェクトは値として設定できます。文字列値を渡すと、エディターは日付オブジェクトを作成するために javascript Date オブジェクトのコンストラクターを使用し、結果のオブジェクトを比較で使用します。MVC 日付書式も使用できます。たとえば、Date(/\"thicks\"/) です。<br>     注:このプロパティは、日付を抽出するために displayInputFormat 設定を使用しません。"
       },
       "valueOptions": null
-    },
-    "nullValue": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-        "en": " Sets gets the representation of null value. In case of default the value for the input is set to null, which makes the input to hold an empty string",
-        "jp": " null 値の表現を取得または設定します。デフォルトの場合、入力の値は null に設定され、入力が空文字列を保持します。"
-      },
-      "valueOptions": []
     },
     "padChar": {
       "type": "string",
@@ -743,30 +286,12 @@
       },
       "valueOptions": null
     },
-    "preventSubmitOnEnter": {
-      "type": "bool",
-      "defaultValue": false,
-      "description": {
-        "en": "Sets the ability of the editor to prevent form submition on enter key pressed.",
-        "jp": "Enter キーの押下でフォーム送信を回避する機能を設定します。"
-      },
-      "valueOptions": null
-    },
     "readOnly": {
       "type": "bool",
       "defaultValue": false,
       "description": {
         "en": "Sets the readonly attribute.Does not allow editing. Disables all the buttons and iteracitons applied. On submit the current value is sent into the request.",
         "jp": "読み取り専用 attribute.Does を編集不可に設定します。すべてのボタンおよび適用される操作を無効にします。送信において現在の値が要求に送られます。"
-      },
-      "valueOptions": null
-    },
-    "regional": {
-      "type": "object",
-      "defaultValue": null,
-      "description": {
-        "en": "Sets gets custom regional settings for editor. If it is string, then $.ig.regional[stringValue] is assumed.",
-        "jp": "エディターのカスタムの地域設定を取得または設定します。文字列の場合、$.ig.regional[stringValue] を仮定します。"
       },
       "valueOptions": null
     },
@@ -815,101 +340,6 @@
       },
       "valueOptions": null
     },
-    "tabIndex": {
-      "type": "number",
-      "defaultValue": null,
-      "description": {
-        "en": "Gets sets value in tabIndex for editor.",
-        "jp": "エディターの tabIndex の値を取得または設定します。"
-      },
-      "valueOptions": null
-    },
-    "textAlign": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-        "en": " Sets gets horizontal alignment of text in editor. If that option is not set, then 'right' is used for 'numeric', 'currency' and 'percent' editors and the 'left' is used for all other types of editor.",
-        "jp": " エディター内のテキストの水平配置を取得または設定します。このオプションを設定した場合、'right' は 'numeric、'currency' 、および 'percent' エディターで使用され、'left'  はその他のすべてのタイプのエディターで使用されます。"
-      },
-      "valueOptions": [
-        {
-          "name": "left",
-          "type": "string",
-          "description": {
-            "en": "",
-            "jp": ""
-          }
-        },
-        {
-          "name": "right",
-          "type": "string",
-          "description": {
-            "en": "",
-            "jp": ""
-          }
-        },
-        {
-          "name": "center",
-          "type": "string",
-          "description": {
-            "en": "",
-            "jp": ""
-          }
-        }
-      ]
-    },
-    "textMode": {
-      "type": "string",
-      "defaultValue": null,
-      "description": {
-        "en": " Sets gets text mode of editor such as: single-line text editor, password editor or multiline editor. That option has effect only on initialization. If based element (selector) is TEXTAREA, then it is used as input-field.",
-        "jp": " 単一行テキスト エディター、パスワード エディター、複数行エディターなど、エディターのテキスト モードを取得または設定します。このオプションは、初期化時にのみ影響します。ベースとなる要素 (セレクター) が TEXTAREA の場合、それを入力フィールドとして使用します。"
-      },
-      "valueOptions": [
-        {
-          "name": "text",
-          "type": "string",
-          "description": {
-            "en": " Single line text editor based on INPUT element is created.",
-            "jp": " INPUT 要素に基づく単一行テキスト エディターが作成されます。"
-          }
-        },
-        {
-          "name": "password",
-          "type": "string",
-          "description": {
-            "en": " Editor based on INPUT element with type password is created.",
-            "jp": " タイプ パスワードで作成される INPUT 要素に基づくエディターが作成されます。"
-          }
-        },
-        {
-          "name": "multiline",
-          "type": "string",
-          "description": {
-            "en": " multiline editor based on TEXTAREA element is created.",
-            "jp": " TEXTAREA 要素に基づく複数行エディターが作成されます。"
-          }
-        }
-      ]
-    },
-    "toLower": {
-      "type": "bool",
-      "defaultValue": false,
-      "description": {
-        "en": "Sets gets ability to convert input characters to lower case (true) or keeps characters as they are (false). That option has effect only while keyboard entries and paste.",
-        "jp": "True の場合は、入力された文字列を小文字に変換し、False の場合は、文字列をそのままにしておく機能を取得または設定します。このオプションは、キーボード入力と貼り付けを使用する場合のみ効果があります。"
-      },
-      "valueOptions": null
-    },
-    "toUpper": {
-      "type": "bool",
-      "defaultValue": false,
-      "description": {
-        "en": "Sets gets ability to convert input characters to upper case (true) or keeps characters as they are (false). That option has effect only while keyboard entries and paste.",
-        "jp": "True の場合は、入力された文字列を大文字に変換し、False の場合は、文字列をそのままにしておく機能を取得または設定します。このオプションは、キーボード入力と貼り付けを使用する場合のみ効果があります。"
-      },
-      "valueOptions": null
-    },
     "unfilledCharsPrompt": {
       "type": "string",
       "defaultValue": "_",
@@ -934,15 +364,6 @@
       "description": {
         "en": "Gets sets value in editor.  Date object can be set as value. String value can be passed and the editor will use the javascript Date object constructor to create date object and will use it as value. MVC date format can be used too. For example Date(/\"thicks\"/).<br>     Note! This option doesn't use the displayInputFormat to extract the date.",
         "jp": "エディター内の値を取得または設定します。Date オブジェクトは値として設定できます。文字列値を渡すと、エディターは日付オブジェクトを作成するために javascript Date オブジェクトのコンストラクターを使用し、結果のオブジェクトを値として使用します。MVC 日付書式も使用できます。たとえば、Date(/\"thicks\"/) です。<br>     注:このプロパティは、日付を抽出するために displayInputFormat 設定を使用しません。"
-      },
-      "valueOptions": null
-    },
-    "visibleItemsCount": {
-      "type": "number",
-      "defaultValue": 5.0,
-      "description": {
-        "en": "Gets sets how many items should be shown at once. <br>      Notes:<br>      That option is overwritten if the number of list items is less than the value. In that case the height of the dropdown is adjusted to the number of items.",
-        "jp": "一度に表示される項目の数を取得または設定します。<br>     注:<br>      リスト項目の数が値より小さい場合、このオプションは上書きされます。この場合、ドロップダウンの高さが項目の数に基づいて設定されます。"
       },
       "valueOptions": null
     },
