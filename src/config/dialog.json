@@ -4,63 +4,6 @@
     "category": null,
     "visual": true,
     "events": {
-        "animationEnded": {
-            "cancellable": false,
-            "args": [
-                {
-                    "name": "evt",
-                    "type": "Event",
-                    "optional": false
-                },
-                {
-                    "name": "ui",
-                    "type": "Object",
-                    "optional": false
-                }
-            ],
-            "description": {
-                "en": "Event which is raised after end animation when dialod was closed or opened.<br>    Function takes arguments \"evt\" and \"ui\".<br>    Use ui.owner to obtain reference to igDialog.<br>    Use ui.action to obtain name of action, which triggered animation.<br>    \"open\" - dialog was opened<br>    \"close\" - dialog was closed",
-                "jp": "ダイアログが閉じていた、または開いていた時の、最後のアニメーションの後に発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>    ui.owner を使用して、igDialog への参照を取得します。<br>    ui.action を使用して、アニメーションを起動させたアクション名を取得します。<br>    「open」- ダイアログが開きました<br>    「close」 - ダイアログが閉じました。"
-            }
-        },
-        "blur": {
-            "cancellable": false,
-            "args": [
-                {
-                    "name": "evt",
-                    "type": "Event",
-                    "optional": false
-                },
-                {
-                    "name": "ui",
-                    "type": "Object",
-                    "optional": false
-                }
-            ],
-            "description": {
-                "en": "Event which is raised when dialog or its content loses focus.<br>    Function takes arguments \"evt\" and \"ui\".<br>    Use evt to obtain browser event.<br>    Use ui.owner to obtain reference to igDialog.",
-                "jp": "ダイアログまたはそのコンテンツがフォーカスを失ったとき発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>    evt を使用してブラウザ イベントを取得します。<br>    ui.owner を使用して、igDialog への参照を取得します。"
-            }
-        },
-        "focus": {
-            "cancellable": false,
-            "args": [
-                {
-                    "name": "evt",
-                    "type": "Event",
-                    "optional": false
-                },
-                {
-                    "name": "ui",
-                    "type": "Object",
-                    "optional": false
-                }
-            ],
-            "description": {
-                "en": "Event which is raised when dialog or its content gets focus.<br>    Function takes arguments \"evt\" and \"ui\".<br>    Use evt to obtain browser event.<br>    Use ui.owner to obtain reference to igDialog.",
-                "jp": "ダイアログまたはそのコンテンツがフォーカスを得たとき発生するイベント。<br>    関数は引数 evt および ui を取得します。<br>    evt を使用してブラウザ イベントを取得します。<br>    ui.owner を使用して、igDialog への参照を取得します。"
-            }
-        },
         "stateChanged": {
             "cancellable": false,
             "args": [
@@ -101,38 +44,6 @@
         }
     },
     "properties": {
-        "closeAnimation": {
-            "type": "string",
-            "defaultValue": null,
-            "description": {
-                "en": "Sets gets animation applied to dialog when it is closed. That can be any object supported by jquery hide(param) method.",
-                "jp": "閉じている時にダイアログに適用されるアニメーションを設定、取得します。これは、jquery hide(param) メソッドがサポートする任意のオブジェクトになり得ます。"
-            }
-        },
-        "closeButtonTitle": {
-            "type": "string",
-            "defaultValue": null,
-            "description": {
-                "en": "Sets gets title/tooltip for close button in dialog. That is override for $.ig.Dialog.locale.closeButtonTitle.",
-                "jp": "ダイアログの閉じるボタンのタイトル / ツールチップを設定、取得します。$.ig.Dialog.locale.closeButtonTitle のオーバーライドです。"
-            }
-        },
-        "closeOnEscape": {
-            "type": "bool",
-            "defaultValue": true,
-            "description": {
-                "en": "Sets gets ability to close dialog on Esc key.",
-                "jp": "Esc キーを押してダイアログを閉じる機能を設定、取得します。"
-            }
-        },
-        "dialogClass": {
-            "type": "string",
-            "defaultValue": null,
-            "description": {
-                "en": "Sets gets name of css class which is applied to the main DIV element of dialog.",
-                "jp": "ダイアログの DIV 要素に適用される css クラスの名前を取得または設定します。"
-            }
-        },
         "draggable": {
             "type": "bool",
             "defaultValue": true,
@@ -175,14 +86,6 @@
                 }
             ]
         },
-        "enableHeaderFocus": {
-            "type": "bool",
-            "defaultValue": true,
-            "description": {
-                "en": "Sets gets ability to adjust state of header depending on focused and not-focused states. Note: the \"trackFocus\" option should be enabled.",
-                "jp": "フォーカスあり、およびフォーカスなしの状態によって、ヘッダーの状態を調整する機能を設定、取得します。注: 「trackFocus」オプションを有効にします。"
-            }
-        },
         "footerText": {
             "type": "string",
             "defaultValue": null,
@@ -207,28 +110,12 @@
                 "jp": "通常の状態でのダイアログの初期高さ (ピクセル単位) を設定、取得します。<br>    数値以外に、次の単位がサポートされています: 「px」、「em」および「%」。<br>    「%」の場合、ブラウザのウィンドウ サイズが使用され、これは開くアクションのみに有効です。"
             }
         },
-        "imageClass": {
-            "type": "string",
-            "defaultValue": null,
-            "description": {
-                "en": "Sets gets name of css class which is applied to the SPAN element located on the left side of header.",
-                "jp": "ヘッダーの左端に配置される SPAN 要素に適用される css クラスの名前を設定、取得します。"
-            }
-        },
         "maxHeight": {
             "type": "number",
             "defaultValue": null,
             "description": {
                 "en": "Sets gets maximal height of dialog in normal state. Note: that option has effect only while resizing dialog by end user.",
                 "jp": "通常の状態でのダイアログの最大高さを設定、取得します。注: このオプションは、エンド ユーザーがダイアログのサイズを変更する時にのみ有効です。"
-            }
-        },
-        "maximizeButtonTitle": {
-            "type": "string",
-            "defaultValue": null,
-            "description": {
-                "en": "Sets gets title/tooltip for maximize button in dialog. That is override for $.ig.Dialog.locale.maximizeButtonTitle.",
-                "jp": "ダイアログの最大化ボタンのタイトル/ツールチップを設定、取得します。$.ig.Dialog.locale.maximizeButtonTitle のオーバーライドです。"
             }
         },
         "maxWidth": {
@@ -247,14 +134,6 @@
                 "jp": "通常の状態でのダイアログの最小高さを設定、取得します。"
             }
         },
-        "minimizeButtonTitle": {
-            "type": "string",
-            "defaultValue": null,
-            "description": {
-                "en": "Sets gets title/tooltip for minimize button in dialog. That is override for $.ig.Dialog.locale.minimizeButtonTitle.",
-                "jp": "ダイアログの最小化ボタンのタイトル/ツールチップを設定、取得します。$.ig.Dialog.locale.minimizeButtonTitle のオーバーライドです。"
-            }
-        },
         "minWidth": {
             "type": "number",
             "defaultValue": 150.0,
@@ -269,22 +148,6 @@
             "description": {
                 "en": "Sets gets modal state of dialog.<br>    If there are more than 1 modal igDialog, then last opened dialog wins and becomes on the top.<br>    Note: modal functionality is not supported when dialog is minimized or pinned, because that will trigger misbehavior.",
                 "jp": "ダイアログのモード状態を設定、取得します。<br>    2 つ以上のモーダル igDialog がある場合、最後に開いたダイアログは前景に表示されます。<br>    注: モーダル機能は、ダイアログが最小化またはピン固定された場合に正しく動作しないため、サポートされません。"
-            }
-        },
-        "openAnimation": {
-            "type": "string",
-            "defaultValue": null,
-            "description": {
-                "en": "Sets gets animation applied to dialog when it is opened. That can be any object supported by jquery show(param) method.",
-                "jp": "開いている時にダイアログに適用されるアニメーションを設定、取得します。これは、jquery show(param) メソッドがサポートする任意のオブジェクトになり得ます。"
-            }
-        },
-        "pinButtonTitle": {
-            "type": "string",
-            "defaultValue": null,
-            "description": {
-                "en": "Sets gets title/tooltip for pin button in dialog. That is override for $.ig.Dialog.locale.pinButtonTitle.",
-                "jp": "ダイアログの固定ボタンのタイトル/ツールチップを設定、取得します。$.ig.Dialog.locale.pinButtonTitle のオーバーライドです。"
             }
         },
         "pinned": {
@@ -311,7 +174,6 @@
                 "jp": "ダイアログの初期位置を設定、取得します。位置は、左座標と上座標を表す 2 つの数値の配列で指定できます。<br>    または、これは { my: \"left top\", at: \"left top\", offset: \"100 200\" } などの、jquery.position(param) メソッドがサポートするオブジェクトになり得ます。"
             },
             "schema": {
-
                 "left": {
                     "type": "number",
                     "defaultValue": null,
@@ -338,14 +200,6 @@
             "description": {
                 "en": "Sets gets ability to resize dialog by end user.",
                 "jp": "エンド ユーザーによるダイアログのサイズ変更機能を設定、取得します。"
-            }
-        },
-        "restoreButtonTitle": {
-            "type": "string",
-            "defaultValue": null,
-            "description": {
-                "en": "Sets gets title/tooltip for restore button in dialog. That is override for $.ig.Dialog.locale.restoreButtonTitle.",
-                "jp": "ダイアログの復元ボタンのタイトル/ツールチップを設定、取得します。$.ig.Dialog.locale.restoreButtonTitle のオーバーライドです。"
             }
         },
         "showCloseButton": {
@@ -438,52 +292,12 @@
                 }
             ]
         },
-        "tabIndex": {
-            "type": "number",
-            "defaultValue": 0.0,
-            "description": {
-                "en": "Sets gets value for tabIndex attribute applied to main html element of dialog.",
-                "jp": "ダイアログのメイン HTML 要素に適用される tabIndex 属性の値を設定、取得します。"
-            }
-        },
-        "temporaryUrl": {
-            "type": "string",
-            "defaultValue": null,
-            "description": {
-                "en": "Sets gets temporary value for src, which is used while changing parent of base element if it is instance of IFRAME. That is allows to get around possible javascript exceptions under IE.",
-                "jp": "src の一時的な値を設定、取得します。IFRAME のインスタンスの場合に、ベース要素の親を変更する間に使用されます。IE で発生する可能性のある javascript 例外を回避できます。"
-            }
-        },
-        "trackFocus": {
-            "type": "bool",
-            "defaultValue": true,
-            "description": {
-                "en": "Sets gets ability to process focus and blur events of child elements located in dialog in order to maintain focused state.<br>    Notes:<br>    If that option is enabled, then focus and blur event handlers are added to all child elements of dialog.<br>    If dialog is modal or it can be maximized, then it is not recommended to disable that option.<br>    If that option is modified after igDialog was already created, then depending on current state of dialog, it will be temporary closed-opened or opened-closed.",
-                "jp": "フォーカスがある状態を維持するために、ダイアログに配置された子要素の focus および blur イベントを処理する機能を設定、取得します。<br>    注:<br>    このオプションが有効な場合、focus および blur イベント ハンドラーが、ダイアログのすべての子要素に追加されます。<br>    ダイアログがモーダルである、または最大化できる場合、このオプションの無効化は推奨されません。<br>    このオプションは、igDialog が作成した後に変更された場合、ダイアログの現在状態に基づいて、一時的に closed-opened または opened-closed になります。"
-            }
-        },
-        "unpinButtonTitle": {
-            "type": "string",
-            "defaultValue": null,
-            "description": {
-                "en": "Sets gets title/tooltip for unpin button in dialog. That is override for $.ig.Dialog.locale.unpinButtonTitle.",
-                "jp": "ダイアログの固定の解除ボタンのタイトル/ツールチップを設定、取得します。$.ig.Dialog.locale.unpinButtonTitle のオーバーライドです。"
-            }
-        },
         "width": {
             "type": "number",
             "defaultValue": 300.0,
             "description": {
                 "en": "Sets gets initial width of dialog in pixels for normal state.<br>    Besides numeric values, following units are supported: \"px\", \"em\" and \"%\".<br>    In case of \"%\", the size of browser window is used and it has effect only on open action.",
                 "jp": "通常の状態でのダイアログの初期幅 (ピクセル単位) を設定、取得します。<br>    数値以外に、次の単位がサポートされています: 「px」、「em」および「%」。<br>    「%」の場合、ブラウザのウィンドウ サイズが使用され、これは開くアクションのみに有効です。"
-            }
-        },
-        "zIndex": {
-            "type": "number",
-            "defaultValue": null,
-            "description": {
-                "en": "Sets gets value of zIndex applied to the main html element of dialog. If value is not set, then 1000 is used.",
-                "jp": "ダイアログのメイン HTML 要素に適用される zIndex の値を設定、取得します。値が設定されていない場合は、1000 が使用されます。"
             }
         }
     }
