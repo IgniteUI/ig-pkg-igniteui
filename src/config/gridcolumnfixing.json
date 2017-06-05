@@ -144,24 +144,6 @@
                 }
             }
         },
-        "featureChooserTextFixedColumn": {
-            "type": "string",
-            "defaultValue": "",
-            "description": {
-                "en": "Feature chooser text of the fixed column",
-                "jp": "固定列の機能セレクター テキスト。"
-            },
-            "valueOptions": null
-        },
-        "featureChooserTextUnfixedColumn": {
-            "type": "string",
-            "defaultValue": "",
-            "description": {
-                "en": "Feature chooser text of the unfixed column",
-                "jp": "固定されていない列の機能セレクター テキスト。"
-            },
-            "valueOptions": null
-        },
         "fixingDirection": {
             "type": "string",
             "defaultValue": null,
@@ -197,24 +179,6 @@
             },
             "valueOptions": null
         },
-        "headerFixButtonText": {
-            "type": "string",
-            "defaultValue": "",
-            "description": {
-                "en": "Specifies altering text on column fixing header icon when column is not fixed",
-                "jp": "列が固定されていないときに列固定ヘッダー アイコンに表示する代替テキストを指定します。"
-            },
-            "valueOptions": null
-        },
-        "headerUnfixButtonText": {
-            "type": "string",
-            "defaultValue": "",
-            "description": {
-                "en": "Specifies altering text on column fixing header icon when column is fixed",
-                "jp": "列が固定されているときに列固定ヘッダー アイコンに表示する代替テキストを指定します。"
-            },
-            "valueOptions": null
-        },
         "minimalVisibleAreaWidth": {
             "type": "string",
             "defaultValue": 30,
@@ -238,15 +202,6 @@
             "description": {
                 "en": "option to show column fixing buttons in header cells",
                 "jp": "ヘッダー セルに列固定ボタンを表示するためのオプション"
-            },
-            "valueOptions": null
-        },
-        "syncRowHeights": {
-            "type": "bool",
-            "defaultValue": true,
-            "description": {
-                "en": "option enable syncing heights of rows between fixed/unfixed rows",
-                "jp": "固定/固定解除された行の間での行の高さの同期を有効にするためのオプション"
             },
             "valueOptions": null
         }

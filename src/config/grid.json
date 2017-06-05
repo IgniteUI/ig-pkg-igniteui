@@ -22,63 +22,6 @@
                 "jp": "セルをクリックしたときに発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ui.cellElement を使用して、セルの DOM 要素への参照を取得します。<br>   ui.rowIndex を使用して、行のインデックスを取得します。<br>   ui.colIndex を使用して、列のインデックスを取得します。<br>   ui.owner を使用して、igGrid への参照を取得します。"
             }
         },
-        "columnsCollectionModified": {
-            "cancellable": false,
-            "args": [
-                {
-                    "name": "evt",
-                    "type": "Event",
-                    "optional": false
-                },
-                {
-                    "name": "ui",
-                    "type": "Object",
-                    "optional": false
-                }
-            ],
-            "description": {
-                "en": "Event fired after the columns colection has been modified(e.g. a column is hidden)<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGrid.",
-                "jp": "列コレクションを修正した後に発生するイベント (列を非表示にするなど) 。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGrid への参照を取得します。"
-            }
-        },
-        "created": {
-            "cancellable": false,
-            "args": [
-                {
-                    "name": "evt",
-                    "type": "Event",
-                    "optional": false
-                },
-                {
-                    "name": "ui",
-                    "type": "Object",
-                    "optional": false
-                }
-            ],
-            "description": {
-                "en": "fired when the grid is created and the initial structure is rendered (this doesn't necessarily imply the data will be there if the data source is remote) <br>    use ui.owner to get a reference to the grid",
-                "jp": "グリッドが作成して最初の構造が描画されるときに発生されます。データ ソースがリモートの場合、データがない可能性があります。<br>    ui.owner を使用してグリッドへの参照を取得します。"
-            }
-        },
-        "dataBinding": {
-            "cancellable": true,
-            "args": [
-                {
-                    "name": "evt",
-                    "type": "Event",
-                    "optional": false
-                },
-                {
-                    "name": "ui",
-                    "type": "Object",
-                    "optional": false
-                }
-            ],
-            "description": {
-                "en": "Event fired before data binding takes place.<br>   Return false in order to cancel data binding.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGrid.",
-                "jp": "データ バインドの実行前に発生するイベント。<br>   データ バインディングをキャンセルするには、false を返します。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGrid への参照を取得します。"
-            }
-        },
         "dataBound": {
             "cancellable": false,
             "args": [
@@ -134,120 +77,6 @@
             "description": {
                 "en": "Event fired before the TBODY holding the data records starts its rendering.<br>   Return false in order to cancel data records rendering.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGrid.",
                 "jp": "データ レコードを保持する TBODY が描画を開始する前に発生するイベント。<br>   データ レコードの再バインディングをキャンセルするには、false を返します。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGrid への参照を取得します。"
-            }
-        },
-        "destroyed": {
-            "cancellable": false,
-            "args": [
-                {
-                    "name": "evt",
-                    "type": "Event",
-                    "optional": false
-                },
-                {
-                    "name": "ui",
-                    "type": "Object",
-                    "optional": false
-                }
-            ],
-            "description": {
-                "en": "fired when the grid is destroyed<br>    use ui.owner to get a reference to the grid",
-                "jp": "グリッドが破棄されたときに発生します。<br>    ui.owner を使用してグリッドへの参照を取得します。"
-            }
-        },
-        "footerRendered": {
-            "cancellable": false,
-            "args": [
-                {
-                    "name": "evt",
-                    "type": "Event",
-                    "optional": false
-                },
-                {
-                    "name": "ui",
-                    "type": "Object",
-                    "optional": false
-                }
-            ],
-            "description": {
-                "en": "Event fired after the footer has been rendered.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGrid.<br>   Use ui.table to get reference to footers table DOM element.",
-                "jp": "フッターが描画された後に発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGrid への参照を取得します。<br>   ui.table を使用して、フッター テーブルの DOM 要素への参照を取得します。"
-            }
-        },
-        "footerRendering": {
-            "cancellable": true,
-            "args": [
-                {
-                    "name": "evt",
-                    "type": "Event",
-                    "optional": false
-                },
-                {
-                    "name": "ui",
-                    "type": "Object",
-                    "optional": false
-                }
-            ],
-            "description": {
-                "en": "Event fired before the footer starts its rendering.<br>   Return false in order to cancel footer rendering.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGrid.",
-                "jp": "フッターが描画を開始する前に発生するイベント。<br>   フッターの描画をキャンセルするには、false を返します。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGrid への参照を取得します。"
-            }
-        },
-        "headerCellRendered": {
-            "cancellable": false,
-            "args": [
-                {
-                    "name": "evt",
-                    "type": "Event",
-                    "optional": false
-                },
-                {
-                    "name": "ui",
-                    "type": "Object",
-                    "optional": false
-                }
-            ],
-            "description": {
-                "en": "Event fired after every TH in the grid header has been rendered.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGrid.<br>   Use ui.columnKey to get column key.<br>   Use ui.th to get reference to header cell DOM element.",
-                "jp": "グリッド ヘッダー内のすべての TH が描画された後に発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGrid への参照を取得します。<br>   ui.columnKey を使用して、列のキーを取得します。<br>   ui.th を使用して、ヘッダー セルの DOM 要素への参照を取得します。"
-            }
-        },
-        "headerRendered": {
-            "cancellable": false,
-            "args": [
-                {
-                    "name": "evt",
-                    "type": "Event",
-                    "optional": false
-                },
-                {
-                    "name": "ui",
-                    "type": "Object",
-                    "optional": false
-                }
-            ],
-            "description": {
-                "en": "Event fired after the header has been rendered.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGrid.<br>   Use ui.table to get reference to headers table DOM element.",
-                "jp": "ヘッダーが描画された後に発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGrid への参照を取得します。<br>   ui.table を使用して、ヘッダー テーブルの DOM 要素への参照を取得します。"
-            }
-        },
-        "headerRendering": {
-            "cancellable": true,
-            "args": [
-                {
-                    "name": "evt",
-                    "type": "Event",
-                    "optional": false
-                },
-                {
-                    "name": "ui",
-                    "type": "Object",
-                    "optional": false
-                }
-            ],
-            "description": {
-                "en": "Event fired before the header starts its rendering.<br>   Return false in order to cancel header rendering.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGrid.",
-                "jp": "ヘッダーの描画を開始する前に発生するイベント。<br>   ヘッダーの描画をキャンセルするには、false を返します。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGrid への参照を取得します。"
             }
         },
         "rendered": {
@@ -306,90 +135,9 @@
                 "en": "event fired if there is an error in the request, when the grid is doing a remote operation,<br>    such as data binding, paging, sorting, etc. <br>    use ui.owner to get a reference to the grid<br>    use ui.message to get the error message coming from the server",
                 "jp": "グリッドがリモート操作 (データのバインディング、ページング、並べ替えなど) をしている時に、<br>    リクエストにエラーがある場合に発生するイベント。<br>    ui.owner を使用してグリッドへの参照を取得します。<br>    ui.message を使用して、サーバーからのエラー メッセージを取得します。"
             }
-        },
-        "rowsRendered": {
-            "cancellable": false,
-            "args": [
-                {
-                    "name": "evt",
-                    "type": "Event",
-                    "optional": false
-                },
-                {
-                    "name": "ui",
-                    "type": "Object",
-                    "optional": false
-                }
-            ],
-            "description": {
-                "en": "Event fired after data rows are rendered.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGrid.<br>   Use ui.tbody to get reference to grid's table body.",
-                "jp": "データ行が描画された後に発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGrid への参照を取得します。<br>   ui.tbody を使用して、グリッドのテーブル本体への参照を取得します。"
-            }
-        },
-        "rowsRendering": {
-            "cancellable": true,
-            "args": [
-                {
-                    "name": "evt",
-                    "type": "Event",
-                    "optional": false
-                },
-                {
-                    "name": "ui",
-                    "type": "Object",
-                    "optional": false
-                }
-            ],
-            "description": {
-                "en": "Event fired before actual data rows (TRs) are rendered.<br>   Return false in order to cancel rows rendering. <br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGrid.<br>   Use ui.tbody to get reference to grid's table body.",
-                "jp": "実際のデータ行 (TRs) が描画される前に発生するイベント。<br>   行の描画をキャンセルするには、false を返します。<br>    関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGrid への参照を取得します。<br>   ui.tbody を使用して、グリッドのテーブル本体への参照を取得します。"
-            }
-        },
-        "schemaGenerated": {
-            "cancellable": false,
-            "args": [
-                {
-                    "name": "evt",
-                    "type": "Event",
-                    "optional": false
-                },
-                {
-                    "name": "ui",
-                    "type": "Object",
-                    "optional": false
-                }
-            ],
-            "description": {
-                "en": "Event fired after $.ig.DataSource schema has been generated, in case it needs to be modified.<br>   Function takes arguments evt and ui.<br>   Use ui.owner to get reference to igGrid.<br>   Use ui.schema to get reference to data source schema.<br>   Use ui.dataSource to get reference to data source.",
-                "jp": "修正する必要がある場合に、$.ig.DataSource スキーマが生成された後に発生するイベント。<br>   関数は引数 evt および ui を取得します。<br>   ui.owner を使用して、igGrid への参照を取得します。<br>   ui.schema を使用して、データ ソース スキーマへの参照を取得します。<br>   ui.dataSource を使用して、データ ソースへの参照を取得します。"
-            }
         }
     },
     "properties": {
-        "accessibilityRendering": {
-            "type": "bool",
-            "defaultValue": false,
-            "description": {
-                "en": "if this option is set to true, ARIA and role attributes will be rendered for data records, cells and grid containers",
-                "jp": "このオプションが True に設定されている場合、ARIA およびロール属性がデータ レコード、セル、およびグリッド コンテナーに描画されます。"
-            }
-        },
-        "adjustVirtualHeights": {
-            "type": "bool",
-            "defaultValue": false,
-            "description": {
-                "en": "If this option is set to true, the height of the grid row will be calculated automatically based on the average row height and the visible virtual records. If no average row height is specified, one will be calculated automatically at runtime.",
-                "jp": "このオプションが true に設定した場合、グリッド行の高さがに行の平均の高さと表示バーチャル レコードに基づいて自動的に計算されます。行の平均の高さを指定されていない場合、ランタイムで自動的に計算されます。"
-            }
-        },
-        "aggregateTransactions": {
-            "type": "bool",
-            "defaultValue": false,
-            "description": {
-                "en": "if set to true, the following behavior will take place:<br>    if a new row is added, and then deleted, there will be no transaction added to the log <br>    if a new role is added, edited, then deleted, there will be no transaction added to the log<br>    if several edits are made to a row or an individual cell, this should result in a single transaction<br>    Note: This option takes effect only when autoCommit is set to false.",
-                "jp": "true に設定した場合、次の動作を実行します:<br>    新しい行が追加された後に削除された場合、トランザクションはログに追加されません。<br>    新しい行が追加し、編集して、削除された場合、トランザクションはログに追加されません。<br>    行または特定のセルに複数の編集を実行すると、単一のトランザクションになります。<br>    注: このオプションは、autoCommit が false に設定される場合のみに適用されます。"
-            }
-        },
         "alternateRowStyles": {
             "type": "bool",
             "defaultValue": true,
@@ -398,28 +146,12 @@
                 "jp": "交互行スタイル (奇数行と偶数行で異なるスタイルになる) のレンダリングを有効または無効にします。カスタムの jQuery テンプレートが設定されている場合、これは効果がなく、テンプレート コンテンツ内で行の CSS を手作業で調整する必要があることに注意してください。"
             }
         },
-        "autoAdjustHeight": {
-            "type": "bool",
-            "defaultValue": true,
-            "description": {
-                "en": "If autoAdjustHeight is set to false, the options.height will be set only on the scrolling container, and all other UI elements such as paging footer / filter row/ headers will add on top of that, so the total height of the grid will be more than this value - the height of the scroll container (content area) will not be dynamically calculated. Setting this option to false will usually result in a lot better initial rendering performance for large data sets ( > 1000 rows rendered at once, no virtualization enabled), since no reflows will be made by browsers when accessing DOM properties such as offsetHeight.",
-                "jp": "autoAdjustHeight は false に設定される場合、options.height はスクロール コンテナーのみに設定されます。ページング フッター、フィルター行、ヘッダーなどのすべての他の UI 要素は高さを追加します。グリッドの合計高さはこの値より大きくなります。スクロール コンテナー (コンテンツ領域) の高さは動的に計算されません。このオプションを false に設定すると、大きいデータ セット (> 1000 行の描画、仮想化が無効) の最初の描画パフォーマンスを向上します。offsetHeight などの DOM プロパティにアクセスすると、ブラウザーはリフローしません。"
-            }
-        },
         "autoCommit": {
             "type": "bool",
             "defaultValue": false,
             "description": {
                 "en": "automatically commits the transactions as rows/cells are being edited",
                 "jp": "行またはセルを編集すると、トランザクションを自動的にコミットします。"
-            }
-        },
-        "autofitLastColumn": {
-            "type": "bool",
-            "defaultValue": true,
-            "description": {
-                "en": "If autofitLastColumn is true and all columns' widths are specified and their combined width is less than the grid width then the last column width will be automatically adjusted to fill the entire grid.",
-                "jp": "autofitLastColumn が true ですべての列の幅が指定されていて、合計幅がグリッド幅より小さい場合、最後の列幅がグリッドにフィットするよう自動的に調整されます。"
             }
         },
         "autoFormat": {
@@ -478,22 +210,6 @@
             "description": {
                 "en": "if no columns collection is defined, and autoGenerateColumns is set to true, columns will be inferred from the data source",
                 "jp": "列コレクションが定義されず、autoGenerateColumns が True に設定されている場合、列はデータ ソースから推測されます。"
-            }
-        },
-        "avgColumnWidth": {
-            "type": "string",
-            "defaultValue": null,
-            "description": {
-                "en": " used for virtualization, this is the average value in pixels for a column width ",
-                "jp": " 仮想化に使用します。これは列幅の平均値 (ピクセル単位) です。 "
-            }
-        },
-        "avgRowHeight": {
-            "type": "number",
-            "defaultValue": 25,
-            "description": {
-                "en": " used for virtualization, this is the average value in pixels (default) that will be used to calculate how many rows and which ones to render as the end user scrolls. Also all rows' height will be automatically equal to this value ",
-                "jp": " これは列幅の平均値 (デフォルトでピクセル単位) であり、行数を計算し、エンドユーザーがスクロールするときにどれを描画するかを求めるために使用します。また、すべての行の高さは自動的にこの値に等しくなります。 "
             }
         },
         "caption": {
@@ -690,28 +406,12 @@
                 "jp": "AJAX コール ($.ajax) を使用してデータが取得されるデータ ソースとしてリモート URL を指定します。"
             }
         },
-        "defaultColumnWidth": {
-            "type": "string",
-            "defaultValue": null,
-            "description": {
-                "en": " Default column width that will be set for all columns.",
-                "jp": " すべての列で設定されるデフォルトの列幅。"
-            }
-        },
         "enableHoverStyles": {
             "type": "bool",
             "defaultValue": true,
             "description": {
                 "en": "enables/disables rendering of ui-state-hover classes when the mouse is over a record. this can be useful in templating scenarios, for example, where we don't want to apply hover styling to templated content",
                 "jp": "マウスがレコードの上にある場合、ui-state-hover クラスの描画を有効 / 無効にします。テンプレート化されるコンテンツにホバー スタイルを適用しないテンプレート シナリオなどの場合に便利です。"
-            }
-        },
-        "enableUTCDates": {
-            "type": "bool",
-            "defaultValue": false,
-            "description": {
-                "en": "enables formatting of the dates as UTC. Note that this may be desirable when the dates are coming from a backend, encoded as UTC. Otherwise, if dates are created on the client (in the browser), most probably keeping enableUTCDates to false is the desired behavior",
-                "jp": "UTC として日付の書式を有効にします。注: UTC としてエンコードし、日付がバックエンドから場合に望ましい場合があります。日付がクライアント ( ブラウザー) で作成される場合、enableUTCDates を false に設定することが望ましいです。"
             }
         },
         "features": {
@@ -891,22 +591,6 @@
             "description": {
                 "en": "When dataSource is string defines whether to set data source of type JSONP",
                 "jp": "dataSource が文字列の場合、JSONP タイプのデータ ソースを設定するかどうかを定義します。"
-            }
-        },
-        "localSchemaTransform": {
-            "type": "bool",
-            "defaultValue": true,
-            "description": {
-                "en": "if this option is set to false, the data to which the grid is bound will be used \"as is\" with no additional transformations based on columns defined",
-                "jp": "このオプションが False の場合、グリッドがバインドされるデータは、定義された列に基づく追加の変換なく「そのまま」で使用されます。"
-            }
-        },
-        "mergeUnboundColumns": {
-            "type": "bool",
-            "defaultValue": false,
-            "description": {
-                "en": "Merge unbound columns values inside datasource when data source is remote. If true then the unbound columns are merged to the datasource at runtime - indeed DataSource is expanded with the new data and this could cause performance issues when dataSource is huge, if false then the unbound data is sent to the client",
-                "jp": "データ ソースがリモートの場合、datasource 内に非バインド列を結合します。true の場合、非バインド列がランタイムでデータ ソースにマージされます。DataSource が新しいデータで展開され、データ ソースのサイズが大きい場合にパフォーマンスに影響があります。false の場合は非バインドデータがクライアントに送信されます。"
             }
         },
         "primaryKey": {
@@ -1126,14 +810,6 @@
                 "jp": "行のみ (垂直方向) の仮想化を有効にするオプション。"
             }
         },
-        "serializeTransactionLog": {
-            "type": "bool",
-            "defaultValue": true,
-            "description": {
-                "en": "if true, the transaction log will always be sent in the request for remote data, by the data source. Also this means that if there are values in the log, a POST will be done instead of GET",
-                "jp": "True の場合、トランザクション ログがデータ ソースによってリモート データの要求に常に送られます。また、これは、ログに値がある場合、GET ではなく POST が実行されることを意味します。"
-            }
-        },
         "showFooter": {
             "type": "bool",
             "defaultValue": true,
@@ -1148,48 +824,6 @@
             "description": {
                 "en": "option controlling the visibility of the grid header",
                 "jp": "グリッド ヘッダーの可視性をコントロールするオプション。"
-            }
-        },
-        "tabIndex": {
-            "type": "number",
-            "defaultValue": 0,
-            "description": {
-                "en": "initial tabIndex attribute that will be set on the container element",
-                "jp": "コンテナー要素に設定される初期 tabIndex 属性。"
-            }
-        },
-        "templatingEngine": {
-            "type": "string",
-            "defaultValue": "infragistics",
-            "description": {
-                "en": " the templating engine that will be used to render the grid ",
-                "jp": " グリッドを描画するために使用されるテンプレート エンジン。 "
-            },
-            "valueOptions": [
-                {
-                    "name": "infragistics",
-                    "type": "string",
-                    "description": {
-                        "en": " the grid will use the Infragistics Templating engine to render its content and specific parts of the UI",
-                        "jp": " グリッドは、コンテンツおよび UI の特定の部分を描画するために Infragistics テンプレート エンジンを使用します。"
-                    }
-                },
-                {
-                    "name": "jsRender",
-                    "type": "string",
-                    "description": {
-                        "en": " the grid will use jsRender to render its content and specific parts of the UI",
-                        "jp": " グリッドは、コンテンツおよび UI の特定の部分を描画するために jsRender を使用します。"
-                    }
-                }
-            ]
-        },
-        "updateUrl": {
-            "type": "string",
-            "defaultValue": null,
-            "description": {
-                "en": "URL to which updating requests will be made. If autoCommit is true, updates will be done immediately to the data source, without keeping interim transaction logs",
-                "jp": "更新リクエスト先の URL。autoCommit が True の場合、一時的なトランザクション ログを保持せずにデータ ソースに対する更新が直ちに実行されます。"
             }
         },
         "virtualization": {

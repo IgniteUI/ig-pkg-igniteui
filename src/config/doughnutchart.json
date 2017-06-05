@@ -4,25 +4,6 @@
     "category": null,
     "visual": true,
     "events": {
-        "browserNotSupported": {
-            "cancellable": false,
-            "args": [
-                {
-                    "name": "evt",
-                    "type": "Event",
-                    "optional": false
-                },
-                {
-                    "name": "ui",
-                    "type": "Object",
-                    "optional": false
-                }
-            ],
-            "description": {
-                "en": "event fired when the control is displayed on a non HTML5 compliant browser",
-                "jp": "HTML5 非互換のブラウザでコントロールを表示したときに発生するイベント。"
-            }
-        },
         "holeDimensionsChanged": {
             "cancellable": false,
             "args": [
@@ -366,7 +347,7 @@
                         "jp": "ラベルとリーダー線の間のマージンを取得または設定します。デフォルトは 6 ピクセルです。"
                     }
                 },
-                "labelsPosition": {
+                "leaderLineType": {
                     "type": "string",
                     "defaultValue": "straight",
                     "description": {
