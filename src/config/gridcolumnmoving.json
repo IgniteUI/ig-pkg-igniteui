@@ -365,46 +365,6 @@
                 "jp": "列ヘッダーがドラッグされている間の、ドラッグ マークアップの不透明性を指定します。<br>   値は 0 と 1 の間である必要があります。GroupBy が有効な場合、GroupBy 構成の対応するオプションが、<br>  このオプションに優先して使用されます。"
             }
         },
-        "dropDownMoveFirstText": {
-            "type": "string",
-            "defaultValue": "",
-            "description": {
-                "en": "Specifies caption for the move first dropdown button",
-                "jp": "「最初へ移動」ドロップダウン ボタンのキャプションのテキストを指定します。"
-            }
-        },
-        "dropDownMoveLastText": {
-            "type": "string",
-            "defaultValue": "",
-            "description": {
-                "en": "Specifies caption for the move last dropdown button",
-                "jp": "「最後へ移動」ドロップダウン ボタンのキャプションのテキストを指定します。"
-            }
-        },
-        "dropDownMoveLeftText": {
-            "type": "string",
-            "defaultValue": "",
-            "description": {
-                "en": "Specifies caption for the move left dropdown button",
-                "jp": "「左へ移動」ドロップダウン ボタンのキャプションのテキストを指定します。"
-            }
-        },
-        "dropDownMoveRightText": {
-            "type": "string",
-            "defaultValue": "",
-            "description": {
-                "en": "Specifies caption for the move right dropdown button",
-                "jp": "「右へ移動」ドロップダウン ボタンのキャプションのテキストを指定します。"
-            }
-        },
-        "featureChooserSubmenuText": {
-            "type": "string",
-            "defaultValue": "",
-            "description": {
-                "en": "Specifies caption text for the feature chooser submenu button",
-                "jp": "機能セレクターのサブメニュー ボタンのキャプションのテキストを指定します。"
-            }
-        },
         "hideHeaderContentsDuringDrag": {
             "type": "bool",
             "defaultValue": true,
@@ -481,38 +441,6 @@
                 "jp": "モーダル ダイアログを表示または非表示にするアニメーション時間をミリ秒で指定します。"
             }
         },
-        "movingDialogCaptionButtonAsc": {
-            "type": "string",
-            "defaultValue": "",
-            "description": {
-                "en": "Specifies caption for each move up button in the column moving dialog",
-                "jp": "列移動ダイアログの各 [上へ移動] ボタンのキャプションを指定します。"
-            }
-        },
-        "movingDialogCaptionButtonDesc": {
-            "type": "string",
-            "defaultValue": "",
-            "description": {
-                "en": "Specifies caption for each move down button in the column moving dialog",
-                "jp": "列移動ダイアログの各 [下へ移動] ボタンのキャプションを指定します。"
-            }
-        },
-        "movingDialogCaptionText": {
-            "type": "string",
-            "defaultValue": "",
-            "description": {
-                "en": "Specifies caption text for the column moving dialog",
-                "jp": "[列移動] ダイアログのキャプションのテキストを指定します。"
-            }
-        },
-        "movingDialogDisplayText": {
-            "type": "string",
-            "defaultValue": "",
-            "description": {
-                "en": "Specifies caption text for the feature chooser entry",
-                "jp": "[機能セレクター] エントリのキャプションのテキストを指定します。"
-            }
-        },
         "movingDialogHeight": {
             "type": "number",
             "defaultValue": "",
@@ -535,14 +463,6 @@
             "description": {
                 "en": "Specifies the length (in pixels) between the dragged column and the grid edges below which horizontal scrolling occurs",
                 "jp": "水平スクロールが発生するドラッグされた列と下の列の端の間の長さ (ピクセル) を指定します。"
-            }
-        },
-        "movingToolTipMove": {
-            "type": "string",
-            "defaultValue": "",
-            "description": {
-                "en": "Specifies tooltip text for the move indicator",
-                "jp": "移動インジケーターのツールチップ テキストを指定します。"
             }
         },
         "scrollDelta": {

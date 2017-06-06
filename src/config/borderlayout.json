@@ -4,44 +4,6 @@
     "category": null,
     "visual": true,
     "events": {
-        "internalResized": {
-            "cancellable": false,
-            "args": [
-                {
-                    "name": "evt",
-                    "type": "Event",
-                    "optional": false
-                },
-                {
-                    "name": "ui",
-                    "type": "Object",
-                    "optional": false
-                }
-            ],
-            "description": {
-                "en": "Event fired after items are resized.<br>                Use ui.owner to get a reference to the layout manager performing resizing.",
-                "jp": "項目がサイズ変更された後に発生するイベント。<br>                ui.owner を使用して、サイズ変更を実行するレイアウト マネージャーへの参照を取得します。"
-            }
-        },
-        "internalResizing": {
-            "cancellable": true,
-            "args": [
-                {
-                    "name": "evt",
-                    "type": "Event",
-                    "optional": false
-                },
-                {
-                    "name": "ui",
-                    "type": "Object",
-                    "optional": false
-                }
-            ],
-            "description": {
-                "en": "Event fired before items are resized.<br>                Use ui.owner to get a reference to the layout manager performing resizing.",
-                "jp": "項目がサイズ変更される前に発生するイベント。<br>                ui.owner を使用して、サイズ変更を実行するレイアウト マネージャーへの参照を取得します。"
-            }
-        },
         "itemRendered": {
             "cancellable": false,
             "args": [
@@ -165,83 +127,6 @@
             "description": {
                 "en": "height of the layout container",
                 "jp": "レイアウト コンテナーの高さ。"
-            }
-        },
-        "itemCount": {
-            "type": "number",
-            "defaultValue": null,
-            "description": {
-                "en": "number of items to render, this is only applicable to layouts: vertical and flow",
-                "jp": "描画する項目の数。これは垂直レイアウトおよびフロー レイアウトのみに適用します。"
-            }
-        },
-        "items": {
-            "type": "array",
-            "defaultValue": null,
-            "description": {
-                "en": "an array of item descriptions <br>    this assumes the container is empty, and every item<br>    is described by rowspan,colspan, etc. - otherwise values of<br>    1 are assumed<br>    items can have various properties some of which may not be applicable<br>    depending on the layoutMode.<br>    for example rowSpan/colSpan/colIndex/rowIndex are only applicable to gridlayout",
-                "jp": "項目説明の配列。<br>    コンテナーが空で、各項目は<br>    rowspan、colspan などによって説明される前提条件があります。それ以外の場合、<br>    1 の値を設定します。<br>    layoutMode に基づいて、項目のプロパティを適用しない<br>    可能性があります。<br>    たとえば、rowSpan/colSpan/colIndex/rowIndex は gridlayout のみに適用されます。"
-            },
-            "schema": {
-                "width": {
-                    "required": true,
-                    "type": "string",
-                    "defaultValue": null,
-                    "description": {
-                        "en": "item width",
-                        "jp": "項目の幅"
-                    }
-                },
-                "height": {
-                    "required": true,
-                    "type": "string",
-                    "defaultValue": null,
-                    "description": {
-                        "en": "item height",
-                        "jp": "項目の高さ"
-                    }
-                },
-                "rowSpan": {
-                    "type": "number",
-                    "defaultValue": 1,
-                    "description": {
-                        "en": "item row span - number of rows in a grid layout to span",
-                        "jp": "項目の行スパン - グリッド レイアウトでスパンする行の数"
-                    }
-                },
-                "colSpan": {
-                    "type": "number",
-                    "defaultValue": 1,
-                    "description": {
-                        "en": "item column span - number of columns in a grid layout to span",
-                        "jp": "項目の列スパン - グリッド レイアウトでスパンする列の数"
-                    }
-                },
-                "rowIndex": {
-                    "type": "number",
-                    "defaultValue": 0,
-                    "description": {
-                        "en": "row position",
-                        "jp": "行の位置"
-                    }
-                },
-                "colIndex": {
-                    "type": "number",
-                    "defaultValue": 0,
-                    "description": {
-                        "en": "column position",
-                        "jp": "列の位置"
-                    }
-                }
-            }
-        },
-        "layoutMode": {
-            "hidden": true,
-            "type": "string",
-            "defaultValue": "border",
-            "description": {
-                "en": "Defines border layout",
-                "jp": "境界線のレイアウトを定義します"
             }
         },
         "width": {

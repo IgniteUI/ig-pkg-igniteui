@@ -498,22 +498,6 @@
                         "jp": "$.ig.DataSource からデータを要求するには、$.ig.DataSource により承諾されたリモート URL を指定します。"
                     }
                 },
-                "dataSourceType": {
-                    "type": "string",
-                    "defaultValue": null,
-                    "description": {
-                        "en": "Explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property.",
-                        "jp": "データ ソースのタイプ (\"json\" など) を明示的に設定します。$.ig.DataSource とそのタイプ プロパティのドキュメントを参照してください。"
-                    }
-                },
-                "responseDataKey": {
-                    "type": "string",
-                    "defaultValue": null,
-                    "description": {
-                        "en": "Specifies the name of the property in which data records are held if the response is wrapped.",
-                        "jp": "応答がラップされる場合に、データ レコードが保持されるプロパティの名前を指定します。"
-                    }
-                },
                 "remove": {
                     "type": "bool",
                     "defaultValue": true,
@@ -1423,14 +1407,6 @@
                 "jp": "$.ig.DataSource が受け入れる有効なデータ ソースまたは $.ig.DataSource 自体のインスタンスが可能です。"
             }
         },
-        "dataSourceType": {
-            "type": "string",
-            "defaultValue": null,
-            "description": {
-                "en": "Explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property.",
-                "jp": "データ ソースのタイプ (\"json\" など) を明示的に設定します。$.ig.DataSource とそのタイプ プロパティのドキュメントを参照してください。"
-            }
-        },
         "dataSourceUrl": {
             "type": "string",
             "defaultValue": null,
@@ -1894,14 +1870,6 @@
                 "jp": "チャート上のピラミッド マーカーに使用するためのテンプレートを取得または設定します。<br>   マーカー タイプが<br>   pyramid のシリーズで使用されるマーカー テンプレートを定義します。<br>   提供されるオブジェクトには、描画とオプションでメジャーと呼ばれるプロパティがあります。option: legendItemBadgeTemplate の定義を参照してください。"
             },
             "schemaRef": "dataChart.circleMarkerTemplate"
-        },
-        "responseDataKey": {
-            "type": "string",
-            "defaultValue": null,
-            "description": {
-                "en": "see $.ig.DataSource. Specifies the name of the property in which data records are held if the response is wrapped.",
-                "jp": "$.ig.DataSource を参照してください。応答がラップされる場合に、データ レコードが保持されるプロパティの名前を指定します。"
-            }
         },
         "rightMargin": {
             "type": "number",
@@ -2592,22 +2560,6 @@
                     "description": {
                         "en": "Specifies a remote URL accepted by $.ig.DataSource in order to request data from it",
                         "jp": "$.ig.DataSource からデータを要求するには、$.ig.DataSource により承諾されたリモート URL を指定します。"
-                    }
-                },
-                "dataSourceType": {
-                    "type": "string",
-                    "defaultValue": null,
-                    "description": {
-                        "en": "Explicitly set data source type (such as \"json\"). Please refer to the documentation of $.ig.DataSource and its type property.",
-                        "jp": "データ ソースのタイプ (\"json\" など) を明示的に設定します。$.ig.DataSource とそのタイプ プロパティのドキュメントを参照してください。"
-                    }
-                },
-                "responseDataKey": {
-                    "type": "string",
-                    "defaultValue": null,
-                    "description": {
-                        "en": "Specifies the name of the property in which data records are held if the response is wrapped.",
-                        "jp": "応答がラップされる場合に、データ レコードが保持されるプロパティの名前を指定します。"
                     }
                 },
                 "remove": {
@@ -3520,14 +3472,6 @@
                         "jp": "最高熱色にマップする値を取得または設定します。"
                     }
                 },
-                "heatMaximum": {
-                    "type": "number",
-                    "defaultValue": 50,
-                    "description": {
-                        "en": "Gets or sets the value that maps to the maximum heat color.",
-                        "jp": "最高熱色にマップする値を取得または設定します。"
-                    }
-                },
                 "heatMinimumColor": {
                     "type": "string",
                     "defaultValue": "black",
@@ -3599,14 +3543,6 @@
                     "description": {
                         "en": "Gets or sets the y offset amount to use for the drop shadow.",
                         "jp": "影付きで使用する y オフセットを取得または設定します。"
-                    }
-                },
-                "isTransitionInEnabled": {
-                    "type": "bool",
-                    "defaultValue": false,
-                    "description": {
-                        "en": "Gets or sets if the series should play a transition in animation when the data source is assigned.",
-                        "jp": "データ ソースが割り当てられたときに、シリーズがトランジションのアニメーションを再生するかどうかを取得または設定します。"
                     }
                 },
                 "isTransitionInEnabled": {
@@ -3885,14 +3821,6 @@
                         "jp": "ホバー レイヤーが一番近い値を検索するときに不明な値をスキップするかどうかを取得または設定します。"
                     }
                 },
-                "skipUnknowns": {
-                    "type": "bool",
-                    "defaultValue": false,
-                    "description": {
-                        "en": "Gets or sets whether the hover layer should skip unknown values when trying to find the closest values.",
-                        "jp": "ホバー レイヤーが一番近い値を検索するときに不明な値をスキップするかどうかを取得または設定します。"
-                    }
-                },
                 "verticalLineVisibility": {
                     "type": "bool",
                     "defaultValue": true,
@@ -3991,7 +3919,7 @@
                         }
                     ]
                 },
-                "highlightType": {
+                "tooltipPosition": {
                     "type": "string",
                     "defaultValue": "auto",
                     "description": {
