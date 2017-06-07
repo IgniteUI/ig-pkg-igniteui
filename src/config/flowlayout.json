@@ -117,15 +117,6 @@
                 "jp": "描画する項目の数。これは垂直レイアウトおよびフロー レイアウトのみに適用します。"
             }
         },
-        "layoutMode": {
-            "hidden": true,
-            "type": "string",
-            "defaultValue": "flow",
-            "description": {
-                "en": "Defines flow layout",
-                "jp": "フロー レイアウトを定義します"
-            }
-        },
         "width": {
             "type": "string",
             "defaultValue": null,
