@@ -385,14 +385,6 @@
         }
       }
     },
-    "appointmentDialogSuppress": {
-      "type": "bool",
-      "defaultValue": false,
-      "description": {
-        "en": "Gets/Sets whether the appointment dialog and the related day and appointment popups should be shown.<br>                ",
-        "jp": "予定ダイアログおよび関連する日および予定ポップアップを表示するかどうかを取得または設定します。<br>                "
-      }
-    },
     "height": {
       "type": "string",
       "defaultValue": "100%",

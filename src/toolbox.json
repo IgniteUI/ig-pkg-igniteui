@@ -248,7 +248,8 @@
     "stylesheets": [
         "/css/themes/infragistics/infragistics.theme.css",
         "/css/structure/infragistics.css",
-		"/css/structure/modules/infragistics.ui.scheduler.css"
+		"/css/structure/modules/infragistics.ui.scheduler.css",
+		"/css/structure/modules/infragistics.ui.spreadsheet.css"
     ],
 	"themes": {
 		"bootstrap": {
@@ -256,7 +257,8 @@
 			"stylesheets": [
 				"/css/themes/bootstrap/infragistics.theme.css",
 				"/css/structure/infragistics.css",
-				"/css/structure/modules/infragistics.ui.scheduler.css"
+				"/css/structure/modules/infragistics.ui.scheduler.css",
+				"/css/structure/modules/infragistics.ui.spreadsheet.css"
 			],
 			"imgPath": "/css/images/bootstrap-default-palette.png",
 			"bootstrapCompatible": true,
@@ -267,7 +269,8 @@
 			"stylesheets": [
 				"/css/themes/flatly/infragistics.theme.css",
 				"/css/structure/infragistics.css",
-				"/css/structure/modules/infragistics.ui.scheduler.css"
+				"/css/structure/modules/infragistics.ui.scheduler.css",
+				"/css/structure/modules/infragistics.ui.spreadsheet.css"
 			],
 			"imgPath": "/css/images/bootstrap-flatly-palette.png",
 			"bootstrapCompatible": true,
@@ -278,7 +281,8 @@
 			"stylesheets": [
 				"/css/themes/infragistics/infragistics.theme.css",
 				"/css/structure/infragistics.css",
-				"/css/structure/modules/infragistics.ui.scheduler.css"
+				"/css/structure/modules/infragistics.ui.scheduler.css",
+				"/css/structure/modules/infragistics.ui.spreadsheet.css"
 			],
 			"imgPath": "/css/images/infragistics-default-palette.png",
 			"bootstrapCompatible": false,
@@ -289,7 +293,8 @@
 			"stylesheets": [
 				"/css/themes/infragistics2012/infragistics.theme.css",
 				"/css/structure/infragistics.css",
-				"/css/structure/modules/infragistics.ui.scheduler.css"
+				"/css/structure/modules/infragistics.ui.scheduler.css",
+				"/css/structure/modules/infragistics.ui.spreadsheet.css"
 			],
 			"imgPath": "/css/images/infragistics-2012-palette.png",
 			"bootstrapCompatible": false,
@@ -300,7 +305,8 @@
 			"stylesheets": [
 				"/css/themes/ios/infragistics.theme.css",
 				"/css/structure/infragistics.css",
-				"/css/structure/modules/infragistics.ui.scheduler.css"
+				"/css/structure/modules/infragistics.ui.scheduler.css",
+				"/css/structure/modules/infragistics.ui.spreadsheet.css"
 			],
 			"imgPath": "/css/images/infragistics-ios-palette.png",
 			"bootstrapCompatible": false,
@@ -311,7 +317,8 @@
 			"stylesheets": [
 				"/css/themes/metro/infragistics.theme.css",
 				"/css/structure/infragistics.css",
-				"/css/structure/modules/infragistics.ui.scheduler.css"
+				"/css/structure/modules/infragistics.ui.scheduler.css",
+				"/css/structure/modules/infragistics.ui.spreadsheet.css"
 			],
 			"imgPath": "/css/images/infragistics-metro-palette.png",
 			"bootstrapCompatible": false,
@@ -322,7 +329,8 @@
 			"stylesheets": [
 				"/css/themes/superhero/infragistics.theme.css",
 				"/css/structure/infragistics.css",
-				"/css/structure/modules/infragistics.ui.scheduler.css"
+				"/css/structure/modules/infragistics.ui.scheduler.css",
+				"/css/structure/modules/infragistics.ui.spreadsheet.css"
 			],
 			"imgPath": "/css/images/bootstrap-superhero-palette.png",
 			"bootstrapCompatible": true,
@@ -333,7 +341,8 @@
 			"stylesheets": [
 				"/css/themes/yeti/infragistics.theme.css",
 				"/css/structure/infragistics.css",
-				"/css/structure/modules/infragistics.ui.scheduler.css"
+				"/css/structure/modules/infragistics.ui.scheduler.css",
+				"/css/structure/modules/infragistics.ui.spreadsheet.css"
 			],
 			"imgPath": "/css/images/bootstrap-yeti-palette.png",
 			"bootstrapCompatible": true,
@@ -371,11 +380,9 @@
     	},
 		"spreadsheet": {
     		"id": "spreadsheet",
-			"dependsOn": ["core", "lob", "ext_core", "ext_text", "ext_collections",
-				"ext_io", "ext_ui", "ext_collectionsExtended", "ext_threading", "ext_web", "xml",
-				"documents_core", "documents_core_openxml",
-				"excel_core", "excel_functions", "excel_serialization_biff8", "excel_serialization_openxml",
-				"undo", "dv_core", "dv_jquerydom",
+			"dependsOn": ["core", "lob", "ext_core", "ext_collections", "ext_text", "ext_collectionsExtended",
+				"ext_io", "ext_ui", "ext_threading", "documents_core", "ext_web", "excel_core",  "excel_functions", "xml",
+				"documents_core_openxml", "dv_core",  "excel_serialization_openxml", "dv_jquerydom", "undo",
 				"spreadsheet", "ui_spreadsheet"],
     		"toolboxTitle": "Spreadsheet",
 			"componentPlugin": "spreadsheet-component-plugin", 
