@@ -1,0 +1,472 @@
+﻿{
+  "overview": null,
+  "name": "ui.igSpreadsheet",
+  "category": null,
+  "visual": true,
+  "events": {
+    "actionExecuted": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Invoked when an action is executed on the Spreadsheet.",
+        "jp": "アクションが Spreadsheet で実行されるときに呼び出されます。"
+      }
+    },
+    "actionExecuting": {
+      "cancellable": true,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Invoked when an action is about to be executed by the Spreadsheet.",
+        "jp": "アクションが Spreadsheet で実行されようとするときに呼び出されます。"
+      }
+    },
+    "activeCellChanged": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Invoked when the activeCell of the Spreadsheet has changed.",
+        "jp": "Spreadsheet の activeCell が変更されたときに呼び出されます。"
+      }
+    },
+    "activePaneChanged": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Invoked when the activePane of the Spreadsheet has changed.",
+        "jp": "Spreadsheet の activePane が変更されたときに呼び出されます。"
+      }
+    },
+    "activeWorksheetChanged": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Invoked when the activeWorksheet of the Spreadsheet has changed.",
+        "jp": "Spreadsheet の activeWorksheet が変更されたときに呼び出されます。"
+      }
+    },
+    "editRangePasswordNeeded": {
+      "cancellable": true,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Invoked when the Spreadsheet is performing an operation on a protected Worksheet and there is a single range that may be unlocked to allow the operation to be performed.",
+        "jp": "保護された Worksheet で Spreadsheet が操作を実行し、操作の実行を許可するためにロック解除する単一の範囲がある場合に呼び出されます。"
+      }
+    },
+    "hyperlinkExecuting": {
+      "cancellable": true,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Invoked when a hyperlink is being followed in the Spreadsheet.",
+        "jp": "ハイパーリンクが Spreadsheet で開かれる時に発生します。"
+      }
+    },
+    "selectionChanged": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Invoked when the selection for a ig.spreadsheet.SpreadsheetPane of the Spreadsheet is changed.",
+        "jp": "Spreadsheet の ig.spreadsheet.SpreadsheetPane の選択が変更されたときに呼び出されます。"
+      }
+    },
+    "userPromptDisplaying": {
+      "cancellable": true,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Invoked when the user will be prompted with a message regarding an operation that is being performed.",
+        "jp": "ユーザーが操作に関するメッセージを表示されるときに呼び出されます。"
+      }
+    },
+    "workbookDirtied": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Invoked when a change has been made to the workbook that might require a save.<br>&nbsp;Note: This event is invoked asynchronously with regards to the change(s) that <br>&nbsp;have occurred. Also some changes alone are not considered to dirty the Workbook even though it <br>&nbsp;does change state on the Workbook or one of its subobjects. An example of that would be a zoom <br>&nbsp;type operation (e.g. changing the magnificationInNormalView).",
+        "jp": "ワークブックに対して、保存が必要な可能性のある変更がされたときに呼び出されます。<br>&nbsp;注: このイベントは、発生した変更とは非同期的に呼び出されます。また一部の変更だけは、ワークブックまたはそのサブオブジェクトの 1 つの状態が変更されてもダーディと見なされません。その一例として、ズーム操作 （magnificationInNormalView の変更など） があります。"
+      }
+    }
+  },
+  "properties": {
+    "activeCell": {
+      "type": "string",
+      "defaultValue": null,
+      "description": {
+        "en": "Returns or sets the A1 format address of the current active cell within the selected worksheet. <br>&nbsp;&nbsp;&nbsp;",
+        "jp": "選択されたワークシート内の現在アクティブ セルの A1 書式アドレスを返すか、設定します。<br>&nbsp;&nbsp;&nbsp;"
+      },
+      "valueOptions": null
+    },
+    "activeWorksheet": {
+      "type": "unknown",
+      "defaultValue": null,
+      "description": {
+        "en": "Returns or sets the Worksheet from the workbook whose content should be displayed within the control.<br>&nbsp;",
+        "jp": "コンテンツがコントロール内に表示されるワークブックからワークシートを返すか、設定します。<br>&nbsp;"
+      },
+      "valueOptions": null
+    },
+    "allowAddWorksheet": {
+      "type": "bool",
+      "defaultValue": true,
+      "description": {
+        "en": "Returns or sets a boolean indicating whether the spreadsheet allows adding worksheets.<br>&nbsp;",
+        "jp": "スプレッドシートでワークシートの追加を許可するかどうかを示すブール値を返すか、設定します。<br>&nbsp;"
+      },
+      "valueOptions": null
+    },
+    "allowDeleteWorksheet": {
+      "type": "bool",
+      "defaultValue": true,
+      "description": {
+        "en": "Returns or sets a boolean indicating whether the spreadsheet allows deleting worksheets.<br>&nbsp;",
+        "jp": "スプレッドシートでワークシートの削除を許可するかどうかを示すブール値を返すか、設定します。<br>&nbsp;"
+      },
+      "valueOptions": null
+    },
+    "areGridlinesVisible": {
+      "type": "bool",
+      "defaultValue": true,
+      "description": {
+        "en": "Returns or sets a boolean indicating if the grid lines are displayed in the selected worksheets.<br>&nbsp;",
+        "jp": "グリッド線が選択のワークシートに表示されるかどうかを示すブール値を返すか、設定します。<br>&nbsp;"
+      },
+      "valueOptions": null
+    },
+    "areHeadersVisible": {
+      "type": "bool",
+      "defaultValue": true,
+      "description": {
+        "en": "Returns or sets a boolean indicating if the row and column headers are displayed for the selected worksheets.<br>&nbsp;",
+        "jp": "行と列のヘッダーが選択のワークシートに表示されるかどうかを示すブール値を返すか、設定します。<br>&nbsp;"
+      },
+      "valueOptions": null
+    },
+    "enterKeyNavigationDirection": {
+      "type": "string",
+      "defaultValue": "down",
+      "description": {
+        "en": " Returns or sets an enumeration indicating the direction of the cell adjacent to the activeCell that should be activated when the enter key is pressed.&nbsp;This property is only used if the isEnterKeyNavigationEnabled is set to true. Also, the reverse direction is <br>&nbsp;navigated when Shift + Enter are pressed.<br>\n",
+        "jp": " Enter キーを押すときにアクティブ化される activeCell に隣接するセルの方向示す列挙体を返すか、設定します。&nbsp;このプロパティは、isEnterKeyNavigationEnabled が True に設定されている場合にのみ使用できます。また、Shift + Enter を押すと反対の方向へ移動します。<br>\n"
+      },
+      "valueOptions": [
+        {
+          "name": "down",
+          "type": "string",
+          "description": {
+            "en": " The cell below should be activated.",
+            "jp": " 下のセルをアクティブ化する必要があります。"
+          }
+        },
+        {
+          "name": "right",
+          "type": "string",
+          "description": {
+            "en": " The cell to the right should be activated",
+            "jp": " 右のセルをアクティブ化する必要があります。"
+          }
+        },
+        {
+          "name": "up",
+          "type": "string",
+          "description": {
+            "en": " The cell above should be activated.",
+            "jp": " 上のセルをアクティブ化する必要があります。"
+          }
+        },
+        {
+          "name": "left",
+          "type": "string",
+          "description": {
+            "en": " The cell to the left should be activated",
+            "jp": " 左のセルをアクティブ化する必要があります。"
+          }
+        }
+      ]
+    },
+    "height": {
+      "type": "string",
+      "defaultValue": null,
+      "description": {
+        "en": " The height of the spreadsheet. It can be set as a number in pixels, string (px) or percentage (%).\n",
+        "jp": " スプレッドシートの高さ。ピクセル、文字列 (px)、またはパーセンテージ (%) を数字で設定できます。\n"
+      },
+      "valueOptions": [
+        {
+          "name": "string",
+          "type": "string",
+          "description": {
+            "en": " The widget height can be set in pixels (px) and percentage (%).",
+            "jp": " ウィジェットの高さはピクセル (px) およびパーセント (%) で設定できます。"
+          }
+        },
+        {
+          "name": "number",
+          "type": "number",
+          "description": {
+            "en": " The widget height can be set as a number",
+            "jp": " ウィジェットの高さは数値として設定できます。"
+          }
+        }
+      ]
+    },
+    "isEnterKeyNavigationEnabled": {
+      "type": "bool",
+      "defaultValue": true,
+      "description": {
+        "en": "Returns or sets a boolean indicating whether the adjacent cell indicated by the enterKeyNavigationDirection should be navigated to when the enter key is pressed.<br>&nbsp;",
+        "jp": "Enter キーを押したときに enterKeyNavigationDirection で示されている隣接するセルが移動するかどうかを示すブール値を返す、または設定します。<br>&nbsp;"
+      },
+      "valueOptions": null
+    },
+    "isFormulaBarVisible": {
+      "type": "bool",
+      "defaultValue": true,
+      "description": {
+        "en": "Returns or sets a boolean indicating if the formula bar is displayed within the Spreadsheet.<br>&nbsp;",
+        "jp": "数式バーが Spreadsheet で表示されるかどうかを示すブール値を返すか、設定します。<br>&nbsp;"
+      },
+      "valueOptions": null
+    },
+    "isInEndMode": {
+      "type": "bool",
+      "defaultValue": false,
+      "description": {
+        "en": "Returns or sets a boolean indicating whether the control is in \"End mode\".<br>&nbsp;End mode is a mode that affects certain keyboard navigation such as navigating with the arrow keys. For example when in <br>&nbsp;end mode and one presses the right arrow, the activeCell will be changed to be the first cell to the right of the current ActiveCell <br>&nbsp;that has a value (even if the value is \"\"). If there were no cells to the right with a value then it would activate the right most cell in that row. End <br>&nbsp;mode will end automatically such as when one presses an arrow key.<br>&nbsp;",
+        "jp": "コントロールが \"End mode\" かどうかを示すブール値を返すか、設定します。<br>&nbsp;終了モードとは、方向キーを使用し移動をするようなキーボード ナビゲーションに影響を及ぼすモードです。たとえば、終了モード中に右方向キーを押すと activeCell は現在の ActiveCell から右に値を持つ最初のセルに変更されます (たとえ値が \"\" である場合)。右に値を持つセルがない場合、この行で一番右にあるセルをアクティブ化します。終了モードは、方向キーを押すときのように自動的に終了します。<br>&nbsp;"
+      },
+      "valueOptions": null
+    },
+    "isScrollLocked": {
+      "type": "bool",
+      "defaultValue": null,
+      "description": {
+        "en": "Returns or sets a boolean indicating whether the scroll lock key is toggled.<br>&nbsp;This property is used when certain keys are pressed while the control has focus. For example <br>&nbsp;if an arrow key is pressed while the scroll lock is enabled the cell area will be scrolled rather than changing <br>&nbsp;the active cell. Note: This property is not maintained/changed by the control. It is just queried when <br>&nbsp;performing actions that consider whether the scroll lock is enabled.<br>&nbsp;",
+        "jp": "Scroll Lock キーが切り替わったかどうかを示すブール値を取得または設定します。<br>&nbsp;このプロパティは、コントロールにフォーカスがある場合に特定のキーが押されたときに使用されます。たとえば、スクロール ロックが有効な場合に矢印キーが押されたら、アクティブ セルを変更せずにセル領域がスクロールされます。注: このプロパティはコントロールによって処理/変更されません。スクロール ロックが有効かどうかに影響される操作の実行でクエリされます。<br>&nbsp;"
+      },
+      "valueOptions": null
+    },
+    "isUndoEnabled": {
+      "type": "bool",
+      "defaultValue": true,
+      "description": {
+        "en": "Returns or sets a boolean indicating whether undo is enabled for the control.<br>&nbsp;",
+        "jp": "元に戻すがコントロールで有効かどうかを示すブール値を返すか、設定します。<br>&nbsp;"
+      },
+      "valueOptions": null
+    },
+    "nameBoxWidth": {
+      "type": "number",
+      "defaultValue": 102.0,
+      "description": {
+        "en": "Returns or sets the width of the name box within the formula bar.<br>&nbsp;",
+        "jp": "数式バー内の名前ボックスの幅を返すか、設定します。<br>&nbsp;"
+      },
+      "valueOptions": null
+    },
+    "selectedWorksheets": {
+      "type": "unknown",
+      "defaultValue": null,
+      "description": {
+        "en": "type=\"ig.excel.Worksheet[]\" Returns or sets an array of the Worksheets whose tabs are selected.<br>&nbsp;",
+        "jp": "type=\"ig.excel.Worksheet[]\" タブが選択されるワークシートの配列を返すか、設定します。<br>&nbsp;"
+      },
+      "valueOptions": null
+    },
+    "selectionMode": {
+      "type": "string",
+      "defaultValue": "normal",
+      "description": {
+        "en": " Returns or sets a value indicating how the selection is updated when interacting with the cells via the mouse or keyboard.\n",
+        "jp": " マウスやキーボードでセルを操作しているときに選択が更新される方法を示す値を返すか、設定します。\n"
+      },
+      "valueOptions": [
+        {
+          "name": "normal",
+          "type": "string",
+          "description": {
+            "en": " The selection is replaced when dragging the mouse to select a cell or range of cells. Similarly when navigating via the keyboard a new selection is created. One may add a new range by holding the Ctrl key and using the mouse and one may alter the selection range containing the active cell by holding the Shift key down while clicking with the mouse or navigating with the keyboard such as with the arrow keys.",
+            "jp": " セルまたはセルの範囲を選択するためにマウスをドラッグすると選択が置き換えられます。同様に、キーボードで移動すると新しい選択範囲が作成されます。Ctrl キーを押したままマウスを使用することで新しい範囲を追加できます。また、Shift キーを押したままマウスでクリックする、あるいはキーボードで移動することでアクティブ セルを含む選択範囲を変更できます。"
+          }
+        },
+        {
+          "name": "extendSelection",
+          "type": "string",
+          "description": {
+            "en": " The selection range in the cellRanges representing the active cell is updated as one uses the mouse to select a cell or navigating via the keyboard.",
+            "jp": " マウスでセルを選択する、またはキーボードで移動するときにアクティブ セルが更新されていることを示す cellRanges の選択範囲。"
+          }
+        },
+        {
+          "name": "addToSelection",
+          "type": "string",
+          "description": {
+            "en": " New cell ranges are added to the cellRanges without needing to hold down the ctrl key when dragging via the mouse and a range is added with the first arrow key navigation after entering the mode. One can enter the mode by pressing Shift+F8.",
+            "jp": " Ctrl キーを押したままマウスでドラッグをしなくても cellRanges に新しいセル範囲を追加します。このモードに入ったときに最初の方向キー ナビゲーションで範囲を追加します。シフト+F8 を押すとモードに入ります。"
+          }
+        }
+      ]
+    },
+    "validationInputMessagePosition": {
+      "type": "object",
+      "defaultValue": null,
+      "description": {
+        "en": "Returns or sets the position of the screen tip used to display the input message for the data validation rule associated with the active cell.<br>&nbsp;<br>&nbsp;The provided object should have numeric properties called x and y.",
+        "jp": "アクティブ セルと関連付けられたデータ検証条件の入力メッセージの表示に使用される画面ヒントの位置を返すか、設定します。<br>&nbsp;<br>&nbsp;提供されたオブジェクトは、x および y と呼ばれる数値プロパティを持っている必要があります。"
+      },
+      "valueOptions": null
+    },
+    "width": {
+      "type": "string",
+      "defaultValue": null,
+      "description": {
+        "en": " The width of the spreadsheet. It can be set as a number in pixels, string (px) or percentage (%).\n",
+        "jp": " スプレッドシートの幅。ピクセル、文字列 (px)、またはパーセンテージ (%) を数字で設定できます。\n"
+      },
+      "valueOptions": [
+        {
+          "name": "string",
+          "type": "string",
+          "description": {
+            "en": " The widget width can be set in pixels (px) and percentage (%).",
+            "jp": " ウィジェットの幅をピクセル (px) またはパーセンテージ (%) に設定できます。"
+          }
+        },
+        {
+          "name": "number",
+          "type": "number",
+          "description": {
+            "en": " The widget width can be set as a number",
+            "jp": " ウィジェット幅は数値として設定できます。"
+          }
+        }
+      ]
+    },
+    "workbook": {
+      "type": "unknown",
+      "defaultValue": null,
+      "description": {
+        "en": "Returns or sets the workbook whose information is displayed in the control.<br>&nbsp;",
+        "jp": "情報がコントロールで表示されるワークブックを返すか、設定します。<br>&nbsp;"
+      },
+      "valueOptions": null
+    },
+    "zoomLevel": {
+      "type": "number",
+      "defaultValue": 100.0,
+      "description": {
+        "en": "Returns or sets the magnification of the selected worksheets.<br>&nbsp;",
+        "jp": "選択済みのワークシートの倍率を返すか、設定します。<br>&nbsp;"
+      },
+      "valueOptions": null
+    }
+  }
+}

@@ -39,19 +39,224 @@
 			},
             "lazyLoad": true,
             "id": "dv"
+        },
+		{
+            "url": {
+				"en": "js/modules/infragistics.ext_core.js",
+				"jp": "js/jp/modules/infragistics.ext_core.js"
+			},
+            "lazyLoad": true,
+            "id": "ext_core"
+        },
+        {
+		    "url": {
+				"en": "js/modules/infragistics.ext_text.js",
+				"jp": "js/jp/modules/infragistics.ext_text.js"
+			},
+            "lazyLoad": true,
+            "id": "ext_text"
+        },
+        {
+		    "url": {
+				"en": "js/modules/infragistics.ext_collections.js",
+				"jp": "js/jp/modules/infragistics.ext_collections.js"
+			},
+            "lazyLoad": true,
+            "id": "ext_collections"
+        },
+		{
+            "url": {
+				"en": "js/modules/infragistics.ext_io.js",
+				"jp": "js/jp/modules/infragistics.ext_io.js"
+			},
+            "lazyLoad": true,
+            "id": "ext_io"
+        },
+        {
+		    "url": {
+				"en": "js/modules/infragistics.ext_ui.js",
+				"jp": "js/jp/modules/infragistics.ext_ui.js"
+			},
+            "lazyLoad": true,
+            "id": "ext_ui"
+        },
+        {
+		    "url": {
+				"en": "js/modules/infragistics.ext_collectionsExtended.js",
+				"jp": "js/jp/modules/infragistics.ext_collectionsExtended.js"
+			},
+            "lazyLoad": true,
+            "id": "ext_collectionsExtended"
+        },
+		{
+            "url": {
+				"en": "js/modules/infragistics.ext_threading.js",
+				"jp": "js/jp/modules/infragistics.ext_threading.js"
+			},
+            "lazyLoad": true,
+            "id": "ext_threading"
+        },
+        {
+		    "url": {
+				"en": "js/modules/infragistics.ext_web.js",
+				"jp": "js/jp/modules/infragistics.ext_web.js"
+			},
+            "lazyLoad": true,
+            "id": "ext_web"
+        },
+        {
+		    "url": {
+				"en": "js/modules/infragistics.xml.js",
+				"jp": "js/jp/modules/infragistics.xml.js"
+			},
+            "lazyLoad": true,
+            "id": "xml"
+        },
+		{
+		    "url": {
+				"en": "js/modules/infragistics.dv_core.js",
+				"jp": "js/jp/modules/infragistics.dv_core.js"
+			},
+            "lazyLoad": true,
+            "id": "dv_core"
+        },
+        {
+		    "url": {
+				"en": "js/modules/infragistics.dv_jquerydom.js",
+				"jp": "js/jp/modules/infragistics.dv_jquerydom.js"
+			},
+            "lazyLoad": true,
+            "id": "dv_jquerydom"
+        },
+		{
+		    "url": {
+				"en": "js/modules/infragistics.dv_jquerydom.js",
+				"jp": "js/jp/modules/infragistics.dv_jquerydom.js"
+			},
+            "lazyLoad": true,
+            "id": "dv_jquerydom"
+        },
+		{
+            "url": {
+				"en": "js/modules/infragistics.documents.core_core.js",
+				"jp": "js/jp/modules/infragistics.documents.core_core.js"
+			},
+            "lazyLoad": true,
+            "id": "documents_core"
+        },
+        {
+		    "url": {
+				"en": "js/modules/infragistics.documents.core_openxml.js",
+				"jp": "js/jp/modules/infragistics.documents.core_openxml.js"
+			},
+            "lazyLoad": true,
+            "id": "documents_core_openxml"
+        },
+		{
+            "url": {
+				"en": "js/modules/infragistics.excel_core.js",
+				"jp": "js/jp/modules/infragistics.excel_core.js"
+			},
+            "lazyLoad": true,
+            "id": "excel_core"
+        },
+        {
+		    "url": {
+				"en": "js/modules/infragistics.excel_functions.js",
+				"jp": "js/jp/modules/infragistics.excel_functions.js"
+			},
+            "lazyLoad": true,
+            "id": "excel_functions"
+        },
+		{
+            "url": {
+				"en": "js/modules/infragistics.excel_serialization_biff8.js",
+				"jp": "js/jp/modules/infragistics.excel_serialization_biff8.js"
+			},
+            "lazyLoad": true,
+            "id": "excel_serialization_biff8"
+        },
+        {
+		    "url": {
+				"en": "js/modules/infragistics.excel_serialization_openxml.js",
+				"jp": "js/jp/modules/infragistics.excel_serialization_openxml.js"
+			},
+            "lazyLoad": true,
+            "id": "excel_serialization_openxml"
+        },
+		{
+		    "url": {
+				"en": "js/modules/infragistics.undo.js",
+				"jp": "js/jp/modules/infragistics.undo.js"
+			},
+            "lazyLoad": true,
+            "id": "undo"
+        },
+
+		{
+		    "url": {
+				"en": "js/modules/infragistics.scheduler.core.js",
+				"jp": "js/jp/modules/infragistics.scheduler.core.js"
+			},
+            "lazyLoad": true,
+            "id": "scheduler_core"
+        },
+		{
+		    "url": {
+				"en": "js/modules/infragistics.ui.scheduler.core.js",
+				"jp": "js/jp/modules/infragistics.ui.scheduler.core.js"
+			},
+            "lazyLoad": true,
+            "id": "ui_scheduler_core"
+        },
+
+
+        {
+		    "url": {
+				"en": "js/modules/infragistics.ui.scheduler.js",
+				"jp": "js/jp/modules/infragistics.ui.scheduler.js"
+			},
+            "lazyLoad": true,
+            "id": "ui_scheduler"
+        },
+		{
+		    "url": {
+				"en": "js/schedulerDataSource.js",
+				"jp": "js/jp/schedulerDataSource.js"
+			},
+            "lazyLoad": true,
+            "id": "ui_scheduler_datasource"
+        },
+		{
+		    "url": {
+				"en": "js/modules/infragistics.spreadsheet.js",
+				"jp": "js/jp/modules/infragistics.spreadsheet.js"
+			},
+            "lazyLoad": true,
+            "id": "spreadsheet"
+        },
+		{
+		    "url": {
+				"en": "js/modules/infragistics.ui.spreadsheet.js",
+				"jp": "js/modules/jp/infragistics.ui.spreadsheet.js"
+			},
+            "lazyLoad": true,
+            "id": "ui_spreadsheet"
         }
     ],
     "stylesheetsComment": "",
     "stylesheets": [
         "/css/themes/infragistics/infragistics.theme.css",
-        "/css/structure/infragistics.css"
+        "/css/structure/infragistics.css",
+		"/css/structure/modules/infragistics.ui.scheduler.css"
     ],
 	"themes": {
 		"bootstrap": {
 			"displayName": "Bootstrap Default",
 			"stylesheets": [
 				"/css/themes/bootstrap/infragistics.theme.css",
-				"/css/structure/infragistics.css"
+				"/css/structure/infragistics.css",
+				"/css/structure/modules/infragistics.ui.scheduler.css"
 			],
 			"imgPath": "/css/images/bootstrap-default-palette.png",
 			"bootstrapCompatible": true,
@@ -61,7 +266,8 @@
 			"displayName": "Bootstrap Flatly",
 			"stylesheets": [
 				"/css/themes/flatly/infragistics.theme.css",
-				"/css/structure/infragistics.css"
+				"/css/structure/infragistics.css",
+				"/css/structure/modules/infragistics.ui.scheduler.css"
 			],
 			"imgPath": "/css/images/bootstrap-flatly-palette.png",
 			"bootstrapCompatible": true,
@@ -71,7 +277,8 @@
 			"displayName": "Infragistics Default",
 			"stylesheets": [
 				"/css/themes/infragistics/infragistics.theme.css",
-				"/css/structure/infragistics.css"
+				"/css/structure/infragistics.css",
+				"/css/structure/modules/infragistics.ui.scheduler.css"
 			],
 			"imgPath": "/css/images/infragistics-default-palette.png",
 			"bootstrapCompatible": false,
@@ -81,7 +288,8 @@
 			"displayName": "Infragistics 2012",
 			"stylesheets": [
 				"/css/themes/infragistics2012/infragistics.theme.css",
-				"/css/structure/infragistics.css"
+				"/css/structure/infragistics.css",
+				"/css/structure/modules/infragistics.ui.scheduler.css"
 			],
 			"imgPath": "/css/images/infragistics-2012-palette.png",
 			"bootstrapCompatible": false,
@@ -91,7 +299,8 @@
 			"displayName": "Infragistics iOS",
 			"stylesheets": [
 				"/css/themes/ios/infragistics.theme.css",
-				"/css/structure/infragistics.css"
+				"/css/structure/infragistics.css",
+				"/css/structure/modules/infragistics.ui.scheduler.css"
 			],
 			"imgPath": "/css/images/infragistics-ios-palette.png",
 			"bootstrapCompatible": false,
@@ -101,7 +310,8 @@
 			"displayName": "Infragistics Metro",
 			"stylesheets": [
 				"/css/themes/metro/infragistics.theme.css",
-				"/css/structure/infragistics.css"
+				"/css/structure/infragistics.css",
+				"/css/structure/modules/infragistics.ui.scheduler.css"
 			],
 			"imgPath": "/css/images/infragistics-metro-palette.png",
 			"bootstrapCompatible": false,
@@ -111,7 +321,8 @@
 			"displayName": "Bootstrap Superhero",
 			"stylesheets": [
 				"/css/themes/superhero/infragistics.theme.css",
-				"/css/structure/infragistics.css"
+				"/css/structure/infragistics.css",
+				"/css/structure/modules/infragistics.ui.scheduler.css"
 			],
 			"imgPath": "/css/images/bootstrap-superhero-palette.png",
 			"bootstrapCompatible": true,
@@ -121,7 +332,8 @@
 			"displayName": "Bootstrap Yeti",
 			"stylesheets": [
 				"/css/themes/yeti/infragistics.theme.css",
-				"/css/structure/infragistics.css"
+				"/css/structure/infragistics.css",
+				"/css/structure/modules/infragistics.ui.scheduler.css"
 			],
 			"imgPath": "/css/images/bootstrap-yeti-palette.png",
 			"bootstrapCompatible": true,
@@ -138,6 +350,45 @@
     "codeTemplatesPath": "templates",
     "requiresInitialization": true,
     "components": {
+		"scheduler": {
+    		"id": "scheduler",
+			"dependsOn": ["core", "lob", "ext_core", "ext_text", "ext_collections",
+				"ext_io", "ext_ui", "ext_collectionsExtended", "ext_threading", "ext_web",
+				"xml", "dv_core", "dv_jquerydom", 
+				"scheduler_core", "ui_scheduler_core", "ui_scheduler", "ui_scheduler_datasource"],
+    		"toolboxTitle": "Scheduler",
+			"componentPlugin": "scheduler-component-plugin",
+    		"icon": "scheduler.png",
+			"dataBoundable": true,
+    		"dragDropIcon": "scheduler-dragdrop.png",
+    		"category": "lists",
+    		"visual": true,
+    		"framework": false,
+    		"width": 300,
+    		"height": 300,
+			"dataSource": "scheduleListDataSource",
+			"defaultOptions": { "width": "75%", "height": "700", "views": ["monthView", "agendaView"], "viewMode": "monthView" }
+    	},
+		"spreadsheet": {
+    		"id": "spreadsheet",
+			"dependsOn": ["core", "lob", "ext_core", "ext_text", "ext_collections",
+				"ext_io", "ext_ui", "ext_collectionsExtended", "ext_threading", "ext_web", "xml",
+				"documents_core", "documents_core_openxml",
+				"excel_core", "excel_functions", "excel_serialization_biff8", "excel_serialization_openxml",
+				"undo", "dv_core", "dv_jquerydom",
+				"spreadsheet", "ui_spreadsheet"],
+    		"toolboxTitle": "Spreadsheet",
+			"componentPlugin": "spreadsheet-component-plugin", 
+    		"icon": "spreadsheet.png",
+			"dataBoundable": true,
+    		"dragDropIcon": "spreadsheet-dragdrop.png",
+    		"category": "lists",
+    		"visual": true,
+    		"framework": false,
+    		"width": 300,
+    		"height": 300,
+			"defaultOptions": { "width": "75%", "height": "700", "isFormulaBarVisible": true }
+    	},
     	"grid": {
     		"id": "grid",
     		"toolboxTitle": "Grid",

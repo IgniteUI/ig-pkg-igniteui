@@ -1,0 +1,616 @@
+﻿{
+  "overview": null,
+  "name": "ui.igScheduler",
+  "category": null,
+  "visual": true,
+  "events": {
+    "agendaRangeChanged": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Fired after agenda view range is changed when using previous and next buttons (fired only in Agenda View)",
+        "jp": "[前へ] および [次へ] ボタンによって予定一覧ビューの範囲が変更した後に発生されます。予定一覧ビューのみで発生されます。"
+      }
+    },
+    "agendaRangeChanging": {
+      "cancellable": true,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Fired before agenda view range is changed when using previous and next buttons (fired only in Agenda View)",
+        "jp": "[前へ] および [次へ] ボタンによって予定一覧ビューの範囲が変更する前に発生されます。予定一覧ビューのみで発生されます。"
+      }
+    },
+    "appointmentCreated": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Fired after an appointment is created.",
+        "jp": "予定が作成された後に発生します。"
+      }
+    },
+    "appointmentCreating": {
+      "cancellable": true,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Fired before an appointment is created.",
+        "jp": "予定が作成される前に発生します。"
+      }
+    },
+    "appointmentDeleted": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Fired after an appointment is deleted.",
+        "jp": "予定が削除された後に発生します。"
+      }
+    },
+    "appointmentDeleting": {
+      "cancellable": true,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Fired before an appointment is deleted.",
+        "jp": "予定が削除される前に発生します。"
+      }
+    },
+    "appointmentDialogClosed": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Fired after closing the dialog window for adding/editing appointment.",
+        "jp": "予定の追加/編集のダイアログ ウィンドウが閉じた後に発生されます。"
+      }
+    },
+    "appointmentDialogClosing": {
+      "cancellable": true,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Fired before closing the dialog for adding/editing appointment.",
+        "jp": "予定の追加/編集のダイアログが閉じる前に発生されます。"
+      }
+    },
+    "appointmentDialogOpened": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Fired after opening the dialog for creating/editing appointment.",
+        "jp": "予定の作成/編集のダイアログが開いた後に発生されます。"
+      }
+    },
+    "appointmentDialogOpening": {
+      "cancellable": true,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Fired before opening the dialog for creating/editing appointment.",
+        "jp": "予定の作成/編集のダイアログが開く前に発生されます。"
+      }
+    },
+    "appointmentEdited": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Fired after an appointment is edited.",
+        "jp": "予定が編集された後に発生します。"
+      }
+    },
+    "appointmentEditing": {
+      "cancellable": true,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Fired before an appointment is edited.",
+        "jp": "予定が編集される前に発生されます。"
+      }
+    },
+    "daySelected": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Fired when a day is selected from the datepicker calendar.",
+        "jp": "日が datepicker カレンダーから選択されたときに発生されます。"
+      }
+    },
+    "monthChanged": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Fired after month is changed when using previous and next buttons (fired only in Month View)",
+        "jp": "[前へ] および [次へ] ボタンによって月が変更した後に発生されます。月ビューのみで発生されます。"
+      }
+    },
+    "monthChanging": {
+      "cancellable": true,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Fired before changing the month begins, when using previous and next buttons (fired only in Month View)",
+        "jp": "[前へ] および [次へ] ボタンによって月が変更される前に発生されます。月ビューのみで発生されます。"
+      }
+    },
+    "rendered": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Fired after rendering of the scheduler has finished.",
+        "jp": "スケジューラのレンダリングが完了した後に発生します。"
+      }
+    },
+    "rendering": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Fired before rendering of the scheduler begins.",
+        "jp": "スケジューラのレンダリングが開始する前に発生します。"
+      }
+    },
+    "viewChanged": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Fired after the view is changed, when using the menu buttons.",
+        "jp": "メニュー ボタンを使用することによりビューが変更された後に発生します。"
+      }
+    },
+    "viewChanging": {
+      "cancellable": true,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Fired before the view is changed, when using the menu buttons.",
+        "jp": "メニュー ボタンを使用することによりビューが変更される前に発生します。"
+      }
+    }
+  },
+  "properties": {
+    "agendaViewSettings": {
+      "type": "object",
+      "defaultValue": null,
+      "description": {
+        "en": "Gets/Sets AgendaView settings.<br>                ",
+        "jp": "AgendaView 設定を取得または設定します。<br>                "
+      },
+      "schema": {
+        "dateRangeInterval": {
+            "type": "number",
+            "defaultValue": 7,
+            "description": {
+                "en": "Gets/Sets the number of days shown in AgendaView mode.",
+                "jp": "AgendaView モードで表示される日数を取得または設定します。"
+            }
+        }
+      }
+    },
+    "appointmentDialogSuppress": {
+      "type": "bool",
+      "defaultValue": false,
+      "description": {
+        "en": "Gets/Sets whether the appointment dialog and the related day and appointment popups should be shown.<br>                ",
+        "jp": "予定ダイアログおよび関連する日および予定ポップアップを表示するかどうかを取得または設定します。<br>                "
+      }
+    },
+    "height": {
+      "type": "string",
+      "defaultValue": "100%",
+      "description": {
+        "en": " Gets/Sets the height of the control.\n",
+        "jp": " コントロールの高さを取得または設定します。\n"
+      }
+    },
+    "monthViewSettings": {
+      "type": "object",
+      "defaultValue": null,
+      "description": {
+        "en": "Gets/Sets MonthView settings.<br>",
+        "jp": "MonthView 設定を取得または設定します。<br>"
+      },
+      "schema": {
+        "appointmentMode": {
+            "type": "string",
+            "defaultValue": "auto",
+            "description": {
+                "en": "Gets/Sets the type of content displayed in a MonthView day.",
+                "jp": "MonthView 日で表示されるコンテンツのタイプを取得または設定します。"
+            },
+            "valueOptions": [
+              {
+                "name": "auto",
+                "type": "string",
+                "description": {
+                  "en": "Depending on the screen size, indicates square indicator mode for the appointment in the Month View, if scheduler size is larger than 768px, otherwise identifies horizontal one.",
+                  "jp": "スケジューラのサイズが 768px より大きい場合、画面サイズに基づいて、月ビューで予定の四角インジケーター モードを示します。それ以外の場合、水平のモードを識別します。"
+                }
+              },
+              {
+                "name": "indicator",
+                "type": "string",
+                "description": {
+                  "en": "Indicates that a square indicator should be displayed.",
+                  "jp": "四角インジケーターが表示されることを示します。"
+                }
+              },
+              {
+                "name": "detailed",
+                "type": "string",
+                "description": {
+                  "en": "Indicates that the subject should be displayed.",
+                  "jp": "件名が表示されることを示します。"
+                }
+              }
+            ]
+        },
+        "isAgendaVisible": {
+            "type": "bool",
+            "defaultValue": false,
+            "description": {
+                "en": "Gets/Sets the visibility of an AgendaView in a MonthView.  When true, the MonthView will display an AgendaView showing the Appointments for the currently selected day at the top of its list of Appointments.",
+                "jp": "MonthView で AgendaView の表示状態を取得または設定します。true の場合、MonthView は、Appointments のリストの上にある選択されている日の Appointments を表示する AgendaView を表示します。"
+            }
+        },
+        "agendaVisibilityType": {
+            "type": "string",
+            "defaultValue": "allAppointments",
+            "description": {
+                "en": "Gets/Sets the scope of appointments that are displayed in a MonthView's AgendaView.",
+                "jp": "MonthView の AgendaView で表示される予定のスコープを取得または設定します。"
+            },
+            "valueOptions": [
+              {
+                "name": "allAppointments",
+                "type": "string",
+                "description": {
+                  "en": "Indicates that appointments for all days should be displayed in an AgendaView when it is a secondary view within a MonthView.",
+                  "jp": "MonthView で AgendaView がセカンダリ ビューの場合、すべての日の予定が表示されることを示します。"
+                }
+              },
+              {
+                "name": "onlyAppointmentsForSelectedMonthViewDay",
+                "type": "string",
+                "description": {
+                  "en": "Indicates that only appointments for the day that is current selected in the associated MonthView should be displayed in an AgendaView that is associated with a MonthView as a secondary view.",
+                  "jp": "セカンダリ ビューの MonthView と関連付けられた AgendaView で MonthView の現在選択されている日のみの予定が表示されることを示します。"
+                }
+              }
+            ]
+        },
+        "viewSplitOrientation": {
+            "type": "string",
+            "defaultValue": "auto",
+            "description": {
+                "en": "Gets/Sets the orientation, which determines whether the MonthView and AgendaView views are split vertically or horizontally. This option can be used when the AgendaView is displayed in the MonthView.",
+                "jp": "MonthView および AgendaView が垂直方向または水平方向に分割されるかどうかを決定する方向を取得または設定します。このオプションは、AgendaView が MonthView で表示される場合に使用可能です。"
+            },
+            "valueOptions": [
+              {
+                "name": "auto",
+                "type": "string",
+                "description": {
+                  "en": "Depending on the screen size, identifies vertical split if scheduler size is larger than 768px, otherwise identifies horizontal one.",
+                  "jp": "スケジューラのサイズが 768px より大きい場合、画面サイズに基づいて、垂直分割を示します。それ以外の場合、水平のモードを識別します。"
+                }
+              },
+              {
+                "name": "vertical",
+                "type": "string",
+                "description": {
+                  "en": "Identifies a vertical split between the Scheduler's views.",
+                  "jp": "Scheduler のビューの間の垂直分割を識別します。"
+                }
+              },
+              {
+                "name": "horizontal",
+                "type": "string",
+                "description": {
+                  "en": "Identifies a horizontal split between the Scheduler's views.",
+                  "jp": "Scheduler のビューの間の水平分割を識別します。"
+                }
+              }
+            ]
+        },
+        "isHorizontalSeparatorVisibile": {
+          "type": "bool",
+            "defaultValue": true,
+            "description": {
+                "en": "Gets/sets the visibility of the horizontal separators between weeks in the MonthView.",
+                "jp": "MonthView の週の間の水平セパレーターの表示状態を取得または設定します。"
+            }
+        },
+        "isVerticalSeparatorVisibile": {
+          "type": "bool",
+            "defaultValue": true,
+            "description": {
+                "en": "Gets/sets the visibility of the vertical separators between days of the week in a MonthView.",
+                "jp": "MonthView の曜日の間の垂直セパレーターの表示状態を取得または設定します。"
+            }
+        },
+        "isWeekdayVisible": {
+          "type": "bool",
+            "defaultValue": true,
+            "description": {
+                "en": "Gets/sets the visibility of the weekday names in MonthView.",
+                "jp": "MonthView で曜日名の表示状態を取得または設定します。"
+            }
+        },
+        "isWeekNumberVisible": {
+          "type": "bool",
+            "defaultValue": true,
+            "description": {
+                "en": "Gets/sets the visibility of the week numbers in a MonthView.",
+                "jp": "MonthView で週番号の表示状態を取得または設定します。"
+            }
+        },
+        "isPreviousMonthShown": {
+          "type": "bool",
+            "defaultValue": true,
+            "description": {
+                "en": "Gets/sets the visibility of the days from the previous month that occur in the first week of a given month.",
+                "jp": "特定の月の最初の週にある以前の月の日の表示状態を取得または設定します。"
+            }
+        },
+        "isNextMonthShown": {
+          "type": "bool",
+            "defaultValue": true,
+            "description": {
+                "en": "Gets/sets the visibility of the days from the next month that occur in the last week of a given month.",
+                "jp": "特定の月の最後の週にある以後の月の日の表示状態を取得または設定します。"
+            }
+        }
+      }
+    },                
+    "selectedDate": {
+      "type": "date",
+      "defaultValue": true,
+      "description": {
+        "en": "Enables/Disables today button.<br>                ",
+        "jp": "[今日] ボタンを有効/無効にします。<br>                "
+      }
+    },
+    "viewMode": {
+      "type": "string",
+      "defaultValue": null,
+      "description": {
+        "en": " Gets/Sets current view mode in the Scheduler. If this options is not defined, then the first defined view in the views property is taken.\n",
+        "jp": " Scheduler の現在ビュー モードを取得または設定します。この位置が定義されていない場合、views プロパティで最初に定義したビューが取得されます。\n"
+      },
+      "valueOptions": [
+        {
+          "name": "monthView",
+          "type": "string",
+          "description": {
+            "en": " Enables MonthView in the Scheduler.",
+            "jp": " Scheduler で MonthView を有効にします。"
+          }
+        },
+        {
+          "name": "agendaView",
+          "type": "string",
+          "description": {
+            "en": " Enables AgendaView in the Scheduler.",
+            "jp": " Scheduler で AgendaView を有効にします。"
+          }
+        }
+      ]
+    },
+    "views": {
+      "type": "array",
+      "defaultValue": ["monthView", "agendaView"],
+      "description": {
+        "en": "Lists of all the views, rendered in the Scheduler.<br>",
+        "jp": "Scheduler で描画されるビューをすべてリストします。<br>"
+      },
+      "valueOptions": null
+    },
+    "width": {
+      "type": "string",
+      "defaultValue": "100%",
+      "description": {
+        "en": " Gets/Sets the width of the control.\n",
+        "jp": " コントロールの幅を取得または設定します。\n"
+      }
+    }
+  }
+}
