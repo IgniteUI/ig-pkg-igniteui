@@ -374,7 +374,7 @@
     		"width": 300,
     		"height": 300,
 			"dataSource": "scheduleListDataSource",
-			"defaultOptions": { "width": "75%", "height": "700", "views": ["monthView", "agendaView"], "viewMode": "monthView" }
+			"defaultOptions": { "width": "75%", "height": "700" }
     	},
 		"spreadsheet": {
     		"id": "spreadsheet",
