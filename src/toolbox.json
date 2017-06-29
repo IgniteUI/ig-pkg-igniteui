@@ -142,7 +142,7 @@
 				"jp": "js/jp/modules/infragistics.documents.core_core.js"
 			},
             "lazyLoad": true,
-            "id": "documents_core"
+            "id": "documents_core_core"
         },
         {
 		    "url": {
@@ -209,8 +209,6 @@
             "lazyLoad": true,
             "id": "ui_scheduler_core"
         },
-
-
         {
 		    "url": {
 				"en": "js/modules/infragistics.ui.scheduler.js",
@@ -225,7 +223,7 @@
 				"jp": "js/jp/schedulerDataSource.js"
 			},
             "lazyLoad": true,
-            "id": "ui_scheduler_datasource"
+            "id": "schedulerDataSource"
         },
 		{
 		    "url": {
@@ -364,7 +362,7 @@
 			"dependsOn": ["core", "lob", "ext_core", "ext_text", "ext_collections",
 				"ext_io", "ext_ui", "ext_collectionsExtended", "ext_threading", "ext_web",
 				"xml", "dv_core", "dv_jquerydom", 
-				"scheduler_core", "ui_scheduler_core", "ui_scheduler", "ui_scheduler_datasource"],
+				"scheduler_core", "ui_scheduler_core", "ui_scheduler", "schedulerDataSource"],
     		"toolboxTitle": "Scheduler",
 			"componentPlugin": "scheduler-component-plugin",
     		"icon": "scheduler.png",
@@ -380,9 +378,9 @@
     	},
 		"spreadsheet": {
     		"id": "spreadsheet",
-			"dependsOn": ["core", "lob", "ext_core", "ext_collections", "ext_text", "ext_collectionsExtended",
-				"ext_io", "ext_ui", "ext_threading", "documents_core", "ext_web", "excel_core",  "excel_functions", "xml",
-				"documents_core_openxml", "dv_core",  "excel_serialization_openxml", "dv_jquerydom", "undo",
+			"dependsOn": ["core", "lob", "ext_core", "ext_text", "ext_collections",
+				"ext_io", "ext_ui", "ext_collectionsExtended", "ext_threading", "documents_core_core", "ext_web", "excel_core",  "excel_functions", "xml",
+				"documents_core_openxml", "dv_core", "excel_serialization_openxml", "dv_jquerydom", "undo",
 				"spreadsheet", "ui_spreadsheet"],
     		"toolboxTitle": "Spreadsheet",
 			"componentPlugin": "spreadsheet-component-plugin", 
