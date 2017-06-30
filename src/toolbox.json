@@ -253,7 +253,7 @@
 		"bootstrap": {
 			"displayName": "Bootstrap Default",
 			"stylesheets": [
-				"/css/themes/bootstrap/infragistics.theme.css",
+				"/css/themes/bootstrap3/infragistics.theme.css",
 				"/css/structure/infragistics.css",
 				"/css/structure/modules/infragistics.ui.scheduler.css",
 				"/css/structure/modules/infragistics.ui.spreadsheet.css"
@@ -265,7 +265,7 @@
 		"flatly": {
 			"displayName": "Bootstrap Flatly",
 			"stylesheets": [
-				"/css/themes/flatly/infragistics.theme.css",
+				"/css/themes/bootstrap3/flatly/infragistics.theme.css",
 				"/css/structure/infragistics.css",
 				"/css/structure/modules/infragistics.ui.scheduler.css",
 				"/css/structure/modules/infragistics.ui.spreadsheet.css"
@@ -325,7 +325,7 @@
 		"superhero": {
 			"displayName": "Bootstrap Superhero",
 			"stylesheets": [
-				"/css/themes/superhero/infragistics.theme.css",
+				"/css/themes/bootstrap3/superhero/infragistics.theme.css",
 				"/css/structure/infragistics.css",
 				"/css/structure/modules/infragistics.ui.scheduler.css",
 				"/css/structure/modules/infragistics.ui.spreadsheet.css"
@@ -337,7 +337,7 @@
 		"yeti": {
 			"displayName": "Bootstrap Yeti",
 			"stylesheets": [
-				"/css/themes/yeti/infragistics.theme.css",
+				"/css/themes/bootstrap3/yeti/infragistics.theme.css",
 				"/css/structure/infragistics.css",
 				"/css/structure/modules/infragistics.ui.scheduler.css",
 				"/css/structure/modules/infragistics.ui.spreadsheet.css"
