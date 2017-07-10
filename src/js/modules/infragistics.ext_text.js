@@ -1,5 +1,5 @@
 ﻿/*!@license
-* Infragistics.Web.ClientUI infragistics.ext_text.js 17.1.20171.1019
+* Infragistics.Web.ClientUI infragistics.ext_text.js 17.1.20171.2002
 *
 * Copyright (c) 2011-2017 Infragistics Inc.
 *
