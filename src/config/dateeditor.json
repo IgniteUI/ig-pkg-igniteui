@@ -326,7 +326,7 @@
           "defaultValue": 1,
           "description": {
               "en": "Value for the year",
-              "jp": "Value for the year"
+              "jp": "年の値"
           }
         },
         "month": {
@@ -334,7 +334,7 @@
             "defaultValue": 1,
             "description": {
                 "en": "Value for the month",
-                "jp": "Value for the month"
+                "jp": "月の値"
             }
         },
         "day": {
@@ -342,7 +342,7 @@
           "defaultValue": 1,
           "description": {
               "en": "Value for the day",
-              "jp": "Value for the day"
+              "jp": "日の値"
           }
         },
         "hours": {
@@ -350,7 +350,7 @@
           "defaultValue": 1,
           "description": {
               "en": "Value for the hours",
-              "jp": "Value for the hours"
+              "jp": "時の値"
           }
         },
         "minutes": {
@@ -358,7 +358,7 @@
             "defaultValue": 1,
             "description": {
                 "en": "Value for the minutes",
-                "jp": "Value for the minutes"
+                "jp": "分の値"
             }
         },
         "seconds": {
@@ -366,7 +366,7 @@
           "defaultValue": 1,
           "description": {
               "en": "Value for the seconds",
-              "jp": "Value for the seconds"
+              "jp": "秒の値"
           }
         },
         "milliseconds": {
@@ -374,7 +374,7 @@
             "defaultValue": 1,
             "description": {
                 "en": "Value for the milliseconds",
-                "jp": "Value for the milliseconds"
+                "jp": "ミリ秒の値"
             }
         }
       }
