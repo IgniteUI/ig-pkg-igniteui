@@ -885,7 +885,7 @@
     		"category": "editors",
     		"visual": true,
     		"framework": false
-    	},	
+    	},
 		"maskEditor": {
     		"id": "maskEditor",
     		"toolboxTitle": "Mask Editor",
@@ -929,6 +929,15 @@
     		"toolboxTitle": "Date Picker",
     		"icon": "datepicker.png",
     		"dragDropIcon": "datepicker-dragdrop.png",
+    		"category": "lists",
+    		"visual": true,
+    		"framework": false
+		},
+		"timePicker": {
+    		"id": "timePicker",
+    		"toolboxTitle": "Time Picker",
+    		"icon": "datepicker.png",
+    		"dragDropIcon": "editor-dragdrop.png",
     		"category": "lists",
     		"visual": true,
     		"framework": false

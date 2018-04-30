@@ -314,13 +314,70 @@
       "valueOptions": null
     },
     "spinDelta": {
-      "type": "number",
-      "defaultValue": 1.0,
+      "type": "object",
+      "defaultValue": null,
       "description": {
         "en": "Sets gets delta-value which is used to increment or decrement value in editor on spin events. If value is set to negative value an exception is thrown. Non integer value is supported only for dataMode double and float.",
         "jp": "スピン イベント発生時にエディター内の値の増減に使用するデルタ値を取得および設定します。値が負の数に設定される場合、例外は発生されます。整数値以外の値は double および float の dataMode のみにサポートされます。"
       },
-      "valueOptions": null
+      "schema": {
+        "year": {
+          "type": "number",
+          "defaultValue": 1,
+          "description": {
+              "en": "Value for the year",
+              "jp": "Value for the year"
+          }
+        },
+        "month": {
+            "type": "number",
+            "defaultValue": 1,
+            "description": {
+                "en": "Value for the month",
+                "jp": "Value for the month"
+            }
+        },
+        "day": {
+          "type": "number",
+          "defaultValue": 1,
+          "description": {
+              "en": "Value for the day",
+              "jp": "Value for the day"
+          }
+        },
+        "hours": {
+          "type": "number",
+          "defaultValue": 1,
+          "description": {
+              "en": "Value for the hours",
+              "jp": "Value for the hours"
+          }
+        },
+        "minutes": {
+            "type": "number",
+            "defaultValue": 1,
+            "description": {
+                "en": "Value for the minutes",
+                "jp": "Value for the minutes"
+            }
+        },
+        "seconds": {
+          "type": "number",
+          "defaultValue": 1,
+          "description": {
+              "en": "Value for the seconds",
+              "jp": "Value for the seconds"
+          }
+        },
+        "milliseconds": {
+            "type": "number",
+            "defaultValue": 1,
+            "description": {
+                "en": "Value for the milliseconds",
+                "jp": "Value for the milliseconds"
+            }
+        }
+      }
     },
     "spinWrapAround": {
       "type": "bool",

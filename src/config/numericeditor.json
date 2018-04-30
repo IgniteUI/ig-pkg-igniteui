@@ -778,7 +778,7 @@
         "en": " Sets gets the representation of null value. In case of default the value for the input is set to null, which makes the input to hold an empty string",
         "jp": " null 値の表現を取得または設定します。デフォルトの場合、入力の値は null に設定され、入力が空文字列を保持します。"
       },
-      "valueOptions": []
+      "valueOptions": null
     },
     "placeHolder": {
       "type": "string",
