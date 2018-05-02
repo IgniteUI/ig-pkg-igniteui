@@ -130,11 +130,11 @@
         },
 		{
 		    "url": {
-				"en": "js/modules/infragistics.dv_jquerydom.js",
-				"jp": "js/jp/modules/infragistics.dv_jquerydom.js"
+				"en": "js/modules/infragistics.dv_interactivity.js",
+				"jp": "js/jp/modules/infragistics.dv_interactivity.js"
 			},
             "lazyLoad": true,
-            "id": "dv_jquerydom"
+            "id": "dv_interactivity"
         },
 		{
             "url": {
@@ -343,7 +343,7 @@
     		"id": "scheduler",
 			"dependsOn": ["core", "lob", "ext_core", "ext_text", "ext_collections",
 				"ext_io", "ext_ui", "ext_collectionsExtended", "ext_threading", "ext_web",
-				"xml", "dv_core", "dv_jquerydom", 
+				"xml", "dv_core", "dv_jquerydom", "dv_interactivity",
 				"scheduler_core", "ui_scheduler_core", "ui_scheduler", "schedulerDataSource"],
     		"toolboxTitle": "Scheduler",
 			"componentPlugin": "scheduler-component-plugin",
@@ -364,7 +364,7 @@
 				"ext_io", "ext_ui", "ext_collectionsExtended", "ext_threading", "ext_web", "xml",
 				"documents_core_core", "documents_core_openxml",
 				"excel_core",  "excel_functions", "excel_serialization_biff8", "excel_serialization_openxml", 
-				"undo", "dv_core", "dv_jquerydom",
+				"undo", "dv_core", "dv_jquerydom", "dv_interactivity",
 				"spreadsheet", "ui_spreadsheet"],
     		"toolboxTitle": "Spreadsheet",
 			"componentPlugin": "spreadsheet-component-plugin", 
