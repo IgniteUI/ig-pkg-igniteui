@@ -355,7 +355,7 @@
     		"framework": false,
     		"width": 300,
     		"height": 300,
-			"dataSource": "scheduleListDataSource",
+			"dataSource": "schedulerDataSource",
 			"defaultOptions": { "width": "75%", "height": "700" }
     	},
 		"spreadsheet": {
