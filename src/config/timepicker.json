@@ -1,0 +1,1078 @@
+{
+  "overview": null,
+  "name": "ui.igTimePicker",
+  "category": null,
+  "visual": true,
+  "events": {
+    "blur": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Fired when the input field of the editor loses focus.",
+        "jp": "エディターの入力フィールドがフォーカスを失うときに発生します。"
+      }
+    },
+    "dropDownItemSelected": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Fired after an item in the drop down list is selected.",
+        "jp": "ドロップダウン リストの項目が選択された後に発生されます。"
+      }
+    },
+    "dropDownItemSelecting": {
+      "cancellable": true,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Fired when an item in the drop down list is being selected.",
+        "jp": "ドロップダウン リストの項目が選択されているときに発生されます。"
+      }
+    },
+    "dropDownListClosed": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Fired after the drop down is closed.",
+        "jp": "ドロップダウン リストが閉じた後に発生されます。"
+      }
+    },
+    "dropDownListClosing": {
+      "cancellable": true,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Fired when the drop down is closing.",
+        "jp": "ドロップダウン リストが閉じているときに発生されます。"
+      }
+    },
+    "dropDownListOpened": {
+      "cancellable": true,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Fired after the drop down is opened.",
+        "jp": "ドロップダウン リストが開いた後に発生されます。"
+      }
+    },
+    "dropDownListOpening": {
+      "cancellable": true,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Fired when the drop down is opening.",
+        "jp": "ドロップダウン リストが開いているときに発生されます。"
+      }
+    },
+    "focus": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Fired when the input field of the editor gets focus.",
+        "jp": "エディターの入力フィールドがフォーカスを受けるときに発生します。"
+      }
+    },
+    "keydown": {
+      "cancellable": true,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Fired on keydown event.<br>&nbsp;&nbsp;&nbsp;&nbsp;Return false in order to cancel key action.",
+        "jp": "keydown イベントで発生されます。<br>&nbsp;&nbsp;&nbsp;&nbsp;キー操作をキャンセルするには、False を返します。"
+      }
+    },
+    "keypress": {
+      "cancellable": true,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Fired on keypress event.<br>&nbsp;&nbsp;&nbsp;&nbsp;Return false in order to cancel key action.",
+        "jp": "keypress イベントで発生されます。<br>&nbsp;&nbsp;&nbsp;&nbsp;キー操作をキャンセルするには、False を返します。"
+      }
+    },
+    "keyup": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Fired on keyup event.",
+        "jp": "keyup イベントで発生されます。"
+      }
+    },
+    "mousedown": {
+      "cancellable": true,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Fired on mousedown event.",
+        "jp": "mousedown イベントで発生されます。"
+      }
+    },
+    "mousemove": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Fired on mousemove at any part of editor including the drop-down list.",
+        "jp": "ドロップダウン リストを含むエディターの任意の部分での mousemove に対して発生されます。"
+      }
+    },
+    "mouseout": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Fired on mouseleave at any part of editor including the drop-down list.",
+        "jp": "ドロップダウン リストを含むエディターの任意の部分での mouseleave に対して発生されます。"
+      }
+    },
+    "mouseover": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Fired on mouseover at any part of editor including the drop-down list.",
+        "jp": "ドロップダウン リストを含むエディターの任意の部分での mouseover に対して発生されます。"
+      }
+    },
+    "mouseup": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Fired on mouseup event.",
+        "jp": "mouseup イベントで発生されます。"
+      }
+    },
+    "rendered": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Fired after rendering of the editor has finished.",
+        "jp": "エディターのレンダリングが完了した後に発生します。"
+      }
+    },
+    "rendering": {
+      "cancellable": true,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Fired before rendering of the editor has finished.",
+        "jp": "エディターのレンダリングが完了する前に発生します。"
+      }
+    },
+    "textChanged": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Fired after the editor's text has been changed. It can be raised when keyUp event occurs,<br>&nbsp;&nbsp;&nbsp;&nbsp;when the clear button is clicked or when an item from a list is selected.",
+        "jp": "エディターのテキストが変更された後に発生します。keyUp イベントが発生するときに発生できます。<br>&nbsp;&nbsp;&nbsp;&nbsp;クリアボタンがクリックされたときまたはリストの項目がせんたくされたときに発生できます。"
+      }
+    },
+    "valueChanged": {
+      "cancellable": false,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Fired after the editor value is changed. It can be raised after loosing focus or on spin events.",
+        "jp": "エディター値が変更された後に発生します。フォーカスの消失後またはスピン イベントに対して発生します。"
+      }
+    },
+    "valueChanging": {
+      "cancellable": true,
+      "args": [
+        {
+          "name": "evt",
+          "type": "Event",
+          "optional": false
+        },
+        {
+          "name": "ui",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "description": {
+        "en": "Fired before changing the editor's value.<br>&nbsp;&nbsp;&nbsp;&nbsp;Return false in order to cancel change.<br>&nbsp;&nbsp;&nbsp;&nbsp;It can be raised after loosing focus or on spin events.",
+        "jp": "エディターの値を変更する前に発生します。<br>&nbsp;&nbsp;&nbsp;&nbsp;変更をキャンセルするには、False を返します。<br>&nbsp;&nbsp;&nbsp;&nbsp;フォーカスの消失後またはスピン イベントに対して発生します。"
+      }
+    }
+  },
+  "properties": {
+    "allowNullValue": {
+      "type": "bool",
+      "defaultValue": false,
+      "description": {
+        "en": "Gets/Sets whether the editor value can become null.<br>&nbsp;&nbsp;&nbsp;&nbsp;If that option is false, and editor has no value, then value is set to an empty string.<br>&nbsp;&nbsp;&nbsp;&nbsp;",
+        "jp": "エディター値が null 値になることが可能かどうかを取得または設定します。<br>&nbsp;&nbsp;&nbsp;&nbsp;このオプションが false で、エディターの値がない場合、「value」は空の文字列に設定されます。<br>&nbsp;&nbsp;&nbsp;&nbsp;"
+      },
+      "valueOptions": null
+    },
+    "buttonType": {
+      "type": "string",
+      "defaultValue": "dropdown",
+      "description": {
+        "en": " Gets visibility of the spin, clear and drop-down button. That option can be set only on initialization. Combinations like 'dropdown, clear' or 'spin, clear' are supported too.&nbsp;&nbsp;&nbsp;&nbsp;Note! This option can not be set runtime.<br>&nbsp;&nbsp;&nbsp;&nbsp;Note! A combination like 'dropdown, spin' is not allowed.<br>\n",
+        "jp": "スピン、クリア、およびドロップダウン ボタンの表示状態を取得します。このオプションは、初期化時にのみ設定できます。'dropdown, clear' または 'spin, clear' などの組み合わせもサポートされます。&nbsp;&nbsp;&nbsp;&nbsp;注: このオプションはランタイムで設定できません。<br>&nbsp;&nbsp;&nbsp;&nbsp;注: 'dropdown, spin' などの設定は許可されません。<br>\n"
+      },
+      "valueOptions": [
+        {
+          "name": "dropdown",
+          "type": "string",
+          "description": {
+            "en": " A button to open/close the list is located on the right side of the editor.",
+            "jp": "リストを開く/閉じるボタンはエディターの右側に配置されます。"
+          }
+        },
+        {
+          "name": "clear",
+          "type": "string",
+          "description": {
+            "en": " A button to clear the value is located on the right side of the editor.",
+            "jp": "値をクリアするボタンはエディターの右側に配置されます。"
+          }
+        },
+        {
+          "name": "spin",
+          "type": "string",
+          "description": {
+            "en": " Spin buttons are located on the right side of the editor.",
+            "jp": "スピン ボタンはエディターの右側に配置されます。"
+          }
+        }
+      ]
+    },
+    "centuryThreshold": {
+      "type": "number",
+      "defaultValue": 29.0,
+      "description": {
+        "en": "Gets/Sets year for auto detection of 20th and 21st centuries.<br>&nbsp;&nbsp;&nbsp;&nbsp;That option is used to automatically fill century when the user entered only 1 or 2 digits into the year field or when the date pattern contains only 1 or 2 year positions, e.g. \"yy\" or \"y\".<br>&nbsp;&nbsp;&nbsp;&nbsp;If user entered value larger than value of this option, then 20th century is used, otherwise the 21st.<br>&nbsp;&nbsp;&nbsp;&nbsp;",
+        "jp": "20 世紀または 21 世紀の自動検出する年を取得または設定します。<br>&nbsp;&nbsp;&nbsp;&nbsp;このオプションは、ユーザーが 1 桁または 2 桁を年フィールドに入力した場合、または日付パターンが 1 年または 2 年位置のみ (\"yy\" または \"y\" など) を含む場合に自動的に塗りつぶすために使用されます。<br>&nbsp;&nbsp;&nbsp;&nbsp;ユーザーがこのオプションの値よりも大きな値を入力した場合、20 世紀を使用します。それ以外の場合は、21 世紀を使用します。<br>&nbsp;&nbsp;&nbsp;&nbsp;"
+      },
+      "valueOptions": null
+    },
+    "dataMode": {
+      "type": "string",
+      "defaultValue": "date",
+      "description": {
+        "en": " Gets the value type returned by the get of value() method and option. Also affects how the value is stored for form submit.\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The [enableUTCDates](ui.%%WidgetNameLowered%%#options:enableUTCDates) option can be used to output an UTC ISO string instead.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For example 10:00 AM from a client with local offset of 5 hours ahead of GMT will be serialized as:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\"2016-11-11T10:00:00+05:00\"<br>",
+        "jp": "value() メソッドおよびオプションの取得で返される値の型を取得します。フォームの送信のために値が保存される方法に影響します。\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[enableUTCDates](ui.%%WidgetNameLowered%%#options:enableUTCDates) オプションを使用すると、その代わりに UTC ISO 文字列を出力します。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;たとえば、GMT から 5 時間遅れのローカル オフセットを持つクライアントからの「午前10:00」は以下のようにシリアル化します。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\"2016-11-11T10:00:00+05:00\"<br>"
+      },
+      "valueOptions": [
+        {
+          "name": "date",
+          "type": "string",
+          "description": {
+            "en": " The value method returns a Date object. When this mode is set the value sent to the server on submit is serialized as ISO 8061 string with local time and zone values by default.",
+            "jp": "value メソッドは Date オブジェクトを返します。このモードが設定される場合、サーバーに送信される値がデフォルトでローカル時間およびゾーン値をもつ ISO 8061 文字列としてシリアル化されます。"
+          }
+        },
+        {
+          "name": "displayModeText",
+          "type": "string",
+          "description": {
+            "en": " The \"text\" in display mode (no focus) format (pattern) is used to be send to the server and is returned from the value() method (returns a string object).",
+            "jp": "表示モード (フォーカスなし) 形式 (パターン) の \"text\" はサーバーに送信され、value() メソッドから文字列オブジェクトとして返されます。"
+          }
+        },
+        {
+          "name": "editModeText",
+          "type": "string",
+          "description": {
+            "en": " The \"text\" in edit mode (focus) format (pattern) is used to be send to the server and is returned from the value() method (returns a string object).",
+            "jp": "編集モード (フォーカス) 形式 (パターン) の \"text\" はサーバーに送信され、value() メソッドから文字列オブジェクトとして返されます。"
+          }
+        }
+      ]
+    },
+    "dateDisplayFormat": {
+      "type": "unknown",
+      "defaultValue": null,
+      "description": {
+        "en": "Removed from timepicker options",
+        "jp": "timepicker オプションから解除されました。"
+      },
+      "valueOptions": null
+    },
+    "dateInputFormat": {
+      "type": "unknown",
+      "defaultValue": null,
+      "description": {
+        "en": "Removed from timepicker options",
+        "jp": "timepicker オプションから解除されました。"
+      },
+      "valueOptions": null
+    },
+    "disabled": {
+      "type": "bool",
+      "defaultValue": false,
+      "description": {
+        "en": "Gets/Sets the disabled attribute for the input. If set to true the input is disabled, and all buttons and interactions are disabled. On submitting the form the editor belongs to, the value is not submitted.<br>&nbsp;&nbsp;&nbsp;",
+        "jp": "入力の disabled 属性を取得または設定します。True に設定される場合、入力が無効で、すべてのボタンおよび操作が無効です。エディターのフォームの送信で値が送信されません。<br>&nbsp;&nbsp;&nbsp;"
+      },
+      "valueOptions": null
+    },
+    "displayTimeOffset": {
+      "type": "unknown",
+      "defaultValue": null,
+      "description": {
+        "en": "Removed from timepicker options",
+        "jp": "timepicker オプションから解除されました。"
+      },
+      "valueOptions": null
+    },
+    "dropDownAnimationDuration": {
+      "type": "number",
+      "defaultValue": 300.0,
+      "description": {
+        "en": "Gets/Sets show/hide drop-down list animation duration in milliseconds.<br>&nbsp;&nbsp;&nbsp;",
+        "jp": "ドロップダウン リストの表示/非表示アニメーションの期間 (ミリ秒) を取得または設定します。<br>&nbsp;&nbsp;&nbsp;"
+      },
+      "valueOptions": null
+    },
+    "dropDownAttachedToBody": {
+      "type": "bool",
+      "defaultValue": false,
+      "description": {
+        "en": "Gets wheather the drop-down list element is attached to the body of the document, or to the timepicker container element.<br>&nbsp;&nbsp;&nbsp;&nbsp;If the option is set to false the timepicker will attach the drop-down list element to the timepicker container<br>&nbsp;&nbsp;&nbsp;&nbsp;If the option is set to true the timepicker will attach its drop-down list to as a child of the body.<br>&nbsp;&nbsp;&nbsp;&nbsp;Note! This option can not be set runtime.<br>&nbsp;&nbsp;&nbsp;&nbsp;",
+        "jp": "ドロップダウン リスト要素がドキュメントの本体または時間ピッカー コンテナー要素に添付されるかどうかを取得します。<br>&nbsp;&nbsp;&nbsp;&nbsp;オプションが false に設定される場合、時間ピッカーはドロップダウン リスト要素を時間ピッカー コンテナーに添付します。<br>&nbsp;&nbsp;&nbsp;&nbsp;オプションが true に設定される場合、時間ピッカーはドロップダウン リストを本体の子として添付します。<br>&nbsp;&nbsp;&nbsp;&nbsp;注: このオプションはランタイムで設定できません。<br>&nbsp;&nbsp;&nbsp;&nbsp;"
+      },
+      "valueOptions": null
+    },
+    "dropDownOnReadOnly": {
+      "type": "bool",
+      "defaultValue": false,
+      "description": {
+        "en": "This option is inherited from a parent widget and it's not applicable for igDateEditor",
+        "jp": "このオプションは親ウィジェットから継承され、igDateEditor に適用できません。"
+      },
+      "valueOptions": null
+    },
+    "dropDownOrientation": {
+      "type": "string",
+      "defaultValue": "auto",
+      "description": {
+        "en": " Gets/Sets the drop-down list opening orientation when the list gets open. If the option is set to auto the timepicker has priority to open the drop-down list bottom. If the space is not enough it tries to open the list top. If the space is not enough in both directions then the list gets opened at the bottom of the editor.\n",
+        "jp": "リストが開いたときにドロップダウン リストの開く方法を取得または設定します。オプションが auto に設定される場合、時間ピッカーがドロップダウン リストをエディターの下に開きます。スペースがない場合、リストをエディターの上に開きます。両方の方向でスペースがない場合、リストはエディターの下に開かれます。\n"
+      },
+      "valueOptions": [
+        {
+          "name": "auto",
+          "type": "string",
+          "description": {
+            "en": " If the option is set to auto the timepicker has priority to open the drop-down list bottom. If the space is not enough it tries to open the list top. If the space is not enough in both directions then the list gets opened at the bottom of the editor.",
+            "jp": "オプションが auto に設定される場合、時間ピッカーがドロップダウン リストをエディターの下に開きます。スペースがない場合、リストをエディターの上に開きます。両方の方向でスペースがない場合、リストはエディターの下に開かれます。"
+          }
+        },
+        {
+          "name": "bottom",
+          "type": "string",
+          "description": {
+            "en": " The drop-down list is opened at the bottom of the timepicker.",
+            "jp": " ドロップダウン リストが時間ピッカーの下に開きます。"
+          }
+        },
+        {
+          "name": "top",
+          "type": "string",
+          "description": {
+            "en": " The drop-down list is opened at the top of the timepicker.",
+            "jp": "ドロップダウン リストが時間ピッカーの上に開きます。"
+          }
+        }
+      ]
+    },
+    "emptyChar": {
+      "type": "string",
+      "defaultValue": " ",
+      "description": {
+        "en": "This option is inherited from a parent widget and it's not applicable for igDateEditor",
+        "jp": "このオプションは親ウィジェットから継承され、igDateEditor に適用できません。"
+      },
+      "valueOptions": null
+    },
+    "enableUTCDates": {
+      "type": "bool",
+      "defaultValue": false,
+      "description": {
+        "en": "Enables/Disables serializing client date as UTC ISO 8061 string instead of using the local time and zone values.<br>&nbsp;&nbsp;&nbsp;&nbsp;The option is only applied in \"date\" [dataMode](ui.%%WidgetNameLowered%%#options:dataMode).<br>&nbsp;&nbsp;&nbsp;&nbsp;",
+        "jp": "ローカル時間およびゾーン値の代わりにクライアント側の日付を UTC ISO 8061 文字列としてのシリアル化を有効/無効にします。<br>&nbsp;&nbsp;&nbsp;&nbsp;このオプションは \"date\" [dataMode](ui.%%WidgetNameLowered%%#options:dataMode) のみで適用されます。<br>&nbsp;&nbsp;&nbsp;&nbsp;"
+      },
+      "valueOptions": null
+    },
+    "excludeKeys": {
+      "type": "string",
+      "defaultValue": null,
+      "description": {
+        "en": "Gets ability to prevent entering specific characters from keyboard or on paste.<br>&nbsp;&nbsp;&nbsp;&nbsp;Notes:<br>&nbsp;&nbsp;&nbsp;&nbsp;If a character is specified in \"includeKeys\" option also, then \"excludeKeys\" has priority.<br>&nbsp;&nbsp;&nbsp;&nbsp;Note! This option can not be se runtime.<br>&nbsp;&nbsp;&nbsp;&nbsp;",
+        "jp": "キーボードまたは貼り付けによって特定の文字を入力できないようにする機能を取得します。<br>&nbsp;&nbsp;&nbsp;&nbsp;注:<br>&nbsp;&nbsp;&nbsp;&nbsp;文字が \"includeKeys\" オプションに指定した場合、\"excludeKeys\" は優先があります。<br>&nbsp;&nbsp;&nbsp;&nbsp;注: このオプションはランタイムで設定できません。<br>&nbsp;&nbsp;&nbsp;&nbsp;"
+      },
+      "valueOptions": null
+    },
+    "height": {
+      "type": "string",
+      "defaultValue": null,
+      "description": {
+        "en": " Gets/Sets the height of the control.\n",
+        "jp": "コントロールの高さを取得または設定します。\n"
+      },
+      "valueOptions": [
+        {
+          "name": null,
+          "type": "string",
+          "description": {
+            "en": " The height can be set in pixels (px) and percentage (%).",
+            "jp": " 高さをピクセル (px) またはパーセンテージ (%) に設定できます。"
+          }
+        },
+        {
+          "name": null,
+          "type": "number",
+          "description": {
+            "en": " The height can be set as a number in pixels.",
+            "jp": " 高さをピクセル単位の数値で設定できます。"
+          }
+        }
+      ]
+    },
+    "includeKeys": {
+      "type": "string",
+      "defaultValue": null,
+      "description": {
+        "en": "Gets ability to enter only specific characters in input-field from keyboard and on paste.<br>&nbsp;&nbsp;&nbsp;&nbsp;Notes:<br>&nbsp;&nbsp;&nbsp;&nbsp;If \"excludeKeys\" option contains same characters as this option, then \"excludeKeys\" has priority.<br>&nbsp;&nbsp;&nbsp;&nbsp;Note! This option can not be se runtime.<br>&nbsp;&nbsp;&nbsp;&nbsp;",
+        "jp": "キーボードからおよび貼り付けによって特定の文字だけを入力フィールドに入力できるようにする機能を取得します。<br>&nbsp;&nbsp;&nbsp;&nbsp;注:<br>&nbsp;&nbsp;&nbsp;&nbsp;\"excludeKeys\" オプションがこのオプションと同じ文字を含んでいる場合、\"excludeKeys\" が優先されます。<br>&nbsp;&nbsp;&nbsp;&nbsp;注: このオプションはランタイムで設定できません。<br>&nbsp;&nbsp;&nbsp;&nbsp;"
+      },
+      "valueOptions": null
+    },
+    "inputMask": {
+      "type": "string",
+      "defaultValue": "CCCCCCCCCC",
+      "description": {
+        "en": "This option is inherited from a parent widget and it's not applicable for igDateEditor",
+        "jp": "このオプションは親ウィジェットから継承され、igDateEditor に適用できません。"
+      },
+      "valueOptions": null
+    },
+    "inputName": {
+      "type": "string",
+      "defaultValue": null,
+      "description": {
+        "en": "Gets/Sets the name attribute of the value input. This input is used to sent the value to the server. In case the target element is input and it has name attribute, but the developer has set the inputName option, so this option overwrites the value input and removes the attribute from the element.<br>&nbsp;&nbsp;&nbsp;",
+        "jp": "値入力の名前属性を取得または設定します。入力はサーバーへ値を送信するために使用されます。ターゲット要素が入力で名前要素があり、開発者が inputName オプションに設定した場合、このオプションは値入力を上書きし要素の属性を削除します。<br>&nbsp;&nbsp;&nbsp;"
+      },
+      "valueOptions": null
+    },
+    "isLimitedToListValues": {
+      "type": "bool",
+      "defaultValue": true,
+      "description": {
+        "en": "Gets/Sets if the editor should only allow values from the list of items. Matching is case-insensitive.<br>&nbsp;&nbsp;&nbsp;",
+        "jp": "エディターが項目のリストからの値のみを許可するかどうかを取得または設定します。一致は大文字と小文字を区別しません。<br>&nbsp;&nbsp;&nbsp;"
+      },
+      "valueOptions": null
+    },
+    "itemsDelta": {
+      "type": "object",
+      "defaultValue": null,
+      "description": {
+        "en": "Gets delta-value which is used to generate the drop-down items for the time picker.<br>&nbsp;&nbsp;&nbsp;&nbsp;Accepted values for deltas are positive integer numbers, and the fractional portion of floating point numbers is ignored.<br>&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;object  A configuration object, which defines specific values for each time period. The option can accept the following format:<br>&nbsp;&nbsp;&nbsp;&nbsp;itemsDelta: {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hours: 0,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;minutes: 30,<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;Time periods that don't have values use 0 as default for hours and 30 for minutes.",
+        "jp": "タイムピッカーのドロップダウン項目を生成するために使用されるデルタ値を取得します。<br>&nbsp;&nbsp;&nbsp;&nbsp;デルタに有効な値は正の整数で、浮動小数点数の分数が無視されます。<br>&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;object  各時間間隔のために特定の値を定義する構成オブジェクト。このオプションは以下の形式が有効です。<br>&nbsp;&nbsp;&nbsp;&nbsp;itemsDelta: {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hours: 0,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;minutes: 30,<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;値がない時間間隔はデフォルトで 0 時および 30 分を使用します。"
+      },
+      "schema": {
+        "hours": {
+          "type": "number",
+          "defaultValue": 0,
+          "description": {
+              "en": "Value for the hours",
+              "jp": "時の値"
+          }
+        },
+        "minutes": {
+            "type": "number",
+            "defaultValue": 30,
+            "description": {
+                "en": "Value for the minutes",
+                "jp": "分の値"
+            }
+        }
+      }
+    },
+    "limitSpinToCurrentField": {
+      "type": "bool",
+      "defaultValue": false,
+      "description": {
+        "en": "Gets/Sets ability to modify only 1 date field on spin events.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value false enables changes of other date fields when incremented or decremented date-field reaches its limits.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value true modifies only value of one field.<br>&nbsp;&nbsp;&nbsp;&nbsp;",
+        "jp": "スピン イベントで 1 日付フィールドを編集する機能を取得または設定します。<br>&nbsp;&nbsp;&nbsp;&nbsp;値が False の場合、増加または減少させた日付フィールドが限界に達するとほかの日付フィールドが変化します。<br>&nbsp;&nbsp;&nbsp;&nbsp;値が True の場合、1 つのフィールドの値のみを変更できます。<br>&nbsp;&nbsp;&nbsp;&nbsp;"
+      },
+      "valueOptions": null
+    },
+    "listItemHoverDuration": {
+      "type": "number",
+      "defaultValue": 0.0,
+      "description": {
+        "en": "Gets/Sets the hover/unhover animation duration of a drop-down list item.<br>&nbsp;&nbsp;&nbsp;",
+        "jp": "ドロップダウンのリスト項目のホバー/ホバー解除アニメーションの期間を取得または設定します。<br>&nbsp;&nbsp;&nbsp;"
+      },
+      "valueOptions": null
+    },
+    "listItems": {
+      "type": "unknown",
+      "defaultValue": null,
+      "description": {
+        "en": "This option is inherited from a parent widget and it's not applicable for igDateEditor",
+        "jp": "このオプションは親ウィジェットから継承され、igDateEditor に適用できません。"
+      },
+      "valueOptions": null
+    },
+    "listWidth": {
+      "type": "number",
+      "defaultValue": 0.0,
+      "description": {
+        "en": "Gets/Sets custom width of the drop-down list in pixels. If the value is equal to 0 or negative, then the width of timepicker is set as a drop-down width.<br>&nbsp;&nbsp;&nbsp;",
+        "jp": "ドロップダウン リストのカスタム幅をピクセル単位で取得または設定します。値がゼロまたは負の場合、時間ピッカーの幅がドロップダウンの幅に設定されます。<br>&nbsp;&nbsp;&nbsp;"
+      },
+      "valueOptions": null
+    },
+    "maxLength": {
+      "type": "unknown",
+      "defaultValue": null,
+      "description": {
+        "en": "This option is inherited from a parent widget and it's not applicable for igMaskEditor",
+        "jp": "このオプションは親ウィジェットから継承され、igMaskEditor に適用できません。"
+      },
+      "valueOptions": null
+    },
+    "maxValue": {
+      "type": "date",
+      "defaultValue": null,
+      "description": {
+        "en": "Gets the maximum value which can be entered in editor by user. Date object can be set as value. String value can be passed and the editor will use the javascript Date object constructor to create date object and will use it for the comparison. MVC date format can be used too.<br>&nbsp;&nbsp;&nbsp;&nbsp;Note! This option doesn't use the dateInputFormat to extract the date.<br>&nbsp;&nbsp;&nbsp;&nbsp;",
+        "jp": "ユーザーがエディターに入力できる最大値を取得します。Date オブジェクトは値として設定できます。文字列値を渡すと、エディターは日付オブジェクトを作成するために javascript Date オブジェクトのコンストラクターを使用し、結果のオブジェクトを比較で使用します。MVC 日付書式も使用できます。<br>&nbsp;&nbsp;&nbsp;&nbsp;注: このプロパティは、日付を抽出するために dateInputFormat 設定を使用しません。<br>&nbsp;&nbsp;&nbsp;&nbsp;"
+      },
+      "valueOptions": null
+    },
+    "minValue": {
+      "type": "date",
+      "defaultValue": null,
+      "description": {
+        "en": "Gets the minimum value which can be entered in editor by user. Date object can be set as value. String value can be passed and the editor will use the javascript Date object constructor to create date object and will use it for the comparison. MVC date format can be used too.<br>&nbsp;&nbsp;&nbsp;&nbsp;Note! This option doesn't use the dateInputFormat to extract the date.<br>&nbsp;&nbsp;&nbsp;&nbsp;",
+        "jp": "ユーザーがエディターに入力できる最小値を取得します。Date オブジェクトは値として設定できます。文字列値を渡すと、エディターは日付オブジェクトを作成するために javascript Date オブジェクトのコンストラクターを使用し、結果のオブジェクトを比較で使用します。MVC 日付書式も使用できます。<br>&nbsp;&nbsp;&nbsp;&nbsp;注: このプロパティは、日付を抽出するために dateInputFormat 設定を使用しません。<br>&nbsp;&nbsp;&nbsp;&nbsp;"
+      },
+      "valueOptions": null
+    },
+    "nullValue": {
+      "type": "string",
+      "defaultValue": null,
+      "description": {
+        "en": " Gets/Sets the representation of null value. In case of default the value for the input is set to null, which makes the input to hold an empty string\n",
+        "jp": "null 値の表現を取得または設定します。デフォルトの場合、入力の値は null に設定され、入力が空文字列を保持します。\n"
+      },
+      "valueOptions": null
+    },
+    "padChar": {
+      "type": "string",
+      "defaultValue": " ",
+      "description": {
+        "en": "This option is inherited from a parent widget and it's not applicable for igDateEditor",
+        "jp": "このオプションは親ウィジェットから継承され、igDateEditor に適用できません。"
+      },
+      "valueOptions": null
+    },
+    "placeHolder": {
+      "type": "string",
+      "defaultValue": null,
+      "description": {
+        "en": "Gets/Sets the text which appears in the editor when it has no focus and the \"value\" is null or empty string.<br>&nbsp;&nbsp;&nbsp;",
+        "jp": "エディターにフォーカスがなく、\"value\" が null または空の文字列の場合に、エディターに表示されるテキストを取得または設定します。<br>&nbsp;&nbsp;&nbsp;"
+      },
+      "valueOptions": null
+    },
+    "preventSubmitOnEnter": {
+      "type": "bool",
+      "defaultValue": false,
+      "description": {
+        "en": "Gets/Sets if the editor should prevent form submition when enter key is pressed.<br>&nbsp;&nbsp;&nbsp;",
+        "jp": "Enter キーの押下でフォーム送信を回避するかどうかを取得または設定します。<br>&nbsp;&nbsp;&nbsp;"
+      },
+      "valueOptions": null
+    },
+    "readOnly": {
+      "type": "bool",
+      "defaultValue": false,
+      "description": {
+        "en": "Gets/Sets the readonly attribute for the input. If set to true the input is readonly, and all buttons and interactions are disabled. On submitting the form the editor belongs to, the value is submitted.<br>&nbsp;&nbsp;&nbsp;",
+        "jp": "入力の readonly 属性を取得または設定します。True に設定される場合、入力が読み取り専用で、すべてのボタンおよび操作が無効です。エディターのフォームの送信で値が送信されます。<br>&nbsp;&nbsp;&nbsp;"
+      },
+      "valueOptions": null
+    },
+    "revertIfNotValid": {
+      "type": "bool",
+      "defaultValue": true,
+      "description": {
+        "en": "Gets/Sets if the editor should revert it's value to the previously valid value in case the value on blur, or enter key is not valid. If the opiton is set to false, editor calls clear functionality.<br>&nbsp;&nbsp;&nbsp;",
+        "jp": "ぼかしまたは Enter キーの押しで値が無効な場合、エディターが値を以前の有効な値を元に戻す機能を取得または設定します。オプションが false に設定される場合、エディターはクリア機能を呼び出します。<br>&nbsp;&nbsp;&nbsp;"
+      },
+      "valueOptions": null
+    },
+    "selectionOnFocus": {
+      "type": "string",
+      "defaultValue": "selectAll",
+      "description": {
+        "en": " Gets/Sets the action when the editor gets focused. The default value is selectAll.\n",
+        "jp": "エディターがフォーカスを受けるときのアクションを取得または設定します。デフォルト値は selectAll です。\n"
+      },
+      "valueOptions": [
+        {
+          "name": "selectAll",
+          "type": "string",
+          "description": {
+            "en": " Setting this option will select all the text into the editor when the edit mode gets enetered.",
+            "jp": "このオプションを設定すると、編集モードに入ったときにエディターのすべてのテキストを選択します。"
+          }
+        },
+        {
+          "name": "atStart",
+          "type": "string",
+          "description": {
+            "en": " Setting this option will move the cursor at the begining the text into the editor when the edit mode gets enetered.",
+            "jp": "このオプションを設定すると、編集モードに入ったときにエディターのテキストの初めにカーソルを移動します。"
+          }
+        },
+        {
+          "name": "atEnd",
+          "type": "string",
+          "description": {
+            "en": " Setting this option will move the cursor at the end the text into the editor when the edit mode gets enetered.",
+            "jp": "このオプションを設定すると、編集モードに入ったときにエディターのテキストの最後にカーソルを移動します。"
+          }
+        },
+        {
+          "name": "browserDefault",
+          "type": "string",
+          "description": {
+            "en": " Setting this option won't do any extra logic, but proceed with the browser default behavior.",
+            "jp": "このオプションの設定に追加のロジックはありませんが、ブラウザーのデフォルトの動作で処理されます。"
+          }
+        }
+      ]
+    },
+    "spinDelta": {
+      "type": "object",
+      "defaultValue": null,
+      "description": {
+        "en": " Gets/Sets delta-value which is used to increment or decrement the editor time on spin actions.&nbsp;&nbsp;&nbsp;&nbsp;When not editing (focused) the delta is applied on the day if available in the input mask or the lowest available period.<br>&nbsp;&nbsp;&nbsp;&nbsp;When in edit mode the time period, where the cursor is positioned, is incremented or decremented with the defined delta value.<br>&nbsp;&nbsp;&nbsp;&nbsp;Accepted values for deltas are positive integer numbers, and the fractional portion of floating point numbers is ignored.<br>\n&nbsp;&nbsp;&nbsp;&nbsp;spinDelta: {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hours: 12,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;minutes: 15<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;Default value is {hours: 1, minutes: 30}.<br>",
+        "jp": "スピン アクションでにエディター時間を増減するために使用されるデルタ値を取得または設定します。&nbsp;&nbsp;&nbsp;&nbsp;編集モードでないが、フォーカスを持つ場合、入力マスクで利用可能な場合に日にデルタが適用されます。利用可能でない場合、一番短い期間に適用されます。<br>&nbsp;&nbsp;&nbsp;&nbsp;編集モードで、カーソルが配置される時間期間が定義されたデルタ値によって増加または減少されます。<br>&nbsp;&nbsp;&nbsp;&nbsp;デルタに有効な値は正の整数で、浮動小数点数の分数が無視されます。<br>\n&nbsp;&nbsp;&nbsp;&nbsp;spinDelta: {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hours: 12,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;minutes: 15<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;デフォルト値は {hours: 1, minutes: 30} です。<br>"
+      },
+      "schema": {
+        "hours": {
+          "type": "number",
+          "defaultValue": 1,
+          "description": {
+              "en": "Value for the hours",
+              "jp": "時の値"
+          }
+        },
+        "minutes": {
+            "type": "number",
+            "defaultValue": 30,
+            "description": {
+                "en": "Value for the minutes",
+                "jp": "分の値"
+            }
+        }
+      }
+    },
+    "spinWrapAround": {
+      "type": "bool",
+      "defaultValue": true,
+      "description": {
+        "en": "Gets/Set the ability of the editor to automatically set value in the editor to the opposite side of the limit, when the spin action reaches minimum or maximum limit.<br>&nbsp;&nbsp;&nbsp;&nbsp;This applies to [minValue](ui.%%WidgetNameLowered%%#options:minValue) and [maxValue](ui.%%WidgetNameLowered%%#options:maxValue) or cycling through list items if [isLimitedToListValues](ui.%%WidgetNameLowered%%#options:isLimitedToListValues) is enabled.<br>&nbsp;&nbsp;&nbsp;",
+        "jp": "スピン アクションで最小値または最大値に達する場合に、エディターで自動的に値を反対の限度に設定する機能を取得または設定します。<br>&nbsp;&nbsp;&nbsp;&nbsp;これは [minValue](ui.%%WidgetNameLowered%%#options:minValue) および [maxValue](ui.%%WidgetNameLowered%%#options:maxValue) に適用し、[isLimitedToListValues](ui.%%WidgetNameLowered%%#options:isLimitedToListValues) が有効な場合にリスト項目の移動にも適用します。<br>&nbsp;&nbsp;&nbsp;"
+      },
+      "valueOptions": null
+    },
+    "suppressKeyboard": {
+      "type": "bool",
+      "defaultValue": false,
+      "description": {
+        "en": "Gets/Sets whether the onscreen keyboard (if available on device) should be shown when the dropdown button is clicked/tapped. This option prevents initial focus or removes it when the drop button is clicked/tapped.<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: The option does not perform device detection so its behavior is always active if enabled.<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: When drop down is opened the only way to close it will be using the drop down button.<br>&nbsp;&nbsp;&nbsp;&nbsp;",
+        "jp": "ドロップダウンがクリック/タップされたときにオンスクリーン キーボード (デバイスで利用可能な場合) を表示するかどうかを取得または設定します。このオプションは最初のフォーカスを回避するか、ドロップダウン ボタンがクリックまたはタップされたときにフォーカスを解除します。<br>&nbsp;&nbsp;&nbsp;&nbsp;注: このオプションはデバイスの検出を実行しないため、有効な場合に動作が常にアクティブになります。<br>&nbsp;&nbsp;&nbsp;&nbsp;注: ドロップダウンを開いている場合ドロップダウン ボタンを使用してのみ閉じることができます。<br>&nbsp;&nbsp;&nbsp;&nbsp;"
+      },
+      "valueOptions": null
+    },
+    "suppressNotifications": {
+      "type": "bool",
+      "defaultValue": false,
+      "description": {
+        "en": "Disables/Enables default notifications for basic validation scenarios built in the editors such as required list selection, value wrapping around or spin limits.<br>&nbsp;&nbsp;&nbsp;",
+        "jp": "エディターのビルトイン基本検証シナリオで、必須リスト選択、値ラッピング、スピン制限などのデフォルトの通知を無効または有効にします。<br>&nbsp;&nbsp;&nbsp;"
+      },
+      "valueOptions": null
+    },
+    "tabIndex": {
+      "type": "number",
+      "defaultValue": null,
+      "description": {
+        "en": "Gets/Sets tabIndex attribute for the editor input.<br>&nbsp;&nbsp;&nbsp;  ",
+        "jp": "エディター入力の tabIndex 属性を取得または設定します。<br>&nbsp;&nbsp;&nbsp;  "
+      },
+      "valueOptions": null
+    },
+    "textAlign": {
+      "type": "string",
+      "defaultValue": "left",
+      "description": {
+        "en": " Gets/Sets the horizontal alignment of the text in the editor.\n",
+        "jp": "エディターのテキストの水平方向の配置を取得または設定します。\n"
+      },
+      "valueOptions": [
+        {
+          "name": "left",
+          "type": "string",
+          "description": {
+            "en": " The text into the input gets aligned to the left.",
+            "jp": "入力したテキストは左揃えになります。"
+          }
+        },
+        {
+          "name": "right",
+          "type": "string",
+          "description": {
+            "en": " The text into the input gets aligned to the right.",
+            "jp": "入力したテキストは右揃えになります。"
+          }
+        },
+        {
+          "name": "center",
+          "type": "string",
+          "description": {
+            "en": " The text into the input gets aligned to the center.",
+            "jp": "入力したテキストは中央揃えになります。"
+          }
+        }
+      ]
+    },
+    "textMode": {
+      "type": "string",
+      "defaultValue": "text",
+      "description": {
+        "en": " ",
+        "jp": " "
+      },
+      "valueOptions": []
+    },
+    "timeDisplayFormat": {
+      "type": "string",
+      "defaultValue": null,
+      "description": {
+        "en": "Gets/Sets format of time while timepicker has no focus.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value of that option can be set to a specific time pattern or to a flag defined by regional settings.<br>&nbsp;&nbsp;&nbsp;&nbsp;If value is not set, then the timeInputFormat is used automatically.<br>&nbsp;&nbsp;&nbsp;&nbsp;If value is set to explicit time pattern and pattern besides time-flags has explicit characters which match with time-flags or mask-flags, then the \"escape\" character should be used in front of them.<br>&nbsp;&nbsp;&nbsp;&nbsp;List of predefined regional flags:<br>&nbsp;&nbsp;&nbsp;&nbsp;\"time\": the timePattern member of regional option is used<br>&nbsp;&nbsp;&nbsp;&nbsp;List of explicit characters, which should have escape \\\\ character in front of them:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C, &, a, A, ?, L, 9, 0, #, >, <, y, M, d, h, H, m, s, t, f.<br>&nbsp;&nbsp;&nbsp;&nbsp;List of time-flags when explicit time pattern is used:<br>&nbsp;&nbsp;&nbsp;&nbsp;\"t\": first character of string which represents AM/PM field<br>&nbsp;&nbsp;&nbsp;&nbsp;\"tt\": 2 characters of string which represents AM/PM field<br>&nbsp;&nbsp;&nbsp;&nbsp;\"h\": hours field in 12-hours format without leading zero<br>&nbsp;&nbsp;&nbsp;&nbsp;\"hh\": hours field in 12-hours format with leading zero<br>&nbsp;&nbsp;&nbsp;&nbsp;\"H\": hours field in 24-hours format without leading zero<br>&nbsp;&nbsp;&nbsp;&nbsp;\"HH\": hours field in 24-hours format with leading zero<br>&nbsp;&nbsp;&nbsp;&nbsp;\"m\": minutes field without leading zero<br>&nbsp;&nbsp;&nbsp;&nbsp;\"mm\": minutes field with leading zero<br>&nbsp;&nbsp;&nbsp;&nbsp;",
+        "jp": "時間ピッカーがフォーカスを持っていないときの時間書式を取得または設定します。<br>&nbsp;&nbsp;&nbsp;&nbsp;このオプションの値は、指定した時間パターンまたは地域設定で定義されたフラグに設定できます。<br>&nbsp;&nbsp;&nbsp;&nbsp;値が設定されていない場合は、timeInputFormat が自動的に使用されます。<br>&nbsp;&nbsp;&nbsp;&nbsp;値が明示的な時間パターンに設定されていて、時間フラグ以外のパターンに、時間フラグまたはマスクフラグに一致する明示的な文字が含まれている場合は、それらの文字の前に \"エスケープ\" 文字を使用する必要があります。<br>&nbsp;&nbsp;&nbsp;&nbsp;定義済みの地域フラグのリスト。<br>&nbsp;&nbsp;&nbsp;&nbsp;\"time\": 地域オプションの timePattern メンバーを使用します。<br>&nbsp;&nbsp;&nbsp;&nbsp;明示的な文字のリスト。これらの前にエスケープ \\\\ 文字が必要です。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C, &, a, A, ?, L, 9, 0, #, >, <, y, M, d, h, H, m, s, t, f.<br>&nbsp;&nbsp;&nbsp;&nbsp;明示的な時間パターンを使用するときの時間フラグのリスト。<br>&nbsp;&nbsp;&nbsp;&nbsp;\"t\": AM/PM フィールドを表す文字列の最初の文字。<br>&nbsp;&nbsp;&nbsp;&nbsp;\"tt\": AM/PM フィールドを表す 2 文字の文字列。<br>&nbsp;&nbsp;&nbsp;&nbsp;\"h\": 先行するゼロがない 12 時間形式の時フィールド。<br>&nbsp;&nbsp;&nbsp;&nbsp;\"hh\": 先行するゼロがある 12 時間形式の時フィールド。<br>&nbsp;&nbsp;&nbsp;&nbsp;\"H\": 先行するゼロがない 24 時間形式の時フィールド。<br>&nbsp;&nbsp;&nbsp;&nbsp;\"HH\": 先行するゼロがある 24 時間形式の時フィールド。<br>&nbsp;&nbsp;&nbsp;&nbsp;\"m\": 先行するゼロがない分フィールド。<br>&nbsp;&nbsp;&nbsp;&nbsp;\"mm\": 先行するゼロがある分フィールド。<br>&nbsp;&nbsp;&nbsp;&nbsp;"
+      },
+      "valueOptions": null
+    },
+    "timeInputFormat": {
+      "type": "string",
+      "defaultValue": "time",
+      "description": {
+        "en": "Gets format of time while timepicker has focus.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value of that option can be set to explicit time pattern or to a flag defined by regional settings.<br>&nbsp;&nbsp;&nbsp;&nbsp;If value is set to explicit time pattern and pattern besides date-flags has explicit characters which match with time-flags or mask-flags, then the \"escape\" character should be used in front of them.<br>&nbsp;&nbsp;&nbsp;&nbsp;If option is not set, then the \"time\" is used automatically.<br>&nbsp;&nbsp;&nbsp;&nbsp;List of predefined regional flags:<br>&nbsp;&nbsp;&nbsp;&nbsp;\"time\": the timePattern member of regional option is used<br>&nbsp;&nbsp;&nbsp;&nbsp;List of explicit characters, which should have escape \\\\ character in front of them: C, &, a, A, ?, L, 9, 0, #, >, <, y, M, d, h, H, m, s, t, f.<br>&nbsp;&nbsp;&nbsp;&nbsp;List of time-flags when explicit time pattern is used:<br>&nbsp;&nbsp;&nbsp;&nbsp;\"t\": first character of string which represents AM/PM field<br>&nbsp;&nbsp;&nbsp;&nbsp;\"tt\": 2 characters of string which represents AM/PM field<br>&nbsp;&nbsp;&nbsp;&nbsp;\"hh\": hours field in 12-hours format with leading zero<br>&nbsp;&nbsp;&nbsp;&nbsp;\"HH\": hours field in 24-hours format with leading zero<br>&nbsp;&nbsp;&nbsp;&nbsp;\"mm\": minutes field with leading zero<br>&nbsp;&nbsp;&nbsp;&nbsp;Note! This option can not be set runtime.<br>&nbsp;&nbsp;&nbsp;&nbsp;",
+        "jp": "時間ピッカーがフォーカスを持つときの時間書式を取得します。<br>&nbsp;&nbsp;&nbsp;&nbsp;このオプションの値は、明示的な時間パターンまたは地域設定で定義されたフラグに設定できます。<br>&nbsp;&nbsp;&nbsp;&nbsp;値が明示的な時間パターンに設定されていて、時間フラグ以外のパターンに、日フラグまたはマスクフラグに一致する明示的な文字が含まれている場合は、それらの文字の前に \"エスケープ\" 文字を使用する必要があります。<br>&nbsp;&nbsp;&nbsp;&nbsp;値が設定されていない場合は、\"time\" が自動的に使用されます。<br>&nbsp;&nbsp;&nbsp;&nbsp;定義済みの地域フラグのリスト。<br>&nbsp;&nbsp;&nbsp;&nbsp;\"time\": 地域オプションの timePattern メンバーを使用します。<br>&nbsp;&nbsp;&nbsp;&nbsp;明示的な文字のリスト。これらの前にエスケープ \\\\ 文字が必要です。 C, &, a, A, ?, L, 9, 0, #, >, <, y, M, d, h, H, m, s, t, f.<br>&nbsp;&nbsp;&nbsp;&nbsp;明示的な時間パターンを使用するときの時間フラグのリスト。<br>&nbsp;&nbsp;&nbsp;&nbsp;\"t\": AM/PM フィールドを表す文字列の最初の文字。<br>&nbsp;&nbsp;&nbsp;&nbsp;\"tt\": AM/PM フィールドを表す 2 文字の文字列。<br>&nbsp;&nbsp;&nbsp;&nbsp;\"hh\": 先行するゼロがある 12 時間形式の時フィールド。<br>&nbsp;&nbsp;&nbsp;&nbsp;\"HH\": 先行するゼロがある 24 時間形式の時フィールド。<br>&nbsp;&nbsp;&nbsp;&nbsp;\"mm\": 先行するゼロがある分フィールド。<br>&nbsp;&nbsp;&nbsp;&nbsp;注: このオプションはランタイムで設定できません。<br>&nbsp;&nbsp;&nbsp;&nbsp;"
+      },
+      "valueOptions": null
+    },
+    "toLower": {
+      "type": "bool",
+      "defaultValue": false,
+      "description": {
+        "en": "This option is inherited from a parent widget and it's not applicable for igDateEditor",
+        "jp": "このオプションは親ウィジェットから継承され、igDateEditor に適用できません。"
+      },
+      "valueOptions": null
+    },
+    "toUpper": {
+      "type": "bool",
+      "defaultValue": false,
+      "description": {
+        "en": "This option is inherited from a parent widget and it's not applicable for igDateEditor",
+        "jp": "このオプションは親ウィジェットから継承され、igDateEditor に適用できません。"
+      },
+      "valueOptions": null
+    },
+    "unfilledCharsPrompt": {
+      "type": "string",
+      "defaultValue": "_",
+      "description": {
+        "en": "This option is inherited from a parent widget and it's not applicable for igDateEditor",
+        "jp": "このオプションは親ウィジェットから継承され、igDateEditor に適用できません。"
+      },
+      "valueOptions": null
+    },
+    "validatorOptions": {
+      "type": "object",
+      "defaultValue": null,
+      "description": {
+        "en": "Gets/Sets options supported by the [igValidator](ui.igvalidator#options) widget.<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: Validation rules of [igValidator](ui.igvalidator#options), such as min and max value/length are applied separately triggering errors,<br>&nbsp;&nbsp;&nbsp;&nbsp;while the corresponding options of the editor prevent values violating the defined rules from being entered.<br>&nbsp;&nbsp;&nbsp;&nbsp;",
+        "jp": "[igValidator](ui.igvalidator#options) ウィジェットによってサポートされるオプションを取得または設定します。<br>&nbsp;&nbsp;&nbsp;&nbsp;注: エラーをトリガーした際に [igValidator](ui.igvalidator#options) の検証ルールは最小値/長さおよび最大値/長さを別々に適用します。エディターの対応するオプションは、定義された入力規則に反する値の入力を防止します。<br>&nbsp;&nbsp;&nbsp;&nbsp;"
+      },
+      "schemaRef": "validator"
+    },
+    "value": {
+      "type": "date",
+      "defaultValue": null,
+      "description": {
+        "en": "Gets/Sets the value of the editor. Date object can be set as value. String can be set and the editor will pass it to the Date object constructor and use the corresponding Date object as the value. MVC date format can be used too.<br>&nbsp;&nbsp;&nbsp;&nbsp;Note! This option doesn't use the dateInputFormat to extract the date.<br>&nbsp;&nbsp;&nbsp;&nbsp;",
+        "jp": "エディターの値を取得または設定します。Date オブジェクトは値として設定できます。文字列を設定すると、エディターがその値を Date オブジェクトのコンストラクターに渡し、相対する Date オブジェクトを値として使用します。MVC 日付書式も使用できます。<br>&nbsp;&nbsp;&nbsp;&nbsp;注: このプロパティは、日付を抽出するために dateInputFormat 設定を使用しません。<br>&nbsp;&nbsp;&nbsp;&nbsp;"
+      },
+      "valueOptions": null
+    },
+    "visibleItemsCount": {
+      "type": "number",
+      "defaultValue": 5.0,
+      "description": {
+        "en": "Gets the number of the items to be shown at once when the drop-down list get opened.<br>&nbsp;&nbsp;&nbsp;&nbsp;Notes:<br>&nbsp;&nbsp;&nbsp;&nbsp;This option is overwritten if the number of list items is less than the set value. In that case the drop-down list displays all the items.<br>&nbsp;&nbsp;&nbsp;&nbsp;This option can not be set runtime.<br>&nbsp;&nbsp;&nbsp;&nbsp;",
+        "jp": "ドロップダウン リストが開いたときに表示する項目の数を取得します。<br>&nbsp;&nbsp;&nbsp;&nbsp;注:<br>&nbsp;&nbsp;&nbsp;&nbsp;リスト項目の数が設定される値より小さい場合、このオプションは上書きされます。その場合、ドロップダウンはすべての項目を表示します。<br>&nbsp;&nbsp;&nbsp;&nbsp;このオプションはランタイムで設定できません。<br>&nbsp;&nbsp;&nbsp;&nbsp;"
+      },
+      "valueOptions": null
+    },
+    "width": {
+      "type": "string",
+      "defaultValue": null,
+      "description": {
+        "en": " Gets/Sets the width of the control.\n",
+        "jp": "コントロールの幅を取得または設定します。\n"
+      },
+      "valueOptions": [
+        {
+          "name": null,
+          "type": "string",
+          "description": {
+            "en": " The widget width can be set in pixels (px) and percentage (%).",
+            "jp": " ウィジェットの幅をピクセル (px) またはパーセンテージ (%) に設定できます。"
+          }
+        },
+        {
+          "name": null,
+          "type": "number",
+          "description": {
+            "en": " The widget width can be set as a number in pixels.",
+            "jp": " ウィジェットの幅は数値としてピクセルで設定できます。"
+          }
+        }
+      ]
+    },
+    "yearShift": {
+      "type": "unknown",
+      "defaultValue": null,
+      "description": {
+        "en": "Removed from timepicker options",
+        "jp": "timepicker オプションから解除されました。"
+      },
+      "valueOptions": null
+    }
+  }
+}

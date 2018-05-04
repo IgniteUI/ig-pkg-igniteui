@@ -880,12 +880,12 @@
 		"dateEditor": {
     		"id": "dateEditor",
     		"toolboxTitle": "Date Editor",
-    		"icon": "datepicker.png",
+    		"icon": "dateeditor.png",
     		"dragDropIcon": "editor-dragdrop.png",
     		"category": "editors",
     		"visual": true,
     		"framework": false
-    	},	
+    	},
 		"maskEditor": {
     		"id": "maskEditor",
     		"toolboxTitle": "Mask Editor",
@@ -929,6 +929,15 @@
     		"toolboxTitle": "Date Picker",
     		"icon": "datepicker.png",
     		"dragDropIcon": "datepicker-dragdrop.png",
+    		"category": "lists",
+    		"visual": true,
+    		"framework": false
+		},
+		"timePicker": {
+    		"id": "timePicker",
+    		"toolboxTitle": "Time Picker",
+    		"icon": "timepicker.png",
+    		"dragDropIcon": "editor-dragdrop.png",
     		"category": "lists",
     		"visual": true,
     		"framework": false
