@@ -720,7 +720,7 @@
     		"id": "linearGauge",
             "dependsOn": ["core", "lob", "dv"],
     		"toolboxTitle": "Linear Gauge",
-    		"icon": "linear-gauge.png",
+    		"icon": "lineargauge.png",
     		"dragDropIcon": "linear-gauge-dragdrop.png",
 			"componentPlugin": "charts-component-plugin",
     		"category": "dataviz",
