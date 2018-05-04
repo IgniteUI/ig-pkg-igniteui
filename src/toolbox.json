@@ -880,7 +880,7 @@
 		"dateEditor": {
     		"id": "dateEditor",
     		"toolboxTitle": "Date Editor",
-    		"icon": "datepicker.png",
+    		"icon": "dateeditor.png",
     		"dragDropIcon": "editor-dragdrop.png",
     		"category": "editors",
     		"visual": true,
@@ -936,7 +936,7 @@
 		"timePicker": {
     		"id": "timePicker",
     		"toolboxTitle": "Time Picker",
-    		"icon": "datepicker.png",
+    		"icon": "timepicker.png",
     		"dragDropIcon": "editor-dragdrop.png",
     		"category": "lists",
     		"visual": true,
