@@ -453,7 +453,7 @@
       "defaultValue": 29.0,
       "description": {
         "en": "Gets/Sets year for auto detection of 20th and 21st centuries.<br>&nbsp;&nbsp;&nbsp;&nbsp;That option is used to automatically fill century when the user entered only 1 or 2 digits into the year field or when the date pattern contains only 1 or 2 year positions, e.g. \"yy\" or \"y\".<br>&nbsp;&nbsp;&nbsp;&nbsp;If user entered value larger than value of this option, then 20th century is used, otherwise the 21st.<br>&nbsp;&nbsp;&nbsp;&nbsp;",
-        "jp": "20 世紀または 21 世紀の自動検出する年を取得または設定します。<br>&nbsp;&nbsp;&nbsp;&nbsp;このオプションは、ユーザーが 1 桁または 2 桁を年フィールドに入力した場合、または日付パターンが 1 年または 2 年位置のみ (\"yy\" または \"y\" など) を含む場合に自動的に塗りつぶすために使用されます。<br>&nbsp;&nbsp;&nbsp;&nbsp;ユーザーがこのオプションの値よりも大きな値を入力した場合、20 世紀を使用します。それ以外の場合は、21 世紀を使用します。<br>&nbsp;&nbsp;&nbsp;&nbsp;"
+        "jp": "20 世紀または 21 世紀の自動検出する年を取得または設定します。<br>&nbsp;&nbsp;&nbsp;&nbsp;このオプションは、ユーザーが 1 桁または 2 桁を年フィールドに入力した場合、または日付パターンが 1 年または 2 年の位置のみ (\"yy\" または \"y\" など) を含む場合に自動的に世紀を入力するために使用します。<br>&nbsp;&nbsp;&nbsp;&nbsp;ユーザーがこのオプションの値よりも大きな値を入力した場合、20 世紀を使用します。それ以外の場合は、21 世紀を使用します。<br>&nbsp;&nbsp;&nbsp;&nbsp;"
       },
       "valueOptions": null
     },
@@ -496,7 +496,7 @@
       "defaultValue": null,
       "description": {
         "en": "Removed from timepicker options",
-        "jp": "timepicker オプションから解除されました。"
+        "jp": "timepicker オプションから除外されました。"
       },
       "valueOptions": null
     },
@@ -505,7 +505,7 @@
       "defaultValue": null,
       "description": {
         "en": "Removed from timepicker options",
-        "jp": "timepicker オプションから解除されました。"
+        "jp": "timepicker オプションから除外されました。"
       },
       "valueOptions": null
     },
@@ -523,7 +523,7 @@
       "defaultValue": null,
       "description": {
         "en": "Removed from timepicker options",
-        "jp": "timepicker オプションから解除されました。"
+        "jp": "timepicker オプションから除外されました。"
       },
       "valueOptions": null
     },
@@ -550,7 +550,7 @@
       "defaultValue": false,
       "description": {
         "en": "This option is inherited from a parent widget and it's not applicable for igDateEditor",
-        "jp": "このオプションは親ウィジェットから継承され、igDateEditor に適用できません。"
+        "jp": "このオプションは親ウィジェットから継承され、igDateEditor には適用できません。"
       },
       "valueOptions": null
     },
@@ -593,7 +593,7 @@
       "defaultValue": " ",
       "description": {
         "en": "This option is inherited from a parent widget and it's not applicable for igDateEditor",
-        "jp": "このオプションは親ウィジェットから継承され、igDateEditor に適用できません。"
+        "jp": "このオプションは親ウィジェットから継承され、igDateEditor には適用できません。"
       },
       "valueOptions": null
     },
@@ -602,7 +602,7 @@
       "defaultValue": false,
       "description": {
         "en": "Enables/Disables serializing client date as UTC ISO 8061 string instead of using the local time and zone values.<br>&nbsp;&nbsp;&nbsp;&nbsp;The option is only applied in \"date\" [dataMode](ui.%%WidgetNameLowered%%#options:dataMode).<br>&nbsp;&nbsp;&nbsp;&nbsp;",
-        "jp": "ローカル時間およびゾーン値の代わりにクライアント側の日付を UTC ISO 8061 文字列としてのシリアル化を有効/無効にします。<br>&nbsp;&nbsp;&nbsp;&nbsp;このオプションは \"date\" [dataMode](ui.%%WidgetNameLowered%%#options:dataMode) のみで適用されます。<br>&nbsp;&nbsp;&nbsp;&nbsp;"
+        "jp": "ローカル時間およびゾーン値の代わりにクライアント側の日付を UTC ISO 8061 文字列としてのシリアル化を有効/無効にします。<br>&nbsp;&nbsp;&nbsp;&nbsp;このオプションは \"date\" [dataMode](ui.%%WidgetNameLowered%%#options:dataMode) のみに適用されます。<br>&nbsp;&nbsp;&nbsp;&nbsp;"
       },
       "valueOptions": null
     },
@@ -611,7 +611,7 @@
       "defaultValue": null,
       "description": {
         "en": "Gets ability to prevent entering specific characters from keyboard or on paste.<br>&nbsp;&nbsp;&nbsp;&nbsp;Notes:<br>&nbsp;&nbsp;&nbsp;&nbsp;If a character is specified in \"includeKeys\" option also, then \"excludeKeys\" has priority.<br>&nbsp;&nbsp;&nbsp;&nbsp;Note! This option can not be se runtime.<br>&nbsp;&nbsp;&nbsp;&nbsp;",
-        "jp": "キーボードまたは貼り付けによって特定の文字を入力できないようにする機能を取得します。<br>&nbsp;&nbsp;&nbsp;&nbsp;注:<br>&nbsp;&nbsp;&nbsp;&nbsp;文字が \"includeKeys\" オプションに指定した場合、\"excludeKeys\" は優先があります。<br>&nbsp;&nbsp;&nbsp;&nbsp;注: このオプションはランタイムで設定できません。<br>&nbsp;&nbsp;&nbsp;&nbsp;"
+        "jp": "キーボードまたは貼り付けによって特定の文字を入力できないようにする機能を取得します。<br>&nbsp;&nbsp;&nbsp;&nbsp;注:<br>&nbsp;&nbsp;&nbsp;&nbsp;文字を \"includeKeys\" オプションでも指定した場合、\"excludeKeys\" が優先されます。<br>&nbsp;&nbsp;&nbsp;&nbsp;注: このオプションはランタイムで設定できません。<br>&nbsp;&nbsp;&nbsp;&nbsp;"
       },
       "valueOptions": null
     },
@@ -972,7 +972,7 @@
       "defaultValue": null,
       "description": {
         "en": "Gets/Sets format of time while timepicker has no focus.<br>&nbsp;&nbsp;&nbsp;&nbsp;Value of that option can be set to a specific time pattern or to a flag defined by regional settings.<br>&nbsp;&nbsp;&nbsp;&nbsp;If value is not set, then the timeInputFormat is used automatically.<br>&nbsp;&nbsp;&nbsp;&nbsp;If value is set to explicit time pattern and pattern besides time-flags has explicit characters which match with time-flags or mask-flags, then the \"escape\" character should be used in front of them.<br>&nbsp;&nbsp;&nbsp;&nbsp;List of predefined regional flags:<br>&nbsp;&nbsp;&nbsp;&nbsp;\"time\": the timePattern member of regional option is used<br>&nbsp;&nbsp;&nbsp;&nbsp;List of explicit characters, which should have escape \\\\ character in front of them:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C, &, a, A, ?, L, 9, 0, #, >, <, y, M, d, h, H, m, s, t, f.<br>&nbsp;&nbsp;&nbsp;&nbsp;List of time-flags when explicit time pattern is used:<br>&nbsp;&nbsp;&nbsp;&nbsp;\"t\": first character of string which represents AM/PM field<br>&nbsp;&nbsp;&nbsp;&nbsp;\"tt\": 2 characters of string which represents AM/PM field<br>&nbsp;&nbsp;&nbsp;&nbsp;\"h\": hours field in 12-hours format without leading zero<br>&nbsp;&nbsp;&nbsp;&nbsp;\"hh\": hours field in 12-hours format with leading zero<br>&nbsp;&nbsp;&nbsp;&nbsp;\"H\": hours field in 24-hours format without leading zero<br>&nbsp;&nbsp;&nbsp;&nbsp;\"HH\": hours field in 24-hours format with leading zero<br>&nbsp;&nbsp;&nbsp;&nbsp;\"m\": minutes field without leading zero<br>&nbsp;&nbsp;&nbsp;&nbsp;\"mm\": minutes field with leading zero<br>&nbsp;&nbsp;&nbsp;&nbsp;",
-        "jp": "時間ピッカーがフォーカスを持っていないときの時間書式を取得または設定します。<br>&nbsp;&nbsp;&nbsp;&nbsp;このオプションの値は、指定した時間パターンまたは地域設定で定義されたフラグに設定できます。<br>&nbsp;&nbsp;&nbsp;&nbsp;値が設定されていない場合は、timeInputFormat が自動的に使用されます。<br>&nbsp;&nbsp;&nbsp;&nbsp;値が明示的な時間パターンに設定されていて、時間フラグ以外のパターンに、時間フラグまたはマスクフラグに一致する明示的な文字が含まれている場合は、それらの文字の前に \"エスケープ\" 文字を使用する必要があります。<br>&nbsp;&nbsp;&nbsp;&nbsp;定義済みの地域フラグのリスト。<br>&nbsp;&nbsp;&nbsp;&nbsp;\"time\": 地域オプションの timePattern メンバーを使用します。<br>&nbsp;&nbsp;&nbsp;&nbsp;明示的な文字のリスト。これらの前にエスケープ \\\\ 文字が必要です。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C, &, a, A, ?, L, 9, 0, #, >, <, y, M, d, h, H, m, s, t, f.<br>&nbsp;&nbsp;&nbsp;&nbsp;明示的な時間パターンを使用するときの時間フラグのリスト。<br>&nbsp;&nbsp;&nbsp;&nbsp;\"t\": AM/PM フィールドを表す文字列の最初の文字。<br>&nbsp;&nbsp;&nbsp;&nbsp;\"tt\": AM/PM フィールドを表す 2 文字の文字列。<br>&nbsp;&nbsp;&nbsp;&nbsp;\"h\": 先行するゼロがない 12 時間形式の時フィールド。<br>&nbsp;&nbsp;&nbsp;&nbsp;\"hh\": 先行するゼロがある 12 時間形式の時フィールド。<br>&nbsp;&nbsp;&nbsp;&nbsp;\"H\": 先行するゼロがない 24 時間形式の時フィールド。<br>&nbsp;&nbsp;&nbsp;&nbsp;\"HH\": 先行するゼロがある 24 時間形式の時フィールド。<br>&nbsp;&nbsp;&nbsp;&nbsp;\"m\": 先行するゼロがない分フィールド。<br>&nbsp;&nbsp;&nbsp;&nbsp;\"mm\": 先行するゼロがある分フィールド。<br>&nbsp;&nbsp;&nbsp;&nbsp;"
+        "jp": "時間ピッカーがフォーカスを持っていないときの時間書式を取得または設定します。<br>&nbsp;&nbsp;&nbsp;&nbsp;このオプションの値は、指定した時間パターンまたは地域設定で定義されたフラグに設定できます。<br>&nbsp;&nbsp;&nbsp;&nbsp;値が設定されていない場合は、timeInputFormat が自動的に使用されます。<br>&nbsp;&nbsp;&nbsp;&nbsp;値が明示的な時間パターンに設定されていて、時間フラグ以外のパターンに時間フラグまたはマスクフラグに一致する明示的な文字が含まれている場合、それらの文字の前に \"エスケープ\" 文字を使用する必要があります。<br>&nbsp;&nbsp;&nbsp;&nbsp;定義済みの地域フラグのリスト。<br>&nbsp;&nbsp;&nbsp;&nbsp;\"time\": 地域オプションの timePattern メンバーを使用します。<br>&nbsp;&nbsp;&nbsp;&nbsp;明示的な文字のリスト。これらの前にエスケープ \\\\ 文字が必要です。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C, &, a, A, ?, L, 9, 0, #, >, <, y, M, d, h, H, m, s, t, f.<br>&nbsp;&nbsp;&nbsp;&nbsp;明示的な時間パターンを使用するときの時間フラグのリスト。<br>&nbsp;&nbsp;&nbsp;&nbsp;\"t\": AM/PM フィールドを表す文字列の最初の文字。<br>&nbsp;&nbsp;&nbsp;&nbsp;\"tt\": AM/PM フィールドを表す 2 文字の文字列。<br>&nbsp;&nbsp;&nbsp;&nbsp;\"h\": 先行するゼロがない 12 時間形式の時フィールド。<br>&nbsp;&nbsp;&nbsp;&nbsp;\"hh\": 先行するゼロがある 12 時間形式の時フィールド。<br>&nbsp;&nbsp;&nbsp;&nbsp;\"H\": 先行するゼロがない 24 時間形式の時フィールド。<br>&nbsp;&nbsp;&nbsp;&nbsp;\"HH\": 先行するゼロがある 24 時間形式の時フィールド。<br>&nbsp;&nbsp;&nbsp;&nbsp;\"m\": 先行するゼロがない分フィールド。<br>&nbsp;&nbsp;&nbsp;&nbsp;\"mm\": 先行するゼロがある分フィールド。<br>&nbsp;&nbsp;&nbsp;&nbsp;"
       },
       "valueOptions": null
     },
@@ -1017,7 +1017,7 @@
       "defaultValue": null,
       "description": {
         "en": "Gets/Sets options supported by the [igValidator](ui.igvalidator#options) widget.<br>&nbsp;&nbsp;&nbsp;&nbsp;Note: Validation rules of [igValidator](ui.igvalidator#options), such as min and max value/length are applied separately triggering errors,<br>&nbsp;&nbsp;&nbsp;&nbsp;while the corresponding options of the editor prevent values violating the defined rules from being entered.<br>&nbsp;&nbsp;&nbsp;&nbsp;",
-        "jp": "[igValidator](ui.igvalidator#options) ウィジェットによってサポートされるオプションを取得または設定します。<br>&nbsp;&nbsp;&nbsp;&nbsp;注: エラーをトリガーした際に [igValidator](ui.igvalidator#options) の検証ルールは最小値/長さおよび最大値/長さを別々に適用します。エディターの対応するオプションは、定義された入力規則に反する値の入力を防止します。<br>&nbsp;&nbsp;&nbsp;&nbsp;"
+        "jp": "[igValidator](ui.igvalidator#options) ウィジェットによってサポートされるオプションを取得または設定します。<br>&nbsp;&nbsp;&nbsp;&nbsp;注: エラーをトリガーした際に [igValidator](ui.igvalidator#options) の検証ルールは最小値/長さおよび最大値/長さを別々に適用します。エディターの対応オプションは、定義した入力規則に反する値の入力を防止します。<br>&nbsp;&nbsp;&nbsp;&nbsp;"
       },
       "schemaRef": "validator"
     },
@@ -1070,7 +1070,7 @@
       "defaultValue": null,
       "description": {
         "en": "Removed from timepicker options",
-        "jp": "timepicker オプションから解除されました。"
+        "jp": "timepicker オプションから除外されました。"
       },
       "valueOptions": null
     }
