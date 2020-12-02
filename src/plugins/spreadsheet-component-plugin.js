@@ -8,7 +8,7 @@ define (["./_default-component-plugin"], function (DefaultPlugin) {
 		        window.frames[0].$(descriptor.placeholder)[name](descriptor.options);
 				var workbook = null;
 				var xhr = new XMLHttpRequest();
-				xhr.open('GET', 'https://staging.igniteui.local/17-1/data-files/statistic.xlsx', true);
+				xhr.open('GET', 'https://www.igniteui.com/data-files/statistic.xlsx', true);
 				xhr.responseType = 'arraybuffer';
 
 				xhr.onload = function (e) {
